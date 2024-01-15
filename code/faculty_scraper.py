@@ -24,7 +24,8 @@ def get_full_url(faculty_url, url):
 
 def fetch_url(url):
     try:
-        response = requests.get(url)
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+        response = requests.get(url, headers=headers)
         return response.text
     except Exception as e:
         if e.__class__.__name__ == "SSLError" and (
@@ -109,6 +110,39 @@ def soup_has_class(soup_tag, classname):
     return classname in soup_tag.attrs.get("class", [])
 
 
+def scrape_albion_college(soup): 
+    return scrape(
+        soup.find(class_="main__side"),
+        lambda t: soup_has_class(t, "list--person"),
+        name=lambda t: t.find(class_="list__person__name").text,
+        title=lambda t: t.find(class_="list__person__title").text,
+        url=lambda t: t.find('a', href=True)['href'] if t.find('a', href=True, string="Website") else "",
+        college=College.ALBION
+    )
+
+
+def scrape_albright_college(soup):
+    return scrape(
+        soup.find(id="faculty"),
+        lambda t: soup_has_class(t, "faculty-item"),
+        name=lambda t: t.find('strong').get_text(strip=True) if t.find('strong') else "",
+        title=lambda t: t.find('br').next_sibling.strip() if t.find('br') else "",
+        url=lambda t: t.find('a', href=True)['href'].strip() if t.find('a', href=True) else "",
+        college=College.ALBRIGHT
+    )
+
+
+def scrape_allegheny_college(soup):
+    return scrape(
+        soup.find(class_="flex-container"),
+        lambda t: soup_has_class(t, "emp"),
+        name=lambda t: t.find(class_="sc-name").get_text(strip=True), 
+        title=lambda t: t.find(class_="sc-professional-title").get_text(strip=True),
+        url=lambda t: t.find(class_='full-profile', href=True)['href'].strip() if t.find('a', href=True) else "",
+        college=College.ALLEGHENY
+    )
+
+
 def scrape_amherst_college(soup):
     return scrape(
         soup.find(class_="faculty-list"),
@@ -176,6 +210,9 @@ def scrape_williams_college(soup):
 
 
 faculty_scraper_map = {
+    College.ALBION: scrape_albion_college,
+    College.ALBRIGHT: scrape_albright_college,
+    College.ALLEGHENY: scrape_allegheny_college,
     College.AMHERST: scrape_amherst_college,
     College.COLGATE: scrape_colgate_college,
     College.POMONA: scrape_pomona_college,
