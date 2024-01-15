@@ -1,0 +1,228 @@
+import pandas as pd
+import re
+import requests
+import traceback
+from bs4 import BeautifulSoup
+from concurrent.futures import ThreadPoolExecutor
+from constants import College
+from urllib.parse import urlparse
+
+
+def extract_base_url(url):
+    parsed_url = urlparse(url)
+    return f"{parsed_url.scheme}://{parsed_url.netloc}/"
+
+
+def get_full_url(faculty_url, url):
+    base_url = extract_base_url(faculty_url)
+    if url.startswith("/"):
+        if base_url.endswith("/"):
+            return base_url[:-1] + url
+        return base_url + url
+    return url
+
+
+def fetch_url(url):
+    try:
+        response = requests.get(url)
+        return response.text
+    except Exception as e:
+        if e.__class__.__name__ == "SSLError" and (
+            url.startswith("https://www.coe.edu/")
+            or url.startswith("https://www.westpoint.edu/")
+        ):
+            print(f"Retrying {url} with verify=False")
+            try:
+                response = requests.get(url, verify=False)
+                return response.text
+            except Exception as e:
+                print(f"Error fetching {url}: {e}")
+                return None
+        else:
+            print(f"Error fetching {url}: {e}")
+            return None
+
+
+def fetch_all_urls(urls):
+    with ThreadPoolExecutor() as executor:
+        return list(executor.map(fetch_url, urls))
+
+
+def get_valid_colleges(filepath):
+    df = pd.read_csv(filepath)
+    return df[df["Major"] == 1]
+
+
+def create_faculty(name, title, college, url=None):
+    return {
+        "name": name,
+        "title": title,
+        "college": college,
+        "url": url,
+    }
+
+
+def clean_name(text):
+    if text is None:
+        return None
+    text = re.sub(r'\(.*\)', '', text)
+    text = re.sub(r'\s+.?\d+', '', text)
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
+
+# Get a valid professor title
+def clean_title(text):
+    if text is None:
+        return None
+    text = text.lower()
+    if not ("professor" in text or "centennial" in text):
+        return None
+    if any([str in text for str in ["emerit", "practice" "visiting"]]):
+        return None
+    if "associate" in text:
+        return "Associate Professor"
+    if "assistant" in text:
+        return "Assistant Professor"
+    return "Professor"
+
+
+def scrape(soup, pred, name, title, college, url=None):
+    try:
+        res = [
+            create_faculty(
+                clean_name(name(t)),
+                clean_title(title(t)),
+                college,
+                url=url(t) if url is not None else None,
+            )
+            for t in soup.find_all(pred)
+        ]
+        return filter(lambda f: f["name"] is not None and f["title"] is not None, res)
+    except Exception:
+        print(f"Error scraping {college}:")
+        print(traceback.format_exc())
+        return []
+
+
+def soup_has_class(soup_tag, classname):
+    return classname in soup_tag.attrs.get("class", [])
+
+
+def scrape_amherst_college(soup):
+    return scrape(
+        soup.find(class_="faculty-list"),
+        lambda t: soup_has_class(t, "faculty_listing_small"),
+        name=lambda t: t.find(class_="faculty_listing_small_name").a.text,
+        title=lambda t: t.find(class_="faculty_listing_small_title").text,
+        url=lambda t: t.find(class_="faculty_listing_small_name").a.attrs["href"],
+        college=College.AMHERST,
+    )
+
+
+def scrape_colgate_college(soup):
+    return scrape(
+        soup.find(id="current-faculty"),
+        lambda t: soup_has_class(t, "faculty-staff__list-member"),
+        name=lambda t: t.find(class_="profile__name").a.text,
+        title=lambda t: t.find(class_="profile__title").text,
+        url=lambda t: t.find(class_="profile__name").a.attrs["href"],
+        college=College.COLGATE,
+    )
+
+
+def scrape_pomona_college(soup):
+    return scrape(
+        soup.find(class_="view-id-staff_listing"),
+        lambda t: soup_has_class(t, "text-brown-300"),
+        name=lambda t: t.a.text,
+        title=lambda t: t.a.parent.div.text,
+        url=lambda t: t.a.attrs["href"],
+        college=College.POMONA,
+    )
+
+
+def scrape_swarthmore_college(soup):
+    return scrape(
+        soup.find(id="computer-science-faculty-"),
+        lambda t: soup_has_class(t, "c-person-detail__content"),
+        name=lambda t: t.find(class_="c-person-detail__title").text,
+        title=lambda t: t.find(class_="c-person-detail__role").text,
+        url=lambda t: t.find(class_="c-person-detail__links").a.attrs["href"],
+        college=College.SWARTHMORE,
+    )
+
+
+def scrape_trinity_college(soup):
+    return scrape(
+        soup,
+        lambda t: t.name == "table" and soup_has_class(t, "deptmember"),
+        name=lambda t: t.td.a.text if t.td.a is not None else None,
+        title=lambda t: t.find_all("td")[1].text,
+        url=lambda t: t.td.a.attrs["href"] if t.td.a is not None else None,
+        college=College.TRINITY_C,
+    )
+
+
+def scrape_williams_college(soup):
+    return scrape(
+        soup,
+        lambda t: t.name == "td" and not t.attrs,
+        name=lambda t: t.strong.text.split(",")[0],
+        title=lambda t: t.strong.text,
+        url=lambda t: t.find_all("a")[1].attrs["href"],
+        college=College.WILLIAMS,
+    )
+
+
+faculty_scraper_map = {
+    College.AMHERST: scrape_amherst_college,
+    College.COLGATE: scrape_colgate_college,
+    College.POMONA: scrape_pomona_college,
+    College.SWARTHMORE: scrape_swarthmore_college,
+    College.TRINITY_C: scrape_trinity_college,
+    College.WILLIAMS: scrape_williams_college,
+}
+
+# In rare cases, the faculty list is dynamically generated on the client side
+faculty_url_override_map = {
+    College.TRINITY_C: "https://internet3.trincoll.edu/pTools/DeptMembership_wp.aspx?dc=CPSC",
+}
+
+
+def get_faculty_list(df):
+    names = df["Name"].tolist()
+    urls = df["Faculty Link"].tolist()
+
+    # Override bad urls
+    for name, url in faculty_url_override_map.items():
+        if name not in names:
+            continue
+        urls[names.index(name)] = url
+
+    name_to_url_map = {name: url for name, url in zip(names, urls)}
+    faculty_list = []
+
+    print("Fetching from urls...")
+    results = fetch_all_urls(urls)
+
+    print("Parsing...")
+    for name, text in zip(names, results):
+        if text is None or name not in faculty_scraper_map:
+            continue
+        soup = BeautifulSoup(text, features="html.parser")
+        faculty_list.extend(faculty_scraper_map[name](soup))
+
+    print("Post-processing...")
+    output = pd.DataFrame(faculty_list)
+    output["url"] = output.apply(
+        lambda row: get_full_url(name_to_url_map[row["college"]], row["url"]), axis=1
+    )
+
+    return output
+
+
+if __name__ == "__main__":
+    df = get_valid_colleges("../data/colleges.csv")
+    df = df[df["Name"].isin(faculty_scraper_map.keys())]
+    print(get_faculty_list(df).to_string())
