@@ -115,7 +115,7 @@ def scrape(soup, pred, name, title, college, url=None):
                 create_faculty(faculty_name, faculty_title, college, faculty_url)
             )
         except Exception:
-            print(f"Error scraping the following tag:\n{t.prettify()}")
+            print(f"Error scraping the following tag in college {college}:\n{t.prettify()}")
             print(traceback.format_exc())
             continue
     return res
@@ -228,9 +228,9 @@ def scrape_trinity_college(soup):
     return scrape(
         soup,
         lambda t: t.name == "table" and soup_has_class(t, "deptmember"),
-        name=lambda t: t.td.a.text if t.td.a is not None else None,
+        name=lambda t: t.td.a.text,
         title=lambda t: t.find_all("td")[1].text,
-        url=lambda t: t.td.a["href"] if t.td.a is not None else None,
+        url=lambda t: t.td.a["href"],
         college=College.TRINITY_C,
     )
 
