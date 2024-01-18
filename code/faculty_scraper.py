@@ -70,9 +70,10 @@ def create_faculty(name, title, college, url=None):
 def clean_name(text):
     if text is None:
         return None
-    text = re.sub(r"\(.*\)", "", text)
-    text = re.sub(r"\s+.?\d+", "", text)
-    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"\(.*\)", "", text) # Eg: (TEXT)
+    text = re.sub(r"\s+.?\d+", "", text) # Eg: '10
+    text = re.sub(r"[A-Z]{3,}", "", text) # Eg: POM
+    text = re.sub(r"\s+", " ", text) # Condense consecutive whitespaces
     return text.strip()
 
 
@@ -204,6 +205,17 @@ def scrape_colgate_college(soup):
     )
 
 
+def scrape_harvey_mudd_college(soup):
+    return scrape(
+        soup.find(class_="person-block-wrapper"),
+        filter=lambda t: soup_has_class(t, "person-details"),
+        name=lambda t: t.find(class_="person-name-text").text,
+        title=lambda t: t.find(class_="person-contact").text,
+        url=lambda t: t.find(class_="person-name-url")["href"],
+        college=College.HARVEY_MUDD,
+    )
+
+
 def scrape_macalester_college(soup):
     return scrape(
         soup,
@@ -302,6 +314,7 @@ faculty_scraper_map = {
     College.BOWDOIN: scrape_bowdoin_college,
     College.CARLETON: scrape_carleton_college,
     College.COLGATE: scrape_colgate_college,
+    College.HARVEY_MUDD: scrape_harvey_mudd_college,
     College.MACALESTER: scrape_macalester_college,
     College.MOUNT_HOLYOKE: scrape_moho_college,
     College.POMONA: scrape_pomona_college,
