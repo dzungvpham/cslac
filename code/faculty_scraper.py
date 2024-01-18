@@ -116,7 +116,7 @@ def scrape(soup, filter, name, title, college, url=None):
             )
         except Exception:
             print(
-                f"Error scraping the following tag in college {college}:\n{t.prettify()}"
+                f"Error scraping the following tag for {college}:\n{t.prettify()}"
             )
             print(traceback.format_exc())
             continue
@@ -239,6 +239,17 @@ def scrape_pomona_college(soup):
     )
 
 
+def scrape_smith_college(soup):
+    return scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "teaser__content"),
+        name=lambda t: t.find(class_="heading__link").span.text,
+        title=lambda t: t.find(class_="teaser__subheading").text,
+        url=lambda t: t.find(class_="heading__link")["href"],
+        college=College.SMITH,
+    )
+
+
 def scrape_swarthmore_college(soup):
     return scrape(
         soup.find(id="computer-science-faculty-"),
@@ -294,6 +305,7 @@ faculty_scraper_map = {
     College.MACALESTER: scrape_macalester_college,
     College.MOUNT_HOLYOKE: scrape_moho_college,
     College.POMONA: scrape_pomona_college,
+    College.SMITH: scrape_smith_college,
     College.SWARTHMORE: scrape_swarthmore_college,
     College.TRINITY_C: scrape_trinity_college,
     College.WELLESLEY: scrape_wellesley_college,
