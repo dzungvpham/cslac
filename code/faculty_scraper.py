@@ -84,7 +84,7 @@ def clean_title(text):
     text = text.lower()
     if not ("professor" in text or "centennial" in text):
         return None
-    if any([str in text for str in ["emerit", "practice" "visiting"]]):
+    if re.match(r"(emerit|practice|visiting)", text) is not None:
         return None
     if " of " in text and "computer science" not in text:
         return None
@@ -284,6 +284,17 @@ def scrape_trinity_college(soup):
     )
 
 
+def scrape_vassar_college(soup):
+    return scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "node--faculty--teaser"),
+        name=lambda t: t.a.text,
+        title=lambda t: t.find(class_="faculty-title").text,
+        url=lambda t: t.a["href"],
+        college=College.VASSAR,
+    )
+
+
 def scrape_wellesley_college(soup):
     return scrape(
         soup,
@@ -321,6 +332,7 @@ faculty_scraper_map = {
     College.SMITH: scrape_smith_college,
     College.SWARTHMORE: scrape_swarthmore_college,
     College.TRINITY_C: scrape_trinity_college,
+    College.VASSAR: scrape_vassar_college,
     College.WELLESLEY: scrape_wellesley_college,
     College.WILLIAMS: scrape_williams_college,
 }
