@@ -68,12 +68,22 @@ def create_faculty(name, title, college=None, url=None):
     }
 
 
+def extract_name(soup):
+    text = soup.get_text("||", strip=True)
+    lines = text.split("||")
+    return clean_name(lines[0])
+
+
 def clean_name(text):
     if text is None:
         return None
     text = re.sub(r"\(.*\)", "", text)  # Eg: (TEXT)
     text = re.sub(r"\s+.?\d+", "", text)  # Eg: '10
     text = re.sub(r"[A-Z]{3,}", "", text)  # Eg: POM
+    if "," in text:
+        part = text.split(",")[0]
+        if len(part.split(" ")) >= 2: # Avoid LAST, FIRST
+            text = part
     text = re.sub(r"\s+", " ", text)  # Condense consecutive whitespaces
     return text.strip()
 
@@ -96,11 +106,11 @@ def clean_title(text):
     return "Professor"
 
 
-def scrape(soup, filter, name, title, url=None):
+def scrape(soup, filter, title, url=None):
     res = []
     for t in soup.find_all(filter):
         try:
-            faculty_name = clean_name(name(t))
+            faculty_name = extract_name(t)
             faculty_title = clean_title(title(t))
             if faculty_name is None or faculty_title is None:
                 continue
@@ -135,7 +145,6 @@ def scrape_albion_college(soup):
     return scrape(
         soup.find(class_="main__side"),
         filter=lambda t: soup_has_class(t, "list--person"),
-        name=lambda t: t.find(class_="list__person__name").text,
         title=lambda t: t.find(class_="list__person__title").text,
         url=lambda t: t.find("a", href=True)["href"],
     )
@@ -145,7 +154,6 @@ def scrape_albright_college(soup):
     return scrape(
         soup.find(id="faculty"),
         filter=lambda t: soup_has_class(t, "faculty-item"),
-        name=lambda t: t.find("strong").text.split(",")[0],
         title=lambda t: t.find("br").next_sibling.strip(),
         url=lambda t: t.find("a", href=True)["href"],
     )
@@ -155,7 +163,6 @@ def scrape_allegheny_college(soup):
     return scrape(
         soup.find(class_="flex-container"),
         filter=lambda t: soup_has_class(t, "emp"),
-        name=lambda t: t.find(class_="sc-name").text,
         title=lambda t: t.find(class_="sc-professional-title").text,
         url=lambda t: t.find(class_="full-profile", href=True)["href"],
     )
@@ -165,7 +172,6 @@ def scrape_amherst_college(soup):
     return scrape(
         soup.find(class_="faculty-list"),
         filter=lambda t: soup_has_class(t, "faculty_listing_small"),
-        name=lambda t: t.find(class_="faculty_listing_small_name").a.text,
         title=lambda t: t.find(class_="faculty_listing_small_title").text,
         url=lambda t: t.find(class_="faculty_listing_small_name").a["href"],
     )
@@ -175,7 +181,6 @@ def scrape_bowdoin_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "profile-card"),
-        name=lambda t: t.find(class_="profile-card-name").a.text,
         title=lambda t: t.find(class_="profile-card-title").text,
         url=lambda t: t.find(class_="profile-card-name").a["href"],
     )
@@ -185,7 +190,6 @@ def scrape_bryn_mawr_college(soup):
     return scrape(
         soup.find(class_="node__content").ul,
         filter=lambda t: t.name == "li",
-        name=lambda t: t.a.text,
         title=lambda t: t.em.text,
         url=lambda t: t.a["href"],
     )
@@ -195,7 +199,6 @@ def scrape_bucknell_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "fac-staff-details"),
-        name=lambda t: t.a.text,
         title=lambda t: t.find(class_="m-staff-information__title").text,
         url=lambda t: t.a["href"],
     )
@@ -205,7 +208,6 @@ def scrape_carleton_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "faculty-staff--item"),
-        name=lambda t: t.find(class_="faculty-staff--name").text.split("\n")[0],
         title=lambda t: t.find(class_="faculty-staff--title").text,
         url=lambda t: t.find(class_="bio-link")["href"],
     )
@@ -215,7 +217,6 @@ def scrape_colgate_college(soup):
     return scrape(
         soup.find(id="current-faculty"),
         filter=lambda t: soup_has_class(t, "faculty-staff__list-member"),
-        name=lambda t: t.find(class_="profile__name").a.text,
         title=lambda t: t.find(class_="profile__title").text,
         url=lambda t: t.find(class_="profile__name").a["href"],
     )
@@ -225,7 +226,6 @@ def scrape_grinnel_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "user__content"),
-        name=lambda t: t.find(class_="user__name").a.text,
         title=lambda t: t.find(class_="user__position").text,
         url=lambda t: t.find(class_="user__name").a["href"],
     )
@@ -235,7 +235,6 @@ def scrape_harvey_mudd_college(soup):
     return scrape(
         soup.find(class_="person-block-wrapper"),
         filter=lambda t: soup_has_class(t, "person-details"),
-        name=lambda t: t.find(class_="person-name-text").text,
         title=lambda t: t.find(class_="person-contact").text,
         url=lambda t: t.find(class_="person-name-url")["href"],
     )
@@ -245,7 +244,6 @@ def scrape_haverford_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "entity"),
-        name=lambda t: t.find(class_="profile_link-full-name").a.text,
         title=lambda t: t.find(class_="profile_diplay-title").text,
         url=lambda t: t.find(class_="profile_link-full-name").a["href"],
     )
@@ -257,7 +255,6 @@ def scrape_macalester_college(soup):
         filter=lambda t: soup_has_class(t, "card-body")
         and t.find_next("h3") is not None
         and "emerit" in t.find_next("h3").text.lower(),
-        name=lambda t: t.find(class_="fn").text,
         title=lambda t: t.find(class_="title").text,
         url=lambda t: t.find(class_="fn").a["href"],
     )
@@ -267,7 +264,6 @@ def scrape_moho_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "directory-list__result"),
-        name=lambda t: t.h2.a.text,
         title=lambda t: " ".join(
             li.text for li in t.find(class_="positions").find_all("li")
         ),
@@ -279,7 +275,6 @@ def scrape_oberlin_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "biography-grid-item"),
-        name=lambda t: t.a.text,
         title=lambda t: t.find(class_="biography-grid-item__title").text,
         url=lambda t: t.a["href"],
     )
@@ -289,7 +284,6 @@ def scrape_pomona_college(soup):
     return scrape(
         soup.find(class_="view-id-staff_listing"),
         filter=lambda t: soup_has_class(t, "text-brown-300"),
-        name=lambda t: t.a.text,
         title=lambda t: t.a.parent.div.text,
         url=lambda t: t.a["href"],
     )
@@ -299,7 +293,6 @@ def scrape_smith_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "teaser__content"),
-        name=lambda t: t.find(class_="heading__link").span.text,
         title=lambda t: t.find(class_="teaser__subheading").text,
         url=lambda t: t.find(class_="heading__link")["href"],
     )
@@ -309,7 +302,6 @@ def scrape_swarthmore_college(soup):
     return scrape(
         soup.find(id="computer-science-faculty-"),
         filter=lambda t: soup_has_class(t, "c-person-detail__content"),
-        name=lambda t: t.find(class_="c-person-detail__title").text,
         title=lambda t: t.find(class_="c-person-detail__role").text,
         url=lambda t: t.find(class_="c-person-detail__links").a["href"],
     )
@@ -319,7 +311,6 @@ def scrape_trinity_college(soup):
     return scrape(
         soup,
         filter=lambda t: t.name == "table" and soup_has_class(t, "deptmember"),
-        name=lambda t: t.td.a.text,
         title=lambda t: t.find_all("td")[1].text,
         url=lambda t: t.td.a["href"],
     )
@@ -329,7 +320,6 @@ def scrape_vassar_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "node--faculty--teaser"),
-        name=lambda t: t.a.text,
         title=lambda t: t.find(class_="faculty-title").text,
         url=lambda t: t.a["href"],
     )
@@ -339,7 +329,6 @@ def scrape_wellesley_college(soup):
     return scrape(
         soup,
         filter=lambda t: soup_has_class(t, "listing-profile"),
-        name=lambda t: t.find(class_="profile-name").h4.text,
         title=lambda t: t.find(lambda t: t.name == "p" and t.text != "").em.text,
         url=lambda t: t.find(class_="profile-name").a["href"],
     )
@@ -366,7 +355,6 @@ def scrape_williams_college(soup):
     return scrape(
         soup,
         filter=lambda t: t.name == "td" and not t.attrs,
-        name=lambda t: t.strong.text.split(",")[0],
         title=lambda t: t.strong.text,
         url=lambda t: t.find_all("a")[1]["href"],
     )
