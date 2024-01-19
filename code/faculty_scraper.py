@@ -85,7 +85,7 @@ def clean_title(text):
     text = text.lower()
     if not ("professor" in text or "centennial" in text):
         return None
-    if re.match(r"(emerit|practice|visiting)", text) is not None:
+    if re.search(r"(emerit|practice|visiting)", text) is not None:
         return None
     if " of " in text and "computer science" not in text:
         return None
@@ -205,6 +205,17 @@ def scrape_colgate_college(soup):
         title=lambda t: t.find(class_="profile__title").text,
         url=lambda t: t.find(class_="profile__name").a["href"],
         college=College.COLGATE,
+    )
+
+
+def scrape_grinnel_college(soup):
+    return scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "user__content"),
+        name=lambda t: t.find(class_="user__name").a.text,
+        title=lambda t: t.find(class_="user__position").text,
+        url=lambda t: t.find(class_="user__name").a["href"],
+        college=College.GRINNEL,
     )
 
 
@@ -358,6 +369,7 @@ faculty_scraper_map = {
     College.BOWDOIN: scrape_bowdoin_college,
     College.CARLETON: scrape_carleton_college,
     College.COLGATE: scrape_colgate_college,
+    College.GRINNEL: scrape_grinnel_college,
     College.HARVEY_MUDD: scrape_harvey_mudd_college,
     College.MACALESTER: scrape_macalester_college,
     College.MOUNT_HOLYOKE: scrape_moho_college,
