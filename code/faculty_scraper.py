@@ -85,9 +85,9 @@ def clean_title(text):
     text = text.lower()
     if not ("professor" in text or "centennial" in text):
         return None
-    if re.search(r"(emerit|practice|visiting)", text) is not None:
+    if re.search(r"(emerit|practice|visiting|teaching)", text) is not None:
         return None
-    if " of " in text and "computer science" not in text:
+    if " of " in text and re.search(r"(computer science|data science)", text) is None:
         return None
     if "associate" in text:
         return "Associate Professor"
@@ -183,6 +183,17 @@ def scrape_bowdoin_college(soup):
         title=lambda t: t.find(class_="profile-card-title").text,
         url=lambda t: t.find(class_="profile-card-name").a["href"],
         college=College.BOWDOIN,
+    )
+
+
+def scrape_bucknell_college(soup):
+    return scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "fac-staff-details"),
+        name=lambda t: t.a.text,
+        title=lambda t: t.find(class_="m-staff-information__title").text,
+        url=lambda t: t.a["href"],
+        college=College.BUCKNELL,
     )
 
 
@@ -367,6 +378,7 @@ faculty_scraper_map = {
     College.ALLEGHENY: scrape_allegheny_college,
     College.AMHERST: scrape_amherst_college,
     College.BOWDOIN: scrape_bowdoin_college,
+    College.BUCKNELL: scrape_bucknell_college,
     College.CARLETON: scrape_carleton_college,
     College.COLGATE: scrape_colgate_college,
     College.GRINNEL: scrape_grinnel_college,
@@ -415,7 +427,7 @@ def get_faculty_list(df):
         faculty_list.extend(faculty_scraper_map[name](soup))
 
     print("Post-processing...")
-    output = pd.DataFrame(faculty_list)
+    output = pd.DataFrame(faculty_list).drop_duplicates()
     output["url"] = output.apply(
         lambda row: get_full_url(name_to_url_map[row["college"]], row["url"]), axis=1
     )
