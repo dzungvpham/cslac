@@ -186,6 +186,17 @@ def scrape_bowdoin_college(soup):
     )
 
 
+def scrape_bryn_mawr_college(soup):
+    return scrape(
+        soup.find(class_="node__content").ul,
+        filter=lambda t: t.name == "li",
+        name=lambda t: t.a.text,
+        title=lambda t: t.em.text,
+        url=lambda t: t.a["href"],
+        college=College.BRYN_MAWR,
+    )
+
+
 def scrape_bucknell_college(soup):
     return scrape(
         soup,
@@ -378,6 +389,7 @@ faculty_scraper_map = {
     College.ALLEGHENY: scrape_allegheny_college,
     College.AMHERST: scrape_amherst_college,
     College.BOWDOIN: scrape_bowdoin_college,
+    College.BRYN_MAWR: scrape_bryn_mawr_college,
     College.BUCKNELL: scrape_bucknell_college,
     College.CARLETON: scrape_carleton_college,
     College.COLGATE: scrape_colgate_college,
