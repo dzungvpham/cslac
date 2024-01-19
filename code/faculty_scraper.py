@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 import re
 import requests
 import traceback
@@ -70,10 +71,10 @@ def create_faculty(name, title, college, url=None):
 def clean_name(text):
     if text is None:
         return None
-    text = re.sub(r"\(.*\)", "", text) # Eg: (TEXT)
-    text = re.sub(r"\s+.?\d+", "", text) # Eg: '10
-    text = re.sub(r"[A-Z]{3,}", "", text) # Eg: POM
-    text = re.sub(r"\s+", " ", text) # Condense consecutive whitespaces
+    text = re.sub(r"\(.*\)", "", text)  # Eg: (TEXT)
+    text = re.sub(r"\s+.?\d+", "", text)  # Eg: '10
+    text = re.sub(r"[A-Z]{3,}", "", text)  # Eg: POM
+    text = re.sub(r"\s+", " ", text)  # Condense consecutive whitespaces
     return text.strip()
 
 
@@ -109,16 +110,14 @@ def scrape(soup, filter, name, title, college, url=None):
                 try:
                     faculty_url = url(t)
                 except Exception:
-                    print(f"Error scraping url for {faculty_name}:")
+                    print(f"Error scraping url for {faculty_name} of {college}:")
                     print(traceback.format_exc())
 
             res.append(
                 create_faculty(faculty_name, faculty_title, college, faculty_url)
             )
         except Exception:
-            print(
-                f"Error scraping the following tag for {college}:\n{t.prettify()}"
-            )
+            print(f"Error scraping the following tag for {college}:\n{t.prettify()}")
             print(traceback.format_exc())
             continue
     return res
@@ -126,6 +125,10 @@ def scrape(soup, filter, name, title, college, url=None):
 
 def soup_has_class(soup_tag, classname):
     return classname in soup_tag.attrs.get("class", [])
+
+
+def soup_has_class_stub(soup_tag, class_stub):
+    return any(class_stub in classname for classname in soup_tag.attrs.get("class", []))
 
 
 def scrape_albion_college(soup):
@@ -234,7 +237,9 @@ def scrape_moho_college(soup):
         soup,
         filter=lambda t: soup_has_class(t, "directory-list__result"),
         name=lambda t: t.h2.a.text,
-        title=lambda t: " ".join(li.text for li in t.find(class_="positions").find_all("li")),
+        title=lambda t: " ".join(
+            li.text for li in t.find(class_="positions").find_all("li")
+        ),
         url=lambda t: t.h2.a["href"],
         college=College.MOUNT_HOLYOKE,
     )
@@ -306,6 +311,23 @@ def scrape_wellesley_college(soup):
     )
 
 
+def scrape_wesleyan_college(soup):
+    soup = json.loads(soup.text)
+    res = []
+    for o in soup["faculty"] + soup["vice_chairs"] + soup["chairs"]:
+        name = o["name"]
+        appointments = o["appointments"]
+        faculty_name = clean_name(f"{name['first']} {name['middle']} {name['last']}")
+        faculty_title = clean_title(", ".join(app["title"] for app in appointments))
+        if faculty_name is None or faculty_title is None:
+            continue
+        faculty_url = o["personal_web_url"]
+        res.append(
+            create_faculty(faculty_name, faculty_title, College.WESLEYAN, faculty_url)
+        )
+    return res
+
+
 def scrape_williams_college(soup):
     return scrape(
         soup,
@@ -334,12 +356,14 @@ faculty_scraper_map = {
     College.TRINITY_C: scrape_trinity_college,
     College.VASSAR: scrape_vassar_college,
     College.WELLESLEY: scrape_wellesley_college,
+    College.WESLEYAN: scrape_wesleyan_college,
     College.WILLIAMS: scrape_williams_college,
 }
 
 # In rare cases, the faculty list is dynamically generated on the client side
 faculty_url_override_map = {
     College.TRINITY_C: "https://internet3.trincoll.edu/pTools/DeptMembership_wp.aspx?dc=CPSC",
+    College.WESLEYAN: "https://webapps.wesleyan.edu/wapi/v1/public/professional_information/academic_plan/COMP",
 }
 
 
