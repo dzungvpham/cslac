@@ -245,6 +245,17 @@ def scrape_moho_college(soup):
     )
 
 
+def scrape_oberlin_college(soup):
+    return scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "biography-grid-item"),
+        name=lambda t: t.a.text,
+        title=lambda t: t.find(class_="biography-grid-item__title").text,
+        url=lambda t: t.a["href"],
+        college=College.OBERLIN,
+    )
+
+
 def scrape_pomona_college(soup):
     return scrape(
         soup.find(class_="view-id-staff_listing"),
@@ -350,6 +361,7 @@ faculty_scraper_map = {
     College.HARVEY_MUDD: scrape_harvey_mudd_college,
     College.MACALESTER: scrape_macalester_college,
     College.MOUNT_HOLYOKE: scrape_moho_college,
+    College.OBERLIN: scrape_oberlin_college,
     College.POMONA: scrape_pomona_college,
     College.SMITH: scrape_smith_college,
     College.SWARTHMORE: scrape_swarthmore_college,
