@@ -252,6 +252,17 @@ def scrape_harvey_mudd_college(soup):
     )
 
 
+def scrape_haverford_college(soup):
+    return scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "entity"),
+        name=lambda t: t.find(class_="profile_link-full-name").a.text,
+        title=lambda t: t.find(class_="profile_diplay-title").text,
+        url=lambda t: t.find(class_="profile_link-full-name").a["href"],
+        college=College.HAVERFORD,
+    )
+
+
 def scrape_macalester_college(soup):
     return scrape(
         soup,
@@ -395,6 +406,7 @@ faculty_scraper_map = {
     College.COLGATE: scrape_colgate_college,
     College.GRINNEL: scrape_grinnel_college,
     College.HARVEY_MUDD: scrape_harvey_mudd_college,
+    College.HAVERFORD: scrape_haverford_college,
     College.MACALESTER: scrape_macalester_college,
     College.MOUNT_HOLYOKE: scrape_moho_college,
     College.OBERLIN: scrape_oberlin_college,
