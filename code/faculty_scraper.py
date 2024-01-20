@@ -90,8 +90,13 @@ def clean_name(text):
         part = text.split(",")[0]
         if len(part.split()) >= 2:  # Avoid LAST, FIRST
             text = part
-    text = re.sub(r"\s+", " ", text)  # Condense consecutive whitespaces
-    return text.strip()
+    
+    if "," in text: # Handle LAST, FIRST
+        parsed = HumanName(text)
+        text = f"{parsed.first} {parsed.middle} {parsed.last}"
+    
+    text = re.sub(r"\s+", " ", text).strip()  # Condense consecutive whitespaces
+    return text
 
 
 def extract_title(soup):
@@ -235,6 +240,10 @@ faculty_scraper_map = {
     College.BUCKNELL: scrape_class_f("fac-staff-details"),
     College.CARLETON: scrape_class_f("faculty-staff--item"),
     College.COLGATE: scrape_class_f("faculty-staff__list-member"),
+    College.DEPAUW: scrape_f(
+        lambda t: soup_has_class(t, "row")
+        and t.parent.find_previous_sibling("h2") is None
+    ),
     College.GRINNEL: scrape_class_f("user__content"),
     College.HARVEY_MUDD: scrape_class_f("person-details"),
     College.HAVERFORD: scrape_class_f("entity"),
