@@ -109,6 +109,7 @@ def clean_title(text):
     if text is None:
         return None
     text = text.lower()
+    text = re.sub(r"\s+", " ", text).strip()
     if (
         (re.search(r"(professor|centennial|lecturer|instructor)", text) is None)
         or (re.search(r"(emerit)", text) is not None)
@@ -237,6 +238,7 @@ faculty_scraper_map = {
     College.ALBRIGHT: scrape_class_f("faculty-item"),
     College.ALLEGHENY: scrape_class_f("emp"),
     College.AMHERST: scrape_class_f("faculty_listing_small"),
+    College.AUGUSTANA: scrape_class_f("profile-list-item__details"),
     College.BOWDOIN: scrape_class_f("profile-card"),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
