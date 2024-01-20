@@ -6,6 +6,7 @@ import traceback
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
 from constants import College
+from nameparser import HumanName
 from urllib.parse import urlparse
 
 
@@ -26,7 +27,7 @@ def get_full_url(faculty_url, url):
 
 
 def clean_url(url):
-    if url is None or "mailto:" in url:
+    if url is None or re.match(r"(mailto|tel):", url) is not None:
         return None
     return url
 
@@ -112,7 +113,7 @@ def clean_title(text):
         )
     ):
         return None
-    
+
     title = ""
     if "lecturer" in text:
         title = "Lecturer"
@@ -126,7 +127,7 @@ def clean_title(text):
             title = "Associate " + title
         elif "assistant" in text:
             title = "Assistant " + title
-    
+
     if "visiting" in text:
         title = "Visiting " + title
     elif "adjunct" in text:
@@ -137,21 +138,41 @@ def clean_title(text):
     return title
 
 
-def scrape(soup, filter, url=None):
+def extract_url(soup, name):
+    all_urls = [
+        url
+        for a in soup.find_all("a", href=True)
+        if (url := clean_url(a["href"])) is not None
+    ]
+    all_urls = list(set(all_urls)) # Dedup
+    all_urls = [url for url in all_urls if "email-protection" not in url]
+    
+    n = len(all_urls)
+    if n == 0:
+        return None
+    elif n == 1:
+        return all_urls[0]
+
+    parsed_name = HumanName(name)
+    first_name = parsed_name.first.lower()
+    last_name = parsed_name.last.lower()
+    urls_with_name = [url for url in all_urls if last_name in url or first_name in url]
+
+    if len(urls_with_name) >= 1:
+        return min(urls_with_name, key=len)
+
+    return min(all_urls, key=len)
+
+
+def scrape(soup, filter):
     res = []
     for t in soup.find_all(filter):
         try:
             faculty_name = extract_name(t)
             faculty_title = extract_title(t)
+            faculty_url = extract_url(t, faculty_name)
             if faculty_name is None or faculty_title is None:
                 continue
-            faculty_url = None
-            if url is not None:
-                try:
-                    faculty_url = clean_url(url(t))
-                except Exception:
-                    print(f"Error scraping url for {faculty_name}:")
-                    print(traceback.format_exc())
 
             res.append(create_faculty(faculty_name, faculty_title, url=faculty_url))
         except Exception:
@@ -169,176 +190,6 @@ def soup_has_class_stub(soup_tag, class_stub):
     return any(class_stub in classname for classname in soup_tag.attrs.get("class", []))
 
 
-def scrape_albion_college(soup):
-    return scrape(
-        soup.find(class_="main__side"),
-        filter=lambda t: soup_has_class(t, "list--person"),
-        url=lambda t: t.find("a", href=True)["href"],
-    )
-
-
-def scrape_albright_college(soup):
-    return scrape(
-        soup.find(id="faculty"),
-        filter=lambda t: soup_has_class(t, "faculty-item"),
-        url=lambda t: t.find("a", href=True)["href"],
-    )
-
-
-def scrape_allegheny_college(soup):
-    return scrape(
-        soup.find(class_="flex-container"),
-        filter=lambda t: soup_has_class(t, "emp"),
-        url=lambda t: t.find(class_="full-profile", href=True)["href"],
-    )
-
-
-def scrape_amherst_college(soup):
-    return scrape(
-        soup.find(class_="faculty-list"),
-        filter=lambda t: soup_has_class(t, "faculty_listing_small"),
-        url=lambda t: t.find(class_="faculty_listing_small_name").a["href"],
-    )
-
-
-def scrape_bowdoin_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "profile-card"),
-        url=lambda t: t.find(class_="profile-card-name").a["href"],
-    )
-
-
-def scrape_bryn_mawr_college(soup):
-    return scrape(
-        soup.find(class_="node__content").ul,
-        filter=lambda t: t.name == "li",
-        url=lambda t: t.a["href"],
-    )
-
-
-def scrape_bucknell_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "fac-staff-details"),
-        url=lambda t: t.a["href"],
-    )
-
-
-def scrape_carleton_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "faculty-staff--item"),
-        url=lambda t: t.find(class_="bio-link")["href"],
-    )
-
-
-def scrape_colgate_college(soup):
-    return scrape(
-        soup.find(id="current-faculty"),
-        filter=lambda t: soup_has_class(t, "faculty-staff__list-member"),
-        url=lambda t: t.find(class_="profile__name").a["href"],
-    )
-
-
-def scrape_grinnel_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "user__content"),
-        url=lambda t: t.find(class_="user__name").a["href"],
-    )
-
-
-def scrape_harvey_mudd_college(soup):
-    return scrape(
-        soup.find(class_="person-block-wrapper"),
-        filter=lambda t: soup_has_class(t, "person-details"),
-        url=lambda t: t.find(class_="person-name-url")["href"],
-    )
-
-
-def scrape_haverford_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "entity"),
-        url=lambda t: t.find(class_="profile_link-full-name").a["href"],
-    )
-
-
-def scrape_macalester_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "card-body")
-        and t.find_next("h3") is not None
-        and "emerit" in t.find_next("h3").text.lower(),
-        url=lambda t: t.find(class_="fn").a["href"],
-    )
-
-
-def scrape_moho_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "directory-list__result"),
-        url=lambda t: t.h2.a["href"],
-    )
-
-
-def scrape_oberlin_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "biography-grid-item"),
-        url=lambda t: t.a["href"],
-    )
-
-
-def scrape_pomona_college(soup):
-    return scrape(
-        soup.find(class_="view-id-staff_listing"),
-        filter=lambda t: soup_has_class(t, "text-brown-300"),
-        url=lambda t: t.a["href"],
-    )
-
-
-def scrape_smith_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "teaser__content"),
-        url=lambda t: t.find(class_="heading__link")["href"],
-    )
-
-
-def scrape_swarthmore_college(soup):
-    return scrape(
-        soup.find(id="computer-science-faculty-"),
-        filter=lambda t: soup_has_class(t, "c-person-detail__content"),
-        url=lambda t: t.find(class_="c-person-detail__links").a["href"],
-    )
-
-
-def scrape_trinity_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: t.name == "table" and soup_has_class(t, "deptmember"),
-        url=lambda t: t.td.a["href"],
-    )
-
-
-def scrape_vassar_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "node--faculty--teaser"),
-        url=lambda t: t.a["href"],
-    )
-
-
-def scrape_wellesley_college(soup):
-    return scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "listing-profile"),
-        url=lambda t: t.find(class_="profile-name").a["href"],
-    )
-
-
 def scrape_wesleyan_college(soup):
     soup = json.loads(soup.text)
     res = []
@@ -354,38 +205,98 @@ def scrape_wesleyan_college(soup):
     return res
 
 
-def scrape_williams_college(soup):
-    return scrape(
+faculty_scraper_map = {
+    College.ALBION: lambda soup: scrape(
+        soup.find(class_="main__side"),
+        filter=lambda t: soup_has_class(t, "list--person"),
+    ),
+    College.ALBRIGHT: lambda soup: scrape(
+        soup.find(id="faculty"),
+        filter=lambda t: soup_has_class(t, "faculty-item"),
+    ),
+    College.ALLEGHENY: lambda soup: scrape(
+        soup.find(class_="flex-container"),
+        filter=lambda t: soup_has_class(t, "emp"),
+    ),
+    College.AMHERST: lambda soup: scrape(
+        soup.find(class_="faculty-list"),
+        filter=lambda t: soup_has_class(t, "faculty_listing_small"),
+    ),
+    College.BOWDOIN: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "profile-card"),
+    ),
+    College.BRYN_MAWR: lambda soup: scrape(
+        soup.find(class_="node__content").ul,
+        filter=lambda t: t.name == "li",
+    ),
+    College.BUCKNELL: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "fac-staff-details"),
+    ),
+    College.CARLETON: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "faculty-staff--item"),
+    ),
+    College.COLGATE: lambda soup: scrape(
+        soup.find(id="current-faculty"),
+        filter=lambda t: soup_has_class(t, "faculty-staff__list-member"),
+    ),
+    College.GRINNEL: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "user__content"),
+    ),
+    College.HARVEY_MUDD: lambda soup: scrape(
+        soup.find(class_="person-block-wrapper"),
+        filter=lambda t: soup_has_class(t, "person-details"),
+    ),
+    College.HAVERFORD: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "entity"),
+    ),
+    College.MACALESTER: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "card-body")
+        and t.find_next("h3") is not None
+        and "emerit" in t.find_next("h3").text.lower(),
+    ),
+    College.MOUNT_HOLYOKE: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "directory-list__result"),
+    ),
+    College.OBERLIN: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "biography-grid-item"),
+    ),
+    College.POMONA: lambda soup: scrape(
+        soup.find(class_="view-id-staff_listing"),
+        filter=lambda t: soup_has_class(t, "text-brown-300"),
+    ),
+    College.SMITH: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "teaser__content"),
+    ),
+    College.SWARTHMORE: lambda soup: scrape(
+        soup.find(id="computer-science-faculty-"),
+        filter=lambda t: soup_has_class(t, "c-person-detail__content"),
+    ),
+    College.TRINITY_C: lambda soup: scrape(
+        soup,
+        filter=lambda t: t.name == "table" and soup_has_class(t, "deptmember"),
+    ),
+    College.VASSAR: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "node--faculty--teaser"),
+    ),
+    College.WELLESLEY: lambda soup: scrape(
+        soup,
+        filter=lambda t: soup_has_class(t, "listing-profile"),
+    ),
+    College.WESLEYAN: scrape_wesleyan_college,
+    College.WILLIAMS: lambda soup: scrape(
         soup,
         filter=lambda t: t.name == "td" and not t.attrs,
-        url=lambda t: t.find_all("a")[1]["href"],
-    )
-
-
-faculty_scraper_map = {
-    College.ALBION: scrape_albion_college,
-    College.ALBRIGHT: scrape_albright_college,
-    College.ALLEGHENY: scrape_allegheny_college,
-    College.AMHERST: scrape_amherst_college,
-    College.BOWDOIN: scrape_bowdoin_college,
-    College.BRYN_MAWR: scrape_bryn_mawr_college,
-    College.BUCKNELL: scrape_bucknell_college,
-    College.CARLETON: scrape_carleton_college,
-    College.COLGATE: scrape_colgate_college,
-    College.GRINNEL: scrape_grinnel_college,
-    College.HARVEY_MUDD: scrape_harvey_mudd_college,
-    College.HAVERFORD: scrape_haverford_college,
-    College.MACALESTER: scrape_macalester_college,
-    College.MOUNT_HOLYOKE: scrape_moho_college,
-    College.OBERLIN: scrape_oberlin_college,
-    College.POMONA: scrape_pomona_college,
-    College.SMITH: scrape_smith_college,
-    College.SWARTHMORE: scrape_swarthmore_college,
-    College.TRINITY_C: scrape_trinity_college,
-    College.VASSAR: scrape_vassar_college,
-    College.WELLESLEY: scrape_wellesley_college,
-    College.WESLEYAN: scrape_wesleyan_college,
-    College.WILLIAMS: scrape_williams_college,
+    ),
 }
 
 # In rare cases, the faculty list is dynamically generated on the client side
