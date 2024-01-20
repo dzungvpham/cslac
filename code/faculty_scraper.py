@@ -244,6 +244,7 @@ faculty_scraper_map = {
     ),
     College.BARD: scrape_class_f("multitext"),
     College.BARNARD: scrape_class_f("c--featured-person", name_line=1),
+    College.BELOIT: scrape_class_f("profile-card-text"),
     College.BOWDOIN: scrape_class_f("profile-card"),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
