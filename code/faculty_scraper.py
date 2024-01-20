@@ -242,6 +242,7 @@ faculty_scraper_map = {
     College.AUSTIN: scrape_f(
         lambda t: t.name == "li" and soup_has_class(t.parent, "staffList")
     ),
+    College.BARD: scrape_class_f("multitext"),
     College.BOWDOIN: scrape_class_f("profile-card"),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
