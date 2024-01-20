@@ -105,10 +105,10 @@ def clean_title(text):
         return None
     text = text.lower()
     if (
-        (re.search(r"(professor|centennial|lecturer)", text) is None)
+        (re.search(r"(professor|centennial|lecturer|instructor)", text) is None)
         or (re.search(r"(emerit)", text) is not None)
         or (
-            "professor of " in text
+            re.search(r"(professor|lecturer|instructor) of ", text) is not None
             and re.search(r"(computer|data) science", text) is None
         )
     ):
@@ -116,8 +116,16 @@ def clean_title(text):
 
     title = ""
     if "lecturer" in text:
+        if re.search(r"(lab|laboratory) lecturer", text) is not None:
+            return None
         title = "Lecturer"
         if "senior lecturer" in text:
+            title = "Senior " + title
+    elif "instructor" in text:
+        title = "Instructor"
+        if re.search(r"(lab|laboratory)", text) is not None:
+            title = "Lab " + title
+        if "senior" in text:
             title = "Senior " + title
     else:
         title = "Professor"
@@ -144,9 +152,9 @@ def extract_url(soup, name):
         for a in soup.find_all("a", href=True)
         if (url := clean_url(a["href"])) is not None
     ]
-    all_urls = list(set(all_urls)) # Dedup
+    all_urls = list(set(all_urls))  # Dedup
     all_urls = [url for url in all_urls if "email-protection" not in url]
-    
+
     n = len(all_urls)
     if n == 0:
         return None
@@ -182,12 +190,20 @@ def scrape(soup, filter):
     return res
 
 
+def scrape_f(filter):
+    return lambda soup: scrape(soup, filter)
+
+
 def soup_has_class(soup_tag, classname):
     return classname in soup_tag.attrs.get("class", [])
 
 
 def soup_has_class_stub(soup_tag, class_stub):
     return any(class_stub in classname for classname in soup_tag.attrs.get("class", []))
+
+
+def scrape_class_f(classname):
+    return scrape_f(lambda soup: soup_has_class(soup, classname))
 
 
 def scrape_wesleyan_college(soup):
@@ -206,97 +222,39 @@ def scrape_wesleyan_college(soup):
 
 
 faculty_scraper_map = {
-    College.ALBION: lambda soup: scrape(
-        soup.find(class_="main__side"),
-        filter=lambda t: soup_has_class(t, "list--person"),
+    College.ALBION: scrape_class_f("list--person"),
+    College.ALBRIGHT: scrape_class_f("faculty-item"),
+    College.ALLEGHENY: scrape_class_f("emp"),
+    College.AMHERST: scrape_class_f("faculty_listing_small"),
+    College.BOWDOIN: scrape_class_f("profile-card"),
+    College.BRYN_MAWR: scrape_f(
+        lambda t: t.name == "li"
+        and (h3 := t.parent.find_previous_sibling("h3")) is not None
+        and h3.text == "Faculty"
     ),
-    College.ALBRIGHT: lambda soup: scrape(
-        soup.find(id="faculty"),
-        filter=lambda t: soup_has_class(t, "faculty-item"),
-    ),
-    College.ALLEGHENY: lambda soup: scrape(
-        soup.find(class_="flex-container"),
-        filter=lambda t: soup_has_class(t, "emp"),
-    ),
-    College.AMHERST: lambda soup: scrape(
-        soup.find(class_="faculty-list"),
-        filter=lambda t: soup_has_class(t, "faculty_listing_small"),
-    ),
-    College.BOWDOIN: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "profile-card"),
-    ),
-    College.BRYN_MAWR: lambda soup: scrape(
-        soup.find(class_="node__content").ul,
-        filter=lambda t: t.name == "li",
-    ),
-    College.BUCKNELL: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "fac-staff-details"),
-    ),
-    College.CARLETON: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "faculty-staff--item"),
-    ),
-    College.COLGATE: lambda soup: scrape(
-        soup.find(id="current-faculty"),
-        filter=lambda t: soup_has_class(t, "faculty-staff__list-member"),
-    ),
-    College.GRINNEL: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "user__content"),
-    ),
-    College.HARVEY_MUDD: lambda soup: scrape(
-        soup.find(class_="person-block-wrapper"),
-        filter=lambda t: soup_has_class(t, "person-details"),
-    ),
-    College.HAVERFORD: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "entity"),
-    ),
-    College.MACALESTER: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "card-body")
+    College.BUCKNELL: scrape_class_f("fac-staff-details"),
+    College.CARLETON: scrape_class_f("faculty-staff--item"),
+    College.COLGATE: scrape_class_f("faculty-staff__list-member"),
+    College.GRINNEL: scrape_class_f("user__content"),
+    College.HARVEY_MUDD: scrape_class_f("person-details"),
+    College.HAVERFORD: scrape_class_f("entity"),
+    College.MACALESTER: scrape_f(
+        lambda t: soup_has_class(t, "card-body")
         and t.find_next("h3") is not None
-        and "emerit" in t.find_next("h3").text.lower(),
+        and "emerit" in t.find_next("h3").text.lower()
     ),
-    College.MOUNT_HOLYOKE: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "directory-list__result"),
+    College.MOUNT_HOLYOKE: scrape_class_f("directory-list__result"),
+    College.OBERLIN: scrape_class_f("biography-grid-item"),
+    College.POMONA: scrape_class_f("text-brown-300"),
+    College.SMITH: scrape_class_f("teaser__content"),
+    College.SWARTHMORE: scrape_class_f("c-person-detail__content"),
+    College.TRINITY_C: scrape_f(
+        lambda t: t.name == "table" and soup_has_class(t, "deptmember")
     ),
-    College.OBERLIN: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "biography-grid-item"),
-    ),
-    College.POMONA: lambda soup: scrape(
-        soup.find(class_="view-id-staff_listing"),
-        filter=lambda t: soup_has_class(t, "text-brown-300"),
-    ),
-    College.SMITH: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "teaser__content"),
-    ),
-    College.SWARTHMORE: lambda soup: scrape(
-        soup.find(id="computer-science-faculty-"),
-        filter=lambda t: soup_has_class(t, "c-person-detail__content"),
-    ),
-    College.TRINITY_C: lambda soup: scrape(
-        soup,
-        filter=lambda t: t.name == "table" and soup_has_class(t, "deptmember"),
-    ),
-    College.VASSAR: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "node--faculty--teaser"),
-    ),
-    College.WELLESLEY: lambda soup: scrape(
-        soup,
-        filter=lambda t: soup_has_class(t, "listing-profile"),
-    ),
+    College.VASSAR: scrape_class_f("node--faculty--teaser"),
+    College.WELLESLEY: scrape_class_f("listing-profile"),
     College.WESLEYAN: scrape_wesleyan_college,
-    College.WILLIAMS: lambda soup: scrape(
-        soup,
-        filter=lambda t: t.name == "td" and not t.attrs,
-    ),
+    College.WILLIAMS: scrape_f(lambda t: t.name == "td" and not t.attrs),
 }
 
 # In rare cases, the faculty list is dynamically generated on the client side
