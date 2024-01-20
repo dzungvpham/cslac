@@ -25,6 +25,12 @@ def get_full_url(faculty_url, url):
     return url
 
 
+def clean_url(url):
+    if url is None or "mailto:" in url:
+        return None
+    return url
+
+
 def fetch_url(url):
     try:
         headers = {
@@ -81,7 +87,7 @@ def clean_name(text):
     text = re.sub(r"[A-Z]{3,}", "", text)  # Eg: POM
     if "," in text:
         part = text.split(",")[0]
-        if len(part.split(" ")) >= 2:  # Avoid LAST, FIRST
+        if len(part.split()) >= 2:  # Avoid LAST, FIRST
             text = part
     text = re.sub(r"\s+", " ", text)  # Condense consecutive whitespaces
     return text.strip()
@@ -97,20 +103,38 @@ def clean_title(text):
     if text is None:
         return None
     text = text.lower()
-    if not ("professor" in text or "centennial" in text):
-        return None
-    if re.search(r"(emerit|practice of|visiting|teaching assistant)", text) is not None:
-        return None
     if (
-        "professor of " in text
-        and re.search(r"(computer science|data science)", text) is None
+        (re.search(r"(professor|centennial|lecturer)", text) is None)
+        or (re.search(r"(emerit)", text) is not None)
+        or (
+            "professor of " in text
+            and re.search(r"(computer|data) science", text) is None
+        )
     ):
         return None
-    if "associate" in text:
-        return "Associate Professor"
-    if "assistant" in text:
-        return "Assistant Professor"
-    return "Professor"
+    
+    title = ""
+    if "lecturer" in text:
+        title = "Lecturer"
+        if "senior lecturer" in text:
+            title = "Senior " + title
+    else:
+        title = "Professor"
+        if re.search(r"teaching (professor|assistant|associate)", text):
+            title = "Teaching " + title
+        if "associate" in text:
+            title = "Associate " + title
+        elif "assistant" in text:
+            title = "Assistant " + title
+    
+    if "visiting" in text:
+        title = "Visiting " + title
+    elif "adjunct" in text:
+        title = "Adjunct " + title
+    elif "professor of practice" in text:
+        title = title + " of Practice"
+
+    return title
 
 
 def scrape(soup, filter, url=None):
@@ -124,7 +148,7 @@ def scrape(soup, filter, url=None):
             faculty_url = None
             if url is not None:
                 try:
-                    faculty_url = url(t)
+                    faculty_url = clean_url(url(t))
                 except Exception:
                     print(f"Error scraping url for {faculty_name}:")
                     print(traceback.format_exc())
