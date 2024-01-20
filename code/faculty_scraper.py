@@ -27,7 +27,12 @@ def get_full_url(faculty_url, url):
 
 
 def clean_url(url):
-    if url is None or re.match(r"(mailto|tel):", url) is not None:
+    if (
+        url is None
+        or re.match(r"(mailto|tel):", url) is not None
+        or url == "#"
+        or url == ""
+    ):
         return None
     return url
 
@@ -91,7 +96,7 @@ def clean_name(text):
         if len(part.split()) >= 2:  # Avoid LAST, FIRST
             text = part
 
-    if "," in text:  # Handle LAST, FIRST
+    if "," in text or re.match(r"^\s*Dr.", text) is not None:  # Handle LAST, FIRST and Dr.
         parsed = HumanName(text)
         text = f"{parsed.first} {parsed.middle} {parsed.last}"
 
@@ -162,6 +167,8 @@ def extract_url(soup, name):
         for a in soup.find_all("a", href=True)
         if (url := clean_url(a["href"])) is not None
     ]
+    if soup.name == "a":
+        all_urls.append(clean_url(soup["href"]))
     all_urls = list(set(all_urls))  # Dedup
     all_urls = [
         url for url in all_urls if re.search(r"(email-protection|/map)", url) is None
@@ -245,6 +252,7 @@ faculty_scraper_map = {
     College.BARD: scrape_class_f("multitext"),
     College.BARNARD: scrape_class_f("c--featured-person", name_line=1),
     College.BELOIT: scrape_class_f("profile-card-text"),
+    College.BEREA: scrape_class_f("not-prose"),
     College.BOWDOIN: scrape_class_f("profile-card"),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
