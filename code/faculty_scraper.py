@@ -113,7 +113,7 @@ def clean_title(text):
         (re.search(r"(professor|centennial|lecturer|instructor)", text) is None)
         or (re.search(r"(emerit)", text) is not None)
         or (
-            re.search(r"(professor|lecturer|instructor) of ", text) is not None
+            re.search(r"(professor|lecturer|instructor|chair) of ", text) is not None
             and re.search(r"(computer|data) science", text) is None
         )
     ):
@@ -252,6 +252,7 @@ faculty_scraper_map = {
         and t.find_next("h3") is not None
         and "emerit" in t.find_next("h3").text.lower()
     ),
+    College.MIDDLEBURY: scrape_class_f("media-object__body"),
     College.MOUNT_HOLYOKE: scrape_class_f("directory-list__result"),
     College.OBERLIN: scrape_class_f("biography-grid-item"),
     College.POMONA: scrape_class_f("text-brown-300"),
