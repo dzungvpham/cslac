@@ -90,11 +90,11 @@ def clean_name(text):
         part = text.split(",")[0]
         if len(part.split()) >= 2:  # Avoid LAST, FIRST
             text = part
-    
-    if "," in text: # Handle LAST, FIRST
+
+    if "," in text:  # Handle LAST, FIRST
         parsed = HumanName(text)
         text = f"{parsed.first} {parsed.middle} {parsed.last}"
-    
+
     text = re.sub(r"\s+", " ", text).strip()  # Condense consecutive whitespaces
     return text
 
@@ -114,7 +114,11 @@ def clean_title(text):
         or (re.search(r"(emerit)", text) is not None)
         or (
             re.search(r"(professor|lecturer|instructor|chair) of ", text) is not None
-            and re.search(r"(computer|data) science", text) is None
+            and re.search(
+                r"(professor|lecturer|instructor|chair) of ([a-z]{3,11} (and|&) )?(computer|data) science",
+                text,
+            )
+            is None
         )
     ):
         return None
@@ -158,7 +162,9 @@ def extract_url(soup, name):
         if (url := clean_url(a["href"])) is not None
     ]
     all_urls = list(set(all_urls))  # Dedup
-    all_urls = [url for url in all_urls if "email-protection" not in url]
+    all_urls = [
+        url for url in all_urls if re.search(r"(email-protection|/map)", url) is None
+    ]
 
     n = len(all_urls)
     if n == 0:
@@ -262,6 +268,7 @@ faculty_scraper_map = {
         lambda t: t.name == "table" and soup_has_class(t, "deptmember")
     ),
     College.VASSAR: scrape_class_f("node--faculty--teaser"),
+    College.WABASH: scrape_class_f("employee"),
     College.WELLESLEY: scrape_class_f("listing-profile"),
     College.WESLEYAN: scrape_wesleyan_college,
     College.WILLIAMS: scrape_f(lambda t: t.name == "td" and not t.attrs),
