@@ -75,8 +75,8 @@ def create_faculty(name, title, college=None, url=None):
     }
 
 
-def extract_name(soup):
-    text = soup.get_text("||", strip=True).split("||")[0]
+def extract_name(soup, line=0):
+    text = soup.get_text("||", strip=True).split("||")[line]
     return clean_name(text)
 
 
@@ -184,11 +184,11 @@ def extract_url(soup, name):
     return min(all_urls, key=len)
 
 
-def scrape(soup, filter):
+def scrape(soup, filter, name_line=0):
     res = []
     for t in soup.find_all(filter):
         try:
-            faculty_name = extract_name(t)
+            faculty_name = extract_name(t, line=name_line)
             faculty_title = extract_title(t)
             faculty_url = extract_url(t, faculty_name)
             if faculty_name is None or faculty_title is None:
@@ -202,8 +202,8 @@ def scrape(soup, filter):
     return res
 
 
-def scrape_f(filter):
-    return lambda soup: scrape(soup, filter)
+def scrape_f(filter, **kwargs):
+    return lambda soup: scrape(soup, filter, **kwargs)
 
 
 def soup_has_class(soup_tag, classname):
@@ -214,8 +214,8 @@ def soup_has_class_stub(soup_tag, class_stub):
     return any(class_stub in classname for classname in soup_tag.attrs.get("class", []))
 
 
-def scrape_class_f(classname):
-    return scrape_f(lambda soup: soup_has_class(soup, classname))
+def scrape_class_f(classname, **kwargs):
+    return scrape_f(lambda soup: soup_has_class(soup, classname), **kwargs)
 
 
 def scrape_wesleyan_college(soup):
@@ -243,6 +243,7 @@ faculty_scraper_map = {
         lambda t: t.name == "li" and soup_has_class(t.parent, "staffList")
     ),
     College.BARD: scrape_class_f("multitext"),
+    College.BARNARD: scrape_class_f("c--featured-person", name_line=1),
     College.BOWDOIN: scrape_class_f("profile-card"),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
