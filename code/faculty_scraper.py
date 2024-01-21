@@ -229,8 +229,11 @@ def soup_has_class_stub(soup_tag, class_stub):
     return any(class_stub in classname for classname in soup_tag.attrs.get("class", []))
 
 
-def scrape_class_f(classname, **kwargs):
-    return scrape_f(lambda soup: soup_has_class(soup, classname), **kwargs)
+def scrape_class_f(*classnames, **kwargs):
+    return scrape_f(
+        lambda soup: all([soup_has_class(soup, classname) for classname in classnames]),
+        **kwargs,
+    )
 
 
 def scrape_wesleyan_college(soup):
@@ -267,6 +270,7 @@ faculty_scraper_map = {
         and soup_has_class(t.parent, "stafflink_smallscreen_container")
     ),
     College.BOWDOIN: scrape_class_f("profile-card"),
+    College.BRIDGEWATER: scrape_class_f("faculty-page-card", "math-computer-science"),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
         and (h3 := t.parent.find_previous_sibling("h3")) is not None
@@ -333,7 +337,7 @@ def get_faculty_list(df, selenium_backup=False):
         options = webdriver.ChromeOptions()
         options.add_argument("--headless=new")
         driver = webdriver.Chrome(service=service, options=options)
-    
+
     print("Fetching from urls...")
     results = fetch_all_urls(urls)
 
@@ -359,7 +363,8 @@ def get_faculty_list(df, selenium_backup=False):
                 f["college"] = name
             faculty_list.extend(faculty)
 
-    driver.quit()
+    if selenium_backup:
+        driver.quit()
 
     print("Post-processing...")
     output = pd.DataFrame(faculty_list).drop_duplicates()
@@ -371,11 +376,14 @@ def get_faculty_list(df, selenium_backup=False):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Script for scraping faculty.')
-    parser.add_argument('--selenium-backup', action='store_true',
-                        help='Use Selenium in case a college does not have any results. (Default: Disabled)')
+    parser = argparse.ArgumentParser(description="Script for scraping faculty.")
+    parser.add_argument(
+        "--selenium-backup",
+        action="store_true",
+        help="Use Selenium in case a college does not have any results. (Default: Disabled)",
+    )
     args = parser.parse_args()
-    
+
     df = get_valid_colleges("../data/colleges.csv")
     df = df[df["Name"].isin(faculty_scraper_map.keys())]
     print(get_faculty_list(df, selenium_backup=args.selenium_backup).to_string())
