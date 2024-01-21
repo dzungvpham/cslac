@@ -96,7 +96,9 @@ def clean_name(text):
         if len(part.split()) >= 2:  # Avoid LAST, FIRST
             text = part
 
-    if "," in text or re.match(r"^\s*Dr.", text) is not None:  # Handle LAST, FIRST and Dr.
+    if (
+        "," in text or re.match(r"^\s*Dr.", text) is not None
+    ):  # Handle LAST, FIRST and Dr.
         parsed = HumanName(text)
         text = f"{parsed.first} {parsed.middle} {parsed.last}"
 
@@ -255,6 +257,10 @@ faculty_scraper_map = {
     College.BEREA: scrape_class_f("not-prose"),
     College.BOWDOIN: scrape_class_f("profile-card"),
     College.BETHANY: scrape_class_f("sp-team-pro-item"),
+    College.BETHANY_LUTHERAN: scrape_f(
+        lambda t: t.name == "div"
+        and soup_has_class(t.parent, "stafflink_smallscreen_container")
+    ),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
         and (h3 := t.parent.find_previous_sibling("h3")) is not None
