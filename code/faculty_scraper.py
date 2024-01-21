@@ -1,13 +1,19 @@
+import argparse
 import pandas as pd
 import json
 import re
 import requests
+import time
 import traceback
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
 from constants import College
 from nameparser import HumanName
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from urllib.parse import urlparse
+
+WEB_DRIVER_PATH = "../driver/chromedriver.exe"
 
 
 def extract_base_url(url):
@@ -255,12 +261,12 @@ faculty_scraper_map = {
     College.BARNARD: scrape_class_f("c--featured-person", name_line=1),
     College.BELOIT: scrape_class_f("profile-card-text"),
     College.BEREA: scrape_class_f("not-prose"),
-    College.BOWDOIN: scrape_class_f("profile-card"),
     College.BETHANY: scrape_class_f("sp-team-pro-item"),
     College.BETHANY_LUTHERAN: scrape_f(
         lambda t: t.name == "div"
         and soup_has_class(t.parent, "stafflink_smallscreen_container")
     ),
+    College.BOWDOIN: scrape_class_f("profile-card"),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
         and (h3 := t.parent.find_previous_sibling("h3")) is not None
@@ -303,8 +309,13 @@ faculty_url_override_map = {
     College.WESLEYAN: "https://webapps.wesleyan.edu/wapi/v1/public/professional_information/academic_plan/COMP",
 }
 
+# Some colleges actively block requests
+use_selenium_map = {
+    College.BIRMINGHAM_SOUTHERN: True,
+}
 
-def get_faculty_list(df):
+
+def get_faculty_list(df, selenium_backup=False):
     names = df["Name"].tolist()
     urls = df["Faculty Link"].tolist()
 
@@ -317,19 +328,38 @@ def get_faculty_list(df):
     name_to_url_map = {name: url for name, url in zip(names, urls)}
     faculty_list = []
 
+    if selenium_backup:
+        service = Service(executable_path=WEB_DRIVER_PATH)
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless=new")
+        driver = webdriver.Chrome(service=service, options=options)
+    
     print("Fetching from urls...")
     results = fetch_all_urls(urls)
 
     print("Parsing...")
-    for name, text in zip(names, results):
+    for name, text, url in zip(names, results, urls):
         if text is None or name not in faculty_scraper_map:
             continue
         print(f"Parsing {name}...")
         soup = BeautifulSoup(text, features="html.parser")
         faculty = faculty_scraper_map[name](soup)
-        for f in faculty:
-            f["college"] = name
-        faculty_list.extend(faculty)
+
+        if len(faculty) > 0:
+            for f in faculty:
+                f["college"] = name
+            faculty_list.extend(faculty)
+        elif selenium_backup and name in use_selenium_map:
+            print(f"Retrying {name} with Selenium...")
+            driver.get(url)
+            time.sleep(10)
+            soup = BeautifulSoup(driver.page_source, features="html.parser")
+            faculty = faculty_scraper_map[name](soup)
+            for f in faculty:
+                f["college"] = name
+            faculty_list.extend(faculty)
+
+    driver.quit()
 
     print("Post-processing...")
     output = pd.DataFrame(faculty_list).drop_duplicates()
@@ -341,6 +371,11 @@ def get_faculty_list(df):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Script for scraping faculty.')
+    parser.add_argument('--selenium-backup', action='store_true',
+                        help='Use Selenium in case a college does not have any results. (Default: Disabled)')
+    args = parser.parse_args()
+    
     df = get_valid_colleges("../data/colleges.csv")
     df = df[df["Name"].isin(faculty_scraper_map.keys())]
-    print(get_faculty_list(df).to_string())
+    print(get_faculty_list(df, selenium_backup=args.selenium_backup).to_string())
