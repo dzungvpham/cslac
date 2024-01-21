@@ -121,7 +121,7 @@ def clean_title(text):
         or (
             re.search(r"(professor|lecturer|instructor|chair) of ", text) is not None
             and re.search(
-                r"(professor|lecturer|instructor|chair) of ([a-z]{3,11} (and|&) )?(computer|data) science",
+                r"(professor|lecturer|instructor|chair) of ([a-z]{3,11} (and|&) )?((computer|data) science|cybersecurity)",
                 text,
             )
             is None
@@ -254,6 +254,7 @@ faculty_scraper_map = {
     College.BELOIT: scrape_class_f("profile-card-text"),
     College.BEREA: scrape_class_f("not-prose"),
     College.BOWDOIN: scrape_class_f("profile-card"),
+    College.BETHANY: scrape_class_f("sp-team-pro-item"),
     College.BRYN_MAWR: scrape_f(
         lambda t: t.name == "li"
         and (h3 := t.parent.find_previous_sibling("h3")) is not None
