@@ -127,9 +127,9 @@ def clean_title(text):
         (re.search(r"(professor|centennial|lecturer|instructor)", text) is None)
         or (re.search(r"(emerit)", text) is not None)
         or (
-            re.search(r"(professor|lecturer|instructor|chair) of ", text) is not None
+            re.search(r"(professor|lecturer|instructor|chair|director) of ", text) is not None
             and re.search(
-                r"(professor|lecturer|instructor|chair) of ([a-z]{3,11}\s?(,|and|&) )?((computer|data|information) science|cybersecurity)",
+                r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer|data|information) (science|cybersecurity|engineering))",
                 text,
             )
             is None
@@ -279,7 +279,10 @@ faculty_scraper_map = {
     ),
     College.BUCKNELL: scrape_class_f("fac-staff-details"),
     College.CARLETON: scrape_class_f("faculty-staff--item"),
+    College.CENTRAL: scrape_class_f("staffListing"),
+    College.CENTRE: scrape_class_f("block-head"),
     College.COLGATE: scrape_class_f("faculty-staff__list-member"),
+    College.CLAFLIN: scrape_class_f("profile"),
     College.DEPAUW: scrape_f(
         lambda t: soup_has_class(t, "row")
         and t.parent.find_previous_sibling("h2") is None
@@ -389,4 +392,6 @@ if __name__ == "__main__":
 
     df = get_valid_colleges("../data/colleges.csv")
     df = df[df["Name"].isin(faculty_scraper_map.keys())]
-    print(get_faculty_list(df, selenium_backup=args.selenium_backup).to_string())
+    results = get_faculty_list(df, selenium_backup=args.selenium_backup)
+    print(results.to_string())
+    print(results.groupby(["college"]).size().to_string())
