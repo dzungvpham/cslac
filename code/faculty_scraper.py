@@ -129,7 +129,7 @@ def clean_title(text):
         or (
             re.search(r"(professor|lecturer|instructor|chair) of ", text) is not None
             and re.search(
-                r"(professor|lecturer|instructor|chair) of ([a-z]{3,11}\s?(,|and|&) )?((computer|data) science|cybersecurity)",
+                r"(professor|lecturer|instructor|chair) of ([a-z]{3,11}\s?(,|and|&) )?((computer|data|information) science|cybersecurity)",
                 text,
             )
             is None
@@ -254,7 +254,7 @@ def scrape_wesleyan_college(soup):
 faculty_scraper_map = {
     College.ALBION: scrape_class_f("list--person"),
     College.ALBRIGHT: scrape_class_f("faculty-item"),
-    College.ALLEGHENY: scrape_class_f("emp"),
+    College.ALLEGHENY: scrape_class_f("col-md-4"),
     College.AMHERST: scrape_class_f("faculty_listing_small"),
     College.AUGUSTANA: scrape_class_f("profile-list-item__details"),
     College.AUSTIN: scrape_f(
@@ -363,6 +363,8 @@ def get_faculty_list(df, selenium_backup=False):
             for f in faculty:
                 f["college"] = name
             faculty_list.extend(faculty)
+        else:
+            print(f"No faculty found for {name}!")
 
     if selenium_backup:
         driver.quit()
