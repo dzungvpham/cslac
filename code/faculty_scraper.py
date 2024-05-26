@@ -19,10 +19,14 @@ WEB_DRIVER_PATH = "../driver/chromedriver.exe"
 def get_full_faculty_url(faculty_site_url, url):
     if url is None:
         return None
-    faculty_site_url = urlparse(faculty_site_url)
-    base_url = f"{faculty_site_url.scheme}://{faculty_site_url.hostname}"
+    if faculty_site_url.endswith("/"):
+        faculty_site_url = faculty_site_url[:-1]
+    parsed_url = urlparse(faculty_site_url)
+    base_url = f"{parsed_url.scheme}://{parsed_url.hostname}"
     if url.startswith("/"):
         return base_url + url
+    elif url.startswith("./"):
+        return faculty_site_url + url[1:]
     elif "/" not in url:
         return base_url + "/" + url
     return url
@@ -122,7 +126,8 @@ def clean_title(text):
         (re.search(r"(professor|centennial|lecturer|instructor)", text) is None)
         or (re.search(r"(emerit)", text) is not None)
         or (
-            re.search(r"(professor|lecturer|instructor|chair|director) of ", text) is not None
+            re.search(r"(professor|lecturer|instructor|chair|director) of ", text)
+            is not None
             and re.search(
                 r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer|data|information) (science|cybersecurity|engineering))",
                 text,
@@ -232,8 +237,20 @@ def scrape_class_f(*classnames, **kwargs):
 
 
 def scrape_coe_college(soup):
-    col = soup.find(lambda s: "col-beta" in s.attrs.get("class", []))
-    parts = [BeautifulSoup(s, features="html.parser") for s in col.prettify().split("<hr/>")]    
+    col = soup.find(lambda s: soup_has_class(s, "col-beta"))
+    parts = [
+        BeautifulSoup(s, features="html.parser") for s in col.prettify().split("<hr/>")
+    ]
+    return scrape(parts)
+
+
+def scrape_holy_cross(soup):
+    col = soup.find(lambda s: soup_has_class(s, "prose")).div
+    delimiter = "<h3>\n  <strong>\n"
+    parts = [
+        BeautifulSoup(delimiter + s, features="html.parser")
+        for s in col.prettify(formatter="minimal").split(delimiter)
+    ]
     return scrape(parts)
 
 
@@ -284,8 +301,12 @@ faculty_scraper_map = {
     College.CENTRE: scrape_class_f("block-head"),
     College.COLGATE: scrape_class_f("faculty-staff__list-member"),
     College.COE: scrape_coe_college,
-    College.COLBY: scrape_f(lambda t: t.name == "td" and t.attrs is not None and len(t.attrs) > 0),
+    College.COLBY: scrape_f(
+        lambda t: t.name == "td" and t.attrs is not None and len(t.attrs) > 0
+    ),
     College.CLAFLIN: scrape_class_f("profile"),
+    College.ST_BENEDICT: scrape_f(lambda t: t.name == "h5"),
+    College.HOLY_CROSS: scrape_holy_cross,
     College.DEPAUW: scrape_f(
         lambda t: soup_has_class(t, "row")
         and t.parent.find_previous_sibling("h2") is None
@@ -378,7 +399,8 @@ def get_faculty_list(df, selenium_backup=False):
     print("Post-processing...")
     output = pd.DataFrame(faculty_list).drop_duplicates()
     output["url"] = output.apply(
-        lambda row: get_full_faculty_url(name_to_url_map[row["college"]], row["url"]), axis=1
+        lambda row: get_full_faculty_url(name_to_url_map[row["college"]], row["url"]),
+        axis=1,
     )
 
     return output
