@@ -199,9 +199,9 @@ def extract_url(soup, name):
     return min(all_urls, key=len)
 
 
-def scrape(soup, filter, name_line=0):
+def scrape(soup_parts, name_line=0):
     res = []
-    for t in soup.find_all(filter):
+    for t in soup_parts:
         try:
             faculty_name = extract_name(t, line=name_line)
             faculty_title = extract_title(t)
@@ -218,7 +218,7 @@ def scrape(soup, filter, name_line=0):
 
 
 def scrape_f(filter, **kwargs):
-    return lambda soup: scrape(soup, filter, **kwargs)
+    return lambda soup: scrape(soup.find_all(filter), **kwargs)
 
 
 def soup_has_class(soup_tag, classname):
@@ -234,6 +234,12 @@ def scrape_class_f(*classnames, **kwargs):
         lambda soup: all([soup_has_class(soup, classname) for classname in classnames]),
         **kwargs,
     )
+
+
+def scrape_coe_college(soup):
+    col = soup.find(lambda s: "col-beta" in s.attrs.get("class", []))
+    parts = [BeautifulSoup(s, features="html.parser") for s in col.prettify().split("<hr/>")]    
+    return scrape(parts)
 
 
 def scrape_wesleyan_college(soup):
@@ -282,6 +288,7 @@ faculty_scraper_map = {
     College.CENTRAL: scrape_class_f("staffListing"),
     College.CENTRE: scrape_class_f("block-head"),
     College.COLGATE: scrape_class_f("faculty-staff__list-member"),
+    College.COE: scrape_coe_college,
     College.CLAFLIN: scrape_class_f("profile"),
     College.DEPAUW: scrape_f(
         lambda t: soup_has_class(t, "row")
