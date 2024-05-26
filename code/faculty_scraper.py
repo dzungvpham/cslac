@@ -276,7 +276,7 @@ faculty_scraper_map = {
     College.AMHERST: scrape_class_f("faculty_listing_small"),
     College.AUGUSTANA: scrape_class_f("profile-list-item__details"),
     College.AUSTIN: scrape_f(
-        lambda t: t.name == "li" and soup_has_class(t.parent, "staffList")
+        lambda s: s.name == "li" and soup_has_class(s.parent, "staffList")
     ),
     College.BARD: scrape_class_f("multitext"),
     College.BARNARD: scrape_class_f("c--featured-person", name_line=1),
@@ -284,15 +284,15 @@ faculty_scraper_map = {
     College.BEREA: scrape_class_f("not-prose"),
     College.BETHANY: scrape_class_f("sp-team-pro-item"),
     College.BETHANY_LUTHERAN: scrape_f(
-        lambda t: t.name == "div"
-        and soup_has_class(t.parent, "stafflink_smallscreen_container")
+        lambda s: s.name == "div"
+        and soup_has_class(s.parent, "stafflink_smallscreen_container")
     ),
     College.BOWDOIN: scrape_class_f("profile-card"),
     College.BRIDGEWATER: scrape_class_f("faculty-page-card", "math-computer-science"),
-    College.BRYN_ATHYN: scrape_f(lambda t: t.name == "tr"),
+    College.BRYN_ATHYN: scrape_f(lambda s: s.name == "tr"),
     College.BRYN_MAWR: scrape_f(
-        lambda t: t.name == "li"
-        and (h3 := t.parent.find_previous_sibling("h3")) is not None
+        lambda s: s.name == "li"
+        and (h3 := s.parent.find_previous_sibling("h3")) is not None
         and h3.text == "Faculty"
     ),
     College.BUCKNELL: scrape_class_f("fac-staff-details"),
@@ -302,22 +302,28 @@ faculty_scraper_map = {
     College.COLGATE: scrape_class_f("faculty-staff__list-member"),
     College.COE: scrape_coe_college,
     College.COLBY: scrape_f(
-        lambda t: t.name == "td" and t.attrs is not None and len(t.attrs) > 0
+        lambda s: s.name == "td" and s.attrs is not None and len(s.attrs) > 0
     ),
     College.CLAFLIN: scrape_class_f("profile"),
-    College.ST_BENEDICT: scrape_f(lambda t: t.name == "h5"),
+    College.ST_BENEDICT: scrape_f(lambda s: s.name == "h5"),
     College.HOLY_CROSS: scrape_holy_cross,
+    College.WOOSTER: scrape_class_f("person-entry"),
+    College.COLORADO: scrape_class_f("panel-content"),
+    College.CONCORDIA: scrape_class_f("directory_item_header"),
+    College.CONNECTICUT: scrape_f(lambda s: s.name == "a" and s.h3 is not None),
+    College.CORNELL: scrape_class_f("b-text"),
+    College.COVENANT: scrape_f(lambda s: s.name == "tr"),
     College.DEPAUW: scrape_f(
-        lambda t: soup_has_class(t, "row")
-        and t.parent.find_previous_sibling("h2") is None
+        lambda s: soup_has_class(s, "row")
+        and s.parent.find_previous_sibling("h2") is None
     ),
     College.GRINNEL: scrape_class_f("user__content"),
     College.HARVEY_MUDD: scrape_class_f("person-details"),
     College.HAVERFORD: scrape_class_f("entity"),
     College.MACALESTER: scrape_f(
-        lambda t: soup_has_class(t, "card-body")
-        and t.find_next("h3") is not None
-        and "emerit" in t.find_next("h3").text.lower()
+        lambda s: soup_has_class(s, "card-body")
+        and s.find_next("h3") is not None
+        and "emerit" in s.find_next("h3").text.lower()
     ),
     College.MIDDLEBURY: scrape_class_f("media-object__body"),
     College.MOUNT_HOLYOKE: scrape_class_f("directory-list__result"),
@@ -326,13 +332,13 @@ faculty_scraper_map = {
     College.SMITH: scrape_class_f("teaser__content"),
     College.SWARTHMORE: scrape_class_f("c-person-detail__content"),
     College.TRINITY_C: scrape_f(
-        lambda t: t.name == "table" and soup_has_class(t, "deptmember")
+        lambda s: s.name == "table" and soup_has_class(s, "deptmember")
     ),
     College.VASSAR: scrape_class_f("node--faculty--teaser"),
     College.WABASH: scrape_class_f("employee"),
     College.WELLESLEY: scrape_class_f("listing-profile"),
     College.WESLEYAN: scrape_wesleyan_college,
-    College.WILLIAMS: scrape_f(lambda t: t.name == "td" and not t.attrs),
+    College.WILLIAMS: scrape_f(lambda s: s.name == "td" and not s.attrs),
 }
 
 # In rare cases, the faculty list is dynamically generated on the client side
