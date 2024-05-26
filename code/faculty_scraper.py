@@ -48,7 +48,11 @@ def fetch_url(url):
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
         }
-        return requests.get(url, headers=headers).text
+        r = requests.get(url, headers=headers)
+        if r.status_code == 200:
+            return r.text
+        else:
+            raise Exception(f"Status code: {r.status_code}")
     except Exception as e:
         if e.__class__.__name__ == "SSLError" and (
             url.startswith("https://www.coe.edu/")
@@ -129,7 +133,7 @@ def clean_title(text):
             re.search(r"(professor|lecturer|instructor|chair|director) of ", text)
             is not None
             and re.search(
-                r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer|data|information) (science|cybersecurity|engineering))",
+                r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer (science|cybersecurity|engineering))|(data (science|analytics))|(information science)|(bioinformatics))",
                 text,
             )
             is None
@@ -244,6 +248,18 @@ def scrape_coe_college(soup):
     return scrape(parts)
 
 
+def scrape_dickinson_college(soup):
+    j = json.loads(soup.text)
+    faculty_list = [f for p in j for f in p["FACULTY"]]
+    res = []
+    for faculty in faculty_list:
+        faculty_name = clean_name(faculty["NAME"])
+        faculty_title = clean_title(faculty["TITLE"])
+        faculty_url = faculty["PROFILE"]
+        res.append(create_faculty(faculty_name, faculty_title, url=faculty_url))
+    return res
+
+
 def scrape_holy_cross(soup):
     col = soup.find(lambda s: soup_has_class(s, "prose")).div
     delimiter = "<h3>\n  <strong>\n"
@@ -313,10 +329,14 @@ faculty_scraper_map = {
     College.CONNECTICUT: scrape_f(lambda s: s.name == "a" and s.h3 is not None),
     College.CORNELL: scrape_class_f("b-text"),
     College.COVENANT: scrape_f(lambda s: s.name == "tr"),
+    College.DAVIDSON: scrape_class_f("person-teaser__content"),
+    College.DENISON: scrape_class_f("people"),
     College.DEPAUW: scrape_f(
         lambda s: soup_has_class(s, "row")
         and s.parent.find_previous_sibling("h2") is None
     ),
+    College.DICKINSON: scrape_dickinson_college,
+    College.DREW: scrape_class_f("et_pb_accordion_item"),
     College.GRINNEL: scrape_class_f("user__content"),
     College.HARVEY_MUDD: scrape_class_f("person-details"),
     College.HAVERFORD: scrape_class_f("entity"),
@@ -343,6 +363,7 @@ faculty_scraper_map = {
 
 # In rare cases, the faculty list is dynamically generated on the client side
 faculty_url_override_map = {
+    College.DICKINSON: "https://www2.dickinson.edu/lis/angularJS_services/Data/facultyListsData.cfc?method=f_getDeptFaculty&dID=65",
     College.TRINITY_C: "https://internet3.trincoll.edu/pTools/DeptMembership_wp.aspx?dc=CPSC",
     College.WESLEYAN: "https://webapps.wesleyan.edu/wapi/v1/public/professional_information/academic_plan/COMP",
 }
@@ -350,7 +371,14 @@ faculty_url_override_map = {
 # Some colleges actively block requests
 use_selenium_map = {
     College.BIRMINGHAM_SOUTHERN: True,
+    College.DREW: True,
 }
+
+
+def retry_with_selenium(driver, url):
+    driver.get(url)
+    time.sleep(10)
+    return driver.page_source
 
 
 def get_faculty_list(df, selenium_backup=False):
@@ -377,22 +405,20 @@ def get_faculty_list(df, selenium_backup=False):
 
     print("Parsing...")
     for name, text, url in zip(names, results, urls):
-        if text is None or name not in faculty_scraper_map:
+        if name not in faculty_scraper_map:
             continue
+
         print(f"Parsing {name}...")
+        if text is None and selenium_backup and name in use_selenium_map:
+            print(f"Retrying {name} with Selenium...")
+            text = retry_with_selenium(driver, url)
+            if text is None:
+                continue
+        
         soup = BeautifulSoup(text, features="html.parser")
         faculty = faculty_scraper_map[name](soup)
 
         if len(faculty) > 0:
-            for f in faculty:
-                f["college"] = name
-            faculty_list.extend(faculty)
-        elif selenium_backup and name in use_selenium_map:
-            print(f"Retrying {name} with Selenium...")
-            driver.get(url)
-            time.sleep(10)
-            soup = BeautifulSoup(driver.page_source, features="html.parser")
-            faculty = faculty_scraper_map[name](soup)
             for f in faculty:
                 f["college"] = name
             faculty_list.extend(faculty)
