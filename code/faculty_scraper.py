@@ -16,19 +16,15 @@ from urllib.parse import urlparse
 WEB_DRIVER_PATH = "../driver/chromedriver.exe"
 
 
-def extract_base_url(url):
-    parsed_url = urlparse(url)
-    return f"{parsed_url.scheme}://{parsed_url.netloc}/"
-
-
-def get_full_url(faculty_url, url):
+def get_full_faculty_url(faculty_site_url, url):
     if url is None:
         return None
-    base_url = extract_base_url(faculty_url)
+    faculty_site_url = urlparse(faculty_site_url)
+    base_url = f"{faculty_site_url.scheme}://{faculty_site_url.hostname}"
     if url.startswith("/"):
-        if base_url.endswith("/"):
-            return base_url[:-1] + url
         return base_url + url
+    elif "/" not in url:
+        return base_url + "/" + url
     return url
 
 
@@ -48,17 +44,16 @@ def fetch_url(url):
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
         }
-        response = requests.get(url, headers=headers)
-        return response.text
+        return requests.get(url, headers=headers).text
     except Exception as e:
         if e.__class__.__name__ == "SSLError" and (
             url.startswith("https://www.coe.edu/")
+            or url.startswith("https://cs.colby.edu/")
             or url.startswith("https://www.westpoint.edu/")
         ):
             print(f"Retrying {url} with verify=False")
             try:
-                response = requests.get(url, verify=False)
-                return response.text
+                return requests.get(url, verify=False).text
             except Exception as e:
                 print(f"Error fetching {url}: {e}")
                 return None
@@ -289,6 +284,7 @@ faculty_scraper_map = {
     College.CENTRE: scrape_class_f("block-head"),
     College.COLGATE: scrape_class_f("faculty-staff__list-member"),
     College.COE: scrape_coe_college,
+    College.COLBY: scrape_f(lambda t: t.name == "td" and t.attrs is not None and len(t.attrs) > 0),
     College.CLAFLIN: scrape_class_f("profile"),
     College.DEPAUW: scrape_f(
         lambda t: soup_has_class(t, "row")
@@ -382,7 +378,7 @@ def get_faculty_list(df, selenium_backup=False):
     print("Post-processing...")
     output = pd.DataFrame(faculty_list).drop_duplicates()
     output["url"] = output.apply(
-        lambda row: get_full_url(name_to_url_map[row["college"]], row["url"]), axis=1
+        lambda row: get_full_faculty_url(name_to_url_map[row["college"]], row["url"]), axis=1
     )
 
     return output
