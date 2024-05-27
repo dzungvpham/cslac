@@ -130,7 +130,7 @@ def clean_title(text):
     text = re.sub(r"\s+", " ", text).strip()
     if (
         (re.search(r"(professor|centennial|lecturer|instructor)", text) is None)
-        or (re.search(r"(emerit)", text) is not None)
+        or (re.search(r"(emerit|program contact)", text) is not None)
         or (
             re.search(r"(professor|lecturer|instructor|chair|director) of ", text)
             is not None
@@ -349,7 +349,15 @@ faculty_scraper_map = {
     College.FRANKLIN: scrape_class_f("post-info", name_line=1),
     College.FRANKLIN_MARSHALL: scrape_class_f("peopleBlock"),
     College.FURMAN: scrape_class_f("module-content-block-people-group-item-contents"),
+    College.GETTYSBURG: scrape_class_f("gb-c-link-list__item"),
+    College.GORDON: scrape_class_f("facstaff-list-item"),
+    College.GOUCHER: scrape_f(
+        lambda s: s.name == "p"
+        and soup_has_class(s.parent, "user-markup")
+        and "Faculty" in s.parent.parent.find_previous_sibling("div").get_text(strip=True)
+    ),
     College.GRINNEL: scrape_class_f("user__content"),
+    College.GUSTAVUS_ADOLPHUS: scrape_class_f("person-container"),
     College.HARVEY_MUDD: scrape_class_f("person-details"),
     College.HAVERFORD: scrape_class_f("entity"),
     College.MACALESTER: scrape_f(
@@ -427,7 +435,7 @@ def get_faculty_list(df, selenium_backup=False):
                 text = retry_with_selenium(driver, url)
             if text is None:
                 continue
-        
+
         soup = BeautifulSoup(text, features="html.parser")
         faculty = faculty_scraper_map[name](soup)
 
