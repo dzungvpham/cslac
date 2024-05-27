@@ -240,6 +240,10 @@ def scrape_class_f(*classnames, **kwargs):
     )
 
 
+def scrape_tag_f(tagname, **kwargs):
+    return scrape_f(lambda s: s.name == tagname)
+
+
 def scrape_coe_college(soup):
     col = soup.find(lambda s: soup_has_class(s, "col-beta"))
     parts = [
@@ -305,7 +309,7 @@ faculty_scraper_map = {
     ),
     College.BOWDOIN: scrape_class_f("profile-card"),
     College.BRIDGEWATER: scrape_class_f("faculty-page-card", "math-computer-science"),
-    College.BRYN_ATHYN: scrape_f(lambda s: s.name == "tr"),
+    College.BRYN_ATHYN: scrape_tag_f("tr"),
     College.BRYN_MAWR: scrape_f(
         lambda s: s.name == "li"
         and (h3 := s.parent.find_previous_sibling("h3")) is not None
@@ -321,14 +325,14 @@ faculty_scraper_map = {
         lambda s: s.name == "td" and s.attrs is not None and len(s.attrs) > 0
     ),
     College.CLAFLIN: scrape_class_f("profile"),
-    College.ST_BENEDICT: scrape_f(lambda s: s.name == "h5"),
+    College.ST_BENEDICT: scrape_tag_f("h5"),
     College.HOLY_CROSS: scrape_holy_cross,
     College.WOOSTER: scrape_class_f("person-entry"),
     College.COLORADO: scrape_class_f("panel-content"),
     College.CONCORDIA: scrape_class_f("directory_item_header"),
     College.CONNECTICUT: scrape_f(lambda s: s.name == "a" and s.h3 is not None),
     College.CORNELL: scrape_class_f("b-text"),
-    College.COVENANT: scrape_f(lambda s: s.name == "tr"),
+    College.COVENANT: scrape_tag_f("tr"),
     College.DAVIDSON: scrape_class_f("person-teaser__content"),
     College.DENISON: scrape_class_f("people"),
     College.DEPAUW: scrape_f(
@@ -337,6 +341,9 @@ faculty_scraper_map = {
     ),
     College.DICKINSON: scrape_dickinson_college,
     College.DREW: scrape_class_f("et_pb_accordion_item"),
+    College.EARLHAM: scrape_tag_f("main"),
+    College.EAST_WEST: scrape_class_f("faculty-bio"),
+    College.ECKERD: scrape_class_f("wpb_content_element"),
     College.GRINNEL: scrape_class_f("user__content"),
     College.HARVEY_MUDD: scrape_class_f("person-details"),
     College.HAVERFORD: scrape_class_f("entity"),
@@ -409,9 +416,10 @@ def get_faculty_list(df, selenium_backup=False):
             continue
 
         print(f"Parsing {name}...")
-        if text is None and selenium_backup and name in use_selenium_map:
-            print(f"Retrying {name} with Selenium...")
-            text = retry_with_selenium(driver, url)
+        if text is None:
+            if selenium_backup and name in use_selenium_map:
+                print(f"Retrying {name} with Selenium...")
+                text = retry_with_selenium(driver, url)
             if text is None:
                 continue
         
