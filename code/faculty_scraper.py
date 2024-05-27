@@ -90,8 +90,10 @@ def create_faculty(name, title, college=None, url=None):
 
 
 def extract_name(soup, line=0):
-    text = soup.get_text("||", strip=True).split("||")[line]
-    return clean_name(text)
+    lines = soup.get_text("||", strip=True).split("||")
+    if len(lines) <= line:
+        return None
+    return clean_name(lines[line])
 
 
 def clean_name(text):
@@ -133,7 +135,7 @@ def clean_title(text):
             re.search(r"(professor|lecturer|instructor|chair|director) of ", text)
             is not None
             and re.search(
-                r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer (science|cybersecurity|engineering))|(data (science|analytics))|(information science)|(bioinformatics))",
+                r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer (science|cybersecurity|engineering))|(data (science|analytics))|(information science)|(bioinformatics)|(computing))",
                 text,
             )
             is None
@@ -344,6 +346,9 @@ faculty_scraper_map = {
     College.EARLHAM: scrape_tag_f("main"),
     College.EAST_WEST: scrape_class_f("faculty-bio"),
     College.ECKERD: scrape_class_f("wpb_content_element"),
+    College.FRANKLIN: scrape_class_f("post-info", name_line=1),
+    College.FRANKLIN_MARSHALL: scrape_class_f("peopleBlock"),
+    College.FURMAN: scrape_class_f("module-content-block-people-group-item-contents"),
     College.GRINNEL: scrape_class_f("user__content"),
     College.HARVEY_MUDD: scrape_class_f("person-details"),
     College.HAVERFORD: scrape_class_f("entity"),
