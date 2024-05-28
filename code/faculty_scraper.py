@@ -132,10 +132,10 @@ def clean_title(text):
         (re.search(r"(professor|centennial|lecturer|instructor)", text) is None)
         or (re.search(r"(emerit|program contact)", text) is not None)
         or (
-            re.search(r"(professor|lecturer|instructor|chair|director) of ", text)
+            re.search(r"(professor|lecturer|instructor|chair|director) (of|in) ", text)
             is not None
             and re.search(
-                r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer)|(data (science|analytics))|(information science)|(bioinformatics)|(computing))",
+                r"(professor|lecturer|instructor|chair|director) (of|in) ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer)|(data (science|analytics))|(information (science|technology))|(bioinformatics)|(computing))",
                 text,
             )
             is None
@@ -368,6 +368,8 @@ faculty_scraper_map = {
     College.HOBART_AND_WILLIAM_SMITH: scrape_class_f("listing", name_line=1),
     College.HOPE: scrape_class_f("staff-card", name_line=1),
     College.HOUGHTON: scrape_class_f("excerpt-content"),
+    College.ILLINOIS: scrape_class_f("staff"),
+    College.JUNIATA: scrape_class_f("show-for-large-up"),
     College.MACALESTER: scrape_f(
         lambda s: soup_has_class(s, "card-body")
         and s.find_next("h3") is not None
