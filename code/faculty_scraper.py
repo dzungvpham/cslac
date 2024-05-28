@@ -135,7 +135,7 @@ def clean_title(text):
             re.search(r"(professor|lecturer|instructor|chair|director) of ", text)
             is not None
             and re.search(
-                r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer (science|cybersecurity|engineering))|(data (science|analytics))|(information science)|(bioinformatics)|(computing))",
+                r"(professor|lecturer|instructor|chair|director) of ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer)|(data (science|analytics))|(information science)|(bioinformatics)|(computing))",
                 text,
             )
             is None
@@ -360,6 +360,14 @@ faculty_scraper_map = {
     College.GUSTAVUS_ADOLPHUS: scrape_class_f("person-container"),
     College.HARVEY_MUDD: scrape_class_f("person-details"),
     College.HAVERFORD: scrape_class_f("entity"),
+    College.HAMILTON: scrape_class_f("entity_info"),
+    College.HAMPDEN_SYDNEY: scrape_class_f("user-markup"),
+    College.HANOVER: scrape_class_f("staff-member"),
+    College.HARTWICK: scrape_tag_f("tr"),
+    College.HENDRIX: scrape_class_f("employeeList-info"),
+    College.HOBART_AND_WILLIAM_SMITH: scrape_class_f("listing", name_line=1),
+    College.HOPE: scrape_class_f("staff-card", name_line=1),
+    College.HOUGHTON: scrape_class_f("excerpt-content"),
     College.MACALESTER: scrape_f(
         lambda s: soup_has_class(s, "card-body")
         and s.find_next("h3") is not None
@@ -392,6 +400,7 @@ faculty_url_override_map = {
 use_selenium_map = {
     College.BIRMINGHAM_SOUTHERN: True,
     College.DREW: True,
+    College.HANOVER: True, # faculty urls are dynamically generated
 }
 
 
@@ -427,14 +436,15 @@ def get_faculty_list(df, selenium_backup=False):
     for name, text, url in zip(names, results, urls):
         if name not in faculty_scraper_map:
             continue
+        
+        if selenium_backup and name in use_selenium_map:
+            print(f"Retrying {name} with Selenium...")
+            text = retry_with_selenium(driver, url)
 
         print(f"Parsing {name}...")
         if text is None:
-            if selenium_backup and name in use_selenium_map:
-                print(f"Retrying {name} with Selenium...")
-                text = retry_with_selenium(driver, url)
-            if text is None:
-                continue
+            print("Nothing to parse!")
+            continue
 
         soup = BeautifulSoup(text, features="html.parser")
         faculty = faculty_scraper_map[name](soup)
