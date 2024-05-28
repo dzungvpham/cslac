@@ -129,7 +129,7 @@ def clean_title(text):
     text = text.lower()
     text = re.sub(r"\s+", " ", text).strip()
     if (
-        (re.search(r"(professor|centennial|lecturer|instructor)", text) is None)
+        (re.search(r"(professor|centennial|lecturer|instructor|chair)", text) is None)
         or (re.search(r"(emerit|program contact)", text) is not None)
         or (
             re.search(r"(professor|lecturer|instructor|chair|director) (of|in) ", text)
@@ -370,6 +370,8 @@ faculty_scraper_map = {
     College.HOUGHTON: scrape_class_f("excerpt-content"),
     College.ILLINOIS: scrape_class_f("staff"),
     College.JUNIATA: scrape_class_f("show-for-large-up"),
+    College.KALAMAZOO: scrape_class_f("wp-block-column"),
+    College.KNOX: scrape_class_f("contact-block-link"),
     College.MACALESTER: scrape_f(
         lambda s: soup_has_class(s, "card-body")
         and s.find_next("h3") is not None
