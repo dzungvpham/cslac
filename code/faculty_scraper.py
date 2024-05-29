@@ -11,25 +11,13 @@ from constants import College
 from nameparser import HumanName
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from urllib.parse import urlparse
+from urllib.parse import urljoin
 
 WEB_DRIVER_PATH = "../driver/chromedriver.exe"
 
 
 def get_full_faculty_url(faculty_site_url, url):
-    if url is None:
-        return None
-    if faculty_site_url.endswith("/"):
-        faculty_site_url = faculty_site_url[:-1]
-    parsed_url = urlparse(faculty_site_url)
-    base_url = f"{parsed_url.scheme}://{parsed_url.hostname}"
-    if url.startswith("/"):
-        return base_url + url
-    elif url.startswith("./"):
-        return faculty_site_url + url[1:]
-    elif "/" not in url:
-        return base_url + "/" + url
-    return url
+    return urljoin(faculty_site_url, url) if url is not None else None
 
 
 def clean_url(url):
@@ -117,29 +105,33 @@ def clean_name(text):
     return text
 
 
-def extract_title(soup):
+def extract_title(soup, include_subject=False):
     text = soup.get_text("\n", strip=True)
-    return clean_title(text)
+    return clean_title(text, include_subject=include_subject)
 
 
 # Get a valid professor title
-def clean_title(text):
+def clean_title(text, include_subject=False):
     if text is None:
         return None
     text = text.lower()
     text = re.sub(r"\s+", " ", text).strip()
+
+    position_of_regex = r"(professor|lecturer|instructor|chair|director) (of|in) "
+    subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer)|(data (science|analytics))|(information (science|technology))|(bioinformatics)|(computing))( and)?"
+
     if (
         (re.search(r"(professor|centennial|lecturer|instructor|chair)", text) is None)
         or (re.search(r"(emerit|program contact)", text) is not None)
         or (
-            re.search(r"(professor|lecturer|instructor|chair|director) (of|in) ", text)
-            is not None
+            re.search(position_of_regex, text) is not None
             and re.search(
-                r"(professor|lecturer|instructor|chair|director) (of|in) ([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer)|(data (science|analytics))|(information (science|technology))|(bioinformatics)|(computing))",
+                f"{position_of_regex}{subject_regex}",
                 text,
             )
             is None
         )
+        or (include_subject and re.search(subject_regex, text) is None)
     ):
         return None
 
@@ -205,12 +197,12 @@ def extract_url(soup, name):
     return min(all_urls, key=len)
 
 
-def scrape(soup_parts, name_line=0):
+def scrape(soup_parts, name_line=0, include_subject=False):
     res = []
     for t in soup_parts:
         try:
             faculty_name = extract_name(t, line=name_line)
-            faculty_title = extract_title(t)
+            faculty_title = extract_title(t, include_subject=include_subject)
             faculty_url = extract_url(t, faculty_name)
             if faculty_name is None or faculty_title is None:
                 continue
@@ -297,9 +289,7 @@ faculty_scraper_map = {
     College.ALLEGHENY: scrape_class_f("col-md-4"),
     College.AMHERST: scrape_class_f("faculty_listing_small"),
     College.AUGUSTANA: scrape_class_f("profile-list-item__details"),
-    College.AUSTIN: scrape_f(
-        lambda s: s.name == "li" and soup_has_class(s.parent, "staffList")
-    ),
+    College.AUSTIN: scrape_class_f("fsConstituentItem"),
     College.BARD: scrape_class_f("multitext"),
     College.BARNARD: scrape_class_f("c--featured-person", name_line=1),
     College.BELOIT: scrape_class_f("profile-card-text"),
@@ -354,7 +344,8 @@ faculty_scraper_map = {
     College.GOUCHER: scrape_f(
         lambda s: s.name == "p"
         and soup_has_class(s.parent, "user-markup")
-        and "Faculty" in s.parent.parent.find_previous_sibling("div").get_text(strip=True)
+        and "Faculty"
+        in s.parent.parent.find_previous_sibling("div").get_text(strip=True)
     ),
     College.GRINNEL: scrape_class_f("user__content"),
     College.GUSTAVUS_ADOLPHUS: scrape_class_f("person-container"),
@@ -372,6 +363,18 @@ faculty_scraper_map = {
     College.JUNIATA: scrape_class_f("show-for-large-up"),
     College.KALAMAZOO: scrape_class_f("wp-block-column"),
     College.KNOX: scrape_class_f("contact-block-link"),
+    College.LAFAYETTE: scrape_class_f("people_information"),
+    College.LAKE_FOREST: scrape_class_f("profile-box"),
+    College.LANE: scrape_class_f("body-block", include_subject=True),
+    College.LAWRENCE: scrape_class_f("views-row"),
+    College.LEWIS_CLARK: scrape_class_f("profile-list_item_text"),
+    College.LINFIELD: scrape_class_f("card-image-3up__card-copy-container"),
+    College.LUTHER: scrape_class_f("contact__details"),
+    College.LYCOMING: scrape_class_f("lyco-profile"),
+    College.LYON: scrape_f(
+        lambda s: s.name == "p" and soup_has_class(s.parent, "templatecontent"),
+        include_subject=True,
+    ),
     College.MACALESTER: scrape_f(
         lambda s: soup_has_class(s, "card-body")
         and s.find_next("h3") is not None
@@ -404,7 +407,7 @@ faculty_url_override_map = {
 use_selenium_map = {
     College.BIRMINGHAM_SOUTHERN: True,
     College.DREW: True,
-    College.HANOVER: True, # faculty urls are dynamically generated
+    College.HANOVER: True,  # faculty urls are dynamically generated
 }
 
 
@@ -440,7 +443,7 @@ def get_faculty_list(df, selenium_backup=False):
     for name, text, url in zip(names, results, urls):
         if name not in faculty_scraper_map:
             continue
-        
+
         if selenium_backup and name in use_selenium_map:
             print(f"Retrying {name} with Selenium...")
             text = retry_with_selenium(driver, url)
