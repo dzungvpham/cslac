@@ -118,7 +118,7 @@ def clean_title(text, include_subject=False):
     text = re.sub(r"\s+", " ", text).strip()
 
     position_of_regex = r"(professor|lecturer|instructor|chair|director) (of|in) "
-    subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?((computer)|(data (science|analytics))|(information (science|technology))|(bioinformatics)|(computing))( and)?"
+    subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology))|(bioinformatics)|(computing))( and)?"
 
     if (
         (re.search(r"(professor|centennial|lecturer|instructor|chair)", text) is None)
@@ -268,6 +268,16 @@ def scrape_holy_cross(soup):
     return scrape(parts)
 
 
+def scrape_new_florida(soup):
+    parts = [
+        BeautifulSoup(s, features="html.parser")
+        for s in soup.find(id="facultytextcontainer")
+        .p.prettify(formatter="minimal")
+        .split("<br/>")
+    ]
+    return scrape(parts)
+
+
 def scrape_wesleyan_college(soup):
     soup = json.loads(soup.text)
     res = []
@@ -380,8 +390,15 @@ faculty_scraper_map = {
         and s.find_next("h3") is not None
         and "emerit" in s.find_next("h3").text.lower()
     ),
+    College.MARYVILLE: scrape_class_f("col-md-8"),
+    College.MEREDITH: scrape_class_f("people"),
     College.MIDDLEBURY: scrape_class_f("media-object__body"),
+    College.MONMOUTH: scrape_class_f("profile-item-text"),
     College.MOUNT_HOLYOKE: scrape_class_f("directory-list__result"),
+    College.MUHLENBERG: lambda s: scrape_tag_f("tr")(
+        s.find(lambda ss: ss.name == "table")
+    ),
+    College.NEW_FLORIDA: scrape_new_florida,
     College.OBERLIN: scrape_class_f("biography-grid-item"),
     College.POMONA: scrape_class_f("text-brown-300"),
     College.SMITH: scrape_class_f("teaser__content"),
