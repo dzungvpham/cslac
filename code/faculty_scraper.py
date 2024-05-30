@@ -235,7 +235,7 @@ def scrape_class_f(*classnames, **kwargs):
 
 
 def scrape_tag_f(tagname, **kwargs):
-    return scrape_f(lambda s: s.name == tagname)
+    return scrape_f(lambda s: s.name == tagname, **kwargs)
 
 
 def scrape_coe_college(soup):
@@ -400,6 +400,8 @@ faculty_scraper_map = {
     ),
     College.NEW_FLORIDA: scrape_new_florida,
     College.OBERLIN: scrape_class_f("biography-grid-item"),
+    College.OCCIDENTAL: scrape_class_f("profile-details"),
+    College.OHIO_WESLEYAN: scrape_class_f("text_image_callout_content"),
     College.POMONA: scrape_class_f("text-brown-300"),
     College.SMITH: scrape_class_f("teaser__content"),
     College.SWARTHMORE: scrape_class_f("c-person-detail__content"),
