@@ -403,6 +403,12 @@ faculty_scraper_map = {
     College.OCCIDENTAL: scrape_class_f("profile-details"),
     College.OHIO_WESLEYAN: scrape_class_f("text_image_callout_content"),
     College.POMONA: scrape_class_f("text-brown-300"),
+    College.PRESBYTERIAN: scrape_class_f("wpb_column"),
+    College.RANDOLPH: scrape_class_f("faculty-member"),
+    College.RANDOLPH_MACON: scrape_class_f("wp-block-rmc-profile-info"),
+    College.REED: scrape_tag_f("tr"),
+    College.RHODES: scrape_class_f("member-info"),
+    College.ROANOKE: scrape_f(lambda s: soup_has_class(s, "space-y-4") and s.parent.name == "section"),
     College.SMITH: scrape_class_f("teaser__content"),
     College.SWARTHMORE: scrape_class_f("c-person-detail__content"),
     College.TRINITY_C: scrape_f(
@@ -427,6 +433,7 @@ use_selenium_map = {
     College.BIRMINGHAM_SOUTHERN: True,
     College.DREW: True,
     College.HANOVER: True,  # faculty urls are dynamically generated
+    College.PRESBYTERIAN: True,
 }
 
 
