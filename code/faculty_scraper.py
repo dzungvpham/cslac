@@ -102,6 +102,8 @@ def clean_name(text):
         text = f"{parsed.first} {parsed.middle} {parsed.last}"
 
     text = re.sub(r"\s+", " ", text).strip()  # Condense consecutive whitespaces
+    if len(text) < 3:
+        return None
     return text
 
 
@@ -185,6 +187,8 @@ def extract_url(soup, name):
         return None
     elif n == 1:
         return all_urls[0]
+    elif name is None:
+        return None
 
     parsed_name = HumanName(name)
     first_name = parsed_name.first.lower()
@@ -409,7 +413,19 @@ faculty_scraper_map = {
     College.REED: scrape_tag_f("tr"),
     College.RHODES: scrape_class_f("member-info"),
     College.ROANOKE: scrape_f(lambda s: soup_has_class(s, "space-y-4") and s.parent.name == "section"),
+    College.SAINT_ANSELM: scrape_class_f("o-card__content"),
+    College.SAINT_MICHAEL: scrape_class_f("inner", name_line=1),
+    College.SKIDMORE: scrape_class_f("row"),
     College.SMITH: scrape_class_f("teaser__content"),
+    College.SOUTHERN_VIRGINIA: scrape_class_f("bio-card"),
+    College.SOUTHWESTERN: scrape_class_f("inpage-search-result__item-data", name_line=1),
+    College.ST_JOHN: scrape_f(lambda s: soup_has_class(s, "nobottommargin") and s.name == "h5"),
+    College.ST_LAWRENCE: scrape_class_f("department-item"),
+    College.ST_MARY_MD: scrape_class_f("views-row"),
+    College.ST_NORBERT: scrape_class_f("faculty-ind"),
+    College.ST_OLAF: scrape_class_f("c-faculty__info"),
+    College.STONEHILL: scrape_tag_f("li"),
+    College.SUSQUEHANNA: scrape_class_f("faculty-profile"),
     College.SWARTHMORE: scrape_class_f("c-person-detail__content"),
     College.TRINITY_C: scrape_f(
         lambda s: s.name == "table" and soup_has_class(s, "deptmember")
