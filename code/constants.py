@@ -126,7 +126,7 @@ class College(StrEnum):
     TRANSYLVANIA = "Transylvania University"
     TRINITY_C = "Trinity College"
     TRINITY_U = "Trinity University"
-    UNION_COLLEGE = "Union College (NY)"
+    UNION = "Union College (NY)"
     US_AIR_FORCE = "United States Air Force Academy"
     US_MILITARY_WEST = "United States Military Academy at West Point"
     US_NAVAL = "United States Naval Academy"

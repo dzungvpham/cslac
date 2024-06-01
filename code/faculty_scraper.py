@@ -77,11 +77,17 @@ def create_faculty(name, title, college=None, url=None):
     }
 
 
-def extract_name(soup, line=0):
+def extract_name(soup, line=0):    
     lines = soup.get_text("||", strip=True).split("||")
-    if len(lines) <= line:
-        return None
-    return clean_name(lines[line])
+    if type(line).__name__ == "int":
+        if len(lines) <= line:
+            return None
+        return clean_name(lines[line])
+    else:
+        name = ""
+        for l in line:
+            name += lines[l].strip() + " "
+        return clean_name(name[:-1])
 
 
 def clean_name(text):
@@ -120,7 +126,7 @@ def clean_title(text, include_subject=False):
     text = re.sub(r"\s+", " ", text).strip()
 
     position_of_regex = r"(professor|lecturer|instructor|chair|director) (of|in) "
-    subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology))|(bioinformatics)|(computing))( and)?"
+    subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering))( and)?"
 
     if (
         (re.search(r"(professor|centennial|lecturer|instructor|chair)", text) is None)
@@ -412,14 +418,20 @@ faculty_scraper_map = {
     College.RANDOLPH_MACON: scrape_class_f("wp-block-rmc-profile-info"),
     College.REED: scrape_tag_f("tr"),
     College.RHODES: scrape_class_f("member-info"),
-    College.ROANOKE: scrape_f(lambda s: soup_has_class(s, "space-y-4") and s.parent.name == "section"),
+    College.ROANOKE: scrape_f(
+        lambda s: soup_has_class(s, "space-y-4") and s.parent.name == "section"
+    ),
     College.SAINT_ANSELM: scrape_class_f("o-card__content"),
     College.SAINT_MICHAEL: scrape_class_f("inner", name_line=1),
     College.SKIDMORE: scrape_class_f("row"),
     College.SMITH: scrape_class_f("teaser__content"),
     College.SOUTHERN_VIRGINIA: scrape_class_f("bio-card"),
-    College.SOUTHWESTERN: scrape_class_f("inpage-search-result__item-data", name_line=1),
-    College.ST_JOHN: scrape_f(lambda s: soup_has_class(s, "nobottommargin") and s.name == "h5"),
+    College.SOUTHWESTERN: scrape_class_f(
+        "inpage-search-result__item-data", name_line=1
+    ),
+    College.ST_JOHN: scrape_f(
+        lambda s: soup_has_class(s, "nobottommargin") and s.name == "h5"
+    ),
     College.ST_LAWRENCE: scrape_class_f("department-item"),
     College.ST_MARY_MD: scrape_class_f("views-row"),
     College.ST_NORBERT: scrape_class_f("faculty-ind"),
@@ -427,9 +439,27 @@ faculty_scraper_map = {
     College.STONEHILL: scrape_tag_f("li"),
     College.SUSQUEHANNA: scrape_class_f("faculty-profile"),
     College.SWARTHMORE: scrape_class_f("c-person-detail__content"),
+    College.TOUGALOO: scrape_tag_f("p"),
+    College.TRANSYLVANIA: scrape_class_f("innerwrap"),
     College.TRINITY_C: scrape_f(
         lambda s: s.name == "table" and soup_has_class(s, "deptmember")
     ),
+    College.TRINITY_U: scrape_class_f("paragraph--type--faculty-staff"),
+    College.UNION: lambda s: scrape_tag_f("li")(
+        s.find("div", class_="body-section__inner").ul
+    ),
+    College.MARY_WASHINGTON: scrape_class_f("individual-employee"),
+    College.MINNESOTA_MORRIS: scrape_f(
+        lambda s: s.name == "a"
+        and s.div is not None
+        and soup_has_class(s.div, "related-wrapper")
+    ),
+    College.NORTH_CAROLINA_ASHEVILLE: scrape_class_f("directory-entry"),
+    College.PUGET_SOUND: scrape_class_f("field-content"),
+    College.RICHMOND: scrape_class_f("card"),
+    College.SOUTH: scrape_class_f("topic_row"),
+    College.VIRGINIA_WISE: scrape_class_f("node--type__person--nametag", name_line=[0, 1]),
+    College.URSINUS: scrape_class_f("lw_profiles_type_faculty"),
     College.VASSAR: scrape_class_f("node--faculty--teaser"),
     College.WABASH: scrape_class_f("employee"),
     College.WELLESLEY: scrape_class_f("listing-profile"),
