@@ -102,12 +102,14 @@ def clean_name(text):
             text = part
 
     if (
-        "," in text or re.match(r"^\s*(Dr.|Lt. Col.|Col.|Maj.|Mr.|Mrs.)", text) is not None
+        "," in text or re.match(r"^\s*(Dr.|Lt. Col.|Col.|Maj.|Mr.|Mrs.|Ms.)", text) is not None
     ):  # Handle LAST, FIRST and Dr.
         parsed = HumanName(text)
         text = f"{parsed.first} {parsed.middle} {parsed.last}"
 
     text = re.sub(r"\s+", " ", text).strip()  # Condense consecutive whitespaces
+    text = re.sub(r"\u2019", "'", text) # Get rid of UTF quotation
+    text = re.sub(r"\u200b", "", text) # Get rid of zero-width space
     if len(text) < 3:
         return None
     return text
@@ -263,6 +265,8 @@ def scrape_dickinson_college(soup):
     for faculty in faculty_list:
         faculty_name = clean_name(faculty["NAME"])
         faculty_title = clean_title(faculty["TITLE"])
+        if faculty_name is None or faculty_title is None:
+            continue
         faculty_url = faculty["PROFILE"]
         res.append(create_faculty(faculty_name, faculty_title, url=faculty_url))
     return res
@@ -343,7 +347,7 @@ faculty_scraper_map = {
     College.COLGATE: scrape_class_f("faculty-staff__list-member"),
     College.COE: scrape_coe_college,
     College.COLBY: scrape_f(
-        lambda s: s.name == "td" and s.attrs is not None and len(s.attrs) > 0
+        lambda s: s.name == "td" and s.attrs is not None and "width" in s.attrs
     ),
     College.CLAFLIN: scrape_class_f("profile"),
     College.ST_BENEDICT: scrape_tag_f("h5"),
@@ -586,3 +590,4 @@ if __name__ == "__main__":
     results = get_faculty_list(df, selenium_backup=args.selenium_backup)
     print(results.to_string())
     print(results.groupby(["college"]).size().to_string())
+    results.to_csv("../data/faculty_list.csv", index=False)
