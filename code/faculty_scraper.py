@@ -318,6 +318,7 @@ faculty_scraper_map = {
     College.AMHERST: scrape_class_f("faculty_listing_small"),
     College.AUGUSTANA: scrape_class_f("profile-list-item__details"),
     College.AUSTIN: scrape_class_f("fsConstituentItem"),
+    College.AVE_MARIA: scrape_class_f("w-layout-cell"),
     College.BARD: scrape_class_f("multitext"),
     College.BARNARD: scrape_class_f("c--featured-person", name_line=1),
     College.BELOIT: scrape_class_f("profile-card-text"),
