@@ -77,7 +77,7 @@ def create_faculty(name, title, college=None, url=None):
     }
 
 
-def extract_name(soup, line=0):    
+def extract_name(soup, line=0):
     lines = soup.get_text("||", strip=True).split("||")
     if type(line).__name__ == "int":
         if len(lines) <= line:
@@ -102,7 +102,7 @@ def clean_name(text):
             text = part
 
     if (
-        "," in text or re.match(r"^\s*Dr.", text) is not None
+        "," in text or re.match(r"^\s*(Dr.|Lt. Col.|Col.|Maj.|Mr.|Mrs.)", text) is not None
     ):  # Handle LAST, FIRST and Dr.
         parsed = HumanName(text)
         text = f"{parsed.first} {parsed.middle} {parsed.last}"
@@ -125,11 +125,11 @@ def clean_title(text, include_subject=False):
     text = text.lower()
     text = re.sub(r"\s+", " ", text).strip()
 
-    position_of_regex = r"(professor|lecturer|instructor|chair|director) (of|in) "
-    subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering))( and)?"
+    position_of_regex = r"(prof.|professor|lecturer|instructor|chair|director) (of|in) "
+    subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering)|(cyber))( and)?"
 
     if (
-        (re.search(r"(professor|centennial|lecturer|instructor|chair)", text) is None)
+        (re.search(r"(prof.|professor|centennial|lecturer|instructor|chair)", text) is None)
         or (re.search(r"(emerit|program contact)", text) is not None)
         or (
             re.search(position_of_regex, text) is not None
@@ -286,6 +286,14 @@ def scrape_new_florida(soup):
         .split("<br/>")
     ]
     return scrape(parts)
+
+
+def scrape_virginia_military(soup):
+    for tag in soup.find_all("div", class_="modal-dialog"):
+        tag.decompose()
+    return scrape_f(
+        lambda s: s.name == "div" and s.parent.get("id") == "gallerycontainer"
+    )(soup)
 
 
 def scrape_wesleyan_college(soup):
@@ -458,13 +466,28 @@ faculty_scraper_map = {
     College.PUGET_SOUND: scrape_class_f("field-content"),
     College.RICHMOND: scrape_class_f("card"),
     College.SOUTH: scrape_class_f("topic_row"),
-    College.VIRGINIA_WISE: scrape_class_f("node--type__person--nametag", name_line=[0, 1]),
+    College.VIRGINIA_WISE: scrape_class_f(
+        "node--type__person--nametag", name_line=[0, 1]
+    ),
     College.URSINUS: scrape_class_f("lw_profiles_type_faculty"),
     College.VASSAR: scrape_class_f("node--faculty--teaser"),
+    College.VIRGINIA_MILITARY: scrape_virginia_military,
+    College.VIRGINIA_WESLEYAN: scrape_class_f("directory-listing"),
     College.WABASH: scrape_class_f("employee"),
+    College.WARTBURG: scrape_class_f("wbc-person"),
+    College.WASHINGTON_LEE: scrape_class_f("person"),
+    College.WASHINGTON: scrape_class_f("contact-block"),
+    College.WASHINGTON_JEFFERSON: scrape_class_f("faculty-block"),
     College.WELLESLEY: scrape_class_f("listing-profile"),
     College.WESLEYAN: scrape_wesleyan_college,
+    College.WESTMINSTER: scrape_class_f("contact-info"),
+    College.WHEATON_IL: scrape_class_f("bm-card--faculty"),
+    College.WHEATON_MA: scrape_class_f("department-computer-science"),
+    College.WHITMAN: scrape_class_f("card"),
+    College.WILLAMETTE: scrape_class_f("card--faculty"),
     College.WILLIAMS: scrape_f(lambda s: s.name == "td" and not s.attrs),
+    College.WITTENBERG: scrape_tag_f("tr"),
+    College.WOFFORD: scrape_class_f("staff-profile"),
 }
 
 # In rare cases, the faculty list is dynamically generated on the client side
