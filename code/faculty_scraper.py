@@ -1,4 +1,5 @@
 import argparse
+import difflib
 import pandas as pd
 import json
 import re
@@ -8,10 +9,12 @@ import traceback
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
 from constants import College
+from googlesearch import search
+from mimetypes import guess_type
 from nameparser import HumanName
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 WEB_DRIVER_PATH = "../driver/chromedriver.exe"
 
@@ -34,7 +37,7 @@ def clean_url(url):
 def fetch_url(url):
     try:
         headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
         }
         r = requests.get(url, headers=headers)
         if r.status_code == 200:
@@ -102,14 +105,15 @@ def clean_name(text):
             text = part
 
     if (
-        "," in text or re.match(r"^\s*(Dr.|Lt. Col.|Col.|Maj.|Mr.|Mrs.|Ms.)", text) is not None
+        "," in text
+        or re.match(r"^\s*(Dr.|Lt. Col.|Col.|Maj.|Mr.|Mrs.|Ms.)", text) is not None
     ):  # Handle LAST, FIRST and Dr.
         parsed = HumanName(text)
         text = f"{parsed.first} {parsed.middle} {parsed.last}"
 
     text = re.sub(r"\s+", " ", text).strip()  # Condense consecutive whitespaces
-    text = re.sub(r"\u2019", "'", text) # Get rid of UTF quotation
-    text = re.sub(r"\u200b", "", text) # Get rid of zero-width space
+    text = re.sub(r"\u2019", "'", text)  # Get rid of UTF quotation
+    text = re.sub(r"\u200b", "", text)  # Get rid of zero-width space
     if len(text) < 3:
         return None
     return text
@@ -131,7 +135,10 @@ def clean_title(text, include_subject=False):
     subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering)|(cyber))( and)?"
 
     if (
-        (re.search(r"(prof.|professor|centennial|lecturer|instructor|chair)", text) is None)
+        (
+            re.search(r"(prof.|professor|centennial|lecturer|instructor|chair)", text)
+            is None
+        )
         or (re.search(r"(emerit|program contact)", text) is not None)
         or (
             re.search(position_of_regex, text) is not None
@@ -207,6 +214,33 @@ def extract_url(soup, name):
         return min(urls_with_name, key=len)
 
     return min(all_urls, key=len)
+
+
+def longest_common_substring_len(str1, str2):
+    seq_matcher = difflib.SequenceMatcher(None, str1, str2)
+    match = seq_matcher.find_longest_match(0, len(str1), 0, len(str2))
+    return match.size
+
+
+def is_strange_url(url, name):
+    if pd.isna(url):
+        return False
+    url = url.lower()
+    if url.endswith("/"):
+        url = url[:-1]
+    name = name.lower()
+    parsed_name = HumanName(name)
+    name_abbr = parsed_name.first[0] + parsed_name.last
+    url_parsed = urlparse(url)
+    url_type = guess_type(url)[0]
+    return (
+        re.search(r"\d+(/|-)?$", url) is None  # Valid if ends with numbers
+        and all(
+            t.lower().replace("'", "") not in url for t in re.split(r" |-", name)
+        )  # Either first or last should be in the url
+        and longest_common_substring_len(name_abbr, url_parsed.path + url_parsed.query)
+        < 4  # Name and url should have at least 4 consecutive letters in common
+    ) or (url_type is not None and not re.search(r"(html|xml)$", url_type))
 
 
 def scrape(soup_parts, name_line=0, include_subject=False):
@@ -350,7 +384,7 @@ faculty_scraper_map = {
         lambda s: s.name == "td" and s.attrs is not None and "width" in s.attrs
     ),
     College.CLAFLIN: scrape_class_f("profile"),
-    College.ST_BENEDICT: scrape_tag_f("h5"),
+    College.ST_BENEDICT: scrape_class_f("person-card"),
     College.HOLY_CROSS: scrape_holy_cross,
     College.WOOSTER: scrape_class_f("person-entry"),
     College.COLORADO: scrape_class_f("panel-content"),
@@ -442,9 +476,6 @@ faculty_scraper_map = {
     College.SOUTHWESTERN: scrape_class_f(
         "inpage-search-result__item-data", name_line=1
     ),
-    College.ST_JOHN: scrape_f(
-        lambda s: soup_has_class(s, "nobottommargin") and s.name == "h5"
-    ),
     College.ST_LAWRENCE: scrape_class_f("department-item"),
     College.ST_MARY_MD: scrape_class_f("views-row"),
     College.ST_NORBERT: scrape_class_f("faculty-ind"),
@@ -505,9 +536,12 @@ faculty_url_override_map = {
 # Some colleges actively block requests
 use_selenium_map = {
     College.BIRMINGHAM_SOUTHERN: True,
+    College.CORNELL: True,
     College.DREW: True,
-    College.HANOVER: True,  # faculty urls are dynamically generated
+    College.HANOVER: True,  # faculty urls are dynamically generated    
+    College.JUNIATA: True,
     College.PRESBYTERIAN: True,
+    College.TRINITY_U: True,
 }
 
 
@@ -534,6 +568,8 @@ def get_faculty_list(df, selenium_backup=False):
         service = Service(executable_path=WEB_DRIVER_PATH)
         options = webdriver.ChromeOptions()
         options.add_argument("--headless=new")
+        options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+        options.add_argument("--ignore-certificate-errors")
         driver = webdriver.Chrome(service=service, options=options)
 
     print("Fetching from urls...")
@@ -573,7 +609,37 @@ def get_faculty_list(df, selenium_backup=False):
         axis=1,
     )
 
+    print("Fixing URLs")
+    dup = output[pd.notna(output["url"])]
+    dup = dup[dup.duplicated(subset=["url"])]
+    no_urls = output[pd.isna(output["url"])]
+    fix_urls(dup, output)
+    fix_urls(no_urls, output)
+
     return output
+
+
+def fix_urls(target, output):
+    for _, row in target.iterrows():
+        if any(
+            [
+                t in row["title"]
+                for t in ["Visiting", "Adjunct", "Instructor", "Lecturer"]
+            ]
+        ):
+            continue
+        name = row["name"]
+        college = row["college"]
+        best_url = None
+        for url in search(f"{name} Computer Science {college}", num_results=1): # For some reason, num_results=1 yields 3
+            if not is_strange_url(url, name) and not any(p in url for p in ["facebook", "ratemyprofessors", "coursicle"]):
+                best_url = url
+                break
+        if best_url is not None:
+            print(f"{name}, {college}: {best_url}")
+            output.loc[
+                (output["name"] == name) & (output["college"] == college), "url"
+            ] = best_url
 
 
 if __name__ == "__main__":
