@@ -545,6 +545,15 @@ use_selenium_map = {
 }
 
 
+def create_selenium_driver():
+    service = Service(executable_path=WEB_DRIVER_PATH)
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless=new")
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+    options.add_argument("--ignore-certificate-errors")
+    return webdriver.Chrome(service=service, options=options)
+
+
 def retry_with_selenium(driver, url):
     driver.get(url)
     time.sleep(10)
@@ -565,12 +574,7 @@ def get_faculty_list(df, selenium_backup=False):
     faculty_list = []
 
     if selenium_backup:
-        service = Service(executable_path=WEB_DRIVER_PATH)
-        options = webdriver.ChromeOptions()
-        options.add_argument("--headless=new")
-        options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
-        options.add_argument("--ignore-certificate-errors")
-        driver = webdriver.Chrome(service=service, options=options)
+        driver = create_selenium_driver()
 
     print("Fetching from urls...")
     results = fetch_all_urls(urls)
@@ -619,6 +623,13 @@ def get_faculty_list(df, selenium_backup=False):
     return output
 
 
+def google_search_url(terms, name):
+    for url in search(terms, num_results=1): # For some reason, num_results=1 yields 3
+        if not is_strange_url(url, name) and not any(p in url for p in ["facebook", "ratemyprofessors", "coursicle"]):
+            return url
+    return None
+
+
 def fix_urls(target, output):
     for _, row in target.iterrows():
         if any(
@@ -630,16 +641,12 @@ def fix_urls(target, output):
             continue
         name = row["name"]
         college = row["college"]
-        best_url = None
-        for url in search(f"{name} Computer Science {college}", num_results=1): # For some reason, num_results=1 yields 3
-            if not is_strange_url(url, name) and not any(p in url for p in ["facebook", "ratemyprofessors", "coursicle"]):
-                best_url = url
-                break
-        if best_url is not None:
-            print(f"{name}, {college}: {best_url}")
+        url = google_search_url(f"{name} Computer Science {college}", name)
+        if url is not None:
+            print(f"{name}, {college}: {url}")
             output.loc[
                 (output["name"] == name) & (output["college"] == college), "url"
-            ] = best_url
+            ] = url
 
 
 if __name__ == "__main__":
