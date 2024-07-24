@@ -4,18 +4,19 @@ from faculty_scraper import create_selenium_driver, google_search_url
 from pathlib import Path
 from tqdm import tqdm
 
+DATA_PATH = "../data/faculty_list.csv"
 WEB_DRIVER_PATH = "../driver/chromedriver.exe"
 BASE_PATH = "../data/faculty_websites"
 
 Path(BASE_PATH).mkdir(parents=True, exist_ok=True)
 
-faculty = pd.read_csv("../data/faculty_list.csv")
-faculty = faculty[pd.notna(faculty["url"])]
+faculty = pd.read_csv(DATA_PATH)
+faculty_with_urls = faculty[pd.notna(faculty["url"])]
 
 driver = create_selenium_driver()
 driver.implicitly_wait(10)
 
-for _, row in tqdm(faculty.iterrows(), total=faculty.shape[0]):
+for _, row in tqdm(faculty_with_urls.iterrows(), total=faculty_with_urls.shape[0]):
     name = row["name"]
     college = row["college"]
     url = row["url"]
@@ -33,6 +34,7 @@ for _, row in tqdm(faculty.iterrows(), total=faculty.shape[0]):
         if url is not None:
             try:
                 driver.get(url)
+                faculty.loc[(faculty["name"] == name) & (faculty["college"] == college), "url"] = url
                 print(f"Successfully retried with {url}")
             except Exception as e:
                 print(f"{name} | {college}: Failed to get {url}: {e}")
@@ -44,3 +46,4 @@ for _, row in tqdm(faculty.iterrows(), total=faculty.shape[0]):
         file.write(soup.get_text("\n", strip=True))
 
 driver.quit()
+faculty.to_csv(DATA_PATH, index=False)
