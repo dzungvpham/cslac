@@ -131,12 +131,12 @@ def clean_title(text, include_subject=False):
     text = text.lower()
     text = re.sub(r"\s+", " ", text).strip()
 
-    position_of_regex = r"(prof.|professor|lecturer|instructor|chair|director) (of|in) "
+    position_of_regex = r"(prof\.|professor|lecturer|instructor|chair|director) (of|in) "
     subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering)|(cyber))( and)?"
 
     if (
         (
-            re.search(r"(prof.|professor|centennial|lecturer|instructor|chair)", text)
+            re.search(r"(prof\.|professor|centennial|lecturer|instructor|chair)", text)
             is None
         )
         or (re.search(r"(emerit|program contact)", text) is not None)
