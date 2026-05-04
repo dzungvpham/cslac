@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cslac"
+version = "0.1.0"
+dependencies = [
+    "beautifulsoup4",
+    "googlesearch-python",
+    "matplotlib",
+    "nameparser",
+    "pandas",
+    "requests",
+    "selenium",
+    "tqdm",
+    "wordcloud",
+]
+
+[tool.setuptools]
+packages = []
