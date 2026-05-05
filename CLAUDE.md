@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a research tool for scraping and analyzing CS faculty at liberal arts colleges (LACs). It produces a dataset of faculty names, titles, personal website URLs, and research fields/subfields.
+This is a research tool for scraping and analyzing CS faculty at liberal arts colleges (LACs). It produces a dataset of faculty names, titles, personal website URLs, Google Scholar profile URLs, and research fields/subfields.
 
 ## Setup
 
@@ -23,13 +23,16 @@ cd scraper
 python faculty_scraper.py
 python faculty_scraper.py --selenium-backup  # also handle colleges that block requests
 
-# Stage 2: Scrape each faculty member's personal website
+# Stage 2: Find each faculty member's Google Scholar profile URL
+python faculty_scholar_url_scraper.py
+
+# Stage 3: Scrape each faculty member's personal website
 python faculty_site_scraper.py
 
-# Stage 3: Clean scraped website text (remove nav/footer boilerplate, trim to relevant sections)
+# Stage 4: Clean scraped website text (remove nav/footer boilerplate, trim to relevant sections)
 python faculty_site_cleaner.py
 
-# Stage 4: Use a local LLM to infer research fields and subfields
+# Stage 5: Use a local LLM to infer research fields and subfields
 python faculty_site_analysis.py
 ```
 
@@ -38,10 +41,11 @@ The Jupyter notebooks in `notebooks/` (`analyze_faculty.ipynb`, `create_taxonomy
 ## Data Flow
 
 ```
-data/colleges.csv          → faculty_scraper.py    → data/faculty_list.csv
-data/faculty_list.csv      → faculty_site_scraper.py → data/faculty_websites/<college>/<name>.txt
-data/faculty_websites/     → faculty_site_cleaner.py → data/faculty_websites_cleaned/<college>/<name>.txt
-data/faculty_websites_cleaned/ → faculty_site_analysis.py → data/faculty_list_with_fields.csv
+data/colleges.csv              → faculty_scraper.py            → data/faculty_list.csv
+data/faculty_list.csv          → faculty_scholar_url_scraper.py → data/faculty_list_with_scholar_url.csv
+data/faculty_list.csv          → faculty_site_scraper.py       → data/faculty_websites/<college>/<name>.txt
+data/faculty_websites/         → faculty_site_cleaner.py       → data/faculty_websites_cleaned/<college>/<name>.txt
+data/faculty_websites_cleaned/ → faculty_site_analysis.py      → data/faculty_list_with_fields.csv
 ```
 
 `data/colleges.csv` is the source of truth for which colleges to include. Only rows with `Major == 1` are processed.
@@ -58,6 +62,8 @@ data/faculty_websites_cleaned/ → faculty_site_analysis.py → data/faculty_lis
 Each scraper receives a `BeautifulSoup` object and returns a list of `{name, title, college, url}` dicts. A small number of colleges (Dickinson, Trinity C, Wesleyan) use API endpoints instead of HTML pages — see `faculty_url_override_map`. Colleges that block `requests` and require Selenium are listed in `use_selenium_map`.
 
 URL cleanup (`is_strange_url`, `fix_urls`) uses Google Search as a fallback to find correct faculty profile URLs when scraped URLs are missing or suspicious.
+
+**`scraper/faculty_scholar_url_scraper.py`** — Uses the Brave Search API to find each faculty member's Google Scholar profile URL (`scholar.google.com/citations?user=...`). Queries are run asynchronously with a rate limiter (20 QPS) and exponential-backoff retries. Requires a `BRAVE_API_KEY` in a `.env` file. Outputs `data/faculty_list_with_scholar_url.csv`.
 
 **`scraper/faculty_site_scraper.py`** — Iterates through faculty with URLs, loads each page via Selenium, and saves the rendered body text to `data/faculty_websites/<college>/<name>.txt`. Skips already-saved files.
 
