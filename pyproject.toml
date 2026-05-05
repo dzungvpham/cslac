@@ -6,11 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "cslac"
 version = "0.1.0"
 dependencies = [
+    "aiohttp",
     "beautifulsoup4",
     "googlesearch-python",
     "matplotlib",
     "nameparser",
     "pandas",
+    "python-dotenv",
     "requests",
     "selenium",
     "tqdm",
