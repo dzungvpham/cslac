@@ -38,7 +38,7 @@ Aaron Block,Associate Professor,Austin College,
 Michael Higgs,Professor,Austin College,
 Samuel Kroger,Assistant Professor,Austin College,
 Kerri-Ann Norton,Associate Professor,Bard College,https://nortoncompbiolab.xyz/
-Sven Anderson,Associate Professor,Bard College,https://cs.bard.edu/faculty/
+Sven Anderson,Associate Professor,Bard College,https://cognlp.org/sven/
 Jordan Ayala,Assistant Professor,Bard College,
 Valerie Barr,Professor,Bard College,https://vbarr4.github.io/
 Emma Benser,Assistant Professor,Bard College,https://emmahogan.github.io
@@ -112,6 +112,7 @@ Edward Talmage,Associate Professor,Bucknell University,https://www.bucknell.edu/
 Amy Csizmar Dalal,Professor,Carleton College,https://www.carleton.edu/directory/adalal/
 Eric Alexander,Associate Professor,Carleton College,https://www.carleton.edu/directory/ealexander/
 Tanya Amert,Assistant Professor,Carleton College,https://www.carleton.edu/directory/tamert/
+Josh Davis,Senior Lecturer,Carleton College,https://www.carleton.edu/directory/jdavis/
 Chelsey Edge,Assistant Professor,Carleton College,https://www.carleton.edu/directory/cedge/
 David Liben-Nowell,Associate Professor,Carleton College,https://www.carleton.edu/directory/dln/
 Anna Meyer,Assistant Professor,Carleton College,https://www.carleton.edu/directory/annameyer/
@@ -140,7 +141,7 @@ Terry Hostetler,Professor,Coe College,
 Calvin Van Niewaal,Professor,Coe College,
 Stephanie Taylor,Professor,Colby College,https://cs.colby.edu/srtaylor
 Eric Aaron,Associate Professor,Colby College,https://cs.colby.edu/eaaron
-Naser Al Madi,Assistant Professor,Colby College,https://cs.colby.edu/nsalmadi
+Naser Al Madi,Visiting Assistant Professor,Colby College,https://cs.colby.edu/nsalmadi
 Max Bender,Assistant Professor,Colby College,
 Tahiya Chowdhury,Assistant Professor,Colby College,
 Stacy Doore,Assistant Professor,Colby College,
@@ -212,9 +213,12 @@ William Barnes,Adjunct Instructor,Connecticut College,https://www.conncoll.edu/d
 Thomas Daggett,Adjunct Professor,Connecticut College,https://www.conncoll.edu/directories/faculty-profiles/thomas-daggett
 Robert Peitzsch,Adjunct Professor,Connecticut College,https://www.conncoll.edu/directories/faculty-profiles/robert-peitzsch
 John Schaeffer,Adjunct Instructor,Connecticut College,https://www.conncoll.edu/directories/faculty-profiles/john-schaeffer
+Leon Tabak,Professor,Cornell College,http://www.cornellcollege.edu/academics/our-faculty/faculty-profile/index.php/show/ltabak
+Ajit Chavan,Associate Professor,Cornell College,https://www.cornellcollege.edu/academics/our-faculty/faculty-profile/index.php/show/achavan
+Lauren Jepsen,Assistant Professor,Cornell College,https://www.cornellcollege.edu/academics/our-faculty/faculty-profile/index.php/show/ljepsen
 Jeff Humphries,Professor,Covenant College,https://covenant.edu/academics/cs/faculty/humphries.html
 Zeyu Zhou,Visiting Assistant Professor,Covenant College,https://covenant.edu/academics/cs/faculty/zhou.html
-Prof. Raghu Ramanujan,Associate Professor,Davidson College,https://www.davidson.edu/people/raghu-ramanujan
+Raghu Ramanujan,Associate Professor,Davidson College,https://www.davidson.edu/people/raghu-ramanujan
 Matthew Bachmann,Visiting Assistant Professor,Davidson College,https://www.davidson.edu/people/matthew-bachmann
 Heather Blake,Associate Professor,Davidson College,https://www.davidson.edu/people/heather-blake
 Tim Chartier,Professor,Davidson College,https://www.davidson.edu/people/tim-chartier
@@ -225,7 +229,6 @@ Hammurabi Mendes,Associate Professor,Davidson College,https://www.davidson.edu/p
 Catherine Nemitz,Assistant Professor,Davidson College,https://www.davidson.edu/people/catherine-nemitz
 Tabitha Peck,Associate Professor,Davidson College,https://www.davidson.edu/people/tabitha-peck
 Jonad Pulaj,Associate Professor,Davidson College,https://www.davidson.edu/people/jonad-pulaj
-Raghu Ramanujan,Associate Professor,Davidson College,https://www.davidson.edu/people/raghu-ramanujan
 Katy Williams,Assistant Professor,Davidson College,https://www.davidson.edu/people/katy-williams
 Ana Wright,Assistant Professor,Davidson College,https://www.davidson.edu/people/ana-wright
 Carl Yerger,Professor,Davidson College,https://www.davidson.edu/people/carl-yerger
@@ -238,18 +241,25 @@ Matt Kretchmar,Professor,Denison University,https://denison.edu/people/robert-kr
 Ashwin Lall,Professor,Denison University,https://denison.edu/people/ashwin-lall
 Ali Miller,Instructor,Denison University,https://denison.edu/people/ali-miller
 Stacey Truex,Assistant Professor,Denison University,https://denison.edu/people/stacey-truex
-Dave Berque,Lab Instructor,DePauw University,https://www.depauw.edu/directories/detail/730493820513/
+Paul Bible,Assistant Professor,DePauw University,
+Chad Byers,Associate Professor,DePauw University,
+Mehmet Gulum,Assistant Professor,DePauw University,
+Brian Howard,Associate Professor,DePauw University,https://www.depauw.edu/directories/detail/1508518504791/
+Allana Johnson,Instructor,DePauw University,
+Khadija Stewart,Professor,DePauw University,https://www.depauw.edu/directories/detail/1748518502607/
+Scott Thede,Professor,DePauw University,https://www.depauw.edu/directories/detail/1260617272479/
+Gloria Townsend,Professor,DePauw University,https://www.depauw.edu/directories/detail/250740738459/
 Grant Braught,Professor,Dickinson College,https://www.dickinson.edu/site/custom_scripts/dc_faculty_profile_index.php?fac=braught
 Matt Ferland,Assistant Professor,Dickinson College,https://www.dickinson.edu/site/custom_scripts/dc_faculty_profile_index.php?fac=ferlandm
 Dick Forrester,Professor,Dickinson College,https://www.dickinson.edu/site/custom_scripts/dc_faculty_profile_index.php?fac=forrestr
 William Goble,Lecturer,Dickinson College,https://www.dickinson.edu/site/custom_scripts/dc_faculty_profile_index.php?fac=goblew
 John MacCormick,Professor,Dickinson College,https://www.dickinson.edu/site/custom_scripts/dc_faculty_profile_index.php?fac=jmac
 Farhan Siddiqui,Associate Professor,Dickinson College,https://www.dickinson.edu/site/custom_scripts/dc_faculty_profile_index.php?fac=siddiquf
-Barry Burd,Assistant Teaching Professor,Drew University,
+Barry Burd,Professor,Drew University,
 Valerie Siyuan Feng,Assistant Professor,Drew University,
 Chris Gibbs,Adjunct Professor,Drew University,
 Prasad Kothapalli,Adjunct Professor,Drew University,
-Diane Liporace,Adjunct Instructor,Drew University,
+Diane Liporace,Assistant Teaching Professor,Drew University,
 Yi Lu,Associate Professor,Drew University,
 Fred Meyer,Adjunct Professor,Drew University,
 Adam Michlin,Assistant Professor,Drew University,
@@ -288,7 +298,7 @@ Clif Presser,Associate Professor,Gettysburg College,https://www.gettysburg.edu/a
 Daniel White,Lecturer,Gettysburg College,https://www.gettysburg.edu/academic-programs/computer-science/faculty/employee_detail.dot?empId=010401306320013294&pageTitle=Daniel+White
 Jonathan Hoffman,Adjunct Instructor,Gettysburg College,https://www.gettysburg.edu/academic-programs/computer-science/faculty/employee_detail.dot?empId=014675866920013294&pageTitle=Jonathan+Hoffman
 Russell C. Bjork,Professor,Gordon College,http://web.mit.edu
-Irvin J. Levy,Professor,Gordon College,https://www.math-cs.gordon.edu/faculty.html
+Irvin J. Levy,Professor,Gordon College,http://web.bu.edu
 Jonathan R. Senning,Professor,Gordon College,http://www.gordon.edu
 Jill Zimmerman,Professor,Goucher College,https://www.goucher.edu/faculty/jill-zimmerman
 Mohammad Naderi Dehkordi,Associate Professor,Goucher College,https://www.goucher.edu/faculty/mohammad-naderi-dehkordi
@@ -322,8 +332,6 @@ Han Dong,Assistant Professor,Hamilton College,https://www.hamilton.edu/academics
 Thomas Helmuth,Associate Professor,Hamilton College,https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/Thomas-Helmuth
 Sarah Morrison-Smith,Assistant Professor,Hamilton College,https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/sarah-morrison-smith
 Wenbo Wang,Visiting Assistant Professor,Hamilton College,https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/wenbo-wang
-Skip to Content,Associate Professor,Hampden-Sydney College,https://www.hsc.edu/academics/mathematics-and-computer-science/math-and-cs-professors#content
-You are here:,Associate Professor,Hampden-Sydney College,https://www.hsc.edu/academics
 Dylan Domel-White,Assistant Professor,Hampden-Sydney College,https://www.hsc.edu/faculty-profile-index/dylan-domel-white
 Rebecca Jayne,Associate Professor,Hampden-Sydney College,https://www.hsc.edu/faculty-profile-index/rebecca-jayne
 Brian Lins,Professor,Hampden-Sydney College,https://www.hsc.edu/faculty-profile-index/brian-lins
@@ -378,7 +386,6 @@ Michael Jipping,Professor,Hope College,https://hope.edu/directory/people/jipping
 Charles Cusack,Professor,Hope College,https://hope.edu/directory/people/cusack-charles/index.html
 Ryan McFall,Professor,Hope College,https://hope.edu/directory/people/mcfall-ryan/index.html
 Fola Olagbemi,Assistant Professor,Hope College,https://hope.edu/directory/people/olagbemi-fola/index.html
-Associate Professor of Computer Science,Associate Professor,Hope College,
 Katrina Koehler,Associate Professor,Houghton University,https://www.houghton.edu/staff-members/katrina-koehler/
 Babafemi Sorinolu,Assistant Professor,Houghton University,https://www.houghton.edu/staff-members/babafemi-sorinolu/
 Takako Soma,Associate Professor,Illinois College,https://www.ic.edu/directory/soma-takako
@@ -388,11 +395,11 @@ Jianyuan Ni,Assistant Professor,Juniata College,
 William H. Thomas,Professor,Juniata College,https://www.juniata.edu/academics/provost/bio.php?id=THOMAS
 John J. Wright,Associate Professor,Juniata College,https://www.juniata.edu/academics/provost/bio.php?id=WRIGHTJ
 Jigar Patel,Lecturer,Juniata College,
-Alyce Brady,Professor,Kalamazoo College,
-Pam Cutter,Professor,Kalamazoo College,
-Tasnim Gharaibeh,Assistant Professor,Kalamazoo College,
-Nicholas Polanco,Visiting Assistant Professor,Kalamazoo College,
-Sandino Vargas-Pérez,Associate Professor,Kalamazoo College,
+Alyce Brady,Professor,Kalamazoo College,http://www.cs.kzoo.edu/~abrady/weeklySchedule.html
+Pam Cutter,Professor,Kalamazoo College,http://www.cs.kzoo.edu/~pcutter/schedule.html
+Tasnim Gharaibeh,Assistant Professor,Kalamazoo College,http://www.cs.kzoo.edu/~tgharaib/tgharaib.html
+Nicholas Polanco,Visiting Assistant Professor,Kalamazoo College,http://www.cs.kzoo.edu/~npolanco/schedule.html
+Sandino Vargas-Pérez,Associate Professor,Kalamazoo College,https://www.cs.kzoo.edu/~tgharaib/tgharaib.html
 David Bunde,Professor,Knox College,https://www.knox.edu/academics/faculty/bunde-david
 Shengting Cao,Assistant Professor,Knox College,https://www.knox.edu/academics/faculty/cao-shengting
 Michael Gerten,Visiting Instructor,Knox College,https://www.knox.edu/academics/faculty/gerten-michael
@@ -552,9 +559,9 @@ Yuqing Melanie Wu,Professor,Pomona College,https://www.pomona.edu/directory/peop
 Michael Zlatin,Assistant Professor,Pomona College,https://www.pomona.edu/directory/people/michael-zlatin
 Gregory Goeckel,Professor,Presbyterian College,https://www.presby.edu/directory/gregory-goeckel/
 Olivia Nche,Assistant Professor,Presbyterian College,https://www.presby.edu/directory/olivia-nche/
-Marc Ordower,Associate Professor,Randolph College,
-Brad Spendlove,Assistant Professor,Randolph College,
-Jia Wan,Associate Professor,Randolph College,
+Marc Ordower,Visiting Associate Professor,Randolph College,https://www.randolphcollege.edu/mathematics
+Brad Spendlove,Associate Professor,Randolph College,https://www.randolphcollege.edu/mathematics
+Jia Wan,Associate Professor,Randolph College,https://www.randolphcollege.edu/mathematics
 Rance Necaise,Associate Professor,Randolph-Macon College,https://www.rmc.edu/profile/rance-necaise/
 Maha Elouni,Assistant Professor,Randolph-Macon College,https://www.rmc.edu/profile/maha-elouni/
 Robin M. Givens,Associate Professor,Randolph-Macon College,https://www.rmc.edu/profile/robin-m-givens/
@@ -629,8 +636,15 @@ Muhieddine Shebaro,Visiting Assistant Professor,St. Mary's College of Maryland,h
 Bob Tracy,Adjunct Instructor,St. Mary's College of Maryland,https://inside.smcm.edu/directory/bob-tracy
 Richard Young,Adjunct Professor,St. Mary's College of Maryland,https://inside.smcm.edu/directory/richard-rick-young
 Seth Meyer,Professor,St. Norbert College,https://www.snc.edu/academics/faculty/seth-meyer
+Jaime Davila,Associate Professor,St. Olaf College,https://www.stolaf.edu/directory/search?department=Computer+Science
 Olaf Hall-Holt,Associate Professor,St. Olaf College,https://www.stolaf.edu/profile/olaf
+Michael Haydock,Adjunct Assistant Professor,St. Olaf College,https://www.stolaf.edu/profile/haydoc1
+Kodjo Houssou,Visiting Instructor,St. Olaf College,https://www.stolaf.edu/directory/search?department=Mathematics
+Barbara Johnson,Visiting Assistant Professor,St. Olaf College,https://www.stolaf.edu/directory/search?department=Computer+Science
+Will Leeson,Assistant Professor,St. Olaf College,https://www.stolaf.edu/profile/leeson2
+Melissa Lynn,Assistant Professor,St. Olaf College,https://www.stolaf.edu/directory/search?department=Computer+Science
 Ryota Matsuura,Professor,St. Olaf College,https://www.stolaf.edu/profile/matsuura
+Matthew Wright,Associate Professor,St. Olaf College,https://www.stolaf.edu/profile/wright5
 Sharmishtha Dutta,Assistant Professor,Stonehill College,https://www.stonehill.edu/faculty-staff-directory/details/sharmishtha-dutta/
 Hamza M. Elhamdadi,Assistant Professor,Stonehill College,https://www.stonehill.edu/faculty-staff-directory/details/hamza-m-elhamdadi/
 Samuel Goree,Assistant Professor,Stonehill College,https://www.stonehill.edu/faculty-staff-directory/details/samuel-goree/
@@ -691,7 +705,6 @@ Jennifer Polack,Professor,University of Mary Washington,http://www.jenpolack.com
 Karen Anewalt,Professor,University of Mary Washington,http://www.umw.edu/directory/employee/karen-anewalt/
 Stephen Davies,Professor,University of Mary Washington,http://stephendavies.org/
 Andrew Marshall,Associate Professor,University of Mary Washington,https://www.marshallandrew.net/
-Ian Finlayson,Lecturer,University of Mary Washington,http://ianfinlayson.net/
 Ian Finlayson,Associate Professor,University of Mary Washington,http://ianfinlayson.net/
 Xin-Wen Wu,Associate Professor,University of Mary Washington,https://xinwenwu.net/
 Jessica Zeitz,Associate Professor,University of Mary Washington,http://www.umw.edu/directory/employee/jessica-self-jzeitz/
@@ -704,10 +717,6 @@ Wenkai Guan,Assistant Professor,University of Minnesota Morris,https://morris.um
 Kristin Lamberty,Associate Professor,University of Minnesota Morris,https://morris.umn.edu/directory/kristin-lamberty
 Elena Machkasova,Associate Professor,University of Minnesota Morris,https://morris.umn.edu/directory/elena-machkasova
 Nic McPhee,Professor,University of Minnesota Morris,https://morris.umn.edu/directory/nic-mcphee
-Computer Science Department,Lecturer,University of North Carolina Asheville,https://go.unca.edu/cs
-Why Study Computer Science at Asheville?,Lecturer,University of North Carolina Asheville,https://go.unca.edu/cs/#faq
-Computer Science Department Faculty,Lecturer,University of North Carolina Asheville,https://go.unca.edu/faculty/susan-reiser/
-Kevin Sanft,Lecturer,University of North Carolina Asheville,https://go.unca.edu/faculty/kevin-sanft-ph-d/
 Kevin Sanft,Professor,University of North Carolina Asheville,https://go.unca.edu/faculty/kevin-sanft-ph-d/
 Marietta Cameron,Professor,University of North Carolina Asheville,https://go.unca.edu/faculty/marietta-cameron-ph-d/
 Kenneth Bogert,Associate Professor,University of North Carolina Asheville,https://go.unca.edu/faculty/kenneth-bogert-ph-d/
@@ -740,12 +749,12 @@ Shweta Ware,Associate Professor,University of Richmond,https://cs.richmond.edu/f
 Catherine Cavagnaro,Professor,The University of the South,https://new.sewanee.edu/our-faculty-staff/catherine-cavagnaro/
 Stephen Carl,Associate Professor,The University of the South,https://new.sewanee.edu/our-faculty-staff/stephen-carl/
 Ross Sowell,Associate Professor,The University of the South,https://new.sewanee.edu/our-faculty-staff/ross-sowell/
-Karen Carter,Associate Professor,University of Virginia--Wise,https://www.uvawise.edu/directory/karen-carter
-Alex Edwards,Adjunct Instructor,University of Virginia--Wise,https://www.uvawise.edu/directory/alex-edwards
-David Frazier,Senior Instructor,University of Virginia--Wise,https://www.uvawise.edu/directory/david-frazier
-Robert Hatch,Associate Professor,University of Virginia--Wise,https://www.uvawise.edu/directory/robert-hatch
-Shilpa Lakhanpal,Assistant Professor,University of Virginia--Wise,https://www.uvawise.edu/directory/shilpa-lakhanpal
-Jacob Somervell,Professor,University of Virginia--Wise,https://www.uvawise.edu/directory/jacob-somervell
+C Karen,Associate Professor,University of Virginia--Wise,https://www.uvawise.edu/directory/karen-carter
+E Alex,Adjunct Instructor,University of Virginia--Wise,https://www.uvawise.edu/directory/alex-edwards
+F David,Senior Instructor,University of Virginia--Wise,https://www.uvawise.edu/directory/david-frazier
+H Robert,Associate Professor,University of Virginia--Wise,https://www.uvawise.edu/directory/robert-hatch
+L Shilpa,Assistant Professor,University of Virginia--Wise,https://www.uvawise.edu/directory/shilpa-lakhanpal
+S Jacob,Professor,University of Virginia--Wise,https://www.uvawise.edu/directory/jacob-somervell
 Nicholas Scoville,Professor,Ursinus College,https://www.ursinus.edu/live/profiles/132-nicholas-scoville
 Susan Adam,Instructor,Ursinus College,https://www.ursinus.edu/live/profiles/2106-susan-adam
 David Henry,Instructor,Ursinus College,https://www.ursinus.edu/live/profiles/7357-david-henry

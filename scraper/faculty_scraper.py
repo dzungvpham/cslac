@@ -28,12 +28,16 @@ def get_full_faculty_url(faculty_site_url, url):
     return urljoin(faculty_site_url, url)
 
 
+_IMAGE_URL_RE = re.compile(r"\.(jpe?g|png|gif|svg|webp|bmp|ico|tiff?)(\?|#|$)", re.I)
+
+
 def clean_url(url):
     if (
         url is None
-        or re.match(r"(mailto|tel):", url) is not None
+        or re.match(r"(mailto|tel|javascript):", url) is not None
         or url == "#"
         or url == ""
+        or _IMAGE_URL_RE.search(url) is not None
     ):
         return None
     return url
@@ -92,10 +96,9 @@ def extract_name(soup, line=0):
             return None
         return clean_name(lines[line])
     else:
-        name = ""
-        for l in line:
-            name += lines[l].strip() + " "
-        return clean_name(name[:-1])
+        if any(l >= len(lines) for l in line):
+            return None
+        return clean_name(" ".join(lines[l].strip() for l in line))
 
 
 def clean_name(text):
@@ -111,8 +114,8 @@ def clean_name(text):
 
     if (
         "," in text
-        or re.match(r"^\s*(Dr.|Lt. Col.|Col.|Maj.|Mr.|Mrs.|Ms.)", text) is not None
-    ):  # Handle LAST, FIRST and Dr.
+        or re.match(r"^\s*(Prof\.|Dr\.|Lt\. Col\.|Col\.|Maj\.|Mr\.|Mrs\.|Ms\.)", text) is not None
+    ):  # Handle LAST, FIRST and Prof./Dr./etc.
         parsed = HumanName(text)
         text = f"{parsed.first} {parsed.middle} {parsed.last}"
 
@@ -137,7 +140,11 @@ def clean_title(text, include_subject=False):
     text = re.sub(r"\s+", " ", text).strip()
 
     position_of_regex = r"(prof\.|professor|lecturer|instructor|chair|director) (of|in) "
-    subject_regex = r"([a-z]{3,11}\s?(,|and|&|/)\s?)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering)|(cyber))( and)?"
+    # Subject regex matches a CS-related subject, optionally preceded by a list of
+    # other subject words joined by `,`/`&`/`/`/`and` (e.g. "Mathematics, Statistics,
+    # & Computer Science" or "Math, Stat, and Computer Science"). The prefix
+    # repeats; an extra `,`/`&`/`/`/`and` separator may appear before the subject.
+    subject_regex = r"([a-z]{3,11}\s*(,|and|&|/)\s*)*(\s*(,|&|/|and)\s*)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering)|(cyber))( and)?"
 
     if (
         (
@@ -348,25 +355,221 @@ def scrape_wesleyan_college(soup):
     return res
 
 
+NAME_LINE_OPTIONS = [0, 1, [0, 1], 2, [1, 2], [0, 1, 2]]
+TITLE_RE = re.compile(r"\b(professor|lecturer|instructor)\b", re.I)
+NON_NAME_RE = re.compile(
+    r"\b(chair|director|computer|mathematics|math|statistics|science|"
+    r"department|program|office|phone|email|read more|view|"
+    r"profile|bio|more info|faculty|staff|professor|lecturer|"
+    r"instructor|emeritus|emerita|emeriti|adjunct|visiting|teaching|"
+    r"general|contact|home|search|learn more|click|"
+    r"title|role|position|location|biography|expertise|address|"
+    r"website|publications|research|courses|education|degree|"
+    r"about|frequently|asked|questions|reach)\b",
+    re.I,
+)
+
+
+def looks_like_name(name):
+    """Heuristic: does this string look like a person's full name?"""
+    if name is None or NON_NAME_RE.search(name):
+        return False
+    if any(c in name for c in ":;@/|()") or any(c.isdigit() for c in name):
+        return False
+    parts = [p.strip(".,") for p in name.split()]
+    if len(parts) < 2 or len(parts) > 6:
+        return False
+
+    def initial_or_word(p):
+        return (
+            p and p[0].isalpha()
+            and (p[0].isupper() or p.startswith(("de", "von", "van")))
+        )
+
+    def name_word(p):
+        # Full name token: 3+ letters, capitalized.
+        return initial_or_word(p) and len(p) >= 3
+
+    def short_name_word(p):
+        # Short surname token: 2+ letters, capitalized (e.g. "Wu", "Li", "Ng").
+        return initial_or_word(p) and len(p) >= 2
+
+    # Common English short words that masquerade as 2-letter "name" tokens but
+    # never appear in real human names — used to reject junk like "Of An".
+    SHORT_BLACKLIST = {
+        "of", "an", "on", "or", "in", "at", "to", "by", "as", "is", "be", "do",
+        "go", "if", "it", "us", "we", "he", "me", "my", "no", "up", "so", "ai",
+    }
+
+    # Last token can be a 2-letter capitalized surname; first token must be a
+    # capitalized initial or word. If no token is a full 3+ char word
+    # (e.g. all tokens are 2 chars like "Yi Lu"), reject only if any token is a
+    # common English short word — otherwise accept (real Asian names are 2+2).
+    if not short_name_word(parts[-1]):
+        return False
+    if not initial_or_word(parts[0]):
+        return False
+    if not all(initial_or_word(p) for p in parts):
+        return False
+    if not any(name_word(p) for p in parts):
+        if any(p.lower() in SHORT_BLACKLIST for p in parts):
+            return False
+    return True
+
+
+NAME_ATTRS = ("label", "data-name", "aria-label", "alt")
+URL_ATTRS = ("url", "data-url", "data-href")
+
+
+def extract_name_with_attrs(tag, line=0):
+    """Like extract_name but also tries common attributes that hold a person's name."""
+    n = extract_name(tag, line=line)
+    if looks_like_name(n):
+        return n
+    if hasattr(tag, "get"):
+        for attr in NAME_ATTRS:
+            v = tag.get(attr)
+            if not v:
+                continue
+            cleaned = clean_name(v)
+            if looks_like_name(cleaned):
+                return cleaned
+    return n
+
+
+def extract_url_with_attrs(tag, name):
+    """Like extract_url but also checks enclosing <a> ancestors and common attributes
+    for non-anchor card layouts (e.g. cards wrapped in a single <a> link)."""
+    u = extract_url(tag, name)
+    if u is not None:
+        return u
+    if hasattr(tag, "parents"):
+        for anc in list(tag.parents)[:3]:
+            if getattr(anc, "name", None) == "a":
+                href = clean_url(anc.get("href"))
+                if href is not None:
+                    return href
+    if hasattr(tag, "get"):
+        for attr in URL_ATTRS:
+            v = clean_url(tag.get(attr))
+            if v is not None:
+                return v
+    return None
+
+
+_HEADING_TAGS = ("h1", "h2", "h3", "h4", "h5", "h6")
+# Section headings that indicate the cards beneath them are NOT the department's
+# primary faculty: cross-listings from other colleges, emeriti, alumni, staff,
+# scholars in residence, etc. When a page splits into multiple labeled sections
+# (e.g. Bryn Mawr's "Faculty" / "Haverford Faculty" / "Affiliated Faculty"), we
+# drop cards whose nearest preceding heading matches this pattern.
+_BAD_HEADING_RE = re.compile(
+    r"\b(haverford|bryn mawr|swarthmore|amherst|smith|hampshire|"
+    r"emerit|alumn|former|associated|affiliated|"
+    r"visiting scholar|scholar in residence|in residence|"
+    r"advisory|guest)\b",
+    re.I,
+)
+
+
+def _nearest_preceding_heading(tag):
+    """Find the nearest section heading preceding `tag` in document order.
+
+    Walks up parents and looks at preceding siblings of each. Only returns a
+    heading that sits as a direct preceding sibling — does NOT descend into
+    sibling subtrees. This avoids picking up a previous card's inner <hN> (e.g.
+    Lafayette, where each faculty card contains <h4>/<h5>) and treating that as
+    a section divider.
+    """
+    cur = tag
+    while cur is not None:
+        sib = cur.previous_sibling
+        while sib is not None:
+            if getattr(sib, "name", None) in _HEADING_TAGS:
+                return sib
+            sib = sib.previous_sibling
+        cur = cur.parent
+    return None
+
+
+def filter_cards_by_heading(cards):
+    """Drop cards that fall under a section heading indicating they are not the
+    department's primary faculty (cross-listings, emeriti, affiliated, etc.).
+
+    Only filters when (a) the cards span multiple distinct heading texts and
+    (b) at least one of those headings matches `_BAD_HEADING_RE`. Otherwise the
+    list is returned unchanged so single-section pages aren't disturbed.
+    """
+    if not cards:
+        return cards
+    headings = []
+    for c in cards:
+        h = _nearest_preceding_heading(c)
+        headings.append(h.get_text(" ", strip=True) if h else "")
+    distinct = {h for h in headings if h}
+    if len(distinct) <= 1:
+        return cards
+    if not any(_BAD_HEADING_RE.search(h) for h in distinct):
+        return cards
+    return [c for c, h in zip(cards, headings) if not _BAD_HEADING_RE.search(h)]
+
+
+def scrape_with_attrs(parts, name_line=0, include_subject=False):
+    """Scrape variant that uses extract_name_with_attrs / extract_url_with_attrs.
+
+    With include_subject=True, only keep entries whose title text contains a
+    CS-related subject (Computer Science, Data Science, Information Science,
+    Bioinformatics, Computing, Software Engineering, Cyber). Used to filter
+    full-school faculty directories down to CS faculty.
+    """
+    res = []
+    for t in parts:
+        try:
+            n = extract_name_with_attrs(t, line=name_line)
+            ttl = extract_title(t, include_subject=include_subject)
+            if not n or ttl is None or not looks_like_name(n):
+                continue
+            u = extract_url_with_attrs(t, n)
+            res.append(create_faculty(n, ttl, url=u))
+        except Exception:
+            print(f"Error scraping the following tag:\n{t.prettify()}")
+            print(traceback.format_exc())
+            continue
+    return res
+
+
 def auto_detect_scraper(soup):
     """
-    Infer faculty card pattern from page content when the hardcoded scraper returns nothing.
-    Finds elements containing job title keywords, walks up to the card boundary using the
-    common ancestor, and returns a scrape_class_f scraper for the most discriminative class.
-    Returns None if detection fails at any step.
+    Infer the faculty card pattern from page content. Multi-stage:
+      1. Enumerate candidate selectors (classes and a few structural tags) and score each
+         (selector, name_line) pair by the number of valid (name, title) extractions.
+      2. If no selector clears the threshold, try splitting an `<hr>`- or `<br>`-separated
+         block (e.g. faculty entries that are sibling paragraphs separated by `<hr/>`).
+      3. Fall back to a per-leaf walk-up: for each title leaf, find the smallest ancestor
+         that yields a valid extraction (with attribute-name fallback for custom elements).
+    Returns a scraper function or None if no stage finds at least one valid card.
     """
-    TITLE_RE = re.compile(r"\b(professor|lecturer|instructor)\b", re.I)
-    SKIP_TAGS = {"header", "nav", "footer", "aside"}
+    SKIP_TAGS = {"nav", "footer", "aside"}
+    VOID_TAGS = {"br", "hr", "img", "input", "link", "meta", "wbr", "source", "track", "col", "param"}
+
+    NON_TITLE_RE = re.compile(
+        r"\b(prerequisite|corequisite|permission of|consent of|"
+        r"the (instructor|professor|lecturer)|by the )\b",
+        re.I,
+    )
 
     def is_title_leaf(tag):
-        if not getattr(tag, "name", None):
+        if not getattr(tag, "name", None) or tag.name in VOID_TAGS:
             return False
-        # Use space-separated text so "ProfessorX@email.com" becomes "Professor X@email.com"
         text = tag.get_text(" ", strip=True)
-        if not (5 < len(text) < 150) or not TITLE_RE.search(text):
+        if not (5 < len(text) < 300) or not TITLE_RE.search(text):
+            return False
+        if NON_TITLE_RE.search(text):
             return False
         return not any(
-            TITLE_RE.search(c.get_text(" ", strip=True)) and len(c.get_text(" ", strip=True)) < 150
+            c.name not in VOID_TAGS
+            and TITLE_RE.search(c.get_text(" ", strip=True))
+            and len(c.get_text(" ", strip=True)) < 300
             for c in tag.find_all(True)
         )
 
@@ -374,137 +577,282 @@ def auto_detect_scraper(soup):
         t for t in soup.find_all(is_title_leaf)
         if not any(getattr(a, "name", None) in SKIP_TAGS for a in t.parents)
     ]
-    if not (1 < len(title_elems) <= 50):
+    if not (0 < len(title_elems) <= 500):
         return None
 
-    def get_depth(tag):
-        return sum(1 for _ in tag.parents)
-
-    depths = [get_depth(t) for t in title_elems]
-    depth_counts = Counter(depths)
-    max_freq = depth_counts.most_common(1)[0][1]
-    mode_depth = max(d for d, c in depth_counts.items() if c == max_freq)
-    title_elems = [t for t, d in zip(title_elems, depths) if d == mode_depth]
-    if not (1 < len(title_elems) <= 50):
-        return None
-
-    def get_ancestors(tag):
-        return list(reversed(list(tag.parents)))  # root → immediate parent
-
-    anc_lists = [get_ancestors(t) for t in title_elems]
-    lca = anc_lists[0][-1]
-    for i, anc in enumerate(anc_lists[0]):
-        if all(i < len(lst) and lst[i] is anc for lst in anc_lists):
-            lca = anc
-        else:
-            break
+    te_ids = {id(t) for t in title_elems}
 
     def count_titles(tag):
-        return sum(1 for te in title_elems if any(a is tag for a in te.parents))
+        return (1 if id(tag) in te_ids else 0) + sum(
+            1 for te in title_elems if any(a is tag for a in te.parents)
+        )
 
-    def find_cards(node):
-        children = [c for c in node.children if getattr(c, "name", None)]
-        if not children:
-            return None
-        relevant = [(c, count_titles(c)) for c in children if count_titles(c) > 0]
-        if not relevant:
-            return None
-        max_n = max(n for _, n in relevant)
-        # If no child has many title elements, treat them all as cards.
-        # ≤ 3 allows for faculty with multiple title lines (e.g., endowed chair + rank).
-        if max_n <= 3:
-            return [c for c, _ in relevant]
-        # Otherwise the children are section containers — recurse into all of them.
-        # Sections that yield no CS-title faculty (sub=None) are silently skipped.
-        cards = []
-        for child, _ in relevant:
-            sub = find_cards(child)
-            if sub is not None:
-                cards.extend(sub)
-        return cards if cards else None
+    def evaluate(instances, nl):
+        # Score on descendant-filtered instances — matches what the chosen
+        # scraper actually returns at runtime. Excludes wrapper-level matches
+        # of self-nesting classes that would extract one person's name paired
+        # with another person's title text.
+        names = []
+        url_count = 0
+        instance_ids = set(map(id, instances))
+        for t in instances:
+            if any(id(d) in instance_ids and id(d) != id(t) for d in t.find_all(True)):
+                continue
+            n = extract_name(t, line=nl)
+            if looks_like_name(n) and extract_title(t) is not None:
+                names.append(n)
+                if extract_url_with_attrs(t, n) is not None:
+                    url_count += 1
+        # (valid_count, unique_count, url_count) — duplicates suggest a label was
+        # extracted, not a name; url_count tie-breaks between candidates that wrap
+        # the same content at different depths (we prefer the wrapper that includes
+        # the profile link, e.g. an outer <a> that wraps the inner card).
+        return len(names), len(set(names)), url_count
 
-    cards = find_cards(lca)
-    if not cards or not (1 < len(cards) <= 50):
+    # ---- Stage 1: class- and tag-based selector scoring ----
+    candidate_classes = set()
+    for t in title_elems:
+        for anc in t.parents:
+            for cls in anc.get("class", []) or []:
+                candidate_classes.add(cls)
+
+    def _filter_descendants(cards):
+        """Among same-class matches, drop those that strictly contain another match.
+        This collapses to the deepest level of a self-nesting class (e.g. Mary
+        Washington's `wp-block-column-is-layout-flow` matches both per-faculty
+        cards and the multi-faculty grid wrappers — keep only the leaf-level
+        cards). Cards whose internal multi-title structure represents one person
+        with multiple roles (Boerkoel: named chair + "Professor" label) are not
+        affected: those don't contain another *same-class* match.
+        """
+        if not cards:
+            return cards
+        card_ids = set(map(id, cards))
+        out = []
+        for t in cards:
+            if any(id(d) in card_ids and id(d) != id(t) for d in t.find_all(True)):
+                continue
+            out.append(t)
+        return out
+
+    def class_factory(cls):
+        return lambda nl, _c=cls: (
+            lambda soup, _cc=_c, _nl=nl, _is=False: scrape_with_attrs(
+                filter_cards_by_heading(
+                    _filter_descendants(
+                        [t for t in soup.find_all(class_=_cc)
+                         if not any(getattr(a, "name", None) in SKIP_TAGS for a in t.parents)]
+                    )
+                ),
+                name_line=_nl,
+                include_subject=_is,
+            )
+        )
+
+    def tag_factory(tag_name):
+        return lambda nl, _t=tag_name: (
+            lambda soup, _tt=_t, _nl=nl, _is=False: scrape_with_attrs(
+                filter_cards_by_heading(
+                    _filter_descendants(
+                        [t for t in soup.find_all(_tt)
+                         if not any(getattr(a, "name", None) in SKIP_TAGS for a in t.parents)]
+                    )
+                ),
+                name_line=_nl,
+                include_subject=_is,
+            )
+        )
+
+    candidates = []  # (instances, factory(nl))
+    for cls in candidate_classes:
+        instances = [
+            t for t in soup.find_all(class_=cls)
+            if not any(getattr(a, "name", None) in SKIP_TAGS for a in t.parents)
+        ]
+        with_title = [t for t in instances if count_titles(t) > 0]
+        if not (1 < len(with_title) <= 500):
+            continue
+        if sum(count_titles(t) for t in with_title) / len(with_title) > 3:
+            continue
+        candidates.append((with_title, class_factory(cls)))
+
+    for tag_name in ("tr", "li", "article", "dt"):
+        instances = [
+            t for t in soup.find_all(tag_name)
+            if not any(getattr(a, "name", None) in SKIP_TAGS for a in t.parents)
+        ]
+        with_title = [t for t in instances if count_titles(t) > 0]
+        if not (1 < len(with_title) <= 500):
+            continue
+        if sum(count_titles(t) for t in with_title) / len(with_title) > 3:
+            continue
+        candidates.append((with_title, tag_factory(tag_name)))
+
+    best = None
+    # Score: (unique_valid, url_fraction, -duplicates, -wasted, -size). Require valid>=2.
+    # url_fraction: bucketed url-rate per valid card; tie-breaks between candidates that
+    # wrap the same content at different depths (prefer the wrapper that includes the
+    # profile link). -duplicates penalizes selectors that match a row containing
+    # multiple people, where the same first name gets extracted twice (e.g.
+    # `row-eq-height` matching a 2-up grid where one row holds two faculty cards).
+    best_key = (1, 0, 0, 0, 0)
+    for instances, factory in candidates:
+        for nl in NAME_LINE_OPTIONS:
+            valid, unique, urls = evaluate(instances, nl)
+            url_fraction = round(urls / valid * 10) if valid else 0
+            duplicates = valid - unique
+            key = (unique, url_fraction, -duplicates, -(len(instances) - valid), -len(instances))
+            if key > best_key:
+                best_key = key
+                best = (factory, nl)
+
+    if best is not None:
+        factory, nl = best
+        loose_fn = factory(nl)
+        return _maybe_subject_filter(loose_fn, soup)
+
+    # ---- Stage 2: separator-based split (<hr> or <br> between sibling entries) ----
+    sep_fn = _try_separator_split(title_elems)
+
+    # ---- Stage 3: walk-up fallback (with attribute-name fallback for custom cards) ----
+    def find_card(leaf):
+        cur = leaf
+        while cur is not None:
+            if count_titles(cur) > 1:
+                return None
+            if extract_title(cur) is not None:
+                for nl in NAME_LINE_OPTIONS:
+                    if looks_like_name(extract_name_with_attrs(cur, line=nl)):
+                        return cur, nl
+            cur = cur.parent
         return None
 
-    page_freq = Counter(
-        cls for t in soup.find_all(True) for cls in t.get("class", [])
-    )
+    found = [find_card(t) for t in title_elems]
+    found = [f for f in found if f is not None]
 
-    def best_class_for(card_list):
-        """Return (best_cls, passes) for a list of candidate cards."""
-        classes = [set(c.get("class", [])) for c in card_list]
-        common = classes[0].intersection(*classes[1:])
-        if not common:
-            return None, False
-        best = min(common, key=lambda c: page_freq[c])
-        return best, page_freq[best] <= len(card_list) * 3
+    walk_fn = None
+    walk_count = 0
+    if found:
+        name_lines = [nl for _, nl in found]
+        common_nl_str = Counter(map(str, name_lines)).most_common(1)[0][0]
+        common_nl = next(nl for nl in name_lines if str(nl) == common_nl_str)
 
-    def probe_name_line(cls):
-        sample = soup.find_all(lambda t: soup_has_class(t, cls))[:5]
-        v0 = sum(1 for t in sample if extract_name(t, line=0) is not None)
-        v1 = sum(1 for t in sample if extract_name(t, line=1) is not None)
-        return 1 if v1 > v0 else 0
+        seen = set()
+        cards = []
+        for c, _ in found:
+            if id(c) not in seen:
+                seen.add(id(c))
+                cards.append(c)
 
-    # Classes that belong to the title elements themselves — used to avoid
-    # descending into them during class-based fallbacks.
-    title_elem_classes = set().union(*(set(te.get("class", [])) for te in title_elems))
+        walk_fn = lambda _soup, _cards=cards, _nl=common_nl: scrape_with_attrs(
+            filter_cards_by_heading(_cards), name_line=_nl,
+        )
+        try:
+            walk_count = len(walk_fn(soup))
+        except Exception:
+            walk_count = 0
 
-    # Try class-based match on the cards returned by find_cards
-    best_cls, ok = best_class_for(cards)
-    if ok and best_cls not in title_elem_classes:
-        return scrape_class_f(best_cls, name_line=probe_name_line(best_cls))
+    sep_count = 0
+    if sep_fn is not None:
+        try:
+            sep_count = len(sep_fn(soup))
+        except Exception:
+            sep_count = 0
 
-    # Fallback 1: descend repeatedly through classless wrappers until reaching
-    # class-bearing cards (e.g., W&L: two classless wrapper divs → div.listing-thumb)
-    current = cards
-    for _ in range(6):  # at most 6 extra levels
-        next_level = []
-        any_progress = False
-        for card in current:
-            children_with_titles = [
-                c for c in card.children
-                if getattr(c, "name", None) and count_titles(c) > 0
-            ]
-            if children_with_titles:
-                next_level.extend(children_with_titles)
-                any_progress = True
-            else:
-                next_level.append(card)
-        if not any_progress or not (1 < len(next_level) <= 50):
-            break
-        best_cls, ok = best_class_for(next_level)
-        if ok and best_cls not in title_elem_classes:
-            return scrape_class_f(best_cls, name_line=probe_name_line(best_cls))
-        current = next_level
+    # Prefer separator-split when it yields strictly more results — handles cases
+    # like New College of Florida, where walk-up succeeds at the wrong level
+    # and returns just the first faculty member out of many.
+    if sep_fn is not None and sep_count > walk_count:
+        return sep_fn
+    if walk_fn is not None:
+        return walk_fn
+    return sep_fn
 
-    # Fallback 2: tag + parent class (e.g., Willamette: <li> inside <ul class="grid">)
-    # `current` is the deepest level reached by Fallback 1 (may equal cards if no descent occurred).
-    work_cards = current if len(current) > len(cards) else cards
-    tag_counts = Counter(c.name for c in work_cards)
-    common_tag = tag_counts.most_common(1)[0][0]
-    same_tag_cards = [c for c in work_cards if c.name == common_tag]
-    parent_class_sets = [set(c.parent.get("class", [])) for c in same_tag_cards if c.parent]
-    if parent_class_sets:
-        common_parent_cls = parent_class_sets[0].intersection(*parent_class_sets[1:])
-        if common_parent_cls:
-            best_parent_cls = min(common_parent_cls, key=lambda c: page_freq[c])
-            if page_freq[best_parent_cls] <= len(same_tag_cards) * 3:
-                tag, pcls = common_tag, best_parent_cls
-                sample = [
-                    c for c in soup.find_all(tag)
-                    if c.parent and soup_has_class(c.parent, pcls)
-                ][:5]
-                v0 = sum(1 for t in sample if extract_name(t, line=0) is not None)
-                v1 = sum(1 for t in sample if extract_name(t, line=1) is not None)
-                nl = 1 if v1 > v0 else 0
-                return scrape_f(
-                    lambda s, _t=tag, _p=pcls: (
-                        s.name == _t and s.parent is not None and soup_has_class(s.parent, _p)
-                    ),
-                    name_line=nl,
-                )
 
+def _maybe_subject_filter(loose_fn, soup):
+    """Wrap loose_fn so it falls back to a CS-subject filtered version when the page
+    is clearly a full-school directory.
+
+    Calls loose_fn twice (once normally, once with `include_subject=True`). If the
+    strict run returns at least 2 results AND drops the loose count by >50%, the
+    loose run was scraping the entire school's faculty (e.g. Lane College, Wheaton
+    MA), so we use the strict version. Otherwise we use loose.
+    """
+    try:
+        loose = loose_fn(soup)
+    except Exception:
+        return loose_fn
+    try:
+        strict = loose_fn(soup, _is=True)
+    except TypeError:
+        return loose_fn
+    except Exception:
+        return loose_fn
+    # Apply CS-subject filter only when the strict run drops the loose count by
+    # roughly 80%+ — a directory page where only a small fraction of cards are
+    # actually CS faculty. Pure CS pages (Williams 14→4, ratio 0.29) and mixed
+    # CS+math+stats departments (Macalester 35→18, ratio 0.51) don't trip this;
+    # full-school directories like Lane (26→3), Wheaton MA (49→4), and
+    # Bridgewater (13→2) do. The `loose >= 10` floor avoids over-filtering
+    # tiny pages.
+    if len(strict) >= 2 and len(loose) >= 10 and len(loose) > 5 * len(strict):
+        return lambda _s, _f=loose_fn: _f(_s, _is=True)
+    return loose_fn
+
+
+def _try_separator_split(title_elems):
+    """Detect <hr>- or <br>-separated faculty entries.
+
+    Two patterns:
+      (A) Single title leaf whose text contains multiple title mentions — split the
+          leaf's HTML by <br/> (e.g. New College of Florida: one <p> with all faculty).
+      (B) Multiple title leaves sharing a parent — split that parent's HTML by <hr/>
+          (e.g. Coe College: <p> name + <h3> title repeated, separated by <hr>).
+    Returns a scraper callable or None.
+    """
+    if not title_elems:
+        return None
+
+    sep_patterns = (r"<hr\s*[^>]*/?\s*>", r"<br\s*[^>]*/?\s*>")
+
+    def make_fn(html, sep_re):
+        return lambda _soup, _h=html, _r=sep_re: scrape_with_attrs([
+            BeautifulSoup(p, "html.parser") for p in re.split(_r, _h, flags=re.I)
+        ])
+
+    # Case A: single leaf with multiple "professor" mentions inside.
+    if len(title_elems) == 1:
+        leaf = title_elems[0]
+        mention_count = len(TITLE_RE.findall(leaf.get_text(" ", strip=True)))
+        if mention_count < 2:
+            return None
+        html = leaf.decode()
+        for sep_re in sep_patterns:
+            parts = re.split(sep_re, html, flags=re.I)
+            if len(parts) < 2:
+                continue
+            soups = [BeautifulSoup(p, "html.parser") for p in parts]
+            if len(scrape_with_attrs(soups)) >= 2:
+                return make_fn(html, sep_re)
+        return None
+
+    # Case B: multiple leaves — split their LCA by <hr> (or <br>).
+    common = set(title_elems[0].parents)
+    for t in title_elems[1:]:
+        common &= set(t.parents)
+    if not common:
+        return None
+    lca = max(common, key=lambda x: sum(1 for _ in x.parents))
+
+    for sep_re in sep_patterns:
+        html = lca.decode()
+        parts = re.split(sep_re, html, flags=re.I)
+        if len(parts) < len(title_elems):
+            continue
+        soups = [BeautifulSoup(p, "html.parser") for p in parts]
+        results = scrape_with_attrs(soups)
+        if len(results) >= max(2, len(title_elems) // 2):
+            return make_fn(html, sep_re)
     return None
 
 
@@ -728,7 +1076,91 @@ def retry_with_selenium(driver, url):
     return driver.page_source
 
 
-def get_faculty_list(df, selenium_backup=False):
+_PII_PIPELINE = None
+
+
+def _get_pii_pipeline():
+    """Lazy-load the openai/privacy-filter token-classification pipeline."""
+    global _PII_PIPELINE
+    if _PII_PIPELINE is None:
+        from transformers import pipeline
+        _PII_PIPELINE = pipeline(
+            task="token-classification",
+            model="openai/privacy-filter",
+            aggregation_strategy="simple",
+        )
+    return _PII_PIPELINE
+
+
+def classify_human_names(names, batch_size=32):
+    """Return {name: bool} indicating which strings the privacy-filter model
+    tags as a person name. Each name is wrapped in `"Hello, {name}."` to give
+    the model the contextual signal it expects (calling it on bare tokens
+    yields no entities for most real names — see the model card's "Limitations").
+    A name passes when at least one `private_person` entity covers >=50% of its
+    non-space characters.
+    """
+    if not names:
+        return {}
+    pipe = _get_pii_pipeline()
+    unique = list(dict.fromkeys(names))
+    prompts = [f"Hello, {n}." for n in unique]
+    outputs = pipe(prompts, batch_size=batch_size)
+    verdicts = {}
+    for n, ents in zip(unique, outputs):
+        persons = [e for e in ents if e.get("entity_group") == "private_person"]
+        coverage = sum(len(e["word"].strip()) for e in persons)
+        name_len = max(len(n.replace(" ", "")), 1)
+        verdicts[n] = bool(persons) and coverage / name_len >= 0.5
+    return verdicts
+
+
+def url_matches_name(url, name):
+    """True if every >=3-char word in `name` appears (lowercased) in `url`.
+
+    Used to rescue real-but-unusual names that the privacy-filter model
+    doesn't recognize (April Grow, Georgia Doing) — when the URL contains a
+    matching slug, the entry is genuinely about that person.
+    """
+    if not isinstance(url, str) or not url or not isinstance(name, str):
+        return False
+    name_parts = [p for p in re.split(r"[\s,.]+", name.lower()) if len(p) >= 3]
+    if not name_parts:
+        return False
+    url_lower = url.lower()
+    return all(p in url_lower for p in name_parts)
+
+
+def filter_non_human_rows(output):
+    """Drop rows whose `name` is rejected by the privacy-filter model unless
+    the row's `url` matches the name (URL slug rescue). Returns the filtered
+    DataFrame and the set of colleges whose entries were ALL dropped.
+    """
+    if output.empty:
+        return output, set()
+    names = output["name"].dropna().unique().tolist()
+    print(f"Classifying {len(names)} unique names with privacy-filter model...")
+    verdicts = classify_human_names(names)
+    drop_idx = []
+    for idx, row in output.iterrows():
+        n = row["name"]
+        if not isinstance(n, str) or verdicts.get(n, True):
+            continue
+        if url_matches_name(row.get("url"), n):
+            print(f"  rescued by URL: {n!r} ({row['college']}) -> {row['url']}")
+            continue
+        print(f"  drop non-human: {n!r} ({row['college']}) url={row.get('url')!r}")
+        drop_idx.append(idx)
+    if not drop_idx:
+        return output, set()
+    before_colleges = set(output["college"].unique())
+    filtered = output.drop(index=drop_idx).reset_index(drop=True)
+    after_colleges = set(filtered["college"].unique())
+    emptied = before_colleges - after_colleges
+    return filtered, emptied
+
+
+def get_faculty_list(df):
     names = df["Name"].tolist()
     urls = df["Faculty Link"].tolist()
 
@@ -740,9 +1172,10 @@ def get_faculty_list(df, selenium_backup=False):
 
     name_to_url_map = {name: url for name, url in zip(names, urls)}
     faculty_list = []
+    soups_per_college = {}
+    used_auto = set()
 
-    if selenium_backup:
-        driver = create_selenium_driver()
+    driver = create_selenium_driver()
 
     print("Fetching from urls...")
     results = fetch_all_urls(urls)
@@ -752,7 +1185,7 @@ def get_faculty_list(df, selenium_backup=False):
         if name not in faculty_scraper_map:
             continue
 
-        if selenium_backup and name in use_selenium_map:
+        if name in use_selenium_map:
             print(f"Retrying {name} with Selenium...")
             text = retry_with_selenium(driver, url)
 
@@ -762,46 +1195,72 @@ def get_faculty_list(df, selenium_backup=False):
             continue
 
         soup = BeautifulSoup(text, features="html.parser")
-        try:
-            faculty = faculty_scraper_map[name](soup)
-        except Exception:
-            print(f"Error parsing {name}!")
-            print(traceback.format_exc())
-            continue
+        soups_per_college[name] = soup
 
-        if len(faculty) > 0:
+        faculty = []
+        auto_scraper = auto_detect_scraper(soup)
+        if auto_scraper is not None:
+            try:
+                faculty = auto_scraper(soup)
+            except Exception:
+                print(f"Auto-detection scraper failed for {name}!")
+                print(traceback.format_exc())
+                faculty = []
+
+        if not faculty:
+            print(f"Auto-detection found nothing for {name}; falling back to hardcoded.")
+            try:
+                faculty = faculty_scraper_map[name](soup)
+            except Exception:
+                print(f"Error parsing {name} with hardcoded scraper!")
+                print(traceback.format_exc())
+                faculty = []
+        else:
+            print(f"Auto-detection found {len(faculty)} for {name}.")
+            used_auto.add(name)
+
+        if faculty:
             for f in faculty:
                 f["college"] = name
             faculty_list.extend(faculty)
         else:
-            print(f"No faculty found for {name}! Attempting auto-detection...")
-            auto_scraper = auto_detect_scraper(soup)
-            if auto_scraper is not None:
-                try:
-                    faculty = auto_scraper(soup)
-                except Exception:
-                    print(f"Auto-detection scraper failed for {name}!")
-                    print(traceback.format_exc())
-                    faculty = []
-                if faculty:
-                    print(f"Auto-detection found {len(faculty)} for {name}.")
-                    for f in faculty:
-                        f["college"] = name
-                    faculty_list.extend(faculty)
-                else:
-                    print(f"Auto-detection also found nothing for {name}.")
-            else:
-                print(f"Auto-detection could not identify a pattern for {name}.")
+            print(f"No faculty found for {name}.")
 
-    if selenium_backup:
-        driver.quit()
+    driver.quit()
 
     print("Post-processing...")
-    output = pd.DataFrame(faculty_list).drop_duplicates()
+    output = pd.DataFrame(faculty_list).drop_duplicates(subset=["name", "college"])
     output["url"] = output.apply(
         lambda row: get_full_faculty_url(name_to_url_map[row["college"]], row["url"]),
         axis=1,
     )
+
+    output, emptied_colleges = filter_non_human_rows(output)
+
+    # Colleges where auto returned only entries the model rejected (e.g. SVU's
+    # "Apply Now") get a hardcoded fallback now that auto's output is gone.
+    fallback_rows = []
+    for college_name in emptied_colleges:
+        if college_name not in used_auto or college_name not in soups_per_college:
+            continue
+        print(f"  {college_name}: auto+ML left nothing; running hardcoded fallback...")
+        try:
+            hard = faculty_scraper_map[college_name](soups_per_college[college_name])
+        except Exception:
+            hard = []
+        if not hard:
+            continue
+        for f in hard:
+            f["college"] = college_name
+        fallback_rows.extend(hard)
+        print(f"    hardcoded gave {len(hard)} entries")
+    if fallback_rows:
+        fb_df = pd.DataFrame(fallback_rows).drop_duplicates(subset=["name", "college"])
+        fb_df["url"] = fb_df.apply(
+            lambda row: get_full_faculty_url(name_to_url_map[row["college"]], row["url"]),
+            axis=1,
+        )
+        output = pd.concat([output, fb_df], ignore_index=True)
 
     print("Fixing URLs")
     dup = output[pd.notna(output["url"])]
@@ -840,17 +1299,9 @@ def fix_urls(target, output):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Script for scraping faculty.")
-    parser.add_argument(
-        "--selenium-backup",
-        action="store_true",
-        help="Use Selenium in case a college does not have any results. (Default: Disabled)",
-    )
-    args = parser.parse_args()
-
     df = get_valid_colleges("../data/colleges.csv")
     df = df[df["Name"].isin(faculty_scraper_map.keys())]
-    results = get_faculty_list(df, selenium_backup=args.selenium_backup)
+    results = get_faculty_list(df)
     print(results.to_string())
     print(results.groupby(["college"]).size().to_string())
     results.to_csv("../data/faculty_list.csv", index=False)
