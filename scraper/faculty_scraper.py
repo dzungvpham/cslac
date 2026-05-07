@@ -617,20 +617,25 @@ def auto_detect_scraper(soup):
                 candidate_classes.add(cls)
 
     def _filter_descendants(cards):
-        """Among same-class matches, drop those that strictly contain another match.
-        This collapses to the deepest level of a self-nesting class (e.g. Mary
-        Washington's `wp-block-column-is-layout-flow` matches both per-faculty
-        cards and the multi-faculty grid wrappers — keep only the leaf-level
-        cards). Cards whose internal multi-title structure represents one person
-        with multiple roles (Boerkoel: named chair + "Professor" label) are not
-        affected: those don't contain another *same-class* match.
+        """Among same-class matches, drop a card only if it strictly contains
+        another match *that itself covers a title leaf*. This collapses to the
+        deepest level when the class self-nests around real faculty cards (e.g.
+        Mary Washington's `wp-block-column-is-layout-flow` wraps both per-faculty
+        cards and the multi-faculty grid). But it does NOT collapse when the
+        deeper match is unrelated content (Roanoke: `space-y-4` faculty card
+        contains a name-only inner `space-y-4`; Bethany Lutheran: `e-con` card
+        contains a "Message Perry" button div) — that would leave us with no
+        title text and no extractable faculty.
         """
         if not cards:
             return cards
-        card_ids = set(map(id, cards))
+        title_carriers = {
+            id(c) for c in cards
+            if id(c) in te_ids or any(id(d) in te_ids for d in c.find_all(True))
+        }
         out = []
         for t in cards:
-            if any(id(d) in card_ids and id(d) != id(t) for d in t.find_all(True)):
+            if any(id(d) in title_carriers and id(d) != id(t) for d in t.find_all(True)):
                 continue
             out.append(t)
         return out
