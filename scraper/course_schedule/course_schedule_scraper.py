@@ -144,23 +144,40 @@ class CourseScheduleScraper:
         """Return a list of row dicts parsed from `html`."""
         raise NotImplementedError
 
+    def fetch_page(self, academic_year, term):
+        """Return the rendered HTML for one (academic_year, term) page.
+
+        Default: navigate to `url_for(academic_year, term)` and return the
+        page source. Override for sites whose schedule lives behind a form
+        (e.g. a term-selector dropdown + submit button) — your override is
+        responsible for driving Selenium and returning the final HTML.
+
+        Return `None` to signal that this (year, term) is not available
+        (e.g. the term predates what the site exposes); the scrape loop
+        will log it and move on.
+        """
+        return self.load(self.url_for(academic_year, term))
+
     # ---- driver loop ---------------------------------------------------------
 
     def schedule_pages(self):
-        """Yield (academic_year, term, url) tuples to scrape, oldest first."""
+        """Yield (academic_year, term) pairs to scrape, oldest first."""
         terms = self.terms or [NO_TERM]
         for academic_year in self.past_academic_years(self.years_back):
             for term in terms:
-                yield academic_year, term, self.url_for(academic_year, term)
+                yield academic_year, term
 
     def scrape(self):
         rows = []
-        for academic_year, term, url in self.schedule_pages():
+        for academic_year, term in self.schedule_pages():
             label = self._label(academic_year, term)
             try:
-                html = self.load(url)
+                html = self.fetch_page(academic_year, term)
             except Exception as e:
                 print(f"  [{label}] failed to load: {e}", flush=True)
+                continue
+            if html is None:
+                print(f"  [{label}] not available", flush=True)
                 continue
             page_rows = self.parse_page(html, academic_year, term)
             print(f"  [{label}] {len(page_rows)} sections", flush=True)
