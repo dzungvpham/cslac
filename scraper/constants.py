@@ -50,7 +50,7 @@ class College(StrEnum):
     GETTYSBURG = "Gettysburg College"
     GORDON = "Gordon College"
     GOUCHER = "Goucher College"
-    GRINNEL = "Grinnel College"
+    GRINNELL = "Grinnell College"
     GUSTAVUS_ADOLPHUS = "Gustavus Adolphus College"
     HAMILTON = "Hamilton College"
     HAMPDEN_SYDNEY = "Hampden-Sydney College"

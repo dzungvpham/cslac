@@ -924,7 +924,7 @@ faculty_scraper_map = {
         and "Faculty"
         in s.parent.parent.find_previous_sibling("div").get_text(strip=True)
     ),
-    College.GRINNEL: scrape_class_f("user__content"),
+    College.GRINNELL: scrape_class_f("user__content"),
     College.GUSTAVUS_ADOLPHUS: scrape_class_f("person-container"),
     College.HARVEY_MUDD: scrape_class_f("wp-block-mudd-person-2"),
     College.HAVERFORD: scrape_class_f("faculty-staff-row"),
