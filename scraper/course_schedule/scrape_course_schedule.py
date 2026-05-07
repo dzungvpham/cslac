@@ -15,6 +15,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from course_schedule.amherst import AmherstScraper
+from course_schedule.macalester import MacalesterScraper
 from course_schedule.trinity import TrinityScraper
 from course_schedule.williams import WilliamsScraper
 
@@ -22,6 +23,7 @@ OUTPUT_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "course_sc
 
 SCRAPERS = [
     AmherstScraper,
+    MacalesterScraper,
     TrinityScraper,
     WilliamsScraper,
 ]
