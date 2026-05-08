@@ -3,8 +3,11 @@
 To add a new school: implement a `CourseScheduleScraper` subclass in a new
 module under this package, then add it to `SCRAPERS` below.
 
-By default, colleges with an existing CSV in `data/course_schedule/` are
-skipped. Pass `--force` to re-scrape everything.
+Re-running a scraper merges newly-scraped rows into any existing CSV
+(deduped on the full row), so prior history is preserved. By default,
+colleges with an existing CSV in `data/course_schedule/` are skipped to
+avoid the cost of re-scraping; pass `--force` to re-scrape everything and
+merge in any new rows.
 """
 
 import argparse
@@ -36,7 +39,7 @@ def main():
     parser.add_argument(
         "--force",
         action="store_true",
-        help="Re-scrape colleges even if their CSV already exists.",
+        help="Re-scrape colleges even if their CSV already exists; new rows are merged in.",
     )
     args = parser.parse_args()
 

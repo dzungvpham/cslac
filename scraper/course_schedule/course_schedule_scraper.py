@@ -185,36 +185,50 @@ class CourseScheduleScraper:
         return rows
 
     def run(self, output_dir):
-        """Scrape and write a CSV to `output_dir/<College Name>.csv`."""
+        """Scrape and merge results into `output_dir/<College Name>.csv`.
+
+        Newly-scraped rows are unioned with any existing CSV and deduped on
+        the full row, so re-runs add rows without clobbering prior history.
+        """
         if not self.college:
             raise ValueError(f"{type(self).__name__}.college is not set")
 
-        rows = sorted(self.scrape(), key=_row_sort_key)
+        new_rows = self.scrape()
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
         path = output_dir / f"{self.college}.csv"
 
-        # Don't clobber existing data with an empty result — transient
-        # failures (DNS, timeouts, an upstream redirect change) shouldn't
-        # destroy a previously-good CSV. Re-runs with --force should still
-        # overwrite when the scrape actually produced rows.
-        if not rows and path.exists() and path.stat().st_size > 0:
-            with open(path) as f:
-                existing_rows = sum(1 for _ in f) - 1  # drop header
-            if existing_rows > 0:
-                print(
-                    f"  scrape returned 0 rows; keeping existing {existing_rows}-row CSV at {path}",
-                    flush=True,
-                )
-                return path, existing_rows
-
-        df = pd.DataFrame(rows)
+        new_df = pd.DataFrame(new_rows)
         for col in OUTPUT_COLUMNS:
-            if col not in df.columns:
-                df[col] = ""
-        df = df[OUTPUT_COLUMNS]
-        df.to_csv(path, index=False)
-        return path, len(df)
+            if col not in new_df.columns:
+                new_df[col] = ""
+        new_df = new_df[OUTPUT_COLUMNS]
+
+        if path.exists() and path.stat().st_size > 0:
+            existing_df = pd.read_csv(path, dtype=str, keep_default_na=False)
+            for col in OUTPUT_COLUMNS:
+                if col not in existing_df.columns:
+                    existing_df[col] = ""
+            existing_df = existing_df[OUTPUT_COLUMNS]
+            before = len(existing_df)
+            combined = pd.concat([existing_df, new_df], ignore_index=True)
+            combined = combined.drop_duplicates(subset=OUTPUT_COLUMNS, keep="first")
+            added = len(combined) - before
+            print(
+                f"  merged {len(new_df)} scraped rows into {before}-row CSV; {added} new",
+                flush=True,
+            )
+        else:
+            combined = new_df
+
+        combined = combined.sort_values(
+            by=["academic_year", "term", "course_code", "section", "instructor", "time"],
+            key=lambda s: s.map(_TERM_ORDER) if s.name == "term" else s,
+            kind="stable",
+        ).reset_index(drop=True)
+
+        combined.to_csv(path, index=False)
+        return path, len(combined)
 
     # ---- helpers -------------------------------------------------------------
 
@@ -258,14 +272,3 @@ def format_academic_year(academic_year):
 # Academic-calendar ordering: Fall, Winter/J-term, Spring, Summer.
 # Empty/unknown terms sort last so they don't interleave with real ones.
 _TERM_ORDER = {"F": 0, "W": 1, "S": 2, "Su": 3}
-
-
-def _row_sort_key(row):
-    return (
-        row.get("academic_year", ""),
-        _TERM_ORDER.get(row.get("term", ""), 99),
-        row.get("course_code", ""),
-        row.get("section", ""),
-        row.get("instructor", ""),
-        row.get("time", ""),
-    )
