@@ -14,7 +14,7 @@ pip install -e .
 
 ## Running the Pipeline
 
-All scripts are run from the `scraper/` directory. The pipeline has four stages:
+All scripts are run from the `scraper/` directory. The faculty pipeline has six stages:
 
 ```bash
 cd scraper
@@ -23,29 +23,45 @@ cd scraper
 # Selenium is used automatically for colleges listed in `use_selenium_map`.
 python faculty_scraper.py
 
-# Stage 2: Find each faculty member's Google Scholar profile URL
+# Stage 2: Find each faculty member's Google Scholar profile URL (Brave Search)
 python faculty_scholar_url_scraper.py
 
-# Stage 3: Scrape each faculty member's personal website
+# Stage 3: Fetch each Scholar profile and verify the match (Decodo proxy).
+# Two-pass: re-running picks up rows flagged `rescrape` and skips `manual_approved`.
+python faculty_scholar_profile_scraper.py
+
+# Stage 4: Scrape each faculty member's personal website
 python faculty_site_scraper.py
 
-# Stage 4: Clean scraped website text (remove nav/footer boilerplate, trim to relevant sections)
+# Stage 5: Clean scraped website text (remove nav/footer boilerplate, trim to relevant sections)
 python faculty_site_cleaner.py
 
-# Stage 5: Use a local LLM to infer research fields and subfields
+# Stage 6: Use a local LLM to infer research fields and subfields
 python faculty_site_analysis.py
 ```
 
-The Jupyter notebooks in `notebooks/` (`analyze_faculty.ipynb`, `create_taxonomy.ipynb`) are used for ad-hoc analysis and taxonomy construction — not part of the automated pipeline.
+A separate course-schedule pipeline lives under `scraper/course_schedule/`:
+
+```bash
+cd scraper
+# Run all configured per-college course-schedule scrapers (skips those with an
+# existing CSV unless --force is given).
+python -m course_schedule.scrape_course_schedule [--force]
+```
+
+The Jupyter notebooks in `notebooks/` (`analyze_faculty.ipynb`, `create_taxonomy.ipynb`) are used for ad-hoc analysis and taxonomy construction — not part of the automated pipeline. The static dashboard in `web/` (see below) is regenerated from the verified-profile CSV.
 
 ## Data Flow
 
 ```
-data/colleges.csv              → faculty_scraper.py            → data/faculty_list.csv
-data/faculty_list.csv          → faculty_scholar_url_scraper.py → data/faculty_list_with_scholar_url.csv
-data/faculty_list.csv          → faculty_site_scraper.py       → data/faculty_websites/<college>/<name>.txt
-data/faculty_websites/         → faculty_site_cleaner.py       → data/faculty_websites_cleaned/<college>/<name>.txt
-data/faculty_websites_cleaned/ → faculty_site_analysis.py      → data/faculty_list_with_fields.csv
+data/colleges.csv                  → faculty_scraper.py                 → data/faculty_list.csv
+data/faculty_list.csv              → faculty_scholar_url_scraper.py     → data/faculty_list_with_scholar_url.csv
+data/faculty_list_with_scholar_url → faculty_scholar_profile_scraper.py → data/faculty_list_with_verified_profile.csv
+data/faculty_list.csv              → faculty_site_scraper.py            → data/faculty_websites/<college>/<name>.txt
+data/faculty_websites/             → faculty_site_cleaner.py            → data/faculty_websites_cleaned/<college>/<name>.txt
+data/faculty_websites_cleaned/     → faculty_site_analysis.py           → data/faculty_list_with_fields.csv
+
+data/colleges.csv                  → course_schedule.scrape_course_schedule → data/course_schedule/<College Name>.csv
 ```
 
 `data/colleges.csv` is the source of truth for which colleges to include. Only rows with `Major == 1` are processed.
@@ -66,6 +82,8 @@ After scraping, `filter_non_human_rows` runs the `openai/privacy-filter` token-c
 
 **`scraper/faculty_scholar_url_scraper.py`** — Uses the Brave Search API to find each faculty member's Google Scholar profile URL (`scholar.google.com/citations?user=...`). Queries are run asynchronously with a rate limiter (20 QPS) and exponential-backoff retries. Requires a `BRAVE_API_KEY` in a `.env` file. Outputs `data/faculty_list_with_scholar_url.csv`.
 
+**`scraper/faculty_scholar_profile_scraper.py`** — Two-pass Scholar-profile verifier. Pass 1: for each row without a `scholar_match_status`, fetch the candidate profile through a Decodo residential proxy (requires `DECODO_USERNAME`/`DECODO_PASSWORD`/`DECODO_HOST`/`DECODO_PORT` in `.env`), parse out name + affiliation + citation/h-index stats, and classify the result as `matched`, `matched_name`, `matched_college`, `no_match`, `fetch_error`, or `no_url`. Manual step: edit the output CSV to mark rows `manual_approved` (locked) or `rescrape` (will be retried). Pass 2 — re-running the script — only touches rows whose status is empty or `rescrape`. Each retry rotates exit IPs to dodge Scholar's "not a robot" soft-block; uses 8 workers and `MAX_RETRIES = 8`. Output columns include `verified_affiliation`, `scholar_match_status`, and `scholar_*` citation metrics. Outputs `data/faculty_list_with_verified_profile.csv`.
+
 **`scraper/faculty_site_scraper.py`** — Iterates through faculty with URLs, loads each page via Selenium, and saves the rendered body text to `data/faculty_websites/<college>/<name>.txt`. Skips already-saved files.
 
 **`scraper/faculty_site_cleaner.py`** — Two-pass cleaning:
@@ -73,6 +91,10 @@ After scraping, `filter_non_human_rows` runs the `openai/privacy-filter` token-c
 2. Keeps only lines near mentions of the faculty member's name or research-relevant keywords (research, interest, courses, publications, etc.)
 
 **`scraper/faculty_site_analysis.py`** — Uses a local Ollama instance (`llama3.1:8b-instruct-fp16` at `localhost:11434`) to extract research subfields from cleaned text, then classifies each faculty member into Computer Science / Mathematics / Statistics / Unknown.
+
+**`scraper/course_schedule/`** — Course-schedule scraping sub-package. The driver loop lives in `course_schedule_scraper.py` (`CourseScheduleScraper` base class): for each `(academic_year, term)` pair it calls `url_for(...)`, drives Selenium via `load(...)` (one fresh driver per page by default — many catalog SPAs only fetch on first navigation), and hands the rendered HTML to `parse_page(...)`. Subclasses set `college` (a `constants.College` value), `years_back` (default 5), and optionally `terms` (e.g. `["F", "S"]`; empty means one load per year for sites whose listing covers all terms). Per-school subclasses live alongside the base: `amherst.py`, `macalester.py`, `trinity.py`, `williams.py`. `selfservice.py` covers the large family of LACs running Ellucian Self-Service catalogs (Augustana, Franklin, Hartwick, Juniata, Linfield, Roanoke, Saint Michael's, Saint Vincent, Southwestern, Union, Ursinus, Whitman, Wittenberg) — one class is generated per `(College, base_url, subject)` tuple in `SELFSERVICE_COLLEGES`. Self-Service exposes only currently registerable terms (last finished + current + next one or two) so the scraper captures whatever appears, not a fixed history; logged-in-only catalogs (Allegheny, Wooster) are detected via the `/Account/Login` redirect and produce empty results. The runner `scrape_course_schedule.py` instantiates every scraper in `SCRAPERS` (including `*selfservice_scrapers()`), skipping colleges whose CSV already exists unless `--force` is passed. Output columns: `college, academic_year, term, course_code, section, course_name, instructor, time, url`.
+
+**`web/`** — Static dashboard for browsing the dataset. `index.html` is a single-page app (vanilla JS + IBM Plex fonts, light/dark themes). `generate_data.py` reads `data/faculty_list_with_verified_profile.csv` and emits `faculty_data.json`, treating `scholar_match_status ∈ {matched, manual_approved}` as trusted (untrusted rows still appear but their `scholar_url` is suppressed) and bucketing each row's title into `tenure_track | teaching | adjunct | visiting`. `generate_college_links.py` reads `data/colleges.csv` and emits `college_links.json` containing only colleges with `Major >= 1` that also appear in the verified-profile CSV. Regenerate both JSONs after a pipeline run.
 
 ## Selenium / ChromeDriver
 
@@ -85,3 +107,9 @@ ChromeDriver is managed automatically by Selenium Manager (Selenium 4.6+) — no
 3. Add an entry in `faculty_scraper_map` (a hardcoded fallback). In most cases the auto path will work without this, but the map is currently the gate that decides which colleges get processed
 4. If the page requires Selenium, add to `use_selenium_map`; if it returns JSON instead of HTML, add to `faculty_url_override_map` (and write a JSON-aware hardcoded scraper, since auto can't handle JSON)
 5. Verify auto handles the page (e.g. fetch the URL, run `auto_detect_scraper(soup)`, and inspect the output) before relying on the hardcoded fallback
+
+## Adding a New Course-Schedule Scraper
+
+1. If the school runs Ellucian Self-Service: add a `(College.NAME, base_url, subject)` tuple to `SELFSERVICE_COLLEGES` in `scraper/course_schedule/selfservice.py` — no new file required.
+2. Otherwise: create a new module under `scraper/course_schedule/` that subclasses `CourseScheduleScraper`, set `college`, and implement `url_for(academic_year, term)` and `parse_page(html, academic_year, term)`. Override `fetch_page(...)` if the schedule is gated behind a form/dropdown rather than reachable by URL.
+3. Add the new class to `SCRAPERS` in `scraper/course_schedule/scrape_course_schedule.py`.
