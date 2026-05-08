@@ -170,12 +170,21 @@ class EllucianSelfServiceScraper(CourseScheduleScraper):
             print("  requires login, skipping", flush=True)
             return []
 
+        # Wait for the term-filter sidebar OR (as a fallback) the section-
+        # expansion buttons. A handful of deployments (e.g. Emmanuel) hide the
+        # term sidebar but still render course cards with expandable sections;
+        # in that case the term comes from the <h4> heading inside each
+        # expanded section, so we can proceed without the sidebar.
         try:
             WebDriverWait(self.driver, self.page_load_timeout).until(
                 lambda d: d.find_elements(By.CSS_SELECTOR, "input[id^=STATICterm]")
+                or d.find_elements(
+                    By.CSS_SELECTOR,
+                    "button[id^=collapsible-view-available-sections-for-]",
+                )
             )
         except TimeoutException:
-            print("  timed out waiting for term filter", flush=True)
+            print("  timed out waiting for course list", flush=True)
             return []
         time.sleep(self.post_load_sleep)
 
@@ -183,9 +192,21 @@ class EllucianSelfServiceScraper(CourseScheduleScraper):
         return self._parse(self.driver.page_source)
 
     def _is_login_page(self):
-        url = (self.driver.current_url or "").lower()
+        from urllib.parse import urlparse
+        cur = self.driver.current_url or ""
+        cur_l = cur.lower()
         title = (self.driver.title or "").lower()
-        return "/account/login" in url or "sign in" in title
+        if "/account/login" in cur_l or "sign in" in title or "single sign-on" in title:
+            return True
+        # SSO redirect to a different host (e.g. Westmont -> login.westmont.edu).
+        try:
+            base_host = urlparse(self.base_url).hostname or ""
+            cur_host = urlparse(cur).hostname or ""
+            if base_host and cur_host and cur_host != base_host:
+                return True
+        except Exception:
+            pass
+        return False
 
     def _expand_all_sections(self):
         """Click every 'View Available Sections' header to load sections."""
@@ -292,6 +313,20 @@ SELFSERVICE_COLLEGES = [
     (College.URSINUS, "https://selfservice.ursinus.edu", "CS"),
     (College.WHITMAN, "https://selfservice.whitman.edu", "CS"),
     (College.WITTENBERG, "https://selfservice.wittenberg.edu", "COMP"),
+    # Self-Service deployments hosted under non-`selfservice.*` subdomains.
+    # Emmanuel (https://ecss.emmanuel.edu) is intentionally NOT listed: its
+    # deployment renders the course catalog skeleton publicly but leaves the
+    # `<collapsible-group>` Knockout components unbound, so section data
+    # (term, instructor, time) is only available after sign-in.
+    (College.GRINNELL, "https://colss-prod.ec.grinnell.edu", "CSC"),
+    (College.GUSTAVUS_ADOLPHUS, "https://colselfsrvprod.gac.edu", "MCS"),
+    (College.LUTHER, "https://norsehub.luther.edu", "CS"),
+    (College.LYCOMING, "https://collslfsrv-live.lycoming.edu", "CPTR"),
+    (College.MEREDITH, "https://mcis.meredith.edu", "CS"),
+    (College.SUSQUEHANNA, "https://su-ss-live.susqu.edu", "CSCI"),
+    (College.WASHINGTON_JEFFERSON, "https://jaysource.washjeff.edu", "CIS"),
+    (College.WESTMONT, "https://waypoint.westmont.edu", "CS"),
+    (College.WILLAMETTE, "https://collslfsrv.willamette.edu", "CS"),
 ]
 
 
