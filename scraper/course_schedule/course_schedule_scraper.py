@@ -187,8 +187,11 @@ class CourseScheduleScraper:
     def run(self, output_dir):
         """Scrape and merge results into `output_dir/<College Name>.csv`.
 
-        Newly-scraped rows are unioned with any existing CSV and deduped on
-        the full row, so re-runs add rows without clobbering prior history.
+        For every `(academic_year, term)` pair present in the new scrape, the
+        existing CSV's rows for that pair are replaced wholesale with the new
+        rows. Pairs absent from the new scrape are preserved untouched, so
+        terms a school later removes from their public schedule stay in our
+        history.
         """
         if not self.college:
             raise ValueError(f"{type(self).__name__}.college is not set")
@@ -211,11 +214,19 @@ class CourseScheduleScraper:
                     existing_df[col] = ""
             existing_df = existing_df[OUTPUT_COLUMNS]
             before = len(existing_df)
-            combined = pd.concat([existing_df, new_df], ignore_index=True)
+            scraped_terms = set(
+                map(tuple, new_df[["academic_year", "term"]].drop_duplicates().values.tolist())
+            )
+            existing_keys = list(zip(existing_df["academic_year"], existing_df["term"]))
+            kept_mask = [key not in scraped_terms for key in existing_keys]
+            kept_df = existing_df[kept_mask]
+            replaced = before - len(kept_df)
+            combined = pd.concat([kept_df, new_df], ignore_index=True)
             combined = combined.drop_duplicates(subset=OUTPUT_COLUMNS, keep="first")
-            added = len(combined) - before
             print(
-                f"  merged {len(new_df)} scraped rows into {before}-row CSV; {added} new",
+                f"  merged {len(new_df)} scraped rows into {before}-row CSV; "
+                f"replaced {replaced} rows across {len(scraped_terms)} term(s), "
+                f"kept {len(kept_df)} from prior terms",
                 flush=True,
             )
         else:
