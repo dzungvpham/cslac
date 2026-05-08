@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS @ Liberal Arts Colleges</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── themes ── */
+    :root {
+      --bg:         #ffffff;
+      --bg-alt:     #f7f7f7;
+      --border:     #dedede;
+      --border-sub: #eeeeee;
+      --text:       #111111;
+      --sub:        #555555;
+      --muted:      #999999;
+      --accent:     #1a56db;
+      --th-bg:      #f2f2f2;
+      --hover-bg:   #fafafa;
+      --expand-bg:  #f7f7f7;
+    }
+    [data-theme="dark"] {
+      --bg:         #1f315f;
+      --bg-alt:     #26396d;
+      --border:     #3c569e;
+      --border-sub: #2c427e;
+      --text:       #e8c96e;
+      --sub:        #a08838;
+      --muted:      #5a4e20;
+      --accent:     #f5d878;
+      --th-bg:      #1a2a55;
+      --hover-bg:   #2e447e;
+      --expand-bg:  #1c2c58;
+    }
+
+    /* ── reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scrollbar-gutter: stable; /* prevents layout shift when scrollbar appears */
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button { cursor: pointer; }
+
+    /* ── layout ── */
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── header ── */
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0;
+    }
+
+    .header-left h1 {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .header-left p {
+      font-size: 13px;
+      color: var(--sub);
+    }
+
+    .header-stats {
+      display: flex;
+      gap: 24px;
+      margin-top: 12px;
+    }
+
+    .stat {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--sub);
+    }
+    .stat strong {
+      font-weight: 500;
+      color: var(--text);
+      font-size: 14px;
+      display: block;
+    }
+
+    /* ── theme toggle ── */
+    .theme-toggle {
+      flex-shrink: 0;
+      margin-top: 4px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--sub);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .theme-toggle:hover {
+      border-color: var(--text);
+      color: var(--text);
+      background: var(--hover-bg);
+    }
+    .theme-toggle svg { width: 16px; height: 16px; }
+    .icon-sun  { display: none; }
+    .icon-moon { display: block; }
+    [data-theme="dark"] .icon-sun  { display: block; }
+    [data-theme="dark"] .icon-moon { display: none; }
+
+    /* ── college table ── */
+    .table-wrap { width: 100%; }
+
+    /* shared column grid — must match between header and rows */
+    .col-grid {
+      display: grid;
+      grid-template-columns: 1fr 80px 110px 80px;
+      align-items: center;
+    }
+
+    /* column headers */
+    .col-head-row {
+      border-top: 1px solid var(--border);
+      border-bottom: 2px solid var(--border);
+      background: var(--th-bg);
+    }
+    .col-head-row .col-grid { padding: 0; }
+
+    .th {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--sub);
+      padding: 10px 12px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.12s;
+      white-space: nowrap;
+    }
+    .th:hover { color: var(--text); }
+    .th.sorted { color: var(--accent); }
+    .th:not(:first-child) { justify-content: flex-end; }
+
+    .sort-icon {
+      font-size: 10px;
+      opacity: 0.4;
+      line-height: 1;
+    }
+    .th.sorted .sort-icon { opacity: 1; }
+
+    /* college data row */
+    .college-row { border-bottom: 1px solid var(--border); }
+
+    .college-summary {
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+    .college-summary:hover { background: var(--hover-bg); }
+    .college-summary .col-grid { padding: 0; }
+
+    .td {
+      padding: 11px 12px;
+      font-size: 13.5px;
+      color: var(--text);
+    }
+
+    .td-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .chevron {
+      flex-shrink: 0;
+      color: var(--muted);
+      transition: transform 0.2s ease, color 0.15s;
+      display: flex;
+      align-items: center;
+    }
+    .chevron svg { width: 12px; height: 12px; }
+    .college-row.open .chevron {
+      transform: rotate(90deg);
+      color: var(--accent);
+    }
+
+    .college-name { font-weight: 600; font-size: 14px; }
+
+    .college-links {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      margin-left: 4px;
+    }
+    .college-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 4px;
+      color: var(--muted);
+      transition: color 0.12s, background 0.12s;
+      text-decoration: none;
+    }
+    .college-link:hover {
+      color: var(--accent);
+      background: var(--hover-bg);
+      text-decoration: none;
+    }
+    .college-link svg { width: 13px; height: 13px; }
+
+    .college-state {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .td-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      text-align: right;
+      padding: 11px 12px;
+      color: var(--text);
+    }
+    .td-num.dim { color: var(--sub); }
+
+    /* ── faculty panel ── */
+    .faculty-panel {
+      display: none;
+      background: var(--expand-bg);
+      border-top: 1px solid var(--border-sub);
+    }
+    .college-row.open .faculty-panel { display: block; }
+
+    .faculty-panel-inner {
+      padding: 0 0 8px 36px; /* indent to align past the chevron */
+      animation: fadeSlide 0.18s ease;
+    }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(-4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* faculty column grid — all 6 metric columns equal width (fits 6-digit numbers) */
+    .fac-grid {
+      display: grid;
+      grid-template-columns: minmax(112px,1.4fr) minmax(100px,1fr) 80px 80px 80px 80px 80px 80px;
+      align-items: center;
+    }
+
+    /* faculty column headers */
+    .fac-head-row {
+      border-bottom: 1px solid var(--border-sub);
+    }
+    .fac-head-row .fac-grid { padding: 0; }
+
+    .fth {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--sub);
+      padding: 8px 8px 8px 0;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.12s;
+      white-space: nowrap;
+      position: relative;
+    }
+    .fth:hover { color: var(--text); }
+    .fth.sorted { color: var(--accent); }
+    /* only numeric columns (3rd onward) are right-aligned; Name and Title stay left */
+    .fth:not(:first-child):not(:nth-child(2)) { justify-content: flex-end; padding-right: 4px; }
+
+    /* ── column tooltips ── */
+    .fth[data-tooltip]::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--text);
+      color: var(--bg);
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s 0.7s;
+      z-index: 100;
+    }
+    .fth[data-tooltip]:hover::after { opacity: 1; }
+
+    /* faculty data row */
+    .fac-row {
+      border-bottom: 1px solid var(--border-sub);
+      transition: background 0.1s;
+    }
+    .fac-row:last-child { border-bottom: none; }
+    .fac-row:hover { background: var(--hover-bg); }
+    .fac-row .fac-grid { padding: 0; }
+
+    .ftd {
+      padding: 9px 8px 9px 0;
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .ftd-name-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .fac-name-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .fac-name-text {
+      font-weight: 500;
+      font-size: 13.5px;
+      color: var(--text);
+    }
+
+    .fac-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .fac-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      color: var(--muted);
+      transition: color 0.12s, background 0.12s;
+      text-decoration: none;
+    }
+    .fac-link:hover {
+      color: var(--accent);
+      background: var(--hover-bg);
+      text-decoration: none;
+    }
+    .fac-link svg { width: 13px; height: 13px; }
+
+    .fac-interests {
+      font-size: 11.5px;
+      color: var(--sub);
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      text-transform: lowercase;
+      min-width: 0;
+    }
+    .fac-interests::-webkit-scrollbar { display: none; }
+
+    .ftd-title {
+      font-size: 12.5px;
+      color: var(--sub);
+      padding: 9px 8px 9px 0;
+    }
+
+    .ftd-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12.5px;
+      text-align: right;
+      padding: 9px 4px;
+      color: var(--text);
+    }
+    .ftd-num.na { color: var(--muted); }
+
+    /* ── filter bar ── */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 14px 0 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .filter-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--sub);
+      margin-right: 4px;
+    }
+    .filter-chip {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 11px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--sub);
+      transition: color 0.12s, border-color 0.12s, background 0.12s;
+      user-select: none;
+    }
+    .filter-chip:hover {
+      color: var(--text);
+      border-color: var(--text);
+    }
+    .filter-chip.active {
+      color: var(--bg);
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .filter-chip-count {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10.5px;
+      opacity: 0.75;
+      margin-left: 4px;
+    }
+    .filter-spacer { flex: 1; }
+    .expand-toggle {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 11px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--sub);
+      transition: color 0.12s, border-color 0.12s, background 0.12s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .expand-toggle:hover {
+      color: var(--text);
+      border-color: var(--text);
+    }
+    .expand-toggle svg { width: 12px; height: 12px; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="header-left">
+      <h1>CS at Liberal Arts Colleges</h1>
+      <p>Faculty scholarly metrics sourced from Google Scholar.</p>
+      <div class="header-stats">
+        <div class="stat"><strong id="stat-colleges">—</strong>Colleges</div>
+        <div class="stat"><strong id="stat-faculty">—</strong>Faculty</div>
+      </div>
+    </div>
+    <button class="theme-toggle" id="theme-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
+      <!-- sun -->
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+      <!-- moon -->
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+  </header>
+
+  <div class="filter-bar" id="filter-bar"></div>
+
+  <div class="table-wrap">
+    <div class="col-head-row">
+      <div class="col-grid" id="col-headers"></div>
+    </div>
+    <div id="colleges-list"></div>
+  </div>
+
+</div>
+
+<script>
+// SVG icons
+const ICON_GLOBE = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
+const ICON_SCHOLAR = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`;
+const ICON_PROGRAM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`;
+const ICON_CATALOG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
+
+// ── column tooltips ───────────────────────────────────────────────────────
+const COL_TOOLTIPS = {
+  citedby:    'Total citations received',
+  citedby5y:  'Citations received in the past 5 years',
+  hindex:     'Largest h where h papers each have ≥ h citations',
+  hindex5y:   'h-index computed over the past 5 years',
+  i10index:   'Number of papers with at least 10 citations',
+  i10index5y: 'Papers with ≥ 10 citations in the past 5 years',
+};
+
+// ── column definitions ─────────────────────────────────────────────────────
+const COLLEGE_COLS = [
+  { key: 'name',            label: 'Institution', numeric: false },
+  { key: 'total',           label: 'Faculty',     numeric: true },
+  { key: 'total_citations', label: 'Citations',   numeric: true },
+  { key: 'max_hindex',      label: 'Max h',       numeric: true },
+];
+
+const FAC_COLS = [
+  { key: 'name',       label: 'Name',      numeric: false },
+  { key: 'title',      label: 'Title',     numeric: false },
+  { key: 'citedby',    label: 'Cites',     numeric: true },
+  { key: 'citedby5y',  label: 'Cites 5yr', numeric: true },
+  { key: 'hindex',     label: 'h-index',   numeric: true },
+  { key: 'hindex5y',   label: 'h5-index',   numeric: true },
+  { key: 'i10index',   label: 'i10-index', numeric: true },
+  { key: 'i10index5y', label: 'i10-5yr',   numeric: true },
+];
+
+// ── filter categories ──────────────────────────────────────────────────────
+const CATEGORIES = [
+  { key: 'tenure_track', label: 'Tenure-track' },
+  { key: 'teaching',     label: 'Teaching'     },
+  { key: 'visiting',     label: 'Visiting'     },
+  { key: 'adjunct',      label: 'Adjunct'      },
+];
+
+// ── state ──────────────────────────────────────────────────────────────────
+let allColleges = [];
+let collegeLinks = {};
+let collegeSort = { key: 'name', dir: 1 };
+let activeCategories = new Set(CATEGORIES.map(c => c.key));
+
+// ── theme ──────────────────────────────────────────────────────────────────
+const html = document.documentElement;
+const savedTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', savedTheme);
+
+document.getElementById('theme-btn').addEventListener('click', () => {
+  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+
+// ── data ───────────────────────────────────────────────────────────────────
+async function loadData() {
+  const [facultyRes, linksRes] = await Promise.all([
+    fetch('faculty_data.json'),
+    fetch('college_links.json'),
+  ]);
+  allColleges = await facultyRes.json();
+  collegeLinks = await linksRes.json();
+
+  buildCollegeHeaders();
+  buildFilterBar();
+  renderAll();
+}
+
+// ── filter bar ─────────────────────────────────────────────────────────────
+function categoryCounts() {
+  const counts = Object.fromEntries(CATEGORIES.map(c => [c.key, 0]));
+  for (const college of allColleges) {
+    for (const f of college.faculty) {
+      if (counts[f.category] != null) counts[f.category] += 1;
+    }
+  }
+  return counts;
+}
+
+function buildFilterBar() {
+  const bar = document.getElementById('filter-bar');
+  const counts = categoryCounts();
+  const allOpen = areAllOpen();
+  const expandLabel = allOpen ? 'Collapse all' : 'Expand all';
+  const expandIcon = allOpen
+    ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
+    : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
+
+  bar.innerHTML =
+    `<span class="filter-label">Show</span>` +
+    CATEGORIES.map(c => {
+      const on = activeCategories.has(c.key);
+      return `<button class="filter-chip ${on ? 'active' : ''}" data-cat="${c.key}">
+        ${c.label}<span class="filter-chip-count">${counts[c.key]}</span>
+      </button>`;
+    }).join('') +
+    `<span class="filter-spacer"></span>` +
+    `<button class="expand-toggle" id="expand-toggle">${expandIcon}${expandLabel}</button>`;
+
+  bar.querySelectorAll('.filter-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const k = btn.dataset.cat;
+      if (activeCategories.has(k)) activeCategories.delete(k);
+      else activeCategories.add(k);
+      // ensure at least one stays selected
+      if (activeCategories.size === 0) activeCategories.add(k);
+      buildFilterBar();
+      renderAll();
+    });
+  });
+
+  document.getElementById('expand-toggle').addEventListener('click', toggleExpandAll);
+}
+
+function visibleRows() {
+  return document.querySelectorAll('#colleges-list .college-row');
+}
+
+function areAllOpen() {
+  const rows = visibleRows();
+  return rows.length > 0 && Array.from(rows).every(r => r.classList.contains('open'));
+}
+
+function toggleExpandAll() {
+  const expand = !areAllOpen();
+  visibleRows().forEach(row => {
+    if (expand && !row.classList.contains('open')) {
+      row.classList.add('open');
+      const panel = row.querySelector('.faculty-panel-inner');
+      if (panel && !panel._built) {
+        panel._build();
+        panel._built = true;
+      }
+    } else if (!expand) {
+      row.classList.remove('open');
+    }
+  });
+  buildFilterBar();
+}
+
+// ── filtered aggregation ───────────────────────────────────────────────────
+function filteredFaculty(college) {
+  return college.faculty.filter(f => activeCategories.has(f.category));
+}
+
+function aggregateCollege(college) {
+  const fac = filteredFaculty(college);
+  const cites = fac.map(f => f.citedby).filter(v => v != null);
+  const hs = fac.map(f => f.hindex).filter(v => v != null);
+  return {
+    ...college,
+    faculty: fac,
+    total: fac.length,
+    total_citations: cites.reduce((s, v) => s + v, 0),
+    max_hindex: hs.length ? Math.max(...hs) : null,
+  };
+}
+
+function renderAll() {
+  const aggregated = allColleges
+    .map(aggregateCollege)
+    .filter(c => c.total > 0);
+  const totalFaculty = aggregated.reduce((s, c) => s + c.total, 0);
+  document.getElementById('stat-colleges').textContent = aggregated.length;
+  document.getElementById('stat-faculty').textContent = totalFaculty;
+  renderColleges(aggregated);
+}
+
+// ── college headers ────────────────────────────────────────────────────────
+function buildCollegeHeaders() {
+  const row = document.getElementById('col-headers');
+  row.innerHTML = COLLEGE_COLS.map((col, i) => {
+    const active = col.key === collegeSort.key;
+    const arrow = active ? (collegeSort.dir === 1 ? '↑' : '↓') : '↕';
+    return `<div class="th ${active ? 'sorted' : ''}" data-col="${col.key}">
+      ${col.label} <span class="sort-icon">${arrow}</span>
+    </div>`;
+  }).join('');
+
+  row.querySelectorAll('.th').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.col;
+      if (collegeSort.key === key) {
+        collegeSort.dir *= -1;
+      } else {
+        collegeSort = { key, dir: key === 'name' ? 1 : -1 };
+      }
+      buildCollegeHeaders();
+      renderAll();
+    });
+  });
+}
+
+// ── college sort ───────────────────────────────────────────────────────────
+function sortedColleges(colleges) {
+  const fn = {
+    name:            c => c.name,
+    total:           c => c.total,
+    total_citations: c => c.total_citations ?? -1,
+    max_hindex:      c => c.max_hindex ?? -1,
+  }[collegeSort.key] || (c => c.name);
+
+  return [...colleges].sort((a, b) => {
+    const av = fn(a), bv = fn(b);
+    if (typeof av === 'string') return collegeSort.dir * av.localeCompare(bv);
+    return collegeSort.dir * (bv - av);
+  });
+}
+
+// ── render colleges ────────────────────────────────────────────────────────
+function renderColleges(colleges) {
+  const list = document.getElementById('colleges-list');
+  list.innerHTML = '';
+  sortedColleges(colleges).forEach((college, idx) => {
+    list.appendChild(buildCollegeRow(college, idx));
+  });
+}
+
+function fmt(n) { return n != null ? n.toLocaleString() : '—'; }
+
+function buildCollegeRow(college, idx) {
+  const div = document.createElement('div');
+  div.className = 'college-row';
+
+  const citText = college.total_citations > 0 ? fmt(college.total_citations) : '—';
+  const hText   = fmt(college.max_hindex);
+  const links   = collegeLinks[college.name] || {};
+
+  const programLink = links.program_url
+    ? `<a class="college-link" href="${esc(links.program_url)}" target="_blank" rel="noopener" title="Department website">${ICON_PROGRAM}</a>`
+    : '';
+  const catalogLink = links.catalog_url
+    ? `<a class="college-link" href="${esc(links.catalog_url)}" target="_blank" rel="noopener" title="Course catalog">${ICON_CATALOG}</a>`
+    : '';
+
+  div.innerHTML = `
+    <div class="college-summary">
+      <div class="col-grid">
+        <div class="td td-name">
+          <span class="chevron">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4,2 8,6 4,10"/>
+            </svg>
+          </span>
+          <span class="college-name">${esc(college.name)}</span>
+          ${links.state ? `<span class="college-state">${esc(links.state)}</span>` : ''}
+          <span class="college-links">${programLink}${catalogLink}</span>
+        </div>
+        <div class="td-num">${college.total}</div>
+        <div class="td-num ${college.total_citations > 0 ? '' : 'dim'}">${citText}</div>
+        <div class="td-num ${college.max_hindex != null ? '' : 'dim'}">${hText}</div>
+      </div>
+    </div>
+    <div class="faculty-panel">
+      <div class="faculty-panel-inner" id="fac-panel-${idx}"></div>
+    </div>
+  `;
+
+  div.querySelectorAll('.college-link').forEach(a => {
+    a.addEventListener('click', e => e.stopPropagation());
+  });
+
+  const panel = div.querySelector(`#fac-panel-${idx}`);
+  panel._build = () => buildFacultyPanel(panel, college.faculty);
+
+  div.querySelector('.college-summary').addEventListener('click', () => {
+    const wasOpen = div.classList.contains('open');
+    div.classList.toggle('open', !wasOpen);
+    if (!wasOpen && !panel._built) {
+      panel._build();
+      panel._built = true;
+    }
+    buildFilterBar();
+  });
+
+  return div;
+}
+
+// ── faculty panel ──────────────────────────────────────────────────────────
+function buildFacultyPanel(panel, faculty) {
+  let facSort = { key: 'name', dir: 1 };
+
+  function headersHtml() {
+    return FAC_COLS.map(col => {
+      const active = col.key === facSort.key;
+      const arrow = active ? (facSort.dir === 1 ? '↑' : '↓') : '↕';
+      const tip = COL_TOOLTIPS[col.key] ? ` data-tooltip="${COL_TOOLTIPS[col.key]}"` : '';
+      return `<div class="fth ${active ? 'sorted' : ''}" data-fac-col="${col.key}"${tip}>
+        ${col.label} <span class="sort-icon">${arrow}</span>
+      </div>`;
+    }).join('');
+  }
+
+  function sortedFaculty() {
+    const fn = {
+      name:        f => f.name,
+      title:       f => f.title,
+      citedby:     f => f.citedby ?? -1,
+      citedby5y:   f => f.citedby5y ?? -1,
+      hindex:      f => f.hindex ?? -1,
+      hindex5y:    f => f.hindex5y ?? -1,
+      i10index:    f => f.i10index ?? -1,
+      i10index5y:  f => f.i10index5y ?? -1,
+    }[facSort.key] || (f => f.name);
+
+    return [...faculty].sort((a, b) => {
+      const av = fn(a), bv = fn(b);
+      if (typeof av === 'string') return facSort.dir * av.localeCompare(bv);
+      return facSort.dir * (bv - av);
+    });
+  }
+
+  function rowsHtml() {
+    return sortedFaculty().map(f => {
+      const webLink = f.url
+        ? `<a class="fac-link" href="${esc(f.url)}" target="_blank" rel="noopener" title="Personal website">${ICON_GLOBE}</a>`
+        : '';
+      const schLink = f.scholar_url
+        ? `<a class="fac-link" href="${esc(f.scholar_url)}" target="_blank" rel="noopener" title="Google Scholar">${ICON_SCHOLAR}</a>`
+        : '';
+
+      function num(v) {
+        return `<div class="ftd-num ${v == null ? 'na' : ''}">${v != null ? v.toLocaleString() : '—'}</div>`;
+      }
+
+      return `
+        <div class="fac-row">
+          <div class="fac-grid">
+            <div class="ftd ftd-name-cell">
+              <div class="fac-name-row">
+                <span class="fac-name-text">${esc(f.name)}</span>
+                <span class="fac-links">${webLink}${schLink}</span>
+              </div>
+              ${f.interests ? `<div class="fac-interests">${esc(f.interests)}</div>` : ''}
+            </div>
+            <div class="ftd-title">${esc(f.title)}</div>
+            ${num(f.citedby)}
+            ${num(f.citedby5y)}
+            ${num(f.hindex)}
+            ${num(f.hindex5y)}
+            ${num(f.i10index)}
+            ${num(f.i10index5y)}
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function render() {
+    panel.innerHTML = `
+      <div class="fac-head-row">
+        <div class="fac-grid" id="fac-head-${panel.id}">${headersHtml()}</div>
+      </div>
+      <div class="fac-rows-wrap">${rowsHtml()}</div>
+    `;
+
+    panel.querySelectorAll('.fth').forEach(th => {
+      th.addEventListener('click', e => {
+        e.stopPropagation();
+        const key = th.dataset.facCol;
+        if (facSort.key === key) {
+          facSort.dir *= -1;
+        } else {
+          facSort = { key, dir: key === 'name' || key === 'title' ? 1 : -1 };
+        }
+        render();
+      });
+    });
+  }
+
+  render();
+}
+
+// ── utils ──────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+loadData();
+</script>
+</body>
+</html>

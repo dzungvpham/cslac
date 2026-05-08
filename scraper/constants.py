@@ -24,7 +24,7 @@ class College(StrEnum):
     CLAFLIN = "Claflin University"
     COE = "Coe College"
     COLBY = "Colby College"
-    COLGATE = "Colgate College"
+    COLGATE = "Colgate University"
     ST_BENEDICT = "College of St Benedict"
     HOLY_CROSS = "College of the Holy Cross"
     WOOSTER = "College of Wooster"

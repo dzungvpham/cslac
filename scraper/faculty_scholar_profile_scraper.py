@@ -253,14 +253,9 @@ def _process_row(name: str, college: str, raw_url) -> dict:
         return _empty_verified("no_match")
 
     status = _match_level(name, college, profile["name"], profile["affiliation"])
-    # Partial matches (matched_name, matched_college) and no_match are
-    # treated as unverified — citation data is unreliable until a human
-    # promotes them to manual_approved.
-    if status != "matched":
-        result = _empty_verified(status)
-        if status != "no_match":
-            result["verified_affiliation"] = profile["affiliation"]
-        return result
+    if status == "no_match":
+        return _empty_verified(status)
+    
     return {
         "verified_affiliation": profile["affiliation"],
         "scholar_match_status": status,
