@@ -1,9 +1,9 @@
 college,academic_year,term,course_code,section,course_name,instructor,time,url
 Saint Michael's College,2025-26,S,CS-111-A (2861),,Intro to Computer Science I,"Pangborn, G",M/W/F 11:00 AM - 12:05 PM,
-Saint Michael's College,2026-27,F,CS-111-A (3248),,Intro to Computer Science I,"Demarest, B",M/W/F 11:00 AM - 12:05 PM,
 Saint Michael's College,2025-26,S,CS-113-A (2862),,Intro to Computer Science II,"Demarest, B",T/Th 10:15 AM - 11:50 AM,
-Saint Michael's College,2026-27,F,CS-211-A (3249),,DataStructs&AlgorithmAnalysis,"Pangborn, G",M/W/F 11:00 AM - 12:05 PM,
 Saint Michael's College,2025-26,S,CS-213-A (2863),,Machine Organization,"Pangborn, G",M/W/F 12:15 PM - 1:20 PM,
-Saint Michael's College,2026-27,F,CS-303-A (3266),,OrganizationProgram Languages,"Pangborn, G",T/Th 12:00 PM - 1:35 PM,
 Saint Michael's College,2025-26,S,CS-305-A (2922),,Database Management,"Demarest, B",M/W/F 9:45 AM - 10:50 AM,
+Saint Michael's College,2026-27,F,CS-111-A (3248),,Intro to Computer Science I,"Demarest, B",M/W/F 11:00 AM - 12:05 PM,
+Saint Michael's College,2026-27,F,CS-211-A (3249),,DataStructs&AlgorithmAnalysis,"Pangborn, G",M/W/F 11:00 AM - 12:05 PM,
+Saint Michael's College,2026-27,F,CS-303-A (3266),,OrganizationProgram Languages,"Pangborn, G",T/Th 12:00 PM - 1:35 PM,
 Saint Michael's College,2026-27,F,CS-407-A (3250),,Software Engineering,"Demarest, B",T/Th 1:45 PM - 3:20 PM,
