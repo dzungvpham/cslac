@@ -15,7 +15,9 @@ dependencies = [
     "python-dotenv",
     "requests",
     "selenium",
+    "torch",
     "tqdm",
+    "transformers",
     "wordcloud",
 ]
 

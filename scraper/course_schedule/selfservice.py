@@ -157,18 +157,51 @@ class EllucianSelfServiceScraper(CourseScheduleScraper):
 
     def scrape(self):
         url = self.url_for(None, None)
+        rows = self._load_and_parse(url)
+        if rows is None:
+            return []
+
+        # Some deployments expose more terms in the filter sidebar than the
+        # default (no-filter) load actually returns sections for — e.g.
+        # Augustana lists 4 sidebar terms but the default load only contains
+        # sections from 1. Re-load with `?terms=` populated for every sidebar
+        # term to surface the extras. Skip when the default load already
+        # covers more terms than the sidebar advertises (Susquehanna's
+        # deployment exposes years of history that no sidebar checkbox
+        # represents — we'd lose data by constraining to it).
+        sidebar_terms = self._sidebar_term_ids()
+        seen_terms = {(r["academic_year"], r["term"]) for r in rows}
+        if len(sidebar_terms) > len(seen_terms):
+            print(
+                f"  default load covered {len(seen_terms)} term(s); "
+                f"sidebar advertises {len(sidebar_terms)} — re-loading with all",
+                flush=True,
+            )
+            params = "&".join(f"terms={t}" for t in sidebar_terms)
+            extra = self._load_and_parse(f"{url}&{params}")
+            if extra:
+                # Merge: dedupe on (year, term, course_code, section).
+                key = lambda r: (r["academic_year"], r["term"], r["course_code"], r["section"])
+                by_key = {key(r): r for r in rows}
+                for r in extra:
+                    by_key.setdefault(key(r), r)
+                rows = list(by_key.values())
+        return rows
+
+    def _load_and_parse(self, url):
+        """Return parsed rows for `url`, or `None` on failure / login wall."""
         try:
             self.driver.get(url)
         except Exception as e:
             print(f"  failed to load {url}: {e}", flush=True)
-            return []
+            return None
 
         # Settle briefly, then check for login redirect before waiting on
         # term-filter elements that won't exist on the login page.
         time.sleep(2)
         if self._is_login_page():
             print("  requires login, skipping", flush=True)
-            return []
+            return None
 
         # Wait for the term-filter sidebar OR (as a fallback) the section-
         # expansion buttons. A handful of deployments (e.g. Emmanuel) hide the
@@ -185,11 +218,22 @@ class EllucianSelfServiceScraper(CourseScheduleScraper):
             )
         except TimeoutException:
             print("  timed out waiting for course list", flush=True)
-            return []
+            return None
         time.sleep(self.post_load_sleep)
 
         self._expand_all_sections()
         return self._parse(self.driver.page_source)
+
+    def _sidebar_term_ids(self):
+        """Return the term codes advertised by the filter sidebar.
+
+        e.g. an `<input id="STATICterm20253SP">` yields `"20253SP"`.
+        """
+        ids = self.driver.execute_script(
+            "return Array.from(document.querySelectorAll('input[id^=STATICterm]'))"
+            ".map(e => e.id);"
+        ) or []
+        return [i[len("STATICterm"):] for i in ids if i.startswith("STATICterm")]
 
     def _is_login_page(self):
         from urllib.parse import urlparse
