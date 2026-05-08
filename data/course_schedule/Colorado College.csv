@@ -1,0 +1,59 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Colorado College,2020-21,F,CP307,,Data Structures and Algorithms,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp307.html
+Colorado College,2020-21,S,CP341,,Topics in Computer Science: Web Programming,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2025-26,F,CP115,,Computational Thinking,,Block 2,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp115.html
+Colorado College,2025-26,F,CP115,,Computational Thinking,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp115.html
+Colorado College,2025-26,F,CP116,,Applied Python,,Block 1,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp116.html
+Colorado College,2025-26,F,CP116,,Applied Python,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp116.html
+Colorado College,2025-26,F,CP122,,Computer Science I,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp122.html
+Colorado College,2025-26,F,CP222,,Computer Science II,,Block 1,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp222.html
+Colorado College,2025-26,F,CP241,,Topics in Computer Science: Music and Coding,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp241.html
+Colorado College,2025-26,F,CP274,,Software Design,,Block 2,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp274.html
+Colorado College,2025-26,F,CP274,,Software Design,,Block 4,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp274.html
+Colorado College,2025-26,F,CP275,,Computer Organization,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp275.html
+Colorado College,2025-26,F,CP307,,Data Structures and Algorithms,,Block 2,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp307.html
+Colorado College,2025-26,F,CP341,,Topics in Computer Science: Experience Design in Ubiquitous Computing,,Block 1,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2025-26,F,CP405,,Theory of Computation,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp405.html
+Colorado College,2025-26,F,CP499,,Team Software Project,,Block 4,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp499.html
+Colorado College,2025-26,S,CP115,,Computational Thinking,,Block 5,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp115.html
+Colorado College,2025-26,S,CP116,,Applied Python,,Block 5,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp116.html
+Colorado College,2025-26,S,CP116,,Applied Python,,Block 6,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp116.html
+Colorado College,2025-26,S,CP122,,Computer Science I,,Block 5,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp122.html
+Colorado College,2025-26,S,CP222,,Computer Science II,,Block 6,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp222.html
+Colorado College,2025-26,S,CP255,,Independent Study: Natural Language Drone Simulation,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp255.html
+Colorado College,2025-26,S,CP274,,Software Design,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp274.html
+Colorado College,2025-26,S,CP307,,Data Structures and Algorithms,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp307.html
+Colorado College,2025-26,S,CP321,,Topics in Data Science: Data Visualization and Interpretation,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp321.html
+Colorado College,2025-26,S,CP341,,Topics in Computer Science: Generative Art,,Block 6,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2025-26,S,CP341,,Topics in Computer Science: Error-Correcting Codes,,Block 7,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2025-26,S,CP341,,Topics in Computer Science: Robot Ethics,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2025-26,S,CP405,,Theory of Computation,,Block 7,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp405.html
+Colorado College,2025-26,S,CP499,,Team Software Project,,Block 5,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp499.html
+Colorado College,2026-27,F,CP115,,Computational Thinking,,Block 2,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp115.html
+Colorado College,2026-27,F,CP115,,Computational Thinking,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp115.html
+Colorado College,2026-27,F,CP116,,Applied Python,,Block 4,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp116.html
+Colorado College,2026-27,F,CP122,,Computer Science I,,Block 1,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp122.html
+Colorado College,2026-27,F,CP222,,Computer Science II,,Block 2,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp222.html
+Colorado College,2026-27,F,CP274,,Software Design,,Block 4,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp274.html
+Colorado College,2026-27,F,CP275,,Computer Organization,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp275.html
+Colorado College,2026-27,F,CP307,,Data Structures and Algorithms,,Block 3,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp307.html
+Colorado College,2026-27,F,CP321,,Topics in Data Science: Foundations of Symbolic AI,,Block 1,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp321.html
+Colorado College,2026-27,F,CP341,,Topics in Computer Science: Introduction to Parallel Programming,,Block 1,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2026-27,F,CP341,,Topics in Computer Science: Computer Graphics,,Block 2,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2026-27,F,CP405,,Theory of Computation,,Block 2,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp405.html
+Colorado College,2026-27,F,CP499,,Team Software Project,,Block 4,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp499.html
+Colorado College,2026-27,S,CP115,,Computational Thinking,,Block 5,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp115.html
+Colorado College,2026-27,S,CP115,,Computational Thinking,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp115.html
+Colorado College,2026-27,S,CP116,,Applied Python,,Block 6,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp116.html
+Colorado College,2026-27,S,CP122,,Computer Science I,,Block 5,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp122.html
+Colorado College,2026-27,S,CP122,,Computer Science I,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp122.html
+Colorado College,2026-27,S,CP222,,Computer Science II,,Block 6,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp222.html
+Colorado College,2026-27,S,CP274,,Software Design,,Block 5,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp274.html
+Colorado College,2026-27,S,CP274,,Software Design,,Block 7,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp274.html
+Colorado College,2026-27,S,CP275,,Computer Organization,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp275.html
+Colorado College,2026-27,S,CP307,,Data Structures and Algorithms,,Block 6,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp307.html
+Colorado College,2026-27,S,CP321,,Topics in Data Science: Computer Vision,,Block 8,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp321.html
+Colorado College,2026-27,S,CP341,,Topics in Computer Science: Design in the Context of Do-It-Yourself Smart Technologies,,Block 6,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2026-27,S,CP341,,Topics in Computer Science: Natural Language Processing,,Block 7,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp341.html
+Colorado College,2026-27,S,CP405,,Theory of Computation,,Block 7,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp405.html
+Colorado College,2026-27,S,CP499,,Team Software Project,,Block 5,https://www.coloradocollege.edu/academics/curriculum/catalog/courses/cp499.html
