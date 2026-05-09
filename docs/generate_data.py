@@ -29,6 +29,10 @@ def categorize_title(title: str) -> str:
         return "adjunct"
     if any(k in t for k in ("lecturer", "instructor", "teaching", "practice")):
         return "teaching"
+    if "assistant professor" in t:
+        return "tenure_track"
+    if "professor" in t:
+        return "tenured"
     return "tenure_track"
 
 
