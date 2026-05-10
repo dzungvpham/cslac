@@ -12,6 +12,7 @@ dependencies = [
     "matplotlib",
     "nameparser",
     "pandas",
+    "pdfplumber",
     "python-dotenv",
     "requests",
     "selenium",

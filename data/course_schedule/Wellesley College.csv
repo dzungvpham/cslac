@@ -1,0 +1,331 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Wellesley College,2019-20,F,CS111,01,Computer Programming and Problem Solving,Wood,TF 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,02,Computer Programming and Problem Solving,Lerner,TF 12:45-2:00,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,03,Computer Programming and Problem Solving,Lerner,TF 2:10-3:25,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,L01,Computer Programming and Problem Solving,Lee,W 8:30-10:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,L02,Computer Programming and Problem Solving,Lee,W 10:30-12:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,L03,Computer Programming and Problem Solving,Mawhorter,W 10:30-12:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,L04,Computer Programming and Problem Solving,Lee,W 1:30-3:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,L05,Computer Programming and Problem Solving,Mawhorter,W 3:30-5:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,L06,Computer Programming and Problem Solving,Lee,Th 8:30-10:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,L07,Computer Programming and Problem Solving,Lee,Th 10:30-12:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS111,L08,Computer Programming and Problem Solving,Mawhorter,Th 10:30-12:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS115,01,Computing for the Socio-Techno Web,Mustafaraj,MTh 8:30-9:45,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS115,02,Computing for the Socio-Techno Web,Bassem,MTh 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS115,D01,Computing for the Socio-Techno Web,Kakavouli,T 8:30-9:45,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS115,D02,Computing for the Socio-Techno Web,Kakavouli,T 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS115,D03,Computing for the Socio-Techno Web,Mawhorter,T 12:45-2:00,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS115,D04,Computing for the Socio-Techno Web,Mawhorter,T 2:10-3:25,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS204,,Introduction to Front-End Web Development,Anderson,TF 12:45-2:00,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS220,,Human-Computer Interaction,Delcourt,MTh 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS230,01,Data Structures,Metaxas,MTh 2:20-3:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS230,02,Data Structures,Metaxas,MTh 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS230,L01,Data Structures,Kakavouli,W 8:30-10:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS230,L02,Data Structures,Kakavouli,W 10:30-12:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS230,L03,Data Structures,Kakavouli,W 1:30-3:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS230,L04,Data Structures,Herbst,W 1:30-3:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS231,,Fundamental Algorithms,Bassem,MTh 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS234,,Data Analytics and Visualization,Mustafaraj,MTh 2:20-3:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS235,,Languages and Automata,Freire,TF 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS240,01,Foundations of Computer Systems,Davis,TF 8:30-9:45,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS240,02,Foundations of Computer Systems,Davis,TF 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS240,L01,Foundations of Computer Systems,Herbst,M 9:55-12:55,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS240,L02,Foundations of Computer Systems,Herbst,M 1:30-4:30,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS240,L03,Foundations of Computer Systems,Herbst,M 5:15-8:15,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS251,,Programming Languages,Wood,TF 2:10-3:25,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS304,,Databases with Web Interfaces,Anderson,TF 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS305,,Machine Learning,Tjaden,MTh 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS307,,Computer Graphics,Hildreth,MTh 8:30-9:45,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS313,,Computational Biology,Tjaden,MTh 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,F,CS323,,Social Computing,Delcourt,MTh 2:20-3:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2019.pdf
+Wellesley College,2019-20,S,CS111,01,,Lee,TF 9:55-11:10 C D (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,02,,Davis,TF 11:20-12:35 E F (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,03,,Freire,TF 2:10-3:25 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,L01,,Lee,W 8:30-10:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,L02,,Lee,W 10:30-12:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,L03,,Mawhorter,W (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,L04,,Lee,W 1:30-3:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,L05,,Mawhorter,W (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,L06,,Mawhorter,Th 10:30-12:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS111,L07,,Mawhorter,Th 1:30-3:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS112,,,Hildreth,MTh A (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS112,L01,,Kakavouli,T 8:30-10:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS112,L02,,Kakavouli,T (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS115,01,,Mustafaraj,MTh 8:30-9:45,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS115,02,,Delcourt,MTh 9:55-11:10 C D,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS115,D01,,Mawhorter (L140,W,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS115,D02,,Kakavouli,W (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS115,D03,,Kakavouli,W (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS115,D04,,Kakavouli,W (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS203,,,Davis,TF 8:30-9:45 (SoundLab),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS204,,,Anderson,TF A (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS220,,,Delcourt,MTh (hci),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS230,,,L3/4 Herbst,T 3:30-5:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS230,01,,Metaxas,MTh 11:20-12:35 E F (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS230,02,,Lerner,MTh 2:20-3:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS230,L01,,Herbst,T 10:30-12:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS230,L02,,Herbst,T 1:30-3:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS231,,,Bassem,TF,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS232,,,Mustafaraj,M H; Th H (??),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS235,,,"Tjaden, Tjaden () )",MTh,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS240,,,Wood,TF,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS240,L01,,Herbst,Th 9:55-12:55 (L037),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS240,L02,,Herbst,Th 2:15-5:15 (L037),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS251,,,Wood,TF,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS304,,,Anderson,TF 12:45-2:00 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS305,,,Tjaden,MTh (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS321,,,Tynes,TF I (Clapp 131),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS342,,,Lerner,MTh 3:45-5:25 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2019-20,S,CS343,,,Bassem,TF,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/v.1.1_spring20_class_schedule.pdf
+Wellesley College,2021-22,F,CS111,01,Computer Programming and Problem Solving,Davis,TF 11:20-12:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,02,Computer Programming and Problem Solving,C Anderson,TF 8:30-9:45 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,03,Computer Programming and Problem Solving,Mustafaraj,MTh 9:55-11:10 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,04,Computer Programming and Problem Solving,Turbak,TF 12:45-2:00 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,L01,Computer Programming and Problem Solving,Lee,W 8:30-10:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,L02,Computer Programming and Problem Solving,Lee,W 10:30-12:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,L03,Computer Programming and Problem Solving,Lee,W 1:30-3:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,L04,Computer Programming and Problem Solving,Lee,Th 8:30-10:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,L05,Computer Programming and Problem Solving,Lee,Th 10:30-12:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,L06,Computer Programming and Problem Solving,Mawhorter,Th 8:30-10:20 (Clapp 131),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,L07,Computer Programming and Problem Solving,Mawhorter,Th 10:30-12:20 (Clapp 131),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS111,L08,Computer Programming and Problem Solving,Mawhorter,Th 3:45-5:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS115,,Computing for the Socio-Techno Web,Brubach,TF 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS115,L01,Computing for the Socio-Techno Web,Kakavouli,Th 9:55-11:10 (L140),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS115,L02,Computing for the Socio-Techno Web,Kakavouli,Th 11:20-12:35 (L140),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS121,,Introduction to Game Design,Tynes,TF 2:10-3:25 (Clapp 131),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS203,,Computer Music,Davis,TF 9:55-11:10; W 4:30 -6:20,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS204,,Introduction to Front-End Web Development,S Anderson,MTh 2:20-3:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS220,,Human-Computer Interaction,Shaer,MTh 2:20-3:35,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS230,01,Data Structures,Shaer,MTh 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS230,02,Data Structures,Sandu,MTh 8:30-9:45,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS230,L01,Data Structures,Kakavouli,W 8:30-10:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS230,L02,Data Structures,Kakavouli,W 10:30-12:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS230,L03,Data Structures,Kakavouli,W 1:30-3:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS230,L04,Data Structures,Sandu,W 8:30-10:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS230,L05,Data Structures,Sandu,W 1:30-3:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS231,,Fundamental Algorithms,Bassem,MTh 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS234,,Data Analytics and Visualization,Mustafaraj,MTh 8:30-9:45,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS235,,Languages and Automata,Tjaden,MTh 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS240,01,Foundations of Computer Systems,Wood,TF 12:45-2:00,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS240,02,Foundations of Computer Systems,Wood,TF 2:10-3:25,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS240,L01,Foundations of Computer Systems,Herbst,W 9:30-11:20 (L037),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS240,L02,Foundations of Computer Systems,Herbst,W 1:30-3:20 (L037),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS240,L03,Foundations of Computer Systems,Herbst,Th 9:55-11:45 (L037),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS242,,Computer Networks,Bassem,MTh 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS251,C,Programming Languages,Anderson,TF 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS304,,Databases with Web Interfaces,S Anderson,TF 2:10-3:25 (L180); W 3:30-4:45,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS305,,Machine Learning,Tjaden,MTh 11:20-12:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS317,,Mobile App Development,Turbak,MTh 3:45-5:00,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS321,,Extended Reality,Tynes,TF 9:55-11:10 (Jewett 247),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS331,,Advanced Algorithms,Brubach,MTh 2:20-3:35,https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,F,CS332,,Visual Processing,Hildreth,W 8:30-9:20; T 8:30-9:45; F 8:30-9:45 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf
+Wellesley College,2021-22,S,CS111,01,,Mustafaraj,MTh 8:30-9:45 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,02,,C Anderson,MTh 9:55-11:10 (H402),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,03,,Davis,MTh 11:20-12:35 (H402),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,04,,Turbak,MTh 2:20-3:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,L01,,Lee,W 8:30-10:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,L02,,Lee,W 10:30-12:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,L03,,Lee,W 1:30-3:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,L04,,Lee,T 10:30-12:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,L05,,Lee,T 1:30-3:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,L06,,Mawhorter,W 1:30-3:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS111,L07,,Mawhorter,W 3:45-5:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS121,,,Tynes,TF 9:55-11:10 (Clapp 131),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS220,01,,Delcourt,TF 9:55-11:10 (L120),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS220,02,,Delcourt,TF 11:20-12:35 (L120),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS221,,,Tynes,TF 2:10-3:25 (JAC 247),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,01,,Shaer,MTh 11:20-12:35 (H305),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,02,,Sandu,MTh 8:30-9:45 (H302),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,03,,S Anderson,MTh 2:20-3:35 (L047),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,L01,,Kakavouli,W 8:30-10:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,L02,,Kakavouli,W 10:30-12:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,L03,,Kakavouli,W 1:30-3:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,L04,,Sandu,W 8:30-10:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,L05,,Sandu,W 10:30-12:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,L06,,Sandu,W 1:30-3:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,L07,,Kakavouli,T 10:30-12:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS230,L08,,Kakavouli,T 1:30-3:20 (L140),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS231,,,Turbak,TF 2:10-3:25 (E111),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS232,01,,C Anderson,Th 8:30-9:45 (H402),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS232,C,,Anderson,M 8:30-9:45 (H402),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS235,,Computer Programming and Problem Solving SPRING 2022,Tjaden,MTh 9:55-11:10 (L043),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS240,,,Davis,MTh 2:20-3:35 (H403),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS240,L01,,Herbst,W 9:30-12:20 (L037),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS240,L02,,Herbst,W 1:30-4:20 (L037),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS304,,,S Anderson,MTh 9:55-11:10 (L180); W 9:30-10:20 (H401),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS307,,,Hildreth,TF 8:30-9:45 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS313,,,Tjaden,MTh 11:20-12:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS315,,,Mustafaraj,MTh 9:55-11:10 (L045); W 10:30-12:20 (H305),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2021-22,S,CS320,,,Shaer,MTh 2:20-3:35 (L120),https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS111,01,Computer Programming and Problem Solving,Mustafaraj,MTh 8:30-9:45 (H105),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS111,03,Computer Programming and Problem Solving,Mustafaraj,MTh 11:20-12:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS111,L01,Computer Programming and Problem Solving,Mawhorter,T 1:30-3:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS111,L02,Computer Programming and Problem Solving,Mawhorter,T 3:30-5:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS111,L03,Computer Programming and Problem Solving,Mawhorter,W 10:30-12:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS111,L04,Computer Programming and Problem Solving,Mawhorter,W 1:30-3:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS111,L05,Computer Programming and Problem Solving,Mawhorter,W 3:30-5:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS115,,Computing for the Socio-Techno Web,Brubach,TF 2:10-3:25 (H401),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS115,L01,Computing for the Socio-Techno Web,Kakavouli,Th 9:55-11:10 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS115,L02,Computing for the Socio-Techno Web,Kakavouli,Th 11:20-12:35 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS121,,Introduction to Game Design,Tynes,TF 9:55-11:10 (L140),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS204,,Introduction to Front-End Web Development,S Anderson,MTh 2:20-3:35 (L180); W 2:30-3:20 (H305),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS220,,Human-Computer Interaction,Shaer,MTh 2:20-3:35 (H402),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,01,Data Structures,Metaxas,TF 11:20-12:35 (E111),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,02,Data Structures,Delcourt,TF 12:45-2:00 (L039),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,03,Data Structures,Delcourt,TF 2:10-3:25 (L039),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,L01,Data Structures,Sandu,W 8:30-10:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,L02,Data Structures,Sandu,W 10:30-12:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,L03,Data Structures,Sandu,W 1:30-3:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,L04,Data Structures,Kakavouli,W 10:30-12:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,L05,Data Structures,Kakavouli,W 1:30-3:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS230,L06,Data Structures,Kakavouli,W 3:30-5:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS231,,Fundamental Algorithms,Brubach,TF 11:20-12:35 (L043),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS232,C,Artificial Intelligence,Anderson,TF 9:55-11:10 (L039),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS234,,Data Analytics and Visualization,Mustafaraj,MTh 9:55-11:10 (H103),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS235,01,Languages and Automata,Tjaden,MTh 9:55-11:10 (H401),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS235,02,Languages and Automata,Sandu,MTh 2:20-3:35 (N207),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS240,01,Foundations of Computer Systems,Turbak,M 11:20-12:35 (E311); Th 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS240,02,Foundations of Computer Systems,Turbak,MTh 2:20-3:35 (N220),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS240,L01,Foundations of Computer Systems,Herbst,T 9:30-12:30 (L037),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS240,L02,Foundations of Computer Systems,Herbst,W 9:30-12:30 (L037),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS240,L03,Foundations of Computer Systems,Herbst,W 1:30-4:30 (L037),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS304,,Databases with Web Interfaces,S Anderson,TF 12:45-2:00 (H402); W 1:30-2:20 (H305),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS305,,Machine Learning,Tjaden,MTh 11:20-12:35 (H402),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS321,,Extended Reality,Tynes,TF 2:10-3:25 (L140),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,F,CS333,C,Natural Language Processing,Anderson,TF 8:30-9:45 (L039),https://www1.wellesley.edu/sites/default/files/assets/fall_2022_course_schedule.pdf
+Wellesley College,2022-23,S,CS111,01,Computer Programming and Problem Solving,C Anderson,TF 8:30-9:45 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS111,02,Computer Programming and Problem Solving,C Anderson,TF 9:55-11:10 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS111,03,Computer Programming and Problem Solving,S Lee,TF 12:45-2:00 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS111,04,Computer Programming and Problem Solving,F Turbak,TF 2:10-3:25 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS111,L01,Computer Programming and Problem Solving,S Lee,W 10:30-12:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS111,L02,Computer Programming and Problem Solving,S Lee,W 1:30-3:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS111,L03,Computer Programming and Problem Solving,P Mawhorter,W (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS111,L04,Computer Programming and Problem Solving,P Mawhorter,Th 9:30-10:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS111,L05,Computer Programming and Problem Solving,P Mawhorter,Th 10:30-12:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS121,01,Introduction to Game Design,J Tynes,MTh 2:20-3:35 (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS220,01,Human-Computer Interaction,C Delcourt,TF 9:55-11:10 (L047),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS221,01,Digital Worlds for Gaming,J Tynes,MTh 11:20-12:35 (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS230,01,Data Structures,S Sandu,MTh 8:30-9:45 (E111),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS230,02,Data Structures,S Sandu,MTh 9:55-11:10 (E111),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS230,03,Data Structures,T Metaxas,MTh 3:45-5:00 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS230,L01,Data Structures,S Kakavouli,T 10:30-12:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS230,L02,Data Structures,S Kakavouli,T 1:30-3:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS230,L03,Data Structures,S Kakavouli,W 10:30-12:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS230,L04,Data Structures,S Kakavouli,W 1:30-3:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS230,L05,Data Structures,S Kakavouli,W 3:30-5:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS231,01,Fundamental Algorithms,B Brubach,TF 9:55-11:10 (H103),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS231,02,Fundamental Algorithms,C Bassem,TF 11:20-12:35 (H103),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS235,01,Languages and Automata,B Tjaden,MTh 9:55-11:10 (H401),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS240,01,Foundations of Computer Systems,F Turbak,TF 11:20-12:35 (L047),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS240,L01,Foundations of Computer Systems,P Mawhorter,W 8:30-11:30 (L037),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS240,L02,Foundations of Computer Systems,P Mawhorter,W 2:30-5:30 (L037),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS304,01,Databases with Web Interfaces,S Anderson,TF 11:20-12:35 (L180); W (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS305,01,Machine Learning,B Tjaden,MTh 11:20-12:35 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS307,01,Computer Graphics,S Anderson,W 9:30-10:20 (H402); MTh 9:55-11:10 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS320,01,Tangible User Interfaces,O Shaer,MTh 2:20-3:35 (L120),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS323,01,Social Computing,C Delcourt,TF 12:45-2:00 (L035),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS331,01,Advanced Algorithms,B Brubach,TF 12:45-2:00 (L043),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2022-23,S,CS343,01,Distributed Computing,C Bassem,TF 2:10-3:25 (H403),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2023_course_schedule_0.pdf
+Wellesley College,2023-24,F,CS111,01,Computer Programming and Problem Solving,E Mustafaraj,F (L180); T 8:30-9:45 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,02,Computer Programming and Problem Solving,V Gadiraju,TF 9:55-11:10 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,03,Computer Programming and Problem Solving,S Lee,TF 11:20-12:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,04,Computer Programming and Problem Solving,F Turbak,TF 2:10-3:25 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,L01,Computer Programming and Problem Solving,S Sandu,W 8:30-10:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,L02,Computer Programming and Problem Solving,S Sandu,W 10:30-12:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,L03,Computer Programming and Problem Solving,S Sandu,W 1:30-3:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,L04,Computer Programming and Problem Solving,S Lee,W 10:30-12:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,L05,Computer Programming and Problem Solving,P Mawhorter,T 4 - 5:50 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS111,L06,Computer Programming and Problem Solving,P Mawhorter,W 12:30 - 2:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS115,01,,B Brubach,TF 12:45-2:00 (L240),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS115,L1,,S Kakavouli,Th 9:55-11:10 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS115,L2,,S Kakakvouli,Th 11:20-12:35 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS121,01,Introduction to Game Design,J Tynes,MTh 2:20-3:35 (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS204,01,Introduction to front-end web development,S Anderson,TF 11:20-12:35 (E101); W 12:30 - 1:20 (L Wing 031),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS220,01,Human-Computer Interaction,V Gadiraju,TF 2:10-3:25 (L220),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS221,01,Digital Worlds for Gaming,J Tynes,M 11:20-12:35 (L140); Th (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS230,01,Data Structures,T Metaxas,M 11:20-12:35 (L200); Th (L200),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS230,02,Data Structures,C Delcourt,MTh 2:20-3:35 (E311),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS230,03,Data Structures,C Delcourt,MTh 3:45 - 5:00 (E311),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS230,L04,Data Structures,S Kakavouli (H402,W 1:30-3:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS230,L1,Data Structures,S Kakavouli,T 10:30-12:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS230,L2,Data Structures,S Kakavouli,T 1:30-3:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS230,L3,Data Structures,S Kakavouli,W 10:30-12:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS231,01,Fundamental Algorithms,"B Brubach (N220) CS 334/PHIL 322 E Mustafaraj J Walsh, B Brubach",T 9:55-11:10 (L220); F 9:55-11:10 (N220),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS231,02,Fundamental Algorithms,"C Bassem (E311) CS 334/PHIL 322 E Mustafaraj J Walsh, C Bassem",T 11:20-12:35 (L200); F 11:20-12:35 (E311),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS232,01,Artificial Intelligence,C Anderson,F (L043); T 8:30-9:45 (L043),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS235,01,Theory of Computation,B Tjaden,M 9:55-11:10 (H405); Th 9:55-11:10 (H 405),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS235,02,Theory of Computation,S Sandu,M 11:20-12:35 (N321); Th (N321),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS240,01,Foundations of Computer Systems,A VanHattum,MTh 2:20-3:35 (L045),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS240,02,Foundations of Computer Systems,A VanHattum,MTh 3:45 - 5:00 (L045),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS240,L01,Foundations of Computer Systems,P Mawhorter,T 12:45- 3:45 (L037),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS240,L02,Foundations of Computer Systems,P Mawhorter,W 8:30 - 11:30 (L037),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS240,L03,Foundations of Computer Systems,P Mawhorter,W 2:30-5:30 (L037),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS242,01,Computer Networks,C Bassem,TF 12:45-2:00 (L220),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS304,01,Databases with Web Interfaces,S Anderson,W 9:30 - 10:20 (H402); MTh 9:55-11:10 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS305,01,Machine Learning,B Tjaden,M 11:20-12:35 (H402); Th (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS317,01,Mobile App Development,F Turbak,TF 11:20-12:35 (L039),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS333,01,Natural Language Processing,C Anderson,TF 9:55-11:10 (L043),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,F,CS366,01,Advanced Projects in Interactive Media,O Shaer,Th 2:20-3:35 (L120); Th 3:45 - 5:00 (L120),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/fall_2023_schedule.pdf
+Wellesley College,2023-24,S,CS111,L01,Computer Programming and Problem Solving,Lee,W 10:30-12:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS111,L02,Computer Programming and Problem Solving,Lee,W 1:30-3:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS111,L03,Computer Programming and Problem Solving,Mawhorter,W 12:30 - 2:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS111,L04,Computer Programming and Problem Solving,Mawhorter,Th 8:30-10:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS111,L05,Computer Programming and Problem Solving,Mawhorter,Th 10:30-12:20 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS121,01,Introduction to Game Design,Tynes,MTh 2:20-3:35 (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS220,01,Human-Computer Interaction,Delcourt,MTh 9:55-11:10 (L120),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS230,01,Data Structures,Sandu,TF 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS230,02,Data Structures,Sandu,TF 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS230,03,Data Structures,S. Anderson,TF 12:45-2:00,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS230,L01,Data Structures,Kakavouli,W 10:30-12:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS230,L02,Data Structures,Kakavouli,W 1:30-3:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS230,L03,Data Structures,Kakavouli,W 3:30-5:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS230,L04,Data Structures,Kakavouli,Th 10:30-12:20 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS230,L05,Data Structures,Kakavouli,Th 2:15 - 4:05 (H402),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS231,01,Fundamental Algorithms,Bassem,W 9:30 - 10:20; MTh 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS232,01,Artificial Intelligence,C. Anderson,TF 9:55-11:10 (E101),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS235,01,Theory of Computation,Turbak,TF 2:10-3:25; W 3:30 - 4:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS240,01,Foundations of Computer Systems,VanHattum,MTh 2:20-3:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS240,L02,Foundations of Computer Systems,Mawhorter,W 2:30-5:30,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS304,01,Databases with Web Interfaces,S. Anderson,TF 9:55-11:10 (H402); W 10:30-11:20 (L180),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS315,01,Data Science for the Web,"Mustafaraj CS 317 01 Turbak, Mustafaraj",TF 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS315,02,Data Science for the Web,Mustafaraj,TF 12:45-2:00,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS317,01,Mobile App Development,Turbak,F 11:20-12:35,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS320,01,Tangible User Interfaces,Shaer,MTh 2:20-3:35 (L120),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS321,01,Extended Reality,Tynes,M 11:20-12:35 (L140); Th (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS323,01,Social Computing,Delcourt,M 11:20-12:35; Th; W 11:30 - 12:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS340,01,Modeling of Computer Systems,VanHattum,W 9:30 - 10:20; MTh 9:55-11:10,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS343,01,Distributed Computing,Bassem,M 11:20-12:35; Th; W 11:30 - 12:20,https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2023-24,S,CS365,01,Advanced Projects in Intercative Media,Tynes,W 1:30 - 4: 10 (L140),https://www1.wellesley.edu/sites/default/files/assets/departments/computerscience/spring_2024_schedule.pdf.pdf
+Wellesley College,2026-27,F,CS110,01,Sociotechnical Dimensions of Computing in the Age of AI,Brian Brubach,Science Center E Wing 311 Classroom - TF 2:10 PM - 3:25 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS111,01,Computer Programming and Problem Solving,Smaranda Sandu,Science Center Hub 403 Classroom - TF 9:55 AM - 11:10 AM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS111,02,Computer Programming and Problem Solving,Sohie Lee,Science Center Hub 302 Active Learning Classroom - TF 11:20 AM - 12:35 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS111L,L01,Laboratory: Computer Programming and Problem Solving,Sara Melnick,Science Center Hub 402 CS Computer Lab - T 1:30 PM - 3:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS111L,L02,Laboratory: Computer Programming and Problem Solving,Sara Melnick,Science Center Hub 402 CS Computer Lab - T 3:30 PM - 5:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS111L,L03,Laboratory: Computer Programming and Problem Solving,Sara Melnick,Science Center L Wing 180 Computer Science Computer Lab - W 10:30 AM - 12:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS111L,L04,Laboratory: Computer Programming and Problem Solving,Sara Melnick,Science Center L Wing 180 Computer Science Computer Lab - W 1:30 PM - 3:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS111L,L05,Laboratory: Computer Programming and Problem Solving,Sara Melnick,Science Center L Wing 180 Computer Science Computer Lab - W 3:30 PM - 5:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS121,01,Intro to Game Design,Jordan Tynes,Science Center L Wing 140 Computer Science Computer Lab - MR 11:20 AM - 12:35 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS220,01,Human-Computer Interaction,Catherine Grevet Delcourt,Science Center E Wing 111 Classroom - TF 11:20 AM - 12:35 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS230,01,Data Structures,Stella Kakavouli,Science Center Hub 402 CS Computer Lab - MR 11:20 AM - 12:35 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS230,02,Data Structures,Yaniv Yacoby,Science Center L Wing 180 Computer Science Computer Lab - MR 3:45 PM - 5:00 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS230,1LA,Data Structures,Stella Kakavouli,Science Center Hub 402 CS Computer Lab - M 1:30 PM - 3:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS230,1LB,Data Structures,Stella Kakavouli,Science Center Hub 402 CS Computer Lab - W 10:30 AM - 12:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS230,2LA,Data Structures,Stella Kakavouli,Science Center Hub 402 CS Computer Lab - W 1:30 PM - 3:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS230,2LB,Data Structures,Stella Kakavouli,Science Center Hub 402 CS Computer Lab - W 3:30 PM - 5:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS231,01,Design and Analysis of Algorithms,Brian Brubach,Science Center L Wing 047 Classroom - TF 9:55 AM - 11:10 AM Science Center L Wing 047 Classroom - W 10:30 AM - 11:20 AM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS232,01,Artificial Intelligence,Carolyn Anderson,Science Center Hub 402 CS Computer Lab - TF 8:30 AM - 9:45 AM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS232,02,Artificial Intelligence,Carolyn Anderson,Science Center Hub 402 CS Computer Lab - TF 11:20 AM - 12:35 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS235,01,Theory of Computation,Smaranda Sandu,Science Center E Wing 311 Classroom - MR 8:30 AM - 9:45 AM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS240,01,Foundations of Computer Systems with Laboratory,Franklyn Turbak,Science Center N Wing 207 Classroom - TF 11:20 AM - 12:35 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS240L,L01,Laboratory: Foundations of Computer Systems Laboratory,Peter Andrew Mawhorter,Science Center L Wing 037 Computer Science Lab - T 1:30 PM - 4:30 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS240L,L02,Laboratory: Foundations of Computer Systems Laboratory,Peter Andrew Mawhorter,Science Center L Wing 037 Computer Science Lab - W 8:30 AM - 11:30 AM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS240L,L03,Laboratory: Foundations of Computer Systems Laboratory,Peter Andrew Mawhorter,Science Center L Wing 037 Computer Science Lab - W 12:00 PM - 3:00 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS245,01,Probabilistic Foundations of Machine Learning,Yaniv Yacoby,Science Center L Wing 047 Classroom - MR 2:20 PM - 3:35 PM Science Center L Wing 047 Classroom - W 2:30 PM - 3:45 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS298,01,Social Media and Elections,Eni Mustafaraj Maneesh Arora,Science Center Hub 103 Classroom - MR 9:55 AM - 11:10 AM Science Center Hub 103 Classroom - W 9:30 AM - 10:20 AM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS304,01,Databases with Web Interfaces,Scott Anderson,Science Center Hub 305 Classroom - TF 2:10 PM - 3:25 PM Science Center Hub 305 Classroom - W 3:30 PM - 4:45 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS315,01,Data Science for the Web,Eni Mustafaraj,Science Center L Wing 035 Classroom - TF 12:45 PM - 2:00 PM Science Center L Wing 035 Classroom - W 12:30 PM - 2:20 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS317,01,Mobile App Development,Franklyn Turbak,Science Center E Wing 111 Classroom - TF 2:10 PM - 3:25 PM Science Center E Wing 111 Classroom - W 3:30 PM - 4:45 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS321,01,Extended Reality,Jordan Tynes,Science Center L Wing 140 Computer Science Computer Lab - MR 2:20 PM - 3:35 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS344,01,Deep Learning,Brian Tjaden,Science Center L Wing 180 Computer Science Computer Lab - MR 9:55 AM - 11:10 AM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS344,02,Deep Learning,Brian Tjaden,Science Center L Wing 180 Computer Science Computer Lab - MR 11:20 AM - 12:35 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
+Wellesley College,2026-27,F,CS365,01,Advanced Projects in Playable Media,Jordan Tynes,Science Center L Wing 140 Computer Science Computer Lab - W 1:30 PM - 4:10 PM,https://webapps.wellesley.edu/class_schedule/classes.php?subject=cs&template=top3&font_size=16
