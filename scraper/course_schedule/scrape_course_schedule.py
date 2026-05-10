@@ -24,6 +24,7 @@ from course_schedule.carleton import CarletonScraper
 from course_schedule.colorado import ColoradoScraper
 from course_schedule.hyperschedule import HarveyMuddScraper, PomonaScraper
 from course_schedule.macalester import MacalesterScraper
+from course_schedule.middlebury import MiddleburyScraper
 from course_schedule.selfservice import selfservice_scrapers
 from course_schedule.trinity import TrinityScraper
 from course_schedule.wellesley import WellesleyScraper
@@ -38,6 +39,7 @@ SCRAPERS = [
     ColoradoScraper,
     HarveyMuddScraper,
     MacalesterScraper,
+    MiddleburyScraper,
     PomonaScraper,
     TrinityScraper,
     WellesleyScraper,

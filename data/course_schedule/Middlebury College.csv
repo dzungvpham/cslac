@@ -1,0 +1,538 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Middlebury College,2021-22,F,CSCI 0110,A,Programming through Simulation,Matthew Dickerson,TTh 1:30pm-2:45pm,https://catalog.middlebury.edu/offerings/view/section-202190-92809
+Middlebury College,2021-22,F,CSCI 0110,Y,Programming Simulation Lab,Matthew Dickerson,W 12:30pm-1:20pm,https://catalog.middlebury.edu/offerings/view/section-202190-92810
+Middlebury College,2021-22,F,CSCI 0110,Z,Programming Simulation Lab,Matthew Dickerson,W 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202190-92811
+Middlebury College,2021-22,F,CSCI 0145,A,Introduction to Computing,John Foley,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202190-92035
+Middlebury College,2021-22,F,CSCI 0145,B,Introduction to Computing,John Foley,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-92509
+Middlebury College,2021-22,F,CSCI 0145,W,Introduction to Computing Lab,John Foley,F 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202190-92036
+Middlebury College,2021-22,F,CSCI 0145,X,Introduction to Computing Lab,John Foley,F 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202190-92037
+Middlebury College,2021-22,F,CSCI 0145,Y,Introduction to Computing Lab,John Foley,F 12:30pm-1:20pm,https://catalog.middlebury.edu/offerings/view/section-202190-92038
+Middlebury College,2021-22,F,CSCI 0145,Z,Introduction to Computing Lab,John Foley,F 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202190-92039
+Middlebury College,2021-22,F,CSCI 0150,A,Computing for the Sciences,Michael Linderman,MWF 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202190-91013
+Middlebury College,2021-22,F,CSCI 0150,B,Computing for the Sciences,Michael Linderman,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202190-92510
+Middlebury College,2021-22,F,CSCI 0150,C,Computing for the Sciences,Amy Briggs,TTh 8:00am-9:15am,https://catalog.middlebury.edu/offerings/view/section-202190-93035
+Middlebury College,2021-22,F,CSCI 0200,A,Math Foundations of Computing,Philip Caplan,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202190-91357
+Middlebury College,2021-22,F,CSCI 0200,B,Math Foundations of Computing,Philip Caplan,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202190-91540
+Middlebury College,2021-22,F,CSCI 0201,A,Data Structures,"Matthew Dickerson , Ananya Das",TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-90100
+Middlebury College,2021-22,F,CSCI 0201,B,Data Structures,"Matthew Dickerson , Ananya Das",TTh 1:30pm-2:45pm,https://catalog.middlebury.edu/offerings/view/section-202190-92028
+Middlebury College,2021-22,F,CSCI 0201,Y,Data Structures Lab,Ananya Das,M 12:30pm-1:20pm,https://catalog.middlebury.edu/offerings/view/section-202190-91379
+Middlebury College,2021-22,F,CSCI 0201,Z,Data Structures Lab,Ananya Das,M 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202190-91380
+Middlebury College,2021-22,F,CSCI 0202,A,Computer Architecture,Andrea Vaccari,MWF 12:30pm-1:20pm,https://catalog.middlebury.edu/offerings/view/section-202190-90101
+Middlebury College,2021-22,F,CSCI 0202,B,Computer Architecture,Andrea Vaccari,MWF 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202190-91510
+Middlebury College,2021-22,F,CSCI 0301,A,Theory of Computation,Amy Briggs,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202190-90102
+Middlebury College,2021-22,F,CSCI 0301,B,Theory of Computation,Amy Briggs,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202190-92511
+Middlebury College,2021-22,F,CSCI 0302,A,Algorithms and Complexity,Matthew Dickerson,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202190-91488
+Middlebury College,2021-22,F,CSCI 0302,B,Algorithms and Complexity,Matthew Dickerson,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-91671
+Middlebury College,2021-22,F,CSCI 0312,A,Software Development,Christopher Andrews,MW 8:40am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202190-91729
+Middlebury College,2021-22,F,CSCI 0312,B,Software Development,Christopher Andrews,MW 12:15pm-1:30pm,https://catalog.middlebury.edu/offerings/view/section-202190-92813
+Middlebury College,2021-22,F,CSCI 0312,Y,Software Dev Lab - Section A,Christopher Andrews,F 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202190-92815
+Middlebury College,2021-22,F,CSCI 0312,Z,Software Dev Lab - Section B,Christopher Andrews,F 12:30pm-1:20pm,https://catalog.middlebury.edu/offerings/view/section-202190-92816
+Middlebury College,2021-22,F,CSCI 0313,A,Programming Languages,Daniel Scharstein,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202190-91864
+Middlebury College,2021-22,F,CSCI 0315,A,Systems Programming,Peter Johnson,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202190-91557
+Middlebury College,2021-22,F,CSCI 0315,Z,Systems Programming Lab,Peter Johnson,Th 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-91730
+Middlebury College,2021-22,F,CSCI 0318,A,OOP & GUI Application Dev,Frank Swenton,TTh 3:00pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-92819
+Middlebury College,2021-22,F,CSCI 0435,A,Embedded Systems,Andrea Vaccari,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202190-92820
+Middlebury College,2021-22,F,CSCI 0435,Z,Embedded Systems Lab,Andrea Vaccari,T 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-92822
+Middlebury College,2021-22,F,CSCI 0461,A,Computer Graphics,Philip Caplan,TTh 8:00am-9:15am,https://catalog.middlebury.edu/offerings/view/section-202190-92823
+Middlebury College,2021-22,F,CSCI 0465,A,Information Visualization,Christopher Andrews,TTh 3:00pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-92824
+Middlebury College,2021-22,F,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-90381
+Middlebury College,2021-22,F,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-90488
+Middlebury College,2021-22,F,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-90682
+Middlebury College,2021-22,F,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-90489
+Middlebury College,2021-22,F,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-90490
+Middlebury College,2021-22,F,CSCI 0500,F,Advanced Study,"Matthew Dickerson , Ananya Das",Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-90554
+Middlebury College,2021-22,F,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-91387
+Middlebury College,2021-22,F,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-91514
+Middlebury College,2021-22,F,CSCI 0500,I,Advanced Study,John Foley,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-91577
+Middlebury College,2021-22,F,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-91578
+Middlebury College,2021-22,F,CSCI 0500,K,Advanced Study,Andrea Vaccari,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-91672
+Middlebury College,2021-22,F,CSCI 0500,L,Advanced Study,Philip Caplan,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202190-92909
+Middlebury College,2021-22,F,CSCI 0701,A,Senior Seminar,Daniel Scharstein,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-91356
+Middlebury College,2021-22,F,CSCI 0702,A,Senior Thesis,John Foley,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202190-91489
+Middlebury College,2021-22,W,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-10245
+Middlebury College,2021-22,W,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-10246
+Middlebury College,2021-22,W,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-10481
+Middlebury College,2021-22,W,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-10306
+Middlebury College,2021-22,W,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-10307
+Middlebury College,2021-22,W,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-10412
+Middlebury College,2021-22,W,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-11056
+Middlebury College,2021-22,W,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-11195
+Middlebury College,2021-22,W,CSCI 0500,I,Advanced Study,Jason Grant,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202210-11234
+Middlebury College,2021-22,W,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-11235
+Middlebury College,2021-22,W,CSCI 0702,A,Senior Thesis,Philip Caplan,MTWTh 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202210-11401
+Middlebury College,2021-22,W,CSCI 1005,A,Crash Course/Systems Security,Peter Johnson,MTWTh 10:00am-11:30am,https://catalog.middlebury.edu/offerings/view/section-202210-11584
+Middlebury College,2021-22,S,CSCI 0105,A,Algorithmic World,Christopher Andrews,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202220-22692
+Middlebury College,2021-22,S,CSCI 0145,A,Introduction to Computing,Andrea Vaccari,TTh 8:00am-9:15am,https://catalog.middlebury.edu/offerings/view/section-202220-22165
+Middlebury College,2021-22,S,CSCI 0145,B,Introduction to Computing,Andrea Vaccari,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202220-22166
+Middlebury College,2021-22,S,CSCI 0145,X,Introduction to Computing Lab,Andrea Vaccari,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-22791
+Middlebury College,2021-22,S,CSCI 0145,Y,Introduction to Computing Lab,Andrea Vaccari,F 12:30pm-1:20pm,https://catalog.middlebury.edu/offerings/view/section-202220-22792
+Middlebury College,2021-22,S,CSCI 0145,Z,Introduction to Computing Lab,Andrea Vaccari,F 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202220-22793
+Middlebury College,2021-22,S,CSCI 0150,A,Computing for the Sciences,Amy Briggs,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202220-21396
+Middlebury College,2021-22,S,CSCI 0150,B,Computing for the Sciences,Amy Briggs,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202220-22498
+Middlebury College,2021-22,S,CSCI 0200,A,Math Foundations of Computing,Frank Swenton,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202220-20991
+Middlebury College,2021-22,S,CSCI 0200,B,Math Foundations of Computing,Matthew Dickerson,TTh 8:00am-9:15am,https://catalog.middlebury.edu/offerings/view/section-202220-21527
+Middlebury College,2021-22,S,CSCI 0200,C,Math Foundations of Computing,Matthew Dickerson,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202220-22893
+Middlebury College,2021-22,S,CSCI 0201,A,Data Structures,John Foley,TTh 8:00am-9:15am,https://catalog.middlebury.edu/offerings/view/section-202220-20041
+Middlebury College,2021-22,S,CSCI 0201,B,Data Structures,John Foley,TTh 1:30pm-2:45pm,https://catalog.middlebury.edu/offerings/view/section-202220-22172
+Middlebury College,2021-22,S,CSCI 0201,X,Data Structures Lab,John Foley,M 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202220-22794
+Middlebury College,2021-22,S,CSCI 0201,Y,Data Structures Lab,John Foley,M 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202220-22499
+Middlebury College,2021-22,S,CSCI 0201,Z,Data Structures Lab,John Foley,M 2:50pm-3:40pm,https://catalog.middlebury.edu/offerings/view/section-202220-21337
+Middlebury College,2021-22,S,CSCI 0202,A,Computer Architecture,Peter Johnson,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202220-21338
+Middlebury College,2021-22,S,CSCI 0202,B,Computer Architecture,Peter Johnson,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-21467
+Middlebury College,2021-22,S,CSCI 0301,A,Theory of Computation,Amy Briggs,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202220-21528
+Middlebury College,2021-22,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,MWF 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202220-20327
+Middlebury College,2021-22,S,CSCI 0311,A,Artificial Intelligence,Ananya Das,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-21655
+Middlebury College,2021-22,S,CSCI 0321,A,Bioinformatics Algorithms,Michael Linderman,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202220-22501
+Middlebury College,2021-22,S,CSCI 0390,A,Spatial Agent-Based Modeling,Matthew Dickerson,MW 2:50pm-4:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-22881
+Middlebury College,2021-22,S,CSCI 0401,A,Computational Complexity,Shelby Kimmel,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202220-22502
+Middlebury College,2021-22,S,CSCI 0401,B,Computational Complexity,Shelby Kimmel,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202220-22911
+Middlebury College,2021-22,S,CSCI 0401,Z,Computational Complexity Lab,Shelby Kimmel,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-22795
+Middlebury College,2021-22,S,CSCI 0414,A,Advanced Operating Systems,Peter Johnson,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202220-22503
+Middlebury College,2021-22,S,CSCI 0422,A,Geometric Modeling,Philip Caplan,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202220-22724
+Middlebury College,2021-22,S,CSCI 0466,A,Usable Mobile Interfaces,Christopher Andrews,MWF 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202220-22505
+Middlebury College,2021-22,S,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-20255
+Middlebury College,2021-22,S,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-20447
+Middlebury College,2021-22,S,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-20495
+Middlebury College,2021-22,S,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-20496
+Middlebury College,2021-22,S,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-20497
+Middlebury College,2021-22,S,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-20615
+Middlebury College,2021-22,S,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-21273
+Middlebury College,2021-22,S,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-21461
+Middlebury College,2021-22,S,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-21543
+Middlebury College,2021-22,S,CSCI 0500,K,Advanced Study,Philip Caplan,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-21600
+Middlebury College,2021-22,S,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202220-22365
+Middlebury College,2021-22,S,CSCI 0500,M,Advanced Study,John Foley,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202220-22366
+Middlebury College,2021-22,S,CSCI 0702,A,Senior Thesis,Philip Caplan,TTh 1:30pm-2:45pm,https://catalog.middlebury.edu/offerings/view/section-202220-21435
+Middlebury College,2022-23,F,CSCI 0145,A,Introduction to Computing,Phil Chodrow,MWF 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202290-91816
+Middlebury College,2022-23,F,CSCI 0145,B,Introduction to Computing,Phil Chodrow,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202290-91945
+Middlebury College,2022-23,F,CSCI 0145,X,Introduction to Computing Lab,Phil Chodrow,Th 8:00am-9:15am,https://catalog.middlebury.edu/offerings/view/section-202290-91818
+Middlebury College,2022-23,F,CSCI 0145,Y,Introduction to Computing Lab,Phil Chodrow,Th 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202290-91819
+Middlebury College,2022-23,F,CSCI 0145,Z,Introduction to Computing Lab,Phil Chodrow,Th 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202290-91820
+Middlebury College,2022-23,F,CSCI 0150,A,Computing for the Sciences,Michael Linderman,MWF 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202290-91005
+Middlebury College,2022-23,F,CSCI 0150,B,Computing for the Sciences,Michael Linderman,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202290-91946
+Middlebury College,2022-23,F,CSCI 0200,A,Math Foundations of Computing,Frank Swenton,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202290-91347
+Middlebury College,2022-23,F,CSCI 0201,A,Data Structures,Amy Briggs,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202290-90095
+Middlebury College,2022-23,F,CSCI 0201,B,Data Structures,Amy Briggs,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202290-91810
+Middlebury College,2022-23,F,CSCI 0201,X,Data Structures Lab,Amy Briggs,T 8:00am-9:15am,https://catalog.middlebury.edu/offerings/view/section-202290-92580
+Middlebury College,2022-23,F,CSCI 0201,Y,Data Structures Lab,Amy Briggs,T 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202290-91369
+Middlebury College,2022-23,F,CSCI 0201,Z,Data Structures Lab,Amy Briggs,T 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202290-91370
+Middlebury College,2022-23,F,CSCI 0202,A,Computer Architecture,Peter Johnson,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202290-90096
+Middlebury College,2022-23,F,CSCI 0202,B,Computer Architecture,Peter Johnson,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202290-91484
+Middlebury College,2022-23,F,CSCI 0301,A,Theory of Computation,Frank Swenton,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202290-90097
+Middlebury College,2022-23,F,CSCI 0311,A,Artificial Intelligence,Michael Linderman,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202290-92976
+Middlebury College,2022-23,F,CSCI 0312,A,Software Development,Christopher Andrews,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202290-91661
+Middlebury College,2022-23,F,CSCI 0315,A,Systems Programming,Peter Johnson,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202290-91531
+Middlebury College,2022-23,F,CSCI 0315,Z,Systems Programming Lab,Peter Johnson,Th 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202290-91662
+Middlebury College,2022-23,F,CSCI 0433,A,Compiler Design,Shrutarshi Basu,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202290-92582
+Middlebury College,2022-23,F,CSCI 0465,A,Information Visualization,Christopher Andrews,TTh 1:30pm-2:45pm,https://catalog.middlebury.edu/offerings/view/section-202290-92209
+Middlebury College,2022-23,F,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-90376
+Middlebury College,2022-23,F,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-90482
+Middlebury College,2022-23,F,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-90675
+Middlebury College,2022-23,F,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-90483
+Middlebury College,2022-23,F,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-90484
+Middlebury College,2022-23,F,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-90547
+Middlebury College,2022-23,F,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-91376
+Middlebury College,2022-23,F,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-91488
+Middlebury College,2022-23,F,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-91549
+Middlebury College,2022-23,F,CSCI 0500,K,Advanced Study,Andrea Vaccari,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202290-91622
+Middlebury College,2022-23,F,CSCI 0701,A,Senior Seminar,Shrutarshi Basu,MWF 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202290-91346
+Middlebury College,2022-23,W,CSCI 0390,A,Spatial Agent-Based Modeling,Matthew Dickerson,MTTh 8:30am-11:30am,https://catalog.middlebury.edu/offerings/view/section-202310-11617
+Middlebury College,2022-23,W,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-10245
+Middlebury College,2022-23,W,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-10246
+Middlebury College,2022-23,W,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-10480
+Middlebury College,2022-23,W,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-10306
+Middlebury College,2022-23,W,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-10307
+Middlebury College,2022-23,W,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-10411
+Middlebury College,2022-23,W,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-11051
+Middlebury College,2022-23,W,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-11190
+Middlebury College,2022-23,W,CSCI 0500,I,Advanced Study,Jason Grant,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202310-11226
+Middlebury College,2022-23,W,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202310-11227
+Middlebury College,2022-23,W,CSCI 0702,A,Senior Thesis,Ananya Das,MTWTh 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202310-11364
+Middlebury College,2022-23,W,CSCI 1005,A,Crash Course/Systems Security,Peter Johnson,MTWTh 10:00am-11:30am,https://catalog.middlebury.edu/offerings/view/section-202310-11429
+Middlebury College,2022-23,W,CSCI 1051,A,Deep Learning,Teal Witter,MTW 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202310-11575
+Middlebury College,2022-23,S,CSCI 0145,A,Introduction to Computing,Shrutarshi Basu,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202320-21804
+Middlebury College,2022-23,S,CSCI 0145,B,Introduction to Computing,Shrutarshi Basu,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202320-21805
+Middlebury College,2022-23,S,CSCI 0145,X,Introduction to Computing Lab,Shrutarshi Basu,W 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202320-22167
+Middlebury College,2022-23,S,CSCI 0145,Y,Introduction to Computing Lab,Shrutarshi Basu,W 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202320-22168
+Middlebury College,2022-23,S,CSCI 0145,Z,Introduction to Computing Lab,Shrutarshi Basu,W 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202320-22169
+Middlebury College,2022-23,S,CSCI 0200,A,Math Foundations of Computing,Siegfried Bleher,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-20985
+Middlebury College,2022-23,S,CSCI 0200,B,Math Foundations of Computing,Siegfried Bleher,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-21502
+Middlebury College,2022-23,S,CSCI 0201,A,Data Structures,Amy Briggs,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202320-20041
+Middlebury College,2022-23,S,CSCI 0201,B,Data Structures,Amy Briggs,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-21806
+Middlebury College,2022-23,S,CSCI 0201,X,Data Structures Lab,Amy Briggs,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202320-22170
+Middlebury College,2022-23,S,CSCI 0201,Y,Data Structures Lab,Amy Briggs,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202320-21937
+Middlebury College,2022-23,S,CSCI 0201,Z,Data Structures Lab,Amy Briggs,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202320-21326
+Middlebury College,2022-23,S,CSCI 0202,A,Computer Architecture,Christopher Andrews,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202320-21327
+Middlebury College,2022-23,S,CSCI 0202,B,Computer Architecture,Christopher Andrews,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202320-21445
+Middlebury College,2022-23,S,CSCI 0301,A,Theory of Computation,Frank Swenton,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202320-21503
+Middlebury College,2022-23,S,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202320-20324
+Middlebury College,2022-23,S,CSCI 0302,B,Algorithms and Complexity,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-22371
+Middlebury College,2022-23,S,CSCI 0312,A,Software Development,Michael Linderman,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202320-22365
+Middlebury College,2022-23,S,CSCI 0416,A,Parallel Computing,Michael Linderman,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202320-22372
+Middlebury College,2022-23,S,CSCI 0431,A,Computer Networks,Peter Johnson,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-22366
+Middlebury College,2022-23,S,CSCI 0451,A,Machine Learning,Phil Chodrow,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202320-22800
+Middlebury College,2022-23,S,CSCI 0451,B,Machine Learning,Phil Chodrow,MW 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-22854
+Middlebury College,2022-23,S,CSCI 0467,A,Generative Art,Christopher Andrews,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-22373
+Middlebury College,2022-23,S,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-20253
+Middlebury College,2022-23,S,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-20442
+Middlebury College,2022-23,S,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-20490
+Middlebury College,2022-23,S,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-20491
+Middlebury College,2022-23,S,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-20492
+Middlebury College,2022-23,S,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-20610
+Middlebury College,2022-23,S,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-21264
+Middlebury College,2022-23,S,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-21440
+Middlebury College,2022-23,S,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-21515
+Middlebury College,2022-23,S,CSCI 0500,K,Advanced Study,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-21561
+Middlebury College,2022-23,S,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202320-21857
+Middlebury College,2022-23,S,CSCI 0500,M,Advanced Study,Shrutarshi Basu,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202320-21858
+Middlebury College,2022-23,S,CSCI 0702,A,Senior Thesis,Ananya Das,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202320-21423
+Middlebury College,2023-24,F,CSCI 0110,A,Programming through Simulation,Matthew Dickerson,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202390-92442
+Middlebury College,2023-24,F,CSCI 0110,Y,Programming Simulation Lab,Matthew Dickerson,W 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202390-92682
+Middlebury College,2023-24,F,CSCI 0110,Z,Programming Simulation Lab,Matthew Dickerson,W 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202390-92683
+Middlebury College,2023-24,F,CSCI 0145,A,Introduction to Computing,Laura Biester,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202390-91644
+Middlebury College,2023-24,F,CSCI 0145,B,Introduction to Computing,Laura Biester,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202390-91710
+Middlebury College,2023-24,F,CSCI 0145,X,Introduction to Computing Lab,Laura Biester,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202390-91645
+Middlebury College,2023-24,F,CSCI 0145,Y,Introduction to Computing Lab,Laura Biester,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202390-91646
+Middlebury College,2023-24,F,CSCI 0145,Z,Introduction to Computing Lab,Laura Biester,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202390-91647
+Middlebury College,2023-24,F,CSCI 0150,A,Computing for the Sciences,Michael Linderman,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202390-90916
+Middlebury College,2023-24,F,CSCI 0200,A,Math Foundations of Computing,Phil Chodrow,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202390-91252
+Middlebury College,2023-24,F,CSCI 0200,B,Math Foundations of Computing,Phil Chodrow,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202390-92441
+Middlebury College,2023-24,F,CSCI 0201,A,Data Structures,Amy Briggs,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202390-90093
+Middlebury College,2023-24,F,CSCI 0201,B,Data Structures,Amy Briggs,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202390-91641
+Middlebury College,2023-24,F,CSCI 0201,X,Data Structures Lab,Amy Briggs,M 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202390-91904
+Middlebury College,2023-24,F,CSCI 0201,Y,Data Structures Lab,Amy Briggs,M 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202390-91273
+Middlebury College,2023-24,F,CSCI 0201,Z,Data Structures Lab,Amy Briggs,M 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202390-91274
+Middlebury College,2023-24,F,CSCI 0202,A,Computer Architecture,Andrea Vaccari,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202390-90094
+Middlebury College,2023-24,F,CSCI 0202,B,Computer Architecture,Andrea Vaccari,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202390-91377
+Middlebury College,2023-24,F,CSCI 0301,A,Theory of Computation,Matthew Dickerson,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202390-90095
+Middlebury College,2023-24,F,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202390-92612
+Middlebury College,2023-24,F,CSCI 0311,A,Artificial Intelligence,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202390-92223
+Middlebury College,2023-24,F,CSCI 0312,A,Software Development,Michael Linderman,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202390-91526
+Middlebury College,2023-24,F,CSCI 0313,A,Programming Languages,Shrutarshi Basu,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202390-92443
+Middlebury College,2023-24,F,CSCI 0313,B,Programming Languages,Shrutarshi Basu,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202390-92444
+Middlebury College,2023-24,F,CSCI 0315,A,Systems Programming,Peter Johnson,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202390-91419
+Middlebury College,2023-24,F,CSCI 0315,Z,Systems Programming Lab,Peter Johnson,Th 2:05pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202390-91527
+Middlebury College,2023-24,F,CSCI 0333,A,Quantum Computing,Shelby Kimmel,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202390-92445
+Middlebury College,2023-24,F,CSCI 0461,A,Computer Graphics,Philip Caplan,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202390-92446
+Middlebury College,2023-24,F,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-90329
+Middlebury College,2023-24,F,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-90435
+Middlebury College,2023-24,F,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-90606
+Middlebury College,2023-24,F,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-90436
+Middlebury College,2023-24,F,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-90437
+Middlebury College,2023-24,F,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-90497
+Middlebury College,2023-24,F,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-91280
+Middlebury College,2023-24,F,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-91381
+Middlebury College,2023-24,F,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-91433
+Middlebury College,2023-24,F,CSCI 0500,K,Advanced Study,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-91493
+Middlebury College,2023-24,F,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202390-91830
+Middlebury College,2023-24,F,CSCI 0500,M,Advanced Study,Shrutarshi Basu,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-92368
+Middlebury College,2023-24,F,CSCI 0500,N,Advanced Study,Laura Biester,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202390-92369
+Middlebury College,2023-24,F,CSCI 0701,A,Senior Seminar,Philip Caplan,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202390-91251
+Middlebury College,2023-24,W,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-10237
+Middlebury College,2023-24,W,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-10238
+Middlebury College,2023-24,W,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-10470
+Middlebury College,2023-24,W,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-10298
+Middlebury College,2023-24,W,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-10299
+Middlebury College,2023-24,W,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-10401
+Middlebury College,2023-24,W,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-10974
+Middlebury College,2023-24,W,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-11112
+Middlebury College,2023-24,W,CSCI 0500,I,Advanced Study,Philip Caplan,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202410-11147
+Middlebury College,2023-24,W,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202410-11148
+Middlebury College,2023-24,W,CSCI 0500,K,Advanced Study,Phil Chodrow,TBD,https://catalog.middlebury.edu/offerings/view/section-202410-11650
+Middlebury College,2023-24,W,CSCI 0500,L,Advanced Study,Andrea Vaccari,TBD,https://catalog.middlebury.edu/offerings/view/section-202410-11651
+Middlebury College,2023-24,W,CSCI 0500,M,Advanced Study,Shrutarshi Basu,TBD,https://catalog.middlebury.edu/offerings/view/section-202410-11652
+Middlebury College,2023-24,W,CSCI 0500,N,Advanced Study,Laura Biester,TBD,https://catalog.middlebury.edu/offerings/view/section-202410-11653
+Middlebury College,2023-24,W,CSCI 0702,A,Senior Thesis,Phil Chodrow,MTWTh 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202410-11279
+Middlebury College,2023-24,W,CSCI 1052,A,Randomized Algorithms,Teal Witter,MTW 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202410-11562
+Middlebury College,2023-24,S,CSCI 0145,A,Introduction to Computing,Shrutarshi Basu,MW 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202420-21620
+Middlebury College,2023-24,S,CSCI 0145,B,Introduction to Computing,Shrutarshi Basu,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202420-21621
+Middlebury College,2023-24,S,CSCI 0145,C,Introduction to Computing,Andrea Vaccari,MW 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-22353
+Middlebury College,2023-24,S,CSCI 0145,W,Introduction to Computing Lab,Andrea Vaccari,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202420-22355
+Middlebury College,2023-24,S,CSCI 0145,X,Introduction to Computing Lab,Shrutarshi Basu,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202420-21769
+Middlebury College,2023-24,S,CSCI 0145,Y,Introduction to Computing Lab,Shrutarshi Basu,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202420-21770
+Middlebury College,2023-24,S,CSCI 0145,Z,Introduction to Computing Lab,Shrutarshi Basu,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202420-21771
+Middlebury College,2023-24,S,CSCI 0200,A,Math Foundations of Computing,Philip Caplan,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202420-20893
+Middlebury College,2023-24,S,CSCI 0200,B,Math Foundations of Computing,Philip Caplan,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202420-21390
+Middlebury College,2023-24,S,CSCI 0200,C,Math Foundations of Computing,Matthew Dickerson,MW 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-22745
+Middlebury College,2023-24,S,CSCI 0201,A,Data Structures,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202420-20040
+Middlebury College,2023-24,S,CSCI 0201,B,Data Structures,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-21622
+Middlebury College,2023-24,S,CSCI 0201,X,Data Structures Lab,Ananya Das,T 1:10pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202420-21772
+Middlebury College,2023-24,S,CSCI 0201,Y,Data Structures Lab,Ananya Das,T 2:15pm-3:05pm,https://catalog.middlebury.edu/offerings/view/section-202420-21696
+Middlebury College,2023-24,S,CSCI 0201,Z,Data Structures Lab,Ananya Das,Th 1:10pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202420-21227
+Middlebury College,2023-24,S,CSCI 0202,A,Computer Architecture,Peter Johnson,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202420-21228
+Middlebury College,2023-24,S,CSCI 0202,B,Computer Architecture,Peter Johnson,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202420-21338
+Middlebury College,2023-24,S,CSCI 0301,A,Theory of Computation,Amy Briggs,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202420-21391
+Middlebury College,2023-24,S,CSCI 0301,B,Theory of Computation,Amy Briggs,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-22356
+Middlebury College,2023-24,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202420-20282
+Middlebury College,2023-24,S,CSCI 0302,B,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-21862
+Middlebury College,2023-24,S,CSCI 0312,A,Software Development,Michael Linderman,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-21860
+Middlebury College,2023-24,S,CSCI 0321,A,Bioinformatics Algorithms,Michael Linderman,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202420-22357
+Middlebury College,2023-24,S,CSCI 0390,A,Spatial Agent-Based Modeling,Matthew Dickerson,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202420-22358
+Middlebury College,2023-24,S,CSCI 0414,A,Advanced Operating Systems,Peter Johnson,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-22359
+Middlebury College,2023-24,S,CSCI 0451,A,Machine Learning,Phil Chodrow,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202420-22170
+Middlebury College,2023-24,S,CSCI 0452,A,Image Processing,Andrea Vaccari,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-22360
+Middlebury College,2023-24,S,CSCI 0452,Z,Image Processing Lab,Andrea Vaccari,Th 2:05pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202420-22361
+Middlebury College,2023-24,S,CSCI 0457,A,Natural Language Processing,Laura Biester,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202420-22363
+Middlebury College,2023-24,S,CSCI 0457,B,Natural Language Processing,Laura Biester,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202420-22364
+Middlebury College,2023-24,S,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-20215
+Middlebury College,2023-24,S,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-20398
+Middlebury College,2023-24,S,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-20442
+Middlebury College,2023-24,S,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-20443
+Middlebury College,2023-24,S,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-20444
+Middlebury College,2023-24,S,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-20545
+Middlebury College,2023-24,S,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-21166
+Middlebury College,2023-24,S,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-21334
+Middlebury College,2023-24,S,CSCI 0500,I,Advanced Study,Philip Caplan,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-22308
+Middlebury College,2023-24,S,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-21399
+Middlebury College,2023-24,S,CSCI 0500,K,Advanced Study,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-21441
+Middlebury College,2023-24,S,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202420-21645
+Middlebury College,2023-24,S,CSCI 0500,M,Advanced Study,Shrutarshi Basu,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-21646
+Middlebury College,2023-24,S,CSCI 0500,N,Advanced Study,Laura Biester,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-22309
+Middlebury College,2023-24,S,CSCI 0702,A,Senior Thesis,Phil Chodrow,M 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202420-21318
+Middlebury College,2024-25,F,CSCI 0105,A,Algorithmic World,Christopher Andrews,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202490-92454
+Middlebury College,2024-25,F,CSCI 0145,A,Introduction to Computing,Andrea Vaccari,MW 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-91601
+Middlebury College,2024-25,F,CSCI 0145,B,Introduction to Computing,Andrea Vaccari,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202490-91656
+Middlebury College,2024-25,F,CSCI 0145,X,Introduction to Computing Lab,Andrea Vaccari,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-91602
+Middlebury College,2024-25,F,CSCI 0145,Y,Introduction to Computing Lab,Andrea Vaccari,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202490-91603
+Middlebury College,2024-25,F,CSCI 0145,Z,Introduction to Computing Lab,Andrea Vaccari,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202490-91604
+Middlebury College,2024-25,F,CSCI 0146,A,Intensive Intro to Computing,Michael Linderman,MW 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-92669
+Middlebury College,2024-25,F,CSCI 0146,Z,Intensive Intro Computing Lab,Michael Linderman,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-92723
+Middlebury College,2024-25,F,CSCI 0200,A,Math Foundations of Computing,Phil Chodrow,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-91236
+Middlebury College,2024-25,F,CSCI 0200,B,Math Foundations of Computing,Phil Chodrow,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202490-92034
+Middlebury College,2024-25,F,CSCI 0201,A,Data Structures,Philip Caplan,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-90089
+Middlebury College,2024-25,F,CSCI 0201,B,Data Structures,Philip Caplan,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202490-91599
+Middlebury College,2024-25,F,CSCI 0201,Y,Data Structures Lab,Philip Caplan,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-91254
+Middlebury College,2024-25,F,CSCI 0201,Z,Data Structures Lab,Philip Caplan,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202490-91255
+Middlebury College,2024-25,F,CSCI 0202,A,Computer Architecture,Peter Johnson,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202490-90090
+Middlebury College,2024-25,F,CSCI 0202,B,Computer Architecture,Peter Johnson,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202490-91355
+Middlebury College,2024-25,F,CSCI 0301,A,Theory of Computation,Amy Briggs,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-90091
+Middlebury College,2024-25,F,CSCI 0301,B,Theory of Computation,Amy Briggs,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202490-92458
+Middlebury College,2024-25,F,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-92167
+Middlebury College,2024-25,F,CSCI 0311,A,Artificial Intelligence,Michael Linderman,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202490-91890
+Middlebury College,2024-25,F,CSCI 0312,A,Software Development,Laura Biester,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202490-91498
+Middlebury College,2024-25,F,CSCI 0312,B,Software Development,Laura Biester,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-92459
+Middlebury College,2024-25,F,CSCI 0315,A,Systems Programming,Peter Johnson,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202490-91395
+Middlebury College,2024-25,F,CSCI 0315,Z,Systems Programming Lab,Peter Johnson,Th 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202490-91499
+Middlebury College,2024-25,F,CSCI 0318,A,OOP & GUI Application Dev,Frank Swenton,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202490-92460
+Middlebury College,2024-25,F,CSCI 0318,Z,OOP & GUI App Dev Lab,Frank Swenton,W 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202490-92461
+Middlebury College,2024-25,F,CSCI 0333,A,Quantum Computing,Shelby Kimmel,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-92038
+Middlebury College,2024-25,F,CSCI 0467,A,Generative Art,Christopher Andrews,MW 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-92463
+Middlebury College,2024-25,F,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-90324
+Middlebury College,2024-25,F,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-90427
+Middlebury College,2024-25,F,CSCI 0500,C,Advanced Study,Daniel Scharstein,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-90598
+Middlebury College,2024-25,F,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-90428
+Middlebury College,2024-25,F,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-90429
+Middlebury College,2024-25,F,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-90489
+Middlebury College,2024-25,F,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-91261
+Middlebury College,2024-25,F,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-91359
+Middlebury College,2024-25,F,CSCI 0500,I,Advanced Study,Philip Caplan,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-91406
+Middlebury College,2024-25,F,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-91407
+Middlebury College,2024-25,F,CSCI 0500,K,Advanced Study,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-91466
+Middlebury College,2024-25,F,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202490-91719
+Middlebury College,2024-25,F,CSCI 0500,M,Advanced Study,Frank Swenton,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-91978
+Middlebury College,2024-25,F,CSCI 0500,N,Advanced Study,Laura Biester,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202490-91979
+Middlebury College,2024-25,F,CSCI 0702,A,Senior Thesis,"Laura Biester , Phil Chodrow",M 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202490-92724
+Middlebury College,2024-25,W,CSCI 0390,A,Spatial Agent-Based Modeling,Matthew Dickerson,MTWTh 9:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202510-11639
+Middlebury College,2024-25,W,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202510-10237
+Middlebury College,2024-25,W,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202510-10238
+Middlebury College,2024-25,W,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202510-10298
+Middlebury College,2024-25,W,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202510-10299
+Middlebury College,2024-25,W,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202510-10401
+Middlebury College,2024-25,W,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202510-10968
+Middlebury College,2024-25,W,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202510-11105
+Middlebury College,2024-25,W,CSCI 0500,I,Advanced Study,Philip Caplan,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202510-11139
+Middlebury College,2024-25,W,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202510-11140
+Middlebury College,2024-25,W,CSCI 0500,K,Advanced Study,Phil Chodrow,TBD,https://catalog.middlebury.edu/offerings/view/section-202510-11547
+Middlebury College,2024-25,W,CSCI 0500,L,Advanced Study,Andrea Vaccari,TBD,https://catalog.middlebury.edu/offerings/view/section-202510-11548
+Middlebury College,2024-25,W,CSCI 0500,N,Advanced Study,Laura Biester,TBD,https://catalog.middlebury.edu/offerings/view/section-202510-11550
+Middlebury College,2024-25,W,CSCI 0702,A,Senior Thesis,"Phil Chodrow , Laura Biester , Michael Linderman",MTWTh 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202510-11269
+Middlebury College,2024-25,W,CSCI 1005,A,Crash Course/Systems Security,Peter Johnson,MTWTh 10:00am-11:30am,https://catalog.middlebury.edu/offerings/view/section-202510-11622
+Middlebury College,2024-25,W,CSCI 1051,A,Deep Learning,Teal Witter,MTW 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202510-11579
+Middlebury College,2024-25,S,CSCI 0145,A,Introduction to Computing,Christopher Andrews,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202520-21577
+Middlebury College,2024-25,S,CSCI 0145,B,Introduction to Computing,Laura Biester,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202520-21578
+Middlebury College,2024-25,S,CSCI 0145,C,Introduction to Computing,Christopher Andrews,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-21988
+Middlebury College,2024-25,S,CSCI 0145,W,Introduction to Computing Lab,Laura Biester,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202520-21989
+Middlebury College,2024-25,S,CSCI 0145,X,Introduction to Computing Lab,Christopher Andrews,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202520-21689
+Middlebury College,2024-25,S,CSCI 0145,Y,Introduction to Computing Lab,Christopher Andrews,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202520-21690
+Middlebury College,2024-25,S,CSCI 0145,Z,Introduction to Computing Lab,Christopher Andrews,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202520-21691
+Middlebury College,2024-25,S,CSCI 0200,A,Math Foundations of Computing,Shelby Kimmel,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202520-20883
+Middlebury College,2024-25,S,CSCI 0200,B,Math Foundations of Computing,Shelby Kimmel,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202520-21367
+Middlebury College,2024-25,S,CSCI 0201,A,Data Structures,Amy Briggs,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-20035
+Middlebury College,2024-25,S,CSCI 0201,B,Data Structures,Amy Briggs,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202520-21579
+Middlebury College,2024-25,S,CSCI 0201,X,Data Structures Lab,Amy Briggs,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202520-21692
+Middlebury College,2024-25,S,CSCI 0201,Y,Data Structures Lab,Amy Briggs,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202520-21644
+Middlebury College,2024-25,S,CSCI 0201,Z,Data Structures Lab,Amy Briggs,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202520-21211
+Middlebury College,2024-25,S,CSCI 0202,A,Computer Architecture,Andrea Vaccari,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202520-21212
+Middlebury College,2024-25,S,CSCI 0202,B,Computer Architecture,Andrea Vaccari,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202520-21318
+Middlebury College,2024-25,S,CSCI 0301,A,Theory of Computation,Frank Swenton,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-21368
+Middlebury College,2024-25,S,CSCI 0302,A,Algorithms and Complexity,Matthew Dickerson,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202520-20273
+Middlebury College,2024-25,S,CSCI 0302,B,Algorithms and Complexity,Matthew Dickerson,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-21754
+Middlebury College,2024-25,S,CSCI 0312,A,Software Development,Michael Linderman,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202520-21753
+Middlebury College,2024-25,S,CSCI 0416,A,Parallel Computing,Michael Linderman,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202520-22439
+Middlebury College,2024-25,S,CSCI 0431,A,Computer Networks,Peter Johnson,MW 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-22440
+Middlebury College,2024-25,S,CSCI 0442,A,Network Science,Phil Chodrow,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202520-22651
+Middlebury College,2024-25,S,CSCI 0451,A,Machine Learning,Phil Chodrow,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202520-21892
+Middlebury College,2024-25,S,CSCI 0457,A,Natural Language Processing,Laura Biester,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202520-21996
+Middlebury College,2024-25,S,CSCI 0461,A,Computer Graphics,Philip Caplan,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-22441
+Middlebury College,2024-25,S,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-20210
+Middlebury College,2024-25,S,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-20389
+Middlebury College,2024-25,S,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-20434
+Middlebury College,2024-25,S,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-20435
+Middlebury College,2024-25,S,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-20535
+Middlebury College,2024-25,S,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-21153
+Middlebury College,2024-25,S,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-21315
+Middlebury College,2024-25,S,CSCI 0500,I,Advanced Study,Philip Caplan,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-21955
+Middlebury College,2024-25,S,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-21376
+Middlebury College,2024-25,S,CSCI 0500,K,Advanced Study,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-21415
+Middlebury College,2024-25,S,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202520-21594
+Middlebury College,2024-25,S,CSCI 0500,N,Advanced Study,Laura Biester,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202520-21956
+Middlebury College,2024-25,S,CSCI 0701,A,Senior Seminar,Philip Caplan,TThF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202520-22442
+Middlebury College,2025-26,F,CSCI 0145,A,Introduction to Computing,Amy Briggs,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202590-91566
+Middlebury College,2025-26,F,CSCI 0145,B,Introduction to Computing,Amy Briggs,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202590-91617
+Middlebury College,2025-26,F,CSCI 0145,X,Introduction to Computing Lab,Amy Briggs,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202590-91567
+Middlebury College,2025-26,F,CSCI 0145,Y,Introduction to Computing Lab,Amy Briggs,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202590-91568
+Middlebury College,2025-26,F,CSCI 0145,Z,Introduction to Computing Lab,Amy Briggs,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202590-91569
+Middlebury College,2025-26,F,CSCI 0146,A,Intensive Intro to Computing,Philip Caplan,MW 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202590-92247
+Middlebury College,2025-26,F,CSCI 0146,Z,Intensive Intro Computing Lab,Philip Caplan,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202590-92292
+Middlebury College,2025-26,F,CSCI 0200,A,Math Foundations of Computing,Phil Chodrow,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202590-91227
+Middlebury College,2025-26,F,CSCI 0200,B,Math Foundations of Computing,Phil Chodrow,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202590-91879
+Middlebury College,2025-26,F,CSCI 0201,A,Data Structures,Laura Biester,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-90089
+Middlebury College,2025-26,F,CSCI 0201,B,Data Structures,Laura Biester,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202590-91564
+Middlebury College,2025-26,F,CSCI 0201,Y,Data Structures Lab,Laura Biester,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202590-91245
+Middlebury College,2025-26,F,CSCI 0201,Z,Data Structures Lab,Laura Biester,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202590-91246
+Middlebury College,2025-26,F,CSCI 0202,A,Computer Architecture,Andrea Vaccari,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202590-90090
+Middlebury College,2025-26,F,CSCI 0301,A,Theory of Computation,Matthew Dickerson,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-90091
+Middlebury College,2025-26,F,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-91920
+Middlebury College,2025-26,F,CSCI 0311,A,Artificial Intelligence,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202590-91804
+Middlebury College,2025-26,F,CSCI 0312,A,Software Development,Christopher Andrews,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202590-91474
+Middlebury College,2025-26,F,CSCI 0333,A,Quantum Computing,Shelby Kimmel,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-91880
+Middlebury College,2025-26,F,CSCI 0435,A,Embedded Systems,Andrea Vaccari,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202590-92816
+Middlebury College,2025-26,F,CSCI 0435,Z,Embedded Systems Lab,Andrea Vaccari,W 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202590-92817
+Middlebury College,2025-26,F,CSCI 0461,A,Computer Graphics,Philip Caplan,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202590-92818
+Middlebury College,2025-26,F,CSCI 0465,A,Information Visualization,Christopher Andrews,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-92819
+Middlebury College,2025-26,F,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-90323
+Middlebury College,2025-26,F,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-90426
+Middlebury College,2025-26,F,CSCI 0500,C,Advanced Study,Frank Swenton,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-90595
+Middlebury College,2025-26,F,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-90427
+Middlebury College,2025-26,F,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-90428
+Middlebury College,2025-26,F,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-90487
+Middlebury College,2025-26,F,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-91252
+Middlebury College,2025-26,F,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-91347
+Middlebury College,2025-26,F,CSCI 0500,I,Advanced Study,Philip Caplan,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-91393
+Middlebury College,2025-26,F,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-91394
+Middlebury College,2025-26,F,CSCI 0500,K,Advanced Study,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-91448
+Middlebury College,2025-26,F,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202590-91673
+Middlebury College,2025-26,F,CSCI 0500,M,Advanced Study,Laura Biester,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-91860
+Middlebury College,2025-26,F,CSCI 0505,A,Independent Study,TBD,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93296
+Middlebury College,2025-26,F,CSCI 0505,B,Independent Study,Amy Briggs,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93297
+Middlebury College,2025-26,F,CSCI 0505,C,Independent Study,Frank Swenton,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93298
+Middlebury College,2025-26,F,CSCI 0505,D,Independent Study,Matthew Dickerson,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93299
+Middlebury College,2025-26,F,CSCI 0505,E,Independent Study,Peter Johnson,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93300
+Middlebury College,2025-26,F,CSCI 0505,F,Independent Study,Ananya Das,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93301
+Middlebury College,2025-26,F,CSCI 0505,G,Independent Study,Christopher Andrews,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93302
+Middlebury College,2025-26,F,CSCI 0505,H,Independent Study,Michael Linderman,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93303
+Middlebury College,2025-26,F,CSCI 0505,I,Independent Study,Philip Caplan,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93304
+Middlebury College,2025-26,F,CSCI 0505,J,Independent Study,Shelby Kimmel,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93305
+Middlebury College,2025-26,F,CSCI 0505,K,Independent Study,Phil Chodrow,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93306
+Middlebury College,2025-26,F,CSCI 0505,L,Independent Study,Andrea Vaccari,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93307
+Middlebury College,2025-26,F,CSCI 0505,M,Independent Study,Laura Biester,TBD,https://catalog.middlebury.edu/offerings/view/section-202590-93308
+Middlebury College,2025-26,F,CSCI 0702,A,Senior Thesis,TBD,M 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202590-92293
+Middlebury College,2025-26,F,CSCI 0702,B,Senior Thesis,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92777
+Middlebury College,2025-26,F,CSCI 0702,C,Senior Thesis,Frank Swenton,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92778
+Middlebury College,2025-26,F,CSCI 0702,D,Senior Thesis,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92779
+Middlebury College,2025-26,F,CSCI 0702,E,Senior Thesis,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92780
+Middlebury College,2025-26,F,CSCI 0702,F,Senior Thesis,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92781
+Middlebury College,2025-26,F,CSCI 0702,G,Senior Thesis,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92782
+Middlebury College,2025-26,F,CSCI 0702,H,Senior Thesis,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92783
+Middlebury College,2025-26,F,CSCI 0702,I,Senior Thesis,Philip Caplan,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92784
+Middlebury College,2025-26,F,CSCI 0702,J,Senior Thesis,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92785
+Middlebury College,2025-26,F,CSCI 0702,K,Senior Thesis,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92786
+Middlebury College,2025-26,F,CSCI 0702,L,Senior Thesis,Andrea Vaccari,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92787
+Middlebury College,2025-26,F,CSCI 0702,M,Senior Thesis,Laura Biester,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202590-92788
+Middlebury College,2025-26,W,CSCI 0390,A,Spatial Agent-Based Modeling,Matthew Dickerson,TWThF 9:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202610-11533
+Middlebury College,2025-26,W,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-10236
+Middlebury College,2025-26,W,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-10237
+Middlebury College,2025-26,W,CSCI 0500,C,Advanced Study,Frank Swenton,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-10467
+Middlebury College,2025-26,W,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-10297
+Middlebury College,2025-26,W,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-10298
+Middlebury College,2025-26,W,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-10400
+Middlebury College,2025-26,W,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-10964
+Middlebury College,2025-26,W,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11100
+Middlebury College,2025-26,W,CSCI 0500,I,Advanced Study,Philip Caplan,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202610-11134
+Middlebury College,2025-26,W,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11135
+Middlebury College,2025-26,W,CSCI 0500,K,Advanced Study,Phil Chodrow,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11450
+Middlebury College,2025-26,W,CSCI 0500,L,Advanced Study,Andrea Vaccari,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11451
+Middlebury College,2025-26,W,CSCI 0500,M,Advanced Study,Laura Biester,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11452
+Middlebury College,2025-26,W,CSCI 0505,A,Independent Study,TBD,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11711
+Middlebury College,2025-26,W,CSCI 0505,B,Independent Study,Amy Briggs,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11712
+Middlebury College,2025-26,W,CSCI 0505,C,Independent Study,Frank Swenton,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11713
+Middlebury College,2025-26,W,CSCI 0505,D,Independent Study,Matthew Dickerson,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11714
+Middlebury College,2025-26,W,CSCI 0505,E,Independent Study,Peter Johnson,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11715
+Middlebury College,2025-26,W,CSCI 0505,F,Independent Study,Ananya Das,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11716
+Middlebury College,2025-26,W,CSCI 0505,G,Independent Study,Christopher Andrews,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11717
+Middlebury College,2025-26,W,CSCI 0505,H,Independent Study,Michael Linderman,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11718
+Middlebury College,2025-26,W,CSCI 0505,I,Independent Study,Philip Caplan,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11719
+Middlebury College,2025-26,W,CSCI 0505,J,Independent Study,Shelby Kimmel,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11720
+Middlebury College,2025-26,W,CSCI 0505,K,Independent Study,Phil Chodrow,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11721
+Middlebury College,2025-26,W,CSCI 0505,L,Independent Study,Andrea Vaccari,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11722
+Middlebury College,2025-26,W,CSCI 0505,M,Independent Study,Laura Biester,TBD,https://catalog.middlebury.edu/offerings/view/section-202610-11723
+Middlebury College,2025-26,W,CSCI 0702,A,Senior Thesis,TBD,MTWTh 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202610-11263
+Middlebury College,2025-26,W,CSCI 0702,B,Senior Thesis,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11589
+Middlebury College,2025-26,W,CSCI 0702,C,Senior Thesis,Frank Swenton,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11590
+Middlebury College,2025-26,W,CSCI 0702,D,Senior Thesis,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11591
+Middlebury College,2025-26,W,CSCI 0702,E,Senior Thesis,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11592
+Middlebury College,2025-26,W,CSCI 0702,F,Senior Thesis,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11593
+Middlebury College,2025-26,W,CSCI 0702,G,Senior Thesis,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11594
+Middlebury College,2025-26,W,CSCI 0702,H,Senior Thesis,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11595
+Middlebury College,2025-26,W,CSCI 0702,I,Senior Thesis,Philip Caplan,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11596
+Middlebury College,2025-26,W,CSCI 0702,J,Senior Thesis,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11597
+Middlebury College,2025-26,W,CSCI 0702,K,Senior Thesis,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11598
+Middlebury College,2025-26,W,CSCI 0702,L,Senior Thesis,Andrea Vaccari,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11599
+Middlebury College,2025-26,W,CSCI 0702,M,Senior Thesis,Laura Biester,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202610-11600
+Middlebury College,2025-26,W,CSCI 1010,A,Applied Data Science,"Phil Chodrow , Michael Linderman",MTWTh 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202610-11665
+Middlebury College,2025-26,W,CSCI 1053,A,Computer Vision,Scott Wehrwein,MTWTh 9:30am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202610-11741
+Middlebury College,2025-26,S,CSCI 0145,A,Introduction to Computing,Andrea Vaccari,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202620-21527
+Middlebury College,2025-26,S,CSCI 0145,B,Introduction to Computing,Andrea Vaccari,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202620-21528
+Middlebury College,2025-26,S,CSCI 0145,X,Introduction to Computing Lab,Andrea Vaccari,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202620-21604
+Middlebury College,2025-26,S,CSCI 0145,Y,Introduction to Computing Lab,Andrea Vaccari,F 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202620-21605
+Middlebury College,2025-26,S,CSCI 0145,Z,Introduction to Computing Lab,Andrea Vaccari,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202620-21606
+Middlebury College,2025-26,S,CSCI 0200,A,Math Foundations of Computing,Philip Caplan,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202620-20881
+Middlebury College,2025-26,S,CSCI 0201,A,Data Structures,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202620-20035
+Middlebury College,2025-26,S,CSCI 0201,B,Data Structures,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202620-21529
+Middlebury College,2025-26,S,CSCI 0201,Y,Data Structures Lab,Ananya Das,T 1:10pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202620-21583
+Middlebury College,2025-26,S,CSCI 0201,Z,Data Structures Lab,Ananya Das,T 2:15pm-3:05pm,https://catalog.middlebury.edu/offerings/view/section-202620-21201
+Middlebury College,2025-26,S,CSCI 0202,A,Computer Architecture,Christopher Andrews,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202620-21202
+Middlebury College,2025-26,S,CSCI 0301,A,Theory of Computation,Frank Swenton,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202620-21353
+Middlebury College,2025-26,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202620-20273
+Middlebury College,2025-26,S,CSCI 0302,B,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202620-21653
+Middlebury College,2025-26,S,CSCI 0312,A,Software Development,Christopher Andrews,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202620-21652
+Middlebury College,2025-26,S,CSCI 0321,A,Bioinformatics Algorithms,Michael Linderman,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202620-22453
+Middlebury College,2025-26,S,CSCI 0425,A,Computational Geometry,Matthew Dickerson,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202620-22454
+Middlebury College,2025-26,S,CSCI 0451,A,Machine Learning,Phil Chodrow,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202620-21765
+Middlebury College,2025-26,S,CSCI 0451,B,Machine Learning,Phil Chodrow,MW 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202620-22788
+Middlebury College,2025-26,S,CSCI 0500,A,Advanced Study,TBD,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-20210
+Middlebury College,2025-26,S,CSCI 0500,B,Advanced Study,Amy Briggs,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-20389
+Middlebury College,2025-26,S,CSCI 0500,C,Advanced Study,Frank Swenton,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-20432
+Middlebury College,2025-26,S,CSCI 0500,D,Advanced Study,Matthew Dickerson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-20433
+Middlebury College,2025-26,S,CSCI 0500,E,Advanced Study,Peter Johnson,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-20434
+Middlebury College,2025-26,S,CSCI 0500,F,Advanced Study,Ananya Das,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-20534
+Middlebury College,2025-26,S,CSCI 0500,G,Advanced Study,Christopher Andrews,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-21144
+Middlebury College,2025-26,S,CSCI 0500,H,Advanced Study,Michael Linderman,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-21305
+Middlebury College,2025-26,S,CSCI 0500,I,Advanced Study,Philip Caplan,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-21810
+Middlebury College,2025-26,S,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-21360
+Middlebury College,2025-26,S,CSCI 0500,K,Advanced Study,Phil Chodrow,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202620-21393
+Middlebury College,2025-26,S,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202620-21536
+Middlebury College,2025-26,S,CSCI 0505,A,Independent Study,TBD,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22721
+Middlebury College,2025-26,S,CSCI 0505,B,Independent Study,Amy Briggs,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22722
+Middlebury College,2025-26,S,CSCI 0505,C,Independent Study,Frank Swenton,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22723
+Middlebury College,2025-26,S,CSCI 0505,D,Independent Study,Matthew Dickerson,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22724
+Middlebury College,2025-26,S,CSCI 0505,E,Independent Study,Peter Johnson,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22725
+Middlebury College,2025-26,S,CSCI 0505,F,Independent Study,Ananya Das,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22726
+Middlebury College,2025-26,S,CSCI 0505,G,Independent Study,Christopher Andrews,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22727
+Middlebury College,2025-26,S,CSCI 0505,H,Independent Study,Michael Linderman,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22728
+Middlebury College,2025-26,S,CSCI 0505,I,Independent Study,Philip Caplan,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22729
+Middlebury College,2025-26,S,CSCI 0505,J,Independent Study,Shelby Kimmel,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22730
+Middlebury College,2025-26,S,CSCI 0505,K,Independent Study,Phil Chodrow,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22731
+Middlebury College,2025-26,S,CSCI 0505,L,Independent Study,Andrea Vaccari,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22732
+Middlebury College,2025-26,S,CSCI 0505,M,Independent Study,Laura Biester,TBD,https://catalog.middlebury.edu/offerings/view/section-202620-22733
+Middlebury College,2025-26,S,CSCI 0701,A,Senior Seminar,Philip Caplan,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202620-22016
