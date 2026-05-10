@@ -1,11 +1,10 @@
 import pandas as pd
 import time
-import threading
 import concurrent.futures
 import requests
 from queue import Queue
 from bs4 import BeautifulSoup
-from faculty_scraper import create_selenium_driver, google_search_url
+from faculty_scraper import create_selenium_driver
 from pathlib import Path
 from tqdm import tqdm
 
@@ -36,9 +35,6 @@ print(f"Starting {N_SELENIUM_WORKERS} Selenium drivers...")
 driver_pool = Queue()
 for _ in range(N_SELENIUM_WORKERS):
     driver_pool.put(create_selenium_driver())
-
-url_updates = {}
-url_updates_lock = threading.Lock()
 
 
 def extract_text(html):
@@ -79,17 +75,25 @@ def needs_js(html):
 
 
 def fetch_with_requests(url):
+    """Return (text, status). status is an HTTP code (int) or a string reason."""
     try:
         resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, allow_redirects=True)
         if resp.status_code in (403, 429, 503):
-            return None
-        resp.raise_for_status()
+            return None, resp.status_code
+        if resp.status_code >= 400:
+            return None, resp.status_code
         if needs_js(resp.text):
-            return None
+            return None, f"{resp.status_code} needs_js"
         text, _ = extract_text(resp.text)
-        return text
-    except Exception:
-        return None
+        if text is None:
+            return None, f"{resp.status_code} no_body"
+        return text, resp.status_code
+    except requests.Timeout:
+        return None, "timeout"
+    except requests.ConnectionError:
+        return None, "connection_error"
+    except Exception as e:
+        return None, f"error: {e.__class__.__name__}"
 
 
 def fetch_with_selenium(url):
@@ -98,10 +102,11 @@ def fetch_with_selenium(url):
         driver.get(url)
         time.sleep(SELENIUM_SLEEP)
         text, _ = extract_text(driver.page_source)
-        return text
+        if text is None:
+            return None, "no_body"
+        return text, "ok"
     except Exception as e:
-        print(f"\nSelenium failed for {url}: {e}")
-        return None
+        return None, f"error: {e.__class__.__name__}"
     finally:
         driver_pool.put(driver)
 
@@ -112,6 +117,9 @@ def process_row(idx_row):
     college = row["college"]
     url = row["url"]
 
+    if "linkedin.com" in url.lower():
+        return
+
     college_path = Path(BASE_PATH) / college
     college_path.mkdir(parents=True, exist_ok=True)
     save_file = college_path / f"{name}.txt"
@@ -119,23 +127,15 @@ def process_row(idx_row):
     if save_file.is_file():
         return
 
-    text = fetch_with_requests(url)
+    text, req_status = fetch_with_requests(url)
 
     if text is None:
-        text = fetch_with_selenium(url)
-
-    if text is None:
-        print(f"\n{name} | {college}: Both methods failed for {url}, trying Google search...")
-        new_url = google_search_url(f"{name} Computer Science {college}", name)
-        if new_url is not None:
-            text = fetch_with_selenium(new_url)
-            if text is not None:
-                with url_updates_lock:
-                    url_updates[(name, college)] = new_url
-                print(f"\nSuccessfully retried {name} with {new_url}")
+        text, sel_status = fetch_with_selenium(url)
 
     if text is not None:
         save_file.write_text(text, encoding="utf-8")
+    else:
+        print(f"\nFAILED | {name} | {college} | {url} | requests={req_status} | selenium={sel_status}")
 
 
 try:
@@ -156,8 +156,4 @@ finally:
         except Exception:
             pass
 
-for (name, college), new_url in url_updates.items():
-    faculty.loc[(faculty["name"] == name) & (faculty["college"] == college), "url"] = new_url
-
-faculty.to_csv(DATA_PATH, index=False)
 print("Done.")

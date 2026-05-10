@@ -93,6 +93,65 @@ def has_multiple_fields(t):
     return len(re.findall(r"(Mathematics|Statistics|Computer Science)", t)) > 1
 
 
+# Single-line noise patterns — match against a stripped, lowercased line.
+NOISE_LINE_PATTERNS = [
+    re.compile(r"^(facebook|instagram|twitter|x\.com|linkedin|youtube|github|tiktok|threads|bluesky|mastodon|orcid|cv)$"),
+    re.compile(r"^(menu|search|home|visit|apply|give|donate|contact|news|events|calendar|sitemap|directory|directions|jobs|careers|alumni|admissions|admission|login|log\s*in|sign\s*in|skip\s+(to|navigation).*|toggle.*|open\s+menu|close\s+menu|main\s+menu|sub\s*menu|breadcrumb)$"),
+    re.compile(r"^(©.*|copyright.*\d{4}.*|all\s+rights\s+reserved.*|privacy(\s+policy)?|terms(\s+of\s+(use|service))?|accessibility(\s+statement)?|cookie(\s+policy)?|do\s+not\s+sell.*|legal|sitemap)$"),
+    re.compile(r"^\(?\+?\d[\d\s().-]{6,}$"),                       # phone numbers
+    re.compile(r"^[\w.+-]+@[\w.-]+\.[a-z]{2,}$"),                  # email
+    re.compile(r"^https?://\S+$"),                                  # URL
+    re.compile(r"^\d{1,5}\s+([a-z][\w'.-]*\s+){1,6}(street|st|road|rd|avenue|ave|boulevard|blvd|lane|ln|drive|dr|way|hall|building|center|court|ct|highway|hwy|parkway|pkwy)(\s|,|$).*$"),  # street address
+    re.compile(r"^[a-z]{2}\s+\d{5}(-\d{4})?$"),                    # state ZIP
+    re.compile(r"^(she|he|they|her|him|them)(/(she|he|they|her|him|them|hers|his|theirs))+$"),  # pronouns
+    re.compile(r"^(view\s+(in\s+)?(the\s+)?course\s+catalog|see\s+(the\s+)?course\s+catalog)$"),
+    re.compile(r"^terms\s+taught$"),
+    re.compile(r"^course\s+description$"),
+    re.compile(r"^(office|tel|telephone|phone|fax|email|address|mail)\s*:?\s*$"),
+    re.compile(r"^(department|departments|faculty|staff|people|directory)\s*:?\s*$"),
+    re.compile(r"^(in\s+this\s+section|on\s+this\s+page|quick\s+links?|related\s+links?)\s*:?\s*$"),
+    re.compile(r"^(read\s+more|learn\s+more|see\s+more|show\s+more|view\s+(all|more)|expand|collapse)\s*\.?\s*$"),
+]
+
+
+def is_noise_line(line):
+    s = line.strip().lower().rstrip(":.")
+    if not s:
+        return True
+    return any(p.match(s) for p in NOISE_LINE_PATTERNS)
+
+
+def strip_noise(text):
+    return "\n".join(line for line in text.split("\n") if not is_noise_line(line))
+
+
+def drop_college_boilerplate(college_texts):
+    """Given {name: text} for a college, drop lines that recur in >=40% of pages.
+
+    Catches college-wide nav/footer text that survives the same-base-path dedup
+    (e.g. when faculty have heterogeneous personal URLs). Skips short collections
+    where the heuristic isn't reliable.
+    """
+    if len(college_texts) < 5:
+        return college_texts
+
+    line_counts = {}
+    for text in college_texts.values():
+        for line in set(l.strip() for l in text.split("\n") if l.strip()):
+            line_counts[line] = line_counts.get(line, 0) + 1
+
+    threshold = int(len(college_texts) * 0.4)
+    if threshold < 2:
+        threshold = 2
+    boilerplate = {l for l, c in line_counts.items() if c >= threshold and len(l) >= 3}
+
+    out = {}
+    for name, text in college_texts.items():
+        kept = [l for l in text.split("\n") if l.strip() not in boilerplate]
+        out[name] = "\n".join(kept)
+    return out
+
+
 Path(CLEANED_WEBSITE_PATH).mkdir(parents=True, exist_ok=True)
 
 # Remove duplicated content like header and footer within the same college
@@ -180,6 +239,8 @@ for college in colleges:
 
 # Include lines near mentions of names only
 NUM_LINES_TO_KEEP = 30
+pass2_results = {}  # (college, name) -> text after pass 2
+
 for _, row in faculty[faculty["url"].notna()].iterrows():
     college = row["college"]
     name = row["name"]
@@ -198,7 +259,7 @@ for _, row in faculty[faculty["url"].notna()].iterrows():
         line = line.lower()
         if any([t in line for t in [parsed_name.first, parsed_name.last, "area", "research", "interest", "courses", "teaching", "paper", "publication"]]):
             line_nums.extend(list(range(i, min(num_lines, i + NUM_LINES_TO_KEEP))))
-    
+
     line_nums = sorted(list(set(line_nums)))
     if len(line_nums) == 0:
         print(f"No mention of names for {college}/{name}")
@@ -210,6 +271,15 @@ for _, row in faculty[faculty["url"].notna()].iterrows():
         new_lines[i] = re.sub(r"\s+", " ", line)
 
     new_lines = filter(lambda l: not has_multiple_fields(l), new_lines)
-    new_text = "\n".join(new_lines)
-    Path(f"{CLEANED_WEBSITE_PATH}/{college}").mkdir(parents=True, exist_ok=True)
-    Path(f"{CLEANED_WEBSITE_PATH}/{college}/{name}.txt").write_text(new_text, encoding="utf8")
+    pass2_results[(college, name)] = strip_noise("\n".join(new_lines))
+
+# Pass 3 (final): drop college-wide boilerplate that survived pass 1, then write.
+by_college = {}
+for (college, name), text in pass2_results.items():
+    by_college.setdefault(college, {})[name] = text
+
+for college, college_texts in by_college.items():
+    deboilerplated = drop_college_boilerplate(college_texts)
+    for name, text in deboilerplated.items():
+        Path(f"{CLEANED_WEBSITE_PATH}/{college}").mkdir(parents=True, exist_ok=True)
+        Path(f"{CLEANED_WEBSITE_PATH}/{college}/{name}.txt").write_text(text, encoding="utf8")

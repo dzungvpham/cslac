@@ -171,7 +171,7 @@ def main():
         existing.get((r["name"], r["college"]), "")
         for _, r in df_new.iterrows()
     ]
-    df_new.to_csv(OUTPUT_CSV, index=False)
+    df_new.drop(columns="url").to_csv(OUTPUT_CSV, index=False)
 
     print(f"Wrote {len(df_new)} rows to {OUTPUT_CSV}")
 

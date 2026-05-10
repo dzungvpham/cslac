@@ -283,6 +283,7 @@ def _load_or_init_output(input_path: str, output_path: str) -> pd.DataFrame:
         return out
 
     out = pd.read_csv(output_path)
+    out = pd.merge(input_df, out, how="inner", on=["name", "title", "college"])
     for col in VERIFIED_COLUMNS:
         if col not in out.columns:
             out[col] = ""
@@ -306,7 +307,7 @@ def _load_or_init_output(input_path: str, output_path: str) -> pd.DataFrame:
 
 def _atomic_write(df: pd.DataFrame, path: str) -> None:
     tmp = f"{path}.tmp"
-    df.to_csv(tmp, index=False)
+    df.drop(columns=["google_scholar"]).to_csv(tmp, index=False)
     shutil.move(tmp, path)
 
 
