@@ -1,0 +1,478 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Oberlin College,2021-22,F,CSCI 150,01,Introduction to Computer Science,"Taggart, Sam",W 14:30-16:20 (STUOC 209); MWF 09:00-09:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 150,02,Introduction to Computer Science,"Taggart, Sam",Th 13:00-14:50 (STUOC 209); MWF 09:00-09:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 150,03,Introduction to Computer Science,"Rossetti, Blair",W 14:30-16:20 (KING 201); MWF 10:00-10:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 150,04,Introduction to Computer Science,"Feldman, Molly",Th 13:00-14:50 (KING 201); MWF 11:00-11:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 151,01,Data Structures,"Geitz, Bob",M 14:30-16:20 (KING 201); MWF 09:00-09:50 (KING 106),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 151,02,Data Structures,"Geitz, Bob",T 13:00-14:50 (KING 135); MWF 09:00-09:50 (KING 106),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 210,01,Introduction to Computer Architecture,"Checkoway, Stephen",MWF 11:00-11:50 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 241,01,Systems Programming,"Hoyle, Roberto",TTh 11:00-12:15 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 275,01,Programming Abstractions,"Checkoway, Stephen",MWF 15:30-16:20 (KING 343),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 280,01,Algorithms,"McKay, Dylan",MWF 10:00-10:50 (SEVE 108),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 311,01,Database Systems,"Hoyle, Roberto",TTh 15:00-16:15 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 364,01,Artificial Intelligence,"Eck, Adam",MWF 14:30-15:20 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 383,01,Theory of Computation,"McKay, Dylan",MWF 13:30-14:20 (KING 227),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,01,Honors-Full,"Geitz, Bob",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,02,Honors-Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,03,Honors-Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,04,Honors-Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,05,Honors-Full,"Borroni, Albert",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,06,Honors-Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,07,Honors-Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,08,Honors-Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401F,09,Honors-Full,"McKay, Dylan",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401H,01,Honors,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401H,02,Honors,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401H,04,Honors,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401H,08,Honors,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 401H,09,Honors,"McKay, Dylan",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501F,01,Research,"Geitz, Bob",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501F,02,Research,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501F,03,Research,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501F,04,Research,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501F,05,Research,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501F,06,Research,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501F,07,Research,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501F,09,Research,"McKay, Dylan",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501H,01,Research,"Geitz, Bob",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501H,02,Research,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501H,03,Research,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501H,04,Research,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501H,05,Research,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501H,06,Research,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501H,07,Research,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,F,CSCI 501H,09,Research,"McKay, Dylan",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 150,01,Introduction to Computer Science,"Eck, Adam",W 14:30-16:20 (STUOC 209); MWF 09:00-09:50 (KING 106),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 150,02,Introduction to Computer Science,"Eck, Adam",Th 13:00-14:50 (STUOC 209); MWF 09:00-09:50 (KING 106),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 150,03,Introduction to Computer Science,"Feldman, Molly, Taggart, Sam",W 14:30-16:20 (KING 201); MWF 10:00-10:50 (KING 321),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 150,04,Introduction to Computer Science,"Rossetti, Blair, Taggart, Sam",Th 13:00-14:50 (KING 201); MWF 11:00-11:50 (KING 227),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 151,01,Data Structures,"Geitz, Bob, McKay, Dylan",M 14:30-16:20 (KING 135); MWF 09:00-09:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 151,02,Data Structures,"Geitz, Bob, McKay, Dylan",T 13:00-14:50 (KING 135); MWF 09:00-09:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 210,01,Introduction to Computer Architecture,"Checkoway, Stephen",MWF 11:00-11:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 241,01,Systems Programming,"Hoyle, Roberto",TTh 11:00-12:15 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 275,01,Programming Abstractions,"Checkoway, Stephen",MWF 15:30-16:20 (KING 337),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 280,01,Algorithms,"Bosch, Bob",MWF 13:30-14:20 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 317,01,People-Powered Procedures,"Feldman, Molly",MW 14:30-16:20 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 353,01,Computer Vision,"Rossetti, Blair",MWF 09:00-09:50 (KING 227),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 365,01,Advanced Algorithms,"Taggart, Sam",MWF 11:00-11:50 (AJLC 201),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 383,01,Theory of Computation,"McKay, Dylan",MWF 10:00-10:50 (AJLC 201),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 384,01,Complexity Theory,"McKay, Dylan",MWF 13:30-14:20 (AJLC 201),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,01,Honors-Full,"Geitz, Bob",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,02,Honors-Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,03,Honors-Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,04,Honors-Full,"Borroni, Albert",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,05,Honors-Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,06,Honors-Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,07,Honors-Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,08,Honors-Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401F,09,Honors-Full,"McKay, Dylan",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401H,01,Honors,"Geitz, Bob",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401H,02,Honors,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401H,03,Honors,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401H,04,Honors,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401H,05,Honors,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401H,06,Honors,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401H,08,Honors,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 401H,09,Honors,"McKay, Dylan",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501F,01,Research,"Geitz, Bob",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501F,02,Research,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501F,03,Research,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501F,04,Research,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501F,05,Research,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501F,06,Research,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501F,08,Research,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501F,09,Research,"McKay, Dylan",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501H,01,Research,"Geitz, Bob",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501H,02,Research,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501H,03,Research,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501H,04,Research,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501H,05,Research,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501H,06,Research,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501H,08,Research,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2021-22,S,CSCI 501H,09,Research,"McKay, Dylan",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 150,01,Introduction to Computer Science,"Eck, Adam",W 14:30-16:20 (KING 137); MWF 09:00-09:50 (KING 337),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 150,02,Introduction to Computer Science,"Feldman, Molly",Th 13:00-14:50 (STUOC 209); MWF 10:00-10:50 (STUOC 209),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 150,03,Introduction to Computer Science,"Wang, Emily",Th 15:00-16:50 (KING 137); MWF 11:00-11:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 150,04,Introduction to Computer Science,"Eck, Adam, Taggart, Sam",Th 13:00-14:50 (KING 137); MWF 09:00-09:50 (KING 337),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 151,01,Data Structures,"Barsky, Marina, Taggart, Sam",T 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 151,02,Data Structures,"Barsky, Marina, Taggart, Sam",M 14:30-16:20 (KING 201); MWF 11:00-11:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 151,03,Data Structures,"Barsky, Marina, Taggart, Sam",T 13:00-14:50 (KING 137); MWF 10:00-10:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 151,04,Data Structures,"Barsky, Marina, Taggart, Sam",M 14:30-16:20 (KING 201); MWF 10:00-10:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 210,01,Introduction to Computer Architecture,"Taylor, Cynthia",MWF 15:30-16:20 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 241,01,Systems Programming,"Hoyle, Roberto",TTh 11:00-12:15 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 275,01,Programming Abstractions,"Feldman, Molly",MWF 13:30-14:20 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 280,01,Algorithms,"Bosch, Bob",MWF 14:30-15:20 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 344,01,"Privacy, Anonymity and Social Networks","Hoyle, Roberto",TTh 13:30-14:45 (KING 243),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 374,01,Machine Learning and Data Mining,"Eck, Adam",MWF 11:00-11:50 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 383,01,Theory of Computation,"Taggart, Sam",MWF 11:00-11:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 391,01,Diversity and Equity in Computer Science,"Hoyle, Roberto",W 15:00-16:20 (RICE 017),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,01,Honors-Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,02,Honors-Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,03,Honors-Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,04,Honors-Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,05,Honors-Full,"Rossetti, Blair",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,06,Honors-Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,07,Honors-Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,08,Honors-Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401F,09,Honors-Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,01,Honors,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,02,Honors,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,03,Honors,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,04,Honors,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,05,Honors,"Rossetti, Blair",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,06,Honors,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,07,Honors,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,08,Honors,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 401H,09,Honors,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,01,Research - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,02,Research - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,03,Research - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,04,Research - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,05,Research - Full,"Rossetti, Blair",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,06,Research - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,07,Research - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,08,Research - Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501F,09,Research - Full,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,01,Research - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,02,Research - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,03,Research - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,04,Research - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,05,Research - Half,"Rossetti, Blair",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,06,Research - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,07,Research - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,08,Research - Half,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 501H,09,Research - Half,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,F,CSCI 995H,10,Private Reading - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 144,01,Introduction to Data Science,"Davidson, Josh",TTh 09:30-10:45 (STUOC 209),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 150,01,Introduction to Computer Science,"Wang, Emily",Th 15:00-16:50 (KING 137); MWF 10:00-10:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 150,02,Introduction to Computer Science,"Feldman, Molly",W 14:30-16:20 (KING 137); MWF 11:00-11:50 (KING 337),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 150,03,Introduction to Computer Science,"Feldman, Molly, Taylor, Cynthia",Th 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 337),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 151,01,Data Structures,"Hoyle, Roberto",T 13:00-14:50 (KING 137); MWF 11:00-11:50 (MUDD 050),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 151,02,Data Structures,"Hoyle, Roberto, Taylor, Cynthia",M 14:30-16:20 (KING 137); MWF 11:00-11:50 (MUDD 050),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 210,01,Introduction to Computer Architecture,"Taylor, Cynthia",MWF 11:00-11:50 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 241,01,Systems Programming,"Hoyle, Roberto",TTh 11:00-12:15 (KING 137),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 275,01,Programming Abstractions,"Feldman, Molly",MWF 09:00-09:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 280,01,Algorithms,"Taggart, Sam",MWF 10:00-10:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 327,01,Inclusive Technology Design,"Wang, Emily",TTh 13:30-14:45 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 381,01,"Algorithms on Strings, Trees, and Sequences","Taggart, Sam",WF 15:00-16:20 (KING 123),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 383,01,Theory of Computation,"Taggart, Sam",MWF 13:30-14:20 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,01,Honors-Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,02,Honors-Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,03,Honors-Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,04,Honors-Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,05,Honors-Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,06,Honors-Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,07,Honors-Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,08,Honors-Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401F,09,Honors-Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,01,Honors,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,02,Honors,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,03,Honors,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,04,Honors,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,05,Honors,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,06,Honors,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,07,Honors,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,08,Honors,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 401H,09,Honors,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,01,Research - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,02,Research - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,03,Research - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,04,Research - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,05,Research - Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,06,Research - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,07,Research - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,08,Research - Full,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501F,09,Research - Full,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,01,Research - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,02,Research - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,03,Research - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,04,Research - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,05,Research - Half,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,06,Research - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,07,Research - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,08,Research - Half,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2022-23,S,CSCI 501H,09,Research - Half,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 144,01,Introduction to Data Science,"Davidson, Josh",MWF 10:00-10:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 150,01,Introduction to Computer Science,"Wang, Emily, Feldman, Molly",Th 13:00-14:50 (KING 137); MWF 10:00-10:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 150,02,Introduction to Computer Science,"Wang, Emily",W 14:30-16:20 (KING 137); MWF 10:00-10:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 150,03,Introduction to Computer Science,"McCarrin, Michael",Th 15:00-16:50 (KING 137); MWF 11:00-11:50 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 151,01,Data Structures,"Eck, Adam, Levinson, Howard",T 13:00-14:50 (KING 137); MWF 09:00-09:50 (STUOC 209),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 151,02,Data Structures,"Eck, Adam, Levinson, Howard",M 14:30-16:20 (KING 201); MWF 10:00-10:50 (STUOC 209),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 210,01,Introduction to Computer Architecture,"Taylor, Cynthia",MWF 15:30-16:20 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 241,01,Systems Programming,"Checkoway, Stephen",T 15:00-16:50 (KING 137); MWF 15:30-16:20 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 275,01,Programming Abstractions,"Feldman, Molly",MWF 11:00-11:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 280,01,Algorithms,"Levinson, Howard",MWF 10:00-10:50 (AJLC 120),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 317,01,People-Powered Procedures,"Feldman, Molly",MW 15:00-16:15 (STUOC 209),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 361,01,Game Design,"Wang, Emily",MWF 13:30-14:20 (KING 123),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 383,01,Theory of Computation,"Checkoway, Stephen",MWF 13:30-14:20 (KING 243),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,01,Computer Science Honors - Full,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,02,Computer Science Honors - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,03,Computer Science Honors - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,04,Computer Science Honors - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,05,Computer Science Honors - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,06,Computer Science Honors - Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,07,Computer Science Honors - Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,08,Computer Science Honors - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,09,Computer Science Honors - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401F,10,Computer Science Honors - Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,01,Computer Science Honors - Half,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,02,Computer Science Honors - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,03,Computer Science Honors - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,04,Computer Science Honors - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,05,Computer Science Honors - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,06,Computer Science Honors - Half,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,07,Computer Science Honors - Half,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,08,Computer Science Honors - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,09,Computer Science Honors - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 401H,10,Computer Science Honors - Half,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,01,Research - Full,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,02,Research - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,03,Research - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,04,Research - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,05,Research - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,06,Research - Full,"McCarrin, Michael",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,07,Research - Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,08,Research - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,09,Research - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501F,10,Research - Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,01,Research - Half,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,02,Research - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,03,Research - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,04,Research - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,05,Research - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,06,Research - Half,"McCarrin, Michael",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,07,Research - Half,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,08,Research - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,09,Research - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,F,CSCI 501H,10,Research - Half,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 150,01,Introduction to Computer Science,"McCarrin, Michael",W 14:30-16:20 (KING 137); MWF 09:00-09:50 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 150,02,Introduction to Computer Science,"Warford, Noel",Th 15:00-16:50 (KING 137); MWF 10:00-10:50 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 150,03,Introduction to Computer Science,"McCarrin, Michael, Taylor, Cynthia",Th 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 243),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 150,04,Introduction to Computer Science,"Wang, Emily",W 14:30-16:20 (KING 201); MWF 10:00-10:50 (KING 127),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 151,01,Data Structures,"Eck, Adam",T 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 151,02,Data Structures,"Levinson, Howard",M 14:30-16:20 (KING 137); MWF 09:00-09:50 (KING 327),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 210,01,Introduction to Computer Architecture,"Taylor, Cynthia",MWF 15:30-16:20 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 241,01,Systems Programming,"Checkoway, Stephen",T 15:00-16:50 (KING 137); MWF 13:30-14:20 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 275,01,Programming Abstractions,"Feldman, Molly",MWF 10:00-10:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 280,01,Algorithms,"Levinson, Howard",MWF 11:00-11:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 315,01,Introduction to Human-Centered Security,"Warford, Noel",TTh 11:00-12:15 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 317,01,People-Powered Procedures,"Feldman, Molly",MW 15:00-16:15 (STUOC 209),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 361,01,Game Design,"Wang, Emily",MWF 13:30-14:20 (KING 121),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 373,01,Applied Machine Learning,"Eck, Adam",MWF 09:00-09:50 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 383,01,Theory of Computation,"Checkoway, Stephen",MWF 15:30-16:20 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,01,Computer Science Honors - Full,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,02,Computer Science Honors - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,03,Computer Science Honors - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,04,Computer Science Honors - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,05,Computer Science Honors - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,06,Computer Science Honors - Full,"McCarrin, Michael",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,07,Computer Science Honors - Full,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,08,Computer Science Honors - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,09,Computer Science Honors - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401F,10,Computer Science Honors - Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,01,Computer Science Honors - Half,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,02,Computer Science Honors - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,03,Computer Science Honors - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,04,Computer Science Honors - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,05,Computer Science Honors - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,06,Computer Science Honors - Half,"McCarrin, Michael",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,07,Computer Science Honors - Half,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,08,Computer Science Honors - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,09,Computer Science Honors - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 401H,10,Computer Science Honors - Half,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,01,Research - Full,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,02,Research - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,03,Research - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,04,Research - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,05,Research - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,06,Research - Full,"McCarrin, Michael",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,07,Research - Full,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,08,Research - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,09,Research - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501F,10,Research - Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,01,Research - Half,"Barsky, Marina",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,02,Research - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,03,Research - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,04,Research - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,05,Research - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,06,Research - Half,"McCarrin, Michael",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,07,Research - Half,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,08,Research - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,09,Research - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2023-24,S,CSCI 501H,10,Research - Half,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 144,01,Introduction to Data Science,"Davidson, Josh",MWF 10:00-10:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 150,01,Introduction to Computer Science,"Wang, Emily",W 10:00-11:50 (KING 137); MWF 16:30-17:20 (KING 127),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 150,02,Introduction to Computer Science,"Warford, Noel",Th 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 106),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 150,03,Introduction to Computer Science,"Taggart, Sam",Th 15:00-16:50 (KING 137); MWF 13:30-14:20 (KING 337),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 150,04,Introduction to Computer Science,"McCarrin, Michael",W 14:30-16:20 (KING 201); MWF 09:00-09:50 (KING 341),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 151,01,Data Structures,"Hoyle, Roberto",T 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 151,02,Data Structures,"Eck, Adam",M 14:30-16:20 (KING 201); MWF 09:00-09:50 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 210,01,Introduction to Computer Architecture,"Checkoway, Stephen",MWF 15:30-16:20 (KING 123),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 241,01,Systems Programming,"Hogan, Mary",T 15:00-16:50 (KING 137); MWF 11:00-11:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 241,02,Systems Programming,"Taylor, Cynthia",T 13:00-14:50 (KING 201); MWF 15:30-16:20 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 275,01,Programming Abstractions,"Checkoway, Stephen",MWF 13:30-14:20 (KING 243),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 280,01,Algorithms,"Levinson, Howard",MWF 10:00-10:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 280,02,Algorithms,"Levinson, Howard",MWF 09:00-09:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 311,01,Database Systems,"Hoyle, Roberto",MWF 14:30-15:20 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 315,01,Introduction to Human-Centered Security,"Warford, Noel",TTh 09:30-10:45 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 361,01,Game Design,"Wang, Emily",MWF 13:30-14:20 (KING 321),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 373,01,Applied Machine Learning,"Eck, Adam",MWF 11:00-11:50 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 383,01,Theory of Computation,"Taggart, Sam",MWF 15:30-16:20 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,01,Computer Science Honors - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,02,Computer Science Honors - Full,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,03,Computer Science Honors - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,04,Computer Science Honors - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,05,Computer Science Honors - Full,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,06,Computer Science Honors - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,07,Computer Science Honors - Full,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,08,Computer Science Honors - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,09,Computer Science Honors - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,10,Computer Science Honors - Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401F,11,Computer Science Honors - Full,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,01,Computer Science Honors - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,02,Computer Science Honors - Half,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,03,Computer Science Honors - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,04,Computer Science Honors - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,05,Computer Science Honors - Half,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,06,Computer Science Honors - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,07,Computer Science Honors - Half,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,08,Computer Science Honors - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,09,Computer Science Honors - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,10,Computer Science Honors - Half,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 401H,11,Computer Science Honors - Half,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,01,Research - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,02,Research - Full,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,03,Research - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,04,Research - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,05,Research - Full,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,06,Research - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,07,Research - Full,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,08,Research - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,09,Research - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,10,Research - Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501F,11,Research - Full,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,01,Research - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,02,Research - Half,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,03,Research - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,04,Research - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,05,Research - Half,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,06,Research - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,07,Research - Half,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,08,Research - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,09,Research - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,10,Research - Half,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,F,CSCI 501H,11,Research - Half,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 144,01,Introduction to Data Science,"Davidson, Josh",MW 08:35-09:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 150,01,Introduction to Computer Science,"Wang, Emily",W 14:30-16:20 (KING 137); MWF 10:00-10:50 (KING 127),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 150,02,Introduction to Computer Science,"Warford, Noel",Th 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 150,03,Introduction to Computer Science,"Eck, Adam",Th 15:00-16:50 (KING 137); MWF 09:00-09:50 (KING 123),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 150,04,Introduction to Computer Science,"McCarrin, Michael",W 14:30-16:20 (KING 201); MWF 11:00-11:50 (KING 327),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 151,01,Data Structures,"Hoyle, Roberto",T 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 151,02,Data Structures,"Levinson, Howard",M 14:30-16:20 (KING 201); MWF 10:00-10:50 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 210,01,Introduction to Computer Architecture,"Checkoway, Stephen",MWF 15:30-16:20 (KING 243),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 241,01,Systems Programming,"Hogan, Mary",M 14:30-16:20 (KING 137); MWF 09:00-09:50 (KING 227),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 275,01,Programming Abstractions,"Checkoway, Stephen",MWF 13:30-14:20 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 280,01,Algorithms,"Levinson, Howard",MWF 11:00-11:50 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 313,01,Human Computer Interface,"Warford, Noel",TTh 09:30-10:45 (SCTR A154),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 341,01,Operating Systems,"Taylor, Cynthia",MWF 15:30-16:20 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 342,01,Computer Networks,"Hogan, Mary",MWF 11:00-11:50 (KING 235),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 375,01,Ethics and Epistemology of Artificial Intelligence,"McCarrin, Michael",MF 15:00-16:15 (KING 325),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 383,01,Theory of Computation,"Taggart, Sam",MWF 13:30-14:20 (KING 243),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 385,01,Economics and Computation,"Taggart, Sam",MWF 10:00-10:50 (KING 321),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,01,Research - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,02,Research - Full,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,03,Research - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,04,Research - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,05,Research - Full,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,06,Research - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,07,Research - Full,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,08,Research - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,09,Research - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,10,Research - Full,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501F,11,Research - Full,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,01,Research - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,02,Research - Half,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,03,Research - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,04,Research - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,05,Research - Half,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,06,Research - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,07,Research - Half,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,08,Research - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,09,Research - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,10,Research - Half,"Wang, Emily",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2024-25,S,CSCI 501H,11,Research - Half,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 150,01,Introduction to Computer Science,"McCarrin, Michael",W 14:30-16:20 (KING 137); MWF 09:00-09:50 (KING 306),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 150,03,Introduction to Computer Science,"Taggart, Sam",Th 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 150,04,Introduction to Computer Science,"Warford, Noel",Th 13:00-14:50 (KING 201); MWF 11:00-11:50 (KING 123),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 151,01,Data Structures,"Taylor, Cynthia",T 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 243),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 151,02,Data Structures,"Levinson, Howard",M 14:30-16:20 (KING 201); MWF 10:00-10:50 (KING 327),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 210,01,Introduction to Computer Architecture,"Checkoway, Stephen",MWF 13:30-14:20 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 241,01,Systems Programming,"Hogan, Mary",T 15:00-16:50 (KING 137); MWF 09:00-09:50 (KING 106),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 241,02,Systems Programming,"Checkoway, Stephen",T 13:00-14:50 (KING 201); MWF 15:30-16:20 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 275,01,Programming Abstractions,"Feldman, Molly",MWF 11:00-11:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 280,01,Algorithms,"Levinson, Howard",MWF 11:00-11:50 (KING 327),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 333,01,Natural Language Processing,"Warford, Noel",TTh 11:00-12:15 (SEVE 104),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 342,01,Computer Networks,"Hogan, Mary",MWF 13:30-14:20 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 356,01,Software from Start to Start Over,"Feldman, Molly",MW 08:35-09:50 (KING 235),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 373,01,Applied Machine Learning,"Eck, Adam",MWF 14:30-15:20 (KING 101),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 383,01,Theory of Computation,"McCarrin, Michael",MWF 11:00-11:50 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 383,02,Theory of Computation,"Taggart, Sam",MWF 15:30-16:20 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,01,Research - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,02,Research - Full,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,03,Research - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,04,Research - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,05,Research - Full,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,06,Research - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,07,Research - Full,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,08,Research - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,09,Research - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,10,Research - Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501F,11,Research - Full,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,01,Research - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,02,Research - Half,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,03,Research - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,04,Research - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,05,Research - Half,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,06,Research - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,07,Research - Half,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,08,Research - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,09,Research - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,10,Research - Half,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,F,CSCI 501H,11,Research - Half,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 150,01,Introduction to Computer Science,"McCarrin, Michael",W 14:30-16:20 (KING 137); MWF 09:00-09:50 (KING 323),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 150,02,Introduction to Computer Science,"Warford, Noel",Th 15:00-16:50 (KING 137); MWF 11:00-11:50 (KING 127),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 150,03,Introduction to Computer Science,"Feldman, Molly",Th 13:00-14:50 (KING 137); MWF 10:00-10:50 (KING 123),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 151,01,Data Structures,"Taylor, Cynthia",T 13:00-14:50 (KING 137); MWF 11:00-11:50 (KING 227),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 151,02,Data Structures,"Levinson, Howard",M 14:30-16:20 (KING 137); MWF 10:00-10:50 (KING 327),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 210,01,Introduction to Computer Architecture,"Checkoway, Stephen",MWF 13:30-14:20 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 241,01,Systems Programming,"Hogan, Mary",T 15:00-16:50 (KING 137); MWF 11:00-11:50 (KING 123),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 275,01,Programming Abstractions,"Hogan, Mary",MWF 09:00-09:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 275,02,Programming Abstractions,"Feldman, Molly",MWF 14:30-15:20 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 280,02,Algorithms,"Taggart, Sam",MWF 10:00-10:50 (KING 241),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 313,01,Human Computer Interaction,"Warford, Noel",TTh 09:30-10:45 (STUOC 211),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 343,01,Computer and Information Security,"Checkoway, Stephen",MWF 15:30-16:20 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 353,01,Computer Vision,"Levinson, Howard",MWF 11:00-11:50 (KING 327),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 365,01,Advanced Algorithms,"Taggart, Sam",MWF 13:30-14:20 (KING 239),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 383,01,Theory of Computation,"McCarrin, Michael",MWF 11:00-11:50 (KING 237),https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,01,Research - Full,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,02,Research - Full,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,03,Research - Full,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,04,Research - Full,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,05,Research - Full,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,06,Research - Full,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,07,Research - Full,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,08,Research - Full,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,09,Research - Full,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,10,Research - Full,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501F,11,Research - Full,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,01,Research - Half,"Checkoway, Stephen",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,02,Research - Half,"Davidson, Josh",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,03,Research - Half,"Eck, Adam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,04,Research - Half,"Feldman, Molly",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,05,Research - Half,"Hogan, Mary",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,06,Research - Half,"Hoyle, Roberto",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,07,Research - Half,"Levinson, Howard",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,08,Research - Half,"Taggart, Sam",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,09,Research - Half,"Taylor, Cynthia",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,10,Research - Half,"Staff, A&S",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Oberlin College,2025-26,S,CSCI 501H,11,Research - Half,"Warford, Noel",,https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/classSearch/classSearch

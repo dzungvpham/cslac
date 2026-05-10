@@ -1,0 +1,126 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Lafayette College,2023-24,F,CS 104,01,Computer Gaming,Jon Dahl,TTh 13:10-15:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 104,02,Computer Gaming,Jon Dahl,TTh 09:00-10:50 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 104,03,Computer Gaming,Lauren Biernacki,MW 08:00-09:50 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 105,01,Digital Media,Justin Smith,MW 10:00-11:50 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 150,01,Data Structures & Algorithms,Jia Tao,MWF 10:00-10:50 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 150,02,Data Structures & Algorithms,Jia Tao,MWF 13:10-14:00 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 150L,01,Lab,Jon Dahl,MW 11:00-12:15 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 150L,02,Lab,Jon Dahl,MW 14:10-15:25 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 202,01,Analysis of Algorithms,Ge Xia,MWF 14:10-15:00 (RISC 104),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 202,02,Analysis of Algorithms,Ge Xia,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 203,01,Computer Organization,Jeffrey Pfaffmann,MW 11:00-12:15 (AEC 511),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 203L,01,Lab,Jeffrey Pfaffmann,TTh 09:30-10:45 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 203L,02,Lab,Jeffrey Pfaffmann,TTh 14:45-16:00 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 320,01,Database Management System,Jia Tao,MWF 15:10-16:00 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 390,01,Independent Study,Christian Lopez Bencosme,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 413,01,ST: Human Computer Interfaces,Justin Smith,MWF 13:10-14:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 420,01,Artificial Intelligence,Jeffrey Pfaffmann,TTh 11:00-12:15 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,F,CS 495,01,Thesis,Jeffrey Pfaffmann,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 104,01,Computer Gaming,Christian Lopez Bencosme,MWF 11:40-12:55 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 104,02,Computer Gaming,Christian Lopez Bencosme,MWF 14:45-16:00 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 150,01,Data Structures & Algorithms,Jon Dahl,TTh 09:30-10:45 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 150,02,Data Structures & Algorithms,Jon Dahl,TTh 11:00-12:15 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 150L,01,Lab,Jon Dahl,TTh 13:15-14:30 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 150L,02,Lab,Jon Dahl,TTh 14:45-16:00 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 200,01,Computers and Society,Justin Smith,MWF 09:30-10:20 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 200,02,Computers and Society,Christian Lopez Bencosme,MWF 08:25-09:15 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 205,01,Software Engineering,Justin Smith,MW 14:45-16:00 (RISC 262),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 205,02,Software Engineering,Justin Smith,MW 13:15-14:30 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 205L,01,Lab,Jeffrey Pfaffmann,MW 08:00-09:15 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 205L,02,Lab,Jeffrey Pfaffmann,TTh 08:00-09:15 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 301,01,Principles of Programming Lang,Ge Xia,TTh 09:30-10:45 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 303,01,Theory of Computation,Ge Xia,TTh 13:15-14:30 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 391,01,Independent Study,Jon Dahl,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 406,01,Operating Systems,Jeffrey Pfaffmann,TTh 11:00-12:15 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 470,01,Senior Project,Ge Xia,TTh 14:45-16:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2023-24,S,CS 496,01,Thesis,Jeffrey Pfaffmann,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 104,01,Computer Gaming,Christian Lopez Bencosme,MWF 11:40-12:55 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 104,02,Computer Gaming,Christian Lopez Bencosme,MWF 14:45-16:00 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 104,03,Computer Gaming,Lauren Biernacki,MWF 11:40-12:55 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 105,01,Digital Media,Justin Smith,MWF 13:15-14:30 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 105,02,Digital Media,Sofia Serrano,MWF 14:45-16:00 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 150,01,Data Structures & Algorithms,Jon Dahl,TTh 13:15-14:30 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 150,02,Data Structures & Algorithms,Jon Dahl,TTh 11:00-12:15 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 150L,01,Lab,Jon Dahl,TTh 08:00-09:15 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 150L,02,Lab,Jon Dahl,TTh 14:45-16:00 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 202,01,Analysis of Algorithms,Ge Xia,TTh 09:30-10:45 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 202,02,Analysis of Algorithms,Ge Xia,TTh 13:15-14:30 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 203,01,Computer Organization,Jeffrey Pfaffmann,MWF 09:30-10:20 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 203,02,Computer Organization,Jeffrey Pfaffmann,MWF 13:40-14:30 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 203L,01,Lab,Jeffrey Pfaffmann,MW 08:00-09:15 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 203L,02,Lab,Jeffrey Pfaffmann,MW 14:45-16:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 320,01,Database Management System,Jorge Silveyra,TTh 14:45-16:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 391,01,Independent Study,,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 420,01,Artificial Intelligence,Sofia Serrano,MWF 10:35-11:25 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 425,01,Human-Computer Interaction,Justin Smith,MWF 14:45-15:35 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 495,01,Thesis,Ge Xia,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,F,CS 495,02,Thesis,Jeffrey Pfaffmann,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 104,01,Computer Gaming,Lauren Biernacki,MWF 13:15-14:30 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 104,02,Computer Gaming,Lauren Biernacki,MWF 14:45-16:00 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 105,01,Digital Media,Sofia Serrano,MWF 09:30-10:45 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 150,01,Data Structures & Algorithms,Jon Dahl,MWF 09:30-10:20 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 150,02,Data Structures & Algorithms,Jon Dahl,MWF 13:40-14:30 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 150L,01,Lab,Jon Dahl,MW 08:00-09:15 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 150L,02,Lab,Jon Dahl,MW 14:45-16:00 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 200,01,Computers and Society,Jorge Silveyra,TTh 09:30-10:45 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 200,02,Computers and Society,Jorge Silveyra,TTh 14:45-16:00 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 200,03,Computers and Society,Jia Tao,MW 11:40-12:55 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 205,01,Software Engineering,Justin Smith,TTh 09:30-10:45 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 205,02,Software Engineering,Justin Smith,TTh 11:00-12:15 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 205L,01,Lab,Justin Smith,TTh 13:15-14:30 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 205L,02,Lab,Justin Smith,TTh 14:45-16:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 301,01,Principles of Programming Lang,Ge Xia,TTh 09:30-10:45 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 303,01,Theory of Computation,Jia Tao,MWF 10:35-11:25 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 391,01,Independent Study,Sofia Serrano,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 406,01,Operating Systems,Jeffrey Pfaffmann,TTh 11:00-12:15 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 410,01,ST: Cyber Security,Zepu Chen,TTh 14:45-16:00 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 424,01,Intro to Machine Learning,Christian Lopez Bencosme,MW 11:40-12:55 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 470,01,Senior Project,Jeffrey Pfaffmann,TTh 13:15-14:30 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 495,01,Thesis,,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2024-25,S,CS 496,01,Thesis,Ge Xia,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 104,01,Computer Gaming,Christian Lopez Bencosme,MWF 11:40-12:55 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 104,02,Computer Gaming,Christian Lopez Bencosme,MWF 14:45-16:00 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 105,01,Digital Media,Justin Smith,MWF 14:45-16:00 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 105,02,Digital Media,Justin Smith,MWF 13:15-14:30 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 150,01,Data Structures & Algorithms,Jon Dahl,TTh 09:30-10:45 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 150L,01,Lab,Jon Dahl,TTh 08:00-09:15 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 200,01,Computers and Society,Jia Tao,TTh 09:30-10:45 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 200,02,Computers and Society,Justin Smith,MWF 10:35-11:25 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 202,01,Analysis of Algorithms,Ge Xia,TTh 09:30-10:45 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 202,02,Analysis of Algorithms,Ge Xia,TTh 13:15-14:30 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 203,01,Computer Organization,Jeffrey Pfaffmann,MWF 09:30-10:20 (RISC 362),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 203,02,Computer Organization,Jeffrey Pfaffmann,MWF 13:40-14:30 (RISC 362),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 203L,01,Lab,Jeffrey Pfaffmann,MW 08:00-09:15 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 203L,02,Lab,Jeffrey Pfaffmann,MW 14:45-16:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 320,01,Database Management System,Jorge Silveyra,TTh 14:45-16:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 391,01,Independent Study,Ge Xia,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 391,02,Independent Study,,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 391,03,Independent Study,Sofia Serrano,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 412,01,ST: Fnd Multiagent Systems,Jia Tao,TTh 11:00-12:15 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 420,02,Artificial Intelligence,Sofia Serrano,MWF 10:35-11:25 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 495,01,Thesis,Christian Lopez Bencosme,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,F,CS 495,02,Thesis,Sofia Serrano,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 104,01,Computer Gaming,Jonathan Li,MWF 13:15-14:30 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 105,01,Digital Media,Sofia Serrano,MWF 11:40-12:55 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 105,02,Digital Media,Sofia Serrano,MWF 14:45-16:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 150,01,Data Structures & Algorithms,Jon Dahl,MWF 09:30-10:20 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 150,02,Data Structures & Algorithms,Jon Dahl,MWF 13:40-14:30 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 150L,01,Lab,Jon Dahl,MW 08:00-09:15 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 150L,02,Lab,Jon Dahl,MW 14:45-16:00 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 200,01,Computers and Society,Christian Lopez Bencosme,TTh 09:30-10:45 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 200,02,Computers and Society,Christian Lopez Bencosme,TTh 14:45-16:00 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 205,01,Software Engineering,Jorge Silveyra,TTh 09:30-10:45 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 205,02,Software Engineering,Jorge Silveyra,TTh 11:00-12:15 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 205L,01,Lab,Jorge Silveyra,TTh 13:15-14:30 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 205L,02,Lab,Jorge Silveyra,TTh 14:45-16:00 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 301,01,Principles of Programming Lang,Jia Tao,TTh 09:30-10:45 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 303,01,Theory of Computation,Jia Tao,TTh 11:00-12:15 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 391,01,Independent Study,,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 406,01,Operating Systems,Jon Dahl,MWF 10:35-11:25 (RISC 462),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 410,01,ST: Cyber Security,Zepu Chen,TTh 14:45-16:00 (RISC 360),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 424,01,Intro to Machine Learning,Sofia Serrano,MW 13:15-14:30 (RISC 460),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 470,01,Senior Project,Ge Xia,W 13:15-16:00 (RISC 562),https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 495,01,Thesis,,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 496,01,Thesis,Christian Lopez Bencosme,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Lafayette College,2025-26,S,CS 496,02,Thesis,Sofia Serrano,,https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/classSearch/classSearch

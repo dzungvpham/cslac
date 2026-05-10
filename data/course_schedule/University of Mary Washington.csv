@@ -1,0 +1,459 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+University of Mary Washington,2021-22,F,CPSC 106,01,Digital Storytelling,"Bond, Paul H.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 110,01,Intro to Computer Science,"Cooper, Gusty A.",TTh 11:00-12:15 (MONR 116),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 110,02,Intro to Computer Science,"Wu, XinWen",MWF 11:00-11:50 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 110,03,Intro to Computer Science,"Chandrasekar, Prashant",MWF 13:00-13:50 (JFRM B52),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 110,04,Intro to Computer Science,"Solka, Jeffrey L.",Th 18:00-20:45 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 110,05,Intro to Computer Science,"Schouweiler, Karen M.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 110,06,Intro to Computer Science,"Taft, Robert L.",TTh 18:00-19:15 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 110,07,Intro to Computer Science,"Rigsby, John T.",MW 18:00-19:15 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 220,01,Comp Progr & Problem Solving,"Anewalt, Karen M.",F 09:00-10:50 (JFRM B52); MW 10:00-10:50 (JFRM B52),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 220,02,Comp Progr & Problem Solving,"Zeitz, Jessica",TTh 11:00-12:50 (MONR 240),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 220,03,Comp Progr & Problem Solving,"Foster, George J.",M 18:00-20:45 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 240,01,Obj-Oriented Analysis & Design,"Finlayson, Ian",TTh 09:00-10:50 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 240,02,Obj-Oriented Analysis & Design,"Finlayson, Ian",TTh 11:00-12:50 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 284,01,Applied Discrete Mathematics,"Ravishankar, Veena",MW 11:00-12:50 (JFRM B52),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 284,02,Applied Discrete Mathematics,"Ravishankar, Veena",MW 14:00-15:50 (JFRM B52),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 302,01,Computer Ethics,"Dean, Alan J.",M 09:00-10:50 (JFRM 119),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 305,01,Comp Sys & Architecture,"Cooper, Gusty A.",TTh 08:00-09:50 (MONR 115),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 305,02,Comp Sys & Architecture,"Cooper, Gusty A.",TTh 14:00-15:50 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 318,01,System and Network Administrat,"Allwine, Kenneth F., Peck, Joel D.",Th 18:00-20:45 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",TTh 10:00-11:50 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 340,01,Data Structures and Algorithms,"Chandrasekar, Prashant",TTh 09:00-10:50 (HCC 327),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 345,01,Intro to Computer Security,"Ravishankar, Veena",TTh 15:30-16:45 (JFRM B52),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 350,01,Applications of Databases,"Davies, Stephen C.",MW 10:00-10:50 (MONR 110); F 10:00-11:50 (MONR 110),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 350,02,Applications of Databases,"Davies, Stephen C.",MW 13:00-13:50 (JFRM B7); F 13:00-14:50 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 405,01,Operating Sys & Programming,"Marshall, Andrew M.",TTh 14:00-15:50 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 415,01,Artificial Intelligence,"Davies, Stephen C.",TTh 12:30-13:45 (MONR 115),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",MW 09:00-10:50 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",MW 12:00-13:50 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 444,01,3D Computer Graphics,"Polack, Jennifer A.",TTh 09:30-10:45 (JFRM B52),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 470A8,01,Network Security,"Wu, XinWen",MW 15:00-16:15 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 491,01,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 491,02,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 491,03,Individual Study,"Davies, Stephen C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 491,04,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 491,05,Individual Study,"Garcia, Christopher J.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,F,CPSC 499,01,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 106,01,Digital Storytelling,"Bond, Paul H.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 110,01,Intro to Computer Science,"Anewalt, Karen M.",MWF 15:00-15:50 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 110,02,Intro to Computer Science,"Finlayson, Ian",TTh 11:00-12:15 (MONR 110),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 110,03,Intro to Computer Science,"Polack, Jennifer A.",TTh 09:30-10:45 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 110,04,Intro to Computer Science,"Rigsby, John T.",MW 18:00-19:15 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 110,05,Intro to Computer Science,"Taft, Robert L.",TTh 18:00-19:15 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 110,06,Intro to Computer Science,"Solka, Jeffrey L.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 110,07,Intro to Computer Science,"Schouweiler, Karen M.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 110,09,Intro to Computer Science,"Wu, XinWen",TTh 15:30-16:45 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 219,01,Foundations for Data Science,"Davies, Stephen C.",TTh 09:30-10:45 (CMBS 214),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 220,01,Comp Progr & Problem Solving,"Zeitz, Jessica",MW 14:00-15:50 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 220,02,Comp Progr & Problem Solving,"Zeitz, Jessica",TTh 11:00-12:50 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 220,03,Comp Progr & Problem Solving,"Foster, George J.",M 18:00-20:45 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 240,01,Obj-Oriented Analysis & Design,"Finlayson, Ian",MW 09:00-10:50 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 240,02,Obj-Oriented Analysis & Design,"Finlayson, Ian",MW 13:00-14:50 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 284,01,Applied Discrete Mathematics,"Ravishankar, Veena",MW 10:00-11:50 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 284,02,Applied Discrete Mathematics,"Ravishankar, Veena",MW 13:00-14:50 (JFRM 207),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 302,01,Computer Ethics,"Anewalt, Karen M.",MWF 12:00-12:50 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 302,02,Computer Ethics,"Dean, Alan J.",MW 08:00-09:15 (JFRM 207),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 305,01,Comp Sys & Architecture,"Cooper, Gusty A.",TTh 11:00-12:50 (HCC 327),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",TTh 08:00-09:50 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 326,02,Theory of Computation,"Marshall, Andrew M.",TTh 13:00-14:50 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 340,01,Data Structures and Algorithms,"Chandrasekar, Prashant",WF 08:00-09:50 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 340,02,Data Structures and Algorithms,"Chandrasekar, Prashant",WF 12:00-13:50 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 350,01,Applications of Databases,"Davies, Stephen C.",MW 10:00-10:50 (JFRM 207); F 10:00-11:50 (JFRM B36),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 370A9,01,Info Storage/Retrieval Sys,"Chandrasekar, Prashant",MWF 15:00-15:50 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 391,01,Special Projects in Cpsc,"Cooper, Gusty A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 405,01,Operating Sys & Programming,"Cooper, Gusty A.",TTh 08:00-09:50 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 405,02,Operating Sys & Programming,"Cooper, Gusty A.",TTh 14:00-15:50 (JFRM 204),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 414,01,Network Principles & Applicatn,"Ravishankar, Veena",TTh 14:00-15:15 (JFRM B6),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 420,01,Modeling & Simulation,"Davies, Stephen C.",TTh 14:00-15:15 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",MW 09:00-10:50 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",MW 12:00-13:50 (JFRM 204),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 435,01,Advanced Cybersecurity,"Wu, XinWen",TTh 11:00-12:15 (JFRM B7),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 460,01,Human-Computer Interaction,"Zeitz, Jessica",MWF 11:00-11:50 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 491,01,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 491,02,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 491,03,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 491,04,Individual Study,"Zeitz, Jessica",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 499,01,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2021-22,S,CPSC 499,B1,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 106,01,Digital Storytelling,"Stewart, Nicole C.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 110,01,Intro to Computer Science,"Anewalt, Karen M.",MWF 10:00-10:50 (WOOD 133),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 110,02,Intro to Computer Science,"Wu, XinWen",MWF 11:00-11:50 (CMBS 001),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 110,03,Intro to Computer Science,"Wu, XinWen",MWF 15:00-15:50 (CMBS 001),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 110,04,Intro to Computer Science,"Marshall, Andrew M.",MWF 13:00-13:50 (HCC 329),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 110,05,Intro to Computer Science,"Polack, Jennifer A.",TTh 09:30-10:45 (JEPS 225),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 110,06,Intro to Computer Science,"Taft, Robert L.",TTh 18:00-19:15 (JFRM 106A),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 110,07,Intro to Computer Science,"Rigsby, John T.",MW 18:00-19:15 (JFRM 106A),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 110,09,Intro to Computer Science,"Clements, Josh A.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 220,02,Comp Progr & Problem Solving,"Zeitz, Jessica",MW 13:00-14:50 (WOOD 202),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 220,03,Comp Progr & Problem Solving,"Zeitz, Jessica",TTh 11:00-12:50 (MERC 201),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 220,04,Comp Progr & Problem Solving,"Foster, George J.",M 18:00-20:45 (MONR 240),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 240,01,Obj-Oriented Analysis & Design,"Finlayson, Ian",TTh 09:30-11:20 (SEAC 139),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 240,02,Obj-Oriented Analysis & Design,"Finlayson, Ian",TTh 12:30-14:20 (SEAC 139),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 240,03,Obj-Oriented Analysis & Design,"Ravishankar, Veena",MW 14:00-15:50 (MONR 210),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 284,01,Applied Discrete Mathematics,"Magee, Jennifer M.",M 09:00-09:50 (JFRM 138); MW 14:00-15:15 (JFRM 204),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 284,02,Applied Discrete Mathematics,"Magee, Jennifer M.",M 10:00-10:50 (JFRM 138); TTh 12:30-13:45 (JFRM 210),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 302,01,Computer Ethics,"Dean, Alan J.",MW 14:00-15:15 (CMBS 004),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 302,02,Computer Ethics,"Anewalt, Karen M.",T 18:00-20:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 302,03,Computer Ethics,"Anewalt, Karen M.",MWF 11:00-11:50 (WOOD 211),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 302,04,Computer Ethics,"Polack, Jennifer A.",MW 08:30-09:45 (MONR 112),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 305,01,Comp Sys & Architecture,"Cooper, Gusty A.",TTh 08:00-09:50 (CMBS 139),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 305,02,Comp Sys & Architecture,"Cooper, Gusty A.",TTh 14:00-15:50 (CMBS 003),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 318,01,System and Network Administrat,"Peck, Joel D., Allwine, Kenneth F.",Th 18:00-20:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",MW 09:00-10:50 (MONR 111),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 340,01,Data Structures and Algorithms,"Chandrasekar, Prashant",MW 11:00-11:50 (DUPN 215); F 11:00-12:50 (DUPN 215),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 345,01,Intro to Computer Security,"Ravishankar, Veena",MWF 08:00-08:50 (MONR 111),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 345,02,Intro to Computer Security,"Ravishankar, Veena",MWF 11:00-11:50 (MONR 111),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 350,01,Applications of Databases,"Davies, Stephen C.",M 09:00-10:50 (MONR 115); WF 10:00-10:50 (MONR 115),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 350,02,Applications of Databases,"Davies, Stephen C.",M 12:00-13:50 (MONR 115); WF 13:00-13:50 (MONR 115),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 405,01,Operating Sys & Programming,"Cooper, Gusty A.",TTh 11:00-12:50 (CMBS 003),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 419,01,Data Mining,"Davies, Stephen C.",TTh 14:00-15:15 (WOOD 132),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 425,01,Parallel Computing,"Finlayson, Ian",MWF 09:00-09:50 (JFRM 106A),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",MW 12:00-13:50 (MONR 112),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 470D1,01,Deep Learning in Python,"Solka, Jeffrey L.",W 18:00-20:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 491,01,Individual Study,"Cooper, Gusty A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 491,02,Individual Study,"Finlayson, Ian",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 491,04,Individual Study,"Davies, Stephen C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,F,CPSC 491,05,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 106,01,Digital Storytelling,"Dean, Alan J.",M 18:00-19:50 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 106,02,Digital Storytelling,"Polack, Jennifer A.",T 09:30-10:45 (JEPS 219),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 110,01,Intro to Computer Science,"Anewalt, Karen M.",MWF 08:00-08:50 (JFRM 106A),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 110,02,Intro to Computer Science,"Anewalt, Karen M.",MWF 09:00-09:50 (JFRM 106A),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 110,04,Intro to Computer Science,"Wu, XinWen",TTh 11:00-12:15 (MONR 122),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 110,05,Intro to Computer Science,"Taft, Robert L.",TTh 09:30-10:45 (MONR 122),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 110,06,Intro to Computer Science,"Taft, Robert L.",TTh 12:30-13:45 (MONR 122),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 110,07,Intro to Computer Science,"Solka, Jeffrey L.",W 18:00-20:45 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 219,01,Foundations for Data Science,"Chandrasekar, Prashant",TTh 11:00-12:15 (MONR 111),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 220,01,Comp Progr & Problem Solving,"Davies, Stephen C.",M 11:00-12:50 (MONR 115); WF 12:00-12:50 (MONR 115),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 220,02,Comp Progr & Problem Solving,"Davies, Stephen C.",M 14:00-15:50 (MONR 240); WF 15:00-15:50 (MONR 115),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 220,03,Comp Progr & Problem Solving,"Foster, George J.",M 18:00-20:45 (MONR 240),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 225,02,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 240,01,Obj-Oriented Analysis & Design,"Finlayson, Ian",TTh 09:30-11:20 (HCC 329),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 240,02,Obj-Oriented Analysis & Design,"Finlayson, Ian",TTh 12:30-14:20 (HCC 329),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 240,03,Obj-Oriented Analysis & Design,"Ravishankar, Veena",MW 08:00-09:50 (MONR 213),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 284,01,Applied Discrete Mathematics,"Lehman, Larry L.",M 14:00-14:50 (JFRM 140); TTh 14:00-15:15 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 284,02,Applied Discrete Mathematics,"Lehman, Larry L.",M 15:00-15:50 (JFRM 140); TTh 15:30-16:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 302,01,Computer Ethics,"Zeitz, Jessica",TTh 09:30-10:45 (MONR 112),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 302,02,Computer Ethics,"Zeitz, Jessica",TTh 12:30-13:45 (MONR 112),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 302,03,Computer Ethics,"Rigsby, John T.",T 18:00-19:15 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 302,04,Computer Ethics,"Anewalt, Karen M., Rafiq, Rabia",MW 19:30-20:45 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 305,01,Comp Sys & Architecture,"Cooper, Gusty A.",TTh 11:00-12:50 (CMBS 139),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",MW 10:00-11:50 (JFRM 138),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 326,02,Theory of Computation,"Marshall, Andrew M.",MW 13:00-14:50 (JFRM 210),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 340,01,Data Structures and Algorithms,"Chandrasekar, Prashant",MW 10:00-10:50 (CMBS 237); F 10:00-11:50 (CMBS 237),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 340,02,Data Structures and Algorithms,"Chandrasekar, Prashant",MW 13:00-13:50 (CMBS 139); F 13:00-14:50 (CMBS 139),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 350,01,Applications of Databases,"Zeitz, Jessica",MW 10:00-11:50 (MERC 201),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 405,01,Operating Sys & Programming,"Cooper, Gusty A.",TTh 08:00-09:50 (CMBS 139),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 405,02,Operating Sys & Programming,"Cooper, Gusty A.",TTh 14:00-15:50 (CMBS 139),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 414,01,Network Principles & Applicatn,"Ravishankar, Veena",TTh 09:30-10:45 (CMBS 215),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 414,02,Network Principles & Applicatn,"Ravishankar, Veena",TTh 12:30-13:45 (CMBS 215),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",MW 09:00-10:50 (MONR 112),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",MW 12:00-13:50 (MONR 110),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 435,01,Advanced Cybersecurity,"Wu, XinWen",TTh 12:30-13:45 (MONR 114),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 440,01,Game Programming,"Allwine, Kenneth F., Peck, Joel D.",Th 18:00-20:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 445,01,Software Security,"Marshall, Andrew M.",MWF 15:00-15:50 (JFRM 210),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 470D3,01,Natural Language Processing,"Davies, Stephen C.",TTh 14:00-15:15 (MONR 115),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 491,01,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 491,02,Individual Study,"Cooper, Gusty A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 491,03,Individual Study,"Zeitz, Jessica",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 491,04,Individual Study,"Davies, Stephen C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 491,05,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 491,B1,Individual Study,"Wu, XinWen",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2022-23,S,CPSC 491,B2,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 106,01,Digital Storytelling,"Stewart, Nicole C.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 110,01,Intro to Computer Science,"Marshall, Andrew M.",MWF 09:00-09:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 110,02,Intro to Computer Science,"Wu, XinWen",MWF 11:00-11:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 110,03,Intro to Computer Science,"Finlayson, Ian",MWF 13:00-13:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 110,05,Intro to Computer Science,"Taft, Robert L.",TTh 09:30-10:45 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 110,06,Intro to Computer Science,"Taft, Robert L.",TTh 12:30-13:45 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 110,07,Intro to Computer Science,"Longley, Carrick T.",MW 18:00-19:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 110,08,Intro to Computer Science,"Barbre, Katelyn M.",T 18:00-19:15 (JFRM 036); Th 18:00-19:15 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 220,01,Comp Progr & Problem Solving,"Anewalt, Karen M.",MWF 08:00-08:50 (JFRM 036); F 09:00-09:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 220,02,Comp Progr & Problem Solving,"Anewalt, Karen M.",MWF 13:00-13:50 (JFRM 036); F 14:00-14:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 220,03,Comp Progr & Problem Solving,"Foster, George J.",M 18:00-20:45 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 240,01,Obj-Oriented Analysis & Design,"Davies, Stephen C.",MWF 10:00-10:50 (JFRM 054); W 11:00-11:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 240,02,Obj-Oriented Analysis & Design,"Davies, Stephen C.",MWF 14:00-14:50 (JFRM 054); W 15:00-15:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 240,03,Obj-Oriented Analysis & Design,"Ravishankar, Veena",TTh 08:00-09:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 284,01,Applied Discrete Mathematics,"Lehman, Larry L.",M 14:00-14:50 (JFRM 140); TTh 14:00-15:15 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 284,02,Applied Discrete Mathematics,"Lehman, Larry L.",M 15:00-15:50 (JFRM 140); TTh 15:30-16:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 284,03,Applied Discrete Mathematics,"Magee, Jennifer M.",M 10:00-10:50 (JFRM 210); TTh 11:00-12:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 302,01,Computer Ethics,"Polack, Jennifer A.",MW 08:30-09:45 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 302,02,Computer Ethics,"Dean, Alan J.",MW 14:00-15:15 (JFRM 210),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 302,03,Computer Ethics,"Rafiq, Rabia",MW 19:30-20:45 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 305,01,Comp Sys & Architecture,"Finlayson, Ian",TTh 09:30-11:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 305,02,Comp Sys & Architecture,"Finlayson, Ian",TTh 12:30-14:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 318,01,System and Network Administrat,"Peck, Joel D., Allwine, Kenneth F.",Th 18:00-20:45 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",MW 14:00-15:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 340,01,Data Structures and Algorithms,"Chandrasekar, Prashant",MWF 11:00-11:50 (JFRM 036); F 12:00-12:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 345,01,Intro to Computer Security,"Ravishankar, Veena",MW 08:00-09:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 345,02,Intro to Computer Security,"Ravishankar, Veena",MW 14:00-15:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 350,01,Applications of Databases,"Zeitz, Jessica",MW 13:00-14:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 350,02,Applications of Databases,"Zeitz, Jessica",TTh 12:30-14:20 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 405,01,Operating Sys & Programming,"Marshall, Andrew M.",MW 11:00-12:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 415,01,Artificial Intelligence,"Davies, Stephen C.",TTh 12:30-13:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 419,01,Data Mining,"Rigsby, John T.",MW 18:00-19:15 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",TTh 09:00-10:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",TTh 12:00-13:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 460,01,Human-Computer Interaction,"Zeitz, Jessica",MWF 10:00-10:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 470A8,01,Network Security,"Wu, XinWen",MWF 15:00-15:50 (JFRM 138),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 491,01,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 491,02,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 491,03,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 491,04,Individual Study,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 491,05,Individual Study,"Finlayson, Ian",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 491,06,Individual Study,"Zeitz, Jessica",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,F,CPSC 499,01,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 106,01,Digital Storytelling,"Bond, Paul H.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 110,01,Intro to Computer Science,"Zeitz, Jessica",TTh 09:30-10:45 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 110,02,Intro to Computer Science,"Zeitz, Jessica",TTh 12:30-13:45 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 110,03,Intro to Computer Science,"Wu, XinWen",TTh 15:30-16:45 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 110,04,Intro to Computer Science,"Solka, Jeffrey L.",TTh 11:00-12:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 110,05,Intro to Computer Science,"Longley, Carrick T.",MW 18:00-19:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 110,06,Intro to Computer Science,"Barbre, Katelyn M.",TTh 18:00-19:15 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 219,01,Foundations for Data Science,"Chandrasekar, Prashant",TTh 11:00-12:15 (SEAC 151),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 220,01,Comp Progr & Problem Solving,"Anewalt, Karen M.",MWF 10:00-10:50 (JFRM 036); F 11:00-11:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 220,02,Comp Progr & Problem Solving,"Anewalt, Karen M.",MWF 12:00-12:50 (JFRM 036); F 13:00-13:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 220,03,Comp Progr & Problem Solving,"Foster, George J.",M 18:00-20:45 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 240,01,Obj-Oriented Analysis & Design,"Davies, Stephen C.",MWF 11:00-11:50 (JFRM 054); W 12:00-12:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 240,02,Obj-Oriented Analysis & Design,"Davies, Stephen C.",MWF 14:00-14:50 (JFRM 054); W 15:00-15:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 284,01,Applied Discrete Mathematics,"Magee, Jennifer M.",MW 14:00-15:15 (JFRM 140); F 14:00-14:50 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 284,02,Applied Discrete Mathematics,"Lehman, Larry L.",M 11:00-11:50 (JFRM 140); TTh 12:30-13:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 284,03,Applied Discrete Mathematics,"Lehman, Larry L.",M 14:00-14:50 (JFRM 210); TTh 14:00-15:15 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 302,01,Computer Ethics,"Dean, Alan J.",MW 08:30-09:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 302,02,Computer Ethics,"Rigsby, John T.",MW 18:00-19:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 302,03,Computer Ethics,"Rafiq, Rabia",MW 19:30-20:45 (ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 302,04,Computer Ethics,"Coleman, Evan C.",TTh 18:00-19:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 305,01,Comp Sys & Architecture,"Finlayson, Ian",TTh 09:30-11:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 305,02,Comp Sys & Architecture,"Finlayson, Ian",TTh 12:30-14:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",MWF 09:00-09:50 (JFRM 054); F 10:00-10:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 340,01,Data Structures and Algorithms,"Chandrasekar, Prashant",F 11:00-11:50 (JFRM 026); MWF 12:00-12:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 340,02,Data Structures and Algorithms,"Chandrasekar, Prashant",F 13:00-13:50 (JFRM 026); MWF 14:00-14:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 350,01,Applications of Databases,"Zeitz, Jessica",MW 10:00-11:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 391,01,Special Projects in Cpsc,"Wu, XinWen",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 391,02,Special Projects in Cpsc,"Zeitz, Jessica",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 401,01,Orgnztn Progm Lang,"Finlayson, Ian",MW 14:00-15:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 405,01,Operating Sys & Programming,"Marshall, Andrew M.",MW 12:00-13:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 405,02,Operating Sys & Programming,"Marshall, Andrew M.",MW 15:00-16:50 (JFRM 041),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 414,01,Network Principles & Applicatn,"Ravishankar, Veena",TTh 09:30-10:45 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 414,02,Network Principles & Applicatn,"Ravishankar, Veena",TTh 14:00-15:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 420,01,Modeling & Simulation,"Davies, Stephen C.",TTh 14:00-15:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",TTh 08:00-09:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",TTh 11:00-12:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 435,01,Advanced Cybersecurity,"Wu, XinWen",TTh 12:30-13:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 448,01,Web Application Development,"Self, Nathan W.",MWF 09:00-09:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 470A9,01,Mobile Computing & Security,"Ravishankar, Veena",MW 08:30-09:45 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 491,01,Individual Study,"Zeitz, Jessica",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 491,02,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 491,03,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 491,04,Individual Study,"Goldthorp, Jeffery M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 491,05,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 491,06,Individual Study,"Davies, Stephen C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 491,B1,Individual Study,"Wu, XinWen",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 492,02,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2023-24,S,CPSC 499,01,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 106,01,Digital Storytelling,"Stewart, Nicole C.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 110,01,Intro to Computer Science,"Zeitz, Jessica",TTh 09:30-10:45 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 110,02,Intro to Computer Science,"Polack, Jennifer A.",TTh 08:00-09:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 110,03,Intro to Computer Science,"Polack, Jennifer A.",TTh 11:00-12:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 110,04,Intro to Computer Science,"Marshall, Andrew M.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 110,05,Intro to Computer Science,"Clements, Josh A.",MW 08:30-09:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 110,06,Intro to Computer Science,"Clements, Josh A.",MW 14:00-15:15 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 110,07,Intro to Computer Science,"Coleman, Evan C.",MWF 09:00-09:50 (HCC 327),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 110,08,Intro to Computer Science,"Coleman, Evan C.",MWF 10:00-10:50 (HCC 327),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 220,01,Comp Progr & Problem Solving,"Anewalt, Karen M.",MW 08:00-08:50 (JFRM 026); F 08:00-09:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 220,02,Comp Progr & Problem Solving,"Anewalt, Karen M.",F 10:00-11:50 (JFRM 026); MW 11:00-11:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 220,03,Comp Progr & Problem Solving,"Foster, George J.",MW 18:00-19:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 225,02,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 240,01,Obj-Oriented Analysis & Design,"Zeitz, Jessica",MW 09:00-10:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 240,02,Obj-Oriented Analysis & Design,"Zeitz, Jessica",MW 13:00-14:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 240,03,Obj-Oriented Analysis & Design,"Davies, Stephen C.",F 10:00-11:50 (JFRM 054); MW 11:00-11:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 284,01,Applied Discrete Mathematics,"Lehman, Larry L.",M 14:00-14:50 (JFRM 140); TTh 14:00-15:15 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 284,02,Applied Discrete Mathematics,"Lehman, Larry L.",M 15:00-15:50 (JFRM 140); TTh 15:30-16:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 284,03,Applied Discrete Mathematics,"Anewalt, Karen M.",TTh 14:00-15:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 302,01,Computer Ethics,"Clements, Josh A.",TTh 09:30-10:45 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 302,02,Computer Ethics,"Clements, Josh A.",TTh 11:00-12:15 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 302,03,Computer Ethics,"Christensen, Amy L.",TTh 19:30-20:45 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 302,04,Computer Ethics,"Goldthorp, Jeffery M.",MW 18:00-19:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 305,01,Comp Sys & Architecture,"Finlayson, Ian",TTh 09:30-11:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 305,02,Comp Sys & Architecture,"Finlayson, Ian",TTh 12:30-14:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 318,01,System and Network Administrat,"Peck, Joel D.",Th 18:00-20:45 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",MW 13:00-13:50 (JFRM 036); F 13:00-14:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 340,01,Data Structures and Algorithms,"Finlayson, Ian, Chandrasekar, Prashant",F 09:00-10:50 (JFRM 025); MW 10:00-10:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 345,01,Intro to Computer Security,"Wu, XinWen",MWF 11:00-11:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 345,02,Intro to Computer Security,"Wu, XinWen",MWF 13:00-13:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 350,01,Applications of Databases,"Davies, Stephen C.",TTh 12:30-14:20 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 350,02,Applications of Databases,"Davies, Stephen C.",TTh 15:30-17:20 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 370B1,01,Red Hat System Administration,"Finlayson, Ian",M 12:00-12:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 370B2,01,C++ Programming,"Polack, Jennifer A.",W 08:00-08:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 405,01,Operating Sys & Programming,"Cooper, Gusty A.",TTh 08:30-10:20 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 415,01,Artificial Intelligence,"Coleman, Evan C.",TTh 12:30-13:45 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 415,02,Artificial Intelligence,"Coleman, Evan C.",TTh 11:00-12:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",MW 09:00-10:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 445,01,Software Security,"Marshall, Andrew M.",MWF 11:00-11:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 470D1,01,Deep Learning in Python,"Solka, Jeffrey L.",MW 14:00-15:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 491,01,Individual Study,"Goldthorp, Jeffery M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 491,02,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 491,03,Individual Study,"Zeitz, Jessica",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 491,04,Individual Study,"Wu, XinWen",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 491,05,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 491,06,Individual Study,"Finlayson, Ian",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 491,07,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 491,B1,Individual Study,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 499,01,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,F,CPSC 499,02,Internship,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 106,01,Digital Storytelling,"Bond, Paul H.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 106,02,Digital Storytelling,"Polack, Jennifer A.",TTh 09:30-10:45 (JFRM 041),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 110,01,Intro to Computer Science,"Chandrasekar, Prashant",TTh 08:00-09:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 110,02,Intro to Computer Science,"Coleman, Evan C.",MWF 09:00-09:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 110,03,Intro to Computer Science,"Coleman, Evan C.",MWF 10:00-10:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 110,04,Intro to Computer Science,"Clements, Josh A.",MWF 12:00-12:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 110,05,Intro to Computer Science,"Clements, Josh A.",MWF 13:00-13:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 110,06,Intro to Computer Science,"Taft, Robert L.",TTh 11:00-12:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 220,01,Comp Progr & Problem Solving,"Anewalt, Karen M.",F 08:00-08:50 (JFRM 026); MWF 09:00-09:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 220,02,Comp Progr & Problem Solving,"Anewalt, Karen M.",MWF 11:00-11:50 (JFRM 026); F 12:00-12:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 220,03,Comp Progr & Problem Solving,"Foster, George J.",MW 18:00-19:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 225,02,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 240,01,Obj-Oriented Analysis & Design,"Finlayson, Ian",TTh 12:30-14:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 240,02,Obj-Oriented Analysis & Design,"Zeitz, Jessica",MW 10:00-11:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 240,03,Obj-Oriented Analysis & Design,"Zeitz, Jessica",TTh 09:30-11:20 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 284,01,Applied Discrete Mathematics,"Lehman, Larry L.",M 14:00-14:50 (JFRM 210); TTh 14:00-15:15 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 284,02,Applied Discrete Mathematics,"Lehman, Larry L.",M 15:00-15:50 (JFRM 210); TTh 15:30-16:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 302,01,Computer Ethics,"Anewalt, Karen M.",MW 14:00-15:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 302,02,Computer Ethics,"Rigsby, John T.",TTh 18:00-19:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 302,03,Computer Ethics,"Goldthorp, Jeffery M.",MW 18:00-19:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 302,04,Computer Ethics,"Dean, Alan J.",MW 08:30-09:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 305,01,Comp Sys & Architecture,"Finlayson, Ian",TTh 09:30-11:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",MWF 12:00-12:50 (JFRM 138); F 13:00-13:50 (JFRM 138),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 340,01,Data Structures and Algorithms,"Marshall, Andrew M.",MWF 14:00-14:50 (JFRM 026); F 15:00-15:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 340,02,Data Structures and Algorithms,"Coleman, Evan C.",TTh 12:30-14:20 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 350,01,Applications of Databases,"Davies, Stephen C.",W 12:00-12:50 (JFRM 026); TTh 12:30-13:45 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 350,02,Applications of Databases,"Davies, Stephen C.",W 13:00-13:50 (JFRM 026); TTh 15:30-16:45 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 370B3,01,Red Hat System Admin II,"Finlayson, Ian",M 12:00-12:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 405,01,Operating Sys & Programming,"Cooper, Gusty A.",TTh 08:30-10:20 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 405,02,Operating Sys & Programming,"Adams, Kevin P.",MWF 10:00-10:50 (JFRM 138); F 11:00-11:50 (JFRM 138),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 414,01,Network Principles & Applicatn,"Clements, Josh A.",TTh 11:00-12:15 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 414,02,Network Principles & Applicatn,"Clements, Josh A.",TTh 14:00-15:15 (WOOD 249),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 419,01,Data Mining,"Solka, Jeffrey L.",TTh 14:00-15:15 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",MW 08:00-09:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",MW 11:00-12:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 435,01,Advanced Cybersecurity,"Wu, XinWen",TTh 09:30-10:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 458,01,Network Security,"Wu, XinWen",MWF 13:00-13:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 460,01,Human-Computer Interaction,"Zeitz, Jessica",TTh 14:00-15:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 470D5,01,Research Methods with Modeling,"Chandrasekar, Prashant",MW 08:00-09:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,01,Individual Study,"Finlayson, Ian",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,02,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,03,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,04,Individual Study,"Coleman, Evan C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,05,Individual Study,"Goldthorp, Jeffery M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,06,Individual Study,"Wu, XinWen",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,07,Individual Study,"Zeitz, Jessica",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,08,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,09,Individual Study,"Willis, Chris H.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,10,Individual Study,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 491,11,Individual Study,"Clements, Josh A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 499,01,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 499,02,Internship,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2024-25,S,CPSC 499,A1,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 106,01,Digital Storytelling,"Polack, Jennifer A.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 110,01,Intro to Computer Science,"Coleman, Evan C.",MWF 09:00-09:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 110,02,Intro to Computer Science,"Goldthorp, Jeffery M.",MWF 13:00-13:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 110,03,Intro to Computer Science,"Goldthorp, Jeffery M.",MWF 14:00-14:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 110,05,Intro to Computer Science,"Chandrasekar, Prashant",TTh 11:00-12:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 110,06,Intro to Computer Science,"Taft, Robert L.",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 110,08,Intro to Computer Science,"Zeitz, Jessica",TTh 12:30-13:45 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 220,01,Comp Progr & Problem Solving,"Anewalt, Karen M.",F 08:00-08:50 (JFRM 026); MWF 09:00-09:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 220,02,Comp Progr & Problem Solving,"Anewalt, Karen M.",MWF 10:00-10:50 (JFRM 026); F 11:00-11:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 220,03,Comp Progr & Problem Solving,"Foster, George J.",MW 18:00-19:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 240,01,Obj-Oriented Analysis & Design,"Zeitz, Jessica",TTh 09:30-11:20 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 240,02,Obj-Oriented Analysis & Design,"Zeitz, Jessica",MW 13:00-14:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 240,03,Obj-Oriented Analysis & Design,"Davies, Stephen C.",MW 11:00-12:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 284,01,Applied Discrete Mathematics,"Lehman, Larry L.",M 14:00-14:50 (JFRM 140); TTh 14:00-15:15 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 284,02,Applied Discrete Mathematics,"Lehman, Larry L.",M 15:00-15:50 (JFRM 140); TTh 15:30-16:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 302,01,Computer Ethics,"Anewalt, Karen M.",MW 14:00-15:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 302,02,Computer Ethics,"Goldthorp, Jeffery M.",MW 16:00-17:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 302,03,Computer Ethics,"Dean, Alan J.",MW 08:30-09:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 305,01,Comp Sys & Architecture,"Finlayson, Ian",MW 08:00-09:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 318,01,System and Network Administrat,"Peck, Howard H.",TTh 14:00-15:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 318,02,System and Network Administrat,"Finlayson, Ian",MW 11:00-12:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",MWF 12:00-12:50 (JFRM 138); F 13:00-13:50 (JFRM 138),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 326,02,Theory of Computation,"Marshall, Andrew M.",MWF 14:00-14:50 (JFRM 036); F 15:00-15:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 335,01,C++ Programming,"Coleman, Evan C.",M 13:00-13:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 340,01,Data Structures and Algorithms,"Coleman, Evan C.",TTh 09:30-11:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 340,02,Data Structures and Algorithms,"Coleman, Evan C.",TTh 12:30-14:20 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 350,01,Applications of Databases,"Clements, Josh A.",MW 11:00-12:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 350,02,Applications of Databases,"Clements, Josh A.",TTh 11:00-12:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 370B1,01,Red Hat System Administration,"Clements, Josh A.",M 14:00-14:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 391,01,Special Projects in Cpsc,"Clements, Josh A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 405,01,Operating Sys & Programming,"Cooper, Gusty A.",TTh 08:30-10:20 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 414,01,Network Principles & Applicatn,"Clements, Josh A.",TTh 14:00-15:15 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 419,01,Data Mining,"Solka, Jeffrey L.",TTh 12:30-13:45 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",MW 08:00-09:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",MW 11:00-12:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 470B,01,Algorithms,"Finlayson, Ian",TTh 11:00-12:15 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 470D3,01,Natural Language Processing,"Davies, Stephen C.",TTh 15:30-16:45 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 491,01,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 491,02,Individual Study,"Finlayson, Ian",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 491,03,Individual Study,"Goldthorp, Jeffery M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 491,04,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 491,05,Individual Study,"Coleman, Evan C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 491,06,Individual Study,"Clements, Josh A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 491,07,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 491,08,Individual Study,"Davies, Stephen C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,F,CPSC 499,01,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 106,01,Digital Storytelling,"Polack, Jennifer A.",TTh 09:30-10:45 (JFRM 041),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 110,01,Intro to Computer Science,"Chandrasekar, Prashant",TTh 11:00-12:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 110,02,Intro to Computer Science,"Clements, Josh A.",MWF 10:00-10:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 110,03,Intro to Computer Science,"Clements, Josh A.",MWF 15:00-15:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 110,04,Intro to Computer Science,"Goldthorp, Jeffery M.",MWF 13:00-13:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 220,01,Comp Progr & Problem Solving,"Foster, George J.",MW 18:00-19:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 220,02,Comp Progr & Problem Solving,"Anewalt, Karen M.",F 08:00-08:50 (JFRM 026); MWF 09:00-09:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 220,03,Comp Progr & Problem Solving,"Anewalt, Karen M.",MWF 10:00-10:50 (JFRM 026); F 11:00-11:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 225,01,Software Development Tools,"Finlayson, Ian",(ON LINE),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 240,02,Obj-Oriented Analysis & Design,"Zeitz, Jessica",TTh 09:30-11:20 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 240,03,Obj-Oriented Analysis & Design,"Zeitz, Jessica",MW 11:00-12:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 284,01,Applied Discrete Mathematics,"Lehman, Larry L.",M 14:00-14:50 (JFRM 140); TTh 14:00-15:15 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 284,02,Applied Discrete Mathematics,"Lehman, Larry L.",M 15:00-15:50 (JFRM 140); TTh 15:30-16:45 (JFRM 140),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 302,01,Computer Ethics,"Anewalt, Karen M.",MW 14:00-15:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 302,02,Computer Ethics,"Goldthorp, Jeffery M.",MW 16:00-17:15 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 302,03,Computer Ethics,"Goldthorp, Jeffery M.",MW 08:30-09:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 305,01,Comp Sys & Architecture,"Finlayson, Ian",MW 08:00-09:50 (JFRM 054),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 318,01,System and Network Administrat,"Finlayson, Ian",TTh 08:00-09:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 326,01,Theory of Computation,"Marshall, Andrew M.",MWF 12:00-12:50 (JFRM 138); F 13:00-13:50 (JFRM 138),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 335,01,C++ Programming,"Wu, XinWen",T 14:00-14:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 340,01,Data Structures and Algorithms,"Coleman, Evan C.",TTh 11:00-12:50 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 340,02,Data Structures and Algorithms,"Coleman, Evan C.",TTh 14:00-15:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 350,01,Applications of Databases,"Davies, Stephen C.",MW 10:00-11:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 350,02,Applications of Databases,"Davies, Stephen C.",MW 14:00-15:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 370B4,01,Quantum Computing I,"Marshall, Andrew M.",MWF 15:00-15:50 (JFRM 041),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 391,01,Special Projects in Cpsc,"Clements, Josh A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 405,01,Operating Sys & Programming,"Cooper, Gusty A.",TTh 08:30-10:20 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 405,02,Operating Sys & Programming,"Adams, Kevin P.",MW 10:00-11:50 (JFRM 022),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 414,01,Network Principles & Applicatn,"Clements, Josh A.",TTh 12:30-13:45 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 420,01,Modeling & Simulation,"Davies, Stephen C.",TTh 15:30-16:45 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 430,01,Software Engineering,"Polack, Jennifer A.",MW 08:00-09:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 430,02,Software Engineering,"Polack, Jennifer A.",MW 11:00-12:50 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 458,01,Network Security,"Wu, XinWen",MWF 12:00-12:50 (JFRM 025),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 460,01,Human-Computer Interaction,"Zeitz, Jessica",TTh 12:30-13:45 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 470B1,01,Intro to State Estimation,"Coleman, Evan C.",MW 16:00-17:15 (JFRM 036),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 470B2,01,Effective Coding/AI Partners,"Foster, George J.",MW 16:00-17:15 (JFRM 026),https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,01,Individual Study,"Coleman, Evan C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,02,Individual Study,"Clements, Josh A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,03,Individual Study,"Goldthorp, Jeffery M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,04,Individual Study,"Finlayson, Ian",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,05,Individual Study,"Marshall, Andrew M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,06,Individual Study,"Polack, Jennifer A.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,07,Individual Study,"Chandrasekar, Prashant",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,08,Individual Study,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 491,09,Individual Study,"Davies, Stephen C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 492,01,Individual Study,"Davies, Stephen C.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 499,01,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+University of Mary Washington,2025-26,S,CPSC 499,A1,Internship,"Anewalt, Karen M.",,https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/classSearch/classSearch

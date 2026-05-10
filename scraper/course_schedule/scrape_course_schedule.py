@@ -18,6 +18,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from course_schedule.amherst import AmherstScraper
+from course_schedule.banner9 import banner9_scrapers
 from course_schedule.bucknell import BucknellScraper
 from course_schedule.colorado import ColoradoScraper
 from course_schedule.hyperschedule import HarveyMuddScraper, PomonaScraper
@@ -40,6 +41,7 @@ SCRAPERS = [
     WellesleyScraper,
     WilliamsScraper,
     *selfservice_scrapers(),
+    *banner9_scrapers(),
 ]
 
 

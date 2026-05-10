@@ -1,0 +1,135 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Stonehill College,2021-22,F,CSC 102,A,Introduction to Programming,"Balint, John",MWF 10:30-11:20 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 102,B,Introduction to Programming,"Balint, John",MWF 09:30-10:20 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 103,A,Computer Science I,"Brown-Sederberg, Janet",TWTh 14:30-15:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 103,B,Computer Science I,"Brown-Sederberg, Janet",MW 16:00-17:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 103,C,Computer Science I,"Brown-Sederberg, Janet",TTh 16:00-17:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 201,A,Discrete Mathematics for Computer Science I,"Simonson, Charles",MWF 09:30-10:20 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 211,A,Data Structures,"Bravaco, Ralph",TTh 11:30-12:45 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 221,A,Computer Logic & Organization,"Simonson, Charles",MWF 10:30-11:20 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 312,A,Compiler Design,"Bravaco, Ralph",TTh 10:00-11:15 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 322,A,Machine Learning,"Balint, John",MW 13:00-14:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 475,A,Internship in Computer Science,"Balint, John",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 475,A1,Internship in Computer Science,"Schnitzer, Cheryl",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 475,B,Internship in Computer Science,"Bravaco, Ralph",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,F,CSC 496,A,Independent Research in Computer Science,"Balint, John",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 102,A,Introduction to Programming,"Brown-Sederberg, Janet",MW 16:00-17:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 104,A,Computer Science II,"Bravaco, Ralph",W 08:00-09:15 (CC 228); TTh 10:00-11:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 104,B,Computer Science II,"Bravaco, Ralph",TWTh 11:30-12:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 195,A,How Computers Work,"Simonson, Charles",MTTh 13:00-13:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 202,A,Discrete Mathematics for Computer Science II,"Simonson, Charles",TTh 10:00-11:15 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 304,A,Computer Architecture,"Simonson, Charles",TTh 08:30-09:45 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 310,A,Cybersecurity,"Brown-Sederberg, Janet",TTh 16:00-17:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 393,A,Numerical Analysis,"Lee, Jane Hyo Jin",MW 14:30-15:45 (DU 115),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 400,A,Capstone: Software Engineering (Writing-in-the-Disciplines),"Sale, Michael",MWF 14:30-15:45 (MB 240),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 475,A,Internship in Computer Science,"Bravaco, Ralph",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2021-22,S,CSC 475,B,Internship in Computer Science,"Schnitzer, Cheryl",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 102,A,Introduction to Programming,"Brown-Sederberg, Janet",TTh 14:30-15:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 103,A,Computer Science I,"Dugan, Robert",TThF 10:00-11:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 103,B,Computer Science I,"Brown-Sederberg, Janet",MW 16:00-17:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 103,C,Computer Science I,"Brown-Sederberg, Janet",TTh 16:00-17:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 103,D,Computer Science I,"Brown-Sederberg, Janet",MW 13:00-14:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 201,A,Discrete Mathematics for Computer Science I,"Simonson, Charles",MWF 09:00-09:50 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 211,A,Data Structures,"Dugan, Robert",TTh 08:30-09:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 314,A,Operating Systems,"Dugan, Robert",TTh 13:00-14:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 384,A,Theory of Computation,"Simonson, Charles",MWF 10:00-10:50 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 475,A,Internship in Computer Science,"Bajwa, Hassan",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 475,A1,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,F,CSC 490,A,Directed Study in Computer Science,"Brown-Sederberg, Janet",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 102,A,Introduction to Programming,"Brown-Sederberg, Janet",MW 14:30-15:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 102,B,Introduction to Programming,"Brown-Sederberg, Janet",TTh 14:30-15:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 104,A,Computer Science II,"Brown-Sederberg, Janet",MW 16:00-18:00 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 104,B,Computer Science II,"Brown-Sederberg, Janet",TTh 16:00-18:00 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 195,A,How Computers Work,"Simonson, Charles",MWF 09:00-09:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 202,A,Discrete Mathematics for Computer Science II,"Simonson, Charles",MWF 10:00-10:50 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 221,A,Computer Logic & Organization,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 311,A,Algorithms & Complexity,"Simonson, Charles",MW 13:00-14:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 324,A,Web Programming,"Dugan, Robert",MWF 08:00-08:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 325,A,Database Management Systems,"Dugan, Robert",MWF 09:00-09:50 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 382,A,Artificial Intelligence,"T, Buvaneshwaran",F 16:00-18:30 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 400,A,Capstone: Software Engineering (Writing-in-the-Disciplines),"Dugan, Robert",MWF 10:00-11:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2022-23,S,CSC 475,A,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 102,A,Introduction to Programming,"Goree, Samuel",TTh 14:30-15:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 102,B,Introduction to Programming,"Brown-Sederberg, Janet",MW 18:00-19:15 (MB 312),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 103,A,Computer Science I,"Nagaraju, Vidhyashree",WF 11:30-12:45 (CC 228); T 16:00-16:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 103,B,Computer Science I,"Brown-Sederberg, Janet",MW 14:30-15:45 (CC 228); F 14:30-15:20 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 103,C,Computer Science I,"Brown-Sederberg, Janet",MW 16:00-17:15 (CC 228); F 16:00-16:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 103,D,Computer Science I,"Dugan, Robert",MWF 08:00-09:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 201,A,Discrete Mathematics for Computer Science I,"Simonson, Charles",TTh 11:30-12:45 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 211,A,Data Structures,"Dugan, Robert",MWF 09:30-10:20 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 221,A,Computer Logic & Organization,"Simonson, Charles",TTh 14:30-15:45 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 322,A,Machine Learning,"Nagaraju, Vidhyashree",WF 13:00-14:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 326,A,Mathematical Experiments in Computer Science,"Simonson, Charles",W 14:30-17:00 (CC 216),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 390,A,Computer Networks,"Dugan, Robert",MWF 10:30-11:20 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 399,A,Topics in Computer Science: Human-Computer Interface,"Goree, Samuel",TTh 11:30-12:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 475,A,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 475,A1,Internship in Computer Science,"Bajwa, Hassan",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 475,B,Internship in Computer Science,"Dugan, Robert",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 475,B1,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,F,CSC 475,C,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 102,A,Introduction to Programming,"Goree, Samuel",TTh 16:00-17:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 102,B,Introduction to Programming,"Brown-Sederberg, Janet",MW 16:00-16:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 104,A,Computer Science II,"Brown-Sederberg, Janet",MWF 13:00-14:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 104,B,Computer Science II,"Brown-Sederberg, Janet",MWF 14:30-15:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 195,A,How Computers Work,"Simonson, Charles",MWF 09:30-10:20 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 202,A,Discrete Mathematics for Computer Science II,"Simonson, Charles",MW 13:00-14:15 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 304,A,Computer Architecture,"Simonson, Charles",WF 11:30-12:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 321,A,Data Visualization,"Goree, Samuel",TTh 13:00-14:15 (DU 205),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 324,A,Web Programming,"Dugan, Robert",MWF 10:30-11:20 (CC 216),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 325,A,Database Management Systems,"Dugan, Robert",MWF 09:30-10:20 (CC 216),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 399,A,Topics in Computer Science: Engineering for Public Good,"Sani, Shahrokh",TTh 16:00-17:15 (SC 144),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 400,A,Capstone: Software Engineering (Writing-in-the-Disciplines),"Dugan, Robert",MWF 08:00-09:15 (CC 216),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2023-24,S,CSC 475,A,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 102,A,Introduction to Programming,"Rashid, Amir",MW 16:30-17:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 102,B,Introduction to Programming,"Brown-Sederberg, Janet",TTh 16:30-17:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 103,A,Computer Science I,"Brown-Sederberg, Janet",TThF 11:30-12:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 103,B,Computer Science I,"Brown-Sederberg, Janet",TThF 13:30-14:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 103,C,Computer Science I,"Brown-Sederberg, Janet",TThF 15:00-16:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 201,A,Discrete Mathematics for Computer Science I,"Simonson, Charles",MW 08:30-09:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 211,A,Data Structures,"Goree, Samuel",MW 13:30-14:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 221,A,Computer Logic & Organization,"Bajwa, Hassan",TTh 11:30-12:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 314,A,Operating Systems,"Rashid, Amir",MW 13:30-14:45 (MB 312),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 326,A,Mathematical Experiments in Computer Science,"Simonson, Charles",T 10:00-12:30 (CC 216),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 384,A,Theory of Computation,"Simonson, Charles",MW 10:00-11:15 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 475,A,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 475,A1,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 490,A,Directed Study: Encryption,"Brown-Sederberg, Janet",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 490,B,Dir Study: Deep Learning Stock,"Brown-Sederberg, Janet",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,F,CSC 490,C,Directed Study: Cybersecurity,"Brown-Sederberg, Janet",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 102,A,Introduction to Programming,"Brown-Sederberg, Janet",TTh 16:30-17:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 102,B,Introduction to Programming,"Brown-Sederberg, Janet",TTh 15:00-16:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 104,A,Computer Science II,"Brown-Sederberg, Janet",TThF 11:30-12:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 104,B,Computer Science II,"Brown-Sederberg, Janet",TThF 13:30-14:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 195,A,How Computers Work,"Simonson, Charles",TThF 10:00-10:50 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 202,A,Discrete Mathematics for Computer Science II,"Simonson, Charles",TTh 08:30-09:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 311,A,Algorithms & Complexity,"Simonson, Charles",TTh 13:30-14:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 382,A,Artificial Intelligence,"Goree, Samuel",MW 10:00-11:15 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 390,A,Computer Networks,"Bajwa, Hassan",MF 15:00-16:15 (CC 106),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 399,A,Topics in Computer Science: Image Processing and Computer Vision,"Goree, Samuel",WF 11:30-12:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 400,A,Capstone: Software Engineering (Writing-in-the-Disciplines),"Sale, Michael",MWF 13:30-14:45 (DU 216),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 475,A,Internship in Computer Science,"Simonson, Charles",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 475,B,Internship in Computer Science,"Goree, Samuel",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2024-25,S,CSC 496,A,Independent Research in Computer Science,"Goree, Samuel",00:00-00:01,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 102,A,Introduction to Programming,"Dutta, Sharmishtha",MW 15:00-16:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 102,B,Introduction to Programming,"Brown-Sederberg, Janet",TF 13:30-14:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 103,A,Computer Science I,"Elhamdadi, Hamza",TThF 10:00-11:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 103,B,Computer Science I,"Brown-Sederberg, Janet",TThF 11:30-12:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 201,A,Discrete Mathematics for Computer Science I,"Dutta, Sharmishtha",MW 08:30-09:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 211,A,Data Structures,"Goree, Samuel",WF 11:30-12:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 221,A,Computer Logic & Organization,"Elhamdadi, Hamza",TTh 11:30-12:45 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 321,A,Data Visualization,"Goree, Samuel",WF 15:00-16:15 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 475,A,Internship in Computer Science,"Goree, Samuel",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 475,A1,Internship in Computer Science,"Goree, Samuel",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,F,CSC 496,A,Independent Research in Computer Science,"Goree, Samuel",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 102,A,Introduction to Programming,"Brown-Sederberg, Janet",TTh 13:30-14:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 102,B,Introduction to Programming,"Dutta, Sharmishtha",MW 15:00-16:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 104,A,Computer Science II,"Brown-Sederberg, Janet",TThF 11:30-12:45 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 195,A,How Computers Work,"Brown-Sederberg, Janet",TTh 10:00-11:15 (CC 228),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 202,A,Discrete Mathematics for Computer Science II,"Dutta, Sharmishtha",TTh 13:30-14:45 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 304,A,Computer Architecture,"Elhamdadi, Hamza",MW 10:00-11:15 (CC 217),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 324,A,Web Programming,"Elhamdadi, Hamza",MW 15:00-16:15 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 327,A,Human-Computer Interaction,"Goree, Samuel",TTh 15:00-16:15 (CC 216),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 390,A,Computer Networks,"Bajwa, Hassan",TTh 16:30-17:45 (CC 106),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 399,A,Topics in Computer Science: Compilers and Theory of Computation,"Dutta, Sharmishtha",TTh 11:30-12:45 (CC 215),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 400,A,Capstone: Software Engineering (Writing-in-the-Disciplines),"Goree, Samuel",TThF 08:30-09:45 (MB 317),https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Stonehill College,2025-26,S,CSC 475,A,Internship in Computer Science,"Goree, Samuel",,https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/classSearch/classSearch

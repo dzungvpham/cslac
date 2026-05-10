@@ -1,0 +1,273 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Skidmore College,2021-22,F,CS 106,001,Introduction to Computer Science I,"Reilly, Christine",Th 09:40-12:30 (CIS 237); WF 12:20-13:40 (CIS 348),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 106,002,Introduction to Computer Science I,"Prasad, Aarathi",T 12:40-15:30 (CIS 237); MW 14:30-15:50 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 106,003,Introduction to Computer Science I,"Zinni, Mike",WF 08:40-10:00 (ANNEX 118); T 09:40-12:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 209,001,Data Structures and Mathematical Foundations,"O'Connell, Tom",TTh 12:40-14:00 (CIS 233); W 14:30-17:20 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 226,001,Software Design,"Read, David",MWF 12:20-13:15 (CIS 237); Th 14:10-16:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 230,001,Programming Languages,"Read, David",WF 08:40-10:00 (CIS 237); M 09:05-10:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 275H,001,Introduction to Research in Computer Science,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 275H,002,Introduction to Research in Computer Science,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 275H,003,Introduction to Research in Computer Science,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 275H,004,Introduction to Research in Computer Science,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 275H,005,Introduction to Research in Computer Science,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 305,001,Design and Analysis of Algorithms,"Eckmann, Mike",TTh 11:10-12:30 (ANNEX 119); M 11:15-12:10 (ANNEX 119),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 318,001,Introduction to Computer Organization,"Prasad, Aarathi",M 08:00-08:55 (CIS 237); TTh 08:10-09:30 (ANNEX 118),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 329,001,Operating Systems,"Reilly, Christine",WF 10:10-11:30 (CIS 237); Th 13:05-14:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 376B,001,Machine Learning,"O'Connell, Tom",F 13:25-14:20 (CIS 233); TTh 15:40-17:00 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 381,001,Senior Thesis,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 381,002,Senior Thesis,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 381,003,Senior Thesis,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 381,004,Senior Thesis,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,F,CS 381,005,Senior Thesis,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 106,001,Introduction to Computer Science I,"Prasad, Aarathi",T 14:10-17:00 (CIS 237); MW 14:30-15:50 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 209,001,Data Structures and Mathematical Foundations,"Eckmann, Mike",T 09:40-12:30 (CIS 237); MWF 13:25-14:20 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 226,001,Software Design,"Reilly, Christine",WF 10:10-11:30 (CIS 233); Th 10:40-12:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 230,001,Programming Languages,"Read, David",WF 12:20-13:40 (CIS 237); M 13:25-14:20 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 275H,002,Introduction to Research in Computer Science,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 275H,003,Introduction to Research in Computer Science,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 275H,004,Introduction to Research in Computer Science,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 275H,005,Introduction to Research in Computer Science,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 275H,006,Introduction to Research in Computer Science,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 305,001,Design and Analysis of Algorithms,"O'Connell, Tom",M 12:20-13:15 (CIS 233); TTh 12:40-14:00 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 306,001,"Computability, Complexity, and Heuristics","O'Connell, Tom",TTh 15:40-17:00 (CIS 233); M 16:00-16:55 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 318,001,Introduction to Computer Organization,"Prasad, Aarathi",TTh 11:10-12:30 (CIS 233); M 11:15-12:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 326,001,Software Engineering,"Read, David",MWF 08:00-08:55 (CIS 237); T 08:10-09:05 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 376B,001,Computer Vision,"Eckmann, Mike",MWF 09:05-10:00 (CIS 233); T 14:10-15:05 (ANNEX 216),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 382,002,Senior Thesis,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 382,003,Senior Thesis,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 382,004,Senior Thesis,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 382,005,Senior Thesis,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2021-22,S,CS 382,006,Senior Thesis,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 106,001,Introduction to Computer Science I,"Prasad, Aarathi",TTh 09:40-11:00 (ANNEX 127),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 106,002,Intro to Comp Sci I - Lab,"Prasad, Aarathi",W 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 106,003,Intro to Comp Sci I - Lab,"Prasad, Aarathi",W 14:30-16:20 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 106,004,Introduction to Computer Science I,"Dellis, Nelson",MWF 09:05-10:00 (BOLTON 103),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 106,005,Intro to Comp Sci I - Lab,"Dellis, Nelson",T 11:10-13:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 106,006,Intro to Comp Sci I - Lab,"Dellis, Nelson",T 14:10-16:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 209,001,Data Structures and Mathematical Foundations,"O'Connell, Tom",M 14:30-17:20 (CIS 237); TTh 15:40-17:00 (ANNEX 118),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 225,001,Applied Data Science,"Read, David",WF 08:40-10:00 (CIS 237); M 09:05-10:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 226,001,Software Design,"Reilly, Christine",WF 10:10-11:30 (ANNEX 118); Th 12:40-14:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 230,001,Programming Languages,"Eckmann, Mike",M 08:00-08:55 (CIS 237); TTh 08:10-09:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 275H,001,Introduction to Research in Computer Science,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 275H,002,Introduction to Research in Computer Science,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 275H,003,Introduction to Research in Computer Science,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 275H,004,Introduction to Research in Computer Science,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 275H,005,Introduction to Research in Computer Science,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 305,001,Design and Analysis of Algorithms,"Eckmann, Mike",TTh 11:10-12:30 (CIS 233); M 11:15-12:10 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 306,001,"Computability, Complexity, and Heuristics","O'Connell, Tom",M 12:20-13:15 (ANNEX 220); TTh 12:40-14:00 (ANNEX 220),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 318,001,Introduction to Computer Organization,"Prasad, Aarathi",M 13:25-14:20 (CIS 237); TTh 14:10-15:30 (CIS 101A),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 376B,001,Database Systems,"Reilly, Christine",WF 12:20-13:40 (CIS 328); Th 15:40-16:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 381,001,Senior Thesis,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 381,002,Senior Thesis,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 381,003,Senior Thesis,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 381,004,Senior Thesis,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,F,CS 381,005,Senior Thesis,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 106,001,Introduction to Computer Science I,"Read, David",MWF 12:20-13:15 (PALMTN DAVI),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 106,002,Intro to Comp Sci I - Lab,"Read, David",T 09:10-11:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 106,003,Intro to Comp Sci I - Lab,"Read, David",T 14:10-16:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 106,004,Introduction to Computer Science I,"Dellis, Nelson",TTh 11:10-12:30 (CIS 311),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 106,005,Intro to Comp Sci I - Lab,"Dellis, Nelson",W 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 106,006,Intro to Comp Sci I - Lab,"Dellis, Nelson",W 14:30-16:20 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 209,001,Data Structures and Mathematical Foundations,"Eckmann, Mike",MWF 10:10-11:05 (ANNEX 118),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 209,002,Data Structures - Lab,"Eckmann, Mike",Th 12:40-15:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 209,003,Data Structures - Lab,"Eckmann, Mike",W 17:00-19:50 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 226,001,Software Design,"Reilly, Christine",Th 10:10-12:00 (CIS 237); WF 12:20-13:40 (ART 202),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 230,001,Programming Languages,"Read, David",WF 08:40-10:00 (CIS 237); M 09:05-10:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 275H,002,Introduction to Research in Computer Science,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 275H,003,Introduction to Research in Computer Science,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 275H,004,Introduction to Research in Computer Science,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 275H,005,Introduction to Research in Computer Science,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 275H,006,Introduction to Research in Computer Science,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 305,001,Design and Analysis of Algorithms,"Dellis, Nelson",M 13:25-14:20 (ANNEX 119); TTh 14:10-15:30 (ANNEX 119),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 306,001,"Computability, Complexity, and Heuristics","O'Connell, Tom",TTh 15:40-17:00 (ANNEX 127); M 16:00-16:55 (ANNEX 217),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 318,001,Introduction to Computer Organization,"Prasad, Aarathi",M 08:00-08:55 (CIS 237); TTh 08:10-09:30 (CIS 328),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 322,001,Artificial Intelligence,"O'Connell, Tom",M 12:20-13:15 (CIS 328); TTh 12:40-14:00 (CIS 328),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 327,001,Computer Networks,"Prasad, Aarathi",TTh 11:10-12:30 (ANNEX 118); M 11:15-12:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 376A,001,Digital Image Processing,"Eckmann, Mike",MW 14:30-15:50 (ANNEX 217),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 382,002,Senior Thesis,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 382,003,Senior Thesis,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 382,004,Senior Thesis,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 382,005,Senior Thesis,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2022-23,S,CS 382,006,Senior Thesis,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 106,001,Introduction to Computer Science I,"Reilly, Christine",WF 12:20-13:40 (ANNEX 216),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 106,002,Intro to Comp Sci I - Lab,"Reilly, Christine",Th 09:10-11:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 106,003,Intro to Comp Sci I - Lab,"Reilly, Christine",Th 15:40-17:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 106,004,Introduction to Computer Science I,"Dellis, Nelson",TTh 14:10-15:30 (ANNEX 217),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 106,005,Intro to Comp Sci I - Lab,"Dellis, Nelson",W 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 106,006,Intro to Comp Sci I - Lab,"Dellis, Nelson",W 14:30-16:20 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 209,001,Data Structures and Mathematical Foundations,"Eckmann, Mike",MWF 10:10-11:05 (ANNEX 216); T 12:40-15:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 226,001,Software Design,"Read, David",WF 12:20-13:40 (PALMTN EMER),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 226,002,Software Design - Lab,"Read, David",M 13:25-15:15 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 226,003,Software Design - Lab,"Read, David",T 09:10-11:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 230,001,Programming Languages,"Read, David",WF 08:40-10:00 (CIS 237); M 09:05-10:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 275H,001,Introduction to Research in Computer Science,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 275H,002,Introduction to Research in Computer Science,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 275H,003,Introduction to Research in Computer Science,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 275H,004,Introduction to Research in Computer Science,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 275H,005,Introduction to Research in Computer Science,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 275H,006,Introduction to Research in Computer Science,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 305,001,Design and Analysis of Algorithms,"Dellis, Nelson",TTh 11:10-12:30 (ANNEX 118); M 11:15-12:10 (ANNEX 118),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 316,001,Foundations of Machine Learning,"O'Connell, Tom",TTh 15:40-17:00 (CIS 233); M 16:00-17:50 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 318,001,Introduction to Computer Organization,"Prasad, Aarathi",M 08:00-08:55 (CIS 237); TTh 08:10-09:30 (CIS 101A),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 328,001,Mobile Computing,"Prasad, Aarathi",M 12:20-13:15 (CIS 211); TTh 12:40-14:00 (CIS 211),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 381,001,Senior Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 381,002,Senior Research,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 381,003,Senior Research,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 381,004,Senior Research,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 381,005,Senior Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,F,CS 381,006,Senior Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 106,001,Intro to Comp Sci I,"Taneja, Vaasu",TTh 15:40-17:00 (ANNEX 216),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 106,002,Intro to Comp Sci I - Lab,"Taneja, Vaasu",W 14:30-16:20 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 106,004,Intro to Comp Sci I,"Dellis, Nelson",WF 10:10-11:30 (ANNEX 216),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 106,005,Intro to Comp Sci I - Lab,"Dellis, Nelson",T 09:10-11:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 106,006,Intro to Comp Sci I - Lab,"Dellis, Nelson",T 12:10-14:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 209,001,Data Structures,"Eckmann, Mike",MWF 09:05-10:00 (CIS 311),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 209,002,Data Structures - Lab,"Eckmann, Mike",Th 12:40-14:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 209,003,Data Structures - Lab,"Eckmann, Mike",Th 14:40-16:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 226,001,Software Design,"Read, David",MWF 12:20-13:15 (CIS 237); T 14:10-16:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 230,001,Programming Langs,"Read, David",M 10:10-11:05 (CIS 237); WF 10:10-11:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 275H,002,Computer Science Research,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 275H,003,Computer Science Research,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 275H,005,Computer Science Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 275H,006,Computer Science Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 275H,007,Computer Science Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 305,001,Algorithms,"Eckmann, Mike",M 12:20-13:15 (ANNEX 118); WF 12:20-13:40 (ANNEX 118),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 306,001,Computability and Complexity,"O'Connell, Tom",M 12:20-13:15 (CIS 328); TTh 12:40-14:00 (CIS 328),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 318,001,Intro to Computer Org,"Reilly, Christine",TTh 11:10-12:30 (CIS 328); M 11:15-12:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 326,001,Software Engineering,"Read, David",MWF 08:00-08:55 (CIS 237); T 08:10-09:05 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 329,001,Operating Systems,"Reilly, Christine",M 13:25-14:20 (CIS 237); TTh 15:40-17:00 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 376,001,Deep Learning,"O'Connell, Tom",M 14:30-16:20 (CIS 237); TTh 15:40-17:00 (CIS 348),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 382,001,Senior Research,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 382,002,Senior Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 382,003,Senior Research,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 382,004,Senior Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2023-24,S,CS 382,005,Senior Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 106,001,Introduction to Computer Science I,"Prasad, Aarathi",MW 14:30-15:50 (CIS 328),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 106,002,Intro to Comp Sci I - Lab,"Prasad, Aarathi",T 13:10-15:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 106,003,Intro to Comp Sci I - Lab,"Prasad, Aarathi",T 15:40-17:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 106,004,Introduction to Computer Science I,"Dellis, Nelson",WF 10:10-11:30 (PALMTN DAVI),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 106,005,Intro to Comp Sci I - Lab,"Dellis, Nelson",Th 09:10-11:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 106,006,Intro to Comp Sci I - Lab,"Dellis, Nelson",Th 12:10-14:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 106,007,Intro to Comp Sci I - Lab,"Dellis, Nelson",Th 15:10-17:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 209,001,Data Structures and Mathematical Foundations,"O'Connell, Tom",TTh 15:40-17:00 (CIS 328),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 209,002,Data Structures - Lab,"O'Connell, Tom",F 12:20-14:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 209,003,Data Structures - Lab,"O'Connell, Tom",M 15:40-17:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 209,004,Data Structures and Mathematical Foundations,"Du, Wenlu",W 12:20-14:10 (CIS 237); TTh 12:40-14:00 (BOLTON 280),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 226,001,Software Design,"Read, David",T 11:10-13:00 (CIS 237); MW 12:20-13:40 (CIS 328),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 230,001,Programming Languages,"Read, David",WF 08:40-10:00 (CIS 237); M 09:05-10:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 275H,001,Introduction to Research in Computer Science,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 275H,002,Introduction to Research in Computer Science,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 275H,003,Introduction to Research in Computer Science,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 275H,004,Introduction to Research in Computer Science,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 275H,005,Introduction to Research in Computer Science,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 275H,006,Introduction to Research in Computer Science,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 275H,007,Introduction to Research in Computer Science,"Du, Wenlu",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 276,001,Applied Machine Learning,"Wali, Esma",M 12:20-13:15 (CIS 237); TTh 12:40-14:00 (CIS 351),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 305,001,Design and Analysis of Algorithms,"Eckmann, Mike",TTh 09:40-11:00 (PALMTN EMER); M 10:10-11:05 (PALMTN EMER),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 305,002,Design and Analysis of Algorithms,"Wali, Esma",TTh 15:40-17:00 (PALMTN 202); M 16:00-16:55 (PALMTN 202),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 306,001,"Computability, Complexity, and Heuristics","O'Connell, Tom",M 12:20-13:15 (CIS 286); TTh 12:40-14:00 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 318,001,Introduction to Computer Organization,"Reilly, Christine",M 14:30-15:25 (CIS 237); TTh 15:40-17:00 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 331,001,Computer Vision,"Eckmann, Mike",M 13:25-14:20 (CIS 286); TTh 14:10-15:30 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 355,001,Database Systems,"Reilly, Christine",TTh 11:10-12:30 (CIS 328); M 11:15-12:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 381,001,Senior Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 381,002,Senior Research,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 381,003,Senior Research,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 381,004,Senior Research,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 381,005,Senior Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 381,006,Senior Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,F,CS 381,007,Senior Research,"Du, Wenlu",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 106,001,Intro to Comp Sci I,"Prasad, Aarathi",WF 10:10-11:30 (CIS 311),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 106,002,Intro to Comp Sci I - Lab,"Prasad, Aarathi",T 12:40-14:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 106,003,Intro to Comp Sci I - Lab,"Prasad, Aarathi",T 15:40-17:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 106,004,Intro to Comp Sci I,"Dellis, Nelson",Th 14:10-16:00 (CIS 237); MW 14:30-15:50 (CIS 351),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 106,005,Intro to Comp Sci I,"Wali, Esma",WF 12:20-13:40 (CIS 311),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 106,006,Intro to Comp Sci I - Lab,"Wali, Esma",M 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 106,007,Intro to Comp Sci I - Lab,"Wali, Esma",T 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 209,001,Data Structures,"Du, Wenlu",M 12:20-14:10 (CIS 237); TTh 12:40-14:00 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 226,001,Software Design,"Reilly, Christine",TTh 11:10-12:30 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 226,002,Software Design - Lab,"Reilly, Christine",W 12:20-14:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 226,003,Software Design - Lab,"Reilly, Christine",W 15:30-17:20 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 226,004,Software Design,"Dellis, Nelson",MW 10:10-11:30 (CIS 328); Th 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 230,001,Programming Langs,"Read, David",WF 08:40-10:00 (CIS 237); M 09:05-10:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 275H,002,Computer Science Research,"Du, Wenlu",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 275H,003,Computer Science Research,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 275H,005,Computer Science Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 275H,006,Computer Science Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 275H,007,Computer Science Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 275H,008,Computer Science Research,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 275H,009,Computer Science Research,"Wali, Esma",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 276,001,Web Appl Develop/Data Security,"Read, David",WF 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 305,001,Algorithms,"Wali, Esma",MW 14:30-15:50 (CIS 328); T 14:35-15:30 (CIS 328),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 306,001,Computability and Complexity,"Du, Wenlu",TTh 09:40-11:00 (CIS 286); M 10:10-11:05 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 316,001,Machine Learning Foundations,"O'Connell, Tom",M 15:40-17:30 (CIS 237); TTh 15:40-17:00 (CIS 351),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 318,001,Intro to Computer Org,"Prasad, Aarathi",W 12:20-14:10 (CIS 101A); F 12:20-14:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 322,001,Artificial Intelligence,"O'Connell, Tom",M 12:20-13:15 (CIS 101A); TTh 12:40-14:00 (CIS 101A),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 382,001,Senior Research,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 382,002,Senior Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 382,003,Senior Research,"Du, Wenlu",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 382,004,Senior Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 382,005,Senior Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 382,006,Senior Research,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2024-25,S,CS 382,007,Senior Research,"Wali, Esma",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 106,001,Intro to Comp Sci I,"Eckmann, Mike",Th 09:10-11:00 (CIS 237); MW 10:10-11:30 (BOLTON 280),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 106,002,Intro to Comp Sci I,"Dellis, Nelson",MW 12:20-13:40 (PALMTN 301),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 106,003,Intro to Comp Sci I - Lab,"Dellis, Nelson",T 12:10-14:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 106,004,Intro to Comp Sci I - Lab,"Dellis, Nelson",T 15:10-17:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 209,001,Data Structures,"Du, Wenlu",M 13:25-15:15 (CIS 237); TTh 14:10-15:30 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 226,001,Software Design,"Reilly, Christine",TTh 11:10-12:30 (CIS 311); W 12:20-14:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 226,002,Software Design,"Dellis, Nelson",T 09:10-11:00 (CIS 237); MW 14:30-15:50 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 230,001,Programming Langs,"Read, David",WF 08:40-10:00 (CIS 237); M 09:05-10:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 275H,001,Computer Science Research,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 275H,002,Computer Science Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 275H,003,Computer Science Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 275H,004,Computer Science Research,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 275H,005,Computer Science Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 275H,006,Computer Science Research,"Du, Wenlu",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 275H,007,Computer Science Research,"Wali, Esma",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 276,001,Applied Machine Learning,"Wali, Esma",TTh 11:10-12:30 (PALMTN 401); M 11:15-12:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 276,002,Foundations of Cybersecurity,"Read, David",WF 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 305,001,Algorithms,"Wali, Esma",M 13:25-14:20 (BOLTON 281); TTh 14:10-15:30 (BOLTON 281),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 306,001,Computability and Complexity,"Du, Wenlu",TTh 09:40-11:00 (CIS 328); M 10:10-11:05 (CIS 328),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 318,001,Intro to Computer Org,"Reilly, Christine",T 15:40-17:30 (CIS 286); Th 15:40-17:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 327,001,Computer Networks,"Prasad, Aarathi",WF 12:20-14:10 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 331,001,Computer Vision,"Eckmann, Mike",M 12:20-13:15 (CIS 237); TTh 12:40-14:00 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 381,001,Senior Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 381,002,Senior Research,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 381,003,Senior Research,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 381,004,Senior Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 381,005,Senior Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 381,006,Senior Research,"Du, Wenlu",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,F,CS 381,007,Senior Research,"Wali, Esma",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 106,001,Intro to Comp Sci I,"Prasad, Aarathi",WF 12:20-13:40 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 106,002,Intro to Comp Sci I - Lab,"Prasad, Aarathi",T 09:40-11:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 106,003,Intro to Comp Sci I - Lab,"Prasad, Aarathi",T 12:10-14:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 106,004,Intro to Comp Sci I,"Wali, Esma",MW 10:10-11:30 (PALMTN 301); Th 10:10-12:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 123,001,System Administration,"Read, David",W 14:30-15:25 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 202,001,Computers and Society,"Prasad, Aarathi",WF 10:10-11:30 (BOLTON 281),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 209,001,Data Structures,"Eckmann, Mike",MWF 09:05-10:00 (CIS 211); Th 12:40-14:30 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 218,001,Intro to Computer Systems,"Reilly, Christine",TTh 11:10-12:30 (CIS 233); W 12:20-14:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 226,001,Software Design,"Dellis, Nelson",MW 12:20-13:40 (CIS 233); T 14:10-16:00 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 275H,001,Computer Science Research,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 275H,002,Computer Science Research,"Du, Wenlu",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 275H,003,Computer Science Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 275H,004,Computer Science Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 275H,005,Computer Science Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 275H,006,Computer Science Research,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 275H,007,Computer Science Research,"Wali, Esma",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 275H,008,Computer Science Research,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 276,001,AI & Dynamic Financial Strateg,"Du, Wenlu",F 12:20-14:10 (CIS 237); TTh 12:40-14:00 (CIS 233),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 305,001,Algorithms,"Wali, Esma",MW 14:30-16:20 (BOLTON 102),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 306,001,Computability and Complexity,"Du, Wenlu",M 09:05-10:00 (CIS 286); TTh 09:40-11:00 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 306,002,Computability and Complexity,"O'Connell, Tom",M 16:00-16:55 (CIS 286); TTh 16:00-17:20 (CIS 286),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 322,001,Artificial Intelligence,"O'Connell, Tom",M 13:25-14:20 (CIS 237); TTh 14:10-15:30 (CIS 351),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 326,001,Software Engineering,"Read, David",MWF 08:00-08:55 (CIS 237); T 08:10-09:05 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 330,001,Prog. Lang. and Compilers,"Read, David",WF 10:10-11:30 (CIS 237); M 11:15-12:10 (CIS 237),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 376,001,Digital Image Processing,"Eckmann, Mike",M 12:20-13:15 (CIS 237); WF 12:20-13:40 (CIS 265),https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 382,001,Senior Research,"O'Connell, Tom",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 382,002,Senior Research,"Reilly, Christine",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 382,003,Senior Research,"Du, Wenlu",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 382,004,Senior Research,"Read, David",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 382,005,Senior Research,"Dellis, Nelson",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 382,006,Senior Research,"Prasad, Aarathi",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 382,007,Senior Research,"Wali, Esma",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Skidmore College,2025-26,S,CS 382,008,Senior Research,"Eckmann, Mike",,https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/classSearch/classSearch

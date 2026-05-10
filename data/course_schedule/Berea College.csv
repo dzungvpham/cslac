@@ -1,0 +1,132 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Berea College,2022-23,F,CSC 114,0,Business App & Prog (BUS),"Boggs, Jacci",TTh 13:00-14:50 (D 114),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 124,0,Building Better Apps,"Jones, Jasmine",MWF 10:40-11:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 186,DW,Intro to Web Development,"Wilborne, Deanna",MWF 08:00-09:10 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 186,DW2,Intro to Web Development,"Wilborne, Deanna",MWF 09:20-10:30 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 226,A,Software Design & Implement,"Shepherd, Patrick",MWF 12:00-13:10 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 226,B,Software Design & Implement,"Shepherd, Patrick",MWF 13:20-14:30 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 236,A,Data Structures,"Nakazawa, Mario",MWF 13:20-14:30 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 236,B,Data Structures,"Nakazawa, Mario",MWF 14:40-15:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 301,0,Human-Centered Computing,"Jones, Jasmine",TTh 10:00-11:50 (DT 111),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 336,0,E-Commerce (BUS),"Boggs, Jacci",MW 12:40-14:30 (D 103),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 410,0,Computational Intelligence,"Nakazawa, Mario",MWF 10:40-11:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 412,0,Networking,"Heggen, Scott",TTh 13:00-14:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 445,0,Comp Complexity & Modeling,"Shepherd, Patrick",TTh 10:00-11:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 450,0,Computer Security,"Heggen, Scott",TTh 08:00-09:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 490B,SH,Game Development,"Heggen, Scott",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,F,CSC 493,0,Computing Design Practicum,"Wilborne, Deanna",TTh 13:00-14:50 (DT B12),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 110,0,Craft of Computing,"Jones, Jasmine",TTh 10:00-11:50 (DT B12),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 111,0,Storytelling-Comp Animation,"Wilborne, Deanna",MWF 13:20-14:30 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 114,0,Business App & Prog (BUS),"Boggs, Jacci",TTh 08:00-09:50 (D 308),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 221,0,Management Info. Systems (BUS),"Boggs, Jacci",MW 12:40-14:30 (D 103),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 226,A,Software Design & Implement,"Shepherd, Patrick",MWF 09:20-10:30 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 226,B,Software Design & Implement,"Shepherd, Patrick",MWF 10:40-11:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 236,A,Data Structures,"Nakazawa, Mario",MWF 09:20-10:30 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 236,B,Data Structures,"Nakazawa, Mario",MWF 10:40-11:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 300,0,Embedded Systems,"Heggen, Scott, Wilborne, Deanna",TTh 08:00-09:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 303,0,Theory of Computation,"Shepherd, Patrick",MWF 13:20-14:30 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 330,0,Database Systems,"Jones, Jasmine",TTh 13:00-14:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 335,0,Computer Organization,"Nakazawa, Mario",MWF 14:40-15:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2022-23,S,CSC 420,0,Programming Languages,"Wilborne, Deanna",TTh 13:00-14:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 114,A,Business App & Prog (BUS),"Boggs, Jacci",TTh 10:00-11:50 (D 103),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 114,B,Business App & Prog (BUS),"Boggs, Jacci",TTh 13:00-14:50 (D 103),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 121,0,Introduction to Game Design,"Nakazawa, Mario",MWF 10:40-11:50 (DT 111),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 186,DW1,Intro to Web Development,"Wilborne, Deanna",TTh 08:00-09:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 186,DW2,Intro to Web Development,"Wilborne, Deanna",TTh 10:00-11:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 226,A,Software Design & Implement,"Heggen, Scott",MWF 10:40-11:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 226,B,Software Design & Implement,"Heggen, Scott",MWF 09:20-10:30 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 236,A,Data Structures,"Pearce, Jan",MWF 09:20-10:30 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 236,B,Data Structures,"Pearce, Jan",MWF 10:40-11:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 286,JJ,Intro to Autonomous Systems,"Jones, Jasmine, Wu, Wei",MWF 14:40-15:50 (DT B12),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 301,A,Human-Centered Computing,"Jones, Jasmine",TTh 10:00-11:50 (DT B12),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 301,B,Human-Centered Computing,"Jones, Jasmine",TTh 13:00-14:50 (DT B12),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 328,0,Data Analytics (BUS),"Boggs, Jacci",MW 12:40-14:30 (D 103),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 395,0,Red Hat QE Co-op,"Heggen, Scott",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 425,0,Operating Systems & VMs,"Nakazawa, Mario",MWF 13:20-14:30 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 426,0,Open Source Software Enginrg,"Pearce, Jan",TTh 08:00-09:50 (DT B18),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 440,0,Design & Analysis of Algorithm,"Nakazawa, Mario",MWF 14:40-15:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,F,CSC 493,0,Computing Design Practicum,"Wilborne, Deanna",MW 08:40-10:30 (DT B18),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 111,A,Storytelling-Comp Animation,"Wilborne, Deanna",TTh 08:00-09:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 111,B,Storytelling-Comp Animation,"Wilborne, Deanna",TTh 10:00-11:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 114,0,Business App & Prog (BUS),"Boggs, Jacci",MW 12:40-14:30 (D 103),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 124,A,Building Better Apps,"Nakazawa, Mario",MWF 14:40-15:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 226,A,Software Design & Implement,"Heggen, Scott",MWF 09:20-10:30 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 226,B,Software Design & Implement,"Heggen, Scott",MWF 10:40-11:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 236,A,Data Structures,"Pearce, Jan",MWF 09:20-10:30 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 236,B,Data Structures,"Pearce, Jan",MWF 10:40-11:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 303,0,Theory of Computation,"Pearce, Jan",TTh 08:00-09:50 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 330,0,Database Systems,"Jones, Jasmine",TTh 10:00-11:50 (MC 408),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 335,0,Computer Organization,"Nakazawa, Mario",MWF 16:00-17:10 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 336,0,E-Commerce (BUS),"Boggs, Jacci",TTh 13:00-14:50 (D 116/117),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 386,JP,Scalable Algorithms & Objects,"Pearce, Jan",MWF 14:40-15:50 (DT 108A),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 395,SH,Digital Imaging Internship,"Heggen, Scott",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 410,0,Computational Intelligence,"Nakazawa, Mario",MWF 13:20-14:30 (DT 104),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 433,0,Numerical Analysis (MAT),"Gratton, Larry",TTh 10:00-11:50 (MC 206),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 486,DW,Compiler Design & Implement.,"Wilborne, Deanna",MW 08:40-10:30 (MC 350),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2023-24,S,CSC 486,JJ,Design Research in Computing,"Jones, Jasmine",TTh 13:00-14:50 (DT B12),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 114,0,Business App & Prog (BUS),"Boggs, Jacci",TTh 10:00-11:50 (D 100),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 124,0,Building Better Apps,"Nakazawa, Mario",MWF 14:40-15:50 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 126,0,Intro to Robotics,"Pearce, Jan",TTh 13:00-14:50 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 221,0,Management Info. Systems (BUS),"Boggs, Jacci",MW 16:00-17:50 (D 206),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 226,A,Software Design & Implement,"Heggen, Scott",MWF 09:20-10:30 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 226,B,Software Design & Implement,"Heggen, Scott",MWF 10:40-11:50 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 236,A,Data Structures,"Pearce, Jan",MWF 09:20-10:30 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 236,B,Data Structures,"Pearce, Jan",MWF 10:40-11:50 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 301,A,Human-Centered Computing,"Jones, Jasmine",TTh 10:00-11:50 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 301,B,Human-Centered Computing,"Jones, Jasmine",TTh 13:00-14:50 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 390B,MN,Research at Carnegie Mellon II,"Nakazawa, Mario",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 425,0,Operating Systems & VMs,"Nakazawa, Mario",MWF 16:00-17:10 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 426,0,Open Source Software Enginrg,"Pearce, Jan",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 445,0,Comp Complexity & Modeling,"Nakazawa, Mario",MWF 13:20-14:30 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 450,A,Computer Security,"Wilborne, Deanna",TTh 08:00-09:50 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 450,B,Computer Security,"Wilborne, Deanna",TTh 10:00-11:50 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 490B,DW,User-focused Mobile App Design,"Wilborne, Deanna",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 493,0,Computing Design Practicum,"Wilborne, Deanna",MW 08:40-10:30 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 498,B,Data-Driven Design in Human Ce,"Jones, Jasmine",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,F,CSC 498,SH,HEP Computing,"Heggen, Scott",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 110,0,Craft of Computing,"Jones, Jasmine",TTh 13:00-14:50 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 114,A,Business App & Prog (BUS),"Boggs, Jacci",TTh 10:00-11:50 (D 100),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 114,B,Business App & Prog (BUS),"Boggs, Jacci",TTh 13:00-14:50 (D 100),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 121,0,Introduction to Game Design,"Nakazawa, Mario",MWF 13:20-14:30 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 226,A,Software Design & Implement,"Heggen, Scott",MWF 09:20-10:30 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 226,B,Software Design & Implement,"Heggen, Scott",MWF 10:40-11:50 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 236,A,Data Structures,"Pearce, Jan",MWF 09:20-10:30 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 236,B,Data Structures,"Pearce, Jan",MWF 10:40-11:50 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 246,0,Scalable Algorithms & Objects,"Pearce, Jan, Wilborne, Deanna",MWF 08:00-09:10 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 328,0,Data Analytics (BUS),"Boggs, Jacci",MW 12:40-14:30 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 330,0,Database Systems,"Jones, Jasmine",TTh 10:00-11:50 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 420,0,Programming Languages,"Wilborne, Deanna",MWF 09:20-10:30 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 440,0,Design & Analysis of Algorithm,"Nakazawa, Mario",MWF 14:40-15:50 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2024-25,S,CSC 486,DW,Compiler Design & Impl.,"Wilborne, Deanna",TTh 08:00-09:50 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 114,A,Business App & Prog (BUS),"Sowers, Nancy",TTh 10:00-11:50 (D 100),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 114,B,Business App & Prog (BUS),"Sowers, Nancy",TTh 13:00-14:50 (D 100),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 124,0,Building Better Apps,"Nakazawa, Mario",MWF 10:40-11:50 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 186,DW,Introduction to Data Science,"Wilborne, Deanna",MWF 08:00-09:10 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 226,0,Software Design & Implement,"Heggen, Scott",MWF 09:20-10:30 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 236,A,Data Structures,"Pearce, Jan",MWF 09:20-10:30 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 236,B,Data Structures,"Pearce, Jan",MWF 10:40-11:50 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 246,0,Scalable Algorithms & Objects,"Wilborne, Deanna",MWF 09:20-10:30 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 301,A,Human-Centered Computing,"Jones, Jasmine",TTh 10:00-11:50 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 301,B,Human-Centered Computing,"Jones, Jasmine",TTh 13:00-14:50 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 335,0,Computer Organization,"Nakazawa, Mario",MWF 13:20-14:30 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 336,0,E-Commerce (BUS),"Sowers, Nancy",MW 12:40-14:30 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 445,0,Comp Complexity & Modeling,"Nakazawa, Mario",MWF 14:40-15:50 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 493,A,Computing Design Practicum,"Wilborne, Deanna",TTh 08:00-09:50 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,F,CSC 493,B,Computing Design Practicum,"Wilborne, Deanna",TTh 10:00-11:50 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 111,0,Storytelling-Comp Animation,"Jones, Jasmine",TTh 10:00-11:50 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 114,0,Business App & Prog (BUS),"Sowers, Nancy",TTh 10:00-11:50 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 126,0,Intro to Robotics,"Pearce, Jan",MW 12:40-14:30 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 221,0,Management Info. Systems (BUS),"Sowers, Nancy",MW 12:40-14:30 (D 214),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 226,A,Software Design & Implement,"Heggen, Scott",MWF 09:20-10:30 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 226,B,Software Design & Implement,"Heggen, Scott",MWF 10:40-11:50 (CM 316),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 236,0,Data Structures,"Pearce, Jan",MWF 09:20-10:30 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 246,A,Scalable Algorithms & Objects,"Wilborne, Deanna",MWF 08:00-09:10 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 246,B,Scalable Algorithms & Objects,"Wilborne, Deanna",MWF 09:20-10:30 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 303,A,Theory of Computation,"Nakazawa, Mario",MWF 13:20-14:30 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 303,B,Theory of Computation,"Nakazawa, Mario",MWF 14:40-15:50 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 390B,SH,Data Engineering,"Heggen, Scott",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 410,0,Computational Intelligence,"Nakazawa, Mario",MWF 10:40-11:50 (CM 328),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 412,0,Networking,"Wilborne, Deanna",TTh 08:00-09:50 (CM 310),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 426,JP,Open Source Software Enginrg,"Pearce, Jan",,https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 433,0,Numerical Analysis (MAT),"Wilkinson, Mark",MWF 14:40-15:50 (MC 551),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
+Berea College,2025-26,S,CSC 486,JJ,Design Research in Computing,"Jones, Jasmine",TTh 13:00-14:50 (CM 216),https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/classSearch/classSearch
