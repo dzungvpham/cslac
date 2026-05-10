@@ -1,0 +1,193 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+University of Richmond,2021-22,F,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Charlesworth,MW 1:30pm-2:45pm (JPSN G23); Th 3:00pm-5:00pm (JPSN G23),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Gao,TTh 9:00am-10:15am (JPSN G30); T 12:00pm-2:00pm (JPSN G30),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Ware,TTh 10:30am-11:45am (JPSN G30); F 10:30am-12:30pm (JPSN G30),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Obiorah,TTh 12:00pm-1:15pm (JPSN G23); Th 4:30pm-6:30pm (JPSN G20),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 221,01,DATA STRUCTURES W/LAB,Jiang,MW 10:30am-11:45am (JPSN G22); Th 12:00pm-2:00pm (JPSN G22),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 221,02,DATA STRUCTURES W/LAB,Ware,TTh 1:30pm-2:45pm (JPSN G23); F 1:30pm-3:30pm (JPSN G23),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 221,03,DATA STRUCTURES W/LAB,Jiang,MW 1:30pm-2:45pm (JPSN G22); Th 3:00pm-5:00pm (JPSN G22),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 222,01,DISCRETE STRUCTURES W/LAB,Gao,MW 3:00pm-4:15pm (JPSN G20); T 3:00pm-3:50pm (JPSN G30),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 222,02,DISCRETE STRUCTURES W/ LAB,Gao,MW 4:30pm-5:45pm (JPSN G20); T 4:30pm-5:20pm (JPSN G30),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Szajda,TTh 1:30pm-2:45pm (JPSN 109); Th 4:30pm-5:20pm (JPSN 109),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Bhakta,MW 10:30am-11:45am (JPSN 120); Th 3:00pm-3:50pm (JPSN G20),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 315,01,ALGORITHMS W/ LAB,Bhakta,MW 12:00pm-1:15pm (JPSN G24); F 12:00pm-12:50pm (JPSN G24),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Charlesworth,MWF 9:00am-10:15am (JPSN 109),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,Th 6:30pm-9:50am (JPSN G23),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 332,01,COMPUTER NETWORKS W/LAB,Szajda,TTh 10:30am-11:45am (JPSN 109); F 10:30am-11:20am (JPSN 109),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,F,CMSC 395,01,ST: HUMAN-COMPUTER INTERACTION,Obiorah,MW 3:00pm-4:15pm (JPSN G24); F 3:00pm-3:50pm (JPSN G-28),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Charlesworth,Th 12:00pm-2:00pm (JPSN G23); MW 1:30pm-2:45pm (JPSN G-28),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Ware,TTh 1:30pm-2:45pm (JPSN G30); F 1:30pm-3:30pm (JPSN G30),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Gao,MW 4:30pm-5:45pm (JPSN G30); T 4:30pm-6:30pm (JPSN G30),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Obiorah,MW 3:00pm-4:15pm (JPSN G30); F 3:00pm-5:00pm (JPSN G23),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 221,01,DATA STRUCTURES W/LAB,Jiang,MW 1:30pm-2:45pm (JPSN G20); Th 4:30pm-6:30pm (JPSN G20),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 221,02,DATA STRUCTURES W/LAB,Obiorah,MW 12:00pm-1:15pm (JPSN G30); F 12:00pm-2:00pm (JPSN G23),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 222,01,DSCRT STRCTRS FOR CMPTNG W/LAB,Gao,MW 3:00pm-4:15pm (JPSN G24); T 3:00pm-3:50pm (JPSN G23),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 222,02,DSCRT STRCTRS FOR CMPTNG W/LAB,Gao,TTh 9:00am-10:15am (JPSN G30); T 12:00pm-12:50pm (JPSN G23),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Szajda,TTh 10:30am-11:45am (JPSN 107); F 10:30am-11:20am (JPSN 107),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Bhakta,MW 10:30am-11:45am (GOTW A100); Th 3:00pm-3:50pm (JPSN G30),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 315,01,ALGORITHMS W/ LAB,Bhakta,MW 12:00pm-1:15pm (GOTW C112); F 12:00pm-12:50pm (GOTW C112),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Charlesworth,MWF 9:00am-10:15am (JPSN 109),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,W 6:30pm-9:50am (JPSN G23),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 328,01,NUMERICAL ANALYSIS,Caudill,TTh 12:00pm-1:15pm (JPSN G24),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 340,01,DIS: SECURITY SEMINAR,Szajda,,https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 395,01,ST: ANDROID PROGRAMMING,Ware,TTh 10:30am-11:45am (JPSN 103B); F 10:30am-11:20am (JPSN G20),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,S,CMSC 395,02,ST: MUSIC INFORMATICS,Jiang,MW 10:30am-11:45am (RYLH 205); Th 3:00pm-3:50pm (JPSN 107),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,Su,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Gao,MTWTh 9:00am-12:30pm (ONLINE),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,Su,CMSC 406,01,SUMMER UNDERGRADUATE RESEARCH,Ware,MTWThF 8:00am-5:00pm (JPSN 108),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,Su,CMSC 406,02,SUMMER UNDERGRADUATE RESEARCH,Szajda,MTWThF 8:00am-5:00pm (JPSN 103B),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,Su,CMSC 406,03,SUMMER UNDERGRADUATE RESEARCH,Jiang,MTWThF 8:00am-5:00pm (JPSN 101),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,Su,CMSC 406,04,SUMMER UNDERGRADUATE RESEARCH,Park,MTWThF 8:00am-5:00pm (JPSN 107),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2021-22,Su,CMSC 406,05,SUMMER UNDERGRADUATE RESEARCH,Bhakta,,https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Charlesworth,MW 1:30pm-2:45pm (BLIB 176); Th 3:00pm-5:00pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Jiang,MW 10:30am-11:45am (JPSN G02); Th 1:30pm-3:30pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Jiang,MW 12:00pm-1:15pm (JPSN G02); Th 4:30pm-6:30pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Finegan-Dollak,TTh 3:00pm-4:15pm (JPSN G02); F 3:00pm-5:00pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 150,05,INTRODUCTN TO COMPUTING W/LAB,Ware,TTh 12:00pm-1:15pm (JPSN G02); F 12:00pm-2:00pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 221,01,DATA STRUCTURES W/LAB,Ware,MW 9:00am-10:15am (JPSN G02); F 9:00am-11:00am (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 221,02,DATA STRUCTURES W/LAB,Obiorah,MW 4:30pm-5:45pm (JPSN G02); F 4:30pm-6:30pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 222,01,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 10:30am-11:45am (JPSN 103A); F 10:30am-11:20am (JPSN 103A),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 222,02,DISCRETE STRUCTURES W/ LAB,Wibberly,TTh 1:30pm-2:45pm (WSTN 314); F 1:30pm-2:20pm (WSTN 314),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Szajda,TTh 10:30am-11:45am (JPSN 118); T 3:00pm-3:50pm (JPSN 118),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Bhakta,MW 10:30am-11:45am (BLIB 176); Th 4:30pm-5:20pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 315,01,ALGORITHMS W/ LAB,Bhakta,MW 12:00pm-1:15pm (BLIB 176); F 12:00pm-12:50pm (BLIB 176),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Charlesworth,MWF 9:00am-10:15am (JPSN 109),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,T 6:30pm-9:50am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 340,08,DIRECTED INDEPENDENT STUDY,Bhakta,,https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 395,01,ST: HUMAN-COMPUTER INTERACTION,Obiorah,MW 3:00pm-4:15pm (JPSN G03); F 3:00pm-3:50pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,F,CMSC 395,02,ST:NATURAL LANGUAGE PROCESSING,Finegan-Dollak,MW 1:30pm-2:45pm (BLIB 201); F 1:30pm-2:20pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Finegan-Dollak,TTh 9:00am-10:15am (JPSN G02); F 12:00pm-2:00pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Finegan-Dollak,TTh 3:00pm-4:15pm (JPSN G02); F 3:00pm-5:00pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Ware,TTh 12:00pm-1:15pm (JPSN G02); F 12:00pm-2:00pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Obiorah,MW 12:00pm-1:15pm (JPSN G02); M 3:00pm-5:00pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 150,05,INTRODUCTN TO COMPUTING W/LAB,Charlesworth,MW 1:30pm-2:45pm (JPSN 109); M 1:30pm-2:45pm (JPSN 120); Th 1:30pm-3:30pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 221,01,DATA STRUCTURES W/LAB,Obiorah,MW 9:00am-10:15am (JPSN G02); F 9:00am-11:00am (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 221,02,DATA STRUCTURES W/LAB,Jiang,MW 10:30am-11:45am (JPSN G02); Th 4:30pm-6:30pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 222,01,DSCRT STRCTRS FOR CMPTNG W/LAB,Bakirdan,TTh 10:30am-11:45am (JPSN 109); F 10:30am-11:20am (JPSN 109),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 222,02,DSCRT STRCTRS FOR CMPTNG W/LAB,Wibberly,TTh 1:30pm-2:45pm (HUM 245); F 1:30pm-2:20pm (HUM 245),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Szajda,TTh 12:00pm-1:15pm (JPSN 109); T 3:00pm-3:50pm (JPSN 109),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Bhakta,MW 12:00pm-1:15pm (BLIB 176); T 4:30pm-5:20pm (BLIB 176),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 315,01,ALGORITHMS W/ LAB,Bhakta,MW 10:30am-11:45am (BLIB 176); T 1:30pm-2:20pm (BLIB 176),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Charlesworth,MWF 9:00am-10:15am (JPSN 109),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,T 6:30pm-9:50am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 327,01,MACHINE LEARNING,Ware,TTh 10:30am-11:45am (JPSN G02); F 10:30am-11:20am (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2022-23,S,CMSC 395,01,ST: MUSIC INFORMATICS,Jiang,MW 1:30pm-2:45pm (JPSN G03); Th 3:00pm-3:50pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 101,01,MINDS AND MACHINES,Charlesworth,MW 1:30pm-2:45pm (JPSN G06); F 1:30pm-2:20pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Charlesworth,MW 9:00am-10:15am (JPSN G06); Th 1:30pm-3:30pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Ware,TTh 12:00pm-1:15pm (JPSN G02); F 12:00pm-2:00pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Finegan-Dollak,TTh 3:00pm-4:15pm (JPSN G02); F 3:00pm-5:00pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Martin,TTh 9:00am-10:15am (JPSN G02); F 9:00am-11:00am (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 221,01,DATA STRUCTURES W/LAB,Park,MW 9:00am-10:15am (JPSN G14); F 9:00am-11:00am (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 221,02,DATA STRUCTURES W/LAB,Obiorah,MW 1:30pm-2:45pm (JPSN G02); F 3:00pm-5:00pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 222,01,DISCRETE STRUCTURES W/LAB,Ware,MW 10:30am-11:45am (JPSN G14); Th 3:00pm-3:50pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Balash,TTh 1:30pm-2:45pm (JPSN G04); F 1:30pm-2:20pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 240,02,SOFTWARE SYSTEMS DVLPMNT W/LAB,Balash,TTh 10:30am-11:45am (JPSN G04); F 12:00pm-12:50pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Bhakta,TTh 12:00pm-1:15pm (JPSN G03); T 3:00pm-3:50pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 301,02,COMPUTER ORGANIZATION W/LAB,Finegan-Dollak,TTh 12:00pm-1:15pm (JPSN G04); W 1:30pm-2:20pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 315,01,ALGORITHMS W/ LAB,Park,MW 12:00pm-1:15pm (JPSN G14); F 1:30pm-2:20pm (JPSN G14),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 322,01,SOFTWARE ENGNRNG PRACT W/LAB,Martin,TTh 1:30pm-2:45pm (JPSN G02); F 3:00pm-3:50pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Obiorah,MW 10:30am-11:45am (JPSN G06); F 10:30am-11:20am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,T 6:30pm-9:50am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 340,05,DS:STDYING ADHD W/SMRTPHN & EC,Ware,,https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,F,CMSC 395,01,ST: APPLIED ALGORITHMS,Bhakta,TTh 4:30pm-5:45pm (JPSN G03); Th 6:00pm-8:00am (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 101,01,MINDS AND MACHINES,Charlesworth,MW 1:30pm-2:45pm (JPSN G06); F 1:30pm-2:20pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 105,01,ELEMENTARY PROGRAMMING W/LAB,Ware,TTh 12:00pm-1:15pm (JPSN G02); F 12:00pm-12:50pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Charlesworth,MW 9:00am-10:15am (JPSN G06); Th 1:30pm-3:30pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Martin,MW 10:30am-11:45am (JPSN G02); F 12:00pm-2:00pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Finegan-Dollak,F 9:00am-11:00am (JPSN G02); MW 1:30pm-2:45pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 221,01,DATA STRUCTURES W/LAB,Park,F 10:00am-12:00pm (JPSN G08); MW 10:30am-11:45am (JPSN 103B),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 221,02,DATA STRUCTURES W/LAB,Obiorah,MW 1:30pm-2:45pm (JPSN G08); F 1:30pm-3:30pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 222,01,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 9:00am-10:15am (JPSN G02); F 11:00am-11:50am (JPSN 103B),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 222,02,DISCRETE STRUCTURES W/LAB,Bednar,TTh 3:00pm-4:15pm (JPSN G02); W 3:00pm-3:50pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Balash,TTh 10:30am-11:45am (JPSN G04); F 10:30am-11:20am (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Finegan-Dollak,MW 10:30am-11:45am (JPSN G04); F 12:00pm-12:50pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 315,01,ALGORITHMS W/ LAB,Bhakta,TTh 12:00pm-1:15pm (JPSN G03); W 1:30pm-2:45pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 315,02,ALGORITHMS W/ LAB,Bhakta,W 12:00pm-12:50pm (HUM 245); TTh 3:00pm-4:15pm (HUM 245),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Obiorah,MW 10:30am-11:45am (JPSN G06); F 12:00pm-12:50pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,T 6:30pm-9:50am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 328,01,NUMERICAL ANALYSIS,Caudill,TTh 1:30pm-2:45pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 334,01,COMPUTER SECURITY W/ LAB,Balash,F 1:30pm-2:20pm (JPSN G04); TTh 3:00pm-4:15pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 340,01,DS: AUTONOMOUS ROBOTIC TEAMS,Martin,(JPSN G14),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 395,01,ST: ARTIFICIAL INTELLIGENCE,Park,MW 1:30pm-2:45pm (JPSN 103B); F 3:00pm-3:50pm (JPSN 103B),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 395,02,ST:INTRO AUTONOMOUS ROBOTICS,Martin,MW 3:00pm-4:40pm (JPSN G04); W 3:00pm-4:40pm (JPSN G06); W 3:00pm-4:40pm (JPSN 108),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2023-24,S,CMSC 395,03,ST: ANDROID PROGRAMMING,Ware,TTh 10:30am-11:45am (JPSN G02); F 10:30am-11:20am (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 101,01,MINDS AND MACHINES,Charlesworth,MW 9:30am-10:15am (JPSN G08); F 1:30pm-2:20pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 101,02,MINDS AND MACHINES,Charlesworth,MW 1:30pm-2:45pm (JPSN G06); Th 1:30pm-2:20pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 105,01,ELEMENTARY PROGRAMMING W/LAB,Balash,F 1:00pm-1:50pm (JPSN G03); TTh 3:00pm-4:15pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Charity,MW 9:00am-10:15am (JPSN G06); F 1:30pm-3:30pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Martin,F 10:00am-12:00pm (JPSN G02); MW 10:30am-11:45am (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Charity,F 11:00am-1:00pm (JPSN G04); MW 1:30pm-2:45pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 221,01,DATA STRUCTURES W/LAB,Park,F 10:00am-12:00pm (JPSN G06); MW 10:30am-11:45am (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 221,02,DATA STRUCTURES W/LAB,Jiang,MW 1:30pm-2:45pm (JPSN G02); Th 1:30pm-3:30pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 222,01,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 9:00am-10:15am (REF 132); F 1:00pm-1:50pm (JPSN 120),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 222,02,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 10:30am-11:45am (REF 132); F 2:00pm-2:50pm (JPSN 120),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Balash,F 9:00am-9:50am (JPSN G04); TTh 10:30am-11:45am (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 240,02,SOFTWARE SYSTEMS DVLPMNT W/LAB,Szajda,TTh 12:00pm-1:15pm (JPSN 103A); F 12:00pm-12:50pm (JPSN 103A),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Finegan-Dollak,MW 10:30am-11:45am (JPSN G03); F 11:00am-11:50am (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 301,02,COMPUTER ORGANIZATION W/LAB,Finegan-Dollak,F 1:00pm-1:50pm (JPSN G02); MW 1:30pm-2:45pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 315,01,ALGORITHMS W/ LAB,Bhakta,TTh 1:30pm-2:45pm (GOTW C114); W 1:30pm-2:20pm (GOTW C114),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 315,02,ALGORITHMS W/ LAB,Bhakta,TTh 3:00pm-4:15pm (GOTW C114); W 3:00pm-3:50pm (GOTW C114),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 322,01,SOFTWARE ENGNRNG PRACT W/LAB,Martin,TTh 3:00pm-4:40pm (JPSN 103B),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Obiorah,MW 10:30am-11:45am (JPSN G08); F 10:30am-11:20am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,T 6:30pm-9:50am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 336,01,MUSIC INFORMATICS,Jiang,MW 4:30pm-5:45pm (JPSN G03); Th 4:30pm-5:20pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 395,01,ST: HUMAN-COMPUTER INTERACTION,Obiorah,F 12:00pm-12:50pm (JPSN G08); MW 3:00pm-4:15pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,F,CMSC 395,02,ST: ARTIFICIAL INTELLIGENCE,Park,MW 1:30pm-2:45pm (JPSN 101); F 1:30pm-2:20pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 101,01,AI AND THE HUMAN MIND,Charlesworth,MW 10:30am-11:45am (JPSN G06); F 12:00pm-12:50pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 105,01,ELEMENTARY PROGRAMMING W/LAB,Ware,TTh 10:30am-11:45am (JPSN G04); F 10:30am-11:20am (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Charity,TTh 9:00am-10:15am (JPSN 102); F 9:00am-11:00am (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Obiorah,TTh 10:30am-11:45am (JPSN G02); F 10:30am-12:30pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Martin,MW 9:00am-10:15am (JPSN G03); F 9:00am-11:00am (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Jiang,Th 3:00pm-5:00pm (JPSN G02); MW 4:30pm-5:45pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 221,01,DATA STRUCTURES W/LAB,Park,MW 10:30am-11:45am (JPSN G08); F 10:30am-12:30pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 221,02,DATA STRUCTURES W/LAB,Jiang,Th 12:00pm-2:00pm (JPSN G02); MW 1:30pm-2:45pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 222,01,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 9:00am-10:15am (JPSN 103B); F 9:00am-9:50am (JPSN 103B),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 222,02,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 1:30pm-2:45pm (HUM 245); F 1:30pm-2:20pm (HUM 245),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Charity,TTh 12:00pm-1:15pm (JPSN G06); F 12:00pm-2:00pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Balash,MW 1:30pm-2:45pm (JPSN G04); F 1:30pm-2:20pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 301,02,COMPUTER ORGANIZATION W/LAB,Balash,MW 3:00pm-4:15pm (JPSN G04); F 3:00pm-3:50pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 315,01,ALGORITHMS W/ LAB,Park,MW 3:00pm-4:15pm (JPSN G02); F 3:00pm-3:50pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 315,02,ALGORITHMS W/ LAB,Bhakta,Th 10:30am-11:20am (JPSN G03); MW 4:30pm-5:45pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Obiorah,TTh 1:30pm-2:45pm (JPSN G06); F 1:30pm-2:20pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,T 6:30pm-9:50am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 327,01,MACHINE LEARNING,Ware,TTh 3:00pm-4:15pm (JPSN G06); F 3:00pm-3:50pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 332,01,COMPUTER NETWORKS W/LAB,Szajda,TTh 12:00pm-1:15pm (JPSN 120); F 12:00pm-12:50pm (JPSN 120),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 395,01,ST: ADVANCED ALGORITHMS,Bhakta,W 12:00pm-12:50pm (JPSN G03); TTh 4:30pm-5:45pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2024-25,S,CMSC 395,02,ST: INTRO AUTONOMOUS ROBOTICS,Martin,TTh 3:00pm-4:40pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 105,01,ELEMENTARY PROGRAMMING W/LAB,Ware,TTh 10:30am-11:45am (JPSN G04); F 10:30am-11:20am (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Charity,TTh 9:00am-10:15am (JPSN 102); F 9:00am-11:00am (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Obiorah,TTh 10:30am-11:45am (JPSN G02); F 10:30am-12:30pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Martin,MW 9:00am-10:15am (JPSN G02); F 9:00am-11:00am (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Jiang,Th 3:00pm-5:00pm (JPSN G02); MW 4:30pm-5:45pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 221,01,DATA STRUCTURES W/LAB,Park,MW 10:30am-11:45am (JPSN G08); F 10:30am-12:30pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 221,02,DATA STRUCTURES W/LAB,Jiang,Th 12:00pm-2:00pm (JPSN G02); MW 1:30pm-2:45pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 222,01,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 9:00am-10:15am (JPSN 103B); F 9:00am-9:50am (JPSN 103B),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 222,02,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 1:30pm-2:45pm (HUM 245); F 1:30pm-2:20pm (HUM 245),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Charity,TTh 12:00pm-1:15pm (JPSN G06); F 12:00pm-12:50pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Finegan-Dollak,MW 1:30pm-2:45pm (JPSN G04); F 1:30pm-2:20pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 301,02,COMPUTER ORGANIZATION W/LAB,Finegan-Dollak,MW 3:00pm-4:15pm (JPSN G04); F 3:00pm-3:50pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 315,01,ALGORITHMS W/ LAB,Park,MW 3:00pm-4:15pm (JPSN G02); F 3:00pm-3:50pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 315,02,ALGORITHMS W/ LAB,Bhakta,Th 10:30am-11:20am (JPSN G03); MW 4:30pm-5:45pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Obiorah,TTh 1:30pm-2:45pm (JPSN G06); F 1:30pm-2:20pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,T 6:30pm-9:50am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 327,01,MACHINE LEARNING,Ware,TTh 3:00pm-4:15pm (JPSN G06); F 3:00pm-3:50pm (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 332,01,COMPUTER NETWORKS W/LAB,Szajda,TTh 12:00pm-1:15pm (JPSN 120); F 12:00pm-12:50pm (JPSN 120),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 395,01,ST: ADVANCED ALGORITHMS,Bhakta,W 12:00pm-12:50pm (JPSN G03); TTh 4:30pm-5:45pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,F,CMSC 395,02,ST: INTRO AUTONOMOUS ROBOTICS,Martin,TTh 3:00pm-4:40pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 101,01,AI AND THE HUMAN MIND,Charlesworth,F 10:30am-11:20am (JPSN G06); MW 10:30am-11:45am (JPSN G06),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 150,01,INTRODUCTN TO COMPUTING W/LAB,Ware,TTh 10:30am-11:45am (JPSN G04); F 10:30am-12:30pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 150,02,INTRODUCTN TO COMPUTING W/LAB,Charity,TTh 9:00am-10:15am (JPSN G02); F 9:00am-11:00am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 150,03,INTRODUCTN TO COMPUTING W/LAB,Jiang,Th 12:00pm-2:00pm (JPSN G04); MW 3:00pm-4:15pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 150,04,INTRODUCTN TO COMPUTING W/LAB,Jiang,Th 3:00pm-5:00pm (JPSN G02); MW 4:30pm-5:45pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 221,01,DATA STRUCTURES W/LAB,Park,F 10:30am-12:30pm (JPSN G02); MW 10:30am-11:45am (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 221,02,DATA STRUCTURES W/LAB,Obiorah,TTh 10:30am-11:45am (JPSN G02); F 3:00pm-5:00pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 222,01,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 9:00am-10:15am (JPSN 102); F 9:00am-9:50am (JPSN 102),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 222,02,DISCRETE STRUCTURES W/LAB,Bakirdan,TTh 1:30pm-2:45pm (INTC 229); F 1:30pm-2:20pm (INTC 229),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 240,01,SOFTWARE SYSTEMS DVLPMNT W/LAB,Charity,TTh 12:00pm-1:15pm (JPSN G02); F 12:00pm-12:50pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 301,01,COMPUTER ORGANIZATION W/LAB,Bhakta,MW 1:30pm-2:45pm (JPSN G02); Th 1:30pm-2:20pm (JPSN G02),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 315,01,ALGORITHMS W/ LAB,Bhakta,Th 4:30pm-5:20pm (JPSN G03); MW 4:30pm-5:45pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 323,01,DSGN/IMPLEMNTN PROG LANG W/LAB,Obiorah,TTh 1:30pm-2:45pm (JPSN G08); F 1:30pm-2:20pm (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 324,01,ARTIFICIAL INTELLIGENCE W/LAB,Park,MW 3:00pm-4:15pm (JPSN G04); F 4:30pm-5:20pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 325,01,DATABASE SYSTEMS W/ LAB,Prior,T 6:30pm-9:50am (JPSN G08),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 328,01,NUMERICAL ANALYSIS,Caudill,TTh 12:00pm-1:15pm (JPSN G03),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 334,01,COMPUTER SECURITY W/ LAB,Szajda,TTh 12:00pm-1:15pm (JPSN 103A); F 12:00pm-12:50pm (JPSN 103A),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
+University of Richmond,2025-26,S,CMSC 395,01,ST: ANDROID PROGRAMMING,Ware,TTh 3:00pm-4:15pm (JPSN G04); F 3:00pm-3:50pm (JPSN G04),https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq
