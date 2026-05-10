@@ -20,6 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from course_schedule.amherst import AmherstScraper
 from course_schedule.banner9 import banner9_scrapers
 from course_schedule.barnard import BarnardScraper
+from course_schedule.bowdoin import BowdoinScraper
 from course_schedule.bucknell import BucknellScraper
 from course_schedule.carleton import CarletonScraper
 from course_schedule.colby import ColbyScraper
@@ -40,6 +41,7 @@ OUTPUT_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "course_sc
 SCRAPERS = [
     AmherstScraper,
     BarnardScraper,
+    BowdoinScraper,
     BucknellScraper,
     CarletonScraper,
     ColbyScraper,
