@@ -1,0 +1,384 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Carleton College,2021-22,F,CS 100,00,Ethics of Technology,Amy Csizmar Dalal,MW 9:50am-11:00am (Olin 304); F 9:40am-10:40am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 111,01,Introduction to Computer Science,Staff,MW 11:10am-12:20pm (CMC 102); F 12:00pm-1:00pm (CMC 102),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 111,02,Introduction to Computer Science,Staff,MW 3:10pm-4:20pm (Anderson Hall 036); F 3:30pm-4:30pm (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 111,03,Introduction to Computer Science,David Liben-Nowell,MW 8:30am-9:40am (Anderson Hall 036); F 8:30am-9:30am (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 201,01,Data Structures,Anya Vostinar,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 201,02,Data Structures,Anya Vostinar,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 202,00,Mathematics of Computer Science,Layla Oesper,MW 9:50am-11:00am (Leighton 305); F 9:40am-10:40am (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 208,00,Introduction to Computer Systems,Staff,MW 12:30pm-1:40pm (Leighton 305); F 1:10pm-2:10pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 251,00,Programming Languages: Design and Implementation,Staff,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 252,00,Algorithms,David Liben-Nowell,MW 11:10am-12:20pm (Leighton 304); F 12:00pm-1:00pm (Leighton 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 257,00,Software Design,Jeff Ondich,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 321,00,Making Decisions with Artificial Intelligence,David Musicant,MW 1:50pm-3:00pm (Anderson Hall 036); F 2:20pm-3:20pm (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 362,00,Computational Biology,Layla Oesper,MW 12:30pm-1:40pm (Anderson Hall 121); F 1:10pm-2:10pm (Anderson Hall 121),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 399,01,Senior Seminar,Jeff Ondich,TH 8:30am-9:30am (Location To Be Announced TBA),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 399,02,Senior Seminar,Jeff Ondich,TH 9:30am-10:30am (Location To Be Announced TBA),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 399,03,Senior Seminar,Jeff Ondich,TH 3:00pm-4:00pm (Location To Be Announced TBA),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 399,04,Senior Seminar,David Musicant,TTH 9:00am-10:00am (Location To Be Announced TBA),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 399,05,Senior Seminar,David Musicant,TTH 10:00am-11:00am (Location To Be Announced TBA),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,CS 399,06,Senior Seminar,David Musicant,TTH 11:00am-12:00pm (Location To Be Announced TBA),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,F,PHYS 343,59,Electronics and Lab,Melissa Eblen-Zayas,MW 11:10am-12:20pm (Anderson Hall 027); TH 8:00am-12:00pm (Anderson Hall 027); F 12:00pm-1:00pm (Anderson Hall 027),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 111,01,Introduction to Computer Science,Anya Vostinar,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 111,02,Introduction to Computer Science,David Liben-Nowell,MW 9:50am-11:00am (Leighton 305); F 9:40am-10:40am (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 111,03,Introduction to Computer Science,David Liben-Nowell,MW 11:10am-12:20pm (Leighton 305); F 12:00pm-1:00pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 201,01,Data Structures,Layla Oesper,MW 9:50am-11:00am (CMC 306); F 9:40am-10:40am (CMC 306),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 201,02,Data Structures,Staff,MW 3:10pm-4:20pm (Anderson Hall 036); F 3:30pm-4:30pm (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 202,00,Mathematics of Computer Science,Eric Alexander,MW 12:30pm-1:40pm (Anderson Hall 121); F 1:10pm-2:10pm (Anderson Hall 121),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 208,00,Introduction to Computer Systems,Jeff Ondich,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 232,00,"Art, Interactivity, and Robotics","David Musicant, Stephen Mohring",TTH 1:15pm-3:45pm (Boliou 160); TTH 1:15pm-3:45pm (Boliou 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 251,00,Programming Languages: Design and Implementation,Staff,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 252,00,Algorithms,Layla Oesper,MW 12:30pm-1:40pm (Anderson Hall 329); F 1:10pm-2:10pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 254,00,Computability and Complexity,Staff,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 257,00,Software Design,Amy Csizmar Dalal,MW 1:50pm-3:00pm (Weitz Center 235); F 2:20pm-3:20pm (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 294,00,CS Tea Colloquium,David Liben-Nowell,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 332,00,Operating Systems,Staff,MW 12:30pm-1:40pm (CMC 301); F 1:10pm-2:10pm (CMC 301),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 358,00,Quantum Computing,Josh Davis,MW 9:50am-11:00am (CMC 304); F 9:40am-10:40am (CMC 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 399,01,Senior Seminar,Anya Vostinar,TTH 11:30am-12:30pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 399,02,Senior Seminar,Anya Vostinar,TTH 12:31pm-1:30pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 399,03,Senior Seminar,Anya Vostinar,TTH 1:31pm-2:31pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 399,04,Senior Seminar,Staff,T 11:00am-12:00pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 399,05,Senior Seminar,Amy Csizmar Dalal,TH 9:00am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 400,01,Integrative Exercise,Jeff Ondich,TH 8:30am-9:30am (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 400,02,Integrative Exercise,Jeff Ondich,TH 9:30am-10:30am (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 400,03,Integrative Exercise,Jeff Ondich,TH 3:00pm-4:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 400,04,Integrative Exercise,David Musicant,TTH 9:00am-10:00am (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 400,05,Integrative Exercise,David Musicant,TTH 10:00am-11:00am (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,W,CS 400,06,Integrative Exercise,David Musicant,TTH 11:00am-12:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 111,01,Introduction to Computer Science,Staff,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 111,02,Introduction to Computer Science,David Musicant,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 111,03,Introduction to Computer Science,Anna Rafferty,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 201,01,Data Structures,Eric Alexander,MW 12:30pm-1:40pm (Anderson Hall 329); F 1:10pm-2:10pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 201,02,Data Structures,Anna Rafferty,MW 9:50am-11:00am (Leighton 305); F 9:40am-10:40am (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 202,00,Mathematics of Computer Science,Layla Oesper,MW 12:30pm-1:40pm (Anderson Hall 121); F 1:10pm-2:10pm (Anderson Hall 121),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 208,00,Introduction to Computer Systems,Staff,MW 1:50pm-3:00pm (Leighton 402); F 2:20pm-3:20pm (Leighton 402),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 251,00,Programming Languages: Design and Implementation,David Musicant,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 252,00,Algorithms,David Liben-Nowell,MW 8:30am-9:40am (CMC 301); F 8:30am-9:30am (CMC 301),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 254,00,Computability and Complexity,Staff,MW 11:10am-12:20pm (Anderson Hall 329); F 12:00pm-1:00pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 257,00,Software Design,Anya Vostinar,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 294,00,CS Tea Colloquium,David Liben-Nowell,TH 4:00pm-5:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 338,00,Computer Security,Jeff Ondich,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 344,00,Human-Computer Interaction,Eric Alexander,MW 9:50am-11:00am (Weitz Center 235); F 9:40am-10:40am (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 352,00,Advanced Algorithms,David Liben-Nowell,MW 11:10am-12:20pm (Leighton 304); F 12:00pm-1:00pm (Leighton 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 400,01,Integrative Exercise,Anya Vostinar,T 2:30pm-3:30pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 400,02,Integrative Exercise,Anya Vostinar,T 12:30pm-1:30pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 400,03,Integrative Exercise,Anya Vostinar,T 1:30pm-2:30pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 400,04,Integrative Exercise,Staff,T 11:00am-12:00pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,S,CS 400,05,Integrative Exercise,Amy Csizmar Dalal,TH 9:00am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,Su,CS 099,00,Summer Computer Science,David Musicant,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,Su,CS 301,07,History of Computing in England Program: History of Computing,David Liben-Nowell,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2021-22,Su,CS 341,07,History of Computing in England Program: Cryptography,David Liben-Nowell,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 100,00,"The Internet: Protocols, Platforms, and People",Sneha Narayan,MW 12:30pm-1:40pm (Olin 304); F 1:10pm-2:10pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 111,01,Introduction to Computer Science,David Musicant,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 111,02,Introduction to Computer Science,David Musicant,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 111,03,Introduction to Computer Science,Anya Vostinar,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 201,01,Data Structures,Richard Wells,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 201,02,Data Structures,Richard Wells,MW 11:10am-12:20pm (Leighton 305); F 12:00pm-1:00pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 202,00,Mathematics of Computer Science,Eric Alexander,MW 1:50pm-3:00pm (Anderson Hall 036); F 2:20pm-3:20pm (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 251,00,Programming Languages: Design and Implementation,Anna Rafferty,MW 8:30am-9:40am (Anderson Hall 036); F 8:30am-9:30am (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 252,00,Algorithms,Jeff Ondich,MW 11:10am-12:20pm (Leighton 304); F 12:00pm-1:00pm (Leighton 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 254,00,Computability and Complexity,Josh Davis,MW 9:50am-11:00am (Leighton 305); F 9:40am-10:40am (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 257,00,Software Design,Jeff Ondich,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 294,00,CS Tea Colloquium,Anna Rafferty,TH 3:30pm-4:30pm (Location To Be Announced TBA),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 311,00,Computer Graphics,Josh Davis,MW 1:50pm-3:00pm (CMC 301); F 2:20pm-3:20pm (CMC 301),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 361,00,Artificial Life and Digital Evolution,Anya Vostinar,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,01,Senior Seminar,Amy Csizmar Dalal,TTH 8:15am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,02,Senior Seminar,Amy Csizmar Dalal,TTH 8:15am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,03,Senior Seminar,Amy Csizmar Dalal,TTH 8:15am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,04,Senior Seminar,Sneha Narayan,TTH 1:15pm-3:00pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,05,Senior Seminar,Sneha Narayan,TTH 1:15pm-3:00pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,06,Senior Seminar,Sneha Narayan,TTH 1:15pm-3:00pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,08,Senior Seminar,Eric Alexander,TTH 8:15am-10:00am (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,09,Senior Seminar,Eric Alexander,TTH 8:15am-10:00am (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,10,Senior Seminar,Eric Alexander,TTH 8:15am-10:00am (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 399,11,Senior Seminar,Anna Rafferty,MW 12:30pm-1:40pm (Olin 308); F 1:10pm-2:10pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 400,00,Integrative Exercise,Anna Rafferty,MW 12:30pm-1:40pm (Olin 308); F 1:10pm-2:10pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,F,CS 400,02,Integrative Exercise,Jeff Ondich,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 111,01,Introduction to Computer Science,Richard Wells,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 111,02,Introduction to Computer Science,Richard Wells,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 201,01,Data Structures,Kiran Tomlinson,MW 12:30pm-1:40pm (Anderson Hall 121); F 1:10pm-2:10pm (Anderson Hall 121),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 201,02,Data Structures,Kiran Tomlinson,MW 3:10pm-4:20pm (Anderson Hall 121); F 3:30pm-4:30pm (Anderson Hall 121),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 202,00,Mathematics of Computer Science,Eric Alexander,MW 11:10am-12:20pm (Anderson Hall 329); F 12:00pm-1:00pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 208,00,Introduction to Computer Systems,Jeff Ondich,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 251,00,Programming Languages: Design and Implementation,David Musicant,MW 11:10am-12:20pm (Leighton 305); F 12:00pm-1:00pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 252,00,Algorithms,Sneha Narayan,MW 1:50pm-3:00pm (Anderson Hall 121); F 2:20pm-3:20pm (Anderson Hall 121),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 254,00,Computability and Complexity,Anna Rafferty,MW 9:50am-11:00am (CMC 210); F 9:40am-10:40am (CMC 210),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 257,00,Software Design,Amy Csizmar Dalal,MW 12:30pm-1:40pm (Weitz Center 235); F 1:10pm-2:10pm (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 294,00,CS Tea Colloquium,Anna Rafferty,TH 3:30pm-4:30pm (Location To Be Announced TBA),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 321,00,Making Decisions with Artificial Intelligence,David Musicant,MW 12:30pm-1:40pm (Leighton 305); F 1:10pm-2:10pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 348,00,Parallel and Distributed Computing,Staff,MW 1:50pm-3:00pm (CMC 210); F 2:20pm-3:20pm (CMC 210),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 399,01,Senior Seminar,Jeff Ondich,MW 11:10am-12:20pm (Olin 304); F 12:00pm-1:00pm (Olin 04),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,01,Integrative Exercise,Amy Csizmar Dalal,T 9:00am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,02,Integrative Exercise,Amy Csizmar Dalal,TH 9:00am-10:00am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,03,Integrative Exercise,Amy Csizmar Dalal,T 3:15pm-4:15pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,04,Integrative Exercise,Sneha Narayan,TTH 1:15pm-3:00pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,05,Integrative Exercise,Sneha Narayan,TTH 1:15pm-3:00pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,06,Integrative Exercise,Sneha Narayan,TTH 1:15pm-3:00pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,08,Integrative Exercise,Eric Alexander,TTH 1:15pm-2:15pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,09,Integrative Exercise,Eric Alexander,TTH 2:25pm-3:25pm (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,10,Integrative Exercise,Eric Alexander,TTH 9:00am-10:00am (Olin 308),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,W,CS 400,11,Integrative Exercise,Jeff Ondich,MW 11:10am-12:20pm (Olin 304); F 12:00pm-1:00pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 111,01,Introduction to Computer Science,Richard Wells,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 111,02,Introduction to Computer Science,Sneha Narayan,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 111,03,Introduction to Computer Science,Amy Csizmar Dalal,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 201,01,Data Structures,Kiran Tomlinson,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 201,02,Data Structures,Richard Wells,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 202,00,Mathematics of Computer Science,Kiran Tomlinson,MW 11:10am-12:20pm (CMC 301); F 12:00pm-1:00pm (CMC 301),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 208,00,Introduction to Computer Systems,Jeff Ondich,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 252,00,Algorithms,Eric Alexander,MW 11:10am-12:20pm (Anderson Hall 036); F 12:00pm-1:00pm (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 254,00,Computability and Complexity,Anna Rafferty,MW 9:50am-11:00am (CMC 301); F 9:40am-10:40am (CMC 301),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 257,00,Software Design,Amy Csizmar Dalal,MW 9:50am-11:00am (Weitz Center 235); F 9:40am-10:40am (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 294,00,CS Tea Colloquium,Anna Rafferty,TH 3:30pm-4:30pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 304,00,Social Computing,Sneha Narayan,MW 12:30pm-1:40pm (CMC 306); F 1:10pm-2:10pm (CMC 306),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 314,00,Data Visualization,Eric Alexander,MW 1:50pm-3:00pm (Weitz Center 235); F 2:20pm-3:20pm (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 321,00,Making Decisions with Artificial Intelligence,David Musicant,MW 11:10am-12:20pm (Leighton 305); F 12:00pm-1:00pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,S,CS 400,00,Integrative Exercise,Sneha Narayan,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2022-23,Su,CS 099,00,Summer Computer Science,David Musicant,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 100,00,Ethics of Technology,Amy Csizmar Dalal,MW 11:10am-12:20pm (Olin 304); F 12:00pm-1:00pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 111,01,Introduction to Computer Science,Sneha Narayan,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 111,02,Introduction to Computer Science,Staff,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 111,03,Introduction to Computer Science,Staff,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 201,01,Data Structures,Staff,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 201,02,Data Structures,Eric Alexander,MW 9:50am-11:00am (Anderson Hall 329); F 9:40am-10:40am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 202,00,Mathematics of Computer Science,Sneha Narayan,MW 11:10am-12:20pm (Anderson Hall 329); F 12:00pm-1:00pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 208,00,Introduction to Computer Systems,Tanya Amert,MW 12:30pm-1:40pm (Language & Dining Center 104); F 1:10pm-2:10pm (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 208,02,Introduction to Computer Systems,Jeff Ondich,MW 11:10am-12:20pm (Leighton 402); F 12:00pm-1:00pm (Leighton 402),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 232,00,"Art, Interactivity, and Microcontrollers","David Musicant, Stephen Mohring",TTH 9:00am-11:30am (Boliou 160),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 251,00,Programming Languages: Design and Implementation,David Musicant,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 252,00,Algorithms,Layla Oesper,MW 12:30pm-1:40pm (Olin 149); F 1:10pm-2:10pm (Olin 149),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 257,00,Software Design,Anya Vostinar,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 294,00,CS Tea Colloquium,Layla Oesper,TH 3:30pm-4:45pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 320,00,Machine Learning,Anna Rafferty,MW 9:50am-11:00am (Language & Dining Center 104); F 9:40am-10:40am (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 338,00,Computer Security,Jeff Ondich,MW 8:30am-9:40am (Anderson Hall 036); F 8:30am-9:30am (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 347,00,Advanced Software Design,Staff,MW 9:50am-11:00am (Leighton 305); F 9:40am-10:40am (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 399,01,Senior Seminar,Eric Alexander,TTH 9:15am-10:00am (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 399,02,Senior Seminar,Eric Alexander,TTH 1:15pm-2:15pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 399,03,Senior Seminar,Eric Alexander,TTH 2:25pm-3:25pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 399,04,Senior Seminar,Amy Csizmar Dalal,T 9:00am-10:00am (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 399,05,Senior Seminar,Amy Csizmar Dalal,T 2:15pm-3:15pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 399,08,Senior Seminar,Layla Oesper,MW 1:50pm-3:00pm (Olin 304); F 2:20pm-3:20pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,CS 400,00,Integrative Exercise,Layla Oesper,MW 1:50pm-3:00pm (Olin 304); F 2:20pm-3:20pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,F,PHYS 343,59,Electronics and Lab,Melissa Eblen-Zayas,MW 11:10am-12:20pm (Anderson Hall 027); TH 8:00am-12:00pm (Anderson Hall 027); F 12:00pm-1:00pm (Anderson Hall 027),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 111,01,Introduction to Computer Science,Tanya Amert,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 111,02,Introduction to Computer Science,Staff,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 111,03,Introduction to Computer Science,Anya Vostinar,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 200,00,Data Structures with Problem Solving,David Musicant,MW 12:30pm-1:40pm (Olin 310); TTH 1:15pm-2:20pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 201,01,Data Structures,Anya Vostinar,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 202,00,Mathematics of Computer Science,Sneha Narayan,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 208,00,Introduction to Computer Systems,Jeff Ondich,MW 8:30am-9:40am (Anderson Hall 329); F 8:30am-9:30am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 251,00,Programming Languages: Design and Implementation,David Musicant,MW 11:10am-12:20pm (Anderson Hall 329); F 12:00pm-1:00pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 252,00,Algorithms,Eric Alexander,MW 12:30pm-1:40pm (Anderson Hall 329); F 1:10pm-2:10pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 254,00,Computability and Complexity,Anna Rafferty,MW 9:50am-11:00am (Leighton 305); F 9:40am-10:40am (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 257,00,Software Design,Amy Csizmar Dalal,MW 1:50pm-3:00pm (Weitz Center 235); F 2:20pm-3:20pm (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 257,02,Software Design,Staff,MW 8:30am-9:40am (Anderson Hall 036); F 8:30am-9:30am (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 294,00,CS Tea Colloquium,Layla Oesper,TH 3:30pm-4:30pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 320,00,Machine Learning,Staff,MW 9:50am-11:00am (Language & Dining Center 104); F 9:40am-10:40am (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 331,00,Computer Networks,Staff,MW 12:30pm-1:40pm (Weitz Center 235); F 1:10pm-2:10pm (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 332,00,Operating Systems,Tanya Amert,MW 12:30pm-1:40pm (Anderson Hall 323); F 1:10pm-2:10pm (Anderson Hall 323),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 362,00,Computational Biology,Layla Oesper,MW 11:10am-12:20pm (Anderson Hall 223); F 12:00pm-1:00pm (Anderson Hall 223),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 362,M,Computational Biology,,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 399,01,Senior Seminar,Jeff Ondich,MW 11:10am-12:20pm (Olin 304); F 12:00pm-1:00pm (Olin 04),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 399,02,Senior Seminar,Anna Rafferty,MW 12:30pm-1:40pm (Olin 304); F 1:10pm-2:10pm (Olin 04),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 400,01,Integrative Exercise,Eric Alexander,TH 9:15am-10:15am (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 400,02,Integrative Exercise,Eric Alexander,TH 1:15pm-2:15pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 400,03,Integrative Exercise,Eric Alexander,TH 2:25pm-3:25pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 400,04,Integrative Exercise,Amy Csizmar Dalal,T 9:00am-10:00am (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 400,05,Integrative Exercise,Amy Csizmar Dalal,T 1:15pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 400,08,Integrative Exercise,Jeff Ondich,MW 11:10am-12:20pm (Olin 304); F 12:00pm-1:00pm (Olin 04),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,W,CS 400,09,Integrative Exercise,Anna Rafferty,MW 12:30pm-1:40pm (Olin 304); F 1:10pm-2:10pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 111,01,Introduction to Computer Science,Staff,MW 3:10pm-4:20pm (Olin 102); F 3:30pm-4:30pm (Olin 102),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 111,02,Introduction to Computer Science,Tanya Amert,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 111,03,Introduction to Computer Science,Staff,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 201,01,Data Structures,Anya Vostinar,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 201,02,Data Structures,Sneha Narayan,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 202,00,Mathematics of Computer Science,Eric Alexander,MW 12:30pm-1:40pm (Anderson Hall 329); F 1:10pm-2:10pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 208,00,Introduction to Computer Systems,Anya Vostinar,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 251,00,Programming Languages: Design and Implementation,Anna Rafferty,MW 8:30am-9:40am (Anderson Hall 329); F 8:30am-9:30am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 252,00,Algorithms,Layla Oesper,MW 11:10am-12:20pm (CMC 210); F 12:00pm-1:00pm (CMC 210),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 252,02,Algorithms,Jeff Ondich,MW 9:50am-11:00am (Language & Dining Center 104); F 9:40am-10:40am (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 254,00,Computability and Complexity,Josh Davis,MW 1:50pm-3:00pm (Leighton 305); F 2:20pm-3:20pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 257,00,Software Design,Staff,MW 9:50am-11:00am (Anderson Hall 329); F 9:40am-10:40am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 294,00,CS Tea Colloquium,Layla Oesper,TH 3:30pm-4:30pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 304,00,Social Computing,Sneha Narayan,MW 11:10am-12:20pm (Weitz Center 235); F 12:00pm-1:00pm (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 314,00,Data Visualization,Eric Alexander,MW 9:50am-11:00am (Hulings 316); F 9:40am-10:40am (Hulings 316),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 334,00,Database Systems,David Musicant,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 344,00,Human-Computer Interaction,Amy Csizmar Dalal,TTH 1:15pm-3:00pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,S,CS 347,00,Advanced Software Design,Staff,MW 12:30pm-1:40pm (Weitz Center 235); F 1:10pm-2:10pm (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2023-24,Su,CS 099,00,Summer Computer Science,David Musicant,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 111,01,Introduction to Computer Science,Tom Finzell,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 111,03,Introduction to Computer Science,Anya Vostinar,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 111,04,Introduction to Computer Science,Bridger Herman,MW 3:10pm-4:20pm (Olin 310); F 3:30pm-4:30pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 201,01,Data Structures,Sneha Narayan,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 201,02,Data Structures,David Musicant,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 202,00,Mathematics of Computer Science,Sneha Narayan,MW 11:10am-12:20pm (Leighton 304); F 12:00pm-1:00pm (Leighton 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 208,00,Introduction to Computer Systems,Tanya Amert,MW 1:50pm-3:00pm (Leighton 305); F 2:20pm-3:20pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 208,02,Introduction to Computer Systems,Bridger Herman,MW 12:30pm-1:40pm (Anderson Hall 223); F 1:10pm-2:10pm (Anderson Hall 223),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 251,00,Programming Languages: Design and Implementation,Josh Davis,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 252,00,Algorithms,Layla Oesper,MW 12:30pm-1:40pm (Anderson Hall 329); F 1:10pm-2:10pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 254,00,Computability and Complexity,Chelsey Edge,MW 11:10am-12:20pm (Language & Dining Center 104); F 12:00pm-1:00pm (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 257,00,Software Design,Jean Salac,MW 9:50am-11:00am (Weitz Center 235); F 9:40am-10:40am (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 322,00,Natural Language Processing,Eric Alexander,MW 12:30pm-1:40pm (Language & Dining Center 104); F 1:10pm-2:10pm (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 338,00,Computer Security,Jeff Ondich,MW 8:30am-9:40am (Anderson Hall 329); F 8:30am-9:30am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 364,00,Computational Modeling and Simulation of Natural Systems,Tom Finzell,MW 11:10am-12:20pm (Olin 106); F 12:00pm-1:00pm (Olin 106),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 394,11,Directed Research in Computer Science,Anya Vostinar,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 394,12,Directed Research in Computer Science,Anna Rafferty,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 394,13,Directed Research in Computer Science,Layla Oesper,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 394,14,Directed Research in Computer Science,David Musicant,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 394,15,Directed Research in Computer Science,"Layla Oesper, Eric Alexander",,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,02,Senior Seminar,David Musicant,TTH 1:15pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,03,Senior Seminar,David Musicant,TTH 1:15pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,04,Senior Seminar,David Musicant,TTH 1:15pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,05,Senior Seminar,Eric Alexander,MW 9:50am-11:00am (Olin 302); F 9:40am-10:40am (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,06,Senior Seminar,Eric Alexander,MW 9:50am-11:00am (Olin 302); F 9:40am-10:40am (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,07,Senior Seminar,Eric Alexander,MW 9:50am-11:00am (Olin 302); F 9:40am-10:40am (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,08,Senior Seminar,Tanya Amert,MW 12:30pm-1:40pm (Olin 302); F 1:10pm-2:10pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,09,Senior Seminar,Tanya Amert,MW 12:30pm-1:40pm (Olin 302); F 1:10pm-2:10pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,CS 399,10,Senior Seminar,Tanya Amert,MW 12:30pm-1:40pm (Olin 302); F 1:10pm-2:10pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,ECON 285,00,Computational Economics,Anthony Priolo,MW 12:30pm-1:40pm (Willis 203); F 1:10pm-2:10pm (Willis 203),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,MATH 111,01,Introduction to Calculus,Rebecca Terry,MW 8:30am-9:40am (CMC 206); F 8:30am-9:30am (CMC 206),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,MATH 111,02,Introduction to Calculus,Joseph Johnson,MW 9:50am-11:00am (CMC 301); F 9:40am-10:40am (CMC 301),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,F,MATH 111,03,Introduction to Calculus,Corey Brooke,MW 11:10am-12:20pm (CMC 209); F 12:00pm-1:00pm (CMC 209),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 111,01,Introduction to Computer Science,Tom Finzell,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 111,02,Introduction to Computer Science,Tom Finzell,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 200,00,Data Structures with Problem Solving,Anna Rafferty,MW 12:30pm-1:40pm (Olin 310); TTH 1:15pm-2:20pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 201,00,Data Structures,Sneha Narayan,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 202,00,Mathematics of Computer Science,Eric Alexander,MW 9:50am-11:00am (Language & Dining Center 104); F 9:40am-10:40am (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 208,00,Introduction to Computer Systems,Bridger Herman,MW 9:50am-11:00am (Leighton 304); F 9:40am-10:40am (Leighton 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 251,00,Programming Languages: Design and Implementation,David Musicant,MW 1:50pm-3:00pm (Language & Dining Center 104); F 2:20pm-3:20pm (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 252,02,Algorithms,Sneha Narayan,MW 11:10am-12:20pm (Anderson Hall 329); F 12:00pm-1:00pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 254,00,Computability and Complexity,Chelsey Edge,MW 11:10am-12:20pm (Weitz Center 132); F 12:00pm-1:00pm (Weitz Center 132),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 257,00,Software Design,Jean Salac,MW 12:30pm-1:40pm (Anderson Hall 329); F 1:10pm-2:10pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 314,00,Data Visualization,Bridger Herman,MW 12:30pm-1:40pm (Leighton 304); F 1:10pm-2:10pm (Leighton 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 321,00,Making Decisions with Artificial Intelligence,Chelsey Edge,MW 8:30am-9:40am (Anderson Hall 329); F 8:30am-9:30am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 330,00,Introduction to Real-Time Systems,Tanya Amert,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 344,00,Human-Computer Interaction,Jean Salac,MW 9:50am-11:00am (Weitz Center 235); F 9:40am-10:40am (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 394,11,Directed Research in Computer Science,David Musicant,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 394,12,Directed Research in Computer Science,Layla Oesper,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 394,13,Directed Research in Computer Science,Layla Oesper,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 394,14,Directed Research in Computer Science,"Layla Oesper, Eric Alexander",,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 394,15,Directed Research in Computer Science,Anna Rafferty,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,01,Integrative Exercise,David Musicant,TTH 1:15pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,02,Integrative Exercise,David Musicant,TTH 1:15pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,03,Integrative Exercise,David Musicant,TTH 1:15pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,04,Integrative Exercise,Eric Alexander,MW 12:30pm-1:40pm (Olin 312); F 1:10pm-2:10pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,05,Integrative Exercise,Eric Alexander,MW 12:30pm-1:40pm (Olin 312); F 1:10pm-2:10pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,06,Integrative Exercise,Eric Alexander,MW 12:30pm-1:40pm (Olin 312); F 1:10pm-2:10pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,08,Integrative Exercise,Tanya Amert,MW 12:30pm-1:40pm (Olin 302); F 1:10pm-2:10pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,09,Integrative Exercise,Tanya Amert,MW 12:30pm-1:40pm (Olin 302); F 1:10pm-2:10pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,CS 400,10,Integrative Exercise,Tanya Amert,MW 12:30pm-1:40pm (Olin 302); F 1:10pm-2:10pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,DGAH 220,00,Creative Coding and Generative AI,Anastasia Salter,TTH 3:10pm-4:55pm (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,W,MATH 111,00,Introduction to Calculus,Rob Thompson,MW 11:10am-12:20pm (CMC 210); F 12:00pm-1:00pm (CMC 210),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 111,01,Introduction to Computer Science,Tom Finzell,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 111,02,Introduction to Computer Science,Bridger Herman,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 111,03,Introduction to Computer Science,Chelsey Edge,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 201,01,Data Structures,Tanya Amert,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 201,02,Data Structures,Jean Salac,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 202,00,Mathematics of Computer Science,Eric Alexander,MW 12:30pm-1:40pm (Anderson Hall 223); F 1:10pm-2:10pm (Anderson Hall 223),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 208,01,Introduction to Computer Systems,Tanya Amert,MW 1:50pm-3:00pm (Leighton 305); F 2:20pm-3:20pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 251,00,Programming Languages: Design and Implementation,David Musicant,MW 9:50am-11:00am (Hulings 316); F 9:40am-10:40am (Hulings 316),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 251,02,Programming Languages: Design and Implementation,Bridger Herman,MW 11:10am-12:20pm (Leighton 305); F 12:00pm-1:00pm (Leighton 305),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 252,00,Algorithms,Eric Alexander,MW 9:50am-11:00am (Language & Dining Center 104); F 9:40am-10:40am (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 254,00,Computability and Complexity,Layla Oesper,MW 12:30pm-1:40pm (CMC 301); F 1:10pm-2:10pm (CMC 301),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 257,01,Software Design,Jeff Ondich,MW 8:30am-9:40am (Anderson Hall 329); F 8:30am-9:30am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 257,02,Software Design,Anya Vostinar,MW 11:10am-12:20pm (Anderson Hall 329); F 12:00pm-1:00pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 294,11,Directed Research in Computer Science,Chelsey Edge,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 304,00,Social Computing,Sneha Narayan,MW 12:30pm-1:40pm (Anderson Hall 323); F 1:10pm-2:10pm (Anderson Hall 323),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 311,00,Computer Graphics,Josh Davis,MW 9:50am-11:00am (CMC 328); F 9:40am-10:40am (CMC 328),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 320,00,Machine Learning,Tom Finzell,MW 11:10am-12:20pm (Language & Dining Center 104); F 12:00pm-1:00pm (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 347,00,Advanced Software Design,Jeff Ondich,MW 11:10am-12:20pm (Olin 304); F 12:00pm-1:00pm (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 348,00,Parallel and Distributed Computing,David Musicant,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 361,00,Artificial Life and Digital Evolution,Anya Vostinar,MW 8:30am-9:40am (Olin 304); F 8:30am-9:30am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,11,Directed Research in Computer Science,Anya Vostinar,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,12,Directed Research in Computer Science,Jean Salac,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,13,Directed Research in Computer Science,Sneha Narayan,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,14,Directed Research in Computer Science,David Musicant,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,15,Directed Research in Computer Science,"Anna Rafferty, David Liben-Nowell",,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,16,Directed Research in Computer Science,Anna Rafferty,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,18,Directed Research in Computer Science,Tanya Amert,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,19,Directed Research in Computer Science,Tanya Amert,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,CS 394,20,Directed Research in Computer Science,Layla Oesper,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,MATH 111,00,Introduction to Calculus,Joseph Johnson,MW 9:50am-11:00am (CMC 209); F 9:40am-10:40am (CMC 209),https://www.carleton.edu/catalog/current/search/
+Carleton College,2024-25,S,MATH 271,00,Optimization,Rob Thompson,MW 1:50pm-3:00pm (CMC 206); F 2:20pm-3:20pm (CMC 206),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 111,01,Introduction to Computer Science,Anna Rafferty,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 111,02,Introduction to Computer Science,"Tanya Amert, Eric Alexander",MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 201,01,Data Structures,"Tanya Amert, Amy Csizmar Dalal",MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 201,02,Data Structures,Anya Vostinar,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 202,00,Mathematics of Computer Science,Eric Alexander,MW 12:30pm-1:40pm (Olin 102); F 1:10pm-2:10pm (Olin 102),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 208,01,Introduction to Computer Systems,Anya Vostinar,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 208,02,Introduction to Computer Systems,Jeff Ondich,MW 8:30am-9:40am (Anderson Hall 329); F 8:30am-9:30am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 251,01,Programming Languages: Design and Implementation,Anna Meyer,MW 1:50pm-3:00pm (Hulings 316); F 2:20pm-3:20pm (Hulings 316),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 252,01,Algorithms,Sneha Narayan,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 254,01,Computability and Complexity,Chelsey Edge,MW 9:50am-11:00am (CMC 306); F 9:40am-10:40am (CMC 306),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 257,01,Software Design,Jean Salac,MW 11:10am-12:20pm (Hulings 316); F 12:00pm-1:00pm (Hulings 316),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 294,11,Directed Research in Computer Science,Anya Vostinar,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 301,07,History of Computing in England Program: History of Computing,David Liben-Nowell,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 322,01,Natural Language Processing,Anna Rafferty,MW 9:50am-11:00am (Anderson Hall 329); F 9:40am-10:40am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 331*.01,,Computer Networks (*=Junior Seminar),Amy Csizmar Dalal,MW 12:30pm-1:40pm (Anderson Hall 323); F 1:10pm-2:10pm (Anderson Hall 323),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 338,01,Computer Security,Jeff Ondich,MW 11:10am-12:20pm (Olin 104); F 12:00pm-1:00pm (Olin 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 341,07,History of Computing in England Program: Cryptography,David Liben-Nowell,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 394,11,Directed Research in Computer Science,Anna Rafferty,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 394,12,Directed Research in Computer Science,Sneha Narayan,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 394,13,Directed Research in Computer Science,David Musicant,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 399,01,Senior Seminar,Amy Csizmar Dalal,TTH 9:00am-10:00am (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 399,02,Senior Seminar,Amy Csizmar Dalal,TTH 1:00pm-2:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 399,03,Senior Seminar,Amy Csizmar Dalal,TTH 2:00pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 399,04,Senior Seminar,Chelsey Edge,TTH 9:00am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 399,05,Senior Seminar,Chelsey Edge,TTH 9:00am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,CS 399,06,Senior Seminar,Chelsey Edge,TTH 1:15pm-2:20pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,MATH 111,01,Introduction to Calculus,Deewang Bhamidipati,MW 9:50am-11:00am (CMC 206); F 9:40am-10:40am (CMC 206),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,MATH 111,02,Introduction to Calculus,Deewang Bhamidipati,MW 12:30pm-1:40pm (CMC 206); F 1:10pm-2:10pm (CMC 206),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,MATH 111,03,Introduction to Calculus,Rob Thompson,MW 1:50pm-3:00pm (CMC 210); F 2:20pm-3:20pm (CMC 210),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,PHYS 343,01,Electronics and Lab,Barry Costanzi,MW 9:50am-11:00am (Anderson Hall 036); F 9:40am-10:40am (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,PHYS 343,52,Electronics and Lab,Barry Costanzi,T 1:00pm-5:00pm (Anderson Hall 027),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,F,PHYS 343,59,Electronics and Lab,Barry Costanzi,TH 8:00am-12:00pm (Anderson Hall 027),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 111,01,Introduction to Computer Science,Layla Oesper,MW 1:50pm-3:00pm (Olin 310); F 2:20pm-3:20pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 111,02,Introduction to Computer Science,Anya Vostinar,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 200,01,Data Structures with Problem Solving,Anna Rafferty,MW 12:30pm-1:40pm (Olin 310); TTH 1:15pm-2:20pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 201,01,Data Structures,Jean Salac,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 202,01,Mathematics of Computer Science,Sneha Narayan,MW 11:10am-12:20pm (Anderson Hall 323); F 12:00pm-1:00pm (Anderson Hall 323),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 208,01,Introduction to Computer Systems,Jeff Ondich,MW 9:50am-11:00am (Leighton 304); F 9:40am-10:40am (Leighton 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 251,01,Programming Languages: Design and Implementation,Anna Meyer,MW 12:30pm-1:40pm (CMC 301); F 1:10pm-2:10pm (CMC 301),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 252,01,Algorithms,Chelsey Edge,MW 8:30am-9:40am (Anderson Hall 036); F 8:30am-9:30am (Anderson Hall 036),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 254,01,Computability and Complexity,Josh Davis,MW 1:50pm-3:00pm (Hulings 316); F 2:20pm-3:20pm (Hulings 316),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 257,01,Software Design,Anya Vostinar,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 294,11,Directed Research in Computer Science,Layla Oesper,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 302*.01,,(De)constructing Everyday Technologies (*=Junior Seminar),Jean Salac,MW 11:10am-12:20pm (Hulings 120); F 12:00pm-1:00pm (Hulings 120),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 320,01,Machine Learning,Anna Meyer,MW 9:50am-11:00am (Weitz Center 233); F 9:40am-10:40am (Weitz Center 233),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 344,01,Human-Computer Interaction,Sneha Narayan,TTH 1:15pm-3:00pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 394,11,Directed Research in Computer Science,Sneha Narayan,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 394,13,Directed Research in Computer Science,Anya Vostinar,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 394,14,Directed Research in Computer Science,David Musicant,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 400,01,Integrative Exercise,Amy Csizmar Dalal,TTH 9:00am-10:00am (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 400,02,Integrative Exercise,Amy Csizmar Dalal,TTH 1:00pm-2:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 400,03,Integrative Exercise,Amy Csizmar Dalal,TTH 2:00pm-3:00pm (Olin 312),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 400,04,Integrative Exercise,Chelsey Edge,TTH 9:00am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 400,05,Integrative Exercise,Chelsey Edge,TTH 9:00am-10:00am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,CS 400,06,Integrative Exercise,Chelsey Edge,TTH 1:15pm-2:20pm (Olin 302),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,W,MATH 111,01,Introduction to Calculus,Deewang Bhamidipati,MW 9:50am-11:00am (CMC 206); F 9:40am-10:40am (CMC 206),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,ARTS 220*.02,,"Art, Interactivity, and Microcontrollers (*=Junior Seminar)","Stephen Mohring, David Musicant",TTH 9:00am-11:30am (Boliou 160),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 111,01,Introduction to Computer Science,Anna Meyer,MW 9:50am-11:00am (Olin 310); F 9:40am-10:40am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 111,02,Introduction to Computer Science,Jean Salac,MW 12:30pm-1:40pm (Olin 310); F 1:10pm-2:10pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 201,01,Data Structures,Sneha Narayan,MW 11:10am-12:20pm (Olin 310); F 12:00pm-1:00pm (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 201,02,Data Structures,Anya Vostinar,MW 8:30am-9:40am (Olin 310); F 8:30am-9:30am (Olin 310),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 202,01,Mathematics of Computer Science,Sneha Narayan,MW 1:50pm-3:00pm (Hulings 316); F 2:20pm-3:20pm (Hulings 316),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 208,01,Introduction to Computer Systems,Jeff Ondich,MW 8:30am-9:40am (Anderson Hall 329); F 8:30am-9:30am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 220*.02,,"Art, Interactivity, and Microcontrollers (*=Junior Seminar)","Stephen Mohring, David Musicant",TTH 9:00am-11:30am (Boliou 160),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 251,01,Programming Languages: Design and Implementation,Tanya Amert,MW 11:10am-12:20pm (Hulings 316); F 12:00pm-1:00pm (Hulings 316),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 252,01,Algorithms,Eric Alexander,MW 9:50am-11:00am (Anderson Hall 329); F 9:40am-10:40am (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 254,01,Computability and Complexity,Chelsey Edge,MW 12:30pm-1:40pm (Language & Dining Center 104); F 1:10pm-2:10pm (Language & Dining Center 104),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 254,02,Computability and Complexity,Anna Rafferty,MW 9:50am-11:00am (Hasenstab 002); F 9:40am-10:40am (Hasenstab 002),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 257,01,Software Design,Amy Csizmar Dalal,MW 12:30pm-1:40pm (Weitz Center 235); F 1:10pm-2:10pm (Weitz Center 235),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 294,11,Directed Research in Computer Science,Amy Csizmar Dalal,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 314*.01,,Data Visualization (*=Junior Seminar),Eric Alexander,MW 12:30pm-1:40pm (Anderson Hall 223); F 1:10pm-2:10pm (Anderson Hall 223),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 327*.01,,Introduction to Robotics (*=Junior Seminar),Chelsey Edge,MW 8:30am-9:40am (Olin 304); F 8:30am-9:30am (Olin 304),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 334,01,Database Systems,David Musicant,MW 1:50pm-3:00pm (Anderson Hall 329); F 2:20pm-3:20pm (Anderson Hall 329),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 362,01,Computational Biology,Layla Oesper,MW 11:10am-12:20pm (Anderson Hall 323); F 12:00pm-1:00pm (Anderson Hall 323),https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 394,11,Directed Research in Computer Science,Layla Oesper,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 394,12,Directed Research in Computer Science,Jean Salac,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 394,13,Directed Research in Computer Science,"Anna Rafferty, David Liben-Nowell",,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 394,14,Directed Research in Computer Science,Anna Rafferty,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 394,15,Directed Research in Computer Science,Chelsey Edge,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 394,16,Directed Research in Computer Science,Anya Vostinar,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 394,18,Directed Research in Computer Science,Sneha Narayan,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,CS 394,19,Directed Research in Computer Science,Anna Meyer,,https://www.carleton.edu/catalog/current/search/
+Carleton College,2025-26,S,MATH 271,01,Optimization,Joseph Johnson,MW 12:30pm-1:40pm (CMC 206); F 1:10pm-2:10pm (CMC 206),https://www.carleton.edu/catalog/current/search/
