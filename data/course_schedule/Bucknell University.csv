@@ -1,0 +1,577 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Bucknell University,2021-22,F,CSCI 187,01,Creative Computing and Society,"Fuchsberger, Alexander",TTh 10:20-11:40 (BRKI 164); W 17:10-18:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 1NT,01,CSCI Non-traditional Study,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 201,01,Computer Science Seminar,"Dancy, Chris L.",T 10:20-11:40 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203,01,Intro to Computer Science,"Fuchsberger, Alexander",MWF 08:30-09:20 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203,02,Intro to Computer Science,"Fuchsberger, Alexander",MWF 09:50-10:40 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203,03,Intro to Computer Science,"Baish, Susan R.",MWF 11:10-12:00 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203,04,Intro to Computer Science,"Baish, Susan R.",MWF 12:30-13:20 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203,05,Intro to Computer Science,"Ross, Anne S.",MWF 15:10-16:00 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203L,60,Lab for Intro to Comp Sci,"Dancy, Chris L.",T 08:30-10:10 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203L,61,Lab for Intro to Comp Sci,"Baish, Susan R.",T 10:30-12:10 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203L,62,Lab for Intro to Comp Sci,"Fuchsberger, Alexander",T 13:20-15:00 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203L,63,Lab for Intro to Comp Sci,"Baish, Susan R.",T 15:20-17:00 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 203L,64,Lab for Intro to Comp Sci,"Ross, Anne S.",T 08:30-10:10 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 204,01,Data Structures & Algorithms,"Gutekunst, Samuel",MWF 12:30-13:20 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 204,02,Data Structures & Algorithms,"Dancy, Chris L.",MWF 08:30-09:20 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 204,03,Data Structures & Algorithms,"Stough, Joshua V.",MWF 13:50-14:40 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 204L,60,Data Structures & Algorithms,"Stough, Joshua V.",Th 08:30-10:10 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 204L,61,Data Structures & Algorithms,"Gutekunst, Samuel",Th 10:20-12:10 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 204L,62,Data Structures & Algorithms,"Gutekunst, Samuel",Th 13:20-15:00 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 205,01,Software Engineering & Design,"King, Brian R.",MWF 08:30-09:20 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 205,02,Software Engineering & Design,"King, Brian R.",MWF 09:50-10:40 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 278,01,Computer Sci Individual Study,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 278,02,Computer Sci Individual Study,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 2NT,02,CSCI Non-traditional Study,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 311,01,Design&Analysis of Algorithms,"Talmage, Edward L.",MWF 11:10-12:00 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 311,02,Design&Analysis of Algorithms,"Talmage, Edward L.",MWF 09:50-10:40 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 311R,40,Recitation for CSCI 311,"King, Brian R.",Th 08:30-09:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 311R,41,Recitation for CSCI 311,"King, Brian R.",Th 09:50-10:40 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 315,01,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 09:50-10:40 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 315,02,Operating Systems Design,"Meng, Xiannong",MWF 11:10-12:00 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 315L,60,Lab-Operating Systems Design,"Stough, Joshua V.",T 13:20-15:00 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 315L,62,Lab-Operating Systems Design,"Stough, Joshua V.",T 10:30-12:10 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 320,01,Computer Architecture,"Marchiori, Alan M.",MWF 12:30-13:20 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 320L,60,Lab-Computer Architecture,"Marchiori, Alan M.",Th 13:20-15:00 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 331,01,Compiler Optimization,"Wittie, Lea",MWF 11:10-12:00 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 341,01,Theory of Computation,"Talmage, Edward L.",MWF 08:30-09:20 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 341R,40,Recitation-Theory Computation,"Talmage, Edward L.",Th 15:10-16:00 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 376,01,Computer Sci Honors Thesis,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 376,02,Computer Sci Honors Thesis,"Dancy, Chris L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 376,03,Computer Sci Honors Thesis,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 376,04,Computer Sci Honors Thesis,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,01,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,02,Individual Study in Comp Sci,"Dancy, Chris L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,03,Deep Echocardiography,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,04,Individual Study in Comp Sci,"Thompson, Stu S.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,05,Individual Study in Comp Sci,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,06,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,07,Individual Study in Comp Sci,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,08,Individual Study in Comp Sci,"Peck, Evan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,09,Individual Study in Comp Sci,"Ross, Anne S.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,10,Individual Study in Comp Sci,"Talmage, Edward L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,11,Individual Study in Comp Sci,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 378,12,Individual Study in Comp Sci,"Kelly, Alex",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 475,01,Senior Design I,"Marchiori, Alan M.",MW 15:10-16:00 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 475,02,Senior Design I,"Stough, Joshua V.",MW 15:10-16:00 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 479,01,Computer ScienceDesign Project,"Meng, Xiannong",MWF 15:10-16:00 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,F,CSCI 479,02,Computer ScienceDesign Project,"Meng, Xiannong",MWF 16:30-17:20 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 187,01,Creative Computing and Society,"Fuchsberger, Alexander",MW 15:00-16:20 (BRKI 164); T 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 202,01,Research Methods,"Perrone, Luiz Felipe F.",Th 10:00-11:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 203,01,Intro to Computer Science,"Baish, Susan R.",MWF 08:00-08:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 203,02,Intro to Computer Science,"Baish, Susan R.",MWF 10:00-10:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 203,03,Intro to Computer Science,"Baish, Susan R.",MWF 11:00-11:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 203L,61,Lab for CSCI 203,"Baish, Susan R.",T 10:00-11:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 203L,62,Lab for CSCI 203,"Baish, Susan R.",T 13:00-14:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 203L,63,Lab for CSCI 203,"Baish, Susan R.",T 15:00-16:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 204,01,Data Structures & Algorithms,"Fuchsberger, Alexander",MWF 14:00-14:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 204,02,Data Structures & Algorithms,"Ross, Anne S.",MWF 15:00-15:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 204,03,Data Structures & Algorithms,"Ross, Anne S.",MWF 13:00-13:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 204L,61,Data Structures & Algorithms,"Ross, Anne S.",Th 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 204L,62,Data Structures & Algorithms,"Ross, Anne S.",Th 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 204L,63,Data Structures & Algorithms,"Ross, Anne S.",Th 15:00-16:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 205,01,Software Engineering & Design,"King, Brian R.",MWF 10:00-10:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 205,02,Software Engineering & Design,"King, Brian R.",MWF 11:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 206,01,Computer Organization,"Meng, Xiannong",MWF 09:00-09:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 206,02,Computer Organization,"Marchiori, Alan M.",MWF 13:00-13:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 206L,60,Lab- for Computer Org/Program,"Fuchsberger, Alexander",T 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 206L,61,Lab for Computer Org/Program,"Stough, Joshua V.",T 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 206L,62,Lab for Computer Org/Program,"Meng, Xiannong",T 15:00-16:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 240,01,Computers and Society,"Mir, Darakhshan J.",T 10:00-11:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 240,02,Computers and Society,"Mir, Darakhshan J.",T 13:00-14:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 245,01,"Life,Computers, and Everything","Perrone, Luiz Felipe F.",MWF 09:00-09:50 (ACET 116); M 19:00-20:50 (ACWS 114),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 278,01,3D Printing for CS Education,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 278,02,Computer Sci Individual Study,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 308,01,Programming Language Design,"Wittie, Lea",MWF 09:00-09:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 308,02,Programming Language Design,"Wittie, Lea",MWF 14:00-14:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 308L,60,Lab-Programming Language Desgn,"Wittie, Lea",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 308L,61,Lab-Programming Language Desgn,"Wittie, Lea",Th 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 332,01,The Internet of Things,"Marchiori, Alan M.",TTh 08:30-09:50 (DANA 303),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 349,01,Introduction to Data Mining,"King, Brian R.",MWF 08:00-08:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 365,01,Image Processing & Analysis,"Stough, Joshua V.",MWF 11:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 376,01,Computer Sci Honors Thesis,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 376,02,Computer Sci Honors Thesis,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 376,03,Computer Sci Honors Thesis,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,01,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,02,Individual Study in Comp Sci,"Dancy, Chris L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,03,Individual Study in Comp Sci,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,04,Individual Study in Comp Sci,"Peck, Evan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,05,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,06,Ind Study: Image Processing,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,07,Individual Study in Comp Sci,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,08,Research in Theoretical CS,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,09,Individual Study in Comp Sci,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,10,Individual Study in Comp Sci,"Kelly, Alex",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 378,11,Data Science & Decision Making,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 379,01,Distributed Computing,"Talmage, Edward L.",MWF 13:00-13:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 476,01,Senior Design II,"Marchiori, Alan M.",MW 15:00-16:20 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 476,02,Senior Design II,"Stough, Joshua V.",MW 15:00-16:20 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2021-22,S,CSCI 479,BF,Computer ScienceDesign Project,"Zidouh, Amine",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 187,01,Creative Computing and Society,"Fuchsberger, Alexander",MW 15:00-16:20 (BRKI 164); T 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 1NT,01,CSCI Non-traditional Study,,,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 201,01,Computer Science Seminar,"Meng, Xiannong",T 10:00-11:20 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 203,02,Intro to Computer Science,"Ross, Anne S.",MWF 09:00-09:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 203,03,Intro to Computer Science,"Baish, Susan R.",MWF 13:00-13:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 203,04,Intro to Computer Science,"Ross, Anne S.",MWF 14:00-14:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 203,05,Intro to Computer Science,"Baish, Susan R.",MWF 15:00-15:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 203L,60,Lab for Intro to Comp Sci,"Ross, Anne S.",T 10:00-11:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 203L,61,Lab for Intro to Comp Sci,"Baish, Susan R.",T 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 203L,62,Lab for Intro to Comp Sci,"Ross, Anne S.",T 13:00-14:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 203L,63,Lab for Intro to Comp Sci,"Baish, Susan R.",T 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 204,01,Data Structures & Algorithms,"Fuchsberger, Alexander",MWF 13:00-13:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 204,02,Data Structures & Algorithms,"Havill, Jessen T.",MWF 14:00-14:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 204,03,Data Structures & Algorithms,"Kumar, Rajesh",MWF 15:00-15:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 204L,60,Data Structures & Algorithms,"Stough, Joshua V.",Th 08:00-09:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 204L,61,Data Structures & Algorithms,"Kumar, Rajesh",Th 10:00-11:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 204L,62,Data Structures & Algorithms,"Kumar, Rajesh",Th 13:00-14:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 205,01,Software Engineering & Design,"King, Brian R.",MWF 09:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 205,02,Software Engineering & Design,"King, Brian R.",MWF 11:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 278,01,Computer Sci Individual Study,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 278,02,Computer Sci Individual Study,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 2NT,02,CSCI Non-traditional Study,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 08:00-08:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 311,03,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 311R,40,Recitation for CSCI 311,"Havill, Jessen T.",Th 08:00-08:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 311R,41,Recitation for CSCI 311,"Talmage, Edward L.",Th 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 311R,42,Recitation for CSCI 311,"Havill, Jessen T.",Th 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 315,01,Operating Systems Design,"Meng, Xiannong",MWF 10:00-10:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 315,02,Operating Systems Design,"Meng, Xiannong",MWF 15:00-15:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 315,03,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 09:00-09:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 315L,60,Lab-Operating Systems Design,"Perrone, Luiz Felipe F.",T 08:00-09:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 315L,61,Lab-Operating Systems Design,"Perrone, Luiz Felipe F.",T 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 315L,62,Lab-Operating Systems Design,"Meng, Xiannong",T 15:00-16:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 320,01,Computer Architecture,"Marchiori, Alan M.",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 320L,60,Lab-Computer Architecture,"Marchiori, Alan M.",Th 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 341,01,Theory of Computation,"Talmage, Edward L.",MWF 11:00-11:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 341R,40,Recitation-Theory Computation,"Talmage, Edward L.",Th 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 358,01,Human Computer Interaction,"Peck, Evan M.",TTh 13:00-14:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 376,01,Computer Sci Honors Thesis,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 376,02,Computer Sci Honors Thesis,"Dancy, Chris L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 376,03,Computer Sci Honors Thesis,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 376,04,Computer Sci Honors Thesis,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 376,05,Computer Sci Honors Thesis,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,01,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,02,Individual Study in Comp Sci,"Dancy, Chris L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,03,Deep Echocardiography,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,04,Individual Study in Comp Sci,"Thompson, Stu S.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,05,Individual Study in Comp Sci,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,06,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,07,Individual Study in Comp Sci,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,08,Individual Study in Comp Sci,"Peck, Evan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,09,Individual Study in Comp Sci,"Ross, Anne S.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,10,Individual Study in Comp Sci,"Talmage, Edward L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,11,Individual Study in Comp Sci,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,12,Individual Study in Comp Sci,"Kelly, Alex",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,13,Individual Study in Comp Sci,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,14,Research in Theoretical CS,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,15,Data Science Development,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,16,Individual Study in Comp Sci,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,17,Palsy Image Processing,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 378,18,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 475,01,Senior Design I,"Stough, Joshua V.",MW 13:00-13:50 (ACET 114),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 475,02,Senior Design I,"Stough, Joshua V.",MW 14:00-14:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 479,01,Computer ScienceDesign Project,"Peck, Evan M.",MWF 13:00-13:50 (DANA 117),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,F,CSCI 479,02,Computer ScienceDesign Project,"Peck, Evan M.",MWF 14:00-14:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 187,01,Creative Computing and Society,"Fuchsberger, Alexander",WF 12:00-13:20 (ACET 116); M 15:00-16:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 202,01,Research Methods,"Perrone, Luiz Felipe F.",TTh 15:00-15:50 (ACWS 108),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 203,01,Intro to Computer Science,"Baish, Susan R.",MWF 08:00-08:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 203,02,Intro to Computer Science,"Baish, Susan R.",MWF 10:00-10:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 203,03,Intro to Computer Science,"Peck, Evan M.",MWF 11:00-11:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 203,04,Intro to Computer Science,"Peck, Evan M.",MWF 13:00-13:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 203L,61,Lab for CSCI 203,"Fuchsberger, Alexander",T 10:00-11:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 203L,62,Lab for CSCI 203,"Fuchsberger, Alexander",T 13:00-14:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 203L,63,Lab for CSCI 203,"Baish, Susan R.",T 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 203L,64,Lab for Intro to Comp Sci,"Baish, Susan R.",T 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 204,01,Data Structures & Algorithms,"Meng, Xiannong",MWF 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 204,02,Data Structures & Algorithms,"Kumar, Rajesh",MWF 10:00-10:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 204,03,Data Structures & Algorithms,"Ross, Anne S.",MWF 11:00-11:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 204L,61,Data Structures & Algorithms,"Talmage, Edward L.",Th 10:00-11:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 204L,62,Data Structures & Algorithms,"Kumar, Rajesh",Th 13:00-14:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 204L,63,Data Structures & Algorithms,"Kumar, Rajesh",Th 15:00-16:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 205,01,Software Engineering & Design,"King, Brian R.",MWF 09:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 205,02,Software Engineering & Design,"King, Brian R.",MWF 10:00-10:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 206,01,Computer Organization,"Perrone, Luiz Felipe F.",MWF 09:00-09:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 206,02,Computer Organization,"Meng, Xiannong",MWF 11:00-11:50 (ACET 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 206,03,Computer Organization,"Stough, Joshua V.",MWF 13:00-13:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 206L,60,Lab- for Computer Org/Program,"Stough, Joshua V.",T 08:00-09:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 206L,61,Lab for Computer Org/Program,"Perrone, Luiz Felipe F.",T 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 206L,62,Lab for Computer Org/Program,"Marchiori, Alan M.",T 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 240,01,Computers and Society,"Mir, Darakhshan J.",T 10:00-11:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 240,02,Computers and Society,"Mir, Darakhshan J.",T 13:00-14:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 240,03,Computers and Society,"Mir, Darakhshan J.",T 15:00-16:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 278,01,Engineering Ingenuity,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 278,02,Computer Sci Individual Study,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 278,03,Computer Sci Individual Study,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 278,04,3D Printing & Design,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 308,01,Programming Language Design,"Havill, Jessen T.",MWF 11:00-11:50 (BRKI 264),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 308,02,Programming Language Design,"Wittie, Lea",MWF 14:00-14:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 308,03,Programming Language Design,"Havill, Jessen T.",MWF 15:00-15:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 308L,60,Lab-Programming Language Desgn,"Wittie, Lea",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 308L,61,Lab-Programming Language Desgn,"Wittie, Lea",Th 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 308L,62,Lab-Programming Language Desgn,"Havill, Jessen T.",Th 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 349,01,Introduction to Data Mining,"King, Brian R.",MWF 13:00-13:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 351,01,Distributed Computing,"Talmage, Edward L.",MWF 10:00-10:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 363,01,Computer Networks,"Marchiori, Alan M.",TTh 10:00-11:20 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 376,01,Computer Sci Honors Thesis,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 376,02,Computer Sci Honors Thesis,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 376,03,Computer Sci Honors Thesis,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 376,04,Computer Sci Honors Thesis,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,01,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,02,Individual Study in Comp Sci,,,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,03,Individual Study in Comp Sci,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,04,Individual Study in Comp Sci,"Peck, Evan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,05,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,06,Ind Study: Image Processing,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,07,Individual Study in Comp Sci,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,08,Individual Study in Comp Sci,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,09,Individual Study in Comp Sci,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,10,Data Science & Decision Making,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,11,Individual Study in Comp Sci,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 378,12,Modelling and Simulation,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 379,01,Introduction to Biometrics,"Kumar, Rajesh",MWF 13:00-13:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 379,02,Accessibility,"Ross, Anne S.",MWF 14:00-14:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 476,01,Senior Design II,"Stough, Joshua V.",TTh 15:00-16:20 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2022-23,S,CSCI 476,02,Senior Design II,"Stough, Joshua V.",TTh 15:00-16:20 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 187,01,Creative Computing and Society,"Fuchsberger, Alexander",MF 15:00-16:20 (DANA 325); W 15:00-16:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 1NT,01,CSCI Non-traditional Study,,,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 201,01,Computer Science Seminar,"Talmage, Edward L.",T 10:00-11:20 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 203,02,Intro to Computer Science,"Havill, Jessen T.",MWF 09:00-09:50 (DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 203,03,Intro to Computer Science,"Fuchsberger, Alexander",MWF 11:00-11:50 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 203,04,Intro to Computer Science,"Baish, Susan R.",MWF 13:00-13:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 203,05,Intro to Computer Science,"Baish, Susan R.",MWF 15:00-15:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 203L,60,Lab for Intro to Comp Sci,"Baish, Susan R.",T 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 203L,61,Lab for Intro to Comp Sci,"Havill, Jessen T.",T 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 203L,62,Lab for Intro to Comp Sci,"Baish, Susan R.",T 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 203L,63,Lab for Intro to Comp Sci,"Fuchsberger, Alexander",T 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 204,01,Data Structures & Algorithms,"Lee, SingChun",MWF 11:00-11:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 204,02,Data Structures & Algorithms,"Kumar, Rajesh",MWF 13:00-13:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 204,03,Data Structures & Algorithms,"Wittie, Lea",MWF 13:00-13:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 204L,60,Data Structures & Algorithms,"Wittie, Lea",Th 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 204L,61,Data Structures & Algorithms,"Kumar, Rajesh",Th 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 204L,62,Data Structures & Algorithms,"Lee, SingChun",Th 15:00-16:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 205,01,Software Engineering & Design,"King, Brian R.",MWF 09:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 205,02,Software Engineering & Design,"Stough, Joshua V.",MWF 10:00-10:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 205L,60,Lab for Software Engineering,"Romano, Lily R.",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 205L,61,Lab for Software Engineering,"Romano, Lily R.",Th 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 278,01,Computer Sci Individual Study,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 278,02,Computer Sci Individual Study,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 278,03,Computer Sci Individual Study,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 2NT,02,CSCI Non-traditional Study,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 306,02,Computer Systems,"Meng, Xiannong",MWF 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 306L,60,Lab for Computer Systems,"Marchiori, Alan M.",T 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 311,01,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 311,02,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 10:00-10:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 311R,40,Recitation for CSCI 311,"Gutekunst, Samuel",Th 13:00-13:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 311R,41,Recitation for CSCI 311,"Havill, Jessen T.",Th 13:00-13:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 315,01,Operating Systems Design,"Meng, Xiannong",MWF 08:00-08:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 315,02,Operating Systems Design,"Stough, Joshua V.",MWF 08:00-08:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 315L,60,Lab-Operating Systems Design,"Stough, Joshua V.",T 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 315L,61,Lab-Operating Systems Design,"Stough, Joshua V.",T 08:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 320,01,Computer Architecture,"Marchiori, Alan M.",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 341,01,Theory of Computation,"Talmage, Edward L.",MWF 11:00-11:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 341R,40,Recitation-Theory Computation,"Talmage, Edward L.",Th 14:00-14:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 345,01,Computers and Society,"Mir, Darakhshan J.",TTh 10:00-11:20 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 345,02,Computers and Society,"Mir, Darakhshan J.",TTh 15:00-16:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 375,01,Teaching Assistant in CSCI,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 376,01,Computer Sci Honors Thesis,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 376,03,Computer Sci Honors Thesis,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 376,04,Computer Sci Honors Thesis,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 376,05,Computer Sci Honors Thesis,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,01,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,02,Individual Study in Comp Sci,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,03,Deep Echocardiography,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,04,Individual Study in Comp Sci,"Thompson, Stu S.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,05,Individual Study in Comp Sci,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,06,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,07,Individual Study in Comp Sci,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,08,Individual Study in Comp Sci,"Peck, Evan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,09,Individual Study in Comp Sci,"Ross, Anne S.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,10,Individual Study in Comp Sci,"Talmage, Edward L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,11,Individual Study in Comp Sci,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,12,Individual Study in Comp Sci,"Kelly, Alex",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,13,Individual Study in Comp Sci,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,14,Data Analytics of Broadway,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,16,Individual Study in Comp Sci,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,18,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 378,19,Data Science & Decision Making,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 379,01,Introduction to Biometrics,"Kumar, Rajesh",MWF 15:00-15:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 475,01,Senior Design I,"King, Brian R., Lee, SingChun, Romano, Lily R.",T 13:00-14:50 (DANA 132); MWF 14:00-14:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 479,01,Computer ScienceDesign Project,"Meng, Xiannong",MWF 14:00-14:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 479,02,Computer ScienceDesign Project,"Romano, Lily R.",MWF 14:00-14:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,F,CSCI 479,BF,Computer ScienceDesign Project,"Gosson, Renee K.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 187,01,Creative Computing and Society,"Kumar, Rajesh",TTh 10:00-11:20 (DANA 134); W 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 202,01,Research Methods,"Perrone, Luiz Felipe F.",TTh 14:00-14:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 203,02,Intro to Computer Science,"Baish, Susan R.",MWF 09:00-09:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 203,03,Intro to Computer Science,"Havill, Jessen T.",MWF 10:00-10:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 203,04,Intro to Computer Science,"Baish, Susan R.",MWF 13:00-13:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 203L,60,Lab for Intro to Comp Sci,"Baish, Susan R.",T 08:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 203L,61,Lab for CSCI 203,"Fuchsberger, Alexander",T 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 203L,62,Lab for CSCI 203,"Baish, Susan R.",T 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 203L,63,Lab for CSCI 203,"Fuchsberger, Alexander",T 15:00-16:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 204,01,Data Structures & Algorithms,"Lee, SingChun",MWF 09:00-09:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 204,02,Data Structures & Algorithms,"Fuchsberger, Alexander",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 204,03,Data Structures & Algorithms,"Kumar, Rajesh",MWF 11:00-11:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 204L,60,Data Structures & Algorithms,"Lee, SingChun",Th 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 204L,61,Data Structures & Algorithms,"Lee, SingChun",Th 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 204L,62,Data Structures & Algorithms,"Fuchsberger, Alexander",Th 15:00-16:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 205,01,Software Engineering & Design,"Romano, Lily R.",MWF 13:00-13:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 205,02,Software Engineering & Design,"Stough, Joshua V.",MWF 14:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 205L,60,Lab for Software Engineering,"Romano, Lily R.",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 205L,61,Lab for Software Engineering,"Romano, Lily R.",Th 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 240,01,Computers and Society,"Meng, Xiannong",T 13:00-14:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 278,01,Computer Sci Individual Study,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 278,02,Computer Sci Individual Study,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 278,03,Computer Sci Individual Study,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 279,01,Design and Development for XR,"King, Brian R.",T 08:30-09:50 (DANA 305),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 2NT,01,CSCI Non-traditional Study,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 306,01,Computer Systems,"Meng, Xiannong",MWF 08:00-08:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 306L,60,Lab for Computer Systems,"Meng, Xiannong",T 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 307,01,Computer Networks and Security,"Perrone, Luiz Felipe F.",T 08:30-09:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 307,02,Computer Networks and Security,"Perrone, Luiz Felipe F.",T 10:00-11:20 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 307,03,Computer Networks and Security,"Perrone, Luiz Felipe F.",T 15:00-16:20 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 308,01,Programming Language Design,"Wittie, Lea",MWF 10:00-10:50 (DANA 221),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 308,02,Programming Language Design,"Havill, Jessen T.",MWF 13:00-13:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 308L,60,Lab-Programming Language Desgn,"Wittie, Lea",Th 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 308L,61,Lab-Programming Language Desgn,"Havill, Jessen T.",Th 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 308L,62,Lab-Programming Language Desgn,"Lee, SingChun",Th 08:00-09:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 10:00-10:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 11:00-11:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 311R,40,Recitation for CSCI 311,"Talmage, Edward L.",Th 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 311R,41,Recitation for CSCI 311,"Talmage, Edward L.",Th 14:00-14:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 332,01,The Internet of Things,"Marchiori, Alan M.",TTh 13:00-14:20 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 349,01,Introduction to Data Mining,"King, Brian R.",MWF 11:00-11:50 (BRKI 264),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 349,02,Introduction to Data Mining,"Stough, Joshua V.",MWF 15:00-15:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 375,01,Teaching Assistant in CSCI,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 376,01,Computer Sci Honors Thesis,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 376,02,Computer Sci Honors Thesis,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 376,03,Computer Sci Honors Thesis,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 376,04,Computer Sci Honors Thesis,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,01,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,02,Individual Study in Comp Sci,"Mir, Darakhshan J.",(DANA 213),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,03,Individual Study in Comp Sci,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,04,Individual Study in Comp Sci,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,05,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,06,Ind Study: Image Processing,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,07,Individual Study in Comp Sci,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,08,Individual Study in Comp Sci,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,09,Individual Study in Comp Sci,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,10,Carceral Algorithms,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,11,Individual Study in Comp Sci,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,12,CS Theory Research,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,13,Simulation and Analytics,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 378,14,Individual Study in Comp Sci,"Talmage, Edward L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 379,02,Image Processing,"Stough, Joshua V.",Th 15:00-16:20 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 379,03,Human-Robot Interaction,"Perrone, Luiz Felipe F.",MWF 09:00-09:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2023-24,S,CSCI 476,01,Senior Design II,"Lee, SingChun, Romano, Lily R., King, Brian R.",MWF 14:00-14:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 201,01,Computer Science Seminar,"Kumar, Rajesh",T 10:00-11:20 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 203,01,Intro to Computer Science,"Baish, Susan R.",MWF 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 203,02,Intro to Computer Science,"Baish, Susan R.",MWF 11:00-11:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 203,03,Intro to Computer Science,"Havill, Jessen T.",MWF 13:00-13:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 203L,60,Lab for Intro to Comp Sci,"Havill, Jessen T.",T 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 203L,61,Lab for Intro to Comp Sci,"Baish, Susan R.",T 08:00-09:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 203L,62,Lab for Intro to Comp Sci,"Baish, Susan R.",T 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 203L,63,Lab for Intro to Comp Sci,"Schmid, Todd W.",T 15:00-16:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 204,01,Data Structures & Algorithms,"Wittie, Lea",MWF 13:00-13:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 204,02,Data Structures & Algorithms,"Ross, Anne S.",MWF 14:00-14:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 204,03,Data Structures & Algorithms,"Schmid, Todd W.",MWF 15:00-15:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 204L,60,Data Structures & Algorithms,"Wittie, Lea",T 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 204L,61,Data Structures & Algorithms,"Schmid, Todd W.",T 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 204L,62,Data Structures & Algorithms,"Gutekunst, Samuel",T 15:00-16:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 205,01,Software Engineering & Design,"Romano, Lily R.",MWF 09:00-09:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 205,02,Software Engineering & Design,"Romano, Lily R.",MWF 10:00-10:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 205L,60,Lab for Software Engineering,"Romano, Lily R.",Th 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 205L,61,Lab for Software Engineering,"Romano, Lily R.",Th 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 278,01,Applied Analytics,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 306,01,Computer Systems,"Kumar, Rajesh",MWF 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 306,02,Computer Systems,"Havill, Jessen T.",MWF 11:00-11:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 306L,60,Lab for Computer Systems,"Havill, Jessen T.",T 08:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 306L,61,Lab for Computer Systems,"Kumar, Rajesh",T 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 308,01,Programming Language Design,"Lee, SingChun",MWF 09:00-09:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 308L,60,Lab-Programming Language Desgn,"Lee, SingChun",Th 08:00-09:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 13:00-13:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 311,02,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 15:00-15:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 311R,40,Recitation for CSCI 311,"Talmage, Edward L.",Th 13:00-13:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 311R,41,Recitation for CSCI 311,"Gutekunst, Samuel",Th 15:00-15:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 315,01,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 11:00-11:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 315,02,Operating Systems Design,"Fuchsberger, Alexander",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 315L,60,Lab-Operating Systems Design,"Perrone, Luiz Felipe F.",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 315L,61,Lab-Operating Systems Design,"Fuchsberger, Alexander",Th 08:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 320,01,Computer Architecture,"Marchiori, Alan M.",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 341,01,Theory of Computation,"Talmage, Edward L.",MWF 14:00-14:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 341R,40,Recitation-Theory Computation,"Talmage, Edward L.",Th 15:00-15:50 (DANA 303),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 345,01,Computers and Society,"Mitsch, Chris R.",MWF 09:00-09:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 345,02,Computers and Society,"Perrone, Luiz Felipe F.",MWF 13:00-13:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 349,01,Introduction to Data Mining,"King, Brian R.",MWF 08:00-08:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 368,01,Wireless Networks & Appl.,"Farhadi, Vaji",MWF 11:00-11:50 (DANA 307),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 375,01,Teaching Assistant in CSCI,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,01,Data Science & Decision-Making,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,02,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,03,Individual Study in Comp Sci,"Havill, Jessen T.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,04,Individual Study in Comp Sci,"Talmage, Edward L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,05,Sign Language Translator,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,06,Gamification in CSE,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,07,Med. Vis. and Reasoning,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,08,Individual Study in Comp Sci,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,09,Languages in CS Fields,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,10,Image Cartoonization,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 378,11,Operations Research Modeling,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 379,02,Design and Development for XR,"King, Brian R.",MW 13:30-14:50 (DANA 305),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 475,01,Senior Design I,"Marchiori, Alan M.",MWF 15:00-15:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,F,CSCI 479,01,Computer ScienceDesign Project,"Fuchsberger, Alexander",MWF 15:00-15:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 187,01,Creative Computing and Society,"Ross, Anne S.",TTh 10:00-11:20 (DANA 134); W 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 202,01,Research Methods,"Perrone, Luiz Felipe F.",TTh 15:00-15:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 203,01,Intro to Computer Science,"Baish, Susan R.",MWF 09:00-09:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 203,02,Intro to Computer Science,"Baish, Susan R.",MWF 10:00-10:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 203,03,Intro to Computer Science,"Schmid, Todd W.",MWF 13:00-13:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 203L,60,Lab for Intro to Comp Sci,"Baish, Susan R.",T 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 203L,62,Lab for Intro to Comp Sci,"Baish, Susan R.",T 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 203L,63,Lab for Intro to Comp Sci,"Schmid, Todd W.",T 15:00-16:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 204,01,Data Structures & Algorithms,"Wittie, Lea",MWF 13:00-13:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 204,02,Data Structures & Algorithms,"Kumar, Rajesh",MWF 11:00-11:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 204,03,Data Structures & Algorithms,"Talmage, Edward L.",MWF 15:00-15:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 204L,61,Data Structures & Algorithms,"Wittie, Lea",T 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 204L,62,Data Structures & Algorithms,"Kumar, Rajesh",T 15:00-16:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 204L,63,Data Structures & Algorithms,"Schmid, Todd W.",T 08:00-09:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 205,01,Software Engineering & Design,"Romano, Lily R.",MWF 14:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 205,02,Software Engineering & Design,"Romano, Lily R.",MWF 15:00-15:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 205L,60,Lab for Software Engineering,"Romano, Lily R.",Th 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 205L,61,Lab for Software Engineering,"Romano, Lily R.",Th 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 278,01,Digital Music Production,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 306,01,Computer Systems,"Perrone, Luiz Felipe F.",MWF 15:00-15:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 306L,60,Lab for Computer Systems,"Perrone, Luiz Felipe F.",T 08:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 307,01,Computer Networks and Security,"Perrone, Luiz Felipe F.",T 13:00-14:20 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 307,03,Computer Networks and Security,"Marchiori, Alan M.",T 15:00-16:20 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 308,01,Programming Language Design,"Lee, SingChun",MWF 13:00-13:50 (ACET 225),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 308L,60,Lab-Programming Language Desgn,"Lee, SingChun",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 308L,61,Lab-Programming Language Desgn,"Lee, SingChun",Th 13:00-14:50 (ACET 225),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 311,02,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 11:00-11:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 311R,40,Recitation for CSCI 311,"Talmage, Edward L.",Th 13:00-13:50 (DANA 117),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 311R,41,Recitation for CSCI 311,"Havill, Jessen T.",Th 14:00-14:50 (DANA 117),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 315,01,Operating Systems Design,"Fuchsberger, Alexander",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 315L,60,Lab-Operating Systems Design,"Fuchsberger, Alexander",Th 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 345,01,Computers and Society,"Mitsch, Chris R.",MWF 09:00-09:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 345,02,Computers and Society,"Mitsch, Chris R.",MWF 14:00-14:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 349,01,Introduction to Data Mining,"Kumar, Rajesh",MWF 14:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 375,01,Teaching Assistant in CSCI,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 376,01,Computer Sci Honors Thesis,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,01,Individual Study in Comp Sci,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,02,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,03,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,04,Individual Study in Comp Sci,"Talmage, Edward L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,05,Individual Study in Comp Sci,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,06,Gaming the System: CS Edu,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,07,Image Cartoonization,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,08,Gamification in CSE,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,09,Individual Study in Comp Sci,"Fuchsberger, Alexander",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,10,Med. Vis. and Reasoning,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,11,Geometry Processing,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 378,12,Individual Study in Comp Sci,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 379,01,Interactive Computer Graphics,"Lee, SingChun",MWF 11:00-11:50 (DANA 305),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 379,02,Digital Accessibility,"Ross, Anne S.",MWF 09:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 379,03,Full Stack Web Development,"Fuchsberger, Alexander",MWF 13:00-13:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2024-25,S,CSCI 476,01,Senior Design II,"Marchiori, Alan M.",MWF 15:00-15:50 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 187,01,Creative Computing & Society,"Mir, Darakhshan J.",W 10:00-11:50 (BRKI 164); T 13:00-15:50,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 187,79,Creative Computing & Society,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 201,01,Computer Science Seminar,"Kumar, Rajesh",T 10:00-11:20 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 203,01,Intro to Computer Science,"Havill, Jessen T.",MWF 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 203,02,Intro to Computer Science,"Havill, Jessen T.",MWF 11:00-11:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 203,03,Intro to Computer Science,"Ravula, Swetha Reddy",MWF 14:00-14:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 203,04,Intro to Computer Science,"Ravula, Swetha Reddy",MWF 15:00-15:50 (BRKI 065),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 203L,60,Lab for Intro to Comp Sci,"Fuchsberger, Alexander",T 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 203L,61,Lab for Intro to Comp Sci,"Fuchsberger, Alexander",T 15:00-16:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 203L,62,Lab for Intro to Comp Sci,"Havill, Jessen T.",T 08:00-09:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 203L,63,Lab for Intro to Comp Sci,"Ravula, Swetha Reddy",T 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 204,01,Data Structures & Algorithms,"Wittie, Lea",MWF 11:00-11:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 204,02,Data Structures & Algorithms,"Stough, Joshua V.",MWF 15:00-15:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 204L,60,Data Structures & Algorithms,"Stough, Joshua V.",T 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 204L,61,Data Structures & Algorithms,"Schmid, Todd W.",T 08:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 204L,62,Data Structures & Algorithms,"Ravula, Swetha Reddy",T 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 205,01,Software Engineering & Design,"Romano, Lily R.",MWF 10:00-10:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 205L,60,Lab for Software Engineering,"Romano, Lily R.",Th 10:00-11:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 278,01,Basketball Analytics,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 278,02,Critical Data Studies,"Mir, Darakhshan J.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 306,01,Computer Systems,"Perrone, Luiz Felipe F.",MWF 09:00-09:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 306,02,Computer Systems,"Kumar, Rajesh",MWF 14:00-14:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 306L,61,Lab for Computer Systems,"Kumar, Rajesh",T 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 306L,62,Lab for Computer Systems,"Perrone, Luiz Felipe F.",T 15:00-16:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 307,01,Computer Networks and Security,"Marchiori, Alan M.",Th 10:00-11:20 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 308,01,Programming Language Design,"Wittie, Lea",MWF 09:00-09:50 (DANA 221),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 308L,60,Lab-Programming Language Desgn,"Wittie, Lea",Th 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 311,01,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 311R,40,Recitation for CSCI 311,"Gutekunst, Samuel",Th 10:00-10:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 315,01,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 315,02,Operating Systems Design,"Stough, Joshua V.",MWF 09:00-09:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 315L,60,Lab-Operating Systems Design,"Perrone, Luiz Felipe F.",T 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 315L,61,Lab-Operating Systems Design,"Stough, Joshua V.",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 341,01,Theory of Computation,"Schmid, Todd W.",MWF 11:00-11:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 341R,40,Recitation-Theory Computation,"Schmid, Todd W.",T 11:00-11:50 (BRKI 166),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 345,01,Computers and Society,"Mitsch, Chris R.",MWF 12:00-12:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 345,02,Computers and Society,"Mitsch, Chris R.",MWF 14:00-14:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 349,01,Introduction to Data Mining,"King, Brian R.",MWF 08:00-08:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 375,01,Teaching Assistant in CSCI,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 376,01,Computer Sci Honors Thesis,"Kumar, Rajesh",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 376,02,Computer Sci Honors Thesis,"Schmid, Todd W.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 376,03,Computer Sci Honors Thesis,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,01,Individual Study in Comp Sci,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,02,Individual Study in Comp Sci,"Talmage, Edward L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,03,Individual Study in Comp Sci,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,04,Individual Study in Comp Sci,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,05,Individual Study in Comp Sci,"Kumar, Rajesh",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,06,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,07,Individual Study in Comp Sci,"Mitsch, Chris R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,08,Gaming the System: CS Edu,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 378,09,Individual Study in Comp Sci,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 379,02,Design and Development for XR,"King, Brian R.",MWF 09:00-09:50 (DANA 305),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,F,CSCI 475,01,Senior Design I,"King, Brian R.",MWF 15:00-15:50 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 202,01,Research Methods,"Perrone, Luiz Felipe F.",TTh 10:00-10:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 203,01,Intro to Computer Science,"Fuchsberger, Alexander",MWF 11:00-11:50 (BRKI 264),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 203,02,Intro to Computer Science,"Ross, Anne S.",MWF 09:00-09:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 203,03,Intro to Computer Science,"Havill, Jessen T.",MWF 14:00-14:50 (DANA 117),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 203L,60,Lab for Intro to Comp Sci,"Fuchsberger, Alexander",T 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 203L,61,Lab for Intro to Comp Sci,"Fuchsberger, Alexander",T 15:00-16:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 203L,62,Lab for Intro to Comp Sci,"Ravula, Swetha Reddy",T 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 204,01,Data Structures & Algorithms,"Kumar, Rajesh",MWF 11:00-11:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 204,02,Data Structures & Algorithms,"Ravula, Swetha Reddy",MWF 09:00-09:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 204L,60,Data Structures & Algorithms,"Ravula, Swetha Reddy",T 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 204L,61,Data Structures & Algorithms,"Kumar, Rajesh",T 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 205,01,Software Engineering & Design,"Romano, Lily R.",MWF 09:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 205,02,Software Engineering & Design,"Romano, Lily R.",MWF 10:00-10:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 205L,60,Lab for Software Engineering,"Romano, Lily R.",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 205L,61,Lab for Software Engineering,"Romano, Lily R.",Th 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 278,01,Baseball Analytics,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 278,02,Adv Digital Music Production,"Gutekunst, Samuel",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 306,01,Computer Systems,"Havill, Jessen T.",MWF 11:00-11:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 306L,60,Lab for Computer Systems,"Havill, Jessen T.",T 08:00-09:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 307,01,Computer Networks and Security,"Marchiori, Alan M.",MW 10:00-10:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 307,02,Computer Networks and Security,"Marchiori, Alan M.",MW 13:00-13:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 308,01,Programming Language Design,"Schmid, Todd W.",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 308L,60,Lab-Programming Language Desgn,"Schmid, Todd W.",Th 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 11:00-11:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 311R,40,Recitation for CSCI 311,"Talmage, Edward L.",Th 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 311R,41,Recitation for CSCI 311,"Talmage, Edward L.",Th 11:00-11:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 315,01,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 315L,60,Lab-Operating Systems Design,"Perrone, Luiz Felipe F.",T 13:00-14:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 345,01,Computers and Society,"Mitsch, Chris R.",MW 12:00-13:20 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 349,01,Applied Machine Learning,"Stough, Joshua V.",MWF 11:00-11:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 357,01,AI with Neural Nets,"King, Brian R.",MWF 13:00-13:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 365,01,Image Processing & Analysis,"Stough, Joshua V.",TTh 10:00-11:20 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 375,01,Teaching Assistant in CSCI,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 376,01,Computer Sci Honors Thesis,"Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 376,02,Computer Sci Honors Thesis,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 376,03,Computer Sci Honors Thesis,"Marchiori, Alan M.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,01,Individual Study in Comp Sci,"Romano, Lily R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,02,Computational Biology,"Havill, Jessen T.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,03,Individual Study in Comp Sci,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,04,"Robots, Mind, & Ethics","Perrone, Luiz Felipe F.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,05,Individual Study in Comp Sci,"Talmage, Edward L.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,06,Individual Study in Comp Sci,"Wittie, Lea",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,07,Individual Study in Comp Sci,"Mitsch, Chris R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,08,Gaming the System: CS Edu,"Lee, SingChun",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 378,09,Individual Study in Comp Sci,"Kumar, Rajesh",,https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 379,03,Full Stack Web Development,"Fuchsberger, Alexander",MWF 10:00-10:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 379,04,Biometrics,"Kumar, Rajesh",MWF 14:00-14:50 (BRKI 264),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 379,06,AWS Cloud Technologies,"Romano, Lily R.",WF 13:00-13:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup
+Bucknell University,2025-26,S,CSCI 476,01,Senior Design II,"King, Brian R.",MWF 15:00-15:50 (DANA 113),https://pubapps.bucknell.edu/CourseInformation/#/lookup
