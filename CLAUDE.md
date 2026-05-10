@@ -38,6 +38,8 @@ python faculty_site_cleaner.py
 
 # Stage 6: Use a local LLM to infer research fields and subfields
 python faculty_site_analysis.py
+# Resumable: re-running picks up where it left off by merging prior progress
+# from data/faculty_list_with_field.csv.
 ```
 
 A separate course-schedule pipeline lives under `scraper/course_schedule/`:
@@ -59,7 +61,8 @@ data/faculty_list.csv              → faculty_scholar_url_scraper.py     → da
 data/faculty_list_with_scholar_url → faculty_scholar_profile_scraper.py → data/faculty_list_with_verified_profile.csv
 data/faculty_list.csv              → faculty_site_scraper.py            → data/faculty_websites/<college>/<name>.txt
 data/faculty_websites/             → faculty_site_cleaner.py            → data/faculty_websites_cleaned/<college>/<name>.txt
-data/faculty_websites_cleaned/     → faculty_site_analysis.py           → data/faculty_list_with_fields.csv
+data/faculty_websites_cleaned/     → faculty_site_analysis.py           → data/faculty_list_with_field.csv
+  (also merges in data/faculty_list.csv + data/faculty_list_with_verified_profile.csv as side-input)
 
 data/colleges.csv                  → course_schedule.scrape_course_schedule → data/course_schedule/<College Name>.csv
 ```
@@ -90,11 +93,11 @@ After scraping, `filter_non_human_rows` runs the `openai/privacy-filter` token-c
 1. Removes shared header/footer boilerplate by comparing pages from the same college with the same URL base path
 2. Keeps only lines near mentions of the faculty member's name or research-relevant keywords (research, interest, courses, publications, etc.)
 
-**`scraper/faculty_site_analysis.py`** — Uses a local Ollama instance (`llama3.1:8b-instruct-fp16` at `localhost:11434`) to extract research subfields from cleaned text, then classifies each faculty member into Computer Science / Mathematics / Statistics / Unknown.
+**`scraper/faculty_site_analysis.py`** — Uses a local Ollama instance (`llama3.1:8b-instruct-fp16` at `localhost:11434`) to extract research subfields from cleaned text, then classifies each faculty member into one of `ALLOWED_FIELDS = ["Computer Science", "Mathematics or Statistics", "Unknown", "Invalid"]`. Up to `MAX_SUBFIELDS = 3` CS subfields per row, drawn from the `CS_SUBFIELDS` taxonomy. Inputs: `data/faculty_list.csv` (base rows) merged with `data/faculty_list_with_verified_profile.csv` (so the prompt can see Scholar interests/affiliation), plus the per-faculty cleaned-text file under `data/faculty_websites_cleaned/<college>/<name>.txt`. Output: `data/faculty_list_with_field.csv` with `field` and pipe-separated `subfields` columns. Resumable — on restart it merges any existing output back in and only re-runs rows missing a `field`.
 
 **`scraper/course_schedule/`** — Course-schedule scraping sub-package. The driver loop lives in `course_schedule_scraper.py` (`CourseScheduleScraper` base class): for each `(academic_year, term)` pair it calls `url_for(...)`, drives Selenium via `load(...)` (one fresh driver per page by default — many catalog SPAs only fetch on first navigation), and hands the rendered HTML to `parse_page(...)`. Subclasses set `college` (a `constants.College` value), `years_back` (default 5), and optionally `terms` (e.g. `["F", "S"]`; empty means one load per year for sites whose listing covers all terms). Per-school subclasses live alongside the base: `amherst.py`, `macalester.py`, `trinity.py`, `williams.py`. `selfservice.py` covers the large family of LACs running Ellucian Self-Service catalogs — one class is generated per `(College, base_url, subject)` tuple in `SELFSERVICE_COLLEGES`. Most are at `selfservice.<edu>`, but several deployments live under custom subdomains (e.g. Emmanuel's `ecss.`, Grinnell's `colss-prod.ec.`, Luther's `norsehub.`, Meredith's `mcis.`, Westmont's `waypoint.`); the membership criterion is "Schedule Link contains `/Student/Courses/Search`." Self-Service exposes only currently registerable terms (last finished + current + next one or two) so the scraper captures whatever appears, not a fixed history; logged-in-only catalogs (Allegheny, Wooster) are detected via the `/Account/Login` redirect and produce empty results. The runner `scrape_course_schedule.py` instantiates every scraper in `SCRAPERS` (including `*selfservice_scrapers()`), skipping colleges whose CSV already exists unless `--force` is passed. Output columns: `college, academic_year, term, course_code, section, course_name, instructor, time, url`.
 
-**`docs/`** — Static dashboard for browsing the dataset, published as a GitHub Pages site. `index.html` is a single-page app (vanilla JS + IBM Plex fonts, light/dark themes). `generate_data.py` reads `data/faculty_list_with_verified_profile.csv` and emits `faculty_data.json`, treating `scholar_match_status ∈ {matched, manual_approved}` as trusted (untrusted rows still appear but their `scholar_url` is suppressed) and bucketing each row's title into `tenure_track | teaching | adjunct | visiting`. `generate_college_links.py` reads `data/colleges.csv` and emits `college_links.json` containing only colleges with `Major >= 1` that also appear in the verified-profile CSV. Regenerate both JSONs after a pipeline run.
+**`docs/`** — Static dashboard for browsing the dataset, published as a GitHub Pages site. `index.html` is a single-page app (vanilla JS + IBM Plex fonts, light/dark themes). `generate_data.py` merges four CSVs aligned by row order on `(name, title, college)` — `faculty_list.csv` (personal URL), `faculty_list_with_scholar_url.csv` (Scholar URL), `faculty_list_with_verified_profile.csv` (match status, citation/h-index metrics, scholar interests), and `faculty_list_with_field.csv` (LLM-inferred field + subfields) — and emits `faculty_data.json`. Only rows whose `field` is in `{Computer Science, Invalid}` are included; `scholar_match_status ∈ {matched, manual_approved}` counts as trusted (untrusted rows still appear but their `scholar_url` and citation metrics are suppressed). The `interests` field prefers LLM-inferred subfields, falling back to Scholar interests when the row is trusted. Each row's title is bucketed into `tenured | tenure_track | teaching | visiting | adjunct` via `categorize_title()`. `generate_college_links.py` reads `data/colleges.csv` and emits `college_links.json` containing only colleges with `Major >= 1` that also appear in the verified-profile CSV. Regenerate both JSONs after a pipeline run; the row-alignment check in `generate_data.py` will fail loudly if the four CSVs drift out of sync.
 
 ## Selenium / ChromeDriver
 
