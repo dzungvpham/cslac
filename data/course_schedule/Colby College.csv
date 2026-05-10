@@ -1,0 +1,140 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Colby College,2021-22,F,CS 151,,Computational Thinking: Visual Media,"Wolfe, Bender",,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 152,,Computational Thinking: Science,"Doore, Harper",,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 231,,Data Structures and Algorithms,"Al Madi, Harper",,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 232,,Computer Organization,"Li, Taylor",,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 251,,Data Analysis and Visualization,"Taylor, Wolfe",,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 321,,Software Engineering,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 330,,"Real-World Database Design, Development, and Deployment I",Doore,,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 333,,Programming Languages,Taylor,,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 353,,Interactive Systems,Wolfe,,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 375,,Analysis of Algorithms,Bender,,https://cs.colby.edu/courses.php
+Colby College,2021-22,F,CS 431,,Advanced Computer Networks,Li,,https://cs.colby.edu/courses.php
+Colby College,2021-22,W,CS 269,,Game Design,Maxwell,,https://cs.colby.edu/courses.php
+Colby College,2021-22,W,CS 325,,Web Programming,Skrien,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 125,,Introduction to R,Taylor,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 151,,Computational Thinking: Visual Media,"Wolfe, Bender",,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 152,,Computational Thinking: Science,Harper,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 231,,Data Structures and Algorithms,"Wolfe, Harper, Bender",,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 251,,Data Analysis and Visualization,Taylor,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 252,,Mathematical Data Analysis and Visualization,Stent,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 310,,"Creating Future Worlds: Computing, Ethics, and Society",Doore,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 333,,Programming Languages,Taylor,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 337,,Operating Systems,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 361,,Object Oriented Design,Skrien,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 375,,Analysis of Algorithms,Bender,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 421,,Empirical Software Engineering,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2021-22,S,CS 430,,"Advanced Database Design, Development, and Deployment",Doore,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 151,,Computational Thinking: Visual Media,Doore,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 152,,Computational Thinking: Science,Harper,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 231,,Data Structures and Algorithms,"Al Madi, Bender",,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 232,,Computer Organization,,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 321,,Software Engineering,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 341,,Systems Biology I,Taylor,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 343,,Neural Networks,Layton,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 375,,Analysis of Algorithms,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 378,,Introduction to Computation Theory,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2022-23,F,CS 436,,Artificial Intelligence Seminar,Stent,,https://cs.colby.edu/courses.php
+Colby College,2022-23,W,CS 269,,Game Design,,,https://cs.colby.edu/courses.php
+Colby College,2022-23,W,JP 197A,,Hands-on Intro to AI with NLP,,,https://cs.colby.edu/courses.php
+Colby College,2022-23,W,JP 297D,,Hands-on Intro to AI with Computer Vision,,,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 151,,Computational Thinking: Visual Media,"Doore, Al Madi",,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 152,,Computational Thinking: Science,Harper,,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 231,,Data Structures and Algorithms,"Bender, Aaron",,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 251,,Data Analysis and Visualization,"Taylor, Stent",,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 252,,Mathematical Data Analysis and Visualization,"Layton, Taylor",,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 310,,"Creating Future Worlds: Computing, Ethics, and Society",Doore,,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 333,,Programming Languages,Li,,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 343,,Neural Networks,Stent,,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 376,,Algorithm Analysis and Design,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 421,,Empirical Software Engineering,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 441,,Systems Biology II,Taylor,,https://cs.colby.edu/courses.php
+Colby College,2022-23,S,CS 443,,Bio-Inspired Machine Learning,Layton,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 151,,Computational Thinking: Visual Media,Wolfe,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 152,,Computational Thinking: Science,"Harper, Lage",,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 154,,Computational Thinking: Natural Language Processing,Stent,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 166,,Computational Thinking: Computer Vision,Chowdhury,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 231,,Data Structures and Algorithms,Projects,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 232,,Computer Organization,"Li, Taylor",,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 331,,Computer Networks,Li,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 333,,Programming Languages,Taylor,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 343,,Neural Networks,Layton,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 346,,Computational Modeling and Simulation I,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 375,,Analysis of Algorithms,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2023-24,F,CS 381,,Algorithmic Game Theory,Bender,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 151,,Computational Thinking: Visual Media,Wolfe,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 152,,Computational Thinking: Science,"Harper, Lage",,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 231,,Data Structures and Algorithms,"Bender, Harper",,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 251,,Data Analysis and Visualization,"Taylor, Layton",,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 252,,Mathematical Data Analysis and Visualization,Layton,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 310,,"Creating Future Worlds: Computing, Ethics, and Society",Yankoski,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 333,,Programming Languages,"Bender, Taylor",,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 375,,Analysis of Algorithms,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 376,,Algorithm Design and Analysis,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 431,,Advanced Computer Networks,Li,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 443,,Bio-Inspired Machine Learning,Layton,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 446,,Computational Modeling and Simulation II,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2023-24,S,CS 486,,Algorithmic Game Theory II,Bender,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 152,,Computational Thinking: Science,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 154,,Computational Thinking: Natural Language Processing,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 166,,Computational Thinking: Computer Vision,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 231,,Data Structures and Algorithms,"Al Madi, Aaron, Projects",,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 232,,Computer Organization,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 251,,Data Analysis and Visualization,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 310,,"Creating Future Worlds: Computing, Ethics, and Society",Doore,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 321,,Software Engineering,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 330,,"Real-World Database Design, Development, and Deployment I",Doore,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 333,,Programming Languages,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 343,,Neural Networks,Layton,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 348,,Human Interpretable AI I,Lage,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 375,,Analysis of Algorithms,Bender,,https://cs.colby.edu/courses.php
+Colby College,2024-25,F,CS 378,,Introduction to Computation Theory,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2024-25,W,CS 353,,Interactive Systems I,Wolfe,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 151,,Computational Thinking: Visual Media,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 152,,Computational Thinking: Science,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 231,,Data Structures and Algorithms,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 232,,Computer Organization,"Chowdhury, Taylor",,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 251,,Data Analysis and Visualization,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 252,,Mathematical Data Analysis and Visualization,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 310,,"Creating Future Worlds: Computing, Ethics, and Society",Doore,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 333,,Programming Languages,,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 337,,Operating Systems and Cloud Computing,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 343,,Neural Networks,Chowdhury,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 375,,Analysis of Algorithms,Bender,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 376,,Algorithm Design and Analysis,Aaron,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 421,,Empirical Software Engineering,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 422,,Entrepreneurial Software Engineering,Al Madi,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 430,,"Advanced Database Design, Development, and Deployment",Doore,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 444,,Deep Learning,Layton,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 448,,Human Interpretable AI II,Lage,,https://cs.colby.edu/courses.php
+Colby College,2024-25,S,CS 453,,Interactive Systems II,Wolfe,,https://cs.colby.edu/courses.php
+Colby College,2025-26,F,CS 151,,Computational Thinking: Visual Media,"Wolfe, Doore",,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 152,,Computational Thinking: Science,"Harper, Lage",,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 231,,Data Structures and Algorithms,"Harper, Al Madi, Lage",,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 232,,Computer Organization,"Chowdhury, Taylor",,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 251,,Data Analysis and Visualization,"Layton, Taylor",,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 310,,"Creating Future Worlds: Computing, Ethics, and Society",Doore,,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 321,,Software Engineering,Al Madi,,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 333,,Programming Languages,Taylor,,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 343,,Neural Networks,Layton,,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 346,,Computational Modeling and Simulation,Aaron,,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 353,,Interactive Systems I,Wolfe,,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 366,,Computer Vision,Chowdhury,,https://cs.colby.edu/index.php
+Colby College,2025-26,F,CS 375,,Analysis of Algorithms,Aaron,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 151,,Computational Thinking: Visual Media,,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 152,,Computational Thinking: Science,,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 231,,Data Structures and Algorithms,"Harper, Lage",,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 232,,Computer Organization,"Chowdhury, Taylor",,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 251,,Data Analysis and Visualization,"Taylor, Wolfe",,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 252,,Mathematical Data Analysis and Visualization,"Layton, Wolfe",,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 310,,"Creating Future Worlds: Computing, Ethics, and Society",Doore,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 333,,Programming Languages,Taylor,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 343,,Neural Networks,Layton,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 375,,Analysis of Algorithms,Aaron,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 378,,Introduction to Computation Theory,Aaron,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 421,,Empirical Software Engineering,Al Madi,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 422,,Entrepreneurial Software Engineering,Al Madi,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 443,,Bio-Inspired Machine Learning,Layton,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 446,,Modeling and Simulation II,Aaron,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 453,,Interactive Systems II,Wolfe,,https://cs.colby.edu/index.php
+Colby College,2025-26,S,CS 466,,Multimodel Interaction and Learning,Chowdhury,,https://cs.colby.edu/index.php
