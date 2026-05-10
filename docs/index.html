@@ -198,6 +198,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      position: relative;
     }
 
     .chevron {
@@ -475,7 +476,29 @@
       color: var(--text);
       border-color: var(--text);
     }
+    .expand-toggle.active {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
     .expand-toggle svg { width: 12px; height: 12px; }
+
+    /* ── advanced (subfield) filter row ── */
+    .advanced-bar {
+      padding: 12px 0 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .advanced-bar.collapsed { display: none; }
+
+    /* ── college row number ──
+       Sits at the start of the column (same x as the "Institution"
+       header text), with the chevron and name flowing after. */
+    .college-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      user-select: none;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -507,6 +530,7 @@
   </header>
 
   <div class="filter-bar" id="filter-bar"></div>
+  <div class="filter-bar advanced-bar collapsed" id="advanced-bar"></div>
 
   <div class="table-wrap">
     <div class="col-head-row">
@@ -562,11 +586,29 @@ const CATEGORIES = [
   { key: 'adjunct',      label: 'Adjunct'      },
 ];
 
+// CS subfields — mirrors CS_SUBFIELD_NAMES in scraper/faculty_site_analysis.py
+const CS_SUBFIELDS = [
+  'Artificial intelligence', 'Computer vision', 'Machine learning',
+  'Natural language processing', 'Data science', 'Information retrieval',
+  'Computer architecture', 'Computer networks', 'Distributed systems',
+  'Computer security & privacy', 'Databases', 'Design automation',
+  'Embedded & real-time systems', 'High-performance computing',
+  'Mobile computing', 'Measurement & performance analysis',
+  'Operating systems', 'Programming languages', 'Software engineering',
+  'Algorithms & complexity', 'Quantum computing', 'Cryptography',
+  'Logic & verification', 'Computational bio & bioinformatics',
+  'Computer graphics', 'Computer science education',
+  'Economics & computation', 'Human-computer interaction', 'Robotics',
+  'Visualization', 'Computational social science', 'Games & interactive art',
+];
+
 // ── state ──────────────────────────────────────────────────────────────────
 let allColleges = [];
 let collegeLinks = {};
-let collegeSort = { key: 'name', dir: 1 };
-let activeCategories = new Set(CATEGORIES.map(c => c.key));
+let collegeSort = { key: 'total', dir: -1 };
+let activeCategories = new Set(['tenured', 'tenure_track', 'teaching']);
+let activeSubfields = new Set();
+let advancedExpanded = false;
 
 // ── theme ──────────────────────────────────────────────────────────────────
 const html = document.documentElement;
@@ -588,8 +630,19 @@ async function loadData() {
   allColleges = await facultyRes.json();
   collegeLinks = await linksRes.json();
 
+  // Precompute a normalized lookup of each faculty's interests so the
+  // subfield filter can match in O(1) per chip.
+  for (const c of allColleges) {
+    for (const f of c.faculty) {
+      f._interestsSet = new Set(
+        (f.interests || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
+      );
+    }
+  }
+
   buildCollegeHeaders();
   buildFilterBar();
+  buildAdvancedBar();
   renderAll();
 }
 
@@ -612,6 +665,11 @@ function buildFilterBar() {
   const expandIcon = allOpen
     ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
     : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
+  const advIcon = advancedExpanded
+    ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
+    : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
+  const advCount = activeSubfields.size > 0 ? ` (${activeSubfields.size})` : '';
+  const advActive = (advancedExpanded || activeSubfields.size > 0) ? 'active' : '';
 
   bar.innerHTML =
     `<span class="filter-label">Show</span>` +
@@ -622,6 +680,7 @@ function buildFilterBar() {
       </button>`;
     }).join('') +
     `<span class="filter-spacer"></span>` +
+    `<button class="expand-toggle ${advActive}" id="advanced-toggle">${advIcon}Advanced filter${advCount}</button>` +
     `<button class="expand-toggle" id="expand-toggle">${expandIcon}${expandLabel}</button>`;
 
   bar.querySelectorAll('.filter-chip').forEach(btn => {
@@ -637,6 +696,61 @@ function buildFilterBar() {
   });
 
   document.getElementById('expand-toggle').addEventListener('click', toggleExpandAll);
+  document.getElementById('advanced-toggle').addEventListener('click', () => {
+    advancedExpanded = !advancedExpanded;
+    document.getElementById('advanced-bar').classList.toggle('collapsed', !advancedExpanded);
+    buildFilterBar();
+  });
+}
+
+// ── advanced (subfield) filter bar ────────────────────────────────────────
+function subfieldCounts() {
+  const counts = Object.fromEntries(CS_SUBFIELDS.map(s => [s, 0]));
+  for (const c of allColleges) {
+    for (const f of c.faculty) {
+      for (const s of CS_SUBFIELDS) {
+        if (f._interestsSet.has(s.toLowerCase())) counts[s] += 1;
+      }
+    }
+  }
+  return counts;
+}
+
+function buildAdvancedBar() {
+  const bar = document.getElementById('advanced-bar');
+  const counts = subfieldCounts();
+  const clearBtn = activeSubfields.size > 0
+    ? `<button class="filter-chip" id="subfield-clear">Clear</button>`
+    : '';
+
+  bar.innerHTML =
+    `<span class="filter-label">Subfields</span>` +
+    CS_SUBFIELDS.map(s => {
+      const on = activeSubfields.has(s);
+      return `<button class="filter-chip ${on ? 'active' : ''}" data-subfield="${esc(s)}">
+        ${esc(s)}<span class="filter-chip-count">${counts[s]}</span>
+      </button>`;
+    }).join('') +
+    clearBtn;
+
+  bar.querySelectorAll('.filter-chip[data-subfield]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const k = btn.dataset.subfield;
+      if (activeSubfields.has(k)) activeSubfields.delete(k);
+      else activeSubfields.add(k);
+      buildAdvancedBar();
+      buildFilterBar();
+      renderAll();
+    });
+  });
+
+  const clearEl = document.getElementById('subfield-clear');
+  if (clearEl) clearEl.addEventListener('click', () => {
+    activeSubfields.clear();
+    buildAdvancedBar();
+    buildFilterBar();
+    renderAll();
+  });
 }
 
 function visibleRows() {
@@ -667,7 +781,18 @@ function toggleExpandAll() {
 
 // ── filtered aggregation ───────────────────────────────────────────────────
 function filteredFaculty(college) {
-  return college.faculty.filter(f => activeCategories.has(f.category));
+  const subActive = activeSubfields.size > 0;
+  return college.faculty.filter(f => {
+    if (!activeCategories.has(f.category)) return false;
+    if (subActive) {
+      let hit = false;
+      for (const s of activeSubfields) {
+        if (f._interestsSet.has(s.toLowerCase())) { hit = true; break; }
+      }
+      if (!hit) return false;
+    }
+    return true;
+  });
 }
 
 function aggregateCollege(college) {
@@ -730,7 +855,7 @@ function sortedColleges(colleges) {
   return [...colleges].sort((a, b) => {
     const av = fn(a), bv = fn(b);
     if (typeof av === 'string') return collegeSort.dir * av.localeCompare(bv);
-    return collegeSort.dir * (bv - av);
+    return collegeSort.dir * (av - bv);
   });
 }
 
@@ -764,6 +889,7 @@ function buildCollegeRow(college, idx) {
     <div class="college-summary">
       <div class="col-grid">
         <div class="td td-name">
+          <span class="college-num">${idx + 1}</span>
           <span class="chevron">
             <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="4,2 8,6 4,10"/>
@@ -833,7 +959,7 @@ function buildFacultyPanel(panel, faculty) {
     return [...faculty].sort((a, b) => {
       const av = fn(a), bv = fn(b);
       if (typeof av === 'string') return facSort.dir * av.localeCompare(bv);
-      return facSort.dir * (bv - av);
+      return facSort.dir * (av - bv);
     });
   }
 
