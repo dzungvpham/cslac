@@ -1,0 +1,342 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Haverford College,2021-22,F,CMSCH105A,001,Introduction to Computer Science,"Dougherty,John",MW 11:30am-01:00pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH105A001
+Haverford College,2021-22,F,CMSCH105A,002,Introduction to Computer Science,"Dougherty,John",MW 02:30pm-04:00pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH105A002
+Haverford College,2021-22,F,CMSCH105A,00A,Introduction to Computer Science,"Lindell,Suzanne",F 09:30am-10:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH105A00A
+Haverford College,2021-22,F,CMSCH105A,00B,Introduction to Computer Science,"Lindell,Suzanne",F 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH105A00B
+Haverford College,2021-22,F,CMSCH105A,00C,Introduction to Computer Science,"Lindell,Suzanne",F 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH105A00C
+Haverford College,2021-22,F,CMSCH105A,00D,Introduction to Computer Science,"Department staff,TBA",F 01:30pm-02:30pm,https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH105A00D
+Haverford College,2021-22,F,CMSCH105A,00E,Introduction to Computer Science,"Department staff,TBA",F 02:30pm-03:30pm,https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH105A00E
+Haverford College,2021-22,F,CMSCH107A,001,Introduction to Computer Science and Data Structures,"Dougherty,John",MW 11:30am-01:00pm (FDR220),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH107A001
+Haverford College,2021-22,F,CMSCH107A,00A,Introduction to Computer Science and Data Structures,"Dougherty,John",T 09:30am-10:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH107A00A
+Haverford College,2021-22,F,CMSCH107A,00B,Introduction to Computer Science and Data Structures,"Dougherty,John",T 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH107A00B
+Haverford College,2021-22,F,CMSCH107A,00C,Introduction to Computer Science and Data Structures,"Dougherty,John",T 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH107A00C
+Haverford College,2021-22,F,CMSCH209A,001,Morphological Reinflection,"Chandlee,Jane",MW 02:30pm-04:00pm (STO102),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH209A001
+Haverford College,2021-22,F,CMSCH231A,001,Discrete Mathematics,"Boudourides,Moses",MWF 09:30am-10:30am (TRLR-OBS),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH231A001
+Haverford College,2021-22,F,CMSCH231A,00B,Discrete Mathematics,"Boudourides,Moses",M 02:00pm-03:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH231A00B
+Haverford College,2021-22,F,CMSCH231A,00C,Discrete Mathematics,"Boudourides,Moses",M 03:00pm-04:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH231A00C
+Haverford College,2021-22,F,CMSCH245A,001,Principles of Programming Languages,"Wonnacott,David",TTh 11:30am-01:00pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH245A001
+Haverford College,2021-22,F,CMSCH245A,00A,Principles of Programming Languages,"Lindell,Suzanne, Wonnacott,David",T 01:30pm-02:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH245A00A
+Haverford College,2021-22,F,CMSCH245A,00B,Principles of Programming Languages,"Lindell,Suzanne, Wonnacott,David",T 02:30pm-03:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH245A00B
+Haverford College,2021-22,F,CMSCH260A,001,Foundations of Data Science,"Mathieson,Sara",TTh 10:00am-11:30am (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH260A001
+Haverford College,2021-22,F,CMSCH260A,00A,Foundations of Data Science,"Mathieson,Sara",Th 12:00pm-01:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH260A00A
+Haverford College,2021-22,F,CMSCH260A,00B,Foundations of Data Science,"Mathieson,Sara",Th 01:00pm-02:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH260A00B
+Haverford College,2021-22,F,CMSCH325A,001,Computational Linguistics,"Grissom,Alvin",MW 02:30pm-04:00pm (SHA113),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH325A001
+Haverford College,2021-22,F,CMSCH325A,00A,Computational Linguistics,"Grissom,Alvin",W 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH325A00A
+Haverford College,2021-22,F,CMSCH325A,00B,Computational Linguistics,"Grissom,Alvin",W 12:30pm-01:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH325A00B
+Haverford College,2021-22,F,CMSCH340A,001,Analysis of Algorithms,"Lindell,Steven",MW 10:00am-11:30am (SHA430),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH340A001
+Haverford College,2021-22,F,CMSCH340A,00A,Analysis of Algorithms,"Lindell,Steven",F 10:00am-11:30am (SHA430),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH340A00A
+Haverford College,2021-22,F,CMSCH399A,001,Senior Thesis,"Lindell,Steven",F 01:30pm-04:00pm (HLS108),https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH399A001
+Haverford College,2021-22,F,CMSCH480A,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH480A001
+Haverford College,2021-22,F,CMSCH480F,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH480F001
+Haverford College,2021-22,F,CMSCH480F,002,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH480F002
+Haverford College,2021-22,F,CMSCH480F,003,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH480F003
+Haverford College,2021-22,S,CMSCH104B,001,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.","TTh 01:00pm-02:30pm (STO205,STO205)",https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH104B001
+Haverford College,2021-22,S,CMSCH104B,00A,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",M 09:30am-10:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH104B00A
+Haverford College,2021-22,S,CMSCH104B,00B,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",M 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH104B00B
+Haverford College,2021-22,S,CMSCH106B,001,Introduction to Data Structures,"Farias Sales Rocha Neto,Jeova",MW 11:30am-01:00pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH106B001
+Haverford College,2021-22,S,CMSCH106B,00A,Introduction to Data Structures,"Farias Sales Rocha Neto,Jeova, Lindell,Suzanne",F 09:30am-10:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH106B00A
+Haverford College,2021-22,S,CMSCH106B,00B,Introduction to Data Structures,"Wonnacott,David, Lindell,Suzanne",F 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH106B00B
+Haverford College,2021-22,S,CMSCH106B,00C,Introduction to Data Structures,"Wonnacott,David, Lindell,Suzanne",F 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH106B00C
+Haverford College,2021-22,S,CMSCH222B,001,Scientific Computing: Continuous Systems,"Manning,Robert",TTh 10:00am-11:30am (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH222B001
+Haverford College,2021-22,S,CMSCH222B,002,Scientific Computing: Continuous Systems,"Manning,Robert",TTh 11:30am-01:00pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH222B002
+Haverford College,2021-22,S,CMSCH231B,001,Discrete Mathematics,"Boudourides,Moses",MW 10:00am-11:30am (TRLR-OBS),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH231B001
+Haverford College,2021-22,S,CMSCH231B,00A,Discrete Mathematics,"Boudourides,Moses",M 01:00pm-02:00pm (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH231B00A
+Haverford College,2021-22,S,CMSCH231B,00B,Discrete Mathematics,"Boudourides,Moses",M 02:00pm-03:00pm (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH231B00B
+Haverford College,2021-22,S,CMSCH231B,00C,Discrete Mathematics,"Boudourides,Moses",M 03:00pm-04:00pm (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH231B00C
+Haverford College,2021-22,S,CMSCH235B,001,Information and Coding Theory,"Lindell,Steven",MW 10:00am-11:30am (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH235B001
+Haverford College,2021-22,S,CMSCH235B,00A,Information and Coding Theory,"Lindell,Steven",F 10:00am-11:30am (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH235B00A
+Haverford College,2021-22,S,CMSCH240B,001,Principles of Computer Organization,"Dougherty,John",MW 11:30am-01:00pm (CHS101),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH240B001
+Haverford College,2021-22,S,CMSCH240B,00A,Principles of Computer Organization,"Dougherty,John",T 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH240B00A
+Haverford College,2021-22,S,CMSCH240B,00B,Principles of Computer Organization,"Dougherty,John",T 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH240B00B
+Haverford College,2021-22,S,CMSCH304B,001,Computational Physics,"Grin,Daniel",MW 10:00am-11:30am (STO4),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH304B001
+Haverford College,2021-22,S,CMSCH345B,001,Theory of Computation,"Boudourides,Moses",T 01:30pm-04:00pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH345B001
+Haverford College,2021-22,S,CMSCH345B,00A,Theory of Computation,"Boudourides,Moses",Th 01:30pm-04:00pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH345B00A
+Haverford College,2021-22,S,CMSCH350B,001,Compiler Design,"Wonnacott,David",TTh 11:30am-01:00pm (STO16),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH350B001
+Haverford College,2021-22,S,CMSCH350B,00A,Compiler Design,"Wonnacott,David",T 03:00pm-04:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH350B00A
+Haverford College,2021-22,S,CMSCH350B,00B,Compiler Design,"Wonnacott,David",W 03:00pm-04:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH350B00B
+Haverford College,2021-22,S,CMSCH350B,00C,Compiler Design,"Wonnacott,David",W 04:00pm-06:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH350B00C
+Haverford College,2021-22,S,CMSCH360B,001,Machine Learning,"Grissom,Alvin",MW 02:30pm-04:00pm (ESTW309),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH360B001
+Haverford College,2021-22,S,CMSCH360B,00A,Machine Learning,"Grissom,Alvin",W 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH360B00A
+Haverford College,2021-22,S,CMSCH360B,00B,Machine Learning,"Grissom,Alvin",W 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH360B00B
+Haverford College,2021-22,S,CMSCH399B,001,Senior Thesis,"Lindell,Steven",F 01:30pm-04:00pm (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH399B001
+Haverford College,2021-22,S,CMSCH480B,001,Independent Study,"Farias Sales Rocha Neto,Jeova",,https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH480B001
+Haverford College,2021-22,S,CMSCH480B,002,Independent Study,"Farias Sales Rocha Neto,Jeova",,https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH480B002
+Haverford College,2021-22,S,CMSCH480B,003,Independent Study,"Boudourides,Moses",,https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH480B003
+Haverford College,2021-22,S,CMSCH480B,004,Independent Study,"Grissom,Alvin",,https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH480B004
+Haverford College,2021-22,S,CMSCH480B,005,Independent Study,"Dougherty,John",,https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH480B005
+Haverford College,2021-22,S,CMSCH480B,006,Independent Study,"Lindell,Steven",,https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH480B006
+Haverford College,2021-22,S,CMSCH480I,001,Independent Study,"Dougherty,John",,https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH480I001
+Haverford College,2022-23,F,CMSCH105A,001,Introduction to Computer Science,"Wonnacott,David",MW 11:30am-01:00pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH105A001
+Haverford College,2022-23,F,CMSCH105A,002,Introduction to Computer Science,"Farias Sales Rocha Neto,Jeova, Wonnacott,David, Lindell,Suzanne",MW 02:30pm-04:00pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH105A002
+Haverford College,2022-23,F,CMSCH105A,00A,Introduction to Computer Science,"Lindell,Suzanne, Wonnacott,David, Farias Sales Rocha Neto,Jeova",F 09:30am-10:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH105A00A
+Haverford College,2022-23,F,CMSCH105A,00B,Introduction to Computer Science,"Lindell,Suzanne, Wonnacott,David, Farias Sales Rocha Neto,Jeova",F 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH105A00B
+Haverford College,2022-23,F,CMSCH105A,00C,Introduction to Computer Science,"Lindell,Suzanne, Wonnacott,David, Farias Sales Rocha Neto,Jeova",F 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH105A00C
+Haverford College,2022-23,F,CMSCH105A,00D,Introduction to Computer Science,"Lindell,Suzanne, Wonnacott,David, Farias Sales Rocha Neto,Jeova",F 01:30pm-02:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH105A00D
+Haverford College,2022-23,F,CMSCH105A,00E,Introduction to Computer Science,"Lindell,Suzanne, Farias Sales Rocha Neto,Jeova, Wonnacott,David",F 02:30pm-03:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH105A00E
+Haverford College,2022-23,F,CMSCH107A,001,Introduction to Computer Science and Data Structures,"Dougherty,John",MW 11:30am-01:00pm (FDR220),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH107A001
+Haverford College,2022-23,F,CMSCH107A,00A,Introduction to Computer Science and Data Structures,"Dougherty,John",T 01:00pm-02:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH107A00A
+Haverford College,2022-23,F,CMSCH107A,00B,Introduction to Computer Science and Data Structures,"Grissom,Alvin",T 02:00pm-03:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH107A00B
+Haverford College,2022-23,F,CMSCH107A,00C,Introduction to Computer Science and Data Structures,"Grissom,Alvin",T 03:00pm-04:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH107A00C
+Haverford College,2022-23,F,CMSCH208A,001,Speech Synthesis and Recognition,"Chandlee,Jane",MW 01:00pm-02:30pm (CHS101),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH208A001
+Haverford College,2022-23,F,CMSCH231A,002,Discrete Mathematics,"Zhou,Yuxin",MWF 09:30am-10:30am (LNKL205),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH231A002
+Haverford College,2022-23,F,CMSCH251A,001,Principles of Computing Systems,"Wonnacott,David, Dougherty,John",TTh 11:30am-01:00pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH251A001
+Haverford College,2022-23,F,CMSCH251A,00A,Principles of Computing Systems,"Dougherty,John, Wonnacott,David",W 01:30pm-02:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH251A00A
+Haverford College,2022-23,F,CMSCH251A,00B,Principles of Computing Systems,"Dougherty,John, Wonnacott,David",W 02:30pm-03:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH251A00B
+Haverford College,2022-23,F,CMSCH260A,001,Foundations of Data Science,"Grissom,Alvin",TTh 10:00am-11:30am (ESTW309),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH260A001
+Haverford College,2022-23,F,CMSCH260A,00A,Foundations of Data Science,"Grissom,Alvin",Th 01:00pm-02:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH260A00A
+Haverford College,2022-23,F,CMSCH260A,00B,Foundations of Data Science,"Grissom,Alvin",Th 02:00pm-03:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH260A00B
+Haverford College,2022-23,F,CMSCH340A,001,Analysis of Algorithms,"Lindell,Steven",MW 10:00am-11:30am (SHA430),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH340A001
+Haverford College,2022-23,F,CMSCH340A,00A,Analysis of Algorithms,"Lindell,Steven",F 10:00am-11:30am (SHA430),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH340A00A
+Haverford College,2022-23,F,CMSCH394A,001,Advanced Topics in Theoretical Computer Science: Set Theory,"Lippel,David A.",TTh 02:30pm-04:00pm (ESTW309),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH394A001
+Haverford College,2022-23,F,CMSCH396A,001,Advanced Topics in Machine Learning: Deep Learning for Computer Vision,"Farias Sales Rocha Neto,Jeova",TTh 10:00am-11:30am (SHA416),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH396A001
+Haverford College,2022-23,F,CMSCH396A,00A,Advanced Topics in Machine Learning: Deep Learning for Computer Vision,"Farias Sales Rocha Neto,Jeova",Th 03:00pm-04:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH396A00A
+Haverford College,2022-23,F,CMSCH399A,001,Senior Thesis,"Lindell,Steven",F 01:30pm-02:30pm (HLS109),https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH399A001
+Haverford College,2022-23,F,CMSCH480A,001,Independent Study,"Department staff,TBA",,https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH480A001
+Haverford College,2022-23,F,CMSCH480F,001,Independent Study,"Department staff,TBA",,https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH480F001
+Haverford College,2022-23,F,CMSCH480F,002,Independent Study,"Department staff,TBA",,https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH480F002
+Haverford College,2022-23,F,CMSCH480F,003,Independent Study,"Department staff,TBA",,https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH480F003
+Haverford College,2022-23,S,CMSCH104B,001,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",MW 10:00am-11:30am (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH104B001
+Haverford College,2022-23,S,CMSCH104B,00A,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",M 09:00am-10:00am (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH104B00A
+Haverford College,2022-23,S,CMSCH104B,00B,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",M 11:30am-12:30pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH104B00B
+Haverford College,2022-23,S,CMSCH106B,001,Introduction to Data Structures,"Dougherty,John",MW 02:30pm-04:00pm (STO131),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH106B001
+Haverford College,2022-23,S,CMSCH106B,00A,Introduction to Data Structures,"Farias Sales Rocha Neto,Jeova",F 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH106B00A
+Haverford College,2022-23,S,CMSCH106B,00B,Introduction to Data Structures,"Farias Sales Rocha Neto,Jeova",F 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH106B00B
+Haverford College,2022-23,S,CMSCH106B,00C,Introduction to Data Structures,"Farias Sales Rocha Neto,Jeova",F 12:30pm-01:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH106B00C
+Haverford College,2022-23,S,CMSCH210B,001,Linear Optimization,"Manning,Robert",TTh 10:00am-11:30am (STO10),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH210B001
+Haverford College,2022-23,S,CMSCH231B,001,Discrete Mathematics,"Lindell,Steven",MW 10:00am-11:30am (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH231B001
+Haverford College,2022-23,S,CMSCH231B,002,Discrete Mathematics,"Zhou,Yuxin",MWF 01:30pm-02:30pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH231B002
+Haverford College,2022-23,S,CMSCH231B,00A,Discrete Mathematics,"Lindell,Steven",F 10:00am-11:30am (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH231B00A
+Haverford College,2022-23,S,CMSCH231B,00B,Discrete Mathematics,"Zhou,Yuxin",T 01:30pm-02:30pm (HLS12),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH231B00B
+Haverford College,2022-23,S,CMSCH231B,00C,Discrete Mathematics,"Zhou,Yuxin",T 02:30pm-03:30pm (HLS12),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH231B00C
+Haverford College,2022-23,S,CMSCH304B,001,Computational Physics,"Grin,Daniel",MW 10:00am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH304B001
+Haverford College,2022-23,S,CMSCH345B,001,Theory of Computation,"Zhou,Yuxin",MW 10:00am-11:30am (HLS12),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH345B001
+Haverford College,2022-23,S,CMSCH345B,00A,Theory of Computation,"Zhou,Yuxin",F 10:00am-11:30am (HLS12),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH345B00A
+Haverford College,2022-23,S,CMSCH356B,001,Concurrency and Co-Design in Operating Systems,"Dougherty,John",TTh 02:30pm-04:00pm (HLS109),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH356B001
+Haverford College,2022-23,S,CMSCH356B,00A,Concurrency and Co-Design in Operating Systems,"Wonnacott,David",W 12:30pm-01:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH356B00A
+Haverford College,2022-23,S,CMSCH356B,00B,Concurrency and Co-Design in Operating Systems,"Wonnacott,David",W 01:30pm-02:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH356B00B
+Haverford College,2022-23,S,CMSCH356B,00C,Concurrency and Co-Design in Operating Systems,"Wonnacott,David",W 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH356B00C
+Haverford College,2022-23,S,CMSCH360B,001,Machine Learning,"Grissom,Alvin",TTh 11:30am-01:00pm (SHA113),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH360B001
+Haverford College,2022-23,S,CMSCH360B,00A,Machine Learning,"Grissom,Alvin",Th 01:30pm-02:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH360B00A
+Haverford College,2022-23,S,CMSCH360B,00B,Machine Learning,"Grissom,Alvin",Th 02:30pm-03:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH360B00B
+Haverford College,2022-23,S,CMSCH399B,001,Senior Thesis,"Lindell,Steven",F 01:30pm-04:00pm (ESTW309),https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH399B001
+Haverford College,2022-23,S,CMSCH480B,001,Independent Study,"Dougherty,John",,https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH480B001
+Haverford College,2022-23,S,CMSCH480B,002,Independent Study,"Wonnacott,David",,https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH480B002
+Haverford College,2022-23,S,CMSCH480B,003,Independent Study,"Farias Sales Rocha Neto,Jeova",,https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH480B003
+Haverford College,2022-23,S,CMSCH480B,004,Independent Study,"Lindell,Steven",,https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH480B004
+Haverford College,2022-23,S,CMSCH480B,005,Independent Study,"Zhou,Yuxin",,https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH480B005
+Haverford College,2022-23,S,CMSCH480B,006,Independent Study,"Grissom,Alvin",,https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH480B006
+Haverford College,2022-23,S,CMSCH480I,001,Independent Study,"Friedler,Sorelle A.",,https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH480I001
+Haverford College,2022-23,S,CMSCH480I,002,Independent Study,"Dougherty,John",,https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH480I002
+Haverford College,2023-24,F,CMSCH105A,001,Introduction to Computer Science,"Zhou,Yuxin",MW 11:30am-12:55pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH105A001
+Haverford College,2023-24,F,CMSCH105A,002,Introduction to Computer Science,"Braun,Christopher",MW 02:30pm-03:55pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH105A002
+Haverford College,2023-24,F,CMSCH105A,00A,Introduction to Computer Science,"Lindell,Suzanne, Zhou,Yuxin, Braun,Christopher",F 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH105A00A
+Haverford College,2023-24,F,CMSCH105A,00B,Introduction to Computer Science,"Lindell,Suzanne, Zhou,Yuxin, Braun,Christopher",F 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH105A00B
+Haverford College,2023-24,F,CMSCH105A,00C,Introduction to Computer Science,"Lindell,Suzanne, Zhou,Yuxin, Braun,Christopher",F 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH105A00C
+Haverford College,2023-24,F,CMSCH105A,00D,Introduction to Computer Science,"Lindell,Suzanne, Zhou,Yuxin, Braun,Christopher",F 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH105A00D
+Haverford College,2023-24,F,CMSCH105A,00E,Introduction to Computer Science,"Lindell,Suzanne, Zhou,Yuxin, Braun,Christopher",F 02:30pm-03:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH105A00E
+Haverford College,2023-24,F,CMSCH106A,001,Introduction to Data Structures,"Braun,Christopher",TTh 01:00pm-02:25pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH106A001
+Haverford College,2023-24,F,CMSCH106A,00A,Introduction to Data Structures,"Braun,Christopher",W 12:30pm-01:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH106A00A
+Haverford College,2023-24,F,CMSCH106A,00B,Introduction to Data Structures,"Braun,Christopher",Th 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH106A00B
+Haverford College,2023-24,F,CMSCH107A,001,Introduction to Computer Science and Data Structures,"Wonnacott,David",MW 11:30am-12:55pm (SHA113),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH107A001
+Haverford College,2023-24,F,CMSCH107A,00A,Introduction to Computer Science and Data Structures,"Wonnacott,David, Lindell,Suzanne",Th 01:00pm-01:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH107A00A
+Haverford College,2023-24,F,CMSCH107A,00B,Introduction to Computer Science and Data Structures,"Lindell,Suzanne, Wonnacott,David",Th 02:00pm-02:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH107A00B
+Haverford College,2023-24,F,CMSCH107A,00C,Introduction to Computer Science and Data Structures,"Lindell,Suzanne, Wonnacott,David",Th 03:00pm-03:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH107A00C
+Haverford College,2023-24,F,CMSCH231A,001,Discrete Mathematics,"Zhou,Yuxin",MW 10:00am-11:25am (STO104),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH231A001
+Haverford College,2023-24,F,CMSCH231A,00A,Discrete Mathematics,"Zhou,Yuxin",F 10:00am-11:25am (STO104),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH231A00A
+Haverford College,2023-24,F,CMSCH251A,001,Principles of Computing Systems,"Dougherty,John",TTh 11:30am-12:55pm (SHA113),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH251A001
+Haverford College,2023-24,F,CMSCH251A,00A,Principles of Computing Systems,"Dougherty,John",W 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH251A00A
+Haverford College,2023-24,F,CMSCH251A,00B,Principles of Computing Systems,"Dougherty,John",W 02:30pm-03:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH251A00B
+Haverford College,2023-24,F,CMSCH260A,001,Foundations of Data Science,"Mathieson,Sara",TTh 10:00am-11:25am (HLS108),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH260A001
+Haverford College,2023-24,F,CMSCH260A,00A,Foundations of Data Science,"Mathieson,Sara",T 01:00pm-01:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH260A00A
+Haverford College,2023-24,F,CMSCH260A,00B,Foundations of Data Science,"Mathieson,Sara",T 02:00pm-02:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH260A00B
+Haverford College,2023-24,F,CMSCH265A,001,Critical Study of Data and Algorithms,"Minocher,Xerxes",MW 02:30pm-03:55pm (STO16),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH265A001
+Haverford College,2023-24,F,CMSCH340A,001,Analysis of Algorithms,"Lindell,Steven",MW 10:00am-11:25am (SHA410),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH340A001
+Haverford College,2023-24,F,CMSCH340A,00A,Analysis of Algorithms,"Lindell,Steven",F 10:00am-11:25am (SHA410),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH340A00A
+Haverford College,2023-24,F,CMSCH394A,001,Advanced Topics in Theoretical Computer Science: Math Foundations of Machine Learning,"Anbouhi,Soheil",MWF 09:30am-10:25am (HLS11),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH394A001
+Haverford College,2023-24,F,CMSCH395A,001,Advanced Topics in Computer Systems: Type-Theoretic Foundations for Reliable Software Design,"Choudhury,Pritam",TTh 01:00pm-02:25pm (STO10),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH395A001
+Haverford College,2023-24,F,CMSCH395A,00A,Advanced Topics in Computer Systems: Type-Theoretic Foundations for Reliable Software Design,"Choudhury,Pritam",T 02:30pm-03:25pm (STO4),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH395A00A
+Haverford College,2023-24,F,CMSCH395A,00B,Advanced Topics in Computer Systems: Type-Theoretic Foundations for Reliable Software Design,"Choudhury,Pritam",M 12:00pm-12:55pm,https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH395A00B
+Haverford College,2023-24,F,CMSCH399A,001,Senior Thesis,"Lindell,Steven",F 01:30pm-03:55pm (FDR220),https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH399A001
+Haverford College,2023-24,F,CMSCH480A,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH480A001
+Haverford College,2023-24,F,CMSCH480F,001,Independent Study,"Mathieson,Sara",,https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH480F001
+Haverford College,2023-24,F,CMSCH480F,002,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH480F002
+Haverford College,2023-24,F,CMSCH480F,003,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH480F003
+Haverford College,2023-24,S,CMSCH104B,001,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",MW 01:00pm-02:25pm (HLS106),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH104B001
+Haverford College,2023-24,S,CMSCH104B,00A,Topics in Intro Programming: Physics and Astronomy,"Department staff,TBA",M 09:00am-09:55am (HLS106),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH104B00A
+Haverford College,2023-24,S,CMSCH104B,00B,Topics in Intro Programming: Physics and Astronomy,"Department staff,TBA",Th 02:30pm-03:25pm (HLS106),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH104B00B
+Haverford College,2023-24,S,CMSCH105B,001,Introduction to Computer Science,"Braun,Christopher, Zhou,Yuxin",WF 02:30pm-03:55pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH105B001
+Haverford College,2023-24,S,CMSCH105B,00A,Introduction to Computer Science,"Lindell,Suzanne, Braun,Christopher, Zhou,Yuxin",F 12:30pm-01:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH105B00A
+Haverford College,2023-24,S,CMSCH105B,00B,Introduction to Computer Science,"Lindell,Suzanne, Braun,Christopher, Zhou,Yuxin",F 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH105B00B
+Haverford College,2023-24,S,CMSCH106B,001,Introduction to Data Structures,"Braun,Christopher",MW 11:30am-12:55pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH106B001
+Haverford College,2023-24,S,CMSCH106B,00A,Introduction to Data Structures,"Braun,Christopher",F 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH106B00A
+Haverford College,2023-24,S,CMSCH106B,00B,Introduction to Data Structures,"Braun,Christopher",F 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH106B00B
+Haverford College,2023-24,S,CMSCH106B,00C,Introduction to Data Structures,"Braun,Christopher",F 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH106B00C
+Haverford College,2023-24,S,CMSCH222B,001,Scientific Computing: Continuous Systems,"Everett,Rebecca",MW 01:00pm-02:25pm (HLS12),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH222B001
+Haverford College,2023-24,S,CMSCH231B,001,Discrete Mathematics,"Choudhury,Pritam",TTh 02:30pm-03:55pm (ESTW309),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH231B001
+Haverford College,2023-24,S,CMSCH231B,002,Discrete Mathematics,"Zhou,Yuxin",TTh 11:30am-12:55pm (SHA410),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH231B002
+Haverford College,2023-24,S,CMSCH231B,00A,Discrete Mathematics,"Choudhury,Pritam",M 10:00am-11:25am (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH231B00A
+Haverford College,2023-24,S,CMSCH235B,001,Information and Coding Theory,"Lindell,Steven","MW 02:30pm-03:55pm F 03:00pm-03:55pm (SHA410,HLS110)",https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH235B001
+Haverford College,2023-24,S,CMSCH245B,001,Principles of Programming Languages,"Choudhury,Pritam",TTh 10:00am-11:25am (CHS101),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH245B001
+Haverford College,2023-24,S,CMSCH245B,00A,Principles of Programming Languages,"Choudhury,Pritam",T 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH245B00A
+Haverford College,2023-24,S,CMSCH245B,00B,Principles of Programming Languages,"Choudhury,Pritam",Th 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH245B00B
+Haverford College,2023-24,S,CMSCH304B,001,Computational Physics,"Grin,Daniel, Gimenez-Pinto,Vianney",TTh 10:00am-11:25am (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH304B001
+Haverford College,2023-24,S,CMSCH345B,001,Theory of Computation,"Zhou,Yuxin",MW 10:00am-11:25am (UN111),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH345B001
+Haverford College,2023-24,S,CMSCH345B,00A,Theory of Computation,"Zhou,Yuxin",F 10:00am-11:25am (HLS12),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH345B00A
+Haverford College,2023-24,S,CMSCH350B,001,Compiler Design,"Wonnacott,David",TTh 02:30pm-04:00pm (SHA113),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH350B001
+Haverford College,2023-24,S,CMSCH350B,00A,Compiler Design,"Wonnacott,David",W 12:30pm-01:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH350B00A
+Haverford College,2023-24,S,CMSCH350B,00B,Compiler Design,"Wonnacott,David",W 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH350B00B
+Haverford College,2023-24,S,CMSCH360B,001,Machine Learning,"Mathieson,Sara",TTh 11:30am-12:55pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH360B001
+Haverford College,2023-24,S,CMSCH360B,00A,Machine Learning,"Friedler,Sorelle A., Mathieson,Sara",T 01:30pm-02:25pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH360B00A
+Haverford College,2023-24,S,CMSCH360B,00B,Machine Learning,"Friedler,Sorelle A., Mathieson,Sara",T 02:30pm-03:25pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH360B00B
+Haverford College,2023-24,S,CMSCH399B,001,Senior Thesis,"Lindell,Steven",F 01:30pm-02:25pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH399B001
+Haverford College,2023-24,S,CMSCH480B,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH480B001
+Haverford College,2023-24,S,CMSCH480B,002,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH480B002
+Haverford College,2023-24,S,CMSCH480B,003,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH480B003
+Haverford College,2023-24,S,CMSCH480B,004,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH480B004
+Haverford College,2023-24,S,CMSCH480B,005,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH480B005
+Haverford College,2023-24,S,CMSCH480B,006,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH480B006
+Haverford College,2023-24,S,CMSCH480I,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH480I001
+Haverford College,2023-24,S,CMSCH480I,002,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH480I002
+Haverford College,2024-25,F,CMSCH105A,001,Introduction to Computer Science,"Grissom,Alvin",TTh 10:00am-11:25am (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH105A001
+Haverford College,2024-25,F,CMSCH105A,002,Introduction to Computer Science,"Grissom,Alvin",TTh 02:30pm-03:55pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH105A002
+Haverford College,2024-25,F,CMSCH105A,00A,Introduction to Computer Science,"Lindell,Suzanne",Th 12:30pm-01:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH105A00A
+Haverford College,2024-25,F,CMSCH105A,00B,Introduction to Computer Science,"Grissom,Alvin",Th 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH105A00B
+Haverford College,2024-25,F,CMSCH105A,00C,Introduction to Computer Science,"Lindell,Suzanne",F 08:30am-09:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH105A00C
+Haverford College,2024-25,F,CMSCH105A,00D,Introduction to Computer Science,"Lindell,Suzanne",F 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH105A00D
+Haverford College,2024-25,F,CMSCH105A,00E,Introduction to Computer Science,"Lindell,Suzanne",F 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH105A00E
+Haverford College,2024-25,F,CMSCH106A,001,Introduction to Data Structures,"Friedler,Sorelle A.",TTh 01:00pm-02:25pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH106A001
+Haverford College,2024-25,F,CMSCH106A,00A,Introduction to Data Structures,"Friedler,Sorelle A.",Th 02:30pm-03:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH106A00A
+Haverford College,2024-25,F,CMSCH106A,00B,Introduction to Data Structures,"Lindell,Suzanne",F 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH106A00B
+Haverford College,2024-25,F,CMSCH106A,00C,Introduction to Data Structures,"Lindell,Suzanne",F 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH106A00C
+Haverford College,2024-25,F,CMSCH107A,001,Introduction to Computer Science and Data Structures,"Zhou,Yuxin",MW 02:30pm-03:55pm (SHA113),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH107A001
+Haverford College,2024-25,F,CMSCH107A,00A,Introduction to Computer Science and Data Structures,"Zhou,Yuxin",W 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH107A00A
+Haverford College,2024-25,F,CMSCH107A,00B,Introduction to Computer Science and Data Structures,"Lindell,Suzanne",W 08:30am-09:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH107A00B
+Haverford College,2024-25,F,CMSCH107A,00C,Introduction to Computer Science and Data Structures,"Lindell,Suzanne",W 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH107A00C
+Haverford College,2024-25,F,CMSCH210A,001,Linear Optimization,"Manning,Robert",MW 01:00pm-02:25pm (HLS109),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH210A001
+Haverford College,2024-25,F,CMSCH231A,001,Discrete Mathematics,"Lambert,Dakotah",MW 10:00am-11:25am (STO10),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH231A001
+Haverford College,2024-25,F,CMSCH231A,00A,Discrete Mathematics,"Lambert,Dakotah",F 10:00am-11:25am (STO10),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH231A00A
+Haverford College,2024-25,F,CMSCH251A,001,Principles of Computing Systems,"Dougherty,John",TTh 08:30am-09:55am (HLS11),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH251A001
+Haverford College,2024-25,F,CMSCH251A,00A,Principles of Computing Systems,"Lambert,Dakotah",M 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH251A00A
+Haverford College,2024-25,F,CMSCH251A,00B,Principles of Computing Systems,"Lambert,Dakotah",M 02:30pm-03:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH251A00B
+Haverford College,2024-25,F,CMSCH260A,001,Foundations of Data Science,"Nguyen,Thao",MW 01:00pm-02:25pm (STO10),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH260A001
+Haverford College,2024-25,F,CMSCH260A,00A,Foundations of Data Science,"Nguyen,Thao",T 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH260A00A
+Haverford College,2024-25,F,CMSCH260A,00B,Foundations of Data Science,"Nguyen,Thao",T 02:30pm-03:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH260A00B
+Haverford College,2024-25,F,CMSCH340A,001,Analysis of Algorithms,"Lindell,Steven",MW 10:00am-11:25am (SHA410),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH340A001
+Haverford College,2024-25,F,CMSCH340A,00A,Analysis of Algorithms,"Lindell,Steven",F 10:00am-11:25am (SHA410),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH340A00A
+Haverford College,2024-25,F,CMSCH364A,001,Computational Biology,"Mathieson,Sara",TTh 01:00pm-02:25pm (STO207),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH364A001
+Haverford College,2024-25,F,CMSCH364A,00A,Computational Biology,"Mathieson,Sara",Th 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH364A00A
+Haverford College,2024-25,F,CMSCH364A,00B,Computational Biology,"Mathieson,Sara",Th 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH364A00B
+Haverford College,2024-25,F,CMSCH399A,001,Senior Thesis,"Lindell,Steven",F 01:30pm-03:55pm (HLS108),https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH399A001
+Haverford College,2024-25,F,CMSCH480A,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH480A001
+Haverford College,2024-25,F,CMSCH480F,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH480F001
+Haverford College,2024-25,F,CMSCH480F,002,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH480F002
+Haverford College,2024-25,F,CMSCH480F,003,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH480F003
+Haverford College,2024-25,S,CMSCH104B,001,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",MW 02:30pm-03:55pm (STO14),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH104B001
+Haverford College,2024-25,S,CMSCH104B,00A,Topics in Intro Programming: Physics and Astronomy,"Lindell,Suzanne, Lommen,Andrea N.",W 09:30am-10:25am (HLS12),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH104B00A
+Haverford College,2024-25,S,CMSCH104B,00B,Topics in Intro Programming: Physics and Astronomy,"Lindell,Suzanne, Lommen,Andrea N.",Th 02:30pm-03:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH104B00B
+Haverford College,2024-25,S,CMSCH105B,001,Introduction to Computer Science,"Nguyen,Thao",TTh 10:00am-11:25am (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH105B001
+Haverford College,2024-25,S,CMSCH105B,00A,Introduction to Computer Science,"Nguyen,Thao",Th 12:30pm-01:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH105B00A
+Haverford College,2024-25,S,CMSCH105B,00B,Introduction to Computer Science,"Lindell,Suzanne",Th 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH105B00B
+Haverford College,2024-25,S,CMSCH106B,001,Introduction to Data Structures,"Lambert,Dakotah",TTh 02:30pm-03:55pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH106B001
+Haverford College,2024-25,S,CMSCH106B,00A,Introduction to Data Structures,"Lambert,Dakotah",Th 10:00am-10:55am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH106B00A
+Haverford College,2024-25,S,CMSCH106B,00B,Introduction to Data Structures,"Lindell,Suzanne",F 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH106B00B
+Haverford College,2024-25,S,CMSCH106B,00C,Introduction to Data Structures,"Lindell,Suzanne",F 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH106B00C
+Haverford College,2024-25,S,CMSCH106B,00D,Introduction to Data Structures,"Lindell,Suzanne",Th 01:30pm-02:25pm,https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH106B00D
+Haverford College,2024-25,S,CMSCH231B,001,Discrete Mathematics,"Lindell,Steven",MW 10:00am-11:25am (SHA410),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH231B001
+Haverford College,2024-25,S,CMSCH231B,00A,Discrete Mathematics,"Lindell,Steven",F 10:00am-11:25am (SHA410),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH231B00A
+Haverford College,2024-25,S,CMSCH251B,001,Principles of Computing Systems,"Lambert,Dakotah",TTh 01:00pm-02:25pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH251B001
+Haverford College,2024-25,S,CMSCH251B,00A,Principles of Computing Systems,"Lambert,Dakotah",W 09:00am-09:55am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH251B00A
+Haverford College,2024-25,S,CMSCH251B,00B,Principles of Computing Systems,"Lambert,Dakotah",W 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH251B00B
+Haverford College,2024-25,S,CMSCH260B,001,Foundations of Data Science,"Mathieson,Sara",TTh 10:00am-11:25am (ESTW309),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH260B001
+Haverford College,2024-25,S,CMSCH260B,00A,Foundations of Data Science,"Mathieson,Sara",T 02:00pm-02:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH260B00A
+Haverford College,2024-25,S,CMSCH260B,00B,Foundations of Data Science,"Mathieson,Sara",T 03:00pm-03:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH260B00B
+Haverford College,2024-25,S,CMSCH266B,001,Artificial Intelligence and Society,"Friedler,Sorelle A.",MW 01:00pm-02:25pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH266B001
+Haverford College,2024-25,S,CMSCH266B,00A,Artificial Intelligence and Society,"Friedler,Sorelle A.",W 02:30pm-03:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH266B00A
+Haverford College,2024-25,S,CMSCH304B,001,Computational Physics,"Singh,Vijay",TTh 10:00am-11:25am (SHA416),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH304B001
+Haverford College,2024-25,S,CMSCH345B,001,Theory of Computation,"Zhou,Yuxin",MW 10:00am-11:25am (STO207),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH345B001
+Haverford College,2024-25,S,CMSCH345B,00A,Theory of Computation,"Zhou,Yuxin",F 10:00am-11:25am (HLS12),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH345B00A
+Haverford College,2024-25,S,CMSCH356B,001,Concurrency and Co-Design in Operating Systems,"Dougherty,John",TTh 08:30am-09:55am (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH356B001
+Haverford College,2024-25,S,CMSCH356B,00A,Concurrency and Co-Design in Operating Systems,"Dougherty,John",M 08:30am-09:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH356B00A
+Haverford College,2024-25,S,CMSCH356B,00B,Concurrency and Co-Design in Operating Systems,"Dougherty,John",M 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH356B00B
+Haverford College,2024-25,S,CMSCH356B,00C,Concurrency and Co-Design in Operating Systems,"Dougherty,John",M 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH356B00C
+Haverford College,2024-25,S,CMSCH360B,001,Machine Learning,"Grissom,Alvin",TTh 02:30pm-03:55pm (HLS11),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH360B001
+Haverford College,2024-25,S,CMSCH360B,00A,Machine Learning,"Grissom,Alvin",T 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH360B00A
+Haverford College,2024-25,S,CMSCH360B,00B,Machine Learning,"Grissom,Alvin",Th 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH360B00B
+Haverford College,2024-25,S,CMSCH399B,001,Senior Thesis,"Lindell,Steven",F 01:30pm-03:55pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH399B001
+Haverford College,2024-25,S,CMSCH480B,001,Independent Study,"Dougherty,John",,https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH480B001
+Haverford College,2024-25,S,CMSCH480B,002,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH480B002
+Haverford College,2024-25,S,CMSCH480B,003,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH480B003
+Haverford College,2024-25,S,CMSCH480B,004,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH480B004
+Haverford College,2024-25,S,CMSCH480B,005,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH480B005
+Haverford College,2024-25,S,CMSCH480B,006,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH480B006
+Haverford College,2025-26,F,CMSCH104A,001,Topics in Intro Programming: Physics and Astronomy,"Grin,Daniel",TTh 10:00am-11:25am (STO16),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH104A001
+Haverford College,2025-26,F,CMSCH104A,00A,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",M 10:30am-11:25am (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH104A00A
+Haverford College,2025-26,F,CMSCH104A,00B,Topics in Intro Programming: Physics and Astronomy,"Lommen,Andrea N.",W 01:30pm-02:25pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH104A00B
+Haverford College,2025-26,F,CMSCH105A,001,Introduction to Computer Science,"Wonnacott,David",TTh 10:00am-11:25am (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH105A001
+Haverford College,2025-26,F,CMSCH105A,002,Introduction to Computer Science,"Wonnacott,David",TTh 02:30pm-03:55pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH105A002
+Haverford College,2025-26,F,CMSCH105A,00A,Introduction to Computer Science,"Lindell,Suzanne",F 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH105A00A
+Haverford College,2025-26,F,CMSCH105A,00B,Introduction to Computer Science,"Lindell,Suzanne",F 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH105A00B
+Haverford College,2025-26,F,CMSCH105A,00C,Introduction to Computer Science,"Lindell,Suzanne",F 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH105A00C
+Haverford College,2025-26,F,CMSCH105A,00D,Introduction to Computer Science,"Lindell,Suzanne",F 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH105A00D
+Haverford College,2025-26,F,CMSCH105A,00E,Introduction to Computer Science,"Wonnacott,David",F 02:30pm-03:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH105A00E
+Haverford College,2025-26,F,CMSCH106A,001,Introduction to Data Structures,"Friedler,Sorelle A.",MW 11:30am-12:55pm (HLS204),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH106A001
+Haverford College,2025-26,F,CMSCH106A,00A,Introduction to Data Structures,"Friedler,Sorelle A.",M 01:00pm-01:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH106A00A
+Haverford College,2025-26,F,CMSCH106A,00B,Introduction to Data Structures,"Friedler,Sorelle A.",M 02:00pm-02:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH106A00B
+Haverford College,2025-26,F,CMSCH106A,00C,Introduction to Data Structures,,M 03:00pm-03:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH106A00C
+Haverford College,2025-26,F,CMSCH222A,001,Scientific Computing: Continuous Systems,"Manning,Robert",MW 11:30am-12:55pm (HLS12),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH222A001
+Haverford College,2025-26,F,CMSCH231A,001,Discrete Mathematics,"Lindell,Steven",MW 10:00am-11:25am (SHA430),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH231A001
+Haverford College,2025-26,F,CMSCH231A,00A,Discrete Mathematics,"Lindell,Steven",F 10:00am-11:25am (SHA430),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH231A00A
+Haverford College,2025-26,F,CMSCH251A,001,Principles of Computing Systems,"Dougherty,John, Nguyen,Dung",TTh 08:30am-09:55am (HLS109),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH251A001
+Haverford College,2025-26,F,CMSCH251A,00A,Principles of Computing Systems,"Dougherty,John, Nguyen,Dung",M 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH251A00A
+Haverford College,2025-26,F,CMSCH251A,00B,Principles of Computing Systems,"Dougherty,John, Nguyen,Dung",M 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH251A00B
+Haverford College,2025-26,F,CMSCH260A,001,Foundations of Data Science,"Nguyen,Thao",TTh 10:00am-11:25am (FDR220),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH260A001
+Haverford College,2025-26,F,CMSCH260A,00A,Foundations of Data Science,"Nguyen,Thao",W 09:30am-10:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH260A00A
+Haverford College,2025-26,F,CMSCH260A,00B,Foundations of Data Science,"Nguyen,Thao",W 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH260A00B
+Haverford College,2025-26,F,CMSCH260A,00C,Foundations of Data Science,"Nguyen,Thao",W 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH260A00C
+Haverford College,2025-26,F,CMSCH340A,001,Analysis of Algorithms,"Nguyen,Dung",MW 01:00pm-02:25pm (HLS108),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH340A001
+Haverford College,2025-26,F,CMSCH340A,00A,Analysis of Algorithms,"Nguyen,Dung",W 02:30pm-03:55pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH340A00A
+Haverford College,2025-26,F,CMSCH360A,001,Machine Learning,"Grissom,Alvin",TTh 01:00pm-02:25pm (HLS108),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH360A001
+Haverford College,2025-26,F,CMSCH360A,00A,Machine Learning,"Grissom,Alvin",Th 10:30am-11:25am (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH360A00A
+Haverford College,2025-26,F,CMSCH360A,00B,Machine Learning,"Grissom,Alvin",Th 11:30am-12:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH360A00B
+Haverford College,2025-26,F,CMSCH399A,001,Senior Thesis,"Lindell,Steven",F 01:30pm-02:25pm (UNMAC),https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH399A001
+Haverford College,2025-26,F,CMSCH480A,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH480A001
+Haverford College,2025-26,F,CMSCH480A,002,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH480A002
+Haverford College,2025-26,F,CMSCH480A,003,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH480A003
+Haverford College,2025-26,F,CMSCH480F,001,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH480F001
+Haverford College,2025-26,F,CMSCH480F,002,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH480F002
+Haverford College,2025-26,F,CMSCH480F,003,Independent Study,,,https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH480F003
+Haverford College,2025-26,S,CMSCH104B,001,Topics in Intro Programming: Physics and Astronomy,"Grin,Daniel",TTh 10:00am-11:25am (STO16),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH104B001
+Haverford College,2025-26,S,CMSCH104B,00A,Topics in Intro Programming: Physics and Astronomy,"Lindell,Suzanne, Grin,Daniel",Th 12:30pm-01:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH104B00A
+Haverford College,2025-26,S,CMSCH104B,00B,Topics in Intro Programming: Physics and Astronomy,"Lindell,Suzanne, Grin,Daniel",Th 01:30pm-02:25pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH104B00B
+Haverford College,2025-26,S,CMSCH105B,001,Introduction to Computer Science,"Dougherty,John",TTh 08:30am-09:55am (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH105B001
+Haverford College,2025-26,S,CMSCH105B,00A,Introduction to Computer Science,"Dougherty,John",M 08:30am-09:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH105B00A
+Haverford College,2025-26,S,CMSCH105B,00B,Introduction to Computer Science,"Dougherty,John",M 09:30am-10:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH105B00B
+Haverford College,2025-26,S,CMSCH105B,00C,Introduction to Computer Science,"Dougherty,John",M 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH105B00C
+Haverford College,2025-26,S,CMSCH106B,001,Introduction to Data Structures,"Friedler,Sorelle A.",TTh 10:00am-11:25am (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH106B001
+Haverford College,2025-26,S,CMSCH106B,00A,Introduction to Data Structures,"Friedler,Sorelle A., Lindell,Suzanne",F 09:30am-10:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH106B00A
+Haverford College,2025-26,S,CMSCH106B,00B,Introduction to Data Structures,"Friedler,Sorelle A., Lindell,Suzanne",F 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH106B00B
+Haverford College,2025-26,S,CMSCH106B,00C,Introduction to Data Structures,"Friedler,Sorelle A., Lindell,Suzanne",F 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH106B00C
+Haverford College,2025-26,S,CMSCH215B,001,Human Computer Interaction,"Dougherty,John",MW 11:30am-12:55pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH215B001
+Haverford College,2025-26,S,CMSCH251B,001,Principles of Computing Systems,"Nguyen,Dung",MW 01:00pm-02:25pm (HLS109),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH251B001
+Haverford College,2025-26,S,CMSCH251B,00A,Principles of Computing Systems,"Nguyen,Dung",W 09:00am-10:00am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH251B00A
+Haverford College,2025-26,S,CMSCH251B,00B,Principles of Computing Systems,"Nguyen,Dung",W 10:00am-11:00am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH251B00B
+Haverford College,2025-26,S,CMSCH260B,001,Foundations of Data Science,"Grissom,Alvin",TTh 01:00pm-02:25pm (HLS204),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH260B001
+Haverford College,2025-26,S,CMSCH260B,00A,Foundations of Data Science,"Grissom,Alvin",Th 10:30am-11:30am (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH260B00A
+Haverford College,2025-26,S,CMSCH260B,00B,Foundations of Data Science,"Grissom,Alvin",Th 11:30am-12:30pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH260B00B
+Haverford College,2025-26,S,CMSCH304B,001,Computational Physics,"Singh,Vijay",WF 10:00am-11:25am (ESTW115),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH304B001
+Haverford College,2025-26,S,CMSCH345B,001,Theory of Computation,"Lindell,Steven",MW 10:00am-11:25am (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH345B001
+Haverford College,2025-26,S,CMSCH345B,00A,Theory of Computation,"Lindell,Steven",F 10:00am-11:25am (SHA430),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH345B00A
+Haverford College,2025-26,S,CMSCH350B,001,Compiler Design,"Wonnacott,David",MW 01:00pm-02:25pm (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH350B001
+Haverford College,2025-26,S,CMSCH350B,00A,Compiler Design,"Wonnacott,David",T 01:00pm-02:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH350B00A
+Haverford College,2025-26,S,CMSCH350B,00C,Compiler Design,"Wonnacott,David",T 03:00pm-04:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH350B00C
+Haverford College,2025-26,S,CMSCH369B,001,Introduction to Robotics,"Nguyen,Thao",TTh 10:00am-11:25am (HLS108),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH369B001
+Haverford College,2025-26,S,CMSCH369B,00A,Introduction to Robotics,"Nguyen,Thao",W 11:00am-12:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH369B00A
+Haverford College,2025-26,S,CMSCH369B,00B,Introduction to Robotics,"Nguyen,Thao",W 01:00pm-02:00pm (HLS110),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH369B00B
+Haverford College,2025-26,S,CMSCH399B,001,Senior Thesis,"Lindell,Steven",F 01:30pm-03:55pm (UNMAC),https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH399B001
+Haverford College,2025-26,S,CMSCH399B,002,Senior Thesis,"Nguyen,Thao",,https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH399B002
+Haverford College,2025-26,S,CMSCH480B,001,Independent Study,"Dougherty,John",,https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH480B001
+Haverford College,2025-26,S,CMSCH480B,002,Independent Study,"Friedler,Sorelle A.",,https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH480B002
+Haverford College,2025-26,S,CMSCH480B,003,Independent Study,"Grissom,Alvin",,https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH480B003
+Haverford College,2025-26,S,CMSCH480B,004,Independent Study,"Lindell,Steven",,https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH480B004
+Haverford College,2025-26,S,CMSCH480B,005,Independent Study,"Nguyen,Thao",,https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH480B005
+Haverford College,2025-26,S,CMSCH480B,006,Independent Study,"Wonnacott,David",,https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH480B006
