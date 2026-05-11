@@ -413,6 +413,111 @@
     }
     .ftd-num.na { color: var(--muted); }
 
+    /* ── panel view toggle (Faculty / Courses) ─────────────────────────────── */
+    .panel-toggle {
+      display: inline-flex;
+      gap: 4px;
+      margin: 4px 0 6px;
+    }
+    .panel-toggle button {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 11px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--sub);
+      transition: color 0.12s, border-color 0.12s, background 0.12s;
+    }
+    .panel-toggle button:hover {
+      color: var(--text);
+      border-color: var(--text);
+    }
+    .panel-toggle button.active {
+      color: var(--bg);
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* ── course schedule table ─────────────────────────────────────────────── */
+    .course-wrap {
+      overflow-x: auto;
+      margin-right: 12px;
+      background: var(--expand-bg);
+    }
+    .course-table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: max-content;
+      min-width: 100%;
+    }
+    .course-table th,
+    .course-table td {
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--border-sub);
+      text-align: center;
+      white-space: nowrap;
+    }
+    .course-table thead th {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--sub);
+      background: var(--expand-bg);
+      padding: 8px 10px;
+    }
+    .course-table tbody tr { transition: background 0.1s; }
+    .course-table tbody tr:last-child td { border-bottom: none; }
+    .course-table tbody tr:hover td,
+    .course-table tbody tr:hover td.course-sticky {
+      background: var(--hover-bg);
+    }
+
+    .course-sticky {
+      position: sticky;
+      left: 0;
+      background: var(--expand-bg);
+      text-align: left !important;
+      z-index: 2;
+      padding-right: 16px !important;
+      padding-left: 0 !important;
+    }
+    .course-table thead th.course-sticky { z-index: 3; }
+
+    .course-title-cell {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      min-width: 280px;
+      max-width: 440px;
+    }
+    .course-code {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+    .course-name {
+      font-size: 13px;
+      color: var(--sub);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .course-check {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .course-dash { color: var(--muted); }
+    .course-empty {
+      padding: 20px 4px;
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
     /* ── filter bar ── */
     .filter-bar {
       display: flex;
@@ -605,6 +710,7 @@ const CS_SUBFIELDS = [
 // ── state ──────────────────────────────────────────────────────────────────
 let allColleges = [];
 let collegeLinks = {};
+let courseSchedules = {};
 let collegeSort = { key: 'total', dir: -1 };
 let activeCategories = new Set(['tenured', 'tenure_track', 'teaching']);
 let activeSubfields = new Set();
@@ -623,12 +729,14 @@ document.getElementById('theme-btn').addEventListener('click', () => {
 
 // ── data ───────────────────────────────────────────────────────────────────
 async function loadData() {
-  const [facultyRes, linksRes] = await Promise.all([
+  const [facultyRes, linksRes, coursesRes] = await Promise.all([
     fetch('faculty_data.json'),
     fetch('college_links.json'),
+    fetch('course_schedule_data.json'),
   ]);
   allColleges = await facultyRes.json();
   collegeLinks = await linksRes.json();
+  courseSchedules = await coursesRes.json();
 
   // Precompute a normalized lookup of each faculty's interests so the
   // subfield filter can match in O(1) per chip.
@@ -914,7 +1022,7 @@ function buildCollegeRow(college, idx) {
   });
 
   const panel = div.querySelector(`#fac-panel-${idx}`);
-  panel._build = () => buildFacultyPanel(panel, college.faculty);
+  panel._build = () => buildPanel(panel, college);
 
   div.querySelector('.college-summary').addEventListener('click', () => {
     const wasOpen = div.classList.contains('open');
@@ -929,8 +1037,44 @@ function buildCollegeRow(college, idx) {
   return div;
 }
 
+// ── panel container (toggle + faculty/courses view) ────────────────────────
+function buildPanel(panel, college) {
+  const schedule = courseSchedules[college.name];
+  const hasCourses = !!schedule;
+  let view = panel._view || 'faculty';
+
+  function render() {
+    const toggleHtml = hasCourses ? `
+      <div class="panel-toggle" role="tablist">
+        <button data-view="faculty" class="${view === 'faculty' ? 'active' : ''}">Faculty</button>
+        <button data-view="courses" class="${view === 'courses' ? 'active' : ''}">Courses</button>
+      </div>
+    ` : '';
+
+    panel.innerHTML = toggleHtml + `<div class="panel-body"></div>`;
+    const body = panel.querySelector('.panel-body');
+
+    if (view === 'courses' && hasCourses) {
+      renderCourseTable(body, schedule);
+    } else {
+      renderFacultyTable(body, college.faculty);
+    }
+
+    panel.querySelectorAll('.panel-toggle button').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        view = btn.dataset.view;
+        panel._view = view;
+        render();
+      });
+    });
+  }
+
+  render();
+}
+
 // ── faculty panel ──────────────────────────────────────────────────────────
-function buildFacultyPanel(panel, faculty) {
+function renderFacultyTable(panel, faculty) {
   let facSort = { key: 'name', dir: 1 };
 
   function headersHtml() {
@@ -1022,6 +1166,50 @@ function buildFacultyPanel(panel, faculty) {
   }
 
   render();
+}
+
+// ── course schedule view ───────────────────────────────────────────────────
+function renderCourseTable(panel, schedule) {
+  if (!schedule.courses.length) {
+    panel.innerHTML = `<div class="course-empty">No course-schedule data.</div>`;
+    return;
+  }
+
+  const headerCells = schedule.terms
+    .map(t => `<th>${esc(t.label)}</th>`)
+    .join('');
+
+  const rows = schedule.courses.map(c => {
+    const cells = c.offered.map(v => v
+      ? `<td><span class="course-check">✓</span></td>`
+      : `<td><span class="course-dash">—</span></td>`
+    ).join('');
+    return `
+      <tr>
+        <td class="course-sticky">
+          <div class="course-title-cell">
+            <span class="course-code">${esc(c.code)}</span>
+            <span class="course-name" title="${esc(c.name)}">${esc(c.name)}</span>
+          </div>
+        </td>
+        ${cells}
+      </tr>
+    `;
+  }).join('');
+
+  panel.innerHTML = `
+    <div class="course-wrap">
+      <table class="course-table">
+        <thead>
+          <tr>
+            <th class="course-sticky"><div class="course-title-cell"><span>Course</span></div></th>
+            ${headerCells}
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+  `;
 }
 
 // ── utils ──────────────────────────────────────────────────────────────────
