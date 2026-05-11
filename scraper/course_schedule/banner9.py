@@ -83,6 +83,12 @@ class Banner9Scraper(CourseScheduleScraper):
 
     base_url: str = ""
     subject: str = ""
+    # Some multi-tenant deployments (e.g. csbsju, which hosts both College
+    # of St Benedict and Saint John's) require an institution / "MEP" code
+    # on every request, or every endpoint returns
+    # `errorMessage="No Institution code specified in the URL"` (HTTP 500).
+    # Leave blank for single-tenant deployments.
+    mep_code: str = ""
     terms = ["F", "S"]
     fresh_driver_per_load = False
     request_timeout = 30
@@ -98,6 +104,12 @@ class Banner9Scraper(CourseScheduleScraper):
     def _ssb(self, path):
         return f"{self.base_url}/StudentRegistrationSsb/ssb{path}"
 
+    def _with_mep(self, params=None):
+        params = dict(params or {})
+        if self.mep_code:
+            params.setdefault("mepCode", self.mep_code)
+        return params
+
     def _ensure_session(self):
         if self._session is None:
             s = requests.Session()
@@ -106,7 +118,12 @@ class Banner9Scraper(CourseScheduleScraper):
                 "Accept": "application/json, text/plain, */*",
             })
             # Establishes JSESSIONID and any per-deployment cookies.
-            s.get(self._ssb("/classSearch/classSearch"), timeout=self.request_timeout)
+            s.get(
+                self._ssb("/classSearch/classSearch"),
+                params=self._with_mep(),
+                timeout=self.request_timeout,
+                allow_redirects=True,
+            )
             self._session = s
         return self._session
 
@@ -117,7 +134,7 @@ class Banner9Scraper(CourseScheduleScraper):
         # max=50 spans well over five academic years' worth of Fall/Spring/Summer/Interim.
         resp = s.get(
             self._ssb("/classSearch/getTerms"),
-            params={"searchTerm": "", "offset": 1, "max": 50},
+            params=self._with_mep({"searchTerm": "", "offset": 1, "max": 50}),
             timeout=self.request_timeout,
         )
         resp.raise_for_status()
@@ -160,7 +177,7 @@ class Banner9Scraper(CourseScheduleScraper):
         # `{"fwdURL":".../classSearch/classSearch"}` on success.
         s.post(
             self._ssb("/term/search"),
-            params={"mode": "search"},
+            params=self._with_mep({"mode": "search"}),
             data={
                 "term": code,
                 "studyPath": "",
@@ -176,7 +193,7 @@ class Banner9Scraper(CourseScheduleScraper):
         while True:
             resp = s.get(
                 self._ssb("/searchResults/searchResults"),
-                params={
+                params=self._with_mep({
                     "txt_subject": self.subject,
                     "txt_term": code,
                     "startDatepicker": "",
@@ -185,7 +202,7 @@ class Banner9Scraper(CourseScheduleScraper):
                     "pageMaxSize": PAGE_SIZE,
                     "sortColumn": "subjectDescription",
                     "sortDirection": "asc",
-                },
+                }),
                 timeout=self.search_timeout,
             )
             resp.raise_for_status()
@@ -210,7 +227,7 @@ class Banner9Scraper(CourseScheduleScraper):
             try:
                 fr = s.get(
                     self._ssb("/searchResults/getFacultyMeetingTimes"),
-                    params={"term": code, "courseReferenceNumber": crn},
+                    params=self._with_mep({"term": code, "courseReferenceNumber": crn}),
                     timeout=self.request_timeout,
                 )
                 fr.raise_for_status()
@@ -232,7 +249,11 @@ class Banner9Scraper(CourseScheduleScraper):
         # Clear the term binding so the next iteration starts clean. Some
         # deployments otherwise leak state across term/search posts.
         try:
-            s.post(self._ssb("/classSearch/resetDataForm"), timeout=self.request_timeout)
+            s.post(
+                self._ssb("/classSearch/resetDataForm"),
+                params=self._with_mep(),
+                timeout=self.request_timeout,
+            )
         except requests.RequestException:
             pass
 
@@ -362,8 +383,11 @@ def _format_hhmm(value):
 
 # ---- per-college configs ---------------------------------------------------
 
-# (College, base_url, subject) — base_url has no trailing slash and no
-# `/StudentRegistrationSsb` suffix.
+# (College, base_url, subject) or (College, base_url, subject, mep_code).
+# base_url has no trailing slash and no `/StudentRegistrationSsb` suffix.
+# `mep_code` is only set for multi-tenant deployments that require an
+# institution code on every request (e.g. csbsju, which hosts both
+# College of St Benedict and Saint John's).
 BANNER9_COLLEGES = [
     (College.BEREA, "https://b9student-prod.berea.edu:8444", "CSC"),
     (College.CONNECTICUT, "https://reg-prod.ec.conncoll.edu", "COM"),
@@ -373,18 +397,24 @@ BANNER9_COLLEGES = [
     (College.MARY_WASHINGTON, "https://reg-prod.ec.umw.edu", "CPSC"),
     (College.OBERLIN, "https://banner.cc.oberlin.edu", "CSCI"),
     (College.SKIDMORE, "https://bannerxe.skidmore.edu", "CS"),
+    (College.ST_BENEDICT, "https://registration.csbsju.edu", "CSCI", "B"),
     (College.STONEHILL, "https://xessb.stonehill.edu", "CSC"),
     (College.SWARTHMORE, "https://studentregistration.swarthmore.edu", "CPSC"),
     (College.WHEATON_MA, "https://banprodselfservice.wheatonma.edu:7341", "COMP"),
 ]
 
 
-def _make_class(coll, base_url, subject):
+def _make_class(coll, base_url, subject, mep_code=""):
     safe = re.sub(r"\W+", "", str(coll))
     return type(
         f"{safe}Banner9Scraper",
         (Banner9Scraper,),
-        {"college": coll, "base_url": base_url, "subject": subject},
+        {
+            "college": coll,
+            "base_url": base_url,
+            "subject": subject,
+            "mep_code": mep_code,
+        },
     )
 
 

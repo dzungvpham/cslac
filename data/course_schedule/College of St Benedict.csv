@@ -1,0 +1,291 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+College of St Benedict,2021-22,F,CSCI 150,01T,"INTRO TO COMPUTING (NS,AS,Q)",Peter Ohmann,MWF 09:30-10:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 150,02T,"INTRO TO COMPUTING (NS,AS,Q)",Channa Kumarage,MWF 10:40-11:35 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 150,03T,"INTRO TO COMPUTING (NS,AS,Q)",Peter Ohmann,MWF 13:00-13:55 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 150L,01A,Laboratory,Paul Schumacher,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 150L,02A,Laboratory,Paul Schumacher,TTh 09:55-11:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 150L,03A,Laboratory,Heather Amthauer,TTh 09:55-11:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 150L,04A,Laboratory,Channa Kumarage,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 150L,05A,Laboratory,Imad Rahal,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 150L,06A,Laboratory,Paul Schumacher,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 160,01A,PROBLEM-SOLV/PROG/COMP,Channa Kumarage,MWF 11:50-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 160L,01A,Laboratory,Channa Kumarage,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 160L,02A,Laboratory,Heather Amthauer,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 200,01A,DATA STRUCTURES,Imad Rahal,TTh 09:55-11:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 200,02A,DATA STRUCTURES,Imad Rahal,TTh 13:05-14:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 200L,01A,Laboratory,Imad Rahal,W 08:20-10:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 200L,02A,Laboratory,Imad Rahal,W 11:50-13:55 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 200L,03A,Laboratory,Paul Schumacher,W 14:10-16:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 217D,01A,VOLUNTEERING & OUTREACH,Peter Ohmann,W,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 239,01A,DISCRETE COMPUTATIONAL STRUCT,Robert Hesse,TTh 11:30-12:50 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 239L,01A,Laboratory,Robert Hesse,M 08:20-10:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 239L,02A,Laboratory,Robert Hesse,M 14:10-16:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 317D,01A,BIOINFORMATICS,Heather Amthauer,MWF 13:00-13:55 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 330,01A,SOFTWARE ENGINEERING,James Willenbring,TTh 09:55-11:15 (MAIN 150),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 332,01A,MACHINE LEARNING,Heather Amthauer,MWF 10:40-11:35 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 339,01A,THEORETICAL FOUNDATIONS,Noreen Herzfeld,TTh 12:45-14:05 (PENGL 269),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 339,02A,THEORETICAL FOUNDATIONS,Noreen Herzfeld,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 369,01A,ETHICAL ISS IN COMPUTING(ES),Peter Ohmann,TTh 14:40-16:00 (MAIN 150),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,F,CSCI 373,01A,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 14:10-16:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 150,01T,"INTRO TO COMPUTING (NS,AS,Q)",Robert Hesse,MWF 09:30-10:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 150,02T,"INTRO TO COMPUTING (NS,AS,Q)",Channa Kumarage,MWF 11:50-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 150,03T,"INTRO TO COMPUTING (NS,AS,Q)",Channa Kumarage,MWF 14:10-15:05 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 150L,01A,Laboratory,Paul Schumacher,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 150L,02A,Laboratory,Imad Rahal,TTh 09:55-11:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 150L,04A,Laboratory,Paul Schumacher,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 150L,05A,Laboratory,Channa Kumarage,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 150L,06A,Laboratory,Robert Hesse,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 160,01A,PROBLEM-SOLV/PROG/COMP,Heather Amthauer,MWF 10:40-11:35 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 160,02A,PROBLEM-SOLV/PROG/COMP,Heather Amthauer,MWF 13:00-13:55 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 160L,01A,Laboratory,Heather Amthauer,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 160L,02A,Laboratory,Heather Amthauer,TTh 11:30-12:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 160L,03A,Laboratory,Paul Schumacher,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 160L,04A,Laboratory,Paul Schumacher,TTh 14:40-16:00 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 217A,01A,PROGRAMMING CONTEST TEAM,Peter Ohmann,T 16:30-19:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 217D,01A,VOLUNTEERING & OUTREACH,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 217E,01A,VIDEO GAME DESIGN/DEVELOPMENT,Paul Schumacher,W 14:10-16:15 (MAIN 251); (MAIN 253),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 230,01A,SOFTWARE DEVELOPMENT,Peter Ohmann,TTh 09:55-11:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 230,02A,SOFTWARE DEVELOPMENT,Peter Ohmann,TTh 13:05-14:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 230L,01A,LABORATORY,Peter Ohmann,(MAIN),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 310,01A,COMPUTER ORGANIZATION,Channa Kumarage,TTh 11:30-12:50 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 331,01A,DATABASE SYSTEMS,Imad Rahal,TTh 14:40-16:00 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 331,02A,DATABASE SYSTEMS,Imad Rahal,TTh 11:30-12:50 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 338,01A,ALGORITHMS/CONCURRENCY,Heather Amthauer,TTh 13:05-14:25 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 340,01A,ORG OF PROGRAMMING LANGS,Peter Ohmann,MWF 11:50-12:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 369,01A,ETHICAL ISS IN COMPUTING(ES),Noreen Herzfeld,TTh 09:35-10:55 (QUAD 252),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 373,01A,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 13:50-16:30 (PENGL 236),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 397,01A,INTERNSHIP,Noreen Herzfeld,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2021-22,S,CSCI 397,02A,INTERNSHIP,Heather Amthauer,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150,01T,"INTRO TO COMPUTING (NS,AS,Q)",Peter Ohmann,MWF 08:20-09:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150,02T,"INTRO TO COMPUTING (NS,AS,Q)",Peter Ohmann,MWF 10:40-11:35 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150,03T,"INTRO TO COMPUTING (NS,AS,Q)",Robert Hesse,MWF 11:50-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150,04T,"INTRO TO COMPUTING (NS,AS,Q)",Robert Hesse,MWF 14:10-15:05 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150L,01A,Laboratory,Paul Schumacher,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150L,02A,Laboratory,Paul Schumacher,TTh 09:55-11:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150L,03A,Laboratory,Heather Amthauer,TTh 09:55-11:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150L,04A,Laboratory,Paul Schumacher,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150L,05A,Laboratory,Robert Hesse,TTh 11:30-12:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150L,06A,Laboratory,Paul Schumacher,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150L,07A,Laboratory,Paul Schumacher,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 150L,08A,Laboratory,Heather Amthauer,TTh 14:40-16:00 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 160,01A,PROBLEM-SOLV/PROG/COMP,Heather Amthauer,MWF 10:40-11:35 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 160L,01A,Laboratory,Heather Amthauer,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 160L,02A,Laboratory,Heather Amthauer,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 200,01A,DATA STRUCTURES,Imad Rahal,TTh 09:55-11:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 200,02A,DATA STRUCTURES,Imad Rahal,TTh 11:30-12:50 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 200L,01A,Laboratory,Imad Rahal,W 08:20-10:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 200L,02A,Laboratory,Imad Rahal,W 10:40-12:45 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 200L,03A,Laboratory,Imad Rahal,W 13:00-15:05 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 217A,01A,PROGRAMMING CONTEST TEAM,Peter Ohmann,T 16:15-18:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 217D,01A,VOLUNTEERING & OUTREACH,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 239,01A,DISCRETE COMPUTATIONAL STRUCT,Robert Hesse,TTh 13:05-14:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 239L,01A,Laboratory,Robert Hesse,M 08:20-10:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 239L,02A,Laboratory,Paul Schumacher,M 13:00-15:05 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 317H,01A,ARTIFICIAL INTELLIGENCE,Heather Amthauer,MWF 09:30-10:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 317I,01A,COMPUTER SECURITY,Jack Tan,MWF 13:00-13:55 (WEB WEB),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 330,01A,SOFTWARE ENGINEERING,James Willenbring,TTh 09:55-11:15 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 339,01A,THEORETICAL FOUNDATIONS,Noreen Herzfeld,TTh 14:20-15:40 (PENGL 269),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 373,01A,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 14:10-16:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,F,CSCI 377A,01J,"ETHICAL ISS COMPUTING(ES,HE)",Peter Ohmann,TTh 11:30-12:50 (MAIN 103),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150,01T,"INTRO TO COMPUTING (NS,AS,Q)",Imad Rahal,MWF 09:30-10:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150,02T,"INTRO TO COMPUTING (NS,AS,Q)",Imad Rahal,MWF 11:50-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150,03T,"INTRO TO COMPUTING (NS,AS,Q)",Imad Rahal,MWF 14:10-15:05 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150L,01A,Laboratory,Paul Schumacher,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150L,02A,Laboratory,Paul Schumacher,TTh 09:55-11:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150L,03A,Laboratory,Paul Schumacher,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150L,04A,Laboratory,Robert Hesse,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150L,05A,Laboratory,Robert Hesse,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 150L,06A,Laboratory,Robert Hesse,WF 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 160,01A,PROBLEM-SOLV/PROG/COMP,Heather Amthauer,MWF 10:40-11:35 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 160,02A,PROBLEM-SOLV/PROG/COMP,Heather Amthauer,MWF 13:00-13:55 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 160L,01A,Laboratory,Heather Amthauer,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 160L,02A,Laboratory,Heather Amthauer,TTh 11:30-12:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 160L,03A,Laboratory,Paul Schumacher,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 160L,04A,Laboratory,Paul Schumacher,WF 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 217A,01A,PROGRAMMING CONTEST TEAM,Peter Ohmann,T 16:15-18:45 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 217D,01A,VOLUNTEERING & OUTREACH,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 230,01A,SOFTWARE DEVELOPMENT,Peter Ohmann,TTh 08:20-09:40 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 230,02A,SOFTWARE DEVELOPMENT,Peter Ohmann,TTh 13:05-14:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 230L,01A,LABORATORY,Peter Ohmann,(MAIN),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 310,01M,COMPUTER ORGANIZATION,Jack Tan,TTh 09:55-11:15 (WEB WEB),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 310,02M,COMPUTER ORGANIZATION,Jack Tan,TTh 11:30-12:50 (WEB WEB),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 312,01A,DATA COMMMUNICATION & NETWORKS,Jack Tan,TTh 14:40-16:00 (WEB WEB),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 317K,01A,NATURAL LANGUAGE PROCESSING,Robert Hesse,MWF 13:00-13:55 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 338,01A,ALGORITHMS/CONCURRENCY,Heather Amthauer,MWF 08:20-09:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 350,01A,OPERATING SYSTEMS,Peter Ohmann,MWF 11:50-12:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 373,01A,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 13:50-16:30 (PENGL 236),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 377A,O1J,"ETHICAL ISS COMPUTING(ES,HE)",Erica Stonestreet,TTh 09:55-11:15 (MAIN 103),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 397,01A,INTERNSHIP,Noreen Herzfeld,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2022-23,S,CSCI 397,02A,INTERNSHIP,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150,01T,"INTRO TO COMPUTING (NS,AS,Q)",Peter Ohmann,MWF 08:20-09:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150,02T,"INTRO TO COMPUTING (NS,AS,Q)",Vijay Srinivas Tida,MWF 09:30-10:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150,03T,"INTRO TO COMPUTING (NS,AS,Q)",Srikanth Vemula,MWF 10:40-11:35 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150,04T,"INTRO TO COMPUTING (NS,AS,Q)",Vijay Srinivas Tida,MWF 13:00-13:55 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150L,01A,Laboratory,Paul Schumacher,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150L,02A,Laboratory,Heather Amthauer,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150L,03A,Laboratory,Paul Schumacher,TTh 09:55-11:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150L,04A,Laboratory,Paul Schumacher,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150L,05A,Laboratory,Srikanth Vemula,TTh 11:30-12:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150L,06A,Laboratory,Vijay Srinivas Tida,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150L,07A,Laboratory,Heather Amthauer,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 150L,08A,Laboratory,Vijay Srinivas Tida,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 160,01A,PROBLEM-SOLV/PROG/COMP,Srikanth Vemula,MWF 13:00-13:55 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 160L,01A,Laboratory,Heather Amthauer,TTh 09:55-11:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 160L,02A,Laboratory,Srikanth Vemula,TTh 14:40-16:00 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 200,01A,DATA STRUCTURES,Imad Rahal,TTh 09:55-11:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 200,02A,DATA STRUCTURES,Imad Rahal,TTh 13:05-14:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 200L,01A,Laboratory,Imad Rahal,F 08:20-10:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 200L,02A,Laboratory,Imad Rahal,F 09:30-11:35 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 200L,03A,Laboratory,Imad Rahal,F 13:00-15:05 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 217A,01A,PROGRAMMING CONTEST TEAM,Peter Ohmann,T 16:15-18:45 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 217D,01A,VOLUNTEERING & OUTREACH,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 239,01A,DISCRETE COMPUTATIONAL STRUCT,Robert Hesse,TTh 08:20-09:40 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 239,02A,DISCRETE COMPUTATIONAL STRUCT,Robert Hesse,TTh 11:30-12:50 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 239L,01A,Laboratory,Paul Schumacher,M 08:20-10:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 239L,02A,Laboratory,Paul Schumacher,M 09:30-11:35 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 239L,03A,Laboratory,Paul Schumacher,M 13:00-15:05 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 317D,01A,BIOINFORMATICS,Heather Amthauer,MWF 09:30-10:25 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 317M,01A,VOLUNTEERING & OUTREACH,Peter Ohmann,W 13:00-13:55 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 317N,01A,COLLOQUIUM IN CSCI,Peter Ohmann,W 13:00-14:15 (MAIN 101),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 332,01A,MACHINE LEARNING,Heather Amthauer,MWF 11:50-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 339,01A,THEORETICAL FOUNDATIONS,Noreen Herzfeld,TTh 14:20-15:40 (PENGL 269),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 373,01A,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 14:10-16:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,F,CSCI 377A,01J,"ETHICAL ISS COMPUTING(ES,HE)",Peter Ohmann,TTh 09:55-11:15 (MAIN 103),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150,01T,"INTRO TO COMPUTING (NS,AS,Q)",Vijay Srinivas Tida,MWF 09:30-10:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150,02T,"INTRO TO COMPUTING (NS,AS,Q)",Robert Hesse,MWF 10:40-11:35 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150,03T,"INTRO TO COMPUTING (NS,AS,Q)",Vijay Srinivas Tida,MWF 11:50-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150L,01A,Laboratory,Paul Schumacher,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150L,02A,Laboratory,Paul Schumacher,TTh 09:55-11:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150L,03A,Laboratory,Paul Schumacher,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150L,04A,Laboratory,Paul Schumacher,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150L,05A,Laboratory,Paul Schumacher,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 150L,06A,Laboratory,Vijay Srinivas Tida,TTh 09:55-11:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 160,01A,PROBLEM-SOLV/PROG/COMP,Srikanth Vemula,MWF 09:30-10:25 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 160,02A,PROBLEM-SOLV/PROG/COMP,Srikanth Vemula,MWF 13:00-13:55 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 160L,01A,Laboratory,Srikanth Vemula,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 160L,02A,Laboratory,Heather Amthauer,TTh 11:30-12:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 160L,03A,Laboratory,Heather Amthauer,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 160L,04A,Laboratory,Heather Amthauer,TTh 14:40-16:00 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 217D,01A,VOLUNTEERING & OUTREACH,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 230,01A,SOFTWARE DEVELOPMENT,Peter Ohmann,TTh 09:55-11:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 230,02A,SOFTWARE DEVELOPMENT,Peter Ohmann,TTh 13:05-14:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 230L,01A,LABORATORY,Peter Ohmann,(MAIN),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 310,01M,COMPUTER ORGANIZATION,Heather Amthauer,MWF 10:40-11:35 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 310,02M,COMPUTER ORGANIZATION,Vijay Srinivas Tida,MWF 13:00-13:55 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 317O,01A,VIDEO GAME DESIGN/DEVELOPMENT,Srikanth Vemula,TTh 14:40-16:00 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 331,01A,DATABASE SYSTEMS,Imad Rahal,TTh 11:30-12:50 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 338,01A,ALGORITHMS/CONCURRENCY,Heather Amthauer,MWF 08:20-09:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 340,01A,ORG OF PROGRAMMING LANGS,Peter Ohmann,MWF 11:50-12:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 373,01A,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 14:10-16:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2023-24,S,CSCI 397,01A,INTERNSHIP,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150,01T,"INTRO TO COMPUTING (AS,Q)",Heather Amthauer,MWF 09:30-10:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150,02T,"INTRO TO COMPUTING (AS,Q)",Heather Amthauer,MWF 10:40-11:35 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150,03T,"INTRO TO COMPUTING (AS,Q)",Robert Hesse,MWF 08:20-09:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150,04T,"INTRO TO COMPUTING (AS,Q)",Vijay Srinivas Tida,MWF 11:50-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150L,01A,Laboratory,Robert Hesse,TTh 11:30-12:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150L,02A,Laboratory,Heather Amthauer,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150L,03A,Laboratory,Paul Schumacher,TTh 09:55-11:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150L,04A,Laboratory,Paul Schumacher,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150L,05A,Laboratory,Paul Schumacher,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150L,06A,Laboratory,Vijay Srinivas Tida,TTh 09:55-11:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 150L,08A,Laboratory,Paul Schumacher,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 160,01A,PROBLEM-SOLV/PROG/COMP,Srikanth Vemula,MWF 10:40-11:35 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 160L,01A,Laboratory,Srikanth Vemula,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 160L,02A,Laboratory,Srikanth Vemula,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 200,01A,DATA STRUCTURES,Imad Rahal,TTh 11:30-12:50 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 200,02A,DATA STRUCTURES,Imad Rahal,TTh 14:40-16:00 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 200L,01A,Laboratory,Imad Rahal,F 08:20-10:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 200L,02A,Laboratory,Imad Rahal,F 09:30-11:35 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 200L,03A,Laboratory,Imad Rahal,F 13:00-15:05 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 217A,01A,PROGRAMMING CONTEST TEAM,Paul Schumacher,W 16:15-18:45 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 239,01A,DISCRETE COMPUTATIONAL STRUCT,Robert Hesse,TTh 09:55-11:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 239,02A,DISCRETE COMPUTATIONAL STRUCT,Vijay Srinivas Tida,TTh 13:05-14:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 239L,01A,Laboratory,Robert Hesse,M 09:30-11:35 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 239L,02A,Laboratory,Vijay Srinivas Tida,M 08:20-10:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 239L,03A,Laboratory,Vijay Srinivas Tida,M 13:00-15:05 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 317H,01A,ARTIFICIAL INTELLIGENCE,Srikanth Vemula,MWF 11:50-12:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 317M,01A,VOLUNTEERING & OUTREACH,Srikanth Vemula,T 14:40-16:00 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 332,01A,MACHINE LEARNING,Heather Amthauer,MWF 13:00-13:55 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 339,01A,THEORETICAL FOUNDATIONS,Noreen Herzfeld,TTh 14:20-15:40 (PENGL 269),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 373,01A,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 14:10-16:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 377A,01J,"ETHICAL ISS COMPUTING (JF, HE)",Erica Stonestreet,TTh 09:55-11:15 (MAIN 103),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,F,CSCI 397,01A,INTERNSHIP,Heather Amthauer,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 150,02T,"INTRO TO COMPUTING (AS,Q)",Heather Amthauer,MWF 09:30-10:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 150,03T,"INTRO TO COMPUTING (AS,Q)",Heather Amthauer,MWF 11:50-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 150L,01A,Laboratory,Vijay Srinivas Tida,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 150L,02A,Laboratory,Paul Schumacher,TTh 09:55-11:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 150L,03A,Laboratory,Vijay Srinivas Tida,TTh 11:30-12:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 150L,04A,Laboratory,Vijay Srinivas Tida,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 160,01A,PROBLEM-SOLV/PROG/COMP,Srikanth Vemula,MWF 08:20-09:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 160,02A,PROBLEM-SOLV/PROG/COMP,Srikanth Vemula,MWF 10:40-11:35 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 160L,01A,Laboratory,Paul Schumacher,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 160L,02A,Laboratory,Paul Schumacher,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 160L,03A,Laboratory,Paul Schumacher,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 160L,04A,Laboratory,Paul Schumacher,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 217D,01A,VOLUNTEERING & OUTREACH,Peter Ohmann,(OC OC),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 230,02A,SOFTWARE DEVELOPMENT,Peter Ohmann,TTh 13:05-14:25 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 230L,01A,LABORATORY,Peter Ohmann,(TBA TBA),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 310,02M,COMPUTER ORGANIZATION,Vijay Srinivas Tida,MWF 13:00-13:55 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 312,01A,DATA COMMMUNICATION & NETWORKS,Imad Rahal,TTh 11:30-12:50 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 317K,01A,NATURAL LANGUAGE PROCESSING,Srikanth Vemula,MWF 11:50-12:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 317N,01A,COLLOQUIUM IN CSCI,Peter Ohmann,T 14:40-16:00 (MAIN 006),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 317P,01A,PROB/SOLVE/TECH,Peter Ohmann,W 13:00-15:05 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 338,01A,ALGORITHMS/CONCURRENCY,Heather Amthauer,MWF 08:20-09:15 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 351,01A,PRIN OF PARALLEL COMPUTING,Vijay Srinivas Tida,MWF 10:40-11:35 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 370PA,67A,DATABASE SYSTEMS TECHNOLOGY,"CSB Staff, Jessica Dickau, Joy Ruis, Tracy Skluzacek",,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 371,01A,INDEPT STUDY,Imad Rahal,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 373,01A,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 14:10-16:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2024-25,S,CSCI 377A,01J,"ETHICAL ISS COMPUTING (JF, HE)",Peter Ohmann,TTh 09:55-11:15 (MAIN 006),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 150,001,"INTRO TO COMPUTING (AS,QR)",Srikanth Vemula,MWF 08:20-09:15 (MAIN 002); F 15:45-17:45 (TBA TBA),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 150,002,"INTRO TO COMPUTING (AS,QR)",Peter Ohmann,MWF 10:40-11:35 (MAIN 002); F 15:45-17:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 150,004,"INTRO TO COMPUTING (AS,QR)",Srikanth Vemula,MWF 13:00-13:55 (MAIN 002); F 15:45-17:45 (TBA TBA),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 150L,001,Laboratory,Paul Schumacher,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 150L,003,Laboratory,Paul Schumacher,TTh 09:55-11:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 150L,005,Laboratory,Paul Schumacher,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 150L,007,Laboratory,Paul Schumacher,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 150L,008,Laboratory,Paul Schumacher,TTh 14:40-16:00 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 160,001,PROBLEM-SOLV/PROG/COMP,Srikanth Vemula,MWF 09:30-10:25 (MAIN 002); Th 10:45-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 160L,001,Laboratory,Srikanth Vemula,TTh 08:20-09:40 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 200,001,DATA STRUCTURES,Heather Amthauer,TTh 11:30-12:50 (MAIN 002); F 15:45-17:45 (TBA TBA),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 200,002,DATA STRUCTURES,Heather Amthauer,TTh 14:40-16:00 (MAIN 002); F 15:45-17:45 (TBA TBA),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 200L,001,Laboratory,Heather Amthauer,F 08:20-10:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 200L,003,Laboratory,Paul Schumacher,F 13:00-15:05 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 239,001,DISCRETE COMPUTATIONAL STRUCT,Vijay Srinivas Tida,TTh 13:05-14:25 (MAIN 002); F 18:15-20:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 239L,001,Laboratory,Vijay Srinivas Tida,M 08:20-10:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 239L,002,Laboratory,Vijay Srinivas Tida,M 13:00-15:05 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 317D,001,BIOINFORMATICS,Heather Amthauer,Sa 08:15-10:15 (MAIN 154); MWF 13:00-13:55 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 317M,001,VOLUNTEERING & OUTREACH,Peter Ohmann,Th 14:40-16:00 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 317N,001,COLLOQUIUM IN CSCI,Peter Ohmann,Th 14:40-16:00 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 317P,001,PROB/SOLVE/TECH,Peter Ohmann,T 14:40-16:00 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 339,001,THEORETICAL FOUNDATIONS,Peter Ohmann,MWF 11:50-12:45 (MAIN 005); Th 15:45-17:45 (MAIN 005),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 350,001,OPERATING SYSTEMS,Vijay Srinivas Tida,TTh 14:40-16:00 (MAIN 154); Sa 15:45-17:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 371,001,INDEPT STUDY,Vijay Srinivas Tida,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 371,002,INDEPT STUDY,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 373,001,RESEARCH SEM: COMP SCIENCE,Michael Heroux,MF 14:10-16:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,F,CSCI 377A,001,"ETHICAL ISS COMPUTING (JF, HE)",Peter Ohmann,TTh 13:05-14:25 (MAIN 150); F 18:15-20:15 (MAIN 150),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 150,001,"INTRO TO COMPUTING (AS,QR)",Vijay Srinivas Tida,MWF 09:30-10:25 (MAIN 002); W 15:45-17:45 (HAB 128A),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 150,002,"INTRO TO COMPUTING (AS,QR)",Vijay Srinivas Tida,MWF 11:50-12:45 (MAIN 002); W 15:45-17:45 (HAB 128A),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 150L,001,Laboratory,Imad Rahal,TTh 08:20-09:40 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 150L,002,Laboratory,Imad Rahal,TTh 09:55-11:15 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 150L,003,Laboratory,Vijay Srinivas Tida,TTh 11:30-12:50 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 150L,004,Laboratory,Imad Rahal,TTh 13:05-14:25 (MAIN 251),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 155,001,CONCEPTUAL APPROACHES,Peter Ohmann,MWF 11:50-12:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 155,002,CONCEPTUAL APPROACHES,Peter Ohmann,MWF 11:50-12:45 (MAIN 154); T 15:45-17:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 160,001,PROBLEM-SOLV/PROG/COMP,Heather Amthauer,MWF 10:40-11:35 (MAIN 002); T 13:15-15:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 160L,003,Laboratory,Srikanth Vemula,TTh 11:30-12:50 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 160L,004,Laboratory,Srikanth Vemula,TTh 13:05-14:25 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 170R,63A,DATABASES FOR DIG HUMANIT-CORK,"CSB Staff, Jessica Dickau",(SABRO ABROAD),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 170R,63B,IS FOR THE NETWORK ENTERP-CORK,"CSB Staff, Jessica Dickau",(SABRO ABROAD),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 230,001,SOFTWARE DEVELOPMENT,Peter Ohmann,TTh 09:55-11:15 (MAIN 002); W 10:45-12:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 230L,001,LABORATORY,Imad Rahal,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 271,001,INDEPT STUDY,Srikanth Vemula,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 310,001,COMPUTER ORGANIZATION,Vijay Srinivas Tida,TTh 14:40-16:00 (MAIN 002); Th 15:45-17:45 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 317O,001,VIDEO GAME DESIGN/DEVELOPMENT,Srikanth Vemula,MWF 10:40-11:35 (MAIN 154); T 13:15-15:15 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 331,001,DATABASE SYSTEMS,Imad Rahal,TTh 11:30-12:50 (MAIN 002); W 13:15-15:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 332,001,MACHINE LEARNING,Srikanth Vemula,TTh 14:40-16:00 (MAIN 154); Th 15:45-17:45 (MAIN 154),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 338,001,ALGORITHMS/CONCURRENCY,Heather Amthauer,T 08:15-10:15 (MAIN 002); MWF 08:20-09:15 (MAIN 002),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 370R,63A,MULTIMED TECH MOBILE NETWORKS,"CSB Staff, Jessica Dickau",(SABRO ABROAD),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 371,001,INDEPT STUDY,Paul Schumacher,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 373,001,RESEARCH SEM: COMP SCIENCE,Michael Heroux,Th 10:45-12:45 (MAIN 270); MF 14:10-16:15 (MAIN 270),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 377A,001,"ETHICAL ISS COMPUTING (JF, HE)",Erica Stonestreet,TTh 13:05-14:25 (MAIN 104); W 18:15-20:15 (MAIN 104),https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+College of St Benedict,2025-26,S,CSCI 397,001,INTERNSHIP,Peter Ohmann,,https://registration.csbsju.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
