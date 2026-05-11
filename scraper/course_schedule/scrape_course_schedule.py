@@ -26,6 +26,7 @@ from course_schedule.carleton import CarletonScraper
 from course_schedule.colby import ColbyScraper
 from course_schedule.colorado import ColoradoScraper
 from course_schedule.davidson import DavidsonScraper
+from course_schedule.drew import DrewScraper
 from course_schedule.hamilton import HamiltonScraper
 from course_schedule.hyperschedule import HarveyMuddScraper, PomonaScraper
 from course_schedule.macalester import MacalesterScraper
@@ -53,6 +54,7 @@ SCRAPERS = [
     ColbyScraper,
     ColoradoScraper,
     DavidsonScraper,
+    DrewScraper,
     HamiltonScraper,
     HarveyMuddScraper,
     MacalesterScraper,
