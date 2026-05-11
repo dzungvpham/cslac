@@ -1,0 +1,186 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Earlham College,2021-22,F,CS 128,1,Programming & Problem Solving,Sofia Noelle Lemons,TTh 12:40-16:00 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 256,0,Data Structures,Douglas E Harms,TTh 12:40-16:00 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 266,1,Computing Skills,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 266,2,Computing Skills,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 281,0,Applied Groups,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 310,0,Algorithms,David Michael Barbella,TTh 12:40-16:00 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 385,0,Independent Study,,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 388,0,Methods For Research and Dissemination in Computer Science,David Michael Barbella,TTh 12:40-16:00 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 420,0,Operating Systems,Douglas E Harms,TTh 08:00-11:20 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 440,0,Programming Languages,Sofia Noelle Lemons,MWF 12:40-16:00 (Ctr for Science and Technology 227),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 481,0,Applied CS Internship,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 481,1,Applied CS Internship,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 481,2,Applied CS Internship,Sofia Noelle Lemons,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 485,1,Independent Study,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 486,1,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,F,CS 488,0,Senior Capstone Experience,Charles Franklin Peck,TTh 08:00-11:20 (Ctr for Science and Technology 316),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 128,0,Programming & Problem Solving,Igor Minevich,MWF 10:00-10:50 (Ctr for Science and Technology 300),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 240,0,Computing For Social Good,Douglas E Harms,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 256,0,Data Structures,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 266,0,Computing Skills,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 266,1,Computing Skills,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 266,2,Computing Skills,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 281,0,Applied Groups,"Charles Franklin Peck, Douglas E Harms, Sofia Noelle Lemons",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 320,0,Principles in Computer Organization,Douglas E Harms,TTh 08:30-09:50 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 335,0,Advanced Data Structures,Igor Minevich,MTh 13:00-14:20 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 360,0,Parallel & Distributed Computation,David Michael Barbella,TF 14:30-15:50 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 365,0,Artificial Intelligence and Machine Learning,Sofia Noelle Lemons,MTh 14:30-15:50 (Ctr for Science and Technology 318),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 388,0,Methods For Research and Dissemination in Computer Science,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 430,0,Database Systems,David Michael Barbella,MWF 11:00-11:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 481,0,Applied CS Internship,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 481,1,Applied CS Internship,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 481,2,Applied CS Internship,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 485,0,Independent Study,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 486,1,Student Research,"Emmett Malinda Smith, Seth Hancock Hopper, Charles Franklin Peck",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 488,0,Senior Capstone Experience,Charles Franklin Peck,W 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2021-22,S,CS 488,2,Senior Capstone Experience,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 128,1,Programming & Problem Solving,Sofia Noelle Lemons,MWF 10:00-10:50 (Ctr for Science and Technology 224); W 14:30-15:50 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 128,2,Programming & Problem Solving,David Michael Barbella,MWF 10:00-10:50 (Ctr for Science and Technology 314); Th 08:30-09:50 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 256,0,Data Structures,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 229); T 13:00-14:20 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 266,1,Computing Skills,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 266,2,Computing Skills,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 275,0,Computing for Social Good,Douglas E Harms,MTh 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 310,0,Algorithms,Sofia Noelle Lemons,MWF 09:00-09:50 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 355,0,Computer Game Design,David Michael Barbella,TF 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 388,0,Methods For Research and Dissemination in Computer Science,David Michael Barbella,W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 410,0,Networks & Networking,Douglas E Harms,TTh 08:30-09:50 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 455,0,Computer Game Design Studio,David Michael Barbella,TF 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 481,0,Applied CS Internship,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 481,1,Applied CS Internship,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 481,2,Internship,Douglas E Harms,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 485,0,Independent Study,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 486,1,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,F,CS 486,2,Student Research,Douglas E Harms,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 128,0,Programming & Problem Solving,David Michael Barbella,MWF 10:00-10:50 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 256,0,Data Structures,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 229); T 13:00-14:20 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 266,1,Computing Skills,Charles Franklin Peck,TBA (Ctr for Science and Technology 222),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 266,2,Computing Skills,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 281,0,Applied Groups,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 282,0,Topics in Cybersecurity,Javier Orduz,TF 13:00-14:20 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 320,0,Principles in Computer Organization,Douglas E Harms,TTh 08:30-09:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 325,0,Systems Engineering & Administration,Charles Franklin Peck,MTh 13:00-14:20 (Ctr for Science and Technology 222),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 345,0,Software Engineering,David Michael Barbella,TF 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 350,0,Electronics & Instrumentation,"Seth Hancock Hopper, Charles Franklin Peck",TTh 10:00-11:50 (Ctr for Science and Technology 111),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 388,0,Methods For Research and Dissemination in Computer Science,David Michael Barbella,W 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 430,0,Database Systems,Douglas E Harms,MTh 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 481,0,Applied CS Internship,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 485,0,Independent Study,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 485,1,Independent Study,Douglas E Harms,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 486,1,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 486,2,Student Research,Sofia Noelle Lemons,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2022-23,S,CS 488,0,Senior Capstone Experience,Charles Franklin Peck,W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 128,1,Programming & Problem Solving,"Sofia Noelle Lemons, Javier Orduz",MWF 10:00-10:50 (Ctr for Science and Technology 315); Th 13:00-14:20 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 128,2,Programming & Problem Solving,Javier Orduz,MWF 10:00-10:50 (Ctr for Science and Technology 317); Th 14:30-15:50 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 130,0,Symbolic Logic,Ferit Guven,MTh 13:00-14:20 (Carpenter Hall 322),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 256,0,Data Structures,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 229); T 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 266,1,Computing Skills,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 266,2,Computing Skills,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 310,0,Algorithms,Sofia Noelle Lemons,MWF 11:00-11:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 375,0,Cyberethics in the Current Age,Douglas E Harms,MTh 13:00-14:20 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 388,0,Methods For Research and Dissemination in Computer Science,David Michael Barbella,W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 420,0,Operating Systems,Douglas E Harms,TTh 08:30-09:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 440,0,Programming Languages,David Michael Barbella,TTh 10:30-11:50 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 455,0,Computer Game Design Studio,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 481,0,Applied CS Internship,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 481,1,Applied CS Internship,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 484,1,Collaborative Research: Artificial Intelligence Planning Algorithms & Applications,Sofia Noelle Lemons,MTh 14:30-15:50 (Ctr for Science and Technology 303),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 485,0,Independent Study,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 485,1,Independent Study,David Michael Barbella,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 486,1,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,F,CS 488,0,Senior Capstone Experience,David Michael Barbella,MWF 09:00-09:50 (Ctr for Science and Technology 317); W 14:30-15:50 (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 128,0,Programming & Problem Solving,Javier Orduz,MWF 10:00-10:50 (Ctr for Science and Technology 300); T 13:00-14:20 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 256,0,Data Structures,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 229); T 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 266,1,Computing Skills,Porter Everett Libby,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 266,2,Computing Skills,Porter Everett Libby,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 275,0,Computing for Social Good,Douglas E Harms,MTh 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 281,0,Applied Groups,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 320,0,Principles in Computer Organization,Douglas E Harms,TTh 08:30-09:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 360,0,Parallel & Distributed Computation,Charles Franklin Peck,TTh 10:30-11:50 (Ctr for Science and Technology 316),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 365,0,Artificial Intelligence and Machine Learning,Javier Orduz,MTh 13:00-14:20 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 388,0,Methods For Research and Dissemination in Computer Science,Charles Franklin Peck,W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 481,0,Applied CS Internship,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 485,0,Independent Study,,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 486,1,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2023-24,S,CS 488,0,Senior Capstone Experience,Charles Franklin Peck,W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 128,1,Programming & Problem Solving,Javier Orduz,MWF 10:00-10:50 (Ctr for Science and Technology 318),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 128,2,Programming & Problem Solving,Yunting Yin,MWF 10:00-10:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 128L,1,Programing and Problem Lab,Javier Orduz,Th 13:00-14:20 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 128L,2,Programing and Problem Lab,Yunting Yin,Th 14:30-15:50 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 256,0,Data Structures,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 229); T 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 266,1,Computing Skills,Porter Everett Libby,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 266,2,Computing Skills,Porter Everett Libby,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 281,1,Applied Groups,Douglas E Harms,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 310,0,Algorithms,Debanjali Banerjee,MTh 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 355,0,Computer Game Design,Yunting Yin,TF 13:00-14:20 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 382,0,Image Classification with ML,Debanjali Banerjee,MWF 09:00-09:50 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 388,0,Methods For Research and Dissemination in Computer Science,Charles Franklin Peck,W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 410,0,Networks & Networking,Douglas E Harms,TTh 08:30-09:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 481,0,Internship (Petition required),,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 481,1,Internship (Petition required),Douglas E Harms,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 481,2,Internship (Petition required),Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 483,1,Teaching Assistants,"Yunting Yin, Javier Orduz",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 485,0,Independent Study (Petition required),,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 486,1,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,F,CS 488,0,Senior Capstone Experience,Charles Franklin Peck,W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 128,0,Programming & Problem Solving,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 229); T 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 256,0,Data Structures,Yunting Yin,MWF 10:00-10:50 (Ctr for Science and Technology 103); Th 13:00-14:20 (Ctr for Science and Technology 103),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 266,1,Computing Skills,"Porter Everett Libby, Yunting Yin",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 266,2,Computing Skills,"Porter Everett Libby, Yunting Yin",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 281,0,Applied Groups,"Yunting Yin, Debanjali Banerjee, Douglas E Harms, Porter Everett Libby, Charles Franklin Peck",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 310,0,Algorithms,Debanjali Banerjee,MWF 10:00-10:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 320,0,Principles in Computer Organization,Douglas E Harms,TTh 08:30-09:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 325,0,Systems Engineering & Administration,Charles Franklin Peck,TF 13:00-14:20 (Ctr for Science and Technology 222),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 345,0,Software Engineering,Yunting Yin,MTh 14:30-15:50 (Ctr for Science and Technology 103),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 350,0,Electronics & Instrumentation,Ummay Habiba,TTh 10:00-11:50 (Noyes Hall 008),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 365,0,Artificial Intelligence and Machine Learning,Javier Orduz,MTh 13:00-14:20 (Ctr for Science and Technology 225),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 388,0,Methods For Research and Dissemination in Computer Science,"Charles Franklin Peck, Yunting Yin",W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 430,0,Database Systems,Debanjali Banerjee,TTh 10:30-11:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 481,0,Internship (Petition required),,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 483,0,Teaching Assistants,Yunting Yin,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 485,0,Independent Study (Petition required),,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 486,0,Student Research,Yunting Yin,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 486,1,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 486,2,Student Research,Debanjali Banerjee,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2024-25,S,CS 488,0,Senior Capstone Experience,"Charles Franklin Peck, Yunting Yin",W 14:30-15:50 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 128,1,Programming & Problem Solving,Malik Karim Barrett,MWF 10:00-10:50 (Ctr for Science and Technology 103),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 128,2,Programming & Problem Solving,Debanjali Banerjee,MWF 10:00-10:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 128L,1,Programing and Problem Lab,Malik Karim Barrett,Th 13:00-14:20 (Ctr for Science and Technology 315),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 128L,2,Programing and Problem Lab,Debanjali Banerjee,Th 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 256,0,Data Structures,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 229); T 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 266,1,Computing Skills,Porter Everett Libby,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 266,2,Computing Skills,Porter Everett Libby,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 281,0,Applied Groups,"Porter Everett Libby, Debanjali Banerjee, Douglas E Harms, Charles Franklin Peck, Yunting Yin",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 310,0,Algorithms,Debanjali Banerjee,MW 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 382,0,Cybersecurity,"Charles Franklin Peck, Porter Everett Libby",TTh 14:30-15:50 (Ctr for Science and Technology 103),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 383,0,Bioinformatics: Code & Chromosomes,"Emmett Malinda Smith, Charles Franklin Peck",TTh 09:30-10:50 (Ctr for Science and Technology 303),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 388,0,Methods For Research and Dissemination in Computer Science,"Charles Franklin Peck, Debanjali Banerjee",T 13:00-14:20 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 420,0,Operating Systems,Douglas E Harms,MW 13:00-14:20 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 440,0,Programming Languages,Douglas E Harms,MWF 09:00-09:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 481,0,Internship (Petition required),,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 481,1,Internship (Petition required),Douglas E Harms,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 485,1,IS: Lighting & Video Operation,Knoll Bendsen,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 486,0,Student Research,Debanjali Banerjee,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 486,1,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,F,CS 488,0,Senior Capstone Experience,"Charles Franklin Peck, Debanjali Banerjee",T 13:00-14:20 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 128,0,Programming & Problem Solving,Fatemeh Valizadeh Gamchi,MWF 10:00-10:50 (Ctr for Science and Technology 224); F 13:00-14:20 (Ctr for Science and Technology 224),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 130,0,Symbolic Logic,Timothy McLarnan,MW 13:00-14:20 (Ctr for Science and Technology 318),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 195,0,Math Toolkit,David DeMark,TTh 09:30-10:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 230,0,Cryptography,Malik Karim Barrett,MWF 13:00-13:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 256,0,Data Structures,Douglas E Harms,MWF 10:00-10:50 (Ctr for Science and Technology 229); T 13:00-14:20 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 266,1,Computing Skills,"Porter Everett Libby, Charles Franklin Peck",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 266,2,Computing Skills,"Porter Everett Libby, Charles Franklin Peck",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 281,0,Applied Groups,"Debanjali Banerjee, Douglas E Harms, Porter Everett Libby, Charles Franklin Peck, Fatemeh Valizadeh Gamchi",TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 310,0,Algorithms,Debanjali Banerjee,TTh 14:30-15:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 320,0,Principles in Computer Organization,Douglas E Harms,TTh 14:30-15:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 350,0,Electronics & Instrumentation,Charles Franklin Peck,MWF 11:00-12:10 (Noyes Hall 0007),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 365,0,Artificial Intelligence and Machine Learning,Debanjali Banerjee,MWF 10:00-10:50 (Ctr for Science and Technology 317),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 388,0,Methods For Research and Dissemination in Computer Science,"Debanjali Banerjee, Charles Franklin Peck",T 13:00-14:20 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 430,0,Database Systems,Douglas E Harms,TTh 09:30-10:50 (Ctr for Science and Technology 229),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 481,0,Internship (Petition required),,,https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 485,0,Applied Lighting & Video Tech.,Knoll Bendsen,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 485,0,Cybersecur. & Ethical Hacking,Malik Karim Barrett,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 485,1,Dir Res Syst Engineer & Admin,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 486,0,Student Research,Charles Franklin Peck,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 486,1,Student Research,Debanjali Banerjee,TBA (TBA),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
+Earlham College,2025-26,S,CS 488,0,Senior Capstone Experience,"Charles Franklin Peck, Debanjali Banerjee",T 13:00-14:20 (Ctr for Science and Technology 314),https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched
