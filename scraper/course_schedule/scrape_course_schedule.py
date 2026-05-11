@@ -34,6 +34,7 @@ from course_schedule.macalester import MacalesterScraper
 from course_schedule.middlebury import MiddleburyScraper
 from course_schedule.mount_holyoke import MountHolyokeScraper
 from course_schedule.occidental import OccidentalScraper
+from course_schedule.randolph_macon import RandolphMaconScraper
 from course_schedule.richmond import RichmondScraper
 from course_schedule.selfservice import selfservice_scrapers
 from course_schedule.smith import SmithScraper
@@ -64,6 +65,7 @@ SCRAPERS = [
     MountHolyokeScraper,
     OccidentalScraper,
     PomonaScraper,
+    RandolphMaconScraper,
     RichmondScraper,
     SmithScraper,
     TrinityScraper,
