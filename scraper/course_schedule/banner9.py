@@ -366,6 +366,7 @@ def _format_hhmm(value):
 # `/StudentRegistrationSsb` suffix.
 BANNER9_COLLEGES = [
     (College.BEREA, "https://b9student-prod.berea.edu:8444", "CSC"),
+    (College.CONNECTICUT, "https://reg-prod.ec.conncoll.edu", "COM"),
     (College.DENISON, "https://banner.denison.edu", "CS"),
     (College.DICKINSON, "https://bannercprod.dickinson.edu", "COMP"),
     (College.LAFAYETTE, "https://selfservice.lafayette.edu", "CS"),
