@@ -8308,6 +8308,51 @@
           1,
           1
         ]
+      },
+      {
+        "code": "COMP*645",
+        "name": "Objct-Oriented Design & Prac",
+        "offered": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "code": "COMP*650",
+        "name": "Syst Architecture/Engineering",
+        "offered": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "code": "COMP*655",
+        "name": "Distributed Systems",
+        "offered": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "code": "COMP*670",
+        "name": "App of Artificial Intelligence",
+        "offered": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "code": "COMP*671",
+        "name": "Verification & Testing",
+        "offered": [
+          1,
+          1,
+          0
+        ]
       }
     ]
   },
@@ -9440,6 +9485,42 @@
       {
         "code": "CSC-301",
         "name": "Analysis of Algorithms",
+        "offered": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "code": "CSC-313",
+        "name": "Advanced Operating Systems",
+        "offered": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": "CSC-324",
+        "name": "Software Design & Dev w/Lab",
+        "offered": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "code": "CSC-326",
+        "name": "Software Dev Leadership w/Lab",
+        "offered": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "code": "CSC-341",
+        "name": "Auto, Frm Lng, Cmp Cmplxty",
         "offered": [
           1,
           1,
@@ -12208,6 +12289,14 @@
       {
         "code": "CS-481",
         "name": "CS Experiential Learning",
+        "offered": [
+          1,
+          1
+        ]
+      },
+      {
+        "code": "CS-499",
+        "name": "Computer Studies Research",
         "offered": [
           1,
           1
@@ -15623,6 +15712,20 @@
         "offered": [
           1
         ]
+      },
+      {
+        "code": "CS-335",
+        "name": "COMPUTER ORGANIZATION",
+        "offered": [
+          1
+        ]
+      },
+      {
+        "code": "CS-357",
+        "name": "COMPUTING SCIENCE PROJECT I",
+        "offered": [
+          1
+        ]
       }
     ]
   },
@@ -17714,6 +17817,42 @@
           0,
           0
         ]
+      },
+      {
+        "code": "CSCI-501",
+        "name": "Top: Optimizatn Methods & Appl",
+        "offered": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": "CSCI-502",
+        "name": "Ind. St: Machine Learning",
+        "offered": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
       }
     ]
   },
@@ -18808,6 +18947,26 @@
         ]
       },
       {
+        "code": "CSC-235",
+        "name": "Modeling & Simulation",
+        "offered": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "code": "CSC-240",
+        "name": "Web Programming",
+        "offered": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
         "code": "CSC-243",
         "name": "Bioinformatics",
         "offered": [
@@ -18908,11 +19067,31 @@
         ]
       },
       {
+        "code": "CSC-329",
+        "name": "Neural Networks",
+        "offered": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
         "code": "CSC-331",
         "name": "Applied Deep Learning",
         "offered": [
           0,
           1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": "CSC-335",
+        "name": "Operating Systems",
+        "offered": [
+          1,
+          0,
           0,
           0
         ]
@@ -18928,6 +19107,26 @@
         ]
       },
       {
+        "code": "CSC-370",
+        "name": "Programming Languages",
+        "offered": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": "CSC-375",
+        "name": "Compiler Design",
+        "offered": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
         "code": "CSC-380",
         "name": "User Interfaces",
         "offered": [
@@ -18935,6 +19134,16 @@
           1,
           0,
           0
+        ]
+      },
+      {
+        "code": "CSC-385",
+        "name": "Computer Graphics",
+        "offered": [
+          0,
+          0,
+          0,
+          1
         ]
       },
       {
@@ -20595,6 +20804,13 @@
       {
         "code": "CS-374",
         "name": "Prin Prog Lang",
+        "offered": [
+          1
+        ]
+      },
+      {
+        "code": "CS-476",
+        "name": "Computer Graphics",
         "offered": [
           1
         ]
@@ -22729,6 +22945,33 @@
           0,
           1
         ]
+      },
+      {
+        "code": "CS-370",
+        "name": "Software Design",
+        "offered": [
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": "CS-482",
+        "name": "IS: NewMedia 3D Art - Code&AI",
+        "offered": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": "CS-497",
+        "name": "Advanced Project",
+        "offered": [
+          1,
+          0,
+          1
+        ]
       }
     ]
   },
@@ -22824,6 +23067,14 @@
         "offered": [
           1,
           0
+        ]
+      },
+      {
+        "code": "CS-480W",
+        "name": "Capstone1: Project Development",
+        "offered": [
+          0,
+          1
         ]
       }
     ]

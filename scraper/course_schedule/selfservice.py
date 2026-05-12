@@ -221,8 +221,22 @@ class EllucianSelfServiceScraper(CourseScheduleScraper):
             return None
         time.sleep(self.post_load_sleep)
 
-        self._expand_all_sections()
-        return self._parse(self.driver.page_source)
+        # Self-Service paginates results client-side (Knockout) — by default
+        # only the first page's cards are in the DOM. Walk through every page,
+        # expanding + parsing each in turn, since navigating away rebuilds
+        # the card list and we lose the previous page's expansions.
+        rows = []
+        page_count = 0
+        while True:
+            self._expand_all_sections()
+            rows.extend(self._parse(self.driver.page_source) or [])
+            page_count += 1
+            if not self._goto_next_page():
+                break
+            if page_count >= 50:
+                print(f"  pagination safety cap hit at {page_count} pages", flush=True)
+                break
+        return rows
 
     def _sidebar_term_ids(self):
         """Return the term codes advertised by the filter sidebar.
@@ -276,6 +290,43 @@ class EllucianSelfServiceScraper(CourseScheduleScraper):
                 break
             time.sleep(0.5)
         time.sleep(1)
+
+    def _goto_next_page(self):
+        """Advance to the next results page. Return False if already on last."""
+        info = self.driver.execute_script(
+            "var cur = document.getElementById('course-results-current-page');"
+            "var tot = document.getElementById('course-results-total-pages');"
+            "var btn = document.getElementById('course-results-next-page');"
+            "if (!cur || !tot || !btn) return null;"
+            "return {cur: parseInt(cur.value, 10) || 1,"
+            "        tot: parseInt(tot.textContent, 10) || 1};"
+        )
+        if not info or info["cur"] >= info["tot"]:
+            return False
+
+        # Knockout re-renders the card list on page change. Fingerprint the
+        # cards before clicking so we can wait for the swap rather than
+        # sleeping a fixed amount.
+        before = self.driver.execute_script(
+            "return Array.from(document.querySelectorAll("
+            "  'button[id^=collapsible-view-available-sections-for-]'"
+            ")).map(b => b.id).join('|');"
+        )
+        self.driver.execute_script(
+            "document.getElementById('course-results-next-page').click();"
+        )
+        deadline = time.time() + 30
+        while time.time() < deadline:
+            now = self.driver.execute_script(
+                "return Array.from(document.querySelectorAll("
+                "  'button[id^=collapsible-view-available-sections-for-]'"
+                ")).map(b => b.id).join('|');"
+            )
+            if now and now != before:
+                break
+            time.sleep(0.3)
+        time.sleep(self.post_load_sleep)
+        return True
 
     def _parse(self, html):
         soup = BeautifulSoup(html, "html.parser")
