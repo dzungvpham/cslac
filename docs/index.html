@@ -21,6 +21,8 @@
       --th-bg:      #f2f2f2;
       --hover-bg:   #fafafa;
       --expand-bg:  #f7f7f7;
+      --header-h:   0px;
+      --summary-h:  0px;
     }
     [data-theme="dark"] {
       --bg:         #1f315f;
@@ -145,6 +147,9 @@
 
     /* column headers */
     .col-head-row {
+      position: sticky;
+      top: 0;
+      z-index: 30;
       border-top: 1px solid var(--border);
       border-bottom: 2px solid var(--border);
       background: var(--th-bg);
@@ -183,6 +188,10 @@
 
     .college-summary {
       cursor: pointer;
+      position: sticky;
+      top: var(--header-h);
+      z-index: 25;
+      background: var(--bg);
       transition: background 0.1s;
     }
     .college-summary:hover { background: var(--hover-bg); }
@@ -289,7 +298,11 @@
 
     /* faculty column headers */
     .fac-head-row {
-      border-bottom: 1px solid var(--border-sub);
+      position: sticky;
+      top: calc(var(--header-h) + var(--summary-h) + var(--toggle-h, 0px));
+      z-index: 15;
+      background: var(--expand-bg);
+      border-bottom: 2px solid var(--border);
     }
     .fac-head-row .fac-grid { padding: 0; }
 
@@ -405,21 +418,28 @@
 
     /* ── panel view toggle (Faculty / Courses) ─────────────────────────────── */
     .panel-toggle {
-      display: inline-flex;
+      position: sticky;
+      top: calc(var(--header-h) + var(--summary-h));
+      z-index: 20;
+      background: var(--expand-bg);
+      display: flex;
       gap: 4px;
-      margin: 4px 0 6px;
+      padding: 6px 0 4px;
     }
     .panel-toggle button {
-      font-family: 'IBM Plex Sans', system-ui, sans-serif;
-      font-size: 12px;
-      font-weight: 500;
-      padding: 5px 11px;
+      width: 26px;
+      height: 26px;
+      padding: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       border: 1px solid var(--border);
       border-radius: 999px;
       background: var(--bg);
       color: var(--sub);
       transition: color 0.12s, border-color 0.12s, background 0.12s;
     }
+    .panel-toggle button svg { width: 14px; height: 14px; }
     .panel-toggle button:hover {
       color: var(--text);
       border-color: var(--text);
@@ -432,13 +452,8 @@
 
     /* ── course schedule table ─────────────────────────────────────────────── */
     .course-wrap {
-      overflow-x: auto;
       margin-right: 12px;
       background: var(--expand-bg);
-    }
-    .course-wrap.course-wrap--scroll {
-      overflow-y: auto;
-      max-height: min(70vh, 920px);
     }
     .course-table {
       border-collapse: separate;
@@ -462,8 +477,9 @@
       background: var(--expand-bg);
       padding: 8px 10px;
       position: sticky;
-      top: 0;
-      z-index: 2;
+      top: calc(var(--header-h) + var(--summary-h) + var(--toggle-h, 0px));
+      z-index: 15;
+      border-bottom: 2px solid var(--border);
     }
     .course-table tbody tr { transition: background 0.1s; }
     .course-table tbody tr:last-child td { border-bottom: none; }
@@ -477,11 +493,11 @@
       left: 0;
       background: var(--expand-bg);
       text-align: left !important;
-      z-index: 2;
+      z-index: 5;
       padding-right: 16px !important;
       padding-left: 0 !important;
     }
-    .course-table thead th.course-sticky { z-index: 4; }
+    .course-table thead th.course-sticky { z-index: 17; }
 
     .course-title-cell {
       display: flex;
@@ -709,8 +725,12 @@
 
       /* rotated metric headers (cols 3–8). Anchored at the cell's bottom and
          rotated -55° so the text extends up-and-right into the toggle row. */
-      .panel-toggle { margin: 2px 0 4px; position: relative; z-index: 1; }
-      .fac-head-row { position: relative; z-index: 2; overflow: visible; }
+      .panel-toggle { padding: 4px 0 2px; }
+      /* Top padding makes room for the rotated labels (which anchor at each
+         .fth's bottom and rotate -55deg up-and-right). Without it the labels
+         would extend above .fac-head-row's box into the sticky panel-toggle
+         above, whose opaque background covers them. */
+      .fac-head-row { overflow: visible; z-index: 30; }
       .fac-head-row .fth:nth-child(n+3) {
         padding: 0;
         height: 14px;
@@ -759,6 +779,13 @@
       .course-table th,
       .course-table td { padding: 8px 6px; }
       .course-table thead th { padding: 7px 6px; }
+
+      /* On narrow viewports the course table is wider than the viewport.
+         Re-introduce a confined horizontal scroll so it doesn't push the
+         whole page sideways. This makes course-wrap a scroll container, so
+         the thead can no longer page-stick — accepted tradeoff on mobile. */
+      .course-wrap { overflow-x: auto; }
+      .course-table thead th { top: 0; }
     }
 
     @media (max-width: 340px) {
@@ -820,6 +847,8 @@ const ICON_SCHOLAR = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
 const ICON_PROGRAM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`;
 const ICON_CATALOG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
 const ICON_SEARCH = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
+const ICON_PERSON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+const ICON_BOOK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`;
 
 // ── column tooltips ───────────────────────────────────────────────────────
 const COL_TOOLTIPS = {
@@ -920,6 +949,34 @@ async function loadData() {
   buildFilterBar();
   buildAdvancedBar();
   renderAll();
+  updateHeaderH();
+}
+
+// Keep --header-h on :root in sync with the main column-header height, and
+// --summary-h scoped to each .college-row in sync with that row's own summary
+// height. Per-row scoping matters because on narrow viewports the college
+// name may wrap to two lines, so summaries don't all share one height — we
+// want each row's fac-head-row to stick directly under its own summary.
+function updateHeaderH() {
+  const row = document.querySelector('.col-head-row');
+  if (row) {
+    document.documentElement.style.setProperty('--header-h', row.offsetHeight + 'px');
+  }
+  document.querySelectorAll('.college-row').forEach(updateRowVars);
+}
+
+// Sticky offsets for each row's fac-head-row / course thead depend on the
+// actual rendered heights of the summary above them and the panel-toggle
+// (when present). Both are scoped per .college-row.
+function updateRowVars(r) {
+  const s = r.querySelector('.college-summary');
+  if (s) r.style.setProperty('--summary-h', s.offsetHeight + 'px');
+  const t = r.querySelector('.panel-toggle');
+  r.style.setProperty('--toggle-h', t ? t.offsetHeight + 'px' : '0px');
+}
+window.addEventListener('resize', updateHeaderH);
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(updateHeaderH);
 }
 
 // ── filter bar ─────────────────────────────────────────────────────────────
@@ -1047,6 +1104,7 @@ function toggleExpandAll() {
       if (panel && !panel._built) {
         panel._build();
         panel._built = true;
+        updateRowVars(row);
       }
     } else if (!expand) {
       row.classList.remove('open');
@@ -1092,6 +1150,8 @@ function renderAll() {
   document.getElementById('stat-colleges').textContent = aggregated.length;
   document.getElementById('stat-faculty').textContent = totalFaculty;
   renderColleges(aggregated);
+  // College rows were rebuilt — re-stamp each row's --summary-h.
+  if (typeof updateHeaderH === 'function') updateHeaderH();
 }
 
 // ── college headers ────────────────────────────────────────────────────────
@@ -1220,6 +1280,7 @@ function buildCollegeRow(college, idx) {
     if (!wasOpen && !panel._built) {
       panel._build();
       panel._built = true;
+      updateRowVars(div); // toggle now in DOM; measure for sticky offset
     }
     buildFilterBar();
   });
@@ -1236,8 +1297,8 @@ function buildPanel(panel, college) {
   function render() {
     const toggleHtml = hasCourses ? `
       <div class="panel-toggle" role="tablist">
-        <button data-view="faculty" class="${view === 'faculty' ? 'active' : ''}">Faculty</button>
-        <button data-view="courses" class="${view === 'courses' ? 'active' : ''}">Courses</button>
+        <button data-view="faculty" class="${view === 'faculty' ? 'active' : ''}" title="Faculty" aria-label="Faculty">${ICON_PERSON}</button>
+        <button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>
       </div>
     ` : '';
 
@@ -1399,9 +1460,8 @@ function renderCourseTable(panel, schedule) {
     `;
   }).join('');
 
-  const scrollCls = schedule.courses.length > 25 ? ' course-wrap--scroll' : '';
   panel.innerHTML = `
-    <div class="course-wrap${scrollCls}">
+    <div class="course-wrap">
       <table class="course-table">
         <thead>
           <tr>
