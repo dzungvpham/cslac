@@ -201,6 +201,11 @@
       position: relative;
     }
 
+    /* By default these wrappers are layout-transparent so .td-name behaves
+       exactly as it did before. Mobile media query promotes them to real
+       flex containers so num+chev can stack and name+icons can stack. */
+    .name-marker, .name-body { display: contents; }
+
     .chevron {
       flex-shrink: 0;
       color: var(--muted);
@@ -215,6 +220,8 @@
     }
 
     .college-name { font-weight: 600; font-size: 14px; }
+    /* short form is mobile-only; see media query below */
+    .college-name .cn-short { display: none; }
 
     .college-links {
       display: flex;
@@ -640,8 +647,39 @@
       }
       /* hide state badge on mobile to free up the name column */
       .college-state { display: none; }
-      .college-links { gap: 0; margin-left: 2px; }
-      .college-link { width: 20px; height: 20px; }
+
+      /* swap to the short college name ("University" → "Univ.") */
+      .college-name .cn-full  { display: none; }
+      .college-name .cn-short { display: inline; }
+
+      /* Stack the chevron beneath the row number in a fixed-width column,
+         and stack the icons beneath the college name. Decoupling the two
+         stacks means: (a) the name's start-x doesn't shift with the digit
+         count of the row number, and (b) the gap between the name and the
+         icons is driven only by the name's height, not by the chevron row. */
+      .td-name {
+        align-items: flex-start;
+        gap: 6px;
+      }
+      .name-marker {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        width: 22px;
+        flex-shrink: 0;
+      }
+      .name-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        min-width: 0;
+        gap: 4px;
+      }
+      .college-name { min-width: 0; word-break: break-word; }
+      .college-links { gap: 4px; margin-left: 0; }
+      .college-link { width: 22px; height: 22px; }
+      .college-link svg { width: 14px; height: 14px; }
 
       /* faculty subtable: fit everything in viewport instead of scrolling.
          Title moves under the name cell; the 6 metric headers are rotated
@@ -1109,6 +1147,12 @@ function renderColleges(colleges) {
 
 function fmt(n) { return n != null ? n.toLocaleString() : '—'; }
 
+// Mobile-only short form for college names: abbreviates "University" → "Univ."
+// to save horizontal space on narrow viewports.
+function shortCollegeName(name) {
+  return name.replace(/\bUniversity\b/g, 'Univ.');
+}
+
 // Compact form for narrow mobile columns: 1,640 → "1.6k", 11,245 → "11.2k".
 // Numbers under 1000 keep their plain form.
 function abbrev(n) {
@@ -1139,15 +1183,19 @@ function buildCollegeRow(college, idx) {
     <div class="college-summary">
       <div class="col-grid">
         <div class="td td-name">
-          <span class="college-num">${idx + 1}</span>
-          <span class="chevron">
-            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="4,2 8,6 4,10"/>
-            </svg>
+          <span class="name-marker">
+            <span class="college-num">${idx + 1}</span>
+            <span class="chevron">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4,2 8,6 4,10"/>
+              </svg>
+            </span>
           </span>
-          <span class="college-name">${esc(college.name)}</span>
-          ${links.state ? `<span class="college-state">${esc(links.state)}</span>` : ''}
-          <span class="college-links">${programLink}${catalogLink}${scheduleLink}</span>
+          <span class="name-body">
+            <span class="college-name"><span class="cn-full">${esc(college.name)}</span><span class="cn-short">${esc(shortCollegeName(college.name))}</span></span>
+            ${links.state ? `<span class="college-state">${esc(links.state)}</span>` : ''}
+            <span class="college-links">${programLink}${catalogLink}${scheduleLink}</span>
+          </span>
         </div>
         <div class="td-num">${college.total}</div>
         <div class="td-num ${college.total_citations > 0 ? '' : 'dim'}">${citText}</div>
