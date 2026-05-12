@@ -382,6 +382,9 @@
       padding: 9px 8px 9px 0;
     }
 
+    /* Title shown under the name (mobile only); duplicates .ftd-title text */
+    .fac-title-inline { display: none; }
+
     .ftd-num {
       font-family: 'IBM Plex Mono', monospace;
       font-size: 12.5px;
@@ -390,6 +393,8 @@
       color: var(--text);
     }
     .ftd-num.na { color: var(--muted); }
+    /* compact ("k") form is mobile-only; see media query below */
+    .ftd-num .num-short { display: none; }
 
     /* ── panel view toggle (Faculty / Courses) ─────────────────────────────── */
     .panel-toggle {
@@ -638,14 +643,62 @@
       .college-links { gap: 0; margin-left: 2px; }
       .college-link { width: 20px; height: 20px; }
 
-      /* faculty subtable: confine horizontal overflow to the panel */
+      /* faculty subtable: fit everything in viewport instead of scrolling.
+         Title moves under the name cell; the 6 metric headers are rotated
+         diagonally and extend up into the panel-toggle row to claw back
+         vertical space. */
       .faculty-panel-inner {
-        padding: 0 0 8px 16px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        padding: 0 0 8px 12px;
+        overflow: visible;
       }
       .fac-head-row,
-      .fac-row { min-width: 620px; }
+      .fac-row { min-width: 0; }
+
+      .fac-grid {
+        grid-template-columns: minmax(0,1fr) repeat(6, 32px);
+      }
+      /* hide the standalone Title column (rendered inline under name) */
+      .fac-head-row .fth:nth-child(2),
+      .ftd-title { display: none; }
+
+      .fac-title-inline {
+        display: block;
+        font-size: 11.5px;
+        color: var(--sub);
+        margin-top: 1px;
+        line-height: 1.3;
+      }
+
+      /* rotated metric headers (cols 3–8). Anchored at the cell's bottom and
+         rotated -55° so the text extends up-and-right into the toggle row. */
+      .panel-toggle { margin: 2px 0 4px; position: relative; z-index: 1; }
+      .fac-head-row { position: relative; z-index: 2; overflow: visible; }
+      .fac-head-row .fth:nth-child(n+3) {
+        padding: 0;
+        height: 14px;
+        overflow: visible;
+        justify-content: flex-start;
+      }
+      .fac-head-row .fth:nth-child(n+3) .fth-label {
+        position: absolute;
+        bottom: 0;
+        left: 14px;
+        transform: rotate(-55deg);
+        transform-origin: left bottom;
+        white-space: nowrap;
+        font-size: 9.5px;
+        letter-spacing: 0;
+        line-height: 1;
+      }
+      .fac-head-row .fth:nth-child(n+3) .sort-icon { display: none; }
+
+      /* tighter numeric cells; pair with the "k" abbreviation below */
+      .ftd-num {
+        font-size: 11.5px;
+        padding: 9px 4px;
+      }
+      .ftd-num .num-full  { display: none; }
+      .ftd-num .num-short { display: inline; }
 
       /* course schedule: stack code over name in the sticky title column so
          the term columns stay visible without horizontal scrolling. */
@@ -1056,6 +1109,14 @@ function renderColleges(colleges) {
 
 function fmt(n) { return n != null ? n.toLocaleString() : '—'; }
 
+// Compact form for narrow mobile columns: 1,640 → "1.6k", 11,245 → "11.2k".
+// Numbers under 1000 keep their plain form.
+function abbrev(n) {
+  if (n < 1000) return n.toLocaleString();
+  const r = Math.round(n / 100) / 10;
+  return (Number.isInteger(r) ? r.toFixed(0) : r.toFixed(1)) + 'k';
+}
+
 function buildCollegeRow(college, idx) {
   const div = document.createElement('div');
   div.className = 'college-row';
@@ -1164,7 +1225,7 @@ function renderFacultyTable(panel, faculty) {
       const arrow = active ? (facSort.dir === 1 ? '↑' : '↓') : '↕';
       const tip = COL_TOOLTIPS[col.key] ? ` title="${esc(COL_TOOLTIPS[col.key])}"` : '';
       return `<div class="fth ${active ? 'sorted' : ''}" data-fac-col="${col.key}"${tip}>
-        ${col.label} <span class="sort-icon">${arrow}</span>
+        <span class="fth-label">${col.label}</span> <span class="sort-icon">${arrow}</span>
       </div>`;
     }).join('');
   }
@@ -1198,7 +1259,11 @@ function renderFacultyTable(panel, faculty) {
         : '';
 
       function num(v) {
-        return `<div class="ftd-num ${v == null ? 'na' : ''}">${v != null ? v.toLocaleString() : '—'}</div>`;
+        if (v == null) return `<div class="ftd-num na">—</div>`;
+        return `<div class="ftd-num">`
+          + `<span class="num-full">${v.toLocaleString()}</span>`
+          + `<span class="num-short">${abbrev(v)}</span>`
+          + `</div>`;
       }
 
       return `
@@ -1209,6 +1274,7 @@ function renderFacultyTable(panel, faculty) {
                 <span class="fac-name-text">${esc(f.name)}</span>
                 <span class="fac-links">${webLink}${schLink}</span>
               </div>
+              <div class="fac-title-inline">${esc(f.title)}</div>
               ${f.interests ? `<div class="fac-interests">${esc(f.interests)}</div>` : ''}
             </div>
             <div class="ftd-title">${esc(f.title)}</div>
