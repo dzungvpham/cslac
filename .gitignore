@@ -160,7 +160,7 @@ cython_debug/
 #.idea/
 
 .claude/
+.playwright-mcp/
 
 data_old/
 taxonomy/
-driver/

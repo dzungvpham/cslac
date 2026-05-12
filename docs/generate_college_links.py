@@ -37,9 +37,10 @@ def build_links(colleges_csv: Path, known_colleges: set[str]) -> dict:
                 continue
 
             result[name] = {
-                "state":       row["State"].strip() or None,
-                "program_url": row["Program Link"].strip() or None,
-                "catalog_url": row["Catalog Link"].strip() or None,
+                "state":        row["State"].strip() or None,
+                "program_url":  row["Program Link"].strip() or None,
+                "catalog_url":  row["Catalog Link"].strip() or None,
+                "schedule_url": row.get("Schedule Link", "").strip() or None,
             }
 
     return result
