@@ -43,6 +43,7 @@ from course_schedule.smith import SmithScraper
 from course_schedule.trinity import TrinityScraper
 from course_schedule.unca import UNCAshevilleScraper
 from course_schedule.vassar import VassarScraper
+from course_schedule.wabash import WabashScraper
 from course_schedule.wellesley import WellesleyScraper
 from course_schedule.wesleyan import WesleyanScraper
 from course_schedule.williams import WilliamsScraper
@@ -75,6 +76,7 @@ SCRAPERS = [
     TrinityScraper,
     UNCAshevilleScraper,
     VassarScraper,
+    WabashScraper,
     WellesleyScraper,
     WesleyanScraper,
     WilliamsScraper,
