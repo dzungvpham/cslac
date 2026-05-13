@@ -60,7 +60,9 @@ from course_schedule.wabash import WabashScraper
 from course_schedule.washington_lee import WashingtonLeeScraper
 from course_schedule.wellesley import WellesleyScraper
 from course_schedule.wesleyan import WesleyanScraper
+from course_schedule.wheaton_il import WheatonILScraper
 from course_schedule.williams import WilliamsScraper
+from course_schedule.wofford import WoffordScraper
 
 OUTPUT_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "course_schedule"
 
@@ -106,7 +108,9 @@ SCRAPERS = [
     WashingtonLeeScraper,
     WellesleyScraper,
     WesleyanScraper,
+    WheatonILScraper,
     WilliamsScraper,
+    WoffordScraper,
     *selfservice_scrapers(),
     *banner9_scrapers(),
     *jenzabar_jics_scrapers(),

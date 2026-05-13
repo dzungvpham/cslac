@@ -1,0 +1,23 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Wheaton College (IL),2025-26,S,CSCI 232,0,Programming for Math Sci,,MWF 2:15 PM - 3:25 PM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 235,0,Programming I: Problem Solving,,MWF 9:20 AM - 10:30 AM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 235L,0,Programming I Lab,,T 8:30 AM - 10:20 AM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 243,0,Discrete Math/Functional Prog,,MWF 8:00 AM - 9:10 AM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 245,0,Programming II: OO Design,,MWF 12:55 PM - 2:05 PM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 245L,0,Programming II Lab,,R 1:15 PM - 3:05 PM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 270,0,App Math Topics for CSCI,,MWF 2:15 PM - 3:25 PM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 335,0,Software Development,,MWF 11:35 AM - 12:45 PM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 373,0,Platform-Specific Development,,MWF 9:20 AM - 10:30 AM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 394,0,High Performance Computing,,MWF 8:00 AM - 9:10 AM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2025-26,S,CSCI 493,0,AI-Assisted Software Dev,,T 1:15 PM - 3:05 PM,https://www.wheaton.edu/media/registrar/schedule/Spring_2026_Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 235,0,Programming I: Problem Solving,,MWF 11:35 AM - 12:45 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 235L,1,Programming I Lab,,R 8:30 AM - 10:20 AM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 235L,2,Programming I Lab,,R 1:15 PM - 3:05 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 243,0,Discrete Math/Functional Prog,,MWF 2:15 PM - 3:25 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 245,0,Programming II: OO Design,,MWF 11:35 AM - 12:45 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 245L,0,Programming II Lab,,T 1:15 PM - 3:05 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 345,0,Data Structures & Algorithms,,MWF 11:35 AM - 12:45 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 345L,0,Data Struct and Alg Lab,,R 11:15 AM - 1:05 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 351,0,Intro to Computer Systems,,MWF 9:20 AM - 10:30 AM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 359,0,Information Security,,MWF 12:55 PM - 2:05 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
+Wheaton College (IL),2026-27,F,CSCI 371,0,Database System,,MWF 2:15 PM - 3:25 PM,https://www.wheaton.edu/media/registrar/schedule/Fall-2026-Registration-Packet.pdf
