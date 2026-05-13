@@ -35,6 +35,7 @@ from course_schedule.goucher import GoucherScraper
 from course_schedule.hamilton import HamiltonScraper
 from course_schedule.haverford import HaverfordScraper
 from course_schedule.hope import HopeScraper
+from course_schedule.knox import KnoxScraper
 from course_schedule.hyperschedule import HarveyMuddScraper, PomonaScraper
 from course_schedule.macalester import MacalesterScraper
 from course_schedule.middlebury import MiddleburyScraper
@@ -73,6 +74,7 @@ SCRAPERS = [
     HaverfordScraper,
     HopeScraper,
     HarveyMuddScraper,
+    KnoxScraper,
     MacalesterScraper,
     MiddleburyScraper,
     MountHolyokeScraper,
