@@ -1,0 +1,29 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Coe College,2024-25,F,CS 125,01,Intro to Computer Programming,M Stobb,MWF 01:00 PM-01:50 PM / R 12:30 PM-01:50 PM,https://www.coe.edu/download_file/view/21947/766
+Coe College,2024-25,F,CS 215,01,Anaylsis of Algorithms,T Hostetler,MWF 09:00 AM-09:50 AM,https://www.coe.edu/download_file/view/21947/766
+Coe College,2024-25,F,CS 420,01,Algorithms in Society,T Hostetler,MWF 10:00 AM-10:50 AM,https://www.coe.edu/download_file/view/21947/766
+Coe College,2024-25,F,CS 450,01,Principles of Computer Graphics,T Hostetler,MWF 02:00 PM-02:50 PM,https://www.coe.edu/download_file/view/21947/766
+Coe College,2024-25,S,CS 125,01,Intro to Computer Programming,S Hughes,MWF 11:00 AM-11:50 AM / R 12:30 PM-01:50 PM,https://www.coe.edu/download_file/view/23164/766
+Coe College,2024-25,S,CS 135,01,Data Structures,T Hostetler,MWF 12:00 PM-12:50 PM,https://www.coe.edu/download_file/view/23164/766
+Coe College,2024-25,S,CS 220,01,Principles of Computer Systems,S Hughes,MWF 09:00 AM-09:50 AM,https://www.coe.edu/download_file/view/23164/766
+Coe College,2024-25,S,CS 235,01,Net-Centric Computing,S Hughes,TR 09:30 AM-10:50 AM,https://www.coe.edu/download_file/view/23164/766
+Coe College,2024-25,S,CS 245,01,Object Oriented Programming,S Hughes,MWF 01:00 PM-01:50 PM,https://www.coe.edu/download_file/view/23164/766
+Coe College,2024-25,S,CS 340,01,Programming Languages,T Hostetler,MWF 10:00 AM-10:50 AM,https://www.coe.edu/download_file/view/23164/766
+Coe College,2024-25,S,CS 390,01,WE Software Engineering,T Hostetler,MWF 02:00 PM-02:50 PM,https://www.coe.edu/download_file/view/23164/766
+Coe College,2025-26,F,CS 125,01,Introduction to Programming,Staff,MWF 10:00 AM-10:50 AM / R 12:30 PM-01:50 PM,https://www.coe.edu/download_file/view/23910/766
+Coe College,2025-26,F,CS 125,02,Introduction to Programming,Staff,MWF 12:00 PM-12:50 PM / R 02:00 PM-03:20 PM,https://www.coe.edu/download_file/view/23910/766
+Coe College,2025-26,F,CS 215,01,Analysis of Algorithms,Staff,MWF 02:00 PM-02:50 PM,https://www.coe.edu/download_file/view/23910/766
+Coe College,2025-26,F,CS 320,01,Operating Systems,S Hughes,TR 09:30 AM-10:50 AM,https://www.coe.edu/download_file/view/23910/766
+Coe College,2025-26,F,CS 452,01,Interactive System Design,S Hughes,MWF 09:00 AM-09:50 AM,https://www.coe.edu/download_file/view/23910/766
+Coe College,2025-26,F,CS 484,01,Special Topics,S Hughes,MWF 01:00 PM-01:50 PM,https://www.coe.edu/download_file/view/23910/766
+Coe College,2025-26,S,CS 125,01,Computer Science I,N Saha,MWF 11:00 AM-11:50 AM / R 12:30 PM-01:50 PM,https://www.coe.edu/download_file/view/25168/766
+Coe College,2025-26,S,CS 135,01,Data Structures,S Hughes,MWF 09:00 AM-09:50 AM,https://www.coe.edu/download_file/view/25168/766
+Coe College,2025-26,S,CS 220,01,Principles of Computer Systems,S Hughes,MWF 11:00 AM-11:50 AM,https://www.coe.edu/download_file/view/25168/766
+Coe College,2025-26,S,CS 245,01,Object Oriented Programming,S Hughes,MWF 01:00 PM-01:50 PM,https://www.coe.edu/download_file/view/25168/766
+Coe College,2026-27,F,CS 110,01,Introduction to Programming,N Saha,MWF 09:00 AM-09:50 AM / R 12:30 PM-01:50 PM,https://www.coe.edu/download_file/view/fda463a7-4c71-49a3-9395-3695d46141cd/766
+Coe College,2026-27,F,CS 110,02,Introduction to Programming,N Saha,MWF 01:00 PM-01:50 PM / R 02:00 PM-03:20 PM,https://www.coe.edu/download_file/view/fda463a7-4c71-49a3-9395-3695d46141cd/766
+Coe College,2026-27,F,CS 205,01,Competitive Programming,S Hughes,T 02:00 PM-04:00 PM,https://www.coe.edu/download_file/view/fda463a7-4c71-49a3-9395-3695d46141cd/766
+Coe College,2026-27,F,CS 210,01,Object Oriented Software Developmen,S Hughes,MWF 01:00 PM-01:50 PM,https://www.coe.edu/download_file/view/fda463a7-4c71-49a3-9395-3695d46141cd/766
+Coe College,2026-27,F,CS 230,01,Web Programming,S Hughes,MWF 10:00 AM-10:50 AM,https://www.coe.edu/download_file/view/fda463a7-4c71-49a3-9395-3695d46141cd/766
+Coe College,2026-27,F,CS 340,01,Programming Languages,S Hughes,TR 09:30 AM-10:50 AM,https://www.coe.edu/download_file/view/fda463a7-4c71-49a3-9395-3695d46141cd/766
+Coe College,2026-27,F,CS 484,01,Special Topics:Software Development,N Saha,MWF 11:00 AM-11:50 AM,https://www.coe.edu/download_file/view/fda463a7-4c71-49a3-9395-3695d46141cd/766

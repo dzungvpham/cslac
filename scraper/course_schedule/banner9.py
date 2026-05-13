@@ -390,6 +390,7 @@ def _format_hhmm(value):
 # College of St Benedict and Saint John's).
 BANNER9_COLLEGES = [
     (College.BEREA, "https://b9student-prod.berea.edu:8444", "CSC"),
+    (College.CONCORDIA, "https://banner.cord.edu", "CSC"),
     (College.CONNECTICUT, "https://reg-prod.ec.conncoll.edu", "COM"),
     (College.DENISON, "https://banner.denison.edu", "CS"),
     (College.DICKINSON, "https://bannercprod.dickinson.edu", "COMP"),

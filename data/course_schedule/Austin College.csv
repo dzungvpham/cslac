@@ -1,0 +1,60 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Austin College,2021-22,F,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2021-22,F,CS 120,A,Interm Computer Programming,Aaron Block,MWF 09:00AM 09:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2021-22,F,CS 211,A,"Fund Data Struct, Algo, & Appl",Michael Higgs,MWF 09:00AM 09:50AM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2021-22,F,CS 410,A,Programming Languages,Aaron Block,TTH 09:30AM 10:50AM (IC 127),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2021-22,F,CS 440,A,Artificial Intelligence,Michael Higgs,MWF 03:00PM 04:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,F,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,F,CS 111,A,Intro to Data Sci With Python,Josh Edge,MWF 01:30PM 02:50PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,F,CS 120,A,Interm Computer Programming,Aaron Block,MWF 10:00AM 10:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,F,CS 211,A,"Fund Data Struct, Algo, & Appl",Michael Higgs,TTH 09:30AM 10:50AM (IC 124),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,F,CS 412,A,Data Structures & Algorithms,Aaron Block,MWF 09:00AM 09:50AM (IC 125),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,F,CS 441,A,Machine Learning,Michael Higgs,MWF 11:00AM 12:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,F,CS 464,A,Teacher/Learning Participation,Josh Edge,,https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,S,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,S,CS 111,A,Intro to Data Sci With Python,Josh Edge,MWF 01:30PM 02:50PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,S,CS 120,A,Interm Computer Programming,Michael Higgs,MWF 11:00AM 12:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,S,CS 201,A,Discrete Mathematics,J'lee Bumpus,TTH 09:30AM 10:50AM (IC 124),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,S,CS 221,A,Computer Systems & Foundations,Aaron Block,MWF 10:00AM 10:50AM (IC 127),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,S,CS 330,A,Database Systems,Michael Higgs,MWF 03:00PM 04:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2022-23,S,CS 420,A,Operating Systems,Aaron Block,MWF 09:00AM 09:50AM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,F,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,F,CS 111,A,Intro to Data Sci With Python,Josh Edge Michael Higgs,MWF 03:00PM 04:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,F,CS 120,A,Interm Computer Programming,Michael Higgs,MWF 10:00AM 10:50AM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,F,CS 211,A,"Fund Data Struct, Algo, & Appl",Aaron Block,MWF 09:00AM 09:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,F,CS 440,A,Artificial Intelligence,Michael Higgs,MWF 03:00PM 04:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,F,CS 464,A,Teacher/Learning Participation,Josh Edge,,https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,F,CS 470,A,Theoretical Foundations of CS,Aaron Block,MWF 10:00AM 10:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,S,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,S,CS 120,A,Interm Computer Programming,Aaron Block,MWF 10:00AM 10:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,S,CS 201,A,Discrete Mathematics,J'lee Bumpus,TTH 08:00AM 09:20AM (IC 124),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,S,CS 221,A,Computer Systems & Foundations,Aaron Block,MWF 09:00AM 09:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,S,CS 330,A,Database Systems,Michael Higgs,TTH 09:30AM 10:50AM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2023-24,S,CS 380,A,Software Engineering,Michael Higgs,MWF 11:00AM 12:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,F,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,F,CS 110,B,Intro to Computer Science,Amon Seagull,MWF 03:00PM 04:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,F,CS 111,A,Intro to Data Sci With Python,Samuel Kroger,MWF 01:30PM 02:50PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,F,CS 120,A,Interm Computer Programming,Aaron Block,MWF 09:00AM 09:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,F,CS 211,A,"Fund Data Struct, Algo, & Appl",Michael Higgs,MWF 09:00AM 09:50AM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,F,CS 412,A,Data Structures & Algorithms,Aaron Block,MWF 10:00AM 10:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,F,CS 441,A,Machine Learning,Michael Higgs,MWF 11:00AM 12:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,S,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,S,CS 120,A,Interm Computer Programming,Aaron Block,MWF 10:00AM 10:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,S,CS 201,A,Discrete Mathematics,J'lee Bumpus,TTH 09:30AM 10:50AM (IC 124),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,S,CS 221,A,Computer Systems & Foundations,Aaron Block,MWF 09:00AM 09:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,S,CS 321,A,Computer Networking,Michael Higgs,MWF 03:00PM 04:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2024-25,S,CS 330,A,Database Systems,Amon Seagull,TTH 09:30AM 10:50AM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,F,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,F,CS 110,B,Intro to Computer Science,Seema Aarella,MWF 08:30AM 09:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,F,CS 111,A,Intro to Data Sci With Python,Samuel Kroger,MWF 03:00PM 04:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,F,CS 120,A,Interm Computer Programming,Michael Higgs,MWF 11:00AM 12:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,F,CS 211,A,"Fund Data Struct, Algo, & Appl",Seema Aarella,MWF 11:00AM 11:50AM (IC 139),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,F,CS 412,A,Data Structures & Algorithms,Seema Aarella,TTH 09:30AM 10:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,F,CS 420,A,Operating Systems,Aaron Block,MWF 09:00AM 09:50AM (IC 139),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,F,CS 440,A,Artificial Intelligence,Michael Higgs,MWF 03:00PM 04:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,S,CS 110,A,Intro to Computer Science,Aaron Block,MWF 11:00AM 12:20PM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,S,CS 120,A,Interm Computer Programming,Michael Higgs,MWF 09:00AM 09:50AM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,S,CS 201,A,Discrete Mathematics,J'lee Bumpus,TTH 08:00AM 09:20AM (IC 124),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,S,CS 221,A,Computer Systems & Foundations,Aaron Block,MWF 09:00AM 09:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,S,CS 380,A,Software Engineering,Michael Higgs,MWF 11:00AM 12:20PM (IC 136),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006
+Austin College,2025-26,S,CS 410,A,Programming Languages,Aaron Block,MWF 10:00AM 10:50AM (IC 120),https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006

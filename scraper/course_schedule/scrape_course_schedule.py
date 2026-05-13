@@ -18,6 +18,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from course_schedule.amherst import AmherstScraper
+from course_schedule.austin import AustinScraper
 from course_schedule.banner9 import banner9_scrapers
 from course_schedule.barnard import BarnardScraper
 from course_schedule.bowdoin import BowdoinScraper
@@ -25,6 +26,8 @@ from course_schedule.bryn_mawr import BrynMawrScraper
 from course_schedule.bucknell import BucknellScraper
 from course_schedule.carleton import CarletonScraper
 from course_schedule.centre import CentreScraper
+from course_schedule.claflin import ClaflinScraper
+from course_schedule.coe import CoeScraper
 from course_schedule.colby import ColbyScraper
 from course_schedule.colorado import ColoradoScraper
 from course_schedule.davidson import DavidsonScraper
@@ -62,12 +65,15 @@ OUTPUT_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "course_sc
 
 SCRAPERS = [
     AmherstScraper,
+    AustinScraper,
     BarnardScraper,
     BowdoinScraper,
     BrynMawrScraper,
     BucknellScraper,
     CarletonScraper,
     CentreScraper,
+    ClaflinScraper,
+    CoeScraper,
     ColbyScraper,
     ColoradoScraper,
     DavidsonScraper,
