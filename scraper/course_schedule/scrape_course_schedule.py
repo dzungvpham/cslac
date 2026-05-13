@@ -39,17 +39,21 @@ from course_schedule.knox import KnoxScraper
 from course_schedule.hyperschedule import HarveyMuddScraper, PomonaScraper
 from course_schedule.macalester import MacalesterScraper
 from course_schedule.middlebury import MiddleburyScraper
+from course_schedule.minnesota_morris import MinnesotaMorrisScraper
 from course_schedule.mount_holyoke import MountHolyokeScraper
 from course_schedule.occidental import OccidentalScraper
+from course_schedule.puget_sound import PugetSoundScraper
 from course_schedule.randolph_macon import RandolphMaconScraper
 from course_schedule.richmond import RichmondScraper
 from course_schedule.selfservice import selfservice_scrapers
 from course_schedule.smith import SmithScraper
 from course_schedule.st_mary_md import StMaryMdScraper
+from course_schedule.st_olaf import StOlafScraper
 from course_schedule.trinity import TrinityScraper
 from course_schedule.unca import UNCAshevilleScraper
 from course_schedule.vassar import VassarScraper
 from course_schedule.wabash import WabashScraper
+from course_schedule.washington_lee import WashingtonLeeScraper
 from course_schedule.wellesley import WellesleyScraper
 from course_schedule.wesleyan import WesleyanScraper
 from course_schedule.williams import WilliamsScraper
@@ -78,17 +82,21 @@ SCRAPERS = [
     KnoxScraper,
     MacalesterScraper,
     MiddleburyScraper,
+    MinnesotaMorrisScraper,
     MountHolyokeScraper,
     OccidentalScraper,
     PomonaScraper,
+    PugetSoundScraper,
     RandolphMaconScraper,
     RichmondScraper,
     SmithScraper,
     StMaryMdScraper,
+    StOlafScraper,
     TrinityScraper,
     UNCAshevilleScraper,
     VassarScraper,
     WabashScraper,
+    WashingtonLeeScraper,
     WellesleyScraper,
     WesleyanScraper,
     WilliamsScraper,
