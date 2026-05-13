@@ -415,6 +415,7 @@ SELFSERVICE_COLLEGES = [
     # (term, instructor, time) is only available after sign-in.
     (College.GRINNELL, "https://colss-prod.ec.grinnell.edu", "CSC"),
     (College.GUSTAVUS_ADOLPHUS, "https://colselfsrvprod.gac.edu", "MCS"),
+    (College.KALAMAZOO, "https://hornethq.kzoo.edu", "COMP"),
     (College.LUTHER, "https://norsehub.luther.edu", "CS"),
     (College.LYCOMING, "https://collslfsrv-live.lycoming.edu", "CPTR"),
     (College.MEREDITH, "https://mcis.meredith.edu", "CS"),
