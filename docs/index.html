@@ -10,32 +10,34 @@
   <style>
     /* ── themes ── */
     :root {
-      --bg:         #ffffff;
-      --bg-alt:     #f7f7f7;
-      --border:     #dedede;
-      --border-sub: #eeeeee;
-      --text:       #111111;
-      --sub:        #555555;
-      --muted:      #999999;
-      --accent:     #1a56db;
-      --th-bg:      #f2f2f2;
-      --hover-bg:   #fafafa;
-      --expand-bg:  #f7f7f7;
+      --bg:         #eff1f5;
+      --bg-alt:     #e6e9ef;
+      --border:     #bcc0cc;
+      --border-sub: #ccd0da;
+      --text:       #4c4f69;
+      --sub:        #6c6f85;
+      --muted:      #9ca0b0;
+      --accent:     #4c1d95;
+      --th-bg:      #e6e9ef;
+      --hover-bg:   #ccd0da;
+      --expand-bg:  #e6e9ef;
+      --danger:     #d20f39;
       --header-h:   0px;
       --summary-h:  0px;
     }
     [data-theme="dark"] {
-      --bg:         #1f315f;
-      --bg-alt:     #26396d;
-      --border:     #3c569e;
-      --border-sub: #2c427e;
-      --text:       #e8c96e;
-      --sub:        #a08838;
-      --muted:      #5a4e20;
-      --accent:     #f5d878;
-      --th-bg:      #1a2a55;
-      --hover-bg:   #2e447e;
-      --expand-bg:  #1c2c58;
+      --bg:         #303446;
+      --bg-alt:     #292c3c;
+      --border:     #51576d;
+      --border-sub: #414559;
+      --text:       #c6d0f5;
+      --sub:        #a5adce;
+      --muted:      #737994;
+      --accent:     #c4a8e0;
+      --th-bg:      #292c3c;
+      --hover-bg:   #414559;
+      --expand-bg:  #292c3c;
+      --danger:     #e78284;
     }
 
     /* ── reset ── */
@@ -585,6 +587,11 @@
       background: var(--accent);
       border-color: var(--accent);
     }
+    .filter-chip.exclude {
+      color: var(--bg);
+      background: var(--danger);
+      border-color: var(--danger);
+    }
     .filter-chip-count {
       font-family: 'IBM Plex Mono', monospace;
       font-size: 10.5px;
@@ -616,12 +623,53 @@
     }
     .expand-toggle svg { width: 12px; height: 12px; }
 
-    /* ── advanced (subfield) filter row ── */
+    /* ── advanced (subfield) filter rows ── */
     .advanced-bar {
       padding: 12px 0 14px;
       border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
     .advanced-bar.collapsed { display: none; }
+    .adv-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .adv-row-subfields { gap: 6px; }
+    .adv-hint-inline {
+      font-size: 11px;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .adv-hint-inline .hint-scope  { color: var(--text);   font-weight: 600; font-style: normal; }
+    .adv-hint-inline .hint-include { color: var(--accent); font-weight: 500; font-style: normal; }
+    .adv-hint-inline .hint-exclude { color: var(--danger); font-weight: 500; font-style: normal; }
+    .scope-toggle {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-right: 6px;
+    }
+    .scope-toggle button {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 11px;
+      border: 0;
+      background: var(--bg);
+      color: var(--sub);
+      transition: color 0.12s, background 0.12s;
+    }
+    .scope-toggle button + button { border-left: 1px solid var(--border); }
+    .scope-toggle button:hover { color: var(--text); }
+    .scope-toggle button.active {
+      color: var(--bg);
+      background: var(--accent);
+    }
 
     /* ── college row number ──
        Sits at the start of the column (same x as the "Institution"
@@ -780,12 +828,15 @@
       .course-table td { padding: 8px 6px; }
       .course-table thead th { padding: 7px 6px; }
 
-      /* On narrow viewports the course table is wider than the viewport.
-         Re-introduce a confined horizontal scroll so it doesn't push the
-         whole page sideways. This makes course-wrap a scroll container, so
-         the thead can no longer page-stick — accepted tradeoff on mobile. */
-      .course-wrap { overflow-x: auto; }
-      .course-table thead th { top: 0; }
+      /* Show only the most recent 6 term columns on mobile so the table fits
+         the viewport — that's the only way to keep position:sticky on the
+         thead working without introducing a horizontal scroll container.
+         Match cells that are (a) not the first column (the sticky title) and
+         (b) at least 7th from the end, i.e. older than the last 6 terms. */
+      .course-table thead th:nth-child(n+2):nth-last-child(n+7),
+      .course-table tbody td:nth-child(n+2):nth-last-child(n+7) {
+        display: none;
+      }
     }
 
     @media (max-width: 340px) {
@@ -829,7 +880,7 @@
   </header>
 
   <div class="filter-bar" id="filter-bar"></div>
-  <div class="filter-bar advanced-bar collapsed" id="advanced-bar"></div>
+  <div class="advanced-bar collapsed" id="advanced-bar"></div>
 
   <div class="table-wrap">
     <div class="col-head-row">
@@ -911,6 +962,8 @@ let courseSchedules = {};
 let collegeSort = { key: 'total', dir: -1 };
 let activeCategories = new Set(['tenured', 'tenure_track', 'teaching']);
 let activeSubfields = new Set();
+let excludedSubfields = new Set();
+let subfieldScope = 'faculty'; // 'faculty' | 'school'
 let advancedExpanded = false;
 
 // ── theme ──────────────────────────────────────────────────────────────────
@@ -1001,8 +1054,9 @@ function buildFilterBar() {
   const advIcon = advancedExpanded
     ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
     : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
-  const advCount = activeSubfields.size > 0 ? ` (${activeSubfields.size})` : '';
-  const advActive = (advancedExpanded || activeSubfields.size > 0) ? 'active' : '';
+  const advTotal = activeSubfields.size + excludedSubfields.size;
+  const advCount = advTotal > 0 ? ` (${advTotal})` : '';
+  const advActive = (advancedExpanded || advTotal > 0) ? 'active' : '';
 
   bar.innerHTML =
     `<span class="filter-label">Show</span>` +
@@ -1039,10 +1093,17 @@ function buildFilterBar() {
 // ── advanced (subfield) filter bar ────────────────────────────────────────
 function subfieldCounts() {
   const counts = Object.fromEntries(CS_SUBFIELDS.map(s => [s, 0]));
+  const perSchool = subfieldScope === 'school';
   for (const c of allColleges) {
+    const seen = perSchool ? new Set() : null;
     for (const f of c.faculty) {
       for (const s of CS_SUBFIELDS) {
-        if (f._interestsSet.has(s.toLowerCase())) counts[s] += 1;
+        if (!f._interestsSet.has(s.toLowerCase())) continue;
+        if (perSchool) {
+          if (!seen.has(s)) { counts[s] += 1; seen.add(s); }
+        } else {
+          counts[s] += 1;
+        }
       }
     }
   }
@@ -1052,25 +1113,51 @@ function subfieldCounts() {
 function buildAdvancedBar() {
   const bar = document.getElementById('advanced-bar');
   const counts = subfieldCounts();
-  const clearBtn = activeSubfields.size > 0
+  const hasAny = activeSubfields.size > 0 || excludedSubfields.size > 0;
+  const clearBtn = hasAny
     ? `<button class="filter-chip" id="subfield-clear">Clear</button>`
     : '';
+  const scopeHint = subfieldScope === 'faculty'
+    ? `Apply to <span class="hint-scope">each faculty</span> — only show people whose interests match.`
+    : `Apply to <span class="hint-scope">whole schools</span> — only show schools that have such faculty.`;
+  const interactHint = `Click to <span class="hint-include">include</span>, again to <span class="hint-exclude">exclude</span>, once more to clear.`;
+  const sortedSubfields = [...CS_SUBFIELDS].sort((a, b) => a.localeCompare(b));
 
   bar.innerHTML =
-    `<span class="filter-label">Subfields</span>` +
-    CS_SUBFIELDS.map(s => {
-      const on = activeSubfields.has(s);
-      return `<button class="filter-chip ${on ? 'active' : ''}" data-subfield="${esc(s)}">
-        ${esc(s)}<span class="filter-chip-count">${counts[s]}</span>
-      </button>`;
-    }).join('') +
-    clearBtn;
+    `<div class="adv-row adv-row-scope">
+       <span class="filter-label">Scope</span>
+       <div class="scope-toggle" role="tablist" aria-label="Filter scope">
+         <button data-scope="faculty" class="${subfieldScope === 'faculty' ? 'active' : ''}" role="tab" aria-selected="${subfieldScope === 'faculty'}">Faculty</button>
+         <button data-scope="school"  class="${subfieldScope === 'school'  ? 'active' : ''}" role="tab" aria-selected="${subfieldScope === 'school'}">School</button>
+       </div>
+       <span class="adv-hint-inline">${scopeHint}</span>
+     </div>` +
+    `<div class="adv-row adv-row-subfields">
+       <span class="filter-label">Subfields</span>` +
+       sortedSubfields.map(s => {
+         const cls = activeSubfields.has(s) ? 'active'
+           : excludedSubfields.has(s) ? 'exclude'
+           : '';
+         return `<button class="filter-chip ${cls}" data-subfield="${esc(s)}">
+           ${esc(s)}<span class="filter-chip-count">${counts[s]}</span>
+         </button>`;
+       }).join('') +
+       clearBtn +
+    `</div>` +
+    `<div class="adv-row"><span class="adv-hint-inline">${interactHint}</span></div>`;
 
   bar.querySelectorAll('.filter-chip[data-subfield]').forEach(btn => {
     btn.addEventListener('click', () => {
       const k = btn.dataset.subfield;
-      if (activeSubfields.has(k)) activeSubfields.delete(k);
-      else activeSubfields.add(k);
+      // tri-state cycle: off → include → exclude → off
+      if (activeSubfields.has(k)) {
+        activeSubfields.delete(k);
+        excludedSubfields.add(k);
+      } else if (excludedSubfields.has(k)) {
+        excludedSubfields.delete(k);
+      } else {
+        activeSubfields.add(k);
+      }
       buildAdvancedBar();
       buildFilterBar();
       renderAll();
@@ -1080,9 +1167,21 @@ function buildAdvancedBar() {
   const clearEl = document.getElementById('subfield-clear');
   if (clearEl) clearEl.addEventListener('click', () => {
     activeSubfields.clear();
+    excludedSubfields.clear();
     buildAdvancedBar();
     buildFilterBar();
     renderAll();
+  });
+
+  bar.querySelectorAll('.scope-toggle button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const next = btn.dataset.scope;
+      if (next === subfieldScope) return;
+      subfieldScope = next;
+      buildAdvancedBar();
+      buildFilterBar();
+      renderAll();
+    });
   });
 }
 
@@ -1115,7 +1214,9 @@ function toggleExpandAll() {
 
 // ── filtered aggregation ───────────────────────────────────────────────────
 function filteredFaculty(college) {
-  const subActive = activeSubfields.size > 0;
+  const facultyScope = subfieldScope === 'faculty';
+  const subActive = facultyScope && activeSubfields.size > 0;
+  const subExclude = facultyScope && excludedSubfields.size > 0;
   return college.faculty.filter(f => {
     if (!activeCategories.has(f.category)) return false;
     if (subActive) {
@@ -1125,8 +1226,37 @@ function filteredFaculty(college) {
       }
       if (!hit) return false;
     }
+    if (subExclude) {
+      for (const s of excludedSubfields) {
+        if (f._interestsSet.has(s.toLowerCase())) return false;
+      }
+    }
     return true;
   });
+}
+
+// In school scope, a college is kept iff (a) it has ≥1 in-category faculty
+// matching any included subfield (when includes are set) AND (b) it has no
+// in-category faculty matching any excluded subfield. Categories still apply
+// so toggling Adjunct off doesn't let an adjunct keep a school visible.
+function passesSchoolFilter(college) {
+  if (subfieldScope !== 'school') return true;
+  if (activeSubfields.size === 0 && excludedSubfields.size === 0) return true;
+  const incLower = [...activeSubfields].map(s => s.toLowerCase());
+  const excLower = [...excludedSubfields].map(s => s.toLowerCase());
+  let hasInclude = activeSubfields.size === 0;
+  for (const f of college.faculty) {
+    if (!activeCategories.has(f.category)) continue;
+    for (const s of excLower) {
+      if (f._interestsSet.has(s)) return false;
+    }
+    if (!hasInclude) {
+      for (const s of incLower) {
+        if (f._interestsSet.has(s)) { hasInclude = true; break; }
+      }
+    }
+  }
+  return hasInclude;
 }
 
 function aggregateCollege(college) {
@@ -1144,6 +1274,7 @@ function aggregateCollege(college) {
 
 function renderAll() {
   const aggregated = allColleges
+    .filter(passesSchoolFilter)
     .map(aggregateCollege)
     .filter(c => c.total > 0);
   const totalFaculty = aggregated.reduce((s, c) => s + c.total, 0);
