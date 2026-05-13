@@ -45,6 +45,7 @@ from course_schedule.randolph_macon import RandolphMaconScraper
 from course_schedule.richmond import RichmondScraper
 from course_schedule.selfservice import selfservice_scrapers
 from course_schedule.smith import SmithScraper
+from course_schedule.st_mary_md import StMaryMdScraper
 from course_schedule.trinity import TrinityScraper
 from course_schedule.unca import UNCAshevilleScraper
 from course_schedule.vassar import VassarScraper
@@ -83,6 +84,7 @@ SCRAPERS = [
     RandolphMaconScraper,
     RichmondScraper,
     SmithScraper,
+    StMaryMdScraper,
     TrinityScraper,
     UNCAshevilleScraper,
     VassarScraper,
