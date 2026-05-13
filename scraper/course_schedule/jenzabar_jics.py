@@ -45,10 +45,11 @@ from course_schedule.course_schedule_scraper import CourseScheduleScraper
 
 # ---- term-description parsing ---------------------------------------------
 
-# Accept the three known forms:
+# Accept the four known forms:
 #   "Fall 2024-2025"               (Claflin)
 #   "2024-2025 - Fall Semester"    (Hendrix)
 #   "2026-2027 Fall"               (Illinois)
+#   "FALL TERM 2026"               (Beloit)
 #
 # The whole description must match — anything extra (e.g. "- Fall I Subterm"
 # trailers, "Fall 1st half", "Summer Session", "Summer 1 Semester") falls
@@ -60,6 +61,8 @@ TERM_DESC_RE = re.compile(
     r"(?P<range2>\d{4}-\d{2,4})\s*-\s*(?P<season2>Fall|Spring)\s+Semester"
     r"|"
     r"(?P<range3>\d{4}-\d{2,4})\s+(?P<season3>Fall|Spring)"
+    r"|"
+    r"(?P<season4>Fall|Spring)\s+Term\s+(?P<single_year>\d{4})"
     r")\s*$",
     re.I,
 )
@@ -76,11 +79,22 @@ def parse_term_description(desc):
     if not m:
         return None, None
     season_word = (
-        m.group("season1") or m.group("season2") or m.group("season3") or ""
+        m.group("season1")
+        or m.group("season2")
+        or m.group("season3")
+        or m.group("season4")
+        or ""
     ).lower()
     term = SEASON_TERM.get(season_word)
     if term is None:
         return None, None
+    if m.group("single_year"):
+        # "Fall Term 2026" — single year, season determines which side of
+        # the academic year boundary it falls on.
+        year = int(m.group("single_year"))
+        if term == "F":
+            return (year, year + 1), term
+        return (year - 1, year), term
     year_range = m.group("range1") or m.group("range2") or m.group("range3")
     start_str, end_str = year_range.split("-")
     start = int(start_str)
@@ -321,6 +335,12 @@ class JenzabarJICSScraper(CourseScheduleScraper):
 
 # (College, search_url, subject)
 JENZABAR_JICS_COLLEGES = [
+    (
+        College.BELOIT,
+        "https://my.beloit.edu/ICS/Course_Search/Default_Page.jnz"
+        "?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
+        "CSCI",
+    ),
     (
         College.CLAFLIN,
         "https://my.claflin.edu/ics/Portal_Homepage.jnz"
