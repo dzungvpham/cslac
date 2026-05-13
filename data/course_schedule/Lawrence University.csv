@@ -1,0 +1,25 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Lawrence University,2025-26,F,CMSC 150,0,Introduction to Computer Science,"Krebsbach, Kurt",T 10:25-12:10 (000116 238); MWF 13:50-15:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,F,CMSC 270,0,Introduction to Data Structures,"Diederich, Kyle",MWF 11:10-12:20 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,F,CMSC 490,0,Neural Networks,"Gregg, Joseph, Diederich, Kyle",MWF 15:10-16:20 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,F,CMSC 500,0,TOP: AI AGENTS,"Gregg, Joseph",TTh 10:25-11:20 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,F,CMSC 698,0,Computer Science Senior Projects,"Ackles, Acacia",TTh 12:40-14:25 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 140,0,Introduction to Programming with Python,"Ackles, Acacia",MWF 09:50-11:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 140,0,Introduction to Programming with Python,"Krebsbach, Kurt",MWF 09:50-11:00 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 150,0,Introduction to Computer Science,"Krebsbach, Kurt",T 10:25-12:10 (000116 234); MWF 11:10-12:20 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 205,0,Data-Scientific Programming,"Chakraborty, Abhishek",TTh 10:25-12:10 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 208,0,Statistical Machine Learning,"Sage, Andrew",MWF 11:10-12:20 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 250,0,Intermediate Programming Concepts,"Diederich, Kyle",MWF 09:50-11:00 (000116 226),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 415,0,Ethics in Modern Computing,"Ackles, Acacia",MWF 11:10-12:20 (000116 226),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 510,0,Data Structures and Algorithm Analysis,"Diederich, Kyle",MWF 13:50-15:00 (000116 226),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,W,CMSC 600,0,Computer Science Senior Seminar,"Ackles, Acacia",TTh 12:40-14:25 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 140,0,Introduction to Programming with Python,"Diederich, Kyle",MWF 13:50-15:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 150,0,Introduction to Computer Science,"Ackles, Acacia",MWF 09:50-11:00 (000116 238); T 10:25-12:10 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 205,0,Data-Scientific Programming,"Sage, Andrew",TTh 10:25-12:10 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 208,0,Statistical Machine Learning,"Chakraborty, Abhishek",TTh 12:40-14:25 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 250,0,Intermediate Programming Concepts,"Diederich, Kyle",MWF 11:10-12:20 (000116 220),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 270,0,Introduction to Data Structures,"Krebsbach, Kurt",MWF 09:50-11:00 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 405,0,Advanced Data Computing,"Chakraborty, Abhishek",TTh 10:25-12:10 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 455,0,Back End Programming,"Gregg, Joseph",MWF 09:50-11:00 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 470,0,Artificial Intelligence,"Krebsbach, Kurt",MWF 11:10-12:20 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch
+Lawrence University,2025-26,S,CMSC 515,0,Theory of Computation,"Ackles, Acacia",TTh 12:40-14:25 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch

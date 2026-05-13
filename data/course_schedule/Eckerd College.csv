@@ -1,0 +1,54 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Eckerd College,2021-22,F,CS 120M,001,Computer Programming Concepts,"Hilton, Michael",TTh 11:40-13:10 (MPC 207),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,F,CS 120M,002,Computer Programming Concepts,"Hilton, Michael",TTh 15:20-16:50 (MPC 207),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,F,CS 143,001,Intermediate Programming,"Mauch, Holger",TTh 11:40-13:10 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,F,CS 150M,001,Discrete Structures,"Mauch, Holger",TTh 15:20-16:50 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,F,CS 301,001,Theory of Computing,"Mauch, Holger",TTh 08:20-09:50 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,F,CS 350,001,Graphical User Interface Desgn,"Debure, Kelly",MWF 10:40-11:40 (MPC 206),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,F,CS 411,001,Operating Systems,"Hilton, Michael",TTh 10:00-11:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,S,CS 120M,001,Computer Programming Concepts,"Hilton, Michael",TTh 11:40-13:10 (MPC 207),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,S,CS 120M,002,Computer Programming Concepts,"Debure, Kelly",MTh 13:40-15:10 (BES 114),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,S,CS 143,001,Intermediate Programming,"Mauch, Holger",TTh 11:40-13:10 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,S,CS 221N,001,Data Structures,"Hilton, Michael",TTh 10:00-11:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,S,CS 330,001,Analysis of Algorithms,"Mauch, Holger",TTh 08:20-09:50 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2021-22,S,CS 498,001,Software Capstone,"Mauch, Holger",F 15:20-18:15 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,F,CS 120M,001,Computer Programming Concepts,"Debure, Kelly",TTh 11:40-13:10 (MPC 207),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,F,CS 120M,002,Computer Programming Concepts,"Mauch, Holger",TF 13:40-15:10 (MPC 207),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,F,CS 143,001,Intermediate Programming,"Mauch, Holger",TTh 11:40-13:10 (BES 114),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,F,CS 310,001,Computer Architecture (LEC),"Hilton, Michael",TTh 08:20-09:50 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,F,CS 310,002,Computer Architecture (LAB),"Hilton, Michael",T 13:40-17:00 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,F,CS 370,001,Data Science Fundamentals,"Hilton, Michael",TTh 10:00-11:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,F,CS 450,001,Computer Graphics,"Debure, Kelly",MWF 10:40-11:40 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,S,CS 120M,001,Computer Programming Concepts,"Hilton, Michael",TTh 10:00-11:30 (SE 104),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,S,CS 143,001,Intermediate Programming,"Mauch, Holger",TTh 10:00-11:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,S,CS 221N,001,Data Structures,"Mauch, Holger",TTh 08:20-09:50 (BES 114),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,S,CS 334,001,Bioinformatics,"Mauch, Holger",F 15:20-18:15 (FO 120),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2022-23,S,CS 334,002,Bioinformatics,"Mauch, Holger",,https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,F,CS 120M,001,Computer Programming Concepts,"Mauch, Holger",TTh 10:00-11:30 (MPC 207),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,F,CS 130,001,Python for Biology & Life Sci,"Debure, Kelly",MWF 09:30-10:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,F,CS 143,001,Intermediate Programming,"Hilton, Michael",TTh 10:00-11:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,F,CS 150M,001,Discrete Structures,"Mauch, Holger",MTh 13:40-15:10 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,F,CS 301,001,Theory of Computing,"Mauch, Holger",TTh 08:20-09:50 (FO 100A),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,F,CS 480,001,Machine Learning,"Hilton, Michael",TTh 15:20-16:50 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,F,CS 498,001,Software Capstone,"Hilton, Michael",,https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,S,CS 120M,001,Computer Programming Concepts,"Debure, Kelly",TTh 10:00-11:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,S,CS 131M,001,Introduction to Animatronics,"Hilton, Michael",Th 15:20-18:15 (MPC 106),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,S,CS 143,001,Intermediate Programming,"Mauch, Holger",TTh 10:00-11:30 (COB 121),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,S,CS 221N,001,Data Structures,"Mauch, Holger",TTh 08:20-09:50 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,S,CS 310,001,Computer Architecture,"Hilton, Michael",,https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,S,CS 455,001,Digital Image Processing,"Debure, Kelly",MWF 10:40-11:40 (BES 116),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,S,CS 470,001,Evolutionary Computation,"Mauch, Holger",F 15:20-18:15 (FO 120),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2023-24,S,CS 498,001,Software Capstone,"Hilton, Michael",TF 13:40-15:10 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,F,CS 120M,001,Computer Programming Concepts,"Debure, Kelly",TTh 11:40-13:10 (MPC 207),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,F,CS 130,001,Python for Biology & Life Sci,"Debure, Kelly",MWF 09:30-10:30 (MPC 111),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,F,CS 143,001,Intermediate Programming,"Hilton, Michael",TTh 11:40-13:10 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,F,CS 310,001,Computer Architecture,"Hilton, Michael",TTh 15:20-16:50 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,F,CS 350,001,Graphical User Interface Desgn,"Debure, Kelly",MWF 11:50-12:50 (MPC 206),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,F,CS 370,001,Data Science Fundamentals,"Hilton, Michael",TTh 10:00-11:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,S,CS 120M,001,Computer Programming Concepts,"Debure, Kelly",TTh 10:00-11:30 (MPC 207),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,S,CS 143,001,Intermediate Programming,"Hilton, Michael",TTh 10:00-11:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,S,CS 221N,001,Data Structures,"Hilton, Michael",TTh 11:40-13:10 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,S,CS 301,001,Theory of Computing,"Debure, Kelly",,https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,S,CS 320,001,Programming Languages,"Debure, Kelly",MWF 09:30-10:30 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,S,CS 420,001,Translators and Compilers,"Hilton, Michael",TTh 15:20-16:50 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+Eckerd College,2024-25,S,CS 498,001,Software Capstone,"Hilton, Michael",MWF 10:40-11:40 (MPC 216),https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/classSearch/classSearch

@@ -50,9 +50,10 @@ from constants import College  # noqa: E402
 
 from course_schedule.course_schedule_scraper import CourseScheduleScraper
 
-# "Fall 2026", "Fall Semester 2026", "Spring 2026 (View Only)", etc.
+# "Fall 2026", "Fall Semester 2026", "Spring 2026 (View Only)",
+# "Winter Term 2027" (Lawrence trimester), etc.
 TERM_DESC_RE = re.compile(
-    r"^\s*(?P<season>Fall|Spring)(?:\s+Semester)?\s+(?P<year>\d{4})\b",
+    r"^\s*(?P<season>Fall|Spring|Winter)(?:\s+(?:Semester|Term))?\s+(?P<year>\d{4})\b",
     re.I,
 )
 
@@ -89,6 +90,10 @@ class Banner9Scraper(CourseScheduleScraper):
     # `errorMessage="No Institution code specified in the URL"` (HTTP 500).
     # Leave blank for single-tenant deployments.
     mep_code: str = ""
+    # Path prefix for the Banner SSB app. Most deployments expose it as
+    # `/StudentRegistrationSsb`; a few (e.g. Lawrence) use a custom prefix
+    # like `/prod-StudentRegistrationSsb`. Leave the leading slash.
+    ssb_path: str = "/StudentRegistrationSsb"
     terms = ["F", "S"]
     fresh_driver_per_load = False
     request_timeout = 30
@@ -102,7 +107,7 @@ class Banner9Scraper(CourseScheduleScraper):
     # ---- HTTP plumbing -------------------------------------------------------
 
     def _ssb(self, path):
-        return f"{self.base_url}/StudentRegistrationSsb/ssb{path}"
+        return f"{self.base_url}{self.ssb_path}/ssb{path}"
 
     def _with_mep(self, params=None):
         params = dict(params or {})
@@ -149,6 +154,10 @@ class Banner9Scraper(CourseScheduleScraper):
             year = int(m.group("year"))
             if season == "Fall":
                 ay, t = (year, year + 1), "F"
+            elif season == "Winter":
+                # Trimester schools (e.g. Lawrence) put Winter in the
+                # middle of the academic year (Winter 2027 = AY 2026-27).
+                ay, t = (year - 1, year), "W"
             else:  # Spring
                 ay, t = (year - 1, year), "S"
             # If a description appears twice (rare), keep the first which is
@@ -383,42 +392,47 @@ def _format_hhmm(value):
 
 # ---- per-college configs ---------------------------------------------------
 
-# (College, base_url, subject) or (College, base_url, subject, mep_code).
-# base_url has no trailing slash and no `/StudentRegistrationSsb` suffix.
-# `mep_code` is only set for multi-tenant deployments that require an
-# institution code on every request (e.g. csbsju, which hosts both
-# College of St Benedict and Saint John's).
+# Each entry is a dict with required keys `college`, `base_url`, `subject`
+# and optional `mep_code`, `ssb_path`, `terms`:
+#   - `base_url` has no trailing slash and no `/StudentRegistrationSsb` suffix.
+#   - `mep_code` is only set for multi-tenant deployments that require an
+#     institution code on every request (e.g. csbsju, which hosts both
+#     College of St Benedict and Saint John's).
+#   - `ssb_path` defaults to `"/StudentRegistrationSsb"`; override for hosts
+#     that put the SSB app under a different path (e.g. Lawrence's
+#     `/prod-StudentRegistrationSsb`).
+#   - `terms` defaults to `["F", "S"]`; trimester schools like Lawrence
+#     add `"W"`.
 BANNER9_COLLEGES = [
-    (College.BEREA, "https://b9student-prod.berea.edu:8444", "CSC"),
-    (College.CONCORDIA, "https://banner.cord.edu", "CSC"),
-    (College.CONNECTICUT, "https://reg-prod.ec.conncoll.edu", "COM"),
-    (College.DENISON, "https://banner.denison.edu", "CS"),
-    (College.DICKINSON, "https://bannercprod.dickinson.edu", "COMP"),
-    (College.LAFAYETTE, "https://selfservice.lafayette.edu", "CS"),
-    (College.MARY_WASHINGTON, "https://reg-prod.ec.umw.edu", "CPSC"),
-    (College.OBERLIN, "https://banner.cc.oberlin.edu", "CSCI"),
-    (College.SKIDMORE, "https://bannerxe.skidmore.edu", "CS"),
-    (College.ST_BENEDICT, "https://registration.csbsju.edu", "CSCI", "B"),
-    (College.STONEHILL, "https://xessb.stonehill.edu", "CSC"),
-    (College.SWARTHMORE, "https://studentregistration.swarthmore.edu", "CPSC"),
-    (College.WHEATON_MA, "https://banprodselfservice.wheatonma.edu:7341", "COMP"),
+    {"college": College.BEREA, "base_url": "https://b9student-prod.berea.edu:8444", "subject": "CSC"},
+    {"college": College.CONCORDIA, "base_url": "https://banner.cord.edu", "subject": "CSC"},
+    {"college": College.CONNECTICUT, "base_url": "https://reg-prod.ec.conncoll.edu", "subject": "COM"},
+    {"college": College.DENISON, "base_url": "https://banner.denison.edu", "subject": "CS"},
+    {"college": College.DICKINSON, "base_url": "https://bannercprod.dickinson.edu", "subject": "COMP"},
+    {"college": College.ECKERD, "base_url": "https://regssb-prod.ban.eckerd.edu", "subject": "CS"},
+    {"college": College.LAFAYETTE, "base_url": "https://selfservice.lafayette.edu", "subject": "CS"},
+    {"college": College.LAWRENCE, "base_url": "https://bannerweb.lawrence.edu", "subject": "CMSC",
+     "ssb_path": "/prod-StudentRegistrationSsb", "terms": ["F", "W", "S"]},
+    {"college": College.MARY_WASHINGTON, "base_url": "https://reg-prod.ec.umw.edu", "subject": "CPSC"},
+    {"college": College.OBERLIN, "base_url": "https://banner.cc.oberlin.edu", "subject": "CSCI"},
+    {"college": College.SKIDMORE, "base_url": "https://bannerxe.skidmore.edu", "subject": "CS"},
+    {"college": College.ST_BENEDICT, "base_url": "https://registration.csbsju.edu", "subject": "CSCI", "mep_code": "B"},
+    {"college": College.STONEHILL, "base_url": "https://xessb.stonehill.edu", "subject": "CSC"},
+    {"college": College.SWARTHMORE, "base_url": "https://studentregistration.swarthmore.edu", "subject": "CPSC"},
+    {"college": College.WHEATON_MA, "base_url": "https://banprodselfservice.wheatonma.edu:7341", "subject": "COMP"},
 ]
 
 
-def _make_class(coll, base_url, subject, mep_code=""):
+def _make_class(cfg):
+    coll = cfg["college"]
     safe = re.sub(r"\W+", "", str(coll))
-    return type(
-        f"{safe}Banner9Scraper",
-        (Banner9Scraper,),
-        {
-            "college": coll,
-            "base_url": base_url,
-            "subject": subject,
-            "mep_code": mep_code,
-        },
-    )
+    attrs = {"college": coll}
+    for key in ("base_url", "subject", "mep_code", "ssb_path", "terms"):
+        if key in cfg:
+            attrs[key] = cfg[key]
+    return type(f"{safe}Banner9Scraper", (Banner9Scraper,), attrs)
 
 
 def banner9_scrapers():
     """Return one scraper class per configured Banner 9 college."""
-    return [_make_class(*cfg) for cfg in BANNER9_COLLEGES]
+    return [_make_class(cfg) for cfg in BANNER9_COLLEGES]

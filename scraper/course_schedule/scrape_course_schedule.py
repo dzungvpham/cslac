@@ -26,7 +26,6 @@ from course_schedule.bryn_mawr import BrynMawrScraper
 from course_schedule.bucknell import BucknellScraper
 from course_schedule.carleton import CarletonScraper
 from course_schedule.centre import CentreScraper
-from course_schedule.claflin import ClaflinScraper
 from course_schedule.coe import CoeScraper
 from course_schedule.colby import ColbyScraper
 from course_schedule.colorado import ColoradoScraper
@@ -38,8 +37,10 @@ from course_schedule.goucher import GoucherScraper
 from course_schedule.hamilton import HamiltonScraper
 from course_schedule.haverford import HaverfordScraper
 from course_schedule.hope import HopeScraper
+from course_schedule.hobart_william_smith import HobartWilliamSmithScraper
 from course_schedule.knox import KnoxScraper
 from course_schedule.hyperschedule import HarveyMuddScraper, PomonaScraper
+from course_schedule.jenzabar_jics import jenzabar_jics_scrapers
 from course_schedule.macalester import MacalesterScraper
 from course_schedule.middlebury import MiddleburyScraper
 from course_schedule.minnesota_morris import MinnesotaMorrisScraper
@@ -72,7 +73,6 @@ SCRAPERS = [
     BucknellScraper,
     CarletonScraper,
     CentreScraper,
-    ClaflinScraper,
     CoeScraper,
     ColbyScraper,
     ColoradoScraper,
@@ -84,6 +84,7 @@ SCRAPERS = [
     HamiltonScraper,
     HaverfordScraper,
     HopeScraper,
+    HobartWilliamSmithScraper,
     HarveyMuddScraper,
     KnoxScraper,
     MacalesterScraper,
@@ -108,6 +109,7 @@ SCRAPERS = [
     WilliamsScraper,
     *selfservice_scrapers(),
     *banner9_scrapers(),
+    *jenzabar_jics_scrapers(),
 ]
 
 

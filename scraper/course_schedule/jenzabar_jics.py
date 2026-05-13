@@ -1,23 +1,31 @@
-"""Claflin University course schedule scraper.
+"""Jenzabar JICS portal course-schedule scraper.
 
-Claflin runs its public course search on the Jenzabar JICS portal at
-``https://my.claflin.edu/ics/Portal_Homepage.jnz?portlet=Course_Schedules
-&screen=Advanced+Course+Search``. It's an ASP.NET WebForms page with a
-massive `__VIEWSTATE` that hand-rolling postbacks against is brittle, so
-we drive it with Selenium: select the term + department, click Search,
-and parse the rendered `pg0_V_dgCourses` results table.
+Several LACs publish their public course search via the Jenzabar JICS
+``Course_Schedules`` portlet, reachable at a URL of the form
 
-Term option values look like `"2024;FA"` (= academic year 2024-25 / Fall)
-and `"2024;SP"` (= academic year 2024-25 / Spring). Per-term subterms like
-`"2024;FA;F1"` are ignored — the bare-season option already covers all
-sections for that semester. Each result row's course-code cell reads like
+    https://{host}/ics/...?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next
 
-    CSCI 206 01 UG MC
+It's an ASP.NET WebForms page with a ~20 KB `__VIEWSTATE` and a
+JavaScript-driven postback search, so we drive it with Selenium: select
+the term + department, click Search, walk the alphabetic
+"letterNavigator" pagination, and parse the rendered
+`pg0_V_dgCourses` grid.
 
-(subject, number, section, division, location-code); we only keep the
-subject+number and section. The schedule cell looks like
+Term descriptions vary across deployments:
+
+* Claflin renders them as ``"Fall 2024-2025"``.
+* Hendrix renders them as ``"2024-2025 - Fall Semester"``.
+
+Each option's *description* is parsed (not the opaque value) so a new
+school can usually be added with no code change — just a config entry
+in `JENZABAR_JICS_COLLEGES`.
+
+Each result row's course-code cell reads like ``"CSCI 206 01 UG MC"``
+(subject, number, section, division, location-code); only the
+subject+number and section are kept. The schedule cell looks like
 ``"MWF 10:00 AM-10:50 AM; Main Campus, James S. Thomas, Room 310"`` or
-``"MTWRFSU; Online Program, Online, Online Course"`` for online sections.
+``"MTWRFSU; Online Program, Online, Online Course"`` for online
+sections.
 """
 
 import re
@@ -26,7 +34,7 @@ import time
 from pathlib import Path
 
 from bs4 import BeautifulSoup
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
@@ -35,17 +43,53 @@ from constants import College  # noqa: E402
 
 from course_schedule.course_schedule_scraper import CourseScheduleScraper
 
-SEARCH_URL = (
-    "https://my.claflin.edu/ics/Portal_Homepage.jnz"
-    "?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next"
-)
-SUBJECT = "CSCI"
+# ---- term-description parsing ---------------------------------------------
 
-# `Term` option value like `"2024;FA"` or `"2024;SP"`. We ignore subterms
-# (those have a trailing `;F1`/`;S2`/etc.) — the parent option lists every
-# section in that semester.
-TERM_VALUE_RE = re.compile(r"^(?P<year>\d{4});(?P<season>FA|SP)$")
-SEASON_TERM = {"FA": "F", "SP": "S"}
+# Accept the three known forms:
+#   "Fall 2024-2025"               (Claflin)
+#   "2024-2025 - Fall Semester"    (Hendrix)
+#   "2026-2027 Fall"               (Illinois)
+#
+# The whole description must match — anything extra (e.g. "- Fall I Subterm"
+# trailers, "Fall 1st half", "Summer Session", "Summer 1 Semester") falls
+# through and is skipped so we don't double-count subterms.
+TERM_DESC_RE = re.compile(
+    r"^\s*(?:"
+    r"(?P<season1>Fall|Spring)\s+(?P<range1>\d{4}-\d{2,4})"
+    r"|"
+    r"(?P<range2>\d{4}-\d{2,4})\s*-\s*(?P<season2>Fall|Spring)\s+Semester"
+    r"|"
+    r"(?P<range3>\d{4}-\d{2,4})\s+(?P<season3>Fall|Spring)"
+    r")\s*$",
+    re.I,
+)
+SEASON_TERM = {"fall": "F", "spring": "S"}
+
+
+def parse_term_description(desc):
+    """Return ((start_year, end_year), term) or (None, None).
+
+    `term` is `"F"` or `"S"`. Returns `(None, None)` for summer / subterm /
+    unrecognized descriptions.
+    """
+    m = TERM_DESC_RE.match(desc or "")
+    if not m:
+        return None, None
+    season_word = (
+        m.group("season1") or m.group("season2") or m.group("season3") or ""
+    ).lower()
+    term = SEASON_TERM.get(season_word)
+    if term is None:
+        return None, None
+    year_range = m.group("range1") or m.group("range2") or m.group("range3")
+    start_str, end_str = year_range.split("-")
+    start = int(start_str)
+    end_yy = int(end_str)
+    end = end_yy if end_yy >= 100 else (start // 100) * 100 + end_yy
+    if end < start:
+        end += 100  # century wrap (e.g. "1999-00")
+    return (start, end), term
+
 
 # Course-code link text like "CSCI 206 01 UG MC".
 COURSE_CODE_RE = re.compile(
@@ -57,8 +101,49 @@ def _clean(text):
     return re.sub(r"\s+", " ", text or "").strip()
 
 
-class ClaflinScraper(CourseScheduleScraper):
-    college = College.CLAFLIN
+def _format_faculty(td):
+    names = []
+    for span in td.find_all("span"):
+        name = _clean(span.get_text(" ", strip=True))
+        if name and name not in names:
+            names.append(name)
+    if not names:
+        return _clean(td.get_text(" ", strip=True))
+    return "; ".join(names)
+
+
+def _format_schedule(td):
+    """Render the schedule `<ul>` as `meeting1 | meeting2 | ...`.
+
+    Each `<li>` is one meeting in the form
+    ``"MWF 10:00 AM-10:50 AM; Main Campus, James S. Thomas, Room 310"``;
+    we keep the literal string (collapsed whitespace) so the location
+    survives without imposing a fixed structure.
+    """
+    meetings = []
+    for li in td.find_all("li"):
+        text = _clean(li.get_text(" ", strip=True))
+        if text:
+            meetings.append(text)
+    if meetings:
+        return " | ".join(meetings)
+    return _clean(td.get_text(" ", strip=True))
+
+
+# ---- the scraper ----------------------------------------------------------
+
+
+class JenzabarJICSScraper(CourseScheduleScraper):
+    """Base scraper for Jenzabar JICS Course_Schedules portlets.
+
+    Subclass attributes:
+        - `search_url`: full URL to the Advanced Course Search portlet.
+        - `subject`: department code passed to the `Department` dropdown
+          (e.g. `"CSCI"`).
+    """
+
+    search_url: str = ""
+    subject: str = ""
     fresh_driver_per_load = False
     page_load_timeout = 60
     post_load_sleep = 1.0
@@ -66,11 +151,11 @@ class ClaflinScraper(CourseScheduleScraper):
 
     def __init__(self, driver=None):
         super().__init__(driver=driver)
-        self._available = None  # list of (academic_year, term, option_value)
+        self._available = None  # (academic_year, term) -> option_value
 
     def _load_form(self):
         d = self.driver
-        d.get(SEARCH_URL)
+        d.get(self.search_url)
         WebDriverWait(d, self.page_load_timeout).until(
             lambda x: x.find_elements(By.ID, "pg0_V_ddlTerm")
             and x.find_elements(By.ID, "pg0_V_ddlDept")
@@ -80,30 +165,30 @@ class ClaflinScraper(CourseScheduleScraper):
         if self._available is not None:
             return self._available
         self._load_form()
-        out = []
+        out = {}
         for opt in self.driver.find_elements(
             By.CSS_SELECTOR, "#pg0_V_ddlTerm option"
         ):
             value = (opt.get_attribute("value") or "").strip()
-            m = TERM_VALUE_RE.match(value)
-            if not m:
+            desc = _clean(opt.text)
+            academic_year, term = parse_term_description(desc)
+            if academic_year is None or term is None or not value:
                 continue
-            year = int(m.group("year"))
-            term = SEASON_TERM[m.group("season")]
-            ay = (year, year + 1)
-            out.append((ay, term, value))
+            # Multiple options can map to the same (ay, t) — take the first
+            # (typically the bare-semester option, not a subterm).
+            out.setdefault((academic_year, term), value)
         self._available = out
         return out
 
     def schedule_pages(self):
-        available = {(ay, t): v for ay, t, v in self._discover_terms()}
+        available = self._discover_terms()
         for ay in self.past_academic_years(self.years_back):
             for t in ("F", "S"):
                 if (ay, t) in available:
                     yield ay, t
 
     def fetch_page(self, academic_year, term):
-        available = {(ay, t): v for ay, t, v in self._discover_terms()}
+        available = self._discover_terms()
         value = available.get((academic_year, term))
         if value is None:
             return None
@@ -113,7 +198,16 @@ class ClaflinScraper(CourseScheduleScraper):
         self._load_form()
         d = self.driver
         Select(d.find_element(By.ID, "pg0_V_ddlTerm")).select_by_value(value)
-        Select(d.find_element(By.ID, "pg0_V_ddlDept")).select_by_value(SUBJECT)
+        Select(d.find_element(By.ID, "pg0_V_ddlDept")).select_by_value(self.subject)
+        # Some deployments (e.g. Hendrix) default the Division dropdown to
+        # "GR" (Graduate), which filters out every undergrad CS section.
+        # Force it to "UG" when present.
+        div_selects = d.find_elements(By.ID, "pg0_V_ddlDivision")
+        if div_selects:
+            try:
+                Select(div_selects[0]).select_by_value("UG")
+            except Exception:
+                pass
         d.find_element(By.ID, "pg0_V_btnSearch").click()
         try:
             WebDriverWait(d, self.page_load_timeout).until(
@@ -217,36 +311,46 @@ class ClaflinScraper(CourseScheduleScraper):
                     course_name=course_name,
                     instructor=instructor,
                     time=time_text,
-                    url=SEARCH_URL,
+                    url=self.search_url,
                 )
             )
         return rows
 
 
-def _format_faculty(td):
-    names = []
-    for span in td.find_all("span"):
-        name = _clean(span.get_text(" ", strip=True))
-        if name and name not in names:
-            names.append(name)
-    if not names:
-        return _clean(td.get_text(" ", strip=True))
-    return "; ".join(names)
+# ---- per-college configs --------------------------------------------------
+
+# (College, search_url, subject)
+JENZABAR_JICS_COLLEGES = [
+    (
+        College.CLAFLIN,
+        "https://my.claflin.edu/ics/Portal_Homepage.jnz"
+        "?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
+        "CSCI",
+    ),
+    (
+        College.HENDRIX,
+        "https://campusweb.hendrix.edu/ICS/Academics/Course_Search.jnz"
+        "?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
+        "CSCI",
+    ),
+    (
+        College.ILLINOIS,
+        "https://connect2.ic.edu/ICS/default.aspx"
+        "?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
+        "CS",
+    ),
+]
 
 
-def _format_schedule(td):
-    """Render the schedule `<ul>` as `meeting1 | meeting2 | ...`.
+def _make_class(coll, search_url, subject):
+    safe = re.sub(r"\W+", "", str(coll))
+    return type(
+        f"{safe}JenzabarJICSScraper",
+        (JenzabarJICSScraper,),
+        {"college": coll, "search_url": search_url, "subject": subject},
+    )
 
-    Each `<li>` is one meeting in the form
-    ``"MWF 10:00 AM-10:50 AM; Main Campus, James S. Thomas, Room 310"``;
-    we keep the literal string (collapsed whitespace) so the location
-    survives without imposing a fixed structure.
-    """
-    meetings = []
-    for li in td.find_all("li"):
-        text = _clean(li.get_text(" ", strip=True))
-        if text:
-            meetings.append(text)
-    if meetings:
-        return " | ".join(meetings)
-    return _clean(td.get_text(" ", strip=True))
+
+def jenzabar_jics_scrapers():
+    """Return one scraper class per configured Jenzabar JICS college."""
+    return [_make_class(*cfg) for cfg in JENZABAR_JICS_COLLEGES]

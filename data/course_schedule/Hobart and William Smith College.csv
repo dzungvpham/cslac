@@ -1,0 +1,38 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Hobart and William Smith College,2025-26,S,CPSC 045,01,1/2 Credit Teacher Assistant,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 050,01,Teacher Assistant,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 124,01,Introduction to Programming,"Herman,Bridger",MWF 12:00 PM - 01:00 PM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 124,11,Laboratory,"Herman,Bridger",Tu 11:30 AM - 01:00 PM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 225,01,Intermediate Programming,"Herman,Bridger",MWF 09:40 AM - 10:40 AM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 225,11,Laboratory,"Herman,Bridger",Tu 08:10 AM - 09:40 AM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 229,01,Foundations of Computation,"Bridgeman,Stina S",MWF 10:50 AM - 11:50 AM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 327,01,Data Structures and Algorithms,"Bridgeman,Stina S",MWF 08:30 AM - 09:30 AM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 331,01,Operating Systems,"Bridgeman,Stina S",MWF 12:00 PM - 01:00 PM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 433,01,Compilers,"Fietkiewicz,Chris",F 01:10 PM - 02:10 PM / TuTh 08:40 AM - 09:40 AM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 433,11,Laboratory,"Fietkiewicz,Chris",W 01:10 PM - 02:40 PM,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 450,01,Independent Study,"Hu,Hanqing",TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 450,02,Independent Study,"Bridgeman,Stina S",TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 451,01,Capstone Independent Study,"Fietkiewicz,Chris",TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 456,01,1/2 Credit Independent Study,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 495,01,Honors,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 496,01,Honors,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2025-26,S,CPSC 499,01,Computer Science Internship,"Bridgeman,Stina S",TBA,https://www.hws.edu/images/offices/registrar/docs/SpringSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 045,01,1/2 Credit Teacher Assistant,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 050,01,Teacher Assistant,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 121,01,Coding in Python,"Herman,Bridger",TuTh 01:10 PM - 02:40 PM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 124,01,Introduction to Programming,"Herman,Bridger",F 01:10 PM - 02:10 PM / TuTh 08:40 AM - 09:40 AM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 124,11,Laboratory,"Herman,Bridger",W 01:10 PM - 02:40 PM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 220,01,Intro to Computer Architecture,"Hu,Hanqing",MWF 08:30 AM - 09:30 AM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 220,11,Laboratory,"Hu,Hanqing",M 01:10 PM - 02:40 PM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 271,01,Topic: Computational Neuroscie,"Fietkiewicz,Chris",TuTh 11:30 AM - 01:00 PM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 329,01,Software Development,"Bridgeman,Stina S",MWF 12:00 PM - 01:00 PM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 329,11,Laboratory,"Bridgeman,Stina S",Tu 01:10 PM - 02:40 PM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 343,01,Database Theory and Practice,"Bridgeman,Stina S",MWF 10:50 AM - 11:50 AM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 444,01,Artificial Intelligence,"Hu,Hanqing",MWF 09:40 AM - 10:40 AM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 444,11,Laboratory,"Hu,Hanqing",Tu 09:50 AM - 11:20 AM,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 450,01,Independent Study,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 450,02,Independent Study,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 450,03,Independent Study,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 456,01,1/2 Credit Independent Study,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 495,01,Honors,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
+Hobart and William Smith College,2026-27,F,CPSC 499,01,Computer Science Internship,Staff,TBA,https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf
