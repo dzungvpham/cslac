@@ -897,9 +897,8 @@ const ICON_GLOBE = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" s
 const ICON_SCHOLAR = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`;
 const ICON_PROGRAM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`;
 const ICON_CATALOG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
-const ICON_SEARCH = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
 const ICON_PERSON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
-const ICON_BOOK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`;
+const ICON_BOOK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`;
 
 // ── column tooltips ───────────────────────────────────────────────────────
 const COL_TOOLTIPS = {
@@ -1363,11 +1362,8 @@ function buildCollegeRow(college, idx) {
   const programLink = links.program_url
     ? `<a class="college-link" href="${esc(links.program_url)}" target="_blank" rel="noopener" title="Department website">${ICON_PROGRAM}</a>`
     : '';
-  const catalogLink = links.catalog_url
-    ? `<a class="college-link" href="${esc(links.catalog_url)}" target="_blank" rel="noopener" title="Course catalog">${ICON_CATALOG}</a>`
-    : '';
-  const scheduleLink = links.schedule_url
-    ? `<a class="college-link" href="${esc(links.schedule_url)}" target="_blank" rel="noopener" title="Course schedule">${ICON_SEARCH}</a>`
+  const scheduleLink = (links.schedule_url && courseSchedules[college.name])
+    ? `<a class="college-link" href="${esc(links.schedule_url)}" target="_blank" rel="noopener" title="Course schedule">${ICON_CATALOG}</a>`
     : '';
 
   div.innerHTML = `
@@ -1385,7 +1381,7 @@ function buildCollegeRow(college, idx) {
           <span class="name-body">
             <span class="college-name"><span class="cn-full">${esc(college.name)}</span><span class="cn-short">${esc(shortCollegeName(college.name))}</span></span>
             ${links.state ? `<span class="college-state">${esc(links.state)}</span>` : ''}
-            <span class="college-links">${programLink}${catalogLink}${scheduleLink}</span>
+            <span class="college-links">${programLink}${scheduleLink}</span>
           </span>
         </div>
         <div class="td-num">${college.total}</div>
