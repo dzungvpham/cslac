@@ -1,0 +1,7 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Central College,2025-26,S,COSC 109,A,Intro to Information Mgmt,"Weber, W",TR 09:30AM-10:45AM / VSC 141,https://central.edu/academics/course-catalog/searchable-schedule/
+Central College,2025-26,S,COSC 110,A,Intro to Computer Science,"Insko, E",MWF 11:00AM-11:50AM / VSC 269,https://central.edu/academics/course-catalog/searchable-schedule/
+Central College,2025-26,S,COSC 110H,A,Hnrs Enrich: Intro to Comp Sci,"Insko, E",,https://central.edu/academics/course-catalog/searchable-schedule/
+Central College,2025-26,S,COSC 346,A,Cybersecurity,"Fyfe, S",MWF 08:00AM-08:50AM / VSC 243,https://central.edu/academics/course-catalog/searchable-schedule/
+Central College,2025-26,S,COSC 362,A,Computer Graphics,"Thompson, M",MTWF 01:00PM-01:50PM / VSC 243,https://central.edu/academics/course-catalog/searchable-schedule/
+Central College,2025-26,S,COSC 420,A,Senior Project,"Thompson, M",MWF 10:00AM-10:50AM / VSC 243,https://central.edu/academics/course-catalog/searchable-schedule/

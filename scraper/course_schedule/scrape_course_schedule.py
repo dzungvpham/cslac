@@ -22,9 +22,11 @@ from course_schedule.austin import AustinScraper
 from course_schedule.banner9 import banner9_scrapers
 from course_schedule.barnard import BarnardScraper
 from course_schedule.bowdoin import BowdoinScraper
+from course_schedule.bryn_athyn import BrynAthynScraper
 from course_schedule.bryn_mawr import BrynMawrScraper
 from course_schedule.bucknell import BucknellScraper
 from course_schedule.carleton import CarletonScraper
+from course_schedule.central import CentralScraper
 from course_schedule.centre import CentreScraper
 from course_schedule.coe import CoeScraper
 from course_schedule.colby import ColbyScraper
@@ -71,9 +73,11 @@ SCRAPERS = [
     AustinScraper,
     BarnardScraper,
     BowdoinScraper,
+    BrynAthynScraper,
     BrynMawrScraper,
     BucknellScraper,
     CarletonScraper,
+    CentralScraper,
     CentreScraper,
     CoeScraper,
     ColbyScraper,
