@@ -35,6 +35,7 @@ from course_schedule.davidson import DavidsonScraper
 from course_schedule.drew import DrewScraper
 from course_schedule.earlham import EarlhamScraper
 from course_schedule.gettysburg import GettysburgScraper
+from course_schedule.gordon import GordonScraper
 from course_schedule.goucher import GoucherScraper
 from course_schedule.hamilton import HamiltonScraper
 from course_schedule.haverford import HaverfordScraper
@@ -49,6 +50,7 @@ from course_schedule.minnesota_morris import MinnesotaMorrisScraper
 from course_schedule.mount_holyoke import MountHolyokeScraper
 from course_schedule.occidental import OccidentalScraper
 from course_schedule.powercampus import powercampus_scrapers
+from course_schedule.presbyterian import PresbyterianScraper
 from course_schedule.puget_sound import PugetSoundScraper
 from course_schedule.randolph_macon import RandolphMaconScraper
 from course_schedule.richmond import RichmondScraper
@@ -87,6 +89,7 @@ SCRAPERS = [
     DrewScraper,
     EarlhamScraper,
     GettysburgScraper,
+    GordonScraper,
     GoucherScraper,
     HamiltonScraper,
     HaverfordScraper,
@@ -100,6 +103,7 @@ SCRAPERS = [
     MountHolyokeScraper,
     OccidentalScraper,
     PomonaScraper,
+    PresbyterianScraper,
     PugetSoundScraper,
     RandolphMaconScraper,
     RichmondScraper,

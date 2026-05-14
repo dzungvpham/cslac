@@ -1,0 +1,25 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Presbyterian College,2025-26,S,CSC 2255,D,Program Design II,"Nche, Olivia",TTh 09:30-10:45 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 2500,H,Intro to Computer Networking,"Nche, Olivia",TTh 12:00-13:15 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 3405,K,Algorithms and Data Structure,"Goeckel, Gregory",MW 15:00-16:15 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 3500,J,Numerical Methods,"Goeckel, Gregory",TTh 13:30-14:45 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 3800,I,Artificial Intelligence,"Goeckel, Gregory",MW 13:30-14:45 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 4007,1,Internships,"Downie, Rebecca",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 4007,2,Internships,"Downie, Rebecca",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 4007,3,Internships,"Downie, Rebecca",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 4007,4,Internships,"Downie, Rebecca",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,S,CSC 4805,E,Computer Science Capstone,"Nche, Olivia",MWF 10:30-11:20 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2025-26,Su,CSC 1235,1,Intro to Computer Science,"Goeckel, Gregory",(WEB),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 1235,K,Intro to Computer Science,"Goeckel, Gregory",MW 15:00-16:15 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 2205,D,Program Design I,"Nche, Olivia",TTh 09:30-10:45 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 2405,J,Programming Languages Survey,"Goeckel, Gregory",TTh 13:30-14:45 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 3000,H,Database Processing & Design,"Nche, Olivia",TTh 12:00-13:15 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 3100,I,Computer Organization,"Goeckel, Gregory",MW 13:30-14:45 (H-P 314),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 3300,F,Web Design,"Nche, Olivia",MWF 11:30-12:20 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 4007,1,Internships,"Downie, Rebecca",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 4007,2,Internships,"Downie, Rebecca",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 4007,3,Internships,"Downie, Rebecca",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 4007,4,Internships,"Downie, Rebecca",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 4205,I,Software Development,"Nche, Olivia",MW 13:30-14:45 (H-P 212),https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 4400,1,Theory of Computation,"Goeckel, Gregory",,https://banners.presby.edu/prod/hzskschd.P_SelectSubject
+Presbyterian College,2026-27,F,CSC 4400,H,Theory of Computation,"Goeckel, Gregory",TTh 12:00-13:15 (H-P 314),https://banners.presby.edu/prod/hzskschd.P_SelectSubject

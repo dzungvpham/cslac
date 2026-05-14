@@ -83,7 +83,11 @@ class Banner9Scraper(CourseScheduleScraper):
     """
 
     base_url: str = ""
-    subject: str = ""
+    # Banner subject code. May be a single string (``"CS"``) or a list of
+    # codes (``["COP", "CAP", ...]``) for deployments whose CS curriculum
+    # spans multiple Banner subjects (common at Florida public-system
+    # schools using the SCNS three-letter prefix system).
+    subject = ""
     # Some multi-tenant deployments (e.g. csbsju, which hosts both College
     # of St Benedict and Saint John's) require an institution / "MEP" code
     # on every request, or every endpoint returns
@@ -182,46 +186,53 @@ class Banner9Scraper(CourseScheduleScraper):
             return None
         s = self._ensure_session()
 
-        # Bind the term to the session. Banner returns
-        # `{"fwdURL":".../classSearch/classSearch"}` on success.
-        s.post(
-            self._ssb("/term/search"),
-            params=self._with_mep({"mode": "search"}),
-            data={
-                "term": code,
-                "studyPath": "",
-                "studyPathText": "",
-                "startDatepicker": "",
-                "endDatepicker": "",
-            },
-            timeout=self.request_timeout,
-        ).raise_for_status()
-
+        subjects = [self.subject] if isinstance(self.subject, str) else list(self.subject)
         all_rows = []
-        offset = 0
-        while True:
-            resp = s.get(
-                self._ssb("/searchResults/searchResults"),
-                params=self._with_mep({
-                    "txt_subject": self.subject,
-                    "txt_term": code,
+        for subj in subjects:
+            # Reset + re-bind the term before each subject query. Banner
+            # caches the first search per binding and would otherwise return
+            # the first subject's results for every subsequent subject in
+            # the same binding (observed on NCF). Single-subject deployments
+            # pay a tiny extra cost but stay correct.
+            self._reset_form(s)
+            s.post(
+                self._ssb("/term/search"),
+                params=self._with_mep({"mode": "search"}),
+                data={
+                    "term": code,
+                    "studyPath": "",
+                    "studyPathText": "",
                     "startDatepicker": "",
                     "endDatepicker": "",
-                    "pageOffset": offset,
-                    "pageMaxSize": PAGE_SIZE,
-                    "sortColumn": "subjectDescription",
-                    "sortDirection": "asc",
-                }),
-                timeout=self.search_timeout,
-            )
-            resp.raise_for_status()
-            payload = resp.json()
-            rows = payload.get("data") or []
-            all_rows.extend(rows)
-            total = payload.get("totalCount") or 0
-            if not rows or len(all_rows) >= total:
-                break
-            offset += PAGE_SIZE
+                },
+                timeout=self.request_timeout,
+            ).raise_for_status()
+            collected = 0
+            offset = 0
+            while True:
+                resp = s.get(
+                    self._ssb("/searchResults/searchResults"),
+                    params=self._with_mep({
+                        "txt_subject": subj,
+                        "txt_term": code,
+                        "startDatepicker": "",
+                        "endDatepicker": "",
+                        "pageOffset": offset,
+                        "pageMaxSize": PAGE_SIZE,
+                        "sortColumn": "subjectDescription",
+                        "sortDirection": "asc",
+                    }),
+                    timeout=self.search_timeout,
+                )
+                resp.raise_for_status()
+                payload = resp.json()
+                rows = payload.get("data") or []
+                all_rows.extend(rows)
+                collected += len(rows)
+                total = payload.get("totalCount") or 0
+                if not rows or collected >= total:
+                    break
+                offset += PAGE_SIZE
 
         # Some deployments (Oberlin, etc.) leave faculty / meetingsFaculty
         # empty on the list endpoint and require a per-CRN hop. Hydrate
@@ -257,6 +268,11 @@ class Banner9Scraper(CourseScheduleScraper):
 
         # Clear the term binding so the next iteration starts clean. Some
         # deployments otherwise leak state across term/search posts.
+        self._reset_form(s)
+
+        return all_rows
+
+    def _reset_form(self, s):
         try:
             s.post(
                 self._ssb("/classSearch/resetDataForm"),
@@ -265,8 +281,6 @@ class Banner9Scraper(CourseScheduleScraper):
             )
         except requests.RequestException:
             pass
-
-        return all_rows
 
     def parse_page(self, data, academic_year, term):
         if not data:
@@ -415,6 +429,11 @@ BANNER9_COLLEGES = [
     {"college": College.LAWRENCE, "base_url": "https://bannerweb.lawrence.edu", "subject": "CMSC",
      "ssb_path": "/prod-StudentRegistrationSsb", "terms": ["F", "W", "S"]},
     {"college": College.MARY_WASHINGTON, "base_url": "https://reg-prod.ec.umw.edu", "subject": "CPSC"},
+    # NCF switched from local CSCI/DATA prefixes to FL state SCNS three-letter
+    # codes (CAI/CAP/CDA/CEN/CIS/COP/COT) around Fall 2025; we keep both to
+    # span the full multi-year history.
+    {"college": College.NEW_FLORIDA, "base_url": "https://banapps02.ncf.edu",
+     "subject": ["CAI", "CAP", "CDA", "CEN", "CIS", "COP", "COT", "CSCI", "DATA"]},
     {"college": College.OBERLIN, "base_url": "https://banner.cc.oberlin.edu", "subject": "CSCI"},
     {"college": College.SKIDMORE, "base_url": "https://bannerxe.skidmore.edu", "subject": "CS"},
     {"college": College.ST_BENEDICT, "base_url": "https://registration.csbsju.edu", "subject": "CSCI", "mep_code": "B"},

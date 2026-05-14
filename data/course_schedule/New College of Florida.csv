@@ -1,0 +1,110 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+New College of Florida,2021-22,F,CAP 5323,001,Practical Data Science,"Bozkaya, Burcin",TTh 10:30-11:50 (ACE 218),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CIS 6930,001,Topics in Computing for Data Science,"Suhara, Yoshihiko",TTh 14:00-15:20,https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 2200,001,Introduction to Programming in Python*,"Gillman, David",MTh 14:00-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 2450,001,Front-End Web Design and Development,"Roy, Tania",TTh 09:00-10:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 3160,001,Data Structures,"Lepinski, Matthew",TF 13:00-14:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 3250,001,Intermediate Python,"Eaton, Caitrin",MTh 14:00-15:20 (ACE 201); W 19:00-20:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 3260,001,Theory of Computation,"Hamid, Fahmida",MTh 12:30-13:50 (LBR 156),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 3320,001,Usable Privacy and Security,"Roy, Tania",TTh 10:30-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 3400,001,Object Oriented Design,"Hamid, Fahmida",MTh 14:00-15:20 (ACE 329); W 14:00-15:20 (LBR 248),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 3575,001,Embedded Systems,"Eaton, Caitrin",MTh 12:30-13:50 (HNS 168); W 12:30-15:20 (HNS 162),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 3600,001,Databases for Back-End Development,"Lepinski, Matthew",TF 14:30-15:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,CSCI 4100,001,Distributed Computing,"Lepinski, Matthew",MW 13:30-14:50,https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,DATA 3110,001,Data Munging and Exploratory Data Analysis,"Ryba, Tyrone",TTh 15:30-16:50 (HNS 114),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,DATA 3120,001,Algorithms for Data Science,"Perez, Tiago",TTh 09:00-10:20 (LBR 156),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,F,DATA 4010,001,Distributed Systems for Data Science,"Perez, Tiago",TTh 13:00-14:20 (LBR 209),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CAP 5940,001,Practicum,"Bozkaya, Burcin",,https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 2100,001,Functional Prog in Haskell*,"Hamid, Fahmida",MTh 14:00-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 2400,001,Object-Oriented Programming,"Hamid, Fahmida",MTh 12:30-13:50 (HNS 168); T 13:00-14:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 3200,001,Algorithms,"Lepinski, Matthew",MTh 12:30-13:50 (ACE 217),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 3377,001,Machine Learning for Visual Thinkers*,"Eaton, Caitrin",TF 14:30-15:50 (HNS 168); Th 15:30-16:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 3570,001,Software Engineering,"Roy, Tania",TTh 10:30-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 3655,001,Introduction to Virtual Reality Systems,"Roy, Tania",TTh 09:00-10:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 4725,001,Randomized Algorithms,"Gillman, David",MTh 14:00-15:20 (ACE 318),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 4780,001,Computer Vision,"Gillman, David",MTh 15:30-16:50 (ACE 102),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,CSCI 4800,001,Robot Kinematics and Learning,"Eaton, Caitrin",W 12:30-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,DATA 2400,001,Ethics in Data Science,"Perez, Tiago",MWF 10:00-10:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,DATA 3131,001,Distributed Computing,"Lepinski, Matthew",TTh 09:00-10:20 (ACE 217),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,DATA 4205,001,Applied Statistics II,"Skripnikov, Andrey",TTh 10:30-11:50 (HNS 108),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2021-22,S,DATA 4300,001,Databases for Data Science,"Perez, Tiago",MWF 11:00-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,CSCI 2200,001,Introduction to Programming in Python*,"Gillman, David",MTh 14:00-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,CSCI 2300,001,"Introduction to Computer Systems, Architecture and Digital Hardware","Gillman, David",TTh 10:30-11:50 (LBR 252); W 12:30-13:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,CSCI 3160,001,Data Structures,"Lepinski, Matthew",TF 14:30-15:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,CSCI 3250,001,Intermediate Python,"Salu, Gil",M 19:00-21:50 (HNS 114),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,CSCI 3400,001,Object Oriented Design,"Hamid, Fahmida",MTh 15:30-16:50 (ACE 201); T 16:00-17:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,CSCI 3450,001,Natural Language Processing,"Hamid, Fahmida",MTh 14:00-15:20 (ACE 201),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,DATA 2400,001,Ethics in Data Science,"Perez, Tiago",MWF 11:00-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,DATA 3110,001,Data Munging and Exploratory Data Analysis,"Ryba, Tyrone",TTh 16:00-19:00 (HNS 114),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,DATA 3300,001,Software Engineering in Data Science,"Perez, Tiago",MWF 10:00-10:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,F,DATA 4300,001,Databases for Data Science,"Corning, Wiley",MW 16:00-19:00 (HNS 114),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,CSCI 2400,001,Object-Oriented Programming,"Hamid, Fahmida",MTh 15:30-16:50 (ACE 201); T 16:00-17:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,CSCI 2550,001,Introduction to Programming in C,"Gillman, David",TTh 10:30-11:50 (ACE 115),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,CSCI 3200,001,Algorithms,"Hamid, Fahmida",MTh 14:00-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,CSCI 3210,001,2D Game Development with C++,"Roy, Tania",TTh 10:30-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,CSCI 3570,001,Software Engineering,"Roy, Tania",TTh 09:00-10:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,CSCI 4200,001,Artificial Intelligence I,"Gillman, David",MTh 12:30-13:50 (ACE 102),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,CSCI 4200,002,Artificial Intelligence II,"Gillman, David",MTh 12:30-13:50 (ACE 102),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,DATA 2400,001,Ethics in Data Science,"Perez, Tiago",MWF 11:00-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2022-23,S,DATA 4200,001,Artificial Intelligence and Data Mining,"Perez, Tiago",MWF 10:00-10:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 2200,001,Introduction to Programming in Python*,"Roy, Tania",TTh 10:30-11:50 (LBR 252); T 13:00-14:20 (HNS 114),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 3100,001,Foundations of Human Centered Computing,"Roy, Tania",TTh 09:00-10:20 (LBR 252),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 3160,001,Data Structures,"Page, Daniel",TTh 10:30-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 3220,0,Full Stack Application Development,"Salu, Gil",TF 13:00-14:20 (ACE 329),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 3250,001,Intermediate Python,"Salu, Gil",TTh 10:30-11:50 (ACE 329),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 3260,001,Theory of Computation,"Page, Daniel",MTh 14:30-15:50 (ACE 239),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 3370,001,Machine Learning,"Gillman, David",MTh 13:00-14:20 (HNS 168); W 14:00-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 3400,001,Object Oriented Design,"Hamid, Fahmida",TTh 09:00-10:20 (ACE 201),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,CSCI 3575,001,Embedded Systems,"Hamid, Fahmida",T 19:00-21:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,F,DATA 4295,001,Industry Workshop (J),"Klingenberg, Bernhard",,https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,CSCI 2225,001,Python for Everybody,"Salu, Gil",T 13:00-15:50 (HNS 114),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,CSCI 2400,001,Object-Oriented Programming,"Salu, Gil",TTh 10:30-11:50 (LBR 252),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,CSCI 2550,001,Introduction to Programming in C,"Gillman, David",T 13:00-15:50 (ACE 239),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,CSCI 3052,001,Reinforcement Learning,"Gillman, David",TTh 09:00-10:20 (ACE 217),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,CSCI 3200,001,Algorithms,"Page, Daniel",MTh 14:30-15:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,CSCI 3570,001,Software Engineering,"Roy, Tania",TTh 10:30-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,CSCI 3655,001,Introduction to Virtual Reality Systems,"Roy, Tania",TTh 09:00-10:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,CSCI 4525,001,Cryptography and Data Privacy,"Page, Daniel",MTh 13:00-14:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,DATA 2400,01,Ethics in Data Science,"Perez, Tiago",MWF 11:00-11:50 (ACE 218),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2023-24,S,DATA 3131,01,Distributed Computing,"Perez, Tiago",TTh 10:30-11:50 (LBR 209),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,CSCI 2200,001,Introduction to Programming in Python,"Loveland, Rohan",MWF 11:00-11:50 (ACE 239),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,CSCI 3160,001,Data Structures,"Hamid, Fahmida",TF 13:00-14:20 (LBR 248),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,CSCI 3250,01,Intermediate Python,"Salu, Gil",TTh 10:30-11:50 (LBR 248),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,CSCI 3370,001,Machine Learning,"Hulden, Mans",MWF 11:00-11:50 (HNS 108),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,CSCI 3400,001,Object Oriented Design,"Roy, Tania",TTh 10:30-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,CSCI 3450,001,Natural Language Processing,"Hulden, Mans",MTh 14:30-15:50 (HNS 108),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,CSCI 3575,001,Embedded Systems,"Hamid, Fahmida",MTh 13:00-14:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,DATA 2000,001,Navigating AI,"Roy, Tania",W 12:30-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,F,DATA 2000,002,Navigating AI,"Roy, Tania",W 12:30-15:20 (ACE 217),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,CSCI 2200,001,Introduction to Programming in Python,"Loveland, Rohan",TTh 10:30-11:50 (HNS 114),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,CSCI 2211,001,Music & AI,"Tabatabaie, Ashkan, Hulden, Mans",TF 14:30-15:50 (CFA 211),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,CSCI 2310,001,Computer Architecture and Digital Hardware,"Loveland, Rohan",MWF 11:00-11:50 (ACE 239),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,CSCI 2400,001,Object-Oriented Programming,"Salu, Gil",TTh 10:30-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,CSCI 3200,001,Algorithms,"Hulden, Mans",MTh 14:30-15:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,CSCI 3210,001,2D Game Development with C++,"Roy, Tania",TTh 09:00-10:20 (ACE 115),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,CSCI 3260,001,Theory of Computation,"Hamid, Fahmida",MTh 13:00-14:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,CSCI 3570,001,Software Engineering,"Hamid, Fahmida",TTh 10:30-11:50 (ACE 201),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,DATA 2000,001,Navigating AI,"Roy, Tania",W 12:30-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,DATA 2000,002,Navigating AI,"Roy, Tania",W 12:30-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,DATA 2050,001,Information Integrity,"Abramson, Bruce",W 12:30-15:20 (ACE 112),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,DATA 3300,001,Software Engineering in Data Science,"Perez, Tiago",MWF 11:00-11:50 (HNS 108),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2024-25,S,DATA 4200,001,Artificial Intelligence and Data Mining,"Perez, Tiago",MWF 10:00-10:50 (HNS 108),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,F,CAP 3629,001,Reinforcement Learning,"Gillman, David",MWF 11:00-11:50 (ACE 115),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,F,CEN 3213,001,Embedded Systems,"Hamid, Fahmida",T 13:00-17:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,F,CEN 3722,001,Foundations of Human Centered Computing,"Roy, Tania",TTh 10:30-11:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,F,CIS 3303,001,Object Oriented Design,"Roy, Tania",TTh 09:00-10:20 (ACE 217),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,F,COP 2047,001,Introduction to Programming in Python,"Loveland, Rohan",MWF 10:00-10:50 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,F,COP 2810,001,Web Programming,"Salu, Gil",TTh 10:30-12:00 (ACE 218),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,F,COP 3041,001,Intermediate Python,"Gillman, David",MWF 10:00-10:50 (ACE 201),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,F,COP 3535,001,Data Structures,"Hamid, Fahmida",MTh 13:00-14:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,CAI 3863,001,AI - Deep Learning,"Loveland, Rohan",MWF 11:00-11:50 (ACE 115); T 15:30-16:30 (ACE 327),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,CAP 3118,001,Introduction to Virtual Reality,"Roy, Tania",TTh 10:30-11:50 (ACE 113),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,CAP 3327,001,Distributed Computing for Computer Science,"Salu, Gil",TTh 10:30-11:50 (LBR 209),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,CAP 3328,001,Algorithms,"Gillman, David",TTh 10:30-11:50 (ACE 327),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,CAP 3741,001,Data Visualization and Communication,"Crow, Melissa",M 13:30-14:20 (ACE 112); MTh 14:30-15:50 (ACE 112),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,CEN 3020,001,Software Engineering,"Hamid, Fahmida",F 13:00-17:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,CIS 2204,001,Hacking,"Gillman, David",MWF 11:00-11:50 (ACE 201),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,COP 2331,001,Object Oriented Programming,"Roy, Tania",TTh 09:00-10:20 (ACE 239); W 13:00-14:20 (ACE 239),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,COP 2930,001,Functional Programming in Haskell,"Hamid, Fahmida",W 12:30-15:20 (HNS 168),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,COP 3521,001,Building Data Science Systems: Cloud Models & Distributed Computing,"Salu, Gil",TTh 09:00-10:20 (LBR 209),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
+New College of Florida,2025-26,S,COT 4519,001,Topics in Algorithms: Graphs,"Gillman, David",MWF 10:00-10:50 (ACE 201),https://banapps02.ncf.edu/StudentRegistrationSsb/ssb/classSearch/classSearch
