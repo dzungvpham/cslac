@@ -404,6 +404,7 @@ def _format_hhmm(value):
 #   - `terms` defaults to `["F", "S"]`; trimester schools like Lawrence
 #     add `"W"`.
 BANNER9_COLLEGES = [
+    {"college": College.ALBION, "base_url": "https://adminpagesprod02.albion.edu:7443", "subject": "CS"},
     {"college": College.BEREA, "base_url": "https://b9student-prod.berea.edu:8444", "subject": "CSC"},
     {"college": College.CONCORDIA, "base_url": "https://banner.cord.edu", "subject": "CSC"},
     {"college": College.CONNECTICUT, "base_url": "https://reg-prod.ec.conncoll.edu", "subject": "COM"},

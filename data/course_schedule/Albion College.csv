@@ -1,0 +1,116 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Albion College,2021-22,F,CS 151,01,Information Technology,"Marengoni, Mauricio",MWF 08:00-09:05 (PALENS 231); W 14:15-16:05 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,F,CS 151,02,Information Technology,"Marengoni, Mauricio",MWF 10:30-11:35 (PALENS 231); F 14:15-16:05 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,F,CS 171,1M,Intro Computer Science I,"Reimann, David",MWF 10:30-11:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,F,CS 171L,01,Laboratory,"Reimann, David",T 14:15-16:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,F,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,F,CS 263,01,Operating Systems & Networks,"Zhang, Yuming",TTh 14:15-16:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,F,CS 299,01,Colloquium in Computer Science,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,F,CS 354,01,Computer Organization,"Zhang, Yuming",MW 14:15-16:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,F,CS 399,01,Colloquium in MATH & CS,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 151,1M,Information Technology,"Marengoni, Mauricio",MWF 09:15-10:20 (PALENS 225),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 151L,01,Laboratory,"Marengoni, Mauricio",W 14:15-16:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 151L,02,Laboratory,"Marengoni, Mauricio",F 14:15-16:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 171,1M,Intro Computer Science I,"Reimann, David",MWF 10:30-11:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 171L,01,Laboratory,"Reimann, David",T 14:15-16:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 223); Th 10:30-12:30 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 256,01,Practicum in Program Lang,"Reimann, David",M 13:00-14:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 271,01,Artificial Intelligence,"Marengoni, Mauricio",MWF 13:00-14:05 (PUTNAM 255),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 275,01,Software Development,"Zhang, Yuming",TTh 14:15-16:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 287,01,Digital Model & Fabrication,"Reimann, David",T 19:00-20:05 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 299,01,Colloquium in Computer Science,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 356,01,Programming Languages,"Zhang, Yuming",MW 14:15-16:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 360,01,Mathematical Modeling,"Mason, Darren",MTWTh 10:30-11:35 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2021-22,S,CS 399,01,Colloquium in MATH & CS,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 151,1M,Information Technology,"Marengoni, Mauricio",MWTh 11:45-12:50 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 151L,01,Laboratory,"Marengoni, Mauricio",M 14:15-16:20 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 151L,02,Laboratory,"Marengoni, Mauricio",W 14:15-16:20 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 171,1M,Intro Computer Science I,"Reimann, David",MWF 10:30-11:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 171L,01,Laboratory,"Reimann, David",T 14:15-16:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 173L,01,Laboratory,"Zhang, Yuming",Th 09:15-11:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 256,01,Practicum in Program Lang,"Reimann, David",M 11:45-12:50,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 265,01,Database Processing,"Marengoni, Mauricio",MTW 13:00-14:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 299,01,Colloquium in Computer Science,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 352,01,Algorithms,"Zhang, Yuming",TF 14:15-16:05 (PALENS 225),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 354,01,Computer Organization,"Zhang, Yuming",MW 14:15-16:05 (PALENS 225),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,F,CS 399,01,Colloquium in MATH & CS,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 171,1M,Intro Computer Science I,"Reimann, David",MWF 10:30-11:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 171L,01,Laboratory,"Reimann, David",T 14:15-16:20 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 223),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 173L,01,Laboratory,"Zhang, Yuming",Th 09:15-11:15 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 187,01,SelTop:Mathemat & Computer Art,"Reimann, David",T 19:00-20:00 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 273,01,Graphics & Image Processing,"Marengoni, Mauricio",MWTh 10:30-11:35 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 275,01,Software Development,"Zhang, Yuming",MW 14:15-16:05 (PUTNAM 255),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 277,01,Machine Learning,"Marengoni, Mauricio",MTW 13:00-14:05 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 299,01,Colloquium in Computer Science,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 326,01,Operations Research,"Mason, Darren",MTWTh 14:15-15:20,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 356,01,Programming Languages,"Marengoni, Mauricio",MWTh 09:15-10:20 (PALENS 223),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2022-23,S,CS 399,01,Colloquium in MATH & CS,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 171,1M,Intro Computer Science I,"Reimann, David",MWF 10:30-11:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 171L,01,Laboratory,"Reimann, David",T 14:15-16:15 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 171L,02,Laboratory,"Reimann, David",T 19:00-21:00 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 173L,01,Laboratory,"Zhang, Yuming",Th 09:15-11:15 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 263,01,Operating Systems & Networks,"Marengoni, Mauricio",MWF 09:15-10:20 (PALENS 223),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 289,01,Parallel Programming,"Zhang, Yuming",MW 14:15-16:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 299,01,Colloquium in Computer Science,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 352,01,Algorithms,"Marengoni, Mauricio",TTh 14:15-16:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 354,01,Computer Organization,"Marengoni, Mauricio",MWF 13:00-14:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 391,01,Intrnshp:Conceptual Innovation,"Reimann, David",,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,F,CS 399,01,Colloquium in MATH & CS,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 171,1M,Intro Computer Science I,"Reimann, David",MWF 13:00-14:05 (PALENS 223),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 171L,01,Laboratory,"Reimann, David",T 14:15-16:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 225),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 173L,01,Laboratory,"Zhang, Yuming",Th 09:15-11:30 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 271,01,Artificial Intelligence,"Marengoni, Mauricio",MWF 14:15-15:20 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 275,01,Software Development,"Reimann, David",MWF 10:30-11:35 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 299,01,Colloquium in Computer Science,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 356,01,Programming Languages,"Marengoni, Mauricio",MWF 09:15-10:20 (PUTNAM 253),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 358,01,Foundations of Computing,"Marengoni, Mauricio",MWF 11:45-12:50 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 360,01,Mathematical Modeling,,MWF 14:15-15:20 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2023-24,S,CS 399,01,Colloquium in MATH & CS,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 171,1M,Intro Computer Science I,"Marengoni, Mauricio",MWF 11:45-12:50 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 171L,01,Laboratory,"Marengoni, Mauricio",T 14:15-16:15 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PUTNAM 253),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 173L,01,Laboratory,"Zhang, Yuming",Th 09:15-11:15 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 265,01,Database Processing,"Marengoni, Mauricio",MWF 13:00-14:05 (PALENS 223),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 299,01,Colloquium in Computer Science,"Bollman, Mark",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 352,01,Algorithms,"Zhang, Yuming",MW 14:15-16:05 (NORRIS 104),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 354,01,Computer Organization,"Zhang, Yuming",TF 14:15-16:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 399,01,Colloquium in MATH & CS,"Bollman, Mark",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 411,01,Directed Study: Formal Methods,"Bollman, Mark",,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,F,CS 412,01,DirStdy:MLB ML Contract Models,"Marengoni, Mauricio",,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 171,1M,Intro Computer Science I,"Marengoni, Mauricio",MWF 10:30-11:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 171L,01,Laboratory,"Marengoni, Mauricio",Th 14:15-16:05 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 173L,01,Laboratory,"Zhang, Yuming",Th 09:15-11:15 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 275,01,Software Development,"Zhang, Yuming",MW 14:15-16:05 (PALENS 225),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 277,01,Machine Learning,"Marengoni, Mauricio",MWF 13:00-14:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 277T,01,Machine Learning,"Marengoni, Mauricio",,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 299,01,Colloquium in Computer Science,"Grow, April",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 356,01,Programming Languages,"Marengoni, Mauricio",MWF 08:00-09:05 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2024-25,S,CS 399,01,Colloquium in MATH & CS,"Grow, April",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 171,1M,Intro Computer Science I,"Reimann, David",MWF 10:30-11:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 171L,01,Laboratory,"Reimann, David",T 14:15-16:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 173L,01,Laboratory,"Zhang, Yuming",Th 09:15-11:15 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 263,01,Operating Systems & Networks,"Zhang, Yuming",TTh 14:15-16:05 (PALENS 223),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 273,01,Graphics & Image Processing,"Marengoni, Mauricio",MWF 11:45-12:50 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 299,01,Colloquium in Computer Science,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 352,01,Algorithms,"Zhang, Yuming",MW 14:15-16:05 (PALENS 223),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 354,01,Computer Organization,"Marengoni, Mauricio",MWF 08:00-09:05 (PALENS 221),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,F,CS 399,01,Colloquium in MATH & CS,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 171,1M,Intro Computer Science I,"Reimann, David",MWF 10:30-11:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 171L,01,Laboratory,"Reimann, David",T 14:15-16:15 (PUTNAM 251),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 173,1M,Intro Computer Science II,"Zhang, Yuming",MWF 10:30-11:35 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 173L,01,Laboratory,"Zhang, Yuming",Th 09:15-11:15 (PALENS 231),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 265,01,Database Processing,"Marengoni, Mauricio",MWF 13:00-14:05 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 265X,01,Database Processing,,,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 271,01,Artificial Intelligence,"Marengoni, Mauricio",MWF 10:30-11:35 (PALENS 225),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 275,01,Software Development,"Zhang, Yuming",MW 14:15-16:05 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 299,01,Colloquium in Computer Science,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 352X,01,Algorithms,,,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 354X,01,Computer Organization,,,https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 356,01,Programming Languages,"Marengoni, Mauricio",MWF 08:00-09:05 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
+Albion College,2025-26,S,CS 399,01,Colloquium in MATH & CS,"Reimann, David",Th 15:30-16:35 (PALENS 227),https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/classSearch/classSearch
