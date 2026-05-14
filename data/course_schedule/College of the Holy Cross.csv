@@ -1,0 +1,47 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+College of the Holy Cross,2025-26,F,CSCI 131,01,Techniques of Programming,"Lammert,Adam C.",TR 09:30 AM–10:45 AM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 131,02,Techniques of Programming,"Mohsin,Farhad",TR 02:00 PM–03:15 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 131,10A,Techniques of Programming,"Lammert,Adam C.",W 08:00 AM–09:55 AM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 131,10B,Techniques of Programming,"Lammert,Adam C.",W 10:00 AM–11:55 AM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 131,10C,Techniques of Programming,"Smith King,Laurie A",W 01:00 PM–02:55 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 131,10D,Techniques of Programming,"Smith King,Laurie A",W 03:00 PM–04:55 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 132,01,Data Structures,STAFF,MW 10:00 AM–11:15 AM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 132,10A,Data Structures,STAFF,R 09:00 AM–10:55 AM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 132,10B,Data Structures,STAFF,R 12:00 PM–01:55 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 135,01,Discrete Structures,"Gu,Ting",TR 11:00 AM–12:15 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 220,01,Software DevOps,STAFF,W 06:00 PM–08:30 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 226,01,Computer Systems &Organization,"Lammert,Adam C.",TR 12:30 PM–01:45 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 235,01,Analysis of Algorithms,"Fitzsimmons,Zachary",MWF 09:00 AM–09:50 AM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 307,01,Data Mining,"Mohsin,Farhad",TR 11:00 AM–12:15 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 324,01,Prog Language:Design&Implement,"Smith King,Laurie A",TR 12:30 PM–01:45 PM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 325,01,Computer Security,"Gu,Ting",TR 09:30 AM–10:45 AM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,F,CSCI 328,01,Ethical Issues in Comp Science,"Fitzsimmons,Zachary",MWF 11:00 AM–11:50 AM,https://www.holycross.edu/document/fall-2025-course-schedule
+College of the Holy Cross,2025-26,S,CSCI 131,01,Techniques of Programming,"Lammert,Adam C.",TR 08:00 AM–09:15 AM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 131,02,Techniques of Programming,"Smith King,Laurie A",TR 02:00 PM–03:15 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 131,10A,Techniques of Programming,"Lammert,Adam C.",W 08:00 AM–09:55 AM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 131,10B,Techniques of Programming,"Smith King,Laurie A",W 01:00 PM–02:55 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 131,10C,Techniques of Programming,"Smith King,Laurie A",W 03:00 PM–04:55 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 132,01,Data Structures,"Gu,Ting",TR 09:30 AM–10:45 AM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 132,10A,Data Structures,"Gu,Ting",T 12:00 PM–01:55 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 132,10B,Data Structures,"Gu,Ting",W 10:00 AM–11:55 AM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 135,01,Discrete Structures,"Gu,Ting",TR 02:00 PM–03:15 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 226,01,Computer Systems &Organization,"Lammert,Adam C.",TR 12:30 PM–01:45 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 235,01,Analysis of Algorithms,"Tang,Jennifer",TR 11:00 AM–12:15 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 324,01,Prog Language:Design&Implement,"Smith King,Laurie A",TR 12:30 PM–01:45 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 347,01,Artificial Intelligence,"Fitzsimmons,Zachary",TR 11:00 AM–12:15 PM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2025-26,S,CSCI 399,01,S02 - Network Science,"Tang,Jennifer",TR 09:30 AM–10:45 AM,https://www.holycross.edu/document/spring-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 131,01,Techniques of Programming,"Mohsin,Farhad",TR 09:30 AM–10:45 AM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 131,02,Techniques of Programming,STAFF,TR 11:00 AM–12:15 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 131,10A,Techniques of Programming,"Lammert,Adam C.",T 01:00 PM–02:55 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 131,10B,Techniques of Programming,"Mohsin,Farhad",W 09:00 AM–10:55 AM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 131,10C,Techniques of Programming,"Mohsin,Farhad",W 11:00 AM–12:55 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 131,10D,Techniques of Programming,"Lammert,Adam C.",W 01:00 PM–02:55 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 132,01,Data Structures,"Gu,Ting",MWF 10:00 AM–10:50 AM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 132,10A,Data Structures,"Gu,Ting",M 01:00 PM–02:55 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 135,01,Discrete Structures,"Gu,Ting",MWF 09:00 AM–09:50 AM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 226,01,Computer Systems &Organization,STAFF,TR 09:30 AM–10:45 AM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 235,01,Analysis of Algorithms,STAFF,TR 12:30 PM–01:45 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 328,01,Ethical Issues in Comp Science,STAFF,TR 02:00 PM–03:15 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 335,01,Advanced Algorithms,"Mohsin,Farhad",TR 12:30 PM–01:45 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 356,01,Computer Networking,"Walsh,Kevin A.",MWF 11:00 AM–11:50 AM,https://www.holycross.edu/document/fall-2026-schedule-of-classes
+College of the Holy Cross,2026-27,F,CSCI 357,01,Machine Learning,"Lammert,Adam C.",TR 11:00 AM–12:15 PM,https://www.holycross.edu/document/fall-2026-schedule-of-classes

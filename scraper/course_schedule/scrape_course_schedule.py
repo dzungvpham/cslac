@@ -22,6 +22,7 @@ from course_schedule.austin import AustinScraper
 from course_schedule.banner9 import banner9_scrapers
 from course_schedule.barnard import BarnardScraper
 from course_schedule.bowdoin import BowdoinScraper
+from course_schedule.bridgewater import BridgewaterScraper
 from course_schedule.bryn_athyn import BrynAthynScraper
 from course_schedule.bryn_mawr import BrynMawrScraper
 from course_schedule.bucknell import BucknellScraper
@@ -31,6 +32,7 @@ from course_schedule.centre import CentreScraper
 from course_schedule.coe import CoeScraper
 from course_schedule.colby import ColbyScraper
 from course_schedule.colorado import ColoradoScraper
+from course_schedule.covenant import CovenantScraper
 from course_schedule.davidson import DavidsonScraper
 from course_schedule.drew import DrewScraper
 from course_schedule.earlham import EarlhamScraper
@@ -39,6 +41,7 @@ from course_schedule.gordon import GordonScraper
 from course_schedule.goucher import GoucherScraper
 from course_schedule.hamilton import HamiltonScraper
 from course_schedule.haverford import HaverfordScraper
+from course_schedule.holy_cross import HolyCrossScraper
 from course_schedule.hope import HopeScraper
 from course_schedule.hobart_william_smith import HobartWilliamSmithScraper
 from course_schedule.knox import KnoxScraper
@@ -67,6 +70,7 @@ from course_schedule.washington_college import WashingtonCollegeScraper
 from course_schedule.washington_lee import WashingtonLeeScraper
 from course_schedule.wellesley import WellesleyScraper
 from course_schedule.wesleyan import WesleyanScraper
+from course_schedule.westminster_pa import WestminsterPAScraper
 from course_schedule.wheaton_il import WheatonILScraper
 from course_schedule.williams import WilliamsScraper
 from course_schedule.wofford import WoffordScraper
@@ -78,6 +82,7 @@ SCRAPERS = [
     AustinScraper,
     BarnardScraper,
     BowdoinScraper,
+    BridgewaterScraper,
     BrynAthynScraper,
     BrynMawrScraper,
     BucknellScraper,
@@ -87,6 +92,7 @@ SCRAPERS = [
     CoeScraper,
     ColbyScraper,
     ColoradoScraper,
+    CovenantScraper,
     DavidsonScraper,
     DrewScraper,
     EarlhamScraper,
@@ -95,6 +101,7 @@ SCRAPERS = [
     GoucherScraper,
     HamiltonScraper,
     HaverfordScraper,
+    HolyCrossScraper,
     HopeScraper,
     HobartWilliamSmithScraper,
     HarveyMuddScraper,
@@ -121,6 +128,7 @@ SCRAPERS = [
     WashingtonLeeScraper,
     WellesleyScraper,
     WesleyanScraper,
+    WestminsterPAScraper,
     WheatonILScraper,
     WilliamsScraper,
     WoffordScraper,

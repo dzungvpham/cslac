@@ -1,0 +1,43 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Bridgewater College,2026-27,F,CSCI 101,01,Programming I,,MTWF 09:00–09:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 101,02,Programming I,,MTWF 10:00–10:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 102,01,Programming II,,MWF 12:00–12:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 130,01,Prog w/ Python,,MWF 13:00–13:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 130,02,Prog w/ Python,,MWF 14:00–14:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 250,01,Computer Networks,,MWF 11:00–11:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 320,01,Algo Analys/Des,,MWF 14:00–14:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 341,01,Comp Architect,,MWF 12:00–12:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 361,01,Network Security,,MWF 13:00–13:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 400,01,Softwre Engineer,,TR 11:00–12:15,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 485,01,Internship I,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 486,01,Internship II,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 490,01,Independ Study,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 491,01,Research,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,CSCI 499,01,Honors Project,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,DSA 230,01,Database Systems,,TR 09:30–10:45,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,DSA 425,01,Data Mining,,TR 11:00–12:15,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,DSA 485,01,Internship I,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,DSA 486,01,Internship II,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,DSA 490,01,Independ Study,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,DSA 491,01,Research,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,F,DSA 499,01,Honors Project,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 101,01,Programming I,,MTWF 09:00–09:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 102,01,Programming II,,MWF 09:00–09:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 110,01,Discrete Math,,MWF 11:00–11:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 131,01,Web Scripting,,MWF 10:00–10:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 220,01,Data Struct/Algo,,MWF 13:00–13:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 342,01,Operatng Systems,,MWF 11:00–11:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 461,01,Penetration Testing,,MWF 12:00–12:50,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 485,01,Internship I,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 486,01,Internship II,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 487X,01,Internship III,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 490,01,Independ Study,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 491,01,Research,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,CSCI 499,01,Honors Project,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,DSA 450,01,Machine Learning,,TR 11:00–12:15,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,DSA 485,01,Internship I,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,DSA 486,01,Internship II,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,DSA 487X,01,Internship III,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,DSA 490,01,Independ Study,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,DSA 491,01,Research,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
+Bridgewater College,2026-27,S,DSA 499,01,Honors Project,,,https://bridgewater.box.com/shared/static/j4cfvbv6opnw84miah120dq3fxzlbtfh.xlsx
