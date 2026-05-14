@@ -55,6 +55,7 @@ from course_schedule.puget_sound import PugetSoundScraper
 from course_schedule.randolph_macon import RandolphMaconScraper
 from course_schedule.richmond import RichmondScraper
 from course_schedule.selfservice import selfservice_scrapers
+from course_schedule.sewanee import SewaneeScraper
 from course_schedule.smith import SmithScraper
 from course_schedule.st_mary_md import StMaryMdScraper
 from course_schedule.st_olaf import StOlafScraper
@@ -62,6 +63,7 @@ from course_schedule.trinity import TrinityScraper
 from course_schedule.unca import UNCAshevilleScraper
 from course_schedule.vassar import VassarScraper
 from course_schedule.wabash import WabashScraper
+from course_schedule.washington_college import WashingtonCollegeScraper
 from course_schedule.washington_lee import WashingtonLeeScraper
 from course_schedule.wellesley import WellesleyScraper
 from course_schedule.wesleyan import WesleyanScraper
@@ -107,6 +109,7 @@ SCRAPERS = [
     PugetSoundScraper,
     RandolphMaconScraper,
     RichmondScraper,
+    SewaneeScraper,
     SmithScraper,
     StMaryMdScraper,
     StOlafScraper,
@@ -114,6 +117,7 @@ SCRAPERS = [
     UNCAshevilleScraper,
     VassarScraper,
     WabashScraper,
+    WashingtonCollegeScraper,
     WashingtonLeeScraper,
     WellesleyScraper,
     WesleyanScraper,

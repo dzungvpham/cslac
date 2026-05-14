@@ -420,6 +420,7 @@ SELFSERVICE_COLLEGES = [
     (College.LYCOMING, "https://collslfsrv-live.lycoming.edu", "CPTR"),
     (College.MEREDITH, "https://mcis.meredith.edu", "CS"),
     (College.SUSQUEHANNA, "https://su-ss-live.susqu.edu", "CSCI"),
+    (College.TRANSYLVANIA, "https://selfserv.transy.edu", "CS"),
     (College.WESTMONT, "https://waypoint.westmont.edu", "CS"),
     (College.WILLAMETTE, "https://collslfsrv.willamette.edu", "CS"),
 ]

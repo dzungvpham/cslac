@@ -53,11 +53,12 @@ from course_schedule.course_schedule_scraper import CourseScheduleScraper
 #   "2024-2025 Fall" / "2026-2027 Fall"    (Illinois, Hampden-Sydney older years)
 #   "FALL TERM 2026"                       (Beloit)
 #   "2026 - Fall" / "2025 - Spring"        (Tougaloo)
+#   "2026 Fall Term" / "2027 Winter Term"  (Wartburg — Winter is the spring half)
 #
 # The whole description must match — anything extra (e.g. "- Fall I Subterm"
 # trailers, "Fall 1st half", "Summer Session", "Summer 1 Semester",
-# "Graduate Fall") falls through and is skipped so we don't double-count
-# subterms or pick up graduate-only sections.
+# "Graduate Fall", "Winter Online/Graduate Term") falls through and is
+# skipped so we don't double-count subterms or pick up graduate-only sections.
 TERM_DESC_RE = re.compile(
     r"^\s*(?:"
     r"(?P<season1>Fall|Spring)\s+(?P<range1>\d{4}-\d{2,4})(?:\s+Academic\s+Year)?"
@@ -69,10 +70,15 @@ TERM_DESC_RE = re.compile(
     r"(?P<season4>Fall|Spring)\s+Term\s+(?P<single_year>\d{4})"
     r"|"
     r"(?P<single_year2>\d{4})\s*-\s*(?P<season5>Fall|Spring)"
+    r"|"
+    r"(?P<single_year3>\d{4})\s+(?P<season6>Fall|Spring|Winter)\s+Term"
     r")\s*$",
     re.I,
 )
-SEASON_TERM = {"fall": "F", "spring": "S"}
+# Wartburg labels its post-fall semester "Winter Term"; treat it as our `S`
+# bucket. No deployments in JENZABAR_JICS_COLLEGES expose both a Spring and a
+# Winter term in the same dropdown, so the conflation is safe today.
+SEASON_TERM = {"fall": "F", "spring": "S", "winter": "S"}
 
 
 def parse_term_description(desc):
@@ -90,15 +96,21 @@ def parse_term_description(desc):
         or m.group("season3")
         or m.group("season4")
         or m.group("season5")
+        or m.group("season6")
         or ""
     ).lower()
     term = SEASON_TERM.get(season_word)
     if term is None:
         return None, None
-    single = m.group("single_year") or m.group("single_year2")
+    single = (
+        m.group("single_year")
+        or m.group("single_year2")
+        or m.group("single_year3")
+    )
     if single:
-        # Single-year forms ("Fall Term 2026", "2026 - Fall") — the season
-        # determines which side of the academic-year boundary it falls on.
+        # Single-year forms ("Fall Term 2026", "2026 - Fall", "2027 Winter
+        # Term") — the season determines which side of the academic-year
+        # boundary it falls on.
         year = int(single)
         if term == "F":
             return (year, year + 1), term
@@ -396,6 +408,12 @@ JENZABAR_JICS_COLLEGES = [
         "https://theloo.tougaloo.edu/ICS/Academics/Academics_Homepage.jnz"
         "?portlet=AddDrop_Courses&screen=Advanced+Course+Search&screenType=next",
         "CSC",
+    ),
+    (
+        College.WARTBURG,
+        "https://my.wartburg.edu/ics/Academics/Academics_Homepage.jnz"
+        "?portlet=Course_Search&screen=Advanced+Course+Search&screenType=next",
+        "CS",
     ),
 ]
 
