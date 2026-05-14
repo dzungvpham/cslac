@@ -45,24 +45,30 @@ from course_schedule.course_schedule_scraper import CourseScheduleScraper
 
 # ---- term-description parsing ---------------------------------------------
 
-# Accept the four known forms:
-#   "Fall 2024-2025"               (Claflin)
-#   "2024-2025 - Fall Semester"    (Hendrix)
-#   "2026-2027 Fall"               (Illinois)
-#   "FALL TERM 2026"               (Beloit)
+# Accept the known forms:
+#   "Fall 2024-2025"                       (Claflin)
+#   "Fall 2024-2025 Academic Year"         (Johnson C. Smith)
+#   "2024-2025 - Fall Semester"            (Hendrix, Lyon)
+#   "2024-2025 - Fall"                     (Hampden-Sydney, recent years)
+#   "2024-2025 Fall" / "2026-2027 Fall"    (Illinois, Hampden-Sydney older years)
+#   "FALL TERM 2026"                       (Beloit)
+#   "2026 - Fall" / "2025 - Spring"        (Tougaloo)
 #
 # The whole description must match — anything extra (e.g. "- Fall I Subterm"
-# trailers, "Fall 1st half", "Summer Session", "Summer 1 Semester") falls
-# through and is skipped so we don't double-count subterms.
+# trailers, "Fall 1st half", "Summer Session", "Summer 1 Semester",
+# "Graduate Fall") falls through and is skipped so we don't double-count
+# subterms or pick up graduate-only sections.
 TERM_DESC_RE = re.compile(
     r"^\s*(?:"
-    r"(?P<season1>Fall|Spring)\s+(?P<range1>\d{4}-\d{2,4})"
+    r"(?P<season1>Fall|Spring)\s+(?P<range1>\d{4}-\d{2,4})(?:\s+Academic\s+Year)?"
     r"|"
-    r"(?P<range2>\d{4}-\d{2,4})\s*-\s*(?P<season2>Fall|Spring)\s+Semester"
+    r"(?P<range2>\d{4}-\d{2,4})\s*-\s*(?P<season2>Fall|Spring)(?:\s+Semester)?"
     r"|"
     r"(?P<range3>\d{4}-\d{2,4})\s+(?P<season3>Fall|Spring)"
     r"|"
     r"(?P<season4>Fall|Spring)\s+Term\s+(?P<single_year>\d{4})"
+    r"|"
+    r"(?P<single_year2>\d{4})\s*-\s*(?P<season5>Fall|Spring)"
     r")\s*$",
     re.I,
 )
@@ -83,15 +89,17 @@ def parse_term_description(desc):
         or m.group("season2")
         or m.group("season3")
         or m.group("season4")
+        or m.group("season5")
         or ""
     ).lower()
     term = SEASON_TERM.get(season_word)
     if term is None:
         return None, None
-    if m.group("single_year"):
-        # "Fall Term 2026" — single year, season determines which side of
-        # the academic year boundary it falls on.
-        year = int(m.group("single_year"))
+    single = m.group("single_year") or m.group("single_year2")
+    if single:
+        # Single-year forms ("Fall Term 2026", "2026 - Fall") — the season
+        # determines which side of the academic-year boundary it falls on.
+        year = int(single)
         if term == "F":
             return (year, year + 1), term
         return (year - 1, year), term
@@ -334,6 +342,11 @@ class JenzabarJICSScraper(CourseScheduleScraper):
 # ---- per-college configs --------------------------------------------------
 
 # (College, search_url, subject)
+#
+# The same form (term + dept + division dropdowns, `pg0_V_dgCourses` result
+# grid, `letterNavigator` pagination) is also exposed by some deployments
+# under `portlet=AddDrop_Courses` instead of `portlet=Course_Schedules`.
+# Both are public and use identical HTML, so they share this scraper.
 JENZABAR_JICS_COLLEGES = [
     (
         College.BELOIT,
@@ -348,6 +361,13 @@ JENZABAR_JICS_COLLEGES = [
         "CSCI",
     ),
     (
+        College.HAMPDEN_SYDNEY,
+        "https://tigerweb.hsc.edu/ICS/Course_Search.jnz"
+        "?portlet=AddDrop_Courses_2014-08-05T12-46-04-281"
+        "&screen=Advanced+Course+Search&screenType=next",
+        "COMS",
+    ),
+    (
         College.HENDRIX,
         "https://campusweb.hendrix.edu/ICS/Academics/Course_Search.jnz"
         "?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
@@ -358,6 +378,24 @@ JENZABAR_JICS_COLLEGES = [
         "https://connect2.ic.edu/ICS/default.aspx"
         "?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
         "CS",
+    ),
+    (
+        College.JOHNSON_C_SMITH,
+        "https://my.jcsu.edu/ICS/Students/Student_Resources/Default_Page.jnz"
+        "?portlet=AddDrop_Courses&screen=Advanced+Course+Search&screenType=next",
+        "CSC",
+    ),
+    (
+        College.LYON,
+        "https://my.lyon.edu/ICS/default.aspx"
+        "?portlet=AddDrop_Courses&screen=Advanced+Course+Search&screenType=next",
+        "CSC",
+    ),
+    (
+        College.TOUGALOO,
+        "https://theloo.tougaloo.edu/ICS/Academics/Academics_Homepage.jnz"
+        "?portlet=AddDrop_Courses&screen=Advanced+Course+Search&screenType=next",
+        "CSC",
     ),
 ]
 
