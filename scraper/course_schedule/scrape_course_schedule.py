@@ -43,11 +43,13 @@ from course_schedule.hamilton import HamiltonScraper
 from course_schedule.haverford import HaverfordScraper
 from course_schedule.holy_cross import HolyCrossScraper
 from course_schedule.hope import HopeScraper
+from course_schedule.houghton import HoughtonScraper
 from course_schedule.hobart_william_smith import HobartWilliamSmithScraper
 from course_schedule.knox import KnoxScraper
 from course_schedule.hyperschedule import HarveyMuddScraper, PomonaScraper
 from course_schedule.jenzabar_jics import jenzabar_jics_scrapers
 from course_schedule.macalester import MacalesterScraper
+from course_schedule.maryville import MaryvilleScraper
 from course_schedule.middlebury import MiddleburyScraper
 from course_schedule.minnesota_morris import MinnesotaMorrisScraper
 from course_schedule.mount_holyoke import MountHolyokeScraper
@@ -103,10 +105,12 @@ SCRAPERS = [
     HaverfordScraper,
     HolyCrossScraper,
     HopeScraper,
+    HoughtonScraper,
     HobartWilliamSmithScraper,
     HarveyMuddScraper,
     KnoxScraper,
     MacalesterScraper,
+    MaryvilleScraper,
     MiddleburyScraper,
     MinnesotaMorrisScraper,
     MountHolyokeScraper,

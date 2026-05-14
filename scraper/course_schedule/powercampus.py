@@ -61,6 +61,16 @@ TERM_MAP = {
     "SUMMER": (-1, "Su"),
 }
 
+# OWU and a few other deployments split the summer into ``SUM1``/``SUM2``
+# (and occasionally ``SP1``/``FA1`` mini-terms). Match by prefix so any
+# numbered variant maps to the same internal code.
+TERM_PREFIX_MAP = [
+    ("SUM",  (-1, "Su")),
+    ("FA",   (0,  "F")),   # FALL is caught by TERM_MAP first; FA1/FA2 fall here.
+    ("SP",   (-1, "S")),   # SPRING is caught by TERM_MAP first.
+    ("WIN",  (-1, "W")),
+]
+
 # The X-Current-Page header is required by the SELFSERV API. The value is
 # base64("SectionSearchId").
 SECTION_SEARCH_PAGE = base64.b64encode(b"SectionSearchId").decode("ascii")
@@ -80,6 +90,10 @@ class PowerCampusScraper(CourseScheduleScraper):
 
     base_url: str = ""
     subject: str = ""
+    # Path prefix between the host and ``/Search/Section`` / ``/Sections/Search``.
+    # Most deployments live under ``/SELFSERV`` (uppercase), but Ohio Wesleyan's
+    # campus.owu.edu instance uses lowercase ``/selfserv``.
+    selfserv_path: str = "/SELFSERV"
     # PowerCampus returns every visible term in one response, so we don't
     # iterate (year, term) ourselves — `schedule_pages` yields a single
     # sentinel page and `fetch_page` fans the response back out by term.
@@ -95,7 +109,7 @@ class PowerCampusScraper(CourseScheduleScraper):
     # ---- HTTP plumbing -------------------------------------------------------
 
     def _url(self, path):
-        return f"{self.base_url}/SELFSERV{path}"
+        return f"{self.base_url}{self.selfserv_path}{path}"
 
     def _search_url(self):
         return self._url(f"/Search/Section?eventId={self.subject}")
@@ -116,20 +130,51 @@ class PowerCampusScraper(CourseScheduleScraper):
         if self._sections_by_term is not None:
             return self._sections_by_term
         s = self._ensure_session()
-        resp = s.post(
-            self._url("/Sections/Search"),
-            json={
-                "sectionSearchParameters": {"eventId": self.subject},
-                "startIndex": 0,
-                "length": PAGE_SIZE,
-            },
-            headers={"X-Current-Page": SECTION_SEARCH_PAGE},
-            timeout=self.request_timeout,
-        )
-        resp.raise_for_status()
-        sections = (resp.json() or {}).get("data", {}).get("sections", []) or []
+        # Walk through every page reported by ``overallCount``. PowerCampus's
+        # Sections/Search caps response size somewhere around 50 items per
+        # call on some deployments (Ohio Wesleyan's catalog UI paginates 10
+        # at a time), so we keep advancing ``startIndex`` until we've seen
+        # ``overallCount`` results — `PAGE_SIZE = 500` is just the per-call
+        # upper bound and the actual page size is whatever the server returns.
+        sections: list = []
+        start = 0
+        overall = None
+        page_calls = 0
+        while True:
+            resp = s.post(
+                self._url("/Sections/Search"),
+                json={
+                    "sectionSearchParameters": {"eventId": self.subject},
+                    "startIndex": start,
+                    "length": PAGE_SIZE,
+                },
+                headers={"X-Current-Page": SECTION_SEARCH_PAGE},
+                timeout=self.request_timeout,
+            )
+            resp.raise_for_status()
+            data = (resp.json() or {}).get("data", {}) or {}
+            batch = data.get("sections") or []
+            if overall is None:
+                overall = int(data.get("overallCount") or 0)
+            sections.extend(batch)
+            if not batch:
+                break
+            start += len(batch)
+            if start >= overall:
+                break
+            page_calls += 1
+            if page_calls > 200:
+                print(f"  pagination safety cap hit at {start}/{overall}", flush=True)
+                break
+
         buckets: dict = {}
         for sec in sections:
+            # OWU emits a parallel "dual requirement" row alongside every real
+            # section (eventName like "QUANTITATIVE REQUIREMENT", same eventId
+            # and section number as the actual class) — these are attribute
+            # markers, not registrable sections, so drop them.
+            if (sec.get("defaultCreditType") or "").upper() == "DUAL":
+                continue
             key = _ay_term(sec)
             if key is None:
                 continue
@@ -185,13 +230,21 @@ def _ay_term(section):
     """Return ((start_year, end_year), term_code) for a section, or None."""
     year = section.get("year")
     term = (section.get("term") or "").upper()
-    if not year or term not in TERM_MAP:
+    if not year:
         return None
     try:
         y = int(year)
     except (TypeError, ValueError):
         return None
-    offset, code = TERM_MAP[term]
+    offset_code = TERM_MAP.get(term)
+    if offset_code is None:
+        for prefix, oc in TERM_PREFIX_MAP:
+            if term.startswith(prefix):
+                offset_code = oc
+                break
+    if offset_code is None:
+        return None
+    offset, code = offset_code
     start = y + offset
     return ((start, start + 1), code)
 
@@ -302,6 +355,14 @@ def _format_location(building, room):
 #   - `subject` is the course-code prefix (matched against `eventId`).
 POWERCAMPUS_COLLEGES = [
     {"college": College.ALBRIGHT, "base_url": "https://selfservice.albright.edu", "subject": "CSC"},
+    # Ohio Wesleyan hosts PowerCampus at a non-standard path (lowercase
+    # `/selfserv`) and under campus.owu.edu rather than a selfservice.* host.
+    {
+        "college": College.OHIO_WESLEYAN,
+        "base_url": "https://campus.owu.edu",
+        "selfserv_path": "/selfserv",
+        "subject": "CS",
+    },
 ]
 
 
@@ -309,7 +370,7 @@ def _make_class(cfg):
     coll = cfg["college"]
     safe = re.sub(r"\W+", "", str(coll))
     attrs = {"college": coll}
-    for key in ("base_url", "subject"):
+    for key in ("base_url", "subject", "selfserv_path"):
         if key in cfg:
             attrs[key] = cfg[key]
     return type(f"{safe}PowerCampusScraper", (PowerCampusScraper,), attrs)
