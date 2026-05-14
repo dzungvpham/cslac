@@ -48,6 +48,7 @@ from course_schedule.middlebury import MiddleburyScraper
 from course_schedule.minnesota_morris import MinnesotaMorrisScraper
 from course_schedule.mount_holyoke import MountHolyokeScraper
 from course_schedule.occidental import OccidentalScraper
+from course_schedule.powercampus import powercampus_scrapers
 from course_schedule.puget_sound import PugetSoundScraper
 from course_schedule.randolph_macon import RandolphMaconScraper
 from course_schedule.richmond import RichmondScraper
@@ -118,6 +119,7 @@ SCRAPERS = [
     *selfservice_scrapers(),
     *banner9_scrapers(),
     *jenzabar_jics_scrapers(),
+    *powercampus_scrapers(),
 ]
 
 

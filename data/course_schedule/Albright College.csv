@@ -1,0 +1,17 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url
+Albright College,2024-25,Su,CSC 282,A,Intro Internshp#,"Catone, Christopher",00:00-23:59,https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,F,CSC 141,A,Foundations of Computer Science I/Lab,"Kaul, David",TTh 11:00-12:40 (Roessner 200),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,F,CSC 141,B,Foundations of Computer Science I/Lab,"Kopec, David",MW 08:00-09:40 (Roessner 202),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,F,CSC 210,A,Algorithm Design and Analysis,"Kopec, David",TTh 08:00-09:15 (Roessner 200),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,F,CSC 391,A,Advanced Topics in Computer Science,"Tidball, Ernest",TTh 18:00-19:15 (Roessner 200),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,F,CSC 491,A,Seminar,"Kopec, David",MWF 10:00-10:50 (Roessner 200),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,S,CSC 142,A,Foundations of Computer Science II/Lab,"Kopec, David",MW 11:00-12:40 (Science Center 251),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,S,CSC 142,B,Foundations of Computer Science II/Lab,"Kopec, David",MW 09:00-10:40 (Science Center 251),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,S,CSC 310,A,Computer Architecture and Organization,"Kopec, David",TTh 11:00-12:15 (Roessner 102),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2025-26,S,CSC 391,A,Extended Web Technologies,"Baldridge, Mark",MWF 14:00-14:50 (Roessner 200),https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2026-27,F,CSC 141,A,Foundations of Computer Science I/Lab,"Kaul, David",TTh 11:00-12:40,https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2026-27,F,CSC 141,B,Foundations of Computer Science I/Lab,"Tidball, Ernest",TTh 18:00-19:40,https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2026-27,F,CSC 210,A,Algorithm Design and Analysis,"Kopec, David",TTh 11:00-12:15,https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2026-27,F,CSC 383,A,Game Engines,"Baldridge, Mark",MW 10:00-12:05,https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2026-27,F,CSC 391,A,Human-Computer Interaction,"Kopec, David",W 18:00-20:50,https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
+Albright College,2026-27,F,CSC 480,A,Introduction to Artificial Intelligence,"Kopec, David",TTh 14:30-15:45,https://selfservice.albright.edu/SELFSERV/Search/Section?eventId=CSC
