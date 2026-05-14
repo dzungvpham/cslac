@@ -167,10 +167,14 @@ class CourseScheduleScraper:
             for term in terms:
                 yield academic_year, term
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
+        skip_pairs = skip_pairs or set()
         rows = []
         for academic_year, term in self.schedule_pages():
             label = self._label(academic_year, term)
+            if (format_academic_year(academic_year), term) in skip_pairs:
+                print(f"  [{label}] already scraped, skipping (use --force to re-scrape)", flush=True)
+                continue
             try:
                 html = self.fetch_page(academic_year, term)
             except Exception as e:
@@ -184,22 +188,31 @@ class CourseScheduleScraper:
             rows.extend(page_rows)
         return rows
 
-    def run(self, output_dir):
+    def run(self, output_dir, force=False):
         """Scrape and merge results into `output_dir/<College Name>.csv`.
 
-        For every `(academic_year, term)` pair present in the new scrape, the
-        existing CSV's rows for that pair are replaced wholesale with the new
-        rows. Pairs absent from the new scrape are preserved untouched, so
-        terms a school later removes from their public schedule stay in our
-        history.
+        Default (`force=False`): any `(academic_year, term)` pair already
+        present in the existing CSV is skipped — only new pairs are fetched
+        and appended. This is the quarterly top-up mode.
+
+        With `force=True`: every configured pair is re-scraped. For each
+        scraped pair, the existing CSV's rows for that pair are replaced
+        wholesale with the new rows. Pairs absent from the new scrape are
+        preserved untouched, so terms a school later removes from their
+        public schedule stay in our history.
         """
         if not self.college:
             raise ValueError(f"{type(self).__name__}.college is not set")
 
-        new_rows = self.scrape()
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
         path = output_dir / f"{self.college}.csv"
+
+        skip_pairs = set()
+        if not force and path.exists() and path.stat().st_size > 0:
+            skip_pairs = self._already_scraped_pairs(path)
+
+        new_rows = self.scrape(skip_pairs=skip_pairs)
 
         new_df = pd.DataFrame(new_rows)
         for col in OUTPUT_COLUMNS:
@@ -243,6 +256,28 @@ class CourseScheduleScraper:
 
     # ---- helpers -------------------------------------------------------------
 
+    def _already_scraped_pairs(self, path):
+        """Return the set of `(academic_year_str, term)` iteration pairs from
+        `self.schedule_pages()` that are already covered by the CSV at `path`.
+
+        For scrapers with `terms = []` (one URL per year covering all terms),
+        the iteration `term` is the empty string but stored rows carry real
+        term codes ("F", "S", ...), so any row matching the academic year
+        counts as coverage.
+        """
+        df = pd.read_csv(path, dtype=str, keep_default_na=False)
+        seen_year_term = set(zip(df["academic_year"], df["term"]))
+        seen_years = set(df["academic_year"])
+        skip = set()
+        for academic_year, term in self.schedule_pages():
+            ay = format_academic_year(academic_year)
+            if term == NO_TERM:
+                if ay in seen_years:
+                    skip.add((ay, term))
+            elif (ay, term) in seen_year_term:
+                skip.add((ay, term))
+        return skip
+
     @staticmethod
     def past_academic_years(n=5, today=None):
         """Return the last `n` academic years as (start, end) int tuples,
@@ -278,6 +313,44 @@ def format_academic_year(academic_year):
     """`(2025, 2026)` -> `'2025-26'`."""
     start, end = academic_year
     return f"{start}-{str(end)[-2:]}"
+
+
+def format_meeting_slots(slots):
+    """Render `(days, time_range, location)` triples as a meeting string.
+
+    Triples sharing the same `(time_range, location)` are merged into a single
+    weekday string (keeping the longer day string when they differ). Distinct
+    slots are joined with `; `. Empty triples are skipped.
+
+    Example: `[("MWF", "11:00-11:50", "DANA 137"), ("T", "13:00-15:50", "")]`
+    -> `"MWF 11:00-11:50 (DANA 137); T 13:00-15:50"`.
+    """
+    groups = {}
+    order = []
+    for days, time_range, location in slots:
+        if not days and not time_range and not location:
+            continue
+        key = (time_range, location)
+        if key not in groups:
+            groups[key] = days
+            order.append(key)
+        elif len(days) > len(groups[key]):
+            groups[key] = days
+    parts = []
+    for key in order:
+        time_range, location = key
+        days = groups[key]
+        bits = []
+        if days:
+            bits.append(days)
+        if time_range:
+            bits.append(time_range)
+        s = " ".join(bits)
+        if location:
+            s = f"{s} ({location})" if s else f"({location})"
+        if s:
+            parts.append(s)
+    return "; ".join(parts)
 
 
 # Academic-calendar ordering: Fall, Winter/J-term, Spring, Summer.

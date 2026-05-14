@@ -23,7 +23,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from constants import College  # noqa: E402
 
-from course_schedule.course_schedule_scraper import CourseScheduleScraper
+from course_schedule.course_schedule_scraper import CourseScheduleScraper, format_meeting_slots
 
 DATA_URL = "https://pubapps.bucknell.edu/CourseInformation/data/course/term/{term}"
 LOOKUP_URL = "https://pubapps.bucknell.edu/CourseInformation/#/lookup"
@@ -104,43 +104,14 @@ def _format_instructors(instructors):
 
 
 def _format_meetings(meetings):
-    """Render a `Meetings` list as `"MWF 11:00-11:50 (DANA 137); T 13:00-15:50"`.
-
-    Meetings sharing the same (time, location) are merged into a single
-    weekday string; distinct slots are joined with `; `.
-    """
-    groups = {}  # (start, end, location) -> ordered list of day abbrevs
-    order = []
+    """Render a `Meetings` list as `"MWF 11:00-11:50 (DANA 137); T 13:00-15:50"`."""
+    slots = []
     for m in meetings:
         days = "".join(abbr for flag, abbr in DAY_FLAGS if (m.get(flag) or "").upper() == "Y")
         time_range = _format_time_range(m.get("Start"), m.get("End"))
         location = (m.get("Location") or "").strip()
-        if not days and not time_range and not location:
-            continue
-        key = (time_range, location)
-        if key not in groups:
-            groups[key] = days
-            order.append(key)
-        else:
-            # Same slot listed twice — keep the longer day string.
-            if len(days) > len(groups[key]):
-                groups[key] = days
-
-    parts = []
-    for key in order:
-        time_range, location = key
-        days = groups[key]
-        bits = []
-        if days:
-            bits.append(days)
-        if time_range:
-            bits.append(time_range)
-        s = " ".join(bits)
-        if location:
-            s = f"{s} ({location})" if s else f"({location})"
-        if s:
-            parts.append(s)
-    return "; ".join(parts)
+        slots.append((days, time_range, location))
+    return format_meeting_slots(slots)
 
 
 def _format_time_range(start, end):

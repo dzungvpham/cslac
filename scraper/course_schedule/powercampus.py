@@ -43,7 +43,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from constants import College  # noqa: E402
 
-from course_schedule.course_schedule_scraper import CourseScheduleScraper
+from course_schedule.course_schedule_scraper import CourseScheduleScraper, format_meeting_slots
 
 # Same day-index convention used by the PowerCampus UI:
 #   0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat.
@@ -272,40 +272,14 @@ def _format_instructors(instructors):
 
 
 def _format_schedules(schedules):
-    """Render the `schedules` array as `"MWF 10:35-11:25 (Roessner 200)"`.
-
-    Multi-meeting sections (lecture + lab) are joined with `; `.
-    """
-    groups = {}
-    order = []
+    """Render the `schedules` array as `"MWF 10:35-11:25 (Roessner 200)"`."""
+    slots = []
     for sch in schedules:
         days = _format_days(sch.get("scheduledDays") or [])
         time_range = _format_time_range(sch.get("startTime"), sch.get("endTime"))
         location = _format_location(sch.get("bldgName"), sch.get("roomId"))
-        if not days and not time_range and not location:
-            continue
-        key = (time_range, location)
-        if key not in groups:
-            groups[key] = days
-            order.append(key)
-        elif len(days) > len(groups[key]):
-            groups[key] = days
-
-    parts = []
-    for key in order:
-        time_range, location = key
-        days = groups[key]
-        bits = []
-        if days:
-            bits.append(days)
-        if time_range:
-            bits.append(time_range)
-        s = " ".join(bits)
-        if location:
-            s = f"{s} ({location})" if s else f"({location})"
-        if s:
-            parts.append(s)
-    return "; ".join(parts)
+        slots.append((days, time_range, location))
+    return format_meeting_slots(slots)
 
 
 def _format_days(scheduled_days):

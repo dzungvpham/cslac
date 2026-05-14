@@ -3,11 +3,11 @@
 To add a new school: implement a `CourseScheduleScraper` subclass in a new
 module under this package, then add it to `SCRAPERS` below.
 
-Re-running a scraper merges newly-scraped rows into any existing CSV
-(deduped on the full row), so prior history is preserved. By default,
-colleges with an existing CSV in `data/course_schedule/` are skipped to
-avoid the cost of re-scraping; pass `--force` to re-scrape everything and
-merge in any new rows.
+By default, each scraper only fetches `(academic_year, term)` pairs that
+are not already present in the college's CSV — designed for a quarterly
+top-up run. Pass `--force` to re-scrape every configured pair; existing
+rows for a re-scraped pair are replaced wholesale, and terms absent from
+the new scrape are preserved.
 """
 
 import argparse
@@ -150,20 +150,17 @@ def main():
     parser.add_argument(
         "--force",
         action="store_true",
-        help="Re-scrape colleges even if their CSV already exists; new rows are merged in.",
+        help="Re-scrape every configured (year, term) pair instead of only new ones; "
+        "existing rows for re-scraped pairs are replaced.",
     )
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     for cls in SCRAPERS:
         print(f"== {cls.__name__} ({cls.college}) ==", flush=True)
-        existing = OUTPUT_DIR / f"{cls.college}.csv"
-        if existing.exists() and not args.force:
-            print(f"  -- already scraped ({existing}); pass --force to redo", flush=True)
-            continue
         try:
             with cls() as scraper:
-                path, n = scraper.run(OUTPUT_DIR)
+                path, n = scraper.run(OUTPUT_DIR, force=args.force)
                 print(f"  -> wrote {n} rows to {path}", flush=True)
         except Exception:
             print(f"  !! {cls.__name__} failed:", flush=True)

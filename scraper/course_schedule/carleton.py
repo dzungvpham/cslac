@@ -39,7 +39,11 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from constants import College  # noqa: E402
 
-from course_schedule.course_schedule_scraper import CourseScheduleScraper, NO_TERM
+from course_schedule.course_schedule_scraper import (
+    CourseScheduleScraper,
+    NO_TERM,
+    format_meeting_slots,
+)
 
 SEARCH_URL = "https://www.carleton.edu/catalog/current/search/"
 
@@ -157,7 +161,7 @@ class CarletonScraper(CourseScheduleScraper):
             elif "classMeeting" in (li.get("class") or []):
                 meetings.append(_extract_meeting(li))
 
-        time_str = _format_meetings(meetings)
+        time_str = format_meeting_slots(meetings)
         row = self.make_row(
             ay,
             term_code,
@@ -232,31 +236,3 @@ def _extract_meeting(li):
     return days, time_range, location
 
 
-def _format_meetings(meetings):
-    """Same shape as banner9._format_meetings — group by (time, location)."""
-    groups = {}
-    order = []
-    for days, time_range, location in meetings:
-        if not days and not time_range and not location:
-            continue
-        key = (time_range, location)
-        if key not in groups:
-            groups[key] = days
-            order.append(key)
-        elif len(days) > len(groups[key]):
-            groups[key] = days
-    parts = []
-    for key in order:
-        time_range, location = key
-        days = groups[key]
-        bits = []
-        if days:
-            bits.append(days)
-        if time_range:
-            bits.append(time_range)
-        s = " ".join(bits)
-        if location:
-            s = f"{s} ({location})" if s else f"({location})"
-        if s:
-            parts.append(s)
-    return "; ".join(parts)

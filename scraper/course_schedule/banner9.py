@@ -48,7 +48,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from constants import College  # noqa: E402
 
-from course_schedule.course_schedule_scraper import CourseScheduleScraper
+from course_schedule.course_schedule_scraper import CourseScheduleScraper, format_meeting_slots
 
 # "Fall 2026", "Fall Semester 2026", "Spring 2026 (View Only)",
 # "Winter Term 2027" (Lawrence trimester), etc.
@@ -348,12 +348,8 @@ def _format_faculty(faculty):
 
 
 def _format_meetings(meetings_faculty):
-    """Render a `meetingsFaculty` array as `"MWF 10:35-11:25 (RISC 362)"`.
-
-    Multi-meeting sections (e.g. lecture + lab) are joined with `; `.
-    """
-    groups = {}  # (time_range, location) -> day string
-    order = []
+    """Render a `meetingsFaculty` array as `"MWF 10:35-11:25 (RISC 362)"`."""
+    slots = []
     for m in meetings_faculty:
         mt = m.get("meetingTime") or {}
         days = "".join(abbr for k, abbr in DAY_FLAGS if mt.get(k))
@@ -361,30 +357,8 @@ def _format_meetings(meetings_faculty):
         building = _clean(mt.get("building"))
         room = _clean(mt.get("room"))
         location = " ".join(x for x in [building, room] if x)
-        if not days and not time_range and not location:
-            continue
-        key = (time_range, location)
-        if key not in groups:
-            groups[key] = days
-            order.append(key)
-        elif len(days) > len(groups[key]):
-            groups[key] = days
-
-    parts = []
-    for key in order:
-        time_range, location = key
-        days = groups[key]
-        bits = []
-        if days:
-            bits.append(days)
-        if time_range:
-            bits.append(time_range)
-        s = " ".join(bits)
-        if location:
-            s = f"{s} ({location})" if s else f"({location})"
-        if s:
-            parts.append(s)
-    return "; ".join(parts)
+        slots.append((days, time_range, location))
+    return format_meeting_slots(slots)
 
 
 def _format_time_range(start, end):
