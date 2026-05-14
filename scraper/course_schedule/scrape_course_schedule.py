@@ -57,6 +57,7 @@ from course_schedule.occidental import OccidentalScraper
 from course_schedule.powercampus import powercampus_scrapers
 from course_schedule.presbyterian import PresbyterianScraper
 from course_schedule.puget_sound import PugetSoundScraper
+from course_schedule.randolph import RandolphScraper
 from course_schedule.randolph_macon import RandolphMaconScraper
 from course_schedule.richmond import RichmondScraper
 from course_schedule.selfservice import selfservice_scrapers
@@ -118,6 +119,7 @@ SCRAPERS = [
     PomonaScraper,
     PresbyterianScraper,
     PugetSoundScraper,
+    RandolphScraper,
     RandolphMaconScraper,
     RichmondScraper,
     SewaneeScraper,
