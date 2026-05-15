@@ -21,12 +21,14 @@ import argparse
 import csv
 import json
 import re
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 DEFAULT_INPUT_DIR = ROOT / "data" / "course_schedule"
 DEFAULT_OUTPUT = Path(__file__).parent / "course_schedule_data.json"
+DEFAULT_FACULTY = Path(__file__).parent / "faculty_data.json"
 
 MIN_YEAR = "2021-22"
 TERM_ORDER = {"F": 0, "W": 1, "S": 2, "Su": 3, "": 4}
@@ -127,8 +129,201 @@ def natural_key(s: str) -> list:
     return [int(p) if p.isdigit() else p.lower() for p in re.split(r"(\d+)", s)]
 
 
-def build_data(input_dir: Path) -> dict:
+# ── instructor → faculty matching ──────────────────────────────────────────
+# Instructor strings in catalog scrapes use many formats: "First Last",
+# "First M. Last", "Last, First", "Last,Initial" (Occidental-style),
+# "D.Bunde" (initial+last), plus multi-instructor separators (`;`, `,`) and
+# generic tokens like "Staff" / "TBA". We parse each row into one or more
+# (first, last) tuples, then match against the per-college faculty list by
+# last-token equality + first-name/initial agreement.
+
+_GENERIC_RE = re.compile(
+    r"^("
+    r"staff|tba|tbd|tba/tba|faculty|to be announced|unknown faculty|"
+    r"instructor[\s\-]?tba|department staff|csb staff|"
+    r"a&s|shss|full[\s\-]?time faculty|adjunct|"
+    r"announced|instructor|none|n/a"
+    r")$",
+    re.IGNORECASE,
+)
+
+# Initial(s) + Last with no space: "D.Bunde", "A.Leahy", "D.J. Smith"
+_INITIALS_LAST_RE = re.compile(r"^((?:[A-Z]\.\s*){1,3})([A-Z][a-z][A-Za-z'\-]+)$")
+
+
+def _norm(s: str) -> str:
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return s.lower().strip()
+
+
+def _is_generic(s: str) -> bool:
+    s = s.strip().rstrip(",").rstrip(".").strip()
+    if not s:
+        return True
+    return bool(_GENERIC_RE.match(s))
+
+
+def _split_no_semi(s: str) -> list[str]:
+    s = s.strip()
+    if not s:
+        return []
+    if "," not in s:
+        return [] if _is_generic(s) else [s]
+    parts = [p.strip() for p in s.split(",") if p.strip()]
+    kept = [p for p in parts if not _is_generic(p)]
+    if not kept:
+        return []
+    if len(kept) == 1:
+        return kept
+    # 2 kept parts: if both contain spaces, they're distinct full names;
+    # otherwise this is a single "Last, First [Middle]" record.
+    if len(kept) == 2:
+        if " " in kept[0] and " " in kept[1]:
+            return kept
+        return [", ".join(kept)]
+    # 3+ kept parts: treat as multiple comma-separated names.
+    return kept
+
+
+def split_instructors(raw: str) -> list[str]:
+    s = raw.strip()
+    if not s:
+        return []
+    if ";" in s:
+        out: list[str] = []
+        for p in s.split(";"):
+            out.extend(_split_no_semi(p))
+        return out
+    return _split_no_semi(s)
+
+
+def parse_instructor_name(s: str) -> tuple[str, str] | None:
+    """(first, last) lowercase/ASCII. `first` may be a single-letter initial."""
+    s = s.strip().strip(",").strip()
+    if not s or _is_generic(s):
+        return None
+    m = _INITIALS_LAST_RE.match(s)
+    if m:
+        return (m.group(1).strip()[0].lower(), _norm(m.group(2)))
+    if "," in s:
+        last, _, rest = s.partition(",")
+        last = _norm(last)
+        rest_tokens = [t.rstrip(".") for t in rest.split() if t.strip()]
+        if not last or not rest_tokens:
+            return None
+        return (_norm(rest_tokens[0]), last)
+    tokens = [t for t in s.split() if t]
+    if len(tokens) < 2:
+        return None
+    return (_norm(tokens[0].rstrip(".")), _norm(tokens[-1]))
+
+
+def _parse_faculty_name(name: str) -> tuple[str, str] | None:
+    tokens = [t for t in name.split() if t]
+    if len(tokens) < 2:
+        return None
+    return (_norm(tokens[0]), _norm(tokens[-1]))
+
+
+def _match_one(parsed, faculty_index: list[tuple[str, str, dict]]) -> dict | None:
+    """parsed=(first,last); faculty_index=[(first,last,raw_faculty), ...]."""
+    if not parsed:
+        return None
+    pfirst, plast = parsed
+    plast_tok = plast.rsplit(" ", 1)[-1]
+    cands: list[tuple[int, dict]] = []
+    last_only: list[dict] = []
+    for ffirst, flast, f in faculty_index:
+        if flast != plast_tok:
+            continue
+        last_only.append(f)
+        if pfirst == ffirst:
+            cands.append((2, f))
+        elif len(pfirst) == 1 and pfirst == ffirst[:1]:
+            cands.append((1, f))
+        elif len(ffirst) == 1 and ffirst == pfirst[:1]:
+            cands.append((1, f))
+    if cands:
+        cands.sort(key=lambda x: -x[0])
+        if len(cands) == 1 or cands[0][0] > cands[1][0]:
+            return cands[0][1]
+        return None  # ambiguous tie on first-name strength
+    # Loose fallback: nickname mismatch (e.g. "Christopher" vs "Chris",
+    # "Zachary" vs "Zach", "Alexandra" vs "Xanda"). If the last name is
+    # unique within the college's faculty, accept it.
+    if len(last_only) == 1:
+        return last_only[0]
+    return None
+
+
+def load_faculty(path: Path) -> dict[str, list[dict]]:
+    """Read faculty_data.json → {college: [{name, label, url}]}.
+
+    `label` is the faculty member's initials — first + last (e.g., "JA" for
+    Jeannie Albrecht). Used as the in-cell display text.
+    """
+    if not path or not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    out: dict[str, list[dict]] = {}
+    for college in data:
+        people = []
+        for p in college.get("faculty", []):
+            url = p.get("url") or p.get("scholar_url") or None
+            tokens = [t for t in p["name"].split() if t]
+            if len(tokens) >= 2:
+                label = (tokens[0][:1] + tokens[-1][:1]).upper()
+            elif tokens:
+                label = tokens[0][:2].upper()
+            else:
+                label = "?"
+            people.append({"name": p["name"], "url": url, "label": label})
+        out[college["name"]] = people
+    return out
+
+
+def match_instructors(raw: str, faculty: list[dict]) -> tuple[list[dict], bool]:
+    """Parse `raw` instructor field and match against `faculty`.
+
+    Returns (matched, had_specific_name):
+      - matched: list of faculty dicts (with `name`, `label`, `url`)
+      - had_specific_name: True if at least one parseable, non-generic name
+        appeared (regardless of whether it matched). Useful for the caller
+        to decide whether a cell should still render a generic tick when
+        nothing matched.
+    """
+    if not faculty:
+        return [], False
+    pieces = split_instructors(raw)
+    if not pieces:
+        return [], False
+    index = []
+    for p in faculty:
+        parsed = _parse_faculty_name(p["name"])
+        if parsed:
+            index.append((parsed[0], parsed[1], p))
+    matched: list[dict] = []
+    seen_names: set[str] = set()
+    had_specific = False
+    for piece in pieces:
+        parsed = parse_instructor_name(piece)
+        if parsed is None:
+            continue
+        had_specific = True
+        m = _match_one(parsed, index)
+        if m and m["name"] not in seen_names:
+            seen_names.add(m["name"])
+            matched.append(m)
+    return matched, had_specific
+
+
+def build_data(input_dir: Path, faculty_by_college: dict[str, list[dict]] | None = None) -> dict:
+    faculty_by_college = faculty_by_college or {}
     result: dict[str, dict] = {}
+    # Telemetry for the run summary.
+    _stats = {"cells_total": 0, "cells_matched": 0, "instructors_matched": 0}
 
     csv_paths = sorted(input_dir.glob("*.csv"))
 
@@ -165,6 +360,9 @@ def build_data(input_dir: Path) -> dict:
         # picking the display name until we've seen every row so we can prefer
         # a non-lab name when one exists.
         name_obs: dict[str, list[tuple[tuple[str, int], str, bool]]] = defaultdict(list)
+        # Raw instructor strings collected per (code, (year, term)). A cell may
+        # see multiple section rows; each contributes one entry.
+        instr_strs: dict[str, dict[tuple[str, str], list[str]]] = defaultdict(lambda: defaultdict(list))
 
         for r in rows:
             year = r["academic_year"]
@@ -187,6 +385,9 @@ def build_data(input_dir: Path) -> dict:
             if name:
                 tkey = (year, TERM_ORDER.get(term, 99))
                 name_obs[code].append((tkey, name, is_lab_only(name)))
+            instructor = (r.get("instructor") or "").strip()
+            if instructor:
+                instr_strs[code][(year, term)].append(instructor)
 
         # Resolve display name per code; drop codes whose every observed name
         # is lab-only (those are stand-alone lab sections of another course).
@@ -244,6 +445,8 @@ def build_data(input_dir: Path) -> dict:
         college_unique_urls = {u for u in course_url.values() if u}
         drop_title_urls = (not per_term_mode) and len(college_unique_urls) <= 1
 
+        college_faculty = faculty_by_college.get(college, [])
+
         courses_out = []
         for code in sorted_codes:
             cell_urls = url_by_cell.get(code, {})
@@ -262,6 +465,45 @@ def build_data(input_dir: Path) -> dict:
                 ]
                 if course_url[code] and not drop_title_urls:
                     entry["url"] = course_url[code]
+
+            # Resolve instructors per term cell against the college's faculty.
+            # Output is a sparse list parallel to `offered`: each slot is either
+            # a list of {"l": <label>, "u": <url|null>} dicts (when at least
+            # one specific name was named, even if none matched) or null.
+            if college_faculty:
+                instr_col: list = []
+                for (y, t) in sorted_terms:
+                    if (y, t) not in offered[code]:
+                        instr_col.append(None)
+                        continue
+                    raws = instr_strs.get(code, {}).get((y, t), [])
+                    _stats["cells_total"] += 1
+                    if not raws:
+                        instr_col.append(None)
+                        continue
+                    matched_all: list[dict] = []
+                    seen_names: set[str] = set()
+                    had_specific = False
+                    for raw in raws:
+                        m, hs = match_instructors(raw, college_faculty)
+                        had_specific = had_specific or hs
+                        for f in m:
+                            if f["name"] in seen_names:
+                                continue
+                            seen_names.add(f["name"])
+                            matched_all.append(f)
+                    if matched_all:
+                        _stats["cells_matched"] += 1
+                        _stats["instructors_matched"] += len(matched_all)
+                        instr_col.append([
+                            {"l": f["label"], "n": f["name"], "u": f.get("url")}
+                            for f in matched_all
+                        ])
+                    else:
+                        instr_col.append(None)
+                if any(x is not None for x in instr_col):
+                    entry["instructors"] = instr_col
+
             courses_out.append(entry)
 
         result[college] = {
@@ -272,6 +514,14 @@ def build_data(input_dir: Path) -> dict:
             "courses": courses_out,
         }
 
+    if faculty_by_college and _stats["cells_total"]:
+        pct = 100 * _stats["cells_matched"] / _stats["cells_total"]
+        print(
+            f"Instructor matching: {_stats['cells_matched']}/{_stats['cells_total']} "
+            f"cells ({pct:.1f}%) with at least one matched instructor; "
+            f"{_stats['instructors_matched']} total instructor links."
+        )
+
     return result
 
 
@@ -279,9 +529,13 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT_DIR)
     p.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    p.add_argument("--faculty", type=Path, default=DEFAULT_FACULTY,
+                   help="Path to faculty_data.json for instructor name matching. "
+                        "If absent, instructor matching is skipped.")
     args = p.parse_args()
 
-    data = build_data(args.input_dir)
+    faculty = load_faculty(args.faculty)
+    data = build_data(args.input_dir, faculty)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)

@@ -43,6 +43,11 @@
       --danger:     #d20f39;
       --header-h:   0px;
       --summary-h:  0px;
+      /* Fixed Course-column width for the schedule table. Used by both the
+         .course-title-cell width and the .panel-toggle grid template so
+         the term-paginator stays geometrically centered over the term
+         columns. Defined as a single expression so the two always agree. */
+      --course-title-w: clamp(180px, 30vw, 400px);
     }
     [data-theme="dark"] {
       --bg:         #303446;
@@ -358,7 +363,7 @@
     .college-row.open .faculty-panel { display: block; }
 
     .faculty-panel-inner {
-      padding: 0 0 8px 36px; /* indent to align past the chevron */
+      padding: 0 12px 8px 36px; /* indent to align past the chevron */
       animation: fadeSlide 0.18s ease;
     }
     @keyframes fadeSlide {
@@ -494,16 +499,29 @@
     .ftd-num .num-short { display: none; }
 
     /* ── panel view toggle (Faculty / Courses) ─────────────────────────────── */
+    /* The Course column width is locked to a single expression
+       (--course-title-w) shared with the table cell. The toggle row is a
+       2-column grid whose first track is exactly that width plus the
+       sticky cell's right padding (16px), so the second track spans the
+       term-columns area exactly. Centering the paginator there lines it
+       up with the geometric center of the term columns. */
     .panel-toggle {
       position: sticky;
       top: calc(var(--header-h) + var(--summary-h));
       z-index: 20;
       background: var(--expand-bg);
-      display: flex;
-      gap: 4px;
+      display: grid;
+      grid-template-columns: calc(var(--course-title-w) + 16px) 1fr;
+      align-items: center;
       padding: 6px 0 4px;
     }
-    .panel-toggle button {
+    .panel-toggle-views {
+      display: flex;
+      gap: 4px;
+    }
+    /* Scope to the view-toggle buttons only so other buttons rendered into
+       the same row (e.g. .term-page-btn) don't inherit pill styling. */
+    .panel-toggle button[data-view] {
       width: 26px;
       height: 26px;
       padding: 0;
@@ -516,12 +534,12 @@
       color: var(--sub);
       transition: color 0.12s, border-color 0.12s, background 0.12s;
     }
-    .panel-toggle button svg { width: 14px; height: 14px; }
-    .panel-toggle button:hover {
+    .panel-toggle button[data-view] svg { width: 14px; height: 14px; }
+    .panel-toggle button[data-view]:hover {
       color: var(--text);
       border-color: var(--text);
     }
-    .panel-toggle button.active {
+    .panel-toggle button[data-view].active {
       color: var(--bg);
       background: var(--accent);
       border-color: var(--accent);
@@ -529,7 +547,6 @@
 
     /* ── course schedule table ─────────────────────────────────────────────── */
     .course-wrap {
-      margin-right: 12px;
       background: var(--expand-bg);
     }
     .course-table {
@@ -540,7 +557,7 @@
     }
     .course-table th,
     .course-table td {
-      padding: 9px 10px;
+      padding: 9px 5px;
       border-bottom: 1px solid var(--border-sub);
       text-align: center;
       white-space: nowrap;
@@ -552,7 +569,7 @@
       letter-spacing: 0.04em;
       color: var(--sub);
       background: var(--expand-bg);
-      padding: 8px 10px;
+      padding: 8px 5px;
       position: sticky;
       top: calc(var(--header-h) + var(--summary-h) + var(--toggle-h, 0px));
       z-index: 15;
@@ -580,8 +597,9 @@
       display: flex;
       align-items: baseline;
       gap: 10px;
-      min-width: 280px;
-      max-width: 440px;
+      /* Fixed (not min/max): the panel-toggle grid uses the same value to
+         line up the paginator with the term-columns center. */
+      width: var(--course-title-w);
     }
     .course-code {
       font-family: 'IBM Plex Mono', monospace;
@@ -606,14 +624,43 @@
       display: inline-block;
     }
     a.course-check:hover { text-decoration: underline; }
+
+    /* ── instructor initials within a course cell ──────────────────────── */
+    /* When a cell's instructors are matched against the faculty list, we
+       show each person's initials (first + last) linked to their site.
+       Multi-instructor cells stack the initials horizontally with a thin
+       separator so row height stays tight. Hover reveals the full name. */
+    .course-instr-list {
+      font-family: 'IBM Plex Mono', monospace;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .course-instr-row { display: block; }
+    .course-instr-sep {
+      color: var(--sub);
+      font-size: 11px;
+      letter-spacing: 0.04em;
+    }
+    .course-instr {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--sub);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.1s;
+    }
+    a.course-instr:hover { color: var(--accent); }
+    .course-instr-nolink {
+      color: var(--muted);
+    }
     a.course-title-link {
       text-decoration: none;
       color: inherit;
       display: flex;
       align-items: baseline;
       gap: 10px;
-      min-width: 280px;
-      max-width: 440px;
+      width: var(--course-title-w);
     }
     a.course-title-link:hover .course-code,
     a.course-title-link:hover .course-name { color: var(--accent); }
@@ -646,6 +693,42 @@
       color: var(--muted);
       font-size: 12.5px;
     }
+
+    /* ── term pagination buttons (mobile only) ───────────────────────────── */
+    /* Rendered into the panel-toggle row (alongside the Faculty/Courses
+       toggle) so the term-label header keeps its natural column layout.
+       The slot takes the remaining row width and centers its content so
+       the paginator sits roughly over the term-columns area rather than
+       being pushed to the far right. */
+    .term-paginator-slot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .term-paginator {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--sub);
+    }
+    .term-page-btn {
+      background: transparent;
+      border: none;
+      color: var(--sub);
+      font: inherit;
+      line-height: 1;
+      padding: 4px 6px;
+      cursor: pointer;
+      transition: color 0.12s;
+    }
+    .term-page-btn:hover:not(:disabled) { color: var(--text); }
+    .term-page-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+    .term-paginator-range { letter-spacing: 0.04em; }
 
     /* ── filter bar ── */
     .filter-bar {
@@ -849,7 +932,7 @@
          diagonally and extend up into the panel-toggle row to claw back
          vertical space. */
       .faculty-panel-inner {
-        padding: 0 0 8px 12px;
+        padding: 0 12px 8px 12px;
         overflow: visible;
       }
       .fac-head-row,
@@ -912,9 +995,10 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 1px;
-        min-width: 110px;
-        max-width: 170px;
       }
+      /* Mobile Course-column width — keeps the panel-toggle's grid in
+         sync automatically since both sides read --course-title-w. */
+      :root { --course-title-w: clamp(90px, 30vw, 240px); }
       .course-name {
         white-space: normal;
         text-overflow: clip;
@@ -924,18 +1008,14 @@
       }
       .course-table td.course-sticky { vertical-align: top; padding-top: 10px; }
       .course-table th,
-      .course-table td { padding: 8px 6px; }
-      .course-table thead th { padding: 7px 6px; }
+      .course-table td { padding: 8px 3px; }
+      .course-table thead th { padding: 7px 3px; }
 
-      /* Show only the most recent 6 term columns on mobile so the table fits
-         the viewport — that's the only way to keep position:sticky on the
-         thead working without introducing a horizontal scroll container.
-         Match cells that are (a) not the first column (the sticky title) and
-         (b) at least 7th from the end, i.e. older than the last 6 terms. */
-      .course-table thead th:nth-child(n+2):nth-last-child(n+7),
-      .course-table tbody td:nth-child(n+2):nth-last-child(n+7) {
-        display: none;
-      }
+      /* On mobile we limit the visible term columns to a paginated window
+         (TERMS_PER_PAGE in JS). The renderer emits only the visible terms;
+         the user navigates with the ◀/▶ buttons in the header. This keeps
+         the table inside the viewport (no horizontal scroll) so the sticky
+         thead keeps working. */
     }
 
     @media (max-width: 340px) {
@@ -1624,6 +1704,17 @@ function buildCollegeRow(college, idx) {
 }
 
 // ── panel container (toggle + faculty/courses view) ────────────────────────
+// Course-schedule term columns are paginated to a fixed window with ◀/▶
+// buttons in the panel-toggle row. On small viewports the window is
+// TERMS_PER_PAGE terms wide and shifts a page-at-a-time; on larger
+// viewports the window is YEARS_PER_PAGE academic years wide (variable
+// term count, depending on how many terms each year has) and shifts a
+// year-page-at-a-time. Declared up here so the MediaQueryList listener
+// below buildPanel can reference them without hitting the const TDZ.
+const SMALL_VIEWPORT_MQ = window.matchMedia('(max-width: 720px)');
+const TERMS_PER_PAGE = 4;
+const YEARS_PER_PAGE = 4;
+
 function buildPanel(panel, college) {
   const schedule = courseSchedules[college.name];
   const hasCourses = !!schedule;
@@ -1631,12 +1722,17 @@ function buildPanel(panel, college) {
   // Persisted across view-toggles via the outer panel element; the inner
   // .panel-body gets re-created on each render so we can't store it there.
   if (panel._showColumbia === undefined) panel._showColumbia = false;
+  // termOffset is undefined initially; renderCourseTable defaults to the
+  // latest TERMS_PER_PAGE window when no offset has been set yet.
 
   function render() {
     const toggleHtml = hasCourses ? `
       <div class="panel-toggle" role="tablist">
-        <button data-view="faculty" class="${view === 'faculty' ? 'active' : ''}" title="Faculty" aria-label="Faculty">${ICON_PERSON}</button>
-        <button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>
+        <div class="panel-toggle-views">
+          <button data-view="faculty" class="${view === 'faculty' ? 'active' : ''}" title="Faculty" aria-label="Faculty">${ICON_PERSON}</button>
+          <button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>
+        </div>
+        <div class="term-paginator-slot"></div>
       </div>
     ` : '';
 
@@ -1644,15 +1740,26 @@ function buildPanel(panel, college) {
     const body = panel.querySelector('.panel-body');
 
     if (view === 'courses' && hasCourses) {
-      renderCourseTable(body, schedule, college.name, panel._showColumbia, () => {
-        panel._showColumbia = !panel._showColumbia;
-        render();
+      renderCourseTable(body, schedule, college.name, {
+        showColumbia: panel._showColumbia,
+        onToggleColumbia: () => {
+          panel._showColumbia = !panel._showColumbia;
+          render();
+        },
+        termOffset: panel._termOffset,
+        onShiftTerms: (next) => {
+          panel._termOffset = next;
+          render();
+        },
       });
     } else {
       renderFacultyTable(body, college.faculty);
     }
 
-    panel.querySelectorAll('.panel-toggle button').forEach(btn => {
+    // Scope to view-toggle buttons only — `.panel-toggle button` would also
+    // match the term-pagination buttons rendered into the slot, whose
+    // `dataset.view` is undefined and would flip the panel back to faculty.
+    panel.querySelectorAll('.panel-toggle button[data-view]').forEach(btn => {
       btn.addEventListener('click', e => {
         e.stopPropagation();
         view = btn.dataset.view;
@@ -1662,8 +1769,23 @@ function buildPanel(panel, college) {
     });
   }
 
+  panel._render = render;
   render();
 }
+
+// Re-render any open course panels when the viewport crosses the small-
+// viewport breakpoint, so the term-column window switches between the
+// term-based (small) and year-based (large) pagination modes. The stored
+// offset means different things in the two modes, so reset it.
+SMALL_VIEWPORT_MQ.addEventListener('change', () => {
+  document.querySelectorAll('.college-row.open').forEach(row => {
+    const panel = row.querySelector('.faculty-panel-inner');
+    if (panel && panel._view === 'courses' && panel._render) {
+      panel._termOffset = undefined;
+      panel._render();
+    }
+  });
+});
 
 // ── faculty panel ──────────────────────────────────────────────────────────
 function renderFacultyTable(panel, faculty) {
@@ -1772,7 +1894,8 @@ function renderFacultyTable(panel, faculty) {
 // toggle on the Course column header.
 const COLUMBIA_CODE_RE = /^COMS\s+(W|E)/i;
 
-function renderCourseTable(panel, schedule, collegeName, showColumbia, onToggleColumbia) {
+function renderCourseTable(panel, schedule, collegeName, opts) {
+  const { showColumbia, onToggleColumbia, termOffset, onShiftTerms } = opts;
   const isBarnard = collegeName === 'Barnard College';
 
   if (!schedule.courses.length) {
@@ -1784,14 +1907,80 @@ function renderCourseTable(panel, schedule, collegeName, showColumbia, onToggleC
     ? schedule.courses.filter(c => !COLUMBIA_CODE_RE.test(c.code))
     : schedule.courses;
 
-  const headerCells = schedule.terms
+  // Decide the visible term-column range. The window is either
+  // TERMS_PER_PAGE terms (small viewport) or YEARS_PER_PAGE academic
+  // years (everything else). `termOffset` is reused as the active offset:
+  // a term index on small, a year index on large. Whoever flips the
+  // viewport breakpoint must reset it (see SMALL_VIEWPORT_MQ listener).
+  const totalTerms = schedule.terms.length;
+  const small = SMALL_VIEWPORT_MQ.matches;
+  // Unique academic years in chronological order (terms are already sorted).
+  const uniqueYears = [];
+  for (const t of schedule.terms) {
+    if (uniqueYears[uniqueYears.length - 1] !== t.year) uniqueYears.push(t.year);
+  }
+  const pageStep = small ? TERMS_PER_PAGE : YEARS_PER_PAGE;
+  const maxOffset = small
+    ? Math.max(0, totalTerms - TERMS_PER_PAGE)
+    : Math.max(0, uniqueYears.length - YEARS_PER_PAGE);
+  const paginated = small
+    ? totalTerms > TERMS_PER_PAGE
+    : uniqueYears.length > YEARS_PER_PAGE;
+
+  let startIdx = 0;
+  let endIdx = totalTerms;
+  let offsetValue = 0;
+  if (paginated) {
+    offsetValue = Math.max(0, Math.min(termOffset ?? maxOffset, maxOffset));
+    if (small) {
+      startIdx = offsetValue;
+      endIdx = offsetValue + TERMS_PER_PAGE;
+    } else {
+      const visibleYears = new Set(uniqueYears.slice(offsetValue, offsetValue + YEARS_PER_PAGE));
+      startIdx = schedule.terms.findIndex(t => visibleYears.has(t.year));
+      // last index whose year is in the window, +1
+      let lastIdx = startIdx;
+      for (let k = schedule.terms.length - 1; k >= 0; k--) {
+        if (visibleYears.has(schedule.terms[k].year)) { lastIdx = k; break; }
+      }
+      endIdx = lastIdx + 1;
+    }
+  }
+
+  const visibleTerms = schedule.terms.slice(startIdx, endIdx);
+  const atStart = offsetValue === 0;
+  const atEnd = offsetValue >= maxOffset;
+
+  const headerCells = visibleTerms
     .map(t => `<th>${esc(t.label)}</th>`)
     .join('');
 
   const rows = visibleCourses.map(c => {
-    const cells = c.offered.map(v => {
+    const cells = c.offered.slice(startIdx, endIdx).map((v, j) => {
+      const i = j + startIdx;
       if (v === 0 || v === false) {
         return `<td><span class="course-dash">—</span></td>`;
+      }
+      // Prefer matched-instructor display when present.
+      const instr = c.instructors && c.instructors[i];
+      if (Array.isArray(instr) && instr.length) {
+        const items = instr.map(p => {
+          const label = esc(p.l ?? '');
+          const tip = esc(p.n ?? p.l ?? '');
+          if (p.u) {
+            return `<a class="course-instr" href="${esc(p.u)}" target="_blank" rel="noopener" title="${tip}">${label}</a>`;
+          }
+          return `<span class="course-instr course-instr-nolink" title="${tip}">${label}</span>`;
+        });
+        // 3+ instructors: wrap to two lines (first line gets ⌈n/2⌉ items).
+        const SEP = '<span class="course-instr-sep">,</span>';
+        const lines = items.length >= 3
+          ? [items.slice(0, Math.ceil(items.length / 2)), items.slice(Math.ceil(items.length / 2))]
+          : [items];
+        const html = lines
+          .map(line => `<span class="course-instr-row">${line.join(SEP)}</span>`)
+          .join('');
+        return `<td><div class="course-instr-list">${html}</div></td>`;
       }
       if (typeof v === 'string' && v) {
         return `<td><a class="course-check" href="${esc(v)}" target="_blank" rel="noopener" title="${esc(v)}">✓</a></td>`;
@@ -1841,6 +2030,34 @@ function renderCourseTable(panel, schedule, collegeName, showColumbia, onToggleC
         e.stopPropagation();
         onToggleColumbia();
       });
+    }
+  }
+
+  // The paginator lives in the panel-toggle row (above the table), so we
+  // reach up to the enclosing panel root to fill the slot rendered there.
+  const slot = panel.closest('.faculty-panel-inner')?.querySelector('.term-paginator-slot');
+  if (slot) {
+    if (paginated && onShiftTerms) {
+      const lastVisible = visibleTerms[visibleTerms.length - 1];
+      const firstVisible = visibleTerms[0];
+      slot.innerHTML = `
+        <div class="term-paginator">
+          <button class="term-page-btn" data-shift="-1" ${atStart ? 'disabled' : ''}
+                  aria-label="Earlier terms" title="Earlier terms">◀</button>
+          <span class="term-paginator-range">${esc(firstVisible.label)} – ${esc(lastVisible.label)}</span>
+          <button class="term-page-btn" data-shift="1" ${atEnd ? 'disabled' : ''}
+                  aria-label="Later terms" title="Later terms">▶</button>
+        </div>
+      `;
+      slot.querySelectorAll('.term-page-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          const dir = parseInt(btn.dataset.shift, 10) || 0;
+          onShiftTerms(offsetValue + dir * pageStep);
+        });
+      });
+    } else {
+      slot.innerHTML = '';
     }
   }
 }
