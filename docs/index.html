@@ -1123,7 +1123,7 @@ let allColleges = [];
 let collegeLinks = {};
 let courseSchedules = {};
 let collegeSort = { key: 'total', dir: -1 };
-let activeCategories = new Set(['tenured', 'tenure_track', 'teaching']);
+let activeCategories = new Set();
 let activeSubfields = new Set();
 let excludedSubfields = new Set();
 let subfieldScope = 'faculty'; // 'faculty' | 'school'
@@ -1238,8 +1238,6 @@ function buildFilterBar() {
       const k = btn.dataset.cat;
       if (activeCategories.has(k)) activeCategories.delete(k);
       else activeCategories.add(k);
-      // ensure at least one stays selected
-      if (activeCategories.size === 0) activeCategories.add(k);
       buildFilterBar();
       renderAll();
     });
@@ -1380,8 +1378,9 @@ function filteredFaculty(college) {
   const facultyScope = subfieldScope === 'faculty';
   const subActive = facultyScope && activeSubfields.size > 0;
   const subExclude = facultyScope && excludedSubfields.size > 0;
+  const catActive = activeCategories.size > 0;
   return college.faculty.filter(f => {
-    if (!activeCategories.has(f.category)) return false;
+    if (catActive && !activeCategories.has(f.category)) return false;
     if (subActive) {
       let hit = false;
       for (const s of activeSubfields) {
@@ -1408,8 +1407,9 @@ function passesSchoolFilter(college) {
   const incLower = [...activeSubfields].map(s => s.toLowerCase());
   const excLower = [...excludedSubfields].map(s => s.toLowerCase());
   let hasInclude = activeSubfields.size === 0;
+  const catActive = activeCategories.size > 0;
   for (const f of college.faculty) {
-    if (!activeCategories.has(f.category)) continue;
+    if (catActive && !activeCategories.has(f.category)) continue;
     for (const s of excLower) {
       if (f._interestsSet.has(s)) return false;
     }
