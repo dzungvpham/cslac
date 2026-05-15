@@ -6288,36 +6288,6 @@
         "interests": "Natural language processing"
       },
       {
-        "name": "Curtis Balz",
-        "title": "Visiting Assistant Professor",
-        "category": "visiting",
-        "url": null,
-        "scholar_url": null,
-        "status": "matched_college",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
-      },
-      {
-        "name": "Md Mutasim Billah",
-        "title": "Visiting Assistant Professor",
-        "category": "visiting",
-        "url": "https://www.linkedin.com/in/mutasim221b/",
-        "scholar_url": "https://scholar.google.com/citations?user=-wpYbcAAAAAJ&hl=en",
-        "status": "matched",
-        "citedby": 1,
-        "citedby5y": 1,
-        "hindex": 1,
-        "hindex5y": 1,
-        "i10index": 0,
-        "i10index5y": 0,
-        "interests": "Computational bio & bioinformatics"
-      },
-      {
         "name": "Paul Cantrell",
         "title": "Senior Instructor",
         "category": "teaching",
@@ -6331,21 +6301,6 @@
         "i10index": null,
         "i10index5y": null,
         "interests": "Programming languages, Games & interactive art"
-      },
-      {
-        "name": "Jedidiah Carlson",
-        "title": "Visiting Assistant Professor",
-        "category": "visiting",
-        "url": "https://jedidiahcarlson.com/about/",
-        "scholar_url": "https://scholar.google.com/citations?user=4o1Dm1YAAAAJ&hl=en",
-        "status": "matched",
-        "citedby": 3242,
-        "citedby5y": 3037,
-        "hindex": 11,
-        "hindex5y": 11,
-        "i10index": 12,
-        "i10index5y": 12,
-        "interests": "Computational bio & bioinformatics"
       },
       {
         "name": "Dan Drake",
@@ -6406,21 +6361,6 @@
         "i10index": null,
         "i10index5y": null,
         "interests": "Robotics, Machine learning, Computer vision, Artificial intelligence"
-      },
-      {
-        "name": "Alex Hanhart",
-        "title": "Visiting Assistant Professor",
-        "category": "visiting",
-        "url": null,
-        "scholar_url": null,
-        "status": "matched_college",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
       },
       {
         "name": "Bret Jackson",
@@ -6511,26 +6451,11 @@
         "i10index": null,
         "i10index5y": null,
         "interests": "Computational bio & bioinformatics, Visualization, Distributed systems"
-      },
-      {
-        "name": "Allan Marshall Kirch",
-        "title": "Professor",
-        "category": "tenured",
-        "url": null,
-        "scholar_url": null,
-        "status": "matched_college",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
       }
     ],
-    "total": 19,
-    "matched": 9,
-    "total_citations": 14012,
+    "total": 14,
+    "matched": 7,
+    "total_citations": 10769,
     "max_hindex": 30
   },
   {

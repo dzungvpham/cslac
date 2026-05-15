@@ -355,6 +355,38 @@ def scrape_wesleyan_college(soup):
     return res
 
 
+def scrape_macalester(soup):
+    # The page mixes Math, Statistics, and CS faculty. Each card has an optional
+    # `li.position-description` line listing focus areas — we keep cards whose
+    # focus mentions CS, and we keep cards with no focus line at all. Cards under
+    # the "FACULTY EMERITI" h2 are excluded.
+    emeriti = soup.find(
+        lambda s: s.name == "h2" and "EMERITI" in s.get_text(strip=True).upper()
+    )
+    cs_keywords = ("computer science", "computing", "computer")
+    res = []
+    for card in soup.find_all(lambda s: soup_has_class(s, "card-profile")):
+        if emeriti is not None and emeriti in card.find_all_previous("h2"):
+            continue
+        focus = card.find("li", class_="position-description")
+        if focus is not None:
+            focus_text = focus.get_text(" ", strip=True).lower()
+            if not any(kw in focus_text for kw in cs_keywords):
+                continue
+        name_li = card.find("li", class_="fn")
+        title_li = card.find("li", class_="title")
+        if name_li is None or title_li is None:
+            continue
+        faculty_name = clean_name(name_li.get_text(" ", strip=True))
+        faculty_title = clean_title(title_li.get_text(" ", strip=True))
+        if faculty_name is None or faculty_title is None:
+            continue
+        link = name_li.find("a")
+        faculty_url = link.get("href") if link is not None else None
+        res.append(create_faculty(faculty_name, faculty_title, url=faculty_url))
+    return res
+
+
 NAME_LINE_OPTIONS = [0, 1, [0, 1], 2, [1, 2], [0, 1, 2]]
 TITLE_RE = re.compile(r"\b(professor|lecturer|instructor)\b", re.I)
 NON_NAME_RE = re.compile(
@@ -952,7 +984,7 @@ faculty_scraper_map = {
         lambda s: s.name == "p" and soup_has_class(s.parent, "templatecontent"),
         include_subject=True,
     ),
-    College.MACALESTER: scrape_class_f("card-profile"),
+    College.MACALESTER: scrape_macalester,
     College.MARYVILLE: scrape_class_f("col-md-8"),
     College.MEREDITH: scrape_class_f("people"),
     College.MIDDLEBURY: scrape_class_f("media-object__body"),
@@ -1037,6 +1069,13 @@ faculty_url_override_map = {
     College.DICKINSON: "https://www2.dickinson.edu/lis/angularJS_services/Data/facultyListsData.cfc?method=f_getDeptFaculty&dID=65",
     College.TRINITY_C: "https://internet3.trincoll.edu/pTools/DeptMembership_wp.aspx?dc=CPSC",
     College.WESLEYAN: "https://webapps.wesleyan.edu/wapi/v1/public/professional_information/academic_plan/COMP",
+}
+
+# Colleges where the auto-detection scraper should be skipped entirely and the
+# hardcoded scraper used instead — e.g. mixed-department pages where the auto
+# path can't apply the department-specific filtering we need.
+skip_auto_detect = {
+    College.MACALESTER,
 }
 
 # Some colleges actively block requests
@@ -1203,7 +1242,11 @@ def get_faculty_list(df):
         soups_per_college[name] = soup
 
         faculty = []
-        auto_scraper = auto_detect_scraper(soup)
+        if name in skip_auto_detect:
+            print(f"Skipping auto-detection for {name}; using hardcoded scraper.")
+            auto_scraper = None
+        else:
+            auto_scraper = auto_detect_scraper(soup)
         if auto_scraper is not None:
             try:
                 faculty = auto_scraper(soup)
@@ -1213,7 +1256,8 @@ def get_faculty_list(df):
                 faculty = []
 
         if not faculty:
-            print(f"Auto-detection found nothing for {name}; falling back to hardcoded.")
+            if name not in skip_auto_detect:
+                print(f"Auto-detection found nothing for {name}; falling back to hardcoded.")
             try:
                 faculty = faculty_scraper_map[name](soup)
             except Exception:
