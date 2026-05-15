@@ -7,42 +7,42 @@ Mauricio Marengoni,Associate Professor,Albion College,Computer Science,Computer 
 Darren E. Mason,Professor,Albion College,Mathematics or Statistics,
 David A. Reimann,Professor,Albion College,Mathematics or Statistics,
 Yuming Zhang,Assistant Professor,Albion College,Computer Science,Computer graphics
-Don Baldridge,Assistant Professor,Albright College,,
+Don Baldridge,Assistant Professor,Albright College,Computer Science,
 Dave Kaul,Assistant Professor,Albright College,Computer Science,Computer graphics
-David Kopec,Professor,Albright College,Computer Science,Computer science education
-Oliver Bonham-Carter,Associate Professor,Allegheny College,Computer Science,Data science|Computational bio & bioinformatics
-Janyl Jumadinova,Associate Professor,Allegheny College,Computer Science,Artificial intelligence|Robotics
+David Kopec,Professor,Albright College,Computer Science,Computer science education|Artificial intelligence|Algorithms & complexity
+Oliver Bonham-Carter,Associate Professor,Allegheny College,Computer Science,Computational bio & bioinformatics|Data science
+Janyl Jumadinova,Associate Professor,Allegheny College,Computer Science,Robotics|Artificial intelligence
 Gregory Kapfhammer,Associate Professor,Allegheny College,Computer Science,Software engineering
 Douglas Luman,Assistant Professor,Allegheny College,Computer Science,Natural language processing
-Scott P. Alfeld,Associate Professor,Amherst College,Computer Science,Machine learning|Computer security & privacy
-Kristy Gardner,Associate Professor,Amherst College,Computer Science,Algorithms & complexity|Machine learning|Information retrieval
+Scott P. Alfeld,Associate Professor,Amherst College,Computer Science,Computer security & privacy
+Kristy Gardner,Associate Professor,Amherst College,Computer Science,Algorithms & complexity|Measurement & performance analysis|Quantum computing|Distributed systems
 Scott F. Kaplan,Professor,Amherst College,Computer Science,Operating systems|Measurement & performance analysis
-Myroslav Kryven,Assistant Professor,Amherst College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics|Computer graphics
-Lillian C. Pentecost,Assistant Professor,Amherst College,Computer Science,Computer architecture
+Myroslav Kryven,Assistant Professor,Amherst College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
+Lillian C. Pentecost,Assistant Professor,Amherst College,Computer Science,Computer architecture|Computer networks|Distributed systems
 John E. Rager,Professor,Amherst College,Computer Science,Artificial intelligence|Natural language processing
-Matteo Riondato,Associate Professor,Amherst College,Computer Science,Algorithms & complexity|Data science
-Lee Spector,Professor,Amherst College,Computer Science,Artificial intelligence|Computer vision
+Matteo Riondato,Associate Professor,Amherst College,Computer Science,Data science|Algorithms & complexity
+Lee Spector,Professor,Amherst College,Computer Science,Artificial intelligence
 Shira B. Wein,Assistant Professor,Amherst College,Computer Science,Natural language processing
 Andrew Wu,Assistant Professor,Amherst College,Computer Science,Artificial intelligence
 Robert Dickerson,Assistant Professor,Augustana College,Computer Science,Programming languages|Logic & verification
-Zhengyi Li,Assistant Professor,Augustana College,Computer Science,Computer security & privacy
+Zhengyi Li,Assistant Professor,Augustana College,Computer Science,Computer security & privacy|Distributed systems
 Bob Manasco,Instructor,Augustana College,Computer Science,Robotics|Machine learning|Software engineering
 Nidhi Mourya,Visiting Instructor,Augustana College,Computer Science,
-Diane C. Mueller,Adjunct Assistant Professor,Augustana College,Unknown,
+Diane C. Mueller,Adjunct Assistant Professor,Augustana College,Computer Science,
 Brooke Randazzo,Assistant Professor,Augustana College,Mathematics or Statistics,
 Stacey Rodman,Professor,Augustana College,Mathematics or Statistics,
-Forrest J. Stonedahl,Associate Professor,Augustana College,Computer Science,Artificial intelligence
+Forrest J. Stonedahl,Associate Professor,Augustana College,Computer Science,Artificial intelligence|Computer science education|Computational social science|Data science|Machine learning
 Andrew P. Sward,Associate Professor,Augustana College,Mathematics or Statistics,
-Seema Aarella,Assistant Professor,Austin College,Invalid,
+Seema Aarella,Assistant Professor,Austin College,Computer Science,Computer security & privacy|Cryptography
 Aaron Block,Associate Professor,Austin College,Computer Science,
-Michael Higgs,Professor,Austin College,Invalid,
+Michael Higgs,Professor,Austin College,Computer Science,
 Samuel Kroger,Assistant Professor,Austin College,Mathematics or Statistics,
-Kerri-Ann Norton,Associate Professor,Bard College,Mathematics or Statistics,
+Kerri-Ann Norton,Associate Professor,Bard College,Computer Science,Computational bio & bioinformatics|Computer vision
 Sven Anderson,Associate Professor,Bard College,Computer Science,Artificial intelligence|Human-computer interaction|Natural language processing
-Jordan Ayala,Assistant Professor,Bard College,Mathematics or Statistics,
+Jordan Ayala,Assistant Professor,Bard College,Computer Science,Data science
 Valerie Barr,Professor,Bard College,Computer Science,Computer science education
 Emma Benser,Assistant Professor,Bard College,Computer Science,Computer science education
-Theresa Law,Assistant Professor,Bard College,Computer Science,Robotics|Human-computer interaction
+Theresa Law,Assistant Professor,Bard College,Computer Science,Human-computer interaction|Robotics
 Bob McGrail,Associate Professor,Bard College,Computer Science,Algorithms & complexity|Logic & verification
 Annabel Rothschild,Assistant Professor,Bard College,Computer Science,Human-computer interaction
 Rebecca Wright,Professor,Barnard College,Computer Science,Computer security & privacy|Distributed systems|Computer science education
@@ -50,174 +50,174 @@ Smaranda Muresan,Associate Professor,Barnard College,Computer Science,Natural la
 Ahmer Arif,Assistant Professor,Barnard College,Computer Science,Human-computer interaction|Computer science education
 Eysa Lee,Assistant Professor,Barnard College,Computer Science,Cryptography
 Mark Santolucito,Assistant Professor,Barnard College,Computer Science,Logic & verification|Programming languages
-Lucy Simko,Assistant Professor,Barnard College,Computer Science,Computer security & privacy|Human-computer interaction|Information retrieval
-Corey Toler-Franklin,Assistant Professor,Barnard College,Computer Science,Computer graphics|Computer vision
+Lucy Simko,Assistant Professor,Barnard College,Computer Science,Computer security & privacy|Human-computer interaction
+Corey Toler-Franklin,Assistant Professor,Barnard College,Computer Science,Computer vision|Computer graphics
 Tiffany Tseng,Assistant Professor,Barnard College,Computer Science,Human-computer interaction
 Eyad Haj Said,Associate Professor,Beloit College,Computer Science,Machine learning|Data science|Computer vision
 Katherine Harris,Assistant Professor,Beloit College,Mathematics or Statistics,
 Sohaib Kiani,Assistant Professor,Beloit College,Computer Science,Machine learning
 Tom Stojsavljevic,Assistant Professor,Beloit College,Mathematics or Statistics,
-Ben Stucky,Assistant Professor,Beloit College,Mathematics or Statistics,
-Jan Pearce,Professor,Berea College,Computer Science,Computer science education
+Ben Stucky,Assistant Professor,Beloit College,Computer Science,Algorithms & complexity
+Jan Pearce,Professor,Berea College,Computer Science,Computer science education|Robotics|Computational social science|Human-computer interaction
 Jacqueline Boggs,Assistant Professor,Berea College,Computer Science,Data science
-Scott Heggen,Associate Professor,Berea College,Computer Science,Embedded & real-time systems|Software engineering|Computer science education
-Jasmine Jones,Associate Professor,Berea College,Computer Science,Human-computer interaction|Computer networks|Computer security & privacy
-Mario Nakazawa,Associate Professor,Berea College,Computer Science,Algorithms & complexity|Distributed systems|Artificial intelligence
-Deanna Wilborne,Assistant Professor,Berea College,Computer Science,Machine learning|Software engineering
+Scott Heggen,Associate Professor,Berea College,Computer Science,Embedded & real-time systems|Mobile computing|Software engineering
+Jasmine Jones,Associate Professor,Berea College,Computer Science,Human-computer interaction|Computer science education|Computational social science
+Mario Nakazawa,Associate Professor,Berea College,Computer Science,Distributed systems|Algorithms & complexity|Artificial intelligence|Operating systems
+Deanna Wilborne,Assistant Professor,Berea College,Computer Science,Machine learning|Computer security & privacy
 Alex Mathew,Associate Professor,Bethany College (WV),Computer Science,Computer security & privacy
 Fujiko Nito,Professor,Bethany College (WV),Computer Science,
 Perry Lund,Adjunct Assistant Professor,Bethany Lutheran College,Computer Science,Computer science education
 Sean K. Barker,Associate Professor,Bowdoin College,Computer Science,Distributed systems
-David Byrd,Assistant Professor,Bowdoin College,Computer Science,Artificial intelligence
-Jeová Farias,Assistant Professor,Bowdoin College,Computer Science,
+David Byrd,Assistant Professor,Bowdoin College,Computer Science,Artificial intelligence|Machine learning
+Jeová Farias,Assistant Professor,Bowdoin College,Computer Science,Computer vision|Machine learning|Artificial intelligence
 Cibele Matos Freire,Assistant Professor,Bowdoin College,Computer Science,Algorithms & complexity|Databases
-Sarah M. Harmon,Associate Professor,Bowdoin College,Computer Science,Artificial intelligence|Human-computer interaction
+Sarah M. Harmon,Associate Professor,Bowdoin College,Computer Science,Artificial intelligence|Human-computer interaction|Natural language processing
 Stephen Houser,Adjunct Lecturer,Bowdoin College,Computer Science,
 Bobak Kiani,Assistant Professor,Bowdoin College,Computer Science,Quantum computing|Machine learning
 Jeffrey Knockel,Assistant Professor,Bowdoin College,Computer Science,Computer security & privacy
 Christopher Martin,Visiting Lecturer,Bowdoin College,Computer Science,
-Laura I. Toma,Professor,Bowdoin College,Computer Science,Algorithms & complexity|Computer science education
-Verne E. Leininger,Associate Professor,Bridgewater College,Unknown,
+Laura I. Toma,Professor,Bowdoin College,Computer Science,Algorithms & complexity
+Verne E. Leininger,Associate Professor,Bridgewater College,Computer Science,
 Eric McGregor,Associate Professor,Bridgewater College,Computer Science,Artificial intelligence|Computer vision
-Fredrik Bryntesson,Professor,Bryn Athyn College,Unknown,
-Stella Evans,Assistant Professor,Bryn Athyn College,Unknown,
+Fredrik Bryntesson,Professor,Bryn Athyn College,Invalid,
+Stella Evans,Assistant Professor,Bryn Athyn College,Invalid,
 Thomas Frazier,Lecturer,Bryn Athyn College,Computer Science,Artificial intelligence
-Ellen McKee,Adjunct Professor,Bryn Athyn College,Unknown,
-Ryan Pine,Assistant Professor,Bryn Athyn College,Unknown,
-Elizabeth Hollister Rogers,Professor,Bryn Athyn College,Unknown,
+Ellen McKee,Adjunct Professor,Bryn Athyn College,Invalid,
+Ryan Pine,Assistant Professor,Bryn Athyn College,Invalid,
+Elizabeth Hollister Rogers,Professor,Bryn Athyn College,Invalid,
 Neil Simonetti,Professor,Bryn Athyn College,Computer Science,Algorithms & complexity
-Elizabeth Dinella,Assistant Professor,Bryn Mawr College,Computer Science,Software engineering|Machine learning
-Ramesh Garimella,Visiting Professor,Bryn Mawr College,Invalid,
-Aline Normoyle,Assistant Professor,Bryn Mawr College,Computer Science,Computer graphics|Games & interactive art
+Elizabeth Dinella,Assistant Professor,Bryn Mawr College,Computer Science,Machine learning|Software engineering
+Ramesh Garimella,Visiting Professor,Bryn Mawr College,Computer Science,
+Aline Normoyle,Assistant Professor,Bryn Mawr College,Computer Science,Computer graphics
 Adam Poliak,Assistant Professor,Bryn Mawr College,Computer Science,Natural language processing
 Michael Wehar,Visiting Assistant Professor,Bryn Mawr College,Computer Science,Algorithms & complexity|Computer science education
 Dianna Xu,Professor,Bryn Mawr College,Computer Science,Computer graphics|Computational bio & bioinformatics|Visualization
-Alan Marchiori,Associate Professor,Bucknell University,Computer Science,Embedded & real-time systems|Computer networks
+Alan Marchiori,Associate Professor,Bucknell University,Computer Science,Embedded & real-time systems|Computer networks|Information retrieval
 Lea Wittie,Associate Professor,Bucknell University,Computer Science,Computer science education
-Alexander Fuchsberger,Associate Teaching Professor,Bucknell University,Invalid,
+Alexander Fuchsberger,Associate Teaching Professor,Bucknell University,Computer Science,Information retrieval
 Samuel Gutekunst,Assistant Professor,Bucknell University,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
 Jessen Havill,Professor,Bucknell University,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
 Brian King,Associate Professor,Bucknell University,Computer Science,Data science|Computational bio & bioinformatics
-Rajesh Kumar,Assistant Professor,Bucknell University,Invalid,
-SingChun Lee,Assistant Professor,Bucknell University,Computer Science,Computer graphics|Visualization|Computer science education
-Darakhshan Mir,Associate Professor,Bucknell University,Computer Science,Computer security & privacy
-Chris Mitsch,Visiting Assistant Professor,Bucknell University,Invalid,
-Luiz Felipe Perrone,Professor,Bucknell University,Computer Science,Computer networks|Human-computer interaction
-Swetha Reddy Ravula,Visiting Assistant Professor,Bucknell University,Invalid,
-Lily Romano,Instructor,Bucknell University,Invalid,
-Anne Ross,Assistant Professor,Bucknell University,Invalid,
-Todd Schmid,Assistant Professor,Bucknell University,Invalid,
-Joshua Stough,Associate Professor,Bucknell University,Computer Science,Machine learning|Computer vision
+Rajesh Kumar,Assistant Professor,Bucknell University,Computer Science,Computer security & privacy
+SingChun Lee,Assistant Professor,Bucknell University,Computer Science,Computer graphics|Computer science education
+Darakhshan Mir,Associate Professor,Bucknell University,Computer Science,Computer security & privacy|Artificial intelligence
+Chris Mitsch,Visiting Assistant Professor,Bucknell University,Mathematics or Statistics,
+Luiz Felipe Perrone,Professor,Bucknell University,Computer Science,Human-computer interaction|Computer science education
+Swetha Reddy Ravula,Visiting Assistant Professor,Bucknell University,Computer Science,
+Lily Romano,Instructor,Bucknell University,Computer Science,
+Anne Ross,Assistant Professor,Bucknell University,Computer Science,
+Todd Schmid,Assistant Professor,Bucknell University,Computer Science,Logic & verification|Programming languages
+Joshua Stough,Associate Professor,Bucknell University,Computer Science,Computer vision|Machine learning|Computer science education
 Edward Talmage,Associate Professor,Bucknell University,Computer Science,Distributed systems|Algorithms & complexity
 Amy Csizmar Dalal,Professor,Carleton College,Computer Science,Computer networks|Human-computer interaction
-Eric Alexander,Associate Professor,Carleton College,Computer Science,Algorithms & complexity|Visualization
+Eric Alexander,Associate Professor,Carleton College,Computer Science,Algorithms & complexity|Data science
 Tanya Amert,Assistant Professor,Carleton College,Computer Science,Programming languages|Operating systems
 Josh Davis,Senior Lecturer,Carleton College,Mathematics or Statistics,
 Chelsey Edge,Assistant Professor,Carleton College,Computer Science,Algorithms & complexity|Artificial intelligence
-David Liben-Nowell,Associate Professor,Carleton College,Computer Science,Computational social science|Algorithms & complexity
+David Liben-Nowell,Associate Professor,Carleton College,Computer Science,Computational social science|Natural language processing
 Anna Meyer,Assistant Professor,Carleton College,Computer Science,Programming languages|Machine learning
-David Musicant,Professor,Carleton College,Computer Science,Databases|Programming languages|Distributed systems
+David Musicant,Professor,Carleton College,Computer Science,Programming languages|Distributed systems|Databases
 Sneha Narayan,Assistant Professor,Carleton College,Computer Science,Human-computer interaction|Algorithms & complexity
 Layla Oesper,Associate Professor,Carleton College,Computer Science,Computational bio & bioinformatics|Algorithms & complexity
-Jeff Ondich,Professor,Carleton College,Computer Science,Computer architecture|Computer security & privacy
-Anna Rafferty,Professor,Carleton College,Computer Science,Artificial intelligence|Machine learning|Natural language processing
+Jeff Ondich,Professor,Carleton College,Computer Science,Computer security & privacy|Operating systems
+Anna Rafferty,Professor,Carleton College,Computer Science,Natural language processing|Algorithms & complexity
 Jean Salac,Assistant Professor,Carleton College,Computer Science,Computer science education|Human-computer interaction
 Anya Vostinar,Assistant Professor,Carleton College,Computer Science,Artificial intelligence|Computational bio & bioinformatics
 Robert Franks,Professor,Central College,Computer Science,Human-computer interaction
-Stephen Fyfe,Professor,Central College,Computer Science,Computer science education|Software engineering
-Mark Johnson,Professor,Central College,,
-Thomas E. Allen,Associate Professor,Centre College,Computer Science,Artificial intelligence|Human-computer interaction
-William Bailey,Assistant Professor,Centre College,Computer Science,Algorithms & complexity|Computational social science|Economics & computation
+Stephen Fyfe,Professor,Central College,Computer Science,Software engineering|Computer science education
+Mark Johnson,Professor,Central College,Mathematics or Statistics,
+Thomas E. Allen,Associate Professor,Centre College,Computer Science,Human-computer interaction
+William Bailey,Assistant Professor,Centre College,Computer Science,Algorithms & complexity|Economics & computation
 Michael K. Bradshaw,Professor,Centre College,Computer Science,Games & interactive art|Computer graphics
 Dave Toth,Professor,Centre College,Computer Science,High-performance computing|Computational bio & bioinformatics
 Abdelrahman Desoky,Associate Professor,Claflin University,Computer Science,Computer security & privacy|Cryptography
-Karina Liles,Assistant Professor,Claflin University,Computer Science,Robotics|Artificial intelligence
+Karina Liles,Assistant Professor,Claflin University,Computer Science,Robotics
 Ms. Erika L. Rhett,Lecturer,Claflin University,Mathematics or Statistics,
-Pawar Shrikant,Assistant Professor,Claflin University,Computer Science,Machine learning|Computational bio & bioinformatics|Computer vision
-Stephen Hughes,Associate Professor,Coe College,Computer Science,Human-computer interaction
-Namrata Saha,Visiting Assistant Professor,Coe College,Invalid,
+Pawar Shrikant,Assistant Professor,Claflin University,Computer Science,Machine learning|Computer vision|Data science|Computational bio & bioinformatics
+Stephen Hughes,Associate Professor,Coe College,Computer Science,Computer science education|Human-computer interaction|Information retrieval
+Namrata Saha,Visiting Assistant Professor,Coe College,Computer Science,
 Michael Stobb,Associate Professor,Coe College,Computer Science,Data science
-Terry Hostetler,Professor,Coe College,,
-Calvin Van Niewaal,Professor,Coe College,Invalid,
+Terry Hostetler,Professor,Coe College,Computer Science,
+Calvin Van Niewaal,Professor,Coe College,Computer Science,
 Stephanie Taylor,Professor,Colby College,Computer Science,Computational bio & bioinformatics
 Eric Aaron,Associate Professor,Colby College,Computer Science,Robotics|Artificial intelligence|Computational bio & bioinformatics
 Naser Al Madi,Visiting Assistant Professor,Colby College,Computer Science,Software engineering
 Max Bender,Assistant Professor,Colby College,Computer Science,
-Tahiya Chowdhury,Assistant Professor,Colby College,Computer Science,Human-computer interaction|Natural language processing|Artificial intelligence
+Tahiya Chowdhury,Assistant Professor,Colby College,Computer Science,Human-computer interaction|Artificial intelligence
 Stacy Doore,Assistant Professor,Colby College,Computer Science,Human-computer interaction|Artificial intelligence
-Allen Harper,Assistant Professor,Colby College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
+Allen Harper,Assistant Professor,Colby College,Computer Science,Algorithms & complexity
 Ike Lage,Assistant Professor,Colby College,Computer Science,Machine learning|Human-computer interaction
 Oliver Layton,Associate Professor,Colby College,Computer Science,Computer vision|Machine learning
 Ying Li,Associate Professor,Colby College,Computer Science,Computer networks
-Hannen Wolfe,Assistant Professor,Colby College,Computer Science,Human-computer interaction|Robotics
-Noah Apthorpe,Assistant Professor,Colgate University,Computer Science,Human-computer interaction|Computer networks|Machine learning
+Hannen Wolfe,Assistant Professor,Colby College,Computer Science,Robotics
+Noah Apthorpe,Assistant Professor,Colgate University,Computer Science,Computer security & privacy|Human-computer interaction|Machine learning|Computer networks
 Valerie Cucura,Senior Lab Instructor,Colgate University,Computer Science,
-Forrest Davis,Assistant Professor,Colgate University,Computer Science,Natural language processing
-Nicholas Diana,Assistant Professor,Colgate University,Computer Science,Artificial intelligence|Human-computer interaction|Computational social science
-Elodie Fourquet,Associate Professor,Colgate University,Computer Science,Computer graphics|Computer vision
+Forrest Davis,Assistant Professor,Colgate University,Computer Science,Natural language processing|Artificial intelligence
+Nicholas Diana,Assistant Professor,Colgate University,Computer Science,Artificial intelligence|Human-computer interaction
+Elodie Fourquet,Associate Professor,Colgate University,Computer Science,Computer graphics|Computer vision|Human-computer interaction
 Aaron Gember-Jacobson,Associate Professor,Colgate University,Computer Science,Computer networks
 Georgiana Haldeman,Assistant Professor,Colgate University,Computer Science,Computer science education
-Matt Lyboult,Senior Lab Instructor,Colgate University,Unknown,
+Matt Lyboult,Senior Lab Instructor,Colgate University,Computer Science,
 David Perkins,Visiting Assistant Professor,Colgate University,Computer Science,
-Grusha Prasad,Assistant Professor,Colgate University,Computer Science,Natural language processing|Computational bio & bioinformatics
-Vijay Ramachandran,Associate Professor,Colgate University,Computer Science,Computer networks|Algorithms & complexity
-Joel Sommers,Professor,Colgate University,Computer Science,Computer networks|Measurement & performance analysis|Distributed systems
+Grusha Prasad,Assistant Professor,Colgate University,Computer Science,Natural language processing
+Vijay Ramachandran,Associate Professor,Colgate University,Computer Science,Computer networks|Algorithms & complexity|Economics & computation
+Joel Sommers,Professor,Colgate University,Computer Science,Computer networks|Measurement & performance analysis|Distributed systems|Computer architecture
 Katelyn Valete,Lab Instructor,Colgate University,Computer Science,
-Puck Wen,Assistant Professor,Colgate University,Invalid,
+Puck Wen,Assistant Professor,Colgate University,Computer Science,Robotics|Human-computer interaction
 Heather Amthauer,Associate Professor,College of St Benedict,Computer Science,Data science
 Robert Hesse,Associate Professor,College of St Benedict,Mathematics or Statistics,
 Peter Ohmann,Associate Professor,College of St Benedict,Computer Science,Software engineering|Programming languages
-Imad Rahal,Professor,College of St Benedict,Computer Science,Data science
-Vijay Srinivas Tida,Assistant Professor,College of St Benedict,Computer Science,Machine learning|Computer security & privacy
-Srikanth Vemula,Assistant Professor,College of St Benedict,Computer Science,Artificial intelligence|Robotics|Quantum computing
+Imad Rahal,Professor,College of St Benedict,Computer Science,Data science|Databases
+Vijay Srinivas Tida,Assistant Professor,College of St Benedict,Computer Science,Machine learning
+Srikanth Vemula,Assistant Professor,College of St Benedict,Computer Science,Human-computer interaction|Robotics|Computer graphics|Computational bio & bioinformatics
 Eric Ruggieri,Professor,College of the Holy Cross,Mathematics or Statistics,
 Alisa DeStefano,Professor,College of the Holy Cross,Mathematics or Statistics,
 Wenxin Du,Assistant Professor,College of the Holy Cross,Mathematics or Statistics,
-Zack Fitzsimmons,Associate Professor,College of the Holy Cross,Computer Science,Economics & computation
+Zack Fitzsimmons,Associate Professor,College of the Holy Cross,Computer Science,Artificial intelligence|Algorithms & complexity|Computational social science
 Sharon Frechette,Associate Professor,College of the Holy Cross,Mathematics or Statistics,
-Heather Guarnera,Assistant Professor,College of Wooster,Computer Science,Algorithms & complexity
-Drew Guarnera,Assistant Professor,College of Wooster,Computer Science,Software engineering
+Heather Guarnera,Assistant Professor,College of Wooster,Computer Science,Algorithms & complexity|Computer science education
+Drew Guarnera,Assistant Professor,College of Wooster,Computer Science,Software engineering|Human-computer interaction
 John Musgrave,Visiting Assistant Professor,College of Wooster,Computer Science,
-Alex Nord,Assistant Professor,College of Wooster,Invalid,
-Dan Palmer,Professor,College of Wooster,Computer Science,Artificial intelligence|Software engineering
+Alex Nord,Assistant Professor,College of Wooster,Computer Science,Computational bio & bioinformatics
+Dan Palmer,Professor,College of Wooster,Computer Science,Artificial intelligence
 Sofia Visa,Professor,College of Wooster,Computer Science,Machine learning|Computational bio & bioinformatics
 Ike Agbanusi,Assistant Professor,Colorado College,Mathematics or Statistics,
 David Brown,Professor,Colorado College,Mathematics or Statistics,
 Janet Burge,Associate Professor,Colorado College,Computer Science,Software engineering|Artificial intelligence|Computer science education
-Danielle Ellsworth,Assistant Professor,Colorado College,Computer Science,High-performance computing|Software engineering|Computer networks
+Danielle Ellsworth,Assistant Professor,Colorado College,Computer Science,High-performance computing|Software engineering|Computer security & privacy|Computer networks
 Stefan Erickson,Associate Professor,Colorado College,Mathematics or Statistics,
 Rebecca Garcia,Professor,Colorado College,Mathematics or Statistics,
 Luis David Garcia Puente,Professor,Colorado College,Mathematics or Statistics,
-Blake Jackson,Assistant Professor,Colorado College,Computer Science,Robotics|Natural language processing|Artificial intelligence
+Blake Jackson,Assistant Professor,Colorado College,Computer Science,Robotics|Natural language processing|Human-computer interaction
 Minho Kim,Assistant Professor,Colorado College,Mathematics or Statistics,
 Varsha Koushik,Assistant Professor,Colorado College,Computer Science,Human-computer interaction|Computer science education
 Beth Malmskog,Associate Professor,Colorado College,Mathematics or Statistics,
 Jane McDougall,Associate Professor,Colorado College,Mathematics or Statistics,
 Molly Moran,Associate Professor,Colorado College,Mathematics or Statistics,
-Ben Nye,Assistant Professor,Colorado College,Invalid,
+Ben Nye,Assistant Professor,Colorado College,Computer Science,Machine learning|Natural language processing
 Eddie Price,Visiting Assistant Professor,Colorado College,Mathematics or Statistics,
 Flavia Sancier-Barbosa,Associate Professor,Colorado College,Mathematics or Statistics,
-Cory B Scott,Assistant Professor,Colorado College,Computer Science,Machine learning
+Cory B Scott,Assistant Professor,Colorado College,Computer Science,Machine learning|Computer science education
 Mike Siddoway,Professor,Colorado College,Mathematics or Statistics,
 Ahmed Kamel,Professor,Concordia College,Computer Science,Artificial intelligence
-Damian Lampl,Assistant Professor,Concordia College,Computer Science,Artificial intelligence|Machine learning|Information retrieval
-Gregory Tanner,Associate Professor,Concordia College,Invalid,
-Christine Chung,Professor,Connecticut College,Computer Science,Algorithms & complexity|Economics & computation
+Damian Lampl,Assistant Professor,Concordia College,Computer Science,Artificial intelligence|Machine learning|Information retrieval|Computer networks
+Gregory Tanner,Associate Professor,Concordia College,Mathematics or Statistics,
+Christine Chung,Professor,Connecticut College,Computer Science,Algorithms & complexity
 S. James Lee,Associate Professor,Connecticut College,Computer Science,Computer graphics|Visualization
-Timothy Becker,Assistant Professor,Connecticut College,Computer Science,Machine learning|Data science|High-performance computing
+Timothy Becker,Assistant Professor,Connecticut College,Computer Science,Machine learning|Data science|Artificial intelligence|High-performance computing|Algorithms & complexity
 Stephen Douglass,Associate Professor,Connecticut College,Computer Science,Machine learning|Computational bio & bioinformatics|Algorithms & complexity
-Ozgur Izmirli,Professor,Connecticut College,Computer Science,Computer vision|Information retrieval|Human-computer interaction
+Ozgur Izmirli,Professor,Connecticut College,Computer Science,Information retrieval|Computer vision|Human-computer interaction|Robotics
 Gary Parker,Professor,Connecticut College,Computer Science,Artificial intelligence|Robotics
 William Tarimo,Assistant Professor,Connecticut College,Computer Science,Artificial intelligence|Machine learning|Robotics
 William Barnes,Adjunct Instructor,Connecticut College,Computer Science,Computer security & privacy
 Thomas Daggett,Adjunct Professor,Connecticut College,Computer Science,Computer architecture|Distributed systems|Software engineering
-Robert Peitzsch,Adjunct Professor,Connecticut College,Computer Science,Computational bio & bioinformatics|Data science
+Robert Peitzsch,Adjunct Professor,Connecticut College,Computer Science,Computational bio & bioinformatics
 John Schaeffer,Adjunct Instructor,Connecticut College,Computer Science,Computer networks|Computer security & privacy
 Leon Tabak,Professor,Cornell College,Computer Science,
-Ajit Chavan,Associate Professor,Cornell College,Invalid,
+Ajit Chavan,Associate Professor,Cornell College,Computer Science,Distributed systems
 Lauren Jepsen,Assistant Professor,Cornell College,Computer Science,
-Jeff Humphries,Professor,Covenant College,Computer Science,Computer security & privacy|Cryptography
-Zeyu Zhou,Visiting Assistant Professor,Covenant College,Computer Science,Machine learning
+Jeff Humphries,Professor,Covenant College,Computer Science,Computer security & privacy
+Zeyu Zhou,Visiting Assistant Professor,Covenant College,Computer Science,Machine learning|Algorithms & complexity|Artificial intelligence
 Raghu Ramanujan,Associate Professor,Davidson College,Computer Science,Artificial intelligence|Machine learning
 Matthew Bachmann,Visiting Assistant Professor,Davidson College,Mathematics or Statistics,
 Heather Blake,Associate Professor,Davidson College,Mathematics or Statistics,
@@ -227,109 +227,109 @@ Laurie Heyer,Associate Professor,Davidson College,Computer Science,Computational
 Terrence Lim,Assistant Professor,Davidson College,Computer Science,Programming languages|Software engineering|Measurement & performance analysis
 Hammurabi Mendes,Associate Professor,Davidson College,Computer Science,Distributed systems|Computer architecture
 Catherine Nemitz,Assistant Professor,Davidson College,Computer Science,Embedded & real-time systems
-Tabitha Peck,Associate Professor,Davidson College,Computer Science,Human-computer interaction|Visualization
+Tabitha Peck,Associate Professor,Davidson College,Computer Science,Human-computer interaction|Computer graphics
 Jonad Pulaj,Associate Professor,Davidson College,Computer Science,Algorithms & complexity
 Katy Williams,Assistant Professor,Davidson College,Computer Science,Visualization|Human-computer interaction
 Ana Wright,Assistant Professor,Davidson College,Mathematics or Statistics,
 Carl Yerger,Professor,Davidson College,Mathematics or Statistics,
 Yan Zhuang,Associate Professor,Davidson College,Mathematics or Statistics,
-Michael Chavrimootoo,Assistant Professor,Denison University,Invalid,
+Michael Chavrimootoo,Assistant Professor,Denison University,Computer Science,Artificial intelligence|Algorithms & complexity|Computational social science|Economics & computation
 Flannery Currin,Assistant Professor,Denison University,Computer Science,Human-computer interaction
-Mikey Goldweber,Professor,Denison University,Invalid,
-David Kahn,Assistant Professor,Denison University,Invalid,
+Mikey Goldweber,Professor,Denison University,Computer Science,
+David Kahn,Assistant Professor,Denison University,Computer Science,Programming languages|Logic & verification
 Matt Kretchmar,Professor,Denison University,Computer Science,Artificial intelligence|Machine learning
-Ashwin Lall,Professor,Denison University,Computer Science,Algorithms & complexity|Databases|Machine learning
-Ali Miller,Instructor,Denison University,Invalid,
-Stacey Truex,Assistant Professor,Denison University,Computer Science,Computer security & privacy
-Paul Bible,Assistant Professor,DePauw University,Invalid,
-Chad Byers,Associate Professor,DePauw University,Invalid,
-Mehmet Gulum,Assistant Professor,DePauw University,,
+Ashwin Lall,Professor,Denison University,Computer Science,Algorithms & complexity|Databases
+Ali Miller,Instructor,Denison University,Computer Science,
+Stacey Truex,Assistant Professor,Denison University,Computer Science,Machine learning|Computer security & privacy
+Paul Bible,Assistant Professor,DePauw University,Computer Science,Computational bio & bioinformatics
+Chad Byers,Associate Professor,DePauw University,Computer Science,
+Mehmet Gulum,Assistant Professor,DePauw University,Computer Science,Machine learning|Computer vision|Data science
 Brian Howard,Associate Professor,DePauw University,Computer Science,Programming languages|Logic & verification
-Allana Johnson,Instructor,DePauw University,Invalid,
+Allana Johnson,Instructor,DePauw University,Computer Science,
 Khadija Stewart,Professor,DePauw University,Computer Science,
 Scott Thede,Professor,DePauw University,Computer Science,Artificial intelligence|High-performance computing
-Gloria Townsend,Professor,DePauw University,Computer Science,Computer science education
-Grant Braught,Professor,Dickinson College,Computer Science,Robotics|Artificial intelligence|Computer science education
+Gloria Townsend,Professor,DePauw University,Computer Science,Robotics|Computer science education|Artificial intelligence
+Grant Braught,Professor,Dickinson College,Computer Science,Artificial intelligence|Robotics|Computer science education
 Matt Ferland,Assistant Professor,Dickinson College,Computer Science,Algorithms & complexity|Computer science education
 Dick Forrester,Professor,Dickinson College,Mathematics or Statistics,
-William Goble,Lecturer,Dickinson College,Computer Science,Software engineering|Mobile computing
-John MacCormick,Professor,Dickinson College,Computer Science,Artificial intelligence|Computer vision|Distributed systems
-Farhan Siddiqui,Associate Professor,Dickinson College,Computer Science,Computer networks|Mobile computing|Embedded & real-time systems
-Barry Burd,Professor,Drew University,Computer Science,Quantum computing|Programming languages|Algorithms & complexity
-Valerie Siyuan Feng,Assistant Professor,Drew University,Invalid,
-Chris Gibbs,Adjunct Professor,Drew University,Invalid,
-Prasad Kothapalli,Adjunct Professor,Drew University,Invalid,
-Diane Liporace,Assistant Teaching Professor,Drew University,Invalid,
-Yi Lu,Associate Professor,Drew University,Invalid,
-Fred Meyer,Adjunct Professor,Drew University,,
+William Goble,Lecturer,Dickinson College,Computer Science,Software engineering|Mobile computing|Data science
+John MacCormick,Professor,Dickinson College,Computer Science,Computer vision|Distributed systems|Computer science education
+Farhan Siddiqui,Associate Professor,Dickinson College,Computer Science,Computer networks|Mobile computing|Information retrieval|Computer security & privacy
+Barry Burd,Professor,Drew University,Computer Science,Programming languages|Quantum computing
+Valerie Siyuan Feng,Assistant Professor,Drew University,Computer Science,Algorithms & complexity|Computer networks
+Chris Gibbs,Adjunct Professor,Drew University,Computer Science,
+Prasad Kothapalli,Adjunct Professor,Drew University,Computer Science,
+Diane Liporace,Assistant Teaching Professor,Drew University,Computer Science,
+Yi Lu,Associate Professor,Drew University,Computer Science,
+Fred Meyer,Adjunct Professor,Drew University,Computer Science,
 Adam Michlin,Assistant Professor,Drew University,Computer Science,Computer science education
 Alex Rudniy,Associate Professor,Drew University,Computer Science,Natural language processing|Data science
 Debanjali Banerjee,Assistant Professor,Earlham College,Computer Science,Machine learning|Computer vision
-Doug Harms,Instructor,Earlham College,Computer Science,Computer networks|Computer graphics
+Doug Harms,Instructor,Earlham College,Computer Science,Computer networks|Computer graphics|Computer science education|Computational social science
 Charlie Peck,Associate Professor,Earlham College,Computer Science,High-performance computing|Computational bio & bioinformatics|Visualization
 Fatemeh Valizadeh Gamchi,Assistant Professor,Earlham College,Computer Science,Data science
-Yunting Yin,Assistant Professor,Earlham College,Computer Science,Natural language processing|Computer vision|Machine learning
+Yunting Yin,Assistant Professor,Earlham College,Computer Science,Natural language processing|Computer vision|Data science
 Injoo Kim,Associate Professor,East-West University,Computer Science,Artificial intelligence|Computer security & privacy|Software engineering
-Julie Zhang,Associate Professor,East-West University,Computer Science,Computer vision|Machine learning
-Komal Vashisht,Adjunct Instructor,East-West University,Invalid,
-Fran Casillas,Adjunct Professor,East-West University,,
-Kelly R. Debure,Professor,Eckerd College,Computer Science,Computer vision
+Julie Zhang,Associate Professor,East-West University,Computer Science,Machine learning|Computer vision
+Komal Vashisht,Adjunct Instructor,East-West University,Computer Science,
+Fran Casillas,Adjunct Professor,East-West University,Computer Science,
+Kelly R. Debure,Professor,Eckerd College,Computer Science,Computer vision|Data science|Visualization
 Michael L Hilton,Associate Professor,Eckerd College,Computer Science,Data science|Machine learning
-Holger Mauch,Professor,Eckerd College,Computer Science,Algorithms & complexity
+Holger Mauch,Professor,Eckerd College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
 Robert Beasley,Professor,Franklin College,Computer Science,Software engineering
-Kerry Smith,Professor,Franklin College,Computer Science,High-performance computing
+Kerry Smith,Professor,Franklin College,Computer Science,High-performance computing|Programming languages
 Justin D Brody,Assistant Professor,Franklin & Marshall College,Computer Science,Artificial intelligence
 Jing Hu,Associate Professor,Franklin & Marshall College,Computer Science,Computational bio & bioinformatics|Machine learning
 Emily K Jensen,Assistant Professor,Franklin & Marshall College,Computer Science,Artificial intelligence|Machine learning|Logic & verification
-Jacob Logas,Assistant Professor,Franklin & Marshall College,Invalid,
-Brad McDanel,Assistant Professor,Franklin & Marshall College,Computer Science,Machine learning|Computer architecture
+Jacob Logas,Assistant Professor,Franklin & Marshall College,Computer Science,Computer security & privacy|Human-computer interaction
+Brad McDanel,Assistant Professor,Franklin & Marshall College,Computer Science,Machine learning|Computer architecture|Distributed systems
 Ed Novak,Associate Professor,Franklin & Marshall College,Computer Science,Computer security & privacy|Computer science education
-Tony J Weaver,Adjunct Senior Instructor,Franklin & Marshall College,Computer Science,
+Tony J Weaver,Adjunct Senior Instructor,Franklin & Marshall College,Computer Science,Operating systems|Computer networks|Distributed systems|Measurement & performance analysis
 Willie Wilson,Assistant Professor,Franklin & Marshall College,Computer Science,Robotics|Artificial intelligence
-Andrea Tartaro,Professor,Furman University,Computer Science,Computer science education
-Chris Alvin,Associate Professor,Furman University,Computer Science,Artificial intelligence|Machine learning|Software engineering
+Andrea Tartaro,Professor,Furman University,Computer Science,Computer science education|Human-computer interaction
+Chris Alvin,Associate Professor,Furman University,Computer Science,Artificial intelligence|Computer science education|Software engineering
 Rebecca Drucker,Assistant Professor,Furman University,Computer Science,Computer networks|Computational bio & bioinformatics
-Syed Fahad Sultan,Assistant Professor,Furman University,Computer Science,Data science|Machine learning|Computational social science
-Kevin Treu,Professor,Furman University,Invalid,
+Syed Fahad Sultan,Assistant Professor,Furman University,Computer Science,Machine learning|Data science|Computational social science
+Kevin Treu,Professor,Furman University,Computer Science,
 Sunghee Sunny Kim,Professor,Gettysburg College,Computer Science,Computer graphics|Visualization
-Ivaylo Ilinkin,Professor,Gettysburg College,Computer Science,Computational bio & bioinformatics|Computer graphics|Human-computer interaction
+Ivaylo Ilinkin,Professor,Gettysburg College,Computer Science,Computational bio & bioinformatics|Computer graphics|Human-computer interaction|Computer science education|Algorithms & complexity
 Todd W. Neller,Professor,Gettysburg College,Computer Science,Artificial intelligence|Games & interactive art
 Clif Presser,Associate Professor,Gettysburg College,Computer Science,Visualization
-Daniel White,Lecturer,Gettysburg College,Invalid,
-Jonathan Hoffman,Adjunct Instructor,Gettysburg College,Invalid,
+Daniel White,Lecturer,Gettysburg College,Computer Science,
+Jonathan Hoffman,Adjunct Instructor,Gettysburg College,Mathematics or Statistics,
 Russell C. Bjork,Professor,Gordon College,Computer Science,
 Irvin J. Levy,Professor,Gordon College,Mathematics or Statistics,
 Jonathan R. Senning,Professor,Gordon College,Computer Science,High-performance computing
-Jill Zimmerman,Professor,Goucher College,Computer Science,Programming languages|Robotics|Algorithms & complexity
-Mohammad Naderi Dehkordi,Associate Professor,Goucher College,Computer Science,Machine learning|Computer security & privacy
-Thomas Kelliher,Associate Professor,Goucher College,Computer Science,Embedded & real-time systems|Mobile computing
-Robert Lewand,Professor,Goucher College,Invalid,
+Jill Zimmerman,Professor,Goucher College,Computer Science,Programming languages|Robotics
+Mohammad Naderi Dehkordi,Associate Professor,Goucher College,Computer Science,Artificial intelligence|Machine learning|Computer security & privacy
+Thomas Kelliher,Associate Professor,Goucher College,Computer Science,Embedded & real-time systems|Computer architecture|Mobile computing
+Robert Lewand,Professor,Goucher College,Computer Science,
 Peter-Michael Osera,Associate Professor,Grinnell College,Computer Science,Programming languages|Computer science education|Human-computer interaction
-Ali Allami,Associate Professor,Grinnell College,Computer Science,Computer security & privacy|Distributed systems
-Eric Autry,Assistant Professor,Grinnell College,Invalid,
-Charlie Curtsinger,Associate Professor,Grinnell College,Computer Science,Computer security & privacy|Measurement & performance analysis|Software engineering
-Nicole Eikmeier,Associate Professor,Grinnell College,Unknown,
+Ali Allami,Associate Professor,Grinnell College,Computer Science,Distributed systems|Computer security & privacy
+Eric Autry,Assistant Professor,Grinnell College,Computer Science,
+Charlie Curtsinger,Associate Professor,Grinnell College,Computer Science,Computer security & privacy|Measurement & performance analysis|Distributed systems
+Nicole Eikmeier,Associate Professor,Grinnell College,Mathematics or Statistics,
 Fernanda Eliott,Assistant Professor,Grinnell College,Computer Science,Artificial intelligence|Machine learning
 Shawn Ong,Assistant Professor,Grinnell College,Computer Science,Algorithms & complexity|Logic & verification
 Samuel A. Rebelsky,Professor,Grinnell College,Computer Science,Computer science education
-William Rebelsky,Assistant Professor,Grinnell College,Computer Science,Artificial intelligence|Human-computer interaction
-Jerod Weinman,Associate Professor,Grinnell College,Computer Science,Computer vision|Machine learning|Computer science education
+William Rebelsky,Assistant Professor,Grinnell College,Computer Science,Artificial intelligence|Computer vision
+Jerod Weinman,Associate Professor,Grinnell College,Computer Science,Computer vision|Machine learning|Artificial intelligence
 Aaron Nienow,Senior Instructor,Gustavus Adolphus College,Mathematics or Statistics,
-Baili Chen,Associate Professor,Gustavus Adolphus College,Unknown,
+Baili Chen,Associate Professor,Gustavus Adolphus College,Mathematics or Statistics,
 Flint Million,Adjunct Assistant Professor,Gustavus Adolphus College,Computer Science,
-Guarionex Salivia,Associate Professor,Gustavus Adolphus College,Computer Science,Human-computer interaction|Games & interactive art
+Guarionex Salivia,Associate Professor,Gustavus Adolphus College,Computer Science,Human-computer interaction|Computer science education
 Jacob Siehler,Associate Professor,Gustavus Adolphus College,Mathematics or Statistics,
 Jeff Ford,Visiting Assistant Professor,Gustavus Adolphus College,Mathematics or Statistics,
 Jillian Downey,Associate Professor,Gustavus Adolphus College,Mathematics or Statistics,
 Laura Hildreth,Associate Professor,Gustavus Adolphus College,Mathematics or Statistics,
 Louis Yu,Associate Professor,Gustavus Adolphus College,Computer Science,Information retrieval|Computer science education
-Darren Strash,Associate Professor,Hamilton College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics|Human-computer interaction
-Mark Bailey,Professor,Hamilton College,Computer Science,Computer architecture|Computer security & privacy|Mobile computing
+Darren Strash,Associate Professor,Hamilton College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
+Mark Bailey,Professor,Hamilton College,Computer Science,Computer security & privacy|Computer architecture
 Mason Brown,Visiting Assistant Professor,Hamilton College,Computer Science,Robotics|Artificial intelligence|Software engineering
 Shawn Chen,Assistant Professor,Hamilton College,Computer Science,Machine learning|Computational bio & bioinformatics
 Karyn Doke,Assistant Professor,Hamilton College,Computer Science,Computer networks
-Han Dong,Assistant Professor,Hamilton College,Computer Science,Operating systems|Distributed systems
-Thomas Helmuth,Associate Professor,Hamilton College,Computer Science,Artificial intelligence|Programming languages
+Han Dong,Assistant Professor,Hamilton College,Computer Science,Distributed systems|Operating systems|Measurement & performance analysis
+Thomas Helmuth,Associate Professor,Hamilton College,Computer Science,Artificial intelligence
 Sarah Morrison-Smith,Assistant Professor,Hamilton College,Computer Science,Human-computer interaction
 Wenbo Wang,Visiting Assistant Professor,Hamilton College,Computer Science,Natural language processing|Computer security & privacy
 Dylan Domel-White,Assistant Professor,Hampden-Sydney College,Mathematics or Statistics,
@@ -337,37 +337,37 @@ Rebecca Jayne,Associate Professor,Hampden-Sydney College,Mathematics or Statisti
 Brian Lins,Professor,Hampden-Sydney College,Mathematics or Statistics,
 Sarah Loeb,Associate Professor,Hampden-Sydney College,Mathematics or Statistics,
 John Machacek,Assistant Professor,Hampden-Sydney College,Mathematics or Statistics,
-Joseph Rennie,Assistant Professor,Hampden-Sydney College,Unknown,
+Joseph Rennie,Assistant Professor,Hampden-Sydney College,Computer Science,
 Michael C. Strayer,Associate Professor,Hampden-Sydney College,Mathematics or Statistics,
 William Tolley,Assistant Professor,Hampden-Sydney College,Computer Science,Computer security & privacy
-Jeffrey LaMarche,Visiting Instructor,Hanover College,,
-Haris Skiadas,Professor,Hanover College,Computer Science,Algorithms & complexity|Distributed systems
+Jeffrey LaMarche,Visiting Instructor,Hanover College,Computer Science,
+Haris Skiadas,Professor,Hanover College,Computer Science,Algorithms & complexity
 Barbara Wahl,Professor,Hanover College,Mathematics or Statistics,
 Howard Lichtman,Professor,Hartwick College,Computer Science,Computer security & privacy|Computer networks|Computer architecture
 Jim Boerkoel,Professor,Harvey Mudd College,Computer Science,Artificial intelligence|Robotics|Human-computer interaction
 Julie Medero,Associate Professor,Harvey Mudd College,Computer Science,Natural language processing
-Lucas Bang,Associate Professor,Harvey Mudd College,Computer Science,Logic & verification|Programming languages
-Katherine Breeden,Associate Professor,Harvey Mudd College,Computer Science,Computer graphics|Visualization
+Lucas Bang,Associate Professor,Harvey Mudd College,Computer Science,Logic & verification|Algorithms & complexity|Programming languages
+Katherine Breeden,Associate Professor,Harvey Mudd College,Computer Science,Computer graphics|Visualization|Computational bio & bioinformatics
 Jonathan Chang,Assistant Professor,Harvey Mudd College,Computer Science,Natural language processing|Computational social science
-Zach Dodds,Professor,Harvey Mudd College,Computer Science,
+Zach Dodds,Professor,Harvey Mudd College,Computer Science,Computer science education
 Lynn Kirabo,Assistant Professor,Harvey Mudd College,Computer Science,Human-computer interaction
-George Montañez,Associate Professor,Harvey Mudd College,Computer Science,Machine learning|Information retrieval
+George Montañez,Associate Professor,Harvey Mudd College,Computer Science,Machine learning
 Vidushi Ojha,Assistant Professor,Harvey Mudd College,Computer Science,Computer science education
 Melissa O'Neill,Professor,Harvey Mudd College,Computer Science,Programming languages|Software engineering
-Arthi Padmanabhan,Assistant Professor,Harvey Mudd College,Computer Science,Computer networks|Distributed systems|Software engineering
+Arthi Padmanabhan,Assistant Professor,Harvey Mudd College,Computer Science,Computer networks|Distributed systems|Machine learning|Software engineering
 Tim Randolph,Assistant Professor,Harvey Mudd College,Computer Science,Algorithms & complexity|Computer science education
-Xanda Schofield,Associate Professor,Harvey Mudd College,Computer Science,Artificial intelligence|Natural language processing|Machine learning
-Chris Stone,Professor,Harvey Mudd College,Computer Science,Logic & verification|Natural language processing|Computer architecture
-Erin Talvitie,Associate Professor,Harvey Mudd College,Computer Science,Artificial intelligence|Machine learning
+Xanda Schofield,Associate Professor,Harvey Mudd College,Computer Science,Natural language processing|Machine learning
+Chris Stone,Professor,Harvey Mudd College,Computer Science,Logic & verification|Programming languages
+Erin Talvitie,Associate Professor,Harvey Mudd College,Computer Science,Artificial intelligence|Machine learning|Natural language processing
 Beth Trushkowsky,Associate Professor,Harvey Mudd College,Computer Science,Databases|Distributed systems
-Ben Wiedermann,Professor,Harvey Mudd College,Invalid,
-Calden Wloka,Assistant Professor,Harvey Mudd College,Computer Science,Computer vision
+Ben Wiedermann,Professor,Harvey Mudd College,Computer Science,Programming languages|Software engineering
+Calden Wloka,Assistant Professor,Harvey Mudd College,Computer Science,Computer vision|Artificial intelligence
 John Dougherty,Associate Professor,Haverford College,Computer Science,Computer science education|Human-computer interaction
-Sorelle Friedler,Professor,Haverford College,Computer Science,Artificial intelligence|Machine learning|Algorithms & complexity
+Sorelle Friedler,Professor,Haverford College,Computer Science,Artificial intelligence|Machine learning|Human-computer interaction
 Alvin Grissom,Associate Professor,Haverford College,Computer Science,Natural language processing
 Steven Lindell,Professor,Haverford College,Computer Science,Algorithms & complexity|Logic & verification
-Dung Nguyen,Visiting Assistant Professor,Haverford College,Invalid,
-Thao Nguyen,Assistant Professor,Haverford College,Invalid,
+Dung Nguyen,Visiting Assistant Professor,Haverford College,Computer Science,Computer security & privacy|Machine learning
+Thao Nguyen,Assistant Professor,Haverford College,Computer Science,Robotics|Natural language processing
 David Wonnacott,Professor,Haverford College,Computer Science,
 Gabriel Ferrer,Professor,Hendrix College,Computer Science,Artificial intelligence|Robotics|Machine learning
 Mark Goadrich,Professor,Hendrix College,Computer Science,Artificial intelligence|Games & interactive art
@@ -377,59 +377,59 @@ Joseph Rusinko,Associate Professor,Hobart and William Smith College,Mathematics 
 Jonathan E Forde,Professor,Hobart and William Smith College,Mathematics or Statistics,
 Jocelyn Bell,Associate Professor,Hobart and William Smith College,Mathematics or Statistics,
 Jennifer Biermann,Associate Professor,Hobart and William Smith College,Mathematics or Statistics,
-Stina S Bridgeman,Associate Professor,Hobart and William Smith College,Unknown,
+Stina S Bridgeman,Associate Professor,Hobart and William Smith College,Computer Science,
 Chris Fietkiewicz,Associate Professor,Hobart and William Smith College,Computer Science,High-performance computing|Computational bio & bioinformatics
-Yan Hao,Associate Professor,Hobart and William Smith College,Invalid,
-Hanqing Hu,Assistant Professor,Hobart and William Smith College,Invalid,
+Yan Hao,Associate Professor,Hobart and William Smith College,Computer Science,
+Hanqing Hu,Assistant Professor,Hobart and William Smith College,Computer Science,
 Erika L.C. King,Associate Professor,Hobart and William Smith College,Mathematics or Statistics,
-Michael Jipping,Professor,Hope College,Computer Science,Mobile computing|Human-computer interaction
-Charles Cusack,Professor,Hope College,Computer Science,Algorithms & complexity
-Ryan McFall,Professor,Hope College,Computer Science,Human-computer interaction|Computer science education
+Michael Jipping,Professor,Hope College,Computer Science,Human-computer interaction|Mobile computing
+Charles Cusack,Professor,Hope College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics|Computer graphics
+Ryan McFall,Professor,Hope College,Computer Science,Human-computer interaction|Software engineering|Computer science education
 Fola Olagbemi,Assistant Professor,Hope College,Computer Science,High-performance computing|Machine learning
-Katrina Koehler,Associate Professor,Houghton University,Unknown,
-Babafemi Sorinolu,Assistant Professor,Houghton University,Computer Science,Machine learning
+Katrina Koehler,Associate Professor,Houghton University,Computer Science,Data science
+Babafemi Sorinolu,Assistant Professor,Houghton University,Computer Science,Machine learning|Data science
 Takako Soma,Associate Professor,Illinois College,Computer Science,Programming languages|Algorithms & complexity
-Gerald W. Kruse,Professor,Juniata College,Mathematics or Statistics,
+Gerald W. Kruse,Professor,Juniata College,Computer Science,Computer science education|High-performance computing
 Elainea Neville,Instructor,Juniata College,Computer Science,
-Jianyuan Ni,Assistant Professor,Juniata College,Computer Science,Machine learning|Mobile computing
+Jianyuan Ni,Assistant Professor,Juniata College,Computer Science,Machine learning|Mobile computing|Artificial intelligence
 William H. Thomas,Professor,Juniata College,Computer Science,Computer networks|Databases
-John J. Wright,Associate Professor,Juniata College,Computer Science,Human-computer interaction|Data science
-Jigar Patel,Lecturer,Juniata College,Invalid,
+John J. Wright,Associate Professor,Juniata College,Computer Science,Human-computer interaction|Computer science education
+Jigar Patel,Lecturer,Juniata College,Computer Science,
 Alyce Brady,Professor,Kalamazoo College,Computer Science,Computer science education|Software engineering|Programming languages
-Pam Cutter,Professor,Kalamazoo College,Computer Science,Computer science education
-Tasnim Gharaibeh,Assistant Professor,Kalamazoo College,Invalid,
+Pam Cutter,Professor,Kalamazoo College,Computer Science,Computer science education|Human-computer interaction
+Tasnim Gharaibeh,Assistant Professor,Kalamazoo College,Computer Science,Algorithms & complexity
 Nicholas Polanco,Visiting Assistant Professor,Kalamazoo College,Computer Science,Computer security & privacy|Software engineering
-Sandino Vargas-Pérez,Associate Professor,Kalamazoo College,Invalid,
-David Bunde,Professor,Knox College,Computer Science,High-performance computing|Algorithms & complexity|Computer science education
-Shengting Cao,Assistant Professor,Knox College,Computer Science,Computer vision|Artificial intelligence
+Sandino Vargas-Pérez,Associate Professor,Kalamazoo College,Computer Science,High-performance computing|Algorithms & complexity|Computational bio & bioinformatics|Data science
+David Bunde,Professor,Knox College,Computer Science,High-performance computing|Algorithms & complexity|Software engineering|Computer science education
+Shengting Cao,Assistant Professor,Knox College,Computer Science,Artificial intelligence|Computer vision
 Michael Gerten,Visiting Instructor,Knox College,Computer Science,Software engineering
-Jurdana Masuma Iqrah,Assistant Professor,Knox College,Computer Science,Machine learning|Computer vision|High-performance computing
+Jurdana Masuma Iqrah,Assistant Professor,Knox College,Computer Science,Machine learning|Computer vision|High-performance computing|Distributed systems
 Jaime Spacco,Associate Professor,Knox College,Computer Science,Software engineering|Computer science education
-Ge Xia,Professor,Lafayette College,Computer Science,Algorithms & complexity
-Lauren Biernacki,Assistant Professor,Lafayette College,Invalid,
+Ge Xia,Professor,Lafayette College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
+Lauren Biernacki,Assistant Professor,Lafayette College,Computer Science,Computer architecture|Computer security & privacy
 Jonathan Dahl,Senior Lecturer,Lafayette College,Computer Science,Algorithms & complexity|Computer security & privacy
 Christian Lopez,Assistant Professor,Lafayette College,Computer Science,Machine learning|Human-computer interaction
-Jeffrey O. Pfaffmann,Associate Professor,Lafayette College,Computer Science,Artificial intelligence
+Jeffrey O. Pfaffmann,Associate Professor,Lafayette College,Computer Science,Artificial intelligence|Computational bio & bioinformatics
 Sofia Serrano,Assistant Professor,Lafayette College,Computer Science,Natural language processing
-Jorge Silveyra,Assistant Professor,Lafayette College,Invalid,
-Justin Smith,Assistant Professor,Lafayette College,Computer Science,Software engineering|Human-computer interaction
+Jorge Silveyra,Assistant Professor,Lafayette College,Computer Science,
+Justin Smith,Assistant Professor,Lafayette College,Computer Science,Software engineering|Human-computer interaction|Computer security & privacy
 Jia Tao,Associate Professor,Lafayette College,Computer Science,Artificial intelligence|Logic & verification
 Enrique Trevino,Professor,Lake Forest College,Mathematics or Statistics,
-Sugata Banerji,Associate Professor,Lake Forest College,Computer Science,Computer vision
+Sugata Banerji,Associate Professor,Lake Forest College,Computer Science,Computer vision|Machine learning
 Sara Jamshidi,Assistant Professor,Lake Forest College,Computer Science,Artificial intelligence|Machine learning
-Craig Knuckles,Professor,Lake Forest College,Computer Science,Software engineering|Databases
-Dakotah Lambert,Assistant Professor,Lake Forest College,Computer Science,Algorithms & complexity|Natural language processing
+Craig Knuckles,Professor,Lake Forest College,Computer Science,Computer networks|Software engineering|Databases
+Dakotah Lambert,Assistant Professor,Lake Forest College,Computer Science,Natural language processing|Algorithms & complexity|Logic & verification
 Gunjan Sharma,Visiting Assistant Professor,Lake Forest College,Mathematics or Statistics,
-Kitai Jeong,Assistant Professor,Lane College,,
-Sheldon Liang,Assistant Professor,Lane College,,
-Kent Tyler,Assistant Professor,Lane College,,
-Acacia Ackles,Assistant Professor,Lawrence University,Computer Science,Computational bio & bioinformatics|Computer science education
+Kitai Jeong,Assistant Professor,Lane College,Computer Science,
+Sheldon Liang,Assistant Professor,Lane College,Computer Science,Computer vision
+Kent Tyler,Assistant Professor,Lane College,Computer Science,
+Acacia Ackles,Assistant Professor,Lawrence University,Computer Science,Computational bio & bioinformatics
 Kyle Diederich,Visiting Assistant Professor,Lawrence University,Computer Science,
 Joseph N. Gregg,Associate Professor,Lawrence University,Computer Science,Software engineering|Algorithms & complexity
 Kurt Krebsbach,Professor,Lawrence University,Computer Science,
 David Lovitz,Visiting Professor,Lewis & Clark College,Mathematics or Statistics,
-Sweta Suryanarayan,Assistant Professor,Lewis & Clark College,Unknown,
-Nurideen Abubakari,Visiting Assistant Professor,Linfield University,Invalid,
+Sweta Suryanarayan,Assistant Professor,Lewis & Clark College,Mathematics or Statistics,
+Nurideen Abubakari,Visiting Assistant Professor,Linfield University,Computer Science,
 Stephen Bricher,Professor,Linfield University,Mathematics or Statistics,
 Daniel Ford,Assistant Professor,Linfield University,Computer Science,Artificial intelligence|Algorithms & complexity
 Mike Hitchman,Professor,Linfield University,Mathematics or Statistics,
@@ -437,410 +437,410 @@ Kate Lorenzen,Assistant Professor,Linfield University,Mathematics or Statistics,
 Chuck Lundon,Professor,Linfield University,Mathematics or Statistics,
 Jennifer Nordstrom,Professor,Linfield University,Mathematics or Statistics,
 Yujie Wang,Assistant Professor,Linfield University,Computer Science,Natural language processing|Machine learning
-Roman Yasinovskyy,Associate Professor,Luther College,Computer Science,Data science
+Roman Yasinovskyy,Associate Professor,Luther College,Computer Science,
 Thuy Do,Assistant Professor,Luther College,Computer Science,Machine learning|Distributed systems
-Kar Ee Ho,Assistant Professor,Luther College,Invalid,
-Sanad Aburass,Assistant Professor,Luther College,Invalid,
+Kar Ee Ho,Assistant Professor,Luther College,Computer Science,
+Sanad Aburass,Assistant Professor,Luther College,Computer Science,Machine learning|Computer vision
 Krish Pillai,Assistant Professor,Lycoming College,Computer Science,Games & interactive art|Computer graphics|Mobile computing
 Adrian Rublein,Assistant Professor,Lycoming College,Computer Science,Computer networks|Artificial intelligence
-Marcus Birkenkrahe,Associate Professor,Lyon College,Computer Science,Data science|Machine learning
-Pietro Dall'Olio,Assistant Professor,Lyon College,Invalid,
+Marcus Birkenkrahe,Associate Professor,Lyon College,Computer Science,Data science
+Pietro Dall'Olio,Assistant Professor,Lyon College,Computer Science,
 Shilad Sen,Professor,Macalester College,Computer Science,Information retrieval|Human-computer interaction
 Brianna Heggeseth,Professor,Macalester College,Mathematics or Statistics,
-Amin Alhashim,Visiting Assistant Professor,Macalester College,Computer Science,Computer science education|Human-computer interaction
+Amin Alhashim,Visiting Assistant Professor,Macalester College,Computer Science,Computer science education
 Suhas Arehalli,Assistant Professor,Macalester College,Computer Science,Natural language processing
-Curtis Balz,Visiting Assistant Professor,Macalester College,,
+Curtis Balz,Visiting Assistant Professor,Macalester College,Computer Science,
 Andrew Beveridge,Professor,Macalester College,Mathematics or Statistics,
-Md Mutasim Billah,Visiting Assistant Professor,Macalester College,Invalid,
-Paul Cantrell,Senior Instructor,Macalester College,Computer Science,Programming languages|Information retrieval|Games & interactive art
+Md Mutasim Billah,Visiting Assistant Professor,Macalester College,Computer Science,Computational bio & bioinformatics
+Paul Cantrell,Senior Instructor,Macalester College,Computer Science,Programming languages|Games & interactive art
 Jedidiah Carlson,Visiting Assistant Professor,Macalester College,Computer Science,Computational bio & bioinformatics
 Yariana Diaz,Assistant Professor,Macalester College,Mathematics or Statistics,
-Dan Drake,Visiting Assistant Professor,Macalester College,Invalid,
-Lian Duan,Instructor,Macalester College,Computer Science,Software engineering|Programming languages
+Dan Drake,Visiting Assistant Professor,Macalester College,Computer Science,Data science|Computer science education
+Lian Duan,Instructor,Macalester College,Computer Science,Software engineering|Logic & verification
 David Ehren,Instructor,Macalester College,Mathematics or Statistics,
 Elizabeth Ernst,Assistant Professor,Macalester College,Computer Science,Algorithms & complexity
 Taryn Flock,Assistant Professor,Macalester College,Mathematics or Statistics,
-Susan Fox,Professor,Macalester College,Computer Science,Robotics|Machine learning|Computer vision
+Susan Fox,Professor,Macalester College,Computer Science,Robotics|Machine learning|Computer vision|Artificial intelligence
 Kelsey Grinde,Assistant Professor,Macalester College,Mathematics or Statistics,
 William Grodzicki,Visiting Assistant Professor,Macalester College,Mathematics or Statistics,
 Tom Halverson,Professor,Macalester College,Mathematics or Statistics,
-Alex Hanhart,Visiting Assistant Professor,Macalester College,,
+Alex Hanhart,Visiting Assistant Professor,Macalester College,Computer Science,
 Kristin Heysse,Assistant Professor,Macalester College,Mathematics or Statistics,
 Bret Jackson,Associate Professor,Macalester College,Computer Science,Visualization|Human-computer interaction
-Abby Marsh,Associate Professor,Macalester College,Computer Science,Human-computer interaction
+Abby Marsh,Associate Professor,Macalester College,Computer Science,Computer security & privacy|Human-computer interaction
 Lauren Milne,Associate Professor,Macalester College,Computer Science,Human-computer interaction
 William Mitchell,Associate Professor,Macalester College,Mathematics or Statistics,
 Leslie Myint,Associate Professor,Macalester College,Mathematics or Statistics,
 Taylor Okonek,Assistant Professor,Macalester College,Mathematics or Statistics,
 Daniel O'Loughlin,Visiting Assistant Professor,Macalester College,Mathematics or Statistics,
 Getiria Onsongo,Associate Professor,Macalester College,Computer Science,Computational bio & bioinformatics
-Joslenne Peña,Assistant Professor,Macalester College,Computer Science,Human-computer interaction|Computer science education
+Joslenne Peña,Assistant Professor,Macalester College,Computer Science,Computer science education|Human-computer interaction
 Elizabeth Shoop,Professor,Macalester College,Computer Science,Computational bio & bioinformatics|Visualization|Distributed systems
 Vittorio Addona,Professor,Macalester College,Mathematics or Statistics,
 David Bressoud,Professor,Macalester College,Mathematics or Statistics,
 Daniel Kaplan,Professor,Macalester College,Mathematics or Statistics,
-Allan Marshall Kirch,Professor,Macalester College,,
-Barbara Johnson,Associate Professor,Maryville College,Computer Science,Software engineering|Programming languages
+Allan Marshall Kirch,Professor,Macalester College,Computer Science,
+Barbara Johnson,Associate Professor,Maryville College,Computer Science,Software engineering
 Jennifer Hontz,Professor,Meredith College,Mathematics or Statistics,
 Kristin Watkins,Professor of Practice,Meredith College,Computer Science,Software engineering|Computer science education
-Mark Gass,Assistant Professor of Practice,Meredith College,Computer Science,Software engineering|Programming languages|Computer networks
-Christopher Andrews,Associate Professor,Middlebury College,Computer Science,Human-computer interaction|Information retrieval|Visualization
+Mark Gass,Assistant Professor of Practice,Meredith College,Computer Science,Software engineering|Programming languages|Distributed systems|Computer networks|High-performance computing
+Christopher Andrews,Associate Professor,Middlebury College,Computer Science,Human-computer interaction|Visualization|Computer graphics
 Laura Biester,Assistant Professor,Middlebury College,Computer Science,Natural language processing|Computational social science
-Amy Briggs,Professor,Middlebury College,Computer Science,Algorithms & complexity|Programming languages|Computer science education
+Amy Briggs,Professor,Middlebury College,Computer Science,Algorithms & complexity|Programming languages|Data science|Information retrieval|Distributed systems
 Philip Caplan,Assistant Professor,Middlebury College,Computer Science,Computational bio & bioinformatics|Visualization|Algorithms & complexity
-Phil Chodrow,Assistant Professor,Middlebury College,Computer Science,Data science|Computer science education
-Ananya Das,Associate Professor,Middlebury College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics|Human-computer interaction
+Phil Chodrow,Assistant Professor,Middlebury College,Computer Science,Data science|Machine learning|Information retrieval|Computer security & privacy|Human-computer interaction
+Ananya Das,Associate Professor,Middlebury College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
 Matthew Dickerson,Professor,Middlebury College,Computer Science,
-Smith Gakuya,Visiting Lab Instructor,Middlebury College,Computer Science,
-Peter Johnson,Associate Professor,Middlebury College,Computer Science,Computer architecture|Operating systems|Computer networks
+Smith Gakuya,Visiting Lab Instructor,Middlebury College,Computer Science,Software engineering
+Peter Johnson,Associate Professor,Middlebury College,Computer Science,Computer architecture|Operating systems|Computer networks|Computer security & privacy|Programming languages
 Shelby Kimmel,Associate Professor,Middlebury College,Computer Science,Quantum computing|Algorithms & complexity
-Michael Linderman,Associate Professor,Middlebury College,Computer Science,Computational bio & bioinformatics
-Frank Swenton,Professor,Middlebury College,Computer Science,Algorithms & complexity
-Andrea Vaccari,Associate Professor,Middlebury College,Computer Science,Computer vision|Embedded & real-time systems|Computational bio & bioinformatics
-Robert Utterback,Adjunct Professor,Monmouth College,Computer Science,Machine learning|Information retrieval|Computer architecture
-Logan Mayfield,Professor,Monmouth College,Invalid,
+Michael Linderman,Associate Professor,Middlebury College,Computer Science,Computational bio & bioinformatics|Machine learning
+Frank Swenton,Professor,Middlebury College,Computer Science,Algorithms & complexity|Logic & verification
+Andrea Vaccari,Associate Professor,Middlebury College,Computer Science,Computer vision|Data science|Embedded & real-time systems
+Robert Utterback,Adjunct Professor,Monmouth College,Computer Science,Data science|Natural language processing
+Logan Mayfield,Professor,Monmouth College,Computer Science,Quantum computing
 Lisa A. Ballesteros,Associate Professor,Mount Holyoke College,Computer Science,Information retrieval|Computer science education
 Alyxander Burns,Assistant Professor,Mount Holyoke College,Computer Science,Visualization|Human-computer interaction
-Barbara Staudt Lerner,Professor,Mount Holyoke College,Computer Science,Human-computer interaction
-Tony Liu,Assistant Professor,Mount Holyoke College,Computer Science,Machine learning|Cryptography|Information retrieval
-James McCauley,Assistant Professor,Mount Holyoke College,Computer Science,Computer networks|Distributed systems
-Heather Pon-Barry,Associate Professor,Mount Holyoke College,Computer Science,Human-computer interaction|Natural language processing|Artificial intelligence
+Barbara Staudt Lerner,Professor,Mount Holyoke College,Computer Science,Information retrieval|Data science|Human-computer interaction
+Tony Liu,Assistant Professor,Mount Holyoke College,Computer Science,Machine learning|Artificial intelligence
+James McCauley,Assistant Professor,Mount Holyoke College,Computer Science,Computer networks|Distributed systems|Computer architecture
+Heather Pon-Barry,Associate Professor,Mount Holyoke College,Computer Science,Human-computer interaction|Natural language processing
 Audrey St. John,Professor,Mount Holyoke College,Computer Science,Algorithms & complexity|Robotics
-Melody Su,Assistant Professor,Mount Holyoke College,Computer Science,Robotics|Computer vision
+Melody Su,Assistant Professor,Mount Holyoke College,Computer Science,Robotics|Computer vision|Artificial intelligence|High-performance computing
 Diane Uwacu,Assistant Professor,Mount Holyoke College,Computer Science,Robotics|Computational bio & bioinformatics
-Michael Allocca,Associate Professor,Muhlenberg College,Invalid,
-Abbey D'Ovidio,Assistant Professor,Muhlenberg College,Invalid,
+Michael Allocca,Associate Professor,Muhlenberg College,Mathematics or Statistics,
+Abbey D'Ovidio,Assistant Professor,Muhlenberg College,Mathematics or Statistics,
 Allison Davidson,Associate Professor,Muhlenberg College,Mathematics or Statistics,
 William Gryc,Professor,Muhlenberg College,Mathematics or Statistics,
-Youngsun Jang,Assistant Professor,Muhlenberg College,Computer Science,Machine learning|Data science|Quantum computing
+Youngsun Jang,Assistant Professor,Muhlenberg College,Computer Science,Machine learning|Quantum computing|Data science
 Michael Karcher,Assistant Professor,Muhlenberg College,Mathematics or Statistics,
 Linda McGuire,Professor,Muhlenberg College,Mathematics or Statistics,
-Proyash Podder,Assistant Professor,Muhlenberg College,Computer Science,Computer networks|Information retrieval|Computer security & privacy
+Proyash Podder,Assistant Professor,Muhlenberg College,Computer Science,Computer networks|Computer security & privacy|Embedded & real-time systems
 James Russell,Associate Professor,Muhlenberg College,Mathematics or Statistics,
 Elyn Rykken,Professor,Muhlenberg College,Mathematics or Statistics,
-Gary Shufelt,Adjunct Professor,Muhlenberg College,Invalid,
+Gary Shufelt,Adjunct Professor,Muhlenberg College,Mathematics or Statistics,
 Hamed Yaghoobian,Assistant Professor,Muhlenberg College,Computer Science,Natural language processing|Human-computer interaction
 Fahmida Hamid,Assistant Professor,New College of Florida,Computer Science,Natural language processing|Information retrieval|Computer science education
 David Gillman,Associate Professor,New College of Florida,Computer Science,Computer vision
-Daniel Page,Visiting Assistant Professor,New College of Florida,Invalid,
+Daniel Page,Visiting Assistant Professor,New College of Florida,Computer Science,Algorithms & complexity|Computational bio & bioinformatics|Software engineering|Human-computer interaction|Information retrieval
 Gil Salu,Visiting Assistant Professor,New College of Florida,Computer Science,Data science
 Cynthia Taylor,Associate Professor,Oberlin College,Computer Science,Computer science education
 Stephen Checkoway,Associate Professor,Oberlin College,Computer Science,Computer security & privacy
-Adam Eck,Associate Professor,Oberlin College,Computer Science,Artificial intelligence
+Adam Eck,Associate Professor,Oberlin College,Computer Science,Artificial intelligence|Machine learning
 Molly Q Feldman,Assistant Professor,Oberlin College,Computer Science,Human-computer interaction|Programming languages|Computer science education
 Joshua H. Davidson,Assistant Professor,Oberlin College,Computer Science,Data science|Information retrieval
 Mary Hogan,Assistant Professor,Oberlin College,Computer Science,Computer networks
 Roberto Hoyle,Associate Professor,Oberlin College,Computer Science,Computer security & privacy|Human-computer interaction
-Howard Levinson,Assistant Professor,Oberlin College,Mathematics or Statistics,
-Michael McCarrin,Assistant Professor,Oberlin College,Computer Science,Artificial intelligence
-Sam Taggart,Associate Professor,Oberlin College,Computer Science,Algorithms & complexity|Economics & computation
+Howard Levinson,Assistant Professor,Oberlin College,Computer Science,Algorithms & complexity
+Michael McCarrin,Assistant Professor,Oberlin College,Computer Science,Artificial intelligence|Algorithms & complexity
+Sam Taggart,Associate Professor,Oberlin College,Computer Science,Economics & computation|Algorithms & complexity|Games & interactive art
 Emily Wang,Assistant Professor,Oberlin College,Computer Science,Human-computer interaction
-Noel Warford,Visiting Assistant Professor,Oberlin College,Computer Science,Computer security & privacy|Human-computer interaction
+Noel Warford,Visiting Assistant Professor,Oberlin College,Computer Science,Human-computer interaction|Computer security & privacy
 Justin Li,Associate Professor,Occidental College,Computer Science,Artificial intelligence
-Hector M. Camarillo Abad,Assistant Professor,Occidental College,Computer Science,Artificial intelligence|Human-computer interaction
+Hector M. Camarillo Abad,Assistant Professor,Occidental College,Computer Science,Artificial intelligence|Human-computer interaction|Mobile computing
 Kathryn Leonard,Professor,Occidental College,Computer Science,Computer vision|Computational bio & bioinformatics
 Teddy Pozo,Assistant Professor,Occidental College,Computer Science,Games & interactive art
 Joel Walsh,Assistant Professor,Occidental College,Computer Science,Natural language processing|Artificial intelligence|Machine learning
-Meiqing Zhang,Assistant Professor,Occidental College,Computer Science,Computational social science|Natural language processing|Data science
+Meiqing Zhang,Assistant Professor,Occidental College,Computer Science,Natural language processing|Data science
 Hsing-Hau Chen,Associate Professor,Occidental College,Computer Science,
 Chris Cianci,Assistant Professor,Occidental College,Computer Science,Robotics
 Treena Basu,Associate Professor,Occidental College,Mathematics or Statistics,
 Mehwish Abbasi,Assistant Professor,Ohio Wesleyan University,Computer Science,Data science|Machine learning
-Tzu-Yi Chen,Professor,Pomona College,Computer Science,High-performance computing|Algorithms & complexity|Computer science education
-Eleanor Birrell,Associate Professor,Pomona College,Computer Science,Computer security & privacy|Cryptography
+Tzu-Yi Chen,Professor,Pomona College,Computer Science,High-performance computing|Algorithms & complexity|Computer science education|Computer architecture|Data science
+Eleanor Birrell,Associate Professor,Pomona College,Computer Science,Computer security & privacy
 Anthony Clark,Assistant Professor,Pomona College,Computer Science,Robotics
 David R. Kauchak,Professor,Pomona College,Computer Science,Natural language processing
-Jingyi Li,Assistant Professor,Pomona College,Invalid,
-Joseph C. Osborn,Associate Professor,Pomona College,Computer Science,Artificial intelligence|Human-computer interaction|Games & interactive art
+Jingyi Li,Assistant Professor,Pomona College,Computer Science,Human-computer interaction
+Joseph C. Osborn,Associate Professor,Pomona College,Computer Science,Artificial intelligence|Games & interactive art|Human-computer interaction
 Alexandra Papoutsaki,Associate Professor,Pomona College,Computer Science,Human-computer interaction
-Sam Thomas,Assistant Professor,Pomona College,Invalid,
+Sam Thomas,Assistant Professor,Pomona College,Computer Science,Computer architecture|Computer security & privacy
 Andrew T. Wilson,Lecturer,Pomona College,Computer Science,
 Yuqing Melanie Wu,Professor,Pomona College,Computer Science,Databases
-Michael Zlatin,Assistant Professor,Pomona College,Invalid,
+Michael Zlatin,Assistant Professor,Pomona College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
 Gregory Goeckel,Professor,Presbyterian College,Computer Science,Programming languages
-Olivia Nche,Assistant Professor,Presbyterian College,Computer Science,Computer science education|Human-computer interaction|Games & interactive art
+Olivia Nche,Assistant Professor,Presbyterian College,Computer Science,Human-computer interaction|Computer science education
 Marc Ordower,Visiting Associate Professor,Randolph College,Mathematics or Statistics,
-Brad Spendlove,Associate Professor,Randolph College,Computer Science,Artificial intelligence|Games & interactive art
-Jia Wan,Associate Professor,Randolph College,Mathematics or Statistics,
-Rance Necaise,Associate Professor,Randolph-Macon College,Invalid,
-Maha Elouni,Assistant Professor,Randolph-Macon College,Invalid,
-Robin M. Givens,Associate Professor,Randolph-Macon College,Invalid,
-Samuel Henry,Assistant Professor,Randolph-Macon College,Invalid,
-John W. McManus,Associate Professor,Randolph-Macon College,Invalid,
-La Toria H. Tookes,Senior Lecturer,Randolph-Macon College,Invalid,
-Greg Anderson,Assistant Professor,Reed College,Computer Science,Machine learning|Programming languages
+Brad Spendlove,Associate Professor,Randolph College,Computer Science,Artificial intelligence
+Jia Wan,Associate Professor,Randolph College,Computer Science,
+Rance Necaise,Associate Professor,Randolph-Macon College,Computer Science,
+Maha Elouni,Assistant Professor,Randolph-Macon College,Computer Science,
+Robin M. Givens,Associate Professor,Randolph-Macon College,Computer Science,
+Samuel Henry,Assistant Professor,Randolph-Macon College,Computer Science,Natural language processing|Information retrieval
+John W. McManus,Associate Professor,Randolph-Macon College,Computer Science,
+La Toria H. Tookes,Senior Lecturer,Randolph-Macon College,Computer Science,
+Greg Anderson,Assistant Professor,Reed College,Computer Science,Programming languages|Machine learning|Artificial intelligence|Logic & verification
 Erica Blum,Assistant Professor,Reed College,Computer Science,Cryptography|Computer security & privacy
 Jim Fix,Professor,Reed College,Computer Science,
-Adam Groce,Associate Professor,Reed College,Computer Science,Cryptography|Databases|Artificial intelligence
+Adam Groce,Associate Professor,Reed College,Computer Science,Cryptography
 Harper Knittel,Assistant Professor,Reed College,Computer Science,Algorithms & complexity|Economics & computation
-Charles McGuffey,Assistant Professor,Reed College,Computer Science,Computer architecture|Algorithms & complexity|High-performance computing
+Charles McGuffey,Assistant Professor,Reed College,Computer Science,Computer architecture|Algorithms & complexity
 Mark Cooper,Adjunct Assistant Professor,Rhodes College,Computer Science,Artificial intelligence|Data science
 Jace King,Visiting Assistant Professor,Rhodes College,Computer Science,Games & interactive art|Computer science education
-Phillip Kirlin,Associate Professor,Rhodes College,Computer Science,Artificial intelligence|Machine learning
+Phillip Kirlin,Associate Professor,Rhodes College,Computer Science,Natural language processing|Artificial intelligence|Machine learning
 Sean Kugele,Assistant Professor,Rhodes College,Computer Science,Artificial intelligence
-Brian Larkins,Associate Professor,Rhodes College,Computer Science,Distributed systems|Programming languages|High-performance computing
-Betsy Sanders,Professor,Rhodes College,Computer Science,Computer graphics|Visualization
-Addison Schwamb,Assistant Professor,Rhodes College,Computer Science,Computational bio & bioinformatics
-Matt Superdock,Assistant Professor,Rhodes College,Computer Science,Logic & verification|Algorithms & complexity
-Durell Bouchard,Associate Professor,Roanoke College,Computer Science,Computer graphics|Human-computer interaction
-Anil Shende,Professor,Roanoke College,Computer Science,Algorithms & complexity|Computer networks|Distributed systems
+Brian Larkins,Associate Professor,Rhodes College,Computer Science,Programming languages|Distributed systems|High-performance computing|Computer architecture|Operating systems
+Betsy Sanders,Professor,Rhodes College,Computer Science,Computer graphics
+Addison Schwamb,Assistant Professor,Rhodes College,Computer Science,Machine learning|Computational bio & bioinformatics
+Matt Superdock,Assistant Professor,Rhodes College,Computer Science,Logic & verification
+Durell Bouchard,Associate Professor,Roanoke College,Computer Science,Computer vision|Human-computer interaction
+Anil Shende,Professor,Roanoke College,Computer Science,Algorithms & complexity|Distributed systems|Computer networks
 Wale Sekoni,Assistant Professor,Roanoke College,Computer Science,Algorithms & complexity
-Rajesh Prasad,Associate Professor,Saint Anselm College,Computer Science,Computer networks|Distributed systems|Computer architecture
-Adam Albina,Assistant Professor,Saint Anselm College,Computer Science,Software engineering
+Rajesh Prasad,Associate Professor,Saint Anselm College,Computer Science,Computer networks|Distributed systems|Mobile computing
+Adam Albina,Assistant Professor,Saint Anselm College,Computer Science,Databases|Software engineering
 Michael Huelsman,Assistant Professor,Saint Anselm College,Computer Science,Artificial intelligence
 Mitra Mohtarami,Assistant Professor,Saint Anselm College,Computer Science,
 Bradford Demarest,Assistant Professor,Saint Michael's College,Computer Science,Natural language processing|Machine learning
-Greta Pangborn,Associate Professor,Saint Michael's College,Computer Science,Algorithms & complexity
+Greta Pangborn,Associate Professor,Saint Michael's College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
 Nelson Dellis,Visiting Assistant Professor,Skidmore College,Computer Science,Logic & verification
-Wenlu Du,Assistant Professor,Skidmore College,Computer Science,Machine learning|Robotics
+Wenlu Du,Assistant Professor,Skidmore College,Computer Science,Artificial intelligence|Robotics|Machine learning|Natural language processing
 Michael Eckmann,Associate Professor,Skidmore College,Computer Science,Computer vision|Computer graphics
 Thomas O'Connell,Associate Professor,Skidmore College,Computer Science,Artificial intelligence|Machine learning|Algorithms & complexity
 Aarathi Prasad,Associate Professor,Skidmore College,Computer Science,Mobile computing|Human-computer interaction|Computer security & privacy
-David Read,Associate Teaching Professor,Skidmore College,Computer Science,Software engineering
-Christine Reilly,Associate Professor,Skidmore College,Computer Science,Distributed systems|Databases|Computer science education
-Esma Wali,Visiting Assistant Professor,Skidmore College,Computer Science,Artificial intelligence|Natural language processing
-Johanna Brewer,Assistant Professor,Smith College,Computer Science,Human-computer interaction|Mobile computing|Computational social science
+David Read,Associate Teaching Professor,Skidmore College,Computer Science,Computer security & privacy|Computer science education
+Christine Reilly,Associate Professor,Skidmore College,Computer Science,Distributed systems|Data science|Computer science education
+Esma Wali,Visiting Assistant Professor,Skidmore College,Computer Science,Artificial intelligence|Natural language processing|Machine learning
+Johanna Brewer,Assistant Professor,Smith College,Computer Science,Human-computer interaction|Mobile computing|Computer science education
 Shinyoung Cho,Assistant Professor,Smith College,Computer Science,Computer networks|Computer security & privacy
 R. Jordan Crouser,Associate Professor,Smith College,Computer Science,Visualization|Human-computer interaction
 Pablo Frank Bolton,Lecturer,Smith College,Computer Science,Computer science education
-Hia Ghosh,Lecturer,Smith College,Computer Science,Human-computer interaction|Computer science education
+Hia Ghosh,Lecturer,Smith College,Computer Science,Computer science education
 Nicholas Howe,Professor,Smith College,Computer Science,Computer vision
 Katherine M. Kinnaird,Associate Professor,Smith College,Computer Science,Information retrieval|Data science|Computer science education
-Jamie Macbeth,Associate Professor,Smith College,Computer Science,Artificial intelligence|Natural language processing
+Jamie Macbeth,Associate Professor,Smith College,Computer Science,Artificial intelligence|Natural language processing|Human-computer interaction
 Ab Mosca,Visiting Assistant Professor,Smith College,Computer Science,Visualization|Human-computer interaction
 Halie Rando,Assistant Professor,Smith College,Computer Science,Computational bio & bioinformatics
 Michael Robson,Assistant Professor,Smith College,Computer Science,High-performance computing|Computer architecture|Programming languages
-Ileana Streinu,Professor,Smith College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
-Ammon Hepworth,Assistant Professor,Southern Virginia University,Computer Science,Design automation|Computer vision
-Barbara M. Anthony,Professor,Southwestern University,Computer Science,Algorithms & complexity|Economics & computation
-Arjun Chandrasekhar,Assistant Professor,Southwestern University,Computer Science,Distributed systems|Computational bio & bioinformatics
-Jacob Schrum,Associate Professor,Southwestern University,Computer Science,Artificial intelligence|Programming languages|Robotics
+Ileana Streinu,Professor,Smith College,Computer Science,Algorithms & complexity|Robotics|Computational bio & bioinformatics
+Ammon Hepworth,Assistant Professor,Southern Virginia University,Computer Science,Design automation
+Barbara M. Anthony,Professor,Southwestern University,Computer Science,Algorithms & complexity
+Arjun Chandrasekhar,Assistant Professor,Southwestern University,Computer Science,Distributed systems|Algorithms & complexity|Computational bio & bioinformatics
+Jacob Schrum,Associate Professor,Southwestern University,Computer Science,Artificial intelligence|Programming languages|Natural language processing|Computer graphics
 Kevin A. Angstadt,Associate Professor,St. Lawrence University,Computer Science,Computer architecture|Programming languages|Software engineering
 Daniel Condon,Assistant Professor,St. Lawrence University,Mathematics or Statistics,
 Gabriel Dorfsman-Hopkins,Assistant Professor,St. Lawrence University,Mathematics or Statistics,
 A.J. Dykstra,Lecturer,St. Lawrence University,Mathematics or Statistics,
 Ed Harcourt,Professor,St. Lawrence University,Computer Science,Design automation
 Matt Higham,Associate Professor,St. Lawrence University,Mathematics or Statistics,
-Choong-Soo Lee,Associate Professor,St. Lawrence University,Computer Science,Human-computer interaction|Computer graphics
+Choong-Soo Lee,Associate Professor,St. Lawrence University,Computer Science,Human-computer interaction|Information retrieval|Computer vision|Machine learning|Data science
 Leiyue Li,Assistant Professor,St. Lawrence University,Mathematics or Statistics,
 Patti Frazer Lock,Professor,St. Lawrence University,Mathematics or Statistics,
 Robin Lock,Professor,St. Lawrence University,Mathematics or Statistics,
 Lisa Torrey,Associate Professor,St. Lawrence University,Computer Science,Artificial intelligence|Machine learning
 Maegan K. Bos,Associate Professor,St. Lawrence University,Mathematics or Statistics,
-Michael Schuckers,Professor,St. Lawrence University,Invalid,
-Emily Barranca,Assistant Professor,St. Mary's College of Maryland,Invalid,
-Sayan Goswami,Assistant Professor,St. Mary's College of Maryland,Invalid,
+Michael Schuckers,Professor,St. Lawrence University,Mathematics or Statistics,
+Emily Barranca,Assistant Professor,St. Mary's College of Maryland,Computer Science,
+Sayan Goswami,Assistant Professor,St. Mary's College of Maryland,Computer Science,High-performance computing|Distributed systems|Data science|Computer science education|Algorithms & complexity
 Simon Read,Associate Professor,St. Mary's College of Maryland,Computer Science,Logic & verification|Computer architecture
-Waqar Saleem,Associate Professor,St. Mary's College of Maryland,Computer Science,Computer graphics|Computer science education|Algorithms & complexity
-Muhieddine Shebaro,Visiting Assistant Professor,St. Mary's College of Maryland,Invalid,
-Bob Tracy,Adjunct Instructor,St. Mary's College of Maryland,Invalid,
+Waqar Saleem,Associate Professor,St. Mary's College of Maryland,Computer Science,Computer graphics|Computer science education|Algorithms & complexity|Programming languages
+Muhieddine Shebaro,Visiting Assistant Professor,St. Mary's College of Maryland,Computer Science,Machine learning|Data science
+Bob Tracy,Adjunct Instructor,St. Mary's College of Maryland,Computer Science,
 Richard Young,Adjunct Professor,St. Mary's College of Maryland,Computer Science,
 Seth Meyer,Professor,St. Norbert College,Mathematics or Statistics,
 Jaime Davila,Associate Professor,St. Olaf College,Computer Science,Computational bio & bioinformatics
-Olaf Hall-Holt,Associate Professor,St. Olaf College,Computer Science,Computer graphics|Computer vision|Computational bio & bioinformatics
-Michael Haydock,Adjunct Assistant Professor,St. Olaf College,Unknown,
-Kodjo Houssou,Visiting Instructor,St. Olaf College,Unknown,
-Barbara Johnson,Visiting Assistant Professor,St. Olaf College,Unknown,
+Olaf Hall-Holt,Associate Professor,St. Olaf College,Computer Science,Computer graphics|Computer vision|Algorithms & complexity
+Michael Haydock,Adjunct Assistant Professor,St. Olaf College,Computer Science,Algorithms & complexity
+Kodjo Houssou,Visiting Instructor,St. Olaf College,Computer Science,
+Barbara Johnson,Visiting Assistant Professor,St. Olaf College,Computer Science,
 Will Leeson,Assistant Professor,St. Olaf College,Computer Science,Software engineering
 Melissa Lynn,Assistant Professor,St. Olaf College,Computer Science,
 Ryota Matsuura,Professor,St. Olaf College,Mathematics or Statistics,
 Matthew Wright,Associate Professor,St. Olaf College,Mathematics or Statistics,
-Sharmishtha Dutta,Assistant Professor,Stonehill College,Computer Science,Artificial intelligence|Machine learning
+Sharmishtha Dutta,Assistant Professor,Stonehill College,Computer Science,Machine learning|Natural language processing
 Hamza M. Elhamdadi,Assistant Professor,Stonehill College,Computer Science,Visualization|Human-computer interaction
-Samuel Goree,Assistant Professor,Stonehill College,Computer Science,Machine learning|Human-computer interaction
+Samuel Goree,Assistant Professor,Stonehill College,Computer Science,Human-computer interaction|Machine learning
 Jeffrey Graham,Associate Professor,Susquehanna University,Mathematics or Statistics,
 Alathea Jensen,Associate Professor,Susquehanna University,Mathematics or Statistics,
 Edisanter Lo,Professor,Susquehanna University,Mathematics or Statistics,
-Steven Scheirer,Assistant Professor,Susquehanna University,Unknown,
-Anusha Veluswamy,Assistant Professor,Susquehanna University,Unknown,
+Steven Scheirer,Assistant Professor,Susquehanna University,Computer Science,
+Anusha Veluswamy,Assistant Professor,Susquehanna University,Computer Science,
 Alexander Wilce,Professor,Susquehanna University,Mathematics or Statistics,
 Kevin Webb,Associate Professor,Swarthmore College,Computer Science,Computer networks|Distributed systems|Computer science education
-Joshua Brody,Associate Professor,Swarthmore College,Computer Science,Algorithms & complexity|Machine learning|Natural language processing
-Vasanta Chaganti,Associate Professor,Swarthmore College,Computer Science,Computer networks|Databases|Measurement & performance analysis
+Joshua Brody,Associate Professor,Swarthmore College,Computer Science,Algorithms & complexity
+Vasanta Chaganti,Associate Professor,Swarthmore College,Computer Science,Computer networks|Measurement & performance analysis|Computer security & privacy
 Andrew Danner,Professor,Swarthmore College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics
-Lila Fontes,Associate Professor,Swarthmore College,Computer Science,Algorithms & complexity|Cryptography
-Nathaniel Grammel,Visiting Assistant Professor,Swarthmore College,Unknown,
-Gabriel Hope,Visiting Assistant Professor,Swarthmore College,Invalid,
+Lila Fontes,Associate Professor,Swarthmore College,Computer Science,Algorithms & complexity|Information retrieval|Computer security & privacy
+Nathaniel Grammel,Visiting Assistant Professor,Swarthmore College,Computer Science,Algorithms & complexity
+Gabriel Hope,Visiting Assistant Professor,Swarthmore College,Computer Science,Machine learning
 Neil Lutz,Visiting Assistant Professor,Swarthmore College,Computer Science,Algorithms & complexity
 Ben Mitchell,Assistant Professor,Swarthmore College,Computer Science,Artificial intelligence|Machine learning
-Tia Newhall,Professor,Swarthmore College,Computer Science,Distributed systems|Computer science education|Programming languages
+Tia Newhall,Professor,Swarthmore College,Computer Science,Distributed systems|Computer science education|Computer architecture
 Keith O'Hara,Associate Professor,Swarthmore College,Computer Science,Robotics|Computer science education
 Zachary Palmer,Associate Professor,Swarthmore College,Computer Science,Programming languages
 Ameet Soni,Associate Professor,Swarthmore College,Computer Science,Machine learning|Computational bio & bioinformatics
 Sukrit Venkatagiri,Assistant Professor,Swarthmore College,Computer Science,Human-computer interaction
-Ranysha Ware,Assistant Professor,Swarthmore College,Computer Science,Computer networks
+Ranysha Ware,Assistant Professor,Swarthmore College,Computer Science,Computer networks|Measurement & performance analysis
 Rich Wicentowski,Professor,Swarthmore College,Computer Science,Natural language processing
-Charlie Kazer,Lab Instructor,Swarthmore College,Computer Science,Computer networks
-Marcus Brumfield,Assistant Professor,Tougaloo College,Invalid,
-Bobby England,Professor,Transylvania University,Computer Science,Computer science education|Operating systems
+Charlie Kazer,Lab Instructor,Swarthmore College,Computer Science,Computer networks|Measurement & performance analysis
+Marcus Brumfield,Assistant Professor,Tougaloo College,Computer Science,
+Bobby England,Professor,Transylvania University,Computer Science,Operating systems|Computer science education|Computer graphics
 Kenny Moorman,Professor,Transylvania University,Computer Science,Artificial intelligence|Robotics
-Ewa Syta,Associate Professor,Trinity College,Computer Science,Cryptography|Computer security & privacy|Distributed systems
-Chandranil Chakraborttii,Assistant Professor,Trinity College,Computer Science,Machine learning|Programming languages|Games & interactive art
+Ewa Syta,Associate Professor,Trinity College,Computer Science,Computer security & privacy|Cryptography|Distributed systems|Computer architecture|Information retrieval
+Chandranil Chakraborttii,Assistant Professor,Trinity College,Computer Science,Machine learning|Computer architecture
 Maminur Islam,Assistant Professor,Trinity College,Computer Science,Artificial intelligence|Machine learning|Computer vision
-Jonathan Johnson,Visiting Lecturer,Trinity College,Computer Science,Distributed systems|Software engineering
-Takunari Miyazaki,Associate Professor,Trinity College,Computer Science,Algorithms & complexity
+Jonathan Johnson,Visiting Lecturer,Trinity College,Computer Science,Software engineering|Computer architecture
+Takunari Miyazaki,Associate Professor,Trinity College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics|Programming languages
 Madalene Spezialetti,Associate Professor,Trinity College,Computer Science,Distributed systems
 Peter A. Yoon,Professor,Trinity College,Computer Science,High-performance computing
 Paul Myers,Professor,Trinity University,Computer Science,Computer security & privacy|Robotics|Computer science education
-Zeyu Chen,Visiting Assistant Professor,Trinity University,Invalid,
-Eduardo Davalos Anaya,Assistant Professor,Trinity University,Computer Science,Artificial intelligence|Human-computer interaction
+Zeyu Chen,Visiting Assistant Professor,Trinity University,Computer Science,Natural language processing|Machine learning|Computer vision
+Eduardo Davalos Anaya,Assistant Professor,Trinity University,Computer Science,Artificial intelligence|Human-computer interaction|Natural language processing
 Seth Fogarty,Associate Professor,Trinity University,Computer Science,Logic & verification|Algorithms & complexity|Programming languages
-Matthew Hibbs,Associate Professor,Trinity University,Computer Science,Computational bio & bioinformatics
-Britton Horn,Assistant Professor,Trinity University,Computer Science,Artificial intelligence|Games & interactive art|Programming languages
-Johanna Jacob,Assistant Professor,Trinity University,Invalid,
+Matthew Hibbs,Associate Professor,Trinity University,Computer Science,Computational bio & bioinformatics|Visualization
+Britton Horn,Assistant Professor,Trinity University,Computer Science,Artificial intelligence|Programming languages|Games & interactive art
+Johanna Jacob,Assistant Professor,Trinity University,Computer Science,Computer science education|Computer security & privacy
 Sheng Tan,Associate Professor,Trinity University,Computer Science,Mobile computing|Computer security & privacy|Human-computer interaction
 Eva Tuba,Assistant Professor,Trinity University,Computer Science,Machine learning|Computer vision|Artificial intelligence
 Yu Zhang,Professor,Trinity University,Computer Science,Artificial intelligence
-Matt Anderson,Associate Professor,Union College (NY),Computer Science,Algorithms & complexity|Logic & verification|Computational bio & bioinformatics
+Matt Anderson,Associate Professor,Union College (NY),Computer Science,Algorithms & complexity|Logic & verification|Computational bio & bioinformatics|Quantum computing|Artificial intelligence
 Aaron Cass,Associate Professor,Union College (NY),Computer Science,Human-computer interaction|Software engineering
 Georgia Doing,Visiting Assistant Professor,Union College (NY),Computer Science,Machine learning|Data science|Computational bio & bioinformatics
-Chris Fernandes,Professor,Union College (NY),Computer Science,Databases
+Chris Fernandes,Professor,Union College (NY),Computer Science,Databases|Data science
 Shruti Mahajan,Assistant Professor,Union College (NY),Computer Science,Human-computer interaction
 John Rieffel,Professor,Union College (NY),Computer Science,Robotics|Artificial intelligence
-TJ Schlueter,Visiting Assistant Professor,Union College (NY),Computer Science,Artificial intelligence|Computational social science
-Kristina Striegnitz,Associate Professor,Union College (NY),Computer Science,Natural language processing|Computer science education
+TJ Schlueter,Visiting Assistant Professor,Union College (NY),Computer Science,Artificial intelligence|Economics & computation
+Kristina Striegnitz,Associate Professor,Union College (NY),Computer Science,Natural language processing|Robotics|Computer science education
 Arjun Viswanathan,Visiting Assistant Professor,Union College (NY),Computer Science,Logic & verification
 Nick Webb,Associate Professor,Union College (NY),Computer Science,Natural language processing|Robotics|Computer science education
-Jennifer Polack,Professor,University of Mary Washington,Computer Science,Computer graphics|Games & interactive art|Computer science education
+Jennifer Polack,Professor,University of Mary Washington,Computer Science,Computer science education|Games & interactive art|Computer graphics
 Karen Anewalt,Professor,University of Mary Washington,Computer Science,Computer science education
 Stephen Davies,Professor,University of Mary Washington,Computer Science,Data science|Computational social science
-Andrew Marshall,Associate Professor,University of Mary Washington,Computer Science,Logic & verification|Computer security & privacy
-Ian Finlayson,Associate Professor,University of Mary Washington,Computer Science,Computer architecture|Programming languages
+Andrew Marshall,Associate Professor,University of Mary Washington,Computer Science,Logic & verification|Artificial intelligence|Cryptography
+Ian Finlayson,Associate Professor,University of Mary Washington,Computer Science,Computer architecture|Computer science education
 Xin-Wen Wu,Associate Professor,University of Mary Washington,Computer Science,Computer security & privacy|Cryptography
 Jessica Zeitz,Associate Professor,University of Mary Washington,Computer Science,Data science|Visualization
 Prashant Chandrasekar,Assistant Professor,University of Mary Washington,Computer Science,Artificial intelligence|Human-computer interaction
-Evan Coleman,Assistant Professor,University of Mary Washington,Computer Science,High-performance computing|Machine learning|Computer security & privacy
-Josh Clements,Lecturer,University of Mary Washington,Computer Science,
+Evan Coleman,Assistant Professor,University of Mary Washington,Computer Science,High-performance computing|Machine learning|Computer architecture|Distributed systems|Algorithms & complexity
+Josh Clements,Lecturer,University of Mary Washington,Computer Science,Artificial intelligence|Human-computer interaction
 Gusty Cooper,Lecturer,University of Mary Washington,Computer Science,Operating systems|Computer architecture
 Peter Dolan,Associate Professor,University of Minnesota Morris,Mathematics or Statistics,
 Wenkai Guan,Assistant Professor,University of Minnesota Morris,Computer Science,Machine learning|Computer architecture
 Kristin Lamberty,Associate Professor,University of Minnesota Morris,Computer Science,Human-computer interaction
 Elena Machkasova,Associate Professor,University of Minnesota Morris,Computer Science,Programming languages|Computer science education
-Nic McPhee,Professor,University of Minnesota Morris,Computer Science,Artificial intelligence|Machine learning
-Kevin Sanft,Professor,University of North Carolina Asheville,Computer Science,High-performance computing|Computational bio & bioinformatics
+Nic McPhee,Professor,University of Minnesota Morris,Computer Science,Artificial intelligence
+Kevin Sanft,Professor,University of North Carolina Asheville,Computer Science,High-performance computing
 Marietta Cameron,Professor,University of North Carolina Asheville,Computer Science,Computer vision|Computer graphics|Artificial intelligence
 Kenneth Bogert,Associate Professor,University of North Carolina Asheville,Computer Science,Robotics|Machine learning|Artificial intelligence
 Farzana Rashid,Assistant Professor,University of North Carolina Asheville,Computer Science,Natural language processing|Information retrieval
 Michael Sarris,Lecturer,University of North Carolina Asheville,Computer Science,
-Sarah Van Wart,Assistant Professor,University of North Carolina Asheville,Invalid,
+Sarah Van Wart,Assistant Professor,University of North Carolina Asheville,Computer Science,Human-computer interaction|Computational social science|Computer science education|Software engineering|Information retrieval
 Adam Whitley,Assistant Professor,University of North Carolina Asheville,Computer Science,Algorithms & complexity|Data science
-Baha Alsaify,Visiting Assistant Professor,University of Puget Sound,Computer Science,Computer security & privacy
+Baha Alsaify,Visiting Assistant Professor,University of Puget Sound,Computer Science,Computer security & privacy|Machine learning
 America Chambers,Associate Professor,University of Puget Sound,Computer Science,Machine learning|Natural language processing
 Sunita Chepuri,Assistant Professor,University of Puget Sound,Mathematics or Statistics,
-David Chiu,Professor,University of Puget Sound,Computer Science,Distributed systems|Databases|High-performance computing
+David Chiu,Professor,University of Puget Sound,Computer Science,Distributed systems|Data science|High-performance computing
 Cynthia Gibson,Visiting Assistant Professor,University of Puget Sound,Mathematics or Statistics,
-Sara Johnson,Visiting Assistant Professor,University of Puget Sound,Unknown,
-Marissa Masden,Assistant Professor,University of Puget Sound,Computer Science,Computational bio & bioinformatics|Machine learning
+Sara Johnson,Visiting Assistant Professor,University of Puget Sound,Mathematics or Statistics,
+Marissa Masden,Assistant Professor,University of Puget Sound,Computer Science,Machine learning|Computational bio & bioinformatics
 Alison Paradise,Instructor,University of Puget Sound,Mathematics or Statistics,
 Jake Price,Associate Professor,University of Puget Sound,Mathematics or Statistics,
 Adam Smith,Associate Professor,University of Puget Sound,Computer Science,Machine learning|Computational bio & bioinformatics
 Maddie Weinstein,Assistant Professor,University of Puget Sound,Mathematics or Statistics,
-Douglas Szajda,Associate Professor,University of Richmond,Computer Science,Computer security & privacy|Computer networks|Distributed systems
+Douglas Szajda,Associate Professor,University of Richmond,Computer Science,Computer security & privacy|Distributed systems|Artificial intelligence
 Prateek Bhakta,Associate Professor,University of Richmond,Computer Science,Algorithms & complexity|Machine learning|Computer security & privacy
-M Charity,Assistant Professor,University of Richmond,Computer Science,Games & interactive art
+M Charity,Assistant Professor,University of Richmond,Computer Science,Artificial intelligence|Games & interactive art|Programming languages
 Arthur Charlesworth,Professor,University of Richmond,Computer Science,Artificial intelligence|Programming languages
-Catherine Finegan-Dollak,Assistant Professor,University of Richmond,Computer Science,Natural language processing
-Yucong Jiang,Associate Professor,University of Richmond,Computer Science,Information retrieval|Data science
-Patrick Martin,Assistant Professor,University of Richmond,Computer Science,Robotics|Artificial intelligence
+Catherine Finegan-Dollak,Assistant Professor,University of Richmond,Computer Science,Natural language processing|Artificial intelligence|Machine learning
+Yucong Jiang,Associate Professor,University of Richmond,Computer Science,Data science|Information retrieval
+Patrick Martin,Assistant Professor,University of Richmond,Computer Science,Robotics
 Mmachi Obiorah,Assistant Professor,University of Richmond,Computer Science,Human-computer interaction
 Joonsuk Park,Associate Professor,University of Richmond,Computer Science,Natural language processing
-William F. Prior,Adjunct Instructor,University of Richmond,Computer Science,
-Shweta Ware,Associate Professor,University of Richmond,Computer Science,Data science|Mobile computing|Machine learning
+William F. Prior,Adjunct Instructor,University of Richmond,Computer Science,Data science
+Shweta Ware,Associate Professor,University of Richmond,Computer Science,Mobile computing|Data science|Machine learning
 Catherine Cavagnaro,Professor,The University of the South,Mathematics or Statistics,
 Stephen Carl,Associate Professor,The University of the South,Computer Science,Programming languages|Games & interactive art
 Ross Sowell,Associate Professor,The University of the South,Computer Science,Human-computer interaction|Computer graphics|Computer science education
 C Karen,Associate Professor,University of Virginia--Wise,Computer Science,Data science
-E Alex,Adjunct Instructor,University of Virginia--Wise,Invalid,
-F David,Senior Instructor,University of Virginia--Wise,Computer Science,Logic & verification|Programming languages|Software engineering
+E Alex,Adjunct Instructor,University of Virginia--Wise,Computer Science,Operating systems|Databases|Programming languages
+F David,Senior Instructor,University of Virginia--Wise,Computer Science,Logic & verification|Programming languages
 H Robert,Associate Professor,University of Virginia--Wise,Computer Science,Software engineering|Mobile computing|Computer graphics
-L Shilpa,Assistant Professor,University of Virginia--Wise,Invalid,
-S Jacob,Professor,University of Virginia--Wise,Computer Science,Computer vision
+L Shilpa,Assistant Professor,University of Virginia--Wise,Computer Science,Machine learning|Data science
+S Jacob,Professor,University of Virginia--Wise,Computer Science,Human-computer interaction|Computer science education
 Nicholas Scoville,Professor,Ursinus College,Mathematics or Statistics,
 Susan Adam,Instructor,Ursinus College,Mathematics or Statistics,
 David Henry,Instructor,Ursinus College,Computer Science,Computer architecture|Embedded & real-time systems|Software engineering
-Olena Kozhushkina,Associate Professor,Ursinus College,Unknown,
-William Mongan,Associate Professor,Ursinus College,Computer Science,Computer science education|Software engineering
+Olena Kozhushkina,Associate Professor,Ursinus College,Computer Science,
+William Mongan,Associate Professor,Ursinus College,Computer Science,Computer science education|Programming languages
 Leslie New,Associate Professor,Ursinus College,Mathematics or Statistics,
 Christopher Sadowski,Associate Professor,Ursinus College,Mathematics or Statistics,
 Eric Mawuena Takyi,Assistant Professor,Ursinus College,Mathematics or Statistics,
-Jason Waterman,Associate Professor,Vassar College,Computer Science,Computer security & privacy|Operating systems
+Jason Waterman,Associate Professor,Vassar College,Computer Science,Operating systems
 Jacob Erickson,Visiting Assistant Professor,Vassar College,Computer Science,Computational social science|Human-computer interaction
 Anna Gommerstadt,Assistant Professor,Vassar College,Computer Science,Programming languages|Logic & verification
-Jonathan Gordon,Assistant Professor,Vassar College,Computer Science,Natural language processing|Computational social science
+Jonathan Gordon,Assistant Professor,Vassar College,Computer Science,Natural language processing
 Luke Hunsberger,Professor,Vassar College,Computer Science,Artificial intelligence
 Peter Lemieszewski,Visiting Assistant Professor,Vassar College,Computer Science,Algorithms & complexity
 Heather Newman,Assistant Professor,Vassar College,Computer Science,Algorithms & complexity
 Rui Manuel Pacheco Meireles,Assistant Professor,Vassar College,Computer Science,Computer networks|Distributed systems
-Marc L. Smith,Professor,Vassar College,Computer Science,Computational bio & bioinformatics
-Logan Stapleton,Assistant Professor,Vassar College,Computer Science,Artificial intelligence|Human-computer interaction
-Abdullah Al-Alaj,Assistant Professor,Virginia Wesleyan University,Computer Science,Computer security & privacy|Computer networks
+Marc L. Smith,Professor,Vassar College,Computer Science,Logic & verification|Computational bio & bioinformatics|Programming languages
+Logan Stapleton,Assistant Professor,Vassar College,Computer Science,Artificial intelligence|Human-computer interaction|Machine learning
+Abdullah Al-Alaj,Assistant Professor,Virginia Wesleyan University,Computer Science,Computer security & privacy|Software engineering
 Zizhong J. Wang,Professor,Virginia Wesleyan University,Mathematics or Statistics,
 Qixin Deng,Assistant Professor,Wabash College,Computer Science,Computer graphics
 Colin McKinney,Associate Professor,Wabash College,Computer Science,
-William J. Turner,Associate Professor,Wabash College,Invalid,
-Chad Westphal,Professor,Wabash College,Computer Science,Algorithms & complexity
-Ryeongkyung Yoon,Assistant Professor,Wabash College,Computer Science,Machine learning|Artificial intelligence|Algorithms & complexity
-Jim Jacobs,Assistant Professor,Wartburg College,Invalid,
+William J. Turner,Associate Professor,Wabash College,Computer Science,Algorithms & complexity|Computer science education
+Chad Westphal,Professor,Wabash College,Computer Science,
+Ryeongkyung Yoon,Assistant Professor,Wabash College,Computer Science,Machine learning|Artificial intelligence|Data science|Algorithms & complexity
+Jim Jacobs,Assistant Professor,Wartburg College,Computer Science,Computer science education|Machine learning|Artificial intelligence|Natural language processing
 Terry Letsche,Associate Professor,Wartburg College,Computer Science,
-Sara Sprenkle,Associate Professor,Washington and Lee University,Invalid,
-Sana Habib,Visiting Assistant Professor,Washington and Lee University,Invalid,
-Simon Levy,Professor,Washington and Lee University,Invalid,
-Kefu Lu,Associate Professor,Washington and Lee University,Invalid,
-Elizabeth Matthews,Associate Professor,Washington and Lee University,Invalid,
-Austin Lobo,Associate Professor,Washington College,Mathematics or Statistics,
+Sara Sprenkle,Associate Professor,Washington and Lee University,Computer Science,Software engineering|Distributed systems
+Sana Habib,Visiting Assistant Professor,Washington and Lee University,Computer Science,Computer security & privacy|Computer networks
+Simon Levy,Professor,Washington and Lee University,Computer Science,Machine learning
+Kefu Lu,Associate Professor,Washington and Lee University,Computer Science,Distributed systems|Algorithms & complexity|Software engineering
+Elizabeth Matthews,Associate Professor,Washington and Lee University,Computer Science,
+Austin Lobo,Associate Professor,Washington College,Computer Science,Algorithms & complexity
 Shaun Ramsey,Professor,Washington College,Computer Science,Computer graphics
-Heather Switzer,Assistant Professor,Washington College,Computer Science,High-performance computing|Algorithms & complexity
-Charles Hannon,Professor,Washington & Jefferson College,Computer Science,Human-computer interaction|Visualization
-Amanda Holland-Minkley,Professor,Washington & Jefferson College,Computer Science,Artificial intelligence|Information retrieval|Software engineering
-John Ladd,Assistant Professor,Washington & Jefferson College,Computer Science,Data science
-Rebecca Rapp,Assistant Professor,Washington & Jefferson College,Computer Science,Computer science education
+Heather Switzer,Assistant Professor,Washington College,Computer Science,High-performance computing
+Charles Hannon,Professor,Washington & Jefferson College,Computer Science,Human-computer interaction|Visualization|Design automation
+Amanda Holland-Minkley,Professor,Washington & Jefferson College,Computer Science,Artificial intelligence|Computer security & privacy
+John Ladd,Assistant Professor,Washington & Jefferson College,Computer Science,Computational social science|Data science
+Rebecca Rapp,Assistant Professor,Washington & Jefferson College,Computer Science,Data science|Human-computer interaction|Mobile computing|Visualization
 Carolyn Anderson,Assistant Professor,Wellesley College,Computer Science,Natural language processing
 Scott Anderson,Associate Teaching Professor,Wellesley College,Computer Science,Artificial intelligence|Natural language processing|Computer graphics
-Christine Bassem,Associate Professor,Wellesley College,Computer Science,Algorithms & complexity|Economics & computation
+Christine Bassem,Associate Professor,Wellesley College,Computer Science,Distributed systems|Economics & computation
 Brian Brubach,Assistant Professor,Wellesley College,Computer Science,Algorithms & complexity|Economics & computation
 Vinitha Gadiraju,Assistant Professor,Wellesley College,Computer Science,Human-computer interaction
 Catherine Grevet Delcourt,Associate Professor,Wellesley College,Computer Science,Human-computer interaction|Computational social science
-Stella Kakavouli,Associate Teaching Professor,Wellesley College,Computer Science,Data science|Software engineering
-Peter Mawhorter,Associate Teaching Professor,Wellesley College,Computer Science,Artificial intelligence|Games & interactive art
+Stella Kakavouli,Associate Teaching Professor,Wellesley College,Computer Science,Computer science education|Data science
+Peter Mawhorter,Associate Teaching Professor,Wellesley College,Computer Science,Artificial intelligence|Games & interactive art|Programming languages|Computational social science|Human-computer interaction
 Sara Melnick,Assistant Teaching Professor,Wellesley College,Computer Science,Computer science education|Human-computer interaction
-Panagiotis Metaxas,Professor,Wellesley College,Computer Science,Information retrieval
-Eni Mustafaraj,Associate Professor,Wellesley College,Computer Science,Computational social science|Data science
+Panagiotis Metaxas,Professor,Wellesley College,Computer Science,Information retrieval|Cryptography
+Eni Mustafaraj,Associate Professor,Wellesley College,Computer Science,Computational social science
 Smaranda Sandu,Assistant Teaching Professor,Wellesley College,Mathematics or Statistics,
 Orit Shaer,Professor,Wellesley College,Computer Science,Human-computer interaction
 Brian Tjaden,Professor,Wellesley College,Computer Science,Computational bio & bioinformatics
-Franklyn Turbak,Associate Professor,Wellesley College,Computer Science,Programming languages|Computer science education
-Jordan Tynes,Assistant Teaching Professor,Wellesley College,Computer Science,Games & interactive art|Human-computer interaction
-Alexa VanHattum,Assistant Professor,Wellesley College,Computer Science,Programming languages|Computer architecture|Logic & verification
+Franklyn Turbak,Associate Professor,Wellesley College,Computer Science,Programming languages|Visualization|Computer science education|Human-computer interaction
+Jordan Tynes,Assistant Teaching Professor,Wellesley College,Computer Science,Games & interactive art|Human-computer interaction|Computer science education
+Alexa VanHattum,Assistant Professor,Wellesley College,Computer Science,Programming languages|Logic & verification|Software engineering|Operating systems
 Yaniv Yacoby,Assistant Professor,Wellesley College,Computer Science,Machine learning
 Norman Danner,Professor,Wesleyan University,Computer Science,Programming languages|Algorithms & complexity
 Daniel Krizanc,Professor,Wesleyan University,Computer Science,Algorithms & complexity
 Dan Licata,Associate Professor,Wesleyan University,Computer Science,Programming languages|Logic & verification
-James Lipton,Professor,Wesleyan University,Computer Science,Logic & verification
+James Lipton,Professor,Wesleyan University,Computer Science,Logic & verification|Programming languages
 Yuxuan Mei,Assistant Professor,Wesleyan University,Computer Science,Computer graphics|Computational bio & bioinformatics
 Sonia Roberts,Assistant Professor,Wesleyan University,Computer Science,Robotics
-Sebastian Zimmeck,Associate Professor,Wesleyan University,Computer Science,Computer security & privacy
+Sebastian Zimmeck,Associate Professor,Wesleyan University,Computer Science,Computer security & privacy|Natural language processing
 Wai Kiu Chan,Professor,Wesleyan University,Mathematics or Statistics,
-Victoria Ursula Manfredi,Associate Professor,Wesleyan University,Computer Science,Computer networks
-John P. Bonomo,Professor,Westminster College (PA),Computer Science,
-Adam M. Blumenthal,Assistant Professor,Westminster College (PA),Computer Science,Algorithms & complexity
+Victoria Ursula Manfredi,Associate Professor,Wesleyan University,Computer Science,Computer networks|Distributed systems
+John P. Bonomo,Professor,Westminster College (PA),Computer Science,Programming languages|Software engineering|Algorithms & complexity
+Adam M. Blumenthal,Assistant Professor,Westminster College (PA),Mathematics or Statistics,
 Natacha Fontes Merz,Associate Professor,Westminster College (PA),Mathematics or Statistics,
 Heather Muchowski,Assistant Professor,Westminster College (PA),Mathematics or Statistics,
 Hyunju Kim,Associate Professor,Wheaton College (IL),Computer Science,Software engineering
-Devin Pohly,Senior Lecturer,Wheaton College (IL),Computer Science,Computer security & privacy|Data science
+Devin Pohly,Senior Lecturer,Wheaton College (IL),Computer Science,Computer security & privacy|Computer science education|Human-computer interaction|Operating systems|Programming languages
 Thomas VanDrunen,Professor,Wheaton College (IL),Computer Science,Natural language processing|Programming languages|Machine learning
 Nicholas Almeder,Visiting Instructor,Wheaton College (MA),Computer Science,
 Michael B. Gousie,Professor,Wheaton College (MA),Computer Science,Computer graphics|Visualization
-Mark D. LeBlanc,Professor,Wheaton College (MA),Computer Science,Artificial intelligence|Natural language processing|Data science
+Mark D. LeBlanc,Professor,Wheaton College (MA),Computer Science,Artificial intelligence|Natural language processing
 Tony Tong,Assistant Professor,Wheaton College (MA),Computer Science,High-performance computing|Distributed systems|Measurement & performance analysis
-William Bares,Associate Professor,Whitman College,Computer Science,Computer graphics|Computer science education|Human-computer interaction
+William Bares,Associate Professor,Whitman College,Computer Science,Computer graphics|Human-computer interaction|Computer science education
 Janet Davis,Professor,Whitman College,Computer Science,Human-computer interaction
 Richard Torres Molina,Visiting Instructor,Whitman College,Computer Science,Machine learning|Human-computer interaction
-Sachintha Pitigala,Visiting Assistant Professor,Whitman College,Computer Science,Machine learning|Natural language processing
+Sachintha Pitigala,Visiting Assistant Professor,Whitman College,Computer Science,Machine learning
 John Stratton,Associate Professor,Whitman College,Computer Science,High-performance computing|Measurement & performance analysis
 Jordan Wirfs-Brock,Assistant Professor,Whitman College,Computer Science,Human-computer interaction
 Fred Agbo,Assistant Professor,Willamette University,Computer Science,Computer science education|Human-computer interaction|Games & interactive art
 Rachel A Brown,Assistant Professor,Willamette University,Computer Science,Computer graphics|Computer vision
-Haiyan Cheng,Professor,Willamette University,Mathematics or Statistics,
+Haiyan Cheng,Professor,Willamette University,Computer Science,Machine learning|Data science|Computer science education
 Calvin K Deutschbein,Assistant Professor,Willamette University,Computer Science,Computer security & privacy
 Kristen Gore,Assistant Professor,Willamette University,Mathematics or Statistics,
 Hank Ibser,Associate Professor,Willamette University,Mathematics or Statistics,
@@ -848,22 +848,22 @@ Heather Kitada Smalley,Associate Professor,Willamette University,Mathematics or 
 Zechariah D Meunier,Assistant Professor,Willamette University,Computer Science,Machine learning|Data science
 Jed Rembold,Associate Professor,Willamette University,Computer Science,Data science|Databases
 Hendrik Orem,Assistant Professor,Willamette University,Computer Science,Data science
-Jeannie Albrecht,Professor,Williams College,Computer Science,Distributed systems|Computer networks|Mobile computing
-Daniel Barowy,Associate Professor,Williams College,Computer Science,Programming languages|Human-computer interaction
+Jeannie Albrecht,Professor,Williams College,Computer Science,Distributed systems|Computer networks|Information retrieval
+Daniel Barowy,Associate Professor,Williams College,Computer Science,Programming languages
 James Bern,Assistant Professor,Williams College,Computer Science,Robotics|Computer graphics
 Rohit Bhattacharya,Assistant Professor,Williams College,Computer Science,Machine learning|Computational bio & bioinformatics
 Stephen N. Freund,Professor,Williams College,Computer Science,Programming languages|Software engineering
 Mark Hopkins,Associate Professor,Williams College,Computer Science,Natural language processing|Artificial intelligence
 Iris Howley,Assistant Professor,Williams College,Computer Science,Human-computer interaction|Information retrieval|Visualization
-William Jannen,Associate Professor,Williams College,Computer Science,Databases|Data science|Computer architecture
+William Jannen,Associate Professor,Williams College,Computer Science,Databases|Data science|Operating systems|Computer architecture|Distributed systems
 Katie Keith,Assistant Professor,Williams College,Computer Science,Natural language processing|Data science|Computational social science
-Samuel McCauley,Associate Professor,Williams College,Computer Science,Algorithms & complexity
+Samuel McCauley,Associate Professor,Williams College,Computer Science,Algorithms & complexity|Data science|Information retrieval
 John Parker,Visiting Professor,Williams College,Computer Science,Computational bio & bioinformatics
 Kelly Shaw,Professor,Williams College,Computer Science,Computer architecture
 Shikha Singh,Associate Professor,Williams College,Computer Science,Algorithms & complexity|Economics & computation
-Aaron Williams,Associate Professor,Williams College,Computer Science,Algorithms & complexity|Computational bio & bioinformatics|Human-computer interaction
-Sunday Ngwobia,Assistant Professor,Wittenberg University,Computer Science,Computer security & privacy|Machine learning|Natural language processing
+Aaron Williams,Associate Professor,Williams College,Computer Science,Algorithms & complexity|Games & interactive art
+Sunday Ngwobia,Assistant Professor,Wittenberg University,Computer Science,Computer security & privacy|Natural language processing|Machine learning|Artificial intelligence
 Theresa Wilson,Professor of Practice,Wittenberg University,Computer Science,Natural language processing
-Beau M. Christ,Associate Professor,Wofford College,Computer Science,Machine learning|Computer vision|Data science
+Beau M. Christ,Associate Professor,Wofford College,Computer Science,Machine learning|Computer vision|Data science|Computational bio & bioinformatics
 Aaron L. Garrett,Associate Professor,Wofford College,Computer Science,Artificial intelligence
-Nicole Tobias,Assistant Professor,Wofford College,Invalid,
+Nicole Tobias,Assistant Professor,Wofford College,Computer Science,

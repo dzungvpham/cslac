@@ -42,6 +42,21 @@
     "name": "Albright College",
     "faculty": [
       {
+        "name": "Don Baldridge",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": null,
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "Dave Kaul",
         "title": "Assistant Professor",
         "category": "tenure_track",
@@ -69,10 +84,10 @@
         "hindex5y": 3,
         "i10index": 2,
         "i10index5y": 1,
-        "interests": "Computer science education"
+        "interests": "Computer science education, Artificial intelligence, Algorithms & complexity"
       }
     ],
-    "total": 2,
+    "total": 3,
     "matched": 1,
     "total_citations": 65,
     "max_hindex": 3
@@ -93,7 +108,7 @@
         "hindex5y": 4,
         "i10index": 4,
         "i10index5y": 3,
-        "interests": "Data science, Computational bio & bioinformatics"
+        "interests": "Computational bio & bioinformatics, Data science"
       },
       {
         "name": "Janyl Jumadinova",
@@ -108,7 +123,7 @@
         "hindex5y": 5,
         "i10index": 5,
         "i10index5y": 2,
-        "interests": "Artificial intelligence, Robotics"
+        "interests": "Robotics, Artificial intelligence"
       },
       {
         "name": "Gregory Kapfhammer",
@@ -162,7 +177,7 @@
         "hindex5y": 9,
         "i10index": 9,
         "i10index5y": 9,
-        "interests": "Machine learning, Computer security & privacy"
+        "interests": "Computer security & privacy"
       },
       {
         "name": "Kristy Gardner",
@@ -177,7 +192,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Machine learning, Information retrieval"
+        "interests": "Algorithms & complexity, Measurement & performance analysis, Quantum computing, Distributed systems"
       },
       {
         "name": "Scott F. Kaplan",
@@ -207,7 +222,7 @@
         "hindex5y": 6,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Algorithms & complexity, Computational bio & bioinformatics, Computer graphics"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
       },
       {
         "name": "Lillian C. Pentecost",
@@ -222,7 +237,7 @@
         "hindex5y": 12,
         "i10index": 13,
         "i10index5y": 13,
-        "interests": "Computer architecture"
+        "interests": "Computer architecture, Computer networks, Distributed systems"
       },
       {
         "name": "John E. Rager",
@@ -252,7 +267,7 @@
         "hindex5y": 18,
         "i10index": 28,
         "i10index5y": 26,
-        "interests": "Algorithms & complexity, Data science"
+        "interests": "Data science, Algorithms & complexity"
       },
       {
         "name": "Lee Spector",
@@ -267,7 +282,7 @@
         "hindex5y": 32,
         "i10index": 144,
         "i10index5y": 72,
-        "interests": "Artificial intelligence, Computer vision"
+        "interests": "Artificial intelligence"
       },
       {
         "name": "Shira B. Wein",
@@ -336,7 +351,7 @@
         "hindex5y": 5,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Computer security & privacy"
+        "interests": "Computer security & privacy, Distributed systems"
       },
       {
         "name": "Bob Manasco",
@@ -369,6 +384,21 @@
         "interests": null
       },
       {
+        "name": "Diane C. Mueller",
+        "title": "Adjunct Assistant Professor",
+        "category": "adjunct",
+        "url": "https://www.augustana.edu/academics/faculty-directory/diane-c-mueller",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "Forrest J. Stonedahl",
         "title": "Associate Professor",
         "category": "tenured",
@@ -381,10 +411,10 @@
         "hindex5y": 10,
         "i10index": 21,
         "i10index5y": 11,
-        "interests": "Artificial intelligence"
+        "interests": "Artificial intelligence, Computer science education, Computational social science, Data science, Machine learning"
       }
     ],
-    "total": 5,
+    "total": 6,
     "matched": 2,
     "total_citations": 1502,
     "max_hindex": 14
@@ -405,7 +435,7 @@
         "hindex5y": 7,
         "i10index": 6,
         "i10index5y": 6,
-        "interests": "Cybersecurity, Machine Learning, Cryptography"
+        "interests": "Computer security & privacy, Cryptography"
       },
       {
         "name": "Aaron Block",
@@ -447,6 +477,21 @@
     "name": "Bard College",
     "faculty": [
       {
+        "name": "Kerri-Ann Norton",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://nortoncompbiolab.xyz/",
+        "scholar_url": "https://scholar.google.com/citations?user=EmEnDFwAAAAJ&hl=en",
+        "status": "matched",
+        "citedby": 1337,
+        "citedby5y": 720,
+        "hindex": 17,
+        "hindex5y": 14,
+        "i10index": 25,
+        "i10index5y": 18,
+        "interests": "Computational bio & bioinformatics, Computer vision"
+      },
+      {
         "name": "Sven Anderson",
         "title": "Associate Professor",
         "category": "tenured",
@@ -460,6 +505,21 @@
         "i10index": 12,
         "i10index5y": 2,
         "interests": "Artificial intelligence, Human-computer interaction, Natural language processing"
+      },
+      {
+        "name": "Jordan Ayala",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://jayalakc.github.io/",
+        "scholar_url": "https://scholar.google.com/citations?hl=en&user=RCvrBmIAAAAJ",
+        "status": "matched",
+        "citedby": 3,
+        "citedby5y": 3,
+        "hindex": 1,
+        "hindex5y": 1,
+        "i10index": 0,
+        "i10index5y": 0,
+        "interests": "Data science"
       },
       {
         "name": "Valerie Barr",
@@ -504,7 +564,7 @@
         "hindex5y": 9,
         "i10index": 9,
         "i10index5y": 9,
-        "interests": "Robotics, Human-computer interaction"
+        "interests": "Human-computer interaction, Robotics"
       },
       {
         "name": "Bob McGrail",
@@ -537,9 +597,9 @@
         "interests": "Human-computer interaction"
       }
     ],
-    "total": 6,
-    "matched": 6,
-    "total_citations": 6173,
+    "total": 8,
+    "matched": 8,
+    "total_citations": 7513,
     "max_hindex": 17
   },
   {
@@ -633,7 +693,7 @@
         "hindex5y": 11,
         "i10index": 13,
         "i10index5y": 12,
-        "interests": "Computer security & privacy, Human-computer interaction, Information retrieval"
+        "interests": "Computer security & privacy, Human-computer interaction"
       },
       {
         "name": "Corey Toler-Franklin",
@@ -648,7 +708,7 @@
         "hindex5y": 7,
         "i10index": 8,
         "i10index5y": 7,
-        "interests": "Computer graphics, Computer vision"
+        "interests": "Computer vision, Computer graphics"
       },
       {
         "name": "Tiffany Tseng",
@@ -703,9 +763,24 @@
         "i10index": 1,
         "i10index5y": 1,
         "interests": "Machine learning"
+      },
+      {
+        "name": "Ben Stucky",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.beloit.edu/live/profiles/10017-ben-stucky",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Algorithms & complexity"
       }
     ],
-    "total": 2,
+    "total": 3,
     "matched": 1,
     "total_citations": 33,
     "max_hindex": 3
@@ -726,7 +801,7 @@
         "hindex5y": 8,
         "i10index": 14,
         "i10index5y": 8,
-        "interests": "Computer science education"
+        "interests": "Computer science education, Robotics, Computational social science, Human-computer interaction"
       },
       {
         "name": "Jacqueline Boggs",
@@ -756,7 +831,7 @@
         "hindex5y": 4,
         "i10index": 6,
         "i10index5y": 2,
-        "interests": "Embedded & real-time systems, Software engineering, Computer science education"
+        "interests": "Embedded & real-time systems, Mobile computing, Software engineering"
       },
       {
         "name": "Jasmine Jones",
@@ -771,7 +846,7 @@
         "hindex5y": 11,
         "i10index": 13,
         "i10index5y": 11,
-        "interests": "Human-computer interaction, Computer networks, Computer security & privacy"
+        "interests": "Human-computer interaction, Computer science education, Computational social science"
       },
       {
         "name": "Mario Nakazawa",
@@ -786,7 +861,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Distributed systems, Artificial intelligence"
+        "interests": "Distributed systems, Algorithms & complexity, Artificial intelligence, Operating systems"
       },
       {
         "name": "Deanna Wilborne",
@@ -801,7 +876,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning, Software engineering"
+        "interests": "Machine learning, Computer security & privacy"
       }
     ],
     "total": 6,
@@ -903,7 +978,7 @@
         "hindex5y": 12,
         "i10index": 13,
         "i10index5y": 12,
-        "interests": "Artificial intelligence"
+        "interests": "Artificial intelligence, Machine learning"
       },
       {
         "name": "Jeov\u00e1 Farias",
@@ -918,7 +993,7 @@
         "hindex5y": 6,
         "i10index": 6,
         "i10index5y": 5,
-        "interests": "Computer Vision, Optimization, Image Processing"
+        "interests": "Computer vision, Machine learning, Artificial intelligence"
       },
       {
         "name": "Cibele Matos Freire",
@@ -948,7 +1023,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence, Human-computer interaction"
+        "interests": "Artificial intelligence, Human-computer interaction, Natural language processing"
       },
       {
         "name": "Stephen Houser",
@@ -1023,7 +1098,7 @@
         "hindex5y": 7,
         "i10index": 25,
         "i10index5y": 5,
-        "interests": "Algorithms & complexity, Computer science education"
+        "interests": "Algorithms & complexity"
       }
     ],
     "total": 10,
@@ -1034,6 +1109,21 @@
   {
     "name": "Bridgewater College",
     "faculty": [
+      {
+        "name": "Verne E. Leininger",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://www.bridgewater.edu/academics/faculty/dr-verne-e-leininger/",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
       {
         "name": "Eric McGregor",
         "title": "Associate Professor",
@@ -1050,7 +1140,7 @@
         "interests": "Artificial intelligence, Computer vision"
       }
     ],
-    "total": 1,
+    "total": 2,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -1058,6 +1148,36 @@
   {
     "name": "Bryn Athyn College",
     "faculty": [
+      {
+        "name": "Fredrik Bryntesson",
+        "title": "Professor",
+        "category": "tenured",
+        "url": "https://brynathyn.edu/faculty/fredrik-bryntesson.html",
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
+        "name": "Stella Evans",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://brynathyn.edu/faculty/stella-evans.html",
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
       {
         "name": "Thomas Frazier",
         "title": "Lecturer",
@@ -1072,6 +1192,51 @@
         "i10index": null,
         "i10index5y": null,
         "interests": "Artificial intelligence"
+      },
+      {
+        "name": "Ellen McKee",
+        "title": "Adjunct Professor",
+        "category": "adjunct",
+        "url": "https://brynathyn.edu/faculty/ellen-mckee.html",
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
+        "name": "Ryan Pine",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://brynathyn.edu/faculty/ryan-pine.html",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
+        "name": "Elizabeth Hollister Rogers",
+        "title": "Professor",
+        "category": "tenured",
+        "url": "https://brynathyn.edu/faculty/elizabeth-hollister-rogers.html",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
       },
       {
         "name": "Neil Simonetti",
@@ -1089,7 +1254,7 @@
         "interests": "Algorithms & complexity"
       }
     ],
-    "total": 2,
+    "total": 7,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -1110,7 +1275,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Software engineering, Machine learning"
+        "interests": "Machine learning, Software engineering"
       },
       {
         "name": "Ramesh Garimella",
@@ -1140,7 +1305,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer graphics, Games & interactive art"
+        "interests": "Computer graphics"
       },
       {
         "name": "Adam Poliak",
@@ -1209,7 +1374,7 @@
         "hindex5y": 7,
         "i10index": 14,
         "i10index5y": 5,
-        "interests": "Embedded & real-time systems, Computer networks"
+        "interests": "Embedded & real-time systems, Computer networks, Information retrieval"
       },
       {
         "name": "Lea Wittie",
@@ -1230,7 +1395,7 @@
         "name": "Alexander Fuchsberger",
         "title": "Associate Teaching Professor",
         "category": "teaching",
-        "url": "https://www.bucknell.edu/fac-staff/alexander-fuchsberger",
+        "url": "https://fuchsberger.vercel.app/",
         "scholar_url": "https://scholar.google.com/citations?user=_pK9CUAAAAAJ&hl=en",
         "status": "matched",
         "citedby": 54,
@@ -1239,7 +1404,7 @@
         "hindex5y": 4,
         "i10index": 2,
         "i10index5y": 2,
-        "interests": "Crowd Simulations, Artificial Intelligence, Web Technologies"
+        "interests": "Information retrieval"
       },
       {
         "name": "Samuel Gutekunst",
@@ -1290,7 +1455,7 @@
         "name": "Rajesh Kumar",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.bucknell.edu/fac-staff/rajesh-kumar",
+        "url": "https://sites.google.com/view/kumar7/",
         "scholar_url": "https://scholar.google.com/citations?user=5cX99iUAAAAJ&hl=en",
         "status": "matched",
         "citedby": 1003,
@@ -1299,7 +1464,7 @@
         "hindex5y": 14,
         "i10index": 17,
         "i10index5y": 17,
-        "interests": "Behavioral Biometrics, Continuous Authentication, Authenticity Detection"
+        "interests": "Computer security & privacy"
       },
       {
         "name": "SingChun Lee",
@@ -1314,7 +1479,7 @@
         "hindex5y": 12,
         "i10index": 17,
         "i10index5y": 13,
-        "interests": "Computer graphics, Visualization, Computer science education"
+        "interests": "Computer graphics, Computer science education"
       },
       {
         "name": "Darakhshan Mir",
@@ -1329,22 +1494,7 @@
         "hindex5y": 11,
         "i10index": 15,
         "i10index5y": 12,
-        "interests": "Computer security & privacy"
-      },
-      {
-        "name": "Chris Mitsch",
-        "title": "Visiting Assistant Professor",
-        "category": "visiting",
-        "url": "https://www.bucknell.edu/fac-staff/chris-mitsch",
-        "scholar_url": null,
-        "status": "matched_college",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
+        "interests": "Computer security & privacy, Artificial intelligence"
       },
       {
         "name": "Luiz Felipe Perrone",
@@ -1359,7 +1509,7 @@
         "hindex5y": 5,
         "i10index": 15,
         "i10index5y": 1,
-        "interests": "Computer networks, Human-computer interaction"
+        "interests": "Human-computer interaction, Computer science education"
       },
       {
         "name": "Swetha Reddy Ravula",
@@ -1410,7 +1560,7 @@
         "name": "Todd Schmid",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.bucknell.edu/fac-staff/todd-schmid",
+        "url": "https://toddtoddtodd.net/",
         "scholar_url": "https://scholar.google.com/citations?user=ExSTJcQAAAAJ&hl=en",
         "status": "matched",
         "citedby": 117,
@@ -1419,7 +1569,7 @@
         "hindex5y": 6,
         "i10index": 5,
         "i10index5y": 5,
-        "interests": "coalgebra, universal algebra, category theory, semantics of programming languages, logic"
+        "interests": "Logic & verification, Programming languages"
       },
       {
         "name": "Joshua Stough",
@@ -1434,7 +1584,7 @@
         "hindex5y": 8,
         "i10index": 22,
         "i10index5y": 8,
-        "interests": "Machine learning, Computer vision"
+        "interests": "Computer vision, Machine learning, Computer science education"
       },
       {
         "name": "Edward Talmage",
@@ -1452,7 +1602,7 @@
         "interests": "Distributed systems, Algorithms & complexity"
       }
     ],
-    "total": 17,
+    "total": 16,
     "matched": 13,
     "total_citations": 8243,
     "max_hindex": 15
@@ -1488,7 +1638,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Visualization"
+        "interests": "Algorithms & complexity, Data science"
       },
       {
         "name": "Tanya Amert",
@@ -1533,7 +1683,7 @@
         "hindex5y": 14,
         "i10index": 30,
         "i10index5y": 16,
-        "interests": "Computational social science, Algorithms & complexity"
+        "interests": "Computational social science, Natural language processing"
       },
       {
         "name": "Anna Meyer",
@@ -1563,7 +1713,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Databases, Programming languages, Distributed systems"
+        "interests": "Programming languages, Distributed systems, Databases"
       },
       {
         "name": "Sneha Narayan",
@@ -1608,7 +1758,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer architecture, Computer security & privacy"
+        "interests": "Computer security & privacy, Operating systems"
       },
       {
         "name": "Anna Rafferty",
@@ -1623,7 +1773,7 @@
         "hindex5y": 21,
         "i10index": 47,
         "i10index5y": 32,
-        "interests": "Artificial intelligence, Machine learning, Natural language processing"
+        "interests": "Natural language processing, Algorithms & complexity"
       },
       {
         "name": "Jean Salac",
@@ -1692,7 +1842,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer science education, Software engineering"
+        "interests": "Software engineering, Computer science education"
       }
     ],
     "total": 2,
@@ -1716,7 +1866,7 @@
         "hindex5y": 6,
         "i10index": 8,
         "i10index5y": 2,
-        "interests": "Artificial intelligence, Human-computer interaction"
+        "interests": "Human-computer interaction"
       },
       {
         "name": "William Bailey",
@@ -1731,7 +1881,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Computational social science, Economics & computation"
+        "interests": "Algorithms & complexity, Economics & computation"
       },
       {
         "name": "Michael K. Bradshaw",
@@ -1800,7 +1950,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Robotics, Artificial intelligence"
+        "interests": "Robotics"
       },
       {
         "name": "Pawar Shrikant",
@@ -1815,7 +1965,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning, Computational bio & bioinformatics, Computer vision"
+        "interests": "Machine learning, Computer vision, Data science, Computational bio & bioinformatics"
       }
     ],
     "total": 3,
@@ -1839,7 +1989,7 @@
         "hindex5y": 5,
         "i10index": 13,
         "i10index5y": 1,
-        "interests": "Human-computer interaction"
+        "interests": "Computer science education, Human-computer interaction, Information retrieval"
       },
       {
         "name": "Namrata Saha",
@@ -1872,6 +2022,21 @@
         "interests": "Data science"
       },
       {
+        "name": "Terry Hostetler",
+        "title": "Professor",
+        "category": "tenured",
+        "url": null,
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "Calvin Van Niewaal",
         "title": "Professor",
         "category": "tenured",
@@ -1887,7 +2052,7 @@
         "interests": null
       }
     ],
-    "total": 4,
+    "total": 5,
     "matched": 1,
     "total_citations": 790,
     "max_hindex": 12
@@ -1968,7 +2133,7 @@
         "hindex5y": 7,
         "i10index": 2,
         "i10index5y": 2,
-        "interests": "Human-computer interaction, Natural language processing, Artificial intelligence"
+        "interests": "Human-computer interaction, Artificial intelligence"
       },
       {
         "name": "Stacy Doore",
@@ -1998,7 +2163,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
+        "interests": "Algorithms & complexity"
       },
       {
         "name": "Ike Lage",
@@ -2058,7 +2223,7 @@
         "hindex5y": 4,
         "i10index": 2,
         "i10index5y": 1,
-        "interests": "Human-computer interaction, Robotics"
+        "interests": "Robotics"
       }
     ],
     "total": 11,
@@ -2082,7 +2247,7 @@
         "hindex5y": 18,
         "i10index": 24,
         "i10index5y": 22,
-        "interests": "Human-computer interaction, Computer networks, Machine learning"
+        "interests": "Computer security & privacy, Human-computer interaction, Machine learning, Computer networks"
       },
       {
         "name": "Valerie Cucura",
@@ -2112,7 +2277,7 @@
         "hindex5y": 6,
         "i10index": 6,
         "i10index5y": 6,
-        "interests": "Natural language processing"
+        "interests": "Natural language processing, Artificial intelligence"
       },
       {
         "name": "Nicholas Diana",
@@ -2127,7 +2292,7 @@
         "hindex5y": 7,
         "i10index": 7,
         "i10index5y": 5,
-        "interests": "Artificial intelligence, Human-computer interaction, Computational social science"
+        "interests": "Artificial intelligence, Human-computer interaction"
       },
       {
         "name": "Elodie Fourquet",
@@ -2142,7 +2307,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer graphics, Computer vision"
+        "interests": "Computer graphics, Computer vision, Human-computer interaction"
       },
       {
         "name": "Aaron Gember-Jacobson",
@@ -2175,6 +2340,21 @@
         "interests": "Computer science education"
       },
       {
+        "name": "Matt Lyboult",
+        "title": "Senior Lab Instructor",
+        "category": "teaching",
+        "url": "https://www.colgate.edu/about/directory/mlyboult",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "David Perkins",
         "title": "Visiting Assistant Professor",
         "category": "visiting",
@@ -2202,7 +2382,7 @@
         "hindex5y": 8,
         "i10index": 8,
         "i10index5y": 8,
-        "interests": "Natural language processing, Computational bio & bioinformatics"
+        "interests": "Natural language processing"
       },
       {
         "name": "Vijay Ramachandran",
@@ -2217,7 +2397,7 @@
         "hindex5y": 4,
         "i10index": 17,
         "i10index5y": 0,
-        "interests": "Computer networks, Algorithms & complexity"
+        "interests": "Computer networks, Algorithms & complexity, Economics & computation"
       },
       {
         "name": "Joel Sommers",
@@ -2232,7 +2412,7 @@
         "hindex5y": 17,
         "i10index": 49,
         "i10index5y": 26,
-        "interests": "Computer networks, Measurement & performance analysis, Distributed systems"
+        "interests": "Computer networks, Measurement & performance analysis, Distributed systems, Computer architecture"
       },
       {
         "name": "Katelyn Valete",
@@ -2253,7 +2433,7 @@
         "name": "Puck Wen",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.colgate.edu/about/directory/rwen",
+        "url": "https://rcpuckwen.github.io/",
         "scholar_url": "https://scholar.google.com/citations?user=bFwaymkAAAAJ&hl=zh-CN",
         "status": "manual_approved",
         "citedby": 523,
@@ -2262,10 +2442,10 @@
         "hindex5y": 13,
         "i10index": 17,
         "i10index5y": 16,
-        "interests": "Human-Robot Interaction, Robot Ethics"
+        "interests": "Robotics, Human-computer interaction"
       }
     ],
-    "total": 13,
+    "total": 14,
     "matched": 9,
     "total_citations": 14443,
     "max_hindex": 33
@@ -2316,7 +2496,7 @@
         "hindex5y": 5,
         "i10index": 10,
         "i10index5y": 1,
-        "interests": "Data science"
+        "interests": "Data science, Databases"
       },
       {
         "name": "Vijay Srinivas Tida",
@@ -2331,7 +2511,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning, Computer security & privacy"
+        "interests": "Machine learning"
       },
       {
         "name": "Srikanth Vemula",
@@ -2346,7 +2526,7 @@
         "hindex5y": 6,
         "i10index": 5,
         "i10index5y": 5,
-        "interests": "Artificial intelligence, Robotics, Quantum computing"
+        "interests": "Human-computer interaction, Robotics, Computer graphics, Computational bio & bioinformatics"
       }
     ],
     "total": 5,
@@ -2370,7 +2550,7 @@
         "hindex5y": 6,
         "i10index": 6,
         "i10index5y": 3,
-        "interests": "Economics & computation"
+        "interests": "Artificial intelligence, Algorithms & complexity, Computational social science"
       }
     ],
     "total": 1,
@@ -2394,7 +2574,7 @@
         "hindex5y": 6,
         "i10index": 6,
         "i10index5y": 4,
-        "interests": "Algorithms & complexity"
+        "interests": "Algorithms & complexity, Computer science education"
       },
       {
         "name": "Drew Guarnera",
@@ -2409,7 +2589,7 @@
         "hindex5y": 8,
         "i10index": 8,
         "i10index5y": 6,
-        "interests": "Software engineering"
+        "interests": "Software engineering, Human-computer interaction"
       },
       {
         "name": "John Musgrave",
@@ -2439,7 +2619,7 @@
         "hindex5y": 3,
         "i10index": 2,
         "i10index5y": 2,
-        "interests": "computational biology"
+        "interests": "Computational bio & bioinformatics"
       },
       {
         "name": "Dan Palmer",
@@ -2454,7 +2634,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence, Software engineering"
+        "interests": "Artificial intelligence"
       },
       {
         "name": "Sofia Visa",
@@ -2508,7 +2688,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "High-performance computing, Software engineering, Computer networks"
+        "interests": "High-performance computing, Software engineering, Computer security & privacy, Computer networks"
       },
       {
         "name": "Blake Jackson",
@@ -2523,7 +2703,7 @@
         "hindex5y": 15,
         "i10index": 16,
         "i10index5y": 15,
-        "interests": "Robotics, Natural language processing, Artificial intelligence"
+        "interests": "Robotics, Natural language processing, Human-computer interaction"
       },
       {
         "name": "Varsha Koushik",
@@ -2553,7 +2733,7 @@
         "hindex5y": 8,
         "i10index": 9,
         "i10index5y": 8,
-        "interests": null
+        "interests": "Machine learning, Natural language processing"
       },
       {
         "name": "Cory B Scott",
@@ -2568,7 +2748,7 @@
         "hindex5y": 5,
         "i10index": 4,
         "i10index5y": 3,
-        "interests": "Machine learning"
+        "interests": "Machine learning, Computer science education"
       }
     ],
     "total": 6,
@@ -2607,25 +2787,10 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence, Machine learning, Information retrieval"
-      },
-      {
-        "name": "Gregory Tanner",
-        "title": "Associate Professor",
-        "category": "tenured",
-        "url": "https://www.concordiacollege.edu/directories/faculty-staff/details/dr-gregory-tanner",
-        "scholar_url": null,
-        "status": "no_match",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
+        "interests": "Artificial intelligence, Machine learning, Information retrieval, Computer networks"
       }
     ],
-    "total": 3,
+    "total": 2,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -2646,7 +2811,7 @@
         "hindex5y": 6,
         "i10index": 10,
         "i10index5y": 2,
-        "interests": "Algorithms & complexity, Economics & computation"
+        "interests": "Algorithms & complexity"
       },
       {
         "name": "S. James Lee",
@@ -2676,7 +2841,7 @@
         "hindex5y": 4,
         "i10index": 3,
         "i10index5y": 3,
-        "interests": "Machine learning, Data science, High-performance computing"
+        "interests": "Machine learning, Data science, Artificial intelligence, High-performance computing, Algorithms & complexity"
       },
       {
         "name": "Stephen Douglass",
@@ -2706,7 +2871,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer vision, Information retrieval, Human-computer interaction"
+        "interests": "Information retrieval, Computer vision, Human-computer interaction, Robotics"
       },
       {
         "name": "Gary Parker",
@@ -2781,7 +2946,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computational bio & bioinformatics, Data science"
+        "interests": "Computational bio & bioinformatics"
       },
       {
         "name": "John Schaeffer",
@@ -2835,7 +3000,7 @@
         "hindex5y": 2,
         "i10index": 1,
         "i10index5y": 1,
-        "interests": "Distributed storage, thermal aware data placement"
+        "interests": "Distributed systems"
       },
       {
         "name": "Lauren Jepsen",
@@ -2874,7 +3039,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer security & privacy, Cryptography"
+        "interests": "Computer security & privacy"
       },
       {
         "name": "Zeyu Zhou",
@@ -2889,7 +3054,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning"
+        "interests": "Machine learning, Algorithms & complexity, Artificial intelligence"
       }
     ],
     "total": 2,
@@ -2988,7 +3153,7 @@
         "hindex5y": 22,
         "i10index": 30,
         "i10index5y": 29,
-        "interests": "Human-computer interaction, Visualization"
+        "interests": "Human-computer interaction, Computer graphics"
       },
       {
         "name": "Jonad Pulaj",
@@ -3033,7 +3198,7 @@
         "name": "Michael Chavrimootoo",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://denison.edu/people/michael-chavrimootoo",
+        "url": "https://personal.denison.edu/~chavrimootoom/",
         "scholar_url": "https://scholar.google.com/citations?hl=en&user=2DquIOcAAAAJ",
         "status": "matched",
         "citedby": 31,
@@ -3042,7 +3207,7 @@
         "hindex5y": 3,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "computational complexity, computational social choice, voting"
+        "interests": "Artificial intelligence, Algorithms & complexity, Computational social science, Economics & computation"
       },
       {
         "name": "Flannery Currin",
@@ -3078,7 +3243,7 @@
         "name": "David Kahn",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://denison.edu/people/david-kahn",
+        "url": "https://d-m-kahn.com/",
         "scholar_url": "https://scholar.google.com/citations?user=vHugl_kAAAAJ&hl=en",
         "status": "matched",
         "citedby": 180,
@@ -3087,7 +3252,7 @@
         "hindex5y": 5,
         "i10index": 6,
         "i10index5y": 5,
-        "interests": "programming languages"
+        "interests": "Programming languages, Logic & verification"
       },
       {
         "name": "Matt Kretchmar",
@@ -3117,7 +3282,7 @@
         "hindex5y": 12,
         "i10index": 28,
         "i10index5y": 16,
-        "interests": "Algorithms & complexity, Databases, Machine learning"
+        "interests": "Algorithms & complexity, Databases"
       },
       {
         "name": "Ali Miller",
@@ -3147,7 +3312,7 @@
         "hindex5y": 23,
         "i10index": 27,
         "i10index5y": 27,
-        "interests": "Computer security & privacy"
+        "interests": "Machine learning, Computer security & privacy"
       }
     ],
     "total": 8,
@@ -3171,7 +3336,7 @@
         "hindex5y": 13,
         "i10index": 21,
         "i10index5y": 18,
-        "interests": "Bioinformatics, Computational Biology, Machine Learning"
+        "interests": "Computational bio & bioinformatics"
       },
       {
         "name": "Chad Byers",
@@ -3187,6 +3352,21 @@
         "i10index": null,
         "i10index5y": null,
         "interests": null
+      },
+      {
+        "name": "Mehmet Gulum",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": null,
+        "scholar_url": "https://scholar.google.com/citations?user=DoxEPT4AAAAJ&hl=en",
+        "status": "matched",
+        "citedby": 235,
+        "citedby5y": 234,
+        "hindex": 5,
+        "hindex5y": 5,
+        "i10index": 4,
+        "i10index5y": 4,
+        "interests": "Machine learning, Computer vision, Data science"
       },
       {
         "name": "Brian Howard",
@@ -3261,12 +3441,12 @@
         "hindex5y": 5,
         "i10index": 8,
         "i10index5y": 2,
-        "interests": "Computer science education"
+        "interests": "Robotics, Computer science education, Artificial intelligence"
       }
     ],
-    "total": 7,
-    "matched": 3,
-    "total_citations": 1845,
+    "total": 8,
+    "matched": 4,
+    "total_citations": 2080,
     "max_hindex": 16
   },
   {
@@ -3285,7 +3465,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Robotics, Artificial intelligence, Computer science education"
+        "interests": "Artificial intelligence, Robotics, Computer science education"
       },
       {
         "name": "Matt Ferland",
@@ -3315,7 +3495,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Software engineering, Mobile computing"
+        "interests": "Software engineering, Mobile computing, Data science"
       },
       {
         "name": "John MacCormick",
@@ -3330,7 +3510,7 @@
         "hindex5y": 13,
         "i10index": 48,
         "i10index5y": 18,
-        "interests": "Artificial intelligence, Computer vision, Distributed systems"
+        "interests": "Computer vision, Distributed systems, Computer science education"
       },
       {
         "name": "Farhan Siddiqui",
@@ -3345,7 +3525,7 @@
         "hindex5y": 10,
         "i10index": 19,
         "i10index5y": 10,
-        "interests": "Computer networks, Mobile computing, Embedded & real-time systems"
+        "interests": "Computer networks, Mobile computing, Information retrieval, Computer security & privacy"
       }
     ],
     "total": 5,
@@ -3369,7 +3549,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Quantum computing, Programming languages, Algorithms & complexity"
+        "interests": "Programming languages, Quantum computing"
       },
       {
         "name": "Valerie Siyuan Feng",
@@ -3384,7 +3564,7 @@
         "hindex5y": 2,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "Computer Science, Algorithms, Wireless Communications"
+        "interests": "Algorithms & complexity, Computer networks"
       },
       {
         "name": "Chris Gibbs",
@@ -3447,6 +3627,21 @@
         "interests": null
       },
       {
+        "name": "Fred Meyer",
+        "title": "Adjunct Professor",
+        "category": "adjunct",
+        "url": null,
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "Adam Michlin",
         "title": "Assistant Professor",
         "category": "tenure_track",
@@ -3477,7 +3672,7 @@
         "interests": "Natural language processing, Data science"
       }
     ],
-    "total": 8,
+    "total": 9,
     "matched": 2,
     "total_citations": 326,
     "max_hindex": 10
@@ -3513,7 +3708,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer networks, Computer graphics"
+        "interests": "Computer networks, Computer graphics, Computer science education, Computational social science"
       },
       {
         "name": "Charlie Peck",
@@ -3558,7 +3753,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Natural language processing, Computer vision, Machine learning"
+        "interests": "Natural language processing, Computer vision, Data science"
       }
     ],
     "total": 5,
@@ -3597,13 +3792,28 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer vision, Machine learning"
+        "interests": "Machine learning, Computer vision"
       },
       {
         "name": "Komal Vashisht",
         "title": "Adjunct Instructor",
         "category": "adjunct",
-        "url": "https://www.linkedin.com/in/komal-vashisht-8331872/",
+        "url": "https://komalvashisht.com/about/",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
+        "name": "Fran Casillas",
+        "title": "Adjunct Professor",
+        "category": "adjunct",
+        "url": null,
         "scholar_url": null,
         "status": "no_match",
         "citedby": null,
@@ -3615,7 +3825,7 @@
         "interests": null
       }
     ],
-    "total": 3,
+    "total": 4,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -3636,7 +3846,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer vision"
+        "interests": "Computer vision, Data science, Visualization"
       },
       {
         "name": "Michael L Hilton",
@@ -3666,7 +3876,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
       }
     ],
     "total": 3,
@@ -3705,7 +3915,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "High-performance computing"
+        "interests": "High-performance computing, Programming languages"
       }
     ],
     "total": 2,
@@ -3765,7 +3975,7 @@
         "name": "Jacob Logas",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.fandm.edu/directory/jacob-logas.html",
+        "url": "https://github.com/logasja",
         "scholar_url": "https://scholar.google.com/citations?hl=en&user=ggGN94cAAAAJ",
         "status": "matched",
         "citedby": 85,
@@ -3774,7 +3984,7 @@
         "hindex5y": 6,
         "i10index": 3,
         "i10index5y": 3,
-        "interests": "privacy, security, human computer interaction"
+        "interests": "Computer security & privacy, Human-computer interaction"
       },
       {
         "name": "Brad McDanel",
@@ -3789,7 +3999,7 @@
         "hindex5y": 14,
         "i10index": 18,
         "i10index5y": 17,
-        "interests": "Machine learning, Computer architecture"
+        "interests": "Machine learning, Computer architecture, Distributed systems"
       },
       {
         "name": "Ed Novak",
@@ -3819,7 +4029,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Operating systems, Computer networks, Distributed systems, Measurement & performance analysis"
       },
       {
         "name": "Willie Wilson",
@@ -3858,7 +4068,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer science education"
+        "interests": "Computer science education, Human-computer interaction"
       },
       {
         "name": "Chris Alvin",
@@ -3873,7 +4083,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence, Machine learning, Software engineering"
+        "interests": "Artificial intelligence, Computer science education, Software engineering"
       },
       {
         "name": "Rebecca Drucker",
@@ -3903,7 +4113,7 @@
         "hindex5y": 5,
         "i10index": 4,
         "i10index5y": 3,
-        "interests": "Data science, Machine learning, Computational social science"
+        "interests": "Machine learning, Data science, Computational social science"
       },
       {
         "name": "Kevin Treu",
@@ -3957,7 +4167,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computational bio & bioinformatics, Computer graphics, Human-computer interaction"
+        "interests": "Computational bio & bioinformatics, Computer graphics, Human-computer interaction, Computer science education, Algorithms & complexity"
       },
       {
         "name": "Todd W. Neller",
@@ -4003,24 +4213,9 @@
         "i10index": null,
         "i10index5y": null,
         "interests": null
-      },
-      {
-        "name": "Jonathan Hoffman",
-        "title": "Adjunct Instructor",
-        "category": "adjunct",
-        "url": "https://www.gettysburg.edu/academic-programs/computer-science/faculty/employee_detail.dot?empId=014675866920013294&pageTitle=Jonathan+Hoffman",
-        "scholar_url": null,
-        "status": "matched_name",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
       }
     ],
-    "total": 6,
+    "total": 5,
     "matched": 1,
     "total_citations": 680,
     "max_hindex": 13
@@ -4080,7 +4275,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Programming languages, Robotics, Algorithms & complexity"
+        "interests": "Programming languages, Robotics"
       },
       {
         "name": "Mohammad Naderi Dehkordi",
@@ -4095,7 +4290,7 @@
         "hindex5y": 9,
         "i10index": 12,
         "i10index5y": 9,
-        "interests": "Machine learning, Computer security & privacy"
+        "interests": "Artificial intelligence, Machine learning, Computer security & privacy"
       },
       {
         "name": "Thomas Kelliher",
@@ -4110,7 +4305,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Embedded & real-time systems, Mobile computing"
+        "interests": "Embedded & real-time systems, Computer architecture, Mobile computing"
       },
       {
         "name": "Robert Lewand",
@@ -4164,13 +4359,13 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer security & privacy, Distributed systems"
+        "interests": "Distributed systems, Computer security & privacy"
       },
       {
         "name": "Eric Autry",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.grinnell.edu/user/26706",
+        "url": "https://www.ericautry.com/",
         "scholar_url": null,
         "status": "matched_college",
         "citedby": null,
@@ -4194,7 +4389,7 @@
         "hindex5y": 9,
         "i10index": 12,
         "i10index5y": 9,
-        "interests": "Computer security & privacy, Measurement & performance analysis, Software engineering"
+        "interests": "Computer security & privacy, Measurement & performance analysis, Distributed systems"
       },
       {
         "name": "Fernanda Eliott",
@@ -4254,7 +4449,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence, Human-computer interaction"
+        "interests": "Artificial intelligence, Computer vision"
       },
       {
         "name": "Jerod Weinman",
@@ -4269,7 +4464,7 @@
         "hindex5y": 8,
         "i10index": 19,
         "i10index5y": 6,
-        "interests": "Computer vision, Machine learning, Computer science education"
+        "interests": "Computer vision, Machine learning, Artificial intelligence"
       }
     ],
     "total": 9,
@@ -4308,7 +4503,7 @@
         "hindex5y": 3,
         "i10index": 2,
         "i10index5y": 1,
-        "interests": "Human-computer interaction, Games & interactive art"
+        "interests": "Human-computer interaction, Computer science education"
       },
       {
         "name": "Louis Yu",
@@ -4347,7 +4542,7 @@
         "hindex5y": 21,
         "i10index": 34,
         "i10index5y": 30,
-        "interests": "Algorithms & complexity, Computational bio & bioinformatics, Human-computer interaction"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
       },
       {
         "name": "Mark Bailey",
@@ -4362,7 +4557,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer architecture, Computer security & privacy, Mobile computing"
+        "interests": "Computer security & privacy, Computer architecture"
       },
       {
         "name": "Mason Brown",
@@ -4422,7 +4617,7 @@
         "hindex5y": 5,
         "i10index": 7,
         "i10index5y": 4,
-        "interests": "Operating systems, Distributed systems"
+        "interests": "Distributed systems, Operating systems, Measurement & performance analysis"
       },
       {
         "name": "Thomas Helmuth",
@@ -4437,7 +4632,7 @@
         "hindex5y": 17,
         "i10index": 47,
         "i10index5y": 33,
-        "interests": "Artificial intelligence, Programming languages"
+        "interests": "Artificial intelligence"
       },
       {
         "name": "Sarah Morrison-Smith",
@@ -4479,6 +4674,21 @@
     "name": "Hampden-Sydney College",
     "faculty": [
       {
+        "name": "Joseph Rennie",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.hsc.edu/faculty-profile-index/joseph-rennie",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "William Tolley",
         "title": "Assistant Professor",
         "category": "tenure_track",
@@ -4494,7 +4704,7 @@
         "interests": "Computer security & privacy"
       }
     ],
-    "total": 1,
+    "total": 2,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -4502,6 +4712,21 @@
   {
     "name": "Hanover College",
     "faculty": [
+      {
+        "name": "Jeffrey LaMarche",
+        "title": "Visiting Instructor",
+        "category": "visiting",
+        "url": null,
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
       {
         "name": "Haris Skiadas",
         "title": "Professor",
@@ -4515,10 +4740,10 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Distributed systems"
+        "interests": "Algorithms & complexity"
       }
     ],
-    "total": 1,
+    "total": 2,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -4593,7 +4818,7 @@
         "hindex5y": 9,
         "i10index": 9,
         "i10index5y": 9,
-        "interests": "Logic & verification, Programming languages"
+        "interests": "Logic & verification, Algorithms & complexity, Programming languages"
       },
       {
         "name": "Katherine Breeden",
@@ -4608,7 +4833,7 @@
         "hindex5y": 6,
         "i10index": 6,
         "i10index5y": 5,
-        "interests": "Computer graphics, Visualization"
+        "interests": "Computer graphics, Visualization, Computational bio & bioinformatics"
       },
       {
         "name": "Jonathan Chang",
@@ -4638,7 +4863,7 @@
         "hindex5y": 11,
         "i10index": 27,
         "i10index5y": 11,
-        "interests": "computer science"
+        "interests": "Computer science education"
       },
       {
         "name": "Lynn Kirabo",
@@ -4668,7 +4893,7 @@
         "hindex5y": 10,
         "i10index": 15,
         "i10index5y": 10,
-        "interests": "Machine learning, Information retrieval"
+        "interests": "Machine learning"
       },
       {
         "name": "Vidushi Ojha",
@@ -4713,7 +4938,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer networks, Distributed systems, Software engineering"
+        "interests": "Computer networks, Distributed systems, Machine learning, Software engineering"
       },
       {
         "name": "Tim Randolph",
@@ -4743,7 +4968,7 @@
         "hindex5y": 9,
         "i10index": 11,
         "i10index5y": 9,
-        "interests": "Artificial intelligence, Natural language processing, Machine learning"
+        "interests": "Natural language processing, Machine learning"
       },
       {
         "name": "Chris Stone",
@@ -4758,7 +4983,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Logic & verification, Natural language processing, Computer architecture"
+        "interests": "Logic & verification, Programming languages"
       },
       {
         "name": "Erin Talvitie",
@@ -4773,7 +4998,7 @@
         "hindex5y": 11,
         "i10index": 15,
         "i10index5y": 11,
-        "interests": "Artificial intelligence, Machine learning"
+        "interests": "Artificial intelligence, Machine learning, Natural language processing"
       },
       {
         "name": "Beth Trushkowsky",
@@ -4803,7 +5028,7 @@
         "hindex5y": 7,
         "i10index": 13,
         "i10index5y": 7,
-        "interests": "Programming Languages, Program Analysis"
+        "interests": "Programming languages, Software engineering"
       },
       {
         "name": "Calden Wloka",
@@ -4818,7 +5043,7 @@
         "hindex5y": 7,
         "i10index": 7,
         "i10index5y": 6,
-        "interests": "Computer vision"
+        "interests": "Computer vision, Artificial intelligence"
       }
     ],
     "total": 18,
@@ -4857,7 +5082,7 @@
         "hindex5y": 27,
         "i10index": 37,
         "i10index5y": 35,
-        "interests": "Artificial intelligence, Machine learning, Algorithms & complexity"
+        "interests": "Artificial intelligence, Machine learning, Human-computer interaction"
       },
       {
         "name": "Alvin Grissom",
@@ -4893,7 +5118,7 @@
         "name": "Dung Nguyen",
         "title": "Visiting Assistant Professor",
         "category": "visiting",
-        "url": "https://www.haverford.edu/users/dnguyen1",
+        "url": "https://dnguyens.space/",
         "scholar_url": "https://scholar.google.com/citations?user=crI3PxsAAAAJ&hl=en",
         "status": "matched",
         "citedby": 423,
@@ -4902,13 +5127,13 @@
         "hindex5y": 8,
         "i10index": 8,
         "i10index5y": 6,
-        "interests": "differential privacy, network science, randomized algorithms, machine learning"
+        "interests": "Computer security & privacy, Machine learning"
       },
       {
         "name": "Thao Nguyen",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.haverford.edu/users/tnguyen3",
+        "url": "https://thao-nguyen-ai.github.io/",
         "scholar_url": "https://scholar.google.com/citations?user=7M8HNUIAAAAJ&hl=en",
         "status": "matched",
         "citedby": 165,
@@ -4917,7 +5142,7 @@
         "hindex5y": 6,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Robotics, Human Robot Interaction, Artificial Intelligence, Natural Language Processing"
+        "interests": "Robotics, Natural language processing"
       },
       {
         "name": "David Wonnacott",
@@ -5013,6 +5238,21 @@
     "name": "Hobart and William Smith College",
     "faculty": [
       {
+        "name": "Stina S Bridgeman",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://math.hws.edu/bridgeman/",
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "Chris Fietkiewicz",
         "title": "Associate Professor",
         "category": "tenured",
@@ -5058,7 +5298,7 @@
         "interests": null
       }
     ],
-    "total": 3,
+    "total": 4,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -5079,7 +5319,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Mobile computing, Human-computer interaction"
+        "interests": "Human-computer interaction, Mobile computing"
       },
       {
         "name": "Charles Cusack",
@@ -5094,7 +5334,7 @@
         "hindex5y": 3,
         "i10index": 9,
         "i10index5y": 0,
-        "interests": "Algorithms & complexity"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics, Computer graphics"
       },
       {
         "name": "Ryan McFall",
@@ -5109,7 +5349,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Human-computer interaction, Computer science education"
+        "interests": "Human-computer interaction, Software engineering, Computer science education"
       },
       {
         "name": "Fola Olagbemi",
@@ -5136,6 +5376,21 @@
     "name": "Houghton University",
     "faculty": [
       {
+        "name": "Katrina Koehler",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://www.houghton.edu/staff-members/katrina-koehler/",
+        "scholar_url": "https://scholar.google.com/citations?user=YRznOzwAAAAJ&hl=en",
+        "status": "matched",
+        "citedby": 305,
+        "citedby5y": 231,
+        "hindex": 10,
+        "hindex5y": 8,
+        "i10index": 11,
+        "i10index5y": 8,
+        "interests": "Data science"
+      },
+      {
         "name": "Babafemi Sorinolu",
         "title": "Assistant Professor",
         "category": "tenure_track",
@@ -5148,13 +5403,13 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning"
+        "interests": "Machine learning, Data science"
       }
     ],
-    "total": 1,
-    "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total": 2,
+    "matched": 1,
+    "total_citations": 305,
+    "max_hindex": 10
   },
   {
     "name": "Illinois College",
@@ -5184,6 +5439,21 @@
     "name": "Juniata College",
     "faculty": [
       {
+        "name": "Gerald W. Kruse",
+        "title": "Professor",
+        "category": "tenured",
+        "url": "https://www.juniata.edu/academics/provost/bio.php?id=KRUSE",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Computer science education, High-performance computing"
+      },
+      {
         "name": "Elainea Neville",
         "title": "Instructor",
         "category": "teaching",
@@ -5211,7 +5481,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning, Mobile computing"
+        "interests": "Machine learning, Mobile computing, Artificial intelligence"
       },
       {
         "name": "William H. Thomas",
@@ -5241,7 +5511,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Human-computer interaction, Data science"
+        "interests": "Human-computer interaction, Computer science education"
       },
       {
         "name": "Jigar Patel",
@@ -5259,7 +5529,7 @@
         "interests": null
       }
     ],
-    "total": 5,
+    "total": 6,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -5295,7 +5565,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer science education"
+        "interests": "Computer science education, Human-computer interaction"
       },
       {
         "name": "Tasnim Gharaibeh",
@@ -5310,7 +5580,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Algorithms & complexity"
       },
       {
         "name": "Nicholas Polanco",
@@ -5331,7 +5601,7 @@
         "name": "Sandino Vargas-P\u00e9rez",
         "title": "Associate Professor",
         "category": "tenured",
-        "url": "https://www.cs.kzoo.edu/~tgharaib/tgharaib.html",
+        "url": "https://www.sandinovargasperez.com/",
         "scholar_url": "https://scholar.google.com/citations?user=9sFDnrQAAAAJ&hl=en",
         "status": "matched",
         "citedby": 32,
@@ -5340,7 +5610,7 @@
         "hindex5y": 2,
         "i10index": 1,
         "i10index5y": 1,
-        "interests": "High-Performance Computing, Parallel and Distributed Algorithms, Computational Genomics, Parallel Data Structures, Data Compress"
+        "interests": "High-performance computing, Algorithms & complexity, Computational bio & bioinformatics, Data science"
       }
     ],
     "total": 5,
@@ -5364,7 +5634,7 @@
         "hindex5y": 9,
         "i10index": 27,
         "i10index5y": 8,
-        "interests": "High-performance computing, Algorithms & complexity, Computer science education"
+        "interests": "High-performance computing, Algorithms & complexity, Software engineering, Computer science education"
       },
       {
         "name": "Shengting Cao",
@@ -5379,7 +5649,7 @@
         "hindex5y": 6,
         "i10index": 5,
         "i10index5y": 5,
-        "interests": "Computer vision, Artificial intelligence"
+        "interests": "Artificial intelligence, Computer vision"
       },
       {
         "name": "Michael Gerten",
@@ -5409,7 +5679,7 @@
         "hindex5y": 4,
         "i10index": 1,
         "i10index5y": 1,
-        "interests": "Machine learning, Computer vision, High-performance computing"
+        "interests": "Machine learning, Computer vision, High-performance computing, Distributed systems"
       },
       {
         "name": "Jaime Spacco",
@@ -5448,7 +5718,7 @@
         "hindex5y": 13,
         "i10index": 37,
         "i10index5y": 17,
-        "interests": "Algorithms & complexity"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
       },
       {
         "name": "Lauren Biernacki",
@@ -5463,7 +5733,7 @@
         "hindex5y": 6,
         "i10index": 5,
         "i10index5y": 5,
-        "interests": "Computer Architecture, Security, Privacy"
+        "interests": "Computer architecture, Computer security & privacy"
       },
       {
         "name": "Jonathan Dahl",
@@ -5508,7 +5778,7 @@
         "hindex5y": 3,
         "i10index": 4,
         "i10index5y": 1,
-        "interests": "Artificial intelligence"
+        "interests": "Artificial intelligence, Computational bio & bioinformatics"
       },
       {
         "name": "Sofia Serrano",
@@ -5529,7 +5799,7 @@
         "name": "Jorge Silveyra",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.linkedin.com/in/jorge-silveyra-089030175/",
+        "url": "https://compsci.lafayette.edu/people/jorge-silveyra/",
         "scholar_url": null,
         "status": "matched_college",
         "citedby": null,
@@ -5553,7 +5823,7 @@
         "hindex5y": 14,
         "i10index": 19,
         "i10index5y": 15,
-        "interests": "Software engineering, Human-computer interaction"
+        "interests": "Software engineering, Human-computer interaction, Computer security & privacy"
       },
       {
         "name": "Jia Tao",
@@ -5592,7 +5862,7 @@
         "hindex5y": 8,
         "i10index": 13,
         "i10index5y": 7,
-        "interests": "Computer vision"
+        "interests": "Computer vision, Machine learning"
       },
       {
         "name": "Sara Jamshidi",
@@ -5622,7 +5892,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Software engineering, Databases"
+        "interests": "Computer networks, Software engineering, Databases"
       },
       {
         "name": "Dakotah Lambert",
@@ -5637,13 +5907,67 @@
         "hindex5y": 9,
         "i10index": 9,
         "i10index5y": 9,
-        "interests": "Algorithms & complexity, Natural language processing"
+        "interests": "Natural language processing, Algorithms & complexity, Logic & verification"
       }
     ],
     "total": 4,
     "matched": 2,
     "total_citations": 924,
     "max_hindex": 11
+  },
+  {
+    "name": "Lane College",
+    "faculty": [
+      {
+        "name": "Kitai Jeong",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": null,
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
+        "name": "Sheldon Liang",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": null,
+        "scholar_url": null,
+        "status": "matched_name",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Computer vision"
+      },
+      {
+        "name": "Kent Tyler",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": null,
+        "scholar_url": null,
+        "status": "no_url",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      }
+    ],
+    "total": 3,
+    "matched": 0,
+    "total_citations": 0,
+    "max_hindex": null
   },
   {
     "name": "Lawrence University",
@@ -5661,7 +5985,7 @@
         "hindex5y": 4,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "Computational bio & bioinformatics, Computer science education"
+        "interests": "Computational bio & bioinformatics"
       },
       {
         "name": "Kyle Diederich",
@@ -5784,7 +6108,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Data science"
+        "interests": null
       },
       {
         "name": "Thuy Do",
@@ -5820,7 +6144,7 @@
         "name": "Sanad Aburass",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.luther.edu/faculty/sanad-aburass",
+        "url": "https://sanadaburass.com/",
         "scholar_url": "https://scholar.google.com/citations?user=oAhSlDYAAAAJ&hl=en",
         "status": "matched",
         "citedby": 419,
@@ -5829,7 +6153,7 @@
         "hindex5y": 11,
         "i10index": 13,
         "i10index5y": 13,
-        "interests": "Image Processing, Computer Vision, Machine Learning, Deep Learning, Philosophy"
+        "interests": "Machine learning, Computer vision"
       }
     ],
     "total": 4,
@@ -5892,7 +6216,7 @@
         "hindex5y": 5,
         "i10index": 8,
         "i10index5y": 1,
-        "interests": "Data science, Machine learning"
+        "interests": "Data science"
       },
       {
         "name": "Pietro Dall'Olio",
@@ -5946,7 +6270,7 @@
         "hindex5y": 7,
         "i10index": 6,
         "i10index5y": 4,
-        "interests": "Computer science education, Human-computer interaction"
+        "interests": "Computer science education"
       },
       {
         "name": "Suhas Arehalli",
@@ -5964,6 +6288,21 @@
         "interests": "Natural language processing"
       },
       {
+        "name": "Curtis Balz",
+        "title": "Visiting Assistant Professor",
+        "category": "visiting",
+        "url": null,
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "Md Mutasim Billah",
         "title": "Visiting Assistant Professor",
         "category": "visiting",
@@ -5976,7 +6315,7 @@
         "hindex5y": 1,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "Statistical Genetics, Bioinformatics, Computational Genomics, Machine Learning, Deep Learning"
+        "interests": "Computational bio & bioinformatics"
       },
       {
         "name": "Paul Cantrell",
@@ -5991,7 +6330,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Programming languages, Information retrieval, Games & interactive art"
+        "interests": "Programming languages, Games & interactive art"
       },
       {
         "name": "Jedidiah Carlson",
@@ -6012,7 +6351,7 @@
         "name": "Dan Drake",
         "title": "Visiting Assistant Professor",
         "category": "visiting",
-        "url": "https://www.linkedin.com/in/ddrake2/",
+        "url": "https://dandrake.github.io/",
         "scholar_url": null,
         "status": "matched_name",
         "citedby": null,
@@ -6021,7 +6360,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Data science, Computer science education"
       },
       {
         "name": "Lian Duan",
@@ -6036,7 +6375,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Software engineering, Programming languages"
+        "interests": "Software engineering, Logic & verification"
       },
       {
         "name": "Elizabeth Ernst",
@@ -6066,7 +6405,22 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Robotics, Machine learning, Computer vision"
+        "interests": "Robotics, Machine learning, Computer vision, Artificial intelligence"
+      },
+      {
+        "name": "Alex Hanhart",
+        "title": "Visiting Assistant Professor",
+        "category": "visiting",
+        "url": null,
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
       },
       {
         "name": "Bret Jackson",
@@ -6096,7 +6450,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Human-computer interaction"
+        "interests": "Computer security & privacy, Human-computer interaction"
       },
       {
         "name": "Lauren Milne",
@@ -6141,7 +6495,7 @@
         "hindex5y": 5,
         "i10index": 3,
         "i10index5y": 3,
-        "interests": "Human-computer interaction, Computer science education"
+        "interests": "Computer science education, Human-computer interaction"
       },
       {
         "name": "Elizabeth Shoop",
@@ -6157,9 +6511,24 @@
         "i10index": null,
         "i10index5y": null,
         "interests": "Computational bio & bioinformatics, Visualization, Distributed systems"
+      },
+      {
+        "name": "Allan Marshall Kirch",
+        "title": "Professor",
+        "category": "tenured",
+        "url": null,
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
       }
     ],
-    "total": 16,
+    "total": 19,
     "matched": 9,
     "total_citations": 14012,
     "max_hindex": 30
@@ -6180,7 +6549,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Software engineering, Programming languages"
+        "interests": "Software engineering"
       }
     ],
     "total": 1,
@@ -6219,7 +6588,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Software engineering, Programming languages, Computer networks"
+        "interests": "Software engineering, Programming languages, Distributed systems, Computer networks, High-performance computing"
       }
     ],
     "total": 2,
@@ -6243,7 +6612,7 @@
         "hindex5y": 12,
         "i10index": 21,
         "i10index5y": 14,
-        "interests": "Human-computer interaction, Information retrieval, Visualization"
+        "interests": "Human-computer interaction, Visualization, Computer graphics"
       },
       {
         "name": "Laura Biester",
@@ -6273,7 +6642,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Programming languages, Computer science education"
+        "interests": "Algorithms & complexity, Programming languages, Data science, Information retrieval, Distributed systems"
       },
       {
         "name": "Philip Caplan",
@@ -6303,7 +6672,7 @@
         "hindex5y": 10,
         "i10index": 10,
         "i10index5y": 10,
-        "interests": "Data science, Computer science education"
+        "interests": "Data science, Machine learning, Information retrieval, Computer security & privacy, Human-computer interaction"
       },
       {
         "name": "Ananya Das",
@@ -6318,7 +6687,7 @@
         "hindex5y": 5,
         "i10index": 7,
         "i10index5y": 0,
-        "interests": "Algorithms & complexity, Computational bio & bioinformatics, Human-computer interaction"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
       },
       {
         "name": "Matthew Dickerson",
@@ -6348,7 +6717,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Software engineering"
       },
       {
         "name": "Peter Johnson",
@@ -6363,7 +6732,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer architecture, Operating systems, Computer networks"
+        "interests": "Computer architecture, Operating systems, Computer networks, Computer security & privacy, Programming languages"
       },
       {
         "name": "Shelby Kimmel",
@@ -6393,7 +6762,7 @@
         "hindex5y": 19,
         "i10index": 40,
         "i10index5y": 26,
-        "interests": "Computational bio & bioinformatics"
+        "interests": "Computational bio & bioinformatics, Machine learning"
       },
       {
         "name": "Frank Swenton",
@@ -6408,7 +6777,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity"
+        "interests": "Algorithms & complexity, Logic & verification"
       },
       {
         "name": "Andrea Vaccari",
@@ -6423,7 +6792,7 @@
         "hindex5y": 9,
         "i10index": 17,
         "i10index5y": 9,
-        "interests": "Computer vision, Embedded & real-time systems, Computational bio & bioinformatics"
+        "interests": "Computer vision, Data science, Embedded & real-time systems"
       }
     ],
     "total": 13,
@@ -6447,13 +6816,13 @@
         "hindex5y": 5,
         "i10index": 5,
         "i10index5y": 2,
-        "interests": "Machine learning, Information retrieval, Computer architecture"
+        "interests": "Data science, Natural language processing"
       },
       {
         "name": "Logan Mayfield",
         "title": "Professor",
         "category": "tenured",
-        "url": "https://www.monmouthcollege.edu/live/profiles/2120-logan-mayfield",
+        "url": "http://jlmayfield.github.io/",
         "scholar_url": "https://scholar.google.com/citations?user=WVT8fDgAAAAJ&hl=en",
         "status": "matched",
         "citedby": 3,
@@ -6462,7 +6831,7 @@
         "hindex5y": 0,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "Quantum Computation"
+        "interests": "Quantum computing"
       }
     ],
     "total": 2,
@@ -6516,7 +6885,7 @@
         "hindex5y": 6,
         "i10index": 27,
         "i10index5y": 4,
-        "interests": "Human-computer interaction"
+        "interests": "Information retrieval, Data science, Human-computer interaction"
       },
       {
         "name": "Tony Liu",
@@ -6531,7 +6900,7 @@
         "hindex5y": 12,
         "i10index": 12,
         "i10index5y": 12,
-        "interests": "Machine learning, Cryptography, Information retrieval"
+        "interests": "Machine learning, Artificial intelligence"
       },
       {
         "name": "James McCauley",
@@ -6546,7 +6915,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer networks, Distributed systems"
+        "interests": "Computer networks, Distributed systems, Computer architecture"
       },
       {
         "name": "Heather Pon-Barry",
@@ -6561,7 +6930,7 @@
         "hindex5y": 14,
         "i10index": 36,
         "i10index5y": 16,
-        "interests": "Human-computer interaction, Natural language processing, Artificial intelligence"
+        "interests": "Human-computer interaction, Natural language processing"
       },
       {
         "name": "Audrey St. John",
@@ -6591,7 +6960,7 @@
         "hindex5y": 12,
         "i10index": 16,
         "i10index5y": 15,
-        "interests": "Robotics, Computer vision"
+        "interests": "Robotics, Computer vision, Artificial intelligence, High-performance computing"
       },
       {
         "name": "Diane Uwacu",
@@ -6618,36 +6987,6 @@
     "name": "Muhlenberg College",
     "faculty": [
       {
-        "name": "Michael Allocca",
-        "title": "Associate Professor",
-        "category": "tenured",
-        "url": "https://www.muhlenberg.edu/directory/michael-allocca/",
-        "scholar_url": null,
-        "status": "matched_college",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
-      },
-      {
-        "name": "Abbey D'Ovidio",
-        "title": "Assistant Professor",
-        "category": "tenure_track",
-        "url": "https://www.muhlenberg.edu/directory/abbey-dovidio/",
-        "scholar_url": null,
-        "status": "matched_college",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
-      },
-      {
         "name": "Youngsun Jang",
         "title": "Assistant Professor",
         "category": "tenure_track",
@@ -6660,7 +6999,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning, Data science, Quantum computing"
+        "interests": "Machine learning, Quantum computing, Data science"
       },
       {
         "name": "Proyash Podder",
@@ -6675,22 +7014,7 @@
         "hindex5y": 6,
         "i10index": 5,
         "i10index5y": 5,
-        "interests": "Computer networks, Information retrieval, Computer security & privacy"
-      },
-      {
-        "name": "Gary Shufelt",
-        "title": "Adjunct Professor",
-        "category": "adjunct",
-        "url": "https://www.muhlenberg.edu/directory/gary-shufelt/",
-        "scholar_url": null,
-        "status": "matched_college",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": null
+        "interests": "Computer networks, Computer security & privacy, Embedded & real-time systems"
       },
       {
         "name": "Hamed Yaghoobian",
@@ -6708,7 +7032,7 @@
         "interests": "Natural language processing, Human-computer interaction"
       }
     ],
-    "total": 6,
+    "total": 3,
     "matched": 2,
     "total_citations": 217,
     "max_hindex": 6
@@ -6750,7 +7074,7 @@
         "name": "Daniel Page",
         "title": "Visiting Assistant Professor",
         "category": "visiting",
-        "url": "https://www.ncf.edu/directory/daniel-page/",
+        "url": "https://drpage.pagewizardgames.com/",
         "scholar_url": null,
         "status": "no_url",
         "citedby": null,
@@ -6759,7 +7083,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics, Software engineering, Human-computer interaction, Information retrieval"
       },
       {
         "name": "Gil Salu",
@@ -6828,7 +7152,7 @@
         "hindex5y": 9,
         "i10index": 14,
         "i10index5y": 9,
-        "interests": "Artificial intelligence"
+        "interests": "Artificial intelligence, Machine learning"
       },
       {
         "name": "Molly Q Feldman",
@@ -6891,6 +7215,21 @@
         "interests": "Computer security & privacy, Human-computer interaction"
       },
       {
+        "name": "Howard Levinson",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.oberlin.edu/howard-levinson",
+        "scholar_url": "https://scholar.google.com/citations?user=dLSDji4AAAAJ&hl=en",
+        "status": "matched",
+        "citedby": 97,
+        "citedby5y": 52,
+        "hindex": 6,
+        "hindex5y": 5,
+        "i10index": 3,
+        "i10index5y": 0,
+        "interests": "Algorithms & complexity"
+      },
+      {
         "name": "Michael McCarrin",
         "title": "Assistant Professor",
         "category": "tenure_track",
@@ -6903,7 +7242,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence"
+        "interests": "Artificial intelligence, Algorithms & complexity"
       },
       {
         "name": "Sam Taggart",
@@ -6918,7 +7257,7 @@
         "hindex5y": 6,
         "i10index": 8,
         "i10index5y": 6,
-        "interests": "Algorithms & complexity, Economics & computation"
+        "interests": "Economics & computation, Algorithms & complexity, Games & interactive art"
       },
       {
         "name": "Emily Wang",
@@ -6948,12 +7287,12 @@
         "hindex5y": 7,
         "i10index": 7,
         "i10index5y": 7,
-        "interests": "Computer security & privacy, Human-computer interaction"
+        "interests": "Human-computer interaction, Computer security & privacy"
       }
     ],
-    "total": 11,
-    "matched": 10,
-    "total_citations": 13506,
+    "total": 12,
+    "matched": 11,
+    "total_citations": 13603,
     "max_hindex": 17
   },
   {
@@ -6987,7 +7326,7 @@
         "hindex5y": 6,
         "i10index": 6,
         "i10index5y": 4,
-        "interests": "Artificial intelligence, Human-computer interaction"
+        "interests": "Artificial intelligence, Human-computer interaction, Mobile computing"
       },
       {
         "name": "Kathryn Leonard",
@@ -7047,7 +7386,7 @@
         "hindex5y": 3,
         "i10index": 2,
         "i10index5y": 2,
-        "interests": "Computational social science, Natural language processing, Data science"
+        "interests": "Natural language processing, Data science"
       },
       {
         "name": "Hsing-Hau Chen",
@@ -7125,7 +7464,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "High-performance computing, Algorithms & complexity, Computer science education"
+        "interests": "High-performance computing, Algorithms & complexity, Computer science education, Computer architecture, Data science"
       },
       {
         "name": "Eleanor Birrell",
@@ -7140,7 +7479,7 @@
         "hindex5y": 13,
         "i10index": 19,
         "i10index5y": 15,
-        "interests": "Computer security & privacy, Cryptography"
+        "interests": "Computer security & privacy"
       },
       {
         "name": "Anthony Clark",
@@ -7176,7 +7515,7 @@
         "name": "Jingyi Li",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.pomona.edu/directory/people/jingyi-li",
+        "url": "https://jingyi.me/",
         "scholar_url": "https://scholar.google.com/citations?user=PMVUPvIAAAAJ&hl=en",
         "status": "matched",
         "citedby": 872,
@@ -7185,7 +7524,7 @@
         "hindex5y": 10,
         "i10index": 10,
         "i10index5y": 10,
-        "interests": "human-computer interaction"
+        "interests": "Human-computer interaction"
       },
       {
         "name": "Joseph C. Osborn",
@@ -7200,7 +7539,7 @@
         "hindex5y": 11,
         "i10index": 26,
         "i10index5y": 19,
-        "interests": "Artificial intelligence, Human-computer interaction, Games & interactive art"
+        "interests": "Artificial intelligence, Games & interactive art, Human-computer interaction"
       },
       {
         "name": "Alexandra Papoutsaki",
@@ -7221,7 +7560,7 @@
         "name": "Sam Thomas",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.pomona.edu/directory/people/sam-thomas",
+        "url": "https://samueltphd.github.io/",
         "scholar_url": "https://scholar.google.com/citations?user=Hv9wU6UAAAAJ&hl=en",
         "status": "matched",
         "citedby": 18,
@@ -7230,7 +7569,7 @@
         "hindex5y": 3,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "computer architecture, hardware security, secure memory"
+        "interests": "Computer architecture, Computer security & privacy"
       },
       {
         "name": "Andrew T. Wilson",
@@ -7266,7 +7605,7 @@
         "name": "Michael Zlatin",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://www.pomona.edu/directory/people/michael-zlatin",
+        "url": "https://mzlatin.github.io/",
         "scholar_url": "https://scholar.google.com/citations?user=h8apFZsAAAAJ&hl=en",
         "status": "matched",
         "citedby": 49,
@@ -7275,7 +7614,7 @@
         "hindex5y": 4,
         "i10index": 2,
         "i10index5y": 2,
-        "interests": "Combinatorial Optimization"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
       }
     ],
     "total": 11,
@@ -7314,7 +7653,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer science education, Human-computer interaction, Games & interactive art"
+        "interests": "Human-computer interaction, Computer science education"
       }
     ],
     "total": 2,
@@ -7338,10 +7677,25 @@
         "hindex5y": 4,
         "i10index": 2,
         "i10index5y": 2,
-        "interests": "Artificial intelligence, Games & interactive art"
+        "interests": "Artificial intelligence"
+      },
+      {
+        "name": "Jia Wan",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://www.randolphcollege.edu/mathematics",
+        "scholar_url": null,
+        "status": "matched_name",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
       }
     ],
-    "total": 1,
+    "total": 2,
     "matched": 1,
     "total_citations": 64,
     "max_hindex": 4
@@ -7407,7 +7761,7 @@
         "hindex5y": 15,
         "i10index": 22,
         "i10index5y": 18,
-        "interests": "Natural Language Processing, Question Answering, Information Extraction, Information Retrieval"
+        "interests": "Natural language processing, Information retrieval"
       },
       {
         "name": "John W. McManus",
@@ -7428,7 +7782,7 @@
         "name": "La Toria H. Tookes",
         "title": "Senior Lecturer",
         "category": "teaching",
-        "url": "https://www.rmc.edu/profile/la-toria-h-tookes/",
+        "url": "https://latoriatookes.com/",
         "scholar_url": null,
         "status": "no_match",
         "citedby": null,
@@ -7461,7 +7815,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning, Programming languages"
+        "interests": "Programming languages, Machine learning, Artificial intelligence, Logic & verification"
       },
       {
         "name": "Erica Blum",
@@ -7506,7 +7860,7 @@
         "hindex5y": 12,
         "i10index": 13,
         "i10index5y": 12,
-        "interests": "Cryptography, Databases, Artificial intelligence"
+        "interests": "Cryptography"
       },
       {
         "name": "Harper Knittel",
@@ -7536,7 +7890,7 @@
         "hindex5y": 9,
         "i10index": 9,
         "i10index5y": 9,
-        "interests": "Computer architecture, Algorithms & complexity, High-performance computing"
+        "interests": "Computer architecture, Algorithms & complexity"
       }
     ],
     "total": 6,
@@ -7590,7 +7944,7 @@
         "hindex5y": 6,
         "i10index": 7,
         "i10index5y": 2,
-        "interests": "Artificial intelligence, Machine learning"
+        "interests": "Natural language processing, Artificial intelligence, Machine learning"
       },
       {
         "name": "Sean Kugele",
@@ -7620,7 +7974,7 @@
         "hindex5y": 6,
         "i10index": 7,
         "i10index5y": 5,
-        "interests": "Distributed systems, Programming languages, High-performance computing"
+        "interests": "Programming languages, Distributed systems, High-performance computing, Computer architecture, Operating systems"
       },
       {
         "name": "Betsy Sanders",
@@ -7635,7 +7989,7 @@
         "hindex5y": 12,
         "i10index": 22,
         "i10index5y": 14,
-        "interests": "Computer graphics, Visualization"
+        "interests": "Computer graphics"
       },
       {
         "name": "Addison Schwamb",
@@ -7650,7 +8004,7 @@
         "hindex5y": 1,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "Computational bio & bioinformatics"
+        "interests": "Machine learning, Computational bio & bioinformatics"
       },
       {
         "name": "Matt Superdock",
@@ -7665,7 +8019,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Logic & verification, Algorithms & complexity"
+        "interests": "Logic & verification"
       }
     ],
     "total": 8,
@@ -7689,7 +8043,7 @@
         "hindex5y": 5,
         "i10index": 9,
         "i10index5y": 5,
-        "interests": "Computer graphics, Human-computer interaction"
+        "interests": "Computer vision, Human-computer interaction"
       },
       {
         "name": "Anil Shende",
@@ -7704,7 +8058,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Computer networks, Distributed systems"
+        "interests": "Algorithms & complexity, Distributed systems, Computer networks"
       },
       {
         "name": "Wale Sekoni",
@@ -7743,7 +8097,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer networks, Distributed systems, Computer architecture"
+        "interests": "Computer networks, Distributed systems, Mobile computing"
       },
       {
         "name": "Adam Albina",
@@ -7758,7 +8112,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Software engineering"
+        "interests": "Databases, Software engineering"
       },
       {
         "name": "Michael Huelsman",
@@ -7827,7 +8181,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
       }
     ],
     "total": 2,
@@ -7866,7 +8220,7 @@
         "hindex5y": 5,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Machine learning, Robotics"
+        "interests": "Artificial intelligence, Robotics, Machine learning, Natural language processing"
       },
       {
         "name": "Michael Eckmann",
@@ -7926,7 +8280,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Software engineering"
+        "interests": "Computer security & privacy, Computer science education"
       },
       {
         "name": "Christine Reilly",
@@ -7941,7 +8295,7 @@
         "hindex5y": 4,
         "i10index": 9,
         "i10index5y": 1,
-        "interests": "Distributed systems, Databases, Computer science education"
+        "interests": "Distributed systems, Data science, Computer science education"
       },
       {
         "name": "Esma Wali",
@@ -7956,7 +8310,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence, Natural language processing"
+        "interests": "Artificial intelligence, Natural language processing, Machine learning"
       }
     ],
     "total": 8,
@@ -7980,7 +8334,7 @@
         "hindex5y": 9,
         "i10index": 18,
         "i10index5y": 9,
-        "interests": "Human-computer interaction, Mobile computing, Computational social science"
+        "interests": "Human-computer interaction, Mobile computing, Computer science education"
       },
       {
         "name": "Shinyoung Cho",
@@ -8040,7 +8394,7 @@
         "hindex5y": 1,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "Human-computer interaction, Computer science education"
+        "interests": "Computer science education"
       },
       {
         "name": "Nicholas Howe",
@@ -8085,7 +8439,7 @@
         "hindex5y": 14,
         "i10index": 25,
         "i10index5y": 17,
-        "interests": "Artificial intelligence, Natural language processing"
+        "interests": "Artificial intelligence, Natural language processing, Human-computer interaction"
       },
       {
         "name": "Ab Mosca",
@@ -8145,7 +8499,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Computational bio & bioinformatics"
+        "interests": "Algorithms & complexity, Robotics, Computational bio & bioinformatics"
       }
     ],
     "total": 12,
@@ -8169,7 +8523,7 @@
         "hindex5y": 6,
         "i10index": 15,
         "i10index5y": 4,
-        "interests": "Design automation, Computer vision"
+        "interests": "Design automation"
       }
     ],
     "total": 1,
@@ -8193,7 +8547,7 @@
         "hindex5y": 5,
         "i10index": 7,
         "i10index5y": 3,
-        "interests": "Algorithms & complexity, Economics & computation"
+        "interests": "Algorithms & complexity"
       },
       {
         "name": "Arjun Chandrasekhar",
@@ -8208,7 +8562,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Distributed systems, Computational bio & bioinformatics"
+        "interests": "Distributed systems, Algorithms & complexity, Computational bio & bioinformatics"
       },
       {
         "name": "Jacob Schrum",
@@ -8223,7 +8577,7 @@
         "hindex5y": 12,
         "i10index": 21,
         "i10index5y": 13,
-        "interests": "Artificial intelligence, Programming languages, Robotics"
+        "interests": "Artificial intelligence, Programming languages, Natural language processing, Computer graphics"
       }
     ],
     "total": 3,
@@ -8277,7 +8631,7 @@
         "hindex5y": 3,
         "i10index": 4,
         "i10index5y": 1,
-        "interests": "Human-computer interaction, Computer graphics"
+        "interests": "Human-computer interaction, Information retrieval, Computer vision, Machine learning, Data science"
       },
       {
         "name": "Lisa Torrey",
@@ -8293,26 +8647,11 @@
         "i10index": 20,
         "i10index5y": 11,
         "interests": "Artificial intelligence, Machine learning"
-      },
-      {
-        "name": "Michael Schuckers",
-        "title": "Professor",
-        "category": "tenured",
-        "url": "https://www.stlawu.edu/people/michael-schuckers",
-        "scholar_url": "https://scholar.google.com/citations?user=vmzOZbcAAAAJ&hl=de",
-        "status": "matched",
-        "citedby": 901,
-        "citedby5y": 289,
-        "hindex": 16,
-        "hindex5y": 10,
-        "i10index": 26,
-        "i10index5y": 11,
-        "interests": "biometrics, biometric authentication, sports, statistics"
       }
     ],
-    "total": 5,
-    "matched": 5,
-    "total_citations": 6898,
+    "total": 4,
+    "matched": 4,
+    "total_citations": 5997,
     "max_hindex": 16
   },
   {
@@ -8337,7 +8676,7 @@
         "name": "Sayan Goswami",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://inside.smcm.edu/directory/sayan-goswami",
+        "url": "https://sayangoswami.github.io/",
         "scholar_url": "https://scholar.google.com/citations?user=_WXkxGQAAAAJ&hl=en",
         "status": "matched",
         "citedby": 137,
@@ -8346,7 +8685,7 @@
         "hindex5y": 5,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Big Data in Bioinformatics"
+        "interests": "High-performance computing, Distributed systems, Data science, Computer science education, Algorithms & complexity"
       },
       {
         "name": "Simon Read",
@@ -8376,7 +8715,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer graphics, Computer science education, Algorithms & complexity"
+        "interests": "Computer graphics, Computer science education, Algorithms & complexity, Programming languages"
       },
       {
         "name": "Muhieddine Shebaro",
@@ -8391,7 +8730,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Machine learning, Data science"
       },
       {
         "name": "Bob Tracy",
@@ -8460,7 +8799,52 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer graphics, Computer vision, Computational bio & bioinformatics"
+        "interests": "Computer graphics, Computer vision, Algorithms & complexity"
+      },
+      {
+        "name": "Michael Haydock",
+        "title": "Adjunct Assistant Professor",
+        "category": "adjunct",
+        "url": "https://www.stolaf.edu/profile/haydoc1",
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Algorithms & complexity"
+      },
+      {
+        "name": "Kodjo Houssou",
+        "title": "Visiting Instructor",
+        "category": "visiting",
+        "url": "https://www.stolaf.edu/directory/search?department=Mathematics",
+        "scholar_url": null,
+        "status": "matched_college",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
+        "name": "Barbara Johnson",
+        "title": "Visiting Assistant Professor",
+        "category": "visiting",
+        "url": "https://www.stolaf.edu/directory/search?department=Computer+Science",
+        "scholar_url": null,
+        "status": "matched_name",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
       },
       {
         "name": "Will Leeson",
@@ -8493,7 +8877,7 @@
         "interests": null
       }
     ],
-    "total": 4,
+    "total": 7,
     "matched": 1,
     "total_citations": 4719,
     "max_hindex": 33
@@ -8514,7 +8898,7 @@
         "hindex5y": 6,
         "i10index": 5,
         "i10index5y": 4,
-        "interests": "Artificial intelligence, Machine learning"
+        "interests": "Machine learning, Natural language processing"
       },
       {
         "name": "Hamza M. Elhamdadi",
@@ -8544,13 +8928,52 @@
         "hindex5y": 6,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Machine learning, Human-computer interaction"
+        "interests": "Human-computer interaction, Machine learning"
       }
     ],
     "total": 3,
     "matched": 2,
     "total_citations": 300,
     "max_hindex": 6
+  },
+  {
+    "name": "Susquehanna University",
+    "faculty": [
+      {
+        "name": "Steven Scheirer",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.susqu.edu/profiles/scheirer/",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
+        "name": "Anusha Veluswamy",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.scientificlaurels.com/biography/pwdo",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      }
+    ],
+    "total": 2,
+    "matched": 0,
+    "total_citations": 0,
+    "max_hindex": null
   },
   {
     "name": "Swarthmore College",
@@ -8583,7 +9006,7 @@
         "hindex5y": 9,
         "i10index": 19,
         "i10index5y": 8,
-        "interests": "Algorithms & complexity, Machine learning, Natural language processing"
+        "interests": "Algorithms & complexity"
       },
       {
         "name": "Vasanta Chaganti",
@@ -8598,7 +9021,7 @@
         "hindex5y": 4,
         "i10index": 5,
         "i10index5y": 0,
-        "interests": "Computer networks, Databases, Measurement & performance analysis"
+        "interests": "Computer networks, Measurement & performance analysis, Computer security & privacy"
       },
       {
         "name": "Andrew Danner",
@@ -8628,7 +9051,22 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Cryptography"
+        "interests": "Algorithms & complexity, Information retrieval, Computer security & privacy"
+      },
+      {
+        "name": "Nathaniel Grammel",
+        "title": "Visiting Assistant Professor",
+        "category": "visiting",
+        "url": "https://www.swarthmore.edu/profile/nathaniel-grammel",
+        "scholar_url": null,
+        "status": "matched_name",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Algorithms & complexity"
       },
       {
         "name": "Gabriel Hope",
@@ -8643,7 +9081,7 @@
         "hindex5y": 4,
         "i10index": 2,
         "i10index5y": 1,
-        "interests": "Machine Learning"
+        "interests": "Machine learning"
       },
       {
         "name": "Neil Lutz",
@@ -8688,7 +9126,7 @@
         "hindex5y": 8,
         "i10index": 16,
         "i10index5y": 7,
-        "interests": "Distributed systems, Computer science education, Programming languages"
+        "interests": "Distributed systems, Computer science education, Computer architecture"
       },
       {
         "name": "Keith O'Hara",
@@ -8763,7 +9201,7 @@
         "hindex5y": 5,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Computer networks"
+        "interests": "Computer networks, Measurement & performance analysis"
       },
       {
         "name": "Rich Wicentowski",
@@ -8793,10 +9231,10 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer networks"
+        "interests": "Computer networks, Measurement & performance analysis"
       }
     ],
-    "total": 16,
+    "total": 17,
     "matched": 13,
     "total_citations": 8283,
     "max_hindex": 15
@@ -8841,7 +9279,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer science education, Operating systems"
+        "interests": "Operating systems, Computer science education, Computer graphics"
       },
       {
         "name": "Kenny Moorman",
@@ -8880,7 +9318,7 @@
         "hindex5y": 11,
         "i10index": 19,
         "i10index5y": 12,
-        "interests": "Cryptography, Computer security & privacy, Distributed systems"
+        "interests": "Computer security & privacy, Cryptography, Distributed systems, Computer architecture, Information retrieval"
       },
       {
         "name": "Chandranil Chakraborttii",
@@ -8895,7 +9333,7 @@
         "hindex5y": 7,
         "i10index": 6,
         "i10index5y": 6,
-        "interests": "Machine learning, Programming languages, Games & interactive art"
+        "interests": "Machine learning, Computer architecture"
       },
       {
         "name": "Maminur Islam",
@@ -8925,7 +9363,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Distributed systems, Software engineering"
+        "interests": "Software engineering, Computer architecture"
       },
       {
         "name": "Takunari Miyazaki",
@@ -8940,7 +9378,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity"
+        "interests": "Algorithms & complexity, Computational bio & bioinformatics, Programming languages"
       },
       {
         "name": "Madalene Spezialetti",
@@ -9009,7 +9447,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Natural language processing, Machine learning, Computer vision"
       },
       {
         "name": "Eduardo Davalos Anaya",
@@ -9024,7 +9462,7 @@
         "hindex5y": 7,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Artificial intelligence, Human-computer interaction"
+        "interests": "Artificial intelligence, Human-computer interaction, Natural language processing"
       },
       {
         "name": "Seth Fogarty",
@@ -9054,7 +9492,7 @@
         "hindex5y": 17,
         "i10index": 29,
         "i10index5y": 19,
-        "interests": "Computational bio & bioinformatics"
+        "interests": "Computational bio & bioinformatics, Visualization"
       },
       {
         "name": "Britton Horn",
@@ -9069,7 +9507,7 @@
         "hindex5y": 7,
         "i10index": 7,
         "i10index5y": 6,
-        "interests": "Artificial intelligence, Games & interactive art, Programming languages"
+        "interests": "Artificial intelligence, Programming languages, Games & interactive art"
       },
       {
         "name": "Johanna Jacob",
@@ -9084,7 +9522,7 @@
         "hindex5y": 3,
         "i10index": 2,
         "i10index5y": 2,
-        "interests": "Broadening Participation in Cybersecurity Education, K-12 CS Education, Privacy and Security"
+        "interests": "Computer science education, Computer security & privacy"
       },
       {
         "name": "Sheng Tan",
@@ -9153,7 +9591,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity, Logic & verification, Computational bio & bioinformatics"
+        "interests": "Algorithms & complexity, Logic & verification, Computational bio & bioinformatics, Quantum computing, Artificial intelligence"
       },
       {
         "name": "Aaron Cass",
@@ -9198,7 +9636,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Databases"
+        "interests": "Databases, Data science"
       },
       {
         "name": "Shruti Mahajan",
@@ -9243,7 +9681,7 @@
         "hindex5y": 3,
         "i10index": 1,
         "i10index5y": 1,
-        "interests": "Artificial intelligence, Computational social science"
+        "interests": "Artificial intelligence, Economics & computation"
       },
       {
         "name": "Kristina Striegnitz",
@@ -9258,7 +9696,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Natural language processing, Computer science education"
+        "interests": "Natural language processing, Robotics, Computer science education"
       },
       {
         "name": "Arjun Viswanathan",
@@ -9312,7 +9750,7 @@
         "hindex5y": 4,
         "i10index": 9,
         "i10index5y": 4,
-        "interests": "Computer graphics, Games & interactive art, Computer science education"
+        "interests": "Computer science education, Games & interactive art, Computer graphics"
       },
       {
         "name": "Karen Anewalt",
@@ -9357,7 +9795,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Logic & verification, Computer security & privacy"
+        "interests": "Logic & verification, Artificial intelligence, Cryptography"
       },
       {
         "name": "Ian Finlayson",
@@ -9372,7 +9810,7 @@
         "hindex5y": 2,
         "i10index": 2,
         "i10index5y": 0,
-        "interests": "Computer architecture, Programming languages"
+        "interests": "Computer architecture, Computer science education"
       },
       {
         "name": "Xin-Wen Wu",
@@ -9432,7 +9870,7 @@
         "hindex5y": 3,
         "i10index": 1,
         "i10index5y": 0,
-        "interests": "High-performance computing, Machine learning, Computer security & privacy"
+        "interests": "High-performance computing, Machine learning, Computer architecture, Distributed systems, Algorithms & complexity"
       },
       {
         "name": "Josh Clements",
@@ -9447,7 +9885,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Artificial intelligence, Human-computer interaction"
       },
       {
         "name": "Gusty Cooper",
@@ -9531,7 +9969,7 @@
         "hindex5y": 14,
         "i10index": 52,
         "i10index5y": 21,
-        "interests": "Artificial intelligence, Machine learning"
+        "interests": "Artificial intelligence"
       }
     ],
     "total": 4,
@@ -9555,7 +9993,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "High-performance computing, Computational bio & bioinformatics"
+        "interests": "High-performance computing"
       },
       {
         "name": "Marietta Cameron",
@@ -9621,7 +10059,7 @@
         "name": "Sarah Van Wart",
         "title": "Assistant Professor",
         "category": "tenure_track",
-        "url": "https://go.unca.edu/faculty/sarah-van-wart/",
+        "url": "https://vanwars.github.io/",
         "scholar_url": null,
         "status": "matched_name",
         "citedby": null,
@@ -9630,7 +10068,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Human-computer interaction, Computational social science, Computer science education, Software engineering, Information retrieval"
       },
       {
         "name": "Adam Whitley",
@@ -9669,7 +10107,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer security & privacy"
+        "interests": "Computer security & privacy, Machine learning"
       },
       {
         "name": "America Chambers",
@@ -9699,7 +10137,7 @@
         "hindex5y": 8,
         "i10index": 26,
         "i10index5y": 7,
-        "interests": "Distributed systems, Databases, High-performance computing"
+        "interests": "Distributed systems, Data science, High-performance computing"
       },
       {
         "name": "Marissa Masden",
@@ -9714,7 +10152,7 @@
         "hindex5y": 6,
         "i10index": 2,
         "i10index5y": 2,
-        "interests": "Computational bio & bioinformatics, Machine learning"
+        "interests": "Machine learning, Computational bio & bioinformatics"
       },
       {
         "name": "Adam Smith",
@@ -9753,7 +10191,7 @@
         "hindex5y": 3,
         "i10index": 6,
         "i10index5y": 1,
-        "interests": "Computer security & privacy, Computer networks, Distributed systems"
+        "interests": "Computer security & privacy, Distributed systems, Artificial intelligence"
       },
       {
         "name": "Prateek Bhakta",
@@ -9783,7 +10221,7 @@
         "hindex5y": 10,
         "i10index": 10,
         "i10index5y": 10,
-        "interests": "Games & interactive art"
+        "interests": "Artificial intelligence, Games & interactive art, Programming languages"
       },
       {
         "name": "Arthur Charlesworth",
@@ -9813,7 +10251,7 @@
         "hindex5y": 6,
         "i10index": 6,
         "i10index5y": 4,
-        "interests": "Natural language processing"
+        "interests": "Natural language processing, Artificial intelligence, Machine learning"
       },
       {
         "name": "Yucong Jiang",
@@ -9828,7 +10266,7 @@
         "hindex5y": 2,
         "i10index": 1,
         "i10index5y": 0,
-        "interests": "Information retrieval, Data science"
+        "interests": "Data science, Information retrieval"
       },
       {
         "name": "Patrick Martin",
@@ -9843,7 +10281,7 @@
         "hindex5y": 6,
         "i10index": 11,
         "i10index5y": 4,
-        "interests": "Robotics, Artificial intelligence"
+        "interests": "Robotics"
       },
       {
         "name": "Mmachi Obiorah",
@@ -9888,7 +10326,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Data science"
       },
       {
         "name": "Shweta Ware",
@@ -9903,7 +10341,7 @@
         "hindex5y": 8,
         "i10index": 7,
         "i10index5y": 7,
-        "interests": "Data science, Mobile computing, Machine learning"
+        "interests": "Mobile computing, Data science, Machine learning"
       }
     ],
     "total": 11,
@@ -9972,7 +10410,7 @@
         "name": "E Alex",
         "title": "Adjunct Instructor",
         "category": "adjunct",
-        "url": "https://www.uvawise.edu/directory/alex-edwards",
+        "url": "http://www.mcs.uvawise.edu/cae/",
         "scholar_url": null,
         "status": "no_url",
         "citedby": null,
@@ -9981,7 +10419,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Operating systems, Databases, Programming languages"
       },
       {
         "name": "F David",
@@ -9996,7 +10434,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Logic & verification, Programming languages, Software engineering"
+        "interests": "Logic & verification, Programming languages"
       },
       {
         "name": "H Robert",
@@ -10026,7 +10464,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Machine learning, Data science"
       },
       {
         "name": "S Jacob",
@@ -10041,7 +10479,7 @@
         "hindex5y": 31,
         "i10index": 127,
         "i10index5y": 76,
-        "interests": "Computer vision"
+        "interests": "Human-computer interaction, Computer science education"
       }
     ],
     "total": 6,
@@ -10068,6 +10506,21 @@
         "interests": "Computer architecture, Embedded & real-time systems, Software engineering"
       },
       {
+        "name": "Olena Kozhushkina",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://www.ursinus.edu/live/profiles/2451-olena-kozhushkina",
+        "scholar_url": null,
+        "status": "no_match",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": null
+      },
+      {
         "name": "William Mongan",
         "title": "Associate Professor",
         "category": "tenured",
@@ -10080,10 +10533,10 @@
         "hindex5y": 10,
         "i10index": 16,
         "i10index5y": 10,
-        "interests": "Computer science education, Software engineering"
+        "interests": "Computer science education, Programming languages"
       }
     ],
-    "total": 2,
+    "total": 3,
     "matched": 1,
     "total_citations": 653,
     "max_hindex": 12
@@ -10104,7 +10557,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer security & privacy, Operating systems"
+        "interests": "Operating systems"
       },
       {
         "name": "Jacob Erickson",
@@ -10149,7 +10602,7 @@
         "hindex5y": 8,
         "i10index": 15,
         "i10index5y": 7,
-        "interests": "Natural language processing, Computational social science"
+        "interests": "Natural language processing"
       },
       {
         "name": "Luke Hunsberger",
@@ -10224,7 +10677,7 @@
         "hindex5y": 4,
         "i10index": 8,
         "i10index5y": 1,
-        "interests": "Computational bio & bioinformatics"
+        "interests": "Logic & verification, Computational bio & bioinformatics, Programming languages"
       },
       {
         "name": "Logan Stapleton",
@@ -10239,7 +10692,7 @@
         "hindex5y": 13,
         "i10index": 15,
         "i10index5y": 15,
-        "interests": "Artificial intelligence, Human-computer interaction"
+        "interests": "Artificial intelligence, Human-computer interaction, Machine learning"
       }
     ],
     "total": 10,
@@ -10263,7 +10716,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer security & privacy, Computer networks"
+        "interests": "Computer security & privacy, Software engineering"
       }
     ],
     "total": 1,
@@ -10308,7 +10761,7 @@
         "name": "William J. Turner",
         "title": "Associate Professor",
         "category": "tenured",
-        "url": "https://www.linkedin.com/in/wjturner/",
+        "url": "http://persweb.wabash.edu/facstaff/turnerw/",
         "scholar_url": null,
         "status": "matched_name",
         "citedby": null,
@@ -10317,7 +10770,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Algorithms & complexity, Computer science education"
       },
       {
         "name": "Chad Westphal",
@@ -10332,7 +10785,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Algorithms & complexity"
+        "interests": null
       },
       {
         "name": "Ryeongkyung Yoon",
@@ -10347,7 +10800,7 @@
         "hindex5y": 3,
         "i10index": 0,
         "i10index5y": 0,
-        "interests": "Machine learning, Artificial intelligence, Algorithms & complexity"
+        "interests": "Machine learning, Artificial intelligence, Data science, Algorithms & complexity"
       }
     ],
     "total": 5,
@@ -10371,7 +10824,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Computer science education, Machine learning, Artificial intelligence, Natural language processing"
       },
       {
         "name": "Terry Letsche",
@@ -10401,7 +10854,7 @@
         "name": "Sara Sprenkle",
         "title": "Associate Professor",
         "category": "tenured",
-        "url": "https://www.wlu.edu/computer-science-department/profile/sprenkle-sara",
+        "url": "https://www.wlu.edu/profile/sprenkle-sara",
         "scholar_url": "https://scholar.google.com/citations?user=C236-ioAAAAJ&hl=en",
         "status": "matched",
         "citedby": 1453,
@@ -10410,7 +10863,7 @@
         "hindex5y": 6,
         "i10index": 18,
         "i10index5y": 4,
-        "interests": "software engineering, distributed systems"
+        "interests": "Software engineering, Distributed systems"
       },
       {
         "name": "Sana Habib",
@@ -10425,13 +10878,13 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Computer security & privacy, Computer networks"
       },
       {
         "name": "Simon Levy",
         "title": "Professor",
         "category": "tenured",
-        "url": "https://www.wlu.edu/computer-science-department/profile/levy-simon",
+        "url": "https://simondlevy.academic.wlu.edu/",
         "scholar_url": null,
         "status": "no_match",
         "citedby": null,
@@ -10440,13 +10893,13 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
+        "interests": "Machine learning"
       },
       {
         "name": "Kefu Lu",
         "title": "Associate Professor",
         "category": "tenured",
-        "url": "https://www.wlu.edu/computer-science-department/profile/lu-kefu",
+        "url": "https://sites.google.com/view/kefulu",
         "scholar_url": "https://scholar.google.com/citations?user=IlZ0qUAAAAAJ&hl=en",
         "status": "matched",
         "citedby": 356,
@@ -10455,7 +10908,7 @@
         "hindex5y": 7,
         "i10index": 7,
         "i10index5y": 6,
-        "interests": "Approximation Algorithms, Machine Learning, Scheduling"
+        "interests": "Distributed systems, Algorithms & complexity, Software engineering"
       },
       {
         "name": "Elizabeth Matthews",
@@ -10481,6 +10934,21 @@
   {
     "name": "Washington College",
     "faculty": [
+      {
+        "name": "Austin Lobo",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://www.washcoll.edu/people_departments/faculty/alobo2.php",
+        "scholar_url": "https://scholar.google.com/citations?user=TJhPg5oAAAAJ&hl=en",
+        "status": "matched",
+        "citedby": 361,
+        "citedby5y": 40,
+        "hindex": 7,
+        "hindex5y": 3,
+        "i10index": 7,
+        "i10index5y": 1,
+        "interests": "Algorithms & complexity"
+      },
       {
         "name": "Shaun Ramsey",
         "title": "Professor",
@@ -10509,13 +10977,13 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "High-performance computing, Algorithms & complexity"
+        "interests": "High-performance computing"
       }
     ],
-    "total": 2,
-    "matched": 1,
-    "total_citations": 167,
-    "max_hindex": 4
+    "total": 3,
+    "matched": 2,
+    "total_citations": 528,
+    "max_hindex": 7
   },
   {
     "name": "Washington & Jefferson College",
@@ -10533,7 +11001,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Human-computer interaction, Visualization"
+        "interests": "Human-computer interaction, Visualization, Design automation"
       },
       {
         "name": "Amanda Holland-Minkley",
@@ -10548,7 +11016,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence, Information retrieval, Software engineering"
+        "interests": "Artificial intelligence, Computer security & privacy"
       },
       {
         "name": "John Ladd",
@@ -10563,7 +11031,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Data science"
+        "interests": "Computational social science, Data science"
       },
       {
         "name": "Rebecca Rapp",
@@ -10578,7 +11046,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer science education"
+        "interests": "Data science, Human-computer interaction, Mobile computing, Visualization"
       }
     ],
     "total": 4,
@@ -10632,7 +11100,7 @@
         "hindex5y": 4,
         "i10index": 1,
         "i10index5y": 1,
-        "interests": "Algorithms & complexity, Economics & computation"
+        "interests": "Distributed systems, Economics & computation"
       },
       {
         "name": "Brian Brubach",
@@ -10692,7 +11160,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Data science, Software engineering"
+        "interests": "Computer science education, Data science"
       },
       {
         "name": "Peter Mawhorter",
@@ -10707,7 +11175,7 @@
         "hindex5y": 8,
         "i10index": 13,
         "i10index5y": 8,
-        "interests": "Artificial intelligence, Games & interactive art"
+        "interests": "Artificial intelligence, Games & interactive art, Programming languages, Computational social science, Human-computer interaction"
       },
       {
         "name": "Sara Melnick",
@@ -10737,7 +11205,7 @@
         "hindex5y": 17,
         "i10index": 47,
         "i10index5y": 23,
-        "interests": "Information retrieval"
+        "interests": "Information retrieval, Cryptography"
       },
       {
         "name": "Eni Mustafaraj",
@@ -10752,7 +11220,7 @@
         "hindex5y": 19,
         "i10index": 38,
         "i10index5y": 25,
-        "interests": "Computational social science, Data science"
+        "interests": "Computational social science"
       },
       {
         "name": "Orit Shaer",
@@ -10797,7 +11265,7 @@
         "hindex5y": 10,
         "i10index": 32,
         "i10index5y": 10,
-        "interests": "Programming languages, Computer science education"
+        "interests": "Programming languages, Visualization, Computer science education, Human-computer interaction"
       },
       {
         "name": "Jordan Tynes",
@@ -10812,7 +11280,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Games & interactive art, Human-computer interaction"
+        "interests": "Games & interactive art, Human-computer interaction, Computer science education"
       },
       {
         "name": "Alexa VanHattum",
@@ -10827,7 +11295,7 @@
         "hindex5y": 5,
         "i10index": 4,
         "i10index5y": 4,
-        "interests": "Programming languages, Computer architecture, Logic & verification"
+        "interests": "Programming languages, Logic & verification, Software engineering, Operating systems"
       },
       {
         "name": "Yaniv Yacoby",
@@ -10911,7 +11379,7 @@
         "hindex5y": 3,
         "i10index": 11,
         "i10index5y": 0,
-        "interests": "Logic & verification"
+        "interests": "Logic & verification, Programming languages"
       },
       {
         "name": "Yuxuan Mei",
@@ -10956,7 +11424,7 @@
         "hindex5y": 16,
         "i10index": 19,
         "i10index5y": 18,
-        "interests": "Computer security & privacy"
+        "interests": "Computer security & privacy, Natural language processing"
       },
       {
         "name": "Victoria Ursula Manfredi",
@@ -10971,7 +11439,7 @@
         "hindex5y": 6,
         "i10index": 12,
         "i10index5y": 4,
-        "interests": "Computer networks"
+        "interests": "Computer networks, Distributed systems"
       }
     ],
     "total": 8,
@@ -10995,25 +11463,10 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": null
-      },
-      {
-        "name": "Adam M. Blumenthal",
-        "title": "Assistant Professor",
-        "category": "tenure_track",
-        "url": "https://sites.google.com/view/ablumenthal/",
-        "scholar_url": null,
-        "status": "no_match",
-        "citedby": null,
-        "citedby5y": null,
-        "hindex": null,
-        "hindex5y": null,
-        "i10index": null,
-        "i10index5y": null,
-        "interests": "Algorithms & complexity"
+        "interests": "Programming languages, Software engineering, Algorithms & complexity"
       }
     ],
-    "total": 2,
+    "total": 1,
     "matched": 0,
     "total_citations": 0,
     "max_hindex": null
@@ -11049,7 +11502,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer security & privacy, Data science"
+        "interests": "Computer security & privacy, Computer science education, Human-computer interaction, Operating systems, Programming languages"
       },
       {
         "name": "Thomas VanDrunen",
@@ -11118,7 +11571,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Artificial intelligence, Natural language processing, Data science"
+        "interests": "Artificial intelligence, Natural language processing"
       },
       {
         "name": "Tony Tong",
@@ -11157,7 +11610,7 @@
         "hindex5y": 8,
         "i10index": 21,
         "i10index5y": 7,
-        "interests": "Computer graphics, Computer science education, Human-computer interaction"
+        "interests": "Computer graphics, Human-computer interaction, Computer science education"
       },
       {
         "name": "Janet Davis",
@@ -11202,7 +11655,7 @@
         "hindex5y": 2,
         "i10index": 1,
         "i10index5y": 0,
-        "interests": "Machine learning, Natural language processing"
+        "interests": "Machine learning"
       },
       {
         "name": "John Stratton",
@@ -11274,6 +11727,21 @@
         "interests": "Computer graphics, Computer vision"
       },
       {
+        "name": "Haiyan Cheng",
+        "title": "Professor",
+        "category": "tenured",
+        "url": "https://my.willamette.edu/people/hcheng",
+        "scholar_url": "https://scholar.google.com/citations?user=Fust4loAAAAJ&hl=en",
+        "status": "matched",
+        "citedby": 333,
+        "citedby5y": 69,
+        "hindex": 9,
+        "hindex5y": 5,
+        "i10index": 9,
+        "i10index5y": 4,
+        "interests": "Machine learning, Data science, Computer science education"
+      },
+      {
         "name": "Calvin K Deutschbein",
         "title": "Assistant Professor",
         "category": "tenure_track",
@@ -11334,10 +11802,10 @@
         "interests": "Data science"
       }
     ],
-    "total": 6,
-    "matched": 2,
-    "total_citations": 365,
-    "max_hindex": 7
+    "total": 7,
+    "matched": 3,
+    "total_citations": 698,
+    "max_hindex": 9
   },
   {
     "name": "Williams College",
@@ -11355,7 +11823,7 @@
         "hindex5y": 11,
         "i10index": 28,
         "i10index5y": 11,
-        "interests": "Distributed systems, Computer networks, Mobile computing"
+        "interests": "Distributed systems, Computer networks, Information retrieval"
       },
       {
         "name": "Daniel Barowy",
@@ -11370,7 +11838,7 @@
         "hindex5y": 6,
         "i10index": 6,
         "i10index5y": 5,
-        "interests": "Programming languages, Human-computer interaction"
+        "interests": "Programming languages"
       },
       {
         "name": "James Bern",
@@ -11460,7 +11928,7 @@
         "hindex5y": 12,
         "i10index": 15,
         "i10index5y": 13,
-        "interests": "Databases, Data science, Computer architecture"
+        "interests": "Databases, Data science, Operating systems, Computer architecture, Distributed systems"
       },
       {
         "name": "Katie Keith",
@@ -11490,7 +11958,7 @@
         "hindex5y": 9,
         "i10index": 15,
         "i10index5y": 9,
-        "interests": "Algorithms & complexity"
+        "interests": "Algorithms & complexity, Data science, Information retrieval"
       },
       {
         "name": "John Parker",
@@ -11550,7 +12018,7 @@
         "hindex5y": 16,
         "i10index": 53,
         "i10index5y": 34,
-        "interests": "Algorithms & complexity, Computational bio & bioinformatics, Human-computer interaction"
+        "interests": "Algorithms & complexity, Games & interactive art"
       }
     ],
     "total": 14,
@@ -11574,7 +12042,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Computer security & privacy, Machine learning, Natural language processing"
+        "interests": "Computer security & privacy, Natural language processing, Machine learning, Artificial intelligence"
       },
       {
         "name": "Theresa Wilson",
@@ -11613,7 +12081,7 @@
         "hindex5y": null,
         "i10index": null,
         "i10index5y": null,
-        "interests": "Machine learning, Computer vision, Data science"
+        "interests": "Machine learning, Computer vision, Data science, Computational bio & bioinformatics"
       },
       {
         "name": "Aaron L. Garrett",

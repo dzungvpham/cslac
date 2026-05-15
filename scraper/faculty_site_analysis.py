@@ -73,7 +73,14 @@ REQUEST_TIMEOUT = 180
 MAX_RETRIES = 2
 MIN_TEXT_CHARS = 100
 MAX_TEXT_CHARS = 12000
-MAX_SUBFIELDS = 3
+MAX_SUBFIELDS = 5
+
+# GPU throttling: short delay after every Ollama call, longer cool-down break
+# every Nth call. Tuned to keep an unstable GPU from overheating during a
+# multi-hour batch. Override via env vars if needed.
+THROTTLE_PER_REQUEST_SEC = float(os.environ.get("FSA_THROTTLE_SEC", "1.0"))
+THROTTLE_BREAK_INTERVAL = int(os.environ.get("FSA_BREAK_INTERVAL", "100"))
+THROTTLE_BREAK_SEC = float(os.environ.get("FSA_BREAK_SEC", "60.0"))
 
 ALLOWED_FIELDS = ["Computer Science", "Mathematics or Statistics", "Unknown", "Invalid"]
 TRUSTED_SCHOLAR_STATUSES = {"matched", "manual_approved"}
@@ -256,16 +263,16 @@ JSON_SCHEMA = {
 }
 
 SYSTEM_PROMPT = (
-    "You are an academic-profile classifier. Given a faculty member's website text "
-    "(plus optional Google Scholar interests), you decide which umbrella field their "
-    "research and teaching belongs to and, if they are in Computer Science, which "
-    "subfields. You output JSON matching the provided schema. You output JSON only — "
-    "no prose, no markdown."
+    "You are an academic-profile classifier. Given evidence about a faculty "
+    "member (website text and/or Google Scholar interests), you decide which "
+    "umbrella field their research and teaching belongs to and, if they are in "
+    "Computer Science, which subfields. You output JSON matching the provided "
+    "schema. You output JSON only - no prose, no markdown."
 )
 
 TAXONOMY_BLOCK = "\n".join(f"- {name}: {desc}" for name, desc in CS_SUBFIELDS)
 
-DISAMBIGUATION_RULES = """\
+DISAMBIGUATION_RULES = f"""\
 Classification rules:
 1. The department name is NOT the answer. Many liberal-arts colleges have joint
    "Mathematics & Computer Science" or "Math, Statistics & CS" departments. Classify
@@ -289,17 +296,17 @@ Classification rules:
    Computer vision, Computational bio & bioinformatics, Visualization, Computational
    social science, Games & interactive art, Computer science education, etc. are CS
    subfields. If a person's stated primary research is one of these, that IS the
-   subfield — do not demote it to "just an application".
+   subfield - do not demote it to "just an application".
 5. Computer scientists who also teach math/stats courses still go to Computer Science
    if their research is in CS.
-6. Use Unknown when the page exists but has no usable signal about research or
+6. Use Unknown when the evidence exists but has no usable signal about research or
    teaching areas.
 7. Use Invalid when the text is clearly not a faculty profile (e.g. 404 page, error
    stub, navigation-only content, captcha block, or a profile of a different person).
 8. Subfields are populated ONLY when field == "Computer Science". For all other
    fields, subfields must be an empty array.
 9. Subfield evidence bar is HIGH. Only include a subfield if there is direct,
-   substantive evidence in the text or Scholar interests — multiple mentions, an
+   substantive evidence in the text or Scholar interests - multiple mentions, an
    explicit research/teaching area, listed publications, or a project description.
    Do NOT assign a subfield from:
      - a single tangential keyword ("uses ML in passing")
@@ -309,25 +316,25 @@ Classification rules:
        does not imply Human-computer interaction; "data" does not imply Data
        science).
    When in doubt, leave the subfield out.
-10. Return only as many subfields as GENUINELY apply (0, 1, 2, or 3 — fewer is
+10. Return only as many subfields as GENUINELY apply (0 through {MAX_SUBFIELDS} - fewer is
     better than padding). Zero subfields is acceptable for Computer Science when
     no specific subfield has strong evidence. Do not repeat a subfield. Order by
     importance to the person's research.
 11. CONSISTENCY: the final "subfields" array must contain exactly the entries
-    rated "strong" in your "subfield_reasoning" — no additions, no omissions, no
+    rated "strong" in your "subfield_reasoning" - no additions, no omissions, no
     substitutions. If a subfield is not rated "strong", it must NOT appear in
     "subfields". Reread your subfield_reasoning before emitting subfields.
-12. IMPORTANT — enum hygiene: every entry in "subfields" must be one of the
+12. IMPORTANT - enum hygiene: every entry in "subfields" must be one of the
     exact taxonomy strings listed above (with the exact spelling and
     capitalization). When subfield_reasoning mentions a concept that is NOT in
     the taxonomy (e.g. "Accessibility", "Deep learning", "Sentence processing",
     "AI safety", "Machine translation", "Recommender systems"), map it to its
-    PARENT taxonomy entry — for example, Accessibility -> Human-computer
+    PARENT taxonomy entry - for example, Accessibility -> Human-computer
     interaction, Deep learning -> Machine learning, Sentence processing ->
     Natural language processing, Recommender systems -> Information retrieval.
     If two reasoning concepts both map to the SAME taxonomy entry, list that
     entry only ONCE. NEVER substitute a different taxonomy entry just to fill
-    a slot — fewer subfields is correct, padding is wrong.
+    a slot - fewer subfields is correct, padding is wrong.
 13. NO COMPUTER SECURITY & PRIVACY FALLBACK: never include "Computer security & privacy" unless
     the research is explicitly about adversarial threats, attackers, malware,
     cryptographic systems, or confidentiality of data. Accessibility, "privacy
@@ -337,21 +344,21 @@ Classification rules:
     concept that doesn't fit the taxonomy, instead list ONE subfield and stop.
 
 Output structure (the schema enforces this):
-- "evidence": briefly quote or paraphrase the 1-3 strongest signals from the text
-  and Scholar interests that indicate research focus.
+- "evidence": briefly quote or paraphrase the 1-3 strongest signals from the
+  available evidence that indicate research focus.
 - "field_reasoning": 1-2 sentences applying the rules above to pick a field.
 - "field": one of the allowed values.
 - "subfield_reasoning": for Computer Science, list each candidate subfield and
   rate the evidence (strong / weak / none); reject the weak/none ones. Empty
   string for non-CS fields.
-- "subfields": final list (0-3 entries), only those rated "strong".
+- "subfields": final list (0-{MAX_SUBFIELDS} entries), only those rated "strong".
 - "rationale": one short summary sentence.
 """
 
 EXAMPLES_BLOCK = """\
 Examples (each shows the full reasoning + answer the schema expects):
 
-Example 1 — CS in a joint Math/CS department; reject a weakly-supported third subfield:
+Example 1 - CS in a joint Math/CS department; reject a weakly-supported third subfield:
 Input:
   Name: Jane Doe
   Title: Associate Professor
@@ -364,7 +371,7 @@ Input:
 Output:
 {"evidence": "Scholar tags 'Computer security; Privacy; Usable security'; site states research is usable privacy/security with HCI lens.", "field_reasoning": "Research is squarely in CS (security with HCI methodology); not pure math/stats.", "field": "Computer Science", "subfield_reasoning": "Computer security & privacy: strong (multiple mentions, primary topic). Human-computer interaction: strong (usable security, user-facing tools). Machine learning: weak (mentioned once as an auxiliary tool, not a research area). Reject ML.", "subfields": ["Computer security & privacy", "Human-computer interaction"], "rationale": "Usable security/privacy with HCI methods; ML is incidental tooling, not a research subfield."}
 
-Example 2 — Pure mathematician in a joint Math/Stat/CS department:
+Example 2 - Pure mathematician in a joint Math/Stat/CS department:
 Input:
   Name: John Smith
   Title: Professor
@@ -375,7 +382,7 @@ Input:
 Output:
 {"evidence": "Scholar interests are 'Algebraic topology; Knot theory'; site explicitly states research is algebraic topology / knot invariants.", "field_reasoning": "Topology/knot theory is pure mathematics. Teaching intro CS courses does not redirect classification per rule 1.", "field": "Mathematics or Statistics", "subfield_reasoning": "", "subfields": [], "rationale": "Pure topology research; intro CS teaching is irrelevant."}
 
-Example 3 — Theorist whose adjacent application could mislead the model:
+Example 3 - Theorist whose adjacent application could mislead the model:
 Input:
   Name: Sam Lee
   Title: Assistant Professor
@@ -385,9 +392,9 @@ Input:
     design and analysis, and logic synthesis. I studied high-performance
     algorithms for optimal logic synthesis."
 Output:
-{"evidence": "Site lists three research interests: computational complexity, algorithm design, logic synthesis. PhD work was algorithms for logic synthesis.", "field_reasoning": "Algorithm-/complexity-flavored CS research; clearly Computer Science, not pure math.", "subfield_reasoning": "Algorithms & complexity: strong (two of three stated interests, plus thesis). Design automation: weak — 'logic synthesis' is the application domain, not a contribution to EDA tooling itself; primary contribution is algorithmic. Computer architecture: none — no hardware microarchitecture work mentioned. Reject DA and architecture.", "field": "Computer Science", "subfields": ["Algorithms & complexity"], "rationale": "Theory-side researcher whose application is logic synthesis; subfield is algorithms, not hardware."}
+{"evidence": "Site lists three research interests: computational complexity, algorithm design, logic synthesis. PhD work was algorithms for logic synthesis.", "field_reasoning": "Algorithm-/complexity-flavored CS research; clearly Computer Science, not pure math.", "subfield_reasoning": "Algorithms & complexity: strong (two of three stated interests, plus thesis). Design automation: weak - 'logic synthesis' is the application domain, not a contribution to EDA tooling itself; primary contribution is algorithmic. Computer architecture: none - no hardware microarchitecture work mentioned. Reject DA and architecture.", "field": "Computer Science", "subfields": ["Algorithms & complexity"], "rationale": "Theory-side researcher whose application is logic synthesis; subfield is algorithms, not hardware."}
 
-Example 4 — Invalid (not a real faculty profile):
+Example 4 - Invalid (not a real faculty profile):
 Input:
   Name: Bob Jones
   Title: Professor
@@ -398,7 +405,7 @@ Input:
 Output:
 {"evidence": "Page consists of a 404 message only.", "field_reasoning": "No profile content; cannot classify.", "field": "Invalid", "subfield_reasoning": "", "subfields": [], "rationale": "Page is a 404 stub."}
 
-Example 5 — CS with a clearly dominant single subfield, reject domain-adjacent tags:
+Example 5 - CS with a clearly dominant single subfield, reject domain-adjacent tags:
 Input:
   Name: Maria Lopez
   Title: Assistant Professor
@@ -407,9 +414,9 @@ Input:
   Website excerpt: "My lab studies motion planning and manipulation for
     autonomous robots. We collect data from physical robot trials."
 Output:
-{"evidence": "Scholar interests are robotics + motion planning; site describes robotic motion planning lab.", "field_reasoning": "Clearly Computer Science.", "subfield_reasoning": "Robotics: strong (entire research program). Data science: none — collecting trial data is not data-science research. Machine learning: none — not mentioned as a research focus. Single subfield only.", "field": "Computer Science", "subfields": ["Robotics"], "rationale": "Robotics-only; data collection is incidental."}
+{"evidence": "Scholar interests are robotics + motion planning; site describes robotic motion planning lab.", "field_reasoning": "Clearly Computer Science.", "subfield_reasoning": "Robotics: strong (entire research program). Data science: none - collecting trial data is not data-science research. Machine learning: none - not mentioned as a research focus. Single subfield only.", "field": "Computer Science", "subfields": ["Robotics"], "rationale": "Robotics-only; data collection is incidental."}
 
-Example 6a — Accessibility researcher; map "Accessibility" to HCI, do NOT add
+Example 6a - Accessibility researcher; map "Accessibility" to HCI, do NOT add
 Computer security & privacy as a substitute:
 Input:
   Name: Pat Kim
@@ -420,9 +427,9 @@ Input:
     more usable for people with disabilities. Recent work focuses on accessible
     programming environments for children with visual impairments."
 Output:
-{"evidence": "Scholar tags 'accessibility; human-computer interaction'; site centers on accessibility of digital interfaces and accessible programming environments for visually impaired children.", "field_reasoning": "Accessibility/HCI research; clearly Computer Science.", "subfield_reasoning": "Human-computer interaction: strong (explicitly named in Scholar and website). Accessibility: strong but is NOT a separate taxonomy entry — it rolls up into HCI. Both strong concepts therefore map to the SAME taxonomy entry; list HCI once. No other subfield has evidence. Do NOT add Computer security & privacy as a substitute — the research is not adversarial.", "field": "Computer Science", "subfields": ["Human-computer interaction"], "rationale": "Accessibility/HCI research; the array has one entry because Accessibility rolls into HCI."}
+{"evidence": "Scholar tags 'accessibility; human-computer interaction'; site centers on accessibility of digital interfaces and accessible programming environments for visually impaired children.", "field_reasoning": "Accessibility/HCI research; clearly Computer Science.", "subfield_reasoning": "Human-computer interaction: strong (explicitly named in Scholar and website). Accessibility: strong but is NOT a separate taxonomy entry - it rolls up into HCI. Both strong concepts therefore map to the SAME taxonomy entry; list HCI once. No other subfield has evidence. Do NOT add Computer security & privacy as a substitute - the research is not adversarial.", "field": "Computer Science", "subfields": ["Human-computer interaction"], "rationale": "Accessibility/HCI research; the array has one entry because Accessibility rolls into HCI."}
 
-Example 6 — Computational psycholinguist; reject HCI based on 'human subjects':
+Example 6 - Computational psycholinguist; reject HCI based on 'human subjects':
 Input:
   Name: Lee Park
   Title: Assistant Professor
@@ -432,11 +439,31 @@ Input:
     computational linguistics. My research involves human subjects experiments
     and computational modeling with neural language models."
 Output:
-{"evidence": "Scholar tags computational linguistics, sentence processing, neural LMs; site centers NLP + psycholinguistics.", "field_reasoning": "Computational linguistics with neural LMs is core CS / NLP.", "subfield_reasoning": "Natural language processing: strong (primary topic, neural LMs). Artificial intelligence: weak — neural LMs sit under NLP for this person; would only add AI if there were broader AI research. Human-computer interaction: none — 'human subjects experiments' here means psycholinguistic experiments, not interface/UX research. Reject AI and HCI.", "field": "Computer Science", "subfields": ["Natural language processing"], "rationale": "Computational psycholinguistics; NLP only — 'human subjects' is psycholinguistics, not HCI."}
+{"evidence": "Scholar tags computational linguistics, sentence processing, neural LMs; site centers NLP + psycholinguistics.", "field_reasoning": "Computational linguistics with neural LMs is core CS / NLP.", "subfield_reasoning": "Natural language processing: strong (primary topic, neural LMs). Artificial intelligence: weak - neural LMs sit under NLP for this person; would only add AI if there were broader AI research. Human-computer interaction: none - 'human subjects experiments' here means psycholinguistic experiments, not interface/UX research. Reject AI and HCI.", "field": "Computer Science", "subfields": ["Natural language processing"], "rationale": "Computational psycholinguistics; NLP only - 'human subjects' is psycholinguistics, not HCI."}
+
+Example 7 - Scholar-only fallback (no website text available):
+Input:
+  Name: Alex Rivera
+  Title: Assistant Professor
+  College: Example College
+  Scholar interests: distributed systems; consensus protocols; blockchain
+  (No website text - classify from Scholar interests alone.)
+Output:
+{"evidence": "Scholar interests explicitly: distributed systems, consensus protocols, blockchain.", "field_reasoning": "Distributed-systems research; clearly Computer Science.", "subfield_reasoning": "Distributed systems: strong (named directly, plus consensus and blockchain which are textbook distributed-systems topics).", "field": "Computer Science", "subfields": ["Distributed systems"], "rationale": "Three Scholar tags all map to Distributed systems."}
 """
 
 
+_submit_prompt_count = 0
+
+
 def submit_prompt(prompt):
+    """Send a prompt to Ollama with throttling.
+
+    After every call we sleep THROTTLE_PER_REQUEST_SEC, and after every
+    THROTTLE_BREAK_INTERVAL calls we take a longer THROTTLE_BREAK_SEC cool-down.
+    This lets the GPU dissipate heat between long batch runs.
+    """
+    global _submit_prompt_count
     payload = {
         "model": OLLAMA_MODEL,
         "system": SYSTEM_PROMPT,
@@ -454,28 +481,42 @@ def submit_prompt(prompt):
         },
     }
     last_err = None
+    response = None
     for attempt in range(MAX_RETRIES + 1):
         try:
             resp = requests.post(OLLAMA_URL, json=payload, timeout=REQUEST_TIMEOUT)
             resp.raise_for_status()
-            return resp.json()["response"]
+            response = resp.json()["response"]
+            break
         except Exception as e:
             last_err = e
             if attempt < MAX_RETRIES:
                 time.sleep(2 ** attempt)
-    print(f"\nOllama call failed after {MAX_RETRIES + 1} attempts: {last_err}")
-    return None
+
+    _submit_prompt_count += 1
+    if THROTTLE_BREAK_INTERVAL > 0 and _submit_prompt_count % THROTTLE_BREAK_INTERVAL == 0:
+        print(
+            f"\n[throttle] {_submit_prompt_count} Ollama calls so far; "
+            f"sleeping {THROTTLE_BREAK_SEC:.0f}s to let the GPU cool."
+        )
+        time.sleep(THROTTLE_BREAK_SEC)
+    elif THROTTLE_PER_REQUEST_SEC > 0:
+        time.sleep(THROTTLE_PER_REQUEST_SEC)
+
+    if response is None:
+        print(f"\nOllama call failed after {MAX_RETRIES + 1} attempts: {last_err}")
+    return response
 
 
-def build_prompt(name, title, college, scholar_interests, text):
+def build_website_prompt(name, title, college, scholar_interests, text):
     text = text[:MAX_TEXT_CHARS]
     scholar_block = (
-        f"Google Scholar interests (authoritative signal): {scholar_interests}\n"
+        f"Google Scholar interests (auxiliary signal): {scholar_interests}\n"
         if scholar_interests
         else "Google Scholar interests: (not available)\n"
     )
     return f"""\
-Classify the faculty member below.
+Classify the faculty member below using their website text as the primary signal.
 
 Allowed fields: {", ".join(ALLOWED_FIELDS)}
 
@@ -497,7 +538,36 @@ Website text (may contain noise, truncated):
 <END OF TEXT>
 
 Output JSON matching the schema. Subfields empty unless field is Computer Science.
-At most 3 subfields. The "rationale" field is one short sentence.
+At most {MAX_SUBFIELDS} subfields. The "rationale" field is one short sentence.
+"""
+
+
+def build_scholar_prompt(name, title, college, scholar_interests):
+    return f"""\
+Classify the faculty member below. NO website text is available - the only
+signal you have is their Google Scholar interests (which are a verified
+authoritative source). Classify based on those Scholar tags only. Only return
+"Unknown" if the interests are empty or completely off-topic (e.g. clearly
+non-academic). Do NOT return "Invalid" - this is verified Scholar data, not a
+broken webpage.
+
+Allowed fields: {", ".join(ALLOWED_FIELDS)}
+
+Computer Science subfields (only used when field == "Computer Science"):
+{TAXONOMY_BLOCK}
+
+{DISAMBIGUATION_RULES}
+
+{EXAMPLES_BLOCK}
+
+Now classify this faculty member from Scholar interests only:
+- Name: {name}
+- Title: {title}
+- College: {college}
+- Google Scholar interests (authoritative): {scholar_interests}
+
+Output JSON matching the schema. Subfields empty unless field is Computer Science.
+At most {MAX_SUBFIELDS} subfields. The "rationale" field is one short sentence.
 """
 
 
@@ -531,32 +601,79 @@ def parse_response(raw):
     return {"field": field, "subfields": canonical}
 
 
-def classify_row(row):
+def _trusted_scholar_interests(row):
+    """Return non-empty Scholar interests string only when the row's Scholar
+    match status is in TRUSTED_SCHOLAR_STATUSES. Empty string otherwise."""
+    status = row.get("scholar_match_status")
+    if not (isinstance(status, str) and status in TRUSTED_SCHOLAR_STATUSES):
+        return ""
+    interests = row.get("scholar_interests")
+    if isinstance(interests, str) and interests.strip():
+        return interests.strip()
+    return ""
+
+
+def classify_row(row, verbose=False):
+    """Two-pass classification.
+
+    Pass 1: classify from the cleaned website text (using Scholar interests
+            as auxiliary context when trusted).
+    Pass 2: if Pass 1 returns Unknown/Invalid AND we have trusted Scholar
+            interests, retry with Scholar interests as the sole signal.
+
+    If both passes fail to yield a CS / Math classification, the result is
+    returned as-is (the calling code will leave the row's prior value in place
+    or mark it for manual review).
+    """
     name = row["name"]
     title = row.get("title") if pd.notna(row.get("title")) else ""
     college = row["college"]
 
+    scholar_interests = _trusted_scholar_interests(row)
+
     path = Path(CLEANED_WEBSITE_PATH) / college / f"{name}.txt"
-    if not path.is_file():
-        return {"field": "Invalid", "subfields": []}
+    text = None
+    if path.is_file():
+        text = path.read_text(encoding="utf-8")
+        if len(text.strip()) < MIN_TEXT_CHARS:
+            text = None
 
-    text = path.read_text(encoding="utf-8")
-    if len(text.strip()) < MIN_TEXT_CHARS:
-        return {"field": "Invalid", "subfields": []}
+    # Pass 1: website + scholar (when both available).
+    website_result = None
+    if text is not None:
+        prompt = build_website_prompt(name, title, college, scholar_interests, text)
+        raw = submit_prompt(prompt)
+        website_result = parse_response(raw)
+        if verbose:
+            print(f"  Pass 1 (website): {website_result}")
+        if website_result is not None and website_result["field"] in (
+            "Computer Science",
+            "Mathematics or Statistics",
+        ):
+            return {**website_result, "source": "website"}
 
-    scholar_interests = ""
-    status = row.get("scholar_match_status")
-    if isinstance(status, str) and status in TRUSTED_SCHOLAR_STATUSES:
-        interests = row.get("scholar_interests")
-        if isinstance(interests, str) and interests.strip():
-            scholar_interests = interests.strip()
+    # Pass 2: scholar-only fallback when website failed AND we have trusted
+    # scholar interests.
+    if scholar_interests:
+        prompt = build_scholar_prompt(name, title, college, scholar_interests)
+        raw = submit_prompt(prompt)
+        scholar_result = parse_response(raw)
+        if verbose:
+            print(f"  Pass 2 (scholar): {scholar_result}")
+        if scholar_result is not None and scholar_result["field"] in (
+            "Computer Science",
+            "Mathematics or Statistics",
+        ):
+            return {**scholar_result, "source": "scholar"}
 
-    prompt = build_prompt(name, title, college, scholar_interests, text)
-    raw = submit_prompt(prompt)
-    parsed = parse_response(raw)
-    if parsed is None:
-        return None
-    return parsed
+    # Neither pass produced a CS/Math classification. Return the best Unknown/
+    # Invalid signal we have so the row still gets a sensible value for the
+    # manual-review step.
+    if website_result is not None:
+        return {**website_result, "source": "website"}
+    if text is None and not scholar_interests:
+        return {"field": "Invalid", "subfields": [], "source": "no_data"}
+    return {"field": "Unknown", "subfields": [], "source": "no_signal"}
 
 
 def needs_processing(value):
@@ -566,17 +683,20 @@ def needs_processing(value):
     return s == "" or s == "rescrape"
 
 
+OUTPUT_COLUMNS = ["name", "title", "college", "field", "subfields"]
+
+
 def atomic_write_csv(df, path):
     """Write CSV to a tmp file then atomically rename.
 
     `os.replace` is atomic on POSIX and best-effort atomic on Windows. Even if
     the process is killed mid-write, the previous on-disk file is preserved
-    intact — the partial write only ever lives in the .tmp sibling.
+    intact - the partial write only ever lives in the .tmp sibling.
     """
     p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
     tmp = p.with_suffix(p.suffix + ".tmp")
-    df.drop(columns=df.columns[3:-2]).to_csv(tmp, index=False)
+    df[OUTPUT_COLUMNS].to_csv(tmp, index=False)
     os.replace(tmp, p)
 
 
@@ -634,6 +754,8 @@ if __name__ == "__main__":
     # Initial flush so OUTPUT_PATH exists from the start.
     atomic_write_csv(faculty, OUTPUT_PATH)
 
+    source_counts = {"website": 0, "scholar": 0, "no_data": 0, "no_signal": 0}
+
     for i in tqdm(todo_idx, desc="Classifying faculty"):
         row = faculty.loc[i]
         try:
@@ -648,9 +770,11 @@ if __name__ == "__main__":
 
         faculty.at[i, "field"] = result["field"]
         faculty.at[i, "subfields"] = "|".join(result["subfields"])
+        source_counts[result.get("source", "no_signal")] = source_counts.get(result.get("source", "no_signal"), 0) + 1
         try:
             atomic_write_csv(faculty, OUTPUT_PATH)
         except Exception as e:
             print(f"\nWARNING: failed to write checkpoint at row {i}: {e}")
 
     print("Done.")
+    print(f"Classification sources: {source_counts}")
