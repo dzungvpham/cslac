@@ -35,8 +35,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Albright College",
@@ -89,8 +88,7 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 65,
-    "max_hindex": 3
+    "total_citations": 65
   },
   {
     "name": "Allegheny College",
@@ -158,8 +156,7 @@
     ],
     "total": 4,
     "matched": 3,
-    "total_citations": 3642,
-    "max_hindex": 29
+    "total_citations": 3642
   },
   {
     "name": "Amherst College",
@@ -317,8 +314,7 @@
     ],
     "total": 10,
     "matched": 7,
-    "total_citations": 17927,
-    "max_hindex": 54
+    "total_citations": 17927
   },
   {
     "name": "Augustana College",
@@ -416,8 +412,7 @@
     ],
     "total": 6,
     "matched": 2,
-    "total_citations": 1502,
-    "max_hindex": 14
+    "total_citations": 1502
   },
   {
     "name": "Austin College",
@@ -470,8 +465,7 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 119,
-    "max_hindex": 7
+    "total_citations": 119
   },
   {
     "name": "Bard College",
@@ -599,8 +593,7 @@
     ],
     "total": 8,
     "matched": 8,
-    "total_citations": 7513,
-    "max_hindex": 17
+    "total_citations": 7513
   },
   {
     "name": "Barnard College",
@@ -728,8 +721,7 @@
     ],
     "total": 8,
     "matched": 8,
-    "total_citations": 17696,
-    "max_hindex": 41
+    "total_citations": 17696
   },
   {
     "name": "Beloit College",
@@ -782,8 +774,7 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 33,
-    "max_hindex": 3
+    "total_citations": 33
   },
   {
     "name": "Berea College",
@@ -881,8 +872,7 @@
     ],
     "total": 6,
     "matched": 3,
-    "total_citations": 1513,
-    "max_hindex": 13
+    "total_citations": 1513
   },
   {
     "name": "Bethany College (WV)",
@@ -920,8 +910,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Bethany Lutheran College",
@@ -944,8 +933,7 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Bowdoin College",
@@ -1103,8 +1091,7 @@
     ],
     "total": 10,
     "matched": 6,
-    "total_citations": 6716,
-    "max_hindex": 21
+    "total_citations": 6716
   },
   {
     "name": "Bridgewater College",
@@ -1142,8 +1129,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Bryn Athyn College",
@@ -1256,8 +1242,7 @@
     ],
     "total": 7,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Bryn Mawr College",
@@ -1355,8 +1340,7 @@
     ],
     "total": 6,
     "matched": 2,
-    "total_citations": 6426,
-    "max_hindex": 24
+    "total_citations": 6426
   },
   {
     "name": "Bucknell University",
@@ -1604,8 +1588,7 @@
     ],
     "total": 16,
     "matched": 13,
-    "total_citations": 8243,
-    "max_hindex": 15
+    "total_citations": 8243
   },
   {
     "name": "Carleton College",
@@ -1808,8 +1791,7 @@
     ],
     "total": 13,
     "matched": 9,
-    "total_citations": 44060,
-    "max_hindex": 28
+    "total_citations": 44060
   },
   {
     "name": "Central College",
@@ -1847,8 +1829,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Centre College",
@@ -1916,8 +1897,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 198,
-    "max_hindex": 8
+    "total_citations": 198
   },
   {
     "name": "Claflin University",
@@ -1970,8 +1950,7 @@
     ],
     "total": 3,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Coe College",
@@ -2054,8 +2033,7 @@
     ],
     "total": 5,
     "matched": 1,
-    "total_citations": 790,
-    "max_hindex": 12
+    "total_citations": 790
   },
   {
     "name": "Colby College",
@@ -2228,8 +2206,7 @@
     ],
     "total": 11,
     "matched": 7,
-    "total_citations": 2381,
-    "max_hindex": 13
+    "total_citations": 2381
   },
   {
     "name": "Colgate University",
@@ -2447,8 +2424,7 @@
     ],
     "total": 14,
     "matched": 9,
-    "total_citations": 14443,
-    "max_hindex": 33
+    "total_citations": 14443
   },
   {
     "name": "College of St Benedict",
@@ -2531,8 +2507,7 @@
     ],
     "total": 5,
     "matched": 2,
-    "total_citations": 477,
-    "max_hindex": 10
+    "total_citations": 477
   },
   {
     "name": "College of the Holy Cross",
@@ -2555,8 +2530,7 @@
     ],
     "total": 1,
     "matched": 1,
-    "total_citations": 188,
-    "max_hindex": 8
+    "total_citations": 188
   },
   {
     "name": "College of Wooster",
@@ -2654,8 +2628,7 @@
     ],
     "total": 6,
     "matched": 3,
-    "total_citations": 700,
-    "max_hindex": 9
+    "total_citations": 700
   },
   {
     "name": "Colorado College",
@@ -2753,8 +2726,7 @@
     ],
     "total": 6,
     "matched": 5,
-    "total_citations": 4470,
-    "max_hindex": 22
+    "total_citations": 4470
   },
   {
     "name": "Concordia College",
@@ -2792,8 +2764,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Connecticut College",
@@ -2966,8 +2937,7 @@
     ],
     "total": 11,
     "matched": 5,
-    "total_citations": 2873,
-    "max_hindex": 18
+    "total_citations": 2873
   },
   {
     "name": "Cornell College",
@@ -3020,8 +2990,7 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 33,
-    "max_hindex": 2
+    "total_citations": 33
   },
   {
     "name": "Covenant College",
@@ -3059,8 +3028,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Davidson College",
@@ -3188,8 +3156,7 @@
     ],
     "total": 8,
     "matched": 5,
-    "total_citations": 6131,
-    "max_hindex": 24
+    "total_citations": 6131
   },
   {
     "name": "Denison University",
@@ -3317,8 +3284,7 @@
     ],
     "total": 8,
     "matched": 5,
-    "total_citations": 9065,
-    "max_hindex": 27
+    "total_citations": 9065
   },
   {
     "name": "DePauw University",
@@ -3446,8 +3412,7 @@
     ],
     "total": 8,
     "matched": 4,
-    "total_citations": 2080,
-    "max_hindex": 16
+    "total_citations": 2080
   },
   {
     "name": "Dickinson College",
@@ -3530,8 +3495,7 @@
     ],
     "total": 5,
     "matched": 3,
-    "total_citations": 7088,
-    "max_hindex": 32
+    "total_citations": 7088
   },
   {
     "name": "Drew University",
@@ -3674,8 +3638,7 @@
     ],
     "total": 9,
     "matched": 2,
-    "total_citations": 326,
-    "max_hindex": 10
+    "total_citations": 326
   },
   {
     "name": "Earlham College",
@@ -3758,8 +3721,7 @@
     ],
     "total": 5,
     "matched": 1,
-    "total_citations": 432,
-    "max_hindex": 10
+    "total_citations": 432
   },
   {
     "name": "East-West University",
@@ -3827,8 +3789,7 @@
     ],
     "total": 4,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Eckerd College",
@@ -3881,8 +3842,7 @@
     ],
     "total": 3,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Franklin College",
@@ -3920,8 +3880,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Franklin & Marshall College",
@@ -4049,8 +4008,7 @@
     ],
     "total": 8,
     "matched": 6,
-    "total_citations": 8993,
-    "max_hindex": 14
+    "total_citations": 8993
   },
   {
     "name": "Furman University",
@@ -4133,8 +4091,7 @@
     ],
     "total": 5,
     "matched": 1,
-    "total_citations": 574,
-    "max_hindex": 5
+    "total_citations": 574
   },
   {
     "name": "Gettysburg College",
@@ -4217,8 +4174,7 @@
     ],
     "total": 5,
     "matched": 1,
-    "total_citations": 680,
-    "max_hindex": 13
+    "total_citations": 680
   },
   {
     "name": "Gordon College",
@@ -4256,8 +4212,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Goucher College",
@@ -4325,8 +4280,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 486,
-    "max_hindex": 11
+    "total_citations": 486
   },
   {
     "name": "Grinnell College",
@@ -4469,8 +4423,7 @@
     ],
     "total": 9,
     "matched": 6,
-    "total_citations": 4069,
-    "max_hindex": 15
+    "total_citations": 4069
   },
   {
     "name": "Gustavus Adolphus College",
@@ -4523,8 +4476,7 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 51,
-    "max_hindex": 4
+    "total_citations": 51
   },
   {
     "name": "Hamilton College",
@@ -4667,8 +4619,7 @@
     ],
     "total": 9,
     "matched": 4,
-    "total_citations": 6490,
-    "max_hindex": 25
+    "total_citations": 6490
   },
   {
     "name": "Hampden-Sydney College",
@@ -4706,8 +4657,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Hanover College",
@@ -4745,8 +4695,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Hartwick College",
@@ -4769,8 +4718,7 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Harvey Mudd College",
@@ -5048,8 +4996,7 @@
     ],
     "total": 18,
     "matched": 13,
-    "total_citations": 11587,
-    "max_hindex": 19
+    "total_citations": 11587
   },
   {
     "name": "Haverford College",
@@ -5162,8 +5109,7 @@
     ],
     "total": 7,
     "matched": 6,
-    "total_citations": 17361,
-    "max_hindex": 29
+    "total_citations": 17361
   },
   {
     "name": "Hendrix College",
@@ -5231,8 +5177,7 @@
     ],
     "total": 4,
     "matched": 3,
-    "total_citations": 11377,
-    "max_hindex": 13
+    "total_citations": 11377
   },
   {
     "name": "Hobart and William Smith College",
@@ -5300,8 +5245,7 @@
     ],
     "total": 4,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Hope College",
@@ -5369,8 +5313,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 203,
-    "max_hindex": 9
+    "total_citations": 203
   },
   {
     "name": "Houghton University",
@@ -5408,8 +5351,7 @@
     ],
     "total": 2,
     "matched": 1,
-    "total_citations": 305,
-    "max_hindex": 10
+    "total_citations": 305
   },
   {
     "name": "Illinois College",
@@ -5432,8 +5374,7 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Juniata College",
@@ -5531,8 +5472,7 @@
     ],
     "total": 6,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Kalamazoo College",
@@ -5615,8 +5555,7 @@
     ],
     "total": 5,
     "matched": 1,
-    "total_citations": 32,
-    "max_hindex": 3
+    "total_citations": 32
   },
   {
     "name": "Knox College",
@@ -5699,8 +5638,7 @@
     ],
     "total": 5,
     "matched": 4,
-    "total_citations": 3891,
-    "max_hindex": 24
+    "total_citations": 3891
   },
   {
     "name": "Lafayette College",
@@ -5843,8 +5781,7 @@
     ],
     "total": 9,
     "matched": 7,
-    "total_citations": 8679,
-    "max_hindex": 22
+    "total_citations": 8679
   },
   {
     "name": "Lake Forest College",
@@ -5912,8 +5849,7 @@
     ],
     "total": 4,
     "matched": 2,
-    "total_citations": 924,
-    "max_hindex": 11
+    "total_citations": 924
   },
   {
     "name": "Lane College",
@@ -5966,8 +5902,7 @@
     ],
     "total": 3,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Lawrence University",
@@ -6035,8 +5970,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 28,
-    "max_hindex": 4
+    "total_citations": 28
   },
   {
     "name": "Linfield University",
@@ -6089,8 +6023,7 @@
     ],
     "total": 3,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Luther College",
@@ -6158,8 +6091,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 419,
-    "max_hindex": 12
+    "total_citations": 419
   },
   {
     "name": "Lycoming College",
@@ -6197,8 +6129,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Lyon College",
@@ -6236,8 +6167,7 @@
     ],
     "total": 2,
     "matched": 1,
-    "total_citations": 248,
-    "max_hindex": 9
+    "total_citations": 248
   },
   {
     "name": "Macalester College",
@@ -6455,8 +6385,7 @@
     ],
     "total": 14,
     "matched": 7,
-    "total_citations": 10769,
-    "max_hindex": 30
+    "total_citations": 10769
   },
   {
     "name": "Maryville College",
@@ -6479,8 +6408,7 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Meredith College",
@@ -6518,8 +6446,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Middlebury College",
@@ -6722,8 +6649,7 @@
     ],
     "total": 13,
     "matched": 8,
-    "total_citations": 12851,
-    "max_hindex": 29
+    "total_citations": 12851
   },
   {
     "name": "Monmouth College",
@@ -6761,8 +6687,7 @@
     ],
     "total": 2,
     "matched": 2,
-    "total_citations": 155,
-    "max_hindex": 5
+    "total_citations": 155
   },
   {
     "name": "Mount Holyoke College",
@@ -6905,8 +6830,7 @@
     ],
     "total": 9,
     "matched": 6,
-    "total_citations": 5096,
-    "max_hindex": 23
+    "total_citations": 5096
   },
   {
     "name": "Muhlenberg College",
@@ -6959,8 +6883,7 @@
     ],
     "total": 3,
     "matched": 2,
-    "total_citations": 217,
-    "max_hindex": 6
+    "total_citations": 217
   },
   {
     "name": "New College of Florida",
@@ -7028,8 +6951,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 34,
-    "max_hindex": 3
+    "total_citations": 34
   },
   {
     "name": "Oberlin College",
@@ -7217,8 +7139,7 @@
     ],
     "total": 12,
     "matched": 11,
-    "total_citations": 13603,
-    "max_hindex": 17
+    "total_citations": 13603
   },
   {
     "name": "Occidental College",
@@ -7346,8 +7267,7 @@
     ],
     "total": 8,
     "matched": 6,
-    "total_citations": 1298,
-    "max_hindex": 10
+    "total_citations": 1298
   },
   {
     "name": "Ohio Wesleyan University",
@@ -7370,8 +7290,7 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Pomona College",
@@ -7544,8 +7463,7 @@
     ],
     "total": 11,
     "matched": 8,
-    "total_citations": 8264,
-    "max_hindex": 20
+    "total_citations": 8264
   },
   {
     "name": "Presbyterian College",
@@ -7583,8 +7501,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Randolph College",
@@ -7622,8 +7539,7 @@
     ],
     "total": 2,
     "matched": 1,
-    "total_citations": 64,
-    "max_hindex": 4
+    "total_citations": 64
   },
   {
     "name": "Randolph-Macon College",
@@ -7721,8 +7637,7 @@
     ],
     "total": 6,
     "matched": 1,
-    "total_citations": 1346,
-    "max_hindex": 16
+    "total_citations": 1346
   },
   {
     "name": "Reed College",
@@ -7820,8 +7735,7 @@
     ],
     "total": 6,
     "matched": 3,
-    "total_citations": 1683,
-    "max_hindex": 13
+    "total_citations": 1683
   },
   {
     "name": "Rhodes College",
@@ -7949,8 +7863,7 @@
     ],
     "total": 8,
     "matched": 5,
-    "total_citations": 3220,
-    "max_hindex": 18
+    "total_citations": 3220
   },
   {
     "name": "Roanoke College",
@@ -8003,8 +7916,7 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 558,
-    "max_hindex": 9
+    "total_citations": 558
   },
   {
     "name": "Saint Anselm College",
@@ -8072,8 +7984,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 8,
-    "max_hindex": 2
+    "total_citations": 8
   },
   {
     "name": "Saint Michael's College",
@@ -8111,8 +8022,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Skidmore College",
@@ -8240,8 +8150,7 @@
     ],
     "total": 8,
     "matched": 4,
-    "total_citations": 1705,
-    "max_hindex": 12
+    "total_citations": 1705
   },
   {
     "name": "Smith College",
@@ -8429,8 +8338,7 @@
     ],
     "total": 12,
     "matched": 11,
-    "total_citations": 9085,
-    "max_hindex": 20
+    "total_citations": 9085
   },
   {
     "name": "Southern Virginia University",
@@ -8453,8 +8361,7 @@
     ],
     "total": 1,
     "matched": 1,
-    "total_citations": 379,
-    "max_hindex": 12
+    "total_citations": 379
   },
   {
     "name": "Southwestern University",
@@ -8507,8 +8414,7 @@
     ],
     "total": 3,
     "matched": 2,
-    "total_citations": 1386,
-    "max_hindex": 16
+    "total_citations": 1386
   },
   {
     "name": "St. Lawrence University",
@@ -8576,8 +8482,7 @@
     ],
     "total": 4,
     "matched": 4,
-    "total_citations": 5997,
-    "max_hindex": 16
+    "total_citations": 5997
   },
   {
     "name": "St. Mary's College of Maryland",
@@ -8690,8 +8595,7 @@
     ],
     "total": 7,
     "matched": 1,
-    "total_citations": 137,
-    "max_hindex": 7
+    "total_citations": 137
   },
   {
     "name": "St. Olaf College",
@@ -8804,8 +8708,7 @@
     ],
     "total": 7,
     "matched": 1,
-    "total_citations": 4719,
-    "max_hindex": 33
+    "total_citations": 4719
   },
   {
     "name": "Stonehill College",
@@ -8858,8 +8761,7 @@
     ],
     "total": 3,
     "matched": 2,
-    "total_citations": 300,
-    "max_hindex": 6
+    "total_citations": 300
   },
   {
     "name": "Susquehanna University",
@@ -8897,8 +8799,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Swarthmore College",
@@ -9161,8 +9062,7 @@
     ],
     "total": 17,
     "matched": 13,
-    "total_citations": 8283,
-    "max_hindex": 15
+    "total_citations": 8283
   },
   {
     "name": "Tougaloo College",
@@ -9185,8 +9085,7 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Transylvania University",
@@ -9224,8 +9123,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Trinity College",
@@ -9338,8 +9236,7 @@
     ],
     "total": 7,
     "matched": 3,
-    "total_citations": 4079,
-    "max_hindex": 15
+    "total_citations": 4079
   },
   {
     "name": "Trinity University",
@@ -9497,8 +9394,7 @@
     ],
     "total": 10,
     "matched": 8,
-    "total_citations": 13195,
-    "max_hindex": 39
+    "total_citations": 13195
   },
   {
     "name": "Union College (NY)",
@@ -9656,8 +9552,7 @@
     ],
     "total": 10,
     "matched": 3,
-    "total_citations": 1278,
-    "max_hindex": 16
+    "total_citations": 1278
   },
   {
     "name": "University of Mary Washington",
@@ -9830,8 +9725,7 @@
     ],
     "total": 11,
     "matched": 6,
-    "total_citations": 2595,
-    "max_hindex": 22
+    "total_citations": 2595
   },
   {
     "name": "University of Minnesota Morris",
@@ -9899,8 +9793,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 2648,
-    "max_hindex": 27
+    "total_citations": 2648
   },
   {
     "name": "University of North Carolina Asheville",
@@ -10013,8 +9906,7 @@
     ],
     "total": 7,
     "matched": 2,
-    "total_citations": 324,
-    "max_hindex": 9
+    "total_citations": 324
   },
   {
     "name": "University of Puget Sound",
@@ -10097,8 +9989,7 @@
     ],
     "total": 5,
     "matched": 2,
-    "total_citations": 1322,
-    "max_hindex": 18
+    "total_citations": 1322
   },
   {
     "name": "University of Richmond",
@@ -10271,8 +10162,7 @@
     ],
     "total": 11,
     "matched": 9,
-    "total_citations": 4589,
-    "max_hindex": 23
+    "total_citations": 4589
   },
   {
     "name": "The University of the South",
@@ -10310,8 +10200,7 @@
     ],
     "total": 2,
     "matched": 1,
-    "total_citations": 409,
-    "max_hindex": 7
+    "total_citations": 409
   },
   {
     "name": "University of Virginia--Wise",
@@ -10409,8 +10298,7 @@
     ],
     "total": 6,
     "matched": 1,
-    "total_citations": 40,
-    "max_hindex": 4
+    "total_citations": 40
   },
   {
     "name": "Ursinus College",
@@ -10463,8 +10351,7 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 653,
-    "max_hindex": 12
+    "total_citations": 653
   },
   {
     "name": "Vassar College",
@@ -10622,8 +10509,7 @@
     ],
     "total": 10,
     "matched": 5,
-    "total_citations": 3049,
-    "max_hindex": 13
+    "total_citations": 3049
   },
   {
     "name": "Virginia Wesleyan University",
@@ -10646,8 +10532,7 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Wabash College",
@@ -10730,8 +10615,7 @@
     ],
     "total": 5,
     "matched": 2,
-    "total_citations": 81,
-    "max_hindex": 5
+    "total_citations": 81
   },
   {
     "name": "Wartburg College",
@@ -10769,8 +10653,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Washington and Lee University",
@@ -10853,8 +10736,7 @@
     ],
     "total": 5,
     "matched": 2,
-    "total_citations": 1809,
-    "max_hindex": 14
+    "total_citations": 1809
   },
   {
     "name": "Washington College",
@@ -10907,8 +10789,7 @@
     ],
     "total": 3,
     "matched": 2,
-    "total_citations": 528,
-    "max_hindex": 7
+    "total_citations": 528
   },
   {
     "name": "Washington & Jefferson College",
@@ -10976,8 +10857,7 @@
     ],
     "total": 4,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Wellesley College",
@@ -11240,8 +11120,7 @@
     ],
     "total": 17,
     "matched": 12,
-    "total_citations": 30232,
-    "max_hindex": 32
+    "total_citations": 30232
   },
   {
     "name": "Wesleyan University",
@@ -11369,8 +11248,7 @@
     ],
     "total": 8,
     "matched": 7,
-    "total_citations": 5641,
-    "max_hindex": 24
+    "total_citations": 5641
   },
   {
     "name": "Westminster College (PA)",
@@ -11393,8 +11271,7 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Wheaton College (IL)",
@@ -11447,8 +11324,7 @@
     ],
     "total": 3,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Wheaton College (MA)",
@@ -11516,8 +11392,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 276,
-    "max_hindex": 9
+    "total_citations": 276
   },
   {
     "name": "Whitman College",
@@ -11615,8 +11490,7 @@
     ],
     "total": 6,
     "matched": 5,
-    "total_citations": 7083,
-    "max_hindex": 21
+    "total_citations": 7083
   },
   {
     "name": "Willamette University",
@@ -11729,8 +11603,7 @@
     ],
     "total": 7,
     "matched": 3,
-    "total_citations": 698,
-    "max_hindex": 9
+    "total_citations": 698
   },
   {
     "name": "Williams College",
@@ -11948,8 +11821,7 @@
     ],
     "total": 14,
     "matched": 14,
-    "total_citations": 24766,
-    "max_hindex": 33
+    "total_citations": 24766
   },
   {
     "name": "Wittenberg University",
@@ -11987,8 +11859,7 @@
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 0,
-    "max_hindex": null
+    "total_citations": 0
   },
   {
     "name": "Wofford College",
@@ -12041,7 +11912,6 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 516,
-    "max_hindex": 13
+    "total_citations": 516
   }
 ]

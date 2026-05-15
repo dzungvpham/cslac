@@ -1533,13 +1533,13 @@
     "terms": [
       {
         "year": "2025-26",
-        "term": "F",
-        "label": "F25"
-      },
-      {
-        "year": "2025-26",
         "term": "S",
         "label": "S26"
+      },
+      {
+        "year": "2026-27",
+        "term": "F",
+        "label": "F26"
       }
     ],
     "courses": [
@@ -1548,68 +1548,12 @@
         "name": "Introduction to Computational Thinking and Data Science",
         "offered": [
           1,
-          0
-        ]
-      },
-      {
-        "code": "COMS BC1428",
-        "name": "WRITING WITH/ON COMPUTING",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS BC3160",
-        "name": "COMPUTER GRAPHICS",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS BC3168",
-        "name": "DEEP LEARNING FOR COMPUTER GRAPHICS",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS BC3262",
-        "name": "INTRODUCTION TO CRYPTOGRAPHY",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS BC3411",
-        "name": "HUMAN-CENTERED SOCIAL NETWORK ANALYSIS",
-        "offered": [
-          0,
           1
         ]
       },
       {
         "code": "COMS BC3420",
         "name": "PRIVACY IN A NETWORKED WORLD",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS BC3422",
-        "name": "USABLE SECURITY AND PRIVACY",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS BC3423",
-        "name": "MISINFORMATION, JUSTICE \uff06 DESIGN",
         "offered": [
           0,
           1
@@ -1619,168 +1563,24 @@
         "code": "COMS BC3430",
         "name": "Computational Sound",
         "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS BC3705",
-        "name": "NATURAL LANGUAGE PROCESSING",
-        "offered": [
           1,
           0
-        ]
-      },
-      {
-        "code": "COMS BC3707",
-        "name": "LARGE LANGUAGE MODELS: FOUNDATIONS AND ETHICS",
-        "offered": [
-          0,
-          1
         ]
       },
       {
         "code": "COMS BC3930",
         "name": "Creative Embedded Systems",
         "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS BC3997",
-        "name": "NEW DIRECTIONS IN COMPUTING",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS E4762",
-        "name": "Machine Learning for Functional Genomics",
-        "offered": [
           1,
-          0
-        ]
-      },
-      {
-        "code": "COMS E4776",
-        "name": "Neural Networks \uff06 Deep Learning",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS E6113",
-        "name": "Topics in Database Systems",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS E6118",
-        "name": "OPERATING SYSTEMS, II",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS E6156",
-        "name": "TOPICS IN SOFTWARE ENGINEERING",
-        "offered": [
-          0,
           1
-        ]
-      },
-      {
-        "code": "COMS E6173",
-        "name": "Virtual Reality and Augmented Reality",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS E6178",
-        "name": "Human-Computer Interaction",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS E6261",
-        "name": "ADVANCED CRYPTOGRAPHY",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS E6424",
-        "name": "HARDWARE SECURITY",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS E6706",
-        "name": "Advanced Spoken Language Processing",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS E6732",
-        "name": "COMPUTATIONAL IMAGING",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS E6975",
-        "name": "Advanced Topics in Natural Language Processing",
-        "offered": [
-          0,
-          1
-        ]
-      },
-      {
-        "code": "COMS E6998",
-        "name": "TOPICS IN COMPUTER SCIENCE",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS E9902",
-        "name": "SEMINAR IN COMPUTER SCIENCE",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W1001",
-        "name": "INTRO TO INFORMATION SCIENCE",
-        "offered": [
-          1,
-          0
         ]
       },
       {
         "code": "COMS W1002",
         "name": "COMPUTING IN CONTEXT",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
@@ -1788,15 +1588,15 @@
         "name": "PROGRAMMING IN JAVA",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
         "code": "COMS W1012",
         "name": "COMPUTING IN CONTEXT REC",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
@@ -1804,36 +1604,44 @@
         "name": "EMERGING SCHOLARS PROG SEMINAR",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
         "code": "COMS W2132",
         "name": "Intermediate Computing in Python",
         "offered": [
-          0,
-          1
+          1,
+          0
         ]
       },
       {
         "code": "COMS W2702",
         "name": "AI in Context",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
         "code": "COMS W3107",
         "name": "Clean Object-Oriented Design",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
         "code": "COMS W3134",
         "name": "Data Structures in Java",
+        "offered": [
+          1,
+          1
+        ]
+      },
+      {
+        "code": "COMS W3136",
+        "name": "ESSENTIAL DATA STRUCTURES",
         "offered": [
           1,
           0
@@ -1844,7 +1652,7 @@
         "name": "ADVANCED PROGRAMMING",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
@@ -1852,7 +1660,7 @@
         "name": "DISCRETE MATHEMATICS",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
@@ -1860,20 +1668,12 @@
         "name": "COMPUTER SCIENCE THEORY",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
         "code": "COMS W3410",
         "name": "COMPUTERS AND SOCIETY",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W3999",
-        "name": "FIELDWORK",
         "offered": [
           0,
           1
@@ -1884,23 +1684,15 @@
         "name": "INTRODUCTION TO DATABASES",
         "offered": [
           1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W4113",
-        "name": "FUND-LARGE-SCALE DIST SYSTEMS",
-        "offered": [
-          1,
-          0
+          1
         ]
       },
       {
         "code": "COMS W4115",
         "name": "PROGRAMMING LANG \uff06 TRANSLATORS",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
@@ -1908,36 +1700,28 @@
         "name": "OPERATING SYSTEMS I",
         "offered": [
           1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W4152",
-        "name": "Engineering Software-as-a-Service",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W4153",
-        "name": "Cloud Computing",
-        "offered": [
-          1,
-          0
+          1
         ]
       },
       {
         "code": "COMS W4156",
-        "name": "ADVANCED SOFTWARE ENGINEERING",
+        "name": "Advanced Software Engineering",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
         "code": "COMS W4160",
         "name": "COMPUTER GRAPHICS",
+        "offered": [
+          0,
+          1
+        ]
+      },
+      {
+        "code": "COMS W4167",
+        "name": "COMPUTER ANIMATION",
         "offered": [
           1,
           0
@@ -1948,71 +1732,47 @@
         "name": "USER INTERFACE DESIGN",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
         "code": "COMS W4172",
         "name": "3D UI AND AUGMENTED REALITY",
         "offered": [
-          0,
-          1
+          1,
+          0
         ]
       },
       {
         "code": "COMS W4181",
         "name": "SECURITY I",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
         "code": "COMS W4186",
         "name": "MALWARE ANALYSIS\uff06REVERSE ENGINEERING",
         "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W4223",
-        "name": "Networks, Crowds, and the Web",
-        "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
         "code": "COMS W4232",
         "name": "Advanced Algorithms",
         "offered": [
-          0,
-          1
+          1,
+          0
         ]
       },
       {
         "code": "COMS W4236",
         "name": "INTRO-COMPUTATIONAL COMPLEXITY",
         "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W4252",
-        "name": "INTRO-COMPUTATIONAL LEARN THRY",
-        "offered": [
-          1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W4261",
-        "name": "INTRO TO CRYPTOGRAPHY",
-        "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
@@ -2020,23 +1780,23 @@
         "name": "INTRO TO QUANTUM COMPUTING",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
         "code": "COMS W4419",
         "name": "Internet Technology, Economics, and Policy",
         "offered": [
-          0,
-          1
+          1,
+          0
         ]
       },
       {
         "code": "COMS W4444",
         "name": "PROGRAMMING \uff06 PROBLEM SOLVING",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
@@ -2044,7 +1804,7 @@
         "name": "PRIN-INNOVATN/ENTREPRENEURSHIP",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
@@ -2052,7 +1812,7 @@
         "name": "ARTIFICIAL INTELLIGENCE",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
@@ -2060,63 +1820,55 @@
         "name": "NATURAL LANGUAGE PROCESSING",
         "offered": [
           1,
-          0
+          1
         ]
       },
       {
         "code": "COMS W4710",
         "name": "Ethical and Responsible AI",
         "offered": [
-          0,
-          1
+          1,
+          0
         ]
       },
       {
         "code": "COMS W4721",
         "name": "MACHINE LEARNING FOR DATA SCI",
         "offered": [
-          0,
-          1
+          1,
+          0
         ]
       },
       {
         "code": "COMS W4731",
         "name": "Computer Vision I: First Principles",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
         "code": "COMS W4732",
         "name": "Computer Vision II: Learning",
         "offered": [
-          0,
-          1
+          1,
+          0
         ]
       },
       {
         "code": "COMS W4733",
         "name": "COMPUTATIONAL ASPECTS OF ROBOTICS",
         "offered": [
-          1,
-          0
+          0,
+          1
         ]
       },
       {
-        "code": "COMS W4774",
-        "name": "Unsupervised Learning",
+        "code": "COMS W4771",
+        "name": "MACHINE LEARNING",
         "offered": [
           1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W4775",
-        "name": "Causal Inference",
-        "offered": [
-          1,
-          0
+          1
         ]
       },
       {
@@ -2124,15 +1876,7 @@
         "name": "TOPICS IN COMPUTER SCIENCE",
         "offered": [
           1,
-          0
-        ]
-      },
-      {
-        "code": "COMS W6706",
-        "name": "Advanced Spoken Language Processing",
-        "offered": [
-          1,
-          0
+          1
         ]
       }
     ]

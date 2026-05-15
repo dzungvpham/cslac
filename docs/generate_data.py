@@ -122,7 +122,6 @@ def build_data(list_path: Path, scholar_path: Path, verified_path: Path, field_p
     for name, profs in colleges.items():
         trusted = [p for p in profs if p["status"] in TRUSTED_STATUSES]
         citations = [p["citedby"] for p in trusted if p["citedby"] is not None]
-        hindices = [p["hindex"] for p in trusted if p["hindex"] is not None]
         result.append(
             {
                 "name": name,
@@ -130,7 +129,6 @@ def build_data(list_path: Path, scholar_path: Path, verified_path: Path, field_p
                 "total": len(profs),
                 "matched": len(trusted),
                 "total_citations": sum(citations),
-                "max_hindex": max(hindices) if hindices else None,
             }
         )
 

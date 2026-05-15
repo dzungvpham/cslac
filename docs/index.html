@@ -618,6 +618,29 @@
     a.course-title-link:hover .course-code,
     a.course-title-link:hover .course-name { color: var(--accent); }
     .course-dash { color: var(--muted); }
+    .course-xlist-toggle {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--sub);
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 3px 7px;
+      cursor: pointer;
+      transition: color 0.12s, border-color 0.12s, background 0.12s;
+      white-space: nowrap;
+    }
+    .course-xlist-toggle:hover {
+      color: var(--text);
+      border-color: var(--sub);
+    }
+    .course-xlist-toggle.active {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
     .course-empty {
       padding: 20px 4px;
       color: var(--muted);
@@ -1041,7 +1064,7 @@
         </svg>
       </button>
       <p class="about-text">
-        Data was last updated on May 15th 2026.<br>Citation metrics is derived from <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar<svg class="gs-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 2zm6.82 7L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg></a>.<br>Report issues or make suggestions on <a href="https://github.com/dzungvpham/cslac" target="_blank" rel="noopener">GitHub<svg class="gh-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>.
+        Data was last updated on May 15th 2026.<br>Citation metrics are from <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar<svg class="gs-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 2zm6.82 7L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg></a>.<br>Report issues or make suggestions on <a href="https://github.com/dzungvpham/cslac" target="_blank" rel="noopener">GitHub<svg class="gh-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>.
       </p>
     </div>
   </header>
@@ -1084,10 +1107,10 @@ const COL_TOOLTIPS = {
 
 // ── column definitions ─────────────────────────────────────────────────────
 const COLLEGE_COLS = [
-  { key: 'name',            label: 'Institution', numeric: false },
-  { key: 'total',           label: 'Faculty',     numeric: true },
-  { key: 'total_citations', label: 'Citations',   numeric: true, tooltip: 'Total citations received' },
-  { key: 'max_hindex',      label: 'Max h',       numeric: true },
+  { key: 'name',             label: 'Institution',   numeric: false },
+  { key: 'total',            label: 'Faculty',       numeric: true },
+  { key: 'total_citations',  label: 'Citations',     numeric: true, tooltip: 'Total citations received' },
+  { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last academic year' },
 ];
 
 const FAC_COLS = [
@@ -1167,6 +1190,7 @@ async function loadData() {
         (f.interests || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
       );
     }
+    c.courses_per_year = coursesInLatestYear(courseSchedules[c.name]);
   }
 
   buildCollegeHeaders();
@@ -1430,16 +1454,28 @@ function passesSchoolFilter(college) {
   return hasInclude;
 }
 
+function coursesInLatestYear(schedule) {
+  if (!schedule || !schedule.terms?.length || !schedule.courses?.length) return null;
+  let latestYear = '';
+  for (const t of schedule.terms) if (t.year > latestYear) latestYear = t.year;
+  const idxs = schedule.terms
+    .map((t, i) => t.year === latestYear ? i : -1)
+    .filter(i => i >= 0);
+  let count = 0;
+  for (const c of schedule.courses) {
+    if (idxs.some(i => c.offered[i])) count++;
+  }
+  return count;
+}
+
 function aggregateCollege(college) {
   const fac = filteredFaculty(college);
   const cites = fac.map(f => f.citedby).filter(v => v != null);
-  const hs = fac.map(f => f.hindex).filter(v => v != null);
   return {
     ...college,
     faculty: fac,
     total: fac.length,
     total_citations: cites.reduce((s, v) => s + v, 0),
-    max_hindex: hs.length ? Math.max(...hs) : null,
   };
 }
 
@@ -1485,10 +1521,10 @@ function buildCollegeHeaders() {
 // ── college sort ───────────────────────────────────────────────────────────
 function sortedColleges(colleges) {
   const fn = {
-    name:            c => c.name,
-    total:           c => c.total,
-    total_citations: c => c.total_citations ?? -1,
-    max_hindex:      c => c.max_hindex ?? -1,
+    name:              c => c.name,
+    total:             c => c.total,
+    total_citations:   c => c.total_citations ?? -1,
+    courses_per_year:  c => c.courses_per_year ?? -1,
   }[collegeSort.key] || (c => c.name);
 
   return [...colleges].sort((a, b) => {
@@ -1528,7 +1564,7 @@ function buildCollegeRow(college, idx) {
   div.className = 'college-row';
 
   const citText = college.total_citations > 0 ? fmt(college.total_citations) : '—';
-  const hText   = fmt(college.max_hindex);
+  const cpyText = fmt(college.courses_per_year);
   const links   = collegeLinks[college.name] || {};
 
   const programLink = links.program_url
@@ -1558,7 +1594,7 @@ function buildCollegeRow(college, idx) {
         </div>
         <div class="td-num">${college.total}</div>
         <div class="td-num ${college.total_citations > 0 ? '' : 'dim'}">${citText}</div>
-        <div class="td-num ${college.max_hindex != null ? '' : 'dim'}">${hText}</div>
+        <div class="td-num ${college.courses_per_year != null ? '' : 'dim'}">${cpyText}</div>
       </div>
     </div>
     <div class="faculty-panel">
@@ -1592,6 +1628,9 @@ function buildPanel(panel, college) {
   const schedule = courseSchedules[college.name];
   const hasCourses = !!schedule;
   let view = panel._view || 'faculty';
+  // Persisted across view-toggles via the outer panel element; the inner
+  // .panel-body gets re-created on each render so we can't store it there.
+  if (panel._showColumbia === undefined) panel._showColumbia = false;
 
   function render() {
     const toggleHtml = hasCourses ? `
@@ -1605,7 +1644,10 @@ function buildPanel(panel, college) {
     const body = panel.querySelector('.panel-body');
 
     if (view === 'courses' && hasCourses) {
-      renderCourseTable(body, schedule);
+      renderCourseTable(body, schedule, college.name, panel._showColumbia, () => {
+        panel._showColumbia = !panel._showColumbia;
+        render();
+      });
     } else {
       renderFacultyTable(body, college.faculty);
     }
@@ -1724,17 +1766,29 @@ function renderFacultyTable(panel, faculty) {
 }
 
 // ── course schedule view ───────────────────────────────────────────────────
-function renderCourseTable(panel, schedule) {
+// Barnard's catalogue lists Columbia cross-listings (COMS W*/E*) alongside
+// its own BC-prefixed courses. They count toward the major, but most of
+// them are taught at Columbia — so we hide them by default and expose a
+// toggle on the Course column header.
+const COLUMBIA_CODE_RE = /^COMS\s+(W|E)/i;
+
+function renderCourseTable(panel, schedule, collegeName, showColumbia, onToggleColumbia) {
+  const isBarnard = collegeName === 'Barnard College';
+
   if (!schedule.courses.length) {
     panel.innerHTML = `<div class="course-empty">No course-schedule data.</div>`;
     return;
   }
 
+  const visibleCourses = isBarnard && !showColumbia
+    ? schedule.courses.filter(c => !COLUMBIA_CODE_RE.test(c.code))
+    : schedule.courses;
+
   const headerCells = schedule.terms
     .map(t => `<th>${esc(t.label)}</th>`)
     .join('');
 
-  const rows = schedule.courses.map(c => {
+  const rows = visibleCourses.map(c => {
     const cells = c.offered.map(v => {
       if (v === 0 || v === false) {
         return `<td><span class="course-dash">—</span></td>`;
@@ -1759,12 +1813,19 @@ function renderCourseTable(panel, schedule) {
     `;
   }).join('');
 
+  const columbiaToggle = isBarnard ? `
+    <button class="course-xlist-toggle ${showColumbia ? 'active' : ''}"
+            title="${showColumbia ? 'Hide cross-listed Columbia courses' : 'Show cross-listed Columbia courses'}">
+      ${showColumbia ? 'Hide Columbia' : 'Show Columbia'}
+    </button>
+  ` : '';
+
   panel.innerHTML = `
     <div class="course-wrap">
       <table class="course-table">
         <thead>
           <tr>
-            <th class="course-sticky"><div class="course-title-cell"><span>Course</span></div></th>
+            <th class="course-sticky"><div class="course-title-cell"><span>Course</span>${columbiaToggle}</div></th>
             ${headerCells}
           </tr>
         </thead>
@@ -1772,6 +1833,16 @@ function renderCourseTable(panel, schedule) {
       </table>
     </div>
   `;
+
+  if (isBarnard && onToggleColumbia) {
+    const btn = panel.querySelector('.course-xlist-toggle');
+    if (btn) {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        onToggleColumbia();
+      });
+    }
+  }
 }
 
 // ── utils ──────────────────────────────────────────────────────────────────

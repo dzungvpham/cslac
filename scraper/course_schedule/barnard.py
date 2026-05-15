@@ -1,28 +1,36 @@
 """Barnard College course schedule scraper.
 
-The catalog's "Course Search" page renders every CS section on one URL — no
-form interaction, no per-term URL. Barnard's catalog only exposes whatever
-is currently being offered (typically the upcoming/active fall + later
-spring); historical terms are not browsable.
+Source: https://cs.barnard.edu/course-catalogue — the Barnard CS
+department's own catalogue page. It lists every COMS course offered to
+Barnard CS students: Barnard-owned (BC-prefixed) courses plus the
+Columbia cross-listings (COMS W*, COMS E*) that count toward the Barnard
+CS major. We keep all of them — they are the courses a Barnard CS student
+can actually enroll in.
 
-Page structure (rendered client-side, hence Selenium):
+The page is server-rendered HTML so we fetch with `requests`; no Selenium
+needed. Only currently-offered terms are exposed (typically the active
+spring + the upcoming fall); historical terms are not browsable.
+
+Page structure:
 
   div.courseblock                  — one per course
-    p.courseblocktitle             — "COMS W1001 INTRO TO INFORMATION SCIENCE. 3.00 points ."
-    table.scheduletbl              — zero or more, one per offering
-      td.unifyTerm                 — "Fall 2025: COMS W1001"
-      <th> row                     — column headers (Course Number / Section/Call # / Times/Location / Instructor / Points / Enrollment)
-      <td> rows                    — one per section
+    p.courseblocktitle             — "COMS BC1016 Introduction to ..."
+    table.scheduletbl              — zero or more; each table can hold
+                                     several term blocks in sequence
+      tr > td.unifyTerm            — "Spring 2026: COMS BC1016" header
+      tr > th                      — column header row (skipped)
+      tr > td.unifyRow1            — one per offered section, belonging to
+                                     the most recent unifyTerm row above
 
-We pull `(academic_year, term)` from each scheduletbl's term header rather
-than from the scrape loop, so a single fetch can cover whatever mix of
-terms the page is currently showing.
+We walk a table's rows in order, tracking the current term as we go, so a
+single scheduletbl can yield rows for multiple terms.
 """
 
 import re
 import sys
 from pathlib import Path
 
+import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -30,22 +38,16 @@ from constants import College  # noqa: E402
 
 from course_schedule.course_schedule_scraper import CourseScheduleScraper
 
-LIST_URL = (
-    "https://catalog.barnard.edu/barnard-college/courses-instruction/"
-    "course-search/?department=COMB&pl=0&ph=10&college=BC"
-)
+LIST_URL = "https://cs.barnard.edu/course-catalogue"
 
-# "COMS W1001 INTRO TO INFORMATION SCIENCE" -> code "COMS W1001", title rest.
-# Codes look like "COMS W1001", "COMS BC1016", "COMS E4762" — i.e. a subject
-# prefix, an optional letter group, then digits with an optional trailing
-# alpha tag.
+# "COMS BC1016 Introduction to ..." → code "COMS BC1016", title rest.
 TITLE_RE = re.compile(r"^(?P<code>[A-Z]+(?:\s+[A-Z]+)?\s*\d+\w*)\s+(?P<title>.+)$")
 
-# Despite the `department=COMB` filter in the URL, the rendered page also
-# lists cross-listed Education courses (EDUC BC...). Keep only COMS rows.
-SUBJECT_RE = re.compile(r"^COMS\b")
+# Keep every COMS code (BC, W, E). Other subjects occasionally appear in
+# pre-reqs/cross-list text — guard against parsing those as course rows.
+SUBJECT_RE = re.compile(r"^COMS\b", re.IGNORECASE)
 
-# "Fall 2025: COMS W1001" — non-breaking spaces show up here so we use \s.
+# "Spring 2026: COMS BC1016" — \s catches non-breaking spaces too.
 TERM_HDR_RE = re.compile(
     r"^(?P<season>Fall|Spring|Summer|Winter|January)\s+(?P<year>\d{4})\b",
     re.IGNORECASE,
@@ -55,13 +57,21 @@ TERM_HDR_RE = re.compile(
 class BarnardScraper(CourseScheduleScraper):
     college = College.BARNARD
     # One URL covers every currently-listed offering; the per-row term comes
-    # from the schedule-table header, not the loop.
+    # from each scheduletbl's unifyTerm header(s).
     terms = []
     years_back = 1
-    wait_for = "div.courseblock table.scheduletbl"
 
     def url_for(self, academic_year, term):
         return LIST_URL
+
+    def fetch_page(self, academic_year, term):
+        r = requests.get(
+            LIST_URL,
+            timeout=30,
+            headers={"User-Agent": "Mozilla/5.0"},
+        )
+        r.raise_for_status()
+        return r.text
 
     def parse_page(self, html, academic_year, term):
         soup = BeautifulSoup(html, "html.parser")
@@ -83,21 +93,20 @@ class BarnardScraper(CourseScheduleScraper):
             course_name = m.group("title").strip()
 
             for tbl in block.find_all("table", class_="scheduletbl"):
-                hdr_cell = tbl.find("td", class_="unifyTerm")
-                if hdr_cell is None:
-                    continue
-                hdr_text = _clean(hdr_cell.get_text(" ", strip=True))
-                parsed = _parse_term_header(hdr_text)
-                if parsed is None:
-                    continue
-                ay, row_term = parsed
-
+                current_term = None
                 for tr in tbl.find_all("tr"):
+                    term_td = tr.find("td", class_="unifyTerm")
+                    if term_td is not None:
+                        current_term = _parse_term_header(
+                            _clean(term_td.get_text(" ", strip=True))
+                        )
+                        continue
+                    if current_term is None:
+                        continue
                     cells = tr.find_all("td")
-                    # Skip the term-header row (single colspan td) and
-                    # any non-data rows.
                     if len(cells) < 6:
                         continue
+                    ay, row_term = current_term
                     section_call = _clean(cells[1].get_text(" ", strip=True))
                     section = section_call.split("/", 1)[0].strip() if section_call else ""
                     time_text = _clean(cells[2].get_text(" ", strip=True))
@@ -118,7 +127,7 @@ class BarnardScraper(CourseScheduleScraper):
 
 
 def _parse_term_header(text):
-    """`'Fall 2025: COMS W1001'` -> `((2025, 2026), 'F')`."""
+    """`'Spring 2026: COMS BC1016'` -> `((2025, 2026), 'S')`."""
     m = TERM_HDR_RE.match(text)
     if not m:
         return None
