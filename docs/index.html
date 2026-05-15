@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CS @ Liberal Arts Colleges</title>
+  <title>CSLAC — Computer Science Faculty &amp; Courses at U.S. Liberal Arts Colleges</title>
+  <meta name="description" content="An open dataset and dashboard of Computer Science faculty at U.S. liberal arts colleges: names, titles, personal and Google Scholar URLs, citation metrics, research subfields, and per-college course schedules." />
+  <meta name="keywords" content="liberal arts colleges, computer science faculty, CS faculty, Google Scholar, h-index, CS course schedule, LAC, academic dataset" />
+  <meta name="author" content="Dzung Pham" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://cslac.org/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CSLAC" />
+  <meta property="og:title" content="CSLAC — Computer Science Faculty &amp; Courses at U.S. Liberal Arts Colleges" />
+  <meta property="og:description" content="Open dataset of CS faculty at U.S. liberal arts colleges: names, titles, Google Scholar profiles, citation metrics, research subfields, and per-college course schedules." />
+  <meta property="og:url" content="https://cslac.org/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CSLAC — CS Faculty &amp; Courses at U.S. Liberal Arts Colleges" />
+  <meta name="twitter:description" content="Open dataset of CS faculty at U.S. liberal arts colleges: profiles, citations, research subfields, and course schedules." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -899,8 +918,94 @@
       .college-row { min-width: 320px; }
     }
   </style>
+
+  <!-- Structured data: surface in Google Dataset Search and general SERPs.
+       `dateModified` is updated by docs/generate_data.py on each regeneration. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "CSLAC: Computer Science at Liberal Arts Colleges",
+    "alternateName": "CSLAC",
+    "description": "An open dataset of Computer Science faculty at U.S. liberal arts colleges. Each record includes the faculty member's name, title, personal website, Google Scholar profile URL, citation and h-index metrics, and inferred research subfields. Companion course-schedule data covers offerings by term per college.",
+    "url": "https://cslac.org/",
+    "sameAs": "https://github.com/dzungvpham/cslac",
+    "keywords": [
+      "Computer Science",
+      "Liberal Arts Colleges",
+      "Faculty",
+      "Google Scholar",
+      "Citations",
+      "h-index",
+      "Course Schedule",
+      "Higher Education",
+      "United States"
+    ],
+    "license": "https://opensource.org/licenses/MIT",
+    "isAccessibleForFree": true,
+    "inLanguage": "en",
+    "creator": {
+      "@type": "Person",
+      "name": "Dzung Pham",
+      "url": "https://dzungvpham.github.io/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Dzung Pham",
+      "url": "https://dzungvpham.github.io/"
+    },
+    "dateModified": "2026-05-15",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://cslac.org/faculty_data.json"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://cslac.org/course_schedule_data.json"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://cslac.org/college_links.json"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CSLAC",
+    "url": "https://cslac.org/",
+    "description": "Dashboard of Computer Science faculty and courses at U.S. liberal arts colleges."
+  }
+  </script>
 </head>
 <body>
+
+<noscript>
+  <div style="max-width:760px;margin:32px auto;padding:0 24px;font-family:'IBM Plex Sans',system-ui,sans-serif;color:#4c4f69;line-height:1.55;">
+    <h1 style="font-size:22px;margin-bottom:8px;">CSLAC: Computer Science at Liberal Arts Colleges</h1>
+    <p>CSLAC is an open dataset and interactive dashboard covering Computer Science
+    faculty at U.S. liberal arts colleges. For each faculty member it records the
+    name, title, personal website, Google Scholar profile, citation and h-index
+    metrics, and inferred research subfields. A companion dataset tracks course
+    offerings by academic term for participating colleges.</p>
+    <p>This dashboard requires JavaScript to render. The underlying data is
+    available as JSON:</p>
+    <ul>
+      <li><a href="faculty_data.json">faculty_data.json</a> — faculty records by college</li>
+      <li><a href="course_schedule_data.json">course_schedule_data.json</a> — per-college course offerings</li>
+      <li><a href="college_links.json">college_links.json</a> — department websites and course-catalog links</li>
+    </ul>
+    <p>Source code and methodology:
+      <a href="https://github.com/dzungvpham/cslac">github.com/dzungvpham/cslac</a>.</p>
+  </div>
+</noscript>
+
 <div class="page">
 
   <header>
