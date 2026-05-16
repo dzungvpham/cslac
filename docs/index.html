@@ -142,6 +142,28 @@
       font-size: 14px;
       display: block;
     }
+    .stat strong.count-spinner {
+      display: flex;
+      line-height: 1;
+      height: 1em;
+      overflow: hidden;
+    }
+    .count-spinner .digit {
+      display: inline-block;
+      height: 1em;
+      overflow: hidden;
+      line-height: 1;
+    }
+    .count-spinner .digit-strip {
+      display: flex;
+      flex-direction: column;
+      will-change: transform;
+    }
+    .count-spinner .digit-strip > span {
+      height: 1em;
+      line-height: 1;
+      display: block;
+    }
 
     /* ── header right (theme toggle + about) ── */
     .header-right {
@@ -164,6 +186,8 @@
       color: var(--accent);
       white-space: nowrap;
     }
+    .about-text .nowrap { white-space: nowrap; }
+    .about-text .accent { color: var(--accent); }
     .gh-icon,
     .gs-icon {
       width: 12px;
@@ -217,6 +241,28 @@
     [data-theme="dark"] .icon-sun  { display: block; }
     [data-theme="dark"] .icon-moon { display: none; }
 
+    /* ── loading spinner ── */
+    .loading-spinner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px;
+    }
+    .loading-spinner[hidden] { display: none; }
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--border-sub);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    /* Hide the table area until data is ready so the spinner stands alone. */
+    .table-wrap[hidden] { display: none; }
+
     /* ── college table ── */
     .table-wrap { width: 100%; }
 
@@ -264,7 +310,7 @@
       line-height: 1;
     }
     .th:not(.sorted) .sort-icon,
-    .fth:not(.sorted) .sort-icon { font-size: 14px; }
+    .fth:not(.sorted) .sort-icon { font-size: 11px; }
     .th.sorted .sort-icon { opacity: 1; }
 
     /* college data row */
@@ -318,7 +364,7 @@
 
     /* .college-logo base rules live in img/logo_sprite.css (generated). */
     [data-theme="dark"] .college-logo {
-      background-color: #fff;
+      background-color: var(--text);
       border-radius: 4px;
     }
 
@@ -349,6 +395,14 @@
       background: var(--hover-bg);
       text-decoration: none;
     }
+    .college-link.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .college-link.disabled:hover {
+      color: var(--muted);
+      background: transparent;
+    }
     .college-link svg { width: 13px; height: 13px; }
 
     .college-state {
@@ -366,6 +420,7 @@
       color: var(--text);
     }
     .td-num.dim { color: var(--sub); }
+    .td-num .num-short { display: none; }
 
     /* ── faculty panel ── */
     .faculty-panel {
@@ -556,6 +611,31 @@
       color: var(--bg);
       background: var(--accent);
       border-color: var(--accent);
+    }
+    .panel-toggle button[data-view]:disabled,
+    .panel-toggle button[data-view].disabled {
+      color: var(--muted);
+      border-color: var(--border);
+      background: var(--bg);
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .panel-toggle button[data-view]:disabled:hover,
+    .panel-toggle button[data-view].disabled:hover {
+      color: var(--muted);
+      border-color: var(--border);
+    }
+    .faculty-source-link {
+      margin-left: 8px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--sub);
+      text-decoration: none;
+      align-self: center;
+    }
+    .faculty-source-link:hover {
+      color: var(--accent);
+      text-decoration: underline;
     }
 
     /* ── course schedule table ─────────────────────────────────────────────── */
@@ -924,10 +1004,36 @@
       /* main college grid: shrink metric columns to fit ~360px viewports.
          minmax(0,1fr) — not 1fr — so the name column can shrink below its
          min-content (chevron + state + link icons would otherwise force overflow). */
-      .col-grid { grid-template-columns: minmax(0,1fr) 48px 72px 52px; }
+      .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px; }
       .th { padding: 9px 4px; font-size: 10px; gap: 3px; }
+
+      /* Rotate the metric column labels (Faculty / Citations / Courses) 30°
+         from top-left to bottom-right so they stop crowding each other at
+         narrow widths. Label + sort icon rotate together as one unit. */
+      .col-head-row { overflow: visible; }
+      .col-head-row .th { overflow: visible; position: relative; }
+      .col-head-row .th:nth-child(n+2) {
+        padding: 0;
+        height: 46px;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .col-head-row .th:nth-child(n+2) .th-label {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        transform: rotate(30deg);
+        transform-origin: left top;
+        white-space: nowrap;
+        font-size: 10px;
+        letter-spacing: 0;
+        line-height: 1;
+      }
+
       .td, .td-num { padding: 10px 4px; }
       .td-num { font-size: 11.5px; }
+      .td-num .num-full  { display: none; }
+      .td-num .num-short { display: inline; }
       .td-name { min-width: 0; gap: 6px; }
       .college-name {
         font-size: 13.5px;
@@ -1196,7 +1302,7 @@
         </svg>
       </button>
       <p class="about-text">
-        Data was last updated on May 15th 2026.<br>Citation metrics are from <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar<svg class="gs-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 2zm6.82 7L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg></a>.<br>Report issues or make suggestions on <a href="https://github.com/dzungvpham/cslac" target="_blank" rel="noopener">GitHub<svg class="gh-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>.
+        Data was last updated on <span class="nowrap accent">May 15th 2026</span>.<br>Citation metrics are from <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar<svg class="gs-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 2zm6.82 7L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg></a>.<br>Report issues or make suggestions on <a href="https://github.com/dzungvpham/cslac" target="_blank" rel="noopener">GitHub<svg class="gh-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>.
       </p>
     </div>
   </header>
@@ -1204,7 +1310,11 @@
   <div class="filter-bar" id="filter-bar"></div>
   <div class="advanced-bar collapsed" id="advanced-bar"></div>
 
-  <div class="table-wrap">
+  <div class="loading-spinner" id="loading-spinner" role="status" aria-label="Loading data">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="table-wrap" id="table-wrap" hidden>
     <div class="col-head-row">
       <div class="col-grid" id="col-headers"></div>
     </div>
@@ -1240,7 +1350,7 @@ const COL_TOOLTIPS = {
 // ── column definitions ─────────────────────────────────────────────────────
 const COLLEGE_COLS = [
   { key: 'name',             label: 'Institution',   numeric: false },
-  { key: 'total',            label: 'Faculty',       numeric: true },
+  { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
   { key: 'total_citations',  label: 'Citations',     numeric: true, tooltip: 'Total citations received' },
   { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last academic year' },
 ];
@@ -1327,11 +1437,20 @@ document.getElementById('theme-btn').addEventListener('click', () => {
 });
 
 // ── data ───────────────────────────────────────────────────────────────────
+function loadSpriteImage() {
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = img.onerror = () => resolve();
+    img.src = 'img/logo_sprite.webp';
+  });
+}
+
 async function loadData() {
   const [facultyRes, linksRes, coursesRes] = await Promise.all([
     fetch('faculty_data.json'),
     fetch('college_links.json'),
     fetch('course_schedule_data.json'),
+    loadSpriteImage(),
   ]);
   allColleges = await facultyRes.json();
   collegeLinks = await linksRes.json();
@@ -1352,6 +1471,10 @@ async function loadData() {
   buildFilterBar();
   buildAdvancedBar();
   renderAll();
+
+  document.getElementById('loading-spinner').hidden = true;
+  document.getElementById('table-wrap').hidden = false;
+
   updateHeaderH();
 }
 
@@ -1662,6 +1785,50 @@ function aggregateCollege(college) {
   };
 }
 
+function animateStat(el, target) {
+  const prev = el.dataset.value == null ? 0 : parseInt(el.dataset.value, 10);
+  if (prev === target && el.classList.contains('count-spinner')) return;
+  el.dataset.value = String(target);
+  const targetStr = String(target);
+  const slots = targetStr.length;
+  const prevStr = String(prev).padStart(slots, '0').slice(-slots);
+
+  el.classList.add('count-spinner');
+  el.innerHTML = '';
+
+  const strips = [];
+  for (let i = 0; i < slots; i++) {
+    const from = parseInt(prevStr[i], 10);
+    const to = parseInt(targetStr[i], 10);
+    const extraSpins = i + 1; // rightward digits spin more
+    const forwardDelta = (to - from + 10) % 10;
+    const total = extraSpins * 10 + forwardDelta;
+
+    const slot = document.createElement('span');
+    slot.className = 'digit';
+    const strip = document.createElement('span');
+    strip.className = 'digit-strip';
+    for (let d = 0; d <= total; d++) {
+      const ds = document.createElement('span');
+      ds.textContent = (from + d) % 10;
+      strip.appendChild(ds);
+    }
+    const slotDuration = 280 + i * 70;
+    strip.style.transition = `transform ${slotDuration}ms cubic-bezier(0.22, 1, 0.36, 1)`;
+    strip.style.transform = 'translateY(0)';
+    slot.appendChild(strip);
+    el.appendChild(slot);
+    strips.push({ strip, total });
+  }
+
+  void el.offsetHeight; // force reflow so initial transform is registered
+  requestAnimationFrame(() => {
+    for (const { strip, total } of strips) {
+      strip.style.transform = `translateY(-${total}em)`;
+    }
+  });
+}
+
 function renderAll() {
   const aggregated = allColleges
     .filter(c => !activeState || collegeLinks[c.name]?.state === activeState)
@@ -1669,8 +1836,8 @@ function renderAll() {
     .map(aggregateCollege)
     .filter(c => c.total > 0);
   const totalFaculty = aggregated.reduce((s, c) => s + c.total, 0);
-  document.getElementById('stat-colleges').textContent = aggregated.length;
-  document.getElementById('stat-faculty').textContent = totalFaculty;
+  animateStat(document.getElementById('stat-colleges'), aggregated.length);
+  animateStat(document.getElementById('stat-faculty'), totalFaculty);
   renderColleges(aggregated);
   // College rows were rebuilt — re-stamp each row's --summary-h.
   if (typeof updateHeaderH === 'function') updateHeaderH();
@@ -1684,7 +1851,7 @@ function buildCollegeHeaders() {
     const arrow = active ? (collegeSort.dir === 1 ? '↑' : '↓') : '↕';
     const tip = col.tooltip ? ` title="${esc(col.tooltip)}"` : '';
     return `<div class="th ${active ? 'sorted' : ''}" data-col="${col.key}"${tip}>
-      ${col.label} <span class="sort-icon">${arrow}</span>
+      <span class="th-label">${col.label} <span class="sort-icon">${arrow}</span></span>
     </div>`;
   }).join('');
 
@@ -1747,8 +1914,9 @@ function buildCollegeRow(college, idx) {
   const div = document.createElement('div');
   div.className = 'college-row';
 
-  const citText = college.total_citations > 0 ? fmt(college.total_citations) : '—';
-  const cpyText = fmt(college.courses_per_year);
+  const citFull  = college.total_citations > 0 ? fmt(college.total_citations) : '—';
+  const citShort = college.total_citations > 0 ? abbrev(college.total_citations) : '—';
+  const cpyText  = fmt(college.courses_per_year);
   const links   = collegeLinks[college.name] || {};
 
   const programLink = links.program_url
@@ -1756,7 +1924,7 @@ function buildCollegeRow(college, idx) {
     : '';
   const scheduleLink = (links.schedule_url && courseSchedules[college.name])
     ? `<a class="college-link" href="${esc(links.schedule_url)}" target="_blank" rel="noopener" title="Course schedule">${ICON_CATALOG}</a>`
-    : '';
+    : `<span class="college-link disabled" title="Course schedule not accessible" aria-label="Course schedule not accessible">${ICON_CATALOG}</span>`;
   const logoImg = `<span class="college-logo cl-${collegeSlug(college.name)}" aria-hidden="true"></span>`;
 
   div.innerHTML = `
@@ -1781,7 +1949,7 @@ function buildCollegeRow(college, idx) {
           </span>
         </div>
         <div class="td-num">${college.total}</div>
-        <div class="td-num ${college.total_citations > 0 ? '' : 'dim'}">${citText}</div>
+        <div class="td-num ${college.total_citations > 0 ? '' : 'dim'}"><span class="num-full">${citFull}</span><span class="num-short">${citShort}</span></div>
         <div class="td-num ${college.courses_per_year != null ? '' : 'dim'}">${cpyText}</div>
       </div>
     </div>
@@ -1826,6 +1994,7 @@ const YEARS_PER_PAGE = 4;
 function buildPanel(panel, college) {
   const schedule = courseSchedules[college.name];
   const hasCourses = !!schedule;
+  const facultyUrl = (collegeLinks[college.name] || {}).faculty_url;
   let view = panel._view || 'faculty';
   // Persisted across view-toggles via the outer panel element; the inner
   // .panel-body gets re-created on each render so we can't store it there.
@@ -1834,15 +2003,22 @@ function buildPanel(panel, college) {
   // latest TERMS_PER_PAGE window when no offset has been set yet.
 
   function render() {
-    const toggleHtml = hasCourses ? `
+    const coursesBtn = hasCourses
+      ? `<button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>`
+      : `<button data-view="courses" class="disabled" disabled title="Course schedule not accessible" aria-label="Course schedule not accessible">${ICON_BOOK}</button>`;
+    const sourceLink = facultyUrl
+      ? `<a class="faculty-source-link" href="${esc(facultyUrl)}" target="_blank" rel="noopener">faculty source</a>`
+      : '';
+    const toggleHtml = `
       <div class="panel-toggle" role="tablist">
         <div class="panel-toggle-views">
           <button data-view="faculty" class="${view === 'faculty' ? 'active' : ''}" title="Faculty" aria-label="Faculty">${ICON_PERSON}</button>
-          <button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>
+          ${coursesBtn}
+          ${view === 'faculty' ? sourceLink : ''}
         </div>
         <div class="term-paginator-slot"></div>
       </div>
-    ` : '';
+    `;
 
     panel.innerHTML = toggleHtml + `<div class="panel-body"></div>`;
     const body = panel.querySelector('.panel-body');

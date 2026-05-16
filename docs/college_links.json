@@ -2,792 +2,924 @@
   "Albion College": {
     "state": "MI",
     "program_url": "https://www.albion.edu/academics/programs/computer-science-major-minor/",
+    "faculty_url": "https://www.albion.edu/departments/mathematics-and-computer-science/faculty-and-staff/",
     "catalog_url": "https://catalog.albion.edu/search_advanced.php?cur_cat_oid=12&ecpage=1&cpage=1&ppage=1&pcpage=1&spage=1&tpage=1&search_database=Search&filter%5Bkeyword%5D=CS&filter%5B3%5D=1&filter%5B31%5D=1",
     "schedule_url": "https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Albright College": {
     "state": "PA",
     "program_url": "https://www.albright.edu/academics/undergraduate-programs/computer-science",
+    "faculty_url": "https://www.albright.edu/academics/undergraduate-programs/computer-science#fs-panel-10027",
     "catalog_url": "https://www.albright.edu/academics/undergraduate-programs/computer-science#fs-panel-8827",
     "schedule_url": "https://selfservice.albright.edu/SELFSERV/Search/Section?&eventId=CSC"
   },
   "Allegheny College": {
     "state": "PA",
     "program_url": "https://allegheny.edu/academics/programs/computer-science/",
+    "faculty_url": "https://allegheny.edu/about/campus-department-resources/faculty-and-staff-directory/associated-program/computer-science/",
     "catalog_url": "https://www.cs.allegheny.edu/teaching/courses/",
     "schedule_url": "https://selfservice.allegheny.edu/Student/Courses/Search?subjects=CMPSC"
   },
   "Amherst College": {
     "state": "MA",
     "program_url": "https://www.amherst.edu/academiclife/departments/computer_science",
+    "faculty_url": "https://www.amherst.edu/academiclife/departments/computer_science/faculty",
     "catalog_url": null,
     "schedule_url": "https://www.amherst.edu/academiclife/departments/computer_science/courses"
   },
   "Augustana College": {
     "state": "IL",
     "program_url": "https://www.augustana.edu/academics/areas-of-study/computer-science",
+    "faculty_url": "https://www.augustana.edu/academics/faculty-directory?search=&field_specializations_target_id=All&field_areas_of_study_target_id=231",
     "catalog_url": "https://www.augustana.edu/academics/areas-of-study/computer-science/courses",
     "schedule_url": "https://selfservice.augustana.edu/Student/Courses/Search?subjects=CSC"
   },
   "Austin College": {
     "state": "TX",
     "program_url": "https://www.austincollege.edu/academics/majors-and-minors/computer-science/",
+    "faculty_url": "https://www.austincollege.edu/academics/majors-and-minors/computer-science/",
     "catalog_url": "https://bulletin.austincollege.edu/wp-content/uploads/2020/07/mathematics-computer-science.pdf#cs",
     "schedule_url": "https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006"
   },
   "Bard College": {
     "state": "NY",
     "program_url": "https://cs.bard.edu/",
+    "faculty_url": "https://cs.bard.edu/faculty/",
     "catalog_url": "https://cs.bard.edu/courses/",
     "schedule_url": "https://inside.bard.edu/academic/courses/current/computer.html"
   },
   "Barnard College": {
     "state": "NY",
     "program_url": "https://cs.barnard.edu/",
+    "faculty_url": "https://cs.barnard.edu/faculty-and-staff-3",
     "catalog_url": "https://cs.barnard.edu/course-catalogue",
     "schedule_url": "https://cs.barnard.edu/course-catalogue"
   },
   "Beloit College": {
     "state": "WI",
     "program_url": "https://www.beloit.edu/academics/computer-science/",
+    "faculty_url": "https://www.beloit.edu/academics/computer-science/faculty-staff/",
     "catalog_url": "https://www.beloit.edu/academics/computer-science/courses/",
     "schedule_url": "https://my.beloit.edu/ICS/Course_Search/Default_Page.jnz?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next"
   },
   "Berea College": {
     "state": "KY",
     "program_url": "https://www.berea.edu/academics/departments-programs/computer-science",
+    "faculty_url": "https://www.berea.edu/academics/departments-programs/computer-science/faculty-staff",
     "catalog_url": "https://berea.smartcatalogiq.com/en/current/catalog/course-descriptions/csc-computer-science/",
     "schedule_url": "https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Bethany College (WV)": {
     "state": "WV",
     "program_url": "https://www.bethanywv.edu/academics/areas-of-study/computer-science/",
+    "faculty_url": "https://www.bethanywv.edu/academics/areas-of-study/computer-science/",
     "catalog_url": "https://catalogue.bethanywv.edu/computer-science",
     "schedule_url": null
   },
   "Bethany Lutheran College": {
     "state": "MN",
     "program_url": "https://blc.edu/academics/programs/computer-science-major/",
+    "faculty_url": "https://blc.edu/academics/programs/computer-science-major/#faculty",
     "catalog_url": "https://blc.edu/academics/courses/subjects/computer-science-courses/",
     "schedule_url": "https://my.blc.edu/ICS/Portal_Homepage.jnz?portlet=Course_Info_and_Syllabi"
   },
   "Bowdoin College": {
     "state": "ME",
     "program_url": "https://www.bowdoin.edu/computer-science/",
+    "faculty_url": "https://www.bowdoin.edu/computer-science/faculty-and-staff/index.html",
     "catalog_url": "https://bowdoin-public.courseleaf.com/courses/csci/",
     "schedule_url": "https://www.bowdoin.edu/registrar/course-information/index.html"
   },
   "Bridgewater College": {
     "state": "VA",
     "program_url": "https://www.bridgewater.edu/academics/divisions/mathematics-computer-science/computer-science-major/",
+    "faculty_url": "https://www.bridgewater.edu/academics/faculty/#filter=.math-computer-science",
     "catalog_url": "https://bridgewater.cleancatalog.io/mathematics-computer-science/bachelor-of-science-major/computer-science",
     "schedule_url": "https://www.bridgewater.edu/life-at-bridgewater/services-for-students/registrar/"
   },
   "Bryn Athyn College": {
     "state": "PA",
     "program_url": "https://brynathyn.edu/department/computer-science-id.html",
+    "faculty_url": "https://brynathyn.edu/faculty/index.html",
     "catalog_url": "https://brynathyn.edu/_media/documents/Current-Course-Catalog.pdf",
     "schedule_url": "https://brynathyn.jenzabarcloud.com/GENSRsC.cfm"
   },
   "Bryn Mawr College": {
     "state": "PA",
     "program_url": "https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science",
+    "faculty_url": "https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science/faculty-staff",
     "catalog_url": "https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science/courses",
     "schedule_url": "https://www.brynmawr.edu/inside/academic-information/registrar/tri-co-course-search/results?semester%5B0%5D=fall_2023&department%5B0%5D=Computer%20Science&college%5B0%5D=bryn_mawr&page=1&per_page=50"
   },
   "Bucknell University": {
     "state": "PA",
     "program_url": "https://www.bucknell.edu/academics/college-engineering/majors-departments/computer-science",
+    "faculty_url": "https://www.bucknell.edu/academics/college-engineering/majors-departments/computer-science/faculty-staff",
     "catalog_url": "https://coursecatalog.bucknell.edu/collegeofartsandsciencescurricula/areasofstudy/computersciencecsci/#majorstext",
     "schedule_url": "https://pubapps.bucknell.edu/CourseInformation/#/lookup"
   },
   "Carleton College": {
     "state": "MN",
     "program_url": "https://www.carleton.edu/computer-science/",
+    "faculty_url": "https://www.carleton.edu/computer-science/faculty/",
     "catalog_url": null,
     "schedule_url": "https://www.carleton.edu/catalog/current/search/?subject=CS"
   },
   "Central College": {
     "state": "IA",
     "program_url": "https://departments.central.edu/cs/",
+    "faculty_url": "https://departments.central.edu/cs/department-directory/",
     "catalog_url": "https://departments.central.edu/cs/courses/",
     "schedule_url": "https://web.central.edu/registrar/searchcourse/"
   },
   "Centre College": {
     "state": "KY",
     "program_url": "https://www.centre.edu/academics/majors-minors-programs/computer-science",
+    "faculty_url": "https://www.centre.edu/about/faculty-staff?type=96&offices=All&programs=1011",
     "catalog_url": "https://centre.smartcatalogiq.com/en/catalog-and-handbooks/catalog/course-descriptions/csc-computer-science/",
     "schedule_url": "https://centrenet.centre.edu/ICS/icsfs/mm/fa23.pdf?target=32825768-f507-4b50-b04f-ff27355c0a96"
   },
   "Claflin University": {
     "state": "SC",
     "program_url": "https://www.claflin.edu/academics-research/schools-departments/school-of-natural-sciences-and-mathematics/department-of-mathematics-computer-science/computer-science",
+    "faculty_url": "https://www.claflin.edu/academics-research/schools-departments/school-of-natural-sciences-and-mathematics/meet-our-faculty",
     "catalog_url": "https://www.claflin.edu/docs/default-source/academic-affairs-student-services/undergraduate-catalog_2021-2023.pdf",
     "schedule_url": "https://my.claflin.edu/ics/Portal_Homepage.jnz?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next"
   },
   "Coe College": {
     "state": "IA",
     "program_url": "https://www.coe.edu/academics/majors-areas-study/mathematics-computer-science",
+    "faculty_url": "https://www.coe.edu/academics/majors-areas-study/mathematics-computer-science/faculty",
     "catalog_url": null,
     "schedule_url": "https://www.coe.edu/application/files/4616/7769/1498/Fall_23_course_schedule_accessible.3.1.23.pdf"
   },
   "Colby College": {
     "state": "ME",
     "program_url": "https://cs.colby.edu/",
+    "faculty_url": "https://cs.colby.edu/faculty.php",
     "catalog_url": "https://cs.colby.edu/courses.php",
     "schedule_url": "https://cs.colby.edu/courses.php"
   },
   "Colgate University": {
     "state": "NY",
     "program_url": "https://www.colgate.edu/academics/departments-programs/department-computer-science",
+    "faculty_url": "https://www.colgate.edu/academics/departments-programs/department-computer-science/faculty-and-staff-computer-science",
     "catalog_url": "https://www.colgate.edu/academics/departments-programs/department-computer-science/academic-program",
     "schedule_url": null
   },
   "College of St Benedict": {
     "state": "MN",
     "program_url": "https://www.csbsju.edu/computer-science",
+    "faculty_url": "https://www.csbsju.edu/computer-science/faculty",
     "catalog_url": "https://www.csbsju.edu/documents/Academic%20Affairs/catalog/2022-2023%20course%20listings/22-23_Computer.pdf",
     "schedule_url": "https://registration.csbsju.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "College of the Holy Cross": {
     "state": "MA",
     "program_url": "https://www.holycross.edu/academics/programs/mathematics-and-computer-science/about#CS",
+    "faculty_url": "https://www.holycross.edu/academics/faculty/directory?keyword=&department=Mathematics+%26+Computer+Science&type=",
     "catalog_url": "https://catalog.holycross.edu/courses/csci/",
     "schedule_url": "https://www.holycross.edu/about-holy-cross/offices-services/registrar/schedule-of-classes/"
   },
   "College of Wooster": {
     "state": "OH",
     "program_url": "https://wooster.edu/area/computer-science/",
+    "faculty_url": "https://wooster.edu/area/computer-science/",
     "catalog_url": "http://csweb.wooster.edu/",
     "schedule_url": "https://inside.wooster.edu/registrar/courses/"
   },
   "Colorado College": {
     "state": "CO",
     "program_url": "https://www.coloradocollege.edu/academics/dept/mathcs/",
+    "faculty_url": "https://www.coloradocollege.edu/academics/dept/mathcs/people/faculty.html",
     "catalog_url": "https://www.coloradocollege.edu/academics/curriculum/catalog/departmental/computer-science/index.html",
     "schedule_url": "https://www.coloradocollege.edu/academics/curriculum/catalog/schedule.html"
   },
   "Concordia College": {
     "state": "MN",
     "program_url": "https://www.concordiacollege.edu/academics/programs-of-study/offutt-school-of-business/computer-science/",
+    "faculty_url": "https://www.concordiacollege.edu/academics/programs-of-study/offutt-school-of-business/computer-science/computer-science-faculty/",
     "catalog_url": "https://catalog.concordiacollege.edu/undergraduate-course-descriptions/csc/",
     "schedule_url": "https://banner.cord.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Connecticut College": {
     "state": "CT",
     "program_url": "https://www.conncoll.edu/academics/majors-departments-programs/departments/computer-science/",
+    "faculty_url": "https://www.conncoll.edu/academics/majors-departments-programs/departments/computer-science/faculty--staff/",
     "catalog_url": "https://iq2.smartcatalogiq.com/catalogs/connecticut-college/2023-2024/catalog/courses/com-computer-science",
     "schedule_url": "https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Cornell College": {
     "state": "IA",
     "program_url": "https://www.cornellcollege.edu/computer-science/",
+    "faculty_url": "https://www.cornellcollege.edu/computer-science/faculty.shtml",
     "catalog_url": "https://catalog.cornellcollege.edu/content.php?filter%5B27%5D=CSC&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=13&expand=&navoid=341&search_database=Filter#acalog_template_course_filter",
     "schedule_url": null
   },
   "Covenant College": {
     "state": "GA",
     "program_url": "https://covenant.edu/academics/cs/index.html",
+    "faculty_url": "https://covenant.edu/academics/cs/faculty/",
     "catalog_url": "https://catalog.covenant.edu/content.php?filter%5B27%5D=COS&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=24&expand=&navoid=562&search_database=Filter#acalog_template_course_filter",
     "schedule_url": "https://covenant.edu/academics/records/class-schedules.html"
   },
   "Davidson College": {
     "state": "NC",
     "program_url": "https://www.davidson.edu/academic-departments/mathematics-and-computer-science/computer-science-major-and-minor",
+    "faculty_url": "https://www.davidson.edu/academic-departments/mathematics-and-computer-science/faculty-staff",
     "catalog_url": "http://catalog.davidson.edu/preview_program.php?catoid=25&poid=1628",
     "schedule_url": "https://course-schedule.davidson.edu/#/schedule?departments=CSC&limit=100&offset=0&term_code=202301"
   },
   "Denison University": {
     "state": "OH",
     "program_url": "https://denison.edu/academics/computer-science",
+    "faculty_url": "https://denison.edu/academics/computer-science/contacts",
     "catalog_url": "https://catalog.denison.edu/catalog/courses-of-study/computer-science/#coursestext",
     "schedule_url": "https://banner.denison.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "DePauw University": {
     "state": "IN",
     "program_url": "https://www.depauw.edu/academics/departments-programs/computer-science/",
+    "faculty_url": "https://www.depauw.edu/academics/departments-programs/computer-science/faculty-staff/",
     "catalog_url": "https://www.depauw.edu/academics/departments-programs/computer-science/courses-2/courses/",
     "schedule_url": "https://my.depauw.edu/e/reg/soc-view/index.asp"
   },
   "Dickinson College": {
     "state": "PA",
     "program_url": "https://www.dickinson.edu/homepage/57/computer_science",
+    "faculty_url": "https://www.dickinson.edu/homepage/529/computer_science_department_faculty",
     "catalog_url": "https://www.dickinson.edu/homepage/155/computer_science_current_courses",
     "schedule_url": "https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Drew University": {
     "state": "NJ",
     "program_url": "https://drew.edu/math-computer-science-department/",
+    "faculty_url": "https://drew.edu/academics/mathematics/mathematics-computer-science-faculty/",
     "catalog_url": "https://drew-undergraduate-catalog.coursedog.com/programs/CMSC",
     "schedule_url": "https://selfservice.drew.edu/prod/bwckctlg.p_disp_dyn_ctlg"
   },
   "Earlham College": {
     "state": "IN",
     "program_url": "https://earlham.edu/academics/majors-minors-programs/computer-science/",
+    "faculty_url": "https://earlham.edu/faculty-staff/?department=computer-science&full_name=",
     "catalog_url": "https://earlham.edu/academics/course-catalog/",
     "schedule_url": "https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched"
   },
   "East-West University": {
     "state": "IL",
     "program_url": "https://www.eastwest.edu/academic-programs/computer-information-science",
+    "faculty_url": "https://www.eastwest.edu/computer-information-science/faculty/",
     "catalog_url": "https://www.eastwest.edu/academics/catalog",
     "schedule_url": null
   },
   "Eckerd College": {
     "state": "FL",
     "program_url": "https://www.eckerd.edu/computer-science/why-computer-science-at-eckerd/",
+    "faculty_url": "https://www.eckerd.edu/computer-science/faculty/",
     "catalog_url": "https://www.eckerd.edu/computer-science/courses/",
     "schedule_url": "https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Franklin College": {
     "state": "IN",
     "program_url": "https://franklincollege.edu/academics/majors/computing/",
+    "faculty_url": "https://franklincollege.edu/academics/what-to-study/computing/#section9",
     "catalog_url": "https://franklincollege.edu/academics/majors/computing/computing-courses/",
     "schedule_url": "https://selfservice.franklin.edu/Student/Courses/Search?subjects=COMP"
   },
   "Franklin & Marshall College": {
     "state": "PA",
     "program_url": "https://www.fandm.edu/fields-of-study/computer-science/index.html",
+    "faculty_url": "https://www.fandm.edu/directory/index.html?search_phrase=computer+science",
     "catalog_url": "https://www.fandm.edu/_resources/pdfs/2023-2024%20Catalog.pdf#page=58",
     "schedule_url": "https://www.fandm.edu/registrar/index.html"
   },
   "Furman University": {
     "state": "SC",
     "program_url": "https://www.furman.edu/academics/computer-science/",
+    "faculty_url": "https://www.furman.edu/academics/computer-science/faculty/",
     "catalog_url": "https://catalog.furman.edu/search_advanced.php?cur_cat_oid=24&ecpage=1&cpage=1&ppage=1&pcpage=1&spage=1&tpage=1&search_database=Search&filter%5Bkeyword%5D=CSC&filter%5B3%5D=1&filter%5B31%5D=1",
     "schedule_url": null
   },
   "Gettysburg College": {
     "state": "PA",
     "program_url": "https://www.gettysburg.edu/academic-programs/computer-science/",
+    "faculty_url": "https://www.gettysburg.edu/academic-programs/computer-science/faculty/",
     "catalog_url": "https://www.gettysburg.edu/academic-programs/computer-science/courses/",
     "schedule_url": "https://psinfo1.gettysburg.edu/psc/SA8PROD/EMPLOYEE/HRMS/c/GBC_STUDENT_RECORDS.GBC_GUEST_CLS_SRCH.GBL"
   },
   "Gordon College": {
     "state": "MA",
     "program_url": "https://www.gordon.edu/academics/computerscience",
+    "faculty_url": "https://www.math-cs.gordon.edu/faculty.html",
     "catalog_url": "https://catalog.gordon.edu/search_advanced.php?cur_cat_oid=38&search_database=Search&search_db=Search&cpage=1&ecpage=1&ppage=1&spage=1&tpage=1&location=3&filter%5Bkeyword%5D=CPS",
     "schedule_url": "https://www.gordon.edu/course_schedules"
   },
   "Goucher College": {
     "state": "MD",
     "program_url": "https://www.goucher.edu/learn/undergraduate-programs/computer-science/",
+    "faculty_url": "https://www.goucher.edu/learn/undergraduate-programs/computer-science/",
     "catalog_url": "https://www.goucher.edu/learn/undergraduate-programs/computer-science/courses",
     "schedule_url": "https://hercules.goucher.edu/SelfService/Search/Section?&department=CS"
   },
   "Grinnell College": {
     "state": "IA",
     "program_url": "https://www.grinnell.edu/academics/majors-concentrations/computer-science",
+    "faculty_url": "https://www.grinnell.edu/profiles/computer-science/faculty",
     "catalog_url": "https://www.cs.grinnell.edu/courses/current.html",
     "schedule_url": "https://colss-prod.ec.grinnell.edu/Student/Courses/Search?subjects=CSC"
   },
   "Gustavus Adolphus College": {
     "state": "MN",
     "program_url": "https://gustavus.edu/academics/undergraduate/computer-science/",
+    "faculty_url": "https://gustavus.edu/academics/departments/mathematics-computer-science-and-statistics/faculty/",
     "catalog_url": "https://gustavus.edu/general_catalog/current/academic_bulletin_23_24.pdf#MCS",
     "schedule_url": "https://colselfsrvprod.gac.edu/Student/Courses/Search?subjects=MCS"
   },
   "Hamilton College": {
     "state": "NY",
     "program_url": "https://www.hamilton.edu/academics/departments/Computer-Science",
+    "faculty_url": "https://www.hamilton.edu/academics/departments/Faculty?dept=Computer%20Science",
     "catalog_url": "https://hamilton.smartcatalogiq.com/current/college-catalogue/academicprograms/computer-science/computer-science-courses/",
     "schedule_url": null
   },
   "Hampden-Sydney College": {
     "state": "VA",
     "program_url": "https://www.hsc.edu/academics/mathematics-and-computer-science",
+    "faculty_url": "https://www.hsc.edu/academics/mathematics-and-computer-science/math-and-cs-professors",
     "catalog_url": "https://www.hsc.edu/academics/mathematics-and-computer-science/math-and-cs-courses",
     "schedule_url": "https://tigerweb.hsc.edu/ICS/Course_Search.jnz?portlet=AddDrop_Courses_2014-08-05T12-46-04-281&screen=Advanced+Course+Search&screenType=next"
   },
   "Hanover College": {
     "state": "IN",
     "program_url": "https://www.hanover.edu/academics/programs/cs/",
+    "faculty_url": "https://www.hanover.edu/academics/programs/cs/#faculty",
     "catalog_url": "https://www.hanover.edu/academics/programs/cs/#courses",
     "schedule_url": "https://my.hanover.edu/ICS/Resources/Class__Faculty_Schedules/"
   },
   "Hartwick College": {
     "state": "NY",
     "program_url": "https://www.hartwick.edu/academics/academic-departments/computer-and-information-sciences-department/",
+    "faculty_url": "https://www.hartwick.edu/academics/computer-science",
     "catalog_url": "https://hartwick.smartcatalogiq.com/2023-2024/catalog/course-descriptions/cisc-computer-science/",
     "schedule_url": "https://selfservice.hartwick.edu/Student/Courses/Search?subjects=CISC"
   },
   "Harvey Mudd College": {
     "state": "CA",
     "program_url": "https://www.hmc.edu/cs/",
+    "faculty_url": "https://www.hmc.edu/cs/faculty-staff/",
     "catalog_url": "https://www.hmc.edu/cs/academic-programs/course-descriptions/",
     "schedule_url": "https://hyperschedule.io/"
   },
   "Haverford College": {
     "state": "PA",
     "program_url": "https://www.haverford.edu/academics/computer-science-major-minor-and-concentration",
+    "faculty_url": "https://www.haverford.edu/computer-science/faculty-staff",
     "catalog_url": "https://catalog.haverford.edu/programs/computer-science/#coursestext",
     "schedule_url": "https://www.haverford.edu/academics/results?semester%5B0%5D=fall_2023&department%5B0%5D=Computer%20Science&college%5B0%5D=haverford&page=1&per_page=50"
   },
   "Hendrix College": {
     "state": "AR",
     "program_url": "https://www.hendrix.edu/mathcs/computerscience/",
+    "faculty_url": "https://www.hendrix.edu/mathcs/faculty/",
     "catalog_url": "https://www.hendrix.edu/Catalog/Academic_Departments_and_Programs/Mathematics_and_Computer_Science/#course-group1",
     "schedule_url": "https://campusweb.hendrix.edu/ICS/Academics/Course_Search.jnz?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next"
   },
   "Hobart and William Smith College": {
     "state": "NY",
     "program_url": "https://www.hws.edu/academics/computer-science/default.aspx",
+    "faculty_url": "https://www.hws.edu/academics/computer-science/faculty-directory.aspx",
     "catalog_url": "https://www.hws.edu/catalogue/computer-science.aspx",
     "schedule_url": "https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf"
   },
   "Hope College": {
     "state": "MI",
     "program_url": "https://hope.edu/academics/computer-science/",
+    "faculty_url": "https://hope.edu/academics/computer-science/faculty-staff.html",
     "catalog_url": "https://catalog.hope.edu/content.php?filter%5B27%5D=CSCI&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=6&expand=&navoid=177&search_database=Filter#acalog_template_course_filter",
     "schedule_url": "https://schedule.hope.edu/?term=202508&subj=CSCI&attr=&camp=&ptrm="
   },
   "Houghton University": {
     "state": "NY",
     "program_url": "https://www.houghton.edu/math-science/computer-science-major/",
+    "faculty_url": "https://www.houghton.edu/math-science/",
     "catalog_url": null,
     "schedule_url": "https://www.houghton.edu/current-students/registrar/houghton-ny-undergraduate-students/course-offerings/"
   },
   "Illinois College": {
     "state": "IL",
     "program_url": "https://www.ic.edu/computer-science",
+    "faculty_url": "https://www.ic.edu/computer-science/directory",
     "catalog_url": "https://catalog.ic.edu/computer-science",
     "schedule_url": "https://connect2.ic.edu/ICS/default.aspx?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next"
   },
   "Juniata College": {
     "state": "PA",
     "program_url": "https://www.juniata.edu/academics/computer-science/",
+    "faculty_url": "https://www.juniata.edu/academics/computer-science/computer-science-faculty.php",
     "catalog_url": "https://www.juniata.edu/academics/computer-science/computer-science-courses.php",
     "schedule_url": "https://selfservice.juniata.edu/Student/Courses/Search?subjects=CS"
   },
   "Kalamazoo College": {
     "state": "MI",
     "program_url": "https://computerscience.kzoo.edu/",
+    "faculty_url": "https://computerscience.kzoo.edu/facultystaff/",
     "catalog_url": "https://computerscience.kzoo.edu/requirements/courses/",
     "schedule_url": "https://hornethq.kzoo.edu/Student/Courses/Search?subjects=COMP"
   },
   "Knox College": {
     "state": "IL",
     "program_url": "https://www.knox.edu/academics/majors-and-minors/computer-science",
+    "faculty_url": "https://www.knox.edu/academics/majors-and-minors/computer-science/faculty",
     "catalog_url": "https://www.knox.edu/academics/majors-and-minors/computer-science/courses",
     "schedule_url": "https://www.knox.edu/documents/Registrar/CourseSchedules/coursescheduleSP25.pdf"
   },
   "Lafayette College": {
     "state": "PA",
     "program_url": "https://compsci.lafayette.edu/",
+    "faculty_url": "https://compsci.lafayette.edu/faculty/",
     "catalog_url": "https://compsci.lafayette.edu/courses/",
     "schedule_url": "https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Lake Forest College": {
     "state": "IL",
     "program_url": "https://www.lakeforest.edu/academics/majors-and-minors/mathematics-and-computer-science",
+    "faculty_url": "https://www.lakeforest.edu/academics/majors-and-minors/mathematics-and-computer-science/faculty",
     "catalog_url": "https://www.lakeforest.edu/academics/majors-and-minors/mathematics-and-computer-science/course-descriptions#csci",
     "schedule_url": null
   },
   "Lane College": {
     "state": "TN",
     "program_url": "https://www.lanecollege.edu/academics/departments/natural-and-physical-science/computer-science",
+    "faculty_url": "https://www.lanecollege.edu/directory",
     "catalog_url": "https://www.lanecollege.edu/academics/course-catalog/computer-science",
     "schedule_url": null
   },
   "Lawrence University": {
     "state": "WI",
     "program_url": "https://www.lawrence.edu/academics/college/computer-science",
+    "faculty_url": "https://www.lawrence.edu/academics/college/computer-science/faculty",
     "catalog_url": "https://www.lawrence.edu/academics/college/computer-science/course-descriptions",
     "schedule_url": "https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Lewis & Clark College": {
     "state": "OR",
     "program_url": "https://college.lclark.edu/departments/mathematical_sciences/computer-science/",
+    "faculty_url": "https://college.lclark.edu/departments/mathematical_sciences/faculty/",
     "catalog_url": "https://docs.lclark.edu/undergraduate/mathematics/#coursestext",
     "schedule_url": null
   },
   "Linfield University": {
     "state": "OR",
     "program_url": "https://www.linfield.edu/programs/computer-science/index.html",
+    "faculty_url": "https://www.linfield.edu/math/faculty.html",
     "catalog_url": "https://catalog.linfield.edu/programs-az/arts-sciences/mathematics/computer-science-major/index.html#requirementstext",
     "schedule_url": "https://selfservice.linfield.edu/Student/Courses/Search?subjects=COMP"
   },
   "Luther College": {
     "state": "IA",
     "program_url": "https://www.luther.edu/academics/computer-science",
+    "faculty_url": "https://www.luther.edu/academics/computer-science/faculty-staff",
     "catalog_url": "https://catalog.luther.edu/departments/51722c60-856c-4900-9a8f-0cc4edb8d62a/courses",
     "schedule_url": "https://norsehub.luther.edu/Student/Courses/Search?subjects=CS"
   },
   "Lycoming College": {
     "state": "PA",
     "program_url": "https://www.lycoming.edu/computer-science/",
+    "faculty_url": "https://www.lycoming.edu/computer-science/faculty.aspx",
     "catalog_url": "https://www.lycoming.edu/catalog/mathematical-sciences.aspx",
     "schedule_url": "https://collslfsrv-live.lycoming.edu/Student/Courses/Search?subjects=CPTR"
   },
   "Lyon College": {
     "state": "AR",
     "program_url": "https://www.lyon.edu/computer-science",
+    "faculty_url": "https://www.lyon.edu/math-science-faculty",
     "catalog_url": "https://www.lyon.edu/computer-science-courses",
     "schedule_url": "https://my.lyon.edu/ICS/default.aspx?portlet=AddDrop_Courses&screen=Advanced+Course+Search&screenType=next"
   },
   "Macalester College": {
     "state": "MN",
     "program_url": "https://www.macalester.edu/mscs/",
+    "faculty_url": "https://www.macalester.edu/mscs/facultystaff/",
     "catalog_url": "https://www.macalester.edu/mscs/courses/",
     "schedule_url": "https://www.macalester.edu/mscs/schedules/computer_science/"
   },
   "Maryville College": {
     "state": "TN",
     "program_url": "https://www.maryvillecollege.edu/academics/programs-of-study/computer-science/",
+    "faculty_url": "https://www.maryvillecollege.edu/academics/programs-of-study/computer-science/",
     "catalog_url": "https://www.maryvillecollege.edu/news/smart_catalog_prog/computer-science-b-a/",
     "schedule_url": "https://www.maryvillecollege.edu/academics/registrar/course-schedules/"
   },
   "Meredith College": {
     "state": "NC",
     "program_url": "https://www.meredith.edu/computer-science/",
+    "faculty_url": "https://www.meredith.edu/computer-science/computer-science-faculty-staff/",
     "catalog_url": "https://catalog.meredith.edu/classes?program_id=1820",
     "schedule_url": "https://mcis.meredith.edu/Student/Courses/Search?subjects=CS"
   },
   "Middlebury College": {
     "state": "VT",
     "program_url": "https://www.middlebury.edu/college/academics/computer-science",
+    "faculty_url": "https://www.middlebury.edu/college/academics/computer-science/faculty-and-staff",
     "catalog_url": "https://www.middlebury.edu/college/academics/computer-science/courses",
     "schedule_url": "https://catalog.middlebury.edu/offerings/search/catalog-MCUG"
   },
   "Monmouth College": {
     "state": "IL",
     "program_url": "https://www.monmouthcollege.edu/academics/computer-science/",
+    "faculty_url": "https://www.monmouthcollege.edu/academics/computer-science/faculty/",
     "catalog_url": "https://www.monmouthcollege.edu/academics/computer-science/courses/",
     "schedule_url": null
   },
   "Mount Holyoke College": {
     "state": "MA",
     "program_url": "https://www.mtholyoke.edu/academics/find-your-program/computer-science",
+    "faculty_url": "https://www.mtholyoke.edu/directory/faculty-staff?type=5&department=199",
     "catalog_url": "http://catalog.mtholyoke.edu/courses/comsc/",
     "schedule_url": "https://wadv1.mtholyoke.edu/wadvg/mhc?TYPE=P&PID=ST-XWSTS12A"
   },
   "Muhlenberg College": {
     "state": "PA",
     "program_url": "https://www.muhlenberg.edu/academics/mathcs/computerscience/",
+    "faculty_url": "https://www.muhlenberg.edu/academics/mathcs/computerscience/",
     "catalog_url": "https://www.muhlenberg.edu/academics/mathcs/computerscience/courses/",
     "schedule_url": "https://www.muhlenberg.edu/courseofferings/index.php"
   },
   "New College of Florida": {
     "state": "FL",
     "program_url": "https://www.ncf.edu/programs/computer-science/",
+    "faculty_url": "https://catalog.ncf.edu/undergraduate/natural-sciences/computer-science/#facultytext",
     "catalog_url": "https://catalog.ncf.edu/undergraduate/natural-sciences/computer-science/#requirementstext",
     "schedule_url": "https://newcleis.ncf.edu/pls/ncpo/bwckschd.p_disp_dyn_sched"
   },
   "Oberlin College": {
     "state": "OH",
     "program_url": "https://www.oberlin.edu/arts-and-sciences/departments/computer-science",
+    "faculty_url": "https://www.oberlin.edu/arts-and-sciences/departments/computer-science/faculty-list",
     "catalog_url": "https://catalog.oberlin.edu/content.php?filter%5B27%5D=CSCI&navoid=4432#acalog_template_course_filter",
     "schedule_url": "https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Occidental College": {
     "state": "CA",
     "program_url": "https://www.oxy.edu/academics/areas-study/computer-science",
+    "faculty_url": "https://www.oxy.edu/academics/areas-study/computer-science/faculty",
     "catalog_url": "https://www.oxy.edu/academics/areas-study/computer-science/courses",
     "schedule_url": "https://counts.oxy.edu/public/default.aspx"
   },
   "Ohio Wesleyan University": {
     "state": "OH",
     "program_url": "https://www.owu.edu/academics/departments-programs/department-of-mathematics-and-computer-science/computer-science-general-major/",
+    "faculty_url": "https://www.owu.edu/academics/departments-programs/department-of-mathematics-and-computer-science/faculty-staff/",
     "catalog_url": "https://catalog.owu.edu/content.php?filter[27]=CS&cur_cat_oid=33&navoid=843#acalog_template_course_filter",
     "schedule_url": "https://campus.owu.edu/selfserv/Search/Section?&eventId=CS&department=MATH"
   },
   "Pomona College": {
     "state": "CA",
     "program_url": "https://www.pomona.edu/academics/departments/computer-science",
+    "faculty_url": "https://www.pomona.edu/academics/departments/computer-science/faculty-staff",
     "catalog_url": "https://catalog.westminster.edu/content.php?filter%5B27%5D=CS&navoid=180#acalog_template_course_filter",
     "schedule_url": "https://hyperschedule.io/"
   },
   "Presbyterian College": {
     "state": "SC",
     "program_url": "https://www.presby.edu/programs/computer-science/",
+    "faculty_url": "https://www.presby.edu/programs/computer-science/",
     "catalog_url": "https://www.presby.edu/doc/registrar/25.26-AcademicCatalog.pdf",
     "schedule_url": "https://banners.presby.edu/prod/hzskschd.P_SelectSubject"
   },
   "Randolph College": {
     "state": "VA",
     "program_url": "https://www.randolphcollege.edu/computer-science/",
+    "faculty_url": "https://www.randolphcollege.edu/computer-science/",
     "catalog_url": "https://www.randolphcollege.edu/registrar/catalog/",
     "schedule_url": "https://inside.randolphcollege.edu/Course_Offerings.aspx"
   },
   "Randolph-Macon College": {
     "state": "VA",
     "program_url": "https://www.rmc.edu/academics/areas-of-study/computer-science/",
+    "faculty_url": "https://www.rmc.edu/about-rmc/college-leadership/offices-departments/computer-science-department/",
     "catalog_url": "https://rmc-public.courseleaf.com/programs/computer-science/#coursestext",
     "schedule_url": "https://mymaconweb.rmc.edu/m/d/m/5c62616e-9463-484d-8fd8-180250661411/CourseSearch/SearchResults?termcode=2023;22&title=&code=&department=CSCI&faculty=&campus=&additional=&openseats=OpenFull&add=T"
   },
   "Reed College": {
     "state": "OR",
     "program_url": "https://www.reed.edu/computer-science/",
+    "faculty_url": "https://www.reed.edu/computer-science/faculty.html",
     "catalog_url": "https://www.reed.edu/computer-science/courses.html",
     "schedule_url": "https://solar.reed.edu/class_schedule/"
   },
   "Rhodes College": {
     "state": "TN",
     "program_url": "https://www.rhodes.edu/academics/majors-minors/computer-science",
+    "faculty_url": "https://www.cs.rhodes.edu/people/faculty.html",
     "catalog_url": "https://catalog.rhodes.edu/courses#computer-science",
     "schedule_url": null
   },
   "Roanoke College": {
     "state": "VA",
     "program_url": "https://www.roanoke.edu/majors/computerscience",
+    "faculty_url": "https://www.roanoke.edu/inside/math_cs_and_physics/computer_science/computer_science_faculty",
     "catalog_url": "https://www.roanoke.edu/inside/math_cs_and_physics/computer_science/courses/course_descriptions",
     "schedule_url": "https://selfservice.roanoke.edu/Student/Courses/Search?subjects=CPSC"
   },
   "Saint Anselm College": {
     "state": "NH",
     "program_url": "https://www.anselm.edu/academics/departments-programs/computer-science",
+    "faculty_url": "https://www.anselm.edu/academics/departments-programs/computer-science/faculty-staff",
     "catalog_url": "http://catalog.anselm.edu/content.php?filter%5B27%5D=CS&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=12&expand=&navoid=416&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
     "schedule_url": null
   },
   "Saint Michael's College": {
     "state": "VT",
     "program_url": "https://www.smcvt.edu/academics/majors-minors-and-curriculum/computer-science/",
+    "faculty_url": "https://www.smcvt.edu/academics/majors-minors-and-curriculum/computer-science/",
     "catalog_url": "https://catalog.smcvt.edu/content.php?filter%5B27%5D=CS&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=866&search_database=Filter#acalog_template_course_filter",
     "schedule_url": "https://selfservice.smcvt.edu/Student/Courses/Search?subjects=CS"
   },
   "Skidmore College": {
     "state": "NY",
     "program_url": "https://www.skidmore.edu/computer_science/index.php",
+    "faculty_url": "https://www.skidmore.edu/computer-science/faculty/index.php",
     "catalog_url": "https://catalog.skidmore.edu/departments-programs/computer-science/#coursestext",
     "schedule_url": "https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Smith College": {
     "state": "MA",
     "program_url": "https://www.smith.edu/academics/computer-science",
+    "faculty_url": "https://www.smith.edu/academics/computer-science",
     "catalog_url": "https://catalog.smith.edu/course-descriptions/csc/",
     "schedule_url": "https://www.smith.edu/academics/programs-courses/course-search"
   },
   "Southern Virginia University": {
     "state": "VA",
     "program_url": "https://svu.edu/academics/majors-minors/computer-science/",
+    "faculty_url": "https://svu.edu/academics/majors-minors/computer-science/",
     "catalog_url": "https://catalog.svu.edu/courses/computer-science/",
     "schedule_url": "https://my.svu.edu/ics/Student_Stuff/"
   },
   "Southwestern University": {
     "state": "TX",
     "program_url": "https://www.southwestern.edu/computer-science/",
+    "faculty_url": "https://www.southwestern.edu/computer-science/our-faculty/",
     "catalog_url": "https://www.southwestern.edu/computer-science/courses/",
     "schedule_url": "https://selfservice.southwestern.edu/Student/Courses/Search?subjects=CSC54"
   },
   "St. Lawrence University": {
     "state": "NY",
     "program_url": "https://www.stlawu.edu/academics/programs/computer-science",
+    "faculty_url": "https://www.stlawu.edu/offices/math-computer-science-and-statistics/staff",
     "catalog_url": "https://www.stlawu.edu/offices/math-computer-science-and-statistics/course-descriptions-and-current-schedules/computer-science-course-listings",
     "schedule_url": "https://www.stlawu.edu/offices/math-computer-science-and-statistics/current-courses-spring-2023"
   },
   "St. Mary's College of Maryland": {
     "state": "MD",
     "program_url": "https://www.smcm.edu/mathcs/",
+    "faculty_url": "https://inside.smcm.edu/directory/mathcs",
     "catalog_url": "https://catalog.smcm.edu/content.php?filter%5B27%5D=COSC&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=2&expand=&navoid=45&search_database=Filter#acalog_template_course_filter#content",
     "schedule_url": "https://portal.smcm.edu/CMCPortal/Common/CourseSchedule.aspx"
   },
   "St. Norbert College": {
     "state": "WI",
     "program_url": "https://www.snc.edu/academics/natural-sciences/computer-science/",
+    "faculty_url": "https://www.snc.edu/academics/natural-sciences/computer-science/",
     "catalog_url": "https://www.snc.edu/academics/natural-sciences/computer-science/course-offerings.html",
     "schedule_url": "https://cwismgmt01.snc.edu:9420/CWIS8P/sncbwckschd.p_disp_dyn_sched"
   },
   "St. Olaf College": {
     "state": "MN",
     "program_url": "https://wp.stolaf.edu/cs/",
+    "faculty_url": "https://wp.stolaf.edu/cs/faculty-staff/",
     "catalog_url": "https://catalog.stolaf.edu/academic-programs/computer-science/#coursestext",
     "schedule_url": "https://sis.stolaf.edu/sis/public-aclasslab.cfm"
   },
   "Stonehill College": {
     "state": "MA",
     "program_url": "https://www.stonehill.edu/programs/computer-science/",
+    "faculty_url": "https://www.stonehill.edu/programs/computer-science/faculty/",
     "catalog_url": "https://www.stonehill.edu/programs/computer-science/courses/",
     "schedule_url": "https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Susquehanna University": {
     "state": "PA",
     "program_url": "https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science/",
+    "faculty_url": "https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science/",
     "catalog_url": "https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science/",
     "schedule_url": "https://su-ss-live.susqu.edu/Student/Courses/Search?subjects=CSCI"
   },
   "Swarthmore College": {
     "state": "PA",
     "program_url": "https://www.swarthmore.edu/computer-science",
+    "faculty_url": "https://www.swarthmore.edu/computer-science/faculty-staff",
     "catalog_url": "https://www.swarthmore.edu/computer-science/course-descriptions",
     "schedule_url": "https://studentregistration.swarthmore.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Tougaloo College": {
     "state": "MS",
     "program_url": "https://www.tougaloo.edu/academics/divisions/natural-science/mathematics-computer-science-department",
+    "faculty_url": "https://www.tougaloo.edu/academics/divisions/natural-science/mathematics-computer-science-department/",
     "catalog_url": "https://www.tougaloo.edu/computer-science-major-0",
     "schedule_url": "https://theloo.tougaloo.edu/ICS/Academics/Academics_Homepage.jnz?portlet=AddDrop_Courses&screen=Advanced+Course+Search&screenType=next"
   },
   "Transylvania University": {
     "state": "KY",
     "program_url": "https://www.transy.edu/academics/program/computer-science/",
+    "faculty_url": "https://www.transy.edu/academics/program/computer-science/computer-science-faculty/",
     "catalog_url": "http://catalog.transy.edu/content.php?filter%5B27%5D=CS&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=3&expand=&navoid=97&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
     "schedule_url": "https://selfserv.transy.edu/Student/Courses/Search?subjects=CS"
   },
   "Trinity College": {
     "state": "CT",
     "program_url": "https://www.trincoll.edu/cs/",
+    "faculty_url": "https://www.trincoll.edu/cs/faculty-and-staff/",
     "catalog_url": "https://www.trincoll.edu/cs/course-descriptions/",
     "schedule_url": "https://www.trincoll.edu/cs/course-schedule/"
   },
   "Trinity University": {
     "state": "TX",
     "program_url": "https://www.trinity.edu/academics/departments/computer-science",
+    "faculty_url": "https://www.trinity.edu/academics/departments/computer-science/computer-science-bs#faculty",
     "catalog_url": "https://www.trinity.edu/academics/cosb/csci#courses",
     "schedule_url": null
   },
   "Union College (NY)": {
     "state": "NY",
     "program_url": "https://www.union.edu/computer-science",
+    "faculty_url": "https://www.union.edu/faculty-staff/computer-science",
     "catalog_url": "https://www.union.edu/computer-science/courses-requirements",
     "schedule_url": "https://selfservice.union.edu/Student/Courses/Search?subjects=CSC"
   },
   "University of Mary Washington": {
     "state": "VA",
     "program_url": "https://cas.umw.edu/computerscience/",
+    "faculty_url": "https://cas.umw.edu/computerscience/computer-science-faculty/",
     "catalog_url": "https://catalog.umw.edu/undergraduate/course-descriptions/cpsc/",
     "schedule_url": "https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "University of Minnesota Morris": {
     "state": "MN",
     "program_url": "https://morris.umn.edu/academics/computer-science",
+    "faculty_url": "https://morris.umn.edu/academics/computer-science",
     "catalog_url": "https://umm.catalog.prod.coursedog.com/courses?subjectCode=CSCI&page=1&cq=",
     "schedule_url": "http://z.umn.edu/publicclasssearch"
   },
   "University of North Carolina Asheville": {
     "state": "NC",
     "program_url": "https://www.unca.edu/programs/computer-science/",
+    "faculty_url": "https://go.unca.edu/cs/",
     "catalog_url": "https://catalog.unca.edu/content.php?filter%5B27%5D=CSCI&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=20&expand=&navoid=1206&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
     "schedule_url": "https://www.unca.edu/schedules/"
   },
   "University of Puget Sound": {
     "state": "WA",
     "program_url": "https://www.pugetsound.edu/academics/computer-science",
+    "faculty_url": "https://www.pugetsound.edu/academics/computer-science/faculty",
     "catalog_url": "https://www.pugetsound.edu/academics/computer-science/courses",
     "schedule_url": "https://campus.pugetsound.edu/psc/PUBLIC/EMPLOYEE/CAMPPUB/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL"
   },
   "University of Richmond": {
     "state": "VA",
     "program_url": "https://cs.richmond.edu/",
+    "faculty_url": "https://cs.richmond.edu/faculty/index.html",
     "catalog_url": "https://cs.richmond.edu/Academics/courses/index.html",
     "schedule_url": "https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq"
   },
   "The University of the South": {
     "state": "TN",
     "program_url": "https://new.sewanee.edu/programs-of-study/math-cs/",
+    "faculty_url": "https://new.sewanee.edu/programs-of-study/math-cs/faculty-staff/",
     "catalog_url": "http://e-catalog.sewanee.edu/arts-sciences/departments-interdisciplinary-programs/mathematics-computer-science/#coursestext",
     "schedule_url": "https://registrar.sewanee.edu/schedule/?term=easter&school=college-of-arts-sciences-2&subject=computer-science&track="
   },
   "University of Virginia--Wise": {
     "state": "VA",
     "program_url": "https://www.uvawise.edu/academics/majors-minors/computer-science",
+    "faculty_url": "https://www.uvawise.edu/academics/departments/mathematics-computer-science/mathematics-computer-science-faculty-staff",
     "catalog_url": "https://view.publitas.com/university-of-virginias-college-at-wise/college-catalog-2023-2024/page/202-203",
     "schedule_url": null
   },
   "Ursinus College": {
     "state": "PA",
     "program_url": "https://www.ursinus.edu/academics/mathematics-computer-science-and-statistics/",
+    "faculty_url": "https://www.ursinus.edu/academics/mathematics-computer-science-and-statistics/faculty-and-staff/",
     "catalog_url": "https://www.ursinus.edu/academics/mathematics-computer-science-and-statistics/courses/",
     "schedule_url": "https://selfservice.ursinus.edu/Student/Courses/Search?subjects=CS"
   },
   "Vassar College": {
     "state": "NY",
     "program_url": "https://www.vassar.edu/computerscience",
+    "faculty_url": "https://www.vassar.edu/computerscience/faculty",
     "catalog_url": "https://go.vassar.edu/cmpu-department",
     "schedule_url": "https://aisapps.vassar.edu/cgi-bin/geninfo.cgi"
   },
   "Virginia Wesleyan University": {
     "state": "VA",
     "program_url": "https://www.vwu.edu/academics/majors/computer-science/",
+    "faculty_url": "https://www.vwu.edu/academics/majors/computer-science/meet-the-faculty.php",
     "catalog_url": "https://www.vwu.edu/academics/majors/computer-science/courses-cs.php",
     "schedule_url": "https://webadvisor.vwu.edu/WebAdvisor/WebAdvisor"
   },
   "Wabash College": {
     "state": "IN",
     "program_url": "https://www.wabash.edu/academics/computer_science",
+    "faculty_url": "https://www.wabash.edu/academics/computer_science/facstaff",
     "catalog_url": "https://bulletin.wabash.edu/programsaz/computer-science/#coursestext",
     "schedule_url": "https://www.wabash.edu/apps/registrar/course-sections?pages_id=1&dept=CSC"
   },
   "Wartburg College": {
     "state": "IA",
     "program_url": "https://www.wartburg.edu/computer-science/",
+    "faculty_url": "https://www.wartburg.edu/academics/mcsp-faculty/",
     "catalog_url": "https://catalog.wartburg.edu/content.php?filter%5B27%5D=CS&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=14&expand=&navoid=833&search_database=Filter#acalog_template_course_filter",
     "schedule_url": "https://my.wartburg.edu/ics/Academics/Academics_Homepage.jnz?portlet=Course_Search&screen=Advanced+Course+Search&screenType=next"
   },
   "Washington and Lee University": {
     "state": "VA",
     "program_url": "https://www.wlu.edu/computer-science-department",
+    "faculty_url": "https://www.wlu.edu/computer-science-department/faculty-and-staff",
     "catalog_url": "https://catalog.wlu.edu/content.php?navoid=3465",
     "schedule_url": "https://managementtools4.wlu.edu/CourseOfferings/"
   },
   "Washington College": {
     "state": "MD",
     "program_url": "https://www.washcoll.edu/academic_departments/math-and-computer-science/index.php",
+    "faculty_url": "https://www.washcoll.edu/academics/departments/math-comp-sci/faculty.php",
     "catalog_url": "https://www.washcoll.edu/academic_departments/math-and-computer-science/course-descriptions.php",
     "schedule_url": "https://www.washcoll.edu/people_departments/offices/registrar/course-schedule.php"
   },
   "Washington & Jefferson College": {
     "state": "PA",
     "program_url": "https://www.washjeff.edu/programs/computing-and-information-studies-cis/",
+    "faculty_url": "https://www.washjeff.edu/programs/computing-and-information-studies-cis/",
     "catalog_url": "https://www.washjeff.edu/files/computing-and-information-studies/",
     "schedule_url": "https://jaysource.washjeff.edu/Student/Courses/Search?subjects=CIS"
   },
   "Wellesley College": {
     "state": "MA",
     "program_url": "https://www.wellesley.edu/cs",
+    "faculty_url": "https://www.wellesley.edu/cs/faculty",
     "catalog_url": "https://www.wellesley.edu/cs/curriculum/coursewebsites",
     "schedule_url": "https://www.wellesley.edu/cs/curriculum/current"
   },
   "Wesleyan University": {
     "state": "CT",
     "program_url": "https://www.wesleyan.edu/mathcs/cs/index.html",
+    "faculty_url": "https://www.wesleyan.edu/mathcs/cs/faculty.html",
     "catalog_url": "https://www.wesleyan.edu/mathcs/cs/regular_courses.html",
     "schedule_url": "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?crse_list=COMP&offered=Y#fall"
   },
   "Westminster College (PA)": {
     "state": "MO",
     "program_url": "https://www.westminster.edu/academics/schools/physical-mathematical/math-cs/index.cfm",
+    "faculty_url": "https://www.westminster.edu/academics/schools/physical-mathematical/math-cs/faculty.cfm",
     "catalog_url": "https://catalog.westminster.edu/content.php?filter%5B27%5D=CS&navoid=180#acalog_template_course_filter",
     "schedule_url": "https://www.westminster.edu/academics/course-schedule.cfm?subject=CS"
   },
   "Wheaton College (IL)": {
     "state": "IL",
     "program_url": "https://www.wheaton.edu/academics/programs/computer-science/",
+    "faculty_url": "https://www.wheaton.edu/academics/departments/mathematics-and-computer-science/computerscience/faculty/",
     "catalog_url": "https://www.wheaton.edu/academics/departments/computerscience/curriculum/course-sequence-in-table-format/",
     "schedule_url": "https://www.wheaton.edu/media/registrar/schedule/2023-Fall-Registration-Packet_August042023.pdf"
   },
   "Wheaton College (MA)": {
     "state": "MA",
     "program_url": "https://wheatoncollege.edu/academics/programs/computer-science/",
+    "faculty_url": "https://departments.wheatoncollege.edu/faculty/",
     "catalog_url": "https://catalog.wheatoncollege.edu/content.php?filter%5B27%5D=COMP&navoid=412#acalog_template_course_filter",
     "schedule_url": "https://banprodselfservice.wheatonma.edu:7341/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   "Whitman College": {
     "state": "WA",
     "program_url": "https://www.whitman.edu/academics/majors-and-minors/computer-science",
+    "faculty_url": "https://www.whitman.edu/academics/majors-and-minors/computer-science/faculty-and-staff",
     "catalog_url": "https://www.whitman.edu/academics/majors-and-minors/computer-science#:~:text=Courses-,In,-Computer%20Science",
     "schedule_url": "https://selfservice.whitman.edu/Student/Courses/Search?subjects=CS"
   },
   "Willamette University": {
     "state": "OR",
     "program_url": "https://willamette.edu/academics/college/computer-science/",
+    "faculty_url": "https://willamette.edu/academics/computing/faculty",
     "catalog_url": "https://willamette.edu/undergraduate/computer-science/info/courses/index.html",
     "schedule_url": "https://collslfsrv.willamette.edu/Student/Courses/Search?subjects=CS"
   },
   "Williams College": {
     "state": "MA",
     "program_url": "https://csci.williams.edu/",
+    "faculty_url": "https://csci.williams.edu/people/faculty/",
     "catalog_url": "https://catalog.williams.edu/pdf/csci.pdf",
     "schedule_url": "https://catalog.williams.edu/csci/list/?strm=9999&sbattr=&req_year=24&offered=A"
   },
   "Wittenberg University": {
     "state": "OH",
     "program_url": "https://www.wittenberg.edu/academics/computerscience/courses-requirements",
+    "faculty_url": "https://www.wittenberg.edu/academics/computer-science/faculty-staff",
     "catalog_url": "https://www.wittenberg.edu/sites/default/files/media/registrar/CATALOG2023-24.pdf#page=192",
     "schedule_url": "https://selfservice.wittenberg.edu/Student/Courses/Search?subjects=COMP"
   },
   "Wofford College": {
     "state": "SC",
     "program_url": "https://www.wofford.edu/academics/majors-and-programs/computer-science",
+    "faculty_url": "https://www.wofford.edu/academics/majors-and-programs/computer-science/faculty-and-staff",
     "catalog_url": "http://catalog.wofford.edu/courses-programs-departments/computer-science/#coursestext",
     "schedule_url": "https://connect.wofford.edu/myWofford/registrar/courseSchedule.aspx"
   }

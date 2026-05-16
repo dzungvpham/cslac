@@ -77,6 +77,8 @@ EXCLUDE_PATTERNS = [
     r"\bprivate reading\b",
     r"\bind reading\b",
     r"\bindep(t|endent)? reading\b",
+    # Recitation sections — accompany a separate lecture course.
+    r"\brecitation\b",
 ]
 EXCLUDE_RE = re.compile("|".join(EXCLUDE_PATTERNS), re.IGNORECASE)
 
@@ -391,8 +393,15 @@ def build_data(input_dir: Path, faculty_by_college: dict[str, list[dict]] | None
 
         # Resolve display name per code; drop codes whose every observed name
         # is lab-only (those are stand-alone lab sections of another course).
+        # Also drop codes ending in 'L' when the un-suffixed code is present —
+        # the L variant is a separate lab section of the main course (e.g.
+        # CSCI 203L alongside CSCI 203).
         latest_name: dict[str, str] = {}
-        drop_codes: set[str] = set()
+        codes_set = set(offered.keys())
+        drop_codes: set[str] = {
+            code for code in codes_set
+            if len(code) > 1 and code.endswith("L") and code[:-1] in codes_set
+        }
         for code in list(offered.keys()):
             obs = name_obs.get(code, [])
             non_lab = [o for o in obs if not o[2]]
