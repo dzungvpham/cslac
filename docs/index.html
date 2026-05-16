@@ -2083,6 +2083,17 @@ function buildPanel(panel, college) {
         view = btn.dataset.view;
         panel._view = view;
         render();
+        // If the user had scrolled past the panel-toggle (it's sticky-
+        // pinned at the top of the open row), reset scroll so they land
+        // on the start of the new table. Otherwise switching from a long
+        // courses table to a shorter faculty table leaves them staring at
+        // unrelated rows shoved up from below.
+        const newToggle = panel.querySelector('.panel-toggle');
+        const stickyTop = parseFloat(getComputedStyle(newToggle).top) || 0;
+        const panelTop = panel.getBoundingClientRect().top;
+        if (panelTop < stickyTop) {
+          window.scrollBy({ top: panelTop - stickyTop, behavior: 'smooth' });
+        }
       });
     });
   }
