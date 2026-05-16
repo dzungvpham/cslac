@@ -26,6 +26,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="img/logo_sprite.webp" />
+  <link rel="stylesheet" href="img/logo_sprite.css" />
   <style>
     /* ── themes ── */
     :root {
@@ -314,13 +316,7 @@
     /* short form is mobile-only; see media query below */
     .college-name .cn-short { display: none; }
 
-    .college-logo {
-      width: 24px;
-      height: 24px;
-      object-fit: contain;
-      flex-shrink: 0;
-      vertical-align: middle;
-    }
+    /* .college-logo base rules live in img/logo_sprite.css (generated). */
 
     /* Layout-transparent on desktop so the existing .td-name flex row is
        unchanged; promoted to a real flex row on mobile so the logo and
@@ -943,7 +939,7 @@
         gap: 6px;
         min-width: 0;
       }
-      .college-logo { width: 16px; height: 16px; }
+      .college-logo { --cs: 16px; }
       .college-name { min-width: 0; word-break: break-word; }
       .college-links { gap: 4px; margin-left: 0; }
       .college-link { width: 22px; height: 22px; }
@@ -1251,141 +1247,12 @@ const CS_SUBFIELDS = [
   'Visualization', 'Computational social science', 'Games & interactive art',
 ];
 
-// ── college logos ──────────────────────────────────────────────────────────
-const COLLEGE_LOGOS = {
-  'Albion College': 'albion.png',
-  'Albright College': 'albright.png',
-  'Allegheny College': 'allegheny.png',
-  'Amherst College': 'amherst.png',
-  'Augustana College': 'augustana.png',
-  'Austin College': 'austin.png',
-  'Bard College': 'bard.png',
-  'Barnard College': 'barnard.png',
-  'Beloit College': 'beloit.png',
-  'Berea College': 'berea.webp',
-  'Bethany College (WV)': 'bethany.png',
-  'Bethany Lutheran College': 'bethany_lutheran.webp',
-  'Bowdoin College': 'bowdoin.webp',
-  'Bridgewater College': 'bridgewater.webp',
-  'Bryn Athyn College': 'bryn_athyn.png',
-  'Bryn Mawr College': 'bryn_mawr.png',
-  'Bucknell University': 'bucknell.png',
-  'Carleton College': 'carleton.webp',
-  'Central College': 'central.png',
-  'Centre College': 'centre.webp',
-  'Claflin University': 'claflin.png',
-  'Coe College': 'coe.png',
-  'Colby College': 'colby.png',
-  'Colgate University': 'colgate.webp',
-  'College of St Benedict': 'csbsju.webp',
-  'College of the Holy Cross': 'holy_cross.webp',
-  'College of Wooster': 'wooster.webp',
-  'Colorado College': 'colorado.png',
-  'Concordia College': 'concordia.webp',
-  'Connecticut College': 'connecticut.webp',
-  'Cornell College': 'cornell.webp',
-  'Covenant College': 'covenant.webp',
-  'Davidson College': 'davidson.png',
-  'Denison University': 'denison.webp',
-  'DePauw University': 'depauw.png',
-  'Dickinson College': 'dickinson.webp',
-  'Drew University': 'drew.png',
-  'Earlham College': 'earlham.webp',
-  'East-West University': 'east_west.png',
-  'Eckerd College': 'eckerd.png',
-  'Franklin College': 'franklin.webp',
-  'Franklin & Marshall College': 'franklin_marshall.png',
-  'Furman University': 'furman.webp',
-  'Gettysburg College': 'gettysburg.webp',
-  'Gordon College': 'gordon.webp',
-  'Goucher College': 'goucher.png',
-  'Grinnell College': 'grinnell.webp',
-  'Gustavus Adolphus College': 'gustavus.webp',
-  'Hamilton College': 'hamilton.webp',
-  'Hampden-Sydney College': 'hampden_sydney.webp',
-  'Hanover College': 'hanover.webp',
-  'Hartwick College': 'hartwick.webp',
-  'Harvey Mudd College': 'harvey_mudd.png',
-  'Haverford College': 'haverford.png',
-  'Hendrix College': 'hendrix.png',
-  'Hobart and William Smith College': 'hws.webp',
-  'Hope College': 'hope.png',
-  'Houghton University': 'houghton.png',
-  'Illinois College': 'illinois.png',
-  'Juniata College': 'juniata.png',
-  'Kalamazoo College': 'kalamazoo.webp',
-  'Knox College': 'knox.webp',
-  'Lafayette College': 'lafayette.png',
-  'Lake Forest College': 'lake_forest.png',
-  'Lane College': 'lane.png',
-  'Lawrence University': 'lawrence.png',
-  'Lewis & Clark College': 'lewis_clark.webp',
-  'Linfield University': 'linfield.webp',
-  'Luther College': 'luther.webp',
-  'Lycoming College': 'lycoming.png',
-  'Lyon College': 'lyon.webp',
-  'Macalester College': 'macalester.png',
-  'Maryville College': 'maryville.png',
-  'Meredith College': 'meredith.webp',
-  'Middlebury College': 'middlebury.png',
-  'Monmouth College': 'monmouth.png',
-  'Mount Holyoke College': 'mount_holyoke.webp',
-  'Muhlenberg College': 'muhlenberg.png',
-  'New College of Florida': 'new_college.webp',
-  'Oberlin College': 'oberlin.png',
-  'Occidental College': 'occidental.png',
-  'Ohio Wesleyan University': 'ohio_wesleyan.png',
-  'Pomona College': 'pomona.webp',
-  'Presbyterian College': 'presbyterian.png',
-  'Randolph College': 'randolph.webp',
-  'Randolph-Macon College': 'randolph_macon.webp',
-  'Reed College': 'reed.png',
-  'Rhodes College': 'rhodes.png',
-  'Roanoke College': 'roanoke.png',
-  'Saint Anselm College': 'saint_anselm.png',
-  "Saint Michael's College": 'saint_michaels.webp',
-  'Skidmore College': 'skidmore.webp',
-  'Smith College': 'smith.webp',
-  'Southern Virginia University': 'southern_virginia.webp',
-  'Southwestern University': 'southwestern.png',
-  'St. Lawrence University': 'st_lawrence.webp',
-  "St. Mary's College of Maryland": 'st_marys_md.webp',
-  'St. Norbert College': 'st_norbert.webp',
-  'St. Olaf College': 'st_olaf.webp',
-  'Stonehill College': 'stonehill.webp',
-  'Susquehanna University': 'susquehanna.webp',
-  'Swarthmore College': 'swarthmore.webp',
-  'Tougaloo College': 'tougaloo.png',
-  'Transylvania University': 'transylvania.png',
-  'Trinity College': 'trinity_college.webp',
-  'Trinity University': 'trinity_university.png',
-  'Union College (NY)': 'union.png',
-  'University of Mary Washington': 'umw.png',
-  'University of Minnesota Morris': 'umn_morris.webp',
-  'University of North Carolina Asheville': 'unca.png',
-  'University of Puget Sound': 'puget_sound.png',
-  'University of Richmond': 'richmond.png',
-  'The University of the South': 'sewanee.webp',
-  'University of Virginia--Wise': 'uva_wise.png',
-  'Ursinus College': 'ursinus.webp',
-  'Vassar College': 'vassar.webp',
-  'Virginia Wesleyan University': 'virginia_wesleyan.webp',
-  'Wabash College': 'wabash.png',
-  'Wartburg College': 'wartburg.png',
-  'Washington and Lee University': 'wash_lee.webp',
-  'Washington College': 'washington.webp',
-  'Washington & Jefferson College': 'wash_jeff.webp',
-  'Wellesley College': 'wellesley.png',
-  'Wesleyan University': 'wesleyan.webp',
-  'Westminster College (PA)': 'westminster.png',
-  'Wheaton College (IL)': 'wheaton_il.webp',
-  'Wheaton College (MA)': 'wheaton_ma.webp',
-  'Whitman College': 'whitman.webp',
-  'Willamette University': 'willamette.png',
-  'Williams College': 'williams.webp',
-  'Wittenberg University': 'wittenberg.png',
-  'Wofford College': 'wofford.webp',
-};
+// Slugifies a college name into the CSS class used by img/logo_sprite.css
+// (e.g. "St. Mary's College of Maryland" -> "st-mary-s-college-of-maryland").
+// Must match slug() in docs/generate_logo_sprite.py.
+function collegeSlug(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
 
 // ── state ──────────────────────────────────────────────────────────────────
 let allColleges = [];
@@ -1811,10 +1678,7 @@ function buildCollegeRow(college, idx) {
   const scheduleLink = (links.schedule_url && courseSchedules[college.name])
     ? `<a class="college-link" href="${esc(links.schedule_url)}" target="_blank" rel="noopener" title="Course schedule">${ICON_CATALOG}</a>`
     : '';
-  const logoFile = COLLEGE_LOGOS[college.name];
-  const logoImg = logoFile
-    ? `<img class="college-logo" src="img/logo/${esc(logoFile)}" alt="" loading="lazy" />`
-    : '';
+  const logoImg = `<span class="college-logo cl-${collegeSlug(college.name)}" aria-hidden="true"></span>`;
 
   div.innerHTML = `
     <div class="college-summary">
