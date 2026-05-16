@@ -314,7 +314,15 @@
     .th.sorted .sort-icon { opacity: 1; }
 
     /* college data row */
-    .college-row { border-bottom: 1px solid var(--border); }
+    .college-row {
+      border-bottom: 1px solid var(--border);
+      /* Scope sticky children's z-indices to this row. Without isolation,
+         .fac-head-row's mobile z-index 30 (used so rotated labels paint
+         above .panel-toggle within the row) competes with .col-head-row
+         at the document root and with the next row's .college-summary,
+         causing visible overlap during scroll transitions. */
+      isolation: isolate;
+    }
 
     .college-summary {
       cursor: pointer;
@@ -1498,10 +1506,21 @@ async function loadData() {
 // height. Per-row scoping matters because on narrow viewports the college
 // name may wrap to two lines, so summaries don't all share one height — we
 // want each row's fac-head-row to stick directly under its own summary.
+//
+// Math.floor(getBoundingClientRect().height) under-measures by a sub-pixel
+// when the rendered height is fractional, ensuring each subsequent sticky
+// element's top sits at or slightly above the previous element's actual
+// bottom. The (sub-pixel) overlap is hidden by the higher-z-index element
+// above; without it, offsetHeight's rounding could leave a tiny gap through
+// which scrolling table content shows.
+function measureH(el) {
+  return Math.floor(el.getBoundingClientRect().height) + 'px';
+}
+
 function updateHeaderH() {
   const row = document.querySelector('.col-head-row');
   if (row) {
-    document.documentElement.style.setProperty('--header-h', row.offsetHeight + 'px');
+    document.documentElement.style.setProperty('--header-h', measureH(row));
   }
   document.querySelectorAll('.college-row').forEach(updateRowVars);
 }
@@ -1511,9 +1530,9 @@ function updateHeaderH() {
 // (when present). Both are scoped per .college-row.
 function updateRowVars(r) {
   const s = r.querySelector('.college-summary');
-  if (s) r.style.setProperty('--summary-h', s.offsetHeight + 'px');
+  if (s) r.style.setProperty('--summary-h', measureH(s));
   const t = r.querySelector('.panel-toggle');
-  r.style.setProperty('--toggle-h', t ? t.offsetHeight + 'px' : '0px');
+  r.style.setProperty('--toggle-h', t ? measureH(t) : '0px');
 }
 window.addEventListener('resize', updateHeaderH);
 if (document.fonts && document.fonts.ready) {
