@@ -567,12 +567,13 @@
     .ftd-num .num-short { display: none; }
 
     /* ── panel view toggle (Faculty / Courses) ─────────────────────────────── */
-    /* The Course column width is locked to a single expression
-       (--course-title-w) shared with the table cell. The toggle row is a
-       2-column grid whose first track is exactly that width plus the
-       sticky cell's right padding (16px), so the second track spans the
-       term-columns area exactly. Centering the paginator there lines it
-       up with the geometric center of the term columns. */
+    /* Laid out as two big columns that match the course-schedule table
+       below: track 1 = Course-title column, track 2 = term-columns area.
+       Both share --course-title-w (+16px for the sticky cell's right
+       padding) so the paginator centered in track 2 sits exactly over
+       the geometric middle of the term columns. The table uses
+       table-layout: fixed at the same total width, so the two rows are
+       guaranteed to line up regardless of content. */
     .panel-toggle {
       position: sticky;
       top: calc(var(--header-h) + var(--summary-h));
@@ -642,11 +643,16 @@
     .course-wrap {
       background: var(--expand-bg);
     }
+    /* table-layout: fixed pins the table to the panel width and forces
+       term columns to share the remaining space evenly — independent of
+       cell content. This is what keeps the paginator (centered in the
+       .panel-toggle's matching grid track above) lined up with the
+       geometric center of the term columns. */
     .course-table {
       border-collapse: separate;
       border-spacing: 0;
-      width: max-content;
-      min-width: 100%;
+      width: 100%;
+      table-layout: fixed;
     }
     .course-table th,
     .course-table td {
@@ -683,6 +689,13 @@
       z-index: 5;
       padding-right: 16px !important;
       padding-left: 0 !important;
+    }
+    /* Pin the Course-column width so it matches the .panel-toggle's
+       first grid track exactly (both = course-title-w + 16px). With
+       table-layout: fixed this also reserves the remaining width for
+       the term columns to share equally. */
+    .course-table th.course-sticky {
+      width: calc(var(--course-title-w) + 16px);
     }
     .course-table thead th.course-sticky { z-index: 17; }
 
@@ -787,12 +800,14 @@
       font-size: 12.5px;
     }
 
-    /* ── term pagination buttons (mobile only) ───────────────────────────── */
+    /* ── term pagination buttons ──────────────────────────────────────────── */
     /* Rendered into the panel-toggle row (alongside the Faculty/Courses
        toggle) so the term-label header keeps its natural column layout.
-       The slot takes the remaining row width and centers its content so
-       the paginator sits roughly over the term-columns area rather than
-       being pushed to the far right. */
+       The slot occupies the panel-toggle's second grid track, which by
+       construction spans exactly the term-columns area below, so the
+       paginator centered here is centered over the term columns. Active
+       on any viewport where the term count exceeds the page window
+       (TERMS_PER_PAGE on small, YEARS_PER_PAGE elsewhere). */
     .term-paginator-slot {
       display: flex;
       justify-content: center;
@@ -2007,7 +2022,7 @@ function buildPanel(panel, college) {
       ? `<button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>`
       : `<button data-view="courses" class="disabled" disabled title="Course schedule not accessible" aria-label="Course schedule not accessible">${ICON_BOOK}</button>`;
     const sourceLink = facultyUrl
-      ? `<a class="faculty-source-link" href="${esc(facultyUrl)}" target="_blank" rel="noopener">faculty source</a>`
+      ? `<a class="faculty-source-link" href="${esc(facultyUrl)}" target="_blank" rel="noopener">source</a>`
       : '';
     const toggleHtml = `
       <div class="panel-toggle" role="tablist">
