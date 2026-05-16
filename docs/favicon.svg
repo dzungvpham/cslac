@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CSLAC">
-  <g fill="#8b5cf6" stroke="#8b5cf6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M 16 27 L 16 38 Q 16 48 24 49 L 40 49 Q 48 48 48 38 L 48 27 Z"/>
-    <path d="M 32 10 L 60 22 L 32 34 L 4 22 Z"/>
-    <path d="M 32 22 L 52 28 L 52 44" fill="none" stroke-width="3"/>
-    <circle cx="52" cy="48" r="3.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CSLAC terminal">
+  <rect x="0" y="0" width="64" height="64" rx="10" ry="10" fill="#ffffff"/>
+  <g fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15,17 31,32 15,47"/>
+    <line x1="34" y1="51" x2="53" y2="51"/>
   </g>
 </svg>
