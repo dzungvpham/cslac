@@ -50,7 +50,7 @@ COLLEGE_LOGOS = {
     "Claflin University": "claflin.png",
     "Coe College": "coe.png",
     "Colby College": "colby.png",
-    "Colgate University": "colgate.webp",
+    "Colgate University": "colgate.png",
     "College of St Benedict": "csbsju.webp",
     "College of the Holy Cross": "holy_cross.webp",
     "College of Wooster": "wooster.webp",
