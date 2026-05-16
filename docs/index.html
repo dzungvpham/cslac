@@ -317,6 +317,10 @@
     .college-name .cn-short { display: none; }
 
     /* .college-logo base rules live in img/logo_sprite.css (generated). */
+    [data-theme="dark"] .college-logo {
+      background-color: #fff;
+      border-radius: 4px;
+    }
 
     /* Layout-transparent on desktop so the existing .td-name flex row is
        unchanged; promoted to a real flex row on mobile so the logo and
@@ -860,6 +864,33 @@
       color: var(--bg);
       background: var(--accent);
     }
+    .state-select {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 24px 5px 11px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--text);
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%236c6f85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      background-size: 10px 10px;
+    }
+    .state-select.active {
+      color: var(--bg);
+      background-color: var(--accent);
+      border-color: var(--accent);
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23eff1f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
+    }
+    .state-select option {
+      color: var(--text);
+      background: var(--bg);
+    }
 
     /* ── college row number ──
        Sits at the start of the column (same x as the "Institution"
@@ -870,6 +901,9 @@
       color: var(--muted);
       user-select: none;
       flex-shrink: 0;
+      display: inline-block;
+      min-width: 3ch;
+      text-align: right;
     }
 
     /* ── responsive ── */
@@ -1139,7 +1173,7 @@
 
   <header>
     <div class="header-left">
-      <h1>&lt;CSLAC/&gt; - Computer Science at Liberal Arts Colleges<img src="favicon.svg" alt="" class="header-logo" /></h1>
+      <h1>&lt;CSLAC/&gt; Computer Science at Liberal Arts Colleges</h1>
       <p>Data on Computer Science faculty and courses offered at LACs in the US.</p>
       <div class="header-stats">
         <div class="stat"><strong id="stat-colleges">—</strong>Colleges</div>
@@ -1263,7 +1297,23 @@ let activeCategories = new Set();
 let activeSubfields = new Set();
 let excludedSubfields = new Set();
 let subfieldScope = 'faculty'; // 'faculty' | 'school'
+let activeState = '';
 let advancedExpanded = false;
+
+// USPS state/territory codes → full names. Used by the advanced state filter.
+const US_STATES = {
+  AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California',
+  CO: 'Colorado', CT: 'Connecticut', DE: 'Delaware', DC: 'District of Columbia',
+  FL: 'Florida', GA: 'Georgia', HI: 'Hawaii', ID: 'Idaho', IL: 'Illinois',
+  IN: 'Indiana', IA: 'Iowa', KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana',
+  ME: 'Maine', MD: 'Maryland', MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota',
+  MS: 'Mississippi', MO: 'Missouri', MT: 'Montana', NE: 'Nebraska', NV: 'Nevada',
+  NH: 'New Hampshire', NJ: 'New Jersey', NM: 'New Mexico', NY: 'New York',
+  NC: 'North Carolina', ND: 'North Dakota', OH: 'Ohio', OK: 'Oklahoma', OR: 'Oregon',
+  PA: 'Pennsylvania', PR: 'Puerto Rico', RI: 'Rhode Island', SC: 'South Carolina',
+  SD: 'South Dakota', TN: 'Tennessee', TX: 'Texas', UT: 'Utah', VT: 'Vermont',
+  VA: 'Virginia', WA: 'Washington', WV: 'West Virginia', WI: 'Wisconsin', WY: 'Wyoming',
+};
 
 // ── theme ──────────────────────────────────────────────────────────────────
 const html = document.documentElement;
@@ -1354,7 +1404,7 @@ function buildFilterBar() {
   const advIcon = advancedExpanded
     ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
     : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
-  const advTotal = activeSubfields.size + excludedSubfields.size;
+  const advTotal = activeSubfields.size + excludedSubfields.size + (activeState ? 1 : 0);
   const advCount = advTotal > 0 ? ` (${advTotal})` : '';
   const advActive = (advancedExpanded || advTotal > 0) ? 'active' : '';
 
@@ -1421,6 +1471,20 @@ function buildAdvancedBar() {
   const interactHint = `Click to <span class="hint-include">include</span>, again to <span class="hint-exclude">exclude</span>, once more to clear.`;
   const sortedSubfields = [...CS_SUBFIELDS].sort((a, b) => a.localeCompare(b));
 
+  // Build state-dropdown options from states actually present in the dataset,
+  // sorted alphabetically by full name.
+  const presentStates = new Set();
+  for (const c of allColleges) {
+    const code = collegeLinks[c.name]?.state;
+    if (code && US_STATES[code]) presentStates.add(code);
+  }
+  const sortedStates = [...presentStates].sort((a, b) => US_STATES[a].localeCompare(US_STATES[b]));
+  const stateOptions = `<option value="">All states</option>` +
+    sortedStates.map(code => {
+      const sel = code === activeState ? ' selected' : '';
+      return `<option value="${esc(code)}"${sel}>${esc(US_STATES[code])}</option>`;
+    }).join('');
+
   bar.innerHTML =
     `<div class="adv-row adv-row-scope">
        <span class="filter-label">Scope</span>
@@ -1429,6 +1493,12 @@ function buildAdvancedBar() {
          <button data-scope="school"  class="${subfieldScope === 'school'  ? 'active' : ''}" role="tab" aria-selected="${subfieldScope === 'school'}">School</button>
        </div>
        <span class="adv-hint-inline">${scopeHint}</span>
+     </div>` +
+    `<div class="adv-row adv-row-state">
+       <span class="filter-label">State</span>
+       <select class="state-select ${activeState ? 'active' : ''}" id="state-select" aria-label="Filter by state">
+         ${stateOptions}
+       </select>
      </div>` +
     `<div class="adv-row adv-row-subfields">
        <span class="filter-label">Subfields</span>` +
@@ -1480,6 +1550,14 @@ function buildAdvancedBar() {
       buildFilterBar();
       renderAll();
     });
+  });
+
+  const stateEl = document.getElementById('state-select');
+  if (stateEl) stateEl.addEventListener('change', () => {
+    activeState = stateEl.value;
+    buildAdvancedBar();
+    buildFilterBar();
+    renderAll();
   });
 }
 
@@ -1586,6 +1664,7 @@ function aggregateCollege(college) {
 
 function renderAll() {
   const aggregated = allColleges
+    .filter(c => !activeState || collegeLinks[c.name]?.state === activeState)
     .filter(passesSchoolFilter)
     .map(aggregateCollege)
     .filter(c => c.total > 0);
