@@ -1,38 +1,56 @@
 #!/usr/bin/env python3
-"""Generate faculty_data.json for the web dashboard.
+"""Generate data.json for the web dashboard.
 
-Merges four CSVs (aligned by row order on (name, title, college)):
-  - faculty_list.csv                       → personal website url
-  - faculty_list_with_scholar_url.csv      → google scholar url
-  - faculty_list_with_verified_profile.csv → scholar match status + metrics + interests
-  - faculty_list_with_field.csv            → inferred field + subfields
+Single merged output keyed by college name, combining three previously
+separate JSONs:
 
-Only includes faculty whose `field` is "Computer Science" or "Invalid".
-The `interests` description prefers the LLM-inferred subfields; if absent and
-the scholar profile is trusted, falls back to scholar interests. Both are
-re-formatted to comma-separated.
+  - faculty records — from four row-aligned CSVs under data/:
+      faculty_list.csv                       → personal website url
+      faculty_list_with_scholar_url.csv      → google scholar url
+      faculty_list_with_verified_profile.csv → match status + citation metrics + interests
+      faculty_list_with_field.csv            → inferred field + subfields
+    Only rows whose `field` is "Computer Science" or "Invalid" are kept.
+    `scholar_match_status ∈ {matched, manual_approved}` counts as trusted;
+    untrusted rows still appear but their `scholar_url` and citation metrics
+    are suppressed.
+
+  - college metadata + links — from data/colleges.csv (state and the four
+    department/catalog/schedule URLs).
+
+  - course schedule — from data/course_schedule/<College>.csv; per-college
+    sorted terms (year, F→W→S→Su) and dedup'd course rows restricted to
+    academic years ≥ 2021-22. Instructor strings are matched against the
+    college's faculty so each term cell can carry initials + link.
+
+Only colleges with at least one CS/Invalid-field faculty row are emitted.
 """
 
+import argparse
 import csv
 import json
-import argparse
 import re
+import unicodedata
+from collections import defaultdict
 from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 DOCS = Path(__file__).parent
-DEFAULT_LIST       = ROOT / "data" / "faculty_list.csv"
-DEFAULT_SCHOLAR    = ROOT / "data" / "faculty_list_with_scholar_url.csv"
-DEFAULT_VERIFIED   = ROOT / "data" / "faculty_list_with_verified_profile.csv"
-DEFAULT_FIELD      = ROOT / "data" / "faculty_list_with_field.csv"
-DEFAULT_OUTPUT     = DOCS / "faculty_data.json"
-INDEX_HTML         = DOCS / "index.html"
-SITEMAP_XML        = DOCS / "sitemap.xml"
+DEFAULT_LIST     = ROOT / "data" / "faculty_list.csv"
+DEFAULT_SCHOLAR  = ROOT / "data" / "faculty_list_with_scholar_url.csv"
+DEFAULT_VERIFIED = ROOT / "data" / "faculty_list_with_verified_profile.csv"
+DEFAULT_FIELD    = ROOT / "data" / "faculty_list_with_field.csv"
+DEFAULT_COLLEGES = ROOT / "data" / "colleges.csv"
+DEFAULT_COURSES  = ROOT / "data" / "course_schedule"
+DEFAULT_OUTPUT   = DOCS / "data.json"
+INDEX_HTML       = DOCS / "index.html"
+SITEMAP_XML      = DOCS / "sitemap.xml"
 
 TRUSTED_STATUSES = {"matched", "manual_approved"}
 INCLUDED_FIELDS = {"Computer Science", "Invalid"}
 
+
+# ── faculty ────────────────────────────────────────────────────────────────
 
 def to_int(v: str) -> int | None:
     try:
@@ -75,7 +93,10 @@ def read_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(f))
 
 
-def build_data(list_path: Path, scholar_path: Path, verified_path: Path, field_path: Path) -> list[dict]:
+def build_faculty(list_path: Path, scholar_path: Path, verified_path: Path, field_path: Path) -> dict[str, dict]:
+    """Return {college_name: {faculty, total, matched, total_citations}}.
+    Insertion order follows the CSV row order, matching the legacy output.
+    """
     list_rows     = read_csv(list_path)
     scholar_rows  = read_csv(scholar_path)
     verified_rows = read_csv(verified_path)
@@ -118,21 +139,476 @@ def build_data(list_path: Path, scholar_path: Path, verified_path: Path, field_p
         }
         colleges.setdefault(base["college"], []).append(prof)
 
-    result = []
+    result: dict[str, dict] = {}
     for name, profs in colleges.items():
         trusted = [p for p in profs if p["status"] in TRUSTED_STATUSES]
         citations = [p["citedby"] for p in trusted if p["citedby"] is not None]
-        result.append(
-            {
-                "name": name,
-                "faculty": profs,
-                "total": len(profs),
-                "matched": len(trusted),
-                "total_citations": sum(citations),
+        result[name] = {
+            "faculty": profs,
+            "total": len(profs),
+            "matched": len(trusted),
+            "total_citations": sum(citations),
+        }
+    return result
+
+
+# ── college links ──────────────────────────────────────────────────────────
+
+def build_links(colleges_csv: Path, known: set[str]) -> dict[str, dict]:
+    result: dict[str, dict] = {}
+    with open(colleges_csv, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            name = row["Name"].strip()
+            try:
+                major = float(row["Major"] or 0)
+            except ValueError:
+                major = 0
+            if major < 1 or name not in known:
+                continue
+            result[name] = {
+                "state":        row["State"].strip() or None,
+                "program_url":  row["Program Link"].strip() or None,
+                "faculty_url":  row.get("Faculty Link", "").strip() or None,
+                "catalog_url":  row["Catalog Link"].strip() or None,
+                "schedule_url": row.get("Schedule Link", "").strip() or None,
             }
+    return result
+
+
+# ── course schedule ───────────────────────────────────────────────────────
+
+# Course-name patterns to exclude (case-insensitive).
+EXCLUDE_PATTERNS = [
+    r"\bindependent\b",
+    r"\bhonors?\b",
+    r"\bhon\b",
+    r"\bthesis\b",
+    r"\binternship\b",
+    r"\btutorial\b",
+    r"\bdirected (study|research|reading)\b",
+    r"\bdirrdg\b",
+    r"\bind st\b",
+    r"\bindividualized study\b",
+    r"\bsenior (project|research|capstone|honors)\b",
+    r"\bcomp(uter)? sci(ence)? research\b",
+    r"\bcs research\b",
+    r"^research( -|:|$)",
+    r"^research (- |in )",
+    r"\bresearch study\b",
+    r"\bstudent research\b",
+    r"\bundergrad(uate)? research\b",
+    r"\bgraduate research\b",
+    r"\bresearch assistantship\b",
+    r"\bcolloquium\b",
+    r"\bsenior seminar\b",
+    r"\bcapstone\b",
+    r"\bresearch seminar\b",
+    r"\bresearch sem\b",
+    r"\bcollaborative research\b",
+    r"\brsc research\b",
+    r"\bindividual study\b",
+    r"\bind study\b",
+    r"\bindep(t|endent)? study\b",
+    r"\bdir study\b",
+    r"\badvanced study\b",
+    r"\bnon-traditional study\b",
+    r"\bprivate reading\b",
+    r"\bind reading\b",
+    r"\bindep(t|endent)? reading\b",
+    r"\brecitation\b",
+]
+EXCLUDE_RE = re.compile("|".join(EXCLUDE_PATTERNS), re.IGNORECASE)
+
+MIN_YEAR = "2021-22"
+TERM_ORDER = {"F": 0, "W": 1, "S": 2, "Su": 3, "": 4}
+ALLOWED_TERMS = {"F", "W", "S"}
+
+_LAB_RE = re.compile(r"\blab(s|oratory)?\b", re.IGNORECASE)
+_LAB_COMBINED_RE = re.compile(
+    r"(?:\bw/|\bwith\s+|\band\s+|/)\s*lab(s|oratory)?\b",
+    re.IGNORECASE,
+)
+
+
+def has_cs_code(code: str) -> bool:
+    code = (code or "").lstrip()
+    return bool(code) and code[:1].upper() == "C"
+
+
+def is_excluded(name: str) -> bool:
+    return bool(name) and EXCLUDE_RE.search(name) is not None
+
+
+def is_lab_only(name: str) -> bool:
+    if not name or not _LAB_RE.search(name):
+        return False
+    return _LAB_COMBINED_RE.search(name) is None
+
+
+def term_label(year: str, term: str) -> str:
+    start, end = year.split("-")
+    yy = end[-2:] if term in ("W", "S", "Su") else start[-2:]
+    if not term:
+        return f"{start[-2:]}-{end[-2:]}"
+    return f"{term}{yy}"
+
+
+def natural_key(s: str) -> list:
+    return [int(p) if p.isdigit() else p.lower() for p in re.split(r"(\d+)", s)]
+
+
+# Instructor → faculty matching. Catalog scrapes use many formats:
+# "First Last", "First M. Last", "Last, First", "Last,Initial", "D.Bunde",
+# plus multi-instructor separators (`;`, `,`) and generic tokens like
+# "Staff" / "TBA". Parse each row into (first, last) tuples and match
+# against the college's faculty by last-token equality + first-name
+# agreement.
+
+_GENERIC_RE = re.compile(
+    r"^("
+    r"staff|tba|tbd|tba/tba|faculty|to be announced|unknown faculty|"
+    r"instructor[\s\-]?tba|department staff|csb staff|"
+    r"a&s|shss|full[\s\-]?time faculty|adjunct|"
+    r"announced|instructor|none|n/a"
+    r")$",
+    re.IGNORECASE,
+)
+_INITIALS_LAST_RE = re.compile(r"^((?:[A-Z]\.\s*){1,3})([A-Z][a-z][A-Za-z'\-]+)$")
+
+
+def _norm(s: str) -> str:
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return s.lower().strip()
+
+
+def _is_generic(s: str) -> bool:
+    s = s.strip().rstrip(",").rstrip(".").strip()
+    if not s:
+        return True
+    return bool(_GENERIC_RE.match(s))
+
+
+def _split_no_semi(s: str) -> list[str]:
+    s = s.strip()
+    if not s:
+        return []
+    if "," not in s:
+        return [] if _is_generic(s) else [s]
+    parts = [p.strip() for p in s.split(",") if p.strip()]
+    kept = [p for p in parts if not _is_generic(p)]
+    if not kept:
+        return []
+    if len(kept) == 1:
+        return kept
+    if len(kept) == 2:
+        if " " in kept[0] and " " in kept[1]:
+            return kept
+        return [", ".join(kept)]
+    return kept
+
+
+def split_instructors(raw: str) -> list[str]:
+    s = raw.strip()
+    if not s:
+        return []
+    if ";" in s:
+        out: list[str] = []
+        for p in s.split(";"):
+            out.extend(_split_no_semi(p))
+        return out
+    return _split_no_semi(s)
+
+
+def parse_instructor_name(s: str) -> tuple[str, str] | None:
+    s = s.strip().strip(",").strip()
+    if not s or _is_generic(s):
+        return None
+    m = _INITIALS_LAST_RE.match(s)
+    if m:
+        return (m.group(1).strip()[0].lower(), _norm(m.group(2)))
+    if "," in s:
+        last, _, rest = s.partition(",")
+        last = _norm(last)
+        rest_tokens = [t.rstrip(".") for t in rest.split() if t.strip()]
+        if not last or not rest_tokens:
+            return None
+        return (_norm(rest_tokens[0]), last)
+    tokens = [t for t in s.split() if t]
+    if len(tokens) < 2:
+        return None
+    return (_norm(tokens[0].rstrip(".")), _norm(tokens[-1]))
+
+
+def _parse_faculty_name(name: str) -> tuple[str, str] | None:
+    tokens = [t for t in name.split() if t]
+    if len(tokens) < 2:
+        return None
+    return (_norm(tokens[0]), _norm(tokens[-1]))
+
+
+def _match_one(parsed, faculty_index: list[tuple[str, str, dict]]) -> dict | None:
+    if not parsed:
+        return None
+    pfirst, plast = parsed
+    plast_tok = plast.rsplit(" ", 1)[-1]
+    cands: list[tuple[int, dict]] = []
+    last_only: list[dict] = []
+    for ffirst, flast, f in faculty_index:
+        if flast != plast_tok:
+            continue
+        last_only.append(f)
+        if pfirst == ffirst:
+            cands.append((2, f))
+        elif len(pfirst) == 1 and pfirst == ffirst[:1]:
+            cands.append((1, f))
+        elif len(ffirst) == 1 and ffirst == pfirst[:1]:
+            cands.append((1, f))
+    if cands:
+        cands.sort(key=lambda x: -x[0])
+        if len(cands) == 1 or cands[0][0] > cands[1][0]:
+            return cands[0][1]
+        return None
+    if len(last_only) == 1:
+        return last_only[0]
+    return None
+
+
+def faculty_match_index(faculty_by_college: dict[str, dict]) -> dict[str, list[dict]]:
+    """Adapt the faculty map into the per-college list of matchable people
+    (with initials label + best link) needed by instructor matching."""
+    out: dict[str, list[dict]] = {}
+    for college, entry in faculty_by_college.items():
+        people = []
+        for p in entry.get("faculty", []):
+            url = p.get("url") or p.get("scholar_url") or None
+            tokens = [t for t in p["name"].split() if t]
+            if len(tokens) >= 2:
+                label = (tokens[0][:1] + tokens[-1][:1]).upper()
+            elif tokens:
+                label = tokens[0][:2].upper()
+            else:
+                label = "?"
+            people.append({"name": p["name"], "url": url, "label": label})
+        out[college] = people
+    return out
+
+
+def match_instructors(raw: str, faculty: list[dict]) -> tuple[list[dict], bool]:
+    if not faculty:
+        return [], False
+    pieces = split_instructors(raw)
+    if not pieces:
+        return [], False
+    index = []
+    for p in faculty:
+        parsed = _parse_faculty_name(p["name"])
+        if parsed:
+            index.append((parsed[0], parsed[1], p))
+    matched: list[dict] = []
+    seen_names: set[str] = set()
+    had_specific = False
+    for piece in pieces:
+        parsed = parse_instructor_name(piece)
+        if parsed is None:
+            continue
+        had_specific = True
+        m = _match_one(parsed, index)
+        if m and m["name"] not in seen_names:
+            seen_names.add(m["name"])
+            matched.append(m)
+    return matched, had_specific
+
+
+def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) -> dict[str, dict]:
+    result: dict[str, dict] = {}
+    _stats = {"cells_total": 0, "cells_matched": 0, "instructors_matched": 0}
+
+    csv_paths = sorted(input_dir.glob("*.csv"))
+
+    # Global max academic year across every CSV — used to drop one-off
+    # courses that haven't been taught in the latest 4 AYs.
+    global_max_year_start = 0
+    for csv_path in csv_paths:
+        with open(csv_path, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                y = (r.get("academic_year") or "").strip()
+                if y >= MIN_YEAR and (r.get("term") or "").strip() in ALLOWED_TERMS:
+                    try:
+                        ys = int(y.split("-")[0])
+                    except ValueError:
+                        continue
+                    if ys > global_max_year_start:
+                        global_max_year_start = ys
+    recent_cutoff = global_max_year_start - 3 if global_max_year_start else 0
+
+    for csv_path in csv_paths:
+        with open(csv_path, newline="", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        if not rows:
+            continue
+
+        college = rows[0]["college"]
+        all_terms: set[tuple[str, str]] = set()
+        offered: dict[str, set[tuple[str, str]]] = defaultdict(set)
+        url_by_cell: dict[str, dict[tuple[str, str], str]] = defaultdict(dict)
+        name_obs: dict[str, list[tuple[tuple[str, int], str, bool]]] = defaultdict(list)
+        instr_strs: dict[str, dict[tuple[str, str], list[str]]] = defaultdict(lambda: defaultdict(list))
+
+        for r in rows:
+            year = r["academic_year"]
+            term = r["term"]
+            if year < MIN_YEAR or term not in ALLOWED_TERMS:
+                continue
+            code = (r["course_code"] or "").strip()
+            name = (r["course_name"] or "").strip().strip('"')
+            if not code or not has_cs_code(code) or is_excluded(name):
+                continue
+            all_terms.add((year, term))
+            offered[code].add((year, term))
+            url = (r.get("url") or "").strip()
+            if url and (year, term) not in url_by_cell[code]:
+                url_by_cell[code][(year, term)] = url
+            if name:
+                tkey = (year, TERM_ORDER.get(term, 99))
+                name_obs[code].append((tkey, name, is_lab_only(name)))
+            instructor = (r.get("instructor") or "").strip()
+            if instructor:
+                instr_strs[code][(year, term)].append(instructor)
+
+        latest_name: dict[str, str] = {}
+        codes_set = set(offered.keys())
+        drop_codes: set[str] = {
+            code for code in codes_set
+            if len(code) > 1 and code.endswith("L") and code[:-1] in codes_set
+        }
+        for code in list(offered.keys()):
+            obs = name_obs.get(code, [])
+            non_lab = [o for o in obs if not o[2]]
+            if non_lab:
+                latest_name[code] = max(non_lab, key=lambda o: o[0])[1]
+            elif obs:
+                drop_codes.add(code)
+
+        if recent_cutoff:
+            for code in list(offered.keys()):
+                if code in drop_codes:
+                    continue
+                if len(offered[code]) != 1:
+                    continue
+                ((sole_year, _),) = tuple(offered[code])
+                if int(sole_year.split("-")[0]) < recent_cutoff:
+                    drop_codes.add(code)
+
+        for code in drop_codes:
+            offered.pop(code, None)
+            url_by_cell.pop(code, None)
+
+        if not offered:
+            continue
+
+        sorted_terms = sorted(all_terms, key=lambda yt: (yt[0], TERM_ORDER.get(yt[1], 99)))
+        sorted_codes = sorted(offered.keys(), key=natural_key)
+
+        per_term_mode = any(
+            len({u for u in url_by_cell.get(code, {}).values() if u}) >= 2
+            for code in sorted_codes
+        )
+        course_url = {
+            code: next(iter({u for u in url_by_cell.get(code, {}).values() if u}), None)
+            for code in sorted_codes
+        }
+        college_unique_urls = {u for u in course_url.values() if u}
+        drop_title_urls = (not per_term_mode) and len(college_unique_urls) <= 1
+
+        college_faculty = faculty_by_college.get(college, [])
+
+        courses_out = []
+        for code in sorted_codes:
+            cell_urls = url_by_cell.get(code, {})
+            entry: dict = {"code": code, "name": latest_name.get(code, "")}
+            if per_term_mode:
+                entry["offered"] = [
+                    (cell_urls.get((y, t), "") or 1) if (y, t) in offered[code] else 0
+                    for (y, t) in sorted_terms
+                ]
+            else:
+                entry["offered"] = [
+                    1 if (y, t) in offered[code] else 0 for (y, t) in sorted_terms
+                ]
+                if course_url[code] and not drop_title_urls:
+                    entry["url"] = course_url[code]
+
+            if college_faculty:
+                instr_col: list = []
+                for (y, t) in sorted_terms:
+                    if (y, t) not in offered[code]:
+                        instr_col.append(None)
+                        continue
+                    raws = instr_strs.get(code, {}).get((y, t), [])
+                    _stats["cells_total"] += 1
+                    if not raws:
+                        instr_col.append(None)
+                        continue
+                    matched_all: list[dict] = []
+                    seen_names: set[str] = set()
+                    had_specific = False
+                    for raw in raws:
+                        m, hs = match_instructors(raw, college_faculty)
+                        had_specific = had_specific or hs
+                        for f in m:
+                            if f["name"] in seen_names:
+                                continue
+                            seen_names.add(f["name"])
+                            matched_all.append(f)
+                    if matched_all:
+                        _stats["cells_matched"] += 1
+                        _stats["instructors_matched"] += len(matched_all)
+                        instr_col.append([
+                            {"l": f["label"], "n": f["name"], "u": f.get("url")}
+                            for f in matched_all
+                        ])
+                    else:
+                        instr_col.append(None)
+                if any(x is not None for x in instr_col):
+                    entry["instructors"] = instr_col
+
+            courses_out.append(entry)
+
+        result[college] = {
+            "terms": [
+                {"year": y, "term": t, "label": term_label(y, t)}
+                for (y, t) in sorted_terms
+            ],
+            "courses": courses_out,
+        }
+
+    if faculty_by_college and _stats["cells_total"]:
+        pct = 100 * _stats["cells_matched"] / _stats["cells_total"]
+        print(
+            f"Instructor matching: {_stats['cells_matched']}/{_stats['cells_total']} "
+            f"cells ({pct:.1f}%) with at least one matched instructor; "
+            f"{_stats['instructors_matched']} total instructor links."
         )
 
     return result
+
+
+# ── merge + date sync ─────────────────────────────────────────────────────
+
+def merge(faculty: dict[str, dict], links: dict[str, dict], courses: dict[str, dict]) -> dict[str, dict]:
+    """Combine the three per-college maps. Iteration follows the faculty map
+    insertion order (CSV row order), preserving the legacy UI ordering."""
+    out: dict[str, dict] = {}
+    for name, fac in faculty.items():
+        entry: dict = {}
+        if name in links:
+            entry.update(links[name])
+        entry.update(fac)
+        if name in courses:
+            entry.update(courses[name])
+        out[name] = entry
+    return out
 
 
 def _ordinal(n: int) -> str:
@@ -144,19 +620,13 @@ def _ordinal(n: int) -> str:
 
 
 def _human_date(d: date) -> str:
-    # e.g. "May 15th 2026" — matches the format already in index.html's about-text.
     return f"{d.strftime('%B')} {_ordinal(d.day)} {d.year}"
 
 
 def sync_dates(today: date) -> None:
-    """Keep the published date in three SEO-relevant locations in sync.
-
-    Updates ISO `YYYY-MM-DD` in the JSON-LD `dateModified` field and in
-    `sitemap.xml`'s `<lastmod>`, plus the human-readable "Data was last
-    updated on …" line in the page footer. Each substitution is anchored
-    on a unique surrounding marker so it can't silently match the wrong
-    occurrence.
-    """
+    """Keep the published date in three SEO-relevant locations in sync:
+    JSON-LD `dateModified`, sitemap.xml `<lastmod>`, and the human-readable
+    "Data was last updated on …" line in the page footer."""
     iso = today.isoformat()
     human = _human_date(today)
 
@@ -190,26 +660,34 @@ def sync_dates(today: date) -> None:
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--list",     type=Path, default=DEFAULT_LIST)
-    parser.add_argument("--scholar",  type=Path, default=DEFAULT_SCHOLAR)
-    parser.add_argument("--verified", type=Path, default=DEFAULT_VERIFIED)
-    parser.add_argument("--field",    type=Path, default=DEFAULT_FIELD)
-    parser.add_argument("--output",   type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--no-sync-dates", action="store_true",
-                        help="Skip updating JSON-LD/sitemap/footer dates.")
-    args = parser.parse_args()
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--list",     type=Path, default=DEFAULT_LIST)
+    p.add_argument("--scholar",  type=Path, default=DEFAULT_SCHOLAR)
+    p.add_argument("--verified", type=Path, default=DEFAULT_VERIFIED)
+    p.add_argument("--field",    type=Path, default=DEFAULT_FIELD)
+    p.add_argument("--colleges", type=Path, default=DEFAULT_COLLEGES)
+    p.add_argument("--courses-dir", type=Path, default=DEFAULT_COURSES)
+    p.add_argument("--output",   type=Path, default=DEFAULT_OUTPUT)
+    p.add_argument("--no-sync-dates", action="store_true",
+                   help="Skip updating JSON-LD/sitemap/footer dates.")
+    args = p.parse_args()
 
-    data = build_data(args.list, args.scholar, args.verified, args.field)
+    faculty = build_faculty(args.list, args.scholar, args.verified, args.field)
+    links = build_links(args.colleges, set(faculty.keys()))
+    courses = build_courses(args.courses_dir, faculty_match_index(faculty))
+    merged = merge(faculty, links, courses)
+
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
+        json.dump(merged, f, indent=2)
 
     if not args.no_sync_dates:
         sync_dates(date.today())
 
-    total_faculty = sum(c["total"] for c in data)
-    print(f"Wrote {len(data)} colleges, {total_faculty} faculty → {args.output}")
+    total_faculty = sum(c["total"] for c in merged.values())
+    total_courses = sum(len(c.get("courses", [])) for c in merged.values())
+    print(f"Wrote {len(merged)} colleges, {total_faculty} faculty, "
+          f"{total_courses} courses → {args.output}")
 
 
 if __name__ == "__main__":

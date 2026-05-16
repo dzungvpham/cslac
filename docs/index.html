@@ -1246,22 +1246,12 @@
       "name": "Dzung Pham",
       "url": "https://dzungvpham.github.io/"
     },
-    "dateModified": "2026-05-15",
+    "dateModified": "2026-05-16",
     "distribution": [
       {
         "@type": "DataDownload",
         "encodingFormat": "application/json",
-        "contentUrl": "https://cslac.org/faculty_data.json"
-      },
-      {
-        "@type": "DataDownload",
-        "encodingFormat": "application/json",
-        "contentUrl": "https://cslac.org/course_schedule_data.json"
-      },
-      {
-        "@type": "DataDownload",
-        "encodingFormat": "application/json",
-        "contentUrl": "https://cslac.org/college_links.json"
+        "contentUrl": "https://cslac.org/data.json"
       }
     ]
   }
@@ -1289,9 +1279,7 @@
     <p>This dashboard requires JavaScript to render. The underlying data is
     available as JSON:</p>
     <ul>
-      <li><a href="faculty_data.json">faculty_data.json</a> — faculty records by college</li>
-      <li><a href="course_schedule_data.json">course_schedule_data.json</a> — per-college course offerings</li>
-      <li><a href="college_links.json">college_links.json</a> — department websites and course-catalog links</li>
+      <li><a href="data.json">data.json</a> — per-college map of faculty records, department/catalog/schedule links, and course offerings</li>
     </ul>
     <p>Source code and methodology:
       <a href="https://github.com/dzungvpham/cslac">github.com/dzungvpham/cslac</a>.</p>
@@ -1469,15 +1457,35 @@ function loadSpriteImage() {
 }
 
 async function loadData() {
-  const [facultyRes, linksRes, coursesRes] = await Promise.all([
-    fetch('faculty_data.json'),
-    fetch('college_links.json'),
-    fetch('course_schedule_data.json'),
+  const [dataRes] = await Promise.all([
+    fetch('data.json'),
     loadSpriteImage(),
   ]);
-  allColleges = await facultyRes.json();
-  collegeLinks = await linksRes.json();
-  courseSchedules = await coursesRes.json();
+  const merged = await dataRes.json();
+  // Split the merged per-college map back into the three structures the
+  // rendering code expects.
+  allColleges = [];
+  collegeLinks = {};
+  courseSchedules = {};
+  for (const [name, d] of Object.entries(merged)) {
+    allColleges.push({
+      name,
+      faculty: d.faculty || [],
+      total: d.total || 0,
+      matched: d.matched || 0,
+      total_citations: d.total_citations || 0,
+    });
+    collegeLinks[name] = {
+      state: d.state ?? null,
+      program_url: d.program_url ?? null,
+      faculty_url: d.faculty_url ?? null,
+      catalog_url: d.catalog_url ?? null,
+      schedule_url: d.schedule_url ?? null,
+    };
+    if (d.terms) {
+      courseSchedules[name] = { terms: d.terms, courses: d.courses };
+    }
+  }
 
   // Precompute a normalized lookup of each faculty's interests so the
   // subfield filter can match in O(1) per chip.
