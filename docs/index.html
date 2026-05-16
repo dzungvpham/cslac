@@ -315,7 +315,6 @@
 
     /* college data row */
     .college-row {
-      border-bottom: 1px solid var(--border);
       /* Scope sticky children's z-indices to this row. Without isolation,
          .fac-head-row's mobile z-index 30 (used so rotated labels paint
          above .panel-toggle within the row) competes with .col-head-row
@@ -332,7 +331,15 @@
       background: var(--bg);
       transition: background 0.1s;
     }
-    .college-summary:hover { background: var(--hover-bg); }
+    /* Zebra striping replaces the 1px row divider. Chrome/Windows at
+       fractional device-pixel scale (e.g. 125%, 150%) would alpha-blend
+       hairline row borders to near-invisible on every other row whenever a
+       panel opened (a Chrome compositing quirk we couldn't reproduce away),
+       so we use alternating row backgrounds as the visual separator instead. */
+    .college-row:nth-child(even) .college-summary { background: var(--bg-alt); }
+    /* Hover wins on both odd and even rows. Same specificity as the
+       :nth-child rule above, so it must come after in source order. */
+    .college-row .college-summary:hover { background: var(--hover-bg); }
     .college-summary .col-grid { padding: 0; }
 
     .td {
@@ -435,6 +442,11 @@
       display: none;
       background: var(--expand-bg);
       border-top: 1px solid var(--border-sub);
+      /* Divider between an expanded panel and the next college row.
+         Closed rows rely on zebra striping for separation, but the panel's
+         background (--expand-bg) matches --bg-alt on even rows below, so
+         without this line the panel would visually bleed into the next row. */
+      border-bottom: 1px solid var(--border);
     }
     .college-row.open .faculty-panel { display: block; }
 
@@ -442,9 +454,15 @@
       padding: 0 12px 8px 36px; /* indent to align past the chevron */
       animation: fadeSlide 0.18s ease;
     }
+    /* Opacity-only fade. A previous version animated `transform: translateY`
+       too, but on Chrome/Windows at fractional device scale that promoted
+       the panel to a compositor layer which lingered after the animation
+       and caused 1px row borders at fractional positions to alpha-blend to
+       invisible on every other college row. Hovering forced a repaint that
+       restored them. */
     @keyframes fadeSlide {
-      from { opacity: 0; transform: translateY(-4px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; }
+      to   { opacity: 1; }
     }
 
     /* faculty column grid — all 6 metric columns equal width (fits 6-digit numbers) */
