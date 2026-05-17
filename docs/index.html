@@ -32,7 +32,7 @@
     /* ── themes ── */
     :root {
       --bg:         #eff1f5;
-      --bg-alt:     #e6e9ef;
+      --bg-alt:     #e9ebf1;
       --border:     #bcc0cc;
       --border-sub: #ccd0da;
       --text:       #4c4f69;
@@ -53,7 +53,7 @@
     }
     [data-theme="dark"] {
       --bg:         #303446;
-      --bg-alt:     #292c3c;
+      --bg-alt:     #414559;
       --border:     #51576d;
       --border-sub: #414559;
       --text:       #c6d0f5;
@@ -442,10 +442,10 @@
       display: none;
       background: var(--expand-bg);
       border-top: 1px solid var(--border-sub);
-      /* Divider between an expanded panel and the next college row.
-         Closed rows rely on zebra striping for separation, but the panel's
-         background (--expand-bg) matches --bg-alt on even rows below, so
-         without this line the panel would visually bleed into the next row. */
+      /* Divider between an expanded panel and the next college row. The
+         panel's --expand-bg is intentionally distinct from --bg-alt so the
+         table contents don't blur into the next zebra row, but the hairline
+         keeps the boundary crisp regardless of theme. */
       border-bottom: 1px solid var(--border);
     }
     .college-row.open .faculty-panel { display: block; }
@@ -2008,9 +2008,23 @@ function sortedColleges(colleges) {
 // ── render colleges ────────────────────────────────────────────────────────
 function renderColleges(colleges) {
   const list = document.getElementById('colleges-list');
+  // Snapshot open/panel state from the rows being torn down so a filter,
+  // sort, or search re-render doesn't collapse rows the user had expanded.
+  const preserved = new Map();
+  list.querySelectorAll('.college-row').forEach(row => {
+    if (!row.classList.contains('open')) return;
+    const name = row.querySelector('.cn-full')?.textContent;
+    if (!name) return;
+    const panel = row.querySelector('.faculty-panel-inner');
+    preserved.set(name, {
+      view: panel?._view,
+      showColumbia: panel?._showColumbia,
+      termOffset: panel?._termOffset,
+    });
+  });
   list.innerHTML = '';
   sortedColleges(colleges).forEach((college, idx) => {
-    list.appendChild(buildCollegeRow(college, idx));
+    list.appendChild(buildCollegeRow(college, idx, preserved.get(college.name)));
   });
 }
 
@@ -2030,7 +2044,7 @@ function abbrev(n) {
   return (Number.isInteger(r) ? r.toFixed(0) : r.toFixed(1)) + 'k';
 }
 
-function buildCollegeRow(college, idx) {
+function buildCollegeRow(college, idx, priorOpenState) {
   const div = document.createElement('div');
   div.className = 'college-row';
 
@@ -2085,7 +2099,13 @@ function buildCollegeRow(college, idx) {
   const panel = div.querySelector(`#fac-panel-${idx}`);
   panel._build = () => buildPanel(panel, college);
 
-  if (expandAllOn) {
+  if (priorOpenState) {
+    if (priorOpenState.view !== undefined) panel._view = priorOpenState.view;
+    if (priorOpenState.showColumbia !== undefined) panel._showColumbia = priorOpenState.showColumbia;
+    if (priorOpenState.termOffset !== undefined) panel._termOffset = priorOpenState.termOffset;
+  }
+
+  if (expandAllOn || priorOpenState) {
     div.classList.add('open');
     panel._build();
     panel._built = true;
