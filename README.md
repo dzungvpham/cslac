@@ -55,7 +55,17 @@ The faculty and course pipelines are each run as a sequence of Python scripts; s
 
 ## Citing
 
-If you use this data or code, please cite it using the metadata in [`CITATION.cff`](CITATION.cff).
+If you use this data or code, please cite it as follows:
+
+```
+@misc{pham2026cslac,
+author = {Pham, Dzung},
+month = jun,
+title = {{CSLAC: Computer Science at Liberal Arts Colleges}},
+url = {https://github.com/dzungvpham/cslac},
+year = {2026}
+}
+```
 
 ## Disclaimer
 
