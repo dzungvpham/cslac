@@ -1,4 +1,4 @@
-# CSLAC: Computer Science at Liberal Arts Colleges
+# CSLAC: Computer Science at Liberal Arts Colleges in the US
 
 This repository contains the source code and data for the [cslac.org](https://cslac.org) website.
 CSLAC collects data on Computer Science faculty and courses from almost all liberal arts colleges in the US.
