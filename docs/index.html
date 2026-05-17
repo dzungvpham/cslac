@@ -937,6 +937,23 @@
       border-color: var(--accent);
     }
     .expand-toggle svg { width: 12px; height: 12px; }
+    .search-input {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 12px;
+      padding: 5px 11px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--text);
+      width: 180px;
+      transition: border-color 0.12s, color 0.12s;
+    }
+    .search-input::placeholder { color: var(--muted); }
+    .search-input:hover { border-color: var(--text); }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
 
     /* ── advanced (subfield) filter rows ── */
     .advanced-bar {
@@ -1041,6 +1058,7 @@
 
       .filter-bar { padding: 12px 0; gap: 8px; }
       .filter-spacer { display: none; }
+      .search-input { flex: 1 1 140px; width: auto; min-width: 0; }
 
       /* main college grid: shrink metric columns to fit ~360px viewports.
          minmax(0,1fr) — not 1fr — so the name column can shrink below its
@@ -1438,6 +1456,10 @@ let excludedSubfields = new Set();
 let subfieldScope = 'faculty'; // 'faculty' | 'school'
 let activeState = '';
 let advancedExpanded = false;
+let searchQuery = '';
+let searchDraft = '';
+let searchTimer = null;
+let expandAllOn = false;
 
 // USPS state/territory codes → full names. Used by the advanced state filter.
 const US_STATES = {
@@ -1508,11 +1530,15 @@ async function loadData() {
   // Precompute a normalized lookup of each faculty's interests so the
   // subfield filter can match in O(1) per chip.
   for (const c of allColleges) {
+    const collegeLc = c.name.toLowerCase();
     for (const f of c.faculty) {
       f._interestsSet = new Set(
         (f.interests || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
       );
+      f._search = [f.name, f.title, f.interests, c.name]
+        .filter(Boolean).join(' ').toLowerCase();
     }
+    c._search = collegeLc;
     c.courses_per_year = coursesInLatestYear(courseSchedules[c.name]);
   }
 
@@ -1579,9 +1605,8 @@ function categoryCounts() {
 function buildFilterBar() {
   const bar = document.getElementById('filter-bar');
   const counts = categoryCounts();
-  const allOpen = areAllOpen();
-  const expandLabel = allOpen ? 'Collapse all' : 'Expand all';
-  const expandIcon = allOpen
+  const expandLabel = expandAllOn ? 'Collapse all' : 'Expand all';
+  const expandIcon = expandAllOn
     ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
     : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
   const advIcon = advancedExpanded
@@ -1590,6 +1615,14 @@ function buildFilterBar() {
   const advTotal = activeSubfields.size + excludedSubfields.size + (activeState ? 1 : 0);
   const advCount = advTotal > 0 ? ` (${advTotal})` : '';
   const advActive = (advancedExpanded || advTotal > 0) ? 'active' : '';
+
+  // Preserve focus + caret position on the search input across rebuilds
+  // (chip clicks call buildFilterBar(), which would otherwise blow it away).
+  const prevSearch = document.getElementById('search-input');
+  const searchHadFocus = prevSearch && document.activeElement === prevSearch;
+  const searchCaret = searchHadFocus
+    ? [prevSearch.selectionStart, prevSearch.selectionEnd]
+    : null;
 
   bar.innerHTML =
     `<span class="filter-label">Show</span>` +
@@ -1600,8 +1633,16 @@ function buildFilterBar() {
       </button>`;
     }).join('') +
     `<span class="filter-spacer"></span>` +
+    `<input type="text" class="search-input" id="search-input" placeholder="Search…"
+      aria-label="Search faculty" value="${esc(searchDraft)}" />` +
     `<button class="expand-toggle ${advActive}" id="advanced-toggle">${advIcon}Advanced filter${advCount}</button>` +
     `<button class="expand-toggle" id="expand-toggle">${expandIcon}${expandLabel}</button>`;
+
+  if (searchHadFocus) {
+    const el = document.getElementById('search-input');
+    el.focus();
+    try { el.setSelectionRange(searchCaret[0], searchCaret[1]); } catch (_) {}
+  }
 
   bar.querySelectorAll('.filter-chip').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -1618,6 +1659,26 @@ function buildFilterBar() {
     advancedExpanded = !advancedExpanded;
     document.getElementById('advanced-bar').classList.toggle('collapsed', !advancedExpanded);
     buildFilterBar();
+  });
+  const searchEl = document.getElementById('search-input');
+  const commitSearch = () => {
+    clearTimeout(searchTimer);
+    searchTimer = null;
+    if (searchQuery !== searchDraft) {
+      searchQuery = searchDraft;
+      renderAll();
+    }
+  };
+  searchEl.addEventListener('input', e => {
+    searchDraft = e.target.value;
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(commitSearch, 1000);
+  });
+  searchEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      commitSearch();
+    }
   });
 }
 
@@ -1748,15 +1809,10 @@ function visibleRows() {
   return document.querySelectorAll('#colleges-list .college-row');
 }
 
-function areAllOpen() {
-  const rows = visibleRows();
-  return rows.length > 0 && Array.from(rows).every(r => r.classList.contains('open'));
-}
-
 function toggleExpandAll() {
-  const expand = !areAllOpen();
+  expandAllOn = !expandAllOn;
   visibleRows().forEach(row => {
-    if (expand && !row.classList.contains('open')) {
+    if (expandAllOn && !row.classList.contains('open')) {
       row.classList.add('open');
       const panel = row.querySelector('.faculty-panel-inner');
       if (panel && !panel._built) {
@@ -1764,7 +1820,7 @@ function toggleExpandAll() {
         panel._built = true;
         updateRowVars(row);
       }
-    } else if (!expand) {
+    } else if (!expandAllOn) {
       row.classList.remove('open');
     }
   });
@@ -1777,6 +1833,9 @@ function filteredFaculty(college) {
   const subActive = facultyScope && activeSubfields.size > 0;
   const subExclude = facultyScope && excludedSubfields.size > 0;
   const catActive = activeCategories.size > 0;
+  const q = searchQuery.trim().toLowerCase();
+  // If the college name itself matches, every faculty row passes the search.
+  const collegeHit = q && college._search.includes(q);
   return college.faculty.filter(f => {
     if (catActive && !activeCategories.has(f.category)) return false;
     if (subActive) {
@@ -1791,6 +1850,7 @@ function filteredFaculty(college) {
         if (f._interestsSet.has(s.toLowerCase())) return false;
       }
     }
+    if (q && !collegeHit && !f._search.includes(q)) return false;
     return true;
   });
 }
@@ -2024,6 +2084,13 @@ function buildCollegeRow(college, idx) {
 
   const panel = div.querySelector(`#fac-panel-${idx}`);
   panel._build = () => buildPanel(panel, college);
+
+  if (expandAllOn) {
+    div.classList.add('open');
+    panel._build();
+    panel._built = true;
+    // updateRowVars runs after this row is in the DOM — see renderColleges.
+  }
 
   div.querySelector('.college-summary').addEventListener('click', () => {
     const wasOpen = div.classList.contains('open');
