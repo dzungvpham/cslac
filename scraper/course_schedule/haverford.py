@@ -48,6 +48,7 @@ class HaverfordScraper(CourseScheduleScraper):
     college = College.HAVERFORD
     terms = ["F", "S"]
     page_load_timeout = 60
+    public_url_template = True
 
     @staticmethod
     def _semester(academic_year, term):

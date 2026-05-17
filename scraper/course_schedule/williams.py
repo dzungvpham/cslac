@@ -33,6 +33,7 @@ CODE_RE = re.compile(
 class WilliamsScraper(CourseScheduleScraper):
     college = College.WILLIAMS
     wait_for = "a.classinfo"
+    public_url_template = True
     # The listing page covers all terms at once, so we leave `terms` empty
     # and ignore the `term` argument in `url_for` / `parse_page`.
 

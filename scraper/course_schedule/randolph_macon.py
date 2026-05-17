@@ -44,6 +44,7 @@ class RandolphMaconScraper(CourseScheduleScraper):
     terms = ["F", "S"]
     # Pure-HTML endpoint, no Selenium needed.
     fresh_driver_per_load = False
+    public_url_template = True
 
     def __init__(self, driver=None):
         super().__init__(driver)

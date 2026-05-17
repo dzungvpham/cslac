@@ -48,6 +48,7 @@ class BrynMawrScraper(CourseScheduleScraper):
     college = College.BRYN_MAWR
     terms = ["F", "S"]
     wait_for = "table.result-table"
+    public_url_template = True
 
     def url_for(self, academic_year, term):
         start_year, end_year = academic_year

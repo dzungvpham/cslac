@@ -154,7 +154,33 @@ def build_faculty(list_path: Path, scholar_path: Path, verified_path: Path, fiel
 
 # ── college links ──────────────────────────────────────────────────────────
 
+def latest_schedule_url_overrides() -> dict[str, str]:
+    """Map college name → latest-term schedule URL for scrapers whose URL
+    rotates by term/year. Computed from each scraper's `latest_public_url()`;
+    only scrapers that opt in (`public_url_template = True` or a custom
+    `public_url_for`) contribute. If the scraper package can't be imported
+    (e.g. missing optional deps), we silently return an empty map and fall
+    back to the URLs in colleges.csv.
+    """
+    overrides: dict[str, str] = {}
+    import sys as _sys
+    _sys.path.insert(0, str(ROOT / "scraper"))
+    try:
+        from course_schedule.scrape_course_schedule import SCRAPERS
+    except Exception:
+        return overrides
+    for cls in SCRAPERS:
+        try:
+            url = cls.latest_public_url()
+        except Exception:
+            url = None
+        if url:
+            overrides[str(cls.college)] = url
+    return overrides
+
+
 def build_links(colleges_csv: Path, known: set[str]) -> dict[str, dict]:
+    schedule_overrides = latest_schedule_url_overrides()
     result: dict[str, dict] = {}
     with open(colleges_csv, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
@@ -165,12 +191,17 @@ def build_links(colleges_csv: Path, known: set[str]) -> dict[str, dict]:
                 major = 0
             if major < 1 or name not in known:
                 continue
+            schedule_url = (
+                schedule_overrides.get(name)
+                or row.get("Schedule Link", "").strip()
+                or None
+            )
             result[name] = {
                 "state":        row["State"].strip() or None,
                 "program_url":  row["Program Link"].strip() or None,
                 "faculty_url":  row.get("Faculty Link", "").strip() or None,
                 "catalog_url":  row["Catalog Link"].strip() or None,
-                "schedule_url": row.get("Schedule Link", "").strip() or None,
+                "schedule_url": schedule_url,
             }
     return result
 

@@ -1275,7 +1275,7 @@
     "program_url": "https://www.amherst.edu/academiclife/departments/computer_science",
     "faculty_url": "https://www.amherst.edu/academiclife/departments/computer_science/faculty",
     "catalog_url": null,
-    "schedule_url": "https://www.amherst.edu/academiclife/departments/computer_science/courses",
+    "schedule_url": "https://www.amherst.edu/academiclife/departments/computer_science/courses/2526S",
     "faculty": [
       {
         "name": "Scott P. Alfeld",
@@ -9167,7 +9167,7 @@
     "program_url": "https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science",
     "faculty_url": "https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science/faculty-staff",
     "catalog_url": "https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science/courses",
-    "schedule_url": "https://www.brynmawr.edu/inside/academic-information/registrar/tri-co-course-search/results?semester%5B0%5D=fall_2023&department%5B0%5D=Computer%20Science&college%5B0%5D=bryn_mawr&page=1&per_page=50",
+    "schedule_url": "https://www.brynmawr.edu/inside/academic-information/registrar/tri-co-course-search/results?semester%5B0%5D=spring_2026&department%5B0%5D=Computer+Science&college%5B0%5D=bryn_mawr&page=1&per_page=50",
     "faculty": [
       {
         "name": "Elizabeth Dinella",
@@ -23367,7 +23367,7 @@
     "program_url": "https://www.davidson.edu/academic-departments/mathematics-and-computer-science/computer-science-major-and-minor",
     "faculty_url": "https://www.davidson.edu/academic-departments/mathematics-and-computer-science/faculty-staff",
     "catalog_url": "http://catalog.davidson.edu/preview_program.php?catoid=25&poid=1628",
-    "schedule_url": "https://course-schedule.davidson.edu/#/schedule?departments=CSC&limit=100&offset=0&term_code=202301",
+    "schedule_url": "https://course-schedule.davidson.edu/#/schedule?departments=CSC&limit=100&offset=0&term_code=202502",
     "faculty": [
       {
         "name": "Raghu Ramanujan",
@@ -37990,7 +37990,7 @@
     "program_url": "https://www.haverford.edu/academics/computer-science-major-minor-and-concentration",
     "faculty_url": "https://www.haverford.edu/computer-science/faculty-staff",
     "catalog_url": "https://catalog.haverford.edu/programs/computer-science/#coursestext",
-    "schedule_url": "https://www.haverford.edu/academics/results?semester%5B0%5D=fall_2023&department%5B0%5D=Computer%20Science&college%5B0%5D=haverford&page=1&per_page=50",
+    "schedule_url": "https://www.haverford.edu/academics/results?semester%5B0%5D=spring_2026&department%5B0%5D=Computer%20Science&college%5B0%5D=haverford&page=1&per_page=200",
     "faculty": [
       {
         "name": "John Dougherty",
@@ -40127,7 +40127,7 @@
     "program_url": "https://hope.edu/academics/computer-science/",
     "faculty_url": "https://hope.edu/academics/computer-science/faculty-staff.html",
     "catalog_url": "https://catalog.hope.edu/content.php?filter%5B27%5D=CSCI&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=6&expand=&navoid=177&search_database=Filter#acalog_template_course_filter",
-    "schedule_url": "https://schedule.hope.edu/?term=202508&subj=CSCI&attr=&camp=&ptrm=",
+    "schedule_url": "https://schedule.hope.edu/?term=202601&subj=CSCI",
     "faculty": [
       {
         "name": "Michael Jipping",
@@ -59465,7 +59465,7 @@
     "program_url": "https://www.rmc.edu/academics/areas-of-study/computer-science/",
     "faculty_url": "https://www.rmc.edu/about-rmc/college-leadership/offices-departments/computer-science-department/",
     "catalog_url": "https://rmc-public.courseleaf.com/programs/computer-science/#coursestext",
-    "schedule_url": "https://mymaconweb.rmc.edu/m/d/m/5c62616e-9463-484d-8fd8-180250661411/CourseSearch/SearchResults?termcode=2023;22&title=&code=&department=CSCI&faculty=&campus=&additional=&openseats=OpenFull&add=T",
+    "schedule_url": "https://mymaconweb.rmc.edu/m/d/m/5c62616e-9463-484d-8fd8-180250661411/CourseSearch/SearchResults?termcode=2025;42&title=&code=&department=CSCI&faculty=&campus=&additional=&openseats=OpenFull&add=T",
     "faculty": [
       {
         "name": "Rance Necaise",
@@ -81812,7 +81812,7 @@
     "program_url": "https://www.wabash.edu/academics/computer_science",
     "faculty_url": "https://www.wabash.edu/academics/computer_science/facstaff",
     "catalog_url": "https://bulletin.wabash.edu/programsaz/computer-science/#coursestext",
-    "schedule_url": "https://www.wabash.edu/apps/registrar/course-sections?pages_id=1&dept=CSC",
+    "schedule_url": "https://www.wabash.edu/apps/registrar/course-sections?pages_id=1&dept=CSC&term=26/SP",
     "faculty": [
       {
         "name": "Qixin Deng",
@@ -86458,7 +86458,7 @@
     "program_url": "https://www.wesleyan.edu/mathcs/cs/index.html",
     "faculty_url": "https://www.wesleyan.edu/mathcs/cs/faculty.html",
     "catalog_url": "https://www.wesleyan.edu/mathcs/cs/regular_courses.html",
-    "schedule_url": "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?crse_list=COMP&offered=Y#fall",
+    "schedule_url": "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse_list=COMP&term=1259&offered=Y",
     "faculty": [
       {
         "name": "Norman Danner",
@@ -90103,7 +90103,7 @@
     "program_url": "https://csci.williams.edu/",
     "faculty_url": "https://csci.williams.edu/people/faculty/",
     "catalog_url": "https://catalog.williams.edu/pdf/csci.pdf",
-    "schedule_url": "https://catalog.williams.edu/csci/list/?strm=9999&sbattr=&req_year=24&offered=A",
+    "schedule_url": "https://catalog.williams.edu/csci/list/?strm=9999&sbattr=&req_year=26&offered=A",
     "faculty": [
       {
         "name": "Jeannie Albrecht",

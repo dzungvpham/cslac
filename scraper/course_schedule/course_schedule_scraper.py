@@ -79,6 +79,11 @@ class CourseScheduleScraper:
     page_load_timeout: int = 30
     post_load_sleep: float = 1.0
     fresh_driver_per_load: bool = True
+    # Set True on subclasses whose `url_for` produces a user-facing page (not
+    # an API endpoint) so the dashboard can link straight to the latest-term
+    # URL. Subclasses whose internal scraping URL differs from the public
+    # one should override `public_url_for` instead.
+    public_url_template: bool = False
 
     def __init__(self, driver=None):
         self._driver = driver
@@ -143,6 +148,51 @@ class CourseScheduleScraper:
     def parse_page(self, html, academic_year, term):
         """Return a list of row dicts parsed from `html`."""
         raise NotImplementedError
+
+    def public_url_for(self, academic_year, term):
+        """Return a user-facing URL the dashboard should link to for this
+        (academic_year, term), or `None` to leave the colleges.csv URL
+        untouched. Default: delegate to `url_for` when
+        `public_url_template` is set, else `None`.
+        """
+        if self.public_url_template:
+            return self.url_for(academic_year, term)
+        return None
+
+    @classmethod
+    def latest_public_url(cls, today=None):
+        """Build the user-facing URL for the most recent (academic_year, term)
+        pair this scraper would target. Returns `None` if the subclass hasn't
+        opted in via `public_url_template` / `public_url_for`.
+
+        Term is picked from `cls.terms` based on the current month: July+
+        prefers Fall, otherwise Spring (with a fallback to whatever term is
+        actually configured). For scrapers with `terms = []` (one URL per
+        academic year) the term argument is the empty string.
+        """
+        today = today or datetime.now()
+        ay_list = cls.past_academic_years(1, today=today)
+        if not ay_list:
+            return None
+        academic_year = ay_list[-1]
+        if cls.terms:
+            preferred = "F" if today.month >= 7 else "S"
+            term = preferred if preferred in cls.terms else cls.terms[-1]
+        else:
+            term = NO_TERM
+        try:
+            inst = cls()
+        except Exception:
+            return None
+        try:
+            return inst.public_url_for(academic_year, term)
+        except Exception:
+            return None
+        finally:
+            try:
+                inst.close()
+            except Exception:
+                pass
 
     def fetch_page(self, academic_year, term):
         """Return the rendered HTML for one (academic_year, term) page.

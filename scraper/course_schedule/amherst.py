@@ -36,6 +36,7 @@ class AmherstScraper(CourseScheduleScraper):
     college = College.AMHERST
     terms = ["F", "S"]
     wait_for = ".coursehead"
+    public_url_template = True
 
     def url_for(self, academic_year, term):
         start_yy = academic_year[0] % 100

@@ -26,6 +26,7 @@ from constants import College  # noqa: E402
 from course_schedule.course_schedule_scraper import CourseScheduleScraper
 
 API_URL = "https://api.davidson.edu/api/public/v2/courses"
+PUBLIC_URL = "https://course-schedule.davidson.edu/#/schedule"
 DEPARTMENT = "CSC"
 PAGE_LIMIT = 500
 
@@ -66,6 +67,17 @@ class DavidsonScraper(CourseScheduleScraper):
         return (
             f"{API_URL}?departments={DEPARTMENT}"
             f"&limit={PAGE_LIMIT}&offset=0&term_code={code}"
+        )
+
+    def public_url_for(self, academic_year, term):
+        # `url_for` hits the JSON API; the user-facing equivalent is the
+        # frontend SPA at `course-schedule.davidson.edu`.
+        code = self._term_code(academic_year, term)
+        if code is None:
+            return None
+        return (
+            f"{PUBLIC_URL}?departments={DEPARTMENT}"
+            f"&limit=100&offset=0&term_code={code}"
         )
 
     def fetch_page(self, academic_year, term):

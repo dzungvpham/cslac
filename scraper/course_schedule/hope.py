@@ -29,6 +29,7 @@ SUBJECT = "CSCI"
 class HopeScraper(CourseScheduleScraper):
     college = College.HOPE
     terms = ["F", "S"]
+    public_url_template = True
 
     def _term_code(self, academic_year, term):
         start, end = academic_year

@@ -46,6 +46,7 @@ class WesleyanScraper(CourseScheduleScraper):
     # One URL per academic year covers F/W/S together. We don't iterate
     # terms; `parse_page` emits rows for all three.
     terms = []
+    public_url_template = True
 
     @staticmethod
     def _base_term(academic_year):

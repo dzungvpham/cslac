@@ -46,6 +46,7 @@ class WabashScraper(CourseScheduleScraper):
     college = College.WABASH
     terms = ["F", "S", "Su"]
     wait_for = "table.registrar-list-table"
+    public_url_template = True
 
     def url_for(self, academic_year, term):
         start_year, end_year = academic_year
