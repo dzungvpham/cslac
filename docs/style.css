@@ -1,0 +1,1216 @@
+/* ── themes ── */
+:root {
+  --bg:         #eff1f5;
+  --bg-alt:     #e9ebf1;
+  --border:     #bcc0cc;
+  --border-sub: #ccd0da;
+  --text:       #4c4f69;
+  --sub:        #6c6f85;
+  --muted:      #9ca0b0;
+  --accent:     #4c1d95;
+  --th-bg:      #e6e9ef;
+  --hover-bg:   #ccd0da;
+  --expand-bg:  #e6e9ef;
+  --danger:     #d20f39;
+  --header-h:   0px;
+  --summary-h:  0px;
+  /* Fixed Course-column width for the schedule table. Used by both the
+     .course-title-cell width and the .panel-toggle grid template so
+     the term-paginator stays geometrically centered over the term
+     columns. Defined as a single expression so the two always agree. */
+  --course-title-w: clamp(180px, 30vw, 400px);
+}
+[data-theme="dark"] {
+  --bg:         #303446;
+  --bg-alt:     #414559;
+  --border:     #51576d;
+  --border-sub: #414559;
+  --text:       #c6d0f5;
+  --sub:        #a5adce;
+  --muted:      #737994;
+  --accent:     #c4a8e0;
+  --th-bg:      #292c3c;
+  --hover-bg:   #414559;
+  --expand-bg:  #292c3c;
+  --danger:     #e78284;
+}
+
+/* ── reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scrollbar-gutter: stable; /* prevents layout shift when scrollbar appears */
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  transition: background 0.2s, color 0.2s;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { cursor: pointer; }
+
+/* ── layout ── */
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* ── header ── */
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+}
+
+.header-left h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.header-logo {
+  height: 0.95em;
+  width: auto;
+  vertical-align: -0.18em;
+  margin: 0 4px 0 6px;
+}
+
+.header-left p {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.header-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.stat {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--sub);
+}
+.stat strong {
+  font-weight: 500;
+  color: var(--text);
+  font-size: 14px;
+  display: block;
+}
+.stat strong.count-spinner {
+  display: flex;
+  line-height: 1;
+  height: 1em;
+  overflow: hidden;
+}
+.count-spinner .digit {
+  display: inline-block;
+  height: 1em;
+  overflow: hidden;
+  line-height: 1;
+}
+.count-spinner .digit-strip {
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+.count-spinner .digit-strip > span {
+  height: 1em;
+  line-height: 1;
+  display: block;
+}
+
+/* ── header right (theme toggle + about) ── */
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.about-text {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--sub);
+  max-width: 360px;
+  text-align: right;
+  line-height: 1.45;
+}
+.about-text a {
+  color: var(--accent);
+  white-space: nowrap;
+}
+.about-text .nowrap { white-space: nowrap; }
+.about-text .accent { color: var(--accent); }
+.gh-icon,
+.gs-icon {
+  width: 12px;
+  height: 12px;
+  vertical-align: -2px;
+  margin-left: 3px;
+}
+
+/* ── footer ── */
+.site-footer {
+  margin: 40px auto 0;
+  padding: 16px 0 0;
+  max-width: 480px;
+  border-top: 1px solid var(--border-sub);
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--sub);
+}
+.site-footer a { color: var(--text); }
+.site-footer a:hover { color: var(--accent); }
+.footer-sep {
+  margin: 0 8px;
+  opacity: 0.6;
+}
+
+/* ── theme toggle ── */
+.theme-toggle {
+  flex-shrink: 0;
+  margin-top: 4px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.theme-toggle:hover {
+  border-color: var(--text);
+  color: var(--text);
+  background: var(--hover-bg);
+}
+.theme-toggle svg { width: 16px; height: 16px; }
+.icon-sun  { display: none; }
+.icon-moon { display: block; }
+[data-theme="dark"] .icon-sun  { display: block; }
+[data-theme="dark"] .icon-moon { display: none; }
+
+/* ── loading spinner ── */
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px;
+}
+.loading-spinner[hidden] { display: none; }
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border-sub);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+/* Hide the table area until data is ready so the spinner stands alone. */
+.table-wrap[hidden] { display: none; }
+
+/* ── college table ── */
+.table-wrap { width: 100%; }
+
+/* shared column grid — must match between header and rows */
+.col-grid {
+  display: grid;
+  grid-template-columns: 1fr 80px 110px 80px;
+  align-items: center;
+}
+
+/* column headers */
+.col-head-row {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-top: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
+  background: var(--th-bg);
+}
+.col-head-row .col-grid { padding: 0; }
+
+.th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sub);
+  padding: 10px 12px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.12s;
+  white-space: nowrap;
+}
+.th:hover { color: var(--text); }
+.th.sorted { color: var(--accent); }
+.th:not(:first-child) { justify-content: flex-end; }
+
+.sort-icon {
+  font-size: 10px;
+  opacity: 0.4;
+  line-height: 1;
+}
+.th:not(.sorted) .sort-icon,
+.fth:not(.sorted) .sort-icon { font-size: 11px; }
+.th.sorted .sort-icon { opacity: 1; }
+
+/* college data row */
+.college-row {
+  /* Scope sticky children's z-indices to this row. Without isolation,
+     .fac-head-row's mobile z-index 30 (used so rotated labels paint
+     above .panel-toggle within the row) competes with .col-head-row
+     at the document root and with the next row's .college-summary,
+     causing visible overlap during scroll transitions. */
+  isolation: isolate;
+}
+
+.college-summary {
+  cursor: pointer;
+  position: sticky;
+  top: var(--header-h);
+  z-index: 25;
+  background: var(--bg);
+  transition: background 0.1s;
+}
+/* Zebra striping replaces the 1px row divider. Chrome/Windows at
+   fractional device-pixel scale (e.g. 125%, 150%) would alpha-blend
+   hairline row borders to near-invisible on every other row whenever a
+   panel opened (a Chrome compositing quirk we couldn't reproduce away),
+   so we use alternating row backgrounds as the visual separator instead. */
+.college-row:nth-child(even) .college-summary { background: var(--bg-alt); }
+/* Hover wins on both odd and even rows. Same specificity as the
+   :nth-child rule above, so it must come after in source order. */
+.college-row .college-summary:hover { background: var(--hover-bg); }
+.college-summary .col-grid { padding: 0; }
+
+.td {
+  padding: 11px 12px;
+  font-size: 13.5px;
+  color: var(--text);
+}
+
+.td-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+/* By default these wrappers are layout-transparent so .td-name behaves
+   exactly as it did before. Mobile media query promotes them to real
+   flex containers so num+chev can stack and name+icons can stack. */
+.name-marker, .name-body { display: contents; }
+
+.chevron {
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: transform 0.2s ease, color 0.15s;
+  display: flex;
+  align-items: center;
+}
+.chevron svg { width: 12px; height: 12px; }
+.college-row.open .chevron {
+  transform: rotate(90deg);
+  color: var(--accent);
+}
+
+.college-name { font-weight: 600; font-size: 14px; }
+/* short form is mobile-only; see media query below */
+.college-name .cn-short { display: none; }
+
+/* .college-logo base rules live in img/logo_sprite.css (generated). */
+[data-theme="dark"] .college-logo {
+  background-color: var(--text);
+  border-radius: 4px;
+}
+
+/* Layout-transparent on desktop so the existing .td-name flex row is
+   unchanged; promoted to a real flex row on mobile so the logo and
+   college name stay on the same line while .college-links wraps below. */
+.name-title { display: contents; }
+
+.college-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 4px;
+}
+.college-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  color: var(--muted);
+  transition: color 0.12s, background 0.12s;
+  text-decoration: none;
+}
+.college-link:hover {
+  color: var(--accent);
+  background: var(--hover-bg);
+  text-decoration: none;
+}
+.college-link.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.college-link.disabled:hover {
+  color: var(--muted);
+  background: transparent;
+}
+.college-link svg { width: 13px; height: 13px; }
+
+.college-state {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.td-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  text-align: right;
+  padding: 11px 12px;
+  color: var(--text);
+}
+.td-num.dim { color: var(--sub); }
+.td-num .num-short { display: none; }
+
+/* ── faculty panel ── */
+.faculty-panel {
+  display: none;
+  background: var(--expand-bg);
+  border-top: 1px solid var(--border-sub);
+  /* Divider between an expanded panel and the next college row. The
+     panel's --expand-bg is intentionally distinct from --bg-alt so the
+     table contents don't blur into the next zebra row, but the hairline
+     keeps the boundary crisp regardless of theme. */
+  border-bottom: 1px solid var(--border);
+}
+.college-row.open .faculty-panel { display: block; }
+
+.faculty-panel-inner {
+  padding: 0 12px 8px 36px; /* indent to align past the chevron */
+  animation: fadeSlide 0.18s ease;
+}
+/* Opacity-only fade. A previous version animated `transform: translateY`
+   too, but on Chrome/Windows at fractional device scale that promoted
+   the panel to a compositor layer which lingered after the animation
+   and caused 1px row borders at fractional positions to alpha-blend to
+   invisible on every other college row. Hovering forced a repaint that
+   restored them. */
+@keyframes fadeSlide {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* faculty column grid — all 6 metric columns equal width (fits 6-digit numbers) */
+.fac-grid {
+  display: grid;
+  grid-template-columns: minmax(112px,1.4fr) minmax(100px,1fr) 80px 80px 80px 80px 80px 80px;
+  align-items: center;
+}
+
+/* faculty column headers */
+.fac-head-row {
+  position: sticky;
+  top: calc(var(--header-h) + var(--summary-h) + var(--toggle-h, 0px));
+  z-index: 15;
+  background: var(--expand-bg);
+  border-bottom: 2px solid var(--border);
+}
+.fac-head-row .fac-grid { padding: 0; }
+
+.fth {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--sub);
+  padding: 8px 8px 8px 0;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.12s;
+  white-space: nowrap;
+  position: relative;
+}
+.fth:hover { color: var(--text); }
+.fth.sorted { color: var(--accent); }
+/* only numeric columns (3rd onward) are right-aligned; Name and Title stay left */
+.fth:not(:first-child):not(:nth-child(2)) { justify-content: flex-end; padding-right: 4px; }
+
+/* faculty data row */
+.fac-row {
+  border-bottom: 1px solid var(--border-sub);
+  transition: background 0.1s;
+}
+.fac-row:last-child { border-bottom: none; }
+.fac-row:hover { background: var(--hover-bg); }
+.fac-row .fac-grid { padding: 0; }
+
+.ftd {
+  padding: 9px 8px 9px 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.ftd-name-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fac-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fac-name-text {
+  font-weight: 500;
+  font-size: 13.5px;
+  color: var(--text);
+}
+
+.fac-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fac-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  color: var(--muted);
+  transition: color 0.12s, background 0.12s;
+  text-decoration: none;
+}
+.fac-link:hover {
+  color: var(--accent);
+  background: var(--hover-bg);
+  text-decoration: none;
+}
+.fac-link svg { width: 13px; height: 13px; }
+
+.fac-interests {
+  font-size: 11.5px;
+  color: var(--sub);
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  text-transform: lowercase;
+  min-width: 0;
+}
+.fac-interests::-webkit-scrollbar { display: none; }
+
+.ftd-title {
+  font-size: 12.5px;
+  color: var(--sub);
+  padding: 9px 8px 9px 0;
+}
+
+/* Title shown under the name (mobile only); duplicates .ftd-title text */
+.fac-title-inline { display: none; }
+
+.ftd-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12.5px;
+  text-align: right;
+  padding: 9px 4px;
+  color: var(--text);
+}
+.ftd-num.na { color: var(--muted); }
+/* compact ("k") form is mobile-only; see media query below */
+.ftd-num .num-short { display: none; }
+
+/* ── panel view toggle (Faculty / Courses) ─────────────────────────────── */
+/* Laid out as two big columns that match the course-schedule table
+   below: track 1 = Course-title column, track 2 = term-columns area.
+   Both share --course-title-w (+16px for the sticky cell's right
+   padding) so the paginator centered in track 2 sits exactly over
+   the geometric middle of the term columns. The table uses
+   table-layout: fixed at the same total width, so the two rows are
+   guaranteed to line up regardless of content. */
+.panel-toggle {
+  position: sticky;
+  top: calc(var(--header-h) + var(--summary-h));
+  z-index: 20;
+  background: var(--expand-bg);
+  display: grid;
+  grid-template-columns: calc(var(--course-title-w) + 16px) 1fr;
+  align-items: center;
+  padding: 6px 0 4px;
+}
+.panel-toggle-views {
+  display: flex;
+  gap: 4px;
+}
+/* Scope to the view-toggle buttons only so other buttons rendered into
+   the same row (e.g. .term-page-btn) don't inherit pill styling. */
+.panel-toggle button[data-view] {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--sub);
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+}
+.panel-toggle button[data-view] svg { width: 14px; height: 14px; }
+.panel-toggle button[data-view]:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+.panel-toggle button[data-view].active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.panel-toggle button[data-view]:disabled,
+.panel-toggle button[data-view].disabled {
+  color: var(--muted);
+  border-color: var(--border);
+  background: var(--bg);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.panel-toggle button[data-view]:disabled:hover,
+.panel-toggle button[data-view].disabled:hover {
+  color: var(--muted);
+  border-color: var(--border);
+}
+.faculty-source-link {
+  margin-left: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--sub);
+  text-decoration: none;
+  align-self: center;
+}
+.faculty-source-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ── course schedule table ─────────────────────────────────────────────── */
+.course-wrap {
+  background: var(--expand-bg);
+}
+/* table-layout: fixed pins the table to the panel width and forces
+   term columns to share the remaining space evenly — independent of
+   cell content. This is what keeps the paginator (centered in the
+   .panel-toggle's matching grid track above) lined up with the
+   geometric center of the term columns. */
+.course-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+.course-table th,
+.course-table td {
+  padding: 9px 5px;
+  border-bottom: 1px solid var(--border-sub);
+  text-align: center;
+  white-space: nowrap;
+}
+.course-table thead th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--sub);
+  background: var(--expand-bg);
+  padding: 8px 5px;
+  position: sticky;
+  top: calc(var(--header-h) + var(--summary-h) + var(--toggle-h, 0px));
+  z-index: 15;
+  border-bottom: 2px solid var(--border);
+}
+.course-table tbody tr { transition: background 0.1s; }
+.course-table tbody tr:last-child td { border-bottom: none; }
+.course-table tbody tr:hover td,
+.course-table tbody tr:hover td.course-sticky {
+  background: var(--hover-bg);
+}
+
+.course-sticky {
+  position: sticky;
+  left: 0;
+  background: var(--expand-bg);
+  text-align: left !important;
+  z-index: 5;
+  padding-right: 16px !important;
+  padding-left: 0 !important;
+}
+/* Pin the Course-column width so it matches the .panel-toggle's
+   first grid track exactly (both = course-title-w + 16px). With
+   table-layout: fixed this also reserves the remaining width for
+   the term columns to share equally. */
+.course-table th.course-sticky {
+  width: calc(var(--course-title-w) + 16px);
+}
+.course-table thead th.course-sticky { z-index: 17; }
+
+.course-title-cell {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  /* Fixed (not min/max): the panel-toggle grid uses the same value to
+     line up the paginator with the term-columns center. */
+  width: var(--course-title-w);
+}
+.course-code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text);
+  flex-shrink: 0;
+}
+.course-name {
+  font-size: 13px;
+  color: var(--sub);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.course-check {
+  color: var(--accent);
+  font-weight: 600;
+}
+a.course-check {
+  text-decoration: none;
+  display: inline-block;
+}
+a.course-check:hover { text-decoration: underline; }
+
+/* ── instructor initials within a course cell ──────────────────────── */
+/* When a cell's instructors are matched against the faculty list, we
+   show each person's initials (first + last) linked to their site.
+   Multi-instructor cells stack the initials horizontally with a thin
+   separator so row height stays tight. Hover reveals the full name. */
+.course-instr-list {
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
+  line-height: 1.3;
+}
+.course-instr-row { display: block; }
+.course-instr-sep {
+  color: var(--sub);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+.course-instr {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--sub);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.1s;
+}
+a.course-instr:hover { color: var(--accent); }
+.course-instr-nolink {
+  color: var(--muted);
+}
+a.course-title-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: var(--course-title-w);
+}
+a.course-title-link:hover .course-code,
+a.course-title-link:hover .course-name { color: var(--accent); }
+.course-dash { color: var(--muted); }
+.course-xlist-toggle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sub);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 7px;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+  white-space: nowrap;
+}
+.course-xlist-toggle:hover {
+  color: var(--text);
+  border-color: var(--sub);
+}
+.course-xlist-toggle.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.course-empty {
+  padding: 20px 4px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+/* ── term pagination buttons ──────────────────────────────────────────── */
+/* Rendered into the panel-toggle row (alongside the Faculty/Courses
+   toggle) so the term-label header keeps its natural column layout.
+   The slot occupies the panel-toggle's second grid track, which by
+   construction spans exactly the term-columns area below, so the
+   paginator centered here is centered over the term columns. Active
+   on any viewport where the term count exceeds the page window
+   (TERMS_PER_PAGE on small, YEARS_PER_PAGE elsewhere). */
+.term-paginator-slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.term-paginator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--sub);
+}
+.term-page-btn {
+  background: transparent;
+  border: none;
+  color: var(--sub);
+  font: inherit;
+  line-height: 1;
+  padding: 4px 6px;
+  cursor: pointer;
+  transition: color 0.12s;
+}
+.term-page-btn:hover:not(:disabled) { color: var(--text); }
+.term-page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.term-paginator-range { letter-spacing: 0.04em; }
+
+/* ── filter bar ── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 14px 0 16px;
+  border-bottom: 1px solid var(--border);
+}
+.filter-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sub);
+  margin-right: 4px;
+}
+.filter-chip {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--sub);
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+  user-select: none;
+}
+.filter-chip:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+.filter-chip.active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.filter-chip.exclude {
+  color: var(--bg);
+  background: var(--danger);
+  border-color: var(--danger);
+}
+.filter-chip-count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  opacity: 0.75;
+  margin-left: 4px;
+}
+.filter-spacer { flex: 1; }
+.expand-toggle {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--sub);
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.expand-toggle:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+.expand-toggle.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.expand-toggle svg { width: 12px; height: 12px; }
+.search-input {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  width: 180px;
+  transition: border-color 0.12s, color 0.12s;
+}
+.search-input::placeholder { color: var(--muted); }
+.search-input:hover { border-color: var(--text); }
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ── advanced (subfield) filter rows ── */
+.advanced-bar {
+  padding: 12px 0 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.advanced-bar.collapsed { display: none; }
+.adv-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.adv-row-subfields { gap: 6px; }
+.adv-hint-inline {
+  font-size: 11px;
+  color: var(--muted);
+  font-style: italic;
+}
+.adv-hint-inline .hint-scope  { color: var(--text);   font-weight: 600; font-style: normal; }
+.adv-hint-inline .hint-include { color: var(--accent); font-weight: 500; font-style: normal; }
+.adv-hint-inline .hint-exclude { color: var(--danger); font-weight: 500; font-style: normal; }
+.scope-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-right: 6px;
+}
+.scope-toggle button {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 11px;
+  border: 0;
+  background: var(--bg);
+  color: var(--sub);
+  transition: color 0.12s, background 0.12s;
+}
+.scope-toggle button + button { border-left: 1px solid var(--border); }
+.scope-toggle button:hover { color: var(--text); }
+.scope-toggle button.active {
+  color: var(--bg);
+  background: var(--accent);
+}
+.state-select {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 24px 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%236c6f85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 10px 10px;
+}
+.state-select.active {
+  color: var(--bg);
+  background-color: var(--accent);
+  border-color: var(--accent);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23eff1f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
+}
+.state-select option {
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ── college row number ──
+   Sits at the start of the column (same x as the "Institution"
+   header text), with the chevron and name flowing after. */
+.college-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  user-select: none;
+  flex-shrink: 0;
+  display: inline-block;
+  min-width: 3ch;
+  text-align: right;
+}
+
+/* ── responsive ── */
+@media (max-width: 720px) {
+  .page { padding: 0 16px 64px; }
+
+  header {
+    padding: 28px 0 20px;
+    gap: 12px;
+  }
+  .header-left h1 { font-size: 19px; }
+  .header-stats { gap: 18px; }
+  .about-text { max-width: 160px; font-size: 10.5px; }
+
+  .filter-bar { padding: 12px 0; gap: 8px; }
+  .filter-spacer { display: none; }
+  .search-input { flex: 1 1 140px; width: auto; min-width: 0; }
+
+  /* main college grid: shrink metric columns to fit ~360px viewports.
+     minmax(0,1fr) — not 1fr — so the name column can shrink below its
+     min-content (chevron + state + link icons would otherwise force overflow). */
+  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px; }
+  .th { padding: 9px 4px; font-size: 10px; gap: 3px; }
+
+  /* Rotate the metric column labels (Faculty / Citations / Courses) 30°
+     from top-left to bottom-right so they stop crowding each other at
+     narrow widths. Label + sort icon rotate together as one unit. */
+  .col-head-row { overflow: visible; }
+  .col-head-row .th { overflow: visible; position: relative; }
+  .col-head-row .th:nth-child(n+2) {
+    padding: 0;
+    height: 46px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .col-head-row .th:nth-child(n+2) .th-label {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transform: rotate(30deg);
+    transform-origin: left top;
+    white-space: nowrap;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+
+  .td, .td-num { padding: 10px 4px; }
+  .td-num { font-size: 11.5px; }
+  .td-num .num-full  { display: none; }
+  .td-num .num-short { display: inline; }
+  .td-name { min-width: 0; gap: 6px; }
+  .college-name {
+    font-size: 13.5px;
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+  /* hide state badge on mobile to free up the name column */
+  .college-state { display: none; }
+
+  /* swap to the short college name ("University" → "Univ.") */
+  .college-name .cn-full  { display: none; }
+  .college-name .cn-short { display: inline; }
+
+  /* Stack the chevron beneath the row number in a fixed-width column,
+     and stack the icons beneath the college name. Decoupling the two
+     stacks means: (a) the name's start-x doesn't shift with the digit
+     count of the row number, and (b) the gap between the name and the
+     icons is driven only by the name's height, not by the chevron row. */
+  .td-name {
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .name-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 22px;
+    flex-shrink: 0;
+  }
+  .name-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 4px;
+  }
+  /* Keep logo + college name on a single row on mobile (.college-links
+     still wraps below as its own flex item of .name-body). */
+  .name-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+  }
+  .college-logo { --cs: 16px; }
+  .college-name { min-width: 0; word-break: break-word; }
+  .college-links { gap: 4px; margin-left: 0; }
+  .college-link { width: 22px; height: 22px; }
+  .college-link svg { width: 14px; height: 14px; }
+
+  /* faculty subtable: fit everything in viewport instead of scrolling.
+     Title moves under the name cell; the 6 metric headers are rotated
+     diagonally and extend up into the panel-toggle row to claw back
+     vertical space. */
+  .faculty-panel-inner {
+    padding: 0 12px 8px 12px;
+    overflow: visible;
+  }
+  .fac-head-row,
+  .fac-row { min-width: 0; }
+
+  .fac-grid {
+    grid-template-columns: minmax(0,1fr) repeat(6, 32px);
+  }
+  /* hide the standalone Title column (rendered inline under name) */
+  .fac-head-row .fth:nth-child(2),
+  .ftd-title { display: none; }
+
+  .fac-title-inline {
+    display: block;
+    font-size: 11.5px;
+    color: var(--sub);
+    margin-top: 1px;
+    line-height: 1.3;
+  }
+
+  /* rotated metric headers (cols 3–8). Anchored at the cell's bottom and
+     rotated -55° so the text extends up-and-right into the toggle row. */
+  .panel-toggle { padding: 4px 0 2px; }
+  /* Top padding makes room for the rotated labels (which anchor at each
+     .fth's bottom and rotate -55deg up-and-right). Without it the labels
+     would extend above .fac-head-row's box into the sticky panel-toggle
+     above, whose opaque background covers them. */
+  .fac-head-row { overflow: visible; z-index: 30; }
+  .fac-head-row .fth:nth-child(n+3) {
+    padding: 0;
+    height: 14px;
+    overflow: visible;
+    justify-content: flex-start;
+  }
+  .fac-head-row .fth:nth-child(n+3) .fth-label {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    transform: rotate(-55deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 9.5px;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+  .fac-head-row .fth:nth-child(n+3) .sort-icon { display: none; }
+
+  /* tighter numeric cells; pair with the "k" abbreviation below */
+  .ftd-num {
+    font-size: 11.5px;
+    padding: 9px 4px;
+  }
+  .ftd-num .num-full  { display: none; }
+  .ftd-num .num-short { display: inline; }
+
+  /* course schedule: stack code over name in the sticky title column so
+     the term columns stay visible without horizontal scrolling. */
+  .course-title-cell,
+  a.course-title-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  }
+  /* Mobile Course-column width — keeps the panel-toggle's grid in
+     sync automatically since both sides read --course-title-w. */
+  :root { --course-title-w: clamp(90px, 30vw, 240px); }
+  .course-name {
+    white-space: normal;
+    text-overflow: clip;
+    overflow: visible;
+    line-height: 1.25;
+    font-size: 12px;
+  }
+  .course-table td.course-sticky { vertical-align: top; padding-top: 10px; }
+  .course-table th,
+  .course-table td { padding: 8px 3px; }
+  .course-table thead th { padding: 7px 3px; }
+
+  /* On mobile we limit the visible term columns to a paginated window
+     (TERMS_PER_PAGE in JS). The renderer emits only the visible terms;
+     the user navigates with the ◀/▶ buttons in the header. This keeps
+     the table inside the viewport (no horizontal scroll) so the sticky
+     thead keeps working. */
+}
+
+@media (max-width: 340px) {
+  /* tiniest screens (< iPhone SE width): fall back to confined
+     horizontal scroll inside the table wrap. */
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .col-head-row,
+  .college-row { min-width: 320px; }
+}
