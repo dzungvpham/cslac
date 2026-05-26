@@ -1,4 +1,4 @@
-"""Analyze faculty publication co-authorship patterns using OpenAlex.
+"""Scrape faculty publication co-authorship patterns using OpenAlex.
 
 Fetches CS publications per institution (topics.field.id:17), matches authors
 to our faculty list, and classifies co-authorship patterns. ROR IDs are read
@@ -7,13 +7,14 @@ from colleges.csv (no institution search needed).
 Output: faculty_publications.csv (per-paper detail with co-author lists).
 
 Usage:
-    python faculty_publication_analysis.py                   # full run (append-only)
-    python faculty_publication_analysis.py --overwrite        # re-run from scratch
-    python faculty_publication_analysis.py --college Williams # re-run one college
+    python faculty_publication_scraper.py                   # full run (append-only)
+    python faculty_publication_scraper.py --overwrite        # re-run from scratch
+    python faculty_publication_scraper.py --college Williams # re-run one college
 """
 
 import argparse
 import csv
+import json
 import os
 import re
 import sys
@@ -36,10 +37,10 @@ COLLEGES_CSV = "../data/colleges.csv"
 OUTPUT_PAPERS = "../data/faculty_publications.csv"
 
 PAPER_FIELDS = [
-    "name", "college", "openalex_author_id",
-    "openalex_work_id", "title", "year", "venue",
+    "college", "openalex_work_id", "title", "url", "year",
+    "cited_by_count", "venue", "venue_url", "venue_type", "work_type",
     "topics", "subfields",
-    "authors",
+    "matched_faculty", "authors",
     "student_coauthors", "faculty_coauthors",
     "other_lac_coauthors", "external_coauthors",
 ]
@@ -82,6 +83,28 @@ def _get_venue(paper):
     return loc.get("raw_source_name", "")
 
 
+def _get_venue_type(paper):
+    loc = paper.get("primary_location")
+    if not loc:
+        return ""
+    source = loc.get("source")
+    if source:
+        return source.get("type") or ""
+    return ""
+
+
+def _get_url(paper):
+    doi = paper.get("doi") or ""
+    if doi:
+        return doi
+    loc = paper.get("primary_location")
+    if loc:
+        landing = loc.get("landing_page_url") or ""
+        if landing:
+            return landing
+    return ""
+
+
 def _name_key(name):
     parts = name.strip().split()
     if not parts:
@@ -89,8 +112,7 @@ def _name_key(name):
     return (parts[-1].lower(), parts[0][0].lower())
 
 
-VENUE_RANK = {"journal-article": 0, "proceedings-article": 0, "book-chapter": 1,
-              "posted-content": 2, "dataset": 2}
+VENUE_RANK = {"article": 0, "book-chapter": 1, "preprint": 2, "dataset": 2}
 
 
 def _norm_title(title):
@@ -104,9 +126,16 @@ def _dedup_papers(papers):
         groups[_norm_title(p["title"])].append(p)
     deduped = []
     for group in groups.values():
-        group.sort(key=lambda p: (VENUE_RANK.get(p.get("_raw_type", ""), 1),
+        group.sort(key=lambda p: (VENUE_RANK.get(p.get("work_type", ""), 1),
                                   p.get("year") or 9999))
-        deduped.append(group[0])
+        best = group[0]
+        all_faculty = set()
+        for p in group:
+            for name in p.get("matched_faculty", "").split("; "):
+                if name.strip():
+                    all_faculty.add(name.strip())
+        best["matched_faculty"] = "; ".join(sorted(all_faculty))
+        deduped.append(best)
     return deduped
 
 
@@ -146,7 +175,7 @@ def fetch_cs_works(session, ror):
         resp = _api_get(session, f"{OPENALEX_API}/works", params={
             "filter": f"authorships.institutions.ror:{ror},"
                       f"topics.field.id:{CS_FIELD_ID}",
-            "select": "id,title,publication_year,authorships,primary_location,topics",
+            "select": "id,doi,title,type,publication_year,cited_by_count,authorships,primary_location,topics",
             "per_page": 200,
             "cursor": cursor,
         })
@@ -179,6 +208,7 @@ def process_college(session, college, inst_ror, faculty_list, faculty_lnames, la
         authorships = work.get("authorships") or []
 
         matched = []
+        matched_ids = set()
         for auth in authorships:
             auth_name = (auth.get("author", {}).get("display_name") or "")
             auth_id = _oa_id(auth.get("author", {}).get("id", ""))
@@ -187,16 +217,24 @@ def process_college(session, college, inst_ror, faculty_list, faculty_lnames, la
             if inst_ror and inst_ror in auth_rors:
                 key = _name_key(auth_name)
                 if key in faculty_keys:
-                    matched.append((faculty_keys[key], auth_id))
+                    matched.append(faculty_keys[key])
+                    matched_ids.add(auth_id)
 
         if not matched:
             continue
 
-        authors_str = "; ".join(
-            f"{(a.get('author', {}).get('display_name') or '')} "
-            f"({_oa_id(a.get('author', {}).get('id', ''))})"
+        authors_json = json.dumps([
+            {
+                "name": a.get("author", {}).get("display_name") or "",
+                "id": _oa_id(a.get("author", {}).get("id", "")),
+                "affiliations": list(dict.fromkeys(
+                    i.get("display_name") or ""
+                    for i in (a.get("institutions") or [])
+                    if i.get("display_name")
+                )),
+            }
             for a in authorships
-        )
+        ])
 
         raw_topics = work.get("topics") or []
         topic_names = list(dict.fromkeys(
@@ -207,63 +245,56 @@ def process_college(session, college, inst_ror, faculty_list, faculty_lnames, la
             for t in raw_topics if t.get("subfield", {}).get("display_name")
         ))
 
-        for fac_name, fac_oa_id in matched:
-            result = {
-                "name": fac_name,
-                "college": college,
-                "openalex_author_id": fac_oa_id,
-                "openalex_work_id": _oa_id(work.get("id", "")),
-                "title": work.get("title", ""),
-                "year": work.get("publication_year", ""),
-                "venue": _get_venue(work),
-                "topics": "; ".join(topic_names),
-                "subfields": "; ".join(subfields),
-                "authors": authors_str,
-                "_raw_type": (work.get("primary_location") or {}).get(
-                    "raw_type", ""),
-            }
+        result = {
+            "college": college,
+            "openalex_work_id": _oa_id(work.get("id", "")),
+            "title": work.get("title", ""),
+            "url": _get_url(work),
+            "year": work.get("publication_year", ""),
+            "cited_by_count": work.get("cited_by_count", 0),
+            "venue": _get_venue(work),
+            "venue_url": ((work.get("primary_location") or {}).get("source") or {}).get("id") or "",
+            "venue_type": _get_venue_type(work),
+            "work_type": work.get("type") or "",
+            "topics": "; ".join(topic_names),
+            "subfields": "; ".join(subfields),
+            "matched_faculty": "; ".join(sorted(set(matched))),
+            "authors": authors_json,
+        }
 
-            coauthors = [a for a in authorships
-                         if _oa_id(a.get("author", {}).get("id", "")) != fac_oa_id]
+        coauthors = [a for a in authorships
+                     if _oa_id(a.get("author", {}).get("id", ""))
+                     not in matched_ids]
 
-            students, faculty, other_lac, external = [], [], [], []
-            for coauth in coauthors:
-                name = (coauth.get("author", {}).get("display_name") or "")
-                insts = coauth.get("institutions") or []
-                rors = {(i.get("ror") or "") for i in insts}
-                inst_names = {(i.get("display_name") or "").strip()
-                              for i in insts}
-                inst_names.discard("")
+        students, faculty, other_lac, external = [], [], [], []
+        for coauth in coauthors:
+            name = (coauth.get("author", {}).get("display_name") or "")
+            insts = coauth.get("institutions") or []
+            rors = {(i.get("ror") or "") for i in insts}
+            inst_names = {(i.get("display_name") or "").strip()
+                          for i in insts}
+            inst_names.discard("")
 
-                if inst_ror and inst_ror in rors:
-                    last = name.strip().split()[-1].lower() if name.strip() else ""
-                    if last in faculty_lnames.get(college, set()):
-                        faculty.append(name)
-                    else:
-                        students.append(name)
-                elif inst_names & lac_names:
-                    other_lac.append(name)
+            if inst_ror and inst_ror in rors:
+                last = name.strip().split()[-1].lower() if name.strip() else ""
+                if last in faculty_lnames.get(college, set()):
+                    faculty.append(name)
                 else:
-                    external.append(name)
+                    students.append(name)
+            elif inst_names & lac_names:
+                other_lac.append(name)
+            else:
+                external.append(name)
 
-            result.update(
-                student_coauthors="; ".join(students),
-                faculty_coauthors="; ".join(faculty),
-                other_lac_coauthors="; ".join(other_lac),
-                external_coauthors="; ".join(external),
-            )
-            all_papers.append(result)
+        result.update(
+            student_coauthors="; ".join(students),
+            faculty_coauthors="; ".join(faculty),
+            other_lac_coauthors="; ".join(other_lac),
+            external_coauthors="; ".join(external),
+        )
+        all_papers.append(result)
 
-    by_faculty = defaultdict(list)
-    for p in all_papers:
-        by_faculty[p["name"]].append(p)
-    deduped = []
-    for papers in by_faculty.values():
-        deduped.extend(_dedup_papers(papers))
-    for p in deduped:
-        p.pop("_raw_type", None)
-
-    return deduped
+    return _dedup_papers(all_papers)
 
 
 # ---- I/O ----
@@ -326,11 +357,13 @@ def main():
         new_papers = [p for p in all_papers if p["college"] in set(remaining)]
         print(f"\nPer-paper details:")
         for p in new_papers:
-            print(f"  {p['title']} ({p['year']}, {p['venue']})")
+            cites = p.get('cited_by_count', 0)
+            print(f"  {p['title']} ({p['year']}, {p['venue']}) [{cites} citations]")
+            print(f"    Faculty:  {p['matched_faculty']}")
             if p.get("student_coauthors"):
                 print(f"    Students: {p['student_coauthors']}")
             if p.get("faculty_coauthors"):
-                print(f"    Faculty:  {p['faculty_coauthors']}")
+                print(f"    Other faculty: {p['faculty_coauthors']}")
             if p.get("other_lac_coauthors"):
                 print(f"    LAC:      {p['other_lac_coauthors']}")
             if p.get("external_coauthors"):

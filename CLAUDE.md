@@ -14,7 +14,7 @@ pip install -e .
 
 ## Running the Pipeline
 
-All scripts are run from the `scraper/` directory. The faculty pipeline has six stages:
+All scripts are run from the `scraper/` directory. The faculty pipeline has seven stages:
 
 ```bash
 cd scraper
@@ -40,6 +40,11 @@ python faculty_site_cleaner.py
 python faculty_site_analysis.py
 # Resumable: re-running picks up where it left off by merging prior progress
 # from data/faculty_list_with_field.csv.
+
+# Stage 7: Scrape publication data from OpenAlex
+python faculty_publication_scraper.py
+# Append-only: re-running skips colleges already in the output.
+# Use --overwrite to re-run from scratch, --college <name> for one college.
 ```
 
 A separate course-schedule pipeline lives under `scraper/course_schedule/`:
@@ -66,6 +71,8 @@ data/faculty_list.csv              → faculty_site_scraper.py            → da
 data/faculty_websites/             → faculty_site_cleaner.py            → data/faculty_websites_cleaned/<college>/<name>.txt
 data/faculty_websites_cleaned/     → faculty_site_analysis.py           → data/faculty_list_with_field.csv
   (also merges in data/faculty_list.csv + data/faculty_list_with_verified_profile.csv as side-input)
+
+data/faculty_list.csv + colleges.csv → faculty_publication_scraper.py        → data/faculty_publications.csv
 
 data/colleges.csv                  → course_schedule.scrape_course_schedule → data/course_schedule/<College Name>.csv
 ```
@@ -97,6 +104,8 @@ After scraping, `filter_non_human_rows` runs the `openai/privacy-filter` token-c
 2. Keeps only lines near mentions of the faculty member's name or research-relevant keywords (research, interest, courses, publications, etc.)
 
 **`scraper/faculty_site_analysis.py`** — Uses a local Ollama instance (`qwen3:30b-a3b-instruct-2507-q4_K_M` at `localhost:11434`) to extract research subfields from cleaned text, then classifies each faculty member into one of `ALLOWED_FIELDS = ["Computer Science", "Mathematics or Statistics", "Unknown", "Invalid"]`. Up to `MAX_SUBFIELDS = 5` CS subfields per row, drawn from the `CS_SUBFIELDS` taxonomy. Inputs: `data/faculty_list.csv` (base rows) merged with `data/faculty_list_with_verified_profile.csv` (so the prompt can see Scholar interests/affiliation), plus the per-faculty cleaned-text file under `data/faculty_websites_cleaned/<college>/<name>.txt`. Output: `data/faculty_list_with_field.csv` with `field` and pipe-separated `subfields` columns. Resumable — on restart it merges any existing output back in and only re-runs rows missing a `field`.
+
+**`scraper/faculty_publication_scraper.py`** — Fetches CS publications per institution from OpenAlex (filtered by `topics.field.id:17`) using ROR IDs from `colleges.csv`. Each output row is a unique paper. For each work, matches authorships to the faculty list by `(last_name, first_initial)` and institution ROR; matched names are collected in the `matched_faculty` column. Remaining co-authors are classified as `student` (same institution, last name not in faculty list), `faculty` (same institution, last name matches), `other_lac` (institution name in our LAC set), or `external`. Deduplicates papers by normalized title, preferring journal/proceedings versions over preprints and merging matched faculty across duplicates. Output columns include `url` (DOI or landing page), `cited_by_count`, `topics`, `subfields`, and per-category co-author lists. Append-only by default (skips colleges already in the output); `--overwrite` re-runs from scratch, `--college <name>` re-runs a single college. Requires `OPENALEX_API_KEY` in `.env` (optional but recommended for higher rate limits). Outputs `data/faculty_publications.csv`.
 
 **`scraper/course_schedule/`** — Course-schedule scraping sub-package. The driver loop lives in `course_schedule_scraper.py` (`CourseScheduleScraper` base class): for each `(academic_year, term)` pair it calls `url_for(...)`, drives Selenium via `load(...)` (one fresh driver per page by default — many catalog SPAs only fetch on first navigation), and hands the rendered HTML to `parse_page(...)`. Subclasses set `college` (a `constants.College` value), `years_back` (default 5), and optionally `terms` (e.g. `["F", "S"]`; empty means one load per year for sites whose listing covers all terms). Per-school subclasses live alongside the base: `amherst.py`, `macalester.py`, `trinity.py`, `williams.py`. `selfservice.py` covers the large family of LACs running Ellucian Self-Service catalogs — one class is generated per `(College, base_url, subject)` tuple in `SELFSERVICE_COLLEGES`. Most are at `selfservice.<edu>`, but several deployments live under custom subdomains (e.g. Emmanuel's `ecss.`, Grinnell's `colss-prod.ec.`, Luther's `norsehub.`, Meredith's `mcis.`, Westmont's `waypoint.`); the membership criterion is "Schedule Link contains `/Student/Courses/Search`." Self-Service exposes only currently registerable terms (last finished + current + next one or two) so the scraper captures whatever appears, not a fixed history; logged-in-only catalogs (Allegheny, Wooster) are detected via the `/Account/Login` redirect and produce empty results. The runner `scrape_course_schedule.py` instantiates every scraper in `SCRAPERS` (including `*selfservice_scrapers()`). By default each scraper skips `(academic_year, term)` pairs already present in its CSV and only fetches new ones; `--force` re-scrapes every configured pair (replacing existing rows for that pair while preserving pairs absent from the new scrape). For scrapers with `terms = []` (one URL per year covering all terms, e.g. Williams), any row matching the academic year counts as coverage and the year is skipped. Output columns: `college, academic_year, term, course_code, section, course_name, instructor, time, url`.
 
