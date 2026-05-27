@@ -13,6 +13,7 @@ const ICON_PROGRAM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
 const ICON_CATALOG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
 const ICON_PERSON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
 const ICON_BOOK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`;
+const ICON_SCROLL = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`;
 
 // ── column tooltips ───────────────────────────────────────────────────────
 const COL_TOOLTIPS = {
@@ -41,6 +42,14 @@ const FAC_COLS = [
   { key: 'hindex5y',   label: 'h5-index',   numeric: true },
   { key: 'i10index',   label: 'i10-index', numeric: true },
   { key: 'i10index5y', label: 'i10-5yr',   numeric: true },
+];
+
+const PUB_COLS = [
+  { key: 'year',    label: 'Year',    numeric: true  },
+  { key: 'title',   label: 'Title',   numeric: false },
+  { key: 'venue',   label: 'Venue',   numeric: false },
+  { key: 'authors', label: 'Authors', numeric: false },
+  { key: 'cites',   label: 'Cites',   numeric: true  },
 ];
 
 // ── filter categories ──────────────────────────────────────────────────────
@@ -79,6 +88,7 @@ function collegeSlug(name) {
 let allColleges = [];
 let collegeLinks = {};
 let courseSchedules = {};
+let collegePublications = {};
 let collegeSort = { key: 'total', dir: -1 };
 let activeCategories = new Set();
 let activeSubfields = new Set();
@@ -137,6 +147,7 @@ async function loadData() {
   allColleges = [];
   collegeLinks = {};
   courseSchedules = {};
+  collegePublications = {};
   for (const [name, d] of Object.entries(merged)) {
     allColleges.push({
       name,
@@ -154,6 +165,9 @@ async function loadData() {
     };
     if (d.terms) {
       courseSchedules[name] = { terms: d.terms, courses: d.courses };
+    }
+    if (d.publications) {
+      collegePublications[name] = d.publications;
     }
   }
 
@@ -785,7 +799,9 @@ const YEARS_PER_PAGE = 4;
 
 function buildPanel(panel, college) {
   const schedule = courseSchedules[college.name];
+  const publications = collegePublications[college.name];
   const hasCourses = !!schedule;
+  const hasPublications = !!publications;
   const facultyUrl = (collegeLinks[college.name] || {}).faculty_url;
   let view = panel._view || 'faculty';
   // Persisted across view-toggles via the outer panel element; the inner
@@ -798,6 +814,9 @@ function buildPanel(panel, college) {
     const coursesBtn = hasCourses
       ? `<button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>`
       : `<button data-view="courses" class="disabled" disabled title="Course schedule not accessible" aria-label="Course schedule not accessible">${ICON_BOOK}</button>`;
+    const pubsBtn = hasPublications
+      ? `<button data-view="publications" class="${view === 'publications' ? 'active' : ''}" title="Publications" aria-label="Publications">${ICON_SCROLL}</button>`
+      : `<button data-view="publications" class="disabled" disabled title="No publication data" aria-label="No publication data">${ICON_SCROLL}</button>`;
     const collegeNameEsc = esc(college.name).replace(/'/g, "\\'");
     const sourceLink = facultyUrl
       ? `<a class="faculty-source-link" href="${esc(facultyUrl)}" target="_blank" rel="noopener" onclick="track('click_link','link','faculty_source','${collegeNameEsc}')">source</a>`
@@ -807,6 +826,7 @@ function buildPanel(panel, college) {
         <div class="panel-toggle-views">
           <button data-view="faculty" class="${view === 'faculty' ? 'active' : ''}" title="Faculty" aria-label="Faculty">${ICON_PERSON}</button>
           ${coursesBtn}
+          ${pubsBtn}
           ${view === 'faculty' ? sourceLink : ''}
         </div>
         <div class="term-paginator-slot"></div>
@@ -829,6 +849,8 @@ function buildPanel(panel, college) {
           render();
         },
       });
+    } else if (view === 'publications' && hasPublications) {
+      renderPublicationsTable(body, publications);
     } else {
       renderFacultyTable(body, college.faculty);
     }
@@ -970,6 +992,116 @@ function renderFacultyTable(panel, faculty) {
           facSort = { key, dir: key === 'name' || key === 'title' ? 1 : -1 };
         }
         track('sort', 'faculty', facSort.dir === 1 ? 'asc' : 'desc', key);
+        render();
+      });
+    });
+  }
+
+  render();
+}
+
+// ── publications panel ────────────────────────────────────────────────────
+function renderPublicationsTable(panel, publications) {
+  let pubSort = { key: 'year', dir: -1 };
+
+  function headersHtml() {
+    return PUB_COLS.map(col => {
+      const active = col.key === pubSort.key;
+      const arrow = active ? (pubSort.dir === 1 ? '↑' : '↓') : '↕';
+      return `<div class="pth ${active ? 'sorted' : ''}" data-pub-col="${col.key}">
+        <span class="pth-label">${col.label}</span> <span class="sort-icon">${arrow}</span>
+      </div>`;
+    }).join('');
+  }
+
+  function sortedPubs() {
+    const fn = {
+      year:    p => p.year ?? -1,
+      title:   p => (p.title || '').toLowerCase(),
+      venue:   p => (p.venue_acronym || p.venue || '').toLowerCase(),
+      authors: p => (p.authors || []).map(a => a.name).join(', ').toLowerCase(),
+      cites:   p => p.cites ?? -1,
+    }[pubSort.key] || (p => p.year ?? -1);
+
+    return [...publications].sort((a, b) => {
+      const av = fn(a), bv = fn(b);
+      if (typeof av === 'string') return pubSort.dir * av.localeCompare(bv);
+      return pubSort.dir * (av - bv);
+    });
+  }
+
+  function rowsHtml() {
+    return sortedPubs().map(p => {
+      // Year
+      const yearStr = p.year != null ? String(p.year) : '—';
+
+      // Title (linked if URL available)
+      const titleInner = p.url
+        ? `<a class="pub-title-link" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`
+        : `<span class="pub-title-text">${esc(p.title)}</span>`;
+
+      // Venue: prefer acronym with full name as tooltip
+      let venueHtml = '';
+      if (p.venue_acronym) {
+        venueHtml = `<span title="${esc(p.venue || '')}">${esc(p.venue_acronym)}</span>`;
+      } else if (p.venue) {
+        venueHtml = `<span class="pub-venue-full">${esc(p.venue)}</span>`;
+      } else {
+        venueHtml = '—';
+      }
+      if (p.venue_ranking) {
+        venueHtml += `<sup class="venue-rank" title="${esc(p.venue_ranking_source || '')}">${esc(p.venue_ranking)}</sup>`;
+      }
+
+      // Authors — each with affiliation tooltip and OpenAlex link
+      let authorsHtml = '—';
+      if (p.authors && p.authors.length) {
+        authorsHtml = p.authors.map(a => {
+          const tip = a.affiliation ? ` title="${esc(a.affiliation)}"` : '';
+          if (a.url) {
+            return `<a class="pub-author" href="${esc(a.url)}" target="_blank" rel="noopener"${tip}>${esc(a.name)}</a>`;
+          }
+          return `<span class="pub-author"${tip}>${esc(a.name)}</span>`;
+        }).join(', ');
+      }
+
+      // Citations
+      const citesStr = p.cites != null
+        ? `<span class="num-full">${p.cites.toLocaleString()}</span><span class="num-short">${abbrev(p.cites)}</span>`
+        : '—';
+
+      return `
+        <div class="pub-row">
+          <div class="pub-grid">
+            <div class="ptd ptd-year">${yearStr}</div>
+            <div class="ptd ptd-title">${titleInner}</div>
+            <div class="ptd ptd-venue">${venueHtml}</div>
+            <div class="ptd ptd-authors">${authorsHtml}</div>
+            <div class="ptd-num">${citesStr}</div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function render() {
+    panel.innerHTML = `
+      <div class="pub-head-row">
+        <div class="pub-grid" id="pub-head-${panel.id}">${headersHtml()}</div>
+      </div>
+      <div class="pub-rows-wrap">${rowsHtml()}</div>
+    `;
+
+    panel.querySelectorAll('.pth').forEach(th => {
+      th.addEventListener('click', e => {
+        e.stopPropagation();
+        const key = th.dataset.pubCol;
+        if (pubSort.key === key) {
+          pubSort.dir *= -1;
+        } else {
+          pubSort = { key, dir: key === 'title' || key === 'venue' ? 1 : -1 };
+        }
+        track('sort', 'publications', pubSort.dir === 1 ? 'asc' : 'desc', key);
         render();
       });
     });

@@ -42,6 +42,7 @@ DEFAULT_VERIFIED = ROOT / "data" / "faculty_list_with_verified_profile.csv"
 DEFAULT_FIELD    = ROOT / "data" / "faculty_list_with_field.csv"
 DEFAULT_COLLEGES = ROOT / "data" / "colleges.csv"
 DEFAULT_COURSES  = ROOT / "data" / "course_schedule"
+DEFAULT_PUBS     = ROOT / "data" / "faculty_publications.csv"
 DEFAULT_OUTPUT   = DOCS / "data.json"
 INDEX_HTML       = DOCS / "index.html"
 SITEMAP_XML      = DOCS / "sitemap.xml"
@@ -625,10 +626,130 @@ def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) ->
     return result
 
 
+# ── publications ─────────────────────────────────────────────────────────
+
+EXCLUDED_VENUE_TYPES = {"book series", "ebook platform"}
+
+
+def _split_pipe(s: str) -> list[str]:
+    if not s:
+        return []
+    return [p.strip() for p in s.split("|") if p.strip()]
+
+
+def _split_semi(s: str) -> list[str]:
+    if not s:
+        return []
+    return [p.strip() for p in s.split(";") if p.strip()]
+
+
+_REPO_VENUE_RE = re.compile(r"^(\w+)\s+\(.*\)$")
+
+
+def _clean_venue(v: str) -> str | None:
+    if not v:
+        return None
+    if "arxiv" in v.lower():
+        return "arXiv"
+    if "http" in v:
+        return None
+    m = _REPO_VENUE_RE.match(v)
+    if m:
+        v = m.group(1)
+    return v.replace("&amp;", "&") or None
+
+
+def build_publications(pubs_csv: Path) -> dict[str, dict]:
+    """Return {college_name: {publications: [...]}}."""
+    if not pubs_csv.exists():
+        return {}
+
+    rows = read_csv(pubs_csv)
+    colleges: dict[str, list[dict]] = defaultdict(list)
+
+    for r in rows:
+        venue_type = (r.get("venue_type") or "").strip()
+        if venue_type in EXCLUDED_VENUE_TYPES:
+            continue
+
+        college = (r.get("college") or "").strip()
+        if not college:
+            continue
+
+        year_raw = (r.get("year") or "").strip()
+        year = None
+        if year_raw:
+            try:
+                year = int(float(year_raw))
+            except (ValueError, TypeError):
+                pass
+        if year is None:
+            continue
+
+        # Venue ranking: CORE only for conferences, SJR for journals.
+        # Treat as conference if venue_type says so, or if it has a
+        # CSRankings/CORE match (many proceedings have NaN venue_type).
+        core_rank = (r.get("venue_core_ranking") or "").strip() or None
+        sjr_quartile = (r.get("venue_sjr_quartile") or "").strip() or None
+        is_csranking = bool((r.get("venue_in_csranking") or "").strip())
+        is_conference = venue_type == "conference" or is_csranking or core_rank
+        venue_ranking = None
+        venue_ranking_source = None
+        if is_conference:
+            if core_rank:
+                venue_ranking = core_rank
+                venue_ranking_source = "ICORE 2026 Ranking"
+        elif sjr_quartile:
+            venue_ranking = sjr_quartile
+            venue_ranking_source = "Scimago 2025 Ranking"
+
+        cites_raw = (r.get("cited_by_count") or "").strip()
+        cites = 0
+        if cites_raw:
+            try:
+                cites = int(float(cites_raw))
+            except (ValueError, TypeError):
+                pass
+
+        authors_raw = (r.get("authors") or "").strip()
+        authors = []
+        if authors_raw:
+            try:
+                for a in json.loads(authors_raw):
+                    author = {"name": a.get("name", "")}
+                    aid = a.get("id", "")
+                    if aid:
+                        author["url"] = f"https://openalex.org/authors/{aid}"
+                    affs = a.get("affiliations", [])
+                    if affs:
+                        author["affiliation"] = affs[0]
+                    authors.append(author)
+            except (json.JSONDecodeError, TypeError):
+                pass
+
+        pub = {
+            "title": (r.get("title") or "").strip(),
+            "url": (r.get("url") or "").strip() or None,
+            "year": year,
+            "cites": cites,
+            "venue": _clean_venue((r.get("venue") or "").strip()),
+            "venue_acronym": (r.get("venue_acronym") or "").strip() or None,
+            "venue_ranking": venue_ranking,
+            "venue_ranking_source": venue_ranking_source,
+            "authors": authors,
+        }
+        colleges[college].append(pub)
+
+    result: dict[str, dict] = {}
+    for name, pubs in colleges.items():
+        result[name] = {"publications": pubs}
+    return result
+
+
 # ── merge + date sync ─────────────────────────────────────────────────────
 
-def merge(faculty: dict[str, dict], links: dict[str, dict], courses: dict[str, dict]) -> dict[str, dict]:
-    """Combine the three per-college maps. Iteration follows the faculty map
+def merge(faculty: dict[str, dict], links: dict[str, dict], courses: dict[str, dict], publications: dict[str, dict]) -> dict[str, dict]:
+    """Combine the four per-college maps. Iteration follows the faculty map
     insertion order (CSV row order), preserving the legacy UI ordering."""
     out: dict[str, dict] = {}
     for name, fac in faculty.items():
@@ -638,6 +759,8 @@ def merge(faculty: dict[str, dict], links: dict[str, dict], courses: dict[str, d
         entry.update(fac)
         if name in courses:
             entry.update(courses[name])
+        if name in publications:
+            entry.update(publications[name])
         out[name] = entry
     return out
 
@@ -698,6 +821,7 @@ def main():
     p.add_argument("--field",    type=Path, default=DEFAULT_FIELD)
     p.add_argument("--colleges", type=Path, default=DEFAULT_COLLEGES)
     p.add_argument("--courses-dir", type=Path, default=DEFAULT_COURSES)
+    p.add_argument("--pubs",     type=Path, default=DEFAULT_PUBS)
     p.add_argument("--output",   type=Path, default=DEFAULT_OUTPUT)
     p.add_argument("--no-sync-dates", action="store_true",
                    help="Skip updating JSON-LD/sitemap/footer dates.")
@@ -706,7 +830,8 @@ def main():
     faculty = build_faculty(args.list, args.scholar, args.verified, args.field)
     links = build_links(args.colleges, set(faculty.keys()))
     courses = build_courses(args.courses_dir, faculty_match_index(faculty))
-    merged = merge(faculty, links, courses)
+    publications = build_publications(args.pubs)
+    merged = merge(faculty, links, courses, publications)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
@@ -717,8 +842,11 @@ def main():
 
     total_faculty = sum(c["total"] for c in merged.values())
     total_courses = sum(len(c.get("courses", [])) for c in merged.values())
+    total_pubs = sum(len(c.get("publications", [])) for c in merged.values())
+    pubs_colleges = sum(1 for c in merged.values() if c.get("publications"))
     print(f"Wrote {len(merged)} colleges, {total_faculty} faculty, "
           f"{total_courses} courses → {args.output}")
+    print(f"{total_pubs} publications across {pubs_colleges} colleges")
 
 
 if __name__ == "__main__":

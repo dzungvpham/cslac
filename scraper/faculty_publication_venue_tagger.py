@@ -118,6 +118,8 @@ CSRANKINGS = [
     # Economics & Computation
     ("EC", "ECom", [r"ACM.*Conference on Economics and Computation"], []),
     ("WINE", "ECom", [r"\bWINE\b", r"Internet and Network Economics"], []),
+    # AI Ethics
+    ("FAccT", "AIEthics", [r"\bFAccT\b", r"Fairness,? Accountability,? and Transparency"], []),
     # HCI
     ("CHI", "HCI", [r"CHI.*Human Factors in Computing Systems", r"SIGCHI.*Human Factors"], []),
     ("UbiComp", "HCI", [r"\bUbiComp\b", r"ACM.*Ubiquitous Computing(?! Electronics)"], [r"UEMCON"]),
@@ -165,46 +167,91 @@ _CSRANKING_TO_CORE = {
     "USENIX ATC": "USENIX",
     "EUROGRAPHICS": "EG",
     "EuroCrypt": "EUROCRYPT",
+    "VIS": "IEEE VIS",
 }
 
-# Words too generic to be useful for title-based matching
 _TITLE_STOP = frozenset({
-    "international", "conference", "on", "the", "of", "and", "in", "for",
-    "a", "an", "proceedings", "annual", "ieee", "acm", "symposium", "workshop",
-    "computing", "computer", "science", "sciences", "systems", "system",
-    "engineering", "advances", "applications", "theory", "practice",
-    "methods", "techniques", "world", "joint", "european", "north",
-    "american", "asia", "pacific", "national", "association",
-    "artificial", "intelligence", "information", "knowledge", "data",
-    "software", "security", "privacy", "network", "networks", "learning",
-    "machine", "language", "languages", "design", "analysis", "management",
-    "distributed", "parallel", "mobile", "web", "multimedia", "digital",
-    "signal", "processing", "pattern", "recognition", "logic", "formal",
-    "programming", "database", "databases", "research", "technology",
-    "technologies", "modeling", "modelling", "simulation", "automated",
-    "automation", "intelligent", "smart", "high", "performance", "real",
-    "time", "user", "human", "interaction", "visualization", "visual",
-    "cognitive", "neural", "embedded", "testing", "verification",
-    "validation", "mining", "retrieval", "natural", "image",
+    "a", "an", "the", "of", "on", "and", "in", "for", "its", "to", "with",
+    "proceedings", "annual", "biennial", "international", "national",
+    "acm", "ieee", "siam", "usenix", "aaai", "rsj",
 })
 
-_RANK_ORDER = {"A*": 0, "A": 1, "B": 2, "C": 3}
+_VENUE_PREFIX_RE = re.compile(
+    r"^proceedings\s+of\s+(?:the\s+)?"
+    r"(?:(?:\w+)\s+)?"                          # "first", "15th", "2016", etc.
+    r"(?:\(\d{4}\)\s+)?"                         # "(2016)"
+    r"(?:(?:ACM|IEEE|SIAM|USENIX|AAAI)\s+)?",   # org prefix
+    re.IGNORECASE,
+)
+_PAREN_JUNK_RE = re.compile(
+    r"\s*\((?:"
+    r"(?:IEEE\s*)?Cat\.?\s*No\.|"               # (IEEE Cat. No.XX) / (Cat. No.XX)
+    r"IEEE\s*Cat\b"
+    r")[^)]*\)",
+    re.IGNORECASE,
+)
+_ORDINAL_RE = re.compile(r"\b\d+(?:st|nd|rd|th)\b", re.IGNORECASE)
+_YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
+
+
+def _stem(w: str) -> str:
+    if w.endswith("ies") and len(w) > 4:
+        return w[:-3] + "y"
+    if w.endswith("ses") or w.endswith("zes"):
+        return w[:-2]
+    if w.endswith("s") and not w.endswith("ss"):
+        return w[:-1]
+    return w
+
+
+def _tokenize(s: str) -> set[str]:
+    s = s.replace("&amp;", "&")
+    s = _PAREN_JUNK_RE.sub("", s)
+    s = _VENUE_PREFIX_RE.sub("", s)
+    s = _ORDINAL_RE.sub("", s)
+    s = _YEAR_RE.sub("", s)
+    return {
+        _stem(w.lower())
+        for w in re.split(r"\W+", s)
+        if w and len(w) > 1 and w.lower() not in _TITLE_STOP
+    }
+
+_RANK_ORDER = {"A*": 0, "A": 1, "B": 2, "C": 3, "": 99}
 _PAREN_ACRONYM_RE = re.compile(r"\(([A-Z][A-Za-z&/+\-]{1,15})(?:[\s\-]*\d{0,4})?\)")
 
 
 _ICORE_CACHE = Path(__file__).resolve().parent / "icore2026.csv"
 
 
+def _build_core_db(rows: list[dict]) -> dict[str, tuple[str, str]]:
+    """Build {key: (title, rank)} dict, disambiguating duplicate acronyms.
+
+    The highest-ranked entry keeps the plain acronym; lower-ranked duplicates
+    get "ACR (Title)" as their key so both remain matchable.
+    """
+    best: dict[str, tuple[str, str, int]] = {}
+    for r in rows:
+        acr, title, rank = str(r["acronym"]), str(r["title"]), str(r["rank"])
+        pri = _RANK_ORDER.get(rank, 99)
+        if acr not in best or pri < best[acr][2]:
+            best[acr] = (title, rank, pri)
+
+    result: dict[str, tuple[str, str]] = {}
+    for r in rows:
+        acr, title, rank = str(r["acronym"]), str(r["title"]), str(r["rank"])
+        pri = _RANK_ORDER.get(rank, 99)
+        if pri == best[acr][2] and title == best[acr][0]:
+            result[acr] = (title, rank)
+        else:
+            result[f"{acr} ({title})"] = (title, rank)
+    return result
+
+
 def _load_or_scrape_icore() -> dict[str, tuple[str, str]]:
     """Load ICORE 2026 rankings from cache, scraping if not present."""
     if _ICORE_CACHE.exists():
-        cache = pd.read_csv(_ICORE_CACHE)
-        result = {}
-        for _, row in cache.iterrows():
-            acr, title, rank = row["acronym"], row["title"], row["rank"]
-            if acr not in result or _RANK_ORDER.get(rank, 99) < _RANK_ORDER.get(result[acr][1], 99):
-                result[acr] = (title, rank)
-        return result
+        cache = pd.read_csv(_ICORE_CACHE).fillna("")
+        return _build_core_db(cache.to_dict("records"))
     return _scrape_and_save_icore()
 
 
@@ -212,14 +259,25 @@ def _scrape_and_save_icore() -> dict[str, tuple[str, str]]:
     """Scrape ICORE 2026 rankings and save to CSV cache."""
     import html as html_mod
     import time
-    import urllib.request
+
+    import requests as req_lib
+
+    session = req_lib.Session()
+    session.headers.update({
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    })
 
     rows = []
     for page in range(1, ICORE_PAGES + 1):
         url = ICORE_URL.format(page=page)
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req) as resp:
-            content = resp.read().decode("utf-8")
+        resp = session.get(url, timeout=30)
+        resp.raise_for_status()
+        content = resp.text
         cells = re.findall(r"<td[^>]*>(.*?)</td>", content, re.DOTALL)
         cells = [html_mod.unescape(re.sub(r"<[^>]+>", "", c).strip()) for c in cells]
         i = 0
@@ -231,8 +289,9 @@ def _scrape_and_save_icore() -> dict[str, tuple[str, str]]:
                 ).strip()
                 acronym, rank = cells[i + 1], cells[i + 3]
                 r = rank.replace("Australasian ", "")
-                if r in _RANK_ORDER:
-                    rows.append({"acronym": acronym, "title": title, "rank": r})
+                if r not in _RANK_ORDER:
+                    r = ""
+                rows.append({"acronym": acronym, "title": title, "rank": r})
                 i += 9
             else:
                 i += 1
@@ -243,12 +302,7 @@ def _scrape_and_save_icore() -> dict[str, tuple[str, str]]:
     cache_df.to_csv(_ICORE_CACHE, index=False)
     print(f"  Saved to {_ICORE_CACHE}")
 
-    result = {}
-    for _, row in cache_df.iterrows():
-        acr, title, rank = row["acronym"], row["title"], row["rank"]
-        if acr not in result or _RANK_ORDER[rank] < _RANK_ORDER.get(result[acr][1], 99):
-            result[acr] = (title, rank)
-    return result
+    return _build_core_db(rows)
 
 
 def match_core(
@@ -277,21 +331,40 @@ def match_core(
             if acr in core_db:
                 venue_to_core[v] = (acr, core_db[acr][1])
 
-    # Step 3: Title-keyword matching (all distinctive words must appear in order)
-    for acr, (title, rank) in core_db.items():
-        words = [w for w in re.split(r"\W+", title) if w.lower() not in _TITLE_STOP and len(w) > 2]
-        if len(words) < 2:
+    # Step 3: Word-set matching — score by recall (CORE words found in venue),
+    # tiebreak by Jaccard.  Skip journals / book series that don't look like
+    # conference proceedings (OpenAlex often mislabels proceedings as journals).
+    _CONF_WORDS_RE = re.compile(
+        r"proceedings|conference|symposium|workshop", re.IGNORECASE,
+    )
+    journal_venues = set(
+        v for v in df.loc[
+            df["venue_type"].isin(["journal", "book series"]), "venue"
+        ].dropna().unique()
+        if not _CONF_WORDS_RE.search(v)
+    )
+    core_tokens = {acr: _tokenize(title) for acr, (title, _) in core_db.items()}
+    for v in venues:
+        if not isinstance(v, str) or v.startswith("http") or v in venue_to_core:
             continue
-        pattern = r"\b" + r"\b.*?\b".join(re.escape(w) for w in words) + r"\b"
-        try:
-            compiled = re.compile(pattern, re.IGNORECASE)
-        except re.error:
+        if v in journal_venues:
             continue
-        for v in venues:
-            if not isinstance(v, str) or v.startswith("http") or v in venue_to_core:
+        v_tokens = _tokenize(v)
+        if len(v_tokens) < 2:
+            continue
+        best_acr, best_rank = None, None
+        best_recall, best_jaccard = 0.0, 0.0
+        for acr, c_tokens in core_tokens.items():
+            if len(c_tokens) < 2:
                 continue
-            if compiled.search(v):
-                venue_to_core[v] = (acr, rank)
+            inter = len(c_tokens & v_tokens)
+            recall = inter / len(c_tokens)
+            jaccard = inter / len(c_tokens | v_tokens)
+            if recall >= 0.8 and jaccard >= 0.65 and (recall, jaccard) > (best_recall, best_jaccard):
+                best_acr, best_rank = acr, core_db[acr][1]
+                best_recall, best_jaccard = recall, jaccard
+        if best_acr:
+            venue_to_core[v] = (best_acr, best_rank)
 
     return venue_to_core
 
@@ -352,6 +425,25 @@ def main():
     for v, (acr, _) in core_matches.items():
         mask = (df["venue"] == v) & (df["venue_acronym"] == "")
         df.loc[mask, "venue_acronym"] = acr
+
+    # "Findings of" ACL/EMNLP/NAACL — tag with parent conference rank
+    _FINDINGS_RE = re.compile(
+        r"Findings of the Association for Computational Linguistics"
+        r"[:\s]*(ACL|EMNLP|NAACL)",
+        re.IGNORECASE,
+    )
+    for _, row in df.iterrows():
+        v = row["venue"]
+        if not isinstance(v, str) or row["venue_acronym"]:
+            continue
+        m = _FINDINGS_RE.search(v)
+        if m:
+            parent = m.group(1).upper()
+            acr = f"{parent} (Findings)"
+            core_acr = parent if parent != "EMNLP" else "EMNLP"
+            rank = core_db.get(core_acr, ("", ""))[1] if core_acr in core_db else ""
+            df.loc[df["venue"] == v, "venue_acronym"] = acr
+            df.loc[df["venue"] == v, "venue_core_ranking"] = rank
 
     # Scimago journal ranking
     print("Matching Scimago journal rankings...")
