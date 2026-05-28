@@ -95,6 +95,7 @@ function collegeSlug(name) {
 
 // ── state ──────────────────────────────────────────────────────────────────
 let allColleges = [];
+let collegesByName = {};
 let collegeLinks = {};
 let courseSchedules = {};
 let collegePublications = {};
@@ -206,17 +207,94 @@ async function loadData() {
 
   // Precompute a normalized lookup of each faculty's interests so the
   // subfield filter can match in O(1) per chip.
+  collegesByName = {};
   for (const c of allColleges) {
-    const collegeLc = c.name.toLowerCase();
+    const stateCode = collegeLinks[c.name]?.state;
+    const stateName = stateCode && US_STATES[stateCode];
+    const collegeBits = [c.name, stateCode, stateName].filter(Boolean).join(' ');
     for (const f of c.faculty) {
       f._interestsSet = new Set(
         (f.interests || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
       );
+      // `_nameSearch` is name only — drives the "expand to pubs + courses"
+      // path. `_search` adds title/interests/college, used for the weaker
+      // "show this faculty as a row" path.
+      f._nameSearch = (f.name || '').toLowerCase();
       f._search = [f.name, f.title, f.interests, c.name]
         .filter(Boolean).join(' ').toLowerCase();
     }
-    c._search = collegeLc;
+    c._search = collegeBits.toLowerCase();
     c.courses_per_year = coursesInLatestYear(courseSchedules[c.name]);
+    collegesByName[c.name] = c;
+  }
+  // Search strings for publications (title, venue, every author + affiliation,
+  // plus the canonical matched-faculty names so a query like "Katie Keith"
+  // finds papers whose OpenAlex author list spells it "Katherine A. Keith").
+  // Each faculty also gets a `_matchedPubs` list pointing at the papers they
+  // were matched on, so search can cross-check whether the triggering pub
+  // would actually pass the current pub filters before claiming a match.
+  for (const [name, pubs] of Object.entries(collegePublications)) {
+    const college = collegesByName[name];
+    const byFacultyName = new Map();
+    if (college) {
+      for (const f of college.faculty) {
+        f._matchedPubs = [];
+        if (f.name) byFacultyName.set(f.name.toLowerCase(), f);
+      }
+    }
+    for (const p of pubs) {
+      p._college = name;
+      const parts = [p.title, p.venue, p.venue_acronym];
+      if (Array.isArray(p.authors)) {
+        for (const a of p.authors) {
+          if (a.name) parts.push(a.name);
+          if (a.affiliation) parts.push(a.affiliation);
+        }
+      }
+      if (Array.isArray(p.matched_faculty)) {
+        for (const mf of p.matched_faculty) if (mf) parts.push(mf);
+      }
+      p._search = parts.filter(Boolean).join(' ').toLowerCase();
+      if (Array.isArray(p.matched_faculty)) {
+        for (const facName of p.matched_faculty) {
+          const f = byFacultyName.get((facName || '').toLowerCase());
+          if (f) f._matchedPubs.push(p);
+        }
+      }
+    }
+  }
+  // Search strings for courses (code, name, every instructor across all terms),
+  // plus a per-faculty list of courses they teach so expansion can use it.
+  for (const [collegeName, sched] of Object.entries(courseSchedules)) {
+    if (!sched?.courses) continue;
+    const college = collegesByName[collegeName];
+    const byFacultyName = new Map();
+    if (college) {
+      for (const f of college.faculty) {
+        f._matchedCourses = [];
+        if (f.name) byFacultyName.set(f.name, f);
+      }
+    }
+    for (const c of sched.courses) {
+      // Course `_search` is intentionally code + name only. Instructor-name
+      // queries reach courses via step 1 → step 5 (faculty match expands to
+      // their courses); including instructors here would also pull in every
+      // co-instructor of every course they ever taught as faculty rows in
+      // step 6, which surfaces unrelated faculty.
+      c._search = [c.code, c.name].filter(Boolean).join(' ').toLowerCase();
+      if (Array.isArray(c.instructors)) {
+        const seenInstr = new Set();
+        for (const instr of c.instructors) {
+          if (!Array.isArray(instr)) continue;
+          for (const p of instr) {
+            if (!p.n || seenInstr.has(p.n)) continue;
+            seenInstr.add(p.n);
+            const f = byFacultyName.get(p.n);
+            if (f) f._matchedCourses.push(c);
+          }
+        }
+      }
+    }
   }
 
   buildCollegeHeaders();
@@ -322,7 +400,7 @@ function buildFilterBar() {
       </button>`;
     }).join('') +
     `<input type="text" class="search-input" id="search-input" placeholder="Search…"
-      aria-label="Search faculty" value="${esc(searchDraft)}" />` +
+      aria-label="Search faculty, publications, and courses" value="${esc(searchDraft)}" />` +
     `<button class="expand-toggle ${advActive}" id="advanced-toggle">${advIcon}Advanced filter${advCount}</button>` +
     `<button class="expand-toggle" id="expand-toggle">${expandIcon}${expandLabel}</button>`;
 
@@ -662,14 +740,188 @@ function toggleExpandAll() {
 }
 
 // ── filtered aggregation ───────────────────────────────────────────────────
+// Tokenize the query once per search. AND-of-tokens means `Daniel Barowy`
+// matches `Daniel W. Barowy` (each token has to appear as a substring of the
+// item's `_search` blob, but they need not be adjacent or in order).
+let _cachedSearchQ = null;
+let _cachedSearchTokens = [];
+function getSearchTokens() {
+  const q = searchQuery.trim().toLowerCase();
+  if (_cachedSearchQ !== q) {
+    _cachedSearchQ = q;
+    _cachedSearchTokens = q ? q.split(/\s+/).filter(Boolean) : [];
+  }
+  return _cachedSearchTokens;
+}
+
+// The search model is categorical: a query is "matched" via one or more of
+// {faculty, pub title/venue, pub LAC author, pub other author, course, college}
+// and each category has different propagation rules. Rather than one boolean
+// predicate over every item, we precompute four sets — faculty/pubs/courses/
+// colleges that should be visible — and the renderers do membership checks.
+//
+//   • Faculty name match → that faculty's row, their papers (filtered) and
+//     their courses.
+//   • Faculty title/interests-only match → just the faculty row (their pubs
+//     and courses stay hidden — a generic field query like "algorithms"
+//     shouldn't drag in every paper of every algorithms researcher).
+//   • Pub title/venue match → that paper plus its matched-faculty as rows
+//     (no extra papers, no courses).
+//   • Pub author match where that author IS an LAC faculty → treated as a
+//     direct faculty match for the matching LAC author.
+//   • Pub author match where the author is NOT an LAC faculty (e.g. an
+//     external collaborator) → just the paper.
+//   • Course match → that course plus its instructors as faculty rows
+//     (the instructors are *not* expanded — their other pubs and courses
+//     stay hidden unless they match the query through some other path).
+//   • College/state match → everything for that college passes (papers still
+//     subject to the active pub filters).
+let _searchResult = null;
+
+function pubVisibleBase(p) {
+  if (pubYearFrom != null && (p.year == null || p.year < pubYearFrom)) return false;
+  if (pubYearTo != null && (p.year == null || p.year > pubYearTo)) return false;
+  const t = p.pub_type;
+  let group, value;
+  if (t === 'conference' || t === 'journal') {
+    group = t;
+    value = p.venue_ranking;
+  } else {
+    group = 'other';
+    value = t;
+  }
+  if (pubExcludes[group].has(value)) return false;
+  const anyInc = pubIncludes.conference.size || pubIncludes.journal.size || pubIncludes.other.size;
+  if (anyInc && !pubIncludes[group].has(value)) return false;
+  return true;
+}
+
+function computeSearchResult() {
+  const tokens = getSearchTokens();
+  if (!tokens.length) return null;
+  const matchesAll = s => !!s && tokens.every(t => s.includes(t));
+  const result = {
+    colleges: new Set(),
+    faculty: new Set(),
+    pubs: new Set(),
+    courses: new Set(),
+  };
+  for (const college of allColleges) {
+    const pubs = collegePublications[college.name] || [];
+    const courses = courseSchedules[college.name]?.courses || [];
+    // College-name (or state) match passes the whole college through; pubs
+    // are still gated by the user's quality/year filters.
+    if (matchesAll(college._search)) {
+      result.colleges.add(college);
+      for (const f of college.faculty) result.faculty.add(f);
+      for (const p of pubs) if (pubVisibleBase(p)) result.pubs.add(p);
+      for (const c of courses) result.courses.add(c);
+      continue;
+    }
+    const facByName = new Map();
+    for (const f of college.faculty) if (f.name) facByName.set(f.name, f);
+    let collegeHasMatch = false;
+    const expanded = new Set();
+    // 1. Faculty match:
+    //    - Name match → faculty row + expand to their pubs + courses.
+    //    - Title/interests-only match → faculty row only (don't expand,
+    //      otherwise a generic query like "algorithms" would pull in every
+    //      paper and course of anyone whose field includes algorithms).
+    for (const f of college.faculty) {
+      if (matchesAll(f._nameSearch)) {
+        result.faculty.add(f);
+        expanded.add(f);
+        collegeHasMatch = true;
+      } else if (matchesAll(f._search)) {
+        result.faculty.add(f);
+        collegeHasMatch = true;
+      }
+    }
+    // 2/3/4. Pub-level matches.
+    for (const p of pubs) {
+      if (!pubVisibleBase(p)) continue;
+      const tvText = ((p.title || '') + ' ' + (p.venue || '') + ' ' + (p.venue_acronym || '')).toLowerCase();
+      const titleVenueMatch = matchesAll(tvText);
+      let lacAuthor = null;
+      if (Array.isArray(p.matched_faculty)) {
+        for (const fn of p.matched_faculty) {
+          if (matchesAll((fn || '').toLowerCase())) { lacAuthor = fn; break; }
+        }
+      }
+      let otherAuthorMatch = false;
+      if (!lacAuthor && Array.isArray(p.authors)) {
+        for (const a of p.authors) {
+          const aText = ((a.name || '') + ' ' + (a.affiliation || '')).toLowerCase();
+          if (matchesAll(aText)) { otherAuthorMatch = true; break; }
+        }
+      }
+      if (titleVenueMatch) {
+        result.pubs.add(p);
+        for (const fn of p.matched_faculty || []) {
+          const f = facByName.get(fn);
+          if (f) result.faculty.add(f); // row only — not expanded
+        }
+        collegeHasMatch = true;
+      }
+      if (lacAuthor) {
+        const f = facByName.get(lacAuthor);
+        if (f) {
+          result.faculty.add(f);
+          expanded.add(f);
+          collegeHasMatch = true;
+        }
+      } else if (otherAuthorMatch) {
+        // External co-author match: show the paper, but don't surface any
+        // LAC faculty just because they happen to be on the same paper.
+        result.pubs.add(p);
+        collegeHasMatch = true;
+      }
+    }
+    // 5. Expand pubs + courses for faculty matched directly or via LAC author.
+    for (const f of expanded) {
+      for (const p of f._matchedPubs || []) {
+        if (pubVisibleBase(p)) result.pubs.add(p);
+      }
+      for (const c of f._matchedCourses || []) {
+        result.courses.add(c);
+      }
+    }
+    // 6. Course match (on the course's code + name only — `_search` no
+    //    longer includes instructor names) → course row plus the faculty
+    //    teaching it as faculty rows. They're added to `result.faculty`
+    //    but not to `expanded`, so they don't drag in their other pubs
+    //    or courses.
+    for (const c of courses) {
+      if (!matchesAll(c._search)) continue;
+      result.courses.add(c);
+      collegeHasMatch = true;
+      if (Array.isArray(c.instructors)) {
+        const seen = new Set();
+        for (const instr of c.instructors) {
+          if (!Array.isArray(instr)) continue;
+          for (const p of instr) {
+            if (!p.n || seen.has(p.n)) continue;
+            seen.add(p.n);
+            const f = facByName.get(p.n);
+            if (f) result.faculty.add(f);
+          }
+        }
+      }
+    }
+    if (collegeHasMatch) result.colleges.add(college);
+  }
+  return result;
+}
+
+function searchHitFaculty(f) { return !_searchResult || _searchResult.faculty.has(f); }
+function searchHitPub(p)     { return !_searchResult || _searchResult.pubs.has(p); }
+function searchHitCourse(c)  { return !_searchResult || _searchResult.courses.has(c); }
+
 function filteredFaculty(college) {
   const facultyScope = subfieldScope === 'faculty';
   const subActive = facultyScope && activeSubfields.size > 0;
   const subExclude = facultyScope && excludedSubfields.size > 0;
   const catActive = activeCategories.size > 0;
-  const q = searchQuery.trim().toLowerCase();
-  // If the college name itself matches, every faculty row passes the search.
-  const collegeHit = q && college._search.includes(q);
   return college.faculty.filter(f => {
     if (catActive && !activeCategories.has(f.category)) return false;
     if (subActive) {
@@ -684,7 +936,7 @@ function filteredFaculty(college) {
         if (f._interestsSet.has(s.toLowerCase())) return false;
       }
     }
-    if (q && !collegeHit && !f._search.includes(q)) return false;
+    if (!searchHitFaculty(f)) return false;
     return true;
   });
 }
@@ -736,6 +988,18 @@ function filteredPubCount(collegeName) {
   return count;
 }
 
+// Search-aware course count. Used both for the row's Courses column when
+// search is active and to decide whether to keep a college in the results.
+function filteredCourseCount(collegeName) {
+  const sched = courseSchedules[collegeName];
+  if (!sched?.courses) return null;
+  let count = 0;
+  for (const c of sched.courses) {
+    if (searchHitCourse(c)) count++;
+  }
+  return count;
+}
+
 function aggregateCollege(college) {
   const fac = filteredFaculty(college);
   return {
@@ -743,6 +1007,7 @@ function aggregateCollege(college) {
     faculty: fac,
     total: fac.length,
     filtered_pubs: filteredPubCount(college.name),
+    filtered_courses: filteredCourseCount(college.name),
   };
 }
 
@@ -825,11 +1090,18 @@ function updatePapersStat() {
 }
 
 function renderAll() {
+  // Refresh the categorical search match sets before any filtered lookups.
+  _searchResult = computeSearchResult();
+  const searching = !!searchQuery.trim();
   const aggregated = allColleges
     .filter(c => !activeState || collegeLinks[c.name]?.state === activeState)
     .filter(passesSchoolFilter)
     .map(aggregateCollege)
-    .filter(c => c.total > 0);
+    // With an active search, keep a college if any of {faculty, pubs, courses}
+    // has a match — that way searching a venue or instructor surfaces the
+    // college even when no faculty name matches.
+    .filter(c => c.total > 0
+      || (searching && ((c.filtered_pubs ?? 0) > 0 || (c.filtered_courses ?? 0) > 0)));
   const totalFaculty = aggregated.reduce((s, c) => s + c.total, 0);
   animateStat(document.getElementById('stat-colleges'), aggregated.length);
   animateStat(document.getElementById('stat-faculty'), totalFaculty);
@@ -868,10 +1140,11 @@ function buildCollegeHeaders() {
 
 // ── college sort ───────────────────────────────────────────────────────────
 function sortedColleges(colleges) {
+  const searching = !!searchQuery.trim();
   const fn = {
     name:              c => c.name,
     total:             c => c.total,
-    courses_per_year:  c => c.courses_per_year ?? -1,
+    courses_per_year:  c => (searching ? c.filtered_courses : c.courses_per_year) ?? -1,
     filtered_pubs:     c => c.filtered_pubs ?? -1,
   }[collegeSort.key] || (c => c.name);
 
@@ -926,7 +1199,12 @@ function buildCollegeRow(college, idx, priorOpenState) {
   const div = document.createElement('div');
   div.className = 'college-row';
 
-  const cpyText  = fmt(college.courses_per_year);
+  // When the user is searching, the Courses column shows the count of
+  // search-matching courses (across all years) instead of the static
+  // last-academic-year count.
+  const searching = !!searchQuery.trim();
+  const coursesValue = searching ? college.filtered_courses : college.courses_per_year;
+  const cpyText  = fmt(coursesValue);
   const fpText   = fmt(college.filtered_pubs);
   const links   = collegeLinks[college.name] || {};
 
@@ -961,7 +1239,7 @@ function buildCollegeRow(college, idx, priorOpenState) {
           </span>
         </div>
         <div class="td-num">${college.total}</div>
-        <div class="td-num ${college.courses_per_year != null ? '' : 'dim'}">${cpyText}</div>
+        <div class="td-num ${coursesValue != null && (!searching || coursesValue > 0) ? '' : 'dim'}">${cpyText}</div>
         <div class="td-num ${college.filtered_pubs != null && college.filtered_pubs > 0 ? '' : 'dim'}">${fpText}</div>
       </div>
     </div>
@@ -1202,11 +1480,14 @@ function renderFacultyTable(panel, faculty) {
   }
 
   function render() {
+    const body = faculty.length
+      ? `<div class="fac-rows-wrap">${rowsHtml()}</div>`
+      : `<div class="course-empty">No faculty match the current search.</div>`;
     panel.innerHTML = `
       <div class="fac-head-row">
         <div class="fac-grid" id="fac-head-${panel.id}">${headersHtml()}</div>
       </div>
-      <div class="fac-rows-wrap">${rowsHtml()}</div>
+      ${body}
     `;
 
     panel.querySelectorAll('.fth-label').forEach(label => {
@@ -1240,21 +1521,8 @@ const PUB_FILTER_GROUPS = [
 ];
 
 function pubVisible(p) {
-  if (pubYearFrom != null && (p.year == null || p.year < pubYearFrom)) return false;
-  if (pubYearTo != null && (p.year == null || p.year > pubYearTo)) return false;
-  const t = p.pub_type;
-  let group, value;
-  if (t === 'conference' || t === 'journal') {
-    group = t;
-    value = p.venue_ranking;
-  } else {
-    group = 'other';
-    value = t;
-  }
-  if (pubExcludes[group].has(value)) return false;
-  const anyInc = pubIncludes.conference.size || pubIncludes.journal.size || pubIncludes.other.size;
-  if (anyInc && !pubIncludes[group].has(value)) return false;
-  return true;
+  if (!pubVisibleBase(p)) return false;
+  return searchHitPub(p);
 }
 
 function renderPublicationsTable(panel, publications) {
@@ -1353,11 +1621,14 @@ function renderPublicationsTable(panel, publications) {
 
   function render() {
     const sorted = sortedPubs();
+    const body = sorted.length
+      ? `<div class="pub-rows-wrap">${rowsHtml(sorted)}</div>`
+      : `<div class="course-empty">No publications match the current filters.</div>`;
     panel.innerHTML = `
       <div class="pub-head-row">
         <div class="pub-grid" id="pub-head-${panel.id}">${headersHtml()}</div>
       </div>
-      <div class="pub-rows-wrap">${rowsHtml(sorted)}</div>
+      ${body}
     `;
     renderMathIn(panel.querySelector('.pub-rows-wrap'));
 
@@ -1409,9 +1680,14 @@ function renderCourseTable(panel, schedule, collegeName, opts) {
     return;
   }
 
-  const visibleCourses = isBarnard && !showColumbia
+  let visibleCourses = isBarnard && !showColumbia
     ? schedule.courses.filter(c => !COLUMBIA_CODE_RE.test(c.code))
     : schedule.courses;
+  visibleCourses = visibleCourses.filter(searchHitCourse);
+  if (!visibleCourses.length) {
+    panel.innerHTML = `<div class="course-empty">No courses match the current search.</div>`;
+    return;
+  }
 
   // Decide the visible term-column range. The window is either
   // TERMS_PER_PAGE terms (small viewport) or YEARS_PER_PAGE academic

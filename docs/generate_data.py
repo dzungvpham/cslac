@@ -748,6 +748,9 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
             except (json.JSONDecodeError, TypeError):
                 pass
 
+        matched_raw = (r.get("matched_faculty") or "").strip()
+        matched_faculty = [n.strip() for n in matched_raw.split(";") if n.strip()] if matched_raw else []
+
         pub = {
             "title": (r.get("title") or "").strip(),
             "url": (r.get("url") or "").strip() or None,
@@ -759,6 +762,7 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
             "venue_ranking": venue_ranking,
             "venue_ranking_source": venue_ranking_source,
             "authors": authors,
+            "matched_faculty": matched_faculty,
             "pub_type": pub_type,
         }
         colleges[college].append(pub)
