@@ -1490,3 +1490,58 @@ function esc(s) {
 }
 
 loadData();
+
+// ── custom tooltip (replaces slow native title) ───────────────────────────
+(function initTooltip() {
+  const tip = document.getElementById('tip');
+  let cur = null;
+  let savedTitle = '';
+
+  function show(el, text, e) {
+    cur = el;
+    savedTitle = text;
+    el.removeAttribute('title');
+    tip.textContent = text;
+    tip.classList.add('visible');
+    position(e);
+  }
+
+  function hide() {
+    if (!cur) return;
+    cur.setAttribute('title', savedTitle);
+    cur = null;
+    tip.classList.remove('visible');
+  }
+
+  function position(e) {
+    const pad = 8;
+    let x = e.clientX + pad;
+    let y = e.clientY + pad;
+    const r = tip.getBoundingClientRect();
+    if (x + r.width > window.innerWidth) x = e.clientX - r.width - pad;
+    if (y + r.height > window.innerHeight) y = e.clientY - r.height - pad;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+  }
+
+  function closest(el) {
+    while (el && el !== document.body) {
+      if (el.getAttribute && el.getAttribute('title')) return el;
+      el = el.parentElement;
+    }
+    return null;
+  }
+
+  document.addEventListener('mouseover', function (e) {
+    const el = closest(e.target);
+    if (el) show(el, el.getAttribute('title'), e);
+  });
+
+  document.addEventListener('mouseout', function (e) {
+    if (cur && !cur.contains(e.relatedTarget)) hide();
+  });
+
+  document.addEventListener('mousemove', function (e) {
+    if (cur) position(e);
+  });
+})();

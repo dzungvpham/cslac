@@ -1478,6 +1478,23 @@ a.pub-author:hover {
   .ptd-num .num-short { display: inline; }
 }
 
+/* ── custom tooltip ── */
+.tip {
+  position: fixed;
+  z-index: 9999;
+  max-width: 260px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--bg);
+  background: var(--text);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+.tip.visible { opacity: 1; }
+
 @media (max-width: 340px) {
   /* tiniest screens (< iPhone SE width): fall back to confined
      horizontal scroll inside the table wrap. */
