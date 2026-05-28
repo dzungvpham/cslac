@@ -390,7 +390,7 @@ function buildFilterBar() {
   bar.innerHTML =
     `<span class="filter-label">Show</span>` +
     `<div class="cs-dropdown" id="view-dd">
-       <button class="cs-dropdown-btn ${currentView !== 'faculty' ? 'active' : ''}" type="button">${viewLabel}</button>
+       <button class="cs-dropdown-btn" type="button">${viewLabel}</button>
        <div class="cs-dropdown-list">${viewItems}</div>
      </div>` +
     CATEGORIES.map(c => {
@@ -549,7 +549,7 @@ function buildAdvancedBar() {
     `<div class="adv-row adv-row-state">
        <span class="filter-label">State</span>
        <div class="cs-dropdown" id="state-dd">
-         <button class="cs-dropdown-btn ${activeState ? 'active' : ''}" type="button">${stateLabel}</button>
+         <button class="cs-dropdown-btn" type="button">${stateLabel}</button>
          <div class="cs-dropdown-list">${stateItems}</div>
        </div>
      </div>` +
@@ -582,7 +582,7 @@ function buildAdvancedBar() {
        `<div class="pub-filter-group">
           <span class="pub-filter-label">Year</span>
           <div class="cs-dropdown" id="pub-year-from-dd">
-            <button class="cs-dropdown-btn ${pubYearFrom != null ? 'active' : ''}" type="button">${pubYearFrom != null ? pubYearFrom : 'From'}</button>
+            <button class="cs-dropdown-btn" type="button">${pubYearFrom != null ? pubYearFrom : 'From'}</button>
             <div class="cs-dropdown-list">
               <div class="cs-dropdown-item${pubYearFrom == null ? ' selected' : ''}" data-value="">From</div>
               ${pubYearsAvailable.map(y => `<div class="cs-dropdown-item${y === pubYearFrom ? ' selected' : ''}" data-value="${y}">${y}</div>`).join('')}
@@ -590,7 +590,7 @@ function buildAdvancedBar() {
           </div>
           <span class="pub-year-dash">–</span>
           <div class="cs-dropdown" id="pub-year-to-dd">
-            <button class="cs-dropdown-btn ${pubYearTo != null ? 'active' : ''}" type="button">${pubYearTo != null ? pubYearTo : 'To'}</button>
+            <button class="cs-dropdown-btn" type="button">${pubYearTo != null ? pubYearTo : 'To'}</button>
             <div class="cs-dropdown-list">
               <div class="cs-dropdown-item${pubYearTo == null ? ' selected' : ''}" data-value="">To</div>
               ${pubYearsAvailable.map(y => `<div class="cs-dropdown-item${y === pubYearTo ? ' selected' : ''}" data-value="${y}">${y}</div>`).join('')}

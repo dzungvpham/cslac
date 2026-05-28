@@ -1011,7 +1011,7 @@ a.pub-author:hover {
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--bg);
-  color: var(--text);
+  color: var(--sub);
   cursor: pointer;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%236c6f85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
   background-repeat: no-repeat;
@@ -1019,12 +1019,6 @@ a.pub-author:hover {
   background-size: 8px 8px;
   white-space: nowrap;
   line-height: 1.4;
-}
-.cs-dropdown-btn.active {
-  color: var(--bg);
-  background-color: var(--accent);
-  border-color: var(--accent);
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23eff1f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
 }
 .cs-dropdown-list {
   display: none;
@@ -1049,7 +1043,7 @@ a.pub-author:hover {
   padding: 3px 10px;
   cursor: pointer;
   white-space: nowrap;
-  color: var(--text);
+  color: var(--sub);
 }
 .cs-dropdown-item:hover { background: var(--hover-bg); }
 .cs-dropdown-item.selected {
