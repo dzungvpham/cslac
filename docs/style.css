@@ -238,7 +238,7 @@ header {
 /* shared column grid — must match between header and rows */
 .col-grid {
   display: grid;
-  grid-template-columns: 1fr 80px 110px 80px;
+  grid-template-columns: 1fr 80px 110px 80px 80px;
   align-items: center;
 }
 
@@ -892,6 +892,28 @@ a.pub-author:hover {
   color: var(--accent);
   text-decoration: underline;
 }
+.authors-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--sub);
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 2px;
+  transition: color 0.12s, border-color 0.12s;
+}
+.authors-toggle:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
 .ptd-num {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12.5px;
@@ -900,6 +922,74 @@ a.pub-author:hover {
   color: var(--text);
 }
 .ptd-num .num-short { display: none; }
+
+/* ── publication filter (inside advanced bar) ────────────────────────── */
+.pub-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.pub-filter-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sub);
+  margin-right: 2px;
+}
+.pub-filter-chip {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--sub);
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+  user-select: none;
+  cursor: pointer;
+  line-height: 1.4;
+}
+.pub-filter-chip:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+.pub-filter-chip.active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.pub-year-select {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  padding: 2px 18px 2px 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%236c6f85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 8px 8px;
+}
+.pub-year-select.active {
+  color: var(--bg);
+  background-color: var(--accent);
+  border-color: var(--accent);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23eff1f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
+}
+.pub-year-select option {
+  color: var(--text);
+  background: var(--bg);
+}
+.pub-year-dash {
+  font-size: 11px;
+  color: var(--sub);
+}
 
 /* ── term pagination buttons ──────────────────────────────────────────── */
 /* Rendered into the panel-toggle row (alongside the Faculty/Courses
@@ -1138,7 +1228,7 @@ a.pub-author:hover {
   /* main college grid: shrink metric columns to fit ~360px viewports.
      minmax(0,1fr) — not 1fr — so the name column can shrink below its
      min-content (chevron + state + link icons would otherwise force overflow). */
-  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px; }
+  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px 56px; }
   .th { padding: 9px 4px; font-size: 10px; gap: 3px; }
 
   /* Rotate the metric column labels (Faculty / Citations / Courses) 30°
@@ -1308,6 +1398,10 @@ a.pub-author:hover {
      the user navigates with the ◀/▶ buttons in the header. This keeps
      the table inside the viewport (no horizontal scroll) so the sticky
      thead keeps working. */
+
+  /* publication filter chips on mobile */
+  .pub-filter-chip { font-size: 10px; padding: 2px 6px; }
+  .pub-filter-label { font-size: 9px; }
 
   /* publications: horizontal scroll on mobile */
   .pub-rows-wrap {

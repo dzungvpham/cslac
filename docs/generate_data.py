@@ -686,22 +686,32 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
         if year is None:
             continue
 
-        # Venue ranking: CORE only for conferences, SJR for journals.
-        # Treat as conference if venue_type says so, or if it has a
-        # CSRankings/CORE match (many proceedings have NaN venue_type).
         core_rank = (r.get("venue_core_ranking") or "").strip() or None
-        sjr_quartile = (r.get("venue_sjr_quartile") or "").strip() or None
-        is_csranking = bool((r.get("venue_in_csranking") or "").strip())
-        is_conference = venue_type == "conference" or is_csranking or core_rank
+        sjr_raw = (r.get("venue_sjr_quartile") or "").strip()
+        sjr_quartile = sjr_raw if sjr_raw and sjr_raw != "-" else None
         venue_ranking = None
         venue_ranking_source = None
-        if is_conference:
-            if core_rank:
-                venue_ranking = core_rank
-                venue_ranking_source = "ICORE 2026 Ranking"
+        if core_rank:
+            venue_ranking = core_rank
+            venue_ranking_source = "ICORE 2026 Ranking"
         elif sjr_quartile:
             venue_ranking = sjr_quartile
             venue_ranking_source = "Scimago 2025 Ranking"
+
+        work_type = (r.get("work_type") or "").strip()
+        venue_name = (r.get("venue") or "").strip()
+        if core_rank:
+            pub_type = "conference"
+        elif sjr_quartile:
+            pub_type = "journal"
+        elif "workshop" in venue_name.lower():
+            pub_type = "workshop"
+        elif work_type == "preprint":
+            pub_type = "preprint"
+        elif work_type in ("book", "book-chapter"):
+            pub_type = "book"
+        else:
+            pub_type = "other"
 
         cites_raw = (r.get("cited_by_count") or "").strip()
         cites = 0
@@ -737,6 +747,7 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
             "venue_ranking": venue_ranking,
             "venue_ranking_source": venue_ranking_source,
             "authors": authors,
+            "pub_type": pub_type,
         }
         colleges[college].append(pub)
 

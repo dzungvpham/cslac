@@ -31,6 +31,7 @@ const COLLEGE_COLS = [
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
   { key: 'total_citations',  label: 'Citations',     numeric: true, tooltip: 'Total citations received' },
   { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last academic year' },
+  { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers matching the current publication filter' },
 ];
 
 const FAC_COLS = [
@@ -100,6 +101,14 @@ let searchQuery = '';
 let searchDraft = '';
 let searchTimer = null;
 let expandAllOn = false;
+let pubFilters = {
+  conference: new Set(['A*', 'A']),
+  journal: new Set(),
+  other: new Set(),
+};
+let pubYearFrom = null;
+let pubYearTo = null;
+let pubYearsAvailable = [];
 
 // USPS state/territory codes → full names. Used by the advanced state filter.
 const US_STATES = {
@@ -169,6 +178,17 @@ async function loadData() {
     if (d.publications) {
       collegePublications[name] = d.publications;
     }
+  }
+
+  const yearSet = new Set();
+  for (const pubs of Object.values(collegePublications)) {
+    for (const p of pubs) { if (p.year != null) yearSet.add(p.year); }
+  }
+  pubYearsAvailable = [...yearSet].sort((a, b) => a - b);
+  if (pubYearsAvailable.length) {
+    const maxYear = pubYearsAvailable[pubYearsAvailable.length - 1];
+    pubYearFrom = maxYear - 10;
+    pubYearTo = maxYear;
   }
 
   // Precompute a normalized lookup of each faculty's interests so the
@@ -256,7 +276,9 @@ function buildFilterBar() {
   const advIcon = advancedExpanded
     ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
     : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
-  const advTotal = activeSubfields.size + excludedSubfields.size + (activeState ? 1 : 0);
+  const pubFilterCount = pubFilters.conference.size + pubFilters.journal.size + pubFilters.other.size
+    + (pubYearFrom != null ? 1 : 0) + (pubYearTo != null ? 1 : 0);
+  const advTotal = activeSubfields.size + excludedSubfields.size + (activeState ? 1 : 0) + pubFilterCount;
   const advCount = advTotal > 0 ? ` (${advTotal})` : '';
   const advActive = (advancedExpanded || advTotal > 0) ? 'active' : '';
 
@@ -404,7 +426,32 @@ function buildAdvancedBar() {
        }).join('') +
        clearBtn +
     `</div>` +
-    `<div class="adv-row"><span class="adv-hint-inline">${interactHint}</span></div>`;
+    `<div class="adv-row"><span class="adv-hint-inline">${interactHint}</span></div>` +
+    `<div class="adv-row adv-row-pubs">
+       <span class="filter-label">Pubs</span>` +
+       PUB_FILTER_GROUPS.map(g => {
+         const chips = g.values.map(v => {
+           const isObj = typeof v === 'object';
+           const val = isObj ? v.key : v;
+           const label = isObj ? v.label : v;
+           const on = pubFilters[g.key].has(val);
+           return `<button class="pub-filter-chip ${on ? 'active' : ''}" data-group="${g.key}" data-value="${esc(val)}">${esc(label)}</button>`;
+         }).join('');
+         return `<div class="pub-filter-group"><span class="pub-filter-label">${g.label}</span>${chips}</div>`;
+       }).join('') +
+       `<div class="pub-filter-group">
+          <span class="pub-filter-label">Year</span>
+          <select class="pub-year-select ${pubYearFrom != null ? 'active' : ''}" id="pub-year-from" aria-label="Publication year from">
+            <option value="">From</option>
+            ${pubYearsAvailable.map(y => `<option value="${y}"${y === pubYearFrom ? ' selected' : ''}>${y}</option>`).join('')}
+          </select>
+          <span class="pub-year-dash">–</span>
+          <select class="pub-year-select ${pubYearTo != null ? 'active' : ''}" id="pub-year-to" aria-label="Publication year to">
+            <option value="">To</option>
+            ${pubYearsAvailable.map(y => `<option value="${y}"${y === pubYearTo ? ' selected' : ''}>${y}</option>`).join('')}
+          </select>
+        </div>` +
+    `</div>`;
 
   bar.querySelectorAll('.filter-chip[data-subfield]').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -454,6 +501,43 @@ function buildAdvancedBar() {
   if (stateEl) stateEl.addEventListener('change', () => {
     activeState = stateEl.value;
     track('filter', 'state', activeState ? 'include' : 'clear', activeState || 'all');
+    buildAdvancedBar();
+    buildFilterBar();
+    renderAll();
+  });
+
+  bar.querySelectorAll('.pub-filter-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const group = btn.dataset.group;
+      const value = btn.dataset.value;
+      const set = pubFilters[group];
+      if (set.has(value)) set.delete(value);
+      else set.add(value);
+      track('filter', 'publication', set.has(value) ? 'include' : 'clear', `${group}:${value}`);
+      buildAdvancedBar();
+      buildFilterBar();
+      renderAll();
+    });
+  });
+
+  const fromEl = document.getElementById('pub-year-from');
+  const toEl = document.getElementById('pub-year-to');
+  if (fromEl) fromEl.addEventListener('change', () => {
+    pubYearFrom = fromEl.value ? parseInt(fromEl.value, 10) : null;
+    if (pubYearFrom != null && pubYearTo != null && pubYearFrom > pubYearTo) {
+      pubYearTo = pubYearFrom;
+    }
+    track('filter', 'publication_year', pubYearFrom != null ? 'set_from' : 'clear_from', String(pubYearFrom ?? ''));
+    buildAdvancedBar();
+    buildFilterBar();
+    renderAll();
+  });
+  if (toEl) toEl.addEventListener('change', () => {
+    pubYearTo = toEl.value ? parseInt(toEl.value, 10) : null;
+    if (pubYearFrom != null && pubYearTo != null && pubYearTo < pubYearFrom) {
+      pubYearFrom = pubYearTo;
+    }
+    track('filter', 'publication_year', pubYearTo != null ? 'set_to' : 'clear_to', String(pubYearTo ?? ''));
     buildAdvancedBar();
     buildFilterBar();
     renderAll();
@@ -550,6 +634,14 @@ function coursesInLatestYear(schedule) {
   return count;
 }
 
+function filteredPubCount(collegeName) {
+  const pubs = collegePublications[collegeName];
+  if (!pubs) return null;
+  let count = 0;
+  for (const p of pubs) { if (pubVisible(p)) count++; }
+  return count;
+}
+
 function aggregateCollege(college) {
   const fac = filteredFaculty(college);
   const cites = fac.map(f => f.citedby).filter(v => v != null);
@@ -558,6 +650,7 @@ function aggregateCollege(college) {
     faculty: fac,
     total: fac.length,
     total_citations: cites.reduce((s, v) => s + v, 0),
+    filtered_pubs: filteredPubCount(college.name),
   };
 }
 
@@ -605,6 +698,39 @@ function animateStat(el, target) {
   });
 }
 
+function updatePapersStat() {
+  let total = 0;
+  for (const pubs of Object.values(collegePublications)) {
+    for (const p of pubs) { if (pubVisible(p)) total++; }
+  }
+  animateStat(document.getElementById('stat-papers'), total);
+
+  const parts = [];
+  for (const g of PUB_FILTER_GROUPS) {
+    for (const v of g.values) {
+      const isObj = typeof v === 'object';
+      const val = isObj ? v.key : v;
+      const label = isObj ? v.label : v;
+      if (pubFilters[g.key].has(val)) parts.push(label);
+    }
+  }
+  if (pubYearFrom != null || pubYearTo != null) {
+    const from = pubYearFrom ?? pubYearsAvailable[0];
+    const to = pubYearTo ?? pubYearsAvailable[pubYearsAvailable.length - 1];
+    if (from === to) {
+      parts.push(String(from));
+    } else {
+      const fc = Math.floor(from / 100);
+      const tc = Math.floor(to / 100);
+      parts.push(fc === tc
+        ? `${from}-${String(to).slice(-2)}`
+        : `${from}-${to}`);
+    }
+  }
+  const suffix = parts.length ? ` (${parts.join(', ')})` : '';
+  document.getElementById('stat-papers-label').textContent = `Papers${suffix}`;
+}
+
 function renderAll() {
   const aggregated = allColleges
     .filter(c => !activeState || collegeLinks[c.name]?.state === activeState)
@@ -614,6 +740,7 @@ function renderAll() {
   const totalFaculty = aggregated.reduce((s, c) => s + c.total, 0);
   animateStat(document.getElementById('stat-colleges'), aggregated.length);
   animateStat(document.getElementById('stat-faculty'), totalFaculty);
+  updatePapersStat();
   renderColleges(aggregated);
   // College rows were rebuilt — re-stamp each row's --summary-h.
   if (typeof updateHeaderH === 'function') updateHeaderH();
@@ -653,6 +780,7 @@ function sortedColleges(colleges) {
     total:             c => c.total,
     total_citations:   c => c.total_citations ?? -1,
     courses_per_year:  c => c.courses_per_year ?? -1,
+    filtered_pubs:     c => c.filtered_pubs ?? -1,
   }[collegeSort.key] || (c => c.name);
 
   return [...colleges].sort((a, b) => {
@@ -677,6 +805,7 @@ function renderColleges(colleges) {
       view: panel?._view,
       showColumbia: panel?._showColumbia,
       termOffset: panel?._termOffset,
+      pubSort: panel?._pubSort,
     });
   });
   list.innerHTML = '';
@@ -708,6 +837,7 @@ function buildCollegeRow(college, idx, priorOpenState) {
   const citFull  = college.total_citations > 0 ? fmt(college.total_citations) : '—';
   const citShort = college.total_citations > 0 ? abbrev(college.total_citations) : '—';
   const cpyText  = fmt(college.courses_per_year);
+  const fpText   = fmt(college.filtered_pubs);
   const links   = collegeLinks[college.name] || {};
 
   const cnEsc = esc(college.name).replace(/'/g, "\\'");
@@ -743,6 +873,7 @@ function buildCollegeRow(college, idx, priorOpenState) {
         <div class="td-num">${college.total}</div>
         <div class="td-num ${college.total_citations > 0 ? '' : 'dim'}"><span class="num-full">${citFull}</span><span class="num-short">${citShort}</span></div>
         <div class="td-num ${college.courses_per_year != null ? '' : 'dim'}">${cpyText}</div>
+        <div class="td-num ${college.filtered_pubs != null && college.filtered_pubs > 0 ? '' : 'dim'}">${fpText}</div>
       </div>
     </div>
     <div class="faculty-panel">
@@ -761,6 +892,7 @@ function buildCollegeRow(college, idx, priorOpenState) {
     if (priorOpenState.view !== undefined) panel._view = priorOpenState.view;
     if (priorOpenState.showColumbia !== undefined) panel._showColumbia = priorOpenState.showColumbia;
     if (priorOpenState.termOffset !== undefined) panel._termOffset = priorOpenState.termOffset;
+    if (priorOpenState.pubSort !== undefined) panel._pubSort = priorOpenState.pubSort;
   }
 
   if (expandAllOn || priorOpenState) {
@@ -1001,8 +1133,30 @@ function renderFacultyTable(panel, faculty) {
 }
 
 // ── publications panel ────────────────────────────────────────────────────
+const PUB_FILTER_GROUPS = [
+  { key: 'conference', label: 'Conferences', values: ['A*', 'A', 'B', 'C'] },
+  { key: 'journal',    label: 'Journals',    values: ['Q1', 'Q2', 'Q3', 'Q4'] },
+  { key: 'other',      label: 'Other',       values: [
+    { key: 'workshop', label: 'Workshop' },
+    { key: 'preprint', label: 'Preprint' },
+    { key: 'book',     label: 'Book' },
+    { key: 'other',    label: 'Other' },
+  ]},
+];
+
+function pubVisible(p) {
+  if (pubYearFrom != null && (p.year == null || p.year < pubYearFrom)) return false;
+  if (pubYearTo != null && (p.year == null || p.year > pubYearTo)) return false;
+  const t = p.pub_type;
+  if (t === 'conference') return pubFilters.conference.has(p.venue_ranking);
+  if (t === 'journal') return pubFilters.journal.has(p.venue_ranking);
+  return pubFilters.other.has(t);
+}
+
 function renderPublicationsTable(panel, publications) {
-  let pubSort = { key: 'year', dir: -1 };
+  const outer = panel.closest('.faculty-panel-inner') || panel;
+  if (!outer._pubSort) outer._pubSort = { key: 'year', dir: -1 };
+  let pubSort = outer._pubSort;
 
   function headersHtml() {
     return PUB_COLS.map(col => {
@@ -1015,6 +1169,7 @@ function renderPublicationsTable(panel, publications) {
   }
 
   function sortedPubs() {
+    const filtered = publications.filter(pubVisible);
     const fn = {
       year:    p => p.year ?? -1,
       title:   p => (p.title || '').toLowerCase(),
@@ -1023,24 +1178,21 @@ function renderPublicationsTable(panel, publications) {
       cites:   p => p.cites ?? -1,
     }[pubSort.key] || (p => p.year ?? -1);
 
-    return [...publications].sort((a, b) => {
+    return filtered.sort((a, b) => {
       const av = fn(a), bv = fn(b);
       if (typeof av === 'string') return pubSort.dir * av.localeCompare(bv);
       return pubSort.dir * (av - bv);
     });
   }
 
-  function rowsHtml() {
-    return sortedPubs().map(p => {
-      // Year
+  function rowsHtml(sorted) {
+    return sorted.map(p => {
       const yearStr = p.year != null ? String(p.year) : '—';
 
-      // Title (linked if URL available)
       const titleInner = p.url
         ? `<a class="pub-title-link" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`
         : `<span class="pub-title-text">${esc(p.title)}</span>`;
 
-      // Venue: prefer acronym with full name as tooltip
       let venueHtml = '';
       if (p.venue_acronym) {
         venueHtml = `<span title="${esc(p.venue || '')}">${esc(p.venue_acronym)}</span>`;
@@ -1053,19 +1205,24 @@ function renderPublicationsTable(panel, publications) {
         venueHtml += `<sup class="venue-rank" title="${esc(p.venue_ranking_source || '')}">${esc(p.venue_ranking)}</sup>`;
       }
 
-      // Authors — each with affiliation tooltip and OpenAlex link
       let authorsHtml = '—';
       if (p.authors && p.authors.length) {
-        authorsHtml = p.authors.map(a => {
+        const authorSpans = p.authors.map(a => {
           const tip = a.affiliation ? ` title="${esc(a.affiliation)}"` : '';
           if (a.url) {
             return `<a class="pub-author" href="${esc(a.url)}" target="_blank" rel="noopener"${tip}>${esc(a.name)}</a>`;
           }
           return `<span class="pub-author"${tip}>${esc(a.name)}</span>`;
-        }).join(', ');
+        });
+        if (authorSpans.length > 8) {
+          authorsHtml =
+            `<span class="authors-short">${authorSpans.slice(0, 8).join(', ')}, … <button class="authors-toggle" aria-label="Show all authors">+</button></span>` +
+            `<span class="authors-full" hidden>${authorSpans.join(', ')} <button class="authors-toggle" aria-label="Collapse authors">−</button></span>`;
+        } else {
+          authorsHtml = authorSpans.join(', ');
+        }
       }
 
-      // Citations
       const citesStr = p.cites != null
         ? `<span class="num-full">${p.cites.toLocaleString()}</span><span class="num-short">${abbrev(p.cites)}</span>`
         : '—';
@@ -1085,11 +1242,12 @@ function renderPublicationsTable(panel, publications) {
   }
 
   function render() {
+    const sorted = sortedPubs();
     panel.innerHTML = `
       <div class="pub-head-row">
         <div class="pub-grid" id="pub-head-${panel.id}">${headersHtml()}</div>
       </div>
-      <div class="pub-rows-wrap">${rowsHtml()}</div>
+      <div class="pub-rows-wrap">${rowsHtml(sorted)}</div>
     `;
 
     panel.querySelectorAll('.pth').forEach(th => {
@@ -1101,8 +1259,21 @@ function renderPublicationsTable(panel, publications) {
         } else {
           pubSort = { key, dir: key === 'title' || key === 'venue' ? 1 : -1 };
         }
+        outer._pubSort = pubSort;
         track('sort', 'publications', pubSort.dir === 1 ? 'asc' : 'desc', key);
         render();
+      });
+    });
+
+    panel.querySelectorAll('.authors-toggle').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const cell = btn.closest('.ptd-authors');
+        const short = cell.querySelector('.authors-short');
+        const full = cell.querySelector('.authors-full');
+        const showing = !full.hidden;
+        short.hidden = !showing;
+        full.hidden = showing;
       });
     });
   }
