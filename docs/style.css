@@ -75,6 +75,9 @@ header {
   margin-bottom: 0;
 }
 
+.header-left {
+  min-width: 0;
+}
 .header-left h1 {
   font-size: 22px;
   font-weight: 600;
@@ -96,7 +99,8 @@ header {
 
 .header-stats {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 12px 24px;
   margin-top: 12px;
 }
 
@@ -104,6 +108,7 @@ header {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12px;
   color: var(--sub);
+  white-space: nowrap;
 }
 .stat strong {
   font-weight: 500;
@@ -158,11 +163,26 @@ header {
 .about-text .nowrap { white-space: nowrap; }
 .about-text .accent { color: var(--accent); }
 .gh-icon,
-.gs-icon {
+.gs-icon,
+.oa-icon {
+  display: inline-block;
   width: 12px;
   height: 12px;
   vertical-align: -2px;
   margin-left: 3px;
+  background-color: currentColor;
+}
+.gs-icon {
+  -webkit-mask: url('img/google-scholar.svg') no-repeat center / contain;
+  mask: url('img/google-scholar.svg') no-repeat center / contain;
+}
+.gh-icon {
+  -webkit-mask: url('img/github.svg') no-repeat center / contain;
+  mask: url('img/github.svg') no-repeat center / contain;
+}
+.oa-icon {
+  -webkit-mask: url('img/openalex.png') no-repeat center / contain;
+  mask: url('img/openalex.png') no-repeat center / contain;
 }
 
 /* ── footer ── */
@@ -204,7 +224,20 @@ header {
   color: var(--text);
   background: var(--hover-bg);
 }
-.theme-toggle svg { width: 16px; height: 16px; }
+.icon-sun,
+.icon-moon {
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+}
+.icon-sun {
+  -webkit-mask: url('img/sun.svg') no-repeat center / contain;
+  mask: url('img/sun.svg') no-repeat center / contain;
+}
+.icon-moon {
+  -webkit-mask: url('img/moon.svg') no-repeat center / contain;
+  mask: url('img/moon.svg') no-repeat center / contain;
+}
 .icon-sun  { display: none; }
 .icon-moon { display: block; }
 [data-theme="dark"] .icon-sun  { display: block; }
@@ -960,7 +993,11 @@ a.pub-author:hover {
   background: var(--accent);
   border-color: var(--accent);
 }
-.pub-year-select {
+.pub-year-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.pub-year-dropdown-btn {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 11px;
   padding: 2px 18px 2px 6px;
@@ -969,22 +1006,47 @@ a.pub-author:hover {
   background: var(--bg);
   color: var(--text);
   cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%236c6f85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
   background-repeat: no-repeat;
   background-position: right 5px center;
   background-size: 8px 8px;
+  white-space: nowrap;
+  line-height: 1.4;
 }
-.pub-year-select.active {
+.pub-year-dropdown-btn.active {
   color: var(--bg);
   background-color: var(--accent);
   border-color: var(--accent);
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23eff1f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
 }
-.pub-year-select option {
-  color: var(--text);
+.pub-year-dropdown-list {
+  display: none;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  min-width: 100%;
+  max-height: 180px;
+  overflow-y: auto;
   background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+  z-index: 100;
+  padding: 2px 0;
+}
+.pub-year-dropdown.open .pub-year-dropdown-list { display: block; }
+.pub-year-dropdown-item {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  padding: 3px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: var(--text);
+}
+.pub-year-dropdown-item:hover { background: var(--hover); }
+.pub-year-dropdown-item.selected {
+  background: var(--accent);
+  color: var(--bg);
 }
 .pub-year-dash {
   font-size: 11px;

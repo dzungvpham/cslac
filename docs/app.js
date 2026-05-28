@@ -184,7 +184,7 @@ async function loadData() {
   for (const pubs of Object.values(collegePublications)) {
     for (const p of pubs) { if (p.year != null) yearSet.add(p.year); }
   }
-  pubYearsAvailable = [...yearSet].sort((a, b) => a - b);
+  pubYearsAvailable = [...yearSet].filter(y => y >= 1990).sort((a, b) => a - b);
   if (pubYearsAvailable.length) {
     const maxYear = pubYearsAvailable[pubYearsAvailable.length - 1];
     pubYearFrom = maxYear - 10;
@@ -441,15 +441,21 @@ function buildAdvancedBar() {
        }).join('') +
        `<div class="pub-filter-group">
           <span class="pub-filter-label">Year</span>
-          <select class="pub-year-select ${pubYearFrom != null ? 'active' : ''}" id="pub-year-from" aria-label="Publication year from">
-            <option value="">From</option>
-            ${pubYearsAvailable.map(y => `<option value="${y}"${y === pubYearFrom ? ' selected' : ''}>${y}</option>`).join('')}
-          </select>
+          <div class="pub-year-dropdown" id="pub-year-from-dd">
+            <button class="pub-year-dropdown-btn ${pubYearFrom != null ? 'active' : ''}" type="button">${pubYearFrom != null ? pubYearFrom : 'From'}</button>
+            <div class="pub-year-dropdown-list">
+              <div class="pub-year-dropdown-item${pubYearFrom == null ? ' selected' : ''}" data-value="">From</div>
+              ${pubYearsAvailable.map(y => `<div class="pub-year-dropdown-item${y === pubYearFrom ? ' selected' : ''}" data-value="${y}">${y}</div>`).join('')}
+            </div>
+          </div>
           <span class="pub-year-dash">–</span>
-          <select class="pub-year-select ${pubYearTo != null ? 'active' : ''}" id="pub-year-to" aria-label="Publication year to">
-            <option value="">To</option>
-            ${pubYearsAvailable.map(y => `<option value="${y}"${y === pubYearTo ? ' selected' : ''}>${y}</option>`).join('')}
-          </select>
+          <div class="pub-year-dropdown" id="pub-year-to-dd">
+            <button class="pub-year-dropdown-btn ${pubYearTo != null ? 'active' : ''}" type="button">${pubYearTo != null ? pubYearTo : 'To'}</button>
+            <div class="pub-year-dropdown-list">
+              <div class="pub-year-dropdown-item${pubYearTo == null ? ' selected' : ''}" data-value="">To</div>
+              ${pubYearsAvailable.map(y => `<div class="pub-year-dropdown-item${y === pubYearTo ? ' selected' : ''}" data-value="${y}">${y}</div>`).join('')}
+            </div>
+          </div>
         </div>` +
     `</div>`;
 
@@ -520,27 +526,42 @@ function buildAdvancedBar() {
     });
   });
 
-  const fromEl = document.getElementById('pub-year-from');
-  const toEl = document.getElementById('pub-year-to');
-  if (fromEl) fromEl.addEventListener('change', () => {
-    pubYearFrom = fromEl.value ? parseInt(fromEl.value, 10) : null;
-    if (pubYearFrom != null && pubYearTo != null && pubYearFrom > pubYearTo) {
-      pubYearTo = pubYearFrom;
-    }
-    track('filter', 'publication_year', pubYearFrom != null ? 'set_from' : 'clear_from', String(pubYearFrom ?? ''));
-    buildAdvancedBar();
-    buildFilterBar();
-    renderAll();
+  bar.querySelectorAll('.pub-year-dropdown').forEach(dd => {
+    const btn = dd.querySelector('.pub-year-dropdown-btn');
+    const list = dd.querySelector('.pub-year-dropdown-list');
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const wasOpen = dd.classList.contains('open');
+      document.querySelectorAll('.pub-year-dropdown.open').forEach(d => d.classList.remove('open'));
+      if (!wasOpen) {
+        dd.classList.add('open');
+        const sel = list.querySelector('.selected');
+        if (sel) sel.scrollIntoView({ block: 'nearest' });
+      }
+    });
+    list.querySelectorAll('.pub-year-dropdown-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dd.classList.remove('open');
+        const val = item.dataset.value ? parseInt(item.dataset.value, 10) : null;
+        const isFrom = dd.id === 'pub-year-from-dd';
+        if (isFrom) {
+          pubYearFrom = val;
+          if (pubYearFrom != null && pubYearTo != null && pubYearFrom > pubYearTo) pubYearTo = pubYearFrom;
+          track('filter', 'publication_year', pubYearFrom != null ? 'set_from' : 'clear_from', String(pubYearFrom ?? ''));
+        } else {
+          pubYearTo = val;
+          if (pubYearFrom != null && pubYearTo != null && pubYearTo < pubYearFrom) pubYearFrom = pubYearTo;
+          track('filter', 'publication_year', pubYearTo != null ? 'set_to' : 'clear_to', String(pubYearTo ?? ''));
+        }
+        buildAdvancedBar();
+        buildFilterBar();
+        renderAll();
+      });
+    });
   });
-  if (toEl) toEl.addEventListener('change', () => {
-    pubYearTo = toEl.value ? parseInt(toEl.value, 10) : null;
-    if (pubYearFrom != null && pubYearTo != null && pubYearTo < pubYearFrom) {
-      pubYearFrom = pubYearTo;
-    }
-    track('filter', 'publication_year', pubYearTo != null ? 'set_to' : 'clear_to', String(pubYearTo ?? ''));
-    buildAdvancedBar();
-    buildFilterBar();
-    renderAll();
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.pub-year-dropdown.open').forEach(d => d.classList.remove('open'));
   });
 }
 
