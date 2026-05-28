@@ -672,6 +672,13 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
         if venue_type in EXCLUDED_VENUE_TYPES:
             continue
 
+        # OpenAlex sometimes returns proceedings session metadata (chair notes,
+        # lightning-talk listings, plenary intros) as standalone "works" titled
+        # "Session details: …". Skip them — they aren't real papers.
+        title = (r.get("title") or "").strip()
+        if title.lower().startswith("session details:"):
+            continue
+
         college = (r.get("college") or "").strip()
         if not college:
             continue
@@ -689,29 +696,33 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
         core_rank = (r.get("venue_core_ranking") or "").strip() or None
         sjr_raw = (r.get("venue_sjr_quartile") or "").strip()
         sjr_quartile = sjr_raw if sjr_raw and sjr_raw != "-" else None
-        venue_ranking = None
-        venue_ranking_source = None
-        if core_rank:
-            venue_ranking = core_rank
-            venue_ranking_source = "ICORE 2026 Ranking"
-        elif sjr_quartile:
-            venue_ranking = sjr_quartile
-            venue_ranking_source = "Scimago 2025 Ranking"
 
         work_type = (r.get("work_type") or "").strip()
         venue_name = (r.get("venue") or "").strip()
-        if core_rank:
+        # Workshops first: many satellite workshops inherit their parent
+        # conference's CORE rank, but a workshop paper isn't a full conference
+        # paper — classify by venue name before falling back to rank.
+        if "workshop" in venue_name.lower():
+            pub_type = "workshop"
+        elif core_rank:
             pub_type = "conference"
         elif sjr_quartile:
             pub_type = "journal"
-        elif "workshop" in venue_name.lower():
-            pub_type = "workshop"
         elif work_type == "preprint":
             pub_type = "preprint"
         elif work_type in ("book", "book-chapter"):
             pub_type = "book"
         else:
             pub_type = "other"
+
+        venue_ranking = None
+        venue_ranking_source = None
+        if pub_type == "conference":
+            venue_ranking = core_rank
+            venue_ranking_source = "ICORE 2026 Ranking"
+        elif pub_type == "journal":
+            venue_ranking = sjr_quartile
+            venue_ranking_source = "Scimago 2025 Ranking"
 
         cites_raw = (r.get("cited_by_count") or "").strip()
         cites = 0

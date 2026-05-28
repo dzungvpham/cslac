@@ -29,7 +29,6 @@ const COL_TOOLTIPS = {
 const COLLEGE_COLS = [
   { key: 'name',             label: 'Institution',   numeric: false },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
-  { key: 'total_citations',  label: 'Citations',     numeric: true, tooltip: 'Total citations received' },
   { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last academic year' },
   { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers matching the current publication filter' },
 ];
@@ -57,9 +56,18 @@ const PUB_COLS = [
 const CATEGORIES = [
   { key: 'tenured',      label: 'Tenured'      },
   { key: 'tenure_track', label: 'Tenure-track' },
-  { key: 'teaching',     label: 'Teaching'     },
   { key: 'visiting',     label: 'Visiting'     },
+  { key: 'teaching',     label: 'Teaching'     },
   { key: 'adjunct',      label: 'Adjunct'      },
+];
+
+// Global panel-view selector. The per-panel toggle still lets users
+// override one school at a time; changing the global one re-applies to
+// every open panel.
+const VIEWS = [
+  { key: 'faculty',      label: 'Faculty' },
+  { key: 'courses',      label: 'Courses' },
+  { key: 'publications', label: 'Papers'  },
 ];
 
 // CS subfields — mirrors CS_SUBFIELD_NAMES in scraper/faculty_site_analysis.py
@@ -101,8 +109,14 @@ let searchQuery = '';
 let searchDraft = '';
 let searchTimer = null;
 let expandAllOn = false;
-let pubFilters = {
+let currentView = 'faculty';
+let pubIncludes = {
   conference: new Set(['A*', 'A']),
+  journal: new Set(['Q1']),
+  other: new Set(),
+};
+let pubExcludes = {
+  conference: new Set(),
   journal: new Set(),
   other: new Set(),
 };
@@ -163,7 +177,6 @@ async function loadData() {
       faculty: d.faculty || [],
       total: d.total || 0,
       matched: d.matched || 0,
-      total_citations: d.total_citations || 0,
     });
     collegeLinks[name] = {
       state: d.state ?? null,
@@ -276,7 +289,8 @@ function buildFilterBar() {
   const advIcon = advancedExpanded
     ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
     : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
-  const pubFilterCount = pubFilters.conference.size + pubFilters.journal.size + pubFilters.other.size
+  const pubFilterCount = pubIncludes.conference.size + pubIncludes.journal.size + pubIncludes.other.size
+    + pubExcludes.conference.size + pubExcludes.journal.size + pubExcludes.other.size
     + (pubYearFrom != null ? 1 : 0) + (pubYearTo != null ? 1 : 0);
   const advTotal = activeSubfields.size + excludedSubfields.size + (activeState ? 1 : 0) + pubFilterCount;
   const advCount = advTotal > 0 ? ` (${advTotal})` : '';
@@ -290,15 +304,23 @@ function buildFilterBar() {
     ? [prevSearch.selectionStart, prevSearch.selectionEnd]
     : null;
 
+  const viewLabel = VIEWS.find(v => v.key === currentView)?.label || 'Faculty';
+  const viewItems = VIEWS.map(v =>
+    `<div class="cs-dropdown-item${v.key === currentView ? ' selected' : ''}" data-value="${v.key}">${v.label}</div>`
+  ).join('');
+
   bar.innerHTML =
     `<span class="filter-label">Show</span>` +
+    `<div class="cs-dropdown" id="view-dd">
+       <button class="cs-dropdown-btn ${currentView !== 'faculty' ? 'active' : ''}" type="button">${viewLabel}</button>
+       <div class="cs-dropdown-list">${viewItems}</div>
+     </div>` +
     CATEGORIES.map(c => {
       const on = activeCategories.has(c.key);
       return `<button class="filter-chip ${on ? 'active' : ''}" data-cat="${c.key}">
         ${c.label}<span class="filter-chip-count">${counts[c.key]}</span>
       </button>`;
     }).join('') +
-    `<span class="filter-spacer"></span>` +
     `<input type="text" class="search-input" id="search-input" placeholder="Search…"
       aria-label="Search faculty" value="${esc(searchDraft)}" />` +
     `<button class="expand-toggle ${advActive}" id="advanced-toggle">${advIcon}Advanced filter${advCount}</button>` +
@@ -350,6 +372,43 @@ function buildFilterBar() {
       commitSearch();
     }
   });
+
+  const viewDd = document.getElementById('view-dd');
+  if (viewDd) {
+    const viewBtn = viewDd.querySelector('.cs-dropdown-btn');
+    const viewList = viewDd.querySelector('.cs-dropdown-list');
+    viewBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const wasOpen = viewDd.classList.contains('open');
+      document.querySelectorAll('.cs-dropdown.open').forEach(d => d.classList.remove('open'));
+      if (!wasOpen) {
+        viewDd.classList.add('open');
+        const sel = viewList.querySelector('.selected');
+        if (sel) sel.scrollIntoView({ block: 'nearest' });
+      }
+    });
+    viewList.querySelectorAll('.cs-dropdown-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.stopPropagation();
+        viewDd.classList.remove('open');
+        const next = item.dataset.value;
+        if (next === currentView) return;
+        currentView = next;
+        track('view', 'global', 'switch', currentView);
+        applyGlobalView();
+        buildFilterBar();
+      });
+    });
+  }
+}
+
+// Force every built panel onto the current global view. Unbuilt panels
+// pick it up via the panel._view initialization in buildPanel.
+function applyGlobalView() {
+  document.querySelectorAll('.faculty-panel-inner').forEach(panel => {
+    panel._view = currentView;
+    if (panel._render) panel._render();
+  });
 }
 
 // ── advanced (subfield) filter bar ────────────────────────────────────────
@@ -393,11 +452,12 @@ function buildAdvancedBar() {
     if (code && US_STATES[code]) presentStates.add(code);
   }
   const sortedStates = [...presentStates].sort((a, b) => US_STATES[a].localeCompare(US_STATES[b]));
-  const stateOptions = `<option value="">All states</option>` +
+  const stateItems = `<div class="cs-dropdown-item${!activeState ? ' selected' : ''}" data-value="">All states</div>` +
     sortedStates.map(code => {
       const sel = code === activeState ? ' selected' : '';
-      return `<option value="${esc(code)}"${sel}>${esc(US_STATES[code])}</option>`;
+      return `<div class="cs-dropdown-item${sel}" data-value="${esc(code)}">${esc(US_STATES[code])}</div>`;
     }).join('');
+  const stateLabel = activeState ? esc(US_STATES[activeState]) : 'All states';
 
   bar.innerHTML =
     `<div class="adv-row adv-row-scope">
@@ -410,9 +470,10 @@ function buildAdvancedBar() {
      </div>` +
     `<div class="adv-row adv-row-state">
        <span class="filter-label">State</span>
-       <select class="state-select ${activeState ? 'active' : ''}" id="state-select" aria-label="Filter by state">
-         ${stateOptions}
-       </select>
+       <div class="cs-dropdown" id="state-dd">
+         <button class="cs-dropdown-btn ${activeState ? 'active' : ''}" type="button">${stateLabel}</button>
+         <div class="cs-dropdown-list">${stateItems}</div>
+       </div>
      </div>` +
     `<div class="adv-row adv-row-subfields">
        <span class="filter-label">Subfields</span>` +
@@ -426,7 +487,6 @@ function buildAdvancedBar() {
        }).join('') +
        clearBtn +
     `</div>` +
-    `<div class="adv-row"><span class="adv-hint-inline">${interactHint}</span></div>` +
     `<div class="adv-row adv-row-pubs">
        <span class="filter-label">Pubs</span>` +
        PUB_FILTER_GROUPS.map(g => {
@@ -434,30 +494,34 @@ function buildAdvancedBar() {
            const isObj = typeof v === 'object';
            const val = isObj ? v.key : v;
            const label = isObj ? v.label : v;
-           const on = pubFilters[g.key].has(val);
-           return `<button class="pub-filter-chip ${on ? 'active' : ''}" data-group="${g.key}" data-value="${esc(val)}">${esc(label)}</button>`;
+           const cls = pubIncludes[g.key].has(val) ? 'active'
+             : pubExcludes[g.key].has(val) ? 'exclude'
+             : '';
+           return `<button class="pub-filter-chip ${cls}" data-group="${g.key}" data-value="${esc(val)}">${esc(label)}</button>`;
          }).join('');
          return `<div class="pub-filter-group"><span class="pub-filter-label">${g.label}</span>${chips}</div>`;
        }).join('') +
        `<div class="pub-filter-group">
           <span class="pub-filter-label">Year</span>
-          <div class="pub-year-dropdown" id="pub-year-from-dd">
-            <button class="pub-year-dropdown-btn ${pubYearFrom != null ? 'active' : ''}" type="button">${pubYearFrom != null ? pubYearFrom : 'From'}</button>
-            <div class="pub-year-dropdown-list">
-              <div class="pub-year-dropdown-item${pubYearFrom == null ? ' selected' : ''}" data-value="">From</div>
-              ${pubYearsAvailable.map(y => `<div class="pub-year-dropdown-item${y === pubYearFrom ? ' selected' : ''}" data-value="${y}">${y}</div>`).join('')}
+          <div class="cs-dropdown" id="pub-year-from-dd">
+            <button class="cs-dropdown-btn ${pubYearFrom != null ? 'active' : ''}" type="button">${pubYearFrom != null ? pubYearFrom : 'From'}</button>
+            <div class="cs-dropdown-list">
+              <div class="cs-dropdown-item${pubYearFrom == null ? ' selected' : ''}" data-value="">From</div>
+              ${pubYearsAvailable.map(y => `<div class="cs-dropdown-item${y === pubYearFrom ? ' selected' : ''}" data-value="${y}">${y}</div>`).join('')}
             </div>
           </div>
           <span class="pub-year-dash">–</span>
-          <div class="pub-year-dropdown" id="pub-year-to-dd">
-            <button class="pub-year-dropdown-btn ${pubYearTo != null ? 'active' : ''}" type="button">${pubYearTo != null ? pubYearTo : 'To'}</button>
-            <div class="pub-year-dropdown-list">
-              <div class="pub-year-dropdown-item${pubYearTo == null ? ' selected' : ''}" data-value="">To</div>
-              ${pubYearsAvailable.map(y => `<div class="pub-year-dropdown-item${y === pubYearTo ? ' selected' : ''}" data-value="${y}">${y}</div>`).join('')}
+          <div class="cs-dropdown" id="pub-year-to-dd">
+            <button class="cs-dropdown-btn ${pubYearTo != null ? 'active' : ''}" type="button">${pubYearTo != null ? pubYearTo : 'To'}</button>
+            <div class="cs-dropdown-list">
+              <div class="cs-dropdown-item${pubYearTo == null ? ' selected' : ''}" data-value="">To</div>
+              ${pubYearsAvailable.map(y => `<div class="cs-dropdown-item${y === pubYearTo ? ' selected' : ''}" data-value="${y}">${y}</div>`).join('')}
             </div>
           </div>
         </div>` +
-    `</div>`;
+    `</div>` +
+    `<div class="adv-row"><span class="adv-hint-inline">${interactHint}</span></div>`
+  ;
 
   bar.querySelectorAll('.filter-chip[data-subfield]').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -503,56 +567,65 @@ function buildAdvancedBar() {
     });
   });
 
-  const stateEl = document.getElementById('state-select');
-  if (stateEl) stateEl.addEventListener('change', () => {
-    activeState = stateEl.value;
-    track('filter', 'state', activeState ? 'include' : 'clear', activeState || 'all');
-    buildAdvancedBar();
-    buildFilterBar();
-    renderAll();
-  });
-
   bar.querySelectorAll('.pub-filter-chip').forEach(btn => {
     btn.addEventListener('click', () => {
       const group = btn.dataset.group;
       const value = btn.dataset.value;
-      const set = pubFilters[group];
-      if (set.has(value)) set.delete(value);
-      else set.add(value);
-      track('filter', 'publication', set.has(value) ? 'include' : 'clear', `${group}:${value}`);
+      const inc = pubIncludes[group];
+      const exc = pubExcludes[group];
+      let action;
+      // tri-state cycle: off → include → exclude → off
+      if (inc.has(value)) {
+        inc.delete(value);
+        exc.add(value);
+        action = 'exclude';
+      } else if (exc.has(value)) {
+        exc.delete(value);
+        action = 'clear';
+      } else {
+        inc.add(value);
+        action = 'include';
+      }
+      track('filter', 'publication', action, `${group}:${value}`);
       buildAdvancedBar();
       buildFilterBar();
       renderAll();
     });
   });
 
-  bar.querySelectorAll('.pub-year-dropdown').forEach(dd => {
-    const btn = dd.querySelector('.pub-year-dropdown-btn');
-    const list = dd.querySelector('.pub-year-dropdown-list');
+  bar.querySelectorAll('.cs-dropdown').forEach(dd => {
+    const btn = dd.querySelector('.cs-dropdown-btn');
+    const list = dd.querySelector('.cs-dropdown-list');
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
       const wasOpen = dd.classList.contains('open');
-      document.querySelectorAll('.pub-year-dropdown.open').forEach(d => d.classList.remove('open'));
+      document.querySelectorAll('.cs-dropdown.open').forEach(d => d.classList.remove('open'));
       if (!wasOpen) {
         dd.classList.add('open');
         const sel = list.querySelector('.selected');
         if (sel) sel.scrollIntoView({ block: 'nearest' });
       }
     });
-    list.querySelectorAll('.pub-year-dropdown-item').forEach(item => {
+    list.querySelectorAll('.cs-dropdown-item').forEach(item => {
       item.addEventListener('click', (e) => {
         e.stopPropagation();
         dd.classList.remove('open');
-        const val = item.dataset.value ? parseInt(item.dataset.value, 10) : null;
-        const isFrom = dd.id === 'pub-year-from-dd';
-        if (isFrom) {
-          pubYearFrom = val;
-          if (pubYearFrom != null && pubYearTo != null && pubYearFrom > pubYearTo) pubYearTo = pubYearFrom;
-          track('filter', 'publication_year', pubYearFrom != null ? 'set_from' : 'clear_from', String(pubYearFrom ?? ''));
+        const raw = item.dataset.value;
+        if (dd.id === 'state-dd') {
+          activeState = raw || '';
+          track('filter', 'state', activeState ? 'include' : 'clear', activeState || 'all');
         } else {
-          pubYearTo = val;
-          if (pubYearFrom != null && pubYearTo != null && pubYearTo < pubYearFrom) pubYearFrom = pubYearTo;
-          track('filter', 'publication_year', pubYearTo != null ? 'set_to' : 'clear_to', String(pubYearTo ?? ''));
+          const val = raw ? parseInt(raw, 10) : null;
+          const isFrom = dd.id === 'pub-year-from-dd';
+          if (isFrom) {
+            pubYearFrom = val;
+            if (pubYearFrom != null && pubYearTo != null && pubYearFrom > pubYearTo) pubYearTo = pubYearFrom;
+            track('filter', 'publication_year', pubYearFrom != null ? 'set_from' : 'clear_from', String(pubYearFrom ?? ''));
+          } else {
+            pubYearTo = val;
+            if (pubYearFrom != null && pubYearTo != null && pubYearTo < pubYearFrom) pubYearFrom = pubYearTo;
+            track('filter', 'publication_year', pubYearTo != null ? 'set_to' : 'clear_to', String(pubYearTo ?? ''));
+          }
         }
         buildAdvancedBar();
         buildFilterBar();
@@ -561,7 +634,7 @@ function buildAdvancedBar() {
     });
   });
   document.addEventListener('click', () => {
-    document.querySelectorAll('.pub-year-dropdown.open').forEach(d => d.classList.remove('open'));
+    document.querySelectorAll('.cs-dropdown.open').forEach(d => d.classList.remove('open'));
   });
 }
 
@@ -665,12 +738,10 @@ function filteredPubCount(collegeName) {
 
 function aggregateCollege(college) {
   const fac = filteredFaculty(college);
-  const cites = fac.map(f => f.citedby).filter(v => v != null);
   return {
     ...college,
     faculty: fac,
     total: fac.length,
-    total_citations: cites.reduce((s, v) => s + v, 0),
     filtered_pubs: filteredPubCount(college.name),
   };
 }
@@ -732,7 +803,8 @@ function updatePapersStat() {
       const isObj = typeof v === 'object';
       const val = isObj ? v.key : v;
       const label = isObj ? v.label : v;
-      if (pubFilters[g.key].has(val)) parts.push(label);
+      if (pubIncludes[g.key].has(val)) parts.push(label);
+      else if (pubExcludes[g.key].has(val)) parts.push('−' + label);
     }
   }
   if (pubYearFrom != null || pubYearTo != null) {
@@ -779,9 +851,9 @@ function buildCollegeHeaders() {
     </div>`;
   }).join('');
 
-  row.querySelectorAll('.th').forEach(th => {
-    th.addEventListener('click', () => {
-      const key = th.dataset.col;
+  row.querySelectorAll('.th-label').forEach(label => {
+    label.addEventListener('click', () => {
+      const key = label.closest('.th').dataset.col;
       if (collegeSort.key === key) {
         collegeSort.dir *= -1;
       } else {
@@ -799,7 +871,6 @@ function sortedColleges(colleges) {
   const fn = {
     name:              c => c.name,
     total:             c => c.total,
-    total_citations:   c => c.total_citations ?? -1,
     courses_per_year:  c => c.courses_per_year ?? -1,
     filtered_pubs:     c => c.filtered_pubs ?? -1,
   }[collegeSort.key] || (c => c.name);
@@ -855,8 +926,6 @@ function buildCollegeRow(college, idx, priorOpenState) {
   const div = document.createElement('div');
   div.className = 'college-row';
 
-  const citFull  = college.total_citations > 0 ? fmt(college.total_citations) : '—';
-  const citShort = college.total_citations > 0 ? abbrev(college.total_citations) : '—';
   const cpyText  = fmt(college.courses_per_year);
   const fpText   = fmt(college.filtered_pubs);
   const links   = collegeLinks[college.name] || {};
@@ -892,7 +961,6 @@ function buildCollegeRow(college, idx, priorOpenState) {
           </span>
         </div>
         <div class="td-num">${college.total}</div>
-        <div class="td-num ${college.total_citations > 0 ? '' : 'dim'}"><span class="num-full">${citFull}</span><span class="num-short">${citShort}</span></div>
         <div class="td-num ${college.courses_per_year != null ? '' : 'dim'}">${cpyText}</div>
         <div class="td-num ${college.filtered_pubs != null && college.filtered_pubs > 0 ? '' : 'dim'}">${fpText}</div>
       </div>
@@ -956,7 +1024,7 @@ function buildPanel(panel, college) {
   const hasCourses = !!schedule;
   const hasPublications = !!publications;
   const facultyUrl = (collegeLinks[college.name] || {}).faculty_url;
-  let view = panel._view || 'faculty';
+  if (panel._view === undefined) panel._view = currentView;
   // Persisted across view-toggles via the outer panel element; the inner
   // .panel-body gets re-created on each render so we can't store it there.
   if (panel._showColumbia === undefined) panel._showColumbia = false;
@@ -964,11 +1032,18 @@ function buildPanel(panel, college) {
   // latest TERMS_PER_PAGE window when no offset has been set yet.
 
   function render() {
+    // Read panel._view fresh each render so applyGlobalView's reassignment
+    // is picked up. Fall back when the chosen view has no data for this
+    // school, so the toggle highlight tracks the actually-rendered table.
+    let view = panel._view || currentView;
+    if (view === 'courses' && !hasCourses) view = 'faculty';
+    if (view === 'publications' && !hasPublications) view = 'faculty';
+
     const coursesBtn = hasCourses
       ? `<button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>`
       : `<button data-view="courses" class="disabled" disabled title="Course schedule not accessible" aria-label="Course schedule not accessible">${ICON_BOOK}</button>`;
     const pubsBtn = hasPublications
-      ? `<button data-view="publications" class="${view === 'publications' ? 'active' : ''}" title="Publications" aria-label="Publications">${ICON_SCROLL}</button>`
+      ? `<button data-view="publications" class="${view === 'publications' ? 'active' : ''}" title="Papers" aria-label="Papers">${ICON_SCROLL}</button>`
       : `<button data-view="publications" class="disabled" disabled title="No publication data" aria-label="No publication data">${ICON_SCROLL}</button>`;
     const collegeNameEsc = esc(college.name).replace(/'/g, "\\'");
     const sourceLink = facultyUrl
@@ -1014,9 +1089,8 @@ function buildPanel(panel, college) {
     panel.querySelectorAll('.panel-toggle button[data-view]').forEach(btn => {
       btn.addEventListener('click', e => {
         e.stopPropagation();
-        view = btn.dataset.view;
-        panel._view = view;
-        track('switch_panel_view', 'panel', 'switch', view, college.name);
+        panel._view = btn.dataset.view;
+        track('switch_panel_view', 'panel', 'switch', panel._view, college.name);
         render();
         // If the user had scrolled past the panel-toggle (it's sticky-
         // pinned at the top of the open row), reset scroll so they land
@@ -1061,7 +1135,7 @@ function renderFacultyTable(panel, faculty) {
       const arrow = active ? (facSort.dir === 1 ? '↑' : '↓') : '↕';
       const tip = COL_TOOLTIPS[col.key] ? ` title="${esc(COL_TOOLTIPS[col.key])}"` : '';
       return `<div class="fth ${active ? 'sorted' : ''}" data-fac-col="${col.key}"${tip}>
-        <span class="fth-label">${col.label}</span> <span class="sort-icon">${arrow}</span>
+        <span class="fth-label">${col.label} <span class="sort-icon">${arrow}</span></span>
       </div>`;
     }).join('');
   }
@@ -1135,10 +1209,10 @@ function renderFacultyTable(panel, faculty) {
       <div class="fac-rows-wrap">${rowsHtml()}</div>
     `;
 
-    panel.querySelectorAll('.fth').forEach(th => {
-      th.addEventListener('click', e => {
+    panel.querySelectorAll('.fth-label').forEach(label => {
+      label.addEventListener('click', e => {
         e.stopPropagation();
-        const key = th.dataset.facCol;
+        const key = label.closest('.fth').dataset.facCol;
         if (facSort.key === key) {
           facSort.dir *= -1;
         } else {
@@ -1169,9 +1243,18 @@ function pubVisible(p) {
   if (pubYearFrom != null && (p.year == null || p.year < pubYearFrom)) return false;
   if (pubYearTo != null && (p.year == null || p.year > pubYearTo)) return false;
   const t = p.pub_type;
-  if (t === 'conference') return pubFilters.conference.has(p.venue_ranking);
-  if (t === 'journal') return pubFilters.journal.has(p.venue_ranking);
-  return pubFilters.other.has(t);
+  let group, value;
+  if (t === 'conference' || t === 'journal') {
+    group = t;
+    value = p.venue_ranking;
+  } else {
+    group = 'other';
+    value = t;
+  }
+  if (pubExcludes[group].has(value)) return false;
+  const anyInc = pubIncludes.conference.size || pubIncludes.journal.size || pubIncludes.other.size;
+  if (anyInc && !pubIncludes[group].has(value)) return false;
+  return true;
 }
 
 function renderPublicationsTable(panel, publications) {
@@ -1184,7 +1267,7 @@ function renderPublicationsTable(panel, publications) {
       const active = col.key === pubSort.key;
       const arrow = active ? (pubSort.dir === 1 ? '↑' : '↓') : '↕';
       return `<div class="pth ${active ? 'sorted' : ''}" data-pub-col="${col.key}">
-        <span class="pth-label">${col.label}</span> <span class="sort-icon">${arrow}</span>
+        <span class="pth-label">${col.label} <span class="sort-icon">${arrow}</span></span>
       </div>`;
     }).join('');
   }
@@ -1275,10 +1358,10 @@ function renderPublicationsTable(panel, publications) {
       <div class="pub-rows-wrap">${rowsHtml(sorted)}</div>
     `;
 
-    panel.querySelectorAll('.pth').forEach(th => {
-      th.addEventListener('click', e => {
+    panel.querySelectorAll('.pth-label').forEach(label => {
+      label.addEventListener('click', e => {
         e.stopPropagation();
-        const key = th.dataset.pubCol;
+        const key = label.closest('.pth').dataset.pubCol;
         if (pubSort.key === key) {
           pubSort.dir *= -1;
         } else {

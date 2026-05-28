@@ -271,7 +271,7 @@ header {
 /* shared column grid — must match between header and rows */
 .col-grid {
   display: grid;
-  grid-template-columns: 1fr 80px 110px 80px 80px;
+  grid-template-columns: 1fr 80px 80px 80px;
   align-items: center;
 }
 
@@ -294,7 +294,6 @@ header {
   text-transform: uppercase;
   color: var(--sub);
   padding: 10px 12px;
-  cursor: pointer;
   user-select: none;
   display: flex;
   align-items: center;
@@ -302,7 +301,8 @@ header {
   transition: color 0.12s;
   white-space: nowrap;
 }
-.th:hover { color: var(--text); }
+.th-label { cursor: pointer; transition: color 0.12s; }
+.th-label:hover { color: var(--text); }
 .th.sorted { color: var(--accent); }
 .th:not(:first-child) { justify-content: flex-end; }
 
@@ -491,7 +491,6 @@ header {
   letter-spacing: 0.04em;
   color: var(--sub);
   padding: 8px 8px 8px 0;
-  cursor: pointer;
   user-select: none;
   display: flex;
   align-items: center;
@@ -500,7 +499,8 @@ header {
   white-space: nowrap;
   position: relative;
 }
-.fth:hover { color: var(--text); }
+.fth-label { cursor: pointer; transition: color 0.12s; }
+.fth-label:hover { color: var(--text); }
 .fth.sorted { color: var(--accent); }
 /* only numeric columns (3rd onward) are right-aligned; Name and Title stay left */
 .fth:not(:first-child):not(:nth-child(2)) { justify-content: flex-end; padding-right: 4px; }
@@ -849,7 +849,6 @@ a.course-title-link:hover .course-name { color: var(--accent); }
   letter-spacing: 0.04em;
   color: var(--sub);
   padding: 8px 8px 8px 0;
-  cursor: pointer;
   user-select: none;
   display: flex;
   align-items: center;
@@ -858,7 +857,8 @@ a.course-title-link:hover .course-name { color: var(--accent); }
   white-space: nowrap;
   position: relative;
 }
-.pth:hover { color: var(--text); }
+.pth-label { cursor: pointer; transition: color 0.12s; }
+.pth-label:hover { color: var(--text); }
 .pth.sorted { color: var(--accent); }
 .pth.sorted .sort-icon { opacity: 1; }
 /* Year (1st) and Cites (last) right-aligned */
@@ -993,14 +993,20 @@ a.pub-author:hover {
   background: var(--accent);
   border-color: var(--accent);
 }
-.pub-year-dropdown {
+.pub-filter-chip.exclude {
+  color: var(--bg);
+  background: var(--danger);
+  border-color: var(--danger);
+}
+.cs-dropdown {
   position: relative;
   display: inline-block;
 }
-.pub-year-dropdown-btn {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
-  padding: 2px 18px 2px 6px;
+.cs-dropdown-btn {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 22px 5px 11px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--bg);
@@ -1013,13 +1019,13 @@ a.pub-author:hover {
   white-space: nowrap;
   line-height: 1.4;
 }
-.pub-year-dropdown-btn.active {
+.cs-dropdown-btn.active {
   color: var(--bg);
   background-color: var(--accent);
   border-color: var(--accent);
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23eff1f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
 }
-.pub-year-dropdown-list {
+.cs-dropdown-list {
   display: none;
   position: absolute;
   top: calc(100% + 2px);
@@ -1034,17 +1040,18 @@ a.pub-author:hover {
   z-index: 100;
   padding: 2px 0;
 }
-.pub-year-dropdown.open .pub-year-dropdown-list { display: block; }
-.pub-year-dropdown-item {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
+.cs-dropdown.open .cs-dropdown-list { display: block; }
+.cs-dropdown-item {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
   padding: 3px 10px;
   cursor: pointer;
   white-space: nowrap;
   color: var(--text);
 }
-.pub-year-dropdown-item:hover { background: var(--hover); }
-.pub-year-dropdown-item.selected {
+.cs-dropdown-item:hover { background: var(--hover-bg); }
+.cs-dropdown-item.selected {
   background: var(--accent);
   color: var(--bg);
 }
@@ -1095,7 +1102,7 @@ a.pub-author:hover {
 .filter-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
   flex-wrap: wrap;
   padding: 14px 0 16px;
   border-bottom: 1px solid var(--border);
@@ -1140,7 +1147,6 @@ a.pub-author:hover {
   opacity: 0.75;
   margin-left: 4px;
 }
-.filter-spacer { flex: 1; }
 .expand-toggle {
   font-family: 'IBM Plex Sans', system-ui, sans-serif;
   font-size: 12px;
@@ -1172,7 +1178,7 @@ a.pub-author:hover {
   border-radius: 999px;
   background: var(--bg);
   color: var(--text);
-  width: 180px;
+  width: 144px;
   transition: border-color 0.12s, color 0.12s;
 }
 .search-input::placeholder { color: var(--muted); }
@@ -1229,33 +1235,6 @@ a.pub-author:hover {
   color: var(--bg);
   background: var(--accent);
 }
-.state-select {
-  font-family: 'IBM Plex Sans', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 5px 24px 5px 11px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--bg);
-  color: var(--text);
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%236c6f85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 8px center;
-  background-size: 10px 10px;
-}
-.state-select.active {
-  color: var(--bg);
-  background-color: var(--accent);
-  border-color: var(--accent);
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23eff1f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='2,5 6,9 10,5'/></svg>");
-}
-.state-select option {
-  color: var(--text);
-  background: var(--bg);
-}
 
 /* ── college row number ──
    Sits at the start of the column (same x as the "Institution"
@@ -1283,17 +1262,16 @@ a.pub-author:hover {
   .header-stats { gap: 18px; }
   .about-text { max-width: 160px; font-size: 10.5px; }
 
-  .filter-bar { padding: 12px 0; gap: 8px; }
-  .filter-spacer { display: none; }
+  .filter-bar { padding: 12px 0; gap: 6px; }
   .search-input { flex: 1 1 140px; width: auto; min-width: 0; }
 
   /* main college grid: shrink metric columns to fit ~360px viewports.
      minmax(0,1fr) — not 1fr — so the name column can shrink below its
      min-content (chevron + state + link icons would otherwise force overflow). */
-  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px 56px; }
+  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px; }
   .th { padding: 9px 4px; font-size: 10px; gap: 3px; }
 
-  /* Rotate the metric column labels (Faculty / Citations / Courses) 30°
+  /* Rotate the metric column labels (Faculty / Courses / Papers) 30°
      from top-left to bottom-right so they stop crowding each other at
      narrow widths. Label + sort icon rotate together as one unit. */
   .col-head-row { overflow: visible; }
