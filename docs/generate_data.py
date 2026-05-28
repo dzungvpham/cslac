@@ -743,6 +743,7 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
             "year": year,
             "cites": cites,
             "venue": _clean_venue((r.get("venue") or "").strip()),
+            "venue_url": (r.get("venue_url") or "").strip() or None,
             "venue_acronym": (r.get("venue_acronym") or "").strip() or None,
             "venue_ranking": venue_ranking,
             "venue_ranking_source": venue_ranking_source,

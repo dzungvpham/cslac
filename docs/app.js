@@ -1216,9 +1216,13 @@ function renderPublicationsTable(panel, publications) {
 
       let venueHtml = '';
       if (p.venue_acronym) {
-        venueHtml = `<span title="${esc(p.venue || '')}">${esc(p.venue_acronym)}</span>`;
+        venueHtml = p.venue_url
+          ? `<a href="${esc(p.venue_url)}" target="_blank" rel="noopener" title="${esc(p.venue || '')}">${esc(p.venue_acronym)}</a>`
+          : `<span title="${esc(p.venue || '')}">${esc(p.venue_acronym)}</span>`;
       } else if (p.venue) {
-        venueHtml = `<span class="pub-venue-full">${esc(p.venue)}</span>`;
+        venueHtml = p.venue_url
+          ? `<a class="pub-venue-full" href="${esc(p.venue_url)}" target="_blank" rel="noopener">${esc(p.venue)}</a>`
+          : `<span class="pub-venue-full">${esc(p.venue)}</span>`;
       } else {
         venueHtml = '—';
       }
