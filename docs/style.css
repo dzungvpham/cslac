@@ -895,6 +895,7 @@ a.course-title-link:hover .course-name { color: var(--accent); }
 .pub-title-text {
   color: var(--text);
 }
+scp { font-variant: small-caps; }
 .ptd-venue {
   font-size: 12.5px;
   color: var(--sub);

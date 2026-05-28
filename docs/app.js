@@ -30,7 +30,7 @@ const COLLEGE_COLS = [
   { key: 'name',             label: 'Institution',   numeric: false },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
   { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last academic year' },
-  { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers matching the current publication filter' },
+  { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers affiliated with the institution and matching the current filters' },
 ];
 
 const FAC_COLS = [
@@ -1293,19 +1293,21 @@ function renderPublicationsTable(panel, publications) {
     return sorted.map(p => {
       const yearStr = p.year != null ? String(p.year) : '—';
 
+      const titleHtml = safeHtml(dedupeMathFallback(p.title || ''));
       const titleInner = p.url
-        ? `<a class="pub-title-link" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`
-        : `<span class="pub-title-text">${esc(p.title)}</span>`;
+        ? `<a class="pub-title-link" href="${esc(p.url)}" target="_blank" rel="noopener">${titleHtml}</a>`
+        : `<span class="pub-title-text">${titleHtml}</span>`;
 
       let venueHtml = '';
       if (p.venue_acronym) {
+        const venueTip = esc(plainText(p.venue || ''));
         venueHtml = p.venue_url
-          ? `<a href="${esc(p.venue_url)}" target="_blank" rel="noopener" title="${esc(p.venue || '')}">${esc(p.venue_acronym)}</a>`
-          : `<span title="${esc(p.venue || '')}">${esc(p.venue_acronym)}</span>`;
+          ? `<a href="${esc(p.venue_url)}" target="_blank" rel="noopener" title="${venueTip}">${esc(p.venue_acronym)}</a>`
+          : `<span title="${venueTip}">${esc(p.venue_acronym)}</span>`;
       } else if (p.venue) {
         venueHtml = p.venue_url
-          ? `<a class="pub-venue-full" href="${esc(p.venue_url)}" target="_blank" rel="noopener">${esc(p.venue)}</a>`
-          : `<span class="pub-venue-full">${esc(p.venue)}</span>`;
+          ? `<a class="pub-venue-full" href="${esc(p.venue_url)}" target="_blank" rel="noopener">${safeHtml(p.venue)}</a>`
+          : `<span class="pub-venue-full">${safeHtml(p.venue)}</span>`;
       } else {
         venueHtml = '—';
       }
@@ -1357,6 +1359,7 @@ function renderPublicationsTable(panel, publications) {
       </div>
       <div class="pub-rows-wrap">${rowsHtml(sorted)}</div>
     `;
+    renderMathIn(panel.querySelector('.pub-rows-wrap'));
 
     panel.querySelectorAll('.pth-label').forEach(label => {
       label.addEventListener('click', e => {
@@ -1575,6 +1578,85 @@ function esc(s) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 }
+
+const SAFE_INLINE_TAG = /^<\/?(?:i|b|u|em|strong|sub|sup|scp|small)\s*\/?>$/i;
+
+function safeHtml(s) {
+  if (s == null || s === '') return '';
+  return String(s).replace(
+    /<[^>]*>|&(?:[a-zA-Z][a-zA-Z0-9]*|#\d+|#x[0-9a-fA-F]+);|[<>&"]/g,
+    m => {
+      if (m.length === 1) {
+        return { '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[m];
+      }
+      if (m[0] === '<') return SAFE_INLINE_TAG.test(m) ? m : esc(m);
+      return m;
+    }
+  );
+}
+
+const _plainTpl = document.createElement('template');
+function plainText(s) {
+  if (s == null || s === '') return '';
+  _plainTpl.innerHTML = String(s);
+  return _plainTpl.content.textContent || '';
+}
+
+// OpenAlex titles often follow `$$<latex>$$` with a redundant text-rendered fallback
+// (e.g. `$$\mathcal {ALCS}5_m$$ ALCS 5 m`). When we render the math with KaTeX, drop
+// the fallback by checking whether the chars right after the math block, with whitespace
+// and grouping braces removed, match the LaTeX with commands/sub/sup markers stripped.
+function dedupeMathFallback(s) {
+  if (s == null || s === '') return '';
+  const norm = x => x.replace(/[\s{}]/g, '');
+  const cleanLatex = inner => norm(
+    inner.replace(/\\[a-zA-Z]+\s*/g, '').replace(/[\\_^]/g, '')
+  );
+  let out = '';
+  let i = 0;
+  while (i < s.length) {
+    const start = s.indexOf('$$', i);
+    if (start < 0) { out += s.slice(i); break; }
+    const end = s.indexOf('$$', start + 2);
+    if (end < 0) { out += s.slice(i); break; }
+    out += s.slice(i, end + 2);
+    i = end + 2;
+    const target = cleanLatex(s.slice(start + 2, end));
+    if (!target) continue;
+    let j = i;
+    while (j < s.length && /\s/.test(s[j])) j++;
+    if (j === i) continue;
+    let acc = '';
+    for (let k = j; k < s.length && k - j < 200; k++) {
+      if (s[k] === '$') break;
+      acc += s[k];
+      const accNorm = norm(acc);
+      if (accNorm === target) { i = k + 1; break; }
+      if (accNorm.length > target.length) break;
+    }
+  }
+  return out;
+}
+
+function renderMathIn(el) {
+  if (typeof renderMathInElement !== 'function' || !el) return;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$',  right: '$',  display: false },
+      ],
+      throwOnError: false,
+      errorColor: 'inherit',
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+    });
+  } catch (_) { /* swallow render errors */ }
+}
+
+// Re-render any panels that were populated before KaTeX finished loading.
+window.addEventListener('load', () => {
+  document.querySelectorAll('.pub-rows-wrap').forEach(renderMathIn);
+});
 
 loadData();
 
