@@ -741,6 +741,7 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
         elif pub_type == "journal":
             venue_ranking = sjr_quartile
             venue_ranking_source = "SCImago 2025 Journal Ranking"
+            venue_ranking_url = (r.get("venue_sjr_url") or "").strip() or None
 
         cites_raw = (r.get("cited_by_count") or "").strip()
         cites = 0

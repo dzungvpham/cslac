@@ -540,33 +540,38 @@ def _is_subseq(needle: list[str], haystack: list[str]) -> bool:
     return j == len(needle)
 
 
-def match_sjr(df: pd.DataFrame) -> dict[str, tuple[str, str]]:
-    """Match journal venues to Scimago. Returns {venue: (quartile, issn)}."""
-    sjr_by_norm: dict[str, tuple[str, str]] = {}
+_SJR_DETAIL_URL = "https://www.scimagojr.com/journalsearch.php?q={sid}&tip=sid&clean=0"
+
+
+def match_sjr(df: pd.DataFrame) -> dict[str, tuple[str, str, str]]:
+    """Match journal venues to Scimago. Returns {venue: (quartile, issn, url)}."""
+    sjr_by_norm: dict[str, tuple[str, str, str]] = {}
     for sjr_path in _SJR_PATHS:
         sjr = pd.read_csv(sjr_path, sep=";")
         for _, row in sjr.iterrows():
             n = _norm_journal(str(row["Title"]))
-            new_entry = (str(row["SJR Best Quartile"]), str(row["Issn"]))
+            sid = str(row["Sourceid"]).strip()
+            url = _SJR_DETAIL_URL.format(sid=sid) if sid else ""
+            new_entry = (str(row["SJR Best Quartile"]), str(row["Issn"]), url)
             existing = sjr_by_norm.get(n)
             if existing is None or _Q_RANK.get(new_entry[0], 99) < _Q_RANK.get(existing[0], 99):
                 sjr_by_norm[n] = new_entry
     # Layer curated entries on top — only add if Scimago doesn't already have
     # the journal, so the CSV remains the source of truth where it has data.
     for n, q in _CURATED_SJR.items():
-        sjr_by_norm.setdefault(n, (q, ""))
+        sjr_by_norm.setdefault(n, (q, "", ""))
 
     # Pre-compute token sets + ordered token lists for subset-match fallback.
     # Only Scimago entries with >= 3 meaningful tokens participate — short
     # titles are too easy to accidentally match (e.g. "Nature" against
     # "Nature Genetics").
-    sjr_token_index: list[tuple[frozenset[str], list[str], tuple[str, str]]] = []
+    sjr_token_index: list[tuple[frozenset[str], list[str], tuple[str, str, str]]] = []
     for n, data in sjr_by_norm.items():
         toks = _journal_tokens(n)
         if len(toks) >= 3:
             sjr_token_index.append((toks, _journal_tokens_ordered(n), data))
 
-    venue_to_sjr: dict[str, tuple[str, str]] = {}
+    venue_to_sjr: dict[str, tuple[str, str, str]] = {}
     journals = df.loc[df["venue_type"] == "journal", "venue"].dropna().unique()
     for v in journals:
         n = _norm_journal(v)
@@ -585,7 +590,7 @@ def match_sjr(df: pd.DataFrame) -> dict[str, tuple[str, str]]:
         if len(v_tokens) < 3:
             continue
         v_tokens_ordered = _journal_tokens_ordered(n)
-        best: tuple[int, tuple[str, str]] | None = None
+        best: tuple[int, tuple[str, str, str]] | None = None
         for s_tokens, s_tokens_ordered, sjr_data in sjr_token_index:
             if not s_tokens <= v_tokens:
                 continue
@@ -673,6 +678,9 @@ def main():
     )
     df["venue_issn"] = df["venue"].map(
         lambda v: sjr_matches[v][1] if v in sjr_matches else ""
+    )
+    df["venue_sjr_url"] = df["venue"].map(
+        lambda v: sjr_matches[v][2] if v in sjr_matches else ""
     )
     print(f"  {len(sjr_matches)} journals matched")
 
