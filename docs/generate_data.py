@@ -29,6 +29,7 @@ import argparse
 import csv
 import json
 import re
+import sys
 import unicodedata
 from collections import defaultdict
 from datetime import date
@@ -36,6 +37,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 DOCS = Path(__file__).parent
+sys.path.insert(0, str(ROOT / "scraper"))
+from openalex_subfield_map import map_paper_to_cs_subfields  # noqa: E402
 DEFAULT_LIST     = ROOT / "data" / "faculty_list.csv"
 DEFAULT_SCHOLAR  = ROOT / "data" / "faculty_list_with_scholar_url.csv"
 DEFAULT_VERIFIED = ROOT / "data" / "faculty_list_with_verified_profile.csv"
@@ -675,8 +678,10 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
         # OpenAlex sometimes returns proceedings session metadata (chair notes,
         # lightning-talk listings, plenary intros) as standalone "works" titled
         # "Session details: …". Skip them — they aren't real papers.
+        # Also skip "Math Counts" / "Conversations:" — recurring columns, not
+        # research.
         title = (r.get("title") or "").strip()
-        if title.lower().startswith("session details:"):
+        if title.lower().startswith(("session details", "math counts", "conversations:")):
             continue
 
         college = (r.get("college") or "").strip()
@@ -699,19 +704,30 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
 
         work_type = (r.get("work_type") or "").strip()
         venue_name = (r.get("venue") or "").strip()
+        venue_type = (r.get("venue_type") or "").strip()
+        if venue_name.lower() == "acm inroads":
+            continue
         # Workshops first: many satellite workshops inherit their parent
         # conference's CORE rank, but a workshop paper isn't a full conference
         # paper — classify by venue name before falling back to rank.
         if "workshop" in venue_name.lower():
             pub_type = "workshop"
-        elif core_rank:
+        # Trust OpenAlex's `venue_type` over `work_type`: a real
+        # journal/conference paper sometimes carries `work_type=preprint`
+        # because OpenAlex first ingested the work from an arXiv mirror
+        # and never re-typed it after the published version was merged
+        # in (e.g. ChatDBG at PACM SE). CORE/Scimago rankings still
+        # drive the rank badge but no longer gate the classification.
+        elif venue_type == "conference" or core_rank:
             pub_type = "conference"
-        elif sjr_quartile:
+        elif venue_type == "journal" or sjr_quartile:
             pub_type = "journal"
+        elif venue_type == "repository":
+            pub_type = "preprint"
+        elif venue_type in ("book series", "ebook platform") or work_type in ("book", "book-chapter"):
+            pub_type = "book"
         elif work_type == "preprint":
             pub_type = "preprint"
-        elif work_type in ("book", "book-chapter"):
-            pub_type = "book"
         else:
             pub_type = "other"
 
@@ -751,6 +767,9 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
         matched_raw = (r.get("matched_faculty") or "").strip()
         matched_faculty = [n.strip() for n in matched_raw.split(";") if n.strip()] if matched_raw else []
 
+        topics = _split_semi(r.get("topics") or "")
+        cs_subfields = map_paper_to_cs_subfields(topics)
+
         pub = {
             "title": (r.get("title") or "").strip(),
             "url": (r.get("url") or "").strip() or None,
@@ -764,6 +783,7 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
             "authors": authors,
             "matched_faculty": matched_faculty,
             "pub_type": pub_type,
+            "subfields": cs_subfields,
         }
         colleges[college].append(pub)
 

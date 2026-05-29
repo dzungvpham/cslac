@@ -255,6 +255,12 @@ async function loadData() {
         for (const mf of p.matched_faculty) if (mf) parts.push(mf);
       }
       p._search = parts.filter(Boolean).join(' ').toLowerCase();
+      p._subfieldsSet = new Set(p.subfields || []);
+      // Cross-college dedup key for the top-bar Papers count. Mirrors the
+      // Python scraper's `_norm_title`: lowercase, non-alphanumerics → space,
+      // trimmed. The same paper with matched faculty at multiple LACs ends
+      // up as one row per college, so we collapse those for the global stat.
+      p._dedupKey = (p.title || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
       if (Array.isArray(p.matched_faculty)) {
         for (const facName of p.matched_faculty) {
           const f = byFacultyName.get((facName || '').toLowerCase());
@@ -785,14 +791,32 @@ function pubVisibleBase(p) {
   let group, value;
   if (t === 'conference' || t === 'journal') {
     group = t;
-    value = p.venue_ranking;
+    value = p.venue_ranking || '';
   } else {
     group = 'other';
-    value = t;
+    value = t === 'book' ? 'other' : t;
   }
   if (pubExcludes[group].has(value)) return false;
   const anyInc = pubIncludes.conference.size || pubIncludes.journal.size || pubIncludes.other.size;
   if (anyInc && !pubIncludes[group].has(value)) return false;
+  // Subfield gate (independent of the Faculty/School scope toggle):
+  // - any excluded subfield matching this pub hides it
+  // - if any subfield is included, the pub must hit at least one
+  // - untagged pubs are hidden the moment any include is active
+  const sfs = p._subfieldsSet;
+  if (excludedSubfields.size && sfs) {
+    for (const s of excludedSubfields) {
+      if (sfs.has(s)) return false;
+    }
+  }
+  if (activeSubfields.size) {
+    if (!sfs || sfs.size === 0) return false;
+    let hit = false;
+    for (const s of activeSubfields) {
+      if (sfs.has(s)) { hit = true; break; }
+    }
+    if (!hit) return false;
+  }
   return true;
 }
 
@@ -1056,20 +1080,29 @@ function animateStat(el, target) {
 }
 
 function updatePapersStat() {
+  const seen = new Set();
   let total = 0;
   for (const pubs of Object.values(collegePublications)) {
-    for (const p of pubs) { if (pubVisible(p)) total++; }
+    for (const p of pubs) {
+      if (!pubVisible(p)) continue;
+      if (p._dedupKey) {
+        if (seen.has(p._dedupKey)) continue;
+        seen.add(p._dedupKey);
+      }
+      total++;
+    }
   }
   animateStat(document.getElementById('stat-papers'), total);
 
   const parts = [];
+  const anyIncluded = pubIncludes.conference.size || pubIncludes.journal.size || pubIncludes.other.size;
   for (const g of PUB_FILTER_GROUPS) {
     for (const v of g.values) {
       const isObj = typeof v === 'object';
       const val = isObj ? v.key : v;
       const label = isObj ? v.label : v;
       if (pubIncludes[g.key].has(val)) parts.push(label);
-      else if (pubExcludes[g.key].has(val)) parts.push('−' + label);
+      else if (!anyIncluded && pubExcludes[g.key].has(val)) parts.push('−' + label);
     }
   }
   if (pubYearFrom != null || pubYearTo != null) {
@@ -1510,12 +1543,11 @@ function renderFacultyTable(panel, faculty) {
 
 // ── publications panel ────────────────────────────────────────────────────
 const PUB_FILTER_GROUPS = [
-  { key: 'conference', label: 'Conferences', values: ['A*', 'A', 'B', 'C'] },
-  { key: 'journal',    label: 'Journals',    values: ['Q1', 'Q2', 'Q3', 'Q4'] },
+  { key: 'conference', label: 'Conferences', values: ['A*', 'A', 'B', 'C', { key: '', label: 'Unranked' }] },
+  { key: 'journal',    label: 'Journals',    values: ['Q1', 'Q2', 'Q3', 'Q4', { key: '', label: 'Unranked' }] },
   { key: 'other',      label: 'Other',       values: [
     { key: 'workshop', label: 'Workshop' },
     { key: 'preprint', label: 'Preprint' },
-    { key: 'book',     label: 'Book' },
     { key: 'other',    label: 'Other' },
   ]},
 ];

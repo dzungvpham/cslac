@@ -183,6 +183,28 @@ _VENUE_PREFIX_RE = re.compile(
     r"(?:(?:ACM|IEEE|SIAM|USENIX|AAAI)\s+)?",   # org prefix
     re.IGNORECASE,
 )
+# Strict variant — only strips year/ordinal/org-acronym, never an arbitrary
+# word. Used alongside the greedy variant in match_core so a venue like
+# "Proceedings of the Genetic and Evolutionary Computation Conference"
+# keeps "genetic" in its token set (the greedy `\w+` would eat it).
+_VENUE_PREFIX_STRICT_RE = re.compile(
+    r"^proceedings\s+of\s+(?:the\s+)?"
+    r"(?:(?:"
+        r"\d{4}"                                # 2016
+        r"|\d{1,3}(?:st|nd|rd|th)"              # 15th, 2nd
+        r"|first|second|third|fourth|fifth"
+        r"|sixth|seventh|eighth|ninth|tenth"
+        r"|eleventh|twelfth|thirteenth"
+        r"|fourteenth|fifteenth|sixteenth"
+        r"|seventeenth|eighteenth|nineteenth"
+        r"|twentieth|thirtieth|fortieth"
+        r"|fiftieth|sixtieth|seventieth"
+        r"|eightieth|ninetieth|hundredth"
+    r")\s+)?"
+    r"(?:\(\d{4}\)\s+)?"
+    r"(?:(?:ACM|IEEE|SIAM|USENIX|AAAI)\s+)?",
+    re.IGNORECASE,
+)
 _PAREN_JUNK_RE = re.compile(
     r"\s*\((?:"
     r"(?:IEEE\s*)?Cat\.?\s*No\.|"               # (IEEE Cat. No.XX) / (Cat. No.XX)
@@ -204,10 +226,10 @@ def _stem(w: str) -> str:
     return w
 
 
-def _tokenize(s: str) -> set[str]:
+def _tokenize(s: str, prefix_re: re.Pattern = _VENUE_PREFIX_RE) -> set[str]:
     s = s.replace("&amp;", "&")
     s = _PAREN_JUNK_RE.sub("", s)
-    s = _VENUE_PREFIX_RE.sub("", s)
+    s = prefix_re.sub("", s)
     s = _ORDINAL_RE.sub("", s)
     s = _YEAR_RE.sub("", s)
     return {
@@ -349,20 +371,26 @@ def match_core(
             continue
         if v in journal_venues:
             continue
-        v_tokens = _tokenize(v)
-        if len(v_tokens) < 2:
-            continue
+        # Tokenize with both the greedy and strict prefix strippers and
+        # score each against CORE — the greedy one eats one leading word
+        # (helpful for modifiers like "Companion"/"Joint" but harmful when
+        # that word is real title content like "Genetic"), so trying both
+        # avoids regressing either case.
+        token_variants = [_tokenize(v), _tokenize(v, _VENUE_PREFIX_STRICT_RE)]
         best_acr, best_rank = None, None
         best_recall, best_jaccard = 0.0, 0.0
-        for acr, c_tokens in core_tokens.items():
-            if len(c_tokens) < 2:
+        for v_tokens in token_variants:
+            if len(v_tokens) < 2:
                 continue
-            inter = len(c_tokens & v_tokens)
-            recall = inter / len(c_tokens)
-            jaccard = inter / len(c_tokens | v_tokens)
-            if recall >= 0.8 and jaccard >= 0.65 and (recall, jaccard) > (best_recall, best_jaccard):
-                best_acr, best_rank = acr, core_db[acr][1]
-                best_recall, best_jaccard = recall, jaccard
+            for acr, c_tokens in core_tokens.items():
+                if len(c_tokens) < 2:
+                    continue
+                inter = len(c_tokens & v_tokens)
+                recall = inter / len(c_tokens)
+                jaccard = inter / len(c_tokens | v_tokens)
+                if recall >= 0.8 and jaccard >= 0.65 and (recall, jaccard) > (best_recall, best_jaccard):
+                    best_acr, best_rank = acr, core_db[acr][1]
+                    best_recall, best_jaccard = recall, jaccard
         if best_acr:
             venue_to_core[v] = (best_acr, best_rank)
 
@@ -373,11 +401,30 @@ def match_core(
 # Loaded from scraper/scimagojr.csv (downloaded from scimagojr.com).
 # Matched by normalized journal title.
 
-_SJR_PATH = Path(__file__).resolve().parent / "scimagojr.csv"
+# Scimago CSVs to merge. Each is filtered to a single subject area on the
+# Scimago side (the site forces a per-area download); we load them all so
+# cross-disciplinary venues (math journals like Discrete Math, Linear
+# Algebra) get matched in addition to CS-area journals. When a journal
+# appears in multiple areas with different quartiles, the better quartile
+# wins — same convention Scimago uses for its "SJR Best Quartile" column.
+_SJR_PATHS = [
+    Path(__file__).resolve().parent / "scimagojr.csv",       # Computer Science
+    Path(__file__).resolve().parent / "scimagojr_math.csv",  # Mathematics
+]
+
+_Q_RANK = {"Q1": 0, "Q2": 1, "Q3": 2, "Q4": 3, "-": 4, "": 5}
+
+
+# Scimago often appends the venue's acronym after a comma — e.g.
+# "Proceedings - AAAI ... Conference, AIIDE" or "Lecture Notes ..., LNICST".
+# We strip the trailing acronym before normalizing so it doesn't show up
+# as an extra token that blocks the subset match against the OpenAlex
+# venue (which never carries the acronym).
+_TRAILING_ACRONYM_RE = re.compile(r",\s*[A-Z][A-Z0-9]{1,7}\s*$")
 
 
 def _norm_journal(s: str) -> str:
-    s = s.strip().lower()
+    s = _TRAILING_ACRONYM_RE.sub("", s.strip()).lower()
     s = s.replace("&amp;", "and").replace("&", "and")
     s = re.sub(r"\bthe\b", "", s)
     s = re.sub(r"\(.*?\)", "", s)
@@ -385,13 +432,114 @@ def _norm_journal(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+# Hand-curated SJR quartiles for journals our faculty publish in that don't
+# appear in scimagojr.csv (it's filtered to Computer Science only, so cross-
+# disciplinary venues — Nature, PRL, JAMA, the math journals, etc. — are
+# missing). Quartiles reflect Scimago's public rankings as of 2024.
+# Keys are already in `_norm_journal` form.
+_CURATED_SJR: dict[str, str] = {
+    # Multidisciplinary
+    "nature": "Q1",
+    "science": "Q1",
+    "nature communications": "Q1",
+    "plos one": "Q1",
+    # Math venue not in scimagojr_math.csv under this name — the CSV lists
+    # it as bare "Involve" (1 token, below the subset-match threshold), so
+    # the OpenAlex string "Involve, a Journal of Mathematics" needs an
+    # explicit entry to pick up the Q3 ranking.
+    "involve a journal of mathematics": "Q3",
+    # CS journals not in the CS-filtered SJR
+    "ieee transactions on networking": "Q1",  # subset-matches "IEEE/ACM Transactions on Networking"
+    "acm sigplan notices": "Q3",
+    "quantum": "Q1",
+    "journal of vision": "Q1",
+    "evolutionary computation": "Q1",
+    "performance evaluation": "Q1",
+    "queueing systems": "Q1",
+    # Statistics
+    "american statistician": "Q1",
+    "annual review of statistics and its application": "Q1",
+    # Medical / biology
+    "jama internal medicine": "Q1",
+    "genome biology": "Q1",
+    "jacc heart failure": "Q1",
+    "journal of chemical education": "Q2",
+    # Physics
+    "physical review letters": "Q1",
+    "international journal of theoretical physics": "Q2",
+    # Education
+    "educational technology research and development": "Q1",
+    # Other
+    "internet research": "Q1",
+    # Curated to override an otherwise-confusing subset match: the venue
+    # "Journal of Intelligent & Robotic Systems" would subset-match to
+    # Scimago's shorter "Journal of Intelligent Systems" (different journal);
+    # the real one is "Journal of Intelligent and Robotic Systems: Theory
+    # and Applications" (Q2) but the subtitle blocks the subset rule.
+    "journal of intelligent and robotic systems": "Q2",
+    # Likewise, this education journal isn't in CS-filtered SJR; without
+    # a curated entry the subset rule fires on a misordered look-alike.
+    "journal of science education and technology": "Q2",
+}
+
+_JOURNAL_TOKEN_STOP = frozenset({"of", "and", "in", "for", "on", "a", "an", "with"})
+
+
+def _journal_tokens(norm: str) -> frozenset[str]:
+    """Tokens for fuzzy subset matching: drop stopwords, keep length >= 2."""
+    return frozenset(
+        w for w in norm.split() if len(w) > 1 and w not in _JOURNAL_TOKEN_STOP
+    )
+
+
+def _journal_tokens_ordered(norm: str) -> list[str]:
+    """Same tokens as _journal_tokens but ordered + deduplicated. Used to
+    check that one title's tokens appear in the other in the same order
+    (so reorderings like "Software Engineering" vs "Engineering Software"
+    don't match)."""
+    seen: set[str] = set()
+    result: list[str] = []
+    for w in norm.split():
+        if len(w) > 1 and w not in _JOURNAL_TOKEN_STOP and w not in seen:
+            seen.add(w)
+            result.append(w)
+    return result
+
+
+def _is_subseq(needle: list[str], haystack: list[str]) -> bool:
+    """True if every token in `needle` appears in `haystack` in the same order."""
+    j = 0
+    for h in haystack:
+        if j < len(needle) and h == needle[j]:
+            j += 1
+    return j == len(needle)
+
+
 def match_sjr(df: pd.DataFrame) -> dict[str, tuple[str, str]]:
     """Match journal venues to Scimago. Returns {venue: (quartile, issn)}."""
-    sjr = pd.read_csv(_SJR_PATH, sep=";")
     sjr_by_norm: dict[str, tuple[str, str]] = {}
-    for _, row in sjr.iterrows():
-        n = _norm_journal(str(row["Title"]))
-        sjr_by_norm[n] = (str(row["SJR Best Quartile"]), str(row["Issn"]))
+    for sjr_path in _SJR_PATHS:
+        sjr = pd.read_csv(sjr_path, sep=";")
+        for _, row in sjr.iterrows():
+            n = _norm_journal(str(row["Title"]))
+            new_entry = (str(row["SJR Best Quartile"]), str(row["Issn"]))
+            existing = sjr_by_norm.get(n)
+            if existing is None or _Q_RANK.get(new_entry[0], 99) < _Q_RANK.get(existing[0], 99):
+                sjr_by_norm[n] = new_entry
+    # Layer curated entries on top — only add if Scimago doesn't already have
+    # the journal, so the CSV remains the source of truth where it has data.
+    for n, q in _CURATED_SJR.items():
+        sjr_by_norm.setdefault(n, (q, ""))
+
+    # Pre-compute token sets + ordered token lists for subset-match fallback.
+    # Only Scimago entries with >= 3 meaningful tokens participate — short
+    # titles are too easy to accidentally match (e.g. "Nature" against
+    # "Nature Genetics").
+    sjr_token_index: list[tuple[frozenset[str], list[str], tuple[str, str]]] = []
+    for n, data in sjr_by_norm.items():
+        toks = _journal_tokens(n)
+        if len(toks) >= 3:
+            sjr_token_index.append((toks, _journal_tokens_ordered(n), data))
 
     venue_to_sjr: dict[str, tuple[str, str]] = {}
     journals = df.loc[df["venue_type"] == "journal", "venue"].dropna().unique()
@@ -399,6 +547,47 @@ def match_sjr(df: pd.DataFrame) -> dict[str, tuple[str, str]]:
         n = _norm_journal(v)
         if n in sjr_by_norm:
             venue_to_sjr[v] = sjr_by_norm[n]
+            continue
+        # Fallback: a Scimago entry's tokens are a strict subset of the
+        # venue's tokens, IN THE SAME ORDER, with at most one extra venue
+        # token. Catches naming drift like venue "IEEE/ACM Transactions on
+        # Networking" vs Scimago "IEEE Transactions on Networking". The
+        # order check kills reordering false positives like venue "Advances
+        # in Software Engineering" vs Scimago "Advances in Engineering
+        # Software" — same tokens, different journals. Prefer the most-
+        # specific match (largest scimago token set) when multiple fit.
+        v_tokens = _journal_tokens(n)
+        if len(v_tokens) < 3:
+            continue
+        v_tokens_ordered = _journal_tokens_ordered(n)
+        best: tuple[int, tuple[str, str]] | None = None
+        for s_tokens, s_tokens_ordered, sjr_data in sjr_token_index:
+            if not s_tokens <= v_tokens:
+                continue
+            extras = len(v_tokens - s_tokens)
+            if extras > 1:
+                continue
+            # When the token sets are identical and the title is long
+            # enough that random token coincidence is implausible (>= 5
+            # tokens), skip the order check — Scimago and OpenAlex sometimes
+            # disagree on word order for conference proceedings (e.g.
+            # OpenAlex "Proceedings of the AAAI Conference on Artificial
+            # Intelligence and Interactive Digital Entertainment" vs
+            # Scimago "Proceedings - AAAI Artificial Intelligence and
+            # Interactive Digital Entertainment Conference"). Short titles
+            # still need order preservation to block reorderings like
+            # "Advances in Software Engineering" vs "Advances in
+            # Engineering Software".
+            order_ok = (
+                (extras == 0 and len(s_tokens) >= 5)
+                or _is_subseq(s_tokens_ordered, v_tokens_ordered)
+            )
+            if not order_ok:
+                continue
+            if best is None or len(s_tokens) > best[0]:
+                best = (len(s_tokens), sjr_data)
+        if best is not None:
+            venue_to_sjr[v] = best[1]
 
     return venue_to_sjr
 
