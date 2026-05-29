@@ -65,7 +65,7 @@ const FAC_COLS = [
 ];
 
 const PUB_COLS = [
-  { key: 'year',    label: 'Year',    numeric: true  },
+  { key: 'year',    label: '<span class="lbl-full">Year</span><span class="lbl-short">Yr</span>', numeric: true  },
   { key: 'title',   label: 'Title',   numeric: false },
   { key: 'venue',   label: 'Venue',   numeric: false },
   { key: 'authors', label: 'Authors', numeric: false },
@@ -1250,6 +1250,94 @@ function abbrev(n) {
   return (Number.isInteger(r) ? r.toFixed(0) : r.toFixed(1)) + 'k';
 }
 
+// Word-level abbreviations applied to the mobile (small-viewport) form
+// of venue names so long titles don't blow up the narrow column. Sorted
+// alphabetically — the regex below uses \b boundaries, so prefix pairs
+// like Transaction/Transactions don't need a particular order.
+const VENUE_ABBREVIATIONS = [
+  ['Algorithm',    'Algo.'],
+  ['Algorithms',    'Algo.'],
+  ["and", "&"],
+  ['Application',    'Appl.'],
+  ['Applications',   'Appl.'],
+  ['Artificial',     'Artf.'],
+  ['Association',    'Assoc.'],
+  ['Communication',  'Comm.'],
+  ['Communications', 'Comm.'],
+  ['Computation',  'Comp.'],
+  ['Computational',  'Comp.'],
+  ['Computer',       'Comput.'],
+  ['Computing',      'Comput.'],
+  ['Conference',     'Conf.'],
+  ['Distributed',      'Dist.'],
+  ['Education',      'Edu.'],
+  ['Educational',    'Edu.'],
+  ['Engineering',    'Eng.'],
+  ['Information',    'Info.'],
+  ['Intelligence',   'Intell.'],
+  ['Interaction',  "Interact'n"],
+  ['International',  "Int'l"],
+  ['Journal',        'Jrnl.'],
+  ['Language', 'Lang.'],
+  ['Languages', 'Lang.'],
+  ['Magazine',       'Mag.'],
+  ['Mathematical',   'Math.'],
+  ['Mathematics',    'Math.'],
+  ['Operation',    "Operat'n."],
+  ['Proceedings',    'Proc.'],
+  ['Programming',    'Prog.'],
+  ['Research',       'Rsrch.'],
+  ['Society',        'Soc.'],
+  ['Symposia',       'Symp.'],
+  ['Symposium',      'Symp.'],
+  ['Technologies',   'Tech.'],
+  ['Technology',     'Tech.'],
+  ['Transaction',    'Trans.'],
+  ['Transactions',   'Trans.'],
+  ['Ubiquitous',   'Ubiq.'],
+  ['Visualization',   'Vis.'],
+  ['Visualizations',   'Vis.'],
+  ['Workshop',       'Wksp.'],
+  ['Workshops',      'Wksps.'],
+];
+const VENUE_ABBREV_RE = new RegExp(
+  '\\b(' + VENUE_ABBREVIATIONS.map(([w]) => w).join('|') + ')\\b',
+  'gi',
+);
+const VENUE_ABBREV_MAP = (() => {
+  const m = new Map();
+  for (const [from, to] of VENUE_ABBREVIATIONS) m.set(from.toLowerCase(), to);
+  return m;
+})();
+// Replace long venue words with shorter forms (Proceedings → Proc., etc.).
+// Case-insensitive match; if the original was lowercase, the replacement
+// is lowercased too so "international workshop" → "int'l wksp.".
+function abbreviateVenue(text) {
+  if (!text) return text;
+  return text.replace(VENUE_ABBREV_RE, (m) => {
+    const to = VENUE_ABBREV_MAP.get(m.toLowerCase());
+    return m[0] === m[0].toUpperCase() ? to : to[0].toLowerCase() + to.slice(1);
+  });
+}
+
+// Returns a truncated copy of `text` cut at the last word boundary ≤
+// maxChars, or null if the text already fits (no truncation needed) or
+// can't be cut cleanly (no usable space, or the cut would land inside
+// a `$…$` math block). Used for the mobile-only short forms of title
+// and venue so the +/- toggle can sit inline after the literal "…".
+function safeTruncateForLines(text, maxChars) {
+  if (!text || text.length <= maxChars) return null;
+  let inMath = false;
+  let lastSpace = -1;
+  for (let i = 0; i < maxChars; i++) {
+    const ch = text[i];
+    if (ch === '$') inMath = !inMath;
+    else if (ch === ' ' && !inMath) lastSpace = i;
+  }
+  if (lastSpace < maxChars * 0.4) return null;
+  return text.slice(0, lastSpace);
+}
+
 function buildCollegeRow(college, idx, priorOpenState) {
   const div = document.createElement('div');
   div.className = 'college-row';
@@ -1589,7 +1677,7 @@ function renderPublicationsTable(panel, publications) {
       const active = col.key === pubSort.key;
       const arrow = active ? (pubSort.dir === 1 ? '↑' : '↓') : '↕';
       return `<div class="pth ${active ? 'sorted' : ''}" data-pub-col="${col.key}">
-        <span class="pth-label">${col.label} <span class="sort-icon">${arrow}</span></span>
+        <span class="pth-label">${col.label}<span class="sort-icon">${arrow}</span></span>
       </div>`;
     }).join('');
   }
@@ -1613,33 +1701,67 @@ function renderPublicationsTable(panel, publications) {
 
   function rowsHtml(sorted) {
     return sorted.map(p => {
-      const yearStr = p.year != null ? String(p.year) : '—';
+      const yearStr = p.year != null
+        ? `<span class="num-full">${p.year}</span><span class="num-short">&rsquo;${String(p.year).slice(-2)}</span>`
+        : '—';
 
-      const titleHtml = safeHtml(dedupeMathFallback(p.title || ''));
-      const titleInner = p.url
-        ? `<a class="pub-title-link" href="${esc(p.url)}" target="_blank" rel="noopener">${titleHtml}</a>`
-        : `<span class="pub-title-text">${titleHtml}</span>`;
-
-      let venueHtml = '';
-      if (p.venue_acronym) {
-        const venueTip = esc(plainText(p.venue || ''));
-        venueHtml = p.venue_url
-          ? `<a href="${esc(p.venue_url)}" target="_blank" rel="noopener" title="${venueTip}">${esc(p.venue_acronym)}</a>`
-          : `<span title="${venueTip}">${esc(p.venue_acronym)}</span>`;
-      } else if (p.venue) {
-        venueHtml = p.venue_url
-          ? `<a class="pub-venue-full" href="${esc(p.venue_url)}" target="_blank" rel="noopener">${safeHtml(p.venue)}</a>`
-          : `<span class="pub-venue-full">${safeHtml(p.venue)}</span>`;
+      // Title: mirror the Authors pattern — render a truncated short
+      // span (text + literal "…" + "+" inline) and a full span, then
+      // CSS picks which is visible per viewport. Putting the "+" inline
+      // after the ellipsis (rather than absolute bottom-right) is what
+      // makes the toggle land "next to the ellipsis."
+      const fullTitle = p.title || '';
+      const titleCut = safeTruncateForLines(fullTitle, 60);
+      const renderTitleLink = (text) => {
+        const html = safeHtml(dedupeMathFallback(text));
+        return p.url
+          ? `<a class="pub-title-link" href="${esc(p.url)}" target="_blank" rel="noopener">${html}</a>`
+          : `<span class="pub-title-text">${html}</span>`;
+      };
+      let titleInner;
+      if (titleCut) {
+        titleInner =
+          `<span class="title-short">${renderTitleLink(titleCut)}<span class="trunc-tail">… <button class="title-toggle" type="button" aria-label="Show full title">+</button></span></span>` +
+          `<span class="title-full">${renderTitleLink(fullTitle)} <button class="title-toggle" type="button" aria-label="Collapse title">−</button></span>`;
       } else {
-        venueHtml = '—';
+        titleInner = renderTitleLink(fullTitle);
       }
+
+      // Venue: on small viewports we abbreviate long words ("Proceedings"
+      // → "Proc.", etc.) so the venue fits the narrow column. When the
+      // abbreviation changes the text we render two siblings — .venue-short
+      // for mobile, .venue-desktop for wider viewports — and CSS picks
+      // which is visible. No truncation/toggle: the abbreviation does the
+      // shortening, and the column lets long names wrap.
+      const venueText = p.venue_acronym || p.venue || '';
+      const abbrevText = abbreviateVenue(venueText);
+      const hasAbbrev = abbrevText !== venueText;
+      const renderVenueText = (text) => {
+        if (p.venue_acronym) {
+          const venueTip = esc(plainText(p.venue || ''));
+          return p.venue_url
+            ? `<a href="${esc(p.venue_url)}" target="_blank" rel="noopener" title="${venueTip}">${esc(text)}</a>`
+            : `<span title="${venueTip}">${esc(text)}</span>`;
+        }
+        if (p.venue) {
+          return p.venue_url
+            ? `<a class="pub-venue-full" href="${esc(p.venue_url)}" target="_blank" rel="noopener">${safeHtml(text)}</a>`
+            : `<span class="pub-venue-full">${safeHtml(text)}</span>`;
+        }
+        return '—';
+      };
+      let rankHtml = '';
       if (p.venue_ranking) {
         const rankTip = esc(venueRankTooltip(p.venue_ranking, p.venue_ranking_source));
         const rankLabel = esc(p.venue_ranking);
-        venueHtml += p.venue_ranking_url
+        rankHtml = p.venue_ranking_url
           ? `<sup class="venue-rank"><a href="${esc(p.venue_ranking_url)}" target="_blank" rel="noopener" title="${rankTip}">${rankLabel}</a></sup>`
           : `<sup class="venue-rank" title="${rankTip}">${rankLabel}</sup>`;
       }
+      const venueHtml = hasAbbrev
+        ? `<span class="venue-short">${renderVenueText(abbrevText)}${rankHtml}</span>` +
+          `<span class="venue-desktop">${renderVenueText(venueText)}${rankHtml}</span>`
+        : renderVenueText(venueText) + rankHtml;
 
       let authorsHtml = '—';
       if (p.authors && p.authors.length) {
@@ -1650,12 +1772,24 @@ function renderPublicationsTable(panel, publications) {
           }
           return `<span class="pub-author"${tip}>${esc(a.name)}</span>`;
         });
-        if (authorSpans.length > 8) {
-          authorsHtml =
-            `<span class="authors-short">${authorSpans.slice(0, 8).join(', ')}, … <button class="authors-toggle" aria-label="Show all authors">+</button></span>` +
-            `<span class="authors-full" hidden>${authorSpans.join(', ')} <button class="authors-toggle" aria-label="Collapse authors">−</button></span>`;
+        const total = authorSpans.length;
+        const allHtml = authorSpans.join(', ');
+        // Truncate at different thresholds per viewport: 5 on mobile,
+        // 8 on desktop. CSS shows whichever short form matches the
+        // current viewport; clicking + expands to the full list.
+        if (total <= 5) {
+          authorsHtml = allHtml;
         } else {
-          authorsHtml = authorSpans.join(', ');
+          const expandBtn = `<button class="authors-toggle" type="button" aria-label="Show all authors">+</button>`;
+          const collapseBtn = `<button class="authors-toggle" type="button" aria-label="Collapse authors">−</button>`;
+          const mobileShort = `${authorSpans.slice(0, 5).join(', ')}, … ${expandBtn}`;
+          const desktopShort = total > 8
+            ? `${authorSpans.slice(0, 8).join(', ')}, … ${expandBtn}`
+            : allHtml;
+          authorsHtml =
+            `<span class="authors-mobile-short">${mobileShort}</span>` +
+            `<span class="authors-desktop-short">${desktopShort}</span>` +
+            `<span class="authors-full" hidden>${allHtml} ${collapseBtn}</span>`;
         }
       }
 
@@ -1709,11 +1843,23 @@ function renderPublicationsTable(panel, publications) {
       btn.addEventListener('click', e => {
         e.stopPropagation();
         const cell = btn.closest('.ptd-authors');
-        const short = cell.querySelector('.authors-short');
         const full = cell.querySelector('.authors-full');
-        const showing = !full.hidden;
-        short.hidden = !showing;
-        full.hidden = showing;
+        const shorts = cell.querySelectorAll('.authors-mobile-short, .authors-desktop-short');
+        const expanded = !full.hidden;
+        full.hidden = expanded;
+        shorts.forEach(s => { s.hidden = !expanded; });
+      });
+    });
+
+    // Title +/- toggle. The cell carries .title-short and .title-full
+    // siblings; CSS picks the visible one per viewport. The +/- button
+    // lives inline at the end of either span, so it sits right next to
+    // the "…" instead of in the cell's corner.
+    panel.querySelectorAll('.title-toggle').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const cell = btn.closest('.ptd-title');
+        cell.classList.toggle('expanded');
       });
     });
   }
@@ -1997,16 +2143,17 @@ loadData();
 // ── custom tooltip (replaces slow native title) ───────────────────────────
 (function initTooltip() {
   const tip = document.getElementById('tip');
+  const noHover = matchMedia('(hover: none)');
   let cur = null;
   let savedTitle = '';
 
-  function show(el, text, e) {
+  function show(el, text, clientX, clientY) {
     cur = el;
     savedTitle = text;
     el.removeAttribute('title');
     tip.textContent = text;
     tip.classList.add('visible');
-    position(e);
+    positionAt(clientX, clientY);
   }
 
   function hide() {
@@ -2016,13 +2163,13 @@ loadData();
     tip.classList.remove('visible');
   }
 
-  function position(e) {
+  function positionAt(clientX, clientY) {
     const pad = 8;
-    let x = e.clientX + pad;
-    let y = e.clientY + pad;
+    let x = clientX + pad;
+    let y = clientY + pad;
     const r = tip.getBoundingClientRect();
-    if (x + r.width > window.innerWidth) x = e.clientX - r.width - pad;
-    if (y + r.height > window.innerHeight) y = e.clientY - r.height - pad;
+    if (x + r.width > window.innerWidth) x = clientX - r.width - pad;
+    if (y + r.height > window.innerHeight) y = clientY - r.height - pad;
     tip.style.left = x + 'px';
     tip.style.top = y + 'px';
   }
@@ -2036,15 +2183,18 @@ loadData();
   }
 
   document.addEventListener('mouseover', function (e) {
+    if (noHover.matches) return;
     const el = closest(e.target);
-    if (el) show(el, el.getAttribute('title'), e);
+    if (el) show(el, el.getAttribute('title'), e.clientX, e.clientY);
   });
 
   document.addEventListener('mouseout', function (e) {
+    if (noHover.matches) return;
     if (cur && !cur.contains(e.relatedTarget)) hide();
   });
 
   document.addEventListener('mousemove', function (e) {
-    if (cur) position(e);
+    if (noHover.matches) return;
+    if (cur) positionAt(e.clientX, e.clientY);
   });
 })();

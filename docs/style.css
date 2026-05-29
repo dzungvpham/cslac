@@ -311,8 +311,11 @@ header {
   opacity: 0.4;
   line-height: 1;
 }
+/* The ↕ glyph renders smaller than ↑/↓ in IBM Plex; bump unsorted
+   icons up a px so all three states look the same size. */
 .th:not(.sorted) .sort-icon,
-.fth:not(.sorted) .sort-icon { font-size: 11px; }
+.fth:not(.sorted) .sort-icon,
+.pth:not(.sorted) .sort-icon { font-size: 11px; }
 .th.sorted .sort-icon { opacity: 1; }
 
 /* college data row */
@@ -861,9 +864,15 @@ a.course-title-link:hover .course-name { color: var(--accent); }
 .pth-label:hover { color: var(--text); }
 .pth.sorted { color: var(--accent); }
 .pth.sorted .sort-icon { opacity: 1; }
-/* Year (1st) and Cites (last) right-aligned */
-.pth:first-child,
+/* Year (1st) left-aligned; Cites (last) right-aligned. Matches the
+   Faculty/Course views: first column has 0 left padding so it lines
+   up with the panel's content edge. */
+.pth:first-child { justify-content: flex-start; padding-left: 0; padding-right: 4px; }
 .pth:last-child { justify-content: flex-end; padding-right: 4px; }
+/* Small breathing room between header text and the sort arrow.
+   The literal space between the two used to be a font-rendered space
+   (~3-4px); a tight margin reads better and is independent of font. */
+.pth-label .sort-icon { margin-left: 2px; }
 .pub-row {
   border-bottom: 1px solid var(--border-sub);
   transition: background 0.1s;
@@ -880,8 +889,9 @@ a.course-title-link:hover .course-name { color: var(--accent); }
 .ptd-year {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12.5px;
-  text-align: right;
-  padding-right: 4px;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
   color: var(--sub);
 }
 .ptd-title {
@@ -908,6 +918,7 @@ scp { font-variant: small-caps; }
   color: var(--accent);
   margin-left: 3px;
   cursor: default;
+  white-space: nowrap;
 }
 .venue-rank a {
   color: inherit;
@@ -955,6 +966,18 @@ a.pub-author:hover {
   color: var(--text);
   border-color: var(--text);
 }
+/* Author truncation has two short forms: desktop (>8 → 8+…) and
+   mobile (>5 → 5+…). CSS picks which is visible per viewport;
+   [hidden] from the +/- toggle still takes precedence. */
+.authors-mobile-short { display: none; }
+/* Title truncation only matters on small viewports — desktop always
+   renders the full text inline. Hide the truncated short sibling and
+   the +/- toggle button (the mobile @media block flips both back on).
+   For venue, .venue-short carries the mobile-only abbreviation; hide
+   it on desktop so the .venue-desktop sibling shows the full name. */
+.title-short,
+.venue-short,
+.title-toggle { display: none; }
 .ptd-num {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12.5px;
@@ -962,7 +985,10 @@ a.pub-author:hover {
   padding: 9px 4px;
   color: var(--text);
 }
-.ptd-num .num-short { display: none; }
+.ptd-num .num-short,
+.ptd-year .num-short { display: none; }
+/* Year header label: long form by default, short ('Yr') on mobile. */
+.pth .lbl-short { display: none; }
 
 /* ── publication filter (inside advanced bar) ────────────────────────── */
 .pub-filter-group {
@@ -1445,17 +1471,111 @@ a.pub-author:hover {
   .pub-filter-chip { font-size: 10px; padding: 2px 6px; }
   .pub-filter-label { font-size: 9px; }
 
-  /* publications: horizontal scroll on mobile */
-  .pub-rows-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .pub-head-row { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  /* publications: pack columns to fit a ~360px viewport without
+     horizontal scroll. Title is capped at ~30% with ellipsis + an
+     inline +/- toggle (handled in app.js) that expands the cell.
+     Each pub-row has its own grid (not a single grid spanning all
+     rows), so every track must be content-independent — otherwise
+     row N's wide venue would shrink row M's authors. */
   .pub-grid {
-    min-width: 580px;
+    grid-template-columns: 26px minmax(0, 30%) minmax(0, 20%) minmax(0, 1fr) 24px;
   }
-  .ptd-num .num-full  { display: none; }
-  .ptd-num .num-short { display: inline; }
+  .ptd { padding-right: 4px; min-width: 0; }
+  .ptd-num { padding-right: 2px; }
+  /* Year column flushes against the panel content edge (matches
+     .ftd-name-cell / .course-sticky); no extra horizontal padding. */
+  .ptd-year { padding-left: 0; padding-right: 0; }
+  /* Long author surnames (e.g. "Vorobeychik"), full venue names (e.g.
+     "Computational Linguistics"), and title words like "Approximate"
+     otherwise stick out of their column track because grid items have
+     min-width: auto = min-content. Force them to break when they can't
+     fit so line-clamp does its job vertically instead of the text
+     overflowing horizontally and getting clipped. */
+  .ptd-title,
+  .ptd-authors,
+  .ptd-venue { overflow-wrap: anywhere; }
+  /* Swap which truncated author list shows. :not([hidden]) keeps
+     the [hidden] toggle (set by the +/- click) authoritative. */
+  .authors-mobile-short:not([hidden]) { display: inline; }
+  .authors-desktop-short { display: none; }
+  .ptd-num .num-full,
+  .ptd-year .num-full { display: none; }
+  .ptd-num .num-short,
+  .ptd-year .num-short { display: inline; }
+  .pth .lbl-full { display: none; }
+  .pth .lbl-short { display: inline; }
+
+  /* Rotated Cites header — mirrors .fac-head-row's metric-column
+     pattern (anchored at bottom-left, rotated -55°, label kept short).
+     Sort icon stays in the rotated label so the column is still
+     sortable from the header. The row needs overflow:visible plus a
+     z-index that beats the sticky panel-toggle above (z-index: 30,
+     same as .fac-head-row) so the rotated label isn't covered. */
+  .pub-head-row { overflow: visible; z-index: 30; }
+  .pth[data-pub-col="cites"] {
+    padding: 0;
+    overflow: visible;
+    justify-content: flex-start;
+  }
+  .pth[data-pub-col="cites"] .pth-label {
+    position: absolute;
+    /* Pin the label's visual center to the cell's center, then rotate
+       around its own center. The rotation no longer shifts the
+       on-screen position, so changing the text, font size, or angle
+       doesn't require a magic bottom offset to compensate. */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-55deg);
+    transform-origin: center;
+    white-space: nowrap;
+    font-size: 9.5px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  /* Title: render two siblings, .title-short (with literal "…" + "+"
+     inline at the end) and .title-full (entire text + "−" inline at
+     the end). Mobile shows -short by default; the .expanded class on
+     the cell (set by the toggle click) swaps which one is visible.
+     The button being inline at the end of the text is what puts it
+     "right next to the ellipsis" — same approach as Authors.
+     Venue uses a separate mobile/desktop pair (.venue-short carries
+     the abbreviated mobile-only text; .venue-desktop carries the full
+     name) and has no toggle — abbreviation does all the shortening. */
+  .ptd-title,
+  .ptd-venue { min-width: 0; }
+  .title-short,
+  .venue-short { display: inline; }
+  .title-full { display: none; }
+  .venue-desktop { display: none; }
+  .ptd-title.expanded .title-short { display: none; }
+  .ptd-title.expanded .title-full { display: inline; }
+  .title-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin-left: 2px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--sub);
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: color 0.12s, border-color 0.12s;
+  }
+  /* Keep the "…" glued to its toggle so they stay on the same line.
+     overflow-wrap: anywhere on the cell would otherwise let the space
+     between them be a break point. */
+  .trunc-tail { white-space: nowrap; }
+  .title-toggle:hover {
+    color: var(--text);
+    border-color: var(--text);
+  }
 }
 
 /* ── custom tooltip ── */
