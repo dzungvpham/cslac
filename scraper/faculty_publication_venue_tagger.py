@@ -245,8 +245,11 @@ _PAREN_ACRONYM_RE = re.compile(r"\(([A-Z][A-Za-z&/+\-]{1,15})(?:[\s\-]*\d{0,4})?
 _ICORE_CACHE = Path(__file__).resolve().parent / "icore2026.csv"
 
 
-def _build_core_db(rows: list[dict]) -> dict[str, tuple[str, str]]:
-    """Build {key: (title, rank)} dict, disambiguating duplicate acronyms.
+_ICORE_DETAIL_URL = "https://portal.core.edu.au/conf-ranks/{id}/"
+
+
+def _build_core_db(rows: list[dict]) -> dict[str, tuple[str, str, str]]:
+    """Build {key: (title, rank, url)} dict, disambiguating duplicate acronyms.
 
     The highest-ranked entry keeps the plain acronym; lower-ranked duplicates
     get "ACR (Title)" as their key so both remain matchable.
@@ -258,26 +261,42 @@ def _build_core_db(rows: list[dict]) -> dict[str, tuple[str, str]]:
         if acr not in best or pri < best[acr][2]:
             best[acr] = (title, rank, pri)
 
-    result: dict[str, tuple[str, str]] = {}
+    result: dict[str, tuple[str, str, str]] = {}
     for r in rows:
-        acr, title, rank = str(r["acronym"]), str(r["title"]), str(r["rank"])
+        acr = str(r["acronym"])
+        title = str(r["title"])
+        rank = str(r["rank"])
+        url = str(r.get("url", ""))
         pri = _RANK_ORDER.get(rank, 99)
         if pri == best[acr][2] and title == best[acr][0]:
-            result[acr] = (title, rank)
+            result[acr] = (title, rank, url)
         else:
-            result[f"{acr} ({title})"] = (title, rank)
+            result[f"{acr} ({title})"] = (title, rank, url)
     return result
 
 
-def _load_or_scrape_icore() -> dict[str, tuple[str, str]]:
-    """Load ICORE 2026 rankings from cache, scraping if not present."""
+def _load_or_scrape_icore() -> dict[str, tuple[str, str, str]]:
+    """Load ICORE 2026 rankings from cache, scraping if not present.
+
+    Re-scrapes if the cache is missing a `url` column (older cache format
+    predating the per-conference detail URL).
+    """
     if _ICORE_CACHE.exists():
         cache = pd.read_csv(_ICORE_CACHE).fillna("")
-        return _build_core_db(cache.to_dict("records"))
+        if "url" in cache.columns:
+            return _build_core_db(cache.to_dict("records"))
     return _scrape_and_save_icore()
 
 
-def _scrape_and_save_icore() -> dict[str, tuple[str, str]]:
+# Each row's <tr> carries `onclick="navigate('/conf-ranks/<id>/')"` — the only
+# place the conference's detail URL surfaces in the listing markup.
+_ICORE_ROW_RE = re.compile(
+    r"<tr[^>]*onclick=\"navigate\('/conf-ranks/(\d+)/'\)\"[^>]*>(.*?)</tr>",
+    re.DOTALL,
+)
+
+
+def _scrape_and_save_icore() -> dict[str, tuple[str, str, str]]:
     """Scrape ICORE 2026 rankings and save to CSV cache."""
     import html as html_mod
     import time
@@ -300,23 +319,26 @@ def _scrape_and_save_icore() -> dict[str, tuple[str, str]]:
         resp = session.get(url, timeout=30)
         resp.raise_for_status()
         content = resp.text
-        cells = re.findall(r"<td[^>]*>(.*?)</td>", content, re.DOTALL)
-        cells = [html_mod.unescape(re.sub(r"<[^>]+>", "", c).strip()) for c in cells]
-        i = 0
-        while i < len(cells) - 3:
-            if cells[i + 2] == "ICORE2026":
-                title = re.sub(
-                    r"\s*\((?:was|formerly|previously|prev\.|now|renamed|also known)[^)]*\)\s*$",
-                    "", cells[i], flags=re.IGNORECASE,
-                ).strip()
-                acronym, rank = cells[i + 1], cells[i + 3]
-                r = rank.replace("Australasian ", "")
-                if r not in _RANK_ORDER:
-                    r = ""
-                rows.append({"acronym": acronym, "title": title, "rank": r})
-                i += 9
-            else:
-                i += 1
+        for m in _ICORE_ROW_RE.finditer(content):
+            conf_id, row_html = m.group(1), m.group(2)
+            cells = re.findall(r"<td[^>]*>(.*?)</td>", row_html, re.DOTALL)
+            cells = [html_mod.unescape(re.sub(r"<[^>]+>", "", c).strip()) for c in cells]
+            if len(cells) < 4 or cells[2] != "ICORE2026":
+                continue
+            title = re.sub(
+                r"\s*\((?:was|formerly|previously|prev\.|now|renamed|also known)[^)]*\)\s*$",
+                "", cells[0], flags=re.IGNORECASE,
+            ).strip()
+            acronym, rank = cells[1], cells[3]
+            r = rank.replace("Australasian ", "")
+            if r not in _RANK_ORDER:
+                r = ""
+            rows.append({
+                "acronym": acronym,
+                "title": title,
+                "rank": r,
+                "url": _ICORE_DETAIL_URL.format(id=conf_id),
+            })
         if page < ICORE_PAGES:
             time.sleep(0.3)
 
@@ -328,11 +350,11 @@ def _scrape_and_save_icore() -> dict[str, tuple[str, str]]:
 
 
 def match_core(
-    df: pd.DataFrame, core_db: dict[str, tuple[str, str]],
-) -> dict[str, tuple[str, str]]:
-    """Match venue strings to ICORE rankings. Returns {venue: (acronym, rank)}."""
+    df: pd.DataFrame, core_db: dict[str, tuple[str, str, str]],
+) -> dict[str, tuple[str, str, str]]:
+    """Match venue strings to ICORE rankings. Returns {venue: (acronym, rank, url)}."""
     venues = df["venue"].dropna().unique()
-    venue_to_core: dict[str, tuple[str, str]] = {}
+    venue_to_core: dict[str, tuple[str, str, str]] = {}
 
     # Step 1: CSRankings acronym → CORE lookup
     for _, row in df[["venue", "venue_acronym"]].drop_duplicates().iterrows():
@@ -341,7 +363,8 @@ def match_core(
             continue
         core_acr = _CSRANKING_TO_CORE.get(acr, acr)
         if core_acr in core_db:
-            venue_to_core[v] = (core_acr, core_db[core_acr][1])
+            _, rank, url = core_db[core_acr]
+            venue_to_core[v] = (core_acr, rank, url)
 
     # Step 2: Parenthetical acronym in venue name
     for v in venues:
@@ -351,7 +374,8 @@ def match_core(
         if m:
             acr = m.group(1).rstrip()
             if acr in core_db:
-                venue_to_core[v] = (acr, core_db[acr][1])
+                _, rank, url = core_db[acr]
+                venue_to_core[v] = (acr, rank, url)
 
     # Step 3: Word-set matching — score by recall (CORE words found in venue),
     # tiebreak by Jaccard.  Skip journals / book series that don't look like
@@ -365,7 +389,7 @@ def match_core(
         ].dropna().unique()
         if not _CONF_WORDS_RE.search(v)
     )
-    core_tokens = {acr: _tokenize(title) for acr, (title, _) in core_db.items()}
+    core_tokens = {acr: _tokenize(title) for acr, (title, _, _) in core_db.items()}
     for v in venues:
         if not isinstance(v, str) or v.startswith("http") or v in venue_to_core:
             continue
@@ -377,7 +401,7 @@ def match_core(
         # that word is real title content like "Genetic"), so trying both
         # avoids regressing either case.
         token_variants = [_tokenize(v), _tokenize(v, _VENUE_PREFIX_STRICT_RE)]
-        best_acr, best_rank = None, None
+        best_acr, best_rank, best_url = None, None, None
         best_recall, best_jaccard = 0.0, 0.0
         for v_tokens in token_variants:
             if len(v_tokens) < 2:
@@ -389,10 +413,11 @@ def match_core(
                 recall = inter / len(c_tokens)
                 jaccard = inter / len(c_tokens | v_tokens)
                 if recall >= 0.8 and jaccard >= 0.65 and (recall, jaccard) > (best_recall, best_jaccard):
-                    best_acr, best_rank = acr, core_db[acr][1]
+                    _, best_rank, best_url = core_db[acr]
+                    best_acr = acr
                     best_recall, best_jaccard = recall, jaccard
         if best_acr:
-            venue_to_core[v] = (best_acr, best_rank)
+            venue_to_core[v] = (best_acr, best_rank, best_url)
 
     return venue_to_core
 
@@ -610,8 +635,11 @@ def main():
     df["venue_core_ranking"] = df["venue"].map(
         lambda v: core_matches[v][1] if v in core_matches else ""
     )
+    df["venue_core_url"] = df["venue"].map(
+        lambda v: core_matches[v][2] if v in core_matches else ""
+    )
     # Fill venue_acronym from CORE for venues not matched by CSRankings
-    for v, (acr, _) in core_matches.items():
+    for v, (acr, _, _) in core_matches.items():
         mask = (df["venue"] == v) & (df["venue_acronym"] == "")
         df.loc[mask, "venue_acronym"] = acr
 
@@ -630,9 +658,12 @@ def main():
             parent = m.group(1).upper()
             acr = f"{parent} (Findings)"
             core_acr = parent if parent != "EMNLP" else "EMNLP"
-            rank = core_db.get(core_acr, ("", ""))[1] if core_acr in core_db else ""
+            parent_entry = core_db.get(core_acr, ("", "", ""))
+            rank = parent_entry[1] if core_acr in core_db else ""
+            url = parent_entry[2] if core_acr in core_db else ""
             df.loc[df["venue"] == v, "venue_acronym"] = acr
             df.loc[df["venue"] == v, "venue_core_ranking"] = rank
+            df.loc[df["venue"] == v, "venue_core_url"] = url
 
     # Scimago journal ranking
     print("Matching Scimago journal rankings...")

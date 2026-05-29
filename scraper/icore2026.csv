@@ -1,988 +1,988 @@
-acronym,title,rank
-AAAI,National Conference of the American Association for Artificial Intelligence,A*
-ACL,Association for Computational Linguistics,A*
-ACMMM,ACM Multimedia,A*
-ASE,Automated Software Engineering Conference,A*
-ASPLOS,Architectural Support for Programming Languages and Operating Systems,A*
-CAV,Computer Aided Verification,A*
-CCS,ACM Conference on Computer and Communications Security,A*
-CHI,International Conference on Human Factors in Computing Systems,A*
-COLT,Conference on Learning Theory,A*
-CRYPTO,Advances in Cryptology,A*
-CVPR,IEEE Conference on Computer Vision and Pattern Recognition,A*
-DAC,Design Automation Conf,A*
-EC,ACM Conference on Economics and Computation,A*
-ECCV,European Conference on Computer Vision,A*
-EMNLP,Empirical Methods in Natural Language Processing,A*
-EuroCrypt,International Conference on the Theory and Application of Cryptographic Techniques,A*
-FOCS,IEEE Symposium on Foundations of Computer Science,A*
-FSE,ACM International Conference on the Foundations of Software Engineering,A*
-HPCA,International Symposium on High Performance Computer Architecture,A*
-HRI,ACM/IEEE International Conference on Human-Robot Interaction,A*
-ICALP,International Colloquium on Automata Languages and Programming,A*
-ICAPS,International Conference on Automated Planning and Scheduling,A*
-ICCV,IEEE International Conference on Computer Vision,A*
-ICDE,International Conference on Data Engineering,A*
-ICDM,IEEE International Conference on Data Mining,A*
-ICLR,International Conference on Learning Representations,A*
-ICML,International Conference on Machine Learning,A*
-ICRA,IEEE International Conference on Robotics and Automation,A*
-ICSE,International Conference on Software Engineering,A*
-IJCAI,International Joint Conference on Artificial Intelligence,A*
-INFOCOM,IEEE International Conference on Computer Communications,A*
-ISCA,ACM International Symposium on Computer Architecture,A*
-ISMAR,IEEE/ACM International Symposium on Mixed and Augmented Reality,A*
-KDD,ACM International Conference on Knowledge Discovery and Data Mining,A*
-KR,International Conference on the Principles of Knowledge Representation and Reasoning,A*
-LICS,IEEE Symposium on Logic in Computer Science,A*
-MICRO,International Symposium on Microarchitecture,A*
-MOBICOM,ACM International Conference on Mobile Computing and Networking,A*
-NDSS,Usenix Network and Distributed System Security Symposium,A*
-NeurIPS,Advances in Neural Information Processing Systems,A*
-OSDI,Usenix Symposium on Operating Systems Design and Implementation,A*
-PERCOM,IEEE International Conference on Pervasive Computing and Communications,A*
-PLDI,ACM-SIGPLAN Conference on Programming Language Design and Implementation,A*
-PODC,ACM Symposium on Principles of Distributed Computing,A*
-PODS,ACM SIGMOD-SIGACT-SIGART Conference on Principles of Database Systems,A*
-POPL,ACM-SIGACT Symposium on Principles of Programming Languages,A*
-SIGCOMM,"ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",A*
-SIGGRAPH,ACM SIG International Conference on Computer Graphics and Interactive Techniques,A*
-SiggraphA,SIGGRAPH Asia,A*
-SIGIR,ACM International Conference on Research and Development in Information Retrieval,A*
-SIGMETRICS,Measurement and Modeling of Computer Systems,A*
-SIGMOD,ACM Special Interest Group on Management of Data Conference,A*
-SoCG,International Symposium on Computational Geometry,A*
-SODA,ACM/SIAM Symposium on Discrete Algorithms,A*
-SOSP,ACM SIGOPS Symposium on Operating Systems Principles,A*
-SP,IEEE Symposium on Security and Privacy,A*
-STOC,ACM Symposium on Theory of Computing,A*
-UIST,ACM Symposium on User Interface Software and Technology,A*
-USENIX-Security,Usenix Security Symposium,A*
-VLDB,International Conference on Very Large Databases,A*
-VR,IEEE Conference on Virtual Reality and 3D User Interfaces,A*
-WWW,International World Wide Web Conference,A*
-PPSN,Parallel Problem Solving from Nature,A
-RAID,"The International Symposium on Research in Attacks, Intrusions and Defenses",A
-RE,IEEE International Requirements Engineering Conference,A
-RecSys,ACM International Conference on Recommender Systems,A
-RTAS,IEEE Real-Time and Embedded Technology and Applications Symposium,A
-SANER,"IEEE International Conference on Software Analysis, Evolution and Reengineering",A
-SAT,International Conference on Theory and Applications of Satisfiability Testing,A
-SC,"International Conference for High Performance Computing, Networking, Storage and Analysis",A
-SDM,SIAM International Conference on Data Mining,A
-SEAMS,International Symposium on Software Engineering for Adaptive and Self-Managing Systems,A
-SIGCSE,ACM Special Interest Group on Computer Science Education Conference,A
-SIGSPATIAL,ACM International Conference on Advances in Geographic Information Systems,A
-TACAS,Tools and Algorithms for Construction and Analysis of Systems,A
-UAI,Conference in Uncertainty in Artificial Intelligence,A
-USENIX,Usenix Annual Technical Conference,A
-WACV,IEEE Workshop on Applications of Computer Vision,A
-WSDM,ACM International Conference on Web Search and Data Mining,A
-ICME,IEEE International Conference on Multimedia and Expo,A
-ICPC,IEEE International Conference on Program Comprehension,A
-ICS,ACM International Conference on Supercomputing,A
-ICSA,International Conference on Software Architecture,A
-ICSME,"IEEE International Conference on Software Maintenance and Evolution (prior to 2014 was ICSM, IEEE International Conference on Software Maintenance)",A
-ICSOC,International Conference on Service Oriented Computing,A
-ICST,"International Conference on Software Testing, Verification and Validation",A
-ICWSM,International Conference on Web and Social Media,A
-IJCAR,International Joint Conference on Automated Reasoning,A
-IMC,Internet Measurement Conference,A
-Interspeech,Interspeech (combined EuroSpeech and ICSLP in 2000),A
-IPDPS,IEEE International Parallel and Distributed Processing Symposium,A
-IROS,IEEE/RSJ International Conference on Intelligent Robots and Systems,A
-ISSRE,International Symposium on Software Reliability Engineering,A
-ISSTA,International Symposium on Software Testing and Analysis,A
-ISWC,International Semantic Web Conference,A
-IUI,International Conference on Intelligent User Interfaces,A
-LAK,International Conference on Learning Analytics and Knowledge,A
-MICCAI,Medical Image Computing and Computer-Assisted Intervention,A
-Middleware,ACM/IFIP/USENIX International Middleware Conference,A
-Mobisys,"ACM SIGMOBILE International Conference on Mobile Systems, Applications and Services",A
-MODELS,International Conference on Model Driven Engineering Languages and Systems,A
-MSR,IEEE International Working Conference on Mining Software Repositories,A
-MSWIM,"ACM/IEEE International Conference on Modelling, Analysis and Simulation of Wireless and Mobile Systems",A
-NAACL,North American Association for Computational Linguistics,A
-OOPSLA,ACM Conference on Object Oriented Programming Systems Languages and Applications,A
-PETS,Privacy Enhancing Technologies,A
-CCC,IEEE Conference on Computational Complexity,A
-CSF,IEEE Computer Security Foundations Symposium,A
-ISLPED,IEEE/ACM International Symposium on Low Power Electronics and Design,A
-AAMAS,International Joint Conference on Autonomous Agents and Multiagent Systems,A
-ICWS,IEEE International Conference on Web Services,A
-ISMB,Intelligent Systems in Molecular Biology,A
-MMSys,ACM Multimedia Systems Conference,A
-DSN,IEEE/IFIP International Conference on Dependable Systems and Networks,A
-DATE,"Design, Automation and Test in Europe Conference",A
-RTSS,Real Time Systems Symposium,A
-ITC,IEEE International Test Conference,A
-ICCAD,IEEE/ACM International Conference on Computer-Aided Design,A
-ESA,European Symposium on Algorithms,A
-STACS,International Symposium on Theoretical Aspects of Computer Science,A
-GD,Graph Drawing,A
-APPROX/RANDOM,International Workshop on Approximation Algorithms for Combinatorial Optimization Problems and International Conference on Randomization and Computation,A
-UMAP,"International Conference on User Modelling, Adaptation, and Personalization",A
-FPGA,ACM Int'l Symposium on Field Programmable Gate Arrays,A
-IEEE VIS,IEEE Visualization,A
-EuroSys,Eurosys Conference,A
-SOUPS,Symposium On Usable Privacy and Security,A
-ALENEX,Workshop on Algorithm Engineering and Experiments,A
-ITCS,Innovations in Theoretical Computer Science,A
-ACSAC,Annual Computer Security Applications Conference,A
-AIED,International Conference on Artificial Intelligence in Education,A
-AISTATS,International Conference on Artificial Intelligence and Statistics,A
-AsiaCCS,"Asia Conference on Information, Computer and Communications Security",A
-ASIACRYPT,International Conference on the Theory and Application of Cryptology and Information Security,A
-ASSETS,International ACM SIGACCESS Conference on Computers and Accessibility,A
-BMVC,British Machine Vision Conference,A
-BPM,International Conference in Business Process Management,A
-CADE,International Conference on Automated Deduction,A
-CaiSE,International Conference on Advanced Information Systems Engineering,A
-CGO,International Symposium on Code Generation and Optimization,A
-CHES,Workshop on Cryptographic Hardware and Embedded Systems,A
-CIDR,Conference on Innovative Data Systems Research,A
-CIKM,ACM International Conference on Information and Knowledge Management,A
-CoNEXT,ACM International Conference on Emerging Networking Experiments and Technologies,A
-CP,International Conference on Principles and Practice of Constraint Programming,A
-CSCW,ACM Conference on Computer Supported Cooperative Work,A
-DIS,Designing Interactive Systems,A
-DISC,International Symposium on Distributed Computing,A
-EACL,European Association for Computational Linguistics,A
-EASE,International Conference on Evaluation and Assessment in Software Engineering,A
-ECAI,European Conference on Artificial Intelligence,A
-ECIR,European Conference on Information Retrieval,A
-ECML PKDD,European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Database (PKDD and ECML combined from 2008),A
-ECOOP,European Conference on Object-Oriented Programming,A
-ER,International Conference on Conceptual Modelling,A
-ESEM,International Symposium on Empirical Software Engineering and Measurement,A
-ESOP,European Symposium on Programming,A
-ESORICS,European Symposium On Research In Computer Security,A
-EuroS&P,IEEE European Symposium on Security and Privacy,A
-FAST,Conference on File and Storage Technologies,A
-FC,Financial Cryptography and Data Security Conference,A
-FOGA,Foundations of Genetic Algorithms,A
-GECCO,Genetic and Evolutionary Computations,A
-HotOS,USENIX Workshop on Hot Topics in Operating Systems,A
-HPDC,ACM International Symposium on High Performance Distributed Computing,A
-ICDAR,IEEE International Conference on Document Analysis and Recognition,A
-ICDCS,International Conference on Distributed Computing Systems,A
-ICDT,International Conference on Database Theory,A
-ICER,International Computing Education Research Conference,A
-ICFP,International Conference on Functional Programming,A
-OZCHI,Australian Computer Human Interaction Conference,B
-ACE,Australasian Computing Education Conference (ACE),B
-ACISP,Australasian Conference on Information Security and Privacy,B
-ADC,Australasian Database Conference,B
-ADCS,Australasian Document Computing Symposium,B
-AI,Australasian Joint Conference on Artificial Intelligence,B
-DICTA,Digital Image Computing Techniques and Applications,C
-AusDM,Australian Data Mining Conference,C
-ACCMCC,Australasian Conference on Combinatorial Mathematics and Combinatorial Computing,C
-ACRA,Australasian Conference on Robotics and Automation,C
-AICE,Australian Institute of Computer Ethics Conference,C
-AISC,Australasian Information Security Conference,C
-ALTA,Australasian Language Technology Workshop,C
-APCCM,Asia-Pacific Conference on Conceptual Modelling,C
-ASOR,National Conference of The Australian Society for Operations Research,C
-AusPDC,Australasian Symposium on Parallel and Distributed Computing,C
-HIC,Health Informatics Conference,C
-SimTecT,Simulation Technology and Training Conference,C
-SST,Australasian Speech Science and Technology,C
-ICITA,International Conference on Information Technology and Applications,C
-IE,Interactive Entertainment,C
-ITNAC,International Telecommunication Networks and Applications Conference,C
-IVCNZ,Image and Vision Computing Conference,C
-MODSIM,International Congress on Modelling and Simulation,C
-NZGDC,New Zealand Game Developers Conference,C
-ICMI,International Conference on Multimodal Interaction,B
-ICMR,International Conference on Multimedia Retrieval,B
-ICNP,International Conference on Network Protocols,B
-ICONIP,International Conference on Neural Information Processing,B
-ICPADS,International Conference on Parallel and Distributed Systems,B
-ICPE,ACM/SPEC International Conference on Performance Engineering,B
-ICPM,International Conference on Process Mining,B
-ICPP,International Conference on Parallel Processing,B
-ICPR,International Conference on Pattern Recognition,B
-ICSR,International Conference on Software Reuse,B
-ICSSP,International Conference on Software and System Processes,B
-ICTAI,International Conference on Tools with Artificial Intelligence,B
-ICWE,International Conference on Web Engineering,B
-IDA,Intelligent Data Analysis,B
-IDC,Interaction Design and Children (ACM),B
-IE,The International Conference on Intelligent Environments,B
-IEEE CCNC,IEEE Consumer Communications and Networking Conference,B
-IEEE SSE,IEEE International Conference on Software Services Engineering,B
-IEEE-IV,Intelligent Vehicles Conference,B
-IFIP SEC,IFIP Information Security & Privacy Conference,B
-IFM,Integrated Formal Methods,B
-IJCB,International Joint Conference on Biometrics,B
-IJCNLP,International Joint Conference on Natural Language Processing,B
-IJCNN,IEEE International Joint Conference on Neural Networks,B
-ILP,Inductive Logic Programming,B
-IM,IFIP/IEEE International Symposium on Integrated Management (even years sharing with NOMS),B
-INLG,International Natural Language Generation Conference,B
-Interact,IFIP TC13 Conference on Human-Computer Interaction,B
-IPEC,International Symposium on Parameterized and Exact Computation,B
-ISIT,IEEE International Symposium on Information Theory,B
-ITS,International Conference on Intelligent Tutoring Systems,B
-ITW,Information Theory Workshop,B
-IVA,Intelligent Virtual Agents,B
-IWCMC,ACM International Wireless Communications and Mobile Computing Conference,B
-IWQoS,IEEE International Workshop on Quality of Service,B
-K-CAP,Knowledge capture,B
-KES,International Conference on Knowledge-Based and Intelligent Information and Engineering Systems,B
-LATIN,International Symposium on Latin American Theoretical Informatics,B
-LCN,IEEE Conference on Local Computer Networks,B
-LCTES,"ACM SIGPLAN Conference on Languages, Compilers and Tools for Embedded Systems",B
-LPAR,Logic Programming and Automated Reasoning,B
-LPNMR,International Conference on Logic Programming and Non-monotonic Reasoning,B
-LREC,Language Resources and Evaluation Conference,B
-MASCOTS,Symposium Model Analysis and Simulation of Computer and Telecommunications Systems,B
-MASS,IEEE International Conference on Mobile Ad-hoc and Sensor Systems,B
-MDAI,International Conference on Modelling Decisions for Artificial Intelligence,B
-MDM,International Conference on Mobile Data Management,B
-MFPS,International Conference on Mathematical Foundations of Programming Semantics,B
-MMM,International Conference on Multimedia Modelling,B
-MobileHCI,International Conference on Human-Computer Interaction with Mobile Devices and Services,B
-MPC,Mathematics of Program Construction,B
-MUM,Mobile and Ubiquitous Multimedia (ACM),B
-NCA,IEEE International Symposium on Network Computing and Applications,B
-NetSoft,International Conference on Network Softwarization,B
-Networking,IFIP International Conference on Networking,B
-NOMS,IEEE Network Operations and Management Symposium,B
-NOSSDAV,Network and Operating System Support for Digital Audio and Video,B
-NSS,International Conference on network and System Security,B
-OPODIS,International Conference on Principles of Distributed Systems,B
-PACT,International Conference on Parallel Architecture and Compilation Techniques,B
-PADS,ACM SIGSIM Conference on Principles of Advanced Discrete Simulation,B
-PAKDD,Pacific-Asia Conference on Knowledge Discovery and Data Mining,B
-PAM,Passive and Active Measurement Conference,B
-Petri Nets,International Conference on the Application and Theory of Petri Nets and Concurrency,B
-PIMRC,IEEE International Symposium on Personal and Indoor Mobile Radio Conference,B
-CLOUD,IEEE International Conference on Cloud Computing,B
-CNSM,International Conference on Network and Service Management (amalgamation of DSOM and related workshops from 2010),B
-CogSci,Annual Meeting of the Cognitive Science Society,B
-COLING,International Conference on Computational Linguistics,B
-COMPSAC,International Computer Software and Applications Conference,B
-CoNLL,Conference on Computational Natural Language Learning,B
-CoopIS,International Conference on Cooperative Information Systems,B
-CPAIOR,International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming for Combinatorial Optimization Problems,B
-CPM,Combinatorial Pattern Matching,B
-CSEDU,International Conference on Computer Supported Education,B
-CSL,Annual Conference on Computer Science Logic,B
-CT-RSA,Cryptographers Track at RSA Conference,B
-DAS,International Workshop on Document Analysis Systems,B
-DaWaK,Data Warehousing and Knowledge Discovery,B
-DBSEC,IFIP WG 11.3 Working Conference on Data and Applications Security,B
-DCC,Data Compression Conference,B
-DCOSS,IEEE International Conference on Distributed Computing in Sensor Systems,B
-DNA,DNA Computing and Molecular Programming,B
-DocEng,ACM Symposium on Document Engineering,B
-DS,Discovery Science,B
-DSAA,IEEE International Conference on Data Science and Advanced Analytics,B
-e-Science,IEEE International Conference on e-Science and Grid Computing,B
-EC-TEL,European Conference on Technology Enhanced Learning,B
-ECMFA,European Conference on Modelling Foundations and Applications,B
-ECSCW,European Conference on Computer Supported Cooperative Work,B
-EDM,Educational Data Mining,B
-EDOC,IEEE International Enterprise Distributed Object Computing Conference,B
-EKAW,International Conference on Knowledge Engineering and Knowledge Management,B
-EMAS,"EMAS (merger of DALT, AOSE and PROMAS)",B
-ENASE,International Conference on Evaluation of Novel Approaches to Software Engineering,B
-ESANN,European Symposium on Artificial Neural Networks,B
-ETRA,Eye Tracking Research and Applications,B
-EUROGP,European Conference on Genetic Programming,B
-EuroPar,International European Conference on Parallel and Distributed Computing,B
-EuroSPI,European SPI,B
-EuroVis,Eurographics/IEEE Symposium on Visualization,B
-EvoApplications,International Conference on Applications of Evolutionary Computation,B
-EvoCOP,European Conference on Evolutionary Computation in Combinatorial Optimisation,B
-EWSN,International Conference on Embedded Wireless Systems and Networks,B
-FASE,Fundamental Approaches to Software Engineering,B
-FCT,International Symposium on Fundamentals of Computation Theory,B
-FG,IEEE International Conference on Automatic Face and Gesture Recognition,B
-FMCAD,Formal Methods in Computer-Aided Design,B
-FSCD,International Conference on Formal Structures for Computation and Deduction,B
-FUZZ-IEEE,IEEE International Conference on Fuzzy Systems,B
-GI,Graphics Interface,B
-GLOBECOM,IEEE Global Telecommunications Conference,B
-GPCE,International Conference on Generative Programming and Component Engineering,B
-Group,ACM Special Interest Group on Supporting Group Work,B
-HAI,Human-Agent Interaction,B
-I3DG,ACM-SIGRAPH Interactive 3D Graphics and Games,B
-ICAART,International Conference on Agents and Artificial Intelligence,B
-ICALT,IEEE International Conference on Advanced Learning Technologies,B
-ICCCI,International Conference on Computational Collective Intelligence,B
-ICCCN,International Conference on Computer Communication and Networks,B
-ICECCS,IEEE International Conference on Engineering of Complex Computer Systems,B
-ICFHR,International Conference on Frontiers of Handwriting Recognition,B
-ICGT,International Conference on Graph Transformations,B
-ICIP,IEEE International Conference on Image Processing,B
-ECSA,European Conference on Software Architecture,B
-ISAAC,International Symposium on Algorithms and Computation,B
-ICLP,International Conference on Logic Programming,B
-EDBT,Extending Database Technology,B
-AFT,Advances in Financial Technologies,B
-ECRTS,Euromicro Conference on Real-Time Systems,B
-ESWC,Extended Semantic Web Conference,B
-IC2E,International Conference on Cloud Engineering,B
-WG,International Workshop on Graph-Theoretic Concepts in Computer Science,B
-MFCS,International Symposium on Mathematical Foundations of Computer Science,B
-CHIIR,ACM SIGIR Conference on Human Information Interaction And Retrieval,B
-FOSSACS,Foundations of Software Science and Computational Structures,B
-CAIN,International Conference on AI Engineering – Software Engineering for AI,B
-ISPASS,IEEE International Symposium on Performance Analysis of Systems and Software,B
-ETS,IEEE European Test Symposium,B
-FM,International Symposium on Formal Methods,B
-CCGRID,"IEEE International Symposium on Cluster, Cloud and Grid Computing",B
-ISSAC,International Symposium on Symbolic and Algebraic Computation,B
-SmartComp,IEEE International Conference on Smart Computing,B
-DIMVA,"GI International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment",B
-XP,Conference on Agile Software Development,B
-CPP,Certified Programs and Proofs,B
-JELIA,"Logics in Artificial Intelligence, European Conference",B
-DASFAA,International Conference on Database Systems for Advanced Applications,B
-ITP,Conference on Interactive Theorem Proving,B
-ICCP,IEEE International Conference on Computational Photography,B
-SCA,ACM SIGGRAPH/Eurographics Symposium on Computer Animation,B
-FSE,International Workshop on Fast Software Encryption,B
-SoCS,The Symposium of Combinatorial Search,B
-ACII,International Conference on Affective Computing and Intelligent,B
-VRST,ACM Virtual Reality Software and Technology,B
-RO-MAN,IEEE International Conference on Robot and Human Interactive Communication,B
-HCOMP,AAAI Conference on Human Computation and Crowdsourcing,B
-C&C,Creativity and Cognition,B
-CONCUR,International Conference on Concurrency Theory,B
-ACNS,International Conference on Applied Cryptography and Network Security,B
-CHASE,International Conference on Cooperative and Human Aspects of Software Engineering,B
-ITiCSE,Annual Conference on Innovation and Technology in Computer Science Education,B
-Automotive_UI,International ACM Conference on Automotive User Interfaces and Interactive Vehicular Applications,B
-Persuasive,International Conference on Persuasive Technology,B
-PacificVis,IEEE Pacific Visualization Symposium,B
-CBMS,IEEE International Symposium on Computer-Based Medical Systems,B
-ASPDAC,Asia and South Pacific Design Automation Conference,B
-FPL,Field Programmable Logic and Applications,B
-SAP,ACM Symposium on Applied Perception,B
-L@S,ACM Conference on Learning @ Scale,B
-ALT,Algorithmic Learning Theory,B
-IPCO,Conference on Integer Programming and Combinatorial Optimization,B
-TARK,Theoretical Aspects of Rationality and Knowledge,B
-TCC,Theory of Cryptography Conference,B
-MOBIHOC,ACM Symposium on Mobile Ad Hoc Networking and Computing,B
-ACCV,Asian Conference on Computer Vision,B
-ACIIDS,Asian Conference on Intelligent Information and Database Systems,B
-ACIVS,Advanced Concepts for Intelligent Vision Systems,B
-ACM_WiSec,ACM Conference on Security and Privacy in Wireless and Mobile Networks,B
-AIME,International Conference on Artificial Intelligence in Medicine,B
-AiML,Advances in Modal Logic,B
-AINA,International Conference on Advanced Information Networking and Applications,B
-APBC,Asia-Pacific Bioinformatics Conference,B
-APLAS,ASIAN Symposium on Programming Languages and Systems,B
-ARES,"International Conference on Availability, Reliability and Security",B
-ASONAM,IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining,B
-ATVA,International Symposium on Automated Technology for Verification and Analysis,B
-AVI,Advanced Visual Interfaces,B
-AVSS,IEEE International Conference on Advanced Video and Signal Based Surveillance,B
-BigData,IEEE International Conference on Big Data,B
-CALCO,Conference on Algebra and Coalgebra in Computer Science,B
-CANS,International Conference on Cryptology and Network Security,B
-CASC,Computer Algebra in Scientific Computing,B
-CC,International Conference on Compiler Construction,B
-CEC,IEEE Congress on Evolutionary Computation,B
-PKC,International Conference on Practice and Theory in Public Key Cryptography,B
-PPoPP,Principles and Practice of Parallel Programming,B
-PRICAI,Pacific Rim International Conference on Artificial Intelligence,B
-PRIMA,International Conference on Principles of Practice in Multi-Agent Systems (prior to 2009 was Pacific Rim International Workshop on Multi-Agents),B
-PROFES,Product Focused Software Process Improvement,B
-QoMEX,International Conference on Quality of Multimedia Experience,B
-RCIS,International Conference on Research Challenges in Information Science,B
-RECOMB,International Conference on Computational Molecular Biology,B
-REFSQ,International Workshop on Requirements Engineering: Foundation for Software Quality,B
-RTCSA,International Conference on Embedded and Real Time Computing Systems and Applications,B
-RuleML+RR,International Joint Conference on Rules and Reasoning,B
-RV,International Conference on Runtime Verification,B
-SAC,Selected Areas in Cryptography,B
-SAFECOMP,"International Conference on Computer Safety, Reliability and Security",B
-SAGT,International Symposium on Algorithmic Game Theory,B
-SAS,Static Analysis Symposium,B
-SEA,International Symposium on Experimental Algorithms,B
-SEAA,Euromicro Conference on Software Engineering and Advanced Applications,B
-SECON,"IEEE International Conference on Sensing, Communication and Networking",B
-SEFM,International Conference on Software Engineering and Formal Methods,B
-SERVICES,IEEE Congress on Services,B
-SGP,Symposium on Geometry Processing,B
-SIGdial,Annual Meeting of the Special Interest Group on Discourse and Dialog,B
-SIROCCO,International Colloquium on Structural Information and Communication Complexity,B
-SISAP,International Conference on Similarity Search and Applications,B
-SLE,International Conference on Software Language Engineering,B
-SMC,"IEEE Conference on Systems, Man and Cybernetics",B
-SOFSEM,Current Trends in Theory and Practice of Computer Science,B
-SPAA,Symposium on Parallelism in Algorithms and Architectures,B
-SPLC,Software Product Lines Conference,B
-SRDS,Symposium on Reliable Distributed Systems,B
-SSBSE,International Symposium on Search Based Software Engineering,B
-SSDBM,International Conference on Scientific and Statistical Data Base Management,B
-SSPR,Structural and Syntactical Pattern Recognition,B
-SSTD,International Symposium on Spatial and Temporal Databases,B
-TABLEAUX,International Conference on Theorem Proving with Analytic Tableaux and Related Methods,B
-TechDebt,International Conference on Technical Debt,B
-TEI,"Tangible, Embedded, and Embodied Interaction",B
-TPDL,International Conference on Theory and Practice of Digital Libraries,B
-TrustBus,"International Conference on Trust, Privacy and Security in Digital Business",B
-TrustCom,"International Conference on Trust, Security and Privacy in Computing and Communications",B
-VEE,International Conference on Virtual Execution Environments,B
-VISSOFT,IEEE International Working Conference on Software Visualisation,B
-VL/HCC,IEEE Symposium on Visual Languages and Human-Centric Computing,B
-VMCAI,"Verification, Model Checking and Abstract Interpretation",B
-VTC,IEEE Vehicular Technology Conference,B
-WADS,Algorithms and Data Structures Symposium,B
-WALCOM,International Conference and Workshops on Algorithms and Computation,B
-WAOA,Workshop on Approximation and Online Algorithms,B
-WCNC,IEEE Wireless Communications and Networking Conference,B
-WI,IEEE/WIC/ACM International Conference on Web Intelligence,B
-WiMob,"IEEE International Conference on Wireless and Mobile Computing, Networking and Communications",B
-WiOpt,"International Symposium on Modelling and Optimization in Mobile, Ad Hoc, and Wireless Networks",B
-WISE,International Conference on Web Information Systems Engineering,B
-PKAW,Pacific Rim Knowledge Acquisition Workshop,C
-PLOP,Pattern Languages of Programs,C
-PLOS,Workshop on Programming Languages and Operating Systems,C
-PPDP,International Conference on Principles and Practice of Declarative Programming,C
-PQCrypto,International Workshop on Post-Quantum Cryptography,C
-PRDC,Pacific Rim International Symposium on Dependable Computing,C
-PRO-VE,IFIP Working Conferences on Virtual Enterprises,C
-ProvSec,International Conference on Provable Security,C
-PSD,Privacy in Statistical Databases,C
-PSIVT,Pacific-Rim Symposium on Image and Video Technology,C
-PST,"Annual Conference on Privacy, Security and Trust",C
-Qshine,"International Conference on Heterogeneous Networking for Quality, Reliability, Security and Robustness",C
-RAMiCS,International Conference on Relational and AlgebraicMethods in Computer Science,C
-RC,International Conference on Reversible Computation,C
-RoboCup,Robot Soccer World Cup,C
-RSP,IEEE International Symposium on Rapid System Prototyping,C
-SACMAT,ACM Symposium on Access Control Models and Technologies,C
-SAFEProcess,"IFAC Symposium on Fault Detection, Supervision and Safety of Technical Processes",C
-SASHIMI,Simulation and Synthesis in Medical Imaging,C
-SBAC-PAD,International Symposium on Computer Architecture and High Performance Computing,C
-SCOPES,International Workshop on Software and Compilers for Embedded Systems,C
-SDH,International Symposium on Spatial Data Handling,C
-SECRYPT,International Conference on Information Security and Cryptography,C
-SEKE,International Conference on Software Engineering and Knowledge Engineering,C
-SERA,"ACIS Conference on Software Engineering Research, Management and Applications",C
-SETA,International Conference on Sequences and their Applications,C
-SEW,IEEE Software Engineering Workshop,C
-SIN,International Conference on Security of Information and Networks,C
-SNPD,"International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing",C
-SoMeT,"International Conference on Intelligent Software Methodologies, Tools, and Techniques",C
-SPICE,Software Process Improvement and Capability Determination,C
-SPIRE,International Symposium on String Processing and Information Retrieval,C
-SPM,ACM Symposium on Solid and Physical Modelling,C
-SQM,International Conference on Software Quality Management,C
-SSS,"Symposium on Stabilization, Safety, and Security of Distributed Systems",C
-SSSC,IFAC Conference on System Structure and Control,C
-TAMC,Conference on Theory and Applications of Models of Computation,C
-TAP,International Conference on Tests and Proofs,C
-Tencon,IEEE Region 10 Conference,C
-TIME,International Symposium on Temporal Representation and Reasoning,C
-UBICOMM,"International Conference on Mobile Ubiquitous Computing, Systems, Services and Technologies",C
-UC,International Conference on Unconventional Computation and Natural Computation,C
-UIC,International Conference on Ubiquitous Intelligence and Computing,C
-VCIP,IEEE International Conference on Visual Communications and Image Processing,C
-VECoS,The International Conference on Verification and Evaluation of Computer and Communication Systems,C
-VEHITS,International Conference on Vehicle Technology and Intelligent Transport Systems,C
-VINCI,Visual Information Communication and Interaction,C
-VizSec,International Workshop on Visualization for Cyber Security,C
-W2GIS,International Workshop on Web and Wireless Geographical Information Systems,C
-WABI,Workshop on Algorithms in Bioinformatics,C
-WAFR,International Workshop on the Algorithmic Foundations of Robotics,C
-WAIFI,Workshop on the Arithmetic of Finite Fields,C
-WAW,Workshop on Algorithms And Models For The Web Graph,C
-WCO,Workshop on Computational Optimization,C
-WETICE,International Workshops on Enabling Technologies: Infrastructures for Collaborative Enterprises,C
-WISTP,Workshop in Information Security Theory and Practices,C
-WoLLIC,"Workshop on Logic, Language, Information and Computation",C
-WorldCIST,World Conference on Information Systems and Technologies,C
-ETFA,IEEE International Conference on Emerging Technologies and Factory Automation,C
-CIARP,IberoAmerican Congress on Pattern Recognition,C
-CIBCB,IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology,C
-CICLING,International Conference on Intelligent Text Processing and Computational Linguistics,C
-CICM,Conference on Intelligent Computer Mathematics,C
-CIDM,IEEE Symposium on Computational Intelligence and Data Mining,C
-CiE,Computability in Europe: Logic and Theory of Algorithms,C
-CIMA,International Workshop on Combinations of Intelligent Methods and Applications,C
-CIS,IEEE International Conference on Cybernetics and Intelligent Systems,C
-CISIS,"International Conference on Complex, Intelligent and Software Intensive Systems",C
-CIT,IEEE International Conference on Computer and Information Technology,C
-CLEI,Latin American Conference on Informatics,C
-CLOSER,International Conference on Cloud Computing and Services Science,C
-CloudCom,IEEE International Conference on Cloud Computing Technology and Science (International Conference on Cloud Computing pre 2010),C
-COCOA,Conference on Combinatorial Optimization and Applications,C
-CoDIT,"International Conference on Control, Decision and Information Technologies",C
-COINE,"International Workshop on Coordination, Organizations, Institutions, Norms and Ethics for Governance of Multi-Agent Systems (Ethics added 2020)",C
-COMPLEXIS,"International Conference on Complexity, Future Information Systems and Risk",C
-Coordination,International Conference on Coordination Models and Languages,C
-COPLAS,Workshop on Constraint Satisfaction for Planning and Scheduling,C
-CRiSIS,International Conference on Risks and Security of Internet and Systems,C
-CRITIS,International Workshop on Critical Information Infrastructures Security,C
-CSCWD,International Conference on Computer Supported Cooperative Work in Design,C
-CSEET,Conference on Software Engineering Education and Training,C
-CTW,Cologne-Twente Workshop on Graphs and Combinatorial Optimization,C
-CW,International Conference on Cyberworlds,C
-DAFX,Digital Audio Effects Conference,C
-DAIS,IFIP International Conference on Distributed Applications and Interoperable Systems,C
-DaMoN,International Workshop on Data Management on New Hardware,C
-DASC,"International Conference on Dependable, Autonomic and Secure Computing",C
-DC,International Conference on Dublin Core and Metadata Applications,C
-DeSE,Developments in eSystems Engineering,C
-DEXA,International Conference on Database and Expert Systems Applications,C
-DIAGRAMS,The Theory and Application of Diagrams,C
-DIGRA,Digital Games Research Conference,C
-DLS,Dynamic Languages Symposium,C
-DLT,Developments in Language Theory,C
-DM,SIAM Conference on Discrete Mathematics,C
-DS-RT,International Symposium on Distributed Simulation and Real Time Applications,C
-DSM,Workshop on Domain Specific Modelling,C
-DX,International Workshop on Principles of Diagnosis,C
-EAMT,Conference of the European Association for Machine Translation,C
-EANN,International Conference on Engineering Applications of Neural Networks,C
-EATIS,EURO AMERICAN CONFERENCE ON TELEMATICS AND INFORMATION SYSTEMS,C
-ECCB,European Conference on Computational Biology,C
-ECCO,European Chapter on Combinatorial Optimization,C
-ECDG,European Conference on Digital Government,C
-ED-MEDIA,"World Conference on Educational Multimedia, Hypermedia and Telecommunications",C
-EGPGV,Eurographics Symposium on Parallel Graphics and Visualization,C
-EGVE,International Conference on Artificial Reality and Telexistance & Eurographics Symposium on Virtual Environments,C
-EJC,European-Japanese Conference on Information Modelling and Knowledge Bases,C
-EMMSAD,Exploring Modelling Methods in Systems Analysis and Design,C
-ENTER,International Conference on Information and Communication Technologies in Tourism,C
-EOMAS,International Workshop on Enterprise and Organizational Modelling and Simulation,C
-ETHICOMP,ETHICOMP Conference,C
-EUC,IEEE/IFIP International Conference on Embedded and Ubiquitous Computing,C
-EUMAS,European Conference on Multi-Agent Systems,C
-EURO,European Conference on Operations Research,C
-EuroCG,European Workshop on Computational Geometry,C
-EUroComb,"EuroConference on Combinatorics, Graph Theory and Applications",C
-EuroMPI,European MPI Users' Group Conference,C
-EuroVA,Visual Analytics,C
-EUSFLAT,Conference of the European Society for Fuzzy Logic and Technologies,C
-FDG,International Conference on the Foundations of Digital Games,C
-FDL,Forum on Specification and Design Languages,C
-FDTC,Workshop on Fault Diagnosis and Tolerance in Cryptography,C
-FIE,Frontiers in Education,C
-FLINS,International FLINS Conference on Robotics and Artificial Intelligence,C
-FMICS,Int. Workshop on Formal Methods for Industrial Critical Systems,C
-FMIS,International Workshop on Formal Methods for interactive Systems,C
-FORTE,"IFIP Joint International Conference on Formal Description Techniques and Protocol Specification, Testing, And Verification",C
-FQAS,Flexible Query-Answering Systems,C
-FTfJP,Workshop on Formal Techniques for Java-like Programs,C
-FUSION,International Conference on Information Fusion,C
-GI,IEEE Global Internet Symposium,C
-GMP,Geometry Modeling and Processing,C
-GPC,"International Conference on Green, Pervasive and Cloud Computing",C
-Graph-hoc,Workshop on Applications of Graph Theory in Wireless Ad hoc Networks and Sensor Networks,C
-GWC,International Wordnet Conference (Global Wordnet Conference),C
-HASKELL,Haskell Workshop,C
-HCW,Heterogeneity in Computing Workshop,C
-HealthCom,IEEE international conference on ehealth networking applications and services,C
-HIPS,International Workshop on High-Level Parallel Programming Models and Supportive Environments,C
-HIS,International Conference on Hybrid Intelligent Systems,C
-HLPP,International workshop on High-Level Parallel Programming and Applications,C
-HOTCHIPS (HCS),Symposium on High Performance Chips,C
-HPC Asia,International Conference and Exhibition on High Performance Computing in the Asia-Pacific Region,C
-HPCC,IEEE International Conference on High Performance Computing and Communications,C
-HPSR,IEEE Workshop on High Performance Switching and Routing,C
-HSI,Human System Interaction,C
-I4CS,International Conference on Innovations for Community Services,C
-IAAI,Innovative Applications in AI,C
-IADIS AC,IADIS International Conference Applied Computing,C
-IAS,International Symposium on Information Assurance and Security,C
-IC3K,"International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management",C
-ICA3PP,International Conference on Algorithms and Architectures for Parallel Processing,C
-ICAIL,International Conference on Artificial Intelligence and Law,C
-ICARCV,"International Conference on Control, Automation, Robotics and Vision",C
-ICBC,IEEE International Conference on Blockchain and Cryptocurrency,C
-ICCAM,International Congress on Computational and Applied Mathematics,C
-ICCBR,International Conference on Case-Based Reasoning,C
-ICCC,International Conference on Computational Creativity,C
-ICCHP,International Conference on Computers Helping People with Special Needs,C
-ICCI,IEEE International Conference on Cognitive Informatics,C
-ICCSA,International Conference on Communication Systems and Applications,C
-ICCSA,International Conference on Computational Science and its Applications,C
-ICDS,International Conference on Digital Society,C
-ICEC,International Conference on Electronic Commerce,C
-ICEC,International Conference on Entertainment Computing,C
-ICFCA,International Conference Formal Concept Analysis Conference,C
-ICFEC,IEEE International Conference on Fog and Edge Computing,C
-ICFEM,International Conference on Formal Engineering Methods,C
-ICGSE,IEEE International Conference on Global Software Engineering,C
-ICICS,International Conference on Information and Communications Security,C
-ICICSE,International Conference on Internet Computing in Science and Engineering,C
-ICIMP,International Conference on Internet Monitoring and Protection,C
-ICIS,IEEE/ACIS International Conference on Computer and Information Science,C
-ICISP,International Conference on Image and Signal Processing,C
-ICIW,International Conference on Internet and Web Applications and Services,C
-ICMLA,International Conference on Machine Learning and Applications,C
-ICMV,International Conference on Machine Vision,C
-ICOCI,International Conference on Computing and Informatics,C
-ICORES,International Conference on Operations Research and Enterprise Systems,C
-ICOST,International Conference on Smart homes and health Telematics,C
-ICOTA,International Conference on Optimization: Techniques And Applications,C
-ICPRAM,International Conference on Pattern Recognition Applications and Methods,C
-ICSEA,International Conference on Software Engineering Advances,C
-ICSEng,International Conference on Systems Engineering,C
-ICT4AWE,International Conference on Information and Communication Technologies for Ageing Well and e-Health,C
-ICTAC,International Colloquium on Theoretical Aspects of Computing,C
-ICTD,International Conference on Information and Communication Technologies and Development,C
-ICTSS,International Conference on Testing Software and Systems,C
-ICVS,International Conference on Computer Vision Systems,C
-IDEAL,International Conference on Intelligent Data Engineering and Automated Learning,C
-IDEAS,International Database Engineering and Applications Symposium,C
-IEA/AIE,International Conference on Industrial and Engineering Applications of Artificial Intelligence and Expert Systems,C
-IEEE ADPRL,IEEE International Symposium on Adaptive Dynamic Programming and Reinforcement Learning,C
-IEEE Alife,IEEE International Symposium on Artificial Life,C
-IEEE CICA,IEEE Symposium on Computational Intelligence in Control and Automation,C
-IEEE CICS,IEEE Symposium on Computational Intelligence in Cyber Security,C
-IEEE CIFEr,IEEE Symposium on Computational Intelligence for Financial Engineering,C
-IEEE CIMSIVP,IEEE Symposium on Computational intelligence for Multimedia Signal and Vision Processing,C
-IEEE CISDA,IEEE Symposium on Computational Intelligence for Security and Defence Applications,C
-IEEE IS,IEEE International Conference on Intelligent Systems,C
-IEEE SIS,IEEE Swarm Intelligence Symposium,C
-iEMSs,Intenational Environmental Modelling and Software Society,C
-IES,Asia Pacific Symposium on Intelligent and Evolutionary Systems,C
-IFSA,IFSA World Congress,C
-IGARSS,IEEE International Geoscience and Remote Sensing Symposium,C
-IH&MMSec,Information Hiding and Multimedia Security Workshop,C
-IJCCI,International Joint Conference on Computational Intelligence,C
-IMACC,IMA International Conference on Cryptography and Coding,C
-InfVis,Information Visualisation Theory and Practice,C
-INISTA,International Symposium on Innovations in Intelligent Systems and Applications,C
-INOC,International Network Optimization Conference,C
-InSITE,Informing Science and Information Technology Education,C
-IoTBDS,"International Conference on Internet of Things, Big Data and Security",C
-IPCCC,IEEE International Performance Computing and Communications Conference,C
-IPMU,International Conference on Information Processing and Management of Uncertainty,C
-ISADS,International Symposium on Autonomous Decentralized Systems,C
-ISAGA,Conference for the International Simulation and Gaming Association,C
-ISARC,International Symposium on Automation and Robotics in Construction,C
-ISC,Industrial Simulation Conference,C
-ISC,Information Security Conference,C
-ISCC,IEEE Symposium on Computers and Communications,C
-ISCO,International Symposium on Combinatorial Optimisation,C
-ISDA,International Conference on Intelligent Systems Designs and Applications,C
-ISGC,International Symposium on Grids and Clouds,C
-ISI,IEEE International Conference on Intelligence and Security Informatics,C
-ISITA,International Symposium on Information Theory and Its Applications,C
-ISM,IEEE International Symposium on Multimedia,C
-ISMIS,International Symposium on Foundations of Intelligent Systems,C
-ISMM,International Symposium on Memory Management,C
-ISNCC,"International Symposium on Networks, Computers and Communications",C
-ISNN,International Symposium on Neural Networks,C
-ISoLA,"International Symposium on Leveraging Applications of Formal Methods, Verification and Validation",C
-ISORC,IEEE International Symposium on Real-Time Distributed Computing,C
-ISPA,IEEE International Symposium on Parallel and Distributed Processing with Applications,C
-ISPDC,International Symposium on Parallel and Distributed Computing,C
-ISPEC,Information Security Practice and Experience Conference,C
-ISPR,Annual International Workshop on Presence,C
-ISRR,International Symposium on Robotics Research,C
-ISSDQ,International Symposium on Spatial Data Quality,C
-ISTAS,International Symposium on Technology and Society,C
-IV,International Conference on Information Visualisation,C
-IV-App,Applications of Information Visualization,C
-IVBI,Information Visualization in Biomedical Informatics,C
-IWCIA,International Workshop on Combinatorial Image Analysis: Theory and Applications,C
-IWDW,International Workshop on Digital Watermarking,C
-IWOCA,International Workshop on Combinatorial Algorithm,C
-IWSM Mensura,Joint Conference of the International Workshop on Software Measurement and the International Conference on Software Process and Product Measurement (IWSM and Mensura combined from 2007),C
-JADT,International Conference on the Statistical Analysis of Textual Data,C
-JURIX,International Conference on Legal Knowledge and Information Systems,C
-KEOD,International Conference on Knowledge Engineering and Ontology Development,C
-KES AMSTA,International KES Conference on Agents and Multiagent systems - Technologies and Applications,C
-KES IDT,KES International Symposium on Intelligent Decision Technologies,C
-KSEM,"International Conference on Knowledge Science, Engineering and Management",C
-KV,Knowledge Visualization and Visual Thinking,C
-LAGOS,"Latin-American Algorithms, Graphs and Optimization Symposium",C
-LANMAN,IEEE LAN/MAN Workshop,C
-LATA,International Conference on Language and Automata Theory and Applications,C
-LDK,"Language, Data and Knowledge",C
-LOPSTR,International Symposium on Logic-based Program Synthesis and Transformation,C
-MABS,International Workshop on MultiAgent Based Simulation,C
-MCU,"Machines, Computations and Universality",C
-MEDES,International Conference on Management of Digital EcoSystems,C
-MEDI,International Conference on Model and Data Engineering,C
-MEMOCODE,International Conference on Formal Methods and Models for Co-Design,C
-MISE,International Workshop on Modelling in Software Engineering,C
-MMSP,International Workshop on Multimedia Signal Processing,C
-MPLR,International Conference on Managed Programming Languages and Runtimes,C
-MT SUMMIT,Machine Translation Summit,C
-MTNS,International Symposium on the Mathematical Theory of Networks and Systems,C
-NLDB,Applications of Natural Language to Data Bases,C
-NPC,IFIP International Conference on Network and Parallel Computing,C
-NSPW,New Security Paradigms Workshop,C
-Onward,"International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software",C
-OP,SIAM Conference on Optimization,C
-OPENSYM,International Symposium on Open Collaboration,C
-PACLIC,"Pacific Asia Conference on Language, Information and Computation",C
-PADL,Practical Aspects of Declarative Languages,C
-Pairing,International Conference on Pairing-based Cryptography,C
-PATAT,Practice and Theory of Automated Timetabling,C
-PCS,International Picture Coding Symposium,C
-PDCAT,"International Conference on Parallel and Distributed Computing, Applications and Technologies",C
-PDP,"Euromicro International Conference on Parallel, Distributed and Network Based Processing",C
-PEPM,ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation,C
-IDDM,International Conference on Informatics & Data-Driven Medicine,C
-FedCSIS,CONFERENCE ON COMPUTER SCIENCE AND INTELLIGENCE SYSTEMS,C
-COMMA,International Conference on Computational Models of Argument,C
-ECSQARU,European Conference on Symbolic and Quantitative Approaches to Reasoning with Uncertainty,C
-MIG,ACM SIGGRAPH conference on Motion Interaction and Games,C
-PEMWN,IFIP/IEEE International Conference on Performance Evaluation and Modeling in Wired and Wireless Networks,C
-WFCS,International Conference on Factory Communication Systems,C
-IIWAS,Information Integration and Web-based Applications and Services,C
-Mobiquitous,International Conference on Mobile and Ubiquitous Systems: Networks and Services,C
-DDECS,International Symposium on Design and Diagnostics of Electronic Circuits and Systems,C
-DATA,"International Conference on Data Science, Technology and Applications",C
-MOMM,International Conference on Advances in Mobile Computing and Multimedia,C
-IPAS,International Conference on Image Processing Applications and Systems,C
-ECMS,International Conference on Modelling and Simulation,C
-DSD,Euromicro Conference Series on Digital System Design,C
-DOLAP,International Workshop on Data Warehousing and OLAP,C
-SCAM,IEEE International Working Conference on Source Code Analysis and Manipulation,C
-ADBIS,Symposium on Advances in DB and Information Systems,C
-SecureComm,International Conference on Security and Privacy for Communication Networks,C
-ICISSP,International Conference on Information Systems Security and Privacy,C
-ArtsIT,"ArtsIT, Interactivity & Game Creation",C
-CollaborateCom,"International Conference on Collaborative Computing: Networks, Applications and Worksharing",C
-MODELSWARD,International Conference on Model-Driven Engineering and Software Development,C
-ICSoft,International Conference on Software and Data Technologies,C
-WEBIST,International Conference on Web Information Systems and Technologies,C
-ICANN,International Conference on Artificial Neural Networks,C
-MM_Asia,ACM International Conference on Multimedia in Asia,C
-ACML,Asian Conference on Machine Learning,C
-SIMULTECH,"International Conference on Simulation and Modeling Methodologies, Technologies and Applications",C
-CLUSTER,IEEE International Conference on Cluster Computing,C
-ISCAS,IEEE International Symposium on Circuits and Systems,C
-EvoMUSART,"International Conference on Artificial Intelligence in Music, Sound, Art and Design",C
-FOIS,International Conference on Formal Ontology in Information Systems,C
-IOLTS,On-Line Testing and Robust System Design,C
-WINCOM,International Conference on Wireless Networks and Mobile Communications,C
-NeSy,International Conference on Neurosymbolic Learning and Reasoning,C
-CBMI,IEEE International Conference on Content-Based Multimedia Indexing,C
-IECON,IEEE Industrial Electronics Society,C
-ICCD,IEEE International Conference on Computer Design,C
-ICCE,International Conference on Computers in Education,C
-EMO,International Conference on Evolutionary Multi-Criterion Optimization,C
-Euro XR,Euro XR International Conference,C
-EDUCON,IEEE Global Engineering Education Conference,C
-COG,Conference on Games,C
-iLRN,International Conference of the Immersive Learning Research Network,C
-ALIFE,International Conference on the Simulation and Synthesis of Living Systems,C
-ICIDS,International Conference on Interactive Digital Storytelling (2008 merger of 'ICVS International Conference on Virtual Storytelling' and 'TIDSE Technology for Interactive Digital Storytelling'),C
-WoWMoM,"IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",C
-QRS,"Software Quality, Reliability, and Security",C
-IPIN,International Conference on Indoor Positioning and Indoor Navigation,C
-IMX,ACM International Conference on Interactive Media Experiences,C
-ICINCO,"International Conference on Informatics in Control, Automation and Robotics",C
-COMPASS,The ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies,C
-JSSPP,Workshop on Job Scheduling Strategies for Parallel Processing,C
-INDIN,IEEE International Conference on Industrial Informatics,C
-AIES,"AAAI/ACM Conference on AI, Ethics, and Society",C
-IJCRS (was RSCTC),International Joint Conference on Rough Sets (2014 International Conference on Rough Sets and Current Trends in Computing joined with 3 others),C
-VLSI-SOC,IEEE/IFIP International Conference on Very Large Scale Integration of System-on-Chip,C
-AAAC,Symposium of Asian Association for Algorithms and Computation,C
-AAIM,Conference on Algorithmic Aspects in Information and Management,C
-ABZ,"International Conference Abstract State Machines, Alloy, B, TLA, VDM, and Z",C
-ACC,Applied Computing Conference,C
-ACE,"ACM International Conference on Advances in Computer Entertainment (merged with DIMEA, Digital Interactive Media in Entertainment and Arts, in 2009)",C
-ACHI,International Conference on Advances in Computer-Human Interactions,C
-ADMA,International Conference on Advanced Data Mining and Applications,C
-AICCSA,ACS/IEEE International Conference on Computer Systems and Applications,C
-Algosensors,International Symposium on Algorithms and Experiments for  Wireless Networks,C
-AofA,"International Conference on Probabilistic, Combinatorial, and Asymptotic Methods in the Analysis of Algorithms",C
-APCC,Asia Pacific Conference on Communications,C
-APNOMS,Asia-Pacific Network Operations and Management Symposium,C
-APORS,Conference of the Association of Asian-Pacific Operational Research Societies,C
-APSCC,Asia-Pacific Services Computing Conference,C
-APSEC,Asia-Pacific Software Engineering Conference,C
-APWEB,Web and Big Data,C
-ARITH,IEEE Symposium on Computer Arithmetic,C
-AROB,International Symposium on Artificial Life and Robotics,C
-ASRU,IEEE Automatic Speech Recognition and Understanding Workshop,C
-AST,Automation of Software Test,C
-ATC,International Conference on Advanced and Trusted Computing,C
-ATMOS,"Workshop on Algorithmic Approaches for Transportation Modelling, Optimization, and Systems",C
-BDCAT,"IEEE/ACM International Conference on Big Data Computing, Applications and Technologies",C
-BIBE,IEEE Bioinformatics and Bioengineering,C
-Broadnets,"International Conference on Broadband Communications, Networks and Systems",C
-BSN,Body Sensor Networks,C
-CAADRIA,Association for Computer-Aided Architectural Design Research in Asia (CAADRIA) annual conference,C
-CAINE,ISCA International Conference on Computer Applications in Industry and Engineering,C
-CAIP,International Conference on Computer Analysis of Images and Patterns,C
-CAivDE,"Computer Animation, Information Visualisation, and Digital Effects",C
-CARDIS,Smart Card Research and Advanced Application Conference,C
-CCA,International Conference on Computability and Complexity in Analysis,C
-CD-MAKE,International Cross-Domain Conference for Machine Learning and Knowledge Extraction,C
-CDVE,"Cooperative Design, Visualization, and Engineering",C
-CGI,Computer Graphics International,C
-CHIRA,International Conference on Computer-Human Interaction Research and Applications,C
-CIAA,International Conference on Implementation and Application of Automata,C
-CIAC,International Conference on Algorithms and Complexity,C
-EMSOFT,International Conference on Embedded Software,
-CODES+ISSS,International Conference on Hardware/Software Codesign and System Synthesis,
-Ada-Europe,International Conference on Reliable Software Technologies,
-CASES,"International Conference on Compilers, Architecture, and Synthesis for Embedded Systems",
-CHI PLAY,CHI PLAY: The Annual Symposium on Computer-Human Interaction in Play,
-EICS,Engineering Interactive Computing Systems,
-UbiComp,ACM International Joint Conference on Pervasive and Ubiquitous Computing (PERVASIVE and UbiComp combined from 2013),
-ISS,ACM International Conference on Interactive Surfaces and Spaces,
-ISWC,IEEE International Symposium on Wearable Computers,
-PERFORMANCE,"IFIP International Symposium on Computing Performance, Modelling, Measurement and Evaluation",
-PG,Pacific Conference on Computer Graphics and Applications,
-ICCS,International Conference on Computational Science,
-ICASSP,"IEEE International Conference on Acoustics, Speech and Signal Processing",
-SAC,ACM Symposium on Applied Computing,
-VISIGRAPP,"Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications (GRAPP and VISAPP combined from 2008)",
-CSIT,Computer Sciences and Information Technologies,
-HCI,British Computer Society Conference on Human-Computer Interaction,
-IWINAC,International Work-conference on the Interplay between Natural and Artificial Computation,
-ACCT,International Workshop on Algebraic and Combinatorial Coding Theory,
-Redundancy,International Symposium 'Problems of Redundancy in Information and Control Systems',
-RANLP,International Conference on Recent Advances in Natural Language Processing,
-AIMSA,"International Conference on Artificial Intelligence: Methodology, Systems, Applications",
-TASE,International Symposium on Theoretical Aspects of Software Engineering,
-TridentCom,Testbeds and Research Infrastructures for the Development of Networks and Communities,
-CIS,International Conference on Computational Intelligence and Security,
-FAW,International Frontiers of Algorithmics Workshop,
-ICIG,International Conference on Image and Graphics,
-ICMLC,International Conference on Machine Learning and Cybernetics,
-ICNC,International Conference on Natural Computation,
-Inscrypt,SKLOIS Conference on Information Security and Cryptology,
-ISKE,International Conference on Intelligent Systems and Knowledge Engineering,
-SOFTCOM,Conference on Software in Telecommunications and Computer Networks,
-PSC,Prague Stringology Conference,
-WSCG,"International Conferences in Central Europe on Computer Graphics, Visualization and Computer Vision",
-RTNS,International Conference on Real-Time and Network Systems,
-ICIN,"Conference on Innovation in Clouds, Internet and Networks",
-EuroPLop,European Conference on Pattern Languages of Programs,
-MuC,Mensch & Computer,
-ICISS,International Conference on Information Systems Security,
-IndiaHCI,Indian Conference on Human-Computer Interaction,
-INDOCRYPT,International Conference on Cryptology in India,
-COMAD,International Conference on Management of Data,
-FST&TCS,Foundations of Software Technology and Theoretical Computer Science,
-HiPC,International Conference on High Performance Computing,
-ICDCIT,International Conference on Distributed Computing and Internet Technologies,
-ICDCN,International Conference on Distributed Computing and Networking,
-AdCom,International Conference on Advanced Computing and Communications,
-VLSID,International Conference on VLSI Design,
-CSICC,International CSI Computer Conference,
-IMVIP,International Machine Vision and Image Processing Conference,
-FUN,Conference on Fun with Algorithms,
-ICIAP,International Conference on Image Analysis and Processing,
-SCN,Conference on Security and Cryptography for Networks,
-FLOPS,International Symposium on Functional and Logic Programming,
-IWSEC,International Workshop on Security,
-MVA,Machine Vision Applications,
-ICISC,International Conference on Information Security and Cryptology,
-WISA,International Workshop on Information Security Applications,
-RoVISP,"International Conference on Robotics, Vision, Signal Processing and Power Applications",
-FIT,International Conference on Frontiers of Information Technology,
-DEPCoS,International Conference on Dependability of Computer Systems,
-ICAISC,International Conference on Artificial Intelligence and Soft Computing,
-ICCVG,International Conference on Computer Vision and Graphics,
-PPAM,International Conference on Parallel Processing and Applied Mathematics,
-MISSI,Multimedia and Network Information Systems,
-EPIA,Portuguese Conference on Artificial Intelligence,
-ICCP,IEEE International Conference on Intelligent Computer Communication and Processing,
-SACI,International Symposium on Applied Computational Intelligence and Informatics,
-SOFA,International Workshop on Soft Computing Applications,
-SYNASC,International Symposium on Symbolic and Numeric Algorithms for Scientific Computing,
-CSR,International Computer Science Symposium in Russia,
-AIST,"International Conference on Analysis of Images, Social Networks and Texts",
-ISUVR,International Symposium on Ubiquitous Virtual Reality,
-SISY,International Symposium on Intelligent Systems and Informatics,
-SAMI,International Symposium on Applied Machine Intelligence and Informatics,
-IWANN,International Work-Conference on Artificial and Natural Neural Networks,
-PAAMS,Practical Applications of Agents and Multiagent Systems,
-MIS4TEL,International Conference in Methodologies and Intelligent Systems for Technology Enhanced Learning,
-CISIS,Computational Intelligence in Security for Information Systems,
-HAIS,International Conference on Hybrid Artificial Intelligence Systems,
-ATSIP,International Conference on Advanced Technologies For Signal & Image Processing,
-KDViz,Knowledge Domain Visualisation,
-SGAI,SGAI International Conference on Artificial Intelligence,
-ICTERI,"ICT in Education, Research, and Industrial Applications",
-IKE,International Conference on Information and Knowledge Engineering,
-IRI,IEEE International Conference on Information Reuse and Integration,
-ISAIM,International Symposium on Artificial Intelligence and Mathematics,
-ISVC,International Symposium on Visual Computing,
-ITA,International Conference on Internet Technologies and Applications,
-LFCS,Logical Foundations of Computer Science,
-MOPTA,Modelling and Optimization: Theory and Applications,
-MSST,IEEE Conference on Mass Storage Systems and Technologies,
-NSDI,"Symposium on Networked Systems, Design and Implementation",
-PDPTA,International Conference on Parallel and Distributed Processing Techniques and Applications,
-PSB,Pacific Symposium on Biocomputing,
-SIGITE,ACM Information Technology Education,
-SIGUCCS,ACM SIGUCCS Conference on User Services,
-Tapia,Richard Tapia Celebration of Diversity in Computing Conference,
-TRB,International Visualization in Transportation Symposium,
-USEC,Usable Security and Privacy,
-VDA,Conference on Visualization and Data Analysis,
-WCAE,Workshop on Computer Architecture Education,
-WMSCI,"World Multi-Conference on Systemics, Cybernetics and Informatics",
-WORLDCOMP,"World Congress in Computer Science, Computer Engineering, and Applied Computing",
-ACSSC,"Asilomar Conference on Signals, Systems and Computing",
-AMIA,American Medical Informatics Annual Fall Symposium,
-CATA,International Conference on Computers and their Applications,
-CERIAS,Information Security Symposium,
-CISS,Conference on Information Sciences and Systems,
-FlAIRS,Florida Artificial Intelligence Research Society Conference,
-GRC,Visualization In Science and Education,
-HOTI,IEEE Symposium on High-Performance Interconnects,
-HOTMOBILE,Workshop on Mobile Computing Systems and Applications,
-HOTNETS,ACM Workshop on Hot Topics in Networks,
-IAS,IEEE Industry Applications Society Annual Conference,
-IC-AI,International Conference on Artificial Intelligence,
-HPSC,International Conference on High Performance Scientific Computing,
-COCOON,International Conference on Computing and Combinatorics,
-SETTA,"International Symposium on Software Engineering: Theories, Tools, and Applications",
-BTW,"Datenbanksysteme für Business, Technologie und Web",
-CCEM,IEEE International Conference on Cloud Computing in Emerging Markets,
-COMSNETS,International Conference on COMmunication Systems & NETworkS,
-ICDSE,IEEE International Conference on Data Science and Engineering,
-SYSTOR,The ACM International System and Storage Conference,
-MMAR,International Conference on Methods and Models in Automation and Robotics,
-Informatics,IEEE International Scientific Conference on Informatics,
-CogSIMA,IEEE Conference on Cognitive and Computational Aspects of Situation Management,
-DCAI,International Conference on Distributed Computing and Artificial Intelligence,
-PACBB,International Conference on Practical Applications of Computational Biology & Bioinformatics,
-KI,German Conference on Artificial Intelligence,
-AIAI,Artificial Intelligence Applications and Innovations,
-ISC,ISC High Performance,
-VTS,IEEE VLSI Test Symposium,
-WSC,Winter Simulation Conference,
-IBPRIA,Iberian Conference on Pattern Recognition and Image Analysis,
-QCE,IEEE International Conference on Quantum Computing and Engineering,
-FCCM,IEEE Symposium on Field Programmable Custom Computing Machines,
-QUATIC,International Conference on the Quality of Information and Communications Technology,
-AMTA,Conference of the Association for Machine Translation in the Americas,
-MICC,Malaysia International Conference on Communications,
-FRUCT,IEEE Conference of the Open Innovations Association FRUCT,
-DB&IS,International Baltic Conference on Databases and Information Systems,
-Semantics,Semantics - International Conference on Semantic Systems,
-NordiCHI,Nordic Conference on Human-Computer Interaction,
-ICTIR,International Conference on the Theory of Information Retrieval,
-ICVR,International Conference on Virtual Rehabilitation,
-IDC,Intelligent Distributed Computing,
-INFOCOMP,International Conference on Advanced Communications and Computation,
-ITC,International Teletraffic Congress,
-MobiSPC,International Conference on Mobile Systems and Pervasive Computing,
-SEC,ACM/IEEE Symposium on Edge Computing,
-SEIT,International Conference on Sustainable Energy Information Technology,
-SETIT,"International Conference: Sciences of Electronics, Technologies of information and Telecommunication",
-UCC,Utility and Cloud Computing,
-CoRL,Conference on Robot Learning,
-EDCC,European Dependable Computing Conference,
-EUSPN,International Conference on Emerging Ubiquitous Systems and Pervasive Networks,
-FNC,The International Conference on Future Networks and Communications,
-HCist,HCist - International Conference on Health and Social Care Information Systems and Technologies,
-ANT,"International Conference on Ambient Systems, Networks and Technologies",
-SENSYS,ACM Conference on Embedded Networked Sensor Systems,
-PoEM,IFIP WG8.1 Working Conference on the Practice of Enterprise Modeling,
+acronym,title,rank,url
+AAAI,National Conference of the American Association for Artificial Intelligence,A*,https://portal.core.edu.au/conf-ranks/1629/
+ACL,Association for Computational Linguistics,A*,https://portal.core.edu.au/conf-ranks/196/
+ACMMM,ACM Multimedia,A*,https://portal.core.edu.au/conf-ranks/37/
+ASE,Automated Software Engineering Conference,A*,https://portal.core.edu.au/conf-ranks/279/
+ASPLOS,Architectural Support for Programming Languages and Operating Systems,A*,https://portal.core.edu.au/conf-ranks/147/
+CAV,Computer Aided Verification,A*,https://portal.core.edu.au/conf-ranks/331/
+CCS,ACM Conference on Computer and Communications Security,A*,https://portal.core.edu.au/conf-ranks/12/
+CHI,International Conference on Human Factors in Computing Systems,A*,https://portal.core.edu.au/conf-ranks/1053/
+COLT,Conference on Learning Theory,A*,https://portal.core.edu.au/conf-ranks/124/
+CRYPTO,Advances in Cryptology,A*,https://portal.core.edu.au/conf-ranks/94/
+CVPR,IEEE Conference on Computer Vision and Pattern Recognition,A*,https://portal.core.edu.au/conf-ranks/604/
+DAC,Design Automation Conf,A*,https://portal.core.edu.au/conf-ranks/1996/
+EC,ACM Conference on Economics and Computation,A*,https://portal.core.edu.au/conf-ranks/14/
+ECCV,European Conference on Computer Vision,A*,https://portal.core.edu.au/conf-ranks/479/
+EMNLP,Empirical Methods in Natural Language Processing,A*,https://portal.core.edu.au/conf-ranks/448/
+EuroCrypt,International Conference on the Theory and Application of Cryptographic Techniques,A*,https://portal.core.edu.au/conf-ranks/1242/
+FOCS,IEEE Symposium on Foundations of Computer Science,A*,https://portal.core.edu.au/conf-ranks/745/
+FSE,ACM International Conference on the Foundations of Software Engineering,A*,https://portal.core.edu.au/conf-ranks/52/
+HPCA,International Symposium on High Performance Computer Architecture,A*,https://portal.core.edu.au/conf-ranks/1386/
+HRI,ACM/IEEE International Conference on Human-Robot Interaction,A*,https://portal.core.edu.au/conf-ranks/2310/
+ICALP,International Colloquium on Automata Languages and Programming,A*,https://portal.core.edu.au/conf-ranks/864/
+ICAPS,International Conference on Automated Planning and Scheduling,A*,https://portal.core.edu.au/conf-ranks/919/
+ICCV,IEEE International Conference on Computer Vision,A*,https://portal.core.edu.au/conf-ranks/638/
+ICDE,International Conference on Data Engineering,A*,https://portal.core.edu.au/conf-ranks/986/
+ICDM,IEEE International Conference on Data Mining,A*,https://portal.core.edu.au/conf-ranks/642/
+ICLR,International Conference on Learning Representations,A*,https://portal.core.edu.au/conf-ranks/2273/
+ICML,International Conference on Machine Learning,A*,https://portal.core.edu.au/conf-ranks/1121/
+ICRA,IEEE International Conference on Robotics and Automation,A*,https://portal.core.edu.au/conf-ranks/2051/
+ICSE,International Conference on Software Engineering,A*,https://portal.core.edu.au/conf-ranks/1209/
+IJCAI,International Joint Conference on Artificial Intelligence,A*,https://portal.core.edu.au/conf-ranks/1313/
+INFOCOM,IEEE International Conference on Computer Communications,A*,https://portal.core.edu.au/conf-ranks/2074/
+ISCA,ACM International Symposium on Computer Architecture,A*,https://portal.core.edu.au/conf-ranks/32/
+ISMAR,IEEE/ACM International Symposium on Mixed and Augmented Reality,A*,https://portal.core.edu.au/conf-ranks/785/
+KDD,ACM International Conference on Knowledge Discovery and Data Mining,A*,https://portal.core.edu.au/conf-ranks/26/
+KR,International Conference on the Principles of Knowledge Representation and Reasoning,A*,https://portal.core.edu.au/conf-ranks/1239/
+LICS,IEEE Symposium on Logic in Computer Science,A*,https://portal.core.edu.au/conf-ranks/748/
+MICRO,International Symposium on Microarchitecture,A*,https://portal.core.edu.au/conf-ranks/2098/
+MOBICOM,ACM International Conference on Mobile Computing and Networking,A*,https://portal.core.edu.au/conf-ranks/27/
+NDSS,Usenix Network and Distributed System Security Symposium,A*,https://portal.core.edu.au/conf-ranks/1840/
+NeurIPS,Advances in Neural Information Processing Systems,A*,https://portal.core.edu.au/conf-ranks/98/
+OSDI,Usenix Symposium on Operating Systems Design and Implementation,A*,https://portal.core.edu.au/conf-ranks/1842/
+PERCOM,IEEE International Conference on Pervasive Computing and Communications,A*,https://portal.core.edu.au/conf-ranks/669/
+PLDI,ACM-SIGPLAN Conference on Programming Language Design and Implementation,A*,https://portal.core.edu.au/conf-ranks/84/
+PODC,ACM Symposium on Principles of Distributed Computing,A*,https://portal.core.edu.au/conf-ranks/63/
+PODS,ACM SIGMOD-SIGACT-SIGART Conference on Principles of Database Systems,A*,https://portal.core.edu.au/conf-ranks/46/
+POPL,ACM-SIGACT Symposium on Principles of Programming Languages,A*,https://portal.core.edu.au/conf-ranks/82/
+SIGCOMM,"ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",A*,https://portal.core.edu.au/conf-ranks/11/
+SIGGRAPH,ACM SIG International Conference on Computer Graphics and Interactive Techniques,A*,https://portal.core.edu.au/conf-ranks/38/
+SiggraphA,SIGGRAPH Asia,A*,https://portal.core.edu.au/conf-ranks/957/
+SIGIR,ACM International Conference on Research and Development in Information Retrieval,A*,https://portal.core.edu.au/conf-ranks/29/
+SIGMETRICS,Measurement and Modeling of Computer Systems,A*,https://portal.core.edu.au/conf-ranks/39/
+SIGMOD,ACM Special Interest Group on Management of Data Conference,A*,https://portal.core.edu.au/conf-ranks/56/
+SoCG,International Symposium on Computational Geometry,A*,https://portal.core.edu.au/conf-ranks/60/
+SODA,ACM/SIAM Symposium on Discrete Algorithms,A*,https://portal.core.edu.au/conf-ranks/80/
+SOSP,ACM SIGOPS Symposium on Operating Systems Principles,A*,https://portal.core.edu.au/conf-ranks/48/
+SP,IEEE Symposium on Security and Privacy,A*,https://portal.core.edu.au/conf-ranks/750/
+STOC,ACM Symposium on Theory of Computing,A*,https://portal.core.edu.au/conf-ranks/65/
+UIST,ACM Symposium on User Interface Software and Technology,A*,https://portal.core.edu.au/conf-ranks/66/
+USENIX-Security,Usenix Security Symposium,A*,https://portal.core.edu.au/conf-ranks/1841/
+VLDB,International Conference on Very Large Databases,A*,https://portal.core.edu.au/conf-ranks/1261/
+VR,IEEE Conference on Virtual Reality and 3D User Interfaces,A*,https://portal.core.edu.au/conf-ranks/758/
+WWW,International World Wide Web Conference,A*,https://portal.core.edu.au/conf-ranks/1548/
+PPSN,Parallel Problem Solving from Nature,A,https://portal.core.edu.au/conf-ranks/1676/
+RAID,"The International Symposium on Research in Attacks, Intrusions and Defenses",A,https://portal.core.edu.au/conf-ranks/1408/
+RE,IEEE International Requirements Engineering Conference,A,https://portal.core.edu.au/conf-ranks/690/
+RecSys,ACM International Conference on Recommender Systems,A,https://portal.core.edu.au/conf-ranks/28/
+RTAS,IEEE Real-Time and Embedded Technology and Applications Symposium,A,https://portal.core.edu.au/conf-ranks/725/
+SANER,"IEEE International Conference on Software Analysis, Evolution and Reengineering",A,https://portal.core.edu.au/conf-ranks/2280/
+SAT,International Conference on Theory and Applications of Satisfiability Testing,A,https://portal.core.edu.au/conf-ranks/1250/
+SC,"International Conference for High Performance Computing, Networking, Storage and Analysis",A,https://portal.core.edu.au/conf-ranks/77/
+SDM,SIAM International Conference on Data Mining,A,https://portal.core.edu.au/conf-ranks/1727/
+SEAMS,International Symposium on Software Engineering for Adaptive and Self-Managing Systems,A,https://portal.core.edu.au/conf-ranks/2281/
+SIGCSE,ACM Special Interest Group on Computer Science Education Conference,A,https://portal.core.edu.au/conf-ranks/55/
+SIGSPATIAL,ACM International Conference on Advances in Geographic Information Systems,A,https://portal.core.edu.au/conf-ranks/22/
+TACAS,Tools and Algorithms for Construction and Analysis of Systems,A,https://portal.core.edu.au/conf-ranks/1818/
+UAI,Conference in Uncertainty in Artificial Intelligence,A,https://portal.core.edu.au/conf-ranks/346/
+USENIX,Usenix Annual Technical Conference,A,https://portal.core.edu.au/conf-ranks/1838/
+WACV,IEEE Workshop on Applications of Computer Vision,A,https://portal.core.edu.au/conf-ranks/763/
+WSDM,ACM International Conference on Web Search and Data Mining,A,https://portal.core.edu.au/conf-ranks/31/
+ICME,IEEE International Conference on Multimedia and Expo,A,https://portal.core.edu.au/conf-ranks/664/
+ICPC,IEEE International Conference on Program Comprehension,A,https://portal.core.edu.au/conf-ranks/1181/
+ICS,ACM International Conference on Supercomputing,A,https://portal.core.edu.au/conf-ranks/30/
+ICSA,International Conference on Software Architecture,A,https://portal.core.edu.au/conf-ranks/791/
+ICSME,"IEEE International Conference on Software Maintenance and Evolution (prior to 2014 was ICSM, IEEE International Conference on Software Maintenance)",A,https://portal.core.edu.au/conf-ranks/676/
+ICSOC,International Conference on Service Oriented Computing,A,https://portal.core.edu.au/conf-ranks/1204/
+ICST,"International Conference on Software Testing, Verification and Validation",A,https://portal.core.edu.au/conf-ranks/1221/
+ICWSM,International Conference on Web and Social Media,A,https://portal.core.edu.au/conf-ranks/2169/
+IJCAR,International Joint Conference on Automated Reasoning,A,https://portal.core.edu.au/conf-ranks/1314/
+IMC,Internet Measurement Conference,A,https://portal.core.edu.au/conf-ranks/1551/
+Interspeech,Interspeech (combined EuroSpeech and ICSLP in 2000),A,https://portal.core.edu.au/conf-ranks/494/
+IPDPS,IEEE International Parallel and Distributed Processing Symposium,A,https://portal.core.edu.au/conf-ranks/688/
+IROS,IEEE/RSJ International Conference on Intelligent Robots and Systems,A,https://portal.core.edu.au/conf-ranks/792/
+ISSRE,International Symposium on Software Reliability Engineering,A,https://portal.core.edu.au/conf-ranks/1411/
+ISSTA,International Symposium on Software Testing and Analysis,A,https://portal.core.edu.au/conf-ranks/1412/
+ISWC,International Semantic Web Conference,A,https://portal.core.edu.au/conf-ranks/1338/
+IUI,International Conference on Intelligent User Interfaces,A,https://portal.core.edu.au/conf-ranks/1101/
+LAK,International Conference on Learning Analytics and Knowledge,A,https://portal.core.edu.au/conf-ranks/2268/
+MICCAI,Medical Image Computing and Computer-Assisted Intervention,A,https://portal.core.edu.au/conf-ranks/1607/
+Middleware,ACM/IFIP/USENIX International Middleware Conference,A,https://portal.core.edu.au/conf-ranks/79/
+Mobisys,"ACM SIGMOBILE International Conference on Mobile Systems, Applications and Services",A,https://portal.core.edu.au/conf-ranks/45/
+MODELS,International Conference on Model Driven Engineering Languages and Systems,A,https://portal.core.edu.au/conf-ranks/1244/
+MSR,IEEE International Working Conference on Mining Software Repositories,A,https://portal.core.edu.au/conf-ranks/711/
+MSWIM,"ACM/IEEE International Conference on Modelling, Analysis and Simulation of Wireless and Mobile Systems",A,https://portal.core.edu.au/conf-ranks/76/
+NAACL,North American Association for Computational Linguistics,A,https://portal.core.edu.au/conf-ranks/1648/
+OOPSLA,ACM Conference on Object Oriented Programming Systems Languages and Applications,A,https://portal.core.edu.au/conf-ranks/18/
+PETS,Privacy Enhancing Technologies Symposium,A,https://portal.core.edu.au/conf-ranks/1442/
+CCC,IEEE Conference on Computational Complexity,A,https://portal.core.edu.au/conf-ranks/602/
+CSF,IEEE Computer Security Foundations Symposium,A,https://portal.core.edu.au/conf-ranks/599/
+ISLPED,IEEE/ACM International Symposium on Low Power Electronics and Design,A,https://portal.core.edu.au/conf-ranks/2331/
+AAMAS,International Joint Conference on Autonomous Agents and Multiagent Systems,A,https://portal.core.edu.au/conf-ranks/922/
+ICWS,IEEE International Conference on Web Services,A,https://portal.core.edu.au/conf-ranks/678/
+ISMB,Intelligent Systems in Molecular Biology,A,https://portal.core.edu.au/conf-ranks/847/
+MMSys,ACM Multimedia Systems Conference,A,https://portal.core.edu.au/conf-ranks/2336/
+DSN,IEEE/IFIP International Conference on Dependable Systems and Networks,A,https://portal.core.edu.au/conf-ranks/787/
+DATE,"Design, Automation and Test in Europe Conference",A,https://portal.core.edu.au/conf-ranks/421/
+RTSS,Real Time Systems Symposium,A,https://portal.core.edu.au/conf-ranks/1701/
+ITC,IEEE International Test Conference,A,https://portal.core.edu.au/conf-ranks/710/
+ICCAD,IEEE/ACM International Conference on Computer-Aided Design,A,https://portal.core.edu.au/conf-ranks/783/
+ESA,European Symposium on Algorithms,A,https://portal.core.edu.au/conf-ranks/511/
+STACS,International Symposium on Theoretical Aspects of Computer Science,A,https://portal.core.edu.au/conf-ranks/1426/
+GD,Graph Drawing,A,https://portal.core.edu.au/conf-ranks/572/
+APPROX/RANDOM,International Workshop on Approximation Algorithms for Combinatorial Optimization Problems and International Conference on Randomization and Computation,A,https://portal.core.edu.au/conf-ranks/1451/
+UMAP,"International Conference on User Modelling, Adaptation, and Personalization",A,https://portal.core.edu.au/conf-ranks/1259/
+FPGA,ACM Int'l Symposium on Field Programmable Gate Arrays,A,https://portal.core.edu.au/conf-ranks/2319/
+IEEE VIS,IEEE Visualization,A,https://portal.core.edu.au/conf-ranks/759/
+EuroSys,Eurosys Conference,A,https://portal.core.edu.au/conf-ranks/525/
+SOUPS,Symposium On Usable Privacy and Security,A,https://portal.core.edu.au/conf-ranks/2167/
+ALENEX,Workshop on Algorithm Engineering and Experiments,A,https://portal.core.edu.au/conf-ranks/1870/
+ITCS,Innovations in Theoretical Computer Science,A,https://portal.core.edu.au/conf-ranks/2176/
+ACSAC,Annual Computer Security Applications Conference,A,https://portal.core.edu.au/conf-ranks/117/
+AIED,International Conference on Artificial Intelligence in Education,A,https://portal.core.edu.au/conf-ranks/1961/
+AISTATS,International Conference on Artificial Intelligence and Statistics,A,https://portal.core.edu.au/conf-ranks/913/
+AsiaCCS,"Asia Conference on Information, Computer and Communications Security",A,https://portal.core.edu.au/conf-ranks/61/
+ASIACRYPT,International Conference on the Theory and Application of Cryptology and Information Security,A,https://portal.core.edu.au/conf-ranks/1243/
+ASSETS,International ACM SIGACCESS Conference on Computers and Accessibility,A,https://portal.core.edu.au/conf-ranks/2258/
+BMVC,British Machine Vision Conference,A,https://portal.core.edu.au/conf-ranks/296/
+BPM,International Conference in Business Process Management,A,https://portal.core.edu.au/conf-ranks/878/
+CADE,International Conference on Automated Deduction,A,https://portal.core.edu.au/conf-ranks/918/
+CaiSE,International Conference on Advanced Information Systems Engineering,A,https://portal.core.edu.au/conf-ranks/891/
+CGO,International Symposium on Code Generation and Optimization,A,https://portal.core.edu.au/conf-ranks/1362/
+CHES,Workshop on Cryptographic Hardware and Embedded Systems,A,https://portal.core.edu.au/conf-ranks/1894/
+CIDR,Conference on Innovative Data Systems Research,A,https://portal.core.edu.au/conf-ranks/369/
+CIKM,ACM International Conference on Information and Knowledge Management,A,https://portal.core.edu.au/conf-ranks/25/
+CoNEXT,ACM International Conference on Emerging Networking Experiments and Technologies,A,https://portal.core.edu.au/conf-ranks/24/
+CP,International Conference on Principles and Practice of Constraint Programming,A,https://portal.core.edu.au/conf-ranks/1175/
+CSCW,ACM Conference on Computer Supported Cooperative Work,A,https://portal.core.edu.au/conf-ranks/13/
+DIS,Designing Interactive Systems,A,https://portal.core.edu.au/conf-ranks/422/
+DISC,International Symposium on Distributed Computing,A,https://portal.core.edu.au/conf-ranks/1374/
+EACL,European Association for Computational Linguistics,A,https://portal.core.edu.au/conf-ranks/468/
+EASE,International Conference on Evaluation and Assessment in Software Engineering,A,https://portal.core.edu.au/conf-ranks/1022/
+ECAI,European Conference on Artificial Intelligence,A,https://portal.core.edu.au/conf-ranks/473/
+ECIR,European Conference on Information Retrieval,A,https://portal.core.edu.au/conf-ranks/483/
+ECML PKDD,European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Database (PKDD and ECML combined from 2008),A,https://portal.core.edu.au/conf-ranks/491/
+ECOOP,European Conference on Object-Oriented Programming,A,https://portal.core.edu.au/conf-ranks/488/
+ER,International Conference on Conceptual Modelling,A,https://portal.core.edu.au/conf-ranks/971/
+ESEM,International Symposium on Empirical Software Engineering and Measurement,A,https://portal.core.edu.au/conf-ranks/1376/
+ESOP,European Symposium on Programming,A,https://portal.core.edu.au/conf-ranks/514/
+ESORICS,European Symposium On Research In Computer Security,A,https://portal.core.edu.au/conf-ranks/515/
+EuroS&P,IEEE European Symposium on Security and Privacy,A,https://portal.core.edu.au/conf-ranks/2185/
+FAST,Conference on File and Storage Technologies,A,https://portal.core.edu.au/conf-ranks/1839/
+FC,Financial Cryptography and Data Security Conference,A,https://portal.core.edu.au/conf-ranks/533/
+FOGA,Foundations of Genetic Algorithms,A,https://portal.core.edu.au/conf-ranks/546/
+GECCO,Genetic and Evolutionary Computations,A,https://portal.core.edu.au/conf-ranks/556/
+HotOS,USENIX Workshop on Hot Topics in Operating Systems,A,https://portal.core.edu.au/conf-ranks/1845/
+HPDC,ACM International Symposium on High Performance Distributed Computing,A,https://portal.core.edu.au/conf-ranks/33/
+ICDAR,IEEE International Conference on Document Analysis and Recognition,A,https://portal.core.edu.au/conf-ranks/2047/
+ICDCS,International Conference on Distributed Computing Systems,A,https://portal.core.edu.au/conf-ranks/1002/
+ICDT,International Conference on Database Theory,A,https://portal.core.edu.au/conf-ranks/989/
+ICER,International Computing Education Research Workshop,A,https://portal.core.edu.au/conf-ranks/872/
+ICFP,International Conference on Functional Programming,A,https://portal.core.edu.au/conf-ranks/1037/
+OZCHI,Australian Computer Human Interaction Conference,B,https://portal.core.edu.au/conf-ranks/247/
+ACE,Australasian Computing Education Conference (ACE),B,https://portal.core.edu.au/conf-ranks/211/
+ACISP,Australasian Conference on Information Security and Privacy,B,https://portal.core.edu.au/conf-ranks/212/
+ADC,Australasian Database Conference,B,https://portal.core.edu.au/conf-ranks/219/
+ADCS,Australasian Document Computing Symposium,B,https://portal.core.edu.au/conf-ranks/1954/
+AI,Australasian Joint Conference on Artificial Intelligence,B,https://portal.core.edu.au/conf-ranks/224/
+DICTA,Digital Image Computing Techniques and Applications,C,https://portal.core.edu.au/conf-ranks/428/
+AusDM,Australian Data Mining Conference,C,https://portal.core.edu.au/conf-ranks/253/
+ACCMCC,Australasian Conference on Combinatorial Mathematics and Combinatorial Computing,C,https://portal.core.edu.au/conf-ranks/210/
+ACRA,Australasian Conference on Robotics and Automation,C,https://portal.core.edu.au/conf-ranks/216/
+AICE,Australian Institute of Computer Ethics Conference,C,https://portal.core.edu.au/conf-ranks/261/
+AISC,Australasian Information Security Conference,C,https://portal.core.edu.au/conf-ranks/222/
+ALTA,Australasian Language Technology Workshop,C,https://portal.core.edu.au/conf-ranks/1966/
+APCCM,Asia-Pacific Conference on Conceptual Modelling,C,https://portal.core.edu.au/conf-ranks/178/
+ASOR,National Conference of The Australian Society for Operations Research,C,https://portal.core.edu.au/conf-ranks/1978/
+AusPDC,Australasian Symposium on Parallel and Distributed Computing,C,https://portal.core.edu.au/conf-ranks/231/
+HIC,Health Informatics Conference,C,https://portal.core.edu.au/conf-ranks/576/
+SimTecT,Simulation Technology and Training Conference,C,https://portal.core.edu.au/conf-ranks/1733/
+SST,Australasian Speech Science and Technology,C,https://portal.core.edu.au/conf-ranks/229/
+ICITA,International Conference on Information Technology and Applications,C,https://portal.core.edu.au/conf-ranks/1083/
+IE,Interactive Entertainment,C,https://portal.core.edu.au/conf-ranks/852/
+ITNAC,International Telecommunication Networks and Applications Conference,C,https://portal.core.edu.au/conf-ranks/269/
+IVCNZ,Image and Vision Computing Conference,C,https://portal.core.edu.au/conf-ranks/817/
+MODSIM,International Congress on Modelling and Simulation,C,https://portal.core.edu.au/conf-ranks/1291/
+NZGDC,New Zealand Game Developers Conference,C,https://portal.core.edu.au/conf-ranks/1643/
+ICMI,International Conference on Multimodal Interaction,B,https://portal.core.edu.au/conf-ranks/1144/
+ICMR,International Conference on Multimedia Retrieval,B,https://portal.core.edu.au/conf-ranks/44/
+ICNP,International Conference on Network Protocols,B,https://portal.core.edu.au/conf-ranks/1147/
+ICONIP,International Conference on Neural Information Processing,B,https://portal.core.edu.au/conf-ranks/1152/
+ICPADS,International Conference on Parallel and Distributed Systems,B,https://portal.core.edu.au/conf-ranks/1164/
+ICPE,ACM/SPEC International Conference on Performance Engineering,B,https://portal.core.edu.au/conf-ranks/2278/
+ICPM,International Conference on Process Mining,B,https://portal.core.edu.au/conf-ranks/2307/
+ICPP,International Conference on Parallel Processing,B,https://portal.core.edu.au/conf-ranks/1167/
+ICPR,International Conference on Pattern Recognition,B,https://portal.core.edu.au/conf-ranks/1169/
+ICSR,International Conference on Software Reuse,B,https://portal.core.edu.au/conf-ranks/1220/
+ICSSP,International Conference on Software and System Processes,B,https://portal.core.edu.au/conf-ranks/1217/
+ICTAI,International Conference on Tools with Artificial Intelligence,B,https://portal.core.edu.au/conf-ranks/1251/
+ICWE,International Conference on Web Engineering,B,https://portal.core.edu.au/conf-ranks/1269/
+IDA,Intelligent Data Analysis,B,https://portal.core.edu.au/conf-ranks/845/
+IDC,Interaction Design and Children (ACM),B,https://portal.core.edu.au/conf-ranks/851/
+IE,The International Conference on Intelligent Environments,B,https://portal.core.edu.au/conf-ranks/2179/
+IEEE CCNC,IEEE Consumer Communications and Networking Conference,B,https://portal.core.edu.au/conf-ranks/616/
+IEEE SSE,IEEE International Conference on Software Services Engineering,B,https://portal.core.edu.au/conf-ranks/674/
+IEEE-IV,Intelligent Vehicles Conference,B,https://portal.core.edu.au/conf-ranks/2062/
+IFIP SEC,IFIP Information Security & Privacy Conference,B,https://portal.core.edu.au/conf-ranks/804/
+IFM,Integrated Formal Methods,B,https://portal.core.edu.au/conf-ranks/842/
+IJCB,International Joint Conference on Biometrics,B,https://portal.core.edu.au/conf-ranks/2305/
+IJCNLP,International Joint Conference on Natural Language Processing,B,https://portal.core.edu.au/conf-ranks/1317/
+IJCNN,IEEE International Joint Conference on Neural Networks,B,https://portal.core.edu.au/conf-ranks/685/
+ILP,Inductive Logic Programming,B,https://portal.core.edu.au/conf-ranks/819/
+IM,IFIP/IEEE International Symposium on Integrated Management (even years sharing with NOMS),B,https://portal.core.edu.au/conf-ranks/812/
+INLG,International Natural Language Generation Conference,B,https://portal.core.edu.au/conf-ranks/1327/
+Interact,IFIP TC13 Conference on Human-Computer Interaction,B,https://portal.core.edu.au/conf-ranks/807/
+IPEC,International Symposium on Parameterized and Exact Computation,B,https://portal.core.edu.au/conf-ranks/1510/
+ISIT,IEEE International Symposium on Information Theory,B,https://portal.core.edu.au/conf-ranks/699/
+ITS,International Conference on Intelligent Tutoring Systems,B,https://portal.core.edu.au/conf-ranks/1100/
+ITW,Information Theory Workshop,B,https://portal.core.edu.au/conf-ranks/830/
+IVA,Intelligent Virtual Agents,B,https://portal.core.edu.au/conf-ranks/849/
+IWCMC,ACM International Wireless Communications and Mobile Computing Conference,B,https://portal.core.edu.au/conf-ranks/34/
+IWQoS,IEEE International Workshop on Quality of Service,B,https://portal.core.edu.au/conf-ranks/717/
+K-CAP,Knowledge capture,B,https://portal.core.edu.au/conf-ranks/1582/
+KES,International Conference on Knowledge-Based and Intelligent Information and Engineering Systems,B,https://portal.core.edu.au/conf-ranks/1113/
+LATIN,International Symposium on Latin American Theoretical Informatics,B,https://portal.core.edu.au/conf-ranks/1395/
+LCN,IEEE Conference on Local Computer Networks,B,https://portal.core.edu.au/conf-ranks/607/
+LCTES,"ACM SIGPLAN Conference on Languages, Compilers and Tools for Embedded Systems",B,https://portal.core.edu.au/conf-ranks/49/
+LPAR,Logic Programming and Automated Reasoning,B,https://portal.core.edu.au/conf-ranks/1596/
+LPNMR,International Conference on Logic Programming and Non-monotonic Reasoning,B,https://portal.core.edu.au/conf-ranks/1120/
+LREC,Language Resources and Evaluation Conference,B,https://portal.core.edu.au/conf-ranks/2092/
+MASCOTS,Symposium Model Analysis and Simulation of Computer and Telecommunications Systems,B,https://portal.core.edu.au/conf-ranks/1771/
+MASS,IEEE International Conference on Mobile Ad-hoc and Sensor Systems,B,https://portal.core.edu.au/conf-ranks/663/
+MDAI,International Conference on Modelling Decisions for Artificial Intelligence,B,https://portal.core.edu.au/conf-ranks/1140/
+MDM,International Conference on Mobile Data Management,B,https://portal.core.edu.au/conf-ranks/1133/
+MFPS,International Conference on Mathematical Foundations of Programming Semantics,B,https://portal.core.edu.au/conf-ranks/2293/
+MMM,International Conference on Multimedia Modelling,B,https://portal.core.edu.au/conf-ranks/1143/
+MobileHCI,International Conference on Human-Computer Interaction with Mobile Devices and Services,B,https://portal.core.edu.au/conf-ranks/1054/
+MPC,Mathematics of Program Construction,B,https://portal.core.edu.au/conf-ranks/1605/
+MUM,Mobile and Ubiquitous Multimedia (ACM),B,https://portal.core.edu.au/conf-ranks/1615/
+NCA,IEEE International Symposium on Network Computing and Applications,B,https://portal.core.edu.au/conf-ranks/702/
+NetSoft,International Conference on Network Softwarization,B,https://portal.core.edu.au/conf-ranks/2245/
+Networking,IFIP International Conference on Networking,B,https://portal.core.edu.au/conf-ranks/806/
+NOMS,IEEE Network Operations and Management Symposium,B,https://portal.core.edu.au/conf-ranks/723/
+NOSSDAV,Network and Operating System Support for Digital Audio and Video,B,https://portal.core.edu.au/conf-ranks/1638/
+NSS,International Conference on network and System Security,B,https://portal.core.edu.au/conf-ranks/1146/
+OPODIS,International Conference on Principles of Distributed Systems,B,https://portal.core.edu.au/conf-ranks/1177/
+PACT,International Conference on Parallel Architecture and Compilation Techniques,B,https://portal.core.edu.au/conf-ranks/1165/
+PADS,ACM SIGSIM Conference on Principles of Advanced Discrete Simulation,B,https://portal.core.edu.au/conf-ranks/78/
+PAKDD,Pacific-Asia Conference on Knowledge Discovery and Data Mining,B,https://portal.core.edu.au/conf-ranks/1667/
+PAM,Passive and Active Measurement Conference,B,https://portal.core.edu.au/conf-ranks/1678/
+Petri Nets,International Conference on the Application and Theory of Petri Nets and Concurrency,B,https://portal.core.edu.au/conf-ranks/1237/
+PIMRC,IEEE International Symposium on Personal and Indoor Mobile Radio Conference,B,https://portal.core.edu.au/conf-ranks/706/
+CLOUD,IEEE International Conference on Cloud Computing,B,https://portal.core.edu.au/conf-ranks/631/
+CNSM,International Conference on Network and Service Management (amalgamation of DSOM and related workshops from 2010),B,https://portal.core.edu.au/conf-ranks/813/
+CogSci,Annual Meeting of the Cognitive Science Society,B,https://portal.core.edu.au/conf-ranks/120/
+COLING,International Conference on Computational Linguistics,B,https://portal.core.edu.au/conf-ranks/949/
+COMPSAC,International Computer Software and Applications Conference,B,https://portal.core.edu.au/conf-ranks/871/
+CoNLL,Conference on Computational Natural Language Learning,B,https://portal.core.edu.au/conf-ranks/371/
+CoopIS,International Conference on Cooperative Information Systems,B,https://portal.core.edu.au/conf-ranks/979/
+CPAIOR,International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming for Combinatorial Optimization Problems,B,https://portal.core.edu.au/conf-ranks/1090/
+CPM,Combinatorial Pattern Matching,B,https://portal.core.edu.au/conf-ranks/321/
+CSEDU,International Conference on Computer Supported Education,B,https://portal.core.edu.au/conf-ranks/2261/
+CSL,Annual Conference on Computer Science Logic,B,https://portal.core.edu.au/conf-ranks/1995/
+CT-RSA,Cryptographers Track at RSA Conference,B,https://portal.core.edu.au/conf-ranks/1710/
+DAS,International Workshop on Document Analysis Systems,B,https://portal.core.edu.au/conf-ranks/1998/
+DaWaK,Data Warehousing and Knowledge Discovery,B,https://portal.core.edu.au/conf-ranks/410/
+DBSEC,IFIP WG 11.3 Working Conference on Data and Applications Security,B,https://portal.core.edu.au/conf-ranks/2067/
+DCC,Data Compression Conference,B,https://portal.core.edu.au/conf-ranks/408/
+DCOSS,IEEE International Conference on Distributed Computing in Sensor Systems,B,https://portal.core.edu.au/conf-ranks/644/
+DNA,DNA Computing and Molecular Programming,B,https://portal.core.edu.au/conf-ranks/1324/
+DocEng,ACM Symposium on Document Engineering,B,https://portal.core.edu.au/conf-ranks/2003/
+DS,Discovery Science,B,https://portal.core.edu.au/conf-ranks/2191/
+DSAA,IEEE International Conference on Data Science and Advanced Analytics,B,https://portal.core.edu.au/conf-ranks/2237/
+e-Science,IEEE International Conference on e-Science and Grid Computing,B,https://portal.core.edu.au/conf-ranks/648/
+EC-TEL,European Conference on Technology Enhanced Learning,B,https://portal.core.edu.au/conf-ranks/2262/
+ECMFA,European Conference on Modelling Foundations and Applications,B,https://portal.core.edu.au/conf-ranks/2287/
+ECSCW,European Conference on Computer Supported Cooperative Work,B,https://portal.core.edu.au/conf-ranks/478/
+EDM,Educational Data Mining,B,https://portal.core.edu.au/conf-ranks/446/
+EDOC,IEEE International Enterprise Distributed Object Computing Conference,B,https://portal.core.edu.au/conf-ranks/682/
+EKAW,International Conference on Knowledge Engineering and Knowledge Management,B,https://portal.core.edu.au/conf-ranks/1110/
+EMAS,"EMAS (merger of DALT, AOSE and PROMAS)",B,https://portal.core.edu.au/conf-ranks/2159/
+ENASE,International Conference on Evaluation of Novel Approaches to Software Engineering,B,https://portal.core.edu.au/conf-ranks/1023/
+ESANN,European Symposium on Artificial Neural Networks,B,https://portal.core.edu.au/conf-ranks/512/
+ETRA,Eye Tracking Research and Applications,B,https://portal.core.edu.au/conf-ranks/2263/
+EUROGP,European Conference on Genetic Programming,B,https://portal.core.edu.au/conf-ranks/481/
+EuroPar,International European Conference on Parallel and Distributed Computing,B,https://portal.core.edu.au/conf-ranks/2022/
+EuroSPI,European SPI,B,https://portal.core.edu.au/conf-ranks/510/
+EuroVis,Eurographics/IEEE Symposium on Visualization,B,https://portal.core.edu.au/conf-ranks/462/
+EvoApplications,International Conference on Applications of Evolutionary Computation,B,https://portal.core.edu.au/conf-ranks/2218/
+EvoCOP,European Conference on Evolutionary Computation in Combinatorial Optimisation,B,https://portal.core.edu.au/conf-ranks/2195/
+EWSN,International Conference on Embedded Wireless Systems and Networks,B,https://portal.core.edu.au/conf-ranks/497/
+FASE,Fundamental Approaches to Software Engineering,B,https://portal.core.edu.au/conf-ranks/554/
+FCT,International Symposium on Fundamentals of Computation Theory,B,https://portal.core.edu.au/conf-ranks/1383/
+FG,IEEE International Conference on Automatic Face and Gesture Recognition,B,https://portal.core.edu.au/conf-ranks/629/
+FMCAD,Formal Methods in Computer-Aided Design,B,https://portal.core.edu.au/conf-ranks/2196/
+FSCD,International Conference on Formal Structures for Computation and Deduction,B,https://portal.core.edu.au/conf-ranks/2290/
+FUZZ-IEEE,IEEE International Conference on Fuzzy Systems,B,https://portal.core.edu.au/conf-ranks/649/
+GI,Graphics Interface,B,https://portal.core.edu.au/conf-ranks/573/
+GLOBECOM,IEEE Global Telecommunications Conference,B,https://portal.core.edu.au/conf-ranks/2030/
+GPCE,International Conference on Generative Programming and Component Engineering,B,https://portal.core.edu.au/conf-ranks/1039/
+Group,ACM Special Interest Group on Supporting Group Work,B,https://portal.core.edu.au/conf-ranks/57/
+HAI,Human-Agent Interaction,B,https://portal.core.edu.au/conf-ranks/2215/
+I3DG,ACM-SIGRAPH Interactive 3D Graphics and Games,B,https://portal.core.edu.au/conf-ranks/85/
+ICAART,International Conference on Agents and Artificial Intelligence,B,https://portal.core.edu.au/conf-ranks/902/
+ICALT,IEEE International Conference on Advanced Learning Technologies,B,https://portal.core.edu.au/conf-ranks/628/
+ICCCI,International Conference on Computational Collective Intelligence,B,https://portal.core.edu.au/conf-ranks/942/
+ICCCN,International Conference on Computer Communication and Networks,B,https://portal.core.edu.au/conf-ranks/2038/
+ICECCS,IEEE International Conference on Engineering of Complex Computer Systems,B,https://portal.core.edu.au/conf-ranks/646/
+ICFHR,International Conference on Frontiers of Handwriting Recognition,B,https://portal.core.edu.au/conf-ranks/1035/
+ICGT,International Conference on Graph Transformations,B,https://portal.core.edu.au/conf-ranks/1042/
+ICIP,IEEE International Conference on Image Processing,B,https://portal.core.edu.au/conf-ranks/654/
+ECSA,European Conference on Software Architecture,B,https://portal.core.edu.au/conf-ranks/2165/
+ISAAC,International Symposium on Algorithms and Computation,B,https://portal.core.edu.au/conf-ranks/1349/
+ICLP,International Conference on Logic Programming,B,https://portal.core.edu.au/conf-ranks/1119/
+EDBT,Extending Database Technology,B,https://portal.core.edu.au/conf-ranks/528/
+AFT,Advances in Financial Technologies,B,https://portal.core.edu.au/conf-ranks/2330/
+ECRTS,Euromicro Conference on Real-Time Systems,B,https://portal.core.edu.au/conf-ranks/463/
+ESWC,Extended Semantic Web Conference,B,https://portal.core.edu.au/conf-ranks/2021/
+IC2E,International Conference on Cloud Engineering,B,https://portal.core.edu.au/conf-ranks/2332/
+WG,International Workshop on Graph-Theoretic Concepts in Computer Science,B,https://portal.core.edu.au/conf-ranks/1484/
+MFCS,International Symposium on Mathematical Foundations of Computer Science,B,https://portal.core.edu.au/conf-ranks/1398/
+CHIIR,ACM SIGIR Conference on Human Information Interaction And Retrieval,B,https://portal.core.edu.au/conf-ranks/2335/
+FOSSACS,Foundations of Software Science and Computational Structures,B,https://portal.core.edu.au/conf-ranks/547/
+CAIN,International Conference on AI Engineering – Software Engineering for AI,B,https://portal.core.edu.au/conf-ranks/2337/
+ISPASS,IEEE International Symposium on Performance Analysis of Systems and Software,B,https://portal.core.edu.au/conf-ranks/705/
+ETS,IEEE European Test Symposium,B,https://portal.core.edu.au/conf-ranks/2316/
+FM,International Symposium on Formal Methods,B,https://portal.core.edu.au/conf-ranks/540/
+CCGRID,"IEEE International Symposium on Cluster, Cloud and Grid Computing",B,https://portal.core.edu.au/conf-ranks/695/
+ISSAC,International Symposium on Symbolic and Algebraic Computation,B,https://portal.core.edu.au/conf-ranks/1420/
+SmartComp,IEEE International Conference on Smart Computing,B,https://portal.core.edu.au/conf-ranks/2339/
+DIMVA,"GI International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment",B,https://portal.core.edu.au/conf-ranks/565/
+XP,Conference on Agile Software Development,B,https://portal.core.edu.au/conf-ranks/355/
+CPP,Certified Programs and Proofs,B,https://portal.core.edu.au/conf-ranks/2341/
+JELIA,"Logics in Artificial Intelligence, European Conference",B,https://portal.core.edu.au/conf-ranks/1598/
+DASFAA,International Conference on Database Systems for Advanced Applications,B,https://portal.core.edu.au/conf-ranks/988/
+ITP,Conference on Interactive Theorem Proving,B,https://portal.core.edu.au/conf-ranks/1245/
+ICCP,IEEE International Conference on Computational Photography,B,https://portal.core.edu.au/conf-ranks/2343/
+SCA,ACM SIGGRAPH/Eurographics Symposium on Computer Animation,B,https://portal.core.edu.au/conf-ranks/42/
+FSE,International Workshop on Fast Software Encryption,B,https://portal.core.edu.au/conf-ranks/1475/
+SoCS,The Symposium of Combinatorial Search,B,https://portal.core.edu.au/conf-ranks/2212/
+ACII,International Conference on Affective Computing and Intelligent,B,https://portal.core.edu.au/conf-ranks/901/
+VRST,ACM Virtual Reality Software and Technology,B,https://portal.core.edu.au/conf-ranks/67/
+RO-MAN,IEEE International Conference on Robot and Human Interactive Communication,B,https://portal.core.edu.au/conf-ranks/2345/
+HCOMP,AAAI Conference on Human Computation and Crowdsourcing,B,https://portal.core.edu.au/conf-ranks/2264/
+C&C,Creativity and Cognition,B,https://portal.core.edu.au/conf-ranks/2346/
+CONCUR,International Conference on Concurrency Theory,B,https://portal.core.edu.au/conf-ranks/973/
+ACNS,International Conference on Applied Cryptography and Network Security,B,https://portal.core.edu.au/conf-ranks/907/
+CHASE,International Conference on Cooperative and Human Aspects of Software Engineering,B,https://portal.core.edu.au/conf-ranks/2348/
+ITiCSE,Annual Conference on Innovation and Technology in Computer Science Education,B,https://portal.core.edu.au/conf-ranks/126/
+Automotive_UI,International ACM Conference on Automotive User Interfaces and Interactive Vehicular Applications,B,https://portal.core.edu.au/conf-ranks/2349/
+Persuasive,International Conference on Persuasive Technology,B,https://portal.core.edu.au/conf-ranks/1170/
+PacificVis,IEEE Pacific Visualization Symposium,B,https://portal.core.edu.au/conf-ranks/724/
+CBMS,IEEE International Symposium on Computer-Based Medical Systems,B,https://portal.core.edu.au/conf-ranks/2350/
+ASPDAC,Asia and South Pacific Design Automation Conference,B,https://portal.core.edu.au/conf-ranks/162/
+FPL,Field Programmable Logic and Applications,B,https://portal.core.edu.au/conf-ranks/2318/
+SAP,ACM Symposium on Applied Perception,B,https://portal.core.edu.au/conf-ranks/2352/
+L@S,ACM Conference on Learning @ Scale,B,https://portal.core.edu.au/conf-ranks/2355/
+ALT,Algorithmic Learning Theory,B,https://portal.core.edu.au/conf-ranks/106/
+IPCO,Conference on Integer Programming and Combinatorial Optimization,B,https://portal.core.edu.au/conf-ranks/370/
+TARK,Theoretical Aspects of Rationality and Knowledge,B,https://portal.core.edu.au/conf-ranks/1814/
+TCC,Theory of Cryptography Conference,B,https://portal.core.edu.au/conf-ranks/1815/
+MOBIHOC,ACM Symposium on Mobile Ad Hoc Networking and Computing,B,https://portal.core.edu.au/conf-ranks/58/
+ACCV,Asian Conference on Computer Vision,B,https://portal.core.edu.au/conf-ranks/167/
+ACIIDS,Asian Conference on Intelligent Information and Database Systems,B,https://portal.core.edu.au/conf-ranks/2188/
+ACIVS,Advanced Concepts for Intelligent Vision Systems,B,https://portal.core.edu.au/conf-ranks/89/
+ACM_WiSec,ACM Conference on Security and Privacy in Wireless and Mobile Networks,B,https://portal.core.edu.au/conf-ranks/2313/
+AIME,International Conference on Artificial Intelligence in Medicine,B,https://portal.core.edu.au/conf-ranks/151/
+AiML,Advances in Modal Logic,B,https://portal.core.edu.au/conf-ranks/97/
+AINA,International Conference on Advanced Information Networking and Applications,B,https://portal.core.edu.au/conf-ranks/890/
+APBC,Asia-Pacific Bioinformatics Conference,B,https://portal.core.edu.au/conf-ranks/175/
+APLAS,ASIAN Symposium on Programming Languages and Systems,B,https://portal.core.edu.au/conf-ranks/171/
+ARES,"International Conference on Availability, Reliability and Security",B,https://portal.core.edu.au/conf-ranks/923/
+ASONAM,IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining,B,https://portal.core.edu.au/conf-ranks/2311/
+ATVA,International Symposium on Automated Technology for Verification and Analysis,B,https://portal.core.edu.au/conf-ranks/1357/
+AVI,Advanced Visual Interfaces,B,https://portal.core.edu.au/conf-ranks/93/
+AVSS,IEEE International Conference on Advanced Video and Signal Based Surveillance,B,https://portal.core.edu.au/conf-ranks/92/
+BigData,IEEE International Conference on Big Data,B,https://portal.core.edu.au/conf-ranks/2274/
+CALCO,Conference on Algebra and Coalgebra in Computer Science,B,https://portal.core.edu.au/conf-ranks/2291/
+CANS,International Conference on Cryptology and Network Security,B,https://portal.core.edu.au/conf-ranks/982/
+CASC,Computer Algebra in Scientific Computing,B,https://portal.core.edu.au/conf-ranks/2289/
+CC,International Conference on Compiler Construction,B,https://portal.core.edu.au/conf-ranks/936/
+CEC,IEEE Congress on Evolutionary Computation,B,https://portal.core.edu.au/conf-ranks/2061/
+PKC,International Conference on Practice and Theory in Public Key Cryptography,B,https://portal.core.edu.au/conf-ranks/1279/
+PPoPP,Principles and Practice of Parallel Programming,B,https://portal.core.edu.au/conf-ranks/1691/
+PRICAI,Pacific Rim International Conference on Artificial Intelligence,B,https://portal.core.edu.au/conf-ranks/1661/
+PRIMA,International Conference on Principles of Practice in Multi-Agent Systems (prior to 2009 was Pacific Rim International Workshop on Multi-Agents),B,https://portal.core.edu.au/conf-ranks/1663/
+PROFES,Product Focused Software Process Improvement,B,https://portal.core.edu.au/conf-ranks/1696/
+QoMEX,International Conference on Quality of Multimedia Experience,B,https://portal.core.edu.au/conf-ranks/2312/
+RCIS,International Conference on Research Challenges in Information Science,B,https://portal.core.edu.au/conf-ranks/1192/
+RECOMB,International Conference on Computational Molecular Biology,B,https://portal.core.edu.au/conf-ranks/950/
+REFSQ,International Workshop on Requirements Engineering: Foundation for Software Quality,B,https://portal.core.edu.au/conf-ranks/1521/
+RTCSA,International Conference on Embedded and Real Time Computing Systems and Applications,B,https://portal.core.edu.au/conf-ranks/1186/
+RuleML+RR,International Joint Conference on Rules and Reasoning,B,https://portal.core.edu.au/conf-ranks/2216/
+RV,International Conference on Runtime Verification,B,https://portal.core.edu.au/conf-ranks/1932/
+SAC,Selected Areas in Cryptography,B,https://portal.core.edu.au/conf-ranks/138/
+SAFECOMP,"International Conference on Computer Safety, Reliability and Security",B,https://portal.core.edu.au/conf-ranks/961/
+SAGT,International Symposium on Algorithmic Game Theory,B,https://portal.core.edu.au/conf-ranks/1348/
+SAS,Static Analysis Symposium,B,https://portal.core.edu.au/conf-ranks/1763/
+SEA,International Symposium on Experimental Algorithms,B,https://portal.core.edu.au/conf-ranks/1378/
+SEAA,Euromicro Conference on Software Engineering and Advanced Applications,B,https://portal.core.edu.au/conf-ranks/464/
+SECON,"IEEE International Conference on Sensing, Communication and Networking",B,https://portal.core.edu.au/conf-ranks/610/
+SEFM,International Conference on Software Engineering and Formal Methods,B,https://portal.core.edu.au/conf-ranks/1211/
+SERVICES,IEEE Congress on Services,B,https://portal.core.edu.au/conf-ranks/615/
+SGP,Symposium on Geometry Processing,B,https://portal.core.edu.au/conf-ranks/1784/
+SIGdial,Annual Meeting of the Special Interest Group on Discourse and Dialog,B,https://portal.core.edu.au/conf-ranks/1729/
+SIROCCO,International Colloquium on Structural Information and Communication Complexity,B,https://portal.core.edu.au/conf-ranks/866/
+SISAP,International Conference on Similarity Search and Applications,B,https://portal.core.edu.au/conf-ranks/2240/
+SLE,International Conference on Software Language Engineering,B,https://portal.core.edu.au/conf-ranks/1215/
+SMC,"IEEE Conference on Systems, Man and Cybernetics",B,https://portal.core.edu.au/conf-ranks/611/
+SOFSEM,Current Trends in Theory and Practice of Computer Science,B,https://portal.core.edu.au/conf-ranks/407/
+SPAA,Symposium on Parallelism in Algorithms and Architectures,B,https://portal.core.edu.au/conf-ranks/1790/
+SPLC,Software Product Lines Conference,B,https://portal.core.edu.au/conf-ranks/2282/
+SRDS,Symposium on Reliable Distributed Systems,B,https://portal.core.edu.au/conf-ranks/1792/
+SSBSE,International Symposium on Search Based Software Engineering,B,https://portal.core.edu.au/conf-ranks/2283/
+SSDBM,International Conference on Scientific and Statistical Data Base Management,B,https://portal.core.edu.au/conf-ranks/1197/
+SSPR,Structural and Syntactical Pattern Recognition,B,https://portal.core.edu.au/conf-ranks/1766/
+SSTD,International Symposium on Spatial and Temporal Databases,B,https://portal.core.edu.au/conf-ranks/1416/
+TABLEAUX,International Conference on Theorem Proving with Analytic Tableaux and Related Methods,B,https://portal.core.edu.au/conf-ranks/1246/
+TechDebt,International Conference on Technical Debt,B,https://portal.core.edu.au/conf-ranks/2288/
+TEI,"Tangible, Embedded, and Embodied Interaction",B,https://portal.core.edu.au/conf-ranks/1798/
+TPDL,International Conference on Theory and Practice of Digital Libraries,B,https://portal.core.edu.au/conf-ranks/2013/
+TrustBus,"International Conference on Trust, Privacy and Security in Digital Business",B,https://portal.core.edu.au/conf-ranks/1253/
+TrustCom,"International Conference on Trust, Security and Privacy in Computing and Communications",B,https://portal.core.edu.au/conf-ranks/790/
+VEE,International Conference on Virtual Execution Environments,B,https://portal.core.edu.au/conf-ranks/1262/
+VISSOFT,IEEE International Working Conference on Software Visualisation,B,https://portal.core.edu.au/conf-ranks/720/
+VL/HCC,IEEE Symposium on Visual Languages and Human-Centric Computing,B,https://portal.core.edu.au/conf-ranks/752/
+VMCAI,"Verification, Model Checking and Abstract Interpretation",B,https://portal.core.edu.au/conf-ranks/1847/
+VTC,IEEE Vehicular Technology Conference,B,https://portal.core.edu.au/conf-ranks/757/
+WADS,Algorithms and Data Structures Symposium,B,https://portal.core.edu.au/conf-ranks/108/
+WALCOM,International Conference and Workshops on Algorithms and Computation,B,https://portal.core.edu.au/conf-ranks/1448/
+WAOA,Workshop on Approximation and Online Algorithms,B,https://portal.core.edu.au/conf-ranks/1879/
+WCNC,IEEE Wireless Communications and Networking Conference,B,https://portal.core.edu.au/conf-ranks/760/
+WI,IEEE/WIC/ACM International Conference on Web Intelligence,B,https://portal.core.edu.au/conf-ranks/794/
+WiMob,"IEEE International Conference on Wireless and Mobile Computing, Networking and Communications",B,https://portal.core.edu.au/conf-ranks/679/
+WiOpt,"International Symposium on Modelling and Optimization in Mobile, Ad Hoc, and Wireless Networks",B,https://portal.core.edu.au/conf-ranks/1401/
+WISE,International Conference on Web Information Systems Engineering,B,https://portal.core.edu.au/conf-ranks/1271/
+PKAW,Pacific Rim Knowledge Acquisition Workshop,C,https://portal.core.edu.au/conf-ranks/1664/
+PLOP,Pattern Languages of Programs,C,https://portal.core.edu.au/conf-ranks/1680/
+PLOS,Workshop on Programming Languages and Operating Systems,C,https://portal.core.edu.au/conf-ranks/1927/
+PPDP,International Conference on Principles and Practice of Declarative Programming,C,https://portal.core.edu.au/conf-ranks/1176/
+PQCrypto,International Workshop on Post-Quantum Cryptography,C,https://portal.core.edu.au/conf-ranks/1514/
+PRDC,Pacific Rim International Symposium on Dependable Computing,C,https://portal.core.edu.au/conf-ranks/1662/
+PRO-VE,IFIP Working Conferences on Virtual Enterprises,C,https://portal.core.edu.au/conf-ranks/809/
+ProvSec,International Conference on Provable Security,C,https://portal.core.edu.au/conf-ranks/1182/
+PSD,Privacy in Statistical Databases,C,https://portal.core.edu.au/conf-ranks/1693/
+PSIVT,Pacific-Rim Symposium on Image and Video Technology,C,https://portal.core.edu.au/conf-ranks/1670/
+PST,"Annual Conference on Privacy, Security and Trust",C,https://portal.core.edu.au/conf-ranks/127/
+Qshine,"International Conference on Heterogeneous Networking for Quality, Reliability, Security and Robustness",C,https://portal.core.edu.au/conf-ranks/1184/
+RAMiCS,International Conference on Relational and AlgebraicMethods in Computer Science,C,https://portal.core.edu.au/conf-ranks/1189/
+RC,International Conference on Reversible Computation,C,https://portal.core.edu.au/conf-ranks/2309/
+RoboCup,Robot Soccer World Cup,C,https://portal.core.edu.au/conf-ranks/1708/
+RSP,IEEE International Symposium on Rapid System Prototyping,C,https://portal.core.edu.au/conf-ranks/749/
+SACMAT,ACM Symposium on Access Control Models and Technologies,C,https://portal.core.edu.au/conf-ranks/1775/
+SAFEProcess,"IFAC Symposium on Fault Detection, Supervision and Safety of Technical Processes",C,https://portal.core.edu.au/conf-ranks/797/
+SASHIMI,Simulation and Synthesis in Medical Imaging,C,https://portal.core.edu.au/conf-ranks/2222/
+SBAC-PAD,International Symposium on Computer Architecture and High Performance Computing,C,https://portal.core.edu.au/conf-ranks/1370/
+SCOPES,International Workshop on Software and Compilers for Embedded Systems,C,https://portal.core.edu.au/conf-ranks/1529/
+SDH,International Symposium on Spatial Data Handling,C,https://portal.core.edu.au/conf-ranks/1413/
+SECRYPT,International Conference on Information Security and Cryptography,C,https://portal.core.edu.au/conf-ranks/1076/
+SEKE,International Conference on Software Engineering and Knowledge Engineering,C,https://portal.core.edu.au/conf-ranks/1212/
+SERA,"ACIS Conference on Software Engineering Research, Management and Applications",C,https://portal.core.edu.au/conf-ranks/9/
+SETA,International Conference on Sequences and their Applications,C,https://portal.core.edu.au/conf-ranks/1203/
+SEW,IEEE Software Engineering Workshop,C,https://portal.core.edu.au/conf-ranks/726/
+SIN,International Conference on Security of Information and Networks,C,https://portal.core.edu.au/conf-ranks/1200/
+SNPD,"International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing",C,https://portal.core.edu.au/conf-ranks/1214/
+SoMeT,"International Conference on Intelligent Software Methodologies, Tools, and Techniques",C,https://portal.core.edu.au/conf-ranks/1216/
+SPICE,Software Process Improvement and Capability Determination,C,https://portal.core.edu.au/conf-ranks/2136/
+SPIRE,International Symposium on String Processing and Information Retrieval,C,https://portal.core.edu.au/conf-ranks/1418/
+SPM,ACM Symposium on Solid and Physical Modelling,C,https://portal.core.edu.au/conf-ranks/64/
+SQM,International Conference on Software Quality Management,C,https://portal.core.edu.au/conf-ranks/1219/
+SSS,"Symposium on Stabilization, Safety, and Security of Distributed Systems",C,https://portal.core.edu.au/conf-ranks/1794/
+SSSC,IFAC Conference on System Structure and Control,C,https://portal.core.edu.au/conf-ranks/796/
+TAMC,Conference on Theory and Applications of Models of Computation,C,https://portal.core.edu.au/conf-ranks/384/
+TAP,International Conference on Tests and Proofs,C,https://portal.core.edu.au/conf-ranks/1236/
+Tencon,IEEE Region 10 Conference,C,https://portal.core.edu.au/conf-ranks/756/
+TIME,International Symposium on Temporal Representation and Reasoning,C,https://portal.core.edu.au/conf-ranks/1424/
+UBICOMM,"International Conference on Mobile Ubiquitous Computing, Systems, Services and Technologies",C,https://portal.core.edu.au/conf-ranks/1134/
+UC,International Conference on Unconventional Computation and Natural Computation,C,https://portal.core.edu.au/conf-ranks/1255/
+UIC,International Conference on Ubiquitous Intelligence and Computing,C,https://portal.core.edu.au/conf-ranks/1254/
+VCIP,IEEE International Conference on Visual Communications and Image Processing,C,https://portal.core.edu.au/conf-ranks/1757/
+VECoS,The International Conference on Verification and Evaluation of Computer and Communication Systems,C,https://portal.core.edu.au/conf-ranks/2213/
+VEHITS,International Conference on Vehicle Technology and Intelligent Transport Systems,C,https://portal.core.edu.au/conf-ranks/2299/
+VINCI,Visual Information Communication and Interaction,C,https://portal.core.edu.au/conf-ranks/1853/
+VizSec,International Workshop on Visualization for Cyber Security,C,https://portal.core.edu.au/conf-ranks/1540/
+W2GIS,International Workshop on Web and Wireless Geographical Information Systems,C,https://portal.core.edu.au/conf-ranks/1541/
+WABI,Workshop on Algorithms in Bioinformatics,C,https://portal.core.edu.au/conf-ranks/1874/
+WAFR,International Workshop on the Algorithmic Foundations of Robotics,C,https://portal.core.edu.au/conf-ranks/1536/
+WAIFI,Workshop on the Arithmetic of Finite Fields,C,https://portal.core.edu.au/conf-ranks/1936/
+WAW,Workshop on Algorithms And Models For The Web Graph,C,https://portal.core.edu.au/conf-ranks/1873/
+WCO,Workshop on Computational Optimization,C,https://portal.core.edu.au/conf-ranks/1891/
+WETICE,International Workshops on Enabling Technologies: Infrastructures for Collaborative Enterprises,C,https://portal.core.edu.au/conf-ranks/1546/
+WISTP,Workshop in Information Security Theory and Practices,C,https://portal.core.edu.au/conf-ranks/1867/
+WoLLIC,"Workshop on Logic, Language, Information and Computation",C,https://portal.core.edu.au/conf-ranks/1912/
+WorldCIST,World Conference on Information Systems and Technologies,C,https://portal.core.edu.au/conf-ranks/2181/
+ETFA,IEEE International Conference on Emerging Technologies and Factory Automation,C,https://portal.core.edu.au/conf-ranks/2322/
+CIARP,IberoAmerican Congress on Pattern Recognition,C,https://portal.core.edu.au/conf-ranks/592/
+CIBCB,IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology,C,https://portal.core.edu.au/conf-ranks/737/
+CICLING,International Conference on Intelligent Text Processing and Computational Linguistics,C,https://portal.core.edu.au/conf-ranks/1099/
+CICM,Conference on Intelligent Computer Mathematics,C,https://portal.core.edu.au/conf-ranks/2292/
+CIDM,IEEE Symposium on Computational Intelligence and Data Mining,C,https://portal.core.edu.au/conf-ranks/731/
+CiE,Computability in Europe: Logic and Theory of Algorithms,C,https://portal.core.edu.au/conf-ranks/326/
+CIMA,International Workshop on Combinations of Intelligent Methods and Applications,C,https://portal.core.edu.au/conf-ranks/1458/
+CIS,IEEE International Conference on Cybernetics and Intelligent Systems,C,https://portal.core.edu.au/conf-ranks/641/
+CISIS,"International Conference on Complex, Intelligent and Software Intensive Systems",C,https://portal.core.edu.au/conf-ranks/939/
+CIT,IEEE International Conference on Computer and Information Technology,C,https://portal.core.edu.au/conf-ranks/637/
+CLEI,Latin American Conference on Informatics,C,https://portal.core.edu.au/conf-ranks/1589/
+CLOSER,International Conference on Cloud Computing and Services Science,C,https://portal.core.edu.au/conf-ranks/2300/
+CloudCom,IEEE International Conference on Cloud Computing Technology and Science (International Conference on Cloud Computing pre 2010),C,https://portal.core.edu.au/conf-ranks/931/
+COCOA,Conference on Combinatorial Optimization and Applications,C,https://portal.core.edu.au/conf-ranks/361/
+CoDIT,"International Conference on Control, Decision and Information Technologies",C,https://portal.core.edu.au/conf-ranks/2286/
+COINE,"International Workshop on Coordination, Organizations, Institutions, Norms and Ethics for Governance of Multi-Agent Systems (Ethics added 2020)",C,https://portal.core.edu.au/conf-ranks/2160/
+COMPLEXIS,"International Conference on Complexity, Future Information Systems and Risk",C,https://portal.core.edu.au/conf-ranks/2294/
+Coordination,International Conference on Coordination Models and Languages,C,https://portal.core.edu.au/conf-ranks/980/
+COPLAS,Workshop on Constraint Satisfaction for Planning and Scheduling,C,https://portal.core.edu.au/conf-ranks/1893/
+CRiSIS,International Conference on Risks and Security of Internet and Systems,C,https://portal.core.edu.au/conf-ranks/1193/
+CRITIS,International Workshop on Critical Information Infrastructures Security,C,https://portal.core.edu.au/conf-ranks/1463/
+CSCWD,International Conference on Computer Supported Cooperative Work in Design,C,https://portal.core.edu.au/conf-ranks/962/
+CSEET,Conference on Software Engineering Education and Training,C,https://portal.core.edu.au/conf-ranks/380/
+CTW,Cologne-Twente Workshop on Graphs and Combinatorial Optimization,C,https://portal.core.edu.au/conf-ranks/319/
+CW,International Conference on Cyberworlds,C,https://portal.core.edu.au/conf-ranks/985/
+DAFX,Digital Audio Effects Conference,C,https://portal.core.edu.au/conf-ranks/1997/
+DAIS,IFIP International Conference on Distributed Applications and Interoperable Systems,C,https://portal.core.edu.au/conf-ranks/801/
+DaMoN,International Workshop on Data Management on New Hardware,C,https://portal.core.edu.au/conf-ranks/2238/
+DASC,"International Conference on Dependable, Autonomic and Secure Computing",C,https://portal.core.edu.au/conf-ranks/992/
+DC,International Conference on Dublin Core and Metadata Applications,C,https://portal.core.edu.au/conf-ranks/1004/
+DeSE,Developments in eSystems Engineering,C,https://portal.core.edu.au/conf-ranks/2177/
+DEXA,International Conference on Database and Expert Systems Applications,C,https://portal.core.edu.au/conf-ranks/987/
+DIAGRAMS,The Theory and Application of Diagrams,C,https://portal.core.edu.au/conf-ranks/1812/
+DIGRA,Digital Games Research Conference,C,https://portal.core.edu.au/conf-ranks/427/
+DLS,Dynamic Languages Symposium,C,https://portal.core.edu.au/conf-ranks/439/
+DLT,Developments in Language Theory,C,https://portal.core.edu.au/conf-ranks/425/
+DM,SIAM Conference on Discrete Mathematics,C,https://portal.core.edu.au/conf-ranks/1724/
+DS-RT,International Symposium on Distributed Simulation and Real Time Applications,C,https://portal.core.edu.au/conf-ranks/696/
+DSM,Workshop on Domain Specific Modelling,C,https://portal.core.edu.au/conf-ranks/1900/
+DX,International Workshop on Principles of Diagnosis,C,https://portal.core.edu.au/conf-ranks/2009/
+EAMT,Conference of the European Association for Machine Translation,C,https://portal.core.edu.au/conf-ranks/352/
+EANN,International Conference on Engineering Applications of Neural Networks,C,https://portal.core.edu.au/conf-ranks/1011/
+EATIS,EURO AMERICAN CONFERENCE ON TELEMATICS AND INFORMATION SYSTEMS,C,https://portal.core.edu.au/conf-ranks/2170/
+ECCB,European Conference on Computational Biology,C,https://portal.core.edu.au/conf-ranks/475/
+ECCO,European Chapter on Combinatorial Optimization,C,https://portal.core.edu.au/conf-ranks/469/
+ECDG,European Conference on Digital Government,C,https://portal.core.edu.au/conf-ranks/480/
+ED-MEDIA,"World Conference on Educational Multimedia, Hypermedia and Telecommunications",C,https://portal.core.edu.au/conf-ranks/2014/
+EGPGV,Eurographics Symposium on Parallel Graphics and Visualization,C,https://portal.core.edu.au/conf-ranks/460/
+EGVE,International Conference on Artificial Reality and Telexistance & Eurographics Symposium on Virtual Environments,C,https://portal.core.edu.au/conf-ranks/461/
+EJC,European-Japanese Conference on Information Modelling and Knowledge Bases,C,https://portal.core.edu.au/conf-ranks/524/
+EMMSAD,Exploring Modelling Methods in Systems Analysis and Design,C,https://portal.core.edu.au/conf-ranks/527/
+ENTER,International Conference on Information and Communication Technologies in Tourism,C,https://portal.core.edu.au/conf-ranks/1067/
+EOMAS,International Workshop on Enterprise and Organizational Modelling and Simulation,C,https://portal.core.edu.au/conf-ranks/1471/
+ETHICOMP,ETHICOMP Conference,C,https://portal.core.edu.au/conf-ranks/457/
+EUC,IEEE/IFIP International Conference on Embedded and Ubiquitous Computing,C,https://portal.core.edu.au/conf-ranks/788/
+EUMAS,European Conference on Multi-Agent Systems,C,https://portal.core.edu.au/conf-ranks/521/
+EURO,European Conference on Operations Research,C,https://portal.core.edu.au/conf-ranks/489/
+EuroCG,European Workshop on Computational Geometry,C,https://portal.core.edu.au/conf-ranks/519/
+EUroComb,"EuroConference on Combinatorics, Graph Theory and Applications",C,https://portal.core.edu.au/conf-ranks/459/
+EuroMPI,European MPI Users' Group Conference,C,https://portal.core.edu.au/conf-ranks/505/
+EuroVA,Visual Analytics,C,https://portal.core.edu.au/conf-ranks/1851/
+EUSFLAT,Conference of the European Society for Fuzzy Logic and Technologies,C,https://portal.core.edu.au/conf-ranks/2217/
+FDG,International Conference on the Foundations of Digital Games,C,https://portal.core.edu.au/conf-ranks/1238/
+FDL,Forum on Specification and Design Languages,C,https://portal.core.edu.au/conf-ranks/544/
+FDTC,Workshop on Fault Diagnosis and Tolerance in Cryptography,C,https://portal.core.edu.au/conf-ranks/1904/
+FIE,Frontiers in Education,C,https://portal.core.edu.au/conf-ranks/2027/
+FLINS,International FLINS Conference on Robotics and Artificial Intelligence,C,https://portal.core.edu.au/conf-ranks/1303/
+FMICS,Int. Workshop on Formal Methods for Industrial Critical Systems,C,https://portal.core.edu.au/conf-ranks/839/
+FMIS,International Workshop on Formal Methods for interactive Systems,C,https://portal.core.edu.au/conf-ranks/1476/
+FORTE,"IFIP Joint International Conference on Formal Description Techniques and Protocol Specification, Testing, And Verification",C,https://portal.core.edu.au/conf-ranks/805/
+FQAS,Flexible Query-Answering Systems,C,https://portal.core.edu.au/conf-ranks/537/
+FTfJP,Workshop on Formal Techniques for Java-like Programs,C,https://portal.core.edu.au/conf-ranks/1905/
+FUSION,International Conference on Information Fusion,C,https://portal.core.edu.au/conf-ranks/1072/
+GI,IEEE Global Internet Symposium,C,https://portal.core.edu.au/conf-ranks/620/
+GMP,Geometry Modeling and Processing,C,https://portal.core.edu.au/conf-ranks/560/
+GPC,"International Conference on Green, Pervasive and Cloud Computing",C,https://portal.core.edu.au/conf-ranks/1044/
+Graph-hoc,Workshop on Applications of Graph Theory in Wireless Ad hoc Networks and Sensor Networks,C,https://portal.core.edu.au/conf-ranks/1878/
+GWC,International Wordnet Conference (Global Wordnet Conference),C,https://portal.core.edu.au/conf-ranks/1439/
+HASKELL,Haskell Workshop,C,https://portal.core.edu.au/conf-ranks/574/
+HCW,Heterogeneity in Computing Workshop,C,https://portal.core.edu.au/conf-ranks/579/
+HealthCom,IEEE international conference on ehealth networking applications and services,C,https://portal.core.edu.au/conf-ranks/1472/
+HIPS,International Workshop on High-Level Parallel Programming Models and Supportive Environments,C,https://portal.core.edu.au/conf-ranks/1487/
+HIS,International Conference on Hybrid Intelligent Systems,C,https://portal.core.edu.au/conf-ranks/1056/
+HLPP,International workshop on High-Level Parallel Programming and Applications,C,https://portal.core.edu.au/conf-ranks/1486/
+HOTCHIPS (HCS),Symposium on High Performance Chips,C,https://portal.core.edu.au/conf-ranks/2033/
+HPC Asia,International Conference and Exhibition on High Performance Computing in the Asia-Pacific Region,C,https://portal.core.edu.au/conf-ranks/873/
+HPCC,IEEE International Conference on High Performance Computing and Communications,C,https://portal.core.edu.au/conf-ranks/652/
+HPSR,IEEE Workshop on High Performance Switching and Routing,C,https://portal.core.edu.au/conf-ranks/771/
+HSI,Human System Interaction,C,https://portal.core.edu.au/conf-ranks/584/
+I4CS,International Conference on Innovations for Community Services,C,https://portal.core.edu.au/conf-ranks/837/
+IAAI,Innovative Applications in AI,C,https://portal.core.edu.au/conf-ranks/836/
+IADIS AC,IADIS International Conference Applied Computing,C,https://portal.core.edu.au/conf-ranks/2036/
+IAS,International Symposium on Information Assurance and Security,C,https://portal.core.edu.au/conf-ranks/1388/
+IC3K,"International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management",C,https://portal.core.edu.au/conf-ranks/1316/
+ICA3PP,International Conference on Algorithms and Architectures for Parallel Processing,C,https://portal.core.edu.au/conf-ranks/905/
+ICAIL,International Conference on Artificial Intelligence and Law,C,https://portal.core.edu.au/conf-ranks/910/
+ICARCV,"International Conference on Control, Automation, Robotics and Vision",C,https://portal.core.edu.au/conf-ranks/977/
+ICBC,IEEE International Conference on Blockchain and Cryptocurrency,C,https://portal.core.edu.au/conf-ranks/2304/
+ICCAM,International Congress on Computational and Applied Mathematics,C,https://portal.core.edu.au/conf-ranks/1288/
+ICCBR,International Conference on Case-Based Reasoning,C,https://portal.core.edu.au/conf-ranks/928/
+ICCC,International Conference on Computational Creativity,C,https://portal.core.edu.au/conf-ranks/2199/
+ICCHP,International Conference on Computers Helping People with Special Needs,C,https://portal.core.edu.au/conf-ranks/966/
+ICCI,IEEE International Conference on Cognitive Informatics,C,https://portal.core.edu.au/conf-ranks/633/
+ICCSA,International Conference on Communication Systems and Applications,C,https://portal.core.edu.au/conf-ranks/2046/
+ICCSA,International Conference on Computational Science and its Applications,C,https://portal.core.edu.au/conf-ranks/953/
+ICDS,International Conference on Digital Society,C,https://portal.core.edu.au/conf-ranks/997/
+ICEC,International Conference on Electronic Commerce,C,https://portal.core.edu.au/conf-ranks/1006/
+ICEC,International Conference on Entertainment Computing,C,https://portal.core.edu.au/conf-ranks/1019/
+ICFCA,International Conference Formal Concept Analysis Conference,C,https://portal.core.edu.au/conf-ranks/876/
+ICFEC,IEEE International Conference on Fog and Edge Computing,C,https://portal.core.edu.au/conf-ranks/2248/
+ICFEM,International Conference on Formal Engineering Methods,C,https://portal.core.edu.au/conf-ranks/1031/
+ICGSE,IEEE International Conference on Global Software Engineering,C,https://portal.core.edu.au/conf-ranks/650/
+ICICS,International Conference on Information and Communications Security,C,https://portal.core.edu.au/conf-ranks/1068/
+ICICSE,International Conference on Internet Computing in Science and Engineering,C,https://portal.core.edu.au/conf-ranks/1106/
+ICIMP,International Conference on Internet Monitoring and Protection,C,https://portal.core.edu.au/conf-ranks/1107/
+ICIS,IEEE/ACIS International Conference on Computer and Information Science,C,https://portal.core.edu.au/conf-ranks/782/
+ICISP,International Conference on Image and Signal Processing,C,https://portal.core.edu.au/conf-ranks/1060/
+ICIW,International Conference on Internet and Web Applications and Services,C,https://portal.core.edu.au/conf-ranks/1104/
+ICMLA,International Conference on Machine Learning and Applications,C,https://portal.core.edu.au/conf-ranks/1122/
+ICMV,International Conference on Machine Vision,C,https://portal.core.edu.au/conf-ranks/1124/
+ICOCI,International Conference on Computing and Informatics,C,https://portal.core.edu.au/conf-ranks/970/
+ICORES,International Conference on Operations Research and Enterprise Systems,C,https://portal.core.edu.au/conf-ranks/2220/
+ICOST,International Conference on Smart homes and health Telematics,C,https://portal.core.edu.au/conf-ranks/2178/
+ICOTA,International Conference on Optimization: Techniques And Applications,C,https://portal.core.edu.au/conf-ranks/1160/
+ICPRAM,International Conference on Pattern Recognition Applications and Methods,C,https://portal.core.edu.au/conf-ranks/2230/
+ICSEA,International Conference on Software Engineering Advances,C,https://portal.core.edu.au/conf-ranks/1210/
+ICSEng,International Conference on Systems Engineering,C,https://portal.core.edu.au/conf-ranks/1229/
+ICT4AWE,International Conference on Information and Communication Technologies for Ageing Well and e-Health,C,https://portal.core.edu.au/conf-ranks/2241/
+ICTAC,International Colloquium on Theoretical Aspects of Computing,C,https://portal.core.edu.au/conf-ranks/867/
+ICTD,International Conference on Information and Communication Technologies and Development,C,https://portal.core.edu.au/conf-ranks/1066/
+ICTSS,International Conference on Testing Software and Systems,C,https://portal.core.edu.au/conf-ranks/2285/
+ICVS,International Conference on Computer Vision Systems,C,https://portal.core.edu.au/conf-ranks/964/
+IDEAL,International Conference on Intelligent Data Engineering and Automated Learning,C,https://portal.core.edu.au/conf-ranks/1093/
+IDEAS,International Database Engineering and Applications Symposium,C,https://portal.core.edu.au/conf-ranks/1297/
+IEA/AIE,International Conference on Industrial and Engineering Applications of Artificial Intelligence and Expert Systems,C,https://portal.core.edu.au/conf-ranks/1064/
+IEEE ADPRL,IEEE International Symposium on Adaptive Dynamic Programming and Reinforcement Learning,C,https://portal.core.edu.au/conf-ranks/692/
+IEEE Alife,IEEE International Symposium on Artificial Life,C,https://portal.core.edu.au/conf-ranks/693/
+IEEE CICA,IEEE Symposium on Computational Intelligence in Control and Automation,C,https://portal.core.edu.au/conf-ranks/738/
+IEEE CICS,IEEE Symposium on Computational Intelligence in Cyber Security,C,https://portal.core.edu.au/conf-ranks/739/
+IEEE CIFEr,IEEE Symposium on Computational Intelligence for Financial Engineering,C,https://portal.core.edu.au/conf-ranks/733/
+IEEE CIMSIVP,IEEE Symposium on Computational intelligence for Multimedia Signal and Vision Processing,C,https://portal.core.edu.au/conf-ranks/735/
+IEEE CISDA,IEEE Symposium on Computational Intelligence for Security and Defence Applications,C,https://portal.core.edu.au/conf-ranks/736/
+IEEE IS,IEEE International Conference on Intelligent Systems,C,https://portal.core.edu.au/conf-ranks/661/
+IEEE SIS,IEEE Swarm Intelligence Symposium,C,https://portal.core.edu.au/conf-ranks/727/
+iEMSs,Intenational Environmental Modelling and Software Society,C,https://portal.core.edu.au/conf-ranks/2065/
+IES,Asia Pacific Symposium on Intelligent and Evolutionary Systems,C,https://portal.core.edu.au/conf-ranks/240/
+IFSA,IFSA World Congress,C,https://portal.core.edu.au/conf-ranks/814/
+IGARSS,IEEE International Geoscience and Remote Sensing Symposium,C,https://portal.core.edu.au/conf-ranks/683/
+IH&MMSec,Information Hiding and Multimedia Security Workshop,C,https://portal.core.edu.au/conf-ranks/1493/
+IJCCI,International Joint Conference on Computational Intelligence,C,https://portal.core.edu.au/conf-ranks/2221/
+IMACC,IMA International Conference on Cryptography and Coding,C,https://portal.core.edu.au/conf-ranks/816/
+InfVis,Information Visualisation Theory and Practice,C,https://portal.core.edu.au/conf-ranks/831/
+INISTA,International Symposium on Innovations in Intelligent Systems and Applications,C,https://portal.core.edu.au/conf-ranks/1391/
+INOC,International Network Optimization Conference,C,https://portal.core.edu.au/conf-ranks/1329/
+InSITE,Informing Science and Information Technology Education,C,https://portal.core.edu.au/conf-ranks/834/
+IoTBDS,"International Conference on Internet of Things, Big Data and Security",C,https://portal.core.edu.au/conf-ranks/2301/
+IPCCC,IEEE International Performance Computing and Communications Conference,C,https://portal.core.edu.au/conf-ranks/689/
+IPMU,International Conference on Information Processing and Management of Uncertainty,C,https://portal.core.edu.au/conf-ranks/1073/
+ISADS,International Symposium on Autonomous Decentralized Systems,C,https://portal.core.edu.au/conf-ranks/1359/
+ISAGA,Conference for the International Simulation and Gaming Association,C,https://portal.core.edu.au/conf-ranks/345/
+ISARC,International Symposium on Automation and Robotics in Construction,C,https://portal.core.edu.au/conf-ranks/1358/
+ISC,Industrial Simulation Conference,C,https://portal.core.edu.au/conf-ranks/820/
+ISC,Information Security Conference,C,https://portal.core.edu.au/conf-ranks/827/
+ISCC,IEEE Symposium on Computers and Communications,C,https://portal.core.edu.au/conf-ranks/744/
+ISCO,International Symposium on Combinatorial Optimisation,C,https://portal.core.edu.au/conf-ranks/1364/
+ISDA,International Conference on Intelligent Systems Designs and Applications,C,https://portal.core.edu.au/conf-ranks/1098/
+ISGC,International Symposium on Grids and Clouds,C,https://portal.core.edu.au/conf-ranks/1385/
+ISI,IEEE International Conference on Intelligence and Security Informatics,C,https://portal.core.edu.au/conf-ranks/658/
+ISITA,International Symposium on Information Theory and Its Applications,C,https://portal.core.edu.au/conf-ranks/1390/
+ISM,IEEE International Symposium on Multimedia,C,https://portal.core.edu.au/conf-ranks/701/
+ISMIS,International Symposium on Foundations of Intelligent Systems,C,https://portal.core.edu.au/conf-ranks/1380/
+ISMM,International Symposium on Memory Management,C,https://portal.core.edu.au/conf-ranks/1400/
+ISNCC,"International Symposium on Networks, Computers and Communications",C,https://portal.core.edu.au/conf-ranks/2204/
+ISNN,International Symposium on Neural Networks,C,https://portal.core.edu.au/conf-ranks/1402/
+ISoLA,"International Symposium on Leveraging Applications of Formal Methods, Verification and Validation",C,https://portal.core.edu.au/conf-ranks/1396/
+ISORC,IEEE International Symposium on Real-Time Distributed Computing,C,https://portal.core.edu.au/conf-ranks/703/
+ISPA,IEEE International Symposium on Parallel and Distributed Processing with Applications,C,https://portal.core.edu.au/conf-ranks/704/
+ISPDC,International Symposium on Parallel and Distributed Computing,C,https://portal.core.edu.au/conf-ranks/1405/
+ISPEC,Information Security Practice and Experience Conference,C,https://portal.core.edu.au/conf-ranks/825/
+ISPR,Annual International Workshop on Presence,C,https://portal.core.edu.au/conf-ranks/132/
+ISRR,International Symposium on Robotics Research,C,https://portal.core.edu.au/conf-ranks/1410/
+ISSDQ,International Symposium on Spatial Data Quality,C,https://portal.core.edu.au/conf-ranks/1415/
+ISTAS,International Symposium on Technology and Society,C,https://portal.core.edu.au/conf-ranks/1423/
+IV,International Conference on Information Visualisation,C,https://portal.core.edu.au/conf-ranks/1087/
+IV-App,Applications of Information Visualization,C,https://portal.core.edu.au/conf-ranks/143/
+IVBI,Information Visualization in Biomedical Informatics,C,https://portal.core.edu.au/conf-ranks/833/
+IWCIA,International Workshop on Combinatorial Image Analysis: Theory and Applications,C,https://portal.core.edu.au/conf-ranks/1460/
+IWDW,International Workshop on Digital Watermarking,C,https://portal.core.edu.au/conf-ranks/1466/
+IWOCA,International Workshop on Combinatorial Algorithm,C,https://portal.core.edu.au/conf-ranks/1459/
+IWSM Mensura,Joint Conference of the International Workshop on Software Measurement and the International Conference on Software Process and Product Measurement (IWSM and Mensura combined from 2007),C,https://portal.core.edu.au/conf-ranks/1218/
+JADT,International Conference on the Statistical Analysis of Textual Data,C,https://portal.core.edu.au/conf-ranks/1241/
+JURIX,International Conference on Legal Knowledge and Information Systems,C,https://portal.core.edu.au/conf-ranks/1117/
+KEOD,International Conference on Knowledge Engineering and Ontology Development,C,https://portal.core.edu.au/conf-ranks/1111/
+KES AMSTA,International KES Conference on Agents and Multiagent systems - Technologies and Applications,C,https://portal.core.edu.au/conf-ranks/1320/
+KES IDT,KES International Symposium on Intelligent Decision Technologies,C,https://portal.core.edu.au/conf-ranks/1579/
+KSEM,"International Conference on Knowledge Science, Engineering and Management",C,https://portal.core.edu.au/conf-ranks/1112/
+KV,Knowledge Visualization and Visual Thinking,C,https://portal.core.edu.au/conf-ranks/1586/
+LAGOS,"Latin-American Algorithms, Graphs and Optimization Symposium",C,https://portal.core.edu.au/conf-ranks/1592/
+LANMAN,IEEE LAN/MAN Workshop,C,https://portal.core.edu.au/conf-ranks/2088/
+LATA,International Conference on Language and Automata Theory and Applications,C,https://portal.core.edu.au/conf-ranks/1115/
+LDK,"Language, Data and Knowledge",C,https://portal.core.edu.au/conf-ranks/2227/
+LOPSTR,International Symposium on Logic-based Program Synthesis and Transformation,C,https://portal.core.edu.au/conf-ranks/1397/
+MABS,International Workshop on MultiAgent Based Simulation,C,https://portal.core.edu.au/conf-ranks/1506/
+MCU,"Machines, Computations and Universality",C,https://portal.core.edu.au/conf-ranks/1834/
+MEDES,International Conference on Management of Digital EcoSystems,C,https://portal.core.edu.au/conf-ranks/2205/
+MEDI,International Conference on Model and Data Engineering,C,https://portal.core.edu.au/conf-ranks/2239/
+MEMOCODE,International Conference on Formal Methods and Models for Co-Design,C,https://portal.core.edu.au/conf-ranks/2279/
+MISE,International Workshop on Modelling in Software Engineering,C,https://portal.core.edu.au/conf-ranks/1504/
+MMSP,International Workshop on Multimedia Signal Processing,C,https://portal.core.edu.au/conf-ranks/1508/
+MPLR,International Conference on Managed Programming Languages and Runtimes,C,https://portal.core.edu.au/conf-ranks/1692/
+MT SUMMIT,Machine Translation Summit,C,https://portal.core.edu.au/conf-ranks/1599/
+MTNS,International Symposium on the Mathematical Theory of Networks and Systems,C,https://portal.core.edu.au/conf-ranks/1425/
+NLDB,Applications of Natural Language to Data Bases,C,https://portal.core.edu.au/conf-ranks/144/
+NPC,IFIP International Conference on Network and Parallel Computing,C,https://portal.core.edu.au/conf-ranks/810/
+NSPW,New Security Paradigms Workshop,C,https://portal.core.edu.au/conf-ranks/1642/
+Onward,"International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software",C,https://portal.core.edu.au/conf-ranks/1653/
+OP,SIAM Conference on Optimization,C,https://portal.core.edu.au/conf-ranks/1726/
+OPENSYM,International Symposium on Open Collaboration,C,https://portal.core.edu.au/conf-ranks/1432/
+PACLIC,"Pacific Asia Conference on Language, Information and Computation",C,https://portal.core.edu.au/conf-ranks/1658/
+PADL,Practical Aspects of Declarative Languages,C,https://portal.core.edu.au/conf-ranks/1686/
+Pairing,International Conference on Pairing-based Cryptography,C,https://portal.core.edu.au/conf-ranks/1161/
+PATAT,Practice and Theory of Automated Timetabling,C,https://portal.core.edu.au/conf-ranks/1688/
+PCS,International Picture Coding Symposium,C,https://portal.core.edu.au/conf-ranks/1331/
+PDCAT,"International Conference on Parallel and Distributed Computing, Applications and Technologies",C,https://portal.core.edu.au/conf-ranks/1162/
+PDP,"Euromicro International Conference on Parallel, Distributed and Network Based Processing",C,https://portal.core.edu.au/conf-ranks/465/
+PEPM,ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation,C,https://portal.core.edu.au/conf-ranks/50/
+IDDM,International Conference on Informatics & Data-Driven Medicine,C,https://portal.core.edu.au/conf-ranks/2276/
+FedCSIS,CONFERENCE ON COMPUTER SCIENCE AND INTELLIGENCE SYSTEMS,C,https://portal.core.edu.au/conf-ranks/2219/
+COMMA,International Conference on Computational Models of Argument,C,https://portal.core.edu.au/conf-ranks/2326/
+ECSQARU,European Conference on Symbolic and Quantitative Approaches to Reasoning with Uncertainty,C,https://portal.core.edu.au/conf-ranks/495/
+MIG,ACM SIGGRAPH conference on Motion Interaction and Games,C,https://portal.core.edu.au/conf-ranks/2327/
+PEMWN,IFIP/IEEE International Conference on Performance Evaluation and Modeling in Wired and Wireless Networks,C,https://portal.core.edu.au/conf-ranks/2306/
+WFCS,International Conference on Factory Communication Systems,C,https://portal.core.edu.au/conf-ranks/2328/
+IIWAS,Information Integration and Web-based Applications and Services,C,https://portal.core.edu.au/conf-ranks/822/
+Mobiquitous,International Conference on Mobile and Ubiquitous Systems: Networks and Services,C,https://portal.core.edu.au/conf-ranks/1131/
+DDECS,International Symposium on Design and Diagnostics of Electronic Circuits and Systems,C,https://portal.core.edu.au/conf-ranks/2329/
+DATA,"International Conference on Data Science, Technology and Applications",C,https://portal.core.edu.au/conf-ranks/2302/
+MOMM,International Conference on Advances in Mobile Computing and Multimedia,C,https://portal.core.edu.au/conf-ranks/899/
+IPAS,International Conference on Image Processing Applications and Systems,C,https://portal.core.edu.au/conf-ranks/2333/
+ECMS,International Conference on Modelling and Simulation,C,https://portal.core.edu.au/conf-ranks/507/
+DSD,Euromicro Conference Series on Digital System Design,C,https://portal.core.edu.au/conf-ranks/2334/
+DOLAP,International Workshop on Data Warehousing and OLAP,C,https://portal.core.edu.au/conf-ranks/1464/
+SCAM,IEEE International Working Conference on Source Code Analysis and Manipulation,C,https://portal.core.edu.au/conf-ranks/718/
+ADBIS,Symposium on Advances in DB and Information Systems,C,https://portal.core.edu.au/conf-ranks/1777/
+SecureComm,International Conference on Security and Privacy for Communication Networks,C,https://portal.core.edu.au/conf-ranks/1198/
+ICISSP,International Conference on Information Systems Security and Privacy,C,https://portal.core.edu.au/conf-ranks/2234/
+ArtsIT,"ArtsIT, Interactivity & Game Creation",C,https://portal.core.edu.au/conf-ranks/917/
+CollaborateCom,"International Conference on Collaborative Computing: Networks, Applications and Worksharing",C,https://portal.core.edu.au/conf-ranks/933/
+MODELSWARD,International Conference on Model-Driven Engineering and Software Development,C,https://portal.core.edu.au/conf-ranks/2297/
+ICSoft,International Conference on Software and Data Technologies,C,https://portal.core.edu.au/conf-ranks/1206/
+WEBIST,International Conference on Web Information Systems and Technologies,C,https://portal.core.edu.au/conf-ranks/1270/
+ICANN,International Conference on Artificial Neural Networks,C,https://portal.core.edu.au/conf-ranks/915/
+MM_Asia,ACM International Conference on Multimedia in Asia,C,https://portal.core.edu.au/conf-ranks/2338/
+ACML,Asian Conference on Machine Learning,C,https://portal.core.edu.au/conf-ranks/2174/
+SIMULTECH,"International Conference on Simulation and Modeling Methodologies, Technologies and Applications",C,https://portal.core.edu.au/conf-ranks/2298/
+CLUSTER,IEEE International Conference on Cluster Computing,C,https://portal.core.edu.au/conf-ranks/632/
+ISCAS,IEEE International Symposium on Circuits and Systems,C,https://portal.core.edu.au/conf-ranks/2317/
+EvoMUSART,"International Conference on Artificial Intelligence in Music, Sound, Art and Design",C,https://portal.core.edu.au/conf-ranks/2314/
+FOIS,International Conference on Formal Ontology in Information Systems,C,https://portal.core.edu.au/conf-ranks/1033/
+IOLTS,On-Line Testing and Robust System Design,C,https://portal.core.edu.au/conf-ranks/687/
+WINCOM,International Conference on Wireless Networks and Mobile Communications,C,https://portal.core.edu.au/conf-ranks/2257/
+NeSy,International Conference on Neurosymbolic Learning and Reasoning,C,https://portal.core.edu.au/conf-ranks/2340/
+CBMI,IEEE International Conference on Content-Based Multimedia Indexing,C,https://portal.core.edu.au/conf-ranks/2342/
+IECON,IEEE Industrial Electronics Society,C,https://portal.core.edu.au/conf-ranks/2321/
+ICCD,IEEE International Conference on Computer Design,C,https://portal.core.edu.au/conf-ranks/2320/
+ICCE,International Conference on Computers in Education,C,https://portal.core.edu.au/conf-ranks/967/
+EMO,International Conference on Evolutionary Multi-Criterion Optimization,C,https://portal.core.edu.au/conf-ranks/2344/
+Euro XR,Euro XR International Conference,C,https://portal.core.edu.au/conf-ranks/458/
+EDUCON,IEEE Global Engineering Education Conference,C,https://portal.core.edu.au/conf-ranks/2347/
+COG,Conference on Games,C,https://portal.core.edu.au/conf-ranks/732/
+iLRN,International Conference of the Immersive Learning Research Network,C,https://portal.core.edu.au/conf-ranks/2266/
+ALIFE,International Conference on the Simulation and Synthesis of Living Systems,C,https://portal.core.edu.au/conf-ranks/1240/
+ICIDS,International Conference on Interactive Digital Storytelling (2008 merger of 'ICVS International Conference on Virtual Storytelling' and 'TIDSE Technology for Interactive Digital Storytelling'),C,https://portal.core.edu.au/conf-ranks/2161/
+WoWMoM,"IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",C,https://portal.core.edu.au/conf-ranks/691/
+QRS,"Software Quality, Reliability, and Security",C,https://portal.core.edu.au/conf-ranks/1185/
+IPIN,International Conference on Indoor Positioning and Indoor Navigation,C,https://portal.core.edu.au/conf-ranks/2244/
+IMX,ACM International Conference on Interactive Media Experiences,C,https://portal.core.edu.au/conf-ranks/2351/
+ICINCO,"International Conference on Informatics in Control, Automation and Robotics",C,https://portal.core.edu.au/conf-ranks/2226/
+COMPASS,The ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies,C,https://portal.core.edu.au/conf-ranks/2353/
+JSSPP,Workshop on Job Scheduling Strategies for Parallel Processing,C,https://portal.core.edu.au/conf-ranks/1909/
+INDIN,IEEE International Conference on Industrial Informatics,C,https://portal.core.edu.au/conf-ranks/2323/
+AIES,"AAAI/ACM Conference on AI, Ethics, and Society",C,https://portal.core.edu.au/conf-ranks/2354/
+IJCRS (was RSCTC),International Joint Conference on Rough Sets (2014 International Conference on Rough Sets and Current Trends in Computing joined with 3 others),C,https://portal.core.edu.au/conf-ranks/1195/
+VLSI-SOC,IEEE/IFIP International Conference on Very Large Scale Integration of System-on-Chip,C,https://portal.core.edu.au/conf-ranks/2356/
+AAAC,Symposium of Asian Association for Algorithms and Computation,C,https://portal.core.edu.au/conf-ranks/1772/
+AAIM,Conference on Algorithmic Aspects in Information and Management,C,https://portal.core.edu.au/conf-ranks/356/
+ABZ,"International Conference Abstract State Machines, Alloy, B, TLA, VDM, and Z",C,https://portal.core.edu.au/conf-ranks/882/
+ACC,Applied Computing Conference,C,https://portal.core.edu.au/conf-ranks/145/
+ACE,"ACM International Conference on Advances in Computer Entertainment (merged with DIMEA, Digital Interactive Media in Entertainment and Arts, in 2009)",C,https://portal.core.edu.au/conf-ranks/23/
+ACHI,International Conference on Advances in Computer-Human Interactions,C,https://portal.core.edu.au/conf-ranks/895/
+ADMA,International Conference on Advanced Data Mining and Applications,C,https://portal.core.edu.au/conf-ranks/888/
+AICCSA,ACS/IEEE International Conference on Computer Systems and Applications,C,https://portal.core.edu.au/conf-ranks/86/
+Algosensors,International Symposium on Algorithms and Experiments for  Wireless Networks,C,https://portal.core.edu.au/conf-ranks/1447/
+AofA,"International Conference on Probabilistic, Combinatorial, and Asymptotic Methods in the Analysis of Algorithms",C,https://portal.core.edu.au/conf-ranks/358/
+APCC,Asia Pacific Conference on Communications,C,https://portal.core.edu.au/conf-ranks/159/
+APNOMS,Asia-Pacific Network Operations and Management Symposium,C,https://portal.core.edu.au/conf-ranks/184/
+APORS,Conference of the Association of Asian-Pacific Operational Research Societies,C,https://portal.core.edu.au/conf-ranks/349/
+APSCC,Asia-Pacific Services Computing Conference,C,https://portal.core.edu.au/conf-ranks/185/
+APSEC,Asia-Pacific Software Engineering Conference,C,https://portal.core.edu.au/conf-ranks/186/
+APWEB,Web and Big Data,C,https://portal.core.edu.au/conf-ranks/165/
+ARITH,IEEE Symposium on Computer Arithmetic,C,https://portal.core.edu.au/conf-ranks/743/
+AROB,International Symposium on Artificial Life and Robotics,C,https://portal.core.edu.au/conf-ranks/1355/
+ASRU,IEEE Automatic Speech Recognition and Understanding Workshop,C,https://portal.core.edu.au/conf-ranks/595/
+AST,Automation of Software Test,C,https://portal.core.edu.au/conf-ranks/281/
+ATC,International Conference on Advanced and Trusted Computing,C,https://portal.core.edu.au/conf-ranks/921/
+ATMOS,"Workshop on Algorithmic Approaches for Transportation Modelling, Optimization, and Systems",C,https://portal.core.edu.au/conf-ranks/1871/
+BDCAT,"IEEE/ACM International Conference on Big Data Computing, Applications and Technologies",C,https://portal.core.edu.au/conf-ranks/2275/
+BIBE,IEEE Bioinformatics and Bioengineering,C,https://portal.core.edu.au/conf-ranks/596/
+Broadnets,"International Conference on Broadband Communications, Networks and Systems",C,https://portal.core.edu.au/conf-ranks/925/
+BSN,Body Sensor Networks,C,https://portal.core.edu.au/conf-ranks/288/
+CAADRIA,Association for Computer-Aided Architectural Design Research in Asia (CAADRIA) annual conference,C,https://portal.core.edu.au/conf-ranks/193/
+CAINE,ISCA International Conference on Computer Applications in Industry and Engineering,C,https://portal.core.edu.au/conf-ranks/1556/
+CAIP,International Conference on Computer Analysis of Images and Patterns,C,https://portal.core.edu.au/conf-ranks/955/
+CAivDE,"Computer Animation, Information Visualisation, and Digital Effects",C,https://portal.core.edu.au/conf-ranks/333/
+CARDIS,Smart Card Research and Advanced Application Conference,C,https://portal.core.edu.au/conf-ranks/1737/
+CCA,International Conference on Computability and Complexity in Analysis,C,https://portal.core.edu.au/conf-ranks/941/
+CD-MAKE,International Cross-Domain Conference for Machine Learning and Knowledge Extraction,C,https://portal.core.edu.au/conf-ranks/2223/
+CDVE,"Cooperative Design, Visualization, and Engineering",C,https://portal.core.edu.au/conf-ranks/398/
+CGI,Computer Graphics International,C,https://portal.core.edu.au/conf-ranks/335/
+CHIRA,International Conference on Computer-Human Interaction Research and Applications,C,https://portal.core.edu.au/conf-ranks/2260/
+CIAA,International Conference on Implementation and Application of Automata,C,https://portal.core.edu.au/conf-ranks/1062/
+CIAC,International Conference on Algorithms and Complexity,C,https://portal.core.edu.au/conf-ranks/906/
+EMSOFT,International Conference on Embedded Software,,https://portal.core.edu.au/conf-ranks/16/
+CODES+ISSS,International Conference on Hardware/Software Codesign and System Synthesis,,https://portal.core.edu.au/conf-ranks/1422/
+Ada-Europe,International Conference on Reliable Software Technologies,,https://portal.core.edu.au/conf-ranks/1191/
+CASES,"International Conference on Compilers, Architecture, and Synthesis for Embedded Systems",,https://portal.core.edu.au/conf-ranks/937/
+CHI PLAY,CHI PLAY: The Annual Symposium on Computer-Human Interaction in Play,,https://portal.core.edu.au/conf-ranks/2259/
+EICS,Engineering Interactive Computing Systems,,https://portal.core.edu.au/conf-ranks/2193/
+UbiComp,ACM International Joint Conference on Pervasive and Ubiquitous Computing (PERVASIVE and UbiComp combined from 2013),,https://portal.core.edu.au/conf-ranks/1825/
+ISS,ACM International Conference on Interactive Surfaces and Spaces,,https://portal.core.edu.au/conf-ranks/1488/
+ISWC,IEEE International Symposium on Wearable Computers,,https://portal.core.edu.au/conf-ranks/708/
+PERFORMANCE,"IFIP International Symposium on Computing Performance, Modelling, Measurement and Evaluation",,https://portal.core.edu.au/conf-ranks/2116/
+PG,Pacific Conference on Computer Graphics and Applications,,https://portal.core.edu.au/conf-ranks/1660/
+ICCS,International Conference on Computational Science,,https://portal.core.edu.au/conf-ranks/952/
+ICASSP,"IEEE International Conference on Acoustics, Speech and Signal Processing",,https://portal.core.edu.au/conf-ranks/2042/
+SAC,ACM Symposium on Applied Computing,,https://portal.core.edu.au/conf-ranks/59/
+VISIGRAPP,"Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications (GRAPP and VISAPP combined from 2008)",,https://portal.core.edu.au/conf-ranks/958/
+CSIT,Computer Sciences and Information Technologies,,https://portal.core.edu.au/conf-ranks/2229/
+HCI,British Computer Society Conference on Human-Computer Interaction,,https://portal.core.edu.au/conf-ranks/294/
+IWINAC,International Work-conference on the Interplay between Natural and Artificial Computation,,https://portal.core.edu.au/conf-ranks/2183/
+ACCT,International Workshop on Algebraic and Combinatorial Coding Theory,,https://portal.core.edu.au/conf-ranks/2295/
+Redundancy,International Symposium 'Problems of Redundancy in Information and Control Systems',,https://portal.core.edu.au/conf-ranks/2236/
+RANLP,International Conference on Recent Advances in Natural Language Processing,,https://portal.core.edu.au/conf-ranks/1188/
+AIMSA,"International Conference on Artificial Intelligence: Methodology, Systems, Applications",,https://portal.core.edu.au/conf-ranks/2162/
+TASE,International Symposium on Theoretical Aspects of Software Engineering,,https://portal.core.edu.au/conf-ranks/1427/
+TridentCom,Testbeds and Research Infrastructures for the Development of Networks and Communities,,https://portal.core.edu.au/conf-ranks/1802/
+CIS,International Conference on Computational Intelligence and Security,,https://portal.core.edu.au/conf-ranks/945/
+FAW,International Frontiers of Algorithmics Workshop,,https://portal.core.edu.au/conf-ranks/1302/
+ICIG,International Conference on Image and Graphics,,https://portal.core.edu.au/conf-ranks/1059/
+ICMLC,International Conference on Machine Learning and Cybernetics,,https://portal.core.edu.au/conf-ranks/1123/
+ICNC,International Conference on Natural Computation,,https://portal.core.edu.au/conf-ranks/1145/
+Inscrypt,SKLOIS Conference on Information Security and Cryptology,,https://portal.core.edu.au/conf-ranks/1736/
+ISKE,International Conference on Intelligent Systems and Knowledge Engineering,,https://portal.core.edu.au/conf-ranks/1097/
+SOFTCOM,Conference on Software in Telecommunications and Computer Networks,,https://portal.core.edu.au/conf-ranks/381/
+PSC,Prague Stringology Conference,,https://portal.core.edu.au/conf-ranks/1690/
+WSCG,"International Conferences in Central Europe on Computer Graphics, Visualization and Computer Vision",,https://portal.core.edu.au/conf-ranks/1280/
+RTNS,International Conference on Real-Time and Network Systems,,https://portal.core.edu.au/conf-ranks/2249/
+ICIN,"Conference on Innovation in Clouds, Internet and Networks",,https://portal.core.edu.au/conf-ranks/2201/
+EuroPLop,European Conference on Pattern Languages of Programs,,https://portal.core.edu.au/conf-ranks/490/
+MuC,Mensch & Computer,,https://portal.core.edu.au/conf-ranks/2270/
+ICISS,International Conference on Information Systems Security,,https://portal.core.edu.au/conf-ranks/1081/
+IndiaHCI,Indian Conference on Human-Computer Interaction,,https://portal.core.edu.au/conf-ranks/2267/
+INDOCRYPT,International Conference on Cryptology in India,,https://portal.core.edu.au/conf-ranks/983/
+COMAD,International Conference on Management of Data,,https://portal.core.edu.au/conf-ranks/1125/
+FST&TCS,Foundations of Software Technology and Theoretical Computer Science,,https://portal.core.edu.au/conf-ranks/548/
+HiPC,International Conference on High Performance Computing,,https://portal.core.edu.au/conf-ranks/1048/
+ICDCIT,International Conference on Distributed Computing and Internet Technologies,,https://portal.core.edu.au/conf-ranks/1000/
+ICDCN,International Conference on Distributed Computing and Networking,,https://portal.core.edu.au/conf-ranks/1001/
+AdCom,International Conference on Advanced Computing and Communications,,https://portal.core.edu.au/conf-ranks/887/
+VLSID,International Conference on VLSI Design,,https://portal.core.edu.au/conf-ranks/1267/
+CSICC,International CSI Computer Conference,,https://portal.core.edu.au/conf-ranks/1296/
+IMVIP,International Machine Vision and Image Processing Conference,,https://portal.core.edu.au/conf-ranks/1321/
+FUN,Conference on Fun with Algorithms,,https://portal.core.edu.au/conf-ranks/365/
+ICIAP,International Conference on Image Analysis and Processing,,https://portal.core.edu.au/conf-ranks/1058/
+SCN,Conference on Security and Cryptography for Networks,,https://portal.core.edu.au/conf-ranks/378/
+FLOPS,International Symposium on Functional and Logic Programming,,https://portal.core.edu.au/conf-ranks/1382/
+IWSEC,International Workshop on Security,,https://portal.core.edu.au/conf-ranks/1525/
+MVA,Machine Vision Applications,,https://portal.core.edu.au/conf-ranks/1600/
+ICISC,International Conference on Information Security and Cryptology,,https://portal.core.edu.au/conf-ranks/1077/
+WISA,International Workshop on Information Security Applications,,https://portal.core.edu.au/conf-ranks/1494/
+RoVISP,"International Conference on Robotics, Vision, Signal Processing and Power Applications",,https://portal.core.edu.au/conf-ranks/1194/
+FIT,International Conference on Frontiers of Information Technology,,https://portal.core.edu.au/conf-ranks/1036/
+DEPCoS,International Conference on Dependability of Computer Systems,,https://portal.core.edu.au/conf-ranks/991/
+ICAISC,International Conference on Artificial Intelligence and Soft Computing,,https://portal.core.edu.au/conf-ranks/912/
+ICCVG,International Conference on Computer Vision and Graphics,,https://portal.core.edu.au/conf-ranks/2232/
+PPAM,International Conference on Parallel Processing and Applied Mathematics,,https://portal.core.edu.au/conf-ranks/1168/
+MISSI,Multimedia and Network Information Systems,,https://portal.core.edu.au/conf-ranks/2233/
+EPIA,Portuguese Conference on Artificial Intelligence,,https://portal.core.edu.au/conf-ranks/1682/
+ICCP,IEEE International Conference on Intelligent Computer Communication and Processing,,https://portal.core.edu.au/conf-ranks/660/
+SACI,International Symposium on Applied Computational Intelligence and Informatics,,https://portal.core.edu.au/conf-ranks/1352/
+SOFA,International Workshop on Soft Computing Applications,,https://portal.core.edu.au/conf-ranks/1528/
+SYNASC,International Symposium on Symbolic and Numeric Algorithms for Scientific Computing,,https://portal.core.edu.au/conf-ranks/1421/
+CSR,International Computer Science Symposium in Russia,,https://portal.core.edu.au/conf-ranks/870/
+AIST,"International Conference on Analysis of Images, Social Networks and Texts",,https://portal.core.edu.au/conf-ranks/2228/
+ISUVR,International Symposium on Ubiquitous Virtual Reality,,https://portal.core.edu.au/conf-ranks/1539/
+SISY,International Symposium on Intelligent Systems and Informatics,,https://portal.core.edu.au/conf-ranks/1394/
+SAMI,International Symposium on Applied Machine Intelligence and Informatics,,https://portal.core.edu.au/conf-ranks/1353/
+IWANN,International Work-Conference on Artificial and Natural Neural Networks,,https://portal.core.edu.au/conf-ranks/1440/
+PAAMS,Practical Applications of Agents and Multiagent Systems,,https://portal.core.edu.au/conf-ranks/2171/
+MIS4TEL,International Conference in Methodologies and Intelligent Systems for Technology Enhanced Learning,,https://portal.core.edu.au/conf-ranks/2269/
+CISIS,Computational Intelligence in Security for Information Systems,,https://portal.core.edu.au/conf-ranks/327/
+HAIS,International Conference on Hybrid Artificial Intelligence Systems,,https://portal.core.edu.au/conf-ranks/1055/
+ATSIP,International Conference on Advanced Technologies For Signal & Image Processing,,https://portal.core.edu.au/conf-ranks/2231/
+KDViz,Knowledge Domain Visualisation,,https://portal.core.edu.au/conf-ranks/1584/
+SGAI,SGAI International Conference on Artificial Intelligence,,https://portal.core.edu.au/conf-ranks/1723/
+ICTERI,"ICT in Education, Research, and Industrial Applications",,https://portal.core.edu.au/conf-ranks/2265/
+IKE,International Conference on Information and Knowledge Engineering,,https://portal.core.edu.au/conf-ranks/1071/
+IRI,IEEE International Conference on Information Reuse and Integration,,https://portal.core.edu.au/conf-ranks/657/
+ISAIM,International Symposium on Artificial Intelligence and Mathematics,,https://portal.core.edu.au/conf-ranks/1354/
+ISVC,International Symposium on Visual Computing,,https://portal.core.edu.au/conf-ranks/1429/
+ITA,International Conference on Internet Technologies and Applications,,https://portal.core.edu.au/conf-ranks/1108/
+LFCS,Logical Foundations of Computer Science,,https://portal.core.edu.au/conf-ranks/1597/
+MOPTA,Modelling and Optimization: Theory and Applications,,https://portal.core.edu.au/conf-ranks/1618/
+MSST,IEEE Conference on Mass Storage Systems and Technologies,,https://portal.core.edu.au/conf-ranks/608/
+NSDI,"Symposium on Networked Systems, Design and Implementation",,https://portal.core.edu.au/conf-ranks/1789/
+PDPTA,International Conference on Parallel and Distributed Processing Techniques and Applications,,https://portal.core.edu.au/conf-ranks/1163/
+PSB,Pacific Symposium on Biocomputing,,https://portal.core.edu.au/conf-ranks/1666/
+SIGITE,ACM Information Technology Education,,https://portal.core.edu.au/conf-ranks/21/
+SIGUCCS,ACM SIGUCCS Conference on User Services,,https://portal.core.edu.au/conf-ranks/54/
+Tapia,Richard Tapia Celebration of Diversity in Computing Conference,,https://portal.core.edu.au/conf-ranks/1705/
+TRB,International Visualization in Transportation Symposium,,https://portal.core.edu.au/conf-ranks/1436/
+USEC,Usable Security and Privacy,,https://portal.core.edu.au/conf-ranks/1837/
+VDA,Conference on Visualization and Data Analysis,,https://portal.core.edu.au/conf-ranks/385/
+WCAE,Workshop on Computer Architecture Education,,https://portal.core.edu.au/conf-ranks/1892/
+WMSCI,"World Multi-Conference on Systemics, Cybernetics and Informatics",,https://portal.core.edu.au/conf-ranks/2155/
+WORLDCOMP,"World Congress in Computer Science, Computer Engineering, and Applied Computing",,https://portal.core.edu.au/conf-ranks/1943/
+ACSSC,"Asilomar Conference on Signals, Systems and Computing",,https://portal.core.edu.au/conf-ranks/189/
+AMIA,American Medical Informatics Annual Fall Symposium,,https://portal.core.edu.au/conf-ranks/1968/
+CATA,International Conference on Computers and their Applications,,https://portal.core.edu.au/conf-ranks/965/
+CERIAS,Information Security Symposium,,https://portal.core.edu.au/conf-ranks/826/
+CISS,Conference on Information Sciences and Systems,,https://portal.core.edu.au/conf-ranks/368/
+FlAIRS,Florida Artificial Intelligence Research Society Conference,,https://portal.core.edu.au/conf-ranks/538/
+GRC,Visualization In Science and Education,,https://portal.core.edu.au/conf-ranks/1856/
+HOTI,IEEE Symposium on High-Performance Interconnects,,https://portal.core.edu.au/conf-ranks/746/
+HOTMOBILE,Workshop on Mobile Computing Systems and Applications,,https://portal.core.edu.au/conf-ranks/1914/
+HOTNETS,ACM Workshop on Hot Topics in Networks,,https://portal.core.edu.au/conf-ranks/69/
+IAS,IEEE Industry Applications Society Annual Conference,,https://portal.core.edu.au/conf-ranks/2037/
+IC-AI,International Conference on Artificial Intelligence,,https://portal.core.edu.au/conf-ranks/909/
+HPSC,International Conference on High Performance Scientific Computing,,https://portal.core.edu.au/conf-ranks/1050/
+COCOON,International Conference on Computing and Combinatorics,,https://portal.core.edu.au/conf-ranks/969/
+SETTA,"International Symposium on Software Engineering: Theories, Tools, and Applications",,https://portal.core.edu.au/conf-ranks/2284/
+BTW,"Datenbanksysteme für Business, Technologie und Web",,https://portal.core.edu.au/conf-ranks/2243/
+CCEM,IEEE International Conference on Cloud Computing in Emerging Markets,,https://portal.core.edu.au/conf-ranks/2251/
+COMSNETS,International Conference on COMmunication Systems & NETworkS,,https://portal.core.edu.au/conf-ranks/2254/
+ICDSE,IEEE International Conference on Data Science and Engineering,,https://portal.core.edu.au/conf-ranks/2182/
+SYSTOR,The ACM International System and Storage Conference,,https://portal.core.edu.au/conf-ranks/2255/
+MMAR,International Conference on Methods and Models in Automation and Robotics,,https://portal.core.edu.au/conf-ranks/2277/
+Informatics,IEEE International Scientific Conference on Informatics,,https://portal.core.edu.au/conf-ranks/2296/
+CogSIMA,IEEE Conference on Cognitive and Computational Aspects of Situation Management,,https://portal.core.edu.au/conf-ranks/2184/
+DCAI,International Conference on Distributed Computing and Artificial Intelligence,,https://portal.core.edu.au/conf-ranks/2225/
+PACBB,International Conference on Practical Applications of Computational Biology & Bioinformatics,,https://portal.core.edu.au/conf-ranks/2224/
+KI,German Conference on Artificial Intelligence,,https://portal.core.edu.au/conf-ranks/563/
+AIAI,Artificial Intelligence Applications and Innovations,,https://portal.core.edu.au/conf-ranks/2186/
+ISC,ISC High Performance,,https://portal.core.edu.au/conf-ranks/1340/
+VTS,IEEE VLSI Test Symposium,,https://portal.core.edu.au/conf-ranks/2315/
+WSC,Winter Simulation Conference,,https://portal.core.edu.au/conf-ranks/1865/
+IBPRIA,Iberian Conference on Pattern Recognition and Image Analysis,,https://portal.core.edu.au/conf-ranks/591/
+QCE,IEEE International Conference on Quantum Computing and Engineering,,https://portal.core.edu.au/conf-ranks/2325/
+FCCM,IEEE Symposium on Field Programmable Custom Computing Machines,,https://portal.core.edu.au/conf-ranks/2026/
+QUATIC,International Conference on the Quality of Information and Communications Technology,,https://portal.core.edu.au/conf-ranks/2180/
+AMTA,Conference of the Association for Machine Translation in the Americas,,https://portal.core.edu.au/conf-ranks/348/
+MICC,Malaysia International Conference on Communications,,https://portal.core.edu.au/conf-ranks/2097/
+FRUCT,IEEE Conference of the Open Innovations Association FRUCT,,https://portal.core.edu.au/conf-ranks/2247/
+DB&IS,International Baltic Conference on Databases and Information Systems,,https://portal.core.edu.au/conf-ranks/861/
+Semantics,Semantics - International Conference on Semantic Systems,,https://portal.core.edu.au/conf-ranks/2210/
+NordiCHI,Nordic Conference on Human-Computer Interaction,,https://portal.core.edu.au/conf-ranks/2271/
+ICTIR,International Conference on the Theory of Information Retrieval,,https://portal.core.edu.au/conf-ranks/2202/
+ICVR,International Conference on Virtual Rehabilitation,,https://portal.core.edu.au/conf-ranks/2168/
+IDC,Intelligent Distributed Computing,,https://portal.core.edu.au/conf-ranks/2203/
+INFOCOMP,International Conference on Advanced Communications and Computation,,https://portal.core.edu.au/conf-ranks/2172/
+ITC,International Teletraffic Congress,,https://portal.core.edu.au/conf-ranks/2214/
+MobiSPC,International Conference on Mobile Systems and Pervasive Computing,,https://portal.core.edu.au/conf-ranks/2206/
+SEC,ACM/IEEE Symposium on Edge Computing,,https://portal.core.edu.au/conf-ranks/2246/
+SEIT,International Conference on Sustainable Energy Information Technology,,https://portal.core.edu.au/conf-ranks/2209/
+SETIT,"International Conference: Sciences of Electronics, Technologies of information and Telecommunication",,https://portal.core.edu.au/conf-ranks/2211/
+UCC,Utility and Cloud Computing,,https://portal.core.edu.au/conf-ranks/2252/
+CoRL,Conference on Robot Learning,,https://portal.core.edu.au/conf-ranks/2308/
+EDCC,European Dependable Computing Conference,,https://portal.core.edu.au/conf-ranks/2192/
+EUSPN,International Conference on Emerging Ubiquitous Systems and Pervasive Networks,,https://portal.core.edu.au/conf-ranks/2194/
+FNC,The International Conference on Future Networks and Communications,,https://portal.core.edu.au/conf-ranks/2197/
+HCist,HCist - International Conference on Health and Social Care Information Systems and Technologies,,https://portal.core.edu.au/conf-ranks/2198/
+ANT,"International Conference on Ambient Systems, Networks and Technologies",,https://portal.core.edu.au/conf-ranks/2189/
+SENSYS,ACM Conference on Embedded Networked Sensor Systems,,https://portal.core.edu.au/conf-ranks/15/
+PoEM,IFIP WG8.1 Working Conference on the Practice of Enterprise Modeling,,https://portal.core.edu.au/conf-ranks/2242/

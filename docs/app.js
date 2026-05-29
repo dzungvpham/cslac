@@ -132,7 +132,7 @@ let searchTimer = null;
 let expandAllOn = false;
 let currentView = 'faculty';
 let pubIncludes = {
-  conference: new Set(['A*', 'A', 'B']),
+  conference: new Set(['A*', 'A']),
   journal: new Set(['Q1']),
   other: new Set(),
 };
@@ -1635,7 +1635,10 @@ function renderPublicationsTable(panel, publications) {
       }
       if (p.venue_ranking) {
         const rankTip = esc(venueRankTooltip(p.venue_ranking, p.venue_ranking_source));
-        venueHtml += `<sup class="venue-rank" title="${rankTip}">${esc(p.venue_ranking)}</sup>`;
+        const rankLabel = esc(p.venue_ranking);
+        venueHtml += p.venue_ranking_url
+          ? `<sup class="venue-rank"><a href="${esc(p.venue_ranking_url)}" target="_blank" rel="noopener" title="${rankTip}">${rankLabel}</a></sup>`
+          : `<sup class="venue-rank" title="${rankTip}">${rankLabel}</sup>`;
       }
 
       let authorsHtml = '—';

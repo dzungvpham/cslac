@@ -733,9 +733,11 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
 
         venue_ranking = None
         venue_ranking_source = None
+        venue_ranking_url = None
         if pub_type == "conference":
             venue_ranking = core_rank
             venue_ranking_source = "ICORE 2026 Conference Ranking"
+            venue_ranking_url = (r.get("venue_core_url") or "").strip() or None
         elif pub_type == "journal":
             venue_ranking = sjr_quartile
             venue_ranking_source = "SCImago 2025 Journal Ranking"
@@ -780,6 +782,7 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
             "venue_acronym": (r.get("venue_acronym") or "").strip() or None,
             "venue_ranking": venue_ranking,
             "venue_ranking_source": venue_ranking_source,
+            "venue_ranking_url": venue_ranking_url,
             "authors": authors,
             "matched_faculty": matched_faculty,
             "pub_type": pub_type,
