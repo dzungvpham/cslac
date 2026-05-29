@@ -25,6 +25,26 @@ const COL_TOOLTIPS = {
   i10index5y: 'Papers with ≥ 10 citations in the past 5 years',
 };
 
+// ── venue ranking tooltips ────────────────────────────────────────────────
+// ICORE percentile bands derived from the published ICORE2026 distribution
+// of 825 ranked venues (A* 7.52%, A 13.09%, B 30.18%, C 46.18%) — bounds
+// are cumulative.
+const SCIMAGO_SOURCE = 'SCImago 2025 Journal Ranking';
+const ICORE_SOURCE = 'ICORE 2026 Conference Ranking';
+const VENUE_RANK_TOOLTIPS = {
+  'Q1': `Top 25% in ${SCIMAGO_SOURCE}`,
+  'Q2': `25–50th percentile in ${SCIMAGO_SOURCE}`,
+  'Q3': `50–75th percentile in ${SCIMAGO_SOURCE}`,
+  'Q4': `Bottom 25% in ${SCIMAGO_SOURCE}`,
+  'A*': `Top 7.5% in ${ICORE_SOURCE}`,
+  'A':  `7.5–20.6th percentile in ${ICORE_SOURCE}`,
+  'B':  `20.6–50.8th percentile in ${ICORE_SOURCE}`,
+  'C':  `50.8–97th percentile in ${ICORE_SOURCE}`,
+};
+function venueRankTooltip(rank, source) {
+  return VENUE_RANK_TOOLTIPS[rank] || source || '';
+}
+
 // ── column definitions ─────────────────────────────────────────────────────
 const COLLEGE_COLS = [
   { key: 'name',             label: 'Institution',   numeric: false },
@@ -112,7 +132,7 @@ let searchTimer = null;
 let expandAllOn = false;
 let currentView = 'faculty';
 let pubIncludes = {
-  conference: new Set(['A*', 'A']),
+  conference: new Set(['A*', 'A', 'B']),
   journal: new Set(['Q1']),
   other: new Set(),
 };
@@ -581,7 +601,9 @@ function buildAdvancedBar() {
            const cls = pubIncludes[g.key].has(val) ? 'active'
              : pubExcludes[g.key].has(val) ? 'exclude'
              : '';
-           return `<button class="pub-filter-chip ${cls}" data-group="${g.key}" data-value="${esc(val)}">${esc(label)}</button>`;
+           const tip = VENUE_RANK_TOOLTIPS[val];
+           const titleAttr = tip ? ` title="${esc(tip)}"` : '';
+           return `<button class="pub-filter-chip ${cls}" data-group="${g.key}" data-value="${esc(val)}"${titleAttr}>${esc(label)}</button>`;
          }).join('');
          return `<div class="pub-filter-group"><span class="pub-filter-label">${g.label}</span>${chips}</div>`;
        }).join('') +
@@ -1612,7 +1634,8 @@ function renderPublicationsTable(panel, publications) {
         venueHtml = '—';
       }
       if (p.venue_ranking) {
-        venueHtml += `<sup class="venue-rank" title="${esc(p.venue_ranking_source || '')}">${esc(p.venue_ranking)}</sup>`;
+        const rankTip = esc(venueRankTooltip(p.venue_ranking, p.venue_ranking_source));
+        venueHtml += `<sup class="venue-rank" title="${rankTip}">${esc(p.venue_ranking)}</sup>`;
       }
 
       let authorsHtml = '—';

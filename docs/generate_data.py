@@ -735,10 +735,10 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
         venue_ranking_source = None
         if pub_type == "conference":
             venue_ranking = core_rank
-            venue_ranking_source = "ICORE 2026 Ranking"
+            venue_ranking_source = "ICORE 2026 Conference Ranking"
         elif pub_type == "journal":
             venue_ranking = sjr_quartile
-            venue_ranking_source = "Scimago 2025 Ranking"
+            venue_ranking_source = "SCImago 2025 Journal Ranking"
 
         cites_raw = (r.get("cited_by_count") or "").strip()
         cites = 0
