@@ -4,15 +4,18 @@
 Single merged output keyed by college name, combining three previously
 separate JSONs:
 
-  - faculty records — from four row-aligned CSVs under data/:
+  - faculty records — from five row-aligned CSVs under data/:
       faculty_list.csv                       → personal website url
       faculty_list_with_scholar_url.csv      → google scholar url
       faculty_list_with_verified_profile.csv → match status + citation metrics + interests
       faculty_list_with_field.csv            → inferred field + subfields
+      faculty_list_with_openalex_profile.csv → OpenAlex author id + cite metrics
     Only rows whose `field` is "Computer Science" or "Invalid" are kept.
     `scholar_match_status ∈ {matched, manual_approved}` counts as trusted;
     untrusted rows still appear but their `scholar_url` and citation metrics
-    are suppressed.
+    are suppressed. For untrusted rows that *do* have an OpenAlex profile,
+    we expose `openalex_url` and fill `citedby`/`hindex`/`i10index` from
+    OpenAlex (5-year columns stay null — OpenAlex doesn't carry them).
 
   - college metadata + links — from data/colleges.csv (state and the four
     department/catalog/schedule URLs).
@@ -43,6 +46,7 @@ DEFAULT_LIST     = ROOT / "data" / "faculty_list.csv"
 DEFAULT_SCHOLAR  = ROOT / "data" / "faculty_list_with_scholar_url.csv"
 DEFAULT_VERIFIED = ROOT / "data" / "faculty_list_with_verified_profile.csv"
 DEFAULT_FIELD    = ROOT / "data" / "faculty_list_with_field.csv"
+DEFAULT_OPENALEX = ROOT / "data" / "faculty_list_with_openalex_profile.csv"
 DEFAULT_COLLEGES = ROOT / "data" / "colleges.csv"
 DEFAULT_COURSES  = ROOT / "data" / "course_schedule"
 DEFAULT_PUBS     = ROOT / "data" / "faculty_publications.csv"
@@ -97,7 +101,8 @@ def read_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(f))
 
 
-def build_faculty(list_path: Path, scholar_path: Path, verified_path: Path, field_path: Path) -> dict[str, dict]:
+def build_faculty(list_path: Path, scholar_path: Path, verified_path: Path,
+                  field_path: Path, openalex_path: Path) -> dict[str, dict]:
     """Return {college_name: {faculty, total, matched, total_citations}}.
     Insertion order follows the CSV row order, matching the legacy output.
     """
@@ -105,18 +110,25 @@ def build_faculty(list_path: Path, scholar_path: Path, verified_path: Path, fiel
     scholar_rows  = read_csv(scholar_path)
     verified_rows = read_csv(verified_path)
     field_rows    = read_csv(field_path)
+    openalex_rows = read_csv(openalex_path) if openalex_path.exists() else None
 
     n = len(list_rows)
     if not (len(scholar_rows) == len(verified_rows) == len(field_rows) == n):
         raise ValueError("CSV row counts do not match — cannot align by row order")
+    if openalex_rows is not None and len(openalex_rows) != n:
+        raise ValueError("OpenAlex CSV row count does not match — cannot align by row order")
 
     colleges: dict[str, list[dict]] = {}
-    for base, sch, ver, fld in zip(list_rows, scholar_rows, verified_rows, field_rows):
+    for i, (base, sch, ver, fld) in enumerate(zip(list_rows, scholar_rows, verified_rows, field_rows)):
         key = (base["name"], base["title"], base["college"])
         for other in (sch, ver, fld):
             if (other["name"], other["title"], other["college"]) != key:
                 raise ValueError(f"Row alignment mismatch at {key} vs "
                                  f"{(other['name'], other['title'], other['college'])}")
+        oa = openalex_rows[i] if openalex_rows else None
+        if oa is not None and (oa["name"], oa["title"], oa["college"]) != key:
+            raise ValueError(f"Row alignment mismatch (OpenAlex) at {key} vs "
+                             f"{(oa['name'], oa['title'], oa['college'])}")
 
         if fld.get("field") not in INCLUDED_FIELDS:
             continue
@@ -126,19 +138,43 @@ def build_faculty(list_path: Path, scholar_path: Path, verified_path: Path, fiel
         scholar_desc = normalize_scholar_interests(ver.get("scholar_interests", "")) if trusted else None
         interests = subfields_desc or scholar_desc
 
+        openalex_id = (oa.get("openalex_id") or "").strip() if oa else ""
+        # OpenAlex link surfaces only when GS isn't trusted — Scholar is the
+        # primary citation source whenever we have it; OA is the fallback.
+        openalex_url = (
+            f"https://openalex.org/authors/{openalex_id}"
+            if openalex_id and not trusted else None
+        )
+
+        if trusted:
+            citedby   = to_int(ver.get("scholar_citedby"))
+            citedby5y = to_int(ver.get("scholar_citedby5y"))
+            hindex    = to_int(ver.get("scholar_hindex"))
+            hindex5y  = to_int(ver.get("scholar_hindex5y"))
+            i10index  = to_int(ver.get("scholar_i10index"))
+            i10index5y = to_int(ver.get("scholar_i10index5y"))
+        elif openalex_url:
+            citedby   = to_int(oa.get("openalex_citedby"))
+            hindex    = to_int(oa.get("openalex_hindex"))
+            i10index  = to_int(oa.get("openalex_i10index"))
+            citedby5y = hindex5y = i10index5y = None
+        else:
+            citedby = citedby5y = hindex = hindex5y = i10index = i10index5y = None
+
         prof = {
             "name": base["name"],
             "title": base["title"],
             "category": categorize_title(base["title"]),
             "url": base.get("url") or None,
             "scholar_url": (sch.get("google_scholar") or None) if trusted else None,
+            "openalex_url": openalex_url,
             "status": ver["scholar_match_status"],
-            "citedby":    to_int(ver.get("scholar_citedby"))    if trusted else None,
-            "citedby5y":  to_int(ver.get("scholar_citedby5y"))  if trusted else None,
-            "hindex":     to_int(ver.get("scholar_hindex"))     if trusted else None,
-            "hindex5y":   to_int(ver.get("scholar_hindex5y"))   if trusted else None,
-            "i10index":   to_int(ver.get("scholar_i10index"))   if trusted else None,
-            "i10index5y": to_int(ver.get("scholar_i10index5y")) if trusted else None,
+            "citedby":    citedby,
+            "citedby5y":  citedby5y,
+            "hindex":     hindex,
+            "hindex5y":   hindex5y,
+            "i10index":   i10index,
+            "i10index5y": i10index5y,
             "interests":  interests,
         }
         colleges.setdefault(base["college"], []).append(prof)
@@ -146,7 +182,7 @@ def build_faculty(list_path: Path, scholar_path: Path, verified_path: Path, fiel
     result: dict[str, dict] = {}
     for name, profs in colleges.items():
         trusted = [p for p in profs if p["status"] in TRUSTED_STATUSES]
-        citations = [p["citedby"] for p in trusted if p["citedby"] is not None]
+        citations = [p["citedby"] for p in profs if p["citedby"] is not None]
         result[name] = {
             "faculty": profs,
             "total": len(profs),
@@ -870,6 +906,7 @@ def main():
     p.add_argument("--scholar",  type=Path, default=DEFAULT_SCHOLAR)
     p.add_argument("--verified", type=Path, default=DEFAULT_VERIFIED)
     p.add_argument("--field",    type=Path, default=DEFAULT_FIELD)
+    p.add_argument("--openalex", type=Path, default=DEFAULT_OPENALEX)
     p.add_argument("--colleges", type=Path, default=DEFAULT_COLLEGES)
     p.add_argument("--courses-dir", type=Path, default=DEFAULT_COURSES)
     p.add_argument("--pubs",     type=Path, default=DEFAULT_PUBS)
@@ -878,7 +915,7 @@ def main():
                    help="Skip updating JSON-LD/sitemap/footer dates.")
     args = p.parse_args()
 
-    faculty = build_faculty(args.list, args.scholar, args.verified, args.field)
+    faculty = build_faculty(args.list, args.scholar, args.verified, args.field, args.openalex)
     links = build_links(args.colleges, set(faculty.keys()))
     courses = build_courses(args.courses_dir, faculty_match_index(faculty))
     publications = build_publications(args.pubs)

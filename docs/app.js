@@ -9,6 +9,7 @@ function track(event, category, action, label, detail) {
 // SVG icons
 const ICON_GLOBE = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
 const ICON_SCHOLAR = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`;
+const ICON_OPENALEX = `<span class="oa-link-icon" aria-hidden="true"></span>`;
 const ICON_PROGRAM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`;
 const ICON_CATALOG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
 const ICON_PERSON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
@@ -1589,6 +1590,9 @@ function renderFacultyTable(panel, faculty) {
       const schLink = f.scholar_url
         ? `<a class="fac-link" href="${esc(f.scholar_url)}" target="_blank" rel="noopener" title="Google Scholar" onclick="track('click_link','link','faculty_scholar','${nameEsc}')">${ICON_SCHOLAR}</a>`
         : '';
+      const oaLink = f.openalex_url
+        ? `<a class="fac-link" href="${esc(f.openalex_url)}" target="_blank" rel="noopener" title="OpenAlex" onclick="track('click_link','link','faculty_openalex','${nameEsc}')">${ICON_OPENALEX}</a>`
+        : '';
 
       function num(v) {
         if (v == null) return `<div class="ftd-num na">—</div>`;
@@ -1604,7 +1608,7 @@ function renderFacultyTable(panel, faculty) {
             <div class="ftd ftd-name-cell">
               <div class="fac-name-row">
                 <span class="fac-name-text">${esc(f.name)}</span>
-                <span class="fac-links">${webLink}${schLink}</span>
+                <span class="fac-links">${webLink}${schLink}${oaLink}</span>
               </div>
               <div class="fac-title-inline">${esc(f.title)}</div>
               ${f.interests ? `<div class="fac-interests">${esc(f.interests)}</div>` : ''}

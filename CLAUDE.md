@@ -14,7 +14,7 @@ pip install -e .
 
 ## Running the Pipeline
 
-All scripts are run from the `scraper/` directory. The faculty pipeline has eight stages:
+All scripts are run from the `scraper/` directory. The faculty pipeline has nine stages:
 
 ```bash
 cd scraper
@@ -51,6 +51,12 @@ python faculty_publication_venue_tagger.py
 # Reads faculty_publications.csv and writes back in-place with the new
 # venue_acronym, venue_area, venue_in_csranking, venue_core_ranking,
 # venue_core_url, venue_sjr_quartile, venue_issn, and venue_sjr_url columns.
+
+# Stage 9: Fetch OpenAlex author metrics for faculty without trusted Google Scholar
+python faculty_openalex_profile_scraper.py
+# Reads OA author IDs from faculty_publications.csv and fetches cited_by_count
+# + h_index + i10_index from the OpenAlex Authors API. Resumable; --overwrite
+# refetches everything.
 ```
 
 A separate course-schedule pipeline lives under `scraper/course_schedule/`:
@@ -81,6 +87,7 @@ data/faculty_websites_cleaned/     → faculty_site_analysis.py           → da
 data/faculty_list.csv + colleges.csv → faculty_publication_scraper.py        → data/faculty_publications.csv
 data/faculty_publications.csv      → faculty_publication_venue_tagger.py  → data/faculty_publications.csv (in-place, adds venue_* columns)
   (also reads scraper/icore2026.csv, scraper/scimagojr.csv, scraper/scimagojr_math.csv)
+data/faculty_list.csv + faculty_publications.csv → faculty_openalex_profile_scraper.py → data/faculty_list_with_openalex_profile.csv
 
 data/colleges.csv                  → course_schedule.scrape_course_schedule → data/course_schedule/<College Name>.csv
 ```
@@ -117,6 +124,8 @@ After scraping, `filter_non_human_rows` runs the `openai/privacy-filter` token-c
 
 **`scraper/faculty_publication_venue_tagger.py`** — Post-processing pass that tags each paper's venue with rankings from three sources, writing back to `data/faculty_publications.csv` in-place. (1) **CSRankings** — the 81 conferences across 27 areas at https://csrankings.org/ are matched via the hand-tuned `CSRANKINGS` regex table (include + exclude patterns) and populate `venue_acronym`, `venue_area`, `venue_in_csranking`. (2) **ICORE 2026** — scraped from `portal.core.edu.au` on first run and cached at `scraper/icore2026.csv`; matching is layered (CSRankings acronym → CORE acronym lookup, then parenthetical acronyms in the venue name, then a token-recall + Jaccard fuzzy match against CORE conference titles) and fills `venue_core_ranking` (`A*/A/B/C`) and `venue_core_url`. Also gives `Findings of ACL/EMNLP/NAACL` papers their parent conference's rank. (3) **Scimago (SJR)** — read from `scraper/scimagojr.csv` (CS-area filter) and `scraper/scimagojr_math.csv` (Math-area filter); journals are matched by normalized title with an ordered-subset fallback for naming drift (e.g. "IEEE/ACM Transactions on Networking" vs "IEEE Transactions on Networking"). A small `_CURATED_SJR` table fills in cross-disciplinary journals (Nature, Science, PRL, JAMA, etc.) that the CS/Math filters don't carry. Output columns: `venue_sjr_quartile` (`Q1`–`Q4`), `venue_issn`, `venue_sjr_url`.
 
+**`scraper/faculty_openalex_profile_scraper.py`** — Fallback citation-metrics source for faculty whose Google Scholar profile we couldn't verify. Reads OpenAlex author IDs from `data/faculty_publications.csv` (`matched_faculty` + the per-author `id` inside the `authors` JSON), counts how often each ID appears across a faculty member's matched papers, keeps the dominant one (OpenAlex sometimes splits one person across unmerged author profiles), and fetches `cited_by_count` + `summary_stats.h_index` + `summary_stats.i10_index` from the OpenAlex Authors API. No 5-year metrics — OpenAlex doesn't expose them. Output is row-aligned with `faculty_list.csv` so it can be zipped alongside the other faculty CSVs in `generate_data.py`; faculty with no matched OA ID get empty fields. Resumable — re-running only refetches a row when the derived OA ID changed or metrics are missing; `--overwrite` refetches everything. Outputs `data/faculty_list_with_openalex_profile.csv`.
+
 **`scraper/openalex_subfield_map.py`** — Mapping from granular OpenAlex topic names (~4000 globally) to our 32-subfield CS taxonomy (`CS_SUBFIELDS` in `faculty_site_analysis.py`). Imported by `docs/generate_data.py` to derive per-paper `subfields` tags from OpenAlex `topics` strings, which the dashboard uses to gate paper visibility when the user clicks a subfield chip. Topics-only by design — OpenAlex's coarser `subfields` are too noisy (the docstring lists examples: software-testing → "Computer Networks", Cuban-drums → "Computer Vision"); the `openalex_subfields` argument is kept in the signature but ignored.
 
 **`scraper/course_schedule/`** — Course-schedule scraping sub-package. The driver loop lives in `course_schedule_scraper.py` (`CourseScheduleScraper` base class): for each `(academic_year, term)` pair it calls `url_for(...)`, drives Selenium via `load(...)` (one fresh driver per page by default — many catalog SPAs only fetch on first navigation), and hands the rendered HTML to `parse_page(...)`. Subclasses set `college` (a `constants.College` value), `years_back` (default 5), and optionally `terms` (e.g. `["F", "S"]`; empty means one load per year for sites whose listing covers all terms). Per-school subclasses live alongside the base (`amherst.py`, `macalester.py`, `trinity.py`, `williams.py`, and many more — one module per non-platform school).
@@ -134,7 +143,7 @@ The runner `scrape_course_schedule.py` instantiates every scraper in `SCRAPERS`,
 
 **`docs/`** — Static dashboard for browsing the dataset, published as a GitHub Pages site. `index.html` is a single-page app (vanilla JS + IBM Plex fonts, light/dark themes); each expanded college panel has a Faculty / Courses / Publications toggle (Courses is hidden for colleges without schedule data, Publications for colleges with no matched papers). `generate_data.py` emits a single `data.json` keyed by college name, combining four sources:
 
-- **Faculty** — merges four CSVs aligned by row order on `(name, title, college)`: `faculty_list.csv` (personal URL), `faculty_list_with_scholar_url.csv` (Scholar URL), `faculty_list_with_verified_profile.csv` (match status, citation/h-index metrics, scholar interests), and `faculty_list_with_field.csv` (LLM-inferred field + subfields). Only rows whose `field` is in `{Computer Science, Invalid}` are included; `scholar_match_status ∈ {matched, manual_approved}` counts as trusted (untrusted rows still appear but their `scholar_url` and citation metrics are suppressed). The `interests` field prefers LLM-inferred subfields, falling back to Scholar interests when the row is trusted. Each row's title is bucketed into `tenured | tenure_track | teaching | visiting | adjunct` via `categorize_title()`. The row-alignment check will fail loudly if the four faculty CSVs drift out of sync.
+- **Faculty** — merges five CSVs aligned by row order on `(name, title, college)`: `faculty_list.csv` (personal URL), `faculty_list_with_scholar_url.csv` (Scholar URL), `faculty_list_with_verified_profile.csv` (match status, citation/h-index metrics, scholar interests), `faculty_list_with_field.csv` (LLM-inferred field + subfields), and `faculty_list_with_openalex_profile.csv` (OpenAlex author ID + cite metrics, used as fallback). Only rows whose `field` is in `{Computer Science, Invalid}` are included; `scholar_match_status ∈ {matched, manual_approved}` counts as trusted (untrusted rows still appear but their `scholar_url` and Scholar citation metrics are suppressed). For untrusted rows that *do* have an OpenAlex author profile in the OA CSV, the row instead surfaces `openalex_url` and uses OpenAlex's `cited_by_count`/`h_index`/`i10_index` (5-year columns stay null — OA doesn't carry them). The `interests` field prefers LLM-inferred subfields, falling back to Scholar interests when the row is trusted. Each row's title is bucketed into `tenured | tenure_track | teaching | visiting | adjunct` via `categorize_title()`. The row-alignment check will fail loudly if any of the five faculty CSVs drift out of sync.
 - **Links** — reads `data/colleges.csv` and folds `state` plus the four `*_url` fields into each college entry. Only colleges with `Major >= 1` are considered.
 - **Courses** — reads every CSV under `data/course_schedule/` and adds per-college `terms` and `courses` with sorted term columns (year then F→W→S→Su) and `(code, name)`-deduplicated course rows, restricted to academic years ≥ 2021-22. Instructor strings are matched against the in-memory faculty list to produce per-cell initials + link.
 - **Publications** — reads `data/faculty_publications.csv` (the venue-tagger-augmented version from Stage 8) and emits a per-college `publications` list. Each paper carries a `pub_type` (`conference | journal | workshop | preprint | book | other`), classified by venue name → `venue_type` → CORE/SJR rank in that priority order (workshops short-circuit on the venue name; OpenAlex `work_type=preprint` is overridden when the venue is a real conference/journal, since OpenAlex sometimes never re-types arXiv-first ingests). Conference papers get `venue_ranking` from ICORE 2026 (`A*/A/B/C`); journal papers get it from Scimago (`Q1`–`Q4`). Per-paper `subfields` come from `openalex_subfield_map.map_paper_to_cs_subfields(topics)`. A small skip list filters out OpenAlex noise rows like "Session details: …", "Math Counts", "Conversations: …".
