@@ -727,7 +727,7 @@ function buildAdvancedBar() {
        subfieldGroupsHtml +
     `</div>` +
     `<div class="adv-row adv-row-pubs">
-       <span class="filter-label">Pubs</span>` +
+       <span class="filter-label">Papers</span>` +
        PUB_FILTER_GROUPS.map(g => {
          const chips = g.values.map(v => {
            const isObj = typeof v === 'object';
@@ -736,7 +736,7 @@ function buildAdvancedBar() {
            const cls = pubIncludes[g.key].has(val) ? 'active'
              : pubExcludes[g.key].has(val) ? 'exclude'
              : '';
-           const tip = VENUE_RANK_TOOLTIPS[val];
+           const tip = (isObj && v.tooltip) || VENUE_RANK_TOOLTIPS[val];
            const titleAttr = tip ? ` title="${esc(tip)}"` : '';
            return `<button class="pub-filter-chip ${cls}" data-group="${g.key}" data-value="${esc(val)}"${titleAttr}>${esc(label)}</button>`;
          }).join('');
@@ -946,16 +946,22 @@ function getSearchTokens() {
 let _searchResult = null;
 
 function pubVisibleBase(p) {
+  if (!p.venue) return false;
   if (pubYearFrom != null && (p.year == null || p.year < pubYearFrom)) return false;
   if (pubYearTo != null && (p.year == null || p.year > pubYearTo)) return false;
   const t = p.pub_type;
   let group, value;
-  if (t === 'conference' || t === 'journal') {
+  if ((t === 'conference' || t === 'journal') && p.venue_ranking) {
     group = t;
-    value = p.venue_ranking || '';
-  } else {
+    value = p.venue_ranking;
+  } else if (t === 'workshop' || t === 'preprint') {
     group = 'other';
-    value = t === 'book' ? 'other' : t;
+    value = t;
+  } else {
+    // Unranked conferences/journals, books, and everything else fold into
+    // the single "Unranked" chip in the Other group.
+    group = 'other';
+    value = 'unranked';
   }
   if (pubExcludes[group].has(value)) return false;
   const anyInc = pubIncludes.conference.size || pubIncludes.journal.size || pubIncludes.other.size;
@@ -1795,12 +1801,12 @@ function renderFacultyTable(panel, faculty) {
 
 // ── publications panel ────────────────────────────────────────────────────
 const PUB_FILTER_GROUPS = [
-  { key: 'conference', label: 'Conferences', values: ['A*', 'A', 'B', 'C', { key: '', label: 'Unranked' }] },
-  { key: 'journal',    label: 'Journals',    values: ['Q1', 'Q2', 'Q3', 'Q4', { key: '', label: 'Unranked' }] },
+  { key: 'conference', label: 'Conferences', values: ['A*', 'A', 'B', 'C'] },
+  { key: 'journal',    label: 'Journals',    values: ['Q1', 'Q2', 'Q3', 'Q4'] },
   { key: 'other',      label: 'Other',       values: [
     { key: 'workshop', label: 'Workshop' },
     { key: 'preprint', label: 'Preprint' },
-    { key: 'other',    label: 'Other' },
+    { key: 'unranked', label: 'Unranked', tooltip: 'Unranked conferences/journals' },
   ]},
 ];
 
