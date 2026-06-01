@@ -107,6 +107,81 @@ const CS_SUBFIELDS = [
   'Visualization', 'Computational social science', 'Games & interactive art',
 ];
 
+// Display-only short labels for select subfields. Keys must match CS_SUBFIELDS
+// verbatim. Filter chips, the faculty-card interests line, and any other UI
+// surface the short form, but internal state (activeSubfields, _interestsSet)
+// keeps the long form, and the search index includes both so queries by
+// either name still hit.
+const CS_SUBFIELD_SHORT_LABELS = {
+  'Algorithms & complexity': 'Algo',
+  'Artificial intelligence': 'AI',
+  'Computational bio & bioinformatics': 'Comp. bio',
+  'Computational social science': 'Comp. social science',
+  'Computer architecture': 'Architecture',
+  'Computer graphics': 'Graphics',
+  'Computer networks': 'Networks',
+  'Computer science education': 'CS Ed',
+  'Computer security & privacy': 'Security',
+  'Computer vision': 'CV',
+  'Databases': 'DB',
+  'Distributed systems': 'Distributed',
+  'Games & interactive art': 'Games & art',
+  'Embedded & real-time systems': 'Embedded & real-time',
+  'High-performance computing': 'HPC',
+  'Human-computer interaction': 'HCI',
+  'Information retrieval': 'IR',
+  'Machine learning': 'ML',
+  'Measurement & performance analysis': 'Measurement',
+  'Mobile computing': 'Mobicomp',
+  'Natural language processing': 'NLP',
+  'Operating systems': 'OS',
+  'Programming languages': 'PL',
+  'Quantum computing': 'Quantum',
+  'Software engineering': 'SWE',
+  'Visualization': 'Viz',
+};
+
+function shortSubfieldLabel(name) {
+  return CS_SUBFIELD_SHORT_LABELS[name] || name;
+}
+
+// Groups for the subfield filter chips. Mirrors the four top-level CSRankings
+// areas. Every entry in CS_SUBFIELDS must appear in exactly one group.
+const CS_SUBFIELD_GROUPS = [
+  { label: 'AI', subfields: [
+    'Artificial intelligence', 'Computer vision', 'Data science',
+    'Information retrieval', 'Machine learning', 'Natural language processing',
+  ]},
+  { label: 'Theory', subfields: [
+    'Algorithms & complexity', 'Cryptography', 'Logic & verification',
+  ]},
+  { label: 'Systems', subfields: [
+    'Computer architecture', 'Computer networks', 'Computer security & privacy',
+    'Databases', 'Design automation', 'Distributed systems',
+    'Embedded & real-time systems', 'High-performance computing',
+    'Measurement & performance analysis', 'Mobile computing',
+    'Operating systems', 'Programming languages', 'Software engineering',
+  ]},
+  { label: 'Interdisciplinary', subfields: [
+    'Computational bio & bioinformatics', 'Computational social science',
+    'Computer graphics', 'Computer science education',
+    'Economics & computation', 'Games & interactive art',
+    'Human-computer interaction', 'Quantum computing', 'Robotics',
+    'Visualization',
+  ]},
+];
+
+// Renders a comma-separated interests string with each known subfield swapped
+// for its short label. Unknown items (e.g. raw Scholar interests for untrusted
+// rows) pass through untouched.
+function shortenInterestsForDisplay(text) {
+  if (!text) return text;
+  return text.split(',').map(s => {
+    const t = s.trim();
+    return CS_SUBFIELD_SHORT_LABELS[t] || t;
+  }).join(', ');
+}
+
 // Slugifies a college name into the CSS class used by img/logo_sprite.css
 // (e.g. "St. Mary's College of Maryland" -> "st-mary-s-college-of-maryland").
 // Must match slug() in docs/generate_logo_sprite.py.
@@ -239,9 +314,14 @@ async function loadData() {
       );
       // `_nameSearch` is name only — drives the "expand to pubs + courses"
       // path. `_search` adds title/interests/college, used for the weaker
-      // "show this faculty as a row" path.
+      // "show this faculty as a row" path. We append the short labels too
+      // so a query like "ML" or "HCI" still hits the right faculty.
       f._nameSearch = (f.name || '').toLowerCase();
-      f._search = [f.name, f.title, f.interests, c.name]
+      const interestShorts = (f.interests || '')
+        .split(',')
+        .map(s => CS_SUBFIELD_SHORT_LABELS[s.trim()])
+        .filter(Boolean);
+      f._search = [f.name, f.title, f.interests, ...interestShorts, c.name]
         .filter(Boolean).join(' ').toLowerCase();
     }
     c._search = collegeBits.toLowerCase();
@@ -399,7 +479,6 @@ function buildFilterBar() {
     + (pubYearFrom != null ? 1 : 0) + (pubYearTo != null ? 1 : 0);
   const advTotal = activeSubfields.size + excludedSubfields.size + (activeState ? 1 : 0) + pubFilterCount;
   const advCount = advTotal > 0 ? ` (${advTotal})` : '';
-  const advActive = (advancedExpanded || advTotal > 0) ? 'active' : '';
 
   // Preserve focus + caret position on the search input across rebuilds
   // (chip clicks call buildFilterBar(), which would otherwise blow it away).
@@ -414,21 +493,31 @@ function buildFilterBar() {
     `<div class="cs-dropdown-item${v.key === currentView ? ' selected' : ''}" data-value="${v.key}">${v.label}</div>`
   ).join('');
 
+  const categoryChipsHtml = CATEGORIES.map(c => {
+    const on = activeCategories.has(c.key);
+    return `<button class="filter-chip ${on ? 'active' : ''}" data-cat="${c.key}">
+      ${c.label}<span class="filter-chip-count">${counts[c.key]}</span>
+    </button>`;
+  }).join('');
+
   bar.innerHTML =
     `<span class="filter-label">Show</span>` +
     `<div class="cs-dropdown" id="view-dd">
        <button class="cs-dropdown-btn" type="button">${viewLabel}</button>
        <div class="cs-dropdown-list">${viewItems}</div>
      </div>` +
-    CATEGORIES.map(c => {
-      const on = activeCategories.has(c.key);
-      return `<button class="filter-chip ${on ? 'active' : ''}" data-cat="${c.key}">
-        ${c.label}<span class="filter-chip-count">${counts[c.key]}</span>
-      </button>`;
-    }).join('') +
-    `<input type="text" class="search-input" id="search-input" placeholder="Search…"
-      aria-label="Search faculty, publications, and courses" value="${esc(searchDraft)}" />` +
-    `<button class="expand-toggle ${advActive}" id="advanced-toggle">${advIcon}Advanced filter${advCount}</button>` +
+    `<span class="category-chips">${categoryChipsHtml}</span>` +
+    `<span class="search-wrap${searchDraft ? '' : ' empty'}">
+       <input type="text" class="search-input" id="search-input" placeholder="Search…"
+         aria-label="Search faculty, publications, and courses" value="${esc(searchDraft)}" />
+       <button type="button" class="search-clear" id="search-clear" aria-label="Clear search" title="Clear search">
+         <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+           <line x1="3.5" y1="3.5" x2="8.5" y2="8.5" />
+           <line x1="8.5" y1="3.5" x2="3.5" y2="8.5" />
+         </svg>
+       </button>
+     </span>` +
+    `<button class="expand-toggle" id="advanced-toggle">${advIcon}Advanced filter${advCount}</button>` +
     `<button class="expand-toggle" id="expand-toggle">${expandIcon}${expandLabel}</button>`;
 
   if (searchHadFocus) {
@@ -437,7 +526,7 @@ function buildFilterBar() {
     try { el.setSelectionRange(searchCaret[0], searchCaret[1]); } catch (_) {}
   }
 
-  bar.querySelectorAll('.filter-chip').forEach(btn => {
+  bar.querySelectorAll('.filter-chip[data-cat]').forEach(btn => {
     btn.addEventListener('click', () => {
       const k = btn.dataset.cat;
       const wasActive = activeCategories.has(k);
@@ -445,6 +534,7 @@ function buildFilterBar() {
       else activeCategories.add(k);
       track('filter', 'category', wasActive ? 'clear' : 'include', k);
       buildFilterBar();
+      buildAdvancedBar();
       renderAll();
     });
   });
@@ -457,6 +547,10 @@ function buildFilterBar() {
     buildFilterBar();
   });
   const searchEl = document.getElementById('search-input');
+  const searchWrap = searchEl.closest('.search-wrap');
+  const syncSearchEmpty = () => {
+    if (searchWrap) searchWrap.classList.toggle('empty', !searchDraft);
+  };
   const commitSearch = () => {
     clearTimeout(searchTimer);
     searchTimer = null;
@@ -468,6 +562,7 @@ function buildFilterBar() {
   };
   searchEl.addEventListener('input', e => {
     searchDraft = e.target.value;
+    syncSearchEmpty();
     clearTimeout(searchTimer);
     searchTimer = setTimeout(commitSearch, 1000);
   });
@@ -475,8 +570,30 @@ function buildFilterBar() {
     if (e.key === 'Enter') {
       e.preventDefault();
       commitSearch();
+    } else if (e.key === 'Escape' && searchDraft) {
+      e.preventDefault();
+      searchDraft = '';
+      searchEl.value = '';
+      syncSearchEmpty();
+      commitSearch();
     }
   });
+  const searchClearBtn = document.getElementById('search-clear');
+  if (searchClearBtn) {
+    searchClearBtn.addEventListener('mousedown', e => e.preventDefault());
+    searchClearBtn.addEventListener('click', () => {
+      if (!searchDraft && !searchQuery) {
+        searchEl.focus();
+        return;
+      }
+      searchDraft = '';
+      searchEl.value = '';
+      syncSearchEmpty();
+      track('filter', 'search', 'clear', '');
+      commitSearch();
+      searchEl.focus();
+    });
+  }
 
   const viewDd = document.getElementById('view-dd');
   if (viewDd) {
@@ -539,15 +656,28 @@ function subfieldCounts() {
 function buildAdvancedBar() {
   const bar = document.getElementById('advanced-bar');
   const counts = subfieldCounts();
-  const hasAny = activeSubfields.size > 0 || excludedSubfields.size > 0;
-  const clearBtn = hasAny
-    ? `<button class="filter-chip" id="subfield-clear">Clear</button>`
-    : '';
   const scopeHint = subfieldScope === 'faculty'
     ? `Apply to <span class="hint-scope">each faculty</span> — only show people whose interests match.`
     : `Apply to <span class="hint-scope">whole schools</span> — only show schools that have such faculty.`;
   const interactHint = `Click to <span class="hint-include">include</span>, again to <span class="hint-exclude">exclude</span>, once more to clear.`;
-  const sortedSubfields = [...CS_SUBFIELDS].sort((a, b) => a.localeCompare(b));
+
+  // Per-group chip HTML, with each group's chips sorted by their display label.
+  const subfieldChip = s => {
+    const cls = activeSubfields.has(s) ? 'active'
+      : excludedSubfields.has(s) ? 'exclude'
+      : '';
+    const shortLabel = shortSubfieldLabel(s);
+    const titleAttr = shortLabel !== s ? ` title="${esc(s)}"` : '';
+    return `<button class="filter-chip ${cls}" data-subfield="${esc(s)}"${titleAttr}>
+      ${esc(shortLabel)}<span class="filter-chip-count">${counts[s]}</span>
+    </button>`;
+  };
+  const subfieldGroupsHtml = CS_SUBFIELD_GROUPS.map(g => {
+    const sorted = [...g.subfields].sort((a, b) =>
+      shortSubfieldLabel(a).localeCompare(shortSubfieldLabel(b))
+    );
+    return `<div class="pub-filter-group subfield-group"><span class="pub-filter-label">${esc(g.label)}</span>${sorted.map(subfieldChip).join('')}</div>`;
+  }).join('');
 
   // Build state-dropdown options from states actually present in the dataset,
   // sorted alphabetically by full name.
@@ -563,6 +693,14 @@ function buildAdvancedBar() {
       return `<div class="cs-dropdown-item${sel}" data-value="${esc(code)}">${esc(US_STATES[code])}</div>`;
     }).join('');
   const stateLabel = activeState ? esc(US_STATES[activeState]) : 'All states';
+
+  const catCounts = categoryCounts();
+  const jobTitleChipsHtml = CATEGORIES.map(c => {
+    const on = activeCategories.has(c.key);
+    return `<button class="filter-chip ${on ? 'active' : ''}" data-cat="${c.key}">
+      ${esc(c.label)}<span class="filter-chip-count">${catCounts[c.key]}</span>
+    </button>`;
+  }).join('');
 
   bar.innerHTML =
     `<div class="adv-row adv-row-scope">
@@ -580,17 +718,13 @@ function buildAdvancedBar() {
          <div class="cs-dropdown-list">${stateItems}</div>
        </div>
      </div>` +
+    `<div class="adv-row adv-row-jobtitle">
+       <span class="filter-label">Job Title</span>
+       ${jobTitleChipsHtml}
+     </div>` +
     `<div class="adv-row adv-row-subfields">
-       <span class="filter-label">Subfields</span>` +
-       sortedSubfields.map(s => {
-         const cls = activeSubfields.has(s) ? 'active'
-           : excludedSubfields.has(s) ? 'exclude'
-           : '';
-         return `<button class="filter-chip ${cls}" data-subfield="${esc(s)}">
-           ${esc(s)}<span class="filter-chip-count">${counts[s]}</span>
-         </button>`;
-       }).join('') +
-       clearBtn +
+       <span class="filter-label" title="Subfield names based on csrankings.org">Subfields</span>` +
+       subfieldGroupsHtml +
     `</div>` +
     `<div class="adv-row adv-row-pubs">
        <span class="filter-label">Pubs</span>` +
@@ -630,6 +764,19 @@ function buildAdvancedBar() {
     `<div class="adv-row"><span class="adv-hint-inline">${interactHint}</span></div>`
   ;
 
+  bar.querySelectorAll('.filter-chip[data-cat]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const k = btn.dataset.cat;
+      const wasActive = activeCategories.has(k);
+      if (wasActive) activeCategories.delete(k);
+      else activeCategories.add(k);
+      track('filter', 'category', wasActive ? 'clear' : 'include', k);
+      buildAdvancedBar();
+      buildFilterBar();
+      renderAll();
+    });
+  });
+
   bar.querySelectorAll('.filter-chip[data-subfield]').forEach(btn => {
     btn.addEventListener('click', () => {
       const k = btn.dataset.subfield;
@@ -651,15 +798,6 @@ function buildAdvancedBar() {
       buildFilterBar();
       renderAll();
     });
-  });
-
-  const clearEl = document.getElementById('subfield-clear');
-  if (clearEl) clearEl.addEventListener('click', () => {
-    activeSubfields.clear();
-    excludedSubfields.clear();
-    buildAdvancedBar();
-    buildFilterBar();
-    renderAll();
   });
 
   bar.querySelectorAll('.scope-toggle button').forEach(btn => {
@@ -1235,7 +1373,7 @@ function renderColleges(colleges) {
   });
 }
 
-function fmt(n) { return n != null ? n.toLocaleString() : '—'; }
+function fmt(n) { return n ? n.toLocaleString() : '—'; }
 
 // Mobile-only short form for college names: abbreviates "University" → "Univ."
 // to save horizontal space on narrow viewports.
@@ -1611,7 +1749,7 @@ function renderFacultyTable(panel, faculty) {
                 <span class="fac-links">${webLink}${schLink}${oaLink}</span>
               </div>
               <div class="fac-title-inline">${esc(f.title)}</div>
-              ${f.interests ? `<div class="fac-interests">${esc(f.interests)}</div>` : ''}
+              ${f.interests ? `<div class="fac-interests">${esc(shortenInterestsForDisplay(f.interests))}</div>` : ''}
             </div>
             <div class="ftd-title">${esc(f.title)}</div>
             ${num(f.citedby)}

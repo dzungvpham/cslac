@@ -76,6 +76,7 @@ header {
 }
 
 .header-left {
+  flex: 0 1 60%;
   min-width: 0;
 }
 .header-left h1 {
@@ -85,6 +86,7 @@ header {
   color: var(--text);
   margin-bottom: 4px;
 }
+.header-left h1 .h1-short { display: none; }
 .header-logo {
   height: 0.95em;
   width: auto;
@@ -145,7 +147,8 @@ header {
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
-  flex-shrink: 0;
+  flex: 0 1 40%;
+  min-width: 0;
 }
 
 .about-text {
@@ -1004,6 +1007,12 @@ a.pub-author:hover {
   align-items: center;
   gap: 4px;
 }
+/* Subfield groups carry many chips; let them wrap onto multiple lines instead
+   of overflowing the row. */
+.subfield-group {
+  flex-wrap: wrap;
+  row-gap: 6px;
+}
 .pub-filter-label {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
@@ -1014,9 +1023,9 @@ a.pub-author:hover {
 }
 .pub-filter-chip {
   font-family: 'IBM Plex Sans', system-ui, sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
-  padding: 3px 8px;
+  padding: 5px 11px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--bg);
@@ -1025,6 +1034,7 @@ a.pub-author:hover {
   user-select: none;
   cursor: pointer;
   line-height: 1.4;
+  white-space: nowrap;
 }
 .pub-filter-chip:hover {
   color: var(--text);
@@ -1162,6 +1172,7 @@ a.pub-author:hover {
   color: var(--sub);
   transition: color 0.12s, border-color 0.12s, background 0.12s;
   user-select: none;
+  white-space: nowrap;
 }
 .filter-chip:hover {
   color: var(--text);
@@ -1206,10 +1217,15 @@ a.pub-author:hover {
   border-color: var(--accent);
 }
 .expand-toggle svg { width: 12px; height: 12px; }
+.search-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
 .search-input {
   font-family: 'IBM Plex Sans', system-ui, sans-serif;
   font-size: 12px;
-  padding: 5px 11px;
+  padding: 5px 26px 5px 11px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--bg);
@@ -1223,6 +1239,30 @@ a.pub-author:hover {
   outline: none;
   border-color: var(--accent);
 }
+.search-clear {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.12s, background 0.12s;
+}
+.search-clear:hover {
+  color: var(--bg);
+  background: var(--sub);
+}
+.search-clear svg { width: 10px; height: 10px; display: block; }
+.search-wrap.empty .search-clear { display: none; }
 
 /* ── advanced (subfield) filter rows ── */
 .advanced-bar {
@@ -1239,7 +1279,21 @@ a.pub-author:hover {
   gap: 8px;
   flex-wrap: wrap;
 }
-.adv-row-subfields { gap: 6px; }
+/* Stack the subfield groups under the SUBFIELDS label, each on its own
+   indented line, instead of letting them flow inline. */
+.adv-row-subfields {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.adv-row-subfields .subfield-group { padding-left: 18px; }
+/* Job Title row lives in the advanced bar but only appears on small
+   viewports; on wider screens the same chips render inline in the
+   main filter bar (.category-chips). */
+.adv-row-jobtitle { display: none; }
+.category-chips {
+  display: contents;
+}
 .adv-hint-inline {
   font-size: 11px;
   color: var(--muted);
@@ -1291,15 +1345,24 @@ a.pub-author:hover {
   .page { padding: 0 16px 64px; }
 
   header {
-    padding: 28px 0 20px;
+    padding: 28px 0 10px;
     gap: 12px;
   }
   .header-left h1 { font-size: 19px; }
+  .header-left h1 .h1-full  { display: none; }
+  .header-left h1 .h1-short { display: inline; }
   .header-stats { gap: 18px; }
   .about-text { max-width: 160px; font-size: 10.5px; }
 
   .filter-bar { padding: 12px 0; gap: 6px; }
-  .search-input { flex: 1 1 140px; width: auto; min-width: 0; }
+  .search-wrap { flex: 1 1 140px; min-width: 0; }
+  .search-input { width: 100%; min-width: 0; }
+
+  /* Move the Tenured/Tenure-track/Visiting/Teaching/Adjunct chips
+     out of the main filter bar and into the advanced bar's
+     Job Title row to reclaim space on narrow screens. */
+  .category-chips { display: none; }
+  .adv-row-jobtitle { display: flex; }
 
   /* main college grid: shrink metric columns to fit ~360px viewports.
      minmax(0,1fr) — not 1fr — so the name column can shrink below its
@@ -1474,10 +1537,6 @@ a.pub-author:hover {
      the user navigates with the ◀/▶ buttons in the header. This keeps
      the table inside the viewport (no horizontal scroll) so the sticky
      thead keeps working. */
-
-  /* publication filter chips on mobile */
-  .pub-filter-chip { font-size: 10px; padding: 2px 6px; }
-  .pub-filter-label { font-size: 9px; }
 
   /* publications: pack columns to fit a ~360px viewport without
      horizontal scroll. Title is capped at ~30% with ellipsis + an
