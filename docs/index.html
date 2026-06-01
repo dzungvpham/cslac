@@ -130,10 +130,22 @@
       </div>
     </div>
     <div class="header-right">
-      <button class="theme-toggle" id="theme-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
-        <span class="icon-sun" aria-hidden="true"></span>
-        <span class="icon-moon" aria-hidden="true"></span>
-      </button>
+      <div class="header-actions">
+        <button class="action-btn" id="share-btn" type="button" title="Copy shareable link" aria-label="Copy shareable link">
+          <svg class="icon-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="18" cy="5" r="3"/>
+            <circle cx="6" cy="12" r="3"/>
+            <circle cx="18" cy="19" r="3"/>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+          </svg>
+          <span class="action-feedback" aria-live="polite">Copied!</span>
+        </button>
+        <button class="theme-toggle" id="theme-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
+          <span class="icon-sun" aria-hidden="true"></span>
+          <span class="icon-moon" aria-hidden="true"></span>
+        </button>
+      </div>
       <p class="about-text">
         Data last updated on <span class="nowrap accent">May 31st 2026</span>.<br>Publication data from <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar<span class="gs-icon" aria-hidden="true"></span></a> and <a href="https://openalex.org/" target="_blank" rel="noopener">OpenAlex<img class="oa-icon" src="img/openalex.png" alt="" aria-hidden="true"></a>.<br>Report issues or make suggestions on <a href="https://github.com/dzungvpham/cslac" target="_blank" rel="noopener">GitHub<span class="gh-icon" aria-hidden="true"></span></a>.
       </p>

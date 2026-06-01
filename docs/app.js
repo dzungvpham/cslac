@@ -196,7 +196,7 @@ let collegeLinks = {};
 let courseSchedules = {};
 let collegePublications = {};
 let collegeSort = { key: 'total', dir: -1 };
-let activeCategories = new Set();
+let activeCategories = new Set(['tenured', 'tenure_track']);
 let activeSubfields = new Set();
 let excludedSubfields = new Set();
 let subfieldScope = 'faculty'; // 'faculty' | 'school'
@@ -220,6 +220,201 @@ let pubExcludes = {
 let pubYearFrom = null;
 let pubYearTo = null;
 let pubYearsAvailable = [];
+
+// ── URL state ─────────────────────────────────────────────────────────────
+// Filter, sort, view, and expand-all state is round-tripped through the URL
+// query string so users can share a link that pre-applies their current view.
+// Defaults are omitted from the serialized URL, so a clean page load produces
+// no query string.
+const URL_DEFAULTS = {
+  cat: new Set(['tenured', 'tenure_track']),
+  view: 'faculty',
+  scope: 'faculty',
+  pubInc: {
+    conference: new Set(['A*', 'A']),
+    journal: new Set(['Q1']),
+    other: new Set(),
+  },
+  sort: { key: 'total', dir: -1 },
+};
+const PUB_GROUP_SHORT = { conference: 'c', journal: 'j', other: 'o' };
+const PUB_GROUP_LONG = { c: 'conference', j: 'journal', o: 'other' };
+const VALID_VIEW = new Set(['faculty', 'courses', 'publications']);
+const VALID_SCOPE = new Set(['faculty', 'school']);
+const VALID_SORT_KEYS = new Set(['name', 'total', 'courses_per_year', 'filtered_pubs']);
+
+function setsEqual(a, b) {
+  if (a.size !== b.size) return false;
+  for (const x of a) if (!b.has(x)) return false;
+  return true;
+}
+
+// pubYearFrom/To default to a 10-year window of the latest available year.
+// Computed dynamically since pubYearsAvailable is populated from the dataset.
+function defaultPubYearRange() {
+  if (!pubYearsAvailable.length) return [null, null];
+  const max = pubYearsAvailable[pubYearsAvailable.length - 1];
+  return [max - 10, max];
+}
+
+function encodePubGroups(groups) {
+  const parts = [];
+  for (const g of ['conference', 'journal', 'other']) {
+    for (const v of groups[g]) parts.push(`${PUB_GROUP_SHORT[g]}:${v}`);
+  }
+  return parts.join(',');
+}
+
+function decodePubGroups(str) {
+  const out = { conference: new Set(), journal: new Set(), other: new Set() };
+  if (!str) return out;
+  for (const item of str.split(',')) {
+    const colon = item.indexOf(':');
+    if (colon < 0) continue;
+    const group = PUB_GROUP_LONG[item.slice(0, colon)];
+    if (group) out[group].add(item.slice(colon + 1));
+  }
+  return out;
+}
+
+// includeDefaults=true spells every non-empty filter out, producing the
+// self-documenting form used by the Share button. includeDefaults=false is
+// the terse address-bar form: anything matching its default is omitted so a
+// vanilla visit shows no query string. Fields with empty defaults (sub,
+// xsub, xvenue, state, q, expand) are written only when the user has set
+// them — there's no "default value" to spell out for those.
+function buildUrlParams({ includeDefaults = false } = {}) {
+  const p = new URLSearchParams();
+  if (includeDefaults || !setsEqual(activeCategories, URL_DEFAULTS.cat)) {
+    p.set('cat', [...activeCategories].join(','));
+  }
+  if (activeSubfields.size) p.set('sub', [...activeSubfields].join(','));
+  if (excludedSubfields.size) p.set('xsub', [...excludedSubfields].join(','));
+  if (includeDefaults || subfieldScope !== URL_DEFAULTS.scope) p.set('scope', subfieldScope);
+  if (activeState) p.set('state', activeState);
+  if (searchQuery) p.set('q', searchQuery);
+  if (includeDefaults || currentView !== URL_DEFAULTS.view) p.set('view', currentView);
+
+  let venueDiff = false;
+  for (const g of ['conference', 'journal', 'other']) {
+    if (!setsEqual(pubIncludes[g], URL_DEFAULTS.pubInc[g])) { venueDiff = true; break; }
+  }
+  if (includeDefaults || venueDiff) p.set('venue', encodePubGroups(pubIncludes));
+  const xvenueCount = pubExcludes.conference.size + pubExcludes.journal.size + pubExcludes.other.size;
+  if (xvenueCount) p.set('xvenue', encodePubGroups(pubExcludes));
+
+  const [defFrom, defTo] = defaultPubYearRange();
+  if (includeDefaults || pubYearFrom !== defFrom) {
+    p.set('yfrom', pubYearFrom == null ? '' : String(pubYearFrom));
+  }
+  if (includeDefaults || pubYearTo !== defTo) {
+    p.set('yto', pubYearTo == null ? '' : String(pubYearTo));
+  }
+
+  if (includeDefaults || collegeSort.key !== URL_DEFAULTS.sort.key || collegeSort.dir !== URL_DEFAULTS.sort.dir) {
+    p.set('sort', collegeSort.dir === -1 ? '-' + collegeSort.key : collegeSort.key);
+  }
+  if (expandAllOn) p.set('expand', '1');
+  return p;
+}
+
+// URLSearchParams escapes commas to %2C; commas are URL-safe sub-delims and
+// we use them as in-value list separators, so unescape for readability.
+function paramsToQuery(p) {
+  return p.toString().replace(/%2C/g, ',');
+}
+
+function currentUrl() {
+  const qs = paramsToQuery(buildUrlParams());
+  return location.origin + location.pathname + (qs ? '?' + qs : '');
+}
+
+function shareUrl() {
+  const qs = paramsToQuery(buildUrlParams({ includeDefaults: true }));
+  return location.origin + location.pathname + (qs ? '?' + qs : '');
+}
+
+let _urlSyncQueued = false;
+function syncUrl() {
+  if (_urlSyncQueued) return;
+  _urlSyncQueued = true;
+  requestAnimationFrame(() => {
+    _urlSyncQueued = false;
+    const target = currentUrl();
+    if (target !== location.href) history.replaceState(null, '', target);
+  });
+}
+
+function applyUrlState() {
+  const p = new URLSearchParams(location.search);
+
+  if (p.has('cat')) {
+    activeCategories = new Set(p.get('cat').split(',').filter(Boolean));
+  }
+  if (p.has('sub')) {
+    activeSubfields = new Set(p.get('sub').split(',').filter(Boolean));
+  }
+  if (p.has('xsub')) {
+    excludedSubfields = new Set(p.get('xsub').split(',').filter(Boolean));
+  }
+  if (p.has('scope')) {
+    const v = p.get('scope');
+    if (VALID_SCOPE.has(v)) subfieldScope = v;
+  }
+  if (p.has('state')) activeState = p.get('state') || '';
+  if (p.has('q')) {
+    searchQuery = p.get('q');
+    searchDraft = searchQuery;
+  }
+  if (p.has('view')) {
+    const v = p.get('view');
+    if (VALID_VIEW.has(v)) currentView = v;
+  }
+  if (p.has('venue')) pubIncludes = decodePubGroups(p.get('venue'));
+  if (p.has('xvenue')) pubExcludes = decodePubGroups(p.get('xvenue'));
+  if (p.has('yfrom')) {
+    const raw = p.get('yfrom');
+    if (raw === '') pubYearFrom = null;
+    else {
+      const y = parseInt(raw, 10);
+      if (Number.isFinite(y)) pubYearFrom = y;
+    }
+  }
+  if (p.has('yto')) {
+    const raw = p.get('yto');
+    if (raw === '') pubYearTo = null;
+    else {
+      const y = parseInt(raw, 10);
+      if (Number.isFinite(y)) pubYearTo = y;
+    }
+  }
+  if (p.has('sort')) {
+    const s = p.get('sort');
+    const dir = s.startsWith('-') ? -1 : 1;
+    const key = s.replace(/^-/, '');
+    if (VALID_SORT_KEYS.has(key)) collegeSort = { key, dir };
+  }
+  if (p.get('expand') === '1') expandAllOn = true;
+
+  // Auto-open the advanced bar when the URL pre-applies any advanced filter,
+  // so the visitor can see what's been set.
+  const [defFrom, defTo] = defaultPubYearRange();
+  let pubFiltersCustom = false;
+  for (const g of ['conference', 'journal', 'other']) {
+    if (!setsEqual(pubIncludes[g], URL_DEFAULTS.pubInc[g]) || pubExcludes[g].size) {
+      pubFiltersCustom = true;
+      break;
+    }
+  }
+  const advActive = activeSubfields.size || excludedSubfields.size ||
+    subfieldScope !== URL_DEFAULTS.scope || activeState ||
+    pubYearFrom !== defFrom || pubYearTo !== defTo || pubFiltersCustom;
+  if (advActive) {
+    advancedExpanded = true;
+    const bar = document.getElementById('advanced-bar');
+    if (bar) bar.classList.remove('collapsed');
+  }
+}
 
 // USPS state/territory codes → full names. Used by the advanced state filter.
 const US_STATES = {
@@ -245,6 +440,45 @@ document.getElementById('theme-btn').addEventListener('click', () => {
   const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   html.setAttribute('data-theme', next);
   localStorage.setItem('theme', next);
+});
+
+// ── share link ─────────────────────────────────────────────────────────────
+function flashShareCopied(label) {
+  const btn = document.getElementById('share-btn');
+  if (!btn) return;
+  const fb = btn.querySelector('.action-feedback');
+  if (fb && label) fb.textContent = label;
+  btn.classList.add('copied');
+  clearTimeout(btn._copiedTimer);
+  btn._copiedTimer = setTimeout(() => btn.classList.remove('copied'), 1500);
+}
+
+document.getElementById('share-btn').addEventListener('click', async () => {
+  // If the user is mid-typing in the search box, commit the draft so the
+  // shared URL captures the current query rather than the previous one.
+  if (searchDraft !== searchQuery) {
+    searchQuery = searchDraft;
+    if (searchTimer) { clearTimeout(searchTimer); searchTimer = null; }
+    renderAll();
+  }
+  const url = shareUrl();
+  let ok = false;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    try { await navigator.clipboard.writeText(url); ok = true; } catch (_) {}
+  }
+  if (!ok) {
+    const ta = document.createElement('textarea');
+    ta.value = url;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); ok = true; } catch (_) {}
+    document.body.removeChild(ta);
+  }
+  flashShareCopied(ok ? 'Copied!' : 'Copy failed');
+  track('share', 'share', ok ? 'copy' : 'copy_fail');
 });
 
 // ── data ───────────────────────────────────────────────────────────────────
@@ -404,6 +638,7 @@ async function loadData() {
     }
   }
 
+  applyUrlState();
   buildCollegeHeaders();
   buildFilterBar();
   buildAdvancedBar();
@@ -474,12 +709,6 @@ function buildFilterBar() {
   const advIcon = advancedExpanded
     ? `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 6,3 10,7"/></svg>`
     : `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,5 6,9 10,5"/></svg>`;
-  const pubFilterCount = pubIncludes.conference.size + pubIncludes.journal.size + pubIncludes.other.size
-    + pubExcludes.conference.size + pubExcludes.journal.size + pubExcludes.other.size
-    + (pubYearFrom != null ? 1 : 0) + (pubYearTo != null ? 1 : 0);
-  const advTotal = activeSubfields.size + excludedSubfields.size + (activeState ? 1 : 0) + pubFilterCount;
-  const advCount = advTotal > 0 ? ` (${advTotal})` : '';
-
   // Preserve focus + caret position on the search input across rebuilds
   // (chip clicks call buildFilterBar(), which would otherwise blow it away).
   const prevSearch = document.getElementById('search-input');
@@ -517,7 +746,7 @@ function buildFilterBar() {
          </svg>
        </button>
      </span>` +
-    `<button class="expand-toggle" id="advanced-toggle">${advIcon}Advanced filter${advCount}</button>` +
+    `<button class="expand-toggle" id="advanced-toggle">${advIcon}Advanced filter</button>` +
     `<button class="expand-toggle" id="expand-toggle">${expandIcon}${expandLabel}</button>`;
 
   if (searchHadFocus) {
@@ -619,6 +848,7 @@ function buildFilterBar() {
         track('view', 'global', 'switch', currentView);
         applyGlobalView();
         buildFilterBar();
+        syncUrl();
       });
     });
   }
@@ -904,6 +1134,7 @@ function toggleExpandAll() {
     }
   });
   buildFilterBar();
+  syncUrl();
 }
 
 // ── filtered aggregation ───────────────────────────────────────────────────
@@ -1309,6 +1540,7 @@ function renderAll() {
   renderColleges(aggregated);
   // College rows were rebuilt — re-stamp each row's --summary-h.
   if (typeof updateHeaderH === 'function') updateHeaderH();
+  syncUrl();
 }
 
 // ── college headers ────────────────────────────────────────────────────────
@@ -1339,20 +1571,41 @@ function buildCollegeHeaders() {
 }
 
 // ── college sort ───────────────────────────────────────────────────────────
-function sortedColleges(colleges) {
+function collegeSortValueFn() {
   const searching = !!searchQuery.trim();
-  const fn = {
+  return {
     name:              c => c.name,
     total:             c => c.total,
     courses_per_year:  c => (searching ? c.filtered_courses : c.courses_per_year) ?? -1,
     filtered_pubs:     c => c.filtered_pubs ?? -1,
   }[collegeSort.key] || (c => c.name);
+}
 
+function sortedColleges(colleges) {
+  const fn = collegeSortValueFn();
   return [...colleges].sort((a, b) => {
     const av = fn(a), bv = fn(b);
     if (typeof av === 'string') return collegeSort.dir * av.localeCompare(bv);
     return collegeSort.dir * (av - bv);
   });
+}
+
+// Competition ranking ("1224"): rows with the same sort-column value share
+// a rank; the next distinct value jumps ahead by the size of the tie group.
+// e.g. faculty counts 18, 13, 13, 13, 10 → ranks 1, 2, 2, 2, 5.
+function computeCollegeRanks(sorted) {
+  const fn = collegeSortValueFn();
+  const ranks = new Array(sorted.length);
+  let lastVal, lastRank = 0;
+  for (let i = 0; i < sorted.length; i++) {
+    const v = fn(sorted[i]);
+    if (i === 0 || v !== lastVal) {
+      lastRank = i + 1;
+      lastVal = v;
+    }
+    ranks[i] = lastRank;
+  }
+  return ranks;
 }
 
 // ── render colleges ────────────────────────────────────────────────────────
@@ -1374,8 +1627,10 @@ function renderColleges(colleges) {
     });
   });
   list.innerHTML = '';
-  sortedColleges(colleges).forEach((college, idx) => {
-    list.appendChild(buildCollegeRow(college, idx, preserved.get(college.name)));
+  const sorted = sortedColleges(colleges);
+  const ranks = computeCollegeRanks(sorted);
+  sorted.forEach((college, idx) => {
+    list.appendChild(buildCollegeRow(college, idx, preserved.get(college.name), ranks[idx]));
   });
 }
 
@@ -1483,7 +1738,7 @@ function safeTruncateForLines(text, maxChars) {
   return text.slice(0, lastSpace);
 }
 
-function buildCollegeRow(college, idx, priorOpenState) {
+function buildCollegeRow(college, idx, priorOpenState, rank) {
   const div = document.createElement('div');
   div.className = 'college-row';
 
@@ -1510,7 +1765,7 @@ function buildCollegeRow(college, idx, priorOpenState) {
       <div class="col-grid">
         <div class="td td-name">
           <span class="name-marker">
-            <span class="college-num">${idx + 1}</span>
+            <span class="college-num">${rank}</span>
             <span class="chevron">
               <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="4,2 8,6 4,10"/>

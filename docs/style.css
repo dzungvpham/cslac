@@ -207,10 +207,63 @@ header {
   opacity: 0.6;
 }
 
+/* ── header action buttons (share + theme) ── */
+.header-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.action-btn {
+  position: relative;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+  cursor: pointer;
+}
+.action-btn:hover {
+  border-color: var(--text);
+  color: var(--text);
+  background: var(--hover-bg);
+}
+.icon-share {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.action-feedback {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  z-index: 5;
+}
+.action-btn.copied .action-feedback {
+  opacity: 1;
+}
+
 /* ── theme toggle ── */
 .theme-toggle {
   flex-shrink: 0;
-  margin-top: 4px;
   width: 34px;
   height: 34px;
   border: 1px solid var(--border);
