@@ -166,4 +166,7 @@ data_old/
 taxonomy/
 paper/
 
+# IPEDS source dumps: re-downloadable cache for degrees_awarded_scraper.py
+data/degrees_awarded/raw/
+
 *.DS_Store
