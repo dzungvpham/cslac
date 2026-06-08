@@ -1053,7 +1053,8 @@
           "Computer vision"
         ]
       }
-    ]
+    ],
+    "majors": 10
   },
   "Albright College": {
     "state": "PA",
@@ -1323,7 +1324,8 @@
           null
         ]
       }
-    ]
+    ],
+    "majors": 35
   },
   "Allegheny College": {
     "state": "PA",
@@ -4444,7 +4446,8 @@
           "Software engineering"
         ]
       }
-    ]
+    ],
+    "majors": 82
   },
   "Amherst College": {
     "state": "MA",
@@ -9472,7 +9475,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 196
   },
   "Augustana College": {
     "state": "IL",
@@ -10089,7 +10093,8 @@
           "Artificial intelligence"
         ]
       }
-    ]
+    ],
+    "majors": 86
   },
   "Austin College": {
     "state": "TX",
@@ -11097,7 +11102,8 @@
           "Cryptography"
         ]
       }
-    ]
+    ],
+    "majors": 44
   },
   "Bard College": {
     "state": "NY",
@@ -11865,7 +11871,8 @@
           "Computational social science"
         ]
       }
-    ]
+    ],
+    "majors": 0
   },
   "Barnard College": {
     "state": "NY",
@@ -13165,7 +13172,8 @@
           "Artificial intelligence"
         ]
       }
-    ]
+    ],
+    "majors": 196
   },
   "Beloit College": {
     "state": "WI",
@@ -14119,7 +14127,8 @@
           "Algorithms & complexity"
         ]
       }
-    ]
+    ],
+    "majors": 38
   },
   "Berea College": {
     "state": "KY",
@@ -17340,7 +17349,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 113
   },
   "Bethany College (WV)": {
     "state": "WV",
@@ -17413,7 +17423,8 @@
           "Computer security & privacy"
         ]
       }
-    ]
+    ],
+    "majors": 13
   },
   "Bethany Lutheran College": {
     "state": "MN",
@@ -17441,7 +17452,8 @@
     ],
     "total": 1,
     "matched": 0,
-    "total_citations": 0
+    "total_citations": 0,
+    "majors": 14
   },
   "Bowdoin College": {
     "state": "ME",
@@ -20142,7 +20154,8 @@
           "Robotics"
         ]
       }
-    ]
+    ],
+    "majors": 186
   },
   "Bridgewater College": {
     "state": "VA",
@@ -20326,7 +20339,8 @@
           1
         ]
       }
-    ]
+    ],
+    "majors": 39
   },
   "Bryn Athyn College": {
     "state": "PA",
@@ -20479,7 +20493,8 @@
           "Algorithms & complexity"
         ]
       }
-    ]
+    ],
+    "majors": 0
   },
   "Bryn Mawr College": {
     "state": "PA",
@@ -22515,7 +22530,8 @@
           "Measurement & performance analysis"
         ]
       }
-    ]
+    ],
+    "majors": 69
   },
   "Bucknell University": {
     "state": "PA",
@@ -28098,7 +28114,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 101
   },
   "Carleton College": {
     "state": "MN",
@@ -34858,7 +34875,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 271
   },
   "Central College": {
     "state": "IA",
@@ -34988,7 +35006,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 32
   },
   "Centre College": {
     "state": "KY",
@@ -35746,7 +35765,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 56
   },
   "Claflin University": {
     "state": "SC",
@@ -36629,7 +36649,8 @@
           "Cryptography"
         ]
       }
-    ]
+    ],
+    "majors": 37
   },
   "Coe College": {
     "state": "IA",
@@ -37245,7 +37266,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 41
   },
   "Colby College": {
     "state": "ME",
@@ -41445,7 +41467,8 @@
           "Computer vision"
         ]
       }
-    ]
+    ],
+    "majors": 172
   },
   "Colgate University": {
     "state": "NY",
@@ -45346,7 +45369,8 @@
           "Natural language processing"
         ]
       }
-    ]
+    ],
+    "majors": 207
   },
   "College of St Benedict": {
     "state": "MN",
@@ -47810,7 +47834,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 24
   },
   "College of the Holy Cross": {
     "state": "MA",
@@ -48749,7 +48774,8 @@
           "Logic & verification"
         ]
       }
-    ]
+    ],
+    "majors": 77
   },
   "College of Wooster": {
     "state": "OH",
@@ -49408,7 +49434,8 @@
           "Computer vision"
         ]
       }
-    ]
+    ],
+    "majors": 86
   },
   "Colorado College": {
     "state": "CO",
@@ -51551,7 +51578,8 @@
           "Algorithms & complexity"
         ]
       }
-    ]
+    ],
+    "majors": 102
   },
   "Concordia College": {
     "state": "MN",
@@ -52462,7 +52490,8 @@
           "Distributed systems"
         ]
       }
-    ]
+    ],
+    "majors": 46
   },
   "Connecticut College": {
     "state": "CT",
@@ -57244,7 +57273,8 @@
           "Artificial intelligence"
         ]
       }
-    ]
+    ],
+    "majors": 112
   },
   "Cornell College": {
     "state": "IA",
@@ -57304,7 +57334,8 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 33
+    "total_citations": 33,
+    "majors": 61
   },
   "Covenant College": {
     "state": "GA",
@@ -57622,7 +57653,8 @@
           null
         ]
       }
-    ]
+    ],
+    "majors": 36
   },
   "Davidson College": {
     "state": "NC",
@@ -63655,7 +63687,8 @@
           "Computer networks"
         ]
       }
-    ]
+    ],
+    "majors": 162
   },
   "Denison University": {
     "state": "OH",
@@ -67053,7 +67086,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 83
   },
   "DePauw University": {
     "state": "IN",
@@ -68709,7 +68743,8 @@
           "Cryptography"
         ]
       }
-    ]
+    ],
+    "majors": 166
   },
   "Dickinson College": {
     "state": "PA",
@@ -71783,7 +71818,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 69
   },
   "Drew University": {
     "state": "NJ",
@@ -73451,7 +73487,8 @@
           "Cryptography"
         ]
       }
-    ]
+    ],
+    "majors": 81
   },
   "Earlham College": {
     "state": "IN",
@@ -75641,7 +75678,8 @@
           "Artificial intelligence"
         ]
       }
-    ]
+    ],
+    "majors": 36
   },
   "East-West University": {
     "state": "IL",
@@ -75717,7 +75755,8 @@
     ],
     "total": 4,
     "matched": 0,
-    "total_citations": 0
+    "total_citations": 0,
+    "majors": 41
   },
   "Eckerd College": {
     "state": "FL",
@@ -76616,7 +76655,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 16
   },
   "Franklin College": {
     "state": "IN",
@@ -77455,7 +77495,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 15
   },
   "Franklin & Marshall College": {
     "state": "PA",
@@ -78529,7 +78570,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 58
   },
   "Furman University": {
     "state": "SC",
@@ -80530,7 +80572,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 62
   },
   "Gettysburg College": {
     "state": "PA",
@@ -84245,7 +84288,8 @@
           "High-performance computing"
         ]
       }
-    ]
+    ],
+    "majors": 68
   },
   "Gordon College": {
     "state": "MA",
@@ -84507,7 +84551,8 @@
           "Logic & verification"
         ]
       }
-    ]
+    ],
+    "majors": 51
   },
   "Goucher College": {
     "state": "MD",
@@ -85389,7 +85434,8 @@
           "Natural language processing"
         ]
       }
-    ]
+    ],
+    "majors": 28
   },
   "Grinnell College": {
     "state": "IA",
@@ -89303,7 +89349,8 @@
           "Natural language processing"
         ]
       }
-    ]
+    ],
+    "majors": 237
   },
   "Gustavus Adolphus College": {
     "state": "MN",
@@ -89712,7 +89759,8 @@
           "Data science"
         ]
       }
-    ]
+    ],
+    "majors": 54
   },
   "Hamilton College": {
     "state": "NY",
@@ -92186,7 +92234,8 @@
           "High-performance computing"
         ]
       }
-    ]
+    ],
+    "majors": 98
   },
   "Hampden-Sydney College": {
     "state": "VA",
@@ -93601,7 +93650,8 @@
           "Algorithms & complexity"
         ]
       }
-    ]
+    ],
+    "majors": 16
   },
   "Hanover College": {
     "state": "IN",
@@ -93674,7 +93724,8 @@
           "Logic & verification"
         ]
       }
-    ]
+    ],
+    "majors": 28
   },
   "Hartwick College": {
     "state": "NY",
@@ -93837,7 +93888,8 @@
           null
         ]
       }
-    ]
+    ],
+    "majors": 35
   },
   "Harvey Mudd College": {
     "state": "CA",
@@ -102794,7 +102846,8 @@
           "Human-computer interaction"
         ]
       }
-    ]
+    ],
+    "majors": 376
   },
   "Haverford College": {
     "state": "PA",
@@ -106902,7 +106955,8 @@
           "Artificial intelligence"
         ]
       }
-    ]
+    ],
+    "majors": 123
   },
   "Hendrix College": {
     "state": "AR",
@@ -108444,7 +108498,8 @@
           "Computational bio & bioinformatics"
         ]
       }
-    ]
+    ],
+    "majors": 51
   },
   "Hobart and William Smith College": {
     "state": "NY",
@@ -109322,7 +109377,8 @@
         "pub_type": "journal",
         "subfields": []
       }
-    ]
+    ],
+    "majors": 47
   },
   "Hope College": {
     "state": "MI",
@@ -111649,7 +111705,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 55
   },
   "Houghton University": {
     "state": "NY",
@@ -111964,7 +112021,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 18
   },
   "Illinois College": {
     "state": "IL",
@@ -112414,7 +112472,8 @@
           "Logic & verification"
         ]
       }
-    ]
+    ],
+    "majors": 32
   },
   "Juniata College": {
     "state": "PA",
@@ -113075,7 +113134,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 47
   },
   "Kalamazoo College": {
     "state": "MI",
@@ -114492,7 +114552,8 @@
           "Embedded & real-time systems"
         ]
       }
-    ]
+    ],
+    "majors": 93
   },
   "Knox College": {
     "state": "IL",
@@ -119655,7 +119716,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 86
   },
   "Lafayette College": {
     "state": "PA",
@@ -123617,7 +123679,8 @@
           "Economics & computation"
         ]
       }
-    ]
+    ],
+    "majors": 102
   },
   "Lake Forest College": {
     "state": "IL",
@@ -123923,7 +123986,8 @@
           "Information retrieval"
         ]
       }
-    ]
+    ],
+    "majors": 67
   },
   "Lane College": {
     "state": "TN",
@@ -124144,7 +124208,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 23
   },
   "Lawrence University": {
     "state": "WI",
@@ -124982,7 +125047,8 @@
           "Distributed systems"
         ]
       }
-    ]
+    ],
+    "majors": 42
   },
   "Linfield University": {
     "state": "OR",
@@ -125658,7 +125724,8 @@
           "Algorithms & complexity"
         ]
       }
-    ]
+    ],
+    "majors": 19
   },
   "Luther College": {
     "state": "IA",
@@ -126198,7 +126265,8 @@
           "Computer vision"
         ]
       }
-    ]
+    ],
+    "majors": 55
   },
   "Lycoming College": {
     "state": "PA",
@@ -126457,7 +126525,8 @@
           ]
         ]
       }
-    ]
+    ],
+    "majors": 3
   },
   "Lyon College": {
     "state": "AR",
@@ -126913,7 +126982,8 @@
           "Software engineering"
         ]
       }
-    ]
+    ],
+    "majors": 46
   },
   "Macalester College": {
     "state": "MN",
@@ -132919,7 +132989,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 228
   },
   "Maryville College": {
     "state": "TN",
@@ -133160,7 +133231,8 @@
           ]
         ]
       }
-    ]
+    ],
+    "majors": 10
   },
   "Meredith College": {
     "state": "NC",
@@ -133518,7 +133590,8 @@
           ]
         ]
       }
-    ]
+    ],
+    "majors": 26
   },
   "Middlebury College": {
     "state": "VT",
@@ -139031,7 +139104,8 @@
           "Natural language processing"
         ]
       }
-    ]
+    ],
+    "majors": 230
   },
   "Monmouth College": {
     "state": "IL",
@@ -139185,7 +139259,8 @@
           "Databases"
         ]
       }
-    ]
+    ],
+    "majors": 14
   },
   "Mount Holyoke College": {
     "state": "MA",
@@ -142909,7 +142984,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 145
   },
   "Muhlenberg College": {
     "state": "PA",
@@ -143295,7 +143371,8 @@
           "Embedded & real-time systems"
         ]
       }
-    ]
+    ],
+    "majors": 57
   },
   "New College of Florida": {
     "state": "FL",
@@ -144607,7 +144684,8 @@
           "Natural language processing"
         ]
       }
-    ]
+    ],
+    "majors": 0
   },
   "Oberlin College": {
     "state": "OH",
@@ -148295,7 +148373,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 145
   },
   "Occidental College": {
     "state": "CA",
@@ -150236,7 +150315,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 112
   },
   "Ohio Wesleyan University": {
     "state": "OH",
@@ -150403,7 +150483,8 @@
           1
         ]
       }
-    ]
+    ],
+    "majors": 28
   },
   "Pomona College": {
     "state": "CA",
@@ -157061,7 +157142,8 @@
           "Natural language processing"
         ]
       }
-    ]
+    ],
+    "majors": 198
   },
   "Presbyterian College": {
     "state": "SC",
@@ -157375,7 +157457,8 @@
           ]
         ]
       }
-    ]
+    ],
+    "majors": 18
   },
   "Randolph College": {
     "state": "VA",
@@ -157607,7 +157690,8 @@
           null
         ]
       }
-    ]
+    ],
+    "majors": 7
   },
   "Randolph-Macon College": {
     "state": "VA",
@@ -159131,7 +159215,8 @@
           "Computer networks"
         ]
       }
-    ]
+    ],
+    "majors": 113
   },
   "Reed College": {
     "state": "OR",
@@ -160362,7 +160447,8 @@
           "Robotics"
         ]
       }
-    ]
+    ],
+    "majors": 89
   },
   "Rhodes College": {
     "state": "TN",
@@ -160919,7 +161005,8 @@
           "Algorithms & complexity"
         ]
       }
-    ]
+    ],
+    "majors": 123
   },
   "Roanoke College": {
     "state": "VA",
@@ -162108,7 +162195,8 @@
           "Logic & verification"
         ]
       }
-    ]
+    ],
+    "majors": 28
   },
   "Saint Anselm College": {
     "state": "NH",
@@ -162444,7 +162532,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 60
   },
   "Saint Michael's College": {
     "state": "VT",
@@ -162768,7 +162857,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 24
   },
   "Skidmore College": {
     "state": "NY",
@@ -165187,7 +165277,8 @@
           "Computer security & privacy"
         ]
       }
-    ]
+    ],
+    "majors": 85
   },
   "Smith College": {
     "state": "MA",
@@ -171693,7 +171784,8 @@
         "pub_type": "preprint",
         "subfields": []
       }
-    ]
+    ],
+    "majors": 157
   },
   "Southern Virginia University": {
     "state": "VA",
@@ -171721,7 +171813,8 @@
     ],
     "total": 1,
     "matched": 1,
-    "total_citations": 379
+    "total_citations": 379,
+    "majors": 24
   },
   "Southwestern University": {
     "state": "TX",
@@ -173432,7 +173525,8 @@
           "Algorithms & complexity"
         ]
       }
-    ]
+    ],
+    "majors": 52
   },
   "St. Lawrence University": {
     "state": "NY",
@@ -174965,7 +175059,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 63
   },
   "St. Mary's College of Maryland": {
     "state": "MD",
@@ -176096,7 +176191,8 @@
           "Programming languages"
         ]
       }
-    ]
+    ],
+    "majors": 75
   },
   "St. Olaf College": {
     "state": "MN",
@@ -177564,7 +177660,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 124
   },
   "Stonehill College": {
     "state": "MA",
@@ -178367,7 +178464,8 @@
           "Software engineering"
         ]
       }
-    ]
+    ],
+    "majors": 54
   },
   "Susquehanna University": {
     "state": "PA",
@@ -180276,7 +180374,8 @@
           "Computer security & privacy"
         ]
       }
-    ]
+    ],
+    "majors": 45
   },
   "Swarthmore College": {
     "state": "PA",
@@ -185963,7 +186062,8 @@
           "Computer security & privacy"
         ]
       }
-    ]
+    ],
+    "majors": 273
   },
   "Tougaloo College": {
     "state": "MS",
@@ -186104,7 +186204,8 @@
           1
         ]
       }
-    ]
+    ],
+    "majors": 12
   },
   "Transylvania University": {
     "state": "KY",
@@ -186413,7 +186514,8 @@
           "Robotics"
         ]
       }
-    ]
+    ],
+    "majors": 19
   },
   "Trinity College": {
     "state": "CT",
@@ -187613,7 +187715,8 @@
           "Computer security & privacy"
         ]
       }
-    ]
+    ],
+    "majors": 81
   },
   "Trinity University": {
     "state": "TX",
@@ -190228,7 +190331,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 140
   },
   "Union College (NY)": {
     "state": "NY",
@@ -192528,7 +192632,8 @@
           "High-performance computing"
         ]
       }
-    ]
+    ],
+    "majors": 84
   },
   "University of Mary Washington": {
     "state": "VA",
@@ -197372,7 +197477,8 @@
           "Software engineering"
         ]
       }
-    ]
+    ],
+    "majors": 238
   },
   "University of Minnesota Morris": {
     "state": "MN",
@@ -199396,7 +199502,8 @@
           "High-performance computing"
         ]
       }
-    ]
+    ],
+    "majors": 68
   },
   "University of North Carolina Asheville": {
     "state": "NC",
@@ -201779,7 +201886,8 @@
           "Robotics"
         ]
       }
-    ]
+    ],
+    "majors": 115
   },
   "University of Puget Sound": {
     "state": "WA",
@@ -203345,7 +203453,8 @@
           "Artificial intelligence"
         ]
       }
-    ]
+    ],
+    "majors": 78
   },
   "University of Richmond": {
     "state": "VA",
@@ -205660,7 +205769,8 @@
           "Distributed systems"
         ]
       }
-    ]
+    ],
+    "majors": 128
   },
   "The University of the South": {
     "state": "TN",
@@ -206640,7 +206750,8 @@
         "pub_type": "journal",
         "subfields": []
       }
-    ]
+    ],
+    "majors": 17
   },
   "University of Virginia--Wise": {
     "state": "VA",
@@ -206748,7 +206859,8 @@
     ],
     "total": 6,
     "matched": 1,
-    "total_citations": 40
+    "total_citations": 40,
+    "majors": 33
   },
   "Ursinus College": {
     "state": "PA",
@@ -207769,7 +207881,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 64
   },
   "Vassar College": {
     "state": "NY",
@@ -211772,7 +211885,8 @@
           "Computer vision"
         ]
       }
-    ]
+    ],
+    "majors": 139
   },
   "Virginia Wesleyan University": {
     "state": "VA",
@@ -212728,7 +212842,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 34
   },
   "Wabash College": {
     "state": "IN",
@@ -214168,7 +214283,8 @@
           "Computational social science"
         ]
       }
-    ]
+    ],
+    "majors": 30
   },
   "Wartburg College": {
     "state": "IA",
@@ -214903,7 +215019,8 @@
           ]
         ]
       }
-    ]
+    ],
+    "majors": 44
   },
   "Washington and Lee University": {
     "state": "VA",
@@ -216564,7 +216681,8 @@
           "Natural language processing"
         ]
       }
-    ]
+    ],
+    "majors": 68
   },
   "Washington College": {
     "state": "MD",
@@ -217191,7 +217309,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 39
   },
   "Washington & Jefferson College": {
     "state": "PA",
@@ -218370,7 +218489,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 0
   },
   "Wellesley College": {
     "state": "MA",
@@ -229583,7 +229703,8 @@
           "Computational social science"
         ]
       }
-    ]
+    ],
+    "majors": 378
   },
   "Wesleyan University": {
     "state": "CT",
@@ -233571,7 +233692,8 @@
           "Artificial intelligence"
         ]
       }
-    ]
+    ],
+    "majors": 196
   },
   "Westminster College (PA)": {
     "state": "MO",
@@ -233773,7 +233895,8 @@
           "Computer science education"
         ]
       }
-    ]
+    ],
+    "majors": 15
   },
   "Wheaton College (IL)": {
     "state": "IL",
@@ -234358,7 +234481,8 @@
           "Computer security & privacy"
         ]
       }
-    ]
+    ],
+    "majors": 55
   },
   "Wheaton College (MA)": {
     "state": "MA",
@@ -236050,7 +236174,8 @@
           "Data science"
         ]
       }
-    ]
+    ],
+    "majors": 49
   },
   "Whitman College": {
     "state": "WA",
@@ -237275,7 +237400,8 @@
           "Computer vision"
         ]
       }
-    ]
+    ],
+    "majors": 81
   },
   "Willamette University": {
     "state": "OR",
@@ -239164,7 +239290,8 @@
           "High-performance computing"
         ]
       }
-    ]
+    ],
+    "majors": 46
   },
   "Williams College": {
     "state": "MA",
@@ -245379,7 +245506,8 @@
           "Machine learning"
         ]
       }
-    ]
+    ],
+    "majors": 214
   },
   "Wittenberg University": {
     "state": "OH",
@@ -245536,7 +245664,8 @@
           0
         ]
       }
-    ]
+    ],
+    "majors": 32
   },
   "Wofford College": {
     "state": "SC",
@@ -246634,6 +246763,7 @@
           null
         ]
       }
-    ]
+    ],
+    "majors": 54
   }
 }

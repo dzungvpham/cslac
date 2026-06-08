@@ -50,6 +50,7 @@ DEFAULT_OPENALEX = ROOT / "data" / "faculty_list_with_openalex_profile.csv"
 DEFAULT_COLLEGES = ROOT / "data" / "colleges.csv"
 DEFAULT_COURSES  = ROOT / "data" / "course_schedule"
 DEFAULT_PUBS     = ROOT / "data" / "faculty_publications.csv"
+DEFAULT_DEGREES  = ROOT / "data" / "degrees_awarded.csv"
 DEFAULT_OUTPUT   = DOCS / "data.json"
 INDEX_HTML       = DOCS / "index.html"
 SITEMAP_XML      = DOCS / "sitemap.xml"
@@ -881,10 +882,45 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
     return result
 
 
+# ── degrees awarded ────────────────────────────────────────────────────────
+
+def build_degrees(degrees_csv: Path) -> dict[str, int]:
+    """Return {college_name: CS degrees awarded summed over the last 4 years}.
+
+    The CSV carries one column per calendar year after the metadata columns
+    (college, UNITID, ipeds_name, cs_cip_codes); we detect those 4-digit year
+    columns and sum the most recent four so the window tracks the data as new
+    years are appended. Colleges absent from the file get no entry; a present
+    college with no degrees yields 0 (the dashboard renders that as "—")."""
+    if not degrees_csv.exists():
+        return {}
+    result: dict[str, int] = {}
+    with open(degrees_csv, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        year_cols = [c for c in (reader.fieldnames or []) if c.isdigit() and len(c) == 4]
+        recent = year_cols[-4:]
+        for row in reader:
+            name = (row.get("college") or "").strip()
+            if not name:
+                continue
+            total = 0
+            for c in recent:
+                v = (row.get(c) or "").strip()
+                if not v:
+                    continue
+                try:
+                    total += int(float(v))
+                except (ValueError, TypeError):
+                    pass
+            result[name] = total
+    return result
+
+
 # ── merge + date sync ─────────────────────────────────────────────────────
 
-def merge(faculty: dict[str, dict], links: dict[str, dict], courses: dict[str, dict], publications: dict[str, dict]) -> dict[str, dict]:
-    """Combine the four per-college maps. Iteration follows the faculty map
+def merge(faculty: dict[str, dict], links: dict[str, dict], courses: dict[str, dict],
+          publications: dict[str, dict], degrees: dict[str, int]) -> dict[str, dict]:
+    """Combine the per-college maps. Iteration follows the faculty map
     insertion order (CSV row order), preserving the legacy UI ordering."""
     out: dict[str, dict] = {}
     for name, fac in faculty.items():
@@ -896,6 +932,8 @@ def merge(faculty: dict[str, dict], links: dict[str, dict], courses: dict[str, d
             entry.update(courses[name])
         if name in publications:
             entry.update(publications[name])
+        if name in degrees:
+            entry["majors"] = degrees[name]
         out[name] = entry
     return out
 
@@ -958,6 +996,7 @@ def main():
     p.add_argument("--colleges", type=Path, default=DEFAULT_COLLEGES)
     p.add_argument("--courses-dir", type=Path, default=DEFAULT_COURSES)
     p.add_argument("--pubs",     type=Path, default=DEFAULT_PUBS)
+    p.add_argument("--degrees",  type=Path, default=DEFAULT_DEGREES)
     p.add_argument("--output",   type=Path, default=DEFAULT_OUTPUT)
     p.add_argument("--no-sync-dates", action="store_true",
                    help="Skip updating JSON-LD/sitemap/footer dates.")
@@ -967,7 +1006,8 @@ def main():
     links = build_links(args.colleges, set(faculty.keys()))
     courses = build_courses(args.courses_dir, faculty_match_index(faculty))
     publications = build_publications(args.pubs)
-    merged = merge(faculty, links, courses, publications)
+    degrees = build_degrees(args.degrees)
+    merged = merge(faculty, links, courses, publications, degrees)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:

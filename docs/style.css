@@ -327,7 +327,7 @@ header {
 /* shared column grid — must match between header and rows */
 .col-grid {
   display: grid;
-  grid-template-columns: 1fr 80px 80px 80px;
+  grid-template-columns: 1fr 80px 80px 80px 80px;
   align-items: center;
 }
 
@@ -1420,11 +1420,11 @@ a.pub-author:hover {
   /* main college grid: shrink metric columns to fit ~360px viewports.
      minmax(0,1fr) — not 1fr — so the name column can shrink below its
      min-content (chevron + state + link icons would otherwise force overflow). */
-  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px; }
+  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px 56px; }
   .th { padding: 9px 4px; font-size: 10px; gap: 3px; }
 
-  /* Rotate the metric column labels (Faculty / Courses / Papers) 30°
-     from top-left to bottom-right so they stop crowding each other at
+  /* Rotate the metric column labels (Faculty / MAJ/FAC / Courses / Papers)
+     30° from top-left to bottom-right so they stop crowding each other at
      narrow widths. Label + sort icon rotate together as one unit. */
   .col-head-row { overflow: visible; }
   .col-head-row .th { overflow: visible; position: relative; }

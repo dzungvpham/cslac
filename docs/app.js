@@ -50,6 +50,7 @@ function venueRankTooltip(rank, source) {
 const COLLEGE_COLS = [
   { key: 'name',             label: 'Institution',   numeric: false },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
+  { key: 'maj_fac',          label: 'MAJ/FAC',  numeric: true, tooltip: 'Ratio of CS majors graduated over the last 4 years to the number of tenured/tenure-track faculty' },
   { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last two academic years' },
   { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers affiliated with the institution and matching the current filters' },
 ];
@@ -241,7 +242,7 @@ const PUB_GROUP_SHORT = { conference: 'c', journal: 'j', other: 'o' };
 const PUB_GROUP_LONG = { c: 'conference', j: 'journal', o: 'other' };
 const VALID_VIEW = new Set(['faculty', 'courses', 'publications']);
 const VALID_SCOPE = new Set(['faculty', 'school']);
-const VALID_SORT_KEYS = new Set(['name', 'total', 'courses_per_year', 'filtered_pubs']);
+const VALID_SORT_KEYS = new Set(['name', 'total', 'maj_fac', 'courses_per_year', 'filtered_pubs']);
 
 function setsEqual(a, b) {
   if (a.size !== b.size) return false;
@@ -508,6 +509,7 @@ async function loadData() {
       faculty: d.faculty || [],
       total: d.total || 0,
       matched: d.matched || 0,
+      majors: d.majors ?? null,
     });
     collegeLinks[name] = {
       state: d.state ?? null,
@@ -560,6 +562,18 @@ async function loadData() {
     }
     c._search = collegeBits.toLowerCase();
     c.courses_per_year = recentCourseCount(courseSchedules[c.name]);
+    // MAJ/FAC: CS majors graduated over the last 4 years divided by the number
+    // of tenured + tenure-track faculty. Deliberately fixed — independent of the
+    // job-title / subfield / search filters — so it never shifts as the user
+    // filters (aggregateCollege carries it through unchanged). Rounded to the
+    // nearest integer so display, sort, and tie-ranks agree, and rendered as an
+    // "N:1" ratio in buildCollegeRow; null (→ "—") when there's no degree data,
+    // zero majors, or no tenure-line faculty.
+    const ttCount = c.faculty.filter(
+      f => f.category === 'tenured' || f.category === 'tenure_track').length;
+    c.maj_fac = (c.majors > 0 && ttCount > 0)
+      ? Math.round(c.majors / ttCount)
+      : null;
     collegesByName[c.name] = c;
   }
   // Search strings for publications (title, venue, every author + affiliation,
@@ -1578,6 +1592,7 @@ function collegeSortValueFn() {
   return {
     name:              c => c.name,
     total:             c => c.total,
+    maj_fac:           c => c.maj_fac ?? -1,
     courses_per_year:  c => (courseFiltering ? c.filtered_courses : c.courses_per_year) ?? -1,
     filtered_pubs:     c => c.filtered_pubs ?? -1,
   }[collegeSort.key] || (c => c.name);
@@ -1786,6 +1801,7 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
           </span>
         </div>
         <div class="td-num">${college.total}</div>
+        <div class="td-num ${college.maj_fac != null ? '' : 'dim'}">${college.maj_fac != null ? college.maj_fac + ':1' : '—'}</div>
         <div class="td-num ${coursesValue != null && (!courseFiltering || coursesValue > 0) ? '' : 'dim'}">${cpyText}</div>
         <div class="td-num ${college.filtered_pubs != null && college.filtered_pubs > 0 ? '' : 'dim'}">${fpText}</div>
       </div>
