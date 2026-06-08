@@ -378,22 +378,6 @@
         ]
       },
       {
-        "code": "CS 265X",
-        "name": "Database Processing",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1
-        ]
-      },
-      {
         "code": "CS 271",
         "name": "Artificial Intelligence",
         "offered": [
@@ -572,40 +556,6 @@
         ]
       },
       {
-        "code": "CS 277T",
-        "name": "Machine Learning",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "MM",
-              "n": "Mauricio Marengoni",
-              "u": "https://www.albion.edu/bio/mauricio-marengoni/"
-            }
-          ],
-          null,
-          null
-        ]
-      },
-      {
         "code": "CS 289",
         "name": "Parallel Programming",
         "offered": [
@@ -640,96 +590,22 @@
         ]
       },
       {
-        "code": "CS 352",
-        "name": "Algorithms",
-        "offered": [
-          0,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          [
-            {
-              "l": "YZ",
-              "n": "Yuming Zhang",
-              "u": "https://www.albion.edu/bio/yuming-zhang/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "MM",
-              "n": "Mauricio Marengoni",
-              "u": "https://www.albion.edu/bio/mauricio-marengoni/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "YZ",
-              "n": "Yuming Zhang",
-              "u": "https://www.albion.edu/bio/yuming-zhang/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "YZ",
-              "n": "Yuming Zhang",
-              "u": "https://www.albion.edu/bio/yuming-zhang/"
-            }
-          ],
-          null
-        ]
-      },
-      {
         "code": "CS 352X",
         "name": "Algorithms",
         "offered": [
           0,
           0,
+          1,
           0,
+          1,
           0,
+          1,
           0,
-          0,
-          0,
-          0,
-          0,
+          1,
           1
-        ]
-      },
-      {
-        "code": "CS 354",
-        "name": "Computer Organization",
-        "offered": [
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0
         ],
         "instructors": [
-          [
-            {
-              "l": "YZ",
-              "n": "Yuming Zhang",
-              "u": "https://www.albion.edu/bio/yuming-zhang/"
-            }
-          ],
+          null,
           null,
           [
             {
@@ -757,9 +633,9 @@
           null,
           [
             {
-              "l": "MM",
-              "n": "Mauricio Marengoni",
-              "u": "https://www.albion.edu/bio/mauricio-marengoni/"
+              "l": "YZ",
+              "n": "Yuming Zhang",
+              "u": "https://www.albion.edu/bio/yuming-zhang/"
             }
           ],
           null
@@ -769,16 +645,58 @@
         "code": "CS 354X",
         "name": "Computer Organization",
         "offered": [
+          1,
           0,
+          1,
           0,
+          1,
           0,
+          1,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
           1
+        ],
+        "instructors": [
+          [
+            {
+              "l": "YZ",
+              "n": "Yuming Zhang",
+              "u": "https://www.albion.edu/bio/yuming-zhang/"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "YZ",
+              "n": "Yuming Zhang",
+              "u": "https://www.albion.edu/bio/yuming-zhang/"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "MM",
+              "n": "Mauricio Marengoni",
+              "u": "https://www.albion.edu/bio/mauricio-marengoni/"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "YZ",
+              "n": "Yuming Zhang",
+              "u": "https://www.albion.edu/bio/yuming-zhang/"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "MM",
+              "n": "Mauricio Marengoni",
+              "u": "https://www.albion.edu/bio/mauricio-marengoni/"
+            }
+          ],
+          null
         ]
       },
       {
@@ -5958,40 +5876,6 @@
         ]
       },
       {
-        "code": "COSC-390",
-        "name": "Special Topics",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          "https://www.amherst.edu/academiclife/departments/courses/2324F/COSC/COSC-390-2324F",
-          "https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-390-2324S",
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "JR",
-              "n": "John E. Rager",
-              "u": "https://www.amherst.edu/people/facstaff/jerager"
-            }
-          ],
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
         "code": "COSC-401",
         "name": "Theoretical Foundations of Computer Science",
         "offered": [
@@ -6191,6 +6075,11 @@
               "l": "MR",
               "n": "Matteo Riondato",
               "u": "https://www.amherst.edu/people/facstaff/mriondato"
+            },
+            {
+              "l": "JR",
+              "n": "John E. Rager",
+              "u": "https://www.amherst.edu/people/facstaff/jerager"
             }
           ],
           [
@@ -14715,7 +14604,7 @@
           0,
           0,
           0,
-          0,
+          1,
           0,
           1,
           1,
@@ -14725,7 +14614,13 @@
           null,
           null,
           null,
-          null,
+          [
+            {
+              "l": "JP",
+              "n": "Jan Pearce",
+              "u": "https://www.berea.edu/academics/departments-programs/computer-science/faculty-staff/dr-jan-pearce"
+            }
+          ],
           null,
           null,
           [
@@ -14990,36 +14885,6 @@
               "l": "JB",
               "n": "Jacqueline Boggs",
               "u": "https://www.berea.edu/academics/departments-programs/computer-science/faculty-staff/dr-jacqueline-jacci-boggs"
-            }
-          ],
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "CSC 386",
-        "name": "Scalable Algorithms & Objects",
-        "offered": [
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "JP",
-              "n": "Jan Pearce",
-              "u": "https://www.berea.edu/academics/departments-programs/computer-science/faculty-staff/dr-jan-pearce"
             }
           ],
           null,
@@ -23323,46 +23188,6 @@
         ]
       },
       {
-        "code": "CSCI 240",
-        "name": "Computers and Society",
-        "offered": [
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          [
-            {
-              "l": "DM",
-              "n": "Darakhshan Mir",
-              "u": "https://www.bucknell.edu/fac-staff/darakhshan-mir"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "DM",
-              "n": "Darakhshan Mir",
-              "u": "https://www.bucknell.edu/fac-staff/darakhshan-mir"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
         "code": "CSCI 278",
         "name": "Baseball Analytics",
         "offered": [
@@ -23995,11 +23820,11 @@
         "name": "Computers and Society",
         "offered": [
           0,
-          0,
-          0,
-          0,
           1,
           0,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -24007,9 +23832,21 @@
         ],
         "instructors": [
           null,
+          [
+            {
+              "l": "DM",
+              "n": "Darakhshan Mir",
+              "u": "https://www.bucknell.edu/fac-staff/darakhshan-mir"
+            }
+          ],
           null,
-          null,
-          null,
+          [
+            {
+              "l": "DM",
+              "n": "Darakhshan Mir",
+              "u": "https://www.bucknell.edu/fac-staff/darakhshan-mir"
+            }
+          ],
           [
             {
               "l": "DM",
@@ -35110,7 +34947,7 @@
         "code": "CSC 180",
         "name": "Systems Programming",
         "offered": [
-          0,
+          1,
           1,
           1,
           1,
@@ -35119,7 +34956,13 @@
           1
         ],
         "instructors": [
-          null,
+          [
+            {
+              "l": "DT",
+              "n": "Dave Toth",
+              "u": "https://www.centre.edu/about/faculty-staff/dave-toth"
+            }
+          ],
           [
             {
               "l": "DT",
@@ -45587,76 +45430,6 @@
         ]
       },
       {
-        "code": "CSCI 217D",
-        "name": "VOLUNTEERING & OUTREACH",
-        "offered": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          0,
-          1,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "PO",
-              "n": "Peter Ohmann",
-              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
-            }
-          ],
-          [
-            {
-              "l": "PO",
-              "n": "Peter Ohmann",
-              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
-            }
-          ],
-          [
-            {
-              "l": "PO",
-              "n": "Peter Ohmann",
-              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
-            }
-          ],
-          [
-            {
-              "l": "PO",
-              "n": "Peter Ohmann",
-              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
-            }
-          ],
-          [
-            {
-              "l": "PO",
-              "n": "Peter Ohmann",
-              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
-            }
-          ],
-          [
-            {
-              "l": "PO",
-              "n": "Peter Ohmann",
-              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "PO",
-              "n": "Peter Ohmann",
-              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
-            }
-          ],
-          null,
-          null
-        ]
-      },
-      {
         "code": "CSCI 230",
         "name": "SOFTWARE DEVELOPMENT",
         "offered": [
@@ -45963,22 +45736,18 @@
         "code": "CSCI 317M",
         "name": "VOLUNTEERING & OUTREACH",
         "offered": [
-          0,
-          0,
-          0,
-          0,
           1,
-          0,
           1,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           0
         ],
         "instructors": [
-          null,
-          null,
-          null,
-          null,
           [
             {
               "l": "PO",
@@ -45986,7 +45755,41 @@
               "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
             }
           ],
-          null,
+          [
+            {
+              "l": "PO",
+              "n": "Peter Ohmann",
+              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
+            }
+          ],
+          [
+            {
+              "l": "PO",
+              "n": "Peter Ohmann",
+              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
+            }
+          ],
+          [
+            {
+              "l": "PO",
+              "n": "Peter Ohmann",
+              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
+            }
+          ],
+          [
+            {
+              "l": "PO",
+              "n": "Peter Ohmann",
+              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
+            }
+          ],
+          [
+            {
+              "l": "PO",
+              "n": "Peter Ohmann",
+              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
+            }
+          ],
           [
             {
               "l": "SV",
@@ -45994,7 +45797,13 @@
               "u": "https://www.csbsju.edu/computer-science/person/srikanth-vemula/"
             }
           ],
-          null,
+          [
+            {
+              "l": "PO",
+              "n": "Peter Ohmann",
+              "u": "https://www.csbsju.edu/computer-science/person/peter-ohmann/"
+            }
+          ],
           [
             {
               "l": "PO",
@@ -46010,7 +45819,7 @@
         "name": "VIDEO GAME DESIGN/DEVELOPMENT",
         "offered": [
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -53189,52 +52998,6 @@
         ]
       },
       {
-        "code": "COM 305",
-        "name": "TOPICS IN SOFTWARE DEVELOPMENT",
-        "offered": [
-          1,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          1,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "TD",
-              "n": "Thomas Daggett",
-              "u": "https://www.conncoll.edu/directories/faculty-profiles/thomas-daggett"
-            }
-          ],
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "TD",
-              "n": "Thomas Daggett",
-              "u": "https://www.conncoll.edu/directories/faculty-profiles/thomas-daggett"
-            }
-          ],
-          null,
-          null,
-          [
-            {
-              "l": "TD",
-              "n": "Thomas Daggett",
-              "u": "https://www.conncoll.edu/directories/faculty-profiles/thomas-daggett"
-            }
-          ],
-          null,
-          null
-        ]
-      },
-      {
         "code": "COM 306",
         "name": "SOFTWARE ENGINEERING",
         "offered": [
@@ -58695,10 +58458,10 @@
         "code": "CSC 364",
         "name": "Image Processing",
         "offered": [
+          1,
           0,
           0,
-          0,
-          0,
+          1,
           0,
           1,
           0,
@@ -58708,7 +58471,13 @@
           null,
           null,
           null,
-          null,
+          [
+            {
+              "l": "TP",
+              "n": "Tabitha Peck",
+              "u": "https://www.davidson.edu/people/tabitha-peck"
+            }
+          ],
           null,
           [
             {
@@ -58825,36 +58594,6 @@
           1,
           0,
           0
-        ]
-      },
-      {
-        "code": "CSC 381",
-        "name": "Image Processing",
-        "offered": [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "TP",
-              "n": "Tabitha Peck",
-              "u": "https://www.davidson.edu/people/tabitha-peck"
-            }
-          ],
-          null,
-          null,
-          null,
-          null
         ]
       },
       {
@@ -72034,7 +71773,7 @@
         "name": "Quantum Computing",
         "offered": [
           0,
-          0,
+          "https://selfservice.drew.edu/prod/bwckschd.p_disp_detail_sched?term_in=202230&crn_in=30945",
           0,
           "https://selfservice.drew.edu/prod/bwckschd.p_disp_detail_sched?term_in=202330&crn_in=31143",
           0,
@@ -72046,7 +71785,13 @@
         ],
         "instructors": [
           null,
-          null,
+          [
+            {
+              "l": "BB",
+              "n": "Barry Burd",
+              "u": "https://users.drew.edu/bburd/"
+            }
+          ],
           null,
           [
             {
@@ -80708,20 +80453,6 @@
         ]
       },
       {
-        "code": "CS 212-EL",
-        "name": "Advanced Programming",
-        "offered": [
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      {
         "code": "CS 216",
         "name": "Data Structures and Algorithms",
         "offered": [
@@ -80797,9 +80528,9 @@
         "code": "CS 220-NS",
         "name": "Database Systems",
         "offered": [
-          0,
           1,
-          0,
+          1,
+          1,
           0,
           0,
           1,
@@ -80896,26 +80627,12 @@
         ]
       },
       {
-        "code": "CS 235-AW",
-        "name": "Database Systems",
-        "offered": [
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      {
         "code": "CS 240-NS",
         "name": "Advanced Programming",
         "offered": [
+          1,
           0,
-          0,
-          0,
+          1,
           0,
           1,
           0,
@@ -81051,9 +80768,9 @@
         "code": "CS 301-CGB",
         "name": "Artificial Intelligence",
         "offered": [
+          1,
           0,
-          0,
-          0,
+          1,
           0,
           1,
           0,
@@ -81353,20 +81070,6 @@
               "u": "https://www.gettysburg.edu/academic-programs/computer-science/faculty/employee_detail.dot?empId=02000449020013294&pageTitle=Clif+Presser"
             }
           ]
-        ]
-      },
-      {
-        "code": "CS 361-EL",
-        "name": "Artificial Intelligence",
-        "offered": [
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
         ]
       },
       {
@@ -81734,38 +81437,10 @@
         "code": "CS 2900-NT",
         "name": "Software Engineering",
         "offered": [
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "code": "CS 3110-AJ",
-        "name": "Software Engineering",
-        "offered": [
           1,
           0,
           1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "code": "CS 3702-AQ",
-        "name": "Artificial Intelligence",
-        "offered": [
           1,
-          0,
-          1,
-          0,
           0,
           0,
           0,
@@ -102428,22 +102103,6 @@
     ],
     "courses": [
       {
-        "code": "CMSCH104A",
-        "name": "Topics in Intro Programming: Physics and Astronomy",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH104A001",
-          0
-        ]
-      },
-      {
         "code": "CMSCH104B",
         "name": "Topics in Intro Programming: Physics and Astronomy",
         "offered": [
@@ -102455,12 +102114,12 @@
           "https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH104B001",
           0,
           "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH104B001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH104A001",
           "https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH104B001"
         ]
       },
       {
-        "code": "CMSCH105A",
+        "code": "CMSCH105B",
         "name": "Introduction to Computer Science",
         "offered": [
           "https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH105A001",
@@ -102468,11 +102127,11 @@
           "https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH105A001",
           0,
           "https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH105A001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH105B001",
           "https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH105A001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH105B001",
           "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH105A001",
-          0
+          "https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH105B001"
         ],
         "instructors": [
           [
@@ -102510,45 +102169,6 @@
               "u": "https://www.haverford.edu/users/slindell"
             }
           ],
-          null,
-          [
-            {
-              "l": "DW",
-              "n": "David Wonnacott",
-              "u": "https://www.haverford.edu/users/dwonnaco"
-            },
-            {
-              "l": "SL",
-              "n": "Steven Lindell",
-              "u": "https://www.haverford.edu/users/slindell"
-            }
-          ],
-          null
-        ]
-      },
-      {
-        "code": "CMSCH105B",
-        "name": "Introduction to Computer Science",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH105B001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH105B001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH105B001"
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           [
             {
               "l": "TN",
@@ -102561,7 +102181,18 @@
               "u": "https://www.haverford.edu/users/slindell"
             }
           ],
-          null,
+          [
+            {
+              "l": "DW",
+              "n": "David Wonnacott",
+              "u": "https://www.haverford.edu/users/dwonnaco"
+            },
+            {
+              "l": "SL",
+              "n": "Steven Lindell",
+              "u": "https://www.haverford.edu/users/slindell"
+            }
+          ],
           [
             {
               "l": "JD",
@@ -102572,51 +102203,6 @@
         ]
       },
       {
-        "code": "CMSCH106A",
-        "name": "Introduction to Data Structures",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH106A001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH106A001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH106A001",
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "SF",
-              "n": "Sorelle Friedler",
-              "u": "https://www.haverford.edu/users/sfriedle"
-            },
-            {
-              "l": "SL",
-              "n": "Steven Lindell",
-              "u": "https://www.haverford.edu/users/slindell"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "SF",
-              "n": "Sorelle Friedler",
-              "u": "https://www.haverford.edu/users/sfriedle"
-            }
-          ],
-          null
-        ]
-      },
-      {
         "code": "CMSCH106B",
         "name": "Introduction to Data Structures",
         "offered": [
@@ -102624,11 +102210,11 @@
           "https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH106B001",
           0,
           "https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH106B001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH106A001",
           "https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH106B001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH106A001",
           "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH106B001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH106A001",
           "https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH106B001"
         ],
         "instructors": [
@@ -102644,7 +102230,18 @@
           ],
           null,
           null,
-          null,
+          [
+            {
+              "l": "SF",
+              "n": "Sorelle Friedler",
+              "u": "https://www.haverford.edu/users/sfriedle"
+            },
+            {
+              "l": "SL",
+              "n": "Steven Lindell",
+              "u": "https://www.haverford.edu/users/slindell"
+            }
+          ],
           [
             {
               "l": "SL",
@@ -102652,7 +102249,13 @@
               "u": "https://www.haverford.edu/users/slindell"
             }
           ],
-          null,
+          [
+            {
+              "l": "SF",
+              "n": "Sorelle Friedler",
+              "u": "https://www.haverford.edu/users/sfriedle"
+            }
+          ],
           [
             {
               "l": "SF",
@@ -102726,7 +102329,7 @@
           0,
           0,
           0,
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH210B001",
           0,
           0,
           "https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH210A001",
@@ -102774,22 +102377,6 @@
         "name": "Scientific Computing: Continuous Systems",
         "offered": [
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH222A001",
-          0
-        ]
-      },
-      {
-        "code": "CMSCH222B",
-        "name": "Scientific Computing: Continuous Systems",
-        "offered": [
-          0,
           "https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH222B001",
           0,
           0,
@@ -102797,7 +102384,7 @@
           "https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH222B001",
           0,
           0,
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH222A001",
           0
         ]
       },
@@ -102806,13 +102393,13 @@
         "name": "Discrete Mathematics",
         "offered": [
           "https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH231A001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH231B001",
           "https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH231A002",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH231B001",
           "https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH231A001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH231B001",
           "https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH231A001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH231B001",
           "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH231A001",
           0
         ],
@@ -102820,40 +102407,6 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "SL",
-              "n": "Steven Lindell",
-              "u": "https://www.haverford.edu/users/slindell"
-            }
-          ],
-          null
-        ]
-      },
-      {
-        "code": "CMSCH231B",
-        "name": "Discrete Mathematics",
-        "offered": [
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH231B001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH231B001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH231B001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH231B001",
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
           [
             {
               "l": "SL",
@@ -102871,7 +102424,13 @@
               "u": "https://www.haverford.edu/users/slindell"
             }
           ],
-          null,
+          [
+            {
+              "l": "SL",
+              "n": "Steven Lindell",
+              "u": "https://www.haverford.edu/users/slindell"
+            }
+          ],
           null
         ]
       },
@@ -102919,7 +102478,7 @@
         "code": "CMSCH245B",
         "name": "Principles of Programming Languages",
         "offered": [
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH245A001",
           0,
           0,
           0,
@@ -102929,43 +102488,21 @@
           0,
           0,
           0
-        ]
-      },
-      {
-        "code": "CMSCH251A",
-        "name": "Principles of Computing Systems",
-        "offered": [
-          0,
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH251A001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH251A001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH251A001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH251A001",
-          0
         ],
         "instructors": [
-          null,
-          null,
-          null,
-          null,
           [
             {
-              "l": "JD",
-              "n": "John Dougherty",
-              "u": "https://www.haverford.edu/users/jdougher"
+              "l": "DW",
+              "n": "David Wonnacott",
+              "u": "https://www.haverford.edu/users/dwonnaco"
             }
           ],
           null,
-          [
-            {
-              "l": "JD",
-              "n": "John Dougherty",
-              "u": "https://www.haverford.edu/users/jdougher"
-            }
-          ],
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -102977,13 +102514,13 @@
         "offered": [
           0,
           0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2022/HF22CMSCH251A001",
           0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH251A001",
           0,
-          0,
-          0,
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH251A001",
           "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH251B001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH251A001",
           "https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH251B001"
         ],
         "instructors": [
@@ -102991,9 +102528,21 @@
           null,
           null,
           null,
+          [
+            {
+              "l": "JD",
+              "n": "John Dougherty",
+              "u": "https://www.haverford.edu/users/jdougher"
+            }
+          ],
           null,
-          null,
-          null,
+          [
+            {
+              "l": "JD",
+              "n": "John Dougherty",
+              "u": "https://www.haverford.edu/users/jdougher"
+            }
+          ],
           null,
           null,
           [
@@ -103006,7 +102555,7 @@
         ]
       },
       {
-        "code": "CMSCH260A",
+        "code": "CMSCH260B",
         "name": "Foundations of Data Science",
         "offered": [
           "https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH260A001",
@@ -103016,9 +102565,9 @@
           "https://www.haverford.edu/academics/courses/haverford/fall_2023/HF23CMSCH260A001",
           0,
           "https://www.haverford.edu/academics/courses/haverford/fall_2024/HF24CMSCH260A001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH260B001",
           "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH260A001",
-          0
+          "https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH260B001"
         ],
         "instructors": [
           null,
@@ -103048,34 +102597,6 @@
               "u": "https://thao-nguyen-ai.github.io/"
             }
           ],
-          null
-        ]
-      },
-      {
-        "code": "CMSCH260B",
-        "name": "Foundations of Data Science",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH260B001",
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/spring_2026/HS26CMSCH260B001"
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           [
             {
               "l": "AG",
@@ -103339,40 +102860,6 @@
         "name": "Machine Learning",
         "offered": [
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH360A001",
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "AG",
-              "n": "Alvin Grissom",
-              "u": "https://www.haverford.edu/users/agrissom"
-            }
-          ],
-          null
-        ]
-      },
-      {
-        "code": "CMSCH360B",
-        "name": "Machine Learning",
-        "offered": [
-          0,
           "https://www.haverford.edu/academics/courses/haverford/spring_2022/HS22CMSCH360B001",
           0,
           "https://www.haverford.edu/academics/courses/haverford/spring_2023/HS23CMSCH360B001",
@@ -103380,7 +102867,7 @@
           "https://www.haverford.edu/academics/courses/haverford/spring_2024/HS24CMSCH360B001",
           0,
           "https://www.haverford.edu/academics/courses/haverford/spring_2025/HS25CMSCH360B001",
-          0,
+          "https://www.haverford.edu/academics/courses/haverford/fall_2025/HF25CMSCH360A001",
           0
         ],
         "instructors": [
@@ -103410,7 +102897,13 @@
               "u": "https://www.haverford.edu/users/agrissom"
             }
           ],
-          null,
+          [
+            {
+              "l": "AG",
+              "n": "Alvin Grissom",
+              "u": "https://www.haverford.edu/users/agrissom"
+            }
+          ],
           null
         ]
       },
@@ -109345,68 +108838,6 @@
         ]
       },
       {
-        "code": "CSCI 195",
-        "name": "Studies in Computer Science",
-        "offered": [
-          1,
-          1,
-          1,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "RM",
-              "n": "Ryan McFall",
-              "u": "https://hope.edu/directory/people/mcfall-ryan/index.html"
-            }
-          ],
-          [
-            {
-              "l": "FO",
-              "n": "Fola Olagbemi",
-              "u": "https://hope.edu/directory/people/olagbemi-fola/index.html"
-            },
-            {
-              "l": "RM",
-              "n": "Ryan McFall",
-              "u": "https://hope.edu/directory/people/mcfall-ryan/index.html"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "FO",
-              "n": "Fola Olagbemi",
-              "u": "https://hope.edu/directory/people/olagbemi-fola/index.html"
-            },
-            {
-              "l": "CC",
-              "n": "Charles Cusack",
-              "u": "https://hope.edu/directory/people/cusack-charles/index.html"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "FO",
-              "n": "Fola Olagbemi",
-              "u": "https://hope.edu/directory/people/olagbemi-fola/index.html"
-            }
-          ],
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
         "code": "CSCI 235",
         "name": "Data Structures& Software Dsgn",
         "offered": [
@@ -109671,11 +109102,11 @@
         "name": "Studies in Computer Science",
         "offered": [
           1,
-          0,
           1,
           1,
+          1,
           0,
-          0,
+          1,
           1,
           1,
           0,
@@ -109687,9 +109118,25 @@
               "l": "MJ",
               "n": "Michael Jipping",
               "u": "https://hope.edu/directory/people/jipping-michael/index.html"
+            },
+            {
+              "l": "RM",
+              "n": "Ryan McFall",
+              "u": "https://hope.edu/directory/people/mcfall-ryan/index.html"
             }
           ],
-          null,
+          [
+            {
+              "l": "FO",
+              "n": "Fola Olagbemi",
+              "u": "https://hope.edu/directory/people/olagbemi-fola/index.html"
+            },
+            {
+              "l": "RM",
+              "n": "Ryan McFall",
+              "u": "https://hope.edu/directory/people/mcfall-ryan/index.html"
+            }
+          ],
           [
             {
               "l": "MJ",
@@ -109707,10 +109154,21 @@
               "l": "RM",
               "n": "Ryan McFall",
               "u": "https://hope.edu/directory/people/mcfall-ryan/index.html"
+            },
+            {
+              "l": "CC",
+              "n": "Charles Cusack",
+              "u": "https://hope.edu/directory/people/cusack-charles/index.html"
             }
           ],
           null,
-          null,
+          [
+            {
+              "l": "FO",
+              "n": "Fola Olagbemi",
+              "u": "https://hope.edu/directory/people/olagbemi-fola/index.html"
+            }
+          ],
           [
             {
               "l": "RM",
@@ -142808,13 +142266,13 @@
         "name": "Algorithms",
         "offered": [
           0,
+          1,
           0,
+          1,
           0,
+          1,
           0,
-          0,
-          0,
-          0,
-          0,
+          1,
           0,
           1
         ],
@@ -142822,9 +142280,21 @@
           null,
           null,
           null,
+          [
+            {
+              "l": "FH",
+              "n": "Fahmida Hamid",
+              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
+            }
+          ],
           null,
-          null,
-          null,
+          [
+            {
+              "l": "DP",
+              "n": "Daniel Page",
+              "u": "https://drpage.pagewizardgames.com/"
+            }
+          ],
           null,
           null,
           null,
@@ -142846,7 +142316,7 @@
           0,
           0,
           0,
-          0,
+          1,
           0,
           0,
           1,
@@ -142858,7 +142328,13 @@
           null,
           null,
           null,
-          null,
+          [
+            {
+              "l": "DG",
+              "n": "David Gillman",
+              "u": "https://www.ncf.edu/directory/david-w-gillman/"
+            }
+          ],
           null,
           null,
           [
@@ -142892,13 +142368,13 @@
         "name": "Software Engineering",
         "offered": [
           0,
+          1,
           0,
+          1,
           0,
+          1,
           0,
-          0,
-          0,
-          0,
-          0,
+          1,
           0,
           1
         ],
@@ -142910,7 +142386,13 @@
           null,
           null,
           null,
-          null,
+          [
+            {
+              "l": "FH",
+              "n": "Fahmida Hamid",
+              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
+            }
+          ],
           null,
           [
             {
@@ -142925,13 +142407,13 @@
         "code": "CEN 3213",
         "name": "Embedded Systems",
         "offered": [
+          1,
           0,
           0,
           0,
+          1,
           0,
-          0,
-          0,
-          0,
+          1,
           0,
           1,
           0
@@ -142941,9 +142423,21 @@
           null,
           null,
           null,
+          [
+            {
+              "l": "FH",
+              "n": "Fahmida Hamid",
+              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
+            }
+          ],
           null,
-          null,
-          null,
+          [
+            {
+              "l": "FH",
+              "n": "Fahmida Hamid",
+              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
+            }
+          ],
           null,
           [
             {
@@ -142963,7 +142457,7 @@
           0,
           0,
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -143009,32 +142503,86 @@
         "code": "CIS 3303",
         "name": "Object Oriented Design",
         "offered": [
+          1,
           0,
+          1,
           0,
+          1,
           0,
-          0,
-          0,
-          0,
-          0,
+          1,
           0,
           1,
           0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "FH",
+              "n": "Fahmida Hamid",
+              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "FH",
+              "n": "Fahmida Hamid",
+              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "FH",
+              "n": "Fahmida Hamid",
+              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
+            }
+          ],
+          null,
+          null,
+          null,
+          null,
+          null
         ]
       },
       {
         "code": "COP 2047",
         "name": "Introduction to Programming in Python",
         "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
           0,
           1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
           0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "DG",
+              "n": "David Gillman",
+              "u": "https://www.ncf.edu/directory/david-w-gillman/"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DG",
+              "n": "David Gillman",
+              "u": "https://www.ncf.edu/directory/david-w-gillman/"
+            }
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
         ]
       },
       {
@@ -143125,13 +142673,13 @@
         "code": "COP 3041",
         "name": "Intermediate Python",
         "offered": [
+          1,
           0,
+          1,
           0,
+          1,
           0,
-          0,
-          0,
-          0,
-          0,
+          1,
           0,
           1,
           0
@@ -143139,11 +142687,29 @@
         "instructors": [
           null,
           null,
+          [
+            {
+              "l": "GS",
+              "n": "Gil Salu",
+              "u": "https://www.ncf.edu/directory/19000/"
+            }
+          ],
           null,
+          [
+            {
+              "l": "GS",
+              "n": "Gil Salu",
+              "u": "https://www.ncf.edu/directory/19000/"
+            }
+          ],
           null,
-          null,
-          null,
-          null,
+          [
+            {
+              "l": "GS",
+              "n": "Gil Salu",
+              "u": "https://www.ncf.edu/directory/19000/"
+            }
+          ],
           null,
           [
             {
@@ -143193,13 +142759,13 @@
         "code": "COP 3535",
         "name": "Data Structures",
         "offered": [
+          1,
           0,
+          1,
           0,
+          1,
           0,
-          0,
-          0,
-          0,
-          0,
+          1,
           0,
           1,
           0
@@ -143209,9 +142775,21 @@
           null,
           null,
           null,
+          [
+            {
+              "l": "DP",
+              "n": "Daniel Page",
+              "u": "https://drpage.pagewizardgames.com/"
+            }
+          ],
           null,
-          null,
-          null,
+          [
+            {
+              "l": "FH",
+              "n": "Fahmida Hamid",
+              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
+            }
+          ],
           null,
           [
             {
@@ -143255,46 +142833,6 @@
               "u": "https://www.ncf.edu/directory/david-w-gillman/"
             }
           ]
-        ]
-      },
-      {
-        "code": "CSCI 2200",
-        "name": "Introduction to Programming in Python",
-        "offered": [
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          1,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "DG",
-              "n": "David Gillman",
-              "u": "https://www.ncf.edu/directory/david-w-gillman/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "DG",
-              "n": "David Gillman",
-              "u": "https://www.ncf.edu/directory/david-w-gillman/"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
         ]
       },
       {
@@ -143456,136 +142994,6 @@
         ]
       },
       {
-        "code": "CSCI 3052",
-        "name": "Reinforcement Learning",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "DG",
-              "n": "David Gillman",
-              "u": "https://www.ncf.edu/directory/david-w-gillman/"
-            }
-          ],
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "CSCI 3100",
-        "name": "Foundations of Human Centered Computing",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "code": "CSCI 3160",
-        "name": "Data Structures",
-        "offered": [
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "DP",
-              "n": "Daniel Page",
-              "u": "https://drpage.pagewizardgames.com/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "FH",
-              "n": "Fahmida Hamid",
-              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
-            }
-          ],
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "CSCI 3200",
-        "name": "Algorithms",
-        "offered": [
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "FH",
-              "n": "Fahmida Hamid",
-              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "DP",
-              "n": "Daniel Page",
-              "u": "https://drpage.pagewizardgames.com/"
-            }
-          ],
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
         "code": "CSCI 3210",
         "name": "2D Game Development with C++",
         "offered": [
@@ -143630,52 +143038,6 @@
           ],
           null,
           null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "CSCI 3250",
-        "name": "Intermediate Python",
-        "offered": [
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          [
-            {
-              "l": "GS",
-              "n": "Gil Salu",
-              "u": "https://www.ncf.edu/directory/19000/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "GS",
-              "n": "Gil Salu",
-              "u": "https://www.ncf.edu/directory/19000/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "GS",
-              "n": "Gil Salu",
-              "u": "https://www.ncf.edu/directory/19000/"
-            }
-          ],
           null,
           null,
           null
@@ -143762,52 +143124,6 @@
         ]
       },
       {
-        "code": "CSCI 3400",
-        "name": "Object Oriented Design",
-        "offered": [
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "FH",
-              "n": "Fahmida Hamid",
-              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "FH",
-              "n": "Fahmida Hamid",
-              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "FH",
-              "n": "Fahmida Hamid",
-              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
         "code": "CSCI 3450",
         "name": "Natural Language Processing",
         "offered": [
@@ -143836,80 +143152,6 @@
           null,
           null,
           null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "CSCI 3570",
-        "name": "Software Engineering",
-        "offered": [
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "FH",
-              "n": "Fahmida Hamid",
-              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
-            }
-          ],
-          null,
-          null
-        ]
-      },
-      {
-        "code": "CSCI 3575",
-        "name": "Embedded Systems",
-        "offered": [
-          1,
-          0,
-          0,
-          0,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "FH",
-              "n": "Fahmida Hamid",
-              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "FH",
-              "n": "Fahmida Hamid",
-              "u": "https://www.ncf.edu/directory/fahmida-hamid/"
-            }
-          ],
           null,
           null,
           null
@@ -150645,8 +149887,8 @@
           0,
           0,
           0,
-          0,
-          0,
+          1,
+          1,
           0,
           0,
           1
@@ -150657,8 +149899,20 @@
           null,
           null,
           null,
-          null,
-          null,
+          [
+            {
+              "l": "JL",
+              "n": "Jingyi Li",
+              "u": "https://jingyi.me/"
+            }
+          ],
+          [
+            {
+              "l": "JL",
+              "n": "Jingyi Li",
+              "u": "https://jingyi.me/"
+            }
+          ],
           null,
           null,
           [
@@ -150719,7 +149973,7 @@
           0,
           0,
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -150731,7 +149985,13 @@
           null,
           null,
           null,
-          null,
+          [
+            {
+              "l": "EB",
+              "n": "Eleanor Birrell",
+              "u": "https://www.pomona.edu/directory/people/eleanor-birrell"
+            }
+          ],
           null,
           null,
           null,
@@ -151008,8 +150268,8 @@
         "code": "CSCI-181CA",
         "name": "Computer Architecture",
         "offered": [
-          0,
-          0,
+          1,
+          1,
           0,
           0,
           0,
@@ -151042,46 +150302,6 @@
               "u": "https://samueltphd.github.io/"
             }
           ]
-        ]
-      },
-      {
-        "code": "CSCI-181DT",
-        "name": "Computational Design Tools",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          1,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "JL",
-              "n": "Jingyi Li",
-              "u": "https://jingyi.me/"
-            }
-          ],
-          [
-            {
-              "l": "JL",
-              "n": "Jingyi Li",
-              "u": "https://jingyi.me/"
-            }
-          ],
-          null,
-          null,
-          null
         ]
       },
       {
@@ -151187,22 +150407,6 @@
         ]
       },
       {
-        "code": "CSCI-181OR",
-        "name": "Computer Architecture",
-        "offered": [
-          1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      {
         "code": "CSCI-181R",
         "name": "Mobile Robotics",
         "offered": [
@@ -151250,40 +150454,6 @@
           1,
           0,
           0
-        ]
-      },
-      {
-        "code": "CSCI-181S",
-        "name": "System Security",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "EB",
-              "n": "Eleanor Birrell",
-              "u": "https://www.pomona.edu/directory/people/eleanor-birrell"
-            }
-          ],
-          null,
-          null,
-          null,
-          null
         ]
       },
       {
@@ -161937,11 +161107,11 @@
     ],
     "courses": [
       {
-        "code": "CS-111-A (2861)",
+        "code": "CS-111-A (3248)",
         "name": "Intro to Computer Science I",
         "offered": [
           1,
-          0
+          1
         ],
         "instructors": [
           [
@@ -161951,18 +161121,6 @@
               "u": "https://www.smcvt.edu/directories/employee-directory/greta-pangborn/"
             }
           ],
-          null
-        ]
-      },
-      {
-        "code": "CS-111-A (3248)",
-        "name": "Intro to Computer Science I",
-        "offered": [
-          0,
-          1
-        ],
-        "instructors": [
-          null,
           [
             {
               "l": "BD",
@@ -163745,9 +162903,9 @@
         "code": "CS 355",
         "name": "Database Systems",
         "offered": [
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           0,
           0,
           0,
@@ -163757,9 +162915,27 @@
           0
         ],
         "instructors": [
-          null,
-          null,
-          null,
+          [
+            {
+              "l": "TO",
+              "n": "Thomas O'Connell",
+              "u": "https://www.skidmore.edu/computer-science/faculty/thomas-oconnell.php"
+            }
+          ],
+          [
+            {
+              "l": "ME",
+              "n": "Michael Eckmann",
+              "u": "https://www.skidmore.edu/computer-science/faculty/michael-eckmann.php"
+            }
+          ],
+          [
+            {
+              "l": "CR",
+              "n": "Christine Reilly",
+              "u": "https://www.skidmore.edu/computer-science/faculty/christine-reilly.php"
+            }
+          ],
           null,
           null,
           null,
@@ -163782,7 +162958,7 @@
           0,
           0,
           0,
-          0,
+          1,
           0,
           1,
           0,
@@ -163794,7 +162970,13 @@
           null,
           null,
           null,
-          null,
+          [
+            {
+              "l": "ME",
+              "n": "Michael Eckmann",
+              "u": "https://www.skidmore.edu/computer-science/faculty/michael-eckmann.php"
+            }
+          ],
           null,
           [
             {
@@ -163813,52 +162995,6 @@
               "u": "https://www.skidmore.edu/computer-science/faculty/michael-eckmann.php"
             }
           ]
-        ]
-      },
-      {
-        "code": "CS 376B",
-        "name": "Database Systems",
-        "offered": [
-          1,
-          1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "TO",
-              "n": "Thomas O'Connell",
-              "u": "https://www.skidmore.edu/computer-science/faculty/thomas-oconnell.php"
-            }
-          ],
-          [
-            {
-              "l": "ME",
-              "n": "Michael Eckmann",
-              "u": "https://www.skidmore.edu/computer-science/faculty/michael-eckmann.php"
-            }
-          ],
-          [
-            {
-              "l": "CR",
-              "n": "Christine Reilly",
-              "u": "https://www.skidmore.edu/computer-science/faculty/christine-reilly.php"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
         ]
       }
     ],
@@ -174553,19 +173689,6 @@
         ]
       },
       {
-        "code": "COSC370 #",
-        "name": "ARTIFICIAL INTELLIGENCE",
-        "offered": [
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      {
         "code": "COSC 120",
         "name": "INTRODUCTION TO COMPUTER SCIENCE I",
         "offered": [
@@ -174996,7 +174119,7 @@
         "offered": [
           0,
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -175059,60 +174182,18 @@
         ]
       },
       {
-        "code": "COSC 401",
-        "name": "SOFTWARE STARTUP SIMULATOR CAPST ONE",
-        "offered": [
-          1,
-          0,
-          0,
-          1,
-          0,
-          1,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "SR",
-              "n": "Simon Read",
-              "u": "https://inside.smcm.edu/directory/simon-read"
-            }
-          ],
-          null,
-          null,
-          [
-            {
-              "l": "SR",
-              "n": "Simon Read",
-              "u": "https://inside.smcm.edu/directory/simon-read"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "SR",
-              "n": "Simon Read",
-              "u": "https://inside.smcm.edu/directory/simon-read"
-            }
-          ],
-          null
-        ]
-      },
-      {
         "code": "COSC 402",
         "name": "SOFTWARE STARTUP SIMULATOR CAPST ONE",
         "offered": [
-          0,
-          0,
           1,
           0,
+          1,
+          1,
           0,
-          0,
+          1,
           1
         ],
         "instructors": [
-          null,
-          null,
           [
             {
               "l": "SR",
@@ -175121,8 +174202,28 @@
             }
           ],
           null,
+          [
+            {
+              "l": "SR",
+              "n": "Simon Read",
+              "u": "https://inside.smcm.edu/directory/simon-read"
+            }
+          ],
+          [
+            {
+              "l": "SR",
+              "n": "Simon Read",
+              "u": "https://inside.smcm.edu/directory/simon-read"
+            }
+          ],
           null,
-          null,
+          [
+            {
+              "l": "SR",
+              "n": "Simon Read",
+              "u": "https://inside.smcm.edu/directory/simon-read"
+            }
+          ],
           [
             {
               "l": "SR",
@@ -175419,30 +174520,7 @@
               "l": "WS",
               "n": "Waqar Saleem",
               "u": "https://inside.smcm.edu/directory/waqar-saleem"
-            }
-          ],
-          null,
-          null
-        ]
-      },
-      {
-        "code": "COSC 494",
-        "name": "ST. MARY'S PROJECT",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          [
+            },
             {
               "l": "SR",
               "n": "Simon Read",
@@ -186716,17 +185794,17 @@
         ]
       },
       {
-        "code": "CPSC-403",
+        "code": "CPSC-404",
         "name": "Computer Science Seminar",
         "offered": [
           1,
-          0,
           1,
-          0,
           1,
-          0,
           1,
-          0
+          1,
+          1,
+          1,
+          1
         ],
         "instructors": [
           [
@@ -186736,7 +185814,13 @@
               "u": "https://internet3.trincoll.edu/facProfiles/Default.aspx?fid=1480870"
             }
           ],
-          null,
+          [
+            {
+              "l": "CC",
+              "n": "Chandranil Chakraborttii",
+              "u": "https://internet3.trincoll.edu/facProfiles/Default.aspx?fid=1480870"
+            }
+          ],
           [
             {
               "l": "MS",
@@ -186744,36 +185828,6 @@
               "u": "https://internet3.trincoll.edu/facProfiles/Default.aspx?fid=1000586"
             }
           ],
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "CPSC-404",
-        "name": "Computer Science Seminar",
-        "offered": [
-          0,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0,
-          1
-        ],
-        "instructors": [
-          null,
-          [
-            {
-              "l": "CC",
-              "n": "Chandranil Chakraborttii",
-              "u": "https://internet3.trincoll.edu/facProfiles/Default.aspx?fid=1480870"
-            }
-          ],
-          null,
           [
             {
               "l": "MS",
@@ -192967,7 +192021,7 @@
           0,
           0,
           0,
-          0,
+          1,
           0,
           1,
           1
@@ -192979,7 +192033,13 @@
           null,
           null,
           null,
-          null,
+          [
+            {
+              "l": "JP",
+              "n": "Jennifer Polack",
+              "u": "http://www.jenpolack.com/"
+            }
+          ],
           null,
           [
             {
@@ -193243,40 +192303,6 @@
               "u": "https://www.umw.edu/directory/employee/joshua-clements-jclemen4/"
             }
           ],
-          null
-        ]
-      },
-      {
-        "code": "CPSC 370B2",
-        "name": "C++ Programming",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "JP",
-              "n": "Jennifer Polack",
-              "u": "http://www.jenpolack.com/"
-            }
-          ],
-          null,
-          null,
           null
         ]
       },
@@ -193899,11 +192925,11 @@
         "code": "CPSC 458",
         "name": "Network Security",
         "offered": [
+          1,
           0,
           0,
           0,
-          0,
-          0,
+          1,
           0,
           0,
           1,
@@ -193911,11 +192937,23 @@
           1
         ],
         "instructors": [
+          [
+            {
+              "l": "XW",
+              "n": "Xin-Wen Wu",
+              "u": "https://xinwenwu.net/"
+            }
+          ],
           null,
           null,
           null,
-          null,
-          null,
+          [
+            {
+              "l": "XW",
+              "n": "Xin-Wen Wu",
+              "u": "https://xinwenwu.net/"
+            }
+          ],
           null,
           null,
           [
@@ -193985,46 +193023,6 @@
               "u": "http://www.umw.edu/directory/employee/jessica-self-jzeitz/"
             }
           ]
-        ]
-      },
-      {
-        "code": "CPSC 470A8",
-        "name": "Network Security",
-        "offered": [
-          1,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "XW",
-              "n": "Xin-Wen Wu",
-              "u": "https://xinwenwu.net/"
-            }
-          ],
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "XW",
-              "n": "Xin-Wen Wu",
-              "u": "https://xinwenwu.net/"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null
         ]
       },
       {
@@ -199598,9 +198596,9 @@
         "code": "CSCI 302",
         "name": "Theory of Computation",
         "offered": [
+          "https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2021/fall",
           0,
-          0,
-          0,
+          "https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2022/fall",
           0,
           "https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2023/fall",
           0,
@@ -199610,9 +198608,21 @@
           0
         ],
         "instructors": [
+          [
+            {
+              "l": "AW",
+              "n": "Adam Whitley",
+              "u": "https://go.unca.edu/faculty/adam-whitley-ph-d/"
+            }
+          ],
           null,
-          null,
-          null,
+          [
+            {
+              "l": "AW",
+              "n": "Adam Whitley",
+              "u": "https://go.unca.edu/faculty/adam-whitley-ph-d/"
+            }
+          ],
           null,
           [
             {
@@ -200408,46 +199418,6 @@
         ]
       },
       {
-        "code": "CSCI 434",
-        "name": "Theory of Computation",
-        "offered": [
-          "https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2021/fall",
-          0,
-          "https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2022/fall",
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "AW",
-              "n": "Adam Whitley",
-              "u": "https://go.unca.edu/faculty/adam-whitley-ph-d/"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "AW",
-              "n": "Adam Whitley",
-              "u": "https://go.unca.edu/faculty/adam-whitley-ph-d/"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
         "code": "CSCI 441",
         "name": "Numerical Analysis",
         "offered": [
@@ -201207,11 +200177,17 @@
         "code": "CSCI 250",
         "name": "Assembly Language and Computer Architecture",
         "offered": [
-          0,
+          1,
           1
         ],
         "instructors": [
-          null,
+          [
+            {
+              "l": "DC",
+              "n": "David Chiu",
+              "u": "https://www.pugetsound.edu/directory/david-chiu"
+            }
+          ],
           [
             {
               "l": "BA",
@@ -201261,24 +200237,6 @@
               "u": "https://www.pugetsound.edu/directory/america-chambers"
             }
           ]
-        ]
-      },
-      {
-        "code": "CSCI 281",
-        "name": "Assembly Language and Computer Architecture",
-        "offered": [
-          1,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "DC",
-              "n": "David Chiu",
-              "u": "https://www.pugetsound.edu/directory/david-chiu"
-            }
-          ],
-          null
         ]
       },
       {
@@ -228921,19 +227879,19 @@
         "name": "Introduction to Programming",
         "offered": [
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1219",
-          0,
+          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1220",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1221",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1229",
-          0,
+          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1230",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1231",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1239",
-          0,
+          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1240",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1241",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1249",
-          0,
+          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1250",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1251",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1259",
-          0,
+          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1260",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003328&term=1261"
         ],
         "instructors": [
@@ -228944,7 +227902,13 @@
               "u": "http://dkrizanc.web.wesleyan.edu"
             }
           ],
-          null,
+          [
+            {
+              "l": "JL",
+              "n": "James Lipton",
+              "u": "http://jlipton.web.wesleyan.edu"
+            }
+          ],
           [
             {
               "l": "JL",
@@ -228967,51 +227931,7 @@
         ]
       },
       {
-        "code": "COMP112Z",
-        "name": "Introduction to Programming",
-        "offered": [
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1220",
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1230",
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1240",
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1250",
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015757&term=1260",
-          0
-        ],
-        "instructors": [
-          null,
-          [
-            {
-              "l": "JL",
-              "n": "James Lipton",
-              "u": "http://jlipton.web.wesleyan.edu"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "COMP113",
+        "code": "COMP113Z",
         "name": "Bioinformatics Programming",
         "offered": [
           0,
@@ -229027,27 +227947,6 @@
           0,
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=010201&term=1251",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=010201&term=1259",
-          0,
-          0
-        ]
-      },
-      {
-        "code": "COMP113Z",
-        "name": "Bioinformatics Programming",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=018045&term=1260",
           0
         ]
@@ -230061,7 +228960,7 @@
         ]
       },
       {
-        "code": "COMP360A",
+        "code": "COMP360B",
         "name": "Special Topics in Computer Science",
         "offered": [
           0,
@@ -230077,27 +228976,6 @@
           0,
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015042&term=1251",
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015042&term=1259",
-          0,
-          0
-        ]
-      },
-      {
-        "code": "COMP360B",
-        "name": "Special Topics in Computer Science",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           0,
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=015043&term=1261"
         ],
@@ -230232,242 +229110,6 @@
           null,
           null,
           null
-        ]
-      },
-      {
-        "code": "COMP500",
-        "name": "Automata Theory and Formal Languages",
-        "offered": [
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003336&term=1221",
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003336&term=1229",
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003336&term=1239",
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003336&term=1249",
-          0,
-          0,
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003336&term=1261"
-        ],
-        "instructors": [
-          null,
-          null,
-          [
-            {
-              "l": "DK",
-              "n": "Daniel Krizanc",
-              "u": "http://dkrizanc.web.wesleyan.edu"
-            }
-          ],
-          [
-            {
-              "l": "DK",
-              "n": "Daniel Krizanc",
-              "u": "http://dkrizanc.web.wesleyan.edu"
-            }
-          ],
-          null,
-          null,
-          [
-            {
-              "l": "JL",
-              "n": "James Lipton",
-              "u": "http://jlipton.web.wesleyan.edu"
-            }
-          ],
-          null,
-          null,
-          [
-            {
-              "l": "JL",
-              "n": "James Lipton",
-              "u": "http://jlipton.web.wesleyan.edu"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "JL",
-              "n": "James Lipton",
-              "u": "http://jlipton.web.wesleyan.edu"
-            }
-          ]
-        ]
-      },
-      {
-        "code": "COMP510",
-        "name": "Algorithms and Complexity",
-        "offered": [
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003338&term=1219",
-          0,
-          0,
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003338&term=1231",
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003338&term=1239",
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003338&term=1249",
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003338&term=1251",
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003338&term=1259",
-          0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "DK",
-              "n": "Daniel Krizanc",
-              "u": "http://dkrizanc.web.wesleyan.edu"
-            }
-          ],
-          [
-            {
-              "l": "DK",
-              "n": "Daniel Krizanc",
-              "u": "http://dkrizanc.web.wesleyan.edu"
-            }
-          ],
-          null,
-          null,
-          [
-            {
-              "l": "DK",
-              "n": "Daniel Krizanc",
-              "u": "http://dkrizanc.web.wesleyan.edu"
-            }
-          ],
-          null,
-          [
-            {
-              "l": "DK",
-              "n": "Daniel Krizanc",
-              "u": "http://dkrizanc.web.wesleyan.edu"
-            }
-          ],
-          [
-            {
-              "l": "DK",
-              "n": "Daniel Krizanc",
-              "u": "http://dkrizanc.web.wesleyan.edu"
-            }
-          ],
-          null,
-          null
-        ]
-      },
-      {
-        "code": "COMP521",
-        "name": "Design of Programming Languages",
-        "offered": [
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003340&term=1219",
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003340&term=1229",
-          0,
-          0,
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003340&term=1241",
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "DL",
-              "n": "Dan Licata",
-              "u": "https://dlicata.wescreates.wesleyan.edu"
-            }
-          ],
-          null,
-          null,
-          [
-            {
-              "l": "JL",
-              "n": "James Lipton",
-              "u": "http://jlipton.web.wesleyan.edu"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "JL",
-              "n": "James Lipton",
-              "u": "http://jlipton.web.wesleyan.edu"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "COMP531",
-        "name": "Computer Structure and Organization",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003333&term=1261"
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "DK",
-              "n": "Daniel Krizanc",
-              "u": "http://dkrizanc.web.wesleyan.edu"
-            }
-          ]
         ]
       }
     ],
@@ -234452,7 +233094,7 @@
         "code": "COMP 318",
         "name": "Algorithms",
         "offered": [
-          0,
+          1,
           0,
           0,
           1,
@@ -234464,7 +233106,13 @@
           1
         ],
         "instructors": [
-          null,
+          [
+            {
+              "l": "MG",
+              "n": "Michael B. Gousie",
+              "u": "https://departments.wheatoncollege.edu/faculty/michael-b-gousie/"
+            }
+          ],
           null,
           null,
           null,
@@ -236803,11 +235451,17 @@
         "code": "CS-161",
         "name": "Python for Data Science",
         "offered": [
-          0,
+          1,
           1
         ],
         "instructors": [
-          null,
+          [
+            {
+              "l": "HC",
+              "n": "Haiyan Cheng",
+              "u": "https://my.willamette.edu/people/hcheng"
+            }
+          ],
           [
             {
               "l": "HC",
@@ -236885,24 +235539,6 @@
         "offered": [
           1,
           1
-        ]
-      },
-      {
-        "code": "CS-370",
-        "name": "Python for Data Science",
-        "offered": [
-          1,
-          0
-        ],
-        "instructors": [
-          [
-            {
-              "l": "HC",
-              "n": "Haiyan Cheng",
-              "u": "https://my.willamette.edu/people/hcheng"
-            }
-          ],
-          null
         ]
       },
       {

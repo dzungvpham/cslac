@@ -561,6 +561,44 @@ def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) ->
             elif obs:
                 drop_codes.add(code)
 
+        # Collapse codes that resolve to the same display name into one course.
+        # Cross-listings, renumberings, undergrad/grad pairs, section-suffix and
+        # dual-coding-system variants all arrive as distinct codes with the same
+        # name (Wesleyan COMP312/COMP510, Haverford CMSCH105A/CMSCH105B, New
+        # College COP 2047/CSCI 2200, Saint Michael's CS-111-A (2861)/(3248)) and
+        # would otherwise render as duplicate rows with split schedules. For each
+        # name keep one representative code — the one whose most-recent offering
+        # is latest (then most offerings, then lowest code) — and fold the rest
+        # of the group's term coverage, per-cell URLs, and instructors into it.
+        # Generic shared names (Independent Study, Laboratory, …) never reach
+        # here: EXCLUDE_RE and the lab handling above already dropped them. Done
+        # before the recent-cutoff drop so a course taught under an old code and
+        # a recent code keeps both offerings instead of losing the old one.
+        by_display_name: dict[str, list[str]] = defaultdict(list)
+        for code in offered:
+            if code in drop_codes:
+                continue
+            name = latest_name.get(code)
+            if name:
+                by_display_name[name].append(code)
+        for name, group in by_display_name.items():
+            if len(group) < 2:
+                continue
+            group = sorted(group, key=natural_key)
+            rep = max(group, key=lambda c: (
+                max((y, TERM_ORDER.get(t, 99)) for (y, t) in offered[c]),
+                len(offered[c]),
+            ))
+            for code in group:
+                if code == rep:
+                    continue
+                offered[rep] |= offered[code]
+                for cell, u in url_by_cell.get(code, {}).items():
+                    url_by_cell[rep].setdefault(cell, u)
+                for cell, raws in instr_strs.get(code, {}).items():
+                    instr_strs[rep][cell].extend(raws)
+                drop_codes.add(code)
+
         if recent_cutoff:
             for code in list(offered.keys()):
                 if code in drop_codes:
