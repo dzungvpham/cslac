@@ -1,144 +1,144 @@
-college,academic_year,term,course_code,section,course_name,instructor,time,url
-Barnard College,2025-26,S,COMS BC1016,001,Introduction to Computational Thinking and Data Science,Eysa Lee,M W 10:10am - 11:25am 140 Horace Mann Hall,
-Barnard College,2025-26,S,COMS BC1017,001,Introduction to Computational Thinking and Data Science - Lab,Eysa Lee,W 2:10pm - 3:40pm 516 Milstein Center,
-Barnard College,2025-26,S,COMS BC1017,002,Introduction to Computational Thinking and Data Science - Lab,Eysa Lee,Th 9:00am - 10:30am 516 Milstein Center,
-Barnard College,2025-26,S,COMS BC3099,002,INDEPENDENT STUDY,Tiffany Tseng,,
-Barnard College,2025-26,S,COMS BC3099,003,INDEPENDENT STUDY,Corey Toler-Franklin,,
-Barnard College,2025-26,S,COMS BC3430,001,Computational Sound,Mark Santolucito,T Th 5:40pm - 6:55pm 504 Diana Center,
-Barnard College,2025-26,S,COMS BC3930,001,Creative Embedded Systems,Mark Santolucito,T Th 11:40am - 12:55pm 516 Milstein Center,
-Barnard College,2025-26,S,COMS W1004,001,PROGRAMMING IN JAVA,Christian Murphy,T Th 1:10pm - 2:25pm 501 Schermerhorn Hall,
-Barnard College,2025-26,S,COMS W1004,002,PROGRAMMING IN JAVA,Christian Murphy,T Th 2:40pm - 3:55pm 501 Schermerhorn Hall,
-Barnard College,2025-26,S,COMS W1404,001,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 10:10am - 11:25am 337 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W1404,002,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 11:40am - 12:55pm 337 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W1404,003,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 1:10pm - 2:25pm 337 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W1404,004,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 4:10pm - 5:25pm 337 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W1404,005,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 9:30am - 10:45am 327 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W1404,006,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 11:00am - 12:15pm 327 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W1404,007,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 12:30pm - 1:45pm 327 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W1404,008,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 2:00pm - 3:15pm 327 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W2132,001,Intermediate Computing in Python,Daniel Bauer,M W 10:10am - 11:25am 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W3134,001,Data Structures in Java,Paul Blaer,M W 2:40pm - 3:55pm 417 International Affairs Bldg,
-Barnard College,2025-26,S,COMS W3134,002,Data Structures in Java,Paul Blaer,M W 5:40pm - 6:55pm 501 Northwest Corner,
-Barnard College,2025-26,S,COMS W3136,001,ESSENTIAL DATA STRUCTURES,Brian Borowski,T 4:10pm - 6:30pm 330 Uris Hall,
-Barnard College,2025-26,S,COMS W3157,001,ADVANCED PROGRAMMING,Brian Borowski,M W 4:10pm - 5:25pm 501 Schermerhorn Hall,
-Barnard College,2025-26,S,COMS W3157,002,ADVANCED PROGRAMMING,Brian Borowski,M W 5:40pm - 6:55pm 501 Schermerhorn Hall,
-Barnard College,2025-26,S,COMS W3203,001,DISCRETE MATHEMATICS,Ansaf Salleb-Aouissi,T Th 11:40am - 12:55pm 301 Uris Hall,
-Barnard College,2025-26,S,COMS W3203,002,DISCRETE MATHEMATICS,Tony Dear,F 2:10pm - 4:40pm 833 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W3261,001,COMPUTER SCIENCE THEORY,Mihalis Yannakakis,M W 1:10pm - 2:25pm 833 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W3261,002,COMPUTER SCIENCE THEORY,Mihalis Yannakakis,M W 2:40pm - 3:55pm 833 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W4111,002,INTRODUCTION TO DATABASES,Donald Ferguson,F 10:10am - 12:40pm 402 Chandler,
-Barnard College,2025-26,S,COMS W4118,001,OPERATING SYSTEMS I,Hubertus Franke,M 7:00pm - 9:30pm 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4118,V01,OPERATING SYSTEMS I,Hubertus Franke,,
-Barnard College,2025-26,S,COMS W4167,001,COMPUTER ANIMATION,Changxi Zheng,T Th 4:10pm - 5:25pm 214 Pupin Laboratories,
-Barnard College,2025-26,S,COMS W4170,001,USER INTERFACE DESIGN,Celeste Layne,T 7:00pm - 9:30pm 301 Pupin Laboratories,
-Barnard College,2025-26,S,COMS W4170,V01,USER INTERFACE DESIGN,Celeste Layne,,
-Barnard College,2025-26,S,COMS W4172,001,3D UI AND AUGMENTED REALITY,Steven Feiner,T Th 1:10pm - 2:25pm 233 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W4232,001,Advanced Algorithms,Alexandr Andoni,M W 2:40pm - 3:55pm 1127 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W4232,V01,Advanced Algorithms,Alexandr Andoni,,
-Barnard College,2025-26,S,COMS W4281,001,INTRO TO QUANTUM COMPUTING,James Bartusek,T Th 2:40pm - 3:55pm 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4419,001,"Internet Technology, Economics, and Policy",Henning Schulzrinne,M W 4:10pm - 5:25pm 825 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W4460,001,PRIN-INNOVATN/ENTREPRENEURSHIP,William Reinisch,M W 8:40am - 9:55am 415 Schapiro Cepser,
-Barnard College,2025-26,S,COMS W4701,001,ARTIFICIAL INTELLIGENCE,Yun Lin,T Th 4:10pm - 5:25pm 402 Chandler,
-Barnard College,2025-26,S,COMS W4701,002,ARTIFICIAL INTELLIGENCE,Yun Lin,T Th 6:40pm - 7:55pm 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4701,V02,ARTIFICIAL INTELLIGENCE,Yun Lin,,
-Barnard College,2025-26,S,COMS W4705,001,NATURAL LANGUAGE PROCESSING,Zhou Yu,T Th 4:10pm - 5:25pm 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4705,002,NATURAL LANGUAGE PROCESSING,Daniel Bauer,F 1:10pm - 3:40pm 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4705,030,NATURAL LANGUAGE PROCESSING,Andrei Simion,M 7:00pm - 9:30pm 209 Havemeyer Hall,
-Barnard College,2025-26,S,COMS W4705,V02,NATURAL LANGUAGE PROCESSING,Daniel Bauer,,
-Barnard College,2025-26,S,COMS W4710,001,Ethical and Responsible AI,Ansaf Salleb-Aouissi,T Th 1:10pm - 2:25pm 614 Schermerhorn Hall,
-Barnard College,2025-26,S,COMS W4710,V01,Ethical and Responsible AI,Ansaf Salleb-Aouissi,,
-Barnard College,2025-26,S,COMS W4721,001,MACHINE LEARNING FOR DATA SCI,Yining Liu,T Th 1:10pm - 2:25pm 142 Uris Hall,
-Barnard College,2025-26,S,COMS W4721,002,MACHINE LEARNING FOR DATA SCI,Yining Liu,T Th 2:40pm - 3:55pm 142 Uris Hall,
-Barnard College,2025-26,S,COMS W4721,C01,MACHINE LEARNING FOR DATA SCI,Yining Liu,,
-Barnard College,2025-26,S,COMS W4732,001,Computer Vision II: Learning,Aleksander Holynski,F 9:10am - 11:40am 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4771,001,MACHINE LEARNING,Tony Dear,M W 2:40pm - 3:55pm 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4771,002,MACHINE LEARNING,Tony Dear,M W 4:10pm - 5:25pm 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4771,V02,MACHINE LEARNING,Tony Dear,,
-Barnard College,2025-26,S,COMS W4995,001,TOPICS IN COMPUTER SCIENCE,Timothy Roughgarden,M W 8:40am - 9:55am 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4995,002,TOPICS IN COMPUTER SCIENCE,Gary Zamchick,T 1:10pm - 3:40pm 644 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W4995,003,TOPICS IN COMPUTER SCIENCE,Gary Zamchick,F 1:10pm - 3:40pm 644 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W4995,004,TOPICS IN COMPUTER SCIENCE,Jae Lee,M W 2:40pm - 3:55pm 209 Havemeyer Hall,
-Barnard College,2025-26,S,COMS W4995,005,TOPICS IN COMPUTER SCIENCE,Jae Lee,M W 5:40pm - 6:55pm 402 Chandler,
-Barnard College,2025-26,S,COMS W4995,006,TOPICS IN COMPUTER SCIENCE,Christian Swinehart,Th 4:10pm - 6:40pm 1024 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W4995,007,TOPICS IN COMPUTER SCIENCE,Yongwhan Lim,M 7:00pm - 9:30pm 310 Fayerweather,
-Barnard College,2025-26,S,COMS W4995,008,TOPICS IN COMPUTER SCIENCE,Suman Jana,F 12:10pm - 2:00pm 825 Seeley W. Mudd Building,
-Barnard College,2025-26,S,COMS W4995,009,TOPICS IN COMPUTER SCIENCE,Adam Block,T Th 1:10pm - 2:25pm 415 Schapiro Cepser,
-Barnard College,2025-26,S,COMS W4995,010,TOPICS IN COMPUTER SCIENCE,Zhuo Zhang,T Th 5:40pm - 6:55pm 601b Fairchild Life Sciences Bldg,
-Barnard College,2025-26,S,COMS W4995,011,TOPICS IN COMPUTER SCIENCE,Kenneth St. Claire,T Th 1:10pm - 2:25pm 451 Computer Science Bldg,
-Barnard College,2025-26,S,COMS W4995,012,TOPICS IN COMPUTER SCIENCE,Lydia Chilton,F 2:00pm - 5:00pm None None,
-Barnard College,2025-26,S,COMS W4995,030,TOPICS IN COMPUTER SCIENCE,Adam Kelleher,W 7:05pm - 9:35pm 209 Havemeyer Hall,
-Barnard College,2025-26,S,COMS W4995,031,TOPICS IN COMPUTER SCIENCE,Spencer Luo,M 4:10pm - 6:40pm 310 Fayerweather,
-Barnard College,2025-26,S,COMS W4995,032,TOPICS IN COMPUTER SCIENCE,Andrei Simion,Th 7:00pm - 9:30pm 310 Fayerweather,
-Barnard College,2026-27,F,COMS BC1016,001,Introduction to Computational Thinking and Data Science,Murad Megjhani,M W 11:40am - 12:55pm Room TBA,
-Barnard College,2026-27,F,COMS BC1016,002,Introduction to Computational Thinking and Data Science,Eysa Lee,M W 1:10pm - 2:25pm Room TBA,
-Barnard College,2026-27,F,COMS BC3420,001,PRIVACY IN A NETWORKED WORLD,Rebecca Wright,W 4:10pm - 6:00pm Room TBA,
-Barnard College,2026-27,F,COMS BC3930,001,Creative Embedded Systems,Tiffany Tseng,T Th 2:40pm - 3:55pm 516 Milstein Center,
-Barnard College,2026-27,F,COMS W1002,001,COMPUTING IN CONTEXT,Adam Cannon,T Th 1:10pm - 2:25pm Room TBA,
-Barnard College,2026-27,F,COMS W1002,002,COMPUTING IN CONTEXT,Adam Cannon,T Th 1:10pm - 2:25pm Room TBA,
-Barnard College,2026-27,F,COMS W1002,003,COMPUTING IN CONTEXT,Adam Cannon,T Th 1:10pm - 2:25pm Room TBA,
-Barnard College,2026-27,F,COMS W1002,004,COMPUTING IN CONTEXT,Adam Cannon,T Th 1:10pm - 2:25pm Room TBA,
-Barnard College,2026-27,F,COMS W1004,001,PROGRAMMING IN JAVA,Paul Blaer,M W 2:40pm - 3:55pm Room TBA,
-Barnard College,2026-27,F,COMS W1004,002,PROGRAMMING IN JAVA,Paul Blaer,M W 5:40pm - 6:55pm Room TBA,
-Barnard College,2026-27,F,COMS W1012,001,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,
-Barnard College,2026-27,F,COMS W1012,002,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,
-Barnard College,2026-27,F,COMS W1012,003,COMPUTING IN CONTEXT REC,,F 10:10am - 11:00am Room TBA,
-Barnard College,2026-27,F,COMS W1012,004,COMPUTING IN CONTEXT REC,,F 11:10am - 12:00pm Room TBA,
-Barnard College,2026-27,F,COMS W1012,005,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,
-Barnard College,2026-27,F,COMS W1012,006,COMPUTING IN CONTEXT REC,,F 10:10am - 11:00am Room TBA,
-Barnard College,2026-27,F,COMS W1012,007,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,
-Barnard College,2026-27,F,COMS W1012,008,COMPUTING IN CONTEXT REC,,F 10:10am - 11:00am Room TBA,
-Barnard College,2026-27,F,COMS W1012,009,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,
-Barnard College,2026-27,F,COMS W1012,010,COMPUTING IN CONTEXT REC,,F 11:10am - 12:00pm Room TBA,
-Barnard College,2026-27,F,COMS W1404,001,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 10:10am - 11:25am Room TBA,
-Barnard College,2026-27,F,COMS W1404,002,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 11:40am - 12:55pm Room TBA,
-Barnard College,2026-27,F,COMS W1404,003,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 1:10pm - 2:25pm Room TBA,
-Barnard College,2026-27,F,COMS W1404,004,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 4:10pm - 5:25pm Room TBA,
-Barnard College,2026-27,F,COMS W1404,005,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 9:30am - 10:45am Room TBA,
-Barnard College,2026-27,F,COMS W1404,006,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 11:00am - 12:15pm Room TBA,
-Barnard College,2026-27,F,COMS W1404,007,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 12:30pm - 1:45pm Room TBA,
-Barnard College,2026-27,F,COMS W1404,008,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 2:00pm - 3:15pm Room TBA,
-Barnard College,2026-27,F,COMS W2702,001,AI in Context,Adam Cannon,T Th 11:40am - 12:55pm Room TBA,
-Barnard College,2026-27,F,COMS W3107,001,Clean Object-Oriented Design,Christian Murphy,T Th 2:40pm - 3:55pm Room TBA,
-Barnard College,2026-27,F,COMS W3134,001,Data Structures in Java,Brian Borowski,M W 4:10pm - 5:25pm Room TBA,
-Barnard College,2026-27,F,COMS W3134,002,Data Structures in Java,Brian Borowski,M W 5:40pm - 6:55pm Room TBA,
-Barnard College,2026-27,F,COMS W3157,001,ADVANCED PROGRAMMING,Jae Lee,T Th 4:10pm - 5:25pm Room TBA,
-Barnard College,2026-27,F,COMS W3157,002,ADVANCED PROGRAMMING,Jae Lee,F 12:10pm - 2:00pm Room TBA,
-Barnard College,2026-27,F,COMS W3203,001,DISCRETE MATHEMATICS,"Gabriel Chuang, Augustin Chaintreau",M W 4:10pm - 5:25pm Room TBA,
-Barnard College,2026-27,F,COMS W3261,001,COMPUTER SCIENCE THEORY,Tal Malkin,T Th 8:40am - 9:55am Room TBA,
-Barnard College,2026-27,F,COMS W3261,002,COMPUTER SCIENCE THEORY,Tal Malkin,T Th 10:10am - 11:25am Room TBA,
-Barnard College,2026-27,F,COMS W3410,001,COMPUTERS AND SOCIETY,Ronald Baecker,T 4:10pm - 6:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4111,001,INTRODUCTION TO DATABASES,Luis Gravano,T Th 11:40am - 12:55pm Room TBA,
-Barnard College,2026-27,F,COMS W4111,002,INTRODUCTION TO DATABASES,,Th 7:00pm - 9:30pm 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4115,001,PROGRAMMING LANG ＆ TRANSLATORS,Ronghui Gu,M W 4:10pm - 5:25pm Room TBA,
-Barnard College,2026-27,F,COMS W4118,001,OPERATING SYSTEMS I,Jason Nieh,T Th 4:10pm - 5:25pm Room TBA,
-Barnard College,2026-27,F,COMS W4156,001,Advanced Software Engineering,Gail Kaiser,T Th 10:10am - 11:25am 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4160,001,COMPUTER GRAPHICS,Changxi Zheng,T Th 4:10pm - 5:25pm 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4170,001,USER INTERFACE DESIGN,,T Th 5:40pm - 6:55pm 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4181,001,SECURITY I,Zhuo Zhang,M W 4:10pm - 6:00pm Room TBA,
-Barnard College,2026-27,F,COMS W4186,001,MALWARE ANALYSIS＆REVERSE ENGINEERING,Michael Sikorski,Th 4:10pm - 6:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4236,001,INTRO-COMPUTATIONAL COMPLEXITY,Toniann Pitassi,F 1:10pm - 3:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4281,001,INTRO TO QUANTUM COMPUTING,Henry Yuen,T Th 2:40pm - 3:55pm Room TBA,
-Barnard College,2026-27,F,COMS W4444,001,PROGRAMMING ＆ PROBLEM SOLVING,Kenneth Ross,M W 1:10pm - 2:25pm Room TBA,
-Barnard College,2026-27,F,COMS W4460,001,PRIN-INNOVATN/ENTREPRENEURSHIP,William Reinisch,M W 8:40am - 9:55am 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4701,001,ARTIFICIAL INTELLIGENCE,Ansaf Salleb-Aouissi,T Th 10:10am - 11:25am Room TBA,
-Barnard College,2026-27,F,COMS W4701,002,ARTIFICIAL INTELLIGENCE,Ansaf Salleb-Aouissi,T Th 11:40am - 12:55pm Room TBA,
-Barnard College,2026-27,F,COMS W4705,001,NATURAL LANGUAGE PROCESSING,John Hewitt,M W 2:40pm - 3:55pm Room TBA,
-Barnard College,2026-27,F,COMS W4705,030,NATURAL LANGUAGE PROCESSING,Andrei Simion,T 7:00pm - 9:30pm Room TBA,
-Barnard College,2026-27,F,COMS W4731,001,Computer Vision I: First Principles,Shree Nayar,M W 10:10am - 11:25am 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4733,001,COMPUTATIONAL ASPECTS OF ROBOTICS,Yunzhu Li,M W 1:10pm - 2:25pm Room TBA,
-Barnard College,2026-27,F,COMS W4771,001,MACHINE LEARNING,Nakul Verma,T Th 1:10pm - 2:25pm 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4771,002,MACHINE LEARNING,Nakul Verma,T Th 2:40pm - 3:55pm 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4995,001,TOPICS IN COMPUTER SCIENCE,Stephen Edwards,M W 1:10pm - 2:25pm 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4995,002,TOPICS IN COMPUTER SCIENCE,Bjarne Stroustrup,F 10:10am - 12:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,003,TOPICS IN COMPUTER SCIENCE,Daniel Rubenstein,T Th 8:40am - 9:55am 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4995,004,TOPICS IN COMPUTER SCIENCE,Baishakhi Ray,F 10:10am - 12:40pm 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4995,005,TOPICS IN COMPUTER SCIENCE,"Paul Blaer, Jason Cahill",T 4:10pm - 6:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,006,TOPICS IN COMPUTER SCIENCE,Gary Zamchick,T 1:10pm - 3:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,007,TOPICS IN COMPUTER SCIENCE,Yongwhan Lim,M 7:00pm - 9:30pm 451 Computer Science Bldg,
-Barnard College,2026-27,F,COMS W4995,008,TOPICS IN COMPUTER SCIENCE,Eugene Wu,T Th 2:40pm - 3:55pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,009,TOPICS IN COMPUTER SCIENCE,,F 1:10pm - 3:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,010,TOPICS IN COMPUTER SCIENCE,Peter Belhumeur,T Th 2:40pm - 3:55pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,011,TOPICS IN COMPUTER SCIENCE,Hans Montero,T Th 5:40pm - 6:55pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,012,TOPICS IN COMPUTER SCIENCE,Hossein Azari Soufiani,Th 1:10pm - 3:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,013,TOPICS IN COMPUTER SCIENCE,Yoav Zibin,F 1:10pm - 3:40pm Room TBA,
-Barnard College,2026-27,F,COMS W4995,030,TOPICS IN COMPUTER SCIENCE,Spencer Luo,W 6:10pm - 8:40pm Room TBA,
+college,academic_year,term,course_code,section,course_name,instructor,time,url,category
+Barnard College,2025-26,S,COMS BC1016,001,Introduction to Computational Thinking and Data Science,Eysa Lee,M W 10:10am - 11:25am 140 Horace Mann Hall,,Data science
+Barnard College,2025-26,S,COMS BC1017,001,Introduction to Computational Thinking and Data Science - Lab,Eysa Lee,W 2:10pm - 3:40pm 516 Milstein Center,,Misc
+Barnard College,2025-26,S,COMS BC1017,002,Introduction to Computational Thinking and Data Science - Lab,Eysa Lee,Th 9:00am - 10:30am 516 Milstein Center,,Misc
+Barnard College,2025-26,S,COMS BC3099,002,INDEPENDENT STUDY,Tiffany Tseng,,,Misc
+Barnard College,2025-26,S,COMS BC3099,003,INDEPENDENT STUDY,Corey Toler-Franklin,,,Misc
+Barnard College,2025-26,S,COMS BC3430,001,Computational Sound,Mark Santolucito,T Th 5:40pm - 6:55pm 504 Diana Center,,Games & interactive art
+Barnard College,2025-26,S,COMS BC3930,001,Creative Embedded Systems,Mark Santolucito,T Th 11:40am - 12:55pm 516 Milstein Center,,Embedded & real-time systems
+Barnard College,2025-26,S,COMS W1004,001,PROGRAMMING IN JAVA,Christian Murphy,T Th 1:10pm - 2:25pm 501 Schermerhorn Hall,,Core
+Barnard College,2025-26,S,COMS W1004,002,PROGRAMMING IN JAVA,Christian Murphy,T Th 2:40pm - 3:55pm 501 Schermerhorn Hall,,Core
+Barnard College,2025-26,S,COMS W1404,001,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 10:10am - 11:25am 337 Seeley W. Mudd Building,,Misc
+Barnard College,2025-26,S,COMS W1404,002,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 11:40am - 12:55pm 337 Seeley W. Mudd Building,,Misc
+Barnard College,2025-26,S,COMS W1404,003,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 1:10pm - 2:25pm 337 Seeley W. Mudd Building,,Misc
+Barnard College,2025-26,S,COMS W1404,004,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 4:10pm - 5:25pm 337 Seeley W. Mudd Building,,Misc
+Barnard College,2025-26,S,COMS W1404,005,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 9:30am - 10:45am 327 Seeley W. Mudd Building,,Misc
+Barnard College,2025-26,S,COMS W1404,006,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 11:00am - 12:15pm 327 Seeley W. Mudd Building,,Misc
+Barnard College,2025-26,S,COMS W1404,007,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 12:30pm - 1:45pm 327 Seeley W. Mudd Building,,Misc
+Barnard College,2025-26,S,COMS W1404,008,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 2:00pm - 3:15pm 327 Seeley W. Mudd Building,,Misc
+Barnard College,2025-26,S,COMS W2132,001,Intermediate Computing in Python,Daniel Bauer,M W 10:10am - 11:25am 451 Computer Science Bldg,,Core
+Barnard College,2025-26,S,COMS W3134,001,Data Structures in Java,Paul Blaer,M W 2:40pm - 3:55pm 417 International Affairs Bldg,,Core
+Barnard College,2025-26,S,COMS W3134,002,Data Structures in Java,Paul Blaer,M W 5:40pm - 6:55pm 501 Northwest Corner,,Core
+Barnard College,2025-26,S,COMS W3136,001,ESSENTIAL DATA STRUCTURES,Brian Borowski,T 4:10pm - 6:30pm 330 Uris Hall,,Core
+Barnard College,2025-26,S,COMS W3157,001,ADVANCED PROGRAMMING,Brian Borowski,M W 4:10pm - 5:25pm 501 Schermerhorn Hall,,Core
+Barnard College,2025-26,S,COMS W3157,002,ADVANCED PROGRAMMING,Brian Borowski,M W 5:40pm - 6:55pm 501 Schermerhorn Hall,,Core
+Barnard College,2025-26,S,COMS W3203,001,DISCRETE MATHEMATICS,Ansaf Salleb-Aouissi,T Th 11:40am - 12:55pm 301 Uris Hall,,Core
+Barnard College,2025-26,S,COMS W3203,002,DISCRETE MATHEMATICS,Tony Dear,F 2:10pm - 4:40pm 833 Seeley W. Mudd Building,,Core
+Barnard College,2025-26,S,COMS W3261,001,COMPUTER SCIENCE THEORY,Mihalis Yannakakis,M W 1:10pm - 2:25pm 833 Seeley W. Mudd Building,,Algorithms & complexity
+Barnard College,2025-26,S,COMS W3261,002,COMPUTER SCIENCE THEORY,Mihalis Yannakakis,M W 2:40pm - 3:55pm 833 Seeley W. Mudd Building,,Algorithms & complexity
+Barnard College,2025-26,S,COMS W4111,002,INTRODUCTION TO DATABASES,Donald Ferguson,F 10:10am - 12:40pm 402 Chandler,,Databases
+Barnard College,2025-26,S,COMS W4118,001,OPERATING SYSTEMS I,Hubertus Franke,M 7:00pm - 9:30pm 451 Computer Science Bldg,,Operating systems
+Barnard College,2025-26,S,COMS W4118,V01,OPERATING SYSTEMS I,Hubertus Franke,,,Operating systems
+Barnard College,2025-26,S,COMS W4167,001,COMPUTER ANIMATION,Changxi Zheng,T Th 4:10pm - 5:25pm 214 Pupin Laboratories,,Computer graphics
+Barnard College,2025-26,S,COMS W4170,001,USER INTERFACE DESIGN,Celeste Layne,T 7:00pm - 9:30pm 301 Pupin Laboratories,,Human-computer interaction
+Barnard College,2025-26,S,COMS W4170,V01,USER INTERFACE DESIGN,Celeste Layne,,,Human-computer interaction
+Barnard College,2025-26,S,COMS W4172,001,3D UI AND AUGMENTED REALITY,Steven Feiner,T Th 1:10pm - 2:25pm 233 Seeley W. Mudd Building,,Human-computer interaction
+Barnard College,2025-26,S,COMS W4232,001,Advanced Algorithms,Alexandr Andoni,M W 2:40pm - 3:55pm 1127 Seeley W. Mudd Building,,Algorithms & complexity
+Barnard College,2025-26,S,COMS W4232,V01,Advanced Algorithms,Alexandr Andoni,,,Algorithms & complexity
+Barnard College,2025-26,S,COMS W4281,001,INTRO TO QUANTUM COMPUTING,James Bartusek,T Th 2:40pm - 3:55pm 451 Computer Science Bldg,,Quantum computing
+Barnard College,2025-26,S,COMS W4419,001,"Internet Technology, Economics, and Policy",Henning Schulzrinne,M W 4:10pm - 5:25pm 825 Seeley W. Mudd Building,,Economics & computation
+Barnard College,2025-26,S,COMS W4460,001,PRIN-INNOVATN/ENTREPRENEURSHIP,William Reinisch,M W 8:40am - 9:55am 415 Schapiro Cepser,,Other
+Barnard College,2025-26,S,COMS W4701,001,ARTIFICIAL INTELLIGENCE,Yun Lin,T Th 4:10pm - 5:25pm 402 Chandler,,Artificial intelligence
+Barnard College,2025-26,S,COMS W4701,002,ARTIFICIAL INTELLIGENCE,Yun Lin,T Th 6:40pm - 7:55pm 451 Computer Science Bldg,,Artificial intelligence
+Barnard College,2025-26,S,COMS W4701,V02,ARTIFICIAL INTELLIGENCE,Yun Lin,,,Artificial intelligence
+Barnard College,2025-26,S,COMS W4705,001,NATURAL LANGUAGE PROCESSING,Zhou Yu,T Th 4:10pm - 5:25pm 451 Computer Science Bldg,,Natural language processing
+Barnard College,2025-26,S,COMS W4705,002,NATURAL LANGUAGE PROCESSING,Daniel Bauer,F 1:10pm - 3:40pm 451 Computer Science Bldg,,Natural language processing
+Barnard College,2025-26,S,COMS W4705,030,NATURAL LANGUAGE PROCESSING,Andrei Simion,M 7:00pm - 9:30pm 209 Havemeyer Hall,,Natural language processing
+Barnard College,2025-26,S,COMS W4705,V02,NATURAL LANGUAGE PROCESSING,Daniel Bauer,,,Natural language processing
+Barnard College,2025-26,S,COMS W4710,001,Ethical and Responsible AI,Ansaf Salleb-Aouissi,T Th 1:10pm - 2:25pm 614 Schermerhorn Hall,,Artificial intelligence
+Barnard College,2025-26,S,COMS W4710,V01,Ethical and Responsible AI,Ansaf Salleb-Aouissi,,,Artificial intelligence
+Barnard College,2025-26,S,COMS W4721,001,MACHINE LEARNING FOR DATA SCI,Yining Liu,T Th 1:10pm - 2:25pm 142 Uris Hall,,Machine learning
+Barnard College,2025-26,S,COMS W4721,002,MACHINE LEARNING FOR DATA SCI,Yining Liu,T Th 2:40pm - 3:55pm 142 Uris Hall,,Machine learning
+Barnard College,2025-26,S,COMS W4721,C01,MACHINE LEARNING FOR DATA SCI,Yining Liu,,,Machine learning
+Barnard College,2025-26,S,COMS W4732,001,Computer Vision II: Learning,Aleksander Holynski,F 9:10am - 11:40am 451 Computer Science Bldg,,Computer vision
+Barnard College,2025-26,S,COMS W4771,001,MACHINE LEARNING,Tony Dear,M W 2:40pm - 3:55pm 451 Computer Science Bldg,,Machine learning
+Barnard College,2025-26,S,COMS W4771,002,MACHINE LEARNING,Tony Dear,M W 4:10pm - 5:25pm 451 Computer Science Bldg,,Machine learning
+Barnard College,2025-26,S,COMS W4771,V02,MACHINE LEARNING,Tony Dear,,,Machine learning
+Barnard College,2025-26,S,COMS W4995,001,TOPICS IN COMPUTER SCIENCE,Timothy Roughgarden,M W 8:40am - 9:55am 451 Computer Science Bldg,,Other
+Barnard College,2025-26,S,COMS W4995,002,TOPICS IN COMPUTER SCIENCE,Gary Zamchick,T 1:10pm - 3:40pm 644 Seeley W. Mudd Building,,Other
+Barnard College,2025-26,S,COMS W4995,003,TOPICS IN COMPUTER SCIENCE,Gary Zamchick,F 1:10pm - 3:40pm 644 Seeley W. Mudd Building,,Other
+Barnard College,2025-26,S,COMS W4995,004,TOPICS IN COMPUTER SCIENCE,Jae Lee,M W 2:40pm - 3:55pm 209 Havemeyer Hall,,Other
+Barnard College,2025-26,S,COMS W4995,005,TOPICS IN COMPUTER SCIENCE,Jae Lee,M W 5:40pm - 6:55pm 402 Chandler,,Other
+Barnard College,2025-26,S,COMS W4995,006,TOPICS IN COMPUTER SCIENCE,Christian Swinehart,Th 4:10pm - 6:40pm 1024 Seeley W. Mudd Building,,Other
+Barnard College,2025-26,S,COMS W4995,007,TOPICS IN COMPUTER SCIENCE,Yongwhan Lim,M 7:00pm - 9:30pm 310 Fayerweather,,Other
+Barnard College,2025-26,S,COMS W4995,008,TOPICS IN COMPUTER SCIENCE,Suman Jana,F 12:10pm - 2:00pm 825 Seeley W. Mudd Building,,Other
+Barnard College,2025-26,S,COMS W4995,009,TOPICS IN COMPUTER SCIENCE,Adam Block,T Th 1:10pm - 2:25pm 415 Schapiro Cepser,,Other
+Barnard College,2025-26,S,COMS W4995,010,TOPICS IN COMPUTER SCIENCE,Zhuo Zhang,T Th 5:40pm - 6:55pm 601b Fairchild Life Sciences Bldg,,Other
+Barnard College,2025-26,S,COMS W4995,011,TOPICS IN COMPUTER SCIENCE,Kenneth St. Claire,T Th 1:10pm - 2:25pm 451 Computer Science Bldg,,Other
+Barnard College,2025-26,S,COMS W4995,012,TOPICS IN COMPUTER SCIENCE,Lydia Chilton,F 2:00pm - 5:00pm None None,,Other
+Barnard College,2025-26,S,COMS W4995,030,TOPICS IN COMPUTER SCIENCE,Adam Kelleher,W 7:05pm - 9:35pm 209 Havemeyer Hall,,Other
+Barnard College,2025-26,S,COMS W4995,031,TOPICS IN COMPUTER SCIENCE,Spencer Luo,M 4:10pm - 6:40pm 310 Fayerweather,,Other
+Barnard College,2025-26,S,COMS W4995,032,TOPICS IN COMPUTER SCIENCE,Andrei Simion,Th 7:00pm - 9:30pm 310 Fayerweather,,Other
+Barnard College,2026-27,F,COMS BC1016,001,Introduction to Computational Thinking and Data Science,Murad Megjhani,M W 11:40am - 12:55pm Room TBA,,Data science
+Barnard College,2026-27,F,COMS BC1016,002,Introduction to Computational Thinking and Data Science,Eysa Lee,M W 1:10pm - 2:25pm Room TBA,,Data science
+Barnard College,2026-27,F,COMS BC3420,001,PRIVACY IN A NETWORKED WORLD,Rebecca Wright,W 4:10pm - 6:00pm Room TBA,,Computer security & privacy
+Barnard College,2026-27,F,COMS BC3930,001,Creative Embedded Systems,Tiffany Tseng,T Th 2:40pm - 3:55pm 516 Milstein Center,,Embedded & real-time systems
+Barnard College,2026-27,F,COMS W1002,001,COMPUTING IN CONTEXT,Adam Cannon,T Th 1:10pm - 2:25pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W1002,002,COMPUTING IN CONTEXT,Adam Cannon,T Th 1:10pm - 2:25pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W1002,003,COMPUTING IN CONTEXT,Adam Cannon,T Th 1:10pm - 2:25pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W1002,004,COMPUTING IN CONTEXT,Adam Cannon,T Th 1:10pm - 2:25pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W1004,001,PROGRAMMING IN JAVA,Paul Blaer,M W 2:40pm - 3:55pm Room TBA,,Core
+Barnard College,2026-27,F,COMS W1004,002,PROGRAMMING IN JAVA,Paul Blaer,M W 5:40pm - 6:55pm Room TBA,,Core
+Barnard College,2026-27,F,COMS W1012,001,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,002,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,003,COMPUTING IN CONTEXT REC,,F 10:10am - 11:00am Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,004,COMPUTING IN CONTEXT REC,,F 11:10am - 12:00pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,005,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,006,COMPUTING IN CONTEXT REC,,F 10:10am - 11:00am Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,007,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,008,COMPUTING IN CONTEXT REC,,F 10:10am - 11:00am Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,009,COMPUTING IN CONTEXT REC,,Th 7:10pm - 8:00pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1012,010,COMPUTING IN CONTEXT REC,,F 11:10am - 12:00pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1404,001,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 10:10am - 11:25am Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1404,002,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 11:40am - 12:55pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1404,003,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 1:10pm - 2:25pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1404,004,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 4:10pm - 5:25pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1404,005,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 9:30am - 10:45am Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1404,006,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 11:00am - 12:15pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1404,007,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 12:30pm - 1:45pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W1404,008,EMERGING SCHOLARS PROG SEMINAR,Christian Murphy,F 2:00pm - 3:15pm Room TBA,,Misc
+Barnard College,2026-27,F,COMS W2702,001,AI in Context,Adam Cannon,T Th 11:40am - 12:55pm Room TBA,,Artificial intelligence
+Barnard College,2026-27,F,COMS W3107,001,Clean Object-Oriented Design,Christian Murphy,T Th 2:40pm - 3:55pm Room TBA,,Software engineering
+Barnard College,2026-27,F,COMS W3134,001,Data Structures in Java,Brian Borowski,M W 4:10pm - 5:25pm Room TBA,,Core
+Barnard College,2026-27,F,COMS W3134,002,Data Structures in Java,Brian Borowski,M W 5:40pm - 6:55pm Room TBA,,Core
+Barnard College,2026-27,F,COMS W3157,001,ADVANCED PROGRAMMING,Jae Lee,T Th 4:10pm - 5:25pm Room TBA,,Core
+Barnard College,2026-27,F,COMS W3157,002,ADVANCED PROGRAMMING,Jae Lee,F 12:10pm - 2:00pm Room TBA,,Core
+Barnard College,2026-27,F,COMS W3203,001,DISCRETE MATHEMATICS,"Gabriel Chuang, Augustin Chaintreau",M W 4:10pm - 5:25pm Room TBA,,Core
+Barnard College,2026-27,F,COMS W3261,001,COMPUTER SCIENCE THEORY,Tal Malkin,T Th 8:40am - 9:55am Room TBA,,Algorithms & complexity
+Barnard College,2026-27,F,COMS W3261,002,COMPUTER SCIENCE THEORY,Tal Malkin,T Th 10:10am - 11:25am Room TBA,,Algorithms & complexity
+Barnard College,2026-27,F,COMS W3410,001,COMPUTERS AND SOCIETY,Ronald Baecker,T 4:10pm - 6:40pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4111,001,INTRODUCTION TO DATABASES,Luis Gravano,T Th 11:40am - 12:55pm Room TBA,,Databases
+Barnard College,2026-27,F,COMS W4111,002,INTRODUCTION TO DATABASES,,Th 7:00pm - 9:30pm 451 Computer Science Bldg,,Databases
+Barnard College,2026-27,F,COMS W4115,001,PROGRAMMING LANG ＆ TRANSLATORS,Ronghui Gu,M W 4:10pm - 5:25pm Room TBA,,Programming languages
+Barnard College,2026-27,F,COMS W4118,001,OPERATING SYSTEMS I,Jason Nieh,T Th 4:10pm - 5:25pm Room TBA,,Operating systems
+Barnard College,2026-27,F,COMS W4156,001,Advanced Software Engineering,Gail Kaiser,T Th 10:10am - 11:25am 451 Computer Science Bldg,,Software engineering
+Barnard College,2026-27,F,COMS W4160,001,COMPUTER GRAPHICS,Changxi Zheng,T Th 4:10pm - 5:25pm 451 Computer Science Bldg,,Computer graphics
+Barnard College,2026-27,F,COMS W4170,001,USER INTERFACE DESIGN,,T Th 5:40pm - 6:55pm 451 Computer Science Bldg,,Human-computer interaction
+Barnard College,2026-27,F,COMS W4181,001,SECURITY I,Zhuo Zhang,M W 4:10pm - 6:00pm Room TBA,,Computer security & privacy
+Barnard College,2026-27,F,COMS W4186,001,MALWARE ANALYSIS＆REVERSE ENGINEERING,Michael Sikorski,Th 4:10pm - 6:40pm Room TBA,,Computer security & privacy
+Barnard College,2026-27,F,COMS W4236,001,INTRO-COMPUTATIONAL COMPLEXITY,Toniann Pitassi,F 1:10pm - 3:40pm Room TBA,,Algorithms & complexity
+Barnard College,2026-27,F,COMS W4281,001,INTRO TO QUANTUM COMPUTING,Henry Yuen,T Th 2:40pm - 3:55pm Room TBA,,Quantum computing
+Barnard College,2026-27,F,COMS W4444,001,PROGRAMMING ＆ PROBLEM SOLVING,Kenneth Ross,M W 1:10pm - 2:25pm Room TBA,,Core
+Barnard College,2026-27,F,COMS W4460,001,PRIN-INNOVATN/ENTREPRENEURSHIP,William Reinisch,M W 8:40am - 9:55am 451 Computer Science Bldg,,Other
+Barnard College,2026-27,F,COMS W4701,001,ARTIFICIAL INTELLIGENCE,Ansaf Salleb-Aouissi,T Th 10:10am - 11:25am Room TBA,,Artificial intelligence
+Barnard College,2026-27,F,COMS W4701,002,ARTIFICIAL INTELLIGENCE,Ansaf Salleb-Aouissi,T Th 11:40am - 12:55pm Room TBA,,Artificial intelligence
+Barnard College,2026-27,F,COMS W4705,001,NATURAL LANGUAGE PROCESSING,John Hewitt,M W 2:40pm - 3:55pm Room TBA,,Natural language processing
+Barnard College,2026-27,F,COMS W4705,030,NATURAL LANGUAGE PROCESSING,Andrei Simion,T 7:00pm - 9:30pm Room TBA,,Natural language processing
+Barnard College,2026-27,F,COMS W4731,001,Computer Vision I: First Principles,Shree Nayar,M W 10:10am - 11:25am 451 Computer Science Bldg,,Computer vision
+Barnard College,2026-27,F,COMS W4733,001,COMPUTATIONAL ASPECTS OF ROBOTICS,Yunzhu Li,M W 1:10pm - 2:25pm Room TBA,,Robotics
+Barnard College,2026-27,F,COMS W4771,001,MACHINE LEARNING,Nakul Verma,T Th 1:10pm - 2:25pm 451 Computer Science Bldg,,Machine learning
+Barnard College,2026-27,F,COMS W4771,002,MACHINE LEARNING,Nakul Verma,T Th 2:40pm - 3:55pm 451 Computer Science Bldg,,Machine learning
+Barnard College,2026-27,F,COMS W4995,001,TOPICS IN COMPUTER SCIENCE,Stephen Edwards,M W 1:10pm - 2:25pm 451 Computer Science Bldg,,Other
+Barnard College,2026-27,F,COMS W4995,002,TOPICS IN COMPUTER SCIENCE,Bjarne Stroustrup,F 10:10am - 12:40pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,003,TOPICS IN COMPUTER SCIENCE,Daniel Rubenstein,T Th 8:40am - 9:55am 451 Computer Science Bldg,,Other
+Barnard College,2026-27,F,COMS W4995,004,TOPICS IN COMPUTER SCIENCE,Baishakhi Ray,F 10:10am - 12:40pm 451 Computer Science Bldg,,Other
+Barnard College,2026-27,F,COMS W4995,005,TOPICS IN COMPUTER SCIENCE,"Paul Blaer, Jason Cahill",T 4:10pm - 6:40pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,006,TOPICS IN COMPUTER SCIENCE,Gary Zamchick,T 1:10pm - 3:40pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,007,TOPICS IN COMPUTER SCIENCE,Yongwhan Lim,M 7:00pm - 9:30pm 451 Computer Science Bldg,,Other
+Barnard College,2026-27,F,COMS W4995,008,TOPICS IN COMPUTER SCIENCE,Eugene Wu,T Th 2:40pm - 3:55pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,009,TOPICS IN COMPUTER SCIENCE,,F 1:10pm - 3:40pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,010,TOPICS IN COMPUTER SCIENCE,Peter Belhumeur,T Th 2:40pm - 3:55pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,011,TOPICS IN COMPUTER SCIENCE,Hans Montero,T Th 5:40pm - 6:55pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,012,TOPICS IN COMPUTER SCIENCE,Hossein Azari Soufiani,Th 1:10pm - 3:40pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,013,TOPICS IN COMPUTER SCIENCE,Yoav Zibin,F 1:10pm - 3:40pm Room TBA,,Other
+Barnard College,2026-27,F,COMS W4995,030,TOPICS IN COMPUTER SCIENCE,Spencer Luo,W 6:10pm - 8:40pm Room TBA,,Other

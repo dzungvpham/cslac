@@ -50,7 +50,7 @@ function venueRankTooltip(rank, source) {
 const COLLEGE_COLS = [
   { key: 'name',             label: 'Institution',   numeric: false },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
-  { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last academic year' },
+  { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last two academic years' },
   { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers affiliated with the institution and matching the current filters' },
 ];
 
@@ -559,7 +559,7 @@ async function loadData() {
         .filter(Boolean).join(' ').toLowerCase();
     }
     c._search = collegeBits.toLowerCase();
-    c.courses_per_year = coursesInLatestYear(courseSchedules[c.name]);
+    c.courses_per_year = recentCourseCount(courseSchedules[c.name]);
     collegesByName[c.name] = c;
   }
   // Search strings for publications (title, venue, every author + affiliation,
@@ -864,28 +864,8 @@ function applyGlobalView() {
 }
 
 // ── advanced (subfield) filter bar ────────────────────────────────────────
-function subfieldCounts() {
-  const counts = Object.fromEntries(CS_SUBFIELDS.map(s => [s, 0]));
-  const perSchool = subfieldScope === 'school';
-  for (const c of allColleges) {
-    const seen = perSchool ? new Set() : null;
-    for (const f of c.faculty) {
-      for (const s of CS_SUBFIELDS) {
-        if (!f._interestsSet.has(s.toLowerCase())) continue;
-        if (perSchool) {
-          if (!seen.has(s)) { counts[s] += 1; seen.add(s); }
-        } else {
-          counts[s] += 1;
-        }
-      }
-    }
-  }
-  return counts;
-}
-
 function buildAdvancedBar() {
   const bar = document.getElementById('advanced-bar');
-  const counts = subfieldCounts();
   const scopeHint = subfieldScope === 'faculty'
     ? `Apply to <span class="hint-scope">each faculty</span> — only show people whose interests match.`
     : `Apply to <span class="hint-scope">whole schools</span> — only show schools that have such faculty.`;
@@ -899,7 +879,7 @@ function buildAdvancedBar() {
     const shortLabel = shortSubfieldLabel(s);
     const titleAttr = shortLabel !== s ? ` title="${esc(s)}"` : '';
     return `<button class="filter-chip ${cls}" data-subfield="${esc(s)}"${titleAttr}>
-      ${esc(shortLabel)}<span class="filter-chip-count">${counts[s]}</span>
+      ${esc(shortLabel)}
     </button>`;
   };
   const subfieldGroupsHtml = CS_SUBFIELD_GROUPS.map(g => {
@@ -1388,15 +1368,24 @@ function passesSchoolFilter(college) {
   return hasInclude;
 }
 
-function coursesInLatestYear(schedule) {
+// How many academic years the Courses column counts over (the college's most
+// recent N years present in the schedule).
+const RECENT_YEARS = 2;
+
+// Count unique courses actually offered (a non-zero `offered` cell) in the
+// college's most recent RECENT_YEARS academic years, optionally restricted to
+// courses matching `predicate` (e.g. the active search + subfield filter).
+function recentCourseCount(schedule, predicate) {
   if (!schedule || !schedule.terms?.length || !schedule.courses?.length) return null;
-  let latestYear = '';
-  for (const t of schedule.terms) if (t.year > latestYear) latestYear = t.year;
+  const recent = new Set(
+    [...new Set(schedule.terms.map(t => t.year))].sort().slice(-RECENT_YEARS)
+  );
   const idxs = schedule.terms
-    .map((t, i) => t.year === latestYear ? i : -1)
+    .map((t, i) => recent.has(t.year) ? i : -1)
     .filter(i => i >= 0);
   let count = 0;
   for (const c of schedule.courses) {
+    if (predicate && !predicate(c)) continue;
     if (idxs.some(i => c.offered[i])) count++;
   }
   return count;
@@ -1412,14 +1401,20 @@ function filteredPubCount(collegeName) {
 
 // Search-aware course count. Used both for the row's Courses column when
 // search is active and to decide whether to keep a college in the results.
-function filteredCourseCount(collegeName) {
-  const sched = courseSchedules[collegeName];
-  if (!sched?.courses) return null;
-  let count = 0;
-  for (const c of sched.courses) {
-    if (searchHitCourse(c)) count++;
-  }
-  return count;
+// Subfield gate for a course, mirroring the publication gate (and independent
+// of the Faculty/School scope toggle). A course's `category` is one of the 32
+// CS subfields or a meta bucket (Core/Misc/Other/Unknown); the meta buckets
+// aren't filter chips, so any active subfield include hides them, which is what
+// we want — filtering "Machine learning" should surface only ML courses.
+function courseSubfieldVisible(c) {
+  const cat = c.category;
+  if (excludedSubfields.size && cat && excludedSubfields.has(cat)) return false;
+  if (activeSubfields.size && (!cat || !activeSubfields.has(cat))) return false;
+  return true;
+}
+
+function courseVisible(c) {
+  return searchHitCourse(c) && courseSubfieldVisible(c);
 }
 
 function aggregateCollege(college) {
@@ -1429,7 +1424,10 @@ function aggregateCollege(college) {
     faculty: fac,
     total: fac.length,
     filtered_pubs: filteredPubCount(college.name),
-    filtered_courses: filteredCourseCount(college.name),
+    // Unique courses offered in the last RECENT_YEARS years matching the active
+    // search + subfield filter — drives the Courses column value, its sort, and
+    // (when searching) whether a course-only match keeps the college's row.
+    filtered_courses: recentCourseCount(courseSchedules[college.name], courseVisible),
   };
 }
 
@@ -1572,11 +1570,15 @@ function buildCollegeHeaders() {
 
 // ── college sort ───────────────────────────────────────────────────────────
 function collegeSortValueFn() {
-  const searching = !!searchQuery.trim();
+  // Sort by the filtered course count whenever courses are being filtered —
+  // by search or by an active subfield filter — matching the Courses column's
+  // displayed value (see courseFiltering in buildCollegeRow).
+  const courseFiltering = !!searchQuery.trim()
+    || activeSubfields.size > 0 || excludedSubfields.size > 0;
   return {
     name:              c => c.name,
     total:             c => c.total,
-    courses_per_year:  c => (searching ? c.filtered_courses : c.courses_per_year) ?? -1,
+    courses_per_year:  c => (courseFiltering ? c.filtered_courses : c.courses_per_year) ?? -1,
     filtered_pubs:     c => c.filtered_pubs ?? -1,
   }[collegeSort.key] || (c => c.name);
 }
@@ -1742,11 +1744,13 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
   const div = document.createElement('div');
   div.className = 'college-row';
 
-  // When the user is searching, the Courses column shows the count of
-  // search-matching courses (across all years) instead of the static
-  // last-academic-year count.
+  // The Courses column counts unique courses offered in the last RECENT_YEARS
+  // academic years; when the user is searching or has an active subfield filter
+  // (both gate courses via courseVisible), it shows the count restricted to the
+  // matching courses.
   const searching = !!searchQuery.trim();
-  const coursesValue = searching ? college.filtered_courses : college.courses_per_year;
+  const courseFiltering = searching || activeSubfields.size > 0 || excludedSubfields.size > 0;
+  const coursesValue = courseFiltering ? college.filtered_courses : college.courses_per_year;
   const cpyText  = fmt(coursesValue);
   const fpText   = fmt(college.filtered_pubs);
   const links   = collegeLinks[college.name] || {};
@@ -1782,7 +1786,7 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
           </span>
         </div>
         <div class="td-num">${college.total}</div>
-        <div class="td-num ${coursesValue != null && (!searching || coursesValue > 0) ? '' : 'dim'}">${cpyText}</div>
+        <div class="td-num ${coursesValue != null && (!courseFiltering || coursesValue > 0) ? '' : 'dim'}">${cpyText}</div>
         <div class="td-num ${college.filtered_pubs != null && college.filtered_pubs > 0 ? '' : 'dim'}">${fpText}</div>
       </div>
     </div>
@@ -2290,9 +2294,9 @@ function renderCourseTable(panel, schedule, collegeName, opts) {
   let visibleCourses = isBarnard && !showColumbia
     ? schedule.courses.filter(c => !COLUMBIA_CODE_RE.test(c.code))
     : schedule.courses;
-  visibleCourses = visibleCourses.filter(searchHitCourse);
+  visibleCourses = visibleCourses.filter(courseVisible);
   if (!visibleCourses.length) {
-    panel.innerHTML = `<div class="course-empty">No courses match the current search.</div>`;
+    panel.innerHTML = `<div class="course-empty">No courses match the current filters.</div>`;
     return;
   }
 
@@ -2379,7 +2383,7 @@ function renderCourseTable(panel, schedule, collegeName, opts) {
     }).join('');
     const titleInner = `
       <span class="course-code">${esc(c.code)}</span>
-      <span class="course-name" title="${esc(c.name)}">${esc(c.name)}</span>
+      <span class="course-name">${esc(c.name)}</span>
     `;
     const codeEsc = esc(c.code).replace(/'/g, "\\'");
     const titleCell = c.url
@@ -2413,6 +2417,13 @@ function renderCourseTable(panel, schedule, collegeName, opts) {
       </table>
     </div>
   `;
+
+  // Attach the full-name tooltip only where the name is actually clipped — i.e.
+  // the single-line ellipsis on wide viewports. Names that wrap (small
+  // viewports) report no overflow and stay tooltip-free.
+  panel.querySelectorAll('.course-name').forEach(el => {
+    if (el.scrollWidth > el.clientWidth) el.title = el.textContent;
+  });
 
   if (isBarnard && onToggleColumbia) {
     const btn = panel.querySelector('.course-xlist-toggle');

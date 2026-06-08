@@ -525,6 +525,10 @@ def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) ->
         url_by_cell: dict[str, dict[tuple[str, str], str]] = defaultdict(dict)
         name_obs: dict[str, list[tuple[tuple[str, int], str, bool]]] = defaultdict(list)
         instr_strs: dict[str, dict[tuple[str, str], list[str]]] = defaultdict(lambda: defaultdict(list))
+        # course_classifier.py tags each row with a subfield/meta category; it's
+        # a pure function of the title, so key it by display name and reuse it
+        # for the (collapsed) course entry below.
+        cat_by_name: dict[str, str] = {}
 
         for r in rows:
             year = r["academic_year"]
@@ -543,6 +547,9 @@ def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) ->
             if name:
                 tkey = (year, TERM_ORDER.get(term, 99))
                 name_obs[code].append((tkey, name, is_lab_only(name)))
+                cat = (r.get("category") or "").strip()
+                if cat:
+                    cat_by_name[name] = cat
             instructor = (r.get("instructor") or "").strip()
             if instructor:
                 instr_strs[code][(year, term)].append(instructor)
@@ -636,6 +643,9 @@ def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) ->
         for code in sorted_codes:
             cell_urls = url_by_cell.get(code, {})
             entry: dict = {"code": code, "name": latest_name.get(code, "")}
+            cat = cat_by_name.get(entry["name"])
+            if cat:
+                entry["category"] = cat
             if per_term_mode:
                 entry["offered"] = [
                     (cell_urls.get((y, t), "") or 1) if (y, t) in offered[code] else 0
