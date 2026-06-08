@@ -31,6 +31,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from faculty_scraper import create_selenium_driver  # noqa: E402
+from course_classifier import norm_name  # noqa: E402
 
 
 OUTPUT_COLUMNS = [
@@ -44,6 +45,10 @@ OUTPUT_COLUMNS = [
     "time",
     "url",
 ]
+
+# Written by course_classifier.py (not produced by scraping). The scraper must
+# preserve it across re-writes rather than drop it with the other extra columns.
+CATEGORY_COLUMN = "category"
 
 # When `terms` is empty on a subclass, we issue a single load per academic
 # year and pass this sentinel as the `term` argument to `url_for` /
@@ -250,6 +255,11 @@ class CourseScheduleScraper:
         wholesale with the new rows. Pairs absent from the new scrape are
         preserved untouched, so terms a school later removes from their
         public schedule stay in our history.
+
+        The `category` column written by course_classifier.py is not produced by
+        scraping but is preserved across both modes (re-attached by normalized
+        course title); titles seen for the first time are left blank for the
+        next classifier run.
         """
         if not self.college:
             raise ValueError(f"{type(self).__name__}.college is not set")
@@ -270,8 +280,19 @@ class CourseScheduleScraper:
                 new_df[col] = ""
         new_df = new_df[OUTPUT_COLUMNS]
 
+        # course_classifier.py stamps a `category` column onto these CSVs, keyed
+        # by normalized course title. Capture it before we restrict to
+        # OUTPUT_COLUMNS so it can be re-attached after the merge — scraping must
+        # never blow away existing classifications (including under --force,
+        # which rebuilds re-scraped rows from scratch).
+        category_map = {}
+
         if path.exists() and path.stat().st_size > 0:
             existing_df = pd.read_csv(path, dtype=str, keep_default_na=False)
+            if CATEGORY_COLUMN in existing_df.columns:
+                for name, cat in zip(existing_df["course_name"], existing_df[CATEGORY_COLUMN]):
+                    if cat:
+                        category_map.setdefault(norm_name(name), cat)
             for col in OUTPUT_COLUMNS:
                 if col not in existing_df.columns:
                     existing_df[col] = ""
@@ -300,6 +321,13 @@ class CourseScheduleScraper:
             key=lambda s: s.map(_TERM_ORDER) if s.name == "term" else s,
             kind="stable",
         ).reset_index(drop=True)
+
+        # Re-attach preserved categories (keyed by normalized title); titles seen
+        # for the first time stay blank for the next course_classifier.py run.
+        if category_map:
+            combined[CATEGORY_COLUMN] = [
+                category_map.get(norm_name(name), "") for name in combined["course_name"]
+            ]
 
         combined.to_csv(path, index=False)
         return path, len(combined)
