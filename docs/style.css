@@ -1418,11 +1418,18 @@ a.pub-author:hover {
   .category-chips { display: none; }
   .adv-row-jobtitle { display: flex; }
 
-  /* main college grid: shrink metric columns to fit ~360px viewports.
-     minmax(0,1fr) — not 1fr — so the name column can shrink below its
-     min-content (chevron + state + link icons would otherwise force overflow). */
-  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px 56px 56px; }
-  .th { padding: 9px 4px; font-size: 10px; gap: 3px; }
+  /* main college grid: shrink the 5 metric columns hard so the Institution
+     name keeps a readable track (at 56px each they ate ~280px of a ~328px
+     row, collapsing the name to one character per line). 38px fits the widest
+     cell — the "NN:1" MAJ:FAC ratio (max "36:1" ≈ 28px) — with the same dense
+     feel as the 6-column faculty subtable below. minmax(0,1fr) — not 1fr — so
+     the name can still shrink below its min-content (marker + logo + link
+     icons would otherwise force overflow). The trailing empty gutter track
+     pulls the whole metric block off the right edge so the last rotated label
+     (PAPERS + its sort icon), which extends up-and-right past its cell, has
+     room to spill into instead of overrunning the table boundary. */
+  .col-grid { grid-template-columns: minmax(0,1fr) repeat(5, 38px) 10px; }
+  .th { padding: 9px 3px; font-size: 10px; gap: 3px; }
 
   /* Rotate the metric column labels (Faculty / MAJORS / MAJ:FAC / Courses / Papers)
      30° from top-left to bottom-right so they stop crowding each other at
@@ -1447,7 +1454,7 @@ a.pub-author:hover {
     line-height: 1;
   }
 
-  .td, .td-num { padding: 10px 4px; }
+  .td, .td-num { padding: 10px 3px; }
   .td-num { font-size: 11.5px; }
   .td-num .num-full  { display: none; }
   .td-num .num-short { display: inline; }
@@ -1718,11 +1725,13 @@ a.pub-author:hover {
 
 @media (max-width: 340px) {
   /* tiniest screens (< iPhone SE width): fall back to confined
-     horizontal scroll inside the table wrap. */
+     horizontal scroll inside the table wrap. With the 38px metric columns
+     the row now fits well under 320px, so only force scroll below ~280px
+     of content (where even the compressed name track would vanish). */
   .table-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
   .col-head-row,
-  .college-row { min-width: 320px; }
+  .college-row { min-width: 280px; }
 }

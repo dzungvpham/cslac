@@ -1537,15 +1537,21 @@ function renderAll() {
   // Refresh the categorical search match sets before any filtered lookups.
   _searchResult = computeSearchResult();
   const searching = !!searchQuery.trim();
+  // An active subfield include gates pubs and courses by subfield too (see
+  // pubVisibleBase / courseSubfieldVisible), so — like a search — it can match a
+  // college through its papers or courses even when no faculty's interests do.
+  const subfieldIncluding = activeSubfields.size > 0;
   const aggregated = allColleges
     .filter(c => !activeState || collegeLinks[c.name]?.state === activeState)
     .filter(passesSchoolFilter)
     .map(aggregateCollege)
-    // With an active search, keep a college if any of {faculty, pubs, courses}
-    // has a match — that way searching a venue or instructor surfaces the
-    // college even when no faculty name matches.
+    // Keep a college if any of {faculty, pubs, courses} has a match — so a
+    // search or subfield filter that hits a venue, course, or paper surfaces the
+    // college even when no faculty row matches. (In School scope,
+    // passesSchoolFilter has already restricted to schools with matching
+    // faculty, so this can't re-add one there.)
     .filter(c => c.total > 0
-      || (searching && ((c.filtered_pubs ?? 0) > 0 || (c.filtered_courses ?? 0) > 0)));
+      || ((searching || subfieldIncluding) && ((c.filtered_pubs ?? 0) > 0 || (c.filtered_courses ?? 0) > 0)));
   const totalFaculty = aggregated.reduce((s, c) => s + c.total, 0);
   animateStat(document.getElementById('stat-colleges'), aggregated.length);
   animateStat(document.getElementById('stat-faculty'), totalFaculty);
@@ -1890,6 +1896,13 @@ function buildPanel(panel, college) {
     let view = panel._view || currentView;
     if (view === 'courses' && !hasCourses) view = 'faculty';
     if (view === 'publications' && !hasPublications) view = 'faculty';
+    // When the (filtered) faculty list is empty but another tab has matching
+    // content — e.g. a college kept visible only by a subfield filter's course
+    // or paper matches — open that tab instead of an empty "No faculty" list.
+    if (view === 'faculty' && college.faculty.length === 0) {
+      if (hasCourses && schedule.courses.some(courseVisible)) view = 'courses';
+      else if (hasPublications && publications.some(pubVisible)) view = 'publications';
+    }
 
     const coursesBtn = hasCourses
       ? `<button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>`
