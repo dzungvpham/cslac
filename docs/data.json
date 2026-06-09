@@ -20344,7 +20344,7 @@
   },
   "Bryn Athyn College": {
     "state": "PA",
-    "program_url": "https://brynathyn.edu/department/computer-science-id.html",
+    "program_url": "https://brynathyn.edu/academics/undergraduate/department/computer-science-id.html",
     "faculty_url": "https://brynathyn.edu/faculty/index.html",
     "catalog_url": "https://brynathyn.edu/_media/documents/Current-Course-Catalog.pdf",
     "schedule_url": "https://brynathyn.jenzabarcloud.com/GENSRsC.cfm",
@@ -47840,7 +47840,7 @@
   "College of the Holy Cross": {
     "state": "MA",
     "program_url": "https://www.holycross.edu/academics/programs/mathematics-and-computer-science/about#CS",
-    "faculty_url": "https://www.holycross.edu/academics/faculty/directory?keyword=&department=Mathematics+%26+Computer+Science&type=",
+    "faculty_url": "https://www.holycross.edu/academics/faculty/directory?keyword=&department=Mathematics+%26+Computer+Science&program=Computer+Science&type=Faculty",
     "catalog_url": "https://catalog.holycross.edu/courses/csci/",
     "schedule_url": "https://www.holycross.edu/about-holy-cross/offices-services/registrar/schedule-of-classes/",
     "faculty": [
@@ -47859,11 +47859,91 @@
         "i10index": 6,
         "i10index5y": 3,
         "interests": "Artificial intelligence, Algorithms & complexity, Computational social science"
+      },
+      {
+        "name": "Ting Gu",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.holycross.edu/academics/people/ting-gu",
+        "scholar_url": null,
+        "openalex_url": "https://openalex.org/authors/A5029771940",
+        "status": "no_url",
+        "citedby": 4,
+        "citedby5y": null,
+        "hindex": 2,
+        "hindex5y": null,
+        "i10index": 0,
+        "i10index5y": null,
+        "interests": "Cryptography, Computer security & privacy"
+      },
+      {
+        "name": "Laurie Smith King",
+        "title": "Professor",
+        "category": "tenured",
+        "url": "https://www.holycross.edu/academics/people/laurie-smith-king",
+        "scholar_url": null,
+        "openalex_url": "https://openalex.org/authors/A5027561302",
+        "status": "no_url",
+        "citedby": 123,
+        "citedby5y": null,
+        "hindex": 7,
+        "hindex5y": null,
+        "i10index": 4,
+        "i10index5y": null,
+        "interests": "High-performance computing, Programming languages, Computer science education"
+      },
+      {
+        "name": "Adam Lammert",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.holycross.edu/academics/people/adam-lammert",
+        "scholar_url": "https://scholar.google.com/citations?hl=en&user=OhCJzJAAAAAJ",
+        "openalex_url": null,
+        "status": "matched",
+        "citedby": 2587,
+        "citedby5y": 1203,
+        "hindex": 28,
+        "hindex5y": 19,
+        "i10index": 56,
+        "i10index5y": 36,
+        "interests": "Artificial intelligence, Natural language processing, Computational bio & bioinformatics"
+      },
+      {
+        "name": "Farhad Mohsin",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.holycross.edu/academics/people/farhad-mohsin",
+        "scholar_url": "https://scholar.google.com/citations?hl=en&user=Akfw1iQAAAAJ",
+        "openalex_url": null,
+        "status": "matched",
+        "citedby": 78,
+        "citedby5y": 72,
+        "hindex": 5,
+        "hindex5y": 5,
+        "i10index": 4,
+        "i10index5y": 4,
+        "interests": "Computational social science, Artificial intelligence"
+      },
+      {
+        "name": "Kevin Walsh",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://www.holycross.edu/academics/people/kevin-walsh",
+        "scholar_url": "https://scholar.google.com/citations?user=vt6hpl0AAAAJ&hl=en",
+        "openalex_url": null,
+        "status": "manual_approved",
+        "citedby": 2044,
+        "citedby5y": 171,
+        "hindex": 16,
+        "hindex5y": 7,
+        "i10index": 17,
+        "i10index5y": 7,
+        "interests": "Computer security & privacy, Computer networks, Operating systems"
       }
     ],
-    "total": 1,
-    "matched": 1,
-    "total_citations": 188,
+    "total": 6,
+    "matched": 4,
+    "total_citations": 5024,
     "terms": [
       {
         "year": "2025-26",
@@ -47890,6 +47970,49 @@
           "https://www.holycross.edu/document/fall-2025-course-schedule",
           "https://www.holycross.edu/document/spring-2026-schedule-of-classes",
           "https://www.holycross.edu/document/fall-2026-schedule-of-classes"
+        ],
+        "instructors": [
+          [
+            {
+              "l": "AL",
+              "n": "Adam Lammert",
+              "u": "https://www.holycross.edu/academics/people/adam-lammert"
+            },
+            {
+              "l": "FM",
+              "n": "Farhad Mohsin",
+              "u": "https://www.holycross.edu/academics/people/farhad-mohsin"
+            },
+            {
+              "l": "LK",
+              "n": "Laurie Smith King",
+              "u": "https://www.holycross.edu/academics/people/laurie-smith-king"
+            }
+          ],
+          [
+            {
+              "l": "AL",
+              "n": "Adam Lammert",
+              "u": "https://www.holycross.edu/academics/people/adam-lammert"
+            },
+            {
+              "l": "LK",
+              "n": "Laurie Smith King",
+              "u": "https://www.holycross.edu/academics/people/laurie-smith-king"
+            }
+          ],
+          [
+            {
+              "l": "FM",
+              "n": "Farhad Mohsin",
+              "u": "https://www.holycross.edu/academics/people/farhad-mohsin"
+            },
+            {
+              "l": "AL",
+              "n": "Adam Lammert",
+              "u": "https://www.holycross.edu/academics/people/adam-lammert"
+            }
+          ]
         ]
       },
       {
@@ -47900,6 +48023,23 @@
           "https://www.holycross.edu/document/fall-2025-course-schedule",
           "https://www.holycross.edu/document/spring-2026-schedule-of-classes",
           "https://www.holycross.edu/document/fall-2026-schedule-of-classes"
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "TG",
+              "n": "Ting Gu",
+              "u": "https://www.holycross.edu/academics/people/ting-gu"
+            }
+          ],
+          [
+            {
+              "l": "TG",
+              "n": "Ting Gu",
+              "u": "https://www.holycross.edu/academics/people/ting-gu"
+            }
+          ]
         ]
       },
       {
@@ -47910,6 +48050,29 @@
           "https://www.holycross.edu/document/fall-2025-course-schedule",
           "https://www.holycross.edu/document/spring-2026-schedule-of-classes",
           "https://www.holycross.edu/document/fall-2026-schedule-of-classes"
+        ],
+        "instructors": [
+          [
+            {
+              "l": "TG",
+              "n": "Ting Gu",
+              "u": "https://www.holycross.edu/academics/people/ting-gu"
+            }
+          ],
+          [
+            {
+              "l": "TG",
+              "n": "Ting Gu",
+              "u": "https://www.holycross.edu/academics/people/ting-gu"
+            }
+          ],
+          [
+            {
+              "l": "TG",
+              "n": "Ting Gu",
+              "u": "https://www.holycross.edu/academics/people/ting-gu"
+            }
+          ]
         ]
       },
       {
@@ -47930,6 +48093,23 @@
           "https://www.holycross.edu/document/fall-2025-course-schedule",
           "https://www.holycross.edu/document/spring-2026-schedule-of-classes",
           "https://www.holycross.edu/document/fall-2026-schedule-of-classes"
+        ],
+        "instructors": [
+          [
+            {
+              "l": "AL",
+              "n": "Adam Lammert",
+              "u": "https://www.holycross.edu/academics/people/adam-lammert"
+            }
+          ],
+          [
+            {
+              "l": "AL",
+              "n": "Adam Lammert",
+              "u": "https://www.holycross.edu/academics/people/adam-lammert"
+            }
+          ],
+          null
         ]
       },
       {
@@ -47961,6 +48141,17 @@
           "https://www.holycross.edu/document/fall-2025-course-schedule",
           0,
           0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "FM",
+              "n": "Farhad Mohsin",
+              "u": "https://www.holycross.edu/academics/people/farhad-mohsin"
+            }
+          ],
+          null,
+          null
         ]
       },
       {
@@ -47971,6 +48162,23 @@
           "https://www.holycross.edu/document/fall-2025-course-schedule",
           "https://www.holycross.edu/document/spring-2026-schedule-of-classes",
           0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "LK",
+              "n": "Laurie Smith King",
+              "u": "https://www.holycross.edu/academics/people/laurie-smith-king"
+            }
+          ],
+          [
+            {
+              "l": "LK",
+              "n": "Laurie Smith King",
+              "u": "https://www.holycross.edu/academics/people/laurie-smith-king"
+            }
+          ],
+          null
         ]
       },
       {
@@ -47981,6 +48189,17 @@
           "https://www.holycross.edu/document/fall-2025-course-schedule",
           0,
           0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "TG",
+              "n": "Ting Gu",
+              "u": "https://www.holycross.edu/academics/people/ting-gu"
+            }
+          ],
+          null,
+          null
         ]
       },
       {
@@ -48012,6 +48231,17 @@
           0,
           0,
           "https://www.holycross.edu/document/fall-2026-schedule-of-classes"
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "FM",
+              "n": "Farhad Mohsin",
+              "u": "https://www.holycross.edu/academics/people/farhad-mohsin"
+            }
+          ]
         ]
       },
       {
@@ -48043,6 +48273,17 @@
           0,
           0,
           "https://www.holycross.edu/document/fall-2026-schedule-of-classes"
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "KW",
+              "n": "Kevin Walsh",
+              "u": "https://www.holycross.edu/academics/people/kevin-walsh"
+            }
+          ]
         ]
       },
       {
@@ -48053,6 +48294,17 @@
           0,
           0,
           "https://www.holycross.edu/document/fall-2026-schedule-of-classes"
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "AL",
+              "n": "Adam Lammert",
+              "u": "https://www.holycross.edu/academics/people/adam-lammert"
+            }
+          ]
         ]
       },
       {
@@ -48068,38 +48320,147 @@
     ],
     "publications": [
       {
-        "title": "A cubic transformation formula for Appell\u2013Lauricella hypergeometric functions over finite fields",
-        "url": "https://doi.org/10.1007/s40993-018-0119-9",
-        "year": 2018,
-        "cites": 13,
-        "venue": "Research in Number Theory",
-        "venue_url": "https://openalex.org/S4210215925",
-        "venue_acronym": null,
-        "venue_ranking": "Q2",
-        "venue_ranking_source": "SCImago 2025 Journal Ranking",
-        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=21100817119&tip=sid&clean=0",
+        "title": "Grading essays in computer ethics",
+        "url": "https://doi.org/10.1145/563340.563380",
+        "year": 2002,
+        "cites": 31,
+        "venue": "Proceedings of the 33rd SIGCSE technical symposium on Computer science education",
+        "venue_url": null,
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
         "authors": [
           {
-            "name": "Sharon Frechette",
-            "url": "https://openalex.org/authors/A5072986396",
+            "name": "Barbara Moskal",
+            "url": "https://openalex.org/authors/A5042254071",
+            "affiliation": "Colorado School of Mines"
+          },
+          {
+            "name": "Keith Miller",
+            "url": "https://openalex.org/authors/A5069706537",
+            "affiliation": "University of Illinois at Springfield"
+          },
+          {
+            "name": "L. A. Smith King",
+            "url": "https://openalex.org/authors/A5110290647",
             "affiliation": "College of the Holy Cross"
-          },
-          {
-            "name": "Holly Swisher",
-            "url": "https://openalex.org/authors/A5058689786",
-            "affiliation": "Oregon State University"
-          },
-          {
-            "name": "Fang-Ting Tu",
-            "url": "https://openalex.org/authors/A5006779602",
-            "affiliation": "Louisiana State University"
           }
         ],
         "matched_faculty": [
-          "Sharon Frechette"
+          "Laurie Smith King"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Artificial intelligence",
+          "Computer science education"
+        ]
+      },
+      {
+        "title": "Vforce: An Extensible Framework for Reconfigurable Supercomputing",
+        "url": "https://doi.org/10.1109/mc.2007.110",
+        "year": 2007,
+        "cites": 23,
+        "venue": "Computer",
+        "venue_url": "https://openalex.org/S178916657",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=23746&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Nicholas Moore",
+            "url": "https://openalex.org/authors/A5037219931",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Albert Conti",
+            "url": "https://openalex.org/authors/A5109491288",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
         ],
         "pub_type": "journal",
-        "subfields": []
+        "subfields": [
+          "High-performance computing",
+          "Embedded & real-time systems",
+          "Distributed systems"
+        ]
+      },
+      {
+        "title": "Mechanisms for Mutual Attested Microservice Communication",
+        "url": "https://doi.org/10.1145/3147234.3148102",
+        "year": 2017,
+        "cites": 21,
+        "venue": "Companion Proceedings of the10th International Conference on Utility and Cloud Computing",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Kevin Walsh",
+            "url": "https://openalex.org/authors/A5102968738",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "John Manferdelli",
+            "url": "https://openalex.org/authors/A5021080394",
+            "affiliation": "Northeastern University"
+          }
+        ],
+        "matched_faculty": [
+          "Kevin Walsh"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Computer security & privacy"
+        ]
+      },
+      {
+        "title": "Intra-Cloud and Inter-Cloud Authentication",
+        "url": "https://doi.org/10.1109/cloud.2017.48",
+        "year": 2017,
+        "cites": 4,
+        "venue": "2017 IEEE 10th International Conference on Cloud Computing (CLOUD)",
+        "venue_url": null,
+        "venue_acronym": "CLOUD",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/631/",
+        "authors": [
+          {
+            "name": "Kevin Walsh",
+            "url": "https://openalex.org/authors/A5102968738",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "John Manferdelli",
+            "url": "https://openalex.org/authors/A5021080394",
+            "affiliation": "Google (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Kevin Walsh"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Distributed systems",
+          "Computer security & privacy"
+        ]
       },
       {
         "title": "Insight into Voting Problem Complexity Using Randomized Classes",
@@ -48173,29 +48534,82 @@
         ]
       },
       {
-        "title": "A pruned recursive solution to the multiple change point problem",
-        "url": "https://doi.org/10.1007/s00180-017-0756-9",
-        "year": 2017,
-        "cites": 7,
-        "venue": "Computational Statistics",
-        "venue_url": "https://openalex.org/S8500805",
+        "title": "The challenges of writing portable, correct and high performance libraries for GPUs",
+        "url": "https://doi.org/10.1145/2082156.2082158",
+        "year": 2011,
+        "cites": 8,
+        "venue": "ACM SIGARCH Computer Architecture News",
+        "venue_url": "https://openalex.org/S4210193905",
         "venue_acronym": null,
-        "venue_ranking": "Q2",
+        "venue_ranking": null,
         "venue_ranking_source": "SCImago 2025 Journal Ranking",
-        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=28930&tip=sid&clean=0",
+        "venue_ranking_url": null,
         "authors": [
           {
-            "name": "Eric Ruggieri",
-            "url": "https://openalex.org/authors/A5002827461",
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Devon Yablonski",
+            "url": "https://openalex.org/authors/A5034903859",
+            "affiliation": "Mercury Systems (United States)"
+          },
+          {
+            "name": "Dana H. Brooks",
+            "url": "https://openalex.org/authors/A5079980080",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
             "affiliation": "College of the Holy Cross"
           }
         ],
         "matched_faculty": [
-          "Eric Ruggieri"
+          "Laurie Smith King"
         ],
         "pub_type": "journal",
         "subfields": [
-          "Machine learning"
+          "High-performance computing",
+          "Distributed systems",
+          "Embedded & real-time systems"
+        ]
+      },
+      {
+        "title": "Adaptable Two-Dimension Sliding Windows on NVIDIA GPUs with Runtime Compilation",
+        "url": "https://doi.org/10.1109/saahpc.2011.11",
+        "year": 2011,
+        "cites": 4,
+        "venue": "2011 Symposium on Application Accelerators in High-Performance Computing",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Nicholas Moore",
+            "url": "https://openalex.org/authors/A5037219931",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Computer vision"
         ]
       },
       {
@@ -48242,6 +48656,89 @@
         ]
       },
       {
+        "title": "Runtime assignment of reconfigurable hardware components for image processing pipelines",
+        "url": "https://doi.org/10.1109/fpga.2003.1227253",
+        "year": 2003,
+        "cites": 42,
+        "venue": "11th Annual IEEE Symposium on Field-Programmable Custom Computing Machines, 2003. FCCM 2003.",
+        "venue_url": null,
+        "venue_acronym": "FCCM",
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Heather Quinn",
+            "url": "https://openalex.org/authors/A5006791094",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "L. A. Smith King",
+            "url": "https://openalex.org/authors/A5110290647",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Waleed Meleis",
+            "url": "https://openalex.org/authors/A5056980887",
+            "affiliation": "Northeastern University"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Embedded & real-time systems",
+          "High-performance computing"
+        ]
+      },
+      {
+        "title": "Proceedings of the 43rd ACM technical symposium on Computer Science Education",
+        "url": "https://dl.acm.org/citation.cfm?id=2157136",
+        "year": 2012,
+        "cites": 8,
+        "venue": "Technical Symposium on Computer Science Education",
+        "venue_url": "https://openalex.org/S4306421028",
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "David R. Musicant",
+            "url": "https://openalex.org/authors/A5026793345",
+            "affiliation": "Colorado School of Mines"
+          },
+          {
+            "name": "Tracy Camp",
+            "url": "https://openalex.org/authors/A5071319364",
+            "affiliation": "Colorado School of Mines"
+          },
+          {
+            "name": "Paul Tymann",
+            "url": "https://openalex.org/authors/A5044262397",
+            "affiliation": "Rochester Institute of Technology"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education"
+        ]
+      },
+      {
         "title": "Incomplete Preferences in Single-Peaked Electorates",
         "url": "https://doi.org/10.1613/jair.1.11577",
         "year": 2020,
@@ -48269,6 +48766,44 @@
         "subfields": [
           "Economics & computation",
           "Artificial intelligence"
+        ]
+      },
+      {
+        "title": "VForce: An environment for portable applications on high performance systems with accelerators",
+        "url": "https://doi.org/10.1016/j.jpdc.2011.07.014",
+        "year": 2011,
+        "cites": 7,
+        "venue": "Journal of Parallel and Distributed Computing",
+        "venue_url": "https://openalex.org/S157146593",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25621&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Nicholas Moore",
+            "url": "https://openalex.org/authors/A5037219931",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "High-performance computing",
+          "Embedded & real-time systems",
+          "Databases"
         ]
       },
       {
@@ -48305,95 +48840,144 @@
         ]
       },
       {
-        "title": "Newly reducible iterates in families of quadratic polynomials",
-        "url": "https://doi.org/10.2140/involve.2012.5.481",
-        "year": 2012,
-        "cites": 4,
-        "venue": "Involve a Journal of Mathematics",
-        "venue_url": "https://openalex.org/S4210179254",
-        "venue_acronym": null,
-        "venue_ranking": "Q3",
-        "venue_ranking_source": "SCImago 2025 Journal Ranking",
-        "venue_ranking_url": null,
+        "title": "TLS with trustworthy certificate authorities",
+        "url": "https://doi.org/10.1109/cns.2016.7860543",
+        "year": 2016,
+        "cites": 2,
+        "venue": "2016 IEEE Conference on Communications and Network Security (CNS)",
+        "venue_url": null,
+        "venue_acronym": "SecureComm",
+        "venue_ranking": "C",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/1198/",
         "authors": [
           {
-            "name": "Katharine Chamberlin",
-            "url": "https://openalex.org/authors/A5003921909",
-            "affiliation": "College of the Holy Cross"
-          },
-          {
-            "name": "Emma Colbert",
-            "url": "https://openalex.org/authors/A5058527757",
-            "affiliation": "College of the Holy Cross"
-          },
-          {
-            "name": "Sharon Frechette",
-            "url": "https://openalex.org/authors/A5072986396",
-            "affiliation": "College of the Holy Cross"
-          },
-          {
-            "name": "Patrick Hefferman",
-            "url": "https://openalex.org/authors/A5062903289",
-            "affiliation": "College of the Holy Cross"
-          },
-          {
-            "name": "Rafe Jones",
-            "url": "https://openalex.org/authors/A5001570714",
-            "affiliation": "Carleton College"
-          },
-          {
-            "name": "Sarah Orchard",
-            "url": "https://openalex.org/authors/A5052125373",
+            "name": "Kevin Walsh",
+            "url": "https://openalex.org/authors/A5102968738",
             "affiliation": "College of the Holy Cross"
           }
         ],
         "matched_faculty": [
-          "Sharon Frechette"
+          "Kevin Walsh"
         ],
-        "pub_type": "journal",
+        "pub_type": "conference",
         "subfields": [
-          "Cryptography"
+          "Distributed systems",
+          "Computer security & privacy"
         ]
       },
       {
-        "title": "Bounded switched linear swarms",
-        "url": "https://doi.org/10.1016/j.fraope.2023.100007",
+        "title": "A Generic Data Synthesis Framework for Privacy-Preserving Point-of-Interest Recommender Systems",
+        "url": "https://doi.org/10.1145/3599957.3606241",
         "year": 2023,
-        "cites": 1,
-        "venue": "Franklin Open",
-        "venue_url": "https://openalex.org/S4387281167",
+        "cites": 2,
+        "venue": "Proceedings of the International Conference on Research in Adaptive and Convergent Systems",
+        "venue_url": null,
         "venue_acronym": null,
         "venue_ranking": null,
-        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_source": null,
         "venue_ranking_url": null,
         "authors": [
           {
-            "name": "Makhin Thitsa",
-            "url": "https://openalex.org/authors/A5079053757",
-            "affiliation": "Mercer University"
+            "name": "Longyin Cui",
+            "url": "https://openalex.org/authors/A5025644369",
+            "affiliation": "University of Kentucky"
           },
           {
-            "name": "Alisa DeStefano",
-            "url": "https://openalex.org/authors/A5088213881",
+            "name": "Xiwei Wang",
+            "url": "https://openalex.org/authors/A5083837096",
+            "affiliation": "Northeastern Illinois University"
+          },
+          {
+            "name": "Ting Gu",
+            "url": "https://openalex.org/authors/A5029771940",
             "affiliation": "College of the Holy Cross"
-          },
-          {
-            "name": "Magnus Egerstedt",
-            "url": "https://openalex.org/authors/A5091125105",
-            "affiliation": "University of California, Irvine"
-          },
-          {
-            "name": "Clyde F. Martin",
-            "url": "https://openalex.org/authors/A5044435554",
-            "affiliation": "Texas Tech University"
           }
         ],
         "matched_faculty": [
-          "Alisa DeStefano"
+          "Ting Gu"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Computer security & privacy",
+          "Information retrieval",
+          "Mobile computing",
+          "Data science"
+        ]
+      },
+      {
+        "title": "Dynamo: a runtime partitioning system for FPGA-based HW/SW image processing systems",
+        "url": "https://doi.org/10.1007/s11554-007-0050-0",
+        "year": 2007,
+        "cites": 11,
+        "venue": "Journal of Real-Time Image Processing",
+        "venue_url": "https://openalex.org/S11282291",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=4900152415&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Heather Quinn",
+            "url": "https://openalex.org/authors/A5006791094",
+            "affiliation": "Los Alamos National Laboratory"
+          },
+          {
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
         ],
         "pub_type": "journal",
         "subfields": [
-          "Robotics"
+          "Embedded & real-time systems",
+          "Computer networks"
+        ]
+      },
+      {
+        "title": "Kernel Specialization for Improved Adaptability and Performance on Graphics Processing Units (GPUs)",
+        "url": "https://doi.org/10.1109/ipdps.2013.31",
+        "year": 2013,
+        "cites": 4,
+        "venue": "2013 IEEE 27th International Symposium on Parallel and Distributed Processing",
+        "venue_url": null,
+        "venue_acronym": "IPDPS",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/688/",
+        "authors": [
+          {
+            "name": "Nicholas Moore",
+            "url": "https://openalex.org/authors/A5037219931",
+            "affiliation": "MathWorks (United States)"
+          },
+          {
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "High-performance computing",
+          "Machine learning",
+          "Distributed systems"
         ]
       },
       {
@@ -48429,6 +49013,49 @@
         ]
       },
       {
+        "title": "Very Hard Electoral Control Problems",
+        "url": "https://doi.org/10.1609/aaai.v33i01.33011933",
+        "year": 2019,
+        "cites": 4,
+        "venue": "2159-5399",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Zack Fitzsimmons",
+            "url": "https://openalex.org/authors/A5046438962",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Edith Hemaspaandra",
+            "url": "https://openalex.org/authors/A5071803397",
+            "affiliation": "Rochester Institute of Technology"
+          },
+          {
+            "name": "Alexander Hoover",
+            "url": "https://openalex.org/authors/A5066703751",
+            "affiliation": "University of Chicago"
+          },
+          {
+            "name": "David E. Narv\u00e1ez",
+            "url": "https://openalex.org/authors/A5077178084",
+            "affiliation": "Rochester Institute of Technology"
+          }
+        ],
+        "matched_faculty": [
+          "Zack Fitzsimmons"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Artificial intelligence",
+          "Economics & computation",
+          "Logic & verification"
+        ]
+      },
+      {
         "title": "Election Score Can Be Harder than Winner",
         "url": "https://doi.org/10.3233/faia200079",
         "year": 2020,
@@ -48461,75 +49088,43 @@
         ]
       },
       {
-        "title": "Output digitization of simple measure-preserving linear systems",
-        "url": "https://doi.org/10.1007/s11768-021-00060-0",
-        "year": 2021,
+        "title": "Costs of Security in the PFS File System",
+        "url": "https://hdl.handle.net/1813/29609",
+        "year": 2012,
         "cites": 1,
-        "venue": "Control Theory and Technology",
-        "venue_url": "https://openalex.org/S2765029977",
-        "venue_acronym": null,
-        "venue_ranking": "Q2",
-        "venue_ranking_source": "SCImago 2025 Journal Ranking",
-        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=21100309827&tip=sid&clean=0",
-        "authors": [
-          {
-            "name": "Alisa DeStefano",
-            "url": "https://openalex.org/authors/A5088213881",
-            "affiliation": "College of the Holy Cross"
-          },
-          {
-            "name": "Makhin Thitsa",
-            "url": "https://openalex.org/authors/A5079053757",
-            "affiliation": "Mercer University"
-          },
-          {
-            "name": "Clyde F. Martin",
-            "url": "https://openalex.org/authors/A5044435554",
-            "affiliation": "Texas Tech University"
-          }
-        ],
-        "matched_faculty": [
-          "Alisa DeStefano"
-        ],
-        "pub_type": "journal",
-        "subfields": [
-          "Algorithms & complexity"
-        ]
-      },
-      {
-        "title": "Connections between universal observability and topological dynamics",
-        "url": "https://doi.org/10.1016/s0895-7177(00)00233-8",
-        "year": 2001,
-        "cites": 0,
-        "venue": "Mathematical and Computer Modelling",
-        "venue_url": "https://openalex.org/S182710874",
+        "venue": "eCommons",
+        "venue_url": "https://openalex.org/S4306400757",
         "venue_acronym": null,
         "venue_ranking": null,
-        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_source": null,
         "venue_ranking_url": null,
         "authors": [
           {
-            "name": "Alisa DeStefano",
-            "url": "https://openalex.org/authors/A5088213881",
+            "name": "Kevin Walsh",
+            "url": "https://openalex.org/authors/A5102968738",
             "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Fred B. Schneider",
+            "url": "https://openalex.org/authors/A5111485228",
+            "affiliation": "Cornell University"
           }
         ],
         "matched_faculty": [
-          "Alisa DeStefano"
+          "Kevin Walsh"
         ],
-        "pub_type": "journal",
+        "pub_type": "preprint",
         "subfields": [
-          "Artificial intelligence",
-          "Logic & verification",
-          "Algorithms & complexity"
+          "Computer security & privacy",
+          "Databases"
         ]
       },
       {
-        "title": "The construction of a universally observable flow on the torus",
-        "url": "https://doi.org/10.1109/cdc.1998.757789",
-        "year": 2002,
-        "cites": 0,
-        "venue": "Proceedings of the 37th IEEE Conference on Decision and Control (Cat. No.98CH36171)",
+        "title": "Efficient template matching with variable size templates in CUDA",
+        "url": "https://doi.org/10.1109/sasp.2010.5521142",
+        "year": 2010,
+        "cites": 1,
+        "venue": "2010 IEEE 8th Symposium on Application Specific Processors (SASP)",
         "venue_url": null,
         "venue_acronym": null,
         "venue_ranking": null,
@@ -48537,64 +49132,276 @@
         "venue_ranking_url": null,
         "authors": [
           {
-            "name": "Alisa DeStefano",
-            "url": "https://openalex.org/authors/A5088213881",
-            "affiliation": "College of the Holy Cross"
+            "name": "Nicholas Moore",
+            "url": "https://openalex.org/authors/A5037219931",
+            "affiliation": "Northeastern University"
           },
           {
-            "name": "Glen R. Hall",
-            "url": "https://openalex.org/authors/A5038230552",
-            "affiliation": "Boston University"
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
           }
         ],
         "matched_faculty": [
-          "Alisa DeStefano"
+          "Laurie Smith King"
         ],
         "pub_type": "other",
         "subfields": [
-          "Algorithms & complexity"
+          "Computer vision",
+          "Information retrieval",
+          "Algorithms & complexity",
+          "High-performance computing"
         ]
       },
       {
-        "title": "Very Hard Electoral Control Problems",
-        "url": "https://doi.org/10.1609/aaai.v33i01.33011933",
-        "year": 2019,
-        "cites": 0,
-        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
-        "venue_url": "https://openalex.org/S4210191458",
-        "venue_acronym": "AAAI",
-        "venue_ranking": "A*",
-        "venue_ranking_source": "ICORE 2026 Conference Ranking",
-        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/1629/",
+        "title": "Preparing To Teach Computer Ethics: Results From The Dolce Project",
+        "url": "https://doi.org/10.18260/1-2--12637",
+        "year": 2020,
+        "cites": 1,
+        "venue": "2003 Annual Conference Proceedings",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
         "authors": [
           {
-            "name": "Zack Fitzsimmons",
-            "url": "https://openalex.org/authors/A5046438962",
+            "name": "Tracy Camp",
+            "url": "https://openalex.org/authors/A5071319364",
+            "affiliation": "University of Illinois at Springfield"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
             "affiliation": "College of the Holy Cross"
           },
           {
-            "name": "Edith Hemaspaandra",
-            "url": "https://openalex.org/authors/A5071803397",
-            "affiliation": "Rochester Institute of Technology"
+            "name": "Keith Miller",
+            "url": "https://openalex.org/authors/A5069706537",
+            "affiliation": "College of the Holy Cross"
           },
           {
-            "name": "Alexander Hoover",
-            "url": "https://openalex.org/authors/A5066703751",
-            "affiliation": "University of Chicago"
-          },
-          {
-            "name": "David E. Narv\u00e1ez",
-            "url": "https://openalex.org/authors/A5077178084",
-            "affiliation": "Rochester Institute of Technology"
+            "name": "Barbara Moskal",
+            "url": "https://openalex.org/authors/A5042254071",
+            "affiliation": "Colorado School of Mines"
           }
         ],
         "matched_faculty": [
-          "Zack Fitzsimmons"
+          "Laurie Smith King"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Artificial intelligence",
+          "Computer science education"
+        ]
+      },
+      {
+        "title": "A Lidar Information-based Privacy-Preserving Authentication Scheme Using Elliptic Curve Cryptosystem in VANETs",
+        "url": "https://doi.org/10.1109/ccnc49033.2022.9700693",
+        "year": 2022,
+        "cites": 1,
+        "venue": "2022 IEEE 19th Annual Consumer Communications & Networking Conference (CCNC)",
+        "venue_url": null,
+        "venue_acronym": "IEEE CCNC",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/616/",
+        "authors": [
+          {
+            "name": "Ting Gu",
+            "url": "https://openalex.org/authors/A5101216847",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Kiho Lim",
+            "url": "https://openalex.org/authors/A5054498904",
+            "affiliation": "William Paterson University"
+          },
+          {
+            "name": "Gyu Ho Choi",
+            "url": "https://openalex.org/authors/A5027716484",
+            "affiliation": "Chosun University"
+          },
+          {
+            "name": "Xiwei Wang",
+            "url": "https://openalex.org/authors/A5083837096",
+            "affiliation": "Northeastern Illinois University"
+          }
+        ],
+        "matched_faculty": [
+          "Ting Gu"
         ],
         "pub_type": "conference",
         "subfields": [
-          "Artificial intelligence",
-          "Programming languages"
+          "Computer networks",
+          "Computer security & privacy",
+          "Cryptography"
+        ]
+      },
+      {
+        "title": "Run-time execution of reconfigurable hardware in a Java environment",
+        "url": "https://doi.org/10.1109/iccd.2001.955055",
+        "year": 2002,
+        "cites": 11,
+        "venue": "Proceedings 2001 IEEE International Conference on Computer Design: VLSI in Computers and Processors. ICCD 2001",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "L. A. Smith King",
+            "url": "https://openalex.org/authors/A5110290647",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Heather Quinn",
+            "url": "https://openalex.org/authors/A5006791094",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Demetris G. Galatopoullos",
+            "url": "https://openalex.org/authors/A5018840042",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "\u0397\u03bb\u03af\u03b1\u03c2 \u03a3. \u039c\u03b1\u03bd\u03c9\u03bb\u03ac\u03ba\u03bf\u03c2",
+            "url": "https://openalex.org/authors/A5070325341",
+            "affiliation": "Northeastern University"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Embedded & real-time systems",
+          "Computer networks",
+          "High-performance computing"
+        ]
+      },
+      {
+        "title": "Writing Portable Applications that Dynamically Bind at Run Time to Reconfigurable Hardware",
+        "url": "https://doi.org/10.1109/fccm.2007.39",
+        "year": 2007,
+        "cites": 10,
+        "venue": "15th Annual IEEE Symposium on Field-Programmable Custom Computing Machines (FCCM 2007)",
+        "venue_url": null,
+        "venue_acronym": "FCCM",
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Nicholas Moore",
+            "url": "https://openalex.org/authors/A5061329458",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Albert Conti",
+            "url": "https://openalex.org/authors/A5109491288",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Miriam Leeser",
+            "url": "https://openalex.org/authors/A5083047329",
+            "affiliation": "Northeastern University"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Embedded & real-time systems",
+          "Computer architecture",
+          "Design automation"
+        ]
+      },
+      {
+        "title": "Interpreter based assignments for a standard programming languages course",
+        "url": "https://doi.org/10.5555/378613.378700",
+        "year": 2001,
+        "cites": 0,
+        "venue": "Journal of computing sciences in colleges",
+        "venue_url": "https://openalex.org/S56112914",
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "John Barr",
+            "url": "https://openalex.org/authors/A5016675664",
+            "affiliation": "Ithaca College"
+          },
+          {
+            "name": "Laurie Smith King",
+            "url": "https://openalex.org/authors/A5027561302",
+            "affiliation": "College of the Holy Cross"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computer science education",
+          "High-performance computing",
+          "Software engineering"
+        ]
+      },
+      {
+        "title": "Results from using an environment for interpreter-based projects for the programming languages courses",
+        "url": "https://doi.org/10.1109/fie.2003.1264698",
+        "year": 2004,
+        "cites": 0,
+        "venue": "33rd Annual Frontiers in Education, 2003. FIE 2003.",
+        "venue_url": null,
+        "venue_acronym": "FIE",
+        "venue_ranking": "C",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/2027/",
+        "authors": [
+          {
+            "name": "Barbara Moskal",
+            "url": "https://openalex.org/authors/A5042254071"
+          },
+          {
+            "name": "L. A. Smith King",
+            "url": "https://openalex.org/authors/A5110290647",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "John Barr",
+            "url": "https://openalex.org/authors/A5016675664",
+            "affiliation": "Ithaca College"
+          }
+        ],
+        "matched_faculty": [
+          "Laurie Smith King"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "Programming languages",
+          "Software engineering"
         ]
       },
       {
@@ -48700,36 +49507,219 @@
         ]
       },
       {
-        "title": "The Borel measure of sequences with bounded run-length",
-        "url": "https://doi.org/10.1007/s11768-022-00102-1",
-        "year": 2022,
+        "title": "Subject Instructions for Improved Characterization of Auditory Representations Using Reverse Correlation",
+        "url": "https://doi.org/10.1101/2024.10.17.618874",
+        "year": 2024,
         "cites": 0,
-        "venue": "Control Theory and Technology",
-        "venue_url": "https://openalex.org/S2765029977",
+        "venue": "bioRxiv",
+        "venue_url": "https://openalex.org/S4306402567",
         "venue_acronym": null,
-        "venue_ranking": "Q2",
-        "venue_ranking_source": "SCImago 2025 Journal Ranking",
-        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=21100309827&tip=sid&clean=0",
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
         "authors": [
           {
-            "name": "Alisa DeStefano",
-            "url": "https://openalex.org/authors/A5088213881",
-            "affiliation": "College of the Holy Cross"
+            "name": "Gidey W. Gezae",
+            "url": "https://openalex.org/authors/A5114342722",
+            "affiliation": "Pennsylvania State University"
           },
           {
-            "name": "Clyde F. Martin",
-            "url": "https://openalex.org/authors/A5044435554",
-            "affiliation": "Texas Tech University"
+            "name": "Nelson V. Barnett",
+            "url": "https://openalex.org/authors/A5028793355",
+            "affiliation": "MGH Institute of Health Professions"
+          },
+          {
+            "name": "Benjamin Parrell",
+            "url": "https://openalex.org/authors/A5005944306",
+            "affiliation": "University of Wisconsin\u2013Madison"
+          },
+          {
+            "name": "Divya A. Chari",
+            "url": "https://openalex.org/authors/A5052044450",
+            "affiliation": "University of Massachusetts Chan Medical School"
+          },
+          {
+            "name": "Adam C. Lammert",
+            "url": "https://openalex.org/authors/A5046812723",
+            "affiliation": "College of the Holy Cross"
           }
         ],
         "matched_faculty": [
-          "Alisa DeStefano"
+          "Adam Lammert"
+        ],
+        "pub_type": "preprint",
+        "subfields": [
+          "Natural language processing"
+        ]
+      },
+      {
+        "title": "Privacy-Enhanced Point-of-Interest Recommendations Using Synthetic Data: A Comparative Study of CTGAN and Clustering Techniques",
+        "url": "https://doi.org/10.1109/ccnc54725.2025.10975881",
+        "year": 2025,
+        "cites": 0,
+        "venue": "2025 IEEE 22nd Consumer Communications &amp; Networking Conference (CCNC)",
+        "venue_url": null,
+        "venue_acronym": "IEEE CCNC",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/616/",
+        "authors": [
+          {
+            "name": "Longyin Cui",
+            "url": "https://openalex.org/authors/A5025644369",
+            "affiliation": "Loyola University Maryland"
+          },
+          {
+            "name": "Xiwei Wang",
+            "url": "https://openalex.org/authors/A5083837096",
+            "affiliation": "Northeastern Illinois University"
+          },
+          {
+            "name": "Ting Gu",
+            "url": "https://openalex.org/authors/A5029771940",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "C. S. Zhang",
+            "url": "https://openalex.org/authors/A5026194052",
+            "affiliation": "Dartmouth College"
+          },
+          {
+            "name": "Zongming Fei",
+            "url": "https://openalex.org/authors/A5047860075",
+            "affiliation": "University of Kentucky"
+          }
+        ],
+        "matched_faculty": [
+          "Ting Gu"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer security & privacy"
+        ]
+      },
+      {
+        "title": "Privacy-preserving feature extractor using adversarial pruning for TBI assessment from speech",
+        "url": "https://doi.org/10.1016/j.csl.2025.101854",
+        "year": 2025,
+        "cites": 0,
+        "venue": "Computer Speech & Language",
+        "venue_url": "https://openalex.org/S91252481",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=27869&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Apiwat Ditthapron",
+            "url": "https://openalex.org/authors/A5050282933",
+            "affiliation": "Worcester Polytechnic Institute"
+          },
+          {
+            "name": "Emmanuel Agu",
+            "url": "https://openalex.org/authors/A5003809101",
+            "affiliation": "Worcester Polytechnic Institute"
+          },
+          {
+            "name": "Adam C. Lammert",
+            "url": "https://openalex.org/authors/A5046812723",
+            "affiliation": "College of the Holy Cross"
+          }
+        ],
+        "matched_faculty": [
+          "Adam Lammert"
         ],
         "pub_type": "journal",
         "subfields": [
-          "Algorithms & complexity",
-          "Artificial intelligence",
-          "Logic & verification"
+          "Natural language processing",
+          "Machine learning"
+        ]
+      },
+      {
+        "title": "Speaker-independent vocal tract shapes that optimally elicit vowel recognition",
+        "url": "https://doi.org/10.1121/10.0037774",
+        "year": 2025,
+        "cites": 0,
+        "venue": "The Journal of the Acoustical Society of America",
+        "venue_url": "https://openalex.org/S11296630",
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Adam Lammert",
+            "url": "https://openalex.org/authors/A5103000708",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Wesley N. Smith",
+            "url": "https://openalex.org/authors/A5109947219",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Jane Gargano",
+            "url": "https://openalex.org/authors/A5119173721",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Sarah Cornacchia",
+            "url": "https://openalex.org/authors/A5119173722",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Benjamin Parrell",
+            "url": "https://openalex.org/authors/A5005944306",
+            "affiliation": "University of Wisconsin\u2013Madison"
+          }
+        ],
+        "matched_faculty": [
+          "Adam Lammert"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Natural language processing"
+        ]
+      },
+      {
+        "title": "On the computation of &lt;i&gt;q&lt;/i&gt;-transform of Boolean functions",
+        "url": "https://doi.org/10.3934/amc.2026008",
+        "year": 2025,
+        "cites": 0,
+        "venue": "Advances in Mathematics of Communications",
+        "venue_url": "https://openalex.org/S161492159",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=18800156711&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Zhixiong Chen",
+            "url": "https://openalex.org/authors/A5121086865"
+          },
+          {
+            "name": "Ting Gu",
+            "url": "https://openalex.org/authors/A5029771940",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Andrew Klapper",
+            "url": "https://openalex.org/authors/A5057108527",
+            "affiliation": "University of Kentucky"
+          },
+          {
+            "name": "Yu Zhou",
+            "url": "https://openalex.org/authors/A5016175345",
+            "affiliation": "Science and Technology Department of Sichuan Province"
+          }
+        ],
+        "matched_faculty": [
+          "Ting Gu"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Cryptography",
+          "Algorithms & complexity"
         ]
       },
       {
@@ -48772,6 +49762,42 @@
         "subfields": [
           "Programming languages",
           "Logic & verification"
+        ]
+      },
+      {
+        "title": "Target Speaker Isolation for Mobile Health Assessment From Speech With Crosstalk",
+        "url": "https://doi.org/10.1109/access.2026.3686362",
+        "year": 2026,
+        "cites": 0,
+        "venue": "IEEE Access",
+        "venue_url": "https://openalex.org/S2485537415",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=21100374601&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Apiwat Ditthapron",
+            "url": "https://openalex.org/authors/A5050282933",
+            "affiliation": "Worcester Polytechnic Institute"
+          },
+          {
+            "name": "Adam C. Lammert",
+            "url": "https://openalex.org/authors/A5046812723",
+            "affiliation": "College of the Holy Cross"
+          },
+          {
+            "name": "Emmanuel Agu",
+            "url": "https://openalex.org/authors/A5003809101",
+            "affiliation": "Worcester Polytechnic Institute"
+          }
+        ],
+        "matched_faculty": [
+          "Adam Lammert"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Natural language processing"
         ]
       }
     ],

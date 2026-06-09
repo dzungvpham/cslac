@@ -9,7 +9,7 @@ Output: faculty_publications.csv (per-paper detail with co-author lists).
 Usage:
     python faculty_publication_scraper.py                   # full run (append-only)
     python faculty_publication_scraper.py --overwrite        # re-run from scratch
-    python faculty_publication_scraper.py --college Williams # re-run one college
+    python faculty_publication_scraper.py --college Williams # re-run one college in place
 """
 
 import argparse
@@ -299,11 +299,41 @@ def process_college(session, college, inst_ror, faculty_list, faculty_lnames, la
 
 # ---- I/O ----
 
-def _write_papers(papers):
+def _write_papers(papers, fieldnames=PAPER_FIELDS):
+    # Preserve the existing column set (e.g. venue-tagger columns) and the LF
+    # line endings the rest of the pipeline writes, so re-running one college
+    # leaves every other row byte-identical. New rows missing the venue-tagger
+    # columns get blank cells (restval="") until the next venue-tagger pass.
     with open(OUTPUT_PAPERS, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=PAPER_FIELDS, extrasaction="ignore")
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore",
+                                restval="", lineterminator="\n")
         writer.writeheader()
         writer.writerows(papers)
+
+
+def _splice_colleges(existing_papers, target_colleges, new_by_college):
+    """Replace each target college's rows in place, preserving file position.
+
+    A re-run college's freshly-scraped rows are inserted where that college's
+    first existing row was; its old rows are dropped and every other college
+    keeps its original order and values. A target college with no rows yet in
+    the file is appended at the end.
+    """
+    targets = set(target_colleges)
+    result, inserted = [], set()
+    for row in existing_papers:
+        college = row["college"]
+        if college in targets:
+            if college not in inserted:
+                result.extend(new_by_college.get(college, []))
+                inserted.add(college)
+            continue  # drop the stale rows for a re-run college
+        result.append(row)
+    for college in target_colleges:  # colleges absent from the existing file
+        if college not in inserted:
+            result.extend(new_by_college.get(college, []))
+            inserted.add(college)
+    return result
 
 
 def main():
@@ -324,39 +354,37 @@ def main():
             sys.exit(1)
 
     existing_papers = []
+    existing_fieldnames = list(PAPER_FIELDS)
     done_colleges = set()
     output_path = Path(OUTPUT_PAPERS)
     if not args.overwrite and output_path.exists():
         with open(output_path) as f:
-            existing_papers = list(csv.DictReader(f))
-        if args.college:
-            target_set = set(colleges)
-            existing_papers = [r for r in existing_papers
-                               if r["college"] not in target_set]
-        else:
+            reader = csv.DictReader(f)
+            if reader.fieldnames:
+                existing_fieldnames = reader.fieldnames
+            existing_papers = list(reader)
+        if not args.college:
             done_colleges = {r["college"] for r in existing_papers}
             if done_colleges:
                 print(f"Resuming: {len(done_colleges)} colleges already processed")
 
     remaining = [c for c in colleges if c not in done_colleges]
     session = requests.Session()
-    all_papers = list(existing_papers)
-
-    for i, college in enumerate(tqdm(remaining, desc="Colleges")):
-        fac_list = faculty_by_college[college]
-        ror = college_rors.get(college, "")
-        papers = process_college(
-            session, college, ror, fac_list, faculty_lnames, lac_names)
-        all_papers.extend(papers)
-        if (i + 1) % 5 == 0:
-            _write_papers(all_papers)
-
-    _write_papers(all_papers)
 
     if args.college:
-        new_papers = [p for p in all_papers if p["college"] in set(remaining)]
-        print(f"\nPer-paper details:")
-        for p in new_papers:
+        # Re-scrape the target college(s) and splice the rows back into their
+        # existing position, leaving every other college's rows (and the
+        # venue-tagger columns) untouched.
+        new_by_college = {}
+        for college in tqdm(remaining, desc="Colleges"):
+            new_by_college[college] = process_college(
+                session, college, college_rors.get(college, ""),
+                faculty_by_college[college], faculty_lnames, lac_names)
+        all_papers = _splice_colleges(existing_papers, remaining, new_by_college)
+        _write_papers(all_papers, existing_fieldnames)
+
+        print("\nPer-paper details:")
+        for p in (p for c in remaining for p in new_by_college[c]):
             cites = p.get('cited_by_count', 0)
             print(f"  {p['title']} ({p['year']}, {p['venue']}) [{cites} citations]")
             print(f"    Faculty:  {p['matched_faculty']}")
@@ -368,6 +396,17 @@ def main():
                 print(f"    LAC:      {p['other_lac_coauthors']}")
             if p.get("external_coauthors"):
                 print(f"    External: {p['external_coauthors']}")
+    else:
+        all_papers = list(existing_papers)
+        for i, college in enumerate(tqdm(remaining, desc="Colleges")):
+            fac_list = faculty_by_college[college]
+            ror = college_rors.get(college, "")
+            papers = process_college(
+                session, college, ror, fac_list, faculty_lnames, lac_names)
+            all_papers.extend(papers)
+            if (i + 1) % 5 == 0:
+                _write_papers(all_papers, existing_fieldnames)
+        _write_papers(all_papers, existing_fieldnames)
 
     print(f"\nWrote {len(all_papers)} papers to {OUTPUT_PAPERS}")
 
