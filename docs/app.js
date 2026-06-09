@@ -50,7 +50,8 @@ function venueRankTooltip(rank, source) {
 const COLLEGE_COLS = [
   { key: 'name',             label: 'Institution',   numeric: false },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
-  { key: 'maj_fac',          label: 'MAJ/FAC',  numeric: true, tooltip: 'Ratio of CS majors graduated over the last 4 years to the number of tenured/tenure-track faculty' },
+  { key: 'majors',           label: 'MAJORS',        numeric: true, tooltip: 'The total number of graduated CS majors from 2021 to 2024 (according to IPEDS)' },
+  { key: 'maj_fac',          label: 'MAJ:FAC',       numeric: true, tooltip: 'Ratio of the total number of graduated CS majors from 2021 to 2024 (according to IPEDS) to the current number of tenured/tenure-track faculty' },
   { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last two academic years' },
   { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers affiliated with the institution and matching the current filters' },
 ];
@@ -242,7 +243,7 @@ const PUB_GROUP_SHORT = { conference: 'c', journal: 'j', other: 'o' };
 const PUB_GROUP_LONG = { c: 'conference', j: 'journal', o: 'other' };
 const VALID_VIEW = new Set(['faculty', 'courses', 'publications']);
 const VALID_SCOPE = new Set(['faculty', 'school']);
-const VALID_SORT_KEYS = new Set(['name', 'total', 'maj_fac', 'courses_per_year', 'filtered_pubs']);
+const VALID_SORT_KEYS = new Set(['name', 'total', 'majors', 'maj_fac', 'courses_per_year', 'filtered_pubs']);
 
 function setsEqual(a, b) {
   if (a.size !== b.size) return false;
@@ -562,7 +563,7 @@ async function loadData() {
     }
     c._search = collegeBits.toLowerCase();
     c.courses_per_year = recentCourseCount(courseSchedules[c.name]);
-    // MAJ/FAC: CS majors graduated over the last 4 years divided by the number
+    // MAJ:FAC: CS majors graduated over the last 4 years divided by the number
     // of tenured + tenure-track faculty. Deliberately fixed — independent of the
     // job-title / subfield / search filters — so it never shifts as the user
     // filters (aggregateCollege carries it through unchanged). Rounded to the
@@ -1563,7 +1564,7 @@ function buildCollegeHeaders() {
     const arrow = active ? (collegeSort.dir === 1 ? '↑' : '↓') : '↕';
     const tip = col.tooltip ? ` title="${esc(col.tooltip)}"` : '';
     return `<div class="th ${active ? 'sorted' : ''}" data-col="${col.key}"${tip}>
-      <span class="th-label">${col.label} <span class="sort-icon">${arrow}</span></span>
+      <span class="th-label">${col.label}<span class="sort-icon">${arrow}</span></span>
     </div>`;
   }).join('');
 
@@ -1592,7 +1593,10 @@ function collegeSortValueFn() {
   return {
     name:              c => c.name,
     total:             c => c.total,
-    maj_fac:           c => c.maj_fac ?? -1,
+    // null when there's no degree data (or 0 majors); the comparator floats
+    // those "—" rows to the bottom in both directions (see sortedColleges).
+    majors:            c => c.majors || null,
+    maj_fac:           c => c.maj_fac,
     courses_per_year:  c => (courseFiltering ? c.filtered_courses : c.courses_per_year) ?? -1,
     filtered_pubs:     c => c.filtered_pubs ?? -1,
   }[collegeSort.key] || (c => c.name);
@@ -1603,6 +1607,12 @@ function sortedColleges(colleges) {
   return [...colleges].sort((a, b) => {
     const av = fn(a), bv = fn(b);
     if (typeof av === 'string') return collegeSort.dir * av.localeCompare(bv);
+    // Rows with no value (null) always sink to the bottom regardless of sort
+    // direction — e.g. the "—" rows in the MAJORS / MAJ:FAC columns.
+    if (av == null || bv == null) {
+      if (av == null && bv == null) return 0;
+      return av == null ? 1 : -1;
+    }
     return collegeSort.dir * (av - bv);
   });
 }
@@ -1801,6 +1811,7 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
           </span>
         </div>
         <div class="td-num">${college.total}</div>
+        <div class="td-num ${college.majors ? '' : 'dim'}">${fmt(college.majors)}</div>
         <div class="td-num ${college.maj_fac != null ? '' : 'dim'}">${college.maj_fac != null ? college.maj_fac + ':1' : '—'}</div>
         <div class="td-num ${coursesValue != null && (!courseFiltering || coursesValue > 0) ? '' : 'dim'}">${cpyText}</div>
         <div class="td-num ${college.filtered_pubs != null && college.filtered_pubs > 0 ? '' : 'dim'}">${fpText}</div>
@@ -1976,7 +1987,7 @@ function renderFacultyTable(panel, faculty) {
       const arrow = active ? (facSort.dir === 1 ? '↑' : '↓') : '↕';
       const tip = COL_TOOLTIPS[col.key] ? ` title="${esc(COL_TOOLTIPS[col.key])}"` : '';
       return `<div class="fth ${active ? 'sorted' : ''}" data-fac-col="${col.key}"${tip}>
-        <span class="fth-label">${col.label} <span class="sort-icon">${arrow}</span></span>
+        <span class="fth-label">${col.label}<span class="sort-icon">${arrow}</span></span>
       </div>`;
     }).join('');
   }

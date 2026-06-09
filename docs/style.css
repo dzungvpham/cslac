@@ -327,7 +327,7 @@ header {
 /* shared column grid — must match between header and rows */
 .col-grid {
   display: grid;
-  grid-template-columns: 1fr 80px 80px 80px 80px;
+  grid-template-columns: 1fr 80px 80px 80px 80px 80px;
   align-items: center;
 }
 
@@ -366,6 +366,11 @@ header {
   font-size: 10px;
   opacity: 0.4;
   line-height: 1;
+  /* Gap between header text and the sort arrow, shared by every sortable
+     header (college / faculty / publications, and any future course-view
+     column). A fixed margin reads tighter than a font-rendered space and is
+     font-independent. */
+  margin-left: 1px;
 }
 /* The ↕ glyph renders smaller than ↑/↓ in IBM Plex; bump unsorted
    icons up a px so all three states look the same size. */
@@ -933,10 +938,6 @@ a.course-title-link:hover .course-name { color: var(--accent); }
    up with the panel's content edge. */
 .pth:first-child { justify-content: flex-start; padding-left: 0; padding-right: 4px; }
 .pth:last-child { justify-content: flex-end; padding-right: 4px; }
-/* Small breathing room between header text and the sort arrow.
-   The literal space between the two used to be a font-rendered space
-   (~3-4px); a tight margin reads better and is independent of font. */
-.pth-label .sort-icon { margin-left: 2px; }
 .pub-row {
   border-bottom: 1px solid var(--border-sub);
   transition: background 0.1s;
@@ -1420,10 +1421,10 @@ a.pub-author:hover {
   /* main college grid: shrink metric columns to fit ~360px viewports.
      minmax(0,1fr) — not 1fr — so the name column can shrink below its
      min-content (chevron + state + link icons would otherwise force overflow). */
-  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px 56px; }
+  .col-grid { grid-template-columns: minmax(0,1fr) 56px 56px 56px 56px 56px; }
   .th { padding: 9px 4px; font-size: 10px; gap: 3px; }
 
-  /* Rotate the metric column labels (Faculty / MAJ/FAC / Courses / Papers)
+  /* Rotate the metric column labels (Faculty / MAJORS / MAJ:FAC / Courses / Papers)
      30° from top-left to bottom-right so they stop crowding each other at
      narrow widths. Label + sort icon rotate together as one unit. */
   .col-head-row { overflow: visible; }
