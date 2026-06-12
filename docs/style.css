@@ -871,29 +871,6 @@ a.course-title-link {
 a.course-title-link:hover .course-code,
 a.course-title-link:hover .course-name { color: var(--accent); }
 .course-dash { color: var(--muted); }
-.course-xlist-toggle {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--sub);
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 3px 7px;
-  cursor: pointer;
-  transition: color 0.12s, border-color 0.12s, background 0.12s;
-  white-space: nowrap;
-}
-.course-xlist-toggle:hover {
-  color: var(--text);
-  border-color: var(--sub);
-}
-.course-xlist-toggle.active {
-  color: var(--accent);
-  border-color: var(--accent);
-}
 .course-empty {
   padding: 20px 4px;
   color: var(--muted);

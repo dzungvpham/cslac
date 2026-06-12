@@ -1670,7 +1670,6 @@ function renderColleges(colleges) {
     const panel = row.querySelector('.faculty-panel-inner');
     preserved.set(name, {
       view: panel?._view,
-      showColumbia: panel?._showColumbia,
       termOffset: panel?._termOffset,
       pubSort: panel?._pubSort,
     });
@@ -1854,7 +1853,6 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
 
   if (priorOpenState) {
     if (priorOpenState.view !== undefined) panel._view = priorOpenState.view;
-    if (priorOpenState.showColumbia !== undefined) panel._showColumbia = priorOpenState.showColumbia;
     if (priorOpenState.termOffset !== undefined) panel._termOffset = priorOpenState.termOffset;
     if (priorOpenState.pubSort !== undefined) panel._pubSort = priorOpenState.pubSort;
   }
@@ -1900,9 +1898,6 @@ function buildPanel(panel, college) {
   const hasPublications = !!publications;
   const facultyUrl = (collegeLinks[college.name] || {}).faculty_url;
   if (panel._view === undefined) panel._view = currentView;
-  // Persisted across view-toggles via the outer panel element; the inner
-  // .panel-body gets re-created on each render so we can't store it there.
-  if (panel._showColumbia === undefined) panel._showColumbia = false;
   // termOffset is undefined initially; renderCourseTable defaults to the
   // latest TERMS_PER_PAGE window when no offset has been set yet.
 
@@ -1948,11 +1943,6 @@ function buildPanel(panel, college) {
 
     if (view === 'courses' && hasCourses) {
       renderCourseTable(body, schedule, college.name, {
-        showColumbia: panel._showColumbia,
-        onToggleColumbia: () => {
-          panel._showColumbia = !panel._showColumbia;
-          render();
-        },
         termOffset: panel._termOffset,
         onShiftTerms: (next) => {
           panel._termOffset = next;
@@ -2332,15 +2322,8 @@ function renderPublicationsTable(panel, publications) {
 }
 
 // ── course schedule view ───────────────────────────────────────────────────
-// Barnard's catalogue lists Columbia cross-listings (COMS W*/E*) alongside
-// its own BC-prefixed courses. They count toward the major, but most of
-// them are taught at Columbia — so we hide them by default and expose a
-// toggle on the Course column header.
-const COLUMBIA_CODE_RE = /^COMS\s+(W|E)/i;
-
 function renderCourseTable(panel, schedule, collegeName, opts) {
-  const { showColumbia, onToggleColumbia, termOffset, onShiftTerms } = opts;
-  const isBarnard = collegeName === 'Barnard College';
+  const { termOffset, onShiftTerms } = opts;
   const cnEsc = esc(collegeName).replace(/'/g, "\\'");
 
   if (!schedule.courses.length) {
@@ -2348,10 +2331,7 @@ function renderCourseTable(panel, schedule, collegeName, opts) {
     return;
   }
 
-  let visibleCourses = isBarnard && !showColumbia
-    ? schedule.courses.filter(c => !COLUMBIA_CODE_RE.test(c.code))
-    : schedule.courses;
-  visibleCourses = visibleCourses.filter(courseVisible);
+  const visibleCourses = schedule.courses.filter(courseVisible);
   if (!visibleCourses.length) {
     panel.innerHTML = `<div class="course-empty">No courses match the current filters.</div>`;
     return;
@@ -2454,19 +2434,12 @@ function renderCourseTable(panel, schedule, collegeName, opts) {
     `;
   }).join('');
 
-  const columbiaToggle = isBarnard ? `
-    <button class="course-xlist-toggle ${showColumbia ? 'active' : ''}"
-            title="${showColumbia ? 'Hide cross-listed Columbia courses' : 'Show cross-listed Columbia courses'}">
-      ${showColumbia ? 'Hide Columbia' : 'Show Columbia'}
-    </button>
-  ` : '';
-
   panel.innerHTML = `
     <div class="course-wrap">
       <table class="course-table">
         <thead>
           <tr>
-            <th class="course-sticky"><div class="course-title-cell"><span>Course</span>${columbiaToggle}</div></th>
+            <th class="course-sticky"><div class="course-title-cell"><span>Course</span></div></th>
             ${headerCells}
           </tr>
         </thead>
@@ -2481,16 +2454,6 @@ function renderCourseTable(panel, schedule, collegeName, opts) {
   panel.querySelectorAll('.course-name').forEach(el => {
     if (el.scrollWidth > el.clientWidth) el.title = el.textContent;
   });
-
-  if (isBarnard && onToggleColumbia) {
-    const btn = panel.querySelector('.course-xlist-toggle');
-    if (btn) {
-      btn.addEventListener('click', e => {
-        e.stopPropagation();
-        onToggleColumbia();
-      });
-    }
-  }
 
   // The paginator lives in the panel-toggle row (above the table), so we
   // reach up to the enclosing panel root to fill the slot rendered there.
