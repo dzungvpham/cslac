@@ -13,7 +13,7 @@ Wabash College,2021-22,S,CSC-111,01,Intro to Programming,"McCartin-Lim, Mark",TU
 Wabash College,2021-22,S,CSC-211,01,Intro to Data Structures,"Westphal, Chad",M W F 9:00AM-9:50AM,,Core
 Wabash College,2021-22,S,CSC-235,01,Stochastic Simulation,"Westphal, Chad",M W F 2:10PM-3:00PM,,Algorithms & complexity
 Wabash College,2021-22,S,CSC-242,01,Theory of Programming Language,"McCartin-Lim, Mark",TU TH 1:10PM-2:25PM,,Programming languages
-Wabash College,2021-22,S,CSC-243,01,Algorithm Design and Analysis,"McCartin-Lim, Mark",M W F 3:10PM-4:00PM,,Algorithms & complexity
+Wabash College,2021-22,S,CSC-243,01,Algorithm Design and Analysis,"McCartin-Lim, Mark",M W F 3:10PM-4:00PM,,Core
 Wabash College,2021-22,S,CSC-271,01,Intro Quantum Info & Computing,"Krause, Dennis",M W F 10:00AM-10:50AM,,Quantum computing
 Wabash College,2021-22,S,CSC-271,02,Retrocomputing: 8-BIT/6502 Era,"McKinney, Colin",TU TH 9:45AM-11:00AM,,Computer architecture
 Wabash College,2021-22,S,CSC-362,01,Operating Systems,"McCartin-Lim, Mark",TBA TBA-TBA,,Operating systems
@@ -31,7 +31,7 @@ Wabash College,2022-23,F,CSC-400,01,Senior Capstone,"McCartin-Lim, Mark",TU TH 1
 Wabash College,2022-23,S,CSC-101,01,Intro to Computer Science,"McKinney, Colin",M W F 8:00AM-8:50AM,,Core
 Wabash College,2022-23,S,CSC-111,01,Intro to Programming,"McKinney, Colin",TU TH 9:45AM-11:00AM,,Core
 Wabash College,2022-23,S,CSC-211,01,Intro to Data Structures,"Westphal, Chad",M W F 9:00AM-9:50AM,,Core
-Wabash College,2022-23,S,CSC-243,01,Algorithm Design and Analysis,"Ansaldi, Katie",M W F 3:10PM-4:00PM,,Algorithms & complexity
+Wabash College,2022-23,S,CSC-243,01,Algorithm Design and Analysis,"Ansaldi, Katie",M W F 3:10PM-4:00PM,,Core
 Wabash College,2022-23,S,CSC-271,01,Image Processing,"Surina, FNU",M W F 2:10PM-3:00PM,,Computer vision
 Wabash College,2022-23,S,CSC-371,01,Retrocomputing: 8-BIT/6502 Era,"McKinney, Colin",TU TH 1:10PM-2:25PM,,Computer architecture
 Wabash College,2022-23,Su,CSC-361,01DCS,Database System Design,Staff,TBA TBA-TBA,,Databases
@@ -50,7 +50,7 @@ Wabash College,2023-24,S,CSC-111,02,Intro to Programming,"Deng, Qixin",TU TH 2:4
 Wabash College,2023-24,S,CSC-171,01,Introduction to Robotics,"McKinney, Colin",M W F 8:00AM-8:50AM,,Robotics
 Wabash College,2023-24,S,CSC-211,01,Intro to Data Structures,"Westphal, Chad",M W F 9:00AM-9:50AM,,Core
 Wabash College,2023-24,S,CSC-235,01,Stochastic Simulation,"Westphal, Chad",M W F 1:10PM-2:00PM,,Algorithms & complexity
-Wabash College,2023-24,S,CSC-243,01,Algorithm Design and Analysis,"Ansaldi, Katie",M W F 3:10PM-4:00PM,,Algorithms & complexity
+Wabash College,2023-24,S,CSC-243,01,Algorithm Design and Analysis,"Ansaldi, Katie",M W F 3:10PM-4:00PM,,Core
 Wabash College,2023-24,S,CSC-362,01,Operating Systems,"Deng, Qixin",TU TH 1:10PM-2:25PM,,Operating systems
 Wabash College,2023-24,Su,CSC-361,01DCS,Database System Design,Staff,TBA TBA-TBA,,Databases
 Wabash College,2024-25,F,CSC-101,01,Intro to Computer Science,"Turner, William",M W F 11:00AM-11:50AM,,Core
@@ -64,7 +64,7 @@ Wabash College,2024-25,F,CSC-400,01,Senior Capstone,"Deng, Qixin",TU TH 1:10PM-2
 Wabash College,2024-25,S,CSC-106,01,Computing for Life Sciences,"Semrad, Ethan",TU TH 9:45AM-11:00AM,,Computational bio & bioinformatics
 Wabash College,2024-25,S,CSC-111,01,Intro to Programming,"Deng, Qixin",TU TH 9:45AM-11:00AM,,Core
 Wabash College,2024-25,S,CSC-211,01,Intro to Data Structures,"Deng, Qixin",TU TH 1:10PM-2:25PM,,Core
-Wabash College,2024-25,S,CSC-243,01,Algorithm Design and Analysis,"Bowling, Andrew",M W F 3:10PM-4:00PM,,Algorithms & complexity
+Wabash College,2024-25,S,CSC-243,01,Algorithm Design and Analysis,"Bowling, Andrew",M W F 3:10PM-4:00PM,,Core
 Wabash College,2024-25,S,CSC-271,01,Intro to Data Science,"Westphal, Chad",TU TH 1:10PM-2:25PM,,Data science
 Wabash College,2024-25,S,CSC-362,01,Operating Systems,"Deng, Qixin",TU TH 2:40PM-3:55PM,,Operating systems
 Wabash College,2024-25,S,CSC-371,01,Corporate Partner Project II,"Westphal, Chad",TU TH 9:45AM-11:00AM,,Misc
@@ -79,7 +79,7 @@ Wabash College,2025-26,S,CSC-101,01,Intro to Computer Science,"Turner, William",
 Wabash College,2025-26,S,CSC-111,01,Intro to Programming,"Turner, William",TU TH 1:10PM-2:25PM,,Core
 Wabash College,2025-26,S,CSC-211,01,Intro to Data Structures,"Deng, Qixin",TU TH 9:45AM-11:00AM,,Core
 Wabash College,2025-26,S,CSC-233,01,Intro to Data Science,"Yoon, Ryeongkyung",TU TH 9:45AM-11:00AM,,Data science
-Wabash College,2025-26,S,CSC-243,01,Algorithm Design and Analysis,"Bowling, Andrew",M W F 3:10PM-4:00PM,,Algorithms & complexity
+Wabash College,2025-26,S,CSC-243,01,Algorithm Design and Analysis,"Bowling, Andrew",M W F 3:10PM-4:00PM,,Core
 Wabash College,2025-26,S,CSC-361,01,Database System Design,"Deng, Qixin",TU TH 2:40PM-3:55PM,,Databases
 Wabash College,2025-26,S,CSC-363,01,Compiler Design,"McKinney, Colin",M W F 8:00AM-8:50AM TH 8:00AM-9:15AM,,Programming languages
 Wabash College,2025-26,Su,CSC-361,01DCS,Database System Design,Staff,TBA TBA-TBA,,Databases

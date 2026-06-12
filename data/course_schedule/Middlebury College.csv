@@ -21,8 +21,8 @@ Middlebury College,2021-22,F,CSCI 0202,A,Computer Architecture,Andrea Vaccari,MW
 Middlebury College,2021-22,F,CSCI 0202,B,Computer Architecture,Andrea Vaccari,MWF 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202190-91510,Computer architecture
 Middlebury College,2021-22,F,CSCI 0301,A,Theory of Computation,Amy Briggs,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202190-90102,Algorithms & complexity
 Middlebury College,2021-22,F,CSCI 0301,B,Theory of Computation,Amy Briggs,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202190-92511,Algorithms & complexity
-Middlebury College,2021-22,F,CSCI 0302,A,Algorithms and Complexity,Matthew Dickerson,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202190-91488,Algorithms & complexity
-Middlebury College,2021-22,F,CSCI 0302,B,Algorithms and Complexity,Matthew Dickerson,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-91671,Algorithms & complexity
+Middlebury College,2021-22,F,CSCI 0302,A,Algorithms and Complexity,Matthew Dickerson,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202190-91488,Core
+Middlebury College,2021-22,F,CSCI 0302,B,Algorithms and Complexity,Matthew Dickerson,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202190-91671,Core
 Middlebury College,2021-22,F,CSCI 0312,A,Software Development,Christopher Andrews,MW 8:40am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202190-91729,Software engineering
 Middlebury College,2021-22,F,CSCI 0312,B,Software Development,Christopher Andrews,MW 12:15pm-1:30pm,https://catalog.middlebury.edu/offerings/view/section-202190-92813,Software engineering
 Middlebury College,2021-22,F,CSCI 0312,Y,Software Dev Lab - Section A,Christopher Andrews,F 8:00am-8:50am,https://catalog.middlebury.edu/offerings/view/section-202190-92815,Misc
@@ -61,7 +61,7 @@ Middlebury College,2021-22,W,CSCI 0500,I,Advanced Study,Jason Grant,Su 8:00am-8:
 Middlebury College,2021-22,W,CSCI 0500,J,Advanced Study,Shelby Kimmel,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202210-11235,Misc
 Middlebury College,2021-22,W,CSCI 0702,A,Senior Thesis,Philip Caplan,MTWTh 10:00am-12:00pm,https://catalog.middlebury.edu/offerings/view/section-202210-11401,Misc
 Middlebury College,2021-22,W,CSCI 1005,A,Crash Course/Systems Security,Peter Johnson,MTWTh 10:00am-11:30am,https://catalog.middlebury.edu/offerings/view/section-202210-11584,Computer security & privacy
-Middlebury College,2021-22,S,CSCI 0105,A,Algorithmic World,Christopher Andrews,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202220-22692,Algorithms & complexity
+Middlebury College,2021-22,S,CSCI 0105,A,Algorithmic World,Christopher Andrews,MWF 9:05am-9:55am,https://catalog.middlebury.edu/offerings/view/section-202220-22692,Core
 Middlebury College,2021-22,S,CSCI 0145,A,Introduction to Computing,Andrea Vaccari,TTh 8:00am-9:15am,https://catalog.middlebury.edu/offerings/view/section-202220-22165,Core
 Middlebury College,2021-22,S,CSCI 0145,B,Introduction to Computing,Andrea Vaccari,TTh 9:30am-10:45am,https://catalog.middlebury.edu/offerings/view/section-202220-22166,Core
 Middlebury College,2021-22,S,CSCI 0145,X,Introduction to Computing Lab,Andrea Vaccari,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-22791,Misc
@@ -80,7 +80,7 @@ Middlebury College,2021-22,S,CSCI 0201,Z,Data Structures Lab,John Foley,M 2:50pm
 Middlebury College,2021-22,S,CSCI 0202,A,Computer Architecture,Peter Johnson,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202220-21338,Computer architecture
 Middlebury College,2021-22,S,CSCI 0202,B,Computer Architecture,Peter Johnson,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-21467,Computer architecture
 Middlebury College,2021-22,S,CSCI 0301,A,Theory of Computation,Amy Briggs,TTh 11:00am-12:15pm,https://catalog.middlebury.edu/offerings/view/section-202220-21528,Algorithms & complexity
-Middlebury College,2021-22,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,MWF 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202220-20327,Algorithms & complexity
+Middlebury College,2021-22,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,MWF 1:45pm-2:35pm,https://catalog.middlebury.edu/offerings/view/section-202220-20327,Core
 Middlebury College,2021-22,S,CSCI 0311,A,Artificial Intelligence,Ananya Das,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-21655,Artificial intelligence
 Middlebury College,2021-22,S,CSCI 0321,A,Bioinformatics Algorithms,Michael Linderman,MWF 10:10am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202220-22501,Computational bio & bioinformatics
 Middlebury College,2021-22,S,CSCI 0390,A,Spatial Agent-Based Modeling,Matthew Dickerson,MW 2:50pm-4:05pm,https://catalog.middlebury.edu/offerings/view/section-202220-22881,Computational social science
@@ -165,8 +165,8 @@ Middlebury College,2022-23,S,CSCI 0201,Z,Data Structures Lab,Amy Briggs,F 11:15a
 Middlebury College,2022-23,S,CSCI 0202,A,Computer Architecture,Christopher Andrews,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202320-21327,Computer architecture
 Middlebury College,2022-23,S,CSCI 0202,B,Computer Architecture,Christopher Andrews,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202320-21445,Computer architecture
 Middlebury College,2022-23,S,CSCI 0301,A,Theory of Computation,Frank Swenton,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202320-21503,Algorithms & complexity
-Middlebury College,2022-23,S,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202320-20324,Algorithms & complexity
-Middlebury College,2022-23,S,CSCI 0302,B,Algorithms and Complexity,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-22371,Algorithms & complexity
+Middlebury College,2022-23,S,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202320-20324,Core
+Middlebury College,2022-23,S,CSCI 0302,B,Algorithms and Complexity,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-22371,Core
 Middlebury College,2022-23,S,CSCI 0312,A,Software Development,Michael Linderman,TTh 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202320-22365,Software engineering
 Middlebury College,2022-23,S,CSCI 0416,A,Parallel Computing,Michael Linderman,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202320-22372,High-performance computing
 Middlebury College,2022-23,S,CSCI 0431,A,Computer Networks,Peter Johnson,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202320-22366,Computer networks
@@ -205,7 +205,7 @@ Middlebury College,2023-24,F,CSCI 0201,Z,Data Structures Lab,Amy Briggs,M 11:15a
 Middlebury College,2023-24,F,CSCI 0202,A,Computer Architecture,Andrea Vaccari,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202390-90094,Computer architecture
 Middlebury College,2023-24,F,CSCI 0202,B,Computer Architecture,Andrea Vaccari,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202390-91377,Computer architecture
 Middlebury College,2023-24,F,CSCI 0301,A,Theory of Computation,Matthew Dickerson,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202390-90095,Algorithms & complexity
-Middlebury College,2023-24,F,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202390-92612,Algorithms & complexity
+Middlebury College,2023-24,F,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202390-92612,Core
 Middlebury College,2023-24,F,CSCI 0311,A,Artificial Intelligence,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202390-92223,Artificial intelligence
 Middlebury College,2023-24,F,CSCI 0312,A,Software Development,Michael Linderman,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202390-91526,Software engineering
 Middlebury College,2023-24,F,CSCI 0313,A,Programming Languages,Shrutarshi Basu,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202390-92443,Programming languages
@@ -263,8 +263,8 @@ Middlebury College,2023-24,S,CSCI 0202,A,Computer Architecture,Peter Johnson,MWF
 Middlebury College,2023-24,S,CSCI 0202,B,Computer Architecture,Peter Johnson,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202420-21338,Computer architecture
 Middlebury College,2023-24,S,CSCI 0301,A,Theory of Computation,Amy Briggs,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202420-21391,Algorithms & complexity
 Middlebury College,2023-24,S,CSCI 0301,B,Theory of Computation,Amy Briggs,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-22356,Algorithms & complexity
-Middlebury College,2023-24,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202420-20282,Algorithms & complexity
-Middlebury College,2023-24,S,CSCI 0302,B,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-21862,Algorithms & complexity
+Middlebury College,2023-24,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202420-20282,Core
+Middlebury College,2023-24,S,CSCI 0302,B,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-21862,Core
 Middlebury College,2023-24,S,CSCI 0312,A,Software Development,Michael Linderman,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202420-21860,Software engineering
 Middlebury College,2023-24,S,CSCI 0321,A,Bioinformatics Algorithms,Michael Linderman,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202420-22357,Computational bio & bioinformatics
 Middlebury College,2023-24,S,CSCI 0390,A,Spatial Agent-Based Modeling,Matthew Dickerson,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202420-22358,Computational social science
@@ -289,7 +289,7 @@ Middlebury College,2023-24,S,CSCI 0500,L,Advanced Study,Andrea Vaccari,Su 8:00am
 Middlebury College,2023-24,S,CSCI 0500,M,Advanced Study,Shrutarshi Basu,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-21646,Misc
 Middlebury College,2023-24,S,CSCI 0500,N,Advanced Study,Laura Biester,Su 7:00pm-8:29pm,https://catalog.middlebury.edu/offerings/view/section-202420-22309,Misc
 Middlebury College,2023-24,S,CSCI 0702,A,Senior Thesis,Phil Chodrow,M 1:30pm-4:15pm,https://catalog.middlebury.edu/offerings/view/section-202420-21318,Misc
-Middlebury College,2024-25,F,CSCI 0105,A,Algorithmic World,Christopher Andrews,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202490-92454,Algorithms & complexity
+Middlebury College,2024-25,F,CSCI 0105,A,Algorithmic World,Christopher Andrews,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202490-92454,Core
 Middlebury College,2024-25,F,CSCI 0145,A,Introduction to Computing,Andrea Vaccari,MW 8:15am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-91601,Core
 Middlebury College,2024-25,F,CSCI 0145,B,Introduction to Computing,Andrea Vaccari,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202490-91656,Core
 Middlebury College,2024-25,F,CSCI 0145,X,Introduction to Computing Lab,Andrea Vaccari,F 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202490-91602,Misc
@@ -307,7 +307,7 @@ Middlebury College,2024-25,F,CSCI 0202,A,Computer Architecture,Peter Johnson,MWF
 Middlebury College,2024-25,F,CSCI 0202,B,Computer Architecture,Peter Johnson,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202490-91355,Computer architecture
 Middlebury College,2024-25,F,CSCI 0301,A,Theory of Computation,Amy Briggs,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-90091,Algorithms & complexity
 Middlebury College,2024-25,F,CSCI 0301,B,Theory of Computation,Amy Briggs,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202490-92458,Algorithms & complexity
-Middlebury College,2024-25,F,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-92167,Algorithms & complexity
+Middlebury College,2024-25,F,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-92167,Core
 Middlebury College,2024-25,F,CSCI 0311,A,Artificial Intelligence,Michael Linderman,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202490-91890,Artificial intelligence
 Middlebury College,2024-25,F,CSCI 0312,A,Software Development,Laura Biester,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202490-91498,Software engineering
 Middlebury College,2024-25,F,CSCI 0312,B,Software Development,Laura Biester,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202490-92459,Software engineering
@@ -365,8 +365,8 @@ Middlebury College,2024-25,S,CSCI 0201,Z,Data Structures Lab,Amy Briggs,F 11:15a
 Middlebury College,2024-25,S,CSCI 0202,A,Computer Architecture,Andrea Vaccari,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202520-21212,Computer architecture
 Middlebury College,2024-25,S,CSCI 0202,B,Computer Architecture,Andrea Vaccari,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202520-21318,Computer architecture
 Middlebury College,2024-25,S,CSCI 0301,A,Theory of Computation,Frank Swenton,MW 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-21368,Algorithms & complexity
-Middlebury College,2024-25,S,CSCI 0302,A,Algorithms and Complexity,Matthew Dickerson,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202520-20273,Algorithms & complexity
-Middlebury College,2024-25,S,CSCI 0302,B,Algorithms and Complexity,Matthew Dickerson,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-21754,Algorithms & complexity
+Middlebury College,2024-25,S,CSCI 0302,A,Algorithms and Complexity,Matthew Dickerson,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202520-20273,Core
+Middlebury College,2024-25,S,CSCI 0302,B,Algorithms and Complexity,Matthew Dickerson,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-21754,Core
 Middlebury College,2024-25,S,CSCI 0312,A,Software Development,Michael Linderman,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202520-21753,Software engineering
 Middlebury College,2024-25,S,CSCI 0416,A,Parallel Computing,Michael Linderman,TTh 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202520-22439,High-performance computing
 Middlebury College,2024-25,S,CSCI 0431,A,Computer Networks,Peter Johnson,MW 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202520-22440,Computer networks
@@ -402,7 +402,7 @@ Middlebury College,2025-26,F,CSCI 0201,Y,Data Structures Lab,Laura Biester,F 9:4
 Middlebury College,2025-26,F,CSCI 0201,Z,Data Structures Lab,Laura Biester,F 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202590-91246,Misc
 Middlebury College,2025-26,F,CSCI 0202,A,Computer Architecture,Andrea Vaccari,MWF 9:45am-10:35am,https://catalog.middlebury.edu/offerings/view/section-202590-90090,Computer architecture
 Middlebury College,2025-26,F,CSCI 0301,A,Theory of Computation,Matthew Dickerson,MW 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-90091,Algorithms & complexity
-Middlebury College,2025-26,F,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-91920,Algorithms & complexity
+Middlebury College,2025-26,F,CSCI 0302,A,Algorithms and Complexity,Ananya Das,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-91920,Core
 Middlebury College,2025-26,F,CSCI 0311,A,Artificial Intelligence,Ananya Das,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202590-91804,Artificial intelligence
 Middlebury College,2025-26,F,CSCI 0312,A,Software Development,Christopher Andrews,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202590-91474,Software engineering
 Middlebury College,2025-26,F,CSCI 0333,A,Quantum Computing,Shelby Kimmel,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202590-91880,Quantum computing
@@ -503,8 +503,8 @@ Middlebury College,2025-26,S,CSCI 0201,Y,Data Structures Lab,Ananya Das,T 1:10pm
 Middlebury College,2025-26,S,CSCI 0201,Z,Data Structures Lab,Ananya Das,T 2:15pm-3:05pm,https://catalog.middlebury.edu/offerings/view/section-202620-21201,Misc
 Middlebury College,2025-26,S,CSCI 0202,A,Computer Architecture,Christopher Andrews,MWF 8:40am-9:30am,https://catalog.middlebury.edu/offerings/view/section-202620-21202,Computer architecture
 Middlebury College,2025-26,S,CSCI 0301,A,Theory of Computation,Frank Swenton,MW 12:45pm-2:00pm,https://catalog.middlebury.edu/offerings/view/section-202620-21353,Algorithms & complexity
-Middlebury College,2025-26,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202620-20273,Algorithms & complexity
-Middlebury College,2025-26,S,CSCI 0302,B,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202620-21653,Algorithms & complexity
+Middlebury College,2025-26,S,CSCI 0302,A,Algorithms and Complexity,Shelby Kimmel,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202620-20273,Core
+Middlebury College,2025-26,S,CSCI 0302,B,Algorithms and Complexity,Shelby Kimmel,TTh 11:15am-12:30pm,https://catalog.middlebury.edu/offerings/view/section-202620-21653,Core
 Middlebury College,2025-26,S,CSCI 0312,A,Software Development,Christopher Andrews,TTh 2:15pm-3:30pm,https://catalog.middlebury.edu/offerings/view/section-202620-21652,Software engineering
 Middlebury College,2025-26,S,CSCI 0321,A,Bioinformatics Algorithms,Michael Linderman,MWF 11:15am-12:05pm,https://catalog.middlebury.edu/offerings/view/section-202620-22453,Computational bio & bioinformatics
 Middlebury College,2025-26,S,CSCI 0425,A,Computational Geometry,Matthew Dickerson,TTh 9:45am-11:00am,https://catalog.middlebury.edu/offerings/view/section-202620-22454,Algorithms & complexity

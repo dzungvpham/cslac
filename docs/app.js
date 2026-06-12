@@ -52,7 +52,7 @@ const COLLEGE_COLS = [
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
   { key: 'majors',           label: 'MAJORS',        numeric: true, tooltip: 'The total number of graduated CS majors from 2021 to 2024 (according to IPEDS)' },
   { key: 'maj_fac',          label: 'MAJ:FAC',       numeric: true, tooltip: 'Ratio of the total number of graduated CS majors from 2021 to 2024 (according to IPEDS) to the current number of tenured/tenure-track faculty' },
-  { key: 'courses_per_year', label: 'Courses',  numeric: true, tooltip: 'Number of unique courses offered in the last two academic years' },
+  { key: 'courses_per_year', label: 'Electives',  numeric: true, tooltip: 'Number of unique elective courses offered in the last two academic years. Excludes foundational courses shared across CS programs (intro programming, data structures, discrete math, algorithms, computer organization), independent study/thesis/seminar, and non-CS courses swept in by cross-listing.' },
   { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers affiliated with the institution and matching the current filters' },
 ];
 
@@ -562,7 +562,7 @@ async function loadData() {
         .filter(Boolean).join(' ').toLowerCase();
     }
     c._search = collegeBits.toLowerCase();
-    c.courses_per_year = recentCourseCount(courseSchedules[c.name]);
+    c.courses_per_year = recentCourseCount(courseSchedules[c.name], isElective);
     // MAJ:FAC: CS majors graduated over the last 4 years divided by the number
     // of tenured + tenure-track faculty. Deliberately fixed — independent of the
     // job-title / subfield / search filters — so it never shifts as the user
@@ -948,7 +948,7 @@ function buildAdvancedBar() {
        ${jobTitleChipsHtml}
      </div>` +
     `<div class="adv-row adv-row-subfields">
-       <span class="filter-label" title="Subfield names based on csrankings.org">Subfields</span>` +
+       <span class="filter-label" title="Filter for faculty, courses, and papers based on their fields. Derived from csrankings.org with a few additions.">Subfields</span>` +
        subfieldGroupsHtml +
     `</div>` +
     `<div class="adv-row adv-row-pubs">
@@ -1432,6 +1432,22 @@ function courseVisible(c) {
   return searchHitCourse(c) && courseSubfieldVisible(c);
 }
 
+// An "elective" is a real CS lecture course beyond the shared foundation. We
+// exclude three category meta-buckets (set by course_classifier.py): `Core`
+// (intro programming, data structures, discrete math, the standard algorithms
+// course, computer organization — the sequence every CS program shares; note
+// advanced/applied algorithms and theory of computation stay electives), `Misc`
+// (independent study / thesis / seminar / lab — not a real lecture course), and
+// `Unknown` (non-CS courses
+// like Calculus swept in by cross-listing). Everything else — the 32 CS
+// subfields plus `Other` — counts. Drives the Electives column's resting count
+// (a subfield filter already restricts to electives; a text search may surface
+// a matched foundational course, mirroring how the other columns behave).
+const NON_ELECTIVE_CATEGORIES = new Set(['Core', 'Misc', 'Unknown']);
+function isElective(c) {
+  return !NON_ELECTIVE_CATEGORIES.has(c.category);
+}
+
 function aggregateCollege(college) {
   const fac = filteredFaculty(college);
   return {
@@ -1775,10 +1791,11 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
   const div = document.createElement('div');
   div.className = 'college-row';
 
-  // The Courses column counts unique courses offered in the last RECENT_YEARS
-  // academic years; when the user is searching or has an active subfield filter
-  // (both gate courses via courseVisible), it shows the count restricted to the
-  // matching courses.
+  // The Electives column counts unique *elective* courses (see isElective —
+  // excludes the shared Core/Misc/Unknown buckets) offered in the last
+  // RECENT_YEARS academic years; when the user is searching or has an active
+  // subfield filter (both gate courses via courseVisible), it shows the count
+  // restricted to the matching courses.
   const searching = !!searchQuery.trim();
   const courseFiltering = searching || activeSubfields.size > 0 || excludedSubfields.size > 0;
   const coursesValue = courseFiltering ? college.filtered_courses : college.courses_per_year;

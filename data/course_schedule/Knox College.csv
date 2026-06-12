@@ -4,7 +4,7 @@ Knox College,2021-22,F,CS 141,2,INTRO TO COMPUTER SCIENCE,V.Kazakova,Period 6 MW
 Knox College,2021-22,F,CS 141L,A,Laboratory,R.Bose,Period 5 Th,,Misc
 Knox College,2021-22,F,CS 141L,B,Laboratory,V.Kazakova,Period 6 Th,,Misc
 Knox College,2021-22,F,CS 195B,1,PYTHON FOR DATA,O.Forsberg,Period 6 MWF,,Data science
-Knox College,2021-22,F,CS 205,1,ALGORITHM DESIGN & ANALYSIS,D.Bunde,Period 5 MWTF,,Algorithms & complexity
+Knox College,2021-22,F,CS 205,1,ALGORITHM DESIGN & ANALYSIS,D.Bunde,Period 5 MWTF,,Core
 Knox College,2021-22,F,CS 208,1,PROGRAMMING LANGUAGES,J.Spacco,Period 2 M W T F,,Programming languages
 Knox College,2021-22,F,CS 335,1,INTERACTIVE DESIGN,T.Stedman; J.Spacco,"Period 3,4 MW",,Human-computer interaction
 Knox College,2021-22,F,CS 375,1,COMPUTING MODELS & COMPLEXITY,D.Bunde,Period 2 MWF,,Algorithms & complexity
@@ -31,7 +31,7 @@ Knox College,2022-23,F,CS 141,2,INTRO TO COMPUTER SCIENCE,V.Kazakova,Period 3 MW
 Knox College,2022-23,F,CS 141L,A,Laboratory,V.Kazakova,Period 2 Th,,Misc
 Knox College,2022-23,F,CS 141L,B,Laboratory,V.Kazakova,Period 3 Th,,Misc
 Knox College,2022-23,F,CS 141L,C,Laboratory,V.Kazakova,Period 12-1 pm Th,,Misc
-Knox College,2022-23,F,CS 205,1,ALGORITHM DESIGN & ANALYSIS,D.Bunde,Period 5 MWTF,,Algorithms & complexity
+Knox College,2022-23,F,CS 205,1,ALGORITHM DESIGN & ANALYSIS,D.Bunde,Period 5 MWTF,,Core
 Knox College,2022-23,F,CS 208,1,PROGRAMMING LANGUAGES,R.Bose,Period 2 MTWF,,Programming languages
 Knox College,2022-23,F,CS 309,1,PARALLEL PROGRAMMING,D.Bunde,Period 4 MWF,,High-performance computing
 Knox College,2022-23,W,CS 141,1,INTRO TO COMPUTER SCIENCE,R.Bose,Period 2 MWF,,Core
@@ -62,7 +62,7 @@ Knox College,2023-24,F,CS 141L,A,Laboratory,V.Kazakova,Period 5 Th,,Misc
 Knox College,2023-24,F,CS 141L,B,Laboratory,V.Kazakova,Period 6 Th,,Misc
 Knox College,2023-24,F,CS 142,1,PROGRAM DESIGN & METHODOLOGY,STAFF,Period 4 MWF,,Core
 Knox College,2023-24,F,CS 142L,A,Laboratory,STAFF,Period 5 Tu,,Misc
-Knox College,2023-24,F,CS 205,1,ALGORITHM DESIGN & ANALYSIS,D.Bunde,Period 3 MTWF,,Algorithms & complexity
+Knox College,2023-24,F,CS 205,1,ALGORITHM DESIGN & ANALYSIS,D.Bunde,Period 3 MTWF,,Core
 Knox College,2023-24,F,CS 208,1,PROGRAMMING LANGUAGES,J.Spacco,Period 2 MWTF,,Programming languages
 Knox College,2023-24,F,CS 399,1,RESEARCH SEMINAR IN COMP SCI,D.Bunde,Period 6 MWF,,Misc
 Knox College,2023-24,W,CS 141,1,INTRO TO COMPUTER SCIENCE,D.Bunde,Period 5 MWF,,Core
@@ -91,7 +91,7 @@ Knox College,2024-25,F,CS 141,1,INTRO TO COMPUTER SCIENCE,J.Spacco,Period 2 MWF,
 Knox College,2024-25,F,CS 141,2,INTRO TO COMPUTER SCIENCE,M.Gerten,Period 5 MWF,,Core
 Knox College,2024-25,F,CS 141L,A,Laboratory,J.Spacco,Period 2 Tu,,Misc
 Knox College,2024-25,F,CS 141L,B,Laboratory,M.Gerten,Period 5 Tu,,Misc
-Knox College,2024-25,F,CS 205,1,ALGORITHM DESIGN & ANALYSIS,D.Bunde,Period 5 MWTF,,Algorithms & complexity
+Knox College,2024-25,F,CS 205,1,ALGORITHM DESIGN & ANALYSIS,D.Bunde,Period 5 MWTF,,Core
 Knox College,2024-25,F,CS 208,1,PROGRAMMING LANGUAGES,M.Gerten,Period 6 MTWF,,Programming languages
 Knox College,2024-25,F,CS 295S,1,NEW SUPERCOMPUTER NET TOPOLOGIES,D.Bunde,Period 3 TT,,Computer networks
 Knox College,2024-25,F,CS 309,1,PARALLEL PROGRAMMING,D.Bunde,Period 4 MWF,,High-performance computing

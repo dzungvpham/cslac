@@ -25,7 +25,7 @@ Trinity College,2022-23,S,CPSC-203,02,Math Foundatns of Comput,"Islam, Maminur",
 Trinity College,2022-23,S,CPSC-215,01,Data Structures & Algorithms,"Yoon, Peter",MWF: 11:00AM-11:50AM,,Core
 Trinity College,2022-23,S,CPSC-215,20,Data Structures & Algorithms,"Yoon, Peter",W: 1:30PM-4:10PM,,Core
 Trinity College,2022-23,S,CPSC-215,21,Data Structures & Algorithms,"Chakraborttii, Chandranil",R: 1:30PM-4:10PM,,Core
-Trinity College,2022-23,S,CPSC-320,01,Analysis of Algorithms,"Islam, Maminur",TR: 8:00AM-9:15AM,,Algorithms & complexity
+Trinity College,2022-23,S,CPSC-320,01,Analysis of Algorithms,"Islam, Maminur",TR: 8:00AM-9:15AM,,Core
 Trinity College,2022-23,S,CPSC-372,01,Database Fundamentals,"Johnson, Jonathan",TR: 10:50AM-12:05PM,,Databases
 Trinity College,2022-23,S,CPSC-395,01,Sensitive Info,"Syta, Ewa",M: 1:30PM-4:10PM,,Computer security & privacy
 Trinity College,2022-23,S,CPSC-399,01,Independent Study,TBA,TBA,,Misc
@@ -45,7 +45,7 @@ Trinity College,2023-24,F,CPSC-275,01,Intro to Computer Systems,"Yoon, Peter",MW
 Trinity College,2023-24,F,CPSC-275,20,Intro to Computer Systems,Cancelled,,,Core
 Trinity College,2023-24,F,CPSC-275,21,Intro to Computer Systems,"Yoon, Peter",T: 1:30PM-4:10PM,,Core
 Trinity College,2023-24,F,CPSC-310,01,Software Design,"Kousen, Kenneth",MW: 6:30PM-7:45PM,,Software engineering
-Trinity College,2023-24,F,CPSC-320,01,Analysis of Algorithms,"Islam, Maminur",MWF: 10:00AM-10:50AM,,Algorithms & complexity
+Trinity College,2023-24,F,CPSC-320,01,Analysis of Algorithms,"Islam, Maminur",MWF: 10:00AM-10:50AM,,Core
 Trinity College,2023-24,F,CPSC-360,01,Deep Learning,"Chakraborttii, Chandranil",TR: 8:00AM-9:15AM,,Machine learning
 Trinity College,2023-24,F,CPSC-399,01,Independent Study,TBA,TBA,,Misc
 Trinity College,2023-24,F,CPSC-403,01,Computer Science Seminar,"Spezialetti, Madalene",T: 9:25AM-10:40AM,,Misc
@@ -141,7 +141,7 @@ Trinity College,2025-26,S,CPSC-215,01,Data Structures & Algorithms,"Johnson, Jon
 Trinity College,2025-26,S,CPSC-215,20,Data Structures & Algorithms,"Johnson, Jonathan",T: 1:30PM-4:10PM,,Core
 Trinity College,2025-26,S,CPSC-215,21,Data Structures & Algorithms,"Chakraborttii, Chandranil",W: 1:30PM-4:10PM,,Core
 Trinity College,2025-26,S,CPSC-316,01,Found Programming Lang,"Yoon, Peter",MWF: 10:00AM-10:50AM,,Programming languages
-Trinity College,2025-26,S,CPSC-320,01,Analysis of Algorithms,"Miyazaki, Takunari",MW: 8:30AM-9:45AM,,Algorithms & complexity
+Trinity College,2025-26,S,CPSC-320,01,Analysis of Algorithms,"Miyazaki, Takunari",MW: 8:30AM-9:45AM,,Core
 Trinity College,2025-26,S,CPSC-340,01,Software Engineering,"Spezialetti, Madalene",W: 6:30PM-9:00PM,,Software engineering
 Trinity College,2025-26,S,CPSC-360,01,Deep Learning,"Islam, Maminur",TR: 9:25AM-10:40AM,,Machine learning
 Trinity College,2025-26,S,CPSC-375,01,High-Performance Computing,"Yoon, Peter",MWF: 12:00PM-12:50PM,,High-performance computing

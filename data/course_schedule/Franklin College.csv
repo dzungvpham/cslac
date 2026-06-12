@@ -35,8 +35,8 @@ Franklin College,2025-26,S,COMP*511,Q1FF,Foundation Data Struc & Obj Or,Edgar Wu
 Franklin College,2025-26,S,COMP*511,Q1WW,Foundation Data Struc & Obj Or,Edgar Wu,M,,Core
 Franklin College,2025-26,S,COMP*611,Q1FF,Adv Data Structure and Program,Tim Kington,W 6:00 PM - 9:40 PM,,Core
 Franklin College,2025-26,S,COMP*611,Q1WW,Adv Data Structure and Program,Tim Kington,W 6:00 PM - 9:40 PM,,Core
-Franklin College,2025-26,S,COMP*620,R1FF,Analysis of Algorithms,David Fleig,M 6:00 PM - 9:40 PM,,Algorithms & complexity
-Franklin College,2025-26,S,COMP*620,R1WW,Analysis of Algorithms,David Fleig,M 6:00 PM - 9:40 PM,,Algorithms & complexity
+Franklin College,2025-26,S,COMP*620,R1FF,Analysis of Algorithms,David Fleig,M 6:00 PM - 9:40 PM,,Core
+Franklin College,2025-26,S,COMP*620,R1WW,Analysis of Algorithms,David Fleig,M 6:00 PM - 9:40 PM,,Core
 Franklin College,2025-26,S,COMP*630,Q1FF,Issues/Database Management,Jisheng Pang Rickie Kidwell,W 3:00 PM - 5:00 PM,,Databases
 Franklin College,2025-26,S,COMP*630,Q1WW,Issues/Database Management,Jisheng Pang,M,,Databases
 Franklin College,2025-26,S,COMP*650,Q1WW,Syst Architecture/Engineering,Roger Engle,M,,Software engineering
@@ -68,7 +68,7 @@ Franklin College,2025-26,Su,COMP*495,Q1WW,Comp Sci Practicum III/Cpstn,Yuying Wa
 Franklin College,2025-26,Su,COMP*501,Q1WW,Foundations of Programming,Kagan Ulucay,M,,Core
 Franklin College,2025-26,Su,COMP*511,Q1WW,Data Struc & Obj Orntd Design,Edgar Wu,M,,Core
 Franklin College,2025-26,Su,COMP*611,Q1WW,Adv Data Structure and Program,Tim Kington,M,,Core
-Franklin College,2025-26,Su,COMP*620,Q1WW,Analysis of Algorithms,Sean McCulloch,M,,Algorithms & complexity
+Franklin College,2025-26,Su,COMP*620,Q1WW,Analysis of Algorithms,Sean McCulloch,M,,Core
 Franklin College,2025-26,Su,COMP*630,Q1WW,Issues/Database Management,Jisheng Pang,M,,Databases
 Franklin College,2025-26,Su,COMP*645,Q1WW,Objct-Oriented Design & Prac,Roger Engle,M,,Software engineering
 Franklin College,2025-26,Su,COMP*655,Q1WW,Distributed Systems,Chunbo Chu,M,,Distributed systems
@@ -108,8 +108,8 @@ Franklin College,2026-27,F,COMP*511,U1FF,Foundation Data Struc & Obj Or,,TBD,,Co
 Franklin College,2026-27,F,COMP*511,U1WW,Data Struc & Obj Orntd Design,,M,,Core
 Franklin College,2026-27,F,COMP*611,U1FF,Adv Data Structure and Program,,TBD,,Core
 Franklin College,2026-27,F,COMP*611,U1WW,Adv Data Structure and Program,,,,Core
-Franklin College,2026-27,F,COMP*620,R1FF,Analysis of Algorithms,,TBD,,Algorithms & complexity
-Franklin College,2026-27,F,COMP*620,R1WW,Analysis of Algorithms,,,,Algorithms & complexity
+Franklin College,2026-27,F,COMP*620,R1FF,Analysis of Algorithms,,TBD,,Core
+Franklin College,2026-27,F,COMP*620,R1WW,Analysis of Algorithms,,,,Core
 Franklin College,2026-27,F,COMP*630,U1FF,Issues/Database Management,,TBD,,Databases
 Franklin College,2026-27,F,COMP*630,U1WW,Issues/Database Management,,M,,Databases
 Franklin College,2026-27,F,COMP*650,Q1WW,Syst Architecture/Engineering,,M,,Software engineering
@@ -153,8 +153,8 @@ Franklin College,2026-27,S,COMP*511,U1FF,Foundation Data Struc & Obj Or,,TBD,,Co
 Franklin College,2026-27,S,COMP*511,U1WW,Foundation Data Struc & Obj Or,,M,,Core
 Franklin College,2026-27,S,COMP*611,U1FF,Adv Data Structure and Program,,W 6:00 PM - 9:40 PM,,Core
 Franklin College,2026-27,S,COMP*611,U1WW,Adv Data Structure and Program,,W 6:00 PM - 9:40 PM,,Core
-Franklin College,2026-27,S,COMP*620,R1FF,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Algorithms & complexity
-Franklin College,2026-27,S,COMP*620,R1WW,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Algorithms & complexity
+Franklin College,2026-27,S,COMP*620,R1FF,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Core
+Franklin College,2026-27,S,COMP*620,R1WW,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Core
 Franklin College,2026-27,S,COMP*630,U1FF,Issues/Database Management,,TBD,,Databases
 Franklin College,2026-27,S,COMP*630,U1WW,Issues/Database Management,,M,,Databases
 Franklin College,2026-27,S,COMP*645,Q1WW,Objct-Oriented Design & Prac,,M,,Software engineering
@@ -187,7 +187,7 @@ Franklin College,2026-27,Su,COMP*495,Q1WW,Comp Sci Practicum III/Cpstn,,M,,Misc
 Franklin College,2026-27,Su,COMP*501,Q1WW,Foundations of Programming,,M,,Core
 Franklin College,2026-27,Su,COMP*511,Q1WW,Data Struc & Obj Orntd Design,,M,,Core
 Franklin College,2026-27,Su,COMP*611,Q1WW,Adv Data Structure and Program,,M,,Core
-Franklin College,2026-27,Su,COMP*620,Q1WW,Analysis of Algorithms,,M,,Algorithms & complexity
+Franklin College,2026-27,Su,COMP*620,Q1WW,Analysis of Algorithms,,M,,Core
 Franklin College,2026-27,Su,COMP*630,Q1WW,Issues/Database Management,,M,,Databases
 Franklin College,2026-27,Su,COMP*650,Q1WW,Syst Architecture/Engineering,,M,,Software engineering
 Franklin College,2026-27,Su,COMP*670,Q1WW,App of Artificial Intelligence,,M,,Artificial intelligence

@@ -34,7 +34,7 @@ St. Olaf College,2021-22,S,CSCI 273,B,Operating Systems,"Jensen, Elizabeth A.",M
 St. Olaf College,2021-22,S,CSCI 284,,Mobile Computing Apps,"Brown, Richard",MWF 0200-0255PM,,Mobile computing
 St. Olaf College,2021-22,S,CSCI 294,,Academic Internship,Staff,,,Misc
 St. Olaf College,2021-22,S,CSCI 298,,IS/,Staff,,,Misc
-St. Olaf College,2021-22,S,CSCI 353,,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 1045-1140,,Algorithms & complexity
+St. Olaf College,2021-22,S,CSCI 353,,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 1045-1140,,Core
 St. Olaf College,2021-22,S,CSCI 390,,Sem: Senior Capstone,"Hall-Holt, Olaf A.",MWF 1255-0150PM,,Misc
 St. Olaf College,2021-22,S,CSCI 394,,Academic Internship,Staff,,,Misc
 St. Olaf College,2021-22,S,CSCI 398,,IR/,Staff,,,Misc
@@ -51,7 +51,7 @@ St. Olaf College,2022-23,F,CSCI 294,A,Academic Internship,"Matsuura, Ryota",,,Mi
 St. Olaf College,2022-23,F,CSCI 294,B,Academic Internship,"Davila, Jaime I.",,,Misc
 St. Olaf College,2022-23,F,CSCI 294,C,Academic Internship,"Kondrakunta, Sravya",,,Misc
 St. Olaf College,2022-23,F,CSCI 298,,IS/,Staff,,,Misc
-St. Olaf College,2022-23,F,CSCI 353,,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 1255-0150PM,,Algorithms & complexity
+St. Olaf College,2022-23,F,CSCI 353,,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 1255-0150PM,,Core
 St. Olaf College,2022-23,F,CSCI 379,A,Foundations of A.I.,"Kondrakunta, Sravya",T 0935-1100 <br>Th 0930-1050,,Artificial intelligence
 St. Olaf College,2022-23,F,CSCI 379,B,Foundations of A.I.,"Kondrakunta, Sravya",T 1145-0110PM<br>Th 1245-0205PM,,Artificial intelligence
 St. Olaf College,2022-23,F,CSCI 390,,Sem: Senior Capstone,"Hall-Holt, Olaf A.",MWF 0200-0255PM,,Misc
@@ -78,7 +78,7 @@ St. Olaf College,2022-23,S,CSCI 294,B,Academic Internship,"Kondrakunta, Sravya",
 St. Olaf College,2022-23,S,CSCI 298,,IS/,Staff,,,Misc
 St. Olaf College,2022-23,S,CSCI 298,A,IS/Computational Imaging,"Wright, Matthew",,,Computer vision
 St. Olaf College,2022-23,S,CSCI 333,,Theory of Computation,"Richey, Matthew",MWF 1255-0150PM,,Algorithms & complexity
-St. Olaf College,2022-23,S,CSCI 353,,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 0200-0255PM,,Algorithms & complexity
+St. Olaf College,2022-23,S,CSCI 353,,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 0200-0255PM,,Core
 St. Olaf College,2022-23,S,CSCI 390,A,Sem: Senior Capstone,"Hall-Holt, Olaf A.",MWF 0800-0855,,Misc
 St. Olaf College,2022-23,S,CSCI 390,B,Sem: Senior Capstone,"Jensen, Elizabeth A.",MWF 0200-0255PM,,Misc
 St. Olaf College,2022-23,S,CSCI 394,,Academic Internship,Staff,,,Misc
@@ -98,7 +98,7 @@ St. Olaf College,2023-24,F,CSCI 294,A,Academic Internship,"Matsuura, Ryota",,,Mi
 St. Olaf College,2023-24,F,CSCI 294,B,Academic Internship,"Kondrakunta, Sravya",,,Misc
 St. Olaf College,2023-24,F,CSCI 298,,IS/,Staff,,,Misc
 St. Olaf College,2023-24,F,CSCI 298,A,IS/Research on Genomics Analysis,"Davila, Jaime I.",,,Computational bio & bioinformatics
-St. Olaf College,2023-24,F,CSCI 353,,Analysis of Algorithms,"Lynn, Melissa K.",MWF 0200-0255PM,,Algorithms & complexity
+St. Olaf College,2023-24,F,CSCI 353,,Analysis of Algorithms,"Lynn, Melissa K.",MWF 0200-0255PM,,Core
 St. Olaf College,2023-24,F,CSCI 379,,Foundations of A.I.,"Kondrakunta, Sravya",MWF 1255-0150PM,,Artificial intelligence
 St. Olaf College,2023-24,F,CSCI 394,,Academic Internship,Staff,,,Misc
 St. Olaf College,2023-24,F,CSCI 398,,IR/,Staff,,,Misc
@@ -119,7 +119,7 @@ St. Olaf College,2023-24,S,CSCI 294,,Academic Internship,Staff,,,Misc
 St. Olaf College,2023-24,S,CSCI 294,A,Academic Internship,"Kondrakunta, Sravya",,,Misc
 St. Olaf College,2023-24,S,CSCI 298,,IS/,Staff,,,Misc
 St. Olaf College,2023-24,S,CSCI 333,,Theory of Computation,"Lynn, Melissa K.",MWF 0200-0255PM,,Algorithms & complexity
-St. Olaf College,2023-24,S,CSCI 353,,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 0800-0855,,Algorithms & complexity
+St. Olaf College,2023-24,S,CSCI 353,,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 0800-0855,,Core
 St. Olaf College,2023-24,S,CSCI 390,,Sem: Senior Capstone,"Kondrakunta, Sravya",MWF 1150-1245PM,,Misc
 St. Olaf College,2023-24,S,CSCI 394,,Academic Internship,Staff,,,Misc
 St. Olaf College,2023-24,S,CSCI 398,,IR/,Staff,,,Misc
@@ -136,8 +136,8 @@ St. Olaf College,2024-25,F,CSCI 294,A,Academic Internship,"Mandery, Kim",,,Misc
 St. Olaf College,2024-25,F,CSCI 298,A,IS/Quantum Computing,"Haydock, Michael",,,Quantum computing
 St. Olaf College,2024-25,F,CSCI 298,B,IS/Quantum Computing,"Haydock, Michael",,,Quantum computing
 St. Olaf College,2024-25,F,CSCI 333,,Theory of Computation,"Davila, Jaime I.",MWF 0800-0855,,Algorithms & complexity
-St. Olaf College,2024-25,F,CSCI 353,A,Analysis of Algorithms,"Lynn, Melissa K.",MWF 1045-1140,,Algorithms & complexity
-St. Olaf College,2024-25,F,CSCI 353,B,Analysis of Algorithms,"Lynn, Melissa K.",MWF 1150-1245PM,,Algorithms & complexity
+St. Olaf College,2024-25,F,CSCI 353,A,Analysis of Algorithms,"Lynn, Melissa K.",MWF 1045-1140,,Core
+St. Olaf College,2024-25,F,CSCI 353,B,Analysis of Algorithms,"Lynn, Melissa K.",MWF 1150-1245PM,,Core
 St. Olaf College,2024-25,W,CSCI 394,A,Academic Internship,"Gittins, Peter J.",,,Misc
 St. Olaf College,2024-25,S,CSCI 121,,Principles Comp Sci,"Mandery, Kim",MWF 1150-1245PM,,Core
 St. Olaf College,2024-25,S,CSCI 125,,Comp Sci for Science/Math,"Mandery, Kim",MWF 1255-0150PM,,Other
@@ -166,8 +166,8 @@ St. Olaf College,2025-26,F,CSCI 294,A,Academic Internship,"Matsuura, Ryota",,,Mi
 St. Olaf College,2025-26,F,CSCI 294,B,Academic Internship,"Matsuura, Ryota",,,Misc
 St. Olaf College,2025-26,F,CSCI 298,A,IS/3D Modeling and Animation,"Nelson, Peter B.",,,Computer graphics
 St. Olaf College,2025-26,F,CSCI 300,,Top: Quantum Computing,"Haydock, Michael",MWF 0800-0855,,Quantum computing
-St. Olaf College,2025-26,F,CSCI 353,A,Analysis of Algorithms,"Lynn, Melissa K.",MWF 1255-0150PM,,Algorithms & complexity
-St. Olaf College,2025-26,F,CSCI 353,B,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 1255-0150PM,,Algorithms & complexity
+St. Olaf College,2025-26,F,CSCI 353,A,Analysis of Algorithms,"Lynn, Melissa K.",MWF 1255-0150PM,,Core
+St. Olaf College,2025-26,F,CSCI 353,B,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 1255-0150PM,,Core
 St. Olaf College,2025-26,W,CSCI 121,,Principles Comp Sci,"Houssou, Kodjo",M-F 1040-1240PM<br>M-F 0100-0300PM,,Core
 St. Olaf College,2025-26,W,CSCI 200,A,Top: Intro to Cybersecurity,"Leeson, Will E.",M-F 1040-1240PM<br>M-F 0100-0300PM,,Computer security & privacy
 St. Olaf College,2025-26,W,CSCI 200,B,Top: Intro to Machine Learning,"Mandery, Kim",M-F 1040-1240PM<br>M-F 0100-0300PM,,Machine learning
@@ -190,8 +190,8 @@ St. Olaf College,2025-26,S,CSCI 298,B,IS/AI Literacy in Education,"Mandery, Kim"
 St. Olaf College,2025-26,S,CSCI 298,C,IS/Designing a Video Gaming Course,"Mandery, Kim",,,Games & interactive art
 St. Olaf College,2025-26,S,CSCI 298,D,IS/Coding with Physical Objects,"Mandery, Kim",,,Embedded & real-time systems
 St. Olaf College,2025-26,S,CSCI 333,,Theory of Computation,"Davila, Jaime I.",MWF 0800-0855,,Algorithms & complexity
-St. Olaf College,2025-26,S,CSCI 353,A,Analysis of Algorithms,"Lynn, Melissa K.",MWF 0905-1000,,Algorithms & complexity
-St. Olaf College,2025-26,S,CSCI 353,B,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 1045-1140,,Algorithms & complexity
+St. Olaf College,2025-26,S,CSCI 353,A,Analysis of Algorithms,"Lynn, Melissa K.",MWF 0905-1000,,Core
+St. Olaf College,2025-26,S,CSCI 353,B,Analysis of Algorithms,"Hall-Holt, Olaf A.",MWF 1045-1140,,Core
 St. Olaf College,2025-26,S,CSCI 379,A,Foundations of A.I.,"Leeson, Will E.",T 0800-0925 <br>Th 0800-0920,,Artificial intelligence
 St. Olaf College,2025-26,S,CSCI 379,B,Foundations of A.I.,"Leeson, Will E.",T 0935-1100 <br>Th 0930-1050,,Artificial intelligence
 St. Olaf College,2025-26,S,CSCI 394,A,Academic Internship,"Matsuura, Ryota",,,Misc

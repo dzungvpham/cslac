@@ -9,7 +9,7 @@ Bowdoin College,2021-22,F,CSCI 1103,L1,Programming with Data,"Chown, Eric","F 11
 Bowdoin College,2021-22,F,CSCI 2101,A,Data Structures,"Majercik, Stephen","T R 8:30am-9:55am, Searles Science Building-128",,Core
 Bowdoin College,2021-22,F,CSCI 2101,B,Data Structures,"Barker, Sean","M W F 10:05am-11:30am, Searles Science Building-128",,Core
 Bowdoin College,2021-22,F,CSCI 2101,LA1,Data Structures,"Majercik, Stephen","M 8:30am-9:55am, Searles Science Building-128",,Core
-Bowdoin College,2021-22,F,CSCI 2200,,Algorithms,"Toma, Laura","M W F 10:05am-11:30am, Searles Science Building-223",,Algorithms & complexity
+Bowdoin College,2021-22,F,CSCI 2200,,Algorithms,"Toma, Laura","M W F 10:05am-11:30am, Searles Science Building-223",,Core
 Bowdoin College,2021-22,F,CSCI 2210,,Theory of Computation,"Freire, Cibele","T R 11:40am-1:05pm, Searles Science Building-223",,Algorithms & complexity
 Bowdoin College,2021-22,F,CSCI 2330,,Computer Systems,"Barker, Sean","M W F 11:40am-1:05pm, Searles Science Building-223",,Computer architecture
 Bowdoin College,2021-22,F,CSCI 2400,,Artificial Intelligence,"Byrd, David","T R 2:50pm-4:15pm, Searles Science Building-223",,Artificial intelligence
@@ -20,7 +20,7 @@ Bowdoin College,2021-22,S,CSCI 1101,,Intro to Computer Science,"Freire, Cibele",
 Bowdoin College,2021-22,S,CSCI 1101,L1,Intro to Computer Science,"Freire, Cibele","F 1:15pm-2:40pm, Searles Science Building-128",,Core
 Bowdoin College,2021-22,S,CSCI 2101,A,Data Structures,"Majercik, Stephen","M T R 8:30am-9:55am, Searles Science Building-128",,Core
 Bowdoin College,2021-22,S,CSCI 2101,B,Data Structures,"Toma, Laura","M W F 10:05am-11:30am, Searles Science Building-128",,Core
-Bowdoin College,2021-22,S,CSCI 2200,,Algorithms,"Toma, Laura","M W F 11:40am-1:05pm, Searles Science Building-223",,Algorithms & complexity
+Bowdoin College,2021-22,S,CSCI 2200,,Algorithms,"Toma, Laura","M W F 11:40am-1:05pm, Searles Science Building-223",,Core
 Bowdoin College,2021-22,S,CSCI 2320,,Principles of Programming Lang,"Irfan, Mohammad","T R 1:15pm-2:40pm, Visual Arts Center-NORTH",,Programming languages
 Bowdoin College,2021-22,S,CSCI 2330,,Computer Systems,"Houser, Stephen","T R F 2:50pm-4:15pm, Searles Science Building-223",,Computer architecture
 Bowdoin College,2021-22,S,CSCI 2350,,Social and Economic Networks,"Irfan, Mohammad","T R 10:05am-11:30am, Visual Arts Center-NORTH",,Computational social science
@@ -36,10 +36,10 @@ Bowdoin College,2022-23,F,CSCI 1103,L1,Programming with Data,"Presler-Marshall, 
 Bowdoin College,2022-23,F,CSCI 2101,A,Data Structures,"Harmon, Sarah","T R 8:30am-9:55am, Searles Science Building-128",,Core
 Bowdoin College,2022-23,F,CSCI 2101,B,Data Structures,"Byrd, David","M W F 11:40am-1:05pm, Searles Science Building-128",,Core
 Bowdoin College,2022-23,F,CSCI 2101,LA1,Data Structures,"Harmon, Sarah","M 8:30am-9:55am, Searles Science Building-128",,Core
-Bowdoin College,2022-23,F,CSCI 2200,A,Algorithms,"Toma, Laura","M W 10:05am-11:30am, Searles Science Building-126",,Algorithms & complexity
-Bowdoin College,2022-23,F,CSCI 2200,B,Algorithms,"Toma, Laura","T R 11:40am-1:05pm, Searles Science Building-126",,Algorithms & complexity
-Bowdoin College,2022-23,F,CSCI 2200,LA1,Algorithms,"Toma, Laura","R 1:15pm-2:45pm, Visual Arts Center-SOUTH",,Algorithms & complexity
-Bowdoin College,2022-23,F,CSCI 2200,LB1,Algorithms,"Toma, Laura","R 2:45pm-4:15pm, Visual Arts Center-SOUTH",,Algorithms & complexity
+Bowdoin College,2022-23,F,CSCI 2200,A,Algorithms,"Toma, Laura","M W 10:05am-11:30am, Searles Science Building-126",,Core
+Bowdoin College,2022-23,F,CSCI 2200,B,Algorithms,"Toma, Laura","T R 11:40am-1:05pm, Searles Science Building-126",,Core
+Bowdoin College,2022-23,F,CSCI 2200,LA1,Algorithms,"Toma, Laura","R 1:15pm-2:45pm, Visual Arts Center-SOUTH",,Core
+Bowdoin College,2022-23,F,CSCI 2200,LB1,Algorithms,"Toma, Laura","R 2:45pm-4:15pm, Visual Arts Center-SOUTH",,Core
 Bowdoin College,2022-23,F,CSCI 2210,,Theory of Computation,"Freire, Cibele","T R 2:50pm-4:15pm, Searles Science Building-223",,Algorithms & complexity
 Bowdoin College,2022-23,F,CSCI 2330,,Computer Systems,"Barker, Sean","M W F 10:05am-11:30am, Searles Science Building-223",,Computer architecture
 Bowdoin College,2022-23,F,CSCI 2335,,Software Engineering,"Presler-Marshall, Kai","T R 10:05am-11:30am, Searles Science Building-223",,Software engineering
@@ -61,8 +61,8 @@ Bowdoin College,2022-23,S,CSCI 2101,A,Data Structures,"Harmon, Sarah","M W 10:05
 Bowdoin College,2022-23,S,CSCI 2101,B,Data Structures,"Byrd, David","T R 11:40am-1:05pm, Searles Science Building-126",,Core
 Bowdoin College,2022-23,S,CSCI 2101,LA1,Data Structures,"Harmon, Sarah","F 10:05am-11:30am, Searles Science Building-117",,Core
 Bowdoin College,2022-23,S,CSCI 2101,LB1,Data Structures,"Byrd, David","F 11:40am-1:05pm, Searles Science Building-126",,Core
-Bowdoin College,2022-23,S,CSCI 2200,,Algorithms,"Toma, Laura","T R 10:05am-11:30am, Searles Science Building-126",,Algorithms & complexity
-Bowdoin College,2022-23,S,CSCI 2200,L1,Algorithms,"Toma, Laura","F 11:40am-1:05pm, Visual Arts Center-NORTH",,Algorithms & complexity
+Bowdoin College,2022-23,S,CSCI 2200,,Algorithms,"Toma, Laura","T R 10:05am-11:30am, Searles Science Building-126",,Core
+Bowdoin College,2022-23,S,CSCI 2200,L1,Algorithms,"Toma, Laura","F 11:40am-1:05pm, Visual Arts Center-NORTH",,Core
 Bowdoin College,2022-23,S,CSCI 2330,A,Computer Systems,"Barker, Sean","T R 8:30am-9:55am, Searles Science Building-223",,Computer architecture
 Bowdoin College,2022-23,S,CSCI 2330,B,Computer Systems,"Barker, Sean","T R 10:05am-11:30am, Searles Science Building-223",,Computer architecture
 Bowdoin College,2022-23,S,CSCI 2330,LA1,Computer Systems,"Barker, Sean","F 10:05am-11:30am, Searles Science Building-223",,Computer architecture
@@ -86,8 +86,8 @@ Bowdoin College,2023-24,F,CSCI 2101,C,Data Structures,"Presler-Marshall, Kai","M
 Bowdoin College,2023-24,F,CSCI 2101,LA1,Data Structures,"Harmon, Sarah","F 11:40am-1:05pm, Searles Science Building-117",,Core
 Bowdoin College,2023-24,F,CSCI 2101,LB1,Data Structures,"Byrd, David","F 10:05am-11:30am, MIlls Hall-103",,Core
 Bowdoin College,2023-24,F,CSCI 2101,LC1,Data Structures,"Presler-Marshall, Kai","R 10:05am-11:30am, Searles Science Building-128",,Core
-Bowdoin College,2023-24,F,CSCI 2200,,Algorithms,"Toma, Laura","T R 11:40am-1:05pm, Searles Science Building-126",,Algorithms & complexity
-Bowdoin College,2023-24,F,CSCI 2200,L1,Algorithms,"Toma, Laura","F 11:40am-1:05pm, Visual Arts Center-NORTH",,Algorithms & complexity
+Bowdoin College,2023-24,F,CSCI 2200,,Algorithms,"Toma, Laura","T R 11:40am-1:05pm, Searles Science Building-126",,Core
+Bowdoin College,2023-24,F,CSCI 2200,L1,Algorithms,"Toma, Laura","F 11:40am-1:05pm, Visual Arts Center-NORTH",,Core
 Bowdoin College,2023-24,F,CSCI 2210,,Theory of Computation,"Morehouse, Ed","M W 10:05am-11:30am, Searles Science Building-223",,Algorithms & complexity
 Bowdoin College,2023-24,F,CSCI 2320,,Principles of Programming Lang,"Irfan, Mohammad","T R 1:15pm-2:40pm, MIlls Hall-127",,Programming languages
 Bowdoin College,2023-24,F,CSCI 2330,,Computer Systems,"Barker, Sean","T R 10:05am-11:30am, Searles Science Building-223",,Computer architecture
@@ -109,9 +109,9 @@ Bowdoin College,2023-24,S,CSCI 2101,A,Data Structures,"Harmon, Sarah","T R 8:30a
 Bowdoin College,2023-24,S,CSCI 2101,B,Data Structures,"Byrd, David","T R 11:40am-1:05pm, MIlls Hall-103",,Core
 Bowdoin College,2023-24,S,CSCI 2101,LA1,Data Structures,"Harmon, Sarah","F 11:40am-1:05pm, Searles Science Building-128",,Core
 Bowdoin College,2023-24,S,CSCI 2101,LB1,Data Structures,"Byrd, David","F 11:40am-1:05pm, MIlls Hall-103",,Core
-Bowdoin College,2023-24,S,CSCI 2200,,Algorithms,"Toma, Laura","M W 10:05am-11:30am, Searles Science Building-223",,Algorithms & complexity
-Bowdoin College,2023-24,S,CSCI 2200,L1,Algorithms,"Toma, Laura","F 10:05am-11:30am, Visual Arts Center- NORTH",,Algorithms & complexity
-Bowdoin College,2023-24,S,CSCI 2200,L2,Algorithms,"Toma, Laura","F 11:40am-1:05pm, Visual Arts Center- NORTH",,Algorithms & complexity
+Bowdoin College,2023-24,S,CSCI 2200,,Algorithms,"Toma, Laura","M W 10:05am-11:30am, Searles Science Building-223",,Core
+Bowdoin College,2023-24,S,CSCI 2200,L1,Algorithms,"Toma, Laura","F 10:05am-11:30am, Visual Arts Center- NORTH",,Core
+Bowdoin College,2023-24,S,CSCI 2200,L2,Algorithms,"Toma, Laura","F 11:40am-1:05pm, Visual Arts Center- NORTH",,Core
 Bowdoin College,2023-24,S,CSCI 2320,,Principles of Programming Lang,"Weimer, Westley","T R 2:50pm-4:15pm, Searles Science Building-223",,Programming languages
 Bowdoin College,2023-24,S,CSCI 2330,,Computer Systems,"Barker, Sean","M W F 11:40am-1:05pm, Searles Science Building-223",,Computer architecture
 Bowdoin College,2023-24,S,CSCI 2335,,Software Engineering,"Presler-Marshall, Kai","M W 2:50pm-4:15pm, Visual Arts Center- NORTH",,Software engineering
@@ -129,9 +129,9 @@ Bowdoin College,2024-25,F,CSCI 1101,C,Intro to Computer Science,"Braun, Christop
 Bowdoin College,2024-25,F,CSCI 1103,,Accelerated Intro,"Irfan, Mohammad","T R 1:15pm-2:40pm, MIlls Hall-210",,Core
 Bowdoin College,2024-25,F,CSCI 2101,A,Data Structures I,"Harmon, Sarah","T R 8:30am-9:55am, Searles Science Building-223",,Core
 Bowdoin College,2024-25,F,CSCI 2101,B,Data Structures I,"Braun, Christopher","M W 11:40am-1:05pm, Searles Science Building-223",,Core
-Bowdoin College,2024-25,F,CSCI 2200,,Algorithms,"Toma, Laura","M W 10:05am-11:30am, Searles Science Building-223",,Algorithms & complexity
-Bowdoin College,2024-25,F,CSCI 2200,L1,Algorithms,"Toma, Laura","F 10:05am-11:30am, Searles Science Building-223",,Algorithms & complexity
-Bowdoin College,2024-25,F,CSCI 2200,L2,Algorithms,"Freire, Cibele","F 11:40am-1:05pm, Searles Science Building-223",,Algorithms & complexity
+Bowdoin College,2024-25,F,CSCI 2200,,Algorithms,"Toma, Laura","M W 10:05am-11:30am, Searles Science Building-223",,Core
+Bowdoin College,2024-25,F,CSCI 2200,L1,Algorithms,"Toma, Laura","F 10:05am-11:30am, Searles Science Building-223",,Core
+Bowdoin College,2024-25,F,CSCI 2200,L2,Algorithms,"Freire, Cibele","F 11:40am-1:05pm, Searles Science Building-223",,Core
 Bowdoin College,2024-25,F,CSCI 2210,,Theory of Computation,"Freire, Cibele","M W 2:50pm-4:15pm, Searles Science Building-223",,Algorithms & complexity
 Bowdoin College,2024-25,F,CSCI 2330,,Computer Systems,"Houser, Stephen","T R 8:30am-9:55am, Searles Science Building-126",,Computer architecture
 Bowdoin College,2024-25,F,CSCI 2330,L1,Computer Systems,"Houser, Stephen","F 8:30am-9:55am, Searles Science Building-126",,Computer architecture
@@ -158,7 +158,7 @@ Bowdoin College,2025-26,F,CSCI 1101,C,Introduction to Computer Science,"Chris Br
 Bowdoin College,2025-26,F,CSCI 2100,0,Accelerated Data Structures and Advanced Programming I,Sarah M. Harmon,TR | 1:15 PM - 2:40 PM,,Core
 Bowdoin College,2025-26,F,CSCI 2101,0,Data Structures and Advanced Programming I,Christopher Martin,MW | 1:15 PM - 2:40 PM,,Core
 Bowdoin College,2025-26,F,CSCI 2102,0,Data Structures and Advanced Programming II,Cibele Freire,TR | 2:50 PM - 4:15 PM,,Core
-Bowdoin College,2025-26,F,CSCI 2200,0,Algorithms,Cibele Freire,TR | 11:40 AM - 1:05 PM,,Algorithms & complexity
+Bowdoin College,2025-26,F,CSCI 2200,0,Algorithms,Cibele Freire,TR | 11:40 AM - 1:05 PM,,Core
 Bowdoin College,2025-26,F,CSCI 2330,B,Foundations of Computer Systems,"Jeffrey Alan Knockel, Sean K Barker",MWF | 10:05 AM - 11:30 AM,,Computer architecture
 Bowdoin College,2025-26,F,CSCI 2350,0,Social and Economic Networks,Mohammad T Irfan,MW | 11:40 AM - 1:05 PM,,Computational social science
 Bowdoin College,2025-26,F,CSCI 2400,0,Artificial Intelligence,Jeova Farias,TR | 2:50 PM - 4:15 PM,,Artificial intelligence
@@ -174,7 +174,7 @@ Bowdoin College,2025-26,S,CSCI 1101,LC1,Introduction to Computer Science,Jeffrey
 Bowdoin College,2025-26,S,CSCI 2101,A,Data Structures and Advanced Programming I,Christopher Martin,"MW | 1:15 PM - 2:40 PM, Searles Science Building - 128",,Core
 Bowdoin College,2025-26,S,CSCI 2101,B,Data Structures and Advanced Programming I,Sarah M. Harmon,"TR | 1:15 PM - 2:40 PM, Mills Hall - 105",,Core
 Bowdoin College,2025-26,S,CSCI 2102,0,Data Structures and Advanced Programming II,Cibele Freire,"TR | 11:40 AM - 1:05 PM, Searles Science Building - 223",,Core
-Bowdoin College,2025-26,S,CSCI 2200,0,Algorithms,Bobak Toussi Kiani,"TR | 11:40 AM - 1:05 PM, Searles Science Building - 126",,Algorithms & complexity
+Bowdoin College,2025-26,S,CSCI 2200,0,Algorithms,Bobak Toussi Kiani,"TR | 11:40 AM - 1:05 PM, Searles Science Building - 126",,Core
 Bowdoin College,2025-26,S,CSCI 2320,0,Principles of Programming Languages,Mohammad T Irfan,"MW | 2:50 PM - 4:15 PM, Mills Hall - 210",,Programming languages
 Bowdoin College,2025-26,S,CSCI 2330,0,Foundations of Computer Systems,Sean K Barker,"MWF | 10:05 AM - 11:30 AM, Searles Science Building - 223",,Computer architecture
 Bowdoin College,2025-26,S,CSCI 2400,0,Artificial Intelligence,David Byrd,"MW | 2:50 PM - 4:15 PM, Visual Arts Center - 304 - North",,Artificial intelligence

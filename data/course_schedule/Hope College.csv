@@ -7,7 +7,7 @@ Hope College,2021-22,F,CSCI 140,02,Business Computing,"Hilldore, Amanda J.",TR 1
 Hope College,2021-22,F,CSCI 195,01A,Studies in Computer Science,"McFall, Ryan L.",MTWF 11:00am-11:50am,,Other
 Hope College,2021-22,F,CSCI 235,01,Data Structures& Software Dsgn,"Olagbemi, Omofolakunmi E.",F 1:00pm-1:50pm / TR 1:30pm-2:50pm,,Core
 Hope College,2021-22,F,CSCI 245,01,Programming Lang & Paradigms,"DeJongh, Matthew",MWF 12:00pm-12:50pm,,Programming languages
-Hope College,2021-22,F,CSCI 255,01,Algorithms & Discr Structures,"Cusack, Charles A.",MW 2:00pm-3:20pm / F 2:00pm-2:50pm,,Algorithms & complexity
+Hope College,2021-22,F,CSCI 255,01,Algorithms & Discr Structures,"Cusack, Charles A.",MW 2:00pm-3:20pm / F 2:00pm-2:50pm,,Core
 Hope College,2021-22,F,CSCI 295,01,Studies in Computer Science,"Jipping, Michael J.",TR 12:00pm-1:20pm,,Other
 Hope College,2021-22,F,CSCI 336,01,Computer & Network Security,"Jipping, Michael J.",TR 9:30am-10:50am / F 9:30am-10:20am,,Computer security & privacy
 Hope College,2021-22,F,CSCI 392,01,Database Systems,"McFall, Ryan L.",TF 8:00am-9:20am / R 8:30am-9:20am,,Databases
@@ -55,7 +55,7 @@ Hope College,2022-23,F,CSCI 140,02,Business Computing,"Hilldore, Amanda J.",TR 1
 Hope College,2022-23,F,CSCI 195,01A,Studies in Computer Science,,TBA,,Other
 Hope College,2022-23,F,CSCI 235,01,Data Structures& Software Dsgn,"Olagbemi, Omofolakunmi E.",TR 12:00pm-1:20pm / F 12:00pm-12:50pm,,Core
 Hope College,2022-23,F,CSCI 245,01,Programming Lang & Paradigms,"McFall, Ryan L.",MWF 8:30am-9:20am,,Programming languages
-Hope College,2022-23,F,CSCI 255,01,Algorithms & Discr Structures,"Cusack, Charles A.",MW 1:00pm-2:20pm / F 1:00pm-1:50pm,,Algorithms & complexity
+Hope College,2022-23,F,CSCI 255,01,Algorithms & Discr Structures,"Cusack, Charles A.",MW 1:00pm-2:20pm / F 1:00pm-1:50pm,,Core
 Hope College,2022-23,F,CSCI 295,01,Studies in Computer Science,"Jipping, Michael J.",TR 10:00am-10:50am,,Other
 Hope College,2022-23,F,CSCI 321,01,Applications Programming,"Anderson, Shawn M.",TR 8:00am-9:50am,,Software engineering
 Hope College,2022-23,F,CSCI 342,01,Computer Graphics,"McFall, Ryan L.",TR 1:30pm-2:50pm / F 2:00pm-2:50pm,,Computer graphics
@@ -103,7 +103,7 @@ Hope College,2023-24,F,CSCI 140,01,Business Computing,"Hilldore, Amanda J.",TR 9
 Hope College,2023-24,F,CSCI 140,02,Business Computing,"Hilldore, Amanda J.",TR 1:30pm-2:50pm,,Other
 Hope College,2023-24,F,CSCI 235,01,Data Structures& Software Dsgn,"Olagbemi, Omofolakunmi E.",TR 12:00pm-1:20pm / F 12:00pm-12:50pm,,Core
 Hope College,2023-24,F,CSCI 245,01,Programming Lang & Paradigms,"McFall, Ryan L.",MWF 9:30am-10:20am,,Programming languages
-Hope College,2023-24,F,CSCI 255,01,Algorithms & Discr Structures,"Cusack, Charles A.",MWF 2:00pm-2:50pm,,Algorithms & complexity
+Hope College,2023-24,F,CSCI 255,01,Algorithms & Discr Structures,"Cusack, Charles A.",MWF 2:00pm-2:50pm,,Core
 Hope College,2023-24,F,CSCI 354,01,Operating Systems,"Jipping, Michael J.",MWF 9:30am-10:20am,,Operating systems
 Hope College,2023-24,F,CSCI 392,01,Database Systems,"McFall, Ryan L.",MWF 1:00pm-1:50pm,,Databases
 Hope College,2023-24,F,CSCI 481,01,Senior Capstone Project I,"McFall, Ryan L.",MW 8:30am-9:20am,,Misc
@@ -153,7 +153,7 @@ Hope College,2024-25,F,CSCI 140,01,Business Computing,"Hilldore, Amanda J.",TR 9
 Hope College,2024-25,F,CSCI 140,02,Business Computing,"Hilldore, Amanda J.",TR 1:30pm-2:50pm,,Other
 Hope College,2024-25,F,CSCI 235,01,Data Structures& Software Dsgn,"Olagbemi, Omofolakunmi E.",TR 9:30am-10:50am / F 9:30am-10:20am,,Core
 Hope College,2024-25,F,CSCI 245,01,Programming Lang & Paradigms,"DeJongh, Matthew",MWF 12:00pm-12:50pm,,Programming languages
-Hope College,2024-25,F,CSCI 255,01,Introduction to Algorithms,"Cusack, Charles A.",MWF 2:00pm-2:50pm,,Algorithms & complexity
+Hope College,2024-25,F,CSCI 255,01,Introduction to Algorithms,"Cusack, Charles A.",MWF 2:00pm-2:50pm,,Core
 Hope College,2024-25,F,CSCI 295,01,Studies in Computer Science,"McFall, Ryan L.",MW 1:00pm-1:50pm,,Other
 Hope College,2024-25,F,CSCI 321,01,Applications Programming,"Anderson, Shawn M.",MWF 8:30am-9:20am,,Software engineering
 Hope College,2024-25,F,CSCI 481,01,Senior Capstone Project I,"McFall, Ryan L.",T 9:00am-10:50am,,Misc
@@ -204,7 +204,7 @@ Hope College,2025-26,F,CSCI 140,01,Spreadsheet Fundamentals,"Hilldore, Amanda J.
 Hope College,2025-26,F,CSCI 140,02,Spreadsheet Fundamentals,"Hilldore, Amanda J.",TR 1:30pm-2:50pm,,Other
 Hope College,2025-26,F,CSCI 235,01,Data Structures& Software Dsgn,"Olagbemi, Omofolakunmi E.",TR 9:30am-10:50am / F 9:30am-10:20am,,Core
 Hope College,2025-26,F,CSCI 245,01,Programming Lang & Paradigms,"Welsh, Catherine",MWF 12:00pm-12:50pm,,Programming languages
-Hope College,2025-26,F,CSCI 255,01,Introduction to Algorithms,"Cusack, Charles A.",MWF 2:00pm-2:50pm,,Algorithms & complexity
+Hope College,2025-26,F,CSCI 255,01,Introduction to Algorithms,"Cusack, Charles A.",MWF 2:00pm-2:50pm,,Core
 Hope College,2025-26,F,CSCI 336,01,Computer & Network Security,"Jipping, Michael J.",MWF 11:00am-11:50am,,Computer security & privacy
 Hope College,2025-26,F,CSCI 392,01,Database Systems,"McFall, Ryan L.",MWF 1:00pm-1:50pm,,Databases
 Hope College,2025-26,F,CSCI 481,01,Senior Capstone Project I,"McFall, Ryan L.",T 9:00am-10:50am,,Misc

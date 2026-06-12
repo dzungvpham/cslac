@@ -603,7 +603,7 @@
       {
         "code": "CS 352X",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -1189,7 +1189,7 @@
       {
         "code": "CSC 210",
         "name": "Algorithm Design and Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -5635,7 +5635,7 @@
       {
         "code": "COSC-311",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://www.amherst.edu/academiclife/departments/courses/2122F/COSC/COSC-311-2122F",
           0,
@@ -9921,7 +9921,7 @@
       {
         "code": "CSC-371",
         "name": "Algorithms & Comp Theory",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -13635,7 +13635,7 @@
       {
         "code": "CSCI 315",
         "name": "Algorithm Design & Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -15345,7 +15345,7 @@
       {
         "code": "CSC 440",
         "name": "Design & Analysis of Algorithm",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -18041,7 +18041,7 @@
       {
         "code": "CSCI 2200",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -20279,7 +20279,7 @@
       {
         "code": "CSCI 320",
         "name": "Algo Analys/Des",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0
@@ -21116,7 +21116,7 @@
       {
         "code": "CMSCB337",
         "name": "Algorithms: Design & Practice",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -21133,7 +21133,7 @@
       {
         "code": "CMSCB340",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -23757,7 +23757,7 @@
       {
         "code": "CSCI 311",
         "name": "Algorithm Design & Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -29278,7 +29278,7 @@
       {
         "code": "CS 252",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -35468,7 +35468,7 @@
       {
         "code": "CSC 370",
         "name": "Design & Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -36917,7 +36917,7 @@
       {
         "code": "CS 215",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://www.coe.edu/download_file/view/21947/766",
           0,
@@ -38266,7 +38266,7 @@
       {
         "code": "CS 375",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://cs.colby.edu/courses.php",
           0,
@@ -38286,7 +38286,7 @@
       {
         "code": "CS 376",
         "name": "Algorithm Design and Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -48115,7 +48115,7 @@
       {
         "code": "CSCI 235",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://www.holycross.edu/document/fall-2025-course-schedule",
           "https://www.holycross.edu/document/spring-2026-schedule-of-classes",
@@ -54463,7 +54463,7 @@
       {
         "code": "COM 304",
         "name": "ALGORITHMS",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -59472,7 +59472,7 @@
       {
         "code": "CSC 321",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -65805,7 +65805,7 @@
       {
         "code": "CS 371",
         "name": "Algorithm Design and Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -70478,7 +70478,7 @@
       {
         "code": "COMP 332",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -73844,7 +73844,7 @@
       {
         "code": "CSCI 370",
         "name": "Algorithm Analysis and Computability",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           "https://selfservice.drew.edu/prod/bwckschd.p_disp_detail_sched?term_in=202230&crn_in=30165",
@@ -75077,7 +75077,7 @@
       {
         "code": "CS 310",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -77988,7 +77988,7 @@
       {
         "code": "COMP*620",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -82199,7 +82199,7 @@
       {
         "code": "CS 203-AW",
         "name": "Algorithms & Data Structures",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -85989,7 +85989,7 @@
       {
         "code": "CS 330",
         "name": "Analysis of Computer Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -86869,7 +86869,7 @@
       {
         "code": "CSC-301",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -93577,7 +93577,7 @@
       {
         "code": "COMS 460",
         "name": "Algorithms/",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -96317,7 +96317,7 @@
       {
         "code": "CSCI-140",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -104639,7 +104639,7 @@
       {
         "code": "CMSCH340A",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://www.haverford.edu/academics/courses/haverford/fall_2021/HF21CMSCH340A001",
           0,
@@ -108473,7 +108473,7 @@
       {
         "code": "CSCI 382",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -110985,7 +110985,7 @@
       {
         "code": "CSCI 255",
         "name": "Introduction to Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -114507,7 +114507,7 @@
       {
         "code": "COMP-215",
         "name": "Design & Anal. of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -115874,7 +115874,7 @@
       {
         "code": "CS 205",
         "name": "ALGORITHM DESIGN & ANALYSIS",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -121142,7 +121142,7 @@
       {
         "code": "CS 202",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -128865,7 +128865,7 @@
       {
         "code": "COMP 221",
         "name": "Algorithm Design and Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -134919,7 +134919,7 @@
       {
         "code": "CSCI 0105",
         "name": "Algorithmic World",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -135631,7 +135631,7 @@
       {
         "code": "CSCI 0302",
         "name": "Algorithms and Complexity",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://catalog.middlebury.edu/offerings/view/section-202190-91488",
           0,
@@ -141477,7 +141477,7 @@
       {
         "code": "COMSC-312",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -144600,7 +144600,7 @@
       {
         "code": "CAP 3328",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -146571,7 +146571,7 @@
       {
         "code": "CSCI 280",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -150144,7 +150144,7 @@
       {
         "code": "COMP 317",
         "name": "Algorithms Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -151482,7 +151482,7 @@
       {
         "code": "CS 360",
         "name": "Algorithm Analysis and Design",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -152449,7 +152449,7 @@
       {
         "code": "CSCI-140",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -158629,7 +158629,7 @@
       {
         "code": "CSCI 2256",
         "name": "ALGORITHMS",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -159467,7 +159467,7 @@
       {
         "code": "CSCI 311",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           "https://mymaconweb.rmc.edu/m/d/m/5c62616e-9463-484d-8fd8-180250661411/MyCourses/CourseDetails?erpCourseKey=2021%3B42%3BCSCI%20311%20%2001&add=T",
@@ -164854,7 +164854,7 @@
       {
         "code": "CS 305",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -167693,7 +167693,7 @@
       {
         "code": "CSC 252",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://www.smith.edu/apps/course_search/#csc-252-01-202201",
           0,
@@ -173066,7 +173066,7 @@
       {
         "code": "CSC54-454",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -176969,7 +176969,7 @@
       {
         "code": "COSC 445",
         "name": "DESIGN/ANALYSIS OF ALGORITHMS",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -178139,7 +178139,7 @@
       {
         "code": "CSCI 353",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -179107,7 +179107,7 @@
       {
         "code": "CSC 311",
         "name": "Algorithms & Complexity",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -179906,7 +179906,7 @@
       {
         "code": "CSCI-381",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -182364,7 +182364,7 @@
       {
         "code": "CPSC 041",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -188239,7 +188239,7 @@
       {
         "code": "CPSC-320",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -191928,7 +191928,7 @@
       {
         "code": "CSC-250",
         "name": "Algorithm Design & Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -195883,7 +195883,7 @@
       {
         "code": "CPSC 470B",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           0,
@@ -201622,7 +201622,7 @@
       {
         "code": "CSCI 333",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2021/fall",
           "https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2022/spring",
@@ -204844,7 +204844,7 @@
       {
         "code": "CMSC 315",
         "name": "ALGORITHMS W/ LAB",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -209817,7 +209817,7 @@
       {
         "code": "CMPU-241",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1,
@@ -214489,7 +214489,7 @@
       {
         "code": "CSC-243",
         "name": "Algorithm Design and Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -216492,7 +216492,7 @@
       {
         "code": "CSCI 211",
         "name": "Algorithm Design and Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -218067,7 +218067,7 @@
       {
         "code": "CSI 380",
         "name": "Design & Analysis of Algorithm",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           "https://www.washcoll.edu/people_departments/offices/registrar/course-schedule/25fa-course-schedule.pdf",
@@ -220208,7 +220208,7 @@
       {
         "code": "CS231",
         "name": "Design and Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://www1.wellesley.edu/sites/default/files/assets/fall21_class_schedule_1.pdf",
           "https://www1.wellesley.edu/sites/default/files/assets/spring_2022_course_schedule.pdf",
@@ -231488,7 +231488,7 @@
       {
         "code": "COMP312",
         "name": "Algorithms and Complexity",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse=003338&term=1219",
           0,
@@ -236225,7 +236225,7 @@
       {
         "code": "COMP 318",
         "name": "Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -237587,7 +237587,7 @@
       {
         "code": "CS-327",
         "name": "Algorithm Design & Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -238698,7 +238698,7 @@
       {
         "code": "CS-351",
         "name": "Analysis of Algorithms",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           1,
           1
@@ -241342,7 +241342,7 @@
       {
         "code": "CSCI 256",
         "name": "LEC Algorithm Design & Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           "https://catalog.williams.edu/2122/csci/detail/?strm=1221&cn=256&crsid=010806&req_year=22",
           0,
@@ -247363,7 +247363,7 @@
       {
         "code": "COSC 351",
         "name": "Algorithm Design & Analysis",
-        "category": "Algorithms & complexity",
+        "category": "Core",
         "offered": [
           0,
           "https://connect.wofford.edu/myWofford/registrar/courseSchedule/courseSchedules/courseSchedule202202.pdf",

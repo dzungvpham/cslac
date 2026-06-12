@@ -23,8 +23,8 @@ Bucknell University,2021-22,F,CSCI 205,02,Software Engineering & Design,"King, B
 Bucknell University,2021-22,F,CSCI 278,01,Computer Sci Individual Study,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2021-22,F,CSCI 278,02,Computer Sci Individual Study,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2021-22,F,CSCI 2NT,02,CSCI Non-traditional Study,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
-Bucknell University,2021-22,F,CSCI 311,01,Design&Analysis of Algorithms,"Talmage, Edward L.",MWF 11:10-12:00 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
-Bucknell University,2021-22,F,CSCI 311,02,Design&Analysis of Algorithms,"Talmage, Edward L.",MWF 09:50-10:40 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
+Bucknell University,2021-22,F,CSCI 311,01,Design&Analysis of Algorithms,"Talmage, Edward L.",MWF 11:10-12:00 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
+Bucknell University,2021-22,F,CSCI 311,02,Design&Analysis of Algorithms,"Talmage, Edward L.",MWF 09:50-10:40 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
 Bucknell University,2021-22,F,CSCI 311R,40,Recitation for CSCI 311,"King, Brian R.",Th 08:30-09:20 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2021-22,F,CSCI 311R,41,Recitation for CSCI 311,"King, Brian R.",Th 09:50-10:40 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2021-22,F,CSCI 315,01,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 09:50-10:40 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Operating systems
@@ -129,9 +129,9 @@ Bucknell University,2022-23,F,CSCI 205,02,Software Engineering & Design,"King, B
 Bucknell University,2022-23,F,CSCI 278,01,Computer Sci Individual Study,"Stough, Joshua V.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2022-23,F,CSCI 278,02,Computer Sci Individual Study,"King, Brian R.",,https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2022-23,F,CSCI 2NT,02,CSCI Non-traditional Study,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
-Bucknell University,2022-23,F,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 08:00-08:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
-Bucknell University,2022-23,F,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
-Bucknell University,2022-23,F,CSCI 311,03,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
+Bucknell University,2022-23,F,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 08:00-08:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
+Bucknell University,2022-23,F,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
+Bucknell University,2022-23,F,CSCI 311,03,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
 Bucknell University,2022-23,F,CSCI 311R,40,Recitation for CSCI 311,"Havill, Jessen T.",Th 08:00-08:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2022-23,F,CSCI 311R,41,Recitation for CSCI 311,"Talmage, Edward L.",Th 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2022-23,F,CSCI 311R,42,Recitation for CSCI 311,"Havill, Jessen T.",Th 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
@@ -260,8 +260,8 @@ Bucknell University,2023-24,F,CSCI 278,03,Computer Sci Individual Study,"Perrone
 Bucknell University,2023-24,F,CSCI 2NT,02,CSCI Non-traditional Study,"Meng, Xiannong",,https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2023-24,F,CSCI 306,02,Computer Systems,"Meng, Xiannong",MWF 10:00-10:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Computer architecture
 Bucknell University,2023-24,F,CSCI 306L,60,Lab for Computer Systems,"Marchiori, Alan M.",T 13:00-14:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
-Bucknell University,2023-24,F,CSCI 311,01,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
-Bucknell University,2023-24,F,CSCI 311,02,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 10:00-10:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
+Bucknell University,2023-24,F,CSCI 311,01,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
+Bucknell University,2023-24,F,CSCI 311,02,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 10:00-10:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
 Bucknell University,2023-24,F,CSCI 311R,40,Recitation for CSCI 311,"Gutekunst, Samuel",Th 13:00-13:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2023-24,F,CSCI 311R,41,Recitation for CSCI 311,"Havill, Jessen T.",Th 13:00-13:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2023-24,F,CSCI 315,01,Operating Systems Design,"Meng, Xiannong",MWF 08:00-08:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Operating systems
@@ -335,8 +335,8 @@ Bucknell University,2023-24,S,CSCI 308,02,Programming Language Design,"Havill, J
 Bucknell University,2023-24,S,CSCI 308L,60,Lab-Programming Language Desgn,"Wittie, Lea",Th 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2023-24,S,CSCI 308L,61,Lab-Programming Language Desgn,"Havill, Jessen T.",Th 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2023-24,S,CSCI 308L,62,Lab-Programming Language Desgn,"Lee, SingChun",Th 08:00-09:50 (DANA 325),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
-Bucknell University,2023-24,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 10:00-10:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
-Bucknell University,2023-24,S,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 11:00-11:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
+Bucknell University,2023-24,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 10:00-10:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
+Bucknell University,2023-24,S,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 11:00-11:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
 Bucknell University,2023-24,S,CSCI 311R,40,Recitation for CSCI 311,"Talmage, Edward L.",Th 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2023-24,S,CSCI 311R,41,Recitation for CSCI 311,"Talmage, Edward L.",Th 14:00-14:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2023-24,S,CSCI 332,01,The Internet of Things,"Marchiori, Alan M.",TTh 13:00-14:20 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Embedded & real-time systems
@@ -389,8 +389,8 @@ Bucknell University,2024-25,F,CSCI 306L,60,Lab for Computer Systems,"Havill, Jes
 Bucknell University,2024-25,F,CSCI 306L,61,Lab for Computer Systems,"Kumar, Rajesh",T 15:00-16:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2024-25,F,CSCI 308,01,Programming Language Design,"Lee, SingChun",MWF 09:00-09:50 (DANA 227),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Programming languages
 Bucknell University,2024-25,F,CSCI 308L,60,Lab-Programming Language Desgn,"Lee, SingChun",Th 08:00-09:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
-Bucknell University,2024-25,F,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 13:00-13:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
-Bucknell University,2024-25,F,CSCI 311,02,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 15:00-15:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
+Bucknell University,2024-25,F,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 13:00-13:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
+Bucknell University,2024-25,F,CSCI 311,02,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 15:00-15:50 (BRKI 165),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
 Bucknell University,2024-25,F,CSCI 311R,40,Recitation for CSCI 311,"Talmage, Edward L.",Th 13:00-13:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2024-25,F,CSCI 311R,41,Recitation for CSCI 311,"Gutekunst, Samuel",Th 15:00-15:50 (DANA 134),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2024-25,F,CSCI 315,01,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 11:00-11:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Operating systems
@@ -445,8 +445,8 @@ Bucknell University,2024-25,S,CSCI 307,03,Computer Networks and Security,"Marchi
 Bucknell University,2024-25,S,CSCI 308,01,Programming Language Design,"Lee, SingChun",MWF 13:00-13:50 (ACET 225),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Programming languages
 Bucknell University,2024-25,S,CSCI 308L,60,Lab-Programming Language Desgn,"Lee, SingChun",Th 10:00-11:50 (BRKI 164),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2024-25,S,CSCI 308L,61,Lab-Programming Language Desgn,"Lee, SingChun",Th 13:00-14:50 (ACET 225),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
-Bucknell University,2024-25,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
-Bucknell University,2024-25,S,CSCI 311,02,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 11:00-11:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
+Bucknell University,2024-25,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
+Bucknell University,2024-25,S,CSCI 311,02,Algorithm Design & Analysis,"Havill, Jessen T.",MWF 11:00-11:50 (DANA 319),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
 Bucknell University,2024-25,S,CSCI 311R,40,Recitation for CSCI 311,"Talmage, Edward L.",Th 13:00-13:50 (DANA 117),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2024-25,S,CSCI 311R,41,Recitation for CSCI 311,"Havill, Jessen T.",Th 14:00-14:50 (DANA 117),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2024-25,S,CSCI 315,01,Operating Systems Design,"Fuchsberger, Alexander",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Operating systems
@@ -499,7 +499,7 @@ Bucknell University,2025-26,F,CSCI 306L,62,Lab for Computer Systems,"Perrone, Lu
 Bucknell University,2025-26,F,CSCI 307,01,Computer Networks and Security,"Marchiori, Alan M.",Th 10:00-11:20 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Computer networks
 Bucknell University,2025-26,F,CSCI 308,01,Programming Language Design,"Wittie, Lea",MWF 09:00-09:50 (DANA 221),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Programming languages
 Bucknell University,2025-26,F,CSCI 308L,60,Lab-Programming Language Desgn,"Wittie, Lea",Th 13:00-14:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
-Bucknell University,2025-26,F,CSCI 311,01,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
+Bucknell University,2025-26,F,CSCI 311,01,Algorithm Design & Analysis,"Gutekunst, Samuel",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
 Bucknell University,2025-26,F,CSCI 311R,40,Recitation for CSCI 311,"Gutekunst, Samuel",Th 10:00-10:50 (BRKI 066),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2025-26,F,CSCI 315,01,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Operating systems
 Bucknell University,2025-26,F,CSCI 315,02,Operating Systems Design,"Stough, Joshua V.",MWF 09:00-09:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Operating systems
@@ -548,8 +548,8 @@ Bucknell University,2025-26,S,CSCI 307,01,Computer Networks and Security,"Marchi
 Bucknell University,2025-26,S,CSCI 307,02,Computer Networks and Security,"Marchiori, Alan M.",MW 13:00-13:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Computer networks
 Bucknell University,2025-26,S,CSCI 308,01,Programming Language Design,"Schmid, Todd W.",MWF 10:00-10:50 (DANA 137),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Programming languages
 Bucknell University,2025-26,S,CSCI 308L,60,Lab-Programming Language Desgn,"Schmid, Todd W.",Th 10:00-11:50 (ACET 116),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
-Bucknell University,2025-26,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 11:00-11:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
-Bucknell University,2025-26,S,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Algorithms & complexity
+Bucknell University,2025-26,S,CSCI 311,01,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 11:00-11:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
+Bucknell University,2025-26,S,CSCI 311,02,Algorithm Design & Analysis,"Talmage, Edward L.",MWF 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Core
 Bucknell University,2025-26,S,CSCI 311R,40,Recitation for CSCI 311,"Talmage, Edward L.",Th 09:00-09:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2025-26,S,CSCI 311R,41,Recitation for CSCI 311,"Talmage, Edward L.",Th 11:00-11:50 (DANA 115),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Misc
 Bucknell University,2025-26,S,CSCI 315,01,Operating Systems Design,"Perrone, Luiz Felipe F.",MWF 10:00-10:50 (DANA 132),https://pubapps.bucknell.edu/CourseInformation/#/lookup,Operating systems

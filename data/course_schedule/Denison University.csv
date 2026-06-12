@@ -32,7 +32,7 @@ Denison University,2021-22,S,CS 281,01,Introduction to Computer Systems,"Kretchm
 Denison University,2021-22,S,CS 334,01,Theory of Computation,"Kell, Nat",MWF 13:30-14:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
 Denison University,2021-22,S,CS 362,90,Directed Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2021-22,S,CS 364,90,Independent Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
-Denison University,2021-22,S,CS 371,01,Algorithm Design and Analysis,"Agarwal, Archita",MWF 09:30-10:20 (OLIN 215),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Denison University,2021-22,S,CS 371,01,Algorithm Design and Analysis,"Agarwal, Archita",MWF 09:30-10:20 (OLIN 215),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Denison University,2021-22,S,CS 375,01,Computer Networks,"Havill, Jessen",MWF 10:30-11:20 (OLIN 221),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Computer networks
 Denison University,2021-22,S,CS 395,01,Technical Communication I,"Kell, Nat",W 14:30-16:20 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
 Denison University,2021-22,S,CS 452,90,Senior Research,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
@@ -71,7 +71,7 @@ Denison University,2022-23,S,CS 281,02,Introduction to Computer Systems,"Amert, 
 Denison University,2022-23,S,CS 339,01,Artificial Intelligence,"Kretchmar, Matt",MWF 10:30-11:20 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Artificial intelligence
 Denison University,2022-23,S,CS 362,90,Directed Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2022-23,S,CS 364,90,Independent Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
-Denison University,2022-23,S,CS 371,01,Algorithm Design and Analysis,"Lall, Ashwin",MWF 13:30-14:20 (OLIN 217),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Denison University,2022-23,S,CS 371,01,Algorithm Design and Analysis,"Lall, Ashwin",MWF 13:30-14:20 (OLIN 217),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Denison University,2022-23,S,CS 395,01,Technical Communication I,"Mei, May",W 15:00-16:20 (OLIN 114),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
 Denison University,2022-23,S,CS 401,01,Quantum Computing,"Kell, Nat",MTWF 15:00-15:50 (OLIN 215),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Quantum computing
 Denison University,2022-23,S,CS 452,90,Senior Research,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
@@ -111,7 +111,7 @@ Denison University,2023-24,S,CS 271,02,Data Structures,"Truex, Stacey",MWF 15:00
 Denison University,2023-24,S,CS 281,01,Introduction to Computer Systems,"Law, Matthew",MWF 10:30-11:20 (OLIN 220); Th 13:30-15:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Denison University,2023-24,S,CS 362,90,Directed Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2023-24,S,CS 364,90,Independent Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
-Denison University,2023-24,S,CS 371,01,Algorithm Design and Analysis,"Truex, Stacey",MWF 11:30-12:20 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Denison University,2023-24,S,CS 371,01,Algorithm Design and Analysis,"Truex, Stacey",MWF 11:30-12:20 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Denison University,2023-24,S,CS 377,01,Database Systems,"Goldweber, Mikey",MWF 13:30-14:20 (OLIN 217),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Databases
 Denison University,2023-24,S,CS 391,01,Robotics,"Law, Matthew",MWF 08:30-09:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Robotics
 Denison University,2023-24,S,CS 395,01,Technical Communication I,"Mei, May",W 15:00-16:20 (OLIN 114),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
@@ -134,8 +134,8 @@ Denison University,2024-25,F,CS 339,01,Artificial Intelligence,"Kretchmar, Matt"
 Denison University,2024-25,F,CS 349,01,Software Engineering,"Lall, Ashwin",MWF 11:30-12:20 (EBAU 002),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
 Denison University,2024-25,F,CS 361,90,Directed Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2024-25,F,CS 363,90,Independent Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
-Denison University,2024-25,F,CS 371,01,Algorithm Design and Analysis,"Truex, Stacey",MWF 13:30-14:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
-Denison University,2024-25,F,CS 371,02,Algorithm Design and Analysis,"Truex, Stacey",MWF 15:00-15:50 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Denison University,2024-25,F,CS 371,01,Algorithm Design and Analysis,"Truex, Stacey",MWF 13:30-14:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Denison University,2024-25,F,CS 371,02,Algorithm Design and Analysis,"Truex, Stacey",MWF 15:00-15:50 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Denison University,2024-25,F,CS 395,01,Technical Communication I,"Lall, Ashwin",Th 13:30-14:50 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
 Denison University,2024-25,F,CS 451,90,Senior Research,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2024-25,F,CS 495,01,Technical Communication II,"Lall, Ashwin",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
@@ -154,7 +154,7 @@ Denison University,2024-25,S,CS 281,01,Introduction to Computer Systems,"Kretchm
 Denison University,2024-25,S,CS 314,01,Game Design,"Currin, Flannery",MWF 15:00-15:50 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Games & interactive art
 Denison University,2024-25,S,CS 362,01,Directed Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2024-25,S,CS 364,01,Independent Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
-Denison University,2024-25,S,CS 371,01,Algorithm Design and Analysis,"Chavrimootoo, Michael",MWF 11:30-12:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Denison University,2024-25,S,CS 371,01,Algorithm Design and Analysis,"Chavrimootoo, Michael",MWF 11:30-12:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Denison University,2024-25,S,CS 372,01,Operating Systems,"Goldweber, Mikey",MWF 13:30-14:20 (OLIN 221),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Operating systems
 Denison University,2024-25,S,CS 395,01,Technical Communication I,"Lall, Ashwin",Th 13:30-14:50 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
 Denison University,2024-25,S,CS 402,01,Functional Programming,"Kahn, David",MWF 09:30-10:20 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Programming languages
@@ -182,8 +182,8 @@ Denison University,2025-26,F,CS 361,04,Directed Study,"Staff, Faculty",,https://
 Denison University,2025-26,F,CS 361,05,Directed Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2025-26,F,CS 361,06,Directed Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2025-26,F,CS 363,01,Independent Study,"Staff, Faculty",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
-Denison University,2025-26,F,CS 371,01,Algorithm Design and Analysis,"Chavrimootoo, Michael",MWF 11:30-12:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
-Denison University,2025-26,F,CS 371,02,Algorithm Design and Analysis,"Lall, Ashwin",MWF 13:30-14:20 (OLIN 215),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Denison University,2025-26,F,CS 371,01,Algorithm Design and Analysis,"Chavrimootoo, Michael",MWF 11:30-12:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Denison University,2025-26,F,CS 371,02,Algorithm Design and Analysis,"Lall, Ashwin",MWF 13:30-14:20 (OLIN 215),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Denison University,2025-26,F,CS 377,01,Database Systems,"Goldweber, Mikey",MWF 15:00-15:50 (OLIN 215),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Databases
 Denison University,2025-26,F,CS 395,01,Technical Communication I,"Lall, Ashwin",Th 13:30-14:50 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
 Denison University,2025-26,F,CS 401,01,"Algorithms, Computations and Elections","Chavrimootoo, Michael",MWF 10:30-11:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
@@ -213,8 +213,8 @@ Denison University,2025-26,S,CS 364,01,Independent Study,"Staff, Faculty",,https
 Denison University,2025-26,S,CS 364,05,Independent Study,"Kretchmar, Matt",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2025-26,S,CS 364,06,Library Remediation Project,"Lall, Ashwin",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Denison University,2025-26,S,CS 364,07,AI Lang Tutoring App Dev,"Lall, Ashwin",,https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
-Denison University,2025-26,S,CS 371,01,Algorithm Design and Analysis,"Chavrimootoo, Michael",MWF 09:30-10:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
-Denison University,2025-26,S,CS 371,02,Algorithm Design and Analysis,"Chavrimootoo, Michael",MWF 15:00-15:50 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Denison University,2025-26,S,CS 371,01,Algorithm Design and Analysis,"Chavrimootoo, Michael",MWF 09:30-10:20 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Denison University,2025-26,S,CS 371,02,Algorithm Design and Analysis,"Chavrimootoo, Michael",MWF 15:00-15:50 (OLIN 220),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Denison University,2025-26,S,CS 395,01,Technical Communication I,"Lall, Ashwin",Th 13:30-14:50 (OLIN 114),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
 Denison University,2025-26,S,CS 395,02,Technical Communication I,"Kahn, David",Th 13:30-14:50 (OLIN 222),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
 Denison University,2025-26,S,CS 402,01,Cryptography,"Miller, Ali",MWF 08:30-09:20 (OLIN 221),https://banner.denison.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Cryptography

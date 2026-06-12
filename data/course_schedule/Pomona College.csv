@@ -8,7 +8,7 @@ Pomona College,2021-22,F,CSCI-062L,01,Data Structures/Adv Program Lab,"Thomas Ye
 Pomona College,2021-22,F,CSCI-062L,02,Data Structures/Adv Program Lab,"Thomas Yeh, Alexandra Papoutsaki",W 13:20-16:20,,Core
 Pomona College,2021-22,F,CSCI-101,01,Intro to Languages and Theory,Kim Bruce,MW 11:10-12:25,,Algorithms & complexity
 Pomona College,2021-22,F,CSCI-124,01,User Interfaces and Experience,Alexandra Papoutsaki,TR 14:55-16:10,,Human-computer interaction
-Pomona College,2021-22,F,CSCI-140,01,Algorithms,Anthony Clark,MW 13:20-14:35,,Algorithms & complexity
+Pomona College,2021-22,F,CSCI-140,01,Algorithms,Anthony Clark,MW 13:20-14:35,,Core
 Pomona College,2021-22,F,CSCI-152,01,Neural Networks,Anthony Clark,TR 13:20-14:35,,Machine learning
 Pomona College,2021-22,F,CSCI-181OR,01,Computer Architecture,Thomas Yeh,TR 9:35-10:50,,Computer architecture
 Pomona College,2021-22,F,CSCI-181SY,01,Managing Complex Systems,Michael Dickerson,MW 14:55-16:10,,Software engineering
@@ -39,7 +39,7 @@ Pomona College,2021-22,S,CSCI-101,01,Intro to Languages and Theory,Tzu-Yi Chen,M
 Pomona College,2021-22,S,CSCI-105,01,Computer Systems,Anthony Clark,MW 11:00-12:15,,Computer architecture
 Pomona College,2021-22,S,CSCI-105L,01,"Computer Systems, Lab",Anthony Clark,F 11:00-12:15,,Computer architecture
 Pomona College,2021-22,S,CSCI-124,01,User Interfaces and Experience,Alexandra Papoutsaki,MW 14:45-16:00,,Human-computer interaction
-Pomona College,2021-22,S,CSCI-140,01,Algorithms,Tzu-Yi Chen,MW 13:15-14:30,,Algorithms & complexity
+Pomona College,2021-22,S,CSCI-140,01,Algorithms,Tzu-Yi Chen,MW 13:15-14:30,,Core
 Pomona College,2021-22,S,CSCI-152,01,Neural Networks,Anthony Clark,TR 9:35-10:50,,Machine learning
 Pomona College,2021-22,S,CSCI-158,01,Machine Learning,David Kauchak,TR 13:15-14:30,,Machine learning
 Pomona College,2021-22,S,CSCI-181G,01,Game Engine Programming,Joseph Osborn,TR 13:15-14:30,,Games & interactive art
@@ -68,7 +68,7 @@ Pomona College,2022-23,F,CSCI-062L,02,Data Structures/Adv Program Lab,Thomas Yeh
 Pomona College,2022-23,F,CSCI-101,01,Intro to Languages and Theory,Tzu-Yi Chen,TR 9:35-10:50,,Algorithms & complexity
 Pomona College,2022-23,F,CSCI-105,01,Computer Systems,Anthony Clark,MW 13:15-14:30,,Computer architecture
 Pomona College,2022-23,F,CSCI-105L,01,"Computer Systems, Lab",Anthony Clark,F 11:00-12:15,,Computer architecture
-Pomona College,2022-23,F,CSCI-140,01,Algorithms,David Kauchak,TR 13:15-14:30,,Algorithms & complexity
+Pomona College,2022-23,F,CSCI-140,01,Algorithms,David Kauchak,TR 13:15-14:30,,Core
 Pomona College,2022-23,F,CSCI-143,01,Applied Algorithms,Tzu-Yi Chen,MW 11:00-12:15,,Algorithms & complexity
 Pomona College,2022-23,F,CSCI-181SL,01,Managing Complex Systems Lab,Michael Dickerson,M 19:00-20:15,,Software engineering
 Pomona College,2022-23,F,CSCI-181SL,02,Managing Complex Systems Lab,Michael Dickerson,M 19:00-20:15,,Software engineering
@@ -100,7 +100,7 @@ Pomona College,2022-23,S,CSCI-062L,02,Data Structures/Adv Program Lab,Thomas Yeh
 Pomona College,2022-23,S,CSCI-101,01,Intro to Languages and Theory,Tzu-Yi Chen,TR 9:35-10:50,,Algorithms & complexity
 Pomona College,2022-23,S,CSCI-105,01,Computer Systems,Eleanor Birrell,MW 11:00-12:15,,Computer architecture
 Pomona College,2022-23,S,CSCI-105L,01,"Computer Systems, Lab",Eleanor Birrell,W 19:00-20:15,,Computer architecture
-Pomona College,2022-23,S,CSCI-140,01,Algorithms,David Kauchak,MW 14:45-16:00,,Algorithms & complexity
+Pomona College,2022-23,S,CSCI-140,01,Algorithms,David Kauchak,MW 14:45-16:00,,Core
 Pomona College,2022-23,S,CSCI-152,01,Neural Networks,Anthony Clark,TR 9:35-10:50,,Machine learning
 Pomona College,2022-23,S,CSCI-159,01,Natural Language Processing,David Kauchak,MW 13:15-14:30,,Natural language processing
 Pomona College,2022-23,S,CSCI-188,01,Computer Science Colloquium,"Anthony Clark, David Kauchak",,,Misc
@@ -149,8 +149,8 @@ Pomona College,2023-24,S,CSCI-062L,02,Data Structures/Adv Program Lab,Alexandra 
 Pomona College,2023-24,S,CSCI-101,01,Intro to Languages and Theory,Tzu-Yi Chen,MW 11:00-12:15,,Algorithms & complexity
 Pomona College,2023-24,S,CSCI-105,01,Computer Systems,Eleanor Birrell,MW 14:45-16:00,,Computer architecture
 Pomona College,2023-24,S,CSCI-105L,01,"Computer Systems, Lab",Eleanor Birrell,W 19:00-21:50,,Computer architecture
-Pomona College,2023-24,S,CSCI-140,01,Algorithms,David Kauchak,TR 13:15-14:30,,Algorithms & complexity
-Pomona College,2023-24,S,CSCI-140,02,Algorithms,David Kauchak,TR 14:45-16:00,,Algorithms & complexity
+Pomona College,2023-24,S,CSCI-140,01,Algorithms,David Kauchak,TR 13:15-14:30,,Core
+Pomona College,2023-24,S,CSCI-140,02,Algorithms,David Kauchak,TR 14:45-16:00,,Core
 Pomona College,2023-24,S,CSCI-181DT,01,Computational Design Tools,Jingyi Li,TR 14:45-16:00,,Design automation
 Pomona College,2023-24,S,CSCI-181G,01,Game Engine Programming,Joseph Osborn,TR 9:35-10:50,,Games & interactive art
 Pomona College,2023-24,S,CSCI-181S,01,System Security,Eleanor Birrell,MW 13:15-14:30,,Computer security & privacy
@@ -178,7 +178,7 @@ Pomona College,2024-25,F,CSCI-062L,02,Data Structures/Adv Program Lab,Alexandra 
 Pomona College,2024-25,F,CSCI-101,01,Intro to Languages and Theory,Tzu-Yi Chen,MW 11:00-12:15,,Algorithms & complexity
 Pomona College,2024-25,F,CSCI-105,01,Computer Systems,Eleanor Birrell,MW 14:45-16:00,,Computer architecture
 Pomona College,2024-25,F,CSCI-105L,01,"Computer Systems, Lab",Eleanor Birrell,W 19:00-20:15,,Computer architecture
-Pomona College,2024-25,F,CSCI-140,01,Algorithms,David Kauchak,TR 13:15-14:30,,Algorithms & complexity
+Pomona College,2024-25,F,CSCI-140,01,Algorithms,David Kauchak,TR 13:15-14:30,,Core
 Pomona College,2024-25,F,CSCI-159,01,Natural Language Processing,David Kauchak,TR 14:45-16:00,,Natural language processing
 Pomona College,2024-25,F,CSCI-181DT,01,Computational Design Tools,Jingyi Li,MW 11:00-12:15,,Design automation
 Pomona College,2024-25,F,CSCI-181R,01,Mobile Robotics,Anthony Clark,TR 9:35-10:50,,Robotics
@@ -204,7 +204,7 @@ Pomona College,2024-25,S,CSCI-062L,02,Data Structures/Adv Program Lab,Jingyi Li,
 Pomona College,2024-25,S,CSCI-101,01,Intro to Languages and Theory,Tzu-Yi Chen,MW 11:00-12:15,,Algorithms & complexity
 Pomona College,2024-25,S,CSCI-105,01,Computer Systems,Joseph Osborn,TR 13:15-14:30,,Computer architecture
 Pomona College,2024-25,S,CSCI-105L,01,"Computer Systems, Lab",Joseph Osborn,F 13:15-14:30,,Computer architecture
-Pomona College,2024-25,S,CSCI-140,01,Algorithms,Anthony Clark,TR 9:35-10:50,,Algorithms & complexity
+Pomona College,2024-25,S,CSCI-140,01,Algorithms,Anthony Clark,TR 9:35-10:50,,Core
 Pomona College,2024-25,S,CSCI-152,01,Neural Networks,Anthony Clark,TR 13:15-14:30,,Machine learning
 Pomona College,2024-25,S,CSCI-181DV,01,Advanced Data Visualization,Andrew Wilson,MW 13:15-14:30,,Visualization
 Pomona College,2024-25,S,CSCI-181RT,01,Real-time Sys. in the Real World,Jennifer DesCombes,TR 14:45-16:00; W 13:15-16:00,,Embedded & real-time systems
@@ -231,7 +231,7 @@ Pomona College,2025-26,F,CSCI-101,01,Intro to Languages and Theory,"Michael Zlat
 Pomona College,2025-26,F,CSCI-101,02,Intro to Languages and Theory,"Tzu-Yi Chen, Michael Zlatin",MW 14:45-16:00,,Algorithms & complexity
 Pomona College,2025-26,F,CSCI-105,01,Computer Systems,Joseph Osborn,MW 13:15-14:30,,Computer architecture
 Pomona College,2025-26,F,CSCI-105L,01,"Computer Systems, Lab",Joseph Osborn,F 13:15-14:30,,Computer architecture
-Pomona College,2025-26,F,CSCI-140,01,Algorithms,Anthony Clark,TR 9:35-10:50,,Algorithms & complexity
+Pomona College,2025-26,F,CSCI-140,01,Algorithms,Anthony Clark,TR 9:35-10:50,,Core
 Pomona College,2025-26,F,CSCI-158,01,Machine Learning,David Kauchak,TR 14:45-16:00,,Machine learning
 Pomona College,2025-26,F,CSCI-181AA,01,Advanced Algorithms,Michael Zlatin,TR 13:15-14:30,,Algorithms & complexity
 Pomona College,2025-26,F,CSCI-181CA,01,Computer Architecture,Samuel Thomas,MWF 10:00-10:50; W 19:00-20:15,,Computer architecture
@@ -265,7 +265,7 @@ Pomona College,2025-26,S,CSCI-105L,01,"Computer Systems, Lab",Eleanor Birrell,W 
 Pomona College,2025-26,S,CSCI-105L,02,"Computer Systems, Lab",Samuel Thomas,R 9:35-10:50,,Computer architecture
 Pomona College,2025-26,S,CSCI-122,01,Computational Design Tools,Jingyi Li,MW 11:00-12:15,,Design automation
 Pomona College,2025-26,S,CSCI-138,01,System Security,Eleanor Birrell,MW 13:15-14:30,,Computer security & privacy
-Pomona College,2025-26,S,CSCI-140,01,Algorithms,Tzu-Yi Chen,MW 11:00-12:15,,Algorithms & complexity
+Pomona College,2025-26,S,CSCI-140,01,Algorithms,Tzu-Yi Chen,MW 11:00-12:15,,Core
 Pomona College,2025-26,S,CSCI-181AA,01,Advanced Algorithms,Michael Zlatin,TR 13:15-14:30,,Algorithms & complexity
 Pomona College,2025-26,S,CSCI-181CA,01,Computer Architecture,Samuel Thomas,MWF 10:00-10:50; R 14:45-16:00,,Computer architecture
 Pomona College,2025-26,S,CSCI-181DV,01,Advanced Data Visualization,Andrew Wilson,MW 13:15-14:30,,Visualization

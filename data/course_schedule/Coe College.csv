@@ -1,6 +1,6 @@
 college,academic_year,term,course_code,section,course_name,instructor,time,url,category
 Coe College,2024-25,F,CS 125,01,Intro to Computer Programming,M Stobb,MWF 01:00 PM-01:50 PM / R 12:30 PM-01:50 PM,https://www.coe.edu/download_file/view/21947/766,Core
-Coe College,2024-25,F,CS 215,01,Anaylsis of Algorithms,T Hostetler,MWF 09:00 AM-09:50 AM,https://www.coe.edu/download_file/view/21947/766,Algorithms & complexity
+Coe College,2024-25,F,CS 215,01,Anaylsis of Algorithms,T Hostetler,MWF 09:00 AM-09:50 AM,https://www.coe.edu/download_file/view/21947/766,Core
 Coe College,2024-25,F,CS 420,01,Algorithms in Society,T Hostetler,MWF 10:00 AM-10:50 AM,https://www.coe.edu/download_file/view/21947/766,Computational social science
 Coe College,2024-25,F,CS 450,01,Principles of Computer Graphics,T Hostetler,MWF 02:00 PM-02:50 PM,https://www.coe.edu/download_file/view/21947/766,Computer graphics
 Coe College,2024-25,S,CS 125,01,Intro to Computer Programming,S Hughes,MWF 11:00 AM-11:50 AM / R 12:30 PM-01:50 PM,https://www.coe.edu/download_file/view/23164/766,Core
@@ -12,7 +12,7 @@ Coe College,2024-25,S,CS 340,01,Programming Languages,T Hostetler,MWF 10:00 AM-1
 Coe College,2024-25,S,CS 390,01,WE Software Engineering,T Hostetler,MWF 02:00 PM-02:50 PM,https://www.coe.edu/download_file/view/23164/766,Software engineering
 Coe College,2025-26,F,CS 125,01,Introduction to Programming,Staff,MWF 10:00 AM-10:50 AM / R 12:30 PM-01:50 PM,https://www.coe.edu/download_file/view/23910/766,Core
 Coe College,2025-26,F,CS 125,02,Introduction to Programming,Staff,MWF 12:00 PM-12:50 PM / R 02:00 PM-03:20 PM,https://www.coe.edu/download_file/view/23910/766,Core
-Coe College,2025-26,F,CS 215,01,Analysis of Algorithms,Staff,MWF 02:00 PM-02:50 PM,https://www.coe.edu/download_file/view/23910/766,Algorithms & complexity
+Coe College,2025-26,F,CS 215,01,Analysis of Algorithms,Staff,MWF 02:00 PM-02:50 PM,https://www.coe.edu/download_file/view/23910/766,Core
 Coe College,2025-26,F,CS 320,01,Operating Systems,S Hughes,TR 09:30 AM-10:50 AM,https://www.coe.edu/download_file/view/23910/766,Operating systems
 Coe College,2025-26,F,CS 452,01,Interactive System Design,S Hughes,MWF 09:00 AM-09:50 AM,https://www.coe.edu/download_file/view/23910/766,Human-computer interaction
 Coe College,2025-26,F,CS 484,01,Special Topics,S Hughes,MWF 01:00 PM-01:50 PM,https://www.coe.edu/download_file/view/23910/766,Other

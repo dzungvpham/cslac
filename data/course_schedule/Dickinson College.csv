@@ -9,7 +9,7 @@ Dickinson College,2021-22,F,COMP 190,02,Tools and Techniques for Software Develo
 Dickinson College,2021-22,F,COMP 203,01,Information Security,"Whitmore, Jim",TTh 09:00-10:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Computer security & privacy
 Dickinson College,2021-22,F,COMP 232,01,Data Structures and Problem Solving,"MacCormick, John",TTh 10:30-11:45 (ALTHSE 106),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2021-22,F,COMP 331,01,Operations Research,"Forrester, Dick",MWF 09:30-10:20 (TOME 121),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Unknown
-Dickinson College,2021-22,F,COMP 332,01,Analysis of Algorithms,"Forrester, Dick",MTh 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Dickinson College,2021-22,F,COMP 332,01,Analysis of Algorithms,"Forrester, Dick",MTh 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2021-22,F,COMP 356,01,Programming Language Structures,"Siddiqui, Farhan",TF 15:00-16:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Programming languages
 Dickinson College,2021-22,F,COMP 491,01,Fall Senior Seminar,"Braught, Grant",TF 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Dickinson College,2021-22,F,COMP 491,02,Fall Senior Seminar,"MacCormick, John",TF 13:30-14:45 (TOME 232),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
@@ -38,7 +38,7 @@ Dickinson College,2022-23,F,COMP 200,01,Database Systems and Data Management for
 Dickinson College,2022-23,F,COMP 203,01,Topics in Decision Science,"Forrester, Dick",MWF 09:30-10:20 (TOME 121),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Economics & computation
 Dickinson College,2022-23,F,COMP 232,01,Data Structures and Problem Solving,"MacCormick, John",TTh 09:00-10:15 (TOME 118),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2022-23,F,COMP 232,02,Data Structures and Problem Solving,"MacCormick, John",MTh 15:00-16:15 (TOME 232),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
-Dickinson College,2022-23,F,COMP 332,01,Analysis of Algorithms,"Forrester, Dick",MTh 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Dickinson College,2022-23,F,COMP 332,01,Analysis of Algorithms,"Forrester, Dick",MTh 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2022-23,F,COMP 356,01,Programming Language Structures,"Lambert, Matthew",TTh 10:30-11:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Programming languages
 Dickinson College,2022-23,F,COMP 364,01,Artificial Intelligence,"Goble, William",MTh 15:00-16:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Artificial intelligence
 Dickinson College,2022-23,F,COMP 491,01,Fall Senior Seminar,"Braught, Grant",TF 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
@@ -69,7 +69,7 @@ Dickinson College,2023-24,F,COMP 232,01,Data Structures and Problem Solving,"Sid
 Dickinson College,2023-24,F,COMP 256,01,Computing Abstractions,"Siddiqui, Farhan",MWF 09:30-10:20 (TOME 231); Th 15:00-17:00 (TOME 118),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2023-24,F,COMP 290,01,Large-scale and Open Source Software Development,"Goble, William",F 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
 Dickinson College,2023-24,F,COMP 331,01,Operations Research,"Forrester, Dick",MWF 10:30-11:20 (TOME 121),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Unknown
-Dickinson College,2023-24,F,COMP 332,01,Analysis of Algorithms,"Forrester, Dick",MTh 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Dickinson College,2023-24,F,COMP 332,01,Analysis of Algorithms,"Forrester, Dick",MTh 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2023-24,F,COMP 356,01,Programming Language Structures,"Naderi Dehkordi, Mohammad",MTh 15:00-16:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Programming languages
 Dickinson College,2023-24,F,COMP 393,01,Parallel Computing,"Lambert, Matthew",TTh 09:00-10:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,High-performance computing
 Dickinson College,2023-24,F,COMP 491,01,Fall Senior Seminar,"MacCormick, John",TF 15:00-16:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
@@ -99,7 +99,7 @@ Dickinson College,2024-25,F,COMP 200,01,Data Systems for Data Analytics,"Bilen, 
 Dickinson College,2024-25,F,COMP 200,02,Data Systems for Data Analytics,"Bilen, Eren",TF 15:00-16:15 (ALTHSE 204),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Databases
 Dickinson College,2024-25,F,COMP 232,01,Data Structures and Problem Solving,"Goble, William",MWF 11:30-12:20 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2024-25,F,COMP 290,01,Large-scale and Open Source Software Development,"Goble, William",Th 10:30-11:45 (TOME 118),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
-Dickinson College,2024-25,F,COMP 332,01,Analysis of Algorithms,"Ferland, Matt",MTh 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Dickinson College,2024-25,F,COMP 332,01,Analysis of Algorithms,"Ferland, Matt",MTh 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2024-25,F,COMP 354,01,Operating Systems,"Siddiqui, Farhan",TTh 10:30-11:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Operating systems
 Dickinson College,2024-25,F,COMP 364,01,Artificial Intelligence,"Naderi Dehkordi, Mohammad",MTh 15:00-16:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Artificial intelligence
 Dickinson College,2024-25,F,COMP 491,01,Fall Senior Seminar,"Braught, Grant",TF 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
@@ -130,7 +130,7 @@ Dickinson College,2025-26,F,COMP 203,01,Agent-Based Simulation,"Kessler, Zach",T
 Dickinson College,2025-26,F,COMP 232,01,Data Structures and Problem Solving,"Goble, William",MWF 09:30-10:20 (TOME 121),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2025-26,F,COMP 290,01,Large-scale and Open Source Software Development,"Braught, Grant",W 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
 Dickinson College,2025-26,F,COMP 331,01,Operations Research,"Forrester, Dick",MWF 12:30-13:20 (TOME 121),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Unknown
-Dickinson College,2025-26,F,COMP 332,01,Analysis of Algorithms,"Ferland, Matt",TF 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Dickinson College,2025-26,F,COMP 332,01,Analysis of Algorithms,"Ferland, Matt",TF 13:30-14:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Dickinson College,2025-26,F,COMP 354,01,Operating Systems,"Siddiqui, Farhan",TTh 10:30-11:45 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Operating systems
 Dickinson College,2025-26,F,COMP 378,01,Database Systems,"MacCormick, John",TF 15:00-16:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Databases
 Dickinson College,2025-26,F,COMP 491,01,Fall Senior Seminar,"Braught, Grant",TTh 09:00-10:15 (TOME 231),https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc

@@ -66,8 +66,8 @@ Occidental College,2022-23,S,COMP 239L,1,Computer Organization Laboratory,"Bosco
 Occidental College,2022-23,S,COMP 239L,2,Computer Organization Laboratory,"Boscoe,B",03:00pm-04:25pm M,,Misc
 Occidental College,2022-23,S,COMP 242,0,Music and Artificial Intelligence,"Paolizzo,F",09:35am-10:30am MWF,,Artificial intelligence
 Occidental College,2022-23,S,COMP 277,0,Game Design,"Schiffer,S",04:05pm-05:00pm MWF,,Games & interactive art
-Occidental College,2022-23,S,COMP 317,0,Algorithms Analysis,"Chen,H",01:30pm-02:55pm TR,,Algorithms & complexity
-Occidental College,2022-23,S,COMP 317,2,Algorithms Analysis,"Chen,H",08:30am-09:55am TR,,Algorithms & complexity
+Occidental College,2022-23,S,COMP 317,0,Algorithms Analysis,"Chen,H",01:30pm-02:55pm TR,,Core
+Occidental College,2022-23,S,COMP 317,2,Algorithms Analysis,"Chen,H",08:30am-09:55am TR,,Core
 Occidental College,2022-23,S,COMP 389,0,Cryptography,"Chen,H",10:05am-11:30am TR,,Cryptography
 Occidental College,2022-23,S,COMP 390,1,Computer Science Junior Seminar,"Chen,C",03:05pm-04:30pm TR,,Misc
 Occidental College,2022-23,S,COMP 390,2,Computer Science Junior Seminar,"Chen,C",05:00pm-06:25pm TR,,Misc
@@ -139,7 +139,7 @@ Occidental College,2024-25,S,COMP 229,0,Data Structures,"Camarillo Abad,H",12:50
 Occidental College,2024-25,S,COMP 239,0,Computer Organization,"Grippo,E",05:40pm-07:05pm MW,,Core
 Occidental College,2024-25,S,COMP 239L,1,Computer Organization Laboratory,"Grippo,E",01:00pm-02:25pm M,,Misc
 Occidental College,2024-25,S,COMP 239L,2,Computer Organization Laboratory,"Grippo,E",02:35pm-04:00pm M,,Misc
-Occidental College,2024-25,S,COMP 317,0,Algorithms Analysis,"Chen,H",01:30pm-02:55pm TR,,Algorithms & complexity
+Occidental College,2024-25,S,COMP 317,0,Algorithms Analysis,"Chen,H",01:30pm-02:55pm TR,,Core
 Occidental College,2024-25,S,COMP 349,0,Robotics,"Cianci,C",03:00pm-05:55pm W,,Robotics
 Occidental College,2024-25,S,COMP 367,0,Practicum in Computer Science,"Cianci,C",08:30am-09:55am TR,,Misc
 Occidental College,2024-25,S,COMP 373,0,Databases,"Cianci,C",10:05am-11:30am TR,,Databases

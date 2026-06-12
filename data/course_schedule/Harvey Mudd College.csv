@@ -21,8 +21,8 @@ Harvey Mudd College,2021-22,F,CSCI-124,02,Interaction Design,Neil Rhodes,MW 14:5
 Harvey Mudd College,2021-22,F,CSCI-125,01,Computer Networks,Geoffrey Kuenning,MW 11:10-12:25,,Computer networks
 Harvey Mudd College,2021-22,F,CSCI-131,01,Programming Languages,Lucas Bang,MW 9:35-10:50; M 16:30-17:30; M 16:15-17:15,,Programming languages
 Harvey Mudd College,2021-22,F,CSCI-131,02,Programming Languages,Lucas Bang,M 16:30-17:30; MW 11:10-12:25; M 16:15-17:15,,Programming languages
-Harvey Mudd College,2021-22,F,CSCI-140,01,Algorithms,George Montanez,MW 13:20-14:35,,Algorithms & complexity
-Harvey Mudd College,2021-22,F,CSCI-140,02,Algorithms,George Montanez,MW 14:55-16:10,,Algorithms & complexity
+Harvey Mudd College,2021-22,F,CSCI-140,01,Algorithms,George Montanez,MW 13:20-14:35,,Core
+Harvey Mudd College,2021-22,F,CSCI-140,02,Algorithms,George Montanez,MW 14:55-16:10,,Core
 Harvey Mudd College,2021-22,F,CSCI-151,01,Artificial Intelligence,"Yi-Chieh Wu, James Boerkoel",MW 9:35-10:50,,Artificial intelligence
 Harvey Mudd College,2021-22,F,CSCI-153,01,Computer Vision,Calden Wloka,TR 13:20-14:35,,Computer vision
 Harvey Mudd College,2021-22,F,CSCI-153,02,Computer Vision,Calden Wloka,TR 14:55-16:10,,Computer vision
@@ -52,8 +52,8 @@ Harvey Mudd College,2021-22,S,CSCI-132,01,Compiler Design,Benjamin Wiedermann,TR
 Harvey Mudd College,2021-22,S,CSCI-133,01,Database Systems,Katherine Trushkowsky,MW 9:35-10:50,,Databases
 Harvey Mudd College,2021-22,S,CSCI-133,02,Database Systems,Katherine Trushkowsky,MW 11:00-12:15,,Databases
 Harvey Mudd College,2021-22,S,CSCI-134,01,Operating Systems,Mark Kampe,TR 13:15-14:30; F 9:00-9:50,,Operating systems
-Harvey Mudd College,2021-22,S,CSCI-140,01,Algorithms,George Montanez,TR 13:15-14:30,,Algorithms & complexity
-Harvey Mudd College,2021-22,S,CSCI-140,02,Algorithms,George Montanez,TR 14:45-16:00,,Algorithms & complexity
+Harvey Mudd College,2021-22,S,CSCI-140,01,Algorithms,George Montanez,TR 13:15-14:30,,Core
+Harvey Mudd College,2021-22,S,CSCI-140,02,Algorithms,George Montanez,TR 14:45-16:00,,Core
 Harvey Mudd College,2021-22,S,CSCI-144,01,Scientific Computing,Allon Percus,MW 14:45-16:00,,High-performance computing
 Harvey Mudd College,2021-22,S,CSCI-153,01,Computer Vision,Calden Wloka,TR 13:15-14:30,,Computer vision
 Harvey Mudd College,2021-22,S,CSCI-153,02,Computer Vision,Calden Wloka,TR 14:45-16:00,,Computer vision
@@ -85,8 +85,8 @@ Harvey Mudd College,2022-23,F,CSCI-105,02,Computer Systems,Elizabeth Sweedyk,MW 
 Harvey Mudd College,2022-23,F,CSCI-131,01,Programming Languages,Lucas Bang,MW 9:35-10:50,,Programming languages
 Harvey Mudd College,2022-23,F,CSCI-131,02,Programming Languages,Lucas Bang,MW 11:00-12:15,,Programming languages
 Harvey Mudd College,2022-23,F,CSCI-137,01,File Systems,Geoffrey Kuenning,TR 13:15-14:30,,Operating systems
-Harvey Mudd College,2022-23,F,CSCI-140,01,Algorithms,Alexandra Schofield,MW 13:15-14:30,,Algorithms & complexity
-Harvey Mudd College,2022-23,F,CSCI-140,02,Algorithms,Alexandra Schofield,MW 14:45-16:00,,Algorithms & complexity
+Harvey Mudd College,2022-23,F,CSCI-140,01,Algorithms,Alexandra Schofield,MW 13:15-14:30,,Core
+Harvey Mudd College,2022-23,F,CSCI-140,02,Algorithms,Alexandra Schofield,MW 14:45-16:00,,Core
 Harvey Mudd College,2022-23,F,CSCI-159,01,Natural Language Processing,Ryan Jackson,MW 13:15-14:30,,Natural language processing
 Harvey Mudd College,2022-23,F,CSCI-181AE,01,Managing Data at Scale,Yan Li,T 13:15-16:00,,Data science
 Harvey Mudd College,2022-23,F,CSCI-181AF,01,Advanced Data Structures,Christopher Stone,TR 13:15-14:30,,Core
@@ -117,8 +117,8 @@ Harvey Mudd College,2022-23,S,CSCI-111,01,Domain-Specific Languages,Benjamin Wie
 Harvey Mudd College,2022-23,S,CSCI-131,01,Programming Languages,"Benjamin Wiedermann, Lucas Bang",MW 9:35-10:50,,Programming languages
 Harvey Mudd College,2022-23,S,CSCI-131,02,Programming Languages,"Benjamin Wiedermann, Lucas Bang",MW 11:00-12:15,,Programming languages
 Harvey Mudd College,2022-23,S,CSCI-133,01,Database Systems,Katherine Trushkowsky,MW 11:00-12:15,,Databases
-Harvey Mudd College,2022-23,S,CSCI-140,01,Algorithms,Christopher Stone,TR 13:15-14:30,,Algorithms & complexity
-Harvey Mudd College,2022-23,S,CSCI-140,02,Algorithms,Christopher Stone,TR 14:45-16:00,,Algorithms & complexity
+Harvey Mudd College,2022-23,S,CSCI-140,01,Algorithms,Christopher Stone,TR 13:15-14:30,,Core
+Harvey Mudd College,2022-23,S,CSCI-140,02,Algorithms,Christopher Stone,TR 14:45-16:00,,Core
 Harvey Mudd College,2022-23,S,CSCI-144,01,Scientific Computing,Yousef Daneshbod,MW 14:45-16:00,,High-performance computing
 Harvey Mudd College,2022-23,S,CSCI-153,01,Computer Vision,Calden Wloka,MW 9:35-10:50,,Computer vision
 Harvey Mudd College,2022-23,S,CSCI-181AI,01,Machine Learning System Design,Arthi Padmanabhan,MW 9:35-10:50,,Machine learning
@@ -153,7 +153,7 @@ Harvey Mudd College,2023-24,F,CSCI-123,02,Comput Practices/Projects/People,Alexa
 Harvey Mudd College,2023-24,F,CSCI-131,01,Programming Languages,Lucas Bang,MW 9:35-10:50,,Programming languages
 Harvey Mudd College,2023-24,F,CSCI-131,02,Programming Languages,Lucas Bang,MW 11:00-12:15,,Programming languages
 Harvey Mudd College,2023-24,F,CSCI-134,01,Operating Systems,Mark Kampe,TR 9:35-10:50; F 9:35-10:50,,Operating systems
-Harvey Mudd College,2023-24,F,CSCI-140,01,Algorithms,James Boerkoel,TR 13:15-14:30,,Algorithms & complexity
+Harvey Mudd College,2023-24,F,CSCI-140,01,Algorithms,James Boerkoel,TR 13:15-14:30,,Core
 Harvey Mudd College,2023-24,F,CSCI-152,01,Neural Networks,John Hope,MW 11:00-12:15,,Machine learning
 Harvey Mudd College,2023-24,F,CSCI-152,02,Neural Networks,John Hope,MW 13:15-14:30,,Machine learning
 Harvey Mudd College,2023-24,F,CSCI-155,01,Computer Graphics,Carter Slocum,TR 13:15-14:30,,Computer graphics
@@ -182,8 +182,8 @@ Harvey Mudd College,2023-24,S,CSCI-105,01,Computer Systems,Katherine Trushkowsky
 Harvey Mudd College,2023-24,S,CSCI-105,02,Computer Systems,Katherine Trushkowsky,TR 14:45-16:00; F 13:15-14:30,,Computer architecture
 Harvey Mudd College,2023-24,S,CSCI-123,01,Comput Practices/Projects/People,Alexandra Schofield,MW 9:35-10:50,,Other
 Harvey Mudd College,2023-24,S,CSCI-131,01,Programming Languages,Lucas Bang,TR 9:35-10:50,,Programming languages
-Harvey Mudd College,2023-24,S,CSCI-140,01,Algorithms,"James Boerkoel, John Hope",MW 9:35-10:50,,Algorithms & complexity
-Harvey Mudd College,2023-24,S,CSCI-140,02,Algorithms,"James Boerkoel, John Hope",MW 11:00-12:15,,Algorithms & complexity
+Harvey Mudd College,2023-24,S,CSCI-140,01,Algorithms,"James Boerkoel, John Hope",MW 9:35-10:50,,Core
+Harvey Mudd College,2023-24,S,CSCI-140,02,Algorithms,"James Boerkoel, John Hope",MW 11:00-12:15,,Core
 Harvey Mudd College,2023-24,S,CSCI-144,01,Scientific Computing,Allon Percus,MW 14:45-16:00,,High-performance computing
 Harvey Mudd College,2023-24,S,CSCI-152,01,Neural Networks,John Hope,MW 14:45-16:00,,Machine learning
 Harvey Mudd College,2023-24,S,CSCI-158,01,Machine Learning,George Montanez,MW 13:15-14:30,,Machine learning
@@ -219,9 +219,9 @@ Harvey Mudd College,2024-25,F,CSCI-131,02,Programming Languages,Ben Wiedermann,T
 Harvey Mudd College,2024-25,F,CSCI-133,01,Database Systems,Beth Trushkowsky,TR 13:15-14:30,,Databases
 Harvey Mudd College,2024-25,F,CSCI-134,01,Operating Systems,Melissa O'Neill,TR 16:15-17:30,,Operating systems
 Harvey Mudd College,2024-25,F,CSCI-134,02,Operating Systems,Melissa O'Neill,TR 14:45-16:00,,Operating systems
-Harvey Mudd College,2024-25,F,CSCI-140,01,Algorithms,"Tim Randolph, Xanda Schofield",R 13:15-14:30; T 13:15-14:30,,Algorithms & complexity
-Harvey Mudd College,2024-25,F,CSCI-140,02,Algorithms,"Xanda Schofield, Tim Randolph",T 13:15-14:30; R 13:15-14:30,,Algorithms & complexity
-Harvey Mudd College,2024-25,F,CSCI-140,03,Algorithms,"Xanda Schofield, Tim Randolph",F 13:15-14:30; T 13:15-14:30,,Algorithms & complexity
+Harvey Mudd College,2024-25,F,CSCI-140,01,Algorithms,"Tim Randolph, Xanda Schofield",R 13:15-14:30; T 13:15-14:30,,Core
+Harvey Mudd College,2024-25,F,CSCI-140,02,Algorithms,"Xanda Schofield, Tim Randolph",T 13:15-14:30; R 13:15-14:30,,Core
+Harvey Mudd College,2024-25,F,CSCI-140,03,Algorithms,"Xanda Schofield, Tim Randolph",F 13:15-14:30; T 13:15-14:30,,Core
 Harvey Mudd College,2024-25,F,CSCI-153,01,Computer Vision,Calden Wloka,TR 9:35-10:50,,Computer vision
 Harvey Mudd College,2024-25,F,CSCI-181AG,01,Network Algorithmics,Arthi Padmanabhan,TR 13:15-14:30,,Computer networks
 Harvey Mudd College,2024-25,F,CSCI-181AL,01,Making Computer Science,"Julie Medero, Casey Baden",MW 9:35-10:50,,Computer science education
@@ -249,9 +249,9 @@ Harvey Mudd College,2024-25,S,CSCI-123,02,Comput Practices/Projects/People,"Cald
 Harvey Mudd College,2024-25,S,CSCI-131,01,Programming Languages,Ben Wiedermann,TR 13:15-14:30,,Programming languages
 Harvey Mudd College,2024-25,S,CSCI-133,01,Database Systems,Beth Trushkowsky,TR 13:15-14:30,,Databases
 Harvey Mudd College,2024-25,S,CSCI-133,02,Database Systems,Beth Trushkowsky,TR 14:45-16:00,,Databases
-Harvey Mudd College,2024-25,S,CSCI-140,01,Algorithms,Tim Randolph,MW 9:35-10:50,,Algorithms & complexity
-Harvey Mudd College,2024-25,S,CSCI-140,02,Algorithms,Tim Randolph,MW 11:00-12:15,,Algorithms & complexity
-Harvey Mudd College,2024-25,S,CSCI-140,03,Algorithms,Xanda Schofield,MW 9:35-10:50,,Algorithms & complexity
+Harvey Mudd College,2024-25,S,CSCI-140,01,Algorithms,Tim Randolph,MW 9:35-10:50,,Core
+Harvey Mudd College,2024-25,S,CSCI-140,02,Algorithms,Tim Randolph,MW 11:00-12:15,,Core
+Harvey Mudd College,2024-25,S,CSCI-140,03,Algorithms,Xanda Schofield,MW 9:35-10:50,,Core
 Harvey Mudd College,2024-25,S,CSCI-144,01,Scientific Computing,Jamie Haddock,TR 14:45-16:00,,High-performance computing
 Harvey Mudd College,2024-25,S,CSCI-151,01,Artificial Intelligence,James Boerkoel,MW 9:35-10:50,,Artificial intelligence
 Harvey Mudd College,2024-25,S,CSCI-152,01,Neural Networks,Gabriel Hope,MW 11:00-12:15,,Machine learning
@@ -283,8 +283,8 @@ Harvey Mudd College,2025-26,F,CSCI-081,02,Computability and Logic,"Lucas Bang, V
 Harvey Mudd College,2025-26,F,CSCI-105,01,Computer Systems,Beth Trushkowsky,TR 13:15-14:30; F 13:15-14:30,,Computer architecture
 Harvey Mudd College,2025-26,F,CSCI-120,01,Human-Centered Computing Methods,Lynn Kirabo,TR 13:15-14:30,,Human-computer interaction
 Harvey Mudd College,2025-26,F,CSCI-123,01,Comput Practices/Projects/People,Lynn Kirabo,MW 13:15-14:30,,Other
-Harvey Mudd College,2025-26,F,CSCI-140,01,Algorithms,"David Bachman, Tim Randolph",MW 9:35-10:50,,Algorithms & complexity
-Harvey Mudd College,2025-26,F,CSCI-140,02,Algorithms,"Tim Randolph, David Bachman",MW 13:15-14:30,,Algorithms & complexity
+Harvey Mudd College,2025-26,F,CSCI-140,01,Algorithms,"David Bachman, Tim Randolph",MW 9:35-10:50,,Core
+Harvey Mudd College,2025-26,F,CSCI-140,02,Algorithms,"Tim Randolph, David Bachman",MW 13:15-14:30,,Core
 Harvey Mudd College,2025-26,F,CSCI-153,01,Computer Vision,Calden Wloka,TR 9:35-10:50,,Computer vision
 Harvey Mudd College,2025-26,F,CSCI-158,01,Machine Learning,Erin Talvitie,MW 11:00-12:15,,Machine learning
 Harvey Mudd College,2025-26,F,CSCI-159,01,Natural Language Processing,Jonathan Chang,TR 13:15-14:30,,Natural language processing
@@ -310,7 +310,7 @@ Harvey Mudd College,2025-26,S,CSCI-123,01,Comput Practices/Projects/People,Calde
 Harvey Mudd College,2025-26,S,CSCI-132,01,Compiler Design,Ben Wiedermann,TR 9:35-10:50,,Programming languages
 Harvey Mudd College,2025-26,S,CSCI-133,01,Database Systems,Beth Trushkowsky,TR 13:15-14:30,,Databases
 Harvey Mudd College,2025-26,S,CSCI-133,02,Database Systems,Beth Trushkowsky,TR 14:45-16:00,,Databases
-Harvey Mudd College,2025-26,S,CSCI-140,01,Algorithms,Tim Randolph,MW 9:35-10:50,,Algorithms & complexity
+Harvey Mudd College,2025-26,S,CSCI-140,01,Algorithms,Tim Randolph,MW 9:35-10:50,,Core
 Harvey Mudd College,2025-26,S,CSCI-144,01,Scientific Computing,Christina Edholm,MW 13:15-14:30,,High-performance computing
 Harvey Mudd College,2025-26,S,CSCI-145,01,Advanced Topics in Algorithms,Tim Randolph,MW 11:00-12:15,,Algorithms & complexity
 Harvey Mudd College,2025-26,S,CSCI-153,01,Computer Vision,Calden Wloka,MW 14:45-16:00,,Computer vision

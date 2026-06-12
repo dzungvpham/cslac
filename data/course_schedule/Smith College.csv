@@ -14,7 +14,7 @@ Smith College,2021-22,F,CSC 231,01,Microprocessors and Assembly Language,Jamie C
 Smith College,2021-22,F,CSC 240,01,Computer Graphics,Nicholas Read Howe,TTh 9:25 AM-10:40 AM (Ford 342),https://www.smith.edu/apps/course_search/#csc-240-01-202201,Computer graphics
 Smith College,2021-22,F,CSC 250,01,Theory of Computation,Pablo Frank Bolton,MW 1:20 PM-2:35 PM (Seelye 301),https://www.smith.edu/apps/course_search/#csc-250-01-202201,Algorithms & complexity
 Smith College,2021-22,F,CSC 251,01,Network Security,Shinyoung Cho,TTh 1:20 PM-2:35 PM (Ford 342),https://www.smith.edu/apps/course_search/#csc-251-01-202201,Computer security & privacy
-Smith College,2021-22,F,CSC 252,01,Algorithms,Ileana Streinu,MWF 9:25 AM-10:40 AM (Ford 345),https://www.smith.edu/apps/course_search/#csc-252-01-202201,Algorithms & complexity
+Smith College,2021-22,F,CSC 252,01,Algorithms,Ileana Streinu,MWF 9:25 AM-10:40 AM (Ford 345),https://www.smith.edu/apps/course_search/#csc-252-01-202201,Core
 Smith College,2021-22,F,CSC 325,01,Seminar: Responsible Computing,Alicia M Grubb,Th 1:20 PM-4:00 PM (Ford 345),https://www.smith.edu/apps/course_search/#csc-325-01-202201,Other
 Smith College,2021-22,F,CSC 356pa,01,Seminar: Topics in Human/computer Interaction-Platform Activism,Johanna Brewer,Monday | 7:00 PM - 9:30 PM; Monday | 1:20 PM - 4:00 PM / Ford 345,https://www.smith.edu/apps/course_search/#csc-356pa-01-202201,Human-computer interaction
 Smith College,2021-22,F,EGR 390dc,03,Seminar: Advanced Topics in Engineering-Digital Circuits,Judith B. Cardell,TTh 10:50 AM-12:05 PM (Ford 143),https://www.smith.edu/apps/course_search/#egr-390dc-03-202201,Design automation
@@ -53,7 +53,7 @@ Smith College,2022-23,F,CSC 230,01,Introduction to Database Systems,Razieh Fathi
 Smith College,2022-23,F,CSC 231,01,Microprocessors and Assembly Language,Jamie C. Macbeth,TTh 10:50 AM-12:05 PM (Ford 342),https://www.smith.edu/apps/course_search/#csc-231-01-202301,Computer architecture
 Smith College,2022-23,F,CSC 249,02,Computer Networks,Jordan Crouser,TTh 1:20 PM-2:35 PM (Ford 342),https://www.smith.edu/apps/course_search/#csc-249-02-202301,Computer networks
 Smith College,2022-23,F,CSC 250,01,Theory of Computation,Pablo Frank Bolton,MWF 10:50 AM-12:05 PM (Ford 342),https://www.smith.edu/apps/course_search/#csc-250-01-202301,Algorithms & complexity
-Smith College,2022-23,F,CSC 252,01,Algorithms,Ileana Streinu,MWF 9:25 AM-10:40 AM (Ford 345),https://www.smith.edu/apps/course_search/#csc-252-01-202301,Algorithms & complexity
+Smith College,2022-23,F,CSC 252,01,Algorithms,Ileana Streinu,MWF 9:25 AM-10:40 AM (Ford 345),https://www.smith.edu/apps/course_search/#csc-252-01-202301,Core
 Smith College,2022-23,F,CSC 294,01,Computational Machine Learning,Katherine M. Kinnaird,MW 10:50 AM-12:05 PM (Ford 345),https://www.smith.edu/apps/course_search/#csc-294-01-202301,Machine learning
 Smith College,2022-23,F,CSC 356pa,01,Seminar: Topics in Human/computer Interaction-Platform Activism,Johanna Brewer,Monday | 1:40 PM - 4:20 PM; Monday | 7:00 PM - 9:30 PM / Ford 345,https://www.smith.edu/apps/course_search/#csc-356pa-01-202301,Human-computer interaction
 Smith College,2022-23,F,CSC 370,01,Seminar: Computer Vision and Image Processing,Nicholas Read Howe,TTh 1:20 PM-2:35 PM (Ford 345),https://www.smith.edu/apps/course_search/#csc-370-01-202301,Computer vision
@@ -96,7 +96,7 @@ Smith College,2023-24,F,CSC 231,01,Microprocessors and Assembly Language,Michael
 Smith College,2023-24,F,CSC 240,01,Computer Graphics,Nicholas Read Howe,TTh 9:25 AM-10:40 AM (Ford 342),https://www.smith.edu/apps/course_search/#csc-240-01-202401,Computer graphics
 Smith College,2023-24,F,CSC 249,01,Computer Networks,Brant Andrew Cheikes,TTh 2:45 PM-4:00 PM (Ford 342),https://www.smith.edu/apps/course_search/#csc-249-01-202401,Computer networks
 Smith College,2023-24,F,CSC 250,01,Theory of Computation,Pablo Frank Bolton,MWF 10:50 AM-12:05 PM (Ford 241),https://www.smith.edu/apps/course_search/#csc-250-01-202401,Algorithms & complexity
-Smith College,2023-24,F,CSC 252,01,Algorithms,Alicia M Grubb,Wednesday/Friday | 1:20 PM - 2:35 PM; Monday | 1:40 PM - 2:55 PM / Ford 342,https://www.smith.edu/apps/course_search/#csc-252-01-202401,Algorithms & complexity
+Smith College,2023-24,F,CSC 252,01,Algorithms,Alicia M Grubb,Wednesday/Friday | 1:20 PM - 2:35 PM; Monday | 1:40 PM - 2:55 PM / Ford 342,https://www.smith.edu/apps/course_search/#csc-252-01-202401,Core
 Smith College,2023-24,F,CSC 352,01,Seminar: Parallel Programming,Michael Robson,TTh 10:50 AM-12:05 PM (Ford 342),https://www.smith.edu/apps/course_search/#csc-352-01-202401,Misc
 Smith College,2023-24,F,CSC 353pm,01,Seminar: Topics in Robotics-Robotics Perception and Mapping,Pablo Frank Bolton,Th 1:20 PM-4:00 PM (Bass 204),https://www.smith.edu/apps/course_search/#csc-353pm-01-202401,Misc
 Smith College,2023-24,F,SDS 192,01,Introduction to Data Science,Shiya Cao,MWF 9:25 AM-10:40 AM (Sabin-Reed 220),https://www.smith.edu/apps/course_search/#sds-192-01-202401,Data science
@@ -135,7 +135,7 @@ Smith College,2024-25,F,CSC 231,01,Microprocessors and Assembly Language,Jamie C
 Smith College,2024-25,F,CSC 235,01,Visual Analytics,Ab Mosca,TTh 2:45 PM-4:00 PM (Stoddard G2),https://www.smith.edu/apps/course_search/#csc-235-01-202501,Visualization
 Smith College,2024-25,F,CSC 249,01,Computer Networks,Albert Beckman Williams,TTh 2:45 PM-4:00 PM (Ford 241),https://www.smith.edu/apps/course_search/#csc-249-01-202501,Computer networks
 Smith College,2024-25,F,CSC 250,01,Theory of Computation,Pablo Frank Bolton,Wednesday/Friday | 2:45 PM - 4:00 PM; Monday | 3:05 PM - 4:20 PM / Ford 241,https://www.smith.edu/apps/course_search/#csc-250-01-202501,Algorithms & complexity
-Smith College,2024-25,F,CSC 252,01,Algorithms,Alicia M Grubb,MWF 10:50 AM-12:05 PM (Bass 204),https://www.smith.edu/apps/course_search/#csc-252-01-202501,Algorithms & complexity
+Smith College,2024-25,F,CSC 252,01,Algorithms,Alicia M Grubb,MWF 10:50 AM-12:05 PM (Bass 204),https://www.smith.edu/apps/course_search/#csc-252-01-202501,Core
 Smith College,2024-25,F,CSC 256,01,Human-Computer Interaction,Johanna Brewer,M 1:40 PM-4:20 PM (Bass 204),https://www.smith.edu/apps/course_search/#csc-256-01-202501,Human-computer interaction
 Smith College,2024-25,F,CSC 290,01,Introduction to Artificial Intelligence,Jamie C. Macbeth,TTh 1:20 PM-2:35 PM (Ford 241),https://www.smith.edu/apps/course_search/#csc-290-01-202501,Artificial intelligence
 Smith College,2024-25,F,CSC 325,01,Seminar: Responsible Computing,Alicia M Grubb,W 1:20 PM-4:00 PM (McConnell 403),https://www.smith.edu/apps/course_search/#csc-325-01-202501,Other
@@ -181,7 +181,7 @@ Smith College,2025-26,F,CSC 210,02,Data Structures,Halie Rando,TTh 10:50 AM-12:0
 Smith College,2025-26,F,CSC 231,01,Microprocessors and Assembly Language,Michael Robson,WF 10:50 AM-12:05 PM (Ford 241),https://www.smith.edu/apps/course_search/#csc-231-01-202601,Computer architecture
 Smith College,2025-26,F,CSC 233,01,Introduction to Electronics and Arduino,Hia Ghosh,TTh 1:20 PM-2:35 PM (Bass 204),https://www.smith.edu/apps/course_search/#csc-233-01-202601,Embedded & real-time systems
 Smith College,2025-26,F,CSC 250,01,Theory of Computation,Pablo Frank Bolton,MWF 9:25 AM-10:40 AM (Ford 342),https://www.smith.edu/apps/course_search/#csc-250-01-202601,Algorithms & complexity
-Smith College,2025-26,F,CSC 252,01,Algorithms,Alicia M Grubb,Wednesday/Friday | 1:20 PM - 2:35 PM; Monday | 1:40 PM - 2:55 PM / Ford 240,https://www.smith.edu/apps/course_search/#csc-252-01-202601,Algorithms & complexity
+Smith College,2025-26,F,CSC 252,01,Algorithms,Alicia M Grubb,Wednesday/Friday | 1:20 PM - 2:35 PM; Monday | 1:40 PM - 2:55 PM / Ford 240,https://www.smith.edu/apps/course_search/#csc-252-01-202601,Core
 Smith College,2025-26,F,CSC 262,01,Operating Systems,Jamie C. Macbeth,TTh 2:45 PM-4:00 PM (Ford 241),https://www.smith.edu/apps/course_search/#csc-262-01-202601,Operating systems
 Smith College,2025-26,F,CSC 268,01,Image Processing Fundamentals,Nicholas Read Howe,Wednesday/Friday | 2:45 PM - 4:00 PM; Monday | 3:05 PM - 4:20 PM / Ford 342,https://www.smith.edu/apps/course_search/#csc-268-01-202601,Computer vision
 Smith College,2025-26,F,CSC 274,01,Discrete and Computational Geometry,Ileana Streinu,TTh 9:25 AM-10:40 AM (Ford 241),https://www.smith.edu/apps/course_search/#csc-274-01-202601,Algorithms & complexity

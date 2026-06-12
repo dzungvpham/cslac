@@ -16,7 +16,7 @@ Macalester College,2021-22,F,COMP 128,01,Data Structures,Irene Yuan,M W F 1:10 -
 Macalester College,2021-22,F,COMP 128,02,Data Structures,Irene Yuan,M W F 2:20 - 3:20 pm,,Core
 Macalester College,2021-22,F,COMP 154,01,Digital Ethics,Diane Michelfelder,M W F 10:50 - 11:50 am,,Other
 Macalester College,2021-22,F,COMP 194,01,Introduction to Data in the Humanities,Aisling Quigley,M W F 9:40 - 10:40 am,,Other
-Macalester College,2021-22,F,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 9:40 - 10:40 am,,Algorithms & complexity
+Macalester College,2021-22,F,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 9:40 - 10:40 am,,Core
 Macalester College,2021-22,F,COMP 225,01,Software Design and Development,Lian Duan,M W F 12:00 - 1:00 pm,,Software engineering
 Macalester College,2021-22,F,COMP 225,02,Software Design and Development,Lian Duan,M W F 1:10 - 2:10 pm,,Software engineering
 Macalester College,2021-22,F,COMP 240,01,Computer Systems Organization,Getiria Onsongo,M W F 10:50 - 11:50 am,,Computer architecture
@@ -43,8 +43,8 @@ Macalester College,2021-22,S,COMP 127,L3,Object-Oriented Programming and Abstrac
 Macalester College,2021-22,S,COMP 127,L4,Object-Oriented Programming and Abstraction,Benjamin Hillmann,R 3:00 - 4:30 pm,,Core
 Macalester College,2021-22,S,COMP 128,01,Data Structures,Irene Yuan,M W F 9:40 - 10:40 am,,Core
 Macalester College,2021-22,S,COMP 128,02,Data Structures,Irene Yuan,M W F 10:50 - 11:50 am,,Core
-Macalester College,2021-22,S,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 9:40 - 10:40 am,,Algorithms & complexity
-Macalester College,2021-22,S,COMP 221,02,Algorithm Design and Analysis,Lian Duan,M W F 10:50 - 11:50 am,,Algorithms & complexity
+Macalester College,2021-22,S,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 9:40 - 10:40 am,,Core
+Macalester College,2021-22,S,COMP 221,02,Algorithm Design and Analysis,Lian Duan,M W F 10:50 - 11:50 am,,Core
 Macalester College,2021-22,S,COMP 225,01,Software Design and Development,Paul Cantrell,M W F 1:10 - 2:10 pm,,Software engineering
 Macalester College,2021-22,S,COMP 225,02,Software Design and Development,Paul Cantrell,M W F 2:20 - 3:20 pm,,Software engineering
 Macalester College,2021-22,S,COMP 240,01,Computer Systems Organization,Getiria Onsongo,M W F 1:10 - 2:10 pm,,Computer architecture
@@ -73,7 +73,7 @@ Macalester College,2022-23,F,COMP 127,L3,Object-Oriented Programming and Abstrac
 Macalester College,2022-23,F,COMP 128,01,Data Structures,Amin Alhashim,M W F 1:10 - 2:10 pm,,Core
 Macalester College,2022-23,F,COMP 128,02,Data Structures,Amin Alhashim,M W F 2:20 - 3:20 pm,,Core
 Macalester College,2022-23,F,COMP 128,03,Data Structures,Getiria Onsongo,M W F 2:20 - 3:20 pm,,Core
-Macalester College,2022-23,F,COMP 221,01,Algorithm Design and Analysis,Susan Fox,M W F 1:10 - 2:10 pm,,Algorithms & complexity
+Macalester College,2022-23,F,COMP 221,01,Algorithm Design and Analysis,Susan Fox,M W F 1:10 - 2:10 pm,,Core
 Macalester College,2022-23,F,COMP 225,01,Software Design and Development,Bret Jackson,M W F 9:40 - 10:40 am,,Software engineering
 Macalester College,2022-23,F,COMP 225,02,Software Design and Development,Lian Duan,M W F 10:50 - 11:50 am,,Software engineering
 Macalester College,2022-23,F,COMP 240,01,Computer Systems,Abby Marsh,M W F 1:10 - 2:10 pm,,Computer architecture
@@ -102,8 +102,8 @@ Macalester College,2022-23,S,COMP 127,L3,Object-Oriented Prog Lab,Amin Alhashim,
 Macalester College,2022-23,S,COMP 127,L4,Object-Oriented Prog Lab,Amin Alhashim,R 3:00 - 4:30 pm,,Misc
 Macalester College,2022-23,S,COMP 128,01,Data Structures,Bret Jackson,M W F 2:20 - 3:20 pm,,Core
 Macalester College,2022-23,S,COMP 128,02,Data Structures,Bret Jackson,M W F 3:30 - 4:30 pm,,Core
-Macalester College,2022-23,S,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 9:40 - 10:40 am,,Algorithms & complexity
-Macalester College,2022-23,S,COMP 221,02,Algorithm Design and Analysis,Lian Duan,M W F 10:50 - 11:50 am,,Algorithms & complexity
+Macalester College,2022-23,S,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 9:40 - 10:40 am,,Core
+Macalester College,2022-23,S,COMP 221,02,Algorithm Design and Analysis,Lian Duan,M W F 10:50 - 11:50 am,,Core
 Macalester College,2022-23,S,COMP 225,01,Software Design and Development,Paul Cantrell,M W F 10:50 - 11:50 am,,Software engineering
 Macalester College,2022-23,S,COMP 225,02,Software Design and Development,Paul Cantrell,M W F 1:10 - 2:10 pm,,Software engineering
 Macalester College,2022-23,S,COMP 225,03,Software Design and Development,Joslenne Peña,M W F 2:20 - 3:20 pm,,Software engineering
@@ -136,7 +136,7 @@ Macalester College,2023-24,F,COMP 194,01,Introduction to Data in the Humanities,
 Macalester College,2023-24,F,COMP 194,F1,Functional Problem Solving,Abby Marsh,M W F 10:50 - 11:50 am,,Core
 Macalester College,2023-24,F,COMP 212,01,Intermediate Data Science,Leslie Myint,T R 9:40 - 11:10 am,,Data science
 Macalester College,2023-24,F,COMP 212,02,Intermediate Data Science,Leslie Myint,T R 1:20 - 2:50 pm,,Data science
-Macalester College,2023-24,F,COMP 221,01,Algorithm Design and Analysis,Lauren Milne,M W F 10:50 - 11:50 am,,Algorithms & complexity
+Macalester College,2023-24,F,COMP 221,01,Algorithm Design and Analysis,Lauren Milne,M W F 10:50 - 11:50 am,,Core
 Macalester College,2023-24,F,COMP 225,01,Software Design and Development,Lauren Milne,M W F 1:10 - 2:10 pm,,Software engineering
 Macalester College,2023-24,F,COMP 225,02,Software Design and Development,Lauren Milne,M W F 2:20 - 3:20 pm,,Software engineering
 Macalester College,2023-24,F,COMP 240,01,Computer Systems,Abby Marsh,M W F 9:40 - 10:40 am,,Computer architecture
@@ -167,8 +167,8 @@ Macalester College,2023-24,S,COMP 127,L4,Object-Oriented Prog/Abstr Lab,Abby Mar
 Macalester College,2023-24,S,COMP 128,01,Data Structures,Bret Jackson,M W F 9:40 - 10:40 am,,Core
 Macalester College,2023-24,S,COMP 128,02,Data Structures,Bret Jackson,M W F 10:50 - 11:50 am,,Core
 Macalester College,2023-24,S,COMP 212,01,Intermediate Data Science,Leslie Myint,T R 9:40 - 11:10 am,,Data science
-Macalester College,2023-24,S,COMP 221,01,Algorithm Design and Analysis,Suhas Arehalli,M W F 1:10 - 2:10 pm,,Algorithms & complexity
-Macalester College,2023-24,S,COMP 221,02,Algorithm Design and Analysis,Suhas Arehalli,M W F 2:20 - 3:20 pm,,Algorithms & complexity
+Macalester College,2023-24,S,COMP 221,01,Algorithm Design and Analysis,Suhas Arehalli,M W F 1:10 - 2:10 pm,,Core
+Macalester College,2023-24,S,COMP 221,02,Algorithm Design and Analysis,Suhas Arehalli,M W F 2:20 - 3:20 pm,,Core
 Macalester College,2023-24,S,COMP 225,01,Software Design and Development,Paul Cantrell,M W F 2:20 - 3:20 pm,,Software engineering
 Macalester College,2023-24,S,COMP 225,02,Software Design and Development,Paul Cantrell,M W F 1:10 - 2:10 pm,,Software engineering
 Macalester College,2023-24,S,COMP 225,03,Software Design and Development,Aaron Laursen,M W F 3:30 - 4:30 pm,,Software engineering
@@ -201,7 +201,7 @@ Macalester College,2024-25,F,COMP 194,01,Introduction to Computational Methods i
 Macalester College,2024-25,F,COMP 194,02,Critical Race and Digital Studies,Tia-Simone Gardner Getiria Onsongo Aisling Quigley,T R 1:20 - 2:50 pm,,Computational social science
 Macalester College,2024-25,F,COMP 194,F1,Explorations/Extended Reality,Bret Jackson,M W F 10:50 - 11:50 am,,Games & interactive art
 Macalester College,2024-25,F,COMP 212,01,Intermediate Data Science,Brianna Heggeseth,T R 1:20 - 2:50 pm,,Data science
-Macalester College,2024-25,F,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 10:50 - 11:50 am,,Algorithms & complexity
+Macalester College,2024-25,F,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 10:50 - 11:50 am,,Core
 Macalester College,2024-25,F,COMP 225,01,Software Design and Development,Joslenne Peña,M W F 12:00 - 1:00 pm,,Software engineering
 Macalester College,2024-25,F,COMP 225,02,Software Design and Development,Lauren Milne,M W F 1:10 - 2:10 pm,,Software engineering
 Macalester College,2024-25,F,COMP 225,03,Software Design and Development,Lauren Milne,M W F 2:20 - 3:20 pm,,Software engineering
@@ -226,8 +226,8 @@ Macalester College,2024-25,S,COMP 127,03,Object-Oriented Programming and Abstrac
 Macalester College,2024-25,S,COMP 128,01,Data Structures,Bret Jackson,M W F 9:40 - 10:40 am,,Core
 Macalester College,2024-25,S,COMP 128,02,Data Structures,Bret Jackson,M W F 10:50 - 11:50 am,,Core
 Macalester College,2024-25,S,COMP 212,01,Intermediate Data Science,Brianna Heggeseth,M W 8:00 - 9:30 am,,Data science
-Macalester College,2024-25,S,COMP 221,01,Algorithm Design and Analysis,Suhas Arehalli,M W F 2:20 - 3:20 pm,,Algorithms & complexity
-Macalester College,2024-25,S,COMP 221,02,Algorithm Design and Analysis,Suhas Arehalli,M W F 3:30 - 4:30 pm,,Algorithms & complexity
+Macalester College,2024-25,S,COMP 221,01,Algorithm Design and Analysis,Suhas Arehalli,M W F 2:20 - 3:20 pm,,Core
+Macalester College,2024-25,S,COMP 221,02,Algorithm Design and Analysis,Suhas Arehalli,M W F 3:30 - 4:30 pm,,Core
 Macalester College,2024-25,S,COMP 225,01,Software Design and Development,Paul Cantrell,M W F 1:10 - 2:10 pm,,Software engineering
 Macalester College,2024-25,S,COMP 225,02,Software Design and Development,Paul Cantrell,M W F 3:30 - 4:30 pm,,Software engineering
 Macalester College,2024-25,S,COMP 240,01,Computer Systems,Abby Marsh,M W F 9:40 - 10:40 am,,Computer architecture
@@ -257,7 +257,7 @@ Macalester College,2025-26,F,COMP 194,01,Introduction to Computational Methods i
 Macalester College,2025-26,F,COMP 194,02,Thinking Internationally About (and With) AI and ChatGPT,David Moore,M W F 1:10 - 2:10 pm,,Other
 Macalester College,2025-26,F,COMP 194,F1,Introduction to Computer Science through Vision,Susan Fox,M W F 2:20 - 3:20 pm,,Core
 Macalester College,2025-26,F,COMP 212,01,Intermediate Data Science,Amin Alhashim,M W F 12:00 - 1:00 pm,,Data science
-Macalester College,2025-26,F,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 9:40 - 10:40 am,,Algorithms & complexity
+Macalester College,2025-26,F,COMP 221,01,Algorithm Design and Analysis,Lian Duan,M W F 9:40 - 10:40 am,,Core
 Macalester College,2025-26,F,COMP 225,01,Software Design and Development,Bret Jackson,M W F 9:40 - 10:40 am,,Software engineering
 Macalester College,2025-26,F,COMP 225,02,Software Design and Development,Lian Duan,M W F 10:50 - 11:50 am,,Software engineering
 Macalester College,2025-26,F,COMP 240,01,Computer Systems,Getiria Onsongo,M W F 9:40 - 10:40 am,,Computer architecture
@@ -281,8 +281,8 @@ Macalester College,2025-26,S,COMP 127,03,Object-Oriented Programming and Abstrac
 Macalester College,2025-26,S,COMP 128,01,Data Structures,Bret Jackson,M W F 10:50 - 11:50 am,,Core
 Macalester College,2025-26,S,COMP 128,02,Data Structures,Suhas Arehalli,M W F 1:10 - 2:10 pm,,Core
 Macalester College,2025-26,S,COMP 212,01,Intermediate Data Science,Amin Alhashim,M W F 12:00 - 1:00 pm,,Data science
-Macalester College,2025-26,S,COMP 221,01,Algorithm Design and Analysis,Suhas Arehalli,M W F 2:20 - 3:20 pm,,Algorithms & complexity
-Macalester College,2025-26,S,COMP 221,02,Algorithm Design and Analysis,Suhas Arehalli,M W F 3:30 - 4:30 pm,,Algorithms & complexity
+Macalester College,2025-26,S,COMP 221,01,Algorithm Design and Analysis,Suhas Arehalli,M W F 2:20 - 3:20 pm,,Core
+Macalester College,2025-26,S,COMP 221,02,Algorithm Design and Analysis,Suhas Arehalli,M W F 3:30 - 4:30 pm,,Core
 Macalester College,2025-26,S,COMP 225,01,Software Design and Development,Paul Cantrell,M W F 10:50 - 11:50 am,,Software engineering
 Macalester College,2025-26,S,COMP 225,02,Software Design and Development,Paul Cantrell,M W F 1:10 - 2:10 pm,,Software engineering
 Macalester College,2025-26,S,COMP 240,01,Computer Systems,Susan Fox,M W F 2:20 - 3:20 pm,,Computer architecture

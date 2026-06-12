@@ -11,7 +11,7 @@ Vassar College,2021-22,F,CMPU-145,02,Foundations/Computer Science,"Lambert, Matt
 Vassar College,2021-22,F,CMPU-203,01,Computer Science III,"Meireles, Rui",R 1100AM-0100PM; MW 1030AM-1145AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2021-22,F,CMPU-203,02,Computer Science III,"Meireles, Rui",R 0310PM-0510PM; MW 1030AM-1145AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2021-22,F,CMPU-240,01,Theory of Computation,"Gordon, Jonathan",TR 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2021-22,F,CMPU-241,01,Analysis of Algorithms,"Lambert, Matthew",MW 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2021-22,F,CMPU-241,01,Analysis of Algorithms,"Lambert, Matthew",MW 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2021-22,F,CMPU-290,01,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2021-22,F,CMPU-290,03,Machine Learning in 3D QA,"Hunsberger, Luke",,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Machine learning
 Vassar College,2021-22,F,CMPU-290,04,Robotics Engineering,"Meireles, Rui",,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Robotics
@@ -33,7 +33,7 @@ Vassar College,2021-22,S,CMPU-145,51,Foundations/Computer Science,"Lambert, Matt
 Vassar College,2021-22,S,CMPU-203,51,Computer Science III,"Meireles, Rui",MW 1200PM-0115PM; T 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2021-22,S,CMPU-224,51,Computer Organization,"Waterman, Jason",TR 0130PM-0245PM; F 0100PM-0300PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2021-22,S,CMPU-240,51,Theory of Computation,"Frankl, Phyllis",MW 1030AM-1145AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2021-22,S,CMPU-241,51,Analysis of Algorithms,"Lambert, Matthew",MW 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2021-22,S,CMPU-241,51,Analysis of Algorithms,"Lambert, Matthew",MW 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2021-22,S,CMPU-290,51,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2021-22,S,CMPU-290,52,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2021-22,S,CMPU-290,53,Application Development,"Frankl, Phyllis",,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Software engineering
@@ -61,7 +61,7 @@ Vassar College,2022-23,F,CMPU-145,02,Foundations/Computer Science,"Gommerstadt, 
 Vassar College,2022-23,F,CMPU-203,01,Computer Science III,"Meireles, Rui",TR 1030AM-1145AM; R 0600PM-0800PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2022-23,F,CMPU-224,01,Computer Organization,"Waterman, Jason",TR 0130PM-0245PM; F 0100PM-0300PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2022-23,F,CMPU-240,01,Theory of Computation,"Gordon, Jonathan",TR 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2022-23,F,CMPU-241,01,Analysis of Algorithms,"Goodwin, Prairie Rose",TR 0900AM-1015AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2022-23,F,CMPU-241,01,Analysis of Algorithms,"Goodwin, Prairie Rose",TR 0900AM-1015AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2022-23,F,CMPU-290,02,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2022-23,F,CMPU-290,03,Graphics Design Intern,"Meireles, Rui",,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2022-23,F,CMPU-298,01,Independent Work,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
@@ -83,7 +83,7 @@ Vassar College,2022-23,S,CMPU-203,51,Computer Science III,"Meireles, Rui",MW 103
 Vassar College,2022-23,S,CMPU-203,52,Computer Science III,"Meireles, Rui",MW 1030AM-1145AM; T 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2022-23,S,CMPU-224,51,Computer Organization,"Waterman, Jason",MW 0130PM-0245PM; F 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2022-23,S,CMPU-240,51,Theory of Computation,"Ellman, Tom",TR 0310PM-0425PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2022-23,S,CMPU-241,51,Analysis of Algorithms,"Goodwin, Prairie Rose",TR 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2022-23,S,CMPU-241,51,Analysis of Algorithms,"Goodwin, Prairie Rose",TR 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2022-23,S,CMPU-280,51,Intermediate Data Science,"Hoellerbauer, Simon",TR 1200PM-0115PM; F 0100PM-0300PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Data science
 Vassar College,2022-23,S,CMPU-290,51,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2022-23,S,CMPU-290,52,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
@@ -113,7 +113,7 @@ Vassar College,2023-24,F,CMPU-203,01,Software Design,"Meireles, Rui",MW 1030AM-1
 Vassar College,2023-24,F,CMPU-203,02,Software Design,"Meireles, Rui",MW 1030AM-1145AM; T 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Software engineering
 Vassar College,2023-24,F,CMPU-224,01,Computer Organization,"Waterman, Jason",MW 0130PM-0245PM; R 1100AM-0100PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2023-24,F,CMPU-240,01,Theory of Computation,"Gordon, Jonathan",TR 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2023-24,F,CMPU-241,01,Analysis of Algorithms,"Falcone, Sara",TR 0310PM-0425PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2023-24,F,CMPU-241,01,Analysis of Algorithms,"Falcone, Sara",TR 0310PM-0425PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2023-24,F,CMPU-290,01,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2023-24,F,CMPU-290,02,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2023-24,F,CMPU-290,03,Dutchess Public Health,"Buie, Edward",,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Unknown
@@ -139,7 +139,7 @@ Vassar College,2023-24,S,CMPU-145,51,Foundations/Computer Science,"Hunsberger, L
 Vassar College,2023-24,S,CMPU-145,52,Foundations/Computer Science,"Gommerstadt, Hannah",TR 1030AM-1145AM; R 0600PM-0800PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2023-24,S,CMPU-224,51,Computer Organization,"Waterman, Jason",TR 0130PM-0245PM; F 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2023-24,S,CMPU-240,51,Theory of Computation,"Falcone, Sara",MW 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2023-24,S,CMPU-241,51,Analysis of Algorithms,"Goodwin, Prairie Rose",TR 0900AM-1015AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2023-24,S,CMPU-241,51,Analysis of Algorithms,"Goodwin, Prairie Rose",TR 0900AM-1015AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2023-24,S,CMPU-280,51,Intermediate Data Science,"Hoellerbauer, Simon",MW 1200PM-0115PM; F 0100PM-0300PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Data science
 Vassar College,2023-24,S,CMPU-290,51,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2023-24,S,CMPU-290,52,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
@@ -168,7 +168,7 @@ Vassar College,2024-25,F,CMPU-145,02,Foundations/Computer Science,"Gommerstadt, 
 Vassar College,2024-25,F,CMPU-203,01,Software Design,"Meireles, Rui",MW 1030AM-1145AM; T 0900AM-1100AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Software engineering
 Vassar College,2024-25,F,CMPU-203,02,Software Design,"Meireles, Rui",MW 1030AM-1145AM; T 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Software engineering
 Vassar College,2024-25,F,CMPU-240,01,Theory of Computation,"Gordon, Jonathan",TR 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2024-25,F,CMPU-241,01,Analysis of Algorithms,"Erickson, Jacob",MW 0900AM-1015AM; appro val: Select Marc,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2024-25,F,CMPU-241,01,Analysis of Algorithms,"Erickson, Jacob",MW 0900AM-1015AM; appro val: Select Marc,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2024-25,F,CMPU-290,01,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2024-25,F,CMPU-290,02,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2024-25,F,CMPU-298,01,Independent Work,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
@@ -193,8 +193,8 @@ Vassar College,2024-25,S,CMPU-203,52,Software Design,"Meireles, Rui",MW 1030AM-1
 Vassar College,2024-25,S,CMPU-224,51,Computer Organization,"Waterman, Jason",MW 1030AM-1145AM; R 0100PM-0300PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2024-25,S,CMPU-224,52,Computer Organization,"Waterman, Jason",MW 1030AM-1145AM; R 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2024-25,S,CMPU-240,51,Theory of Computation,"Hunsberger, Luke",TR 1030AM-1145AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2024-25,S,CMPU-241,51,Analysis of Algorithms,"Falcone, Sara",MW 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2024-25,S,CMPU-241,52,Analysis of Algorithms,"Erickson, Jacob",TR 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2024-25,S,CMPU-241,51,Analysis of Algorithms,"Falcone, Sara",MW 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
+Vassar College,2024-25,S,CMPU-241,52,Analysis of Algorithms,"Erickson, Jacob",TR 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2024-25,S,CMPU-250,51,Data and its Discontents,"Stapleton, Logan",MW 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Data science
 Vassar College,2024-25,S,CMPU-290,51,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2024-25,S,CMPU-290,52,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
@@ -225,7 +225,7 @@ Vassar College,2025-26,F,CMPU-203,01,Software Design,"Meireles, Rui",MW 0130PM-0
 Vassar College,2025-26,F,CMPU-224,01,Computer Organization,"Waterman, Jason",TR 1030AM-1145AM; R 0600PM-0800PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2025-26,F,CMPU-240,01,Theory of Computation,"Hunsberger, Luke",TR 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
 Vassar College,2025-26,F,CMPU-240,02,Theory of Computation,"Hunsberger, Luke",MW 1030AM-1145AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2025-26,F,CMPU-241,01,Analysis of Algorithms,"Erickson, Jacob",MW 0900AM-1015AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2025-26,F,CMPU-241,01,Analysis of Algorithms,"Erickson, Jacob",MW 0900AM-1015AM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2025-26,F,CMPU-250,01,Data and its Discontents,"Stapleton, Logan",MW 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Data science
 Vassar College,2025-26,F,CMPU-290,01,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2025-26,F,CMPU-290,02,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
@@ -252,7 +252,7 @@ Vassar College,2025-26,S,CMPU-145,51,Foundations/Computer Science,"Gommerstadt, 
 Vassar College,2025-26,S,CMPU-203,51,Software Design,"Meireles, Rui",MW 1200PM-0115PM; M 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Software engineering
 Vassar College,2025-26,S,CMPU-224,51,Computer Organization,"Waterman, Jason",MW 0130PM-0245PM; T 0310PM-0510PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2025-26,S,CMPU-240,51,Theory of Computation,"Gordon, Jonathan",TR 0130PM-0245PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
-Vassar College,2025-26,S,CMPU-241,51,Analysis of Algorithms,"Newman, Heather",TR 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Algorithms & complexity
+Vassar College,2025-26,S,CMPU-241,51,Analysis of Algorithms,"Newman, Heather",TR 1200PM-0115PM,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Core
 Vassar College,2025-26,S,CMPU-290,51,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2025-26,S,CMPU-290,52,Community-Engaged Learning,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc
 Vassar College,2025-26,S,CMPU-298,51,Independent Work,,,https://aisapps.vassar.edu/cgi-bin/geninfo.cgi,Misc

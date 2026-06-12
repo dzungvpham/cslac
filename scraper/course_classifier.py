@@ -7,7 +7,8 @@ The label space is the 32 CS subfields (mirrors ``CS_SUBFIELD_NAMES`` in
 can gate course visibility) plus four meta categories:
 
   * ``Core``    — generic, essential foundation courses (intro programming,
-                  data structures, discrete math, computer organization).
+                  data structures, discrete math, computer organization, and
+                  the standard algorithms course).
   * ``Misc``    — not a real lecture course (independent study, research,
                   thesis, capstone, internship, seminar, standalone lab).
   * ``Other``   — a computing/CS elective that fits none of the 32 subfields.
@@ -121,8 +122,12 @@ using the EXACT strings below.
 Meta categories:
 - "Core": generic, essential CS foundation courses every major takes — intro
   programming (CS1/CS2/"Computer Science I/II"), data structures, discrete
-  mathematics, computer organization. Use Core only for these foundational
-  courses, never for an advanced/specialized elective.
+  mathematics, computer organization, and the standard required algorithms
+  course ("Algorithms", "Analysis of Algorithms", "Algorithm Design &
+  Analysis"). Use Core only for these foundational courses, never for an
+  advanced or specialized elective — "Advanced/Randomized/Applied Algorithms",
+  a domain-specific "Algorithms for/on X", or "Theory of Computation" /
+  "Computability" / "Automata" are NOT Core.
 - "Misc": not a real lecture course — independent study, directed or
   undergraduate research, thesis, capstone, internship, practicum, seminar,
   colloquium, tutorial, or a standalone lab/recitation.
@@ -152,9 +157,13 @@ social science; Games & interactive art.
 
 Guidance and examples (Title -> Category):
 Intro to Computer Science / Programming I / Programming II -> Core; Data
-Structures -> Core; Discrete Mathematics -> Core; Computer Organization -> Core.
-Algorithms -> Algorithms & complexity; Theory of Computation -> Algorithms &
-complexity; Computational Complexity -> Algorithms & complexity.
+Structures -> Core; Discrete Mathematics -> Core; Computer Organization -> Core;
+Algorithms / Analysis of Algorithms / Algorithm Design and Analysis -> Core.
+Advanced Algorithms / Randomized Algorithms / Applied Algorithms / Algorithms
+for Data Science / Algorithms paired with a specialized topic (e.g. "Algorithms
+and Visualization", "Algorithms and Concurrency") -> Algorithms & complexity;
+Theory of Computation / Computability / Automata / Computational Complexity ->
+Algorithms & complexity.
 Artificial Intelligence -> Artificial intelligence; Machine Learning / Deep
 Learning -> Machine learning; Computer Vision / Image Processing -> Computer
 vision; Natural Language Processing -> Natural language processing; Data Science

@@ -10,8 +10,8 @@ Grinnell College,2025-26,S,CSC-208,01,Discrete Structures,William L. Rebelsky,T/
 Grinnell College,2025-26,S,CSC-211,01,Comp Org/Architecture w/lab,Jerod Weinman,M/W/F 10:00 AM - 11:50 AM,,Core
 Grinnell College,2025-26,S,CSC-211,02,Comp Org/Architecture w/lab,Jerod Weinman,M/W/F 2:00 PM - 3:50 PM,,Core
 Grinnell College,2025-26,S,CSC-261,01,Artificial Intelligence,Fernanda M. Eliott,M/W/F 10:00 AM - 11:20 AM,,Artificial intelligence
-Grinnell College,2025-26,S,CSC-301,01,Analysis of Algorithms,Samuel Rebelsky,M/W/F 10:00 AM - 11:20 AM,,Algorithms & complexity
-Grinnell College,2025-26,S,CSC-301,02,Analysis of Algorithms,Peter-Michael S. Osera,M/W/F 2:30 PM - 3:50 PM,,Algorithms & complexity
+Grinnell College,2025-26,S,CSC-301,01,Analysis of Algorithms,Samuel Rebelsky,M/W/F 10:00 AM - 11:20 AM,,Core
+Grinnell College,2025-26,S,CSC-301,02,Analysis of Algorithms,Peter-Michael S. Osera,M/W/F 2:30 PM - 3:50 PM,,Core
 Grinnell College,2025-26,S,CSC-313,01,Advanced Operating Systems,Charlie Curtsinger,T/Th 2:00 PM - 3:50 PM,,Operating systems
 Grinnell College,2025-26,S,CSC-324,01,Software Design & Dev w/Lab,Peter-Michael S. Osera,M/W/F 8:00 AM - 9:50 AM,,Software engineering
 Grinnell College,2025-26,S,CSC-324,02,Software Design & Dev w/Lab,Fernanda M. Eliott,M/W/F 2:00 PM - 3:50 PM,,Software engineering
@@ -30,8 +30,8 @@ Grinnell College,2026-27,F,CSC-208,01,Discrete Structures,William L. Rebelsky,T/
 Grinnell College,2026-27,F,CSC-213,01,Oper Sys/Paral Algor w/lab,Charlie Curtsinger,M/W/F 10:00 AM - 11:50 AM,,Operating systems
 Grinnell College,2026-27,F,CSC-213,02,Oper Sys/Paral Algor w/lab,Charlie Curtsinger,M/W/F 2:10 PM - 4:00 PM,,Operating systems
 Grinnell College,2026-27,F,CSC-262,01,Computer Vision,Jerod Weinman,T/Th 8:00 AM - 9:50 AM,,Computer vision
-Grinnell College,2026-27,F,CSC-301,01,Analysis of Algorithms,William L. Rebelsky,T/Th 9:30 AM - 10:50 AM,,Algorithms & complexity
-Grinnell College,2026-27,F,CSC-301,02,Analysis of Algorithms,William L. Rebelsky,T/Th 1:10 PM - 2:30 PM,,Algorithms & complexity
+Grinnell College,2026-27,F,CSC-301,01,Analysis of Algorithms,William L. Rebelsky,T/Th 9:30 AM - 10:50 AM,,Core
+Grinnell College,2026-27,F,CSC-301,02,Analysis of Algorithms,William L. Rebelsky,T/Th 1:10 PM - 2:30 PM,,Core
 Grinnell College,2026-27,F,CSC-324,01,Software Design & Dev w/Lab,Peter-Michael S. Osera,M/W/F 8:00 AM - 9:50 AM,,Software engineering
 Grinnell College,2026-27,F,CSC-324,02,Software Design & Dev w/Lab,Peter-Michael S. Osera,M/W/F 2:10 PM - 4:00 PM,,Software engineering
 Grinnell College,2026-27,F,CSC-326,01,Software Dev Leadership w/Lab,Peter-Michael S. Osera,Su TBD,,Software engineering
@@ -45,7 +45,7 @@ Grinnell College,2026-27,S,CSC-207,02,"OO Prob Slvg, Data Struc/Alg",Mr. Zachary
 Grinnell College,2026-27,S,CSC-208,01,Discrete Structures,William L. Rebelsky,T/Th 8:00 AM - 9:20 AM,,Core
 Grinnell College,2026-27,S,CSC-211,01,Comp Org/Architecture w/lab,Jerod Weinman,M/W/F 10:00 AM - 11:50 AM,,Core
 Grinnell College,2026-27,S,CSC-211,02,Comp Org/Architecture w/lab,Jerod Weinman,M/W/F 2:10 PM - 4:00 PM,,Core
-Grinnell College,2026-27,S,CSC-301,01,Analysis of Algorithms,William L. Rebelsky,T/Th 9:30 AM - 10:50 AM,,Algorithms & complexity
+Grinnell College,2026-27,S,CSC-301,01,Analysis of Algorithms,William L. Rebelsky,T/Th 9:30 AM - 10:50 AM,,Core
 Grinnell College,2026-27,S,CSC-324,01,Software Design & Dev w/Lab,Fernanda M. Eliott,M/W/F 8:00 AM - 9:50 AM,,Software engineering
 Grinnell College,2026-27,S,CSC-324,02,Software Design & Dev w/Lab,Fernanda M. Eliott,M/W/F 2:10 PM - 4:00 PM,,Software engineering
 Grinnell College,2026-27,S,CSC-341,01,"Auto, Frm Lng, Cmp Cmplxty",Shawn Ong,T/Th 9:30 AM - 10:50 AM,,Algorithms & complexity

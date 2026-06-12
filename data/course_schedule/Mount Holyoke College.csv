@@ -23,7 +23,7 @@ Mount Holyoke College,2021-22,F,COMSC-295,02,Independent Study,Barbara Lerner,08
 Mount Holyoke College,2021-22,F,COMSC-295P,01,Independent Study w/Practicum,Melody Su,08/30/2021-12/13/2021,,Misc
 Mount Holyoke College,2021-22,F,COMSC-295P,02,Independent Study w/Practicum,Heather Pon-Barry,08/30/2021-12/13/2021,,Misc
 Mount Holyoke College,2021-22,F,COMSC-295P,03,Independent Study w/Practicum,Barbara Lerner,08/30/2021-12/13/2021,,Misc
-Mount Holyoke College,2021-22,F,COMSC-312,01,Algorithms,Ozan Erat,"Lecture Tuesday, Thursday 11:30AM - 12:45PM, Clapp Laboratory, Room 306",,Algorithms & complexity
+Mount Holyoke College,2021-22,F,COMSC-312,01,Algorithms,Ozan Erat,"Lecture Tuesday, Thursday 11:30AM - 12:45PM, Clapp Laboratory, Room 306",,Core
 Mount Holyoke College,2021-22,F,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday 01:45PM - 03:00PM, Kendade, Room 305",,Operating systems
 Mount Holyoke College,2021-22,F,COMSC-334,01,Artificial Intelligence,Lisa Ballesteros,"Lecture Tuesday, Thursday 01:45PM - 03:00PM, Clapp Laboratory, Room 206",,Artificial intelligence
 Mount Holyoke College,2021-22,F,COMSC-335,01,Machine Learning,Melody Su,"Lecture Monday, Wednesday, Friday 11:30AM - 12:45PM, Clapp Laboratory, Room 203",,Machine learning
@@ -61,7 +61,7 @@ Mount Holyoke College,2021-22,S,COMSC-243SW,01,Computing Systems Workshop,James 
 Mount Holyoke College,2021-22,S,COMSC-295,01,Independent Study,Melody Su,01/24/2022-05/09/2022,,Misc
 Mount Holyoke College,2021-22,S,COMSC-295,02,Independent Study,Barbara Lerner,01/24/2022-05/09/2022,,Misc
 Mount Holyoke College,2021-22,S,COMSC-295P,01,Independent Study w/Practicum,Heather Pon-Barry,01/24/2022-05/09/2022,,Misc
-Mount Holyoke College,2021-22,S,COMSC-312,01,Algorithms,Ozan Erat,"Lecture Monday, Wednesday 08:30AM - 09:45AM, Kendade, Room 303 Fourth Hour of Class Friday 08:30AM - 09:20AM, Kendade, Room 303",,Algorithms & complexity
+Mount Holyoke College,2021-22,S,COMSC-312,01,Algorithms,Ozan Erat,"Lecture Monday, Wednesday 08:30AM - 09:45AM, Kendade, Room 303 Fourth Hour of Class Friday 08:30AM - 09:20AM, Kendade, Room 303",,Core
 Mount Holyoke College,2021-22,S,COMSC-316,01,Developing Innovative Software,Barbara Lerner,"Lecture Tuesday 01:45PM - 03:00PM, Clapp Laboratory, Room 206 Lecture Thursday 01:45PM - 04:20PM, Clapp Laboratory, Room 206",,Software engineering
 Mount Holyoke College,2021-22,S,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Clapp Laboratory, Room 218 Fourth Hour of Class Friday 03:15PM - 04:05PM, Clapp Laboratory, Room 218",,Operating systems
 Mount Holyoke College,2021-22,S,COMSC-335,01,Machine Learning,Melody Su,"Lecture Tuesday, Thursday 11:30AM - 12:45PM, Clapp Laboratory, Room 206",,Machine learning
@@ -95,8 +95,8 @@ Mount Holyoke College,2022-23,F,COMSC-243ST,01,Intro to Search Technologies,Lisa
 Mount Holyoke College,2022-23,F,COMSC-295,01,Independent Study,Lisa Ballesteros,09/07/2022-12/20/2022,,Misc
 Mount Holyoke College,2022-23,F,COMSC-295,02,Independent Study,Barbara Lerner,09/07/2022-12/20/2022,,Misc
 Mount Holyoke College,2022-23,F,COMSC-295P,01,Independent Study w/Practicum,Lisa Ballesteros,09/07/2022-12/20/2022,,Misc
-Mount Holyoke College,2022-23,F,COMSC-312,01,Algorithms,Dovan Rai,"Lecture Monday, Wednesday 11:30AM - 12:45PM, Clapp Laboratory, Room 206 Fourth Hour of Class Friday 11:30AM - 12:20PM, Clapp Laboratory, Room 206",,Algorithms & complexity
-Mount Holyoke College,2022-23,F,COMSC-312,02,Algorithms,Dovan Rai,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Clapp Laboratory, Room 218 Fourth Hour of Class Friday 03:15PM - 04:05PM, Clapp Laboratory, Room 218",,Algorithms & complexity
+Mount Holyoke College,2022-23,F,COMSC-312,01,Algorithms,Dovan Rai,"Lecture Monday, Wednesday 11:30AM - 12:45PM, Clapp Laboratory, Room 206 Fourth Hour of Class Friday 11:30AM - 12:20PM, Clapp Laboratory, Room 206",,Core
+Mount Holyoke College,2022-23,F,COMSC-312,02,Algorithms,Dovan Rai,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Clapp Laboratory, Room 218 Fourth Hour of Class Friday 03:15PM - 04:05PM, Clapp Laboratory, Room 218",,Core
 Mount Holyoke College,2022-23,F,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Clapp Laboratory, Room 206 Fourth Hour of Class Friday 03:15PM - 04:05PM, Clapp Laboratory, Room 206",,Operating systems
 Mount Holyoke College,2022-23,F,COMSC-341NP,01,Intro Netwrk. Arch.&Protocols,James McCauley,"Lecture Tuesday, Thursday 03:15PM - 04:30PM, Clapp Laboratory, Room 206",,Computer networks
 Mount Holyoke College,2022-23,F,COMSC-343,01,Programming Lang. Design/Impl,Barbara Lerner,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Kendade, Room 303",,Programming languages
@@ -124,7 +124,7 @@ Mount Holyoke College,2022-23,S,COMSC-226,01,Engineering Robotic Systems,Melody 
 Mount Holyoke College,2022-23,S,COMSC-295,01,Independent Study,Lisa Ballesteros,01/23/2023-05/08/2023,,Misc
 Mount Holyoke College,2022-23,S,COMSC-295,02,Independent Study,Melody Su,01/23/2023-05/08/2023,,Misc
 Mount Holyoke College,2022-23,S,COMSC-295,03,Independent Study,Alyxander Burns,01/23/2023-05/08/2023,,Misc
-Mount Holyoke College,2022-23,S,COMSC-312,01,Algorithms,Dovan Rai,"Lecture Monday, Wednesday, Friday 11:30AM - 12:45PM, Dwight Hall, Room 101",,Algorithms & complexity
+Mount Holyoke College,2022-23,S,COMSC-312,01,Algorithms,Dovan Rai,"Lecture Monday, Wednesday, Friday 11:30AM - 12:45PM, Dwight Hall, Room 101",,Core
 Mount Holyoke College,2022-23,S,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday, Friday 03:15PM - 04:30PM, Kendade, Room 305",,Operating systems
 Mount Holyoke College,2022-23,S,COMSC-335,01,Machine Learning,Dovan Rai,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Clapp Laboratory, Room 218",,Machine learning
 Mount Holyoke College,2022-23,S,COMSC-341GP,01,Game Programming,James McCauley,"Lecture Tuesday, Thursday 03:15PM - 04:30PM, Clapp Laboratory, Room 206",,Games & interactive art
@@ -162,7 +162,7 @@ Mount Holyoke College,2023-24,F,COMSC-295P,02,Independent Study w/Practicum,Barb
 Mount Holyoke College,2023-24,F,COMSC-295P,03,Independent Study w/Practicum,Melody Su,09/06/2023-12/19/2023,,Misc
 Mount Holyoke College,2023-24,F,COMSC-295P,04,Independent Study w/Practicum,Audrey Lee St. John,09/06/2023-12/19/2023,,Misc
 Mount Holyoke College,2023-24,F,COMSC-295P,05,Independent Study w/Practicum,Alyxander Burns,09/06/2023-12/19/2023,,Misc
-Mount Holyoke College,2023-24,F,COMSC-312,01,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 09:00AM - 10:15AM, Clapp Laboratory, Room 306 Fourth Hour of Class Wednesday 07:15PM - 08:30PM, Clapp Laboratory, Room 306",,Algorithms & complexity
+Mount Holyoke College,2023-24,F,COMSC-312,01,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 09:00AM - 10:15AM, Clapp Laboratory, Room 306 Fourth Hour of Class Wednesday 07:15PM - 08:30PM, Clapp Laboratory, Room 306",,Core
 Mount Holyoke College,2023-24,F,COMSC-322,01,Operating Systems,Barbara Lerner,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Kendade, Room 303 Fourth Hour of Class Friday 03:15PM - 04:05PM, Kendade, Room 303",,Operating systems
 Mount Holyoke College,2023-24,F,COMSC-335,01,Machine Learning,Dovan Rai,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Clapp Laboratory, Room 127",,Machine learning
 Mount Holyoke College,2023-24,F,COMSC-341CV,01,Computer Vision,Melody Su,"Lecture Monday, Wednesday 01:45PM - 03:00PM, Kendade, Room 303",,Computer vision
@@ -196,7 +196,7 @@ Mount Holyoke College,2023-24,S,COMSC-295P,01,Independent Study w/Practicum,Melo
 Mount Holyoke College,2023-24,S,COMSC-295P,02,Independent Study w/Practicum,James McCauley,01/23/2024-05/07/2024,,Misc
 Mount Holyoke College,2023-24,S,COMSC-295P,03,Independent Study w/Practicum,Barbara Lerner,01/23/2024-05/07/2024,,Misc
 Mount Holyoke College,2023-24,S,COMSC-311,01,Theory of Computation,Audrey Lee St. John,"Lecture Tuesday, Thursday 09:00AM - 10:15AM, Clapp Laboratory, Room 218",,Algorithms & complexity
-Mount Holyoke College,2023-24,S,COMSC-312,01,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Clapp Laboratory, Room 306",,Algorithms & complexity
+Mount Holyoke College,2023-24,S,COMSC-312,01,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Clapp Laboratory, Room 306",,Core
 Mount Holyoke College,2023-24,S,COMSC-316,01,Developing Innovative Software,Barbara Lerner,"Lecture Tuesday 01:45PM - 03:00PM, Reese, Room 301 Lecture Thursday 01:45PM - 04:20PM, Reese, Room 301",,Software engineering
 Mount Holyoke College,2023-24,S,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday 01:45PM - 03:00PM, Kendade, Room 305 Fourth Hour of Class Friday 01:45PM - 02:35PM, Kendade, Room 305",,Operating systems
 Mount Holyoke College,2023-24,S,COMSC-335,01,Machine Learning,Dovan Rai,"Lecture Monday, Wednesday 11:30AM - 12:45PM, Clapp Laboratory, Room 206",,Machine learning
@@ -235,8 +235,8 @@ Mount Holyoke College,2024-25,F,COMSC-295P,01,Independent Study w/Practicum,Melo
 Mount Holyoke College,2024-25,F,COMSC-295P,02,Independent Study w/Practicum,Barbara Lerner,09/04/2024-12/17/2024,,Misc
 Mount Holyoke College,2024-25,F,COMSC-295P,03,Independent Study w/Practicum,James McCauley,09/04/2024-12/17/2024,,Misc
 Mount Holyoke College,2024-25,F,COMSC-295P,04,Independent Study w/Practicum,Lisa Ballesteros,09/04/2024-12/17/2024,,Misc
-Mount Holyoke College,2024-25,F,COMSC-312,01,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Clapp Laboratory, Room 306",,Algorithms & complexity
-Mount Holyoke College,2024-25,F,COMSC-312,02,Algorithms,Diane Uwacu,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Kendade, Room 203",,Algorithms & complexity
+Mount Holyoke College,2024-25,F,COMSC-312,01,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Clapp Laboratory, Room 306",,Core
+Mount Holyoke College,2024-25,F,COMSC-312,02,Algorithms,Diane Uwacu,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Kendade, Room 203",,Core
 Mount Holyoke College,2024-25,F,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday 01:45PM - 03:00PM, Kendade, Room 203 Fourth Hour of Class Friday 01:45PM - 02:35PM, Kendade, Room 203",,Operating systems
 Mount Holyoke College,2024-25,F,COMSC-341CV,01,Computer Vision,Melody Su,"Lecture Monday, Wednesday 11:30AM - 12:45PM, Kendade, Room 107",,Computer vision
 Mount Holyoke College,2024-25,F,COMSC-341NL,01,Natural Language Processing,Heather Pon-Barry,"Lecture Tuesday, Thursday 01:45PM - 03:00PM, Kendade, Room 203",,Natural language processing
@@ -272,7 +272,7 @@ Mount Holyoke College,2024-25,S,COMSC-295,05,Independent Study,Heather Pon-Barry
 Mount Holyoke College,2024-25,S,COMSC-295,06,Independent Study,Audrey Lee St. John,01/28/2025-05/13/2025,,Misc
 Mount Holyoke College,2024-25,S,COMSC-295P,01,Independent Study w/Practicum,Barbara Lerner,01/28/2025-05/13/2025,,Misc
 Mount Holyoke College,2024-25,S,COMSC-295P,02,Independent Study w/Practicum,Diane Uwacu,01/28/2025-05/13/2025,,Misc
-Mount Holyoke College,2024-25,S,COMSC-312,01,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 09:00AM - 10:15AM, Clapp Laboratory, Room 306",,Algorithms & complexity
+Mount Holyoke College,2024-25,S,COMSC-312,01,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 09:00AM - 10:15AM, Clapp Laboratory, Room 306",,Core
 Mount Holyoke College,2024-25,S,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday, Friday 11:30AM - 12:45PM, Clapp Laboratory, Room 218",,Operating systems
 Mount Holyoke College,2024-25,S,COMSC-322,02,Operating Systems,James McCauley,"Lecture Monday, Wednesday, Friday 01:45PM - 03:00PM, Clapp Laboratory, Room 206",,Operating systems
 Mount Holyoke College,2024-25,S,COMSC-334,01,Artificial Intelligence,Javier Burroni,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Kendade, Room 107",,Artificial intelligence
@@ -313,8 +313,8 @@ Mount Holyoke College,2025-26,F,COMSC-295P,04,Independent Study w/Practicum,Lisa
 Mount Holyoke College,2025-26,F,COMSC-295P,05,Independent Study w/Practicum,James McCauley,09/03/2025-12/16/2025,,Misc
 Mount Holyoke College,2025-26,F,COMSC-295P,06,Independent Study w/Practicum,Tony Liu,09/03/2025-12/16/2025,,Misc
 Mount Holyoke College,2025-26,F,COMSC-311,01,Theory of Computation,Audrey Lee St. John,"Lecture Tuesday, Thursday 09:00AM - 10:15AM, Clapp Laboratory, Room 218",,Algorithms & complexity
-Mount Holyoke College,2025-26,F,COMSC-312,01,Algorithms,Diane Uwacu,"Lecture Tuesday, Thursday 09:00AM - 10:15AM, Clapp Laboratory, Room 127",,Algorithms & complexity
-Mount Holyoke College,2025-26,F,COMSC-312,02,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Clapp Laboratory, Room 206",,Algorithms & complexity
+Mount Holyoke College,2025-26,F,COMSC-312,01,Algorithms,Diane Uwacu,"Lecture Tuesday, Thursday 09:00AM - 10:15AM, Clapp Laboratory, Room 127",,Core
+Mount Holyoke College,2025-26,F,COMSC-312,02,Algorithms,Audrey Lee St. John,"Lecture Tuesday, Thursday 10:30AM - 11:45AM, Clapp Laboratory, Room 206",,Core
 Mount Holyoke College,2025-26,F,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday, Friday 01:45PM - 03:00PM, Cleveland, Room 002L",,Operating systems
 Mount Holyoke College,2025-26,F,COMSC-334,01,Artificial Intelligence,Neha Kennard,"Lecture Monday, Wednesday 01:45PM - 03:00PM, Clapp Laboratory, Room 420 Fourth Hour of Class Friday 01:45PM - 02:35PM, Clapp Laboratory, Room 420",,Artificial intelligence
 Mount Holyoke College,2025-26,F,COMSC-341CD,01,Causal Inference for Data Sci,Tony Liu,"Lecture Monday, Wednesday 03:15PM - 04:30PM, Kendade, Room 203 Fourth Hour of Class Friday 03:15PM - 04:05PM, Kendade, Room 203",,Data science
@@ -348,7 +348,7 @@ Mount Holyoke College,2025-26,S,COMSC-295,04,Independent Study,James McCauley,01
 Mount Holyoke College,2025-26,S,COMSC-295,05,Independent Study,Audrey Lee St. John,03/23/2026-05/12/2026,,Misc
 Mount Holyoke College,2025-26,S,COMSC-295P,01,Independent Study w/Practicum,Alyxander Burns,01/27/2026-05/12/2026,,Misc
 Mount Holyoke College,2025-26,S,COMSC-295P,02,Independent Study w/Practicum,Audrey Lee St. John,01/27/2026-03/13/2026,,Misc
-Mount Holyoke College,2025-26,S,COMSC-312,01,Algorithms,Brett Mullins,"Lecture Tuesday, Thursday 01:45PM - 03:00PM, Clapp Laboratory, Room 218",,Algorithms & complexity
+Mount Holyoke College,2025-26,S,COMSC-312,01,Algorithms,Brett Mullins,"Lecture Tuesday, Thursday 01:45PM - 03:00PM, Clapp Laboratory, Room 218",,Core
 Mount Holyoke College,2025-26,S,COMSC-322,01,Operating Systems,James McCauley,"Lecture Monday, Wednesday, Friday 01:45PM - 03:00PM, Clapp Laboratory, Room 206",,Operating systems
 Mount Holyoke College,2025-26,S,COMSC-335,01,Machine Learning,Tony Liu,"Lecture Tuesday, Thursday 01:45PM - 03:00PM, Kendade, Room 303",,Machine learning
 Mount Holyoke College,2025-26,S,COMSC-341DV,01,Storytelling w/Data Visualztn,Alyxander Burns,"Lecture Monday, Wednesday 01:45PM - 03:00PM, Clapp Laboratory, Room 218",,Visualization

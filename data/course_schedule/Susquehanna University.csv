@@ -12,14 +12,14 @@ Susquehanna University,2021-22,F,CSCI-502,02,Computer Organization,"Chang, Hojin
 Susquehanna University,2021-22,S,CSCI-181,01,Principles of Computer Science,"Upton-Azzam, Joy",M/W/F 1:45 PM - 2:50 PM,,Core
 Susquehanna University,2021-22,S,CSCI-281,01,Data Structures,"Upton-Azzam, Joy",T/Th 2:25 PM - 4:05 PM,,Core
 Susquehanna University,2021-22,S,CSCI-301,01,Data Mining,"Lo, Edisanter",M/W/F 8:45 AM - 9:50 AM,,Data science
-Susquehanna University,2021-22,S,CSCI-381,01,Algorithms,"Chang, Hojin",M/W/F 12:30 PM - 1:35 PM,,Algorithms & complexity
+Susquehanna University,2021-22,S,CSCI-381,01,Algorithms,"Chang, Hojin",M/W/F 12:30 PM - 1:35 PM,,Core
 Susquehanna University,2021-22,S,CSCI-391,R1,Data Commun/Networks I,"Brakke, Kenneth A.",M/W/F 3:00 PM - 4:05 PM,,Computer networks
 Susquehanna University,2021-22,S,CSCI-392,S1,Data Commun/Networks II,"Brakke, Kenneth A.",M/W/F 3:00 PM - 4:05 PM,,Computer networks
 Susquehanna University,2021-22,S,CSCI-471,01,Software Engineer:Methodology,"Chang, Hojin",T/Th 8:15 AM - 9:50 AM,,Software engineering
 Susquehanna University,2021-22,S,CSCI-500,01,Senior Colloquium,"Jensen, Alathea I.",TBD,,Misc
 Susquehanna University,2021-22,S,CSCI-501,01,Topics in Computer Science,"Chang, Hojin",T/Th 10:00 AM - 11:35 AM,,Other
 Susquehanna University,2021-22,S,CSCI-502,01,Computer Security & Networks,"Jensen, Alathea I.",TBD,,Computer security & privacy
-Susquehanna University,2021-22,S,CSCI-502,02,Algorithms,"Chang, Hojin",TBD,,Algorithms & complexity
+Susquehanna University,2021-22,S,CSCI-502,02,Algorithms,"Chang, Hojin",TBD,,Core
 Susquehanna University,2021-22,S,CSCI-599,01,"Internship: CATI, Inc.","Chang, Hojin",TBD,,Misc
 Susquehanna University,2021-22,Su,CSCI-151,01,Introduction to Programming,"Graham, Jeffrey A.",TBD,,Core
 Susquehanna University,2021-22,Su,CSCI-502,01,Senior Colloquium,"Chang, Hojin",TBD,,Misc
@@ -33,23 +33,23 @@ Susquehanna University,2022-23,F,CSCI-481,R1,Programming Languages,"Chang, Hojin
 Susquehanna University,2022-23,F,CSCI-484,S1,Computer Graphics,"Chang, Hojin",M/W/F 1:45 PM - 2:50 PM,,Computer graphics
 Susquehanna University,2022-23,F,CSCI-500,01,Senior Colloquium,"Wilce, Alexander G.",TBD,,Misc
 Susquehanna University,2022-23,F,CSCI-502,01,Data Mining,"Chang, Hojin",TBD,,Data science
-Susquehanna University,2022-23,F,CSCI-502,02,Algorithms,"Chang, Hojin",TBD,,Algorithms & complexity
+Susquehanna University,2022-23,F,CSCI-502,02,Algorithms,"Chang, Hojin",TBD,,Core
 Susquehanna University,2022-23,F,CSCI-502,R1,Logic Gates,"Graham, Jeffrey A.",TBD,,Computer architecture
 Susquehanna University,2022-23,F,CSCI-599,01,Internship: U.S. Dept of State,"Wilce, Alexander G.",TBD,,Misc
 Susquehanna University,2022-23,S,CSCI-181,01,Principles of Computer Science,"Chang, Hojin",M/W/F 11:15 AM - 12:20 PM,,Core
 Susquehanna University,2022-23,S,CSCI-281,01,Data Structures,"Upton-Azzam, Joy",T/Th 12:30 PM - 2:15 PM,,Core
 Susquehanna University,2022-23,S,CSCI-351,R1,Numerical Computing,"Lo, Edisanter",M/W/F 1:45 PM - 2:50 PM,,High-performance computing
 Susquehanna University,2022-23,S,CSCI-352,S1,Numerical Analysis,"Lo, Edisanter",TBD,,Unknown
-Susquehanna University,2022-23,S,CSCI-381,01,Algorithms,"Upton-Azzam, Joy",M/W/F 8:45 AM - 9:50 AM,,Algorithms & complexity
+Susquehanna University,2022-23,S,CSCI-381,01,Algorithms,"Upton-Azzam, Joy",M/W/F 8:45 AM - 9:50 AM,,Core
 Susquehanna University,2022-23,S,CSCI-391,R1,Data Commun/Networks I,"Chang, Hojin",T/Th 8:15 AM - 9:50 AM,,Computer networks
 Susquehanna University,2022-23,S,CSCI-392,S1,Data Commun/Networks II,"Chang, Hojin",T/Th 2:45 PM - 4:05 PM,,Computer networks
 Susquehanna University,2022-23,S,CSCI-401,01,Machine Learning,"Lo, Edisanter",M/W/F 3:00 PM - 4:05 PM,,Machine learning
 Susquehanna University,2022-23,S,CSCI-483,01,Compiler Theory,"Upton-Azzam, Joy",M/W/F 12:30 PM - 1:35 PM,,Programming languages
 Susquehanna University,2022-23,S,CSCI-500,01,Senior Colloquium,"Wilce, Alexander G.",TBD,,Misc
 Susquehanna University,2022-23,S,CSCI-501,01,Topics in Computer Science,"Chang, Hojin",T/Th 10:00 AM - 11:05 AM,,Other
-Susquehanna University,2022-23,S,CSCI-502,01,Algorithms,"Upton-Azzam, Joy",TBD,,Algorithms & complexity
+Susquehanna University,2022-23,S,CSCI-502,01,Algorithms,"Upton-Azzam, Joy",TBD,,Core
 Susquehanna University,2022-23,S,CSCI-502,02,Data Analytics Basics,"Jensen, Alathea I.",TBD,,Data science
-Susquehanna University,2022-23,S,CSCI-502,03,Algorithms,"Jensen, Alathea I.",TBD,,Algorithms & complexity
+Susquehanna University,2022-23,S,CSCI-502,03,Algorithms,"Jensen, Alathea I.",TBD,,Core
 Susquehanna University,2022-23,S,CSCI-502,S1,Hand-Held Gaming Device,"Graham, Jeffrey A.",TBD,,Games & interactive art
 Susquehanna University,2022-23,S,CSCI-502,S2,C++ Programming,"Jensen, Alathea I.",TBD,,Core
 Susquehanna University,2022-23,S,CSCI-599,01,Internship: Nycrypto,"Jensen, Alathea I.",TBD,,Misc
@@ -76,7 +76,7 @@ Susquehanna University,2023-24,F,CSCI-599,02,Internship: IT,"Jensen, Alathea I."
 Susquehanna University,2023-24,S,CSCI-181,01,Principles of Computer Science,"Jensen, Alathea I.",T/Th 12:35 PM - 2:15 PM,,Core
 Susquehanna University,2023-24,S,CSCI-182,01,Object Oriented Prog & Design,"Upton-Azzam, Joy",M/W/F 12:30 PM - 1:35 PM,,Software engineering
 Susquehanna University,2023-24,S,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",T/Th 10:00 AM - 11:35 AM,,Data science
-Susquehanna University,2023-24,S,CSCI-381,01,Algorithms,"Upton-Azzam, Joy",M/W/F 3:00 PM - 4:05 PM,,Algorithms & complexity
+Susquehanna University,2023-24,S,CSCI-381,01,Algorithms,"Upton-Azzam, Joy",M/W/F 3:00 PM - 4:05 PM,,Core
 Susquehanna University,2023-24,S,CSCI-391,R1,Data Commun/Networks I,"Veluswamy, Anusha S.",T/Th 12:35 PM - 2:15 PM,,Computer networks
 Susquehanna University,2023-24,S,CSCI-392,S1,Data Commun/Networks II,"Veluswamy, Anusha S.",T/Th 12:35 PM - 2:15 PM,,Computer networks
 Susquehanna University,2023-24,S,CSCI-401,01,Machine Learning,"Lo, Edisanter",M/W/F 8:45 AM - 9:50 AM,,Machine learning
@@ -107,7 +107,7 @@ Susquehanna University,2024-25,S,CSCI-182,01,Object Oriented Prog & Design,"Upto
 Susquehanna University,2024-25,S,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",T/Th 10:00 AM - 11:35 AM,,Data science
 Susquehanna University,2024-25,S,CSCI-351,R1,Numerical Computing,"Jensen, Alathea I.",M/W/F 3:00 PM - 4:05 PM,,High-performance computing
 Susquehanna University,2024-25,S,CSCI-352,S1,Numerical Analysis,"Jensen, Alathea I.",M/W/F 3:00 PM - 4:05 PM,,Unknown
-Susquehanna University,2024-25,S,CSCI-381,01,Algorithms,"Upton-Azzam, Joy",M/W/F 11:15 AM - 12:20 PM,,Algorithms & complexity
+Susquehanna University,2024-25,S,CSCI-381,01,Algorithms,"Upton-Azzam, Joy",M/W/F 11:15 AM - 12:20 PM,,Core
 Susquehanna University,2024-25,S,CSCI-401,01,Machine Learning,"Veluswamy, Anusha S.",T/Th 2:25 PM - 4:05 PM,,Machine learning
 Susquehanna University,2024-25,S,CSCI-481,R1,Programming Languages,"Upton-Azzam, Joy",T/Th 12:35 PM - 2:15 PM,,Programming languages
 Susquehanna University,2024-25,S,CSCI-484,S1,Computer Graphics,"Upton-Azzam, Joy",T/Th 12:35 PM - 2:15 PM,,Computer graphics
@@ -132,7 +132,7 @@ Susquehanna University,2025-26,F,CSCI-599,01,Internship: SU Makerspace,"Jensen, 
 Susquehanna University,2025-26,S,CSCI-181,01,Principles of Computer Science,"Jensen, Alathea I.",T/Th 2:25 PM - 4:05 PM,,Core
 Susquehanna University,2025-26,S,CSCI-182,01,Object Oriented Prog & Design,"Emirahmetoglu, Ibrahim",M/W/F 10:00 AM - 11:05 AM,,Software engineering
 Susquehanna University,2025-26,S,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",T/Th 10:00 AM - 11:35 AM,,Data science
-Susquehanna University,2025-26,S,CSCI-381,01,Algorithms,"Emirahmetoglu, Ibrahim",T/Th 12:35 PM - 2:15 PM,,Algorithms & complexity
+Susquehanna University,2025-26,S,CSCI-381,01,Algorithms,"Emirahmetoglu, Ibrahim",T/Th 12:35 PM - 2:15 PM,,Core
 Susquehanna University,2025-26,S,CSCI-391,R1,Data Commun/Networks I,"Veluswamy, Anusha S.",T/Th 8:15 AM - 9:50 AM,,Computer networks
 Susquehanna University,2025-26,S,CSCI-392,S1,Data Commun/Networks II,"Veluswamy, Anusha S.",T/Th 8:15 AM - 9:50 AM,,Computer networks
 Susquehanna University,2025-26,S,CSCI-401,01,Machine Learning,"Lo, Edisanter",M/W/F 11:15 AM - 12:20 PM,,Machine learning
@@ -157,7 +157,7 @@ Susquehanna University,2026-27,S,CSCI-181,02,Principles of Computer Science,,TBD
 Susquehanna University,2026-27,S,CSCI-182,01,Object Oriented Prog & Design,,TBD,,Software engineering
 Susquehanna University,2026-27,S,CSCI-351,01,Numerical Computing,,TBD,,High-performance computing
 Susquehanna University,2026-27,S,CSCI-352,01,Numerical Analysis,,TBD,,Unknown
-Susquehanna University,2026-27,S,CSCI-381,01,Algorithms,,TBD,,Algorithms & complexity
+Susquehanna University,2026-27,S,CSCI-381,01,Algorithms,,TBD,,Core
 Susquehanna University,2026-27,S,CSCI-401,01,Machine Learning,,TBD,,Machine learning
 Susquehanna University,2026-27,S,CSCI-481,01,Programming Languages,,TBD,,Programming languages
 Susquehanna University,2026-27,S,CSCI-483,01,Compiler Theory,,TBD,,Programming languages
