@@ -198727,6 +198727,258 @@
             }
           ]
         ]
+      },
+      {
+        "code": "CSCI 2101",
+        "name": "Data Structures",
+        "category": "Core",
+        "offered": [
+          0,
+          1,
+          0
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "EM",
+              "n": "Elena Machkasova",
+              "u": "https://morris.umn.edu/directory/elena-machkasova"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CSCI 2601",
+        "name": "Processes, Programming, and Languages: Introduction to Functional Programming",
+        "category": "Programming languages",
+        "offered": [
+          1,
+          0,
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "EM",
+              "n": "Elena Machkasova",
+              "u": "https://morris.umn.edu/directory/elena-machkasova"
+            }
+          ],
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 2701",
+        "name": "Introduction to Data Science",
+        "category": "Data science",
+        "offered": [
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": "CSCI 3412",
+        "name": "Computing Systems: Practicum",
+        "category": "Misc",
+        "offered": [
+          0,
+          1,
+          0
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "WG",
+              "n": "Wenkai Guan",
+              "u": "https://morris.umn.edu/directory/wenkai-guan"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CSCI 3413",
+        "name": "Computing Systems: Concepts",
+        "category": "Computer architecture",
+        "offered": [
+          1,
+          0,
+          1
+        ],
+        "instructors": [
+          [
+            {
+              "l": "NM",
+              "n": "Nic McPhee",
+              "u": "https://morris.umn.edu/directory/nic-mcphee"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "WG",
+              "n": "Wenkai Guan",
+              "u": "https://morris.umn.edu/directory/wenkai-guan"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI 3501",
+        "name": "Algorithms and Computability",
+        "category": "Algorithms & complexity",
+        "offered": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": "CSCI 3601",
+        "name": "Software Design and Development",
+        "category": "Software engineering",
+        "offered": [
+          1,
+          0,
+          1
+        ],
+        "instructors": [
+          [
+            {
+              "l": "KL",
+              "n": "Kristin Lamberty",
+              "u": "https://morris.umn.edu/directory/kristin-lamberty"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "NM",
+              "n": "Nic McPhee",
+              "u": "https://morris.umn.edu/directory/nic-mcphee"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI 3701",
+        "name": "Intermediate Data Science",
+        "category": "Data science",
+        "offered": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": "CSCI 4462",
+        "name": "Systems: Environmentally Sustainable Computing",
+        "category": "Other",
+        "offered": [
+          0,
+          1,
+          0
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "WG",
+              "n": "Wenkai Guan",
+              "u": "https://morris.umn.edu/directory/wenkai-guan"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CSCI 4463",
+        "name": "Systems: Computing Systems for Artificial Intelligence",
+        "category": "Computer architecture",
+        "offered": [
+          0,
+          0,
+          1
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "WG",
+              "n": "Wenkai Guan",
+              "u": "https://morris.umn.edu/directory/wenkai-guan"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI 4553",
+        "name": "Theory: Evolutionary Computation and Artificial Intelligence",
+        "category": "Artificial intelligence",
+        "offered": [
+          0,
+          0,
+          1
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "NM",
+              "n": "Nic McPhee",
+              "u": "https://morris.umn.edu/directory/nic-mcphee"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI 4555",
+        "name": "Theory: Neural Networks and Machine Learning",
+        "category": "Machine learning",
+        "offered": [
+          1,
+          0,
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "EM",
+              "n": "Elena Machkasova",
+              "u": "https://morris.umn.edu/directory/elena-machkasova"
+            }
+          ],
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 4651",
+        "name": "Processes, Programming, and Languages: Programming Languages",
+        "category": "Programming languages",
+        "offered": [
+          0,
+          0,
+          1
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "EM",
+              "n": "Elena Machkasova",
+              "u": "https://morris.umn.edu/directory/elena-machkasova"
+            }
+          ]
+        ]
       }
     ],
     "publications": [
