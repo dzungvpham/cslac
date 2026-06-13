@@ -50,10 +50,10 @@ function venueRankTooltip(rank, source) {
 const COLLEGE_COLS = [
   { key: 'name',             label: 'Institution',   numeric: false },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
-  { key: 'majors',           label: 'MAJORS',        numeric: true, tooltip: 'The total number of graduated CS majors from 2021 to 2024 (according to IPEDS)' },
-  { key: 'maj_fac',          label: 'MAJ:FAC',       numeric: true, tooltip: 'Ratio of the total number of graduated CS majors from 2021 to 2024 (according to IPEDS) to the current number of tenured/tenure-track faculty' },
-  { key: 'courses_per_year', label: 'Electives',  numeric: true, tooltip: 'Number of unique elective courses offered in the last two academic years. Excludes foundational courses shared across CS programs (intro programming, data structures, discrete math, algorithms, computer organization), independent study/thesis/seminar, and non-CS courses swept in by cross-listing.' },
-  { key: 'filtered_pubs',   label: 'Papers',   numeric: true, tooltip: 'Number of papers affiliated with the institution and matching the current filters' },
+  { key: 'grads',            label: '4YR-GRAD',      numeric: true, tooltip: 'The total number of graduated CS majors from 2021 to 2024 (according to IPEDS)' },
+  { key: 'grad_fac',         label: 'GRAD:FAC',      numeric: true, tooltip: 'Ratio of the total number of graduated CS majors from 2021 to 2024 (according to IPEDS) to the current number of tenured/tenure-track faculty' },
+  { key: 'electives',        label: 'Electives',  numeric: true, tooltip: 'Number of unique CS electives offered in the last two academic years. Excludes most cores, independent study/thesis/seminar, and non-CS cross-listings.' },
+  { key: 'papers',          label: 'Papers',   numeric: true, tooltip: 'Number of papers affiliated with the institution and matching the current filters' },
 ];
 
 const FAC_COLS = [
@@ -243,7 +243,7 @@ const PUB_GROUP_SHORT = { conference: 'c', journal: 'j', other: 'o' };
 const PUB_GROUP_LONG = { c: 'conference', j: 'journal', o: 'other' };
 const VALID_VIEW = new Set(['faculty', 'courses', 'publications']);
 const VALID_SCOPE = new Set(['faculty', 'school']);
-const VALID_SORT_KEYS = new Set(['name', 'total', 'majors', 'maj_fac', 'courses_per_year', 'filtered_pubs']);
+const VALID_SORT_KEYS = new Set(['name', 'total', 'grads', 'grad_fac', 'electives', 'papers']);
 
 function setsEqual(a, b) {
   if (a.size !== b.size) return false;
@@ -314,7 +314,7 @@ function buildUrlParams({ includeDefaults = false } = {}) {
   }
 
   if (includeDefaults || collegeSort.key !== URL_DEFAULTS.sort.key || collegeSort.dir !== URL_DEFAULTS.sort.dir) {
-    p.set('sort', collegeSort.dir === -1 ? '-' + collegeSort.key : collegeSort.key);
+    p.set('sort', collegeSort.dir === -1 ? collegeSort.key + '_desc' : collegeSort.key);
   }
   if (expandAllOn) p.set('expand', '1');
   return p;
@@ -392,8 +392,8 @@ function applyUrlState() {
   }
   if (p.has('sort')) {
     const s = p.get('sort');
-    const dir = s.startsWith('-') ? -1 : 1;
-    const key = s.replace(/^-/, '');
+    const dir = s.endsWith('_desc') ? -1 : 1;
+    const key = s.replace(/_desc$/, '');
     if (VALID_SORT_KEYS.has(key)) collegeSort = { key, dir };
   }
   if (p.get('expand') === '1') expandAllOn = true;
@@ -510,7 +510,7 @@ async function loadData() {
       faculty: d.faculty || [],
       total: d.total || 0,
       matched: d.matched || 0,
-      majors: d.majors ?? null,
+      grads: d.majors ?? null,
     });
     collegeLinks[name] = {
       state: d.state ?? null,
@@ -562,18 +562,18 @@ async function loadData() {
         .filter(Boolean).join(' ').toLowerCase();
     }
     c._search = collegeBits.toLowerCase();
-    c.courses_per_year = recentCourseCount(courseSchedules[c.name], isElective);
-    // MAJ:FAC: CS majors graduated over the last 4 years divided by the number
+    c.electives = recentCourseCount(courseSchedules[c.name], isElective);
+    // GRAD:FAC: CS majors graduated over the last 4 years divided by the number
     // of tenured + tenure-track faculty. Deliberately fixed — independent of the
     // job-title / subfield / search filters — so it never shifts as the user
     // filters (aggregateCollege carries it through unchanged). Rounded to the
     // nearest integer so display, sort, and tie-ranks agree, and rendered as an
     // "N:1" ratio in buildCollegeRow; null (→ "—") when there's no degree data,
-    // zero majors, or no tenure-line faculty.
+    // zero grads, or no tenure-line faculty.
     const ttCount = c.faculty.filter(
       f => f.category === 'tenured' || f.category === 'tenure_track').length;
-    c.maj_fac = (c.majors > 0 && ttCount > 0)
-      ? Math.round(c.majors / ttCount)
+    c.grad_fac = (c.grads > 0 && ttCount > 0)
+      ? Math.round(c.grads / ttCount)
       : null;
     collegesByName[c.name] = c;
   }
@@ -1454,7 +1454,7 @@ function aggregateCollege(college) {
     ...college,
     faculty: fac,
     total: fac.length,
-    filtered_pubs: filteredPubCount(college.name),
+    papers: filteredPubCount(college.name),
     // Unique courses offered in the last RECENT_YEARS years matching the active
     // search + subfield filter — drives the Courses column value, its sort, and
     // (when searching) whether a course-only match keeps the college's row.
@@ -1567,7 +1567,7 @@ function renderAll() {
     // passesSchoolFilter has already restricted to schools with matching
     // faculty, so this can't re-add one there.)
     .filter(c => c.total > 0
-      || ((searching || subfieldIncluding) && ((c.filtered_pubs ?? 0) > 0 || (c.filtered_courses ?? 0) > 0)));
+      || ((searching || subfieldIncluding) && ((c.papers ?? 0) > 0 || (c.filtered_courses ?? 0) > 0)));
   const totalFaculty = aggregated.reduce((s, c) => s + c.total, 0);
   animateStat(document.getElementById('stat-colleges'), aggregated.length);
   animateStat(document.getElementById('stat-faculty'), totalFaculty);
@@ -1615,12 +1615,12 @@ function collegeSortValueFn() {
   return {
     name:              c => c.name,
     total:             c => c.total,
-    // null when there's no degree data (or 0 majors); the comparator floats
+    // null when there's no degree data (or 0 grads); the comparator floats
     // those "—" rows to the bottom in both directions (see sortedColleges).
-    majors:            c => c.majors || null,
-    maj_fac:           c => c.maj_fac,
-    courses_per_year:  c => (courseFiltering ? c.filtered_courses : c.courses_per_year) ?? -1,
-    filtered_pubs:     c => c.filtered_pubs ?? -1,
+    grads:             c => c.grads || null,
+    grad_fac:          c => c.grad_fac,
+    electives:         c => (courseFiltering ? c.filtered_courses : c.electives) ?? -1,
+    papers:            c => c.papers ?? -1,
   }[collegeSort.key] || (c => c.name);
 }
 
@@ -1797,9 +1797,9 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
   // restricted to the matching courses.
   const searching = !!searchQuery.trim();
   const courseFiltering = searching || activeSubfields.size > 0 || excludedSubfields.size > 0;
-  const coursesValue = courseFiltering ? college.filtered_courses : college.courses_per_year;
+  const coursesValue = courseFiltering ? college.filtered_courses : college.electives;
   const cpyText  = fmt(coursesValue);
-  const fpText   = fmt(college.filtered_pubs);
+  const fpText   = fmt(college.papers);
   const links   = collegeLinks[college.name] || {};
 
   const cnEsc = esc(college.name).replace(/'/g, "\\'");
@@ -1833,10 +1833,10 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
           </span>
         </div>
         <div class="td-num">${college.total}</div>
-        <div class="td-num ${college.majors ? '' : 'dim'}">${fmt(college.majors)}</div>
-        <div class="td-num ${college.maj_fac != null ? '' : 'dim'}">${college.maj_fac != null ? college.maj_fac + ':1' : '—'}</div>
+        <div class="td-num ${college.grads ? '' : 'dim'}">${fmt(college.grads)}</div>
+        <div class="td-num ${college.grad_fac != null ? '' : 'dim'}">${college.grad_fac != null ? college.grad_fac + ':1' : '—'}</div>
         <div class="td-num ${coursesValue != null && (!courseFiltering || coursesValue > 0) ? '' : 'dim'}">${cpyText}</div>
-        <div class="td-num ${college.filtered_pubs != null && college.filtered_pubs > 0 ? '' : 'dim'}">${fpText}</div>
+        <div class="td-num ${college.papers != null && college.papers > 0 ? '' : 'dim'}">${fpText}</div>
       </div>
     </div>
     <div class="faculty-panel">

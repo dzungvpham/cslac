@@ -1239,6 +1239,10 @@ a.pub-author:hover {
   align-items: center;
   gap: 6px;
 }
+/* Float the Advanced filter + Expand all buttons to the right edge of the
+   filter bar. margin-left:auto on the first of the pair pushes it and the
+   trailing Expand all button to the right. */
+#advanced-toggle { margin-left: auto; }
 .expand-toggle:hover {
   color: var(--text);
   border-color: var(--text);
