@@ -317,6 +317,23 @@ def is_lab_only(name: str) -> bool:
     return _LAB_COMBINED_RE.search(name) is None
 
 
+# Carleton marks the junior-seminar variant of a course with a "*" section: the
+# code gains a "*.NN" suffix (CS 314*.01) and the title gains a
+# " (*=Junior Seminar)" tag, but it's the same course as the unmarked one
+# (CS 314 / "Data Visualization"). Strip both markers at ingestion so the
+# variant folds into the base course (same code + name → same schedule row)
+# instead of rendering as a duplicate.
+_JUNIOR_SEM_NAME_RE = re.compile(r"\s*\(\*\s*=\s*Junior Seminar\)\s*$")
+_JUNIOR_SEM_CODE_RE = re.compile(r"\*(?:\.\d+)?$")
+
+
+def strip_junior_seminar(code: str, name: str) -> tuple[str, str]:
+    return (
+        _JUNIOR_SEM_CODE_RE.sub("", code).strip(),
+        _JUNIOR_SEM_NAME_RE.sub("", name).strip(),
+    )
+
+
 def term_label(year: str, term: str) -> str:
     start, end = year.split("-")
     yy = end[-2:] if term in ("W", "S", "Su") else start[-2:]
@@ -521,6 +538,7 @@ def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) ->
             continue
 
         college = rows[0]["college"]
+        strip_jr_seminar = college == "Carleton College"
         all_terms: set[tuple[str, str]] = set()
         offered: dict[str, set[tuple[str, str]]] = defaultdict(set)
         url_by_cell: dict[str, dict[tuple[str, str], str]] = defaultdict(dict)
@@ -538,6 +556,8 @@ def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) ->
                 continue
             code = (r["course_code"] or "").strip()
             name = (r["course_name"] or "").strip().strip('"')
+            if strip_jr_seminar:
+                code, name = strip_junior_seminar(code, name)
             if not code or not has_cs_code(code) or is_excluded(name):
                 continue
             all_terms.add((year, term))

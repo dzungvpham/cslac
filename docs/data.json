@@ -29075,52 +29075,7 @@
         ]
       },
       {
-        "code": "CS 220*.02",
-        "name": "Art, Interactivity, and Microcontrollers (*=Junior Seminar)",
-        "category": "Games & interactive art",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "DM",
-              "n": "David Musicant",
-              "u": "https://www.carleton.edu/directory/dmusicant/"
-            }
-          ]
-        ]
-      },
-      {
-        "code": "CS 232",
+        "code": "CS 220",
         "name": "Art, Interactivity, and Microcontrollers",
         "category": "Games & interactive art",
         "offered": [
@@ -29138,7 +29093,7 @@
           0,
           0,
           0,
-          0
+          1
         ],
         "instructors": [
           null,
@@ -29167,7 +29122,13 @@
           null,
           null,
           null,
-          null
+          [
+            {
+              "l": "DM",
+              "n": "David Musicant",
+              "u": "https://www.carleton.edu/directory/dmusicant/"
+            }
+          ]
         ]
       },
       {
@@ -29675,8 +29636,8 @@
         ]
       },
       {
-        "code": "CS 302*.01",
-        "name": "(De)constructing Everyday Technologies (*=Junior Seminar)",
+        "code": "CS 302",
+        "name": "(De)constructing Everyday Technologies",
         "category": "Other",
         "offered": [
           0,
@@ -29817,57 +29778,6 @@
           0,
           0,
           0,
-          0
-        ],
-        "instructors": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          [
-            {
-              "l": "EA",
-              "n": "Eric Alexander",
-              "u": "https://www.carleton.edu/directory/ealexander/"
-            }
-          ],
-          null,
-          null,
-          [
-            {
-              "l": "EA",
-              "n": "Eric Alexander",
-              "u": "https://www.carleton.edu/directory/ealexander/"
-            }
-          ],
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "code": "CS 314*.01",
-        "name": "Data Visualization (*=Junior Seminar)",
-        "category": "Visualization",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           1
         ],
         "instructors": [
@@ -29876,10 +29786,22 @@
           null,
           null,
           null,
+          [
+            {
+              "l": "EA",
+              "n": "Eric Alexander",
+              "u": "https://www.carleton.edu/directory/ealexander/"
+            }
+          ],
           null,
           null,
-          null,
-          null,
+          [
+            {
+              "l": "EA",
+              "n": "Eric Alexander",
+              "u": "https://www.carleton.edu/directory/ealexander/"
+            }
+          ],
           null,
           null,
           null,
@@ -30060,8 +29982,8 @@
         ]
       },
       {
-        "code": "CS 327*.01",
-        "name": "Introduction to Robotics (*=Junior Seminar)",
+        "code": "CS 327",
+        "name": "Introduction to Robotics",
         "category": "Robotics",
         "offered": [
           0,
@@ -30162,28 +30084,6 @@
           0,
           0,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "code": "CS 331*.01",
-        "name": "Computer Networks (*=Junior Seminar)",
-        "category": "Computer networks",
-        "offered": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           0,
           0,
           0,

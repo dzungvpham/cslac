@@ -520,7 +520,7 @@ async function loadData() {
       schedule_url: d.schedule_url ?? null,
     };
     if (d.terms) {
-      courseSchedules[name] = { terms: d.terms, courses: d.courses };
+      courseSchedules[name] = { college: name, terms: d.terms, courses: d.courses };
     }
     if (d.publications) {
       collegePublications[name] = d.publications;
@@ -1387,6 +1387,14 @@ function passesSchoolFilter(college) {
 // recent N years present in the schedule).
 const RECENT_YEARS = 2;
 
+// School-specific rule: courses offered only in these terms don't count toward
+// the college's elective total. Williams' January "Winter Study" term is mostly
+// informal one-off courses (Magic: the Gathering, Fiber Arts) rather than
+// regular CS electives, so it would otherwise inflate the count relative to
+// schools with no Winter term. The courses still appear in the schedule grid;
+// they just don't contribute to the count.
+const UNCOUNTED_TERMS = { 'Williams College': new Set(['W']) };
+
 // Count unique courses actually offered (a non-zero `offered` cell) in the
 // college's most recent RECENT_YEARS academic years, optionally restricted to
 // courses matching `predicate` (e.g. the active search + subfield filter).
@@ -1395,8 +1403,9 @@ function recentCourseCount(schedule, predicate) {
   const recent = new Set(
     [...new Set(schedule.terms.map(t => t.year))].sort().slice(-RECENT_YEARS)
   );
+  const uncounted = UNCOUNTED_TERMS[schedule.college];
   const idxs = schedule.terms
-    .map((t, i) => recent.has(t.year) ? i : -1)
+    .map((t, i) => (recent.has(t.year) && !(uncounted && uncounted.has(t.term))) ? i : -1)
     .filter(i => i >= 0);
   let count = 0;
   for (const c of schedule.courses) {
