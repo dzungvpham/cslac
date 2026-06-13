@@ -48,7 +48,7 @@ function venueRankTooltip(rank, source) {
 
 // ── column definitions ─────────────────────────────────────────────────────
 const COLLEGE_COLS = [
-  { key: 'name',             label: 'Institution',   numeric: false, tooltip: 'Default sorting order: Faculty size -> # of electives -> # of papers -> # of graduates.' },
+  { key: 'rank',             label: 'Institution',   numeric: false, tooltip: 'Default sorting order: Faculty size -> # of electives -> # of papers -> # of graduates.' },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
   { key: 'grads',            label: '4YR-GRAD',      numeric: true, tooltip: 'The total number of graduated CS majors from 2021 to 2024 (according to IPEDS)' },
   { key: 'grad_fac',         label: 'GRAD:FAC',      numeric: true, tooltip: 'Ratio of the total number of graduated CS majors from 2021 to 2024 (according to IPEDS) to the current number of tenured/tenure-track faculty' },
@@ -254,7 +254,7 @@ const PUB_GROUP_SHORT = { conference: 'c', journal: 'j', other: 'o' };
 const PUB_GROUP_LONG = { c: 'conference', j: 'journal', o: 'other' };
 const VALID_VIEW = new Set(['faculty', 'courses', 'publications']);
 const VALID_SCOPE = new Set(['faculty', 'school']);
-const VALID_SORT_KEYS = new Set(['name', 'total', 'grads', 'grad_fac', 'electives', 'papers']);
+const VALID_SORT_KEYS = new Set(['rank', 'total', 'grads', 'grad_fac', 'electives', 'papers']);
 
 function setsEqual(a, b) {
   if (a.size !== b.size) return false;
@@ -412,13 +412,16 @@ function applyUrlState() {
     } else {
       const dir = s.endsWith('_desc') ? -1 : 1;
       const key = s.replace(/_desc$/, '');
-      if (VALID_SORT_KEYS.has(key)) {
-        // Reconstruct the click count from the direction so the 3-click
-        // cycle stays consistent across a shared-URL reload: a column's
-        // first click goes to its default direction (asc for name, desc for
-        // numeric), the second flips it, the third clears back to default.
-        const firstDir = key === 'name' ? 1 : -1;
-        collegeSort = { key, dir, clicks: dir === firstDir ? 1 : 2 };
+      if (key === 'rank') {
+        // Institution: ascending is the resting default (collegeSort=null), so
+        // only the descending state is materialized.
+        collegeSort = dir === -1 ? { key: 'rank', dir: -1, clicks: 1 } : null;
+      } else if (VALID_SORT_KEYS.has(key)) {
+        // Reconstruct the click count from the direction so the 3-click cycle
+        // stays consistent across a shared-URL reload: a numeric column's first
+        // click goes descending, the second flips to ascending, the third
+        // clears back to default.
+        collegeSort = { key, dir, clicks: dir === -1 ? 1 : 2 };
       }
     }
   }
@@ -1782,8 +1785,18 @@ function renderAll() {
 function buildCollegeHeaders() {
   const row = document.getElementById('col-headers');
   row.innerHTML = COLLEGE_COLS.map((col, i) => {
-    const active = collegeSort && col.key === collegeSort.key;
-    const arrow = active ? (collegeSort.dir === 1 ? '↑' : '↓') : '↕';
+    let active, arrow;
+    if (col.key === 'rank') {
+      // Institution is the resting default sort: always highlighted, ascending
+      // (↑) unless explicitly reversed to descending (↓). It only drops to the
+      // neutral ↕ state while another column owns the active sort.
+      active = !collegeSort || collegeSort.key === 'rank';
+      const desc = collegeSort && collegeSort.key === 'rank' && collegeSort.dir === -1;
+      arrow = active ? (desc ? '↓' : '↑') : '↕';
+    } else {
+      active = collegeSort && col.key === collegeSort.key;
+      arrow = active ? (collegeSort.dir === 1 ? '↑' : '↓') : '↕';
+    }
     const tip = col.tooltip ? ` title="${esc(col.tooltip)}"` : '';
     return `<div class="th ${active ? 'sorted' : ''}" data-col="${col.key}"${tip}>
       <span class="th-label">${col.label}<span class="sort-icon">${arrow}</span></span>
@@ -1793,14 +1806,20 @@ function buildCollegeHeaders() {
   row.querySelectorAll('.th-label').forEach(label => {
     label.addEventListener('click', () => {
       const key = label.closest('.th').dataset.col;
-      if (collegeSort && collegeSort.key === key) {
+      if (key === 'rank') {
+        // Institution is a 2-state toggle, not part of the 3-click cycle:
+        // ascending (the resting default, stored as collegeSort=null) ⇄
+        // descending. Any non-default state goes back to ascending; ascending
+        // reverses to descending. It never enters the neutral/unsorted state.
+        collegeSort = collegeSort ? null : { key: 'rank', dir: -1, clicks: 1 };
+      } else if (collegeSort && collegeSort.key === key) {
         // 3-click cycle on the same column: 1st click sorts (set above),
         // 2nd flips direction, 3rd clears back to the default ordering.
         collegeSort.clicks += 1;
         if (collegeSort.clicks >= 3) collegeSort = null;
         else collegeSort.dir *= -1;
       } else {
-        collegeSort = { key, dir: key === 'name' ? 1 : -1, clicks: 1 };
+        collegeSort = { key, dir: -1, clicks: 1 };
       }
       track('sort', 'college',
         collegeSort ? (collegeSort.dir === 1 ? 'asc' : 'desc') : 'default', key);
@@ -1818,7 +1837,6 @@ function collegeSortValueFn() {
   const courseFiltering = !!searchQuery.trim()
     || activeSubfields.size > 0 || excludedSubfields.size > 0;
   return {
-    name:              c => c.name,
     total:             c => c.total,
     // null when there's no degree data (or 0 grads); the comparator floats
     // those "—" rows to the bottom in both directions (see sortedColleges).
@@ -1856,6 +1874,12 @@ function collegeRankValueFn() {
 
 function sortedColleges(colleges) {
   if (!collegeSort) return [...colleges].sort(defaultCollegeCompare);
+  // The Institution column sorts by row number — i.e. each row's position in
+  // the default ordering. Ascending reproduces the default order; descending
+  // reverses it.
+  if (collegeSort.key === 'rank') {
+    return [...colleges].sort((a, b) => collegeSort.dir * defaultCollegeCompare(a, b));
+  }
   const fn = collegeSortValueFn();
   return [...colleges].sort((a, b) => {
     const av = fn(a), bv = fn(b);
@@ -1877,6 +1901,12 @@ function sortedColleges(colleges) {
 // multi-column ordering each row gets a plain sequential 1, 2, 3, … number.
 function computeCollegeRanks(sorted) {
   if (!collegeSort) return sorted.map((_, i) => i + 1);
+  // Rank-sort keeps each row's intrinsic default-order number attached, so the
+  // "#" column reads 1…N ascending and N…1 descending (not a re-derived rank).
+  if (collegeSort.key === 'rank') {
+    const n = sorted.length;
+    return sorted.map((_, i) => collegeSort.dir === 1 ? i + 1 : n - i);
+  }
   const fn = collegeRankValueFn();
   const ranks = new Array(sorted.length);
   let lastVal, lastRank = 0;
