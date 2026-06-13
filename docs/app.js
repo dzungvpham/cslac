@@ -10,10 +10,8 @@ function track(event, category, action, label, detail) {
 const ICON_GLOBE = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
 const ICON_SCHOLAR = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`;
 const ICON_OPENALEX = `<span class="oa-link-icon" aria-hidden="true"></span>`;
-const ICON_PROGRAM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`;
 const ICON_CATALOG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
 const ICON_PERSON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
-const ICON_BOOK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`;
 const ICON_SCROLL = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`;
 
 // ── column tooltips ───────────────────────────────────────────────────────
@@ -2067,12 +2065,12 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
   const links   = collegeLinks[college.name] || {};
 
   const cnEsc = esc(college.name).replace(/'/g, "\\'");
-  const programLink = links.program_url
-    ? `<a class="college-link" href="${esc(links.program_url)}" target="_blank" rel="noopener" title="Department website" onclick="track('click_link','link','college_program','${cnEsc}')">${ICON_PROGRAM}</a>`
-    : '';
-  const scheduleLink = (links.schedule_url && courseSchedules[college.name])
-    ? `<a class="college-link" href="${esc(links.schedule_url)}" target="_blank" rel="noopener" title="Course schedule" onclick="track('click_link','link','college_schedule','${cnEsc}')">${ICON_CATALOG}</a>`
-    : `<span class="college-link disabled" title="Course schedule not accessible" aria-label="Course schedule not accessible">${ICON_CATALOG}</span>`;
+  // The college name itself links to the department website (when we have one);
+  // falls back to a plain span otherwise. Same markup/style either way.
+  const nameInner = `<span class="cn-full">${esc(college.name)}</span><span class="cn-short">${esc(shortCollegeName(college.name))}</span>`;
+  const nameEl = links.program_url
+    ? `<a class="college-name" href="${esc(links.program_url)}" target="_blank" rel="noopener" title="Department website" onclick="track('click_link','link','college_program','${cnEsc}')">${nameInner}</a>`
+    : `<span class="college-name">${nameInner}</span>`;
   const logoImg = `<span class="college-logo cl-${collegeSlug(college.name)}" aria-hidden="true"></span>`;
 
   div.innerHTML = `
@@ -2090,10 +2088,9 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
           <span class="name-body">
             <span class="name-title">
               ${logoImg}
-              <span class="college-name"><span class="cn-full">${esc(college.name)}</span><span class="cn-short">${esc(shortCollegeName(college.name))}</span></span>
+              ${nameEl}
               ${links.state ? `<span class="college-state">${esc(links.state)}</span>` : ''}
             </span>
-            <span class="college-links">${programLink}${scheduleLink}</span>
           </span>
         </div>
         <div class="td-num">${college.total}</div>
@@ -2108,7 +2105,7 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
     </div>
   `;
 
-  div.querySelectorAll('.college-link').forEach(a => {
+  div.querySelectorAll('a.college-name').forEach(a => {
     a.addEventListener('click', e => e.stopPropagation());
   });
 
@@ -2161,6 +2158,7 @@ function buildPanel(panel, college) {
   const hasCourses = !!schedule;
   const hasPublications = !!publications;
   const facultyUrl = (collegeLinks[college.name] || {}).faculty_url;
+  const scheduleUrl = (collegeLinks[college.name] || {}).schedule_url;
   if (panel._view === undefined) panel._view = currentView;
   // termOffset is undefined initially; renderCourseTable defaults to the
   // latest TERMS_PER_PAGE window when no offset has been set yet.
@@ -2181,14 +2179,18 @@ function buildPanel(panel, college) {
     }
 
     const coursesBtn = hasCourses
-      ? `<button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_BOOK}</button>`
-      : `<button data-view="courses" class="disabled" disabled title="Course schedule not accessible" aria-label="Course schedule not accessible">${ICON_BOOK}</button>`;
+      ? `<button data-view="courses" class="${view === 'courses' ? 'active' : ''}" title="Courses" aria-label="Courses">${ICON_CATALOG}</button>`
+      : `<button data-view="courses" class="disabled" disabled title="Course schedule not accessible" aria-label="Course schedule not accessible">${ICON_CATALOG}</button>`;
     const pubsBtn = hasPublications
       ? `<button data-view="publications" class="${view === 'publications' ? 'active' : ''}" title="Papers" aria-label="Papers">${ICON_SCROLL}</button>`
       : `<button data-view="publications" class="disabled" disabled title="No publication data" aria-label="No publication data">${ICON_SCROLL}</button>`;
     const collegeNameEsc = esc(college.name).replace(/'/g, "\\'");
     const sourceLink = facultyUrl
       ? `<a class="faculty-source-link" href="${esc(facultyUrl)}" target="_blank" rel="noopener" onclick="track('click_link','link','faculty_source','${collegeNameEsc}')">source</a>`
+      : '';
+    // Course-schedule source — the link that used to live in the calendar icon.
+    const scheduleSourceLink = (scheduleUrl && hasCourses)
+      ? `<a class="faculty-source-link" href="${esc(scheduleUrl)}" target="_blank" rel="noopener" onclick="track('click_link','link','college_schedule','${collegeNameEsc}')">source</a>`
       : '';
     const toggleHtml = `
       <div class="panel-toggle" role="tablist">
@@ -2197,6 +2199,7 @@ function buildPanel(panel, college) {
           ${coursesBtn}
           ${pubsBtn}
           ${view === 'faculty' ? sourceLink : ''}
+          ${view === 'courses' ? scheduleSourceLink : ''}
         </div>
         <div class="term-paginator-slot"></div>
       </div>
