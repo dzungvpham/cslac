@@ -1448,20 +1448,21 @@ a.pub-author:hover {
   .college-name .cn-full  { display: none; }
   .college-name .cn-short { display: inline; }
 
-  /* Stack the chevron beneath the row number in a fixed-width column,
-     and stack the icons beneath the college name. Decoupling the two
-     stacks means: (a) the name's start-x doesn't shift with the digit
-     count of the row number, and (b) the gap between the name and the
-     icons is driven only by the name's height, not by the chevron row. */
+  /* The expand/collapse chevron is hidden on mobile; the row number sits in
+     its own fixed-width column, vertically centered against the full row
+     height (which the name + stacked icons drive). Decoupling it from the
+     name stack keeps the name's start-x from shifting with the digit count. */
   .td-name {
     align-items: flex-start;
     gap: 6px;
   }
+  .chevron { display: none; }
   .name-marker {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
+    justify-content: center;
+    align-self: stretch;
     width: 22px;
     flex-shrink: 0;
   }

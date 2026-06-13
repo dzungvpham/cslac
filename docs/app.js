@@ -1947,9 +1947,10 @@ function renderColleges(colleges) {
 function fmt(n) { return n ? n.toLocaleString() : '—'; }
 
 // Mobile-only short form for college names: abbreviates "University" → "Univ."
-// to save horizontal space on narrow viewports.
+// and drops a trailing "College" (e.g. "Carleton College" → "Carleton") to
+// save horizontal space on narrow viewports.
 function shortCollegeName(name) {
-  return name.replace(/\bUniversity\b/g, 'Univ.');
+  return name.replace(/\bUniversity\b/g, 'Univ.').replace(/\s+College$/, '');
 }
 
 // Compact form for narrow mobile columns: 1,640 → "1.6k", 11,245 → "11.2k".
