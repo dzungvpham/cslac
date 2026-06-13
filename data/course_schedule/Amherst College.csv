@@ -17,8 +17,8 @@ Amherst College,2021-22,S,COSC-211,01,Data Structures,Will Rosenbaum,,https://ww
 Amherst College,2021-22,S,COSC-231,01,Programming Language Paradigms,TBA,,https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-231-2122S,Programming languages
 Amherst College,2021-22,S,COSC-283,01,Networks,TBA,,https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-283-2122S,Computer networks
 Amherst College,2021-22,S,COSC-373,01,Distributed Algorithms,Will Rosenbaum,,https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-373-2122S,Distributed systems
-Amherst College,2021-22,S,COSC-452,01,Seminar in Computer Science: Evolutionary Computation,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-452-2122S,Other
-Amherst College,2021-22,S,COSC-454,01,Seminar in Computer Science: Adversarial Methods,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-454-2122S,Computer security & privacy
+Amherst College,2021-22,S,COSC-452,01,Seminar in Computer Science: Evolutionary Computation,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-452-2122S,Algorithms & complexity
+Amherst College,2021-22,S,COSC-454,01,Seminar in Computer Science: Adversarial Methods,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-454-2122S,Machine learning
 Amherst College,2022-23,F,COSC-111,01,Introduction to Computer Science I,Matteo Riondato,,https://www.amherst.edu/academiclife/departments/courses/2223F/COSC/COSC-111-2223F,Core
 Amherst College,2022-23,F,COSC-111,02,Introduction to Computer Science I,Mihaela Malita,,https://www.amherst.edu/academiclife/departments/courses/2223F/COSC/COSC-111-2223F,Core
 Amherst College,2022-23,F,COSC-111,03,Introduction to Computer Science I,Lillian C. Pentecost,,https://www.amherst.edu/academiclife/departments/courses/2223F/COSC/COSC-111-2223F,Core
@@ -49,7 +49,7 @@ Amherst College,2022-23,S,COSC-247,,Machine Learning,Lee Spector,,https://www.am
 Amherst College,2022-23,S,COSC-273,,Parallel and Distributed Computing,Will Rosenbaum,,https://www.amherst.edu/academiclife/departments/courses/2223S/COSC/COSC-273-2223S,Distributed systems
 Amherst College,2022-23,S,COSC-321,,Computer Graphics,John E. Rager,,https://www.amherst.edu/academiclife/departments/courses/2223S/COSC/COSC-321-2223S,Computer graphics
 Amherst College,2022-23,S,COSC-351,,Information Theory,Matteo Riondato,,https://www.amherst.edu/academiclife/departments/courses/2223S/COSC/COSC-351-2223S,Algorithms & complexity
-Amherst College,2022-23,S,COSC-452,,Seminar in Computer Science: Evolutionary Computation,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2223S/COSC/COSC-452-2223S,Other
+Amherst College,2022-23,S,COSC-452,,Seminar in Computer Science: Evolutionary Computation,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2223S/COSC/COSC-452-2223S,Algorithms & complexity
 Amherst College,2022-23,S,COSC-490,,Special Topics,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2223S/COSC/COSC-490-2223S,Other
 Amherst College,2022-23,S,COSC-490,01,Special Topics,TBA,,https://www.amherst.edu/academiclife/departments/courses/2223S/COSC/COSC-490-2223S,Other
 Amherst College,2022-23,S,COSC-490,02,Special Topics,Lillian C. Pentecost,,https://www.amherst.edu/academiclife/departments/courses/2223S/COSC/COSC-490-2223S,Other
@@ -91,7 +91,7 @@ Amherst College,2023-24,S,COSC-277,01,Operating Systems,Scott F. Kaplan,,https:/
 Amherst College,2023-24,S,COSC-347,01,Theory of Machine Learning,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-347-2324S,Machine learning
 Amherst College,2023-24,S,COSC-390,01,Special Topics,TBA,,https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-390-2324S,Other
 Amherst College,2023-24,S,COSC-390,02,Special Topics,John E. Rager,,https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-390-2324S,Other
-Amherst College,2023-24,S,COSC-461,01,Seminar: Advanced and Alternative Memory Systems,Lillian C. Pentecost,,https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-461-2324S,Misc
+Amherst College,2023-24,S,COSC-461,01,Seminar: Advanced and Alternative Memory Systems,Lillian C. Pentecost,,https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-461-2324S,Computer architecture
 Amherst College,2023-24,S,COSC-490,01,Special Topics,TBA,,https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-390-2324S,Other
 Amherst College,2023-24,S,COSC-490,02,Special Topics,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-390-2324S,Other
 Amherst College,2023-24,S,COSC-490,03,Special Topics,Kristy Gardner,,https://www.amherst.edu/academiclife/departments/courses/2324S/COSC/COSC-390-2324S,Other
@@ -120,7 +120,7 @@ Amherst College,2024-25,F,COSC-241,01,Artificial Intelligence,Andrew Wu,,https:/
 Amherst College,2024-25,F,COSC-311,,Algorithms,John E. Rager,,https://www.amherst.edu/academiclife/departments/courses/2425F/COSC/COSC-311-2425F,Core
 Amherst College,2024-25,F,COSC-371,01,Compiler Design,Scott F. Kaplan,,https://www.amherst.edu/academiclife/departments/courses/2425F/COSC/COSC-371-2425F,Programming languages
 Amherst College,2024-25,F,COSC-383,01,Computer Security,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2425F/COSC/COSC-383-2425F,Computer security & privacy
-Amherst College,2024-25,F,COSC-452,01,Seminar in Computer Science: Evolutionary Computation,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2425F/COSC/COSC-452-2425F,Other
+Amherst College,2024-25,F,COSC-452,01,Seminar in Computer Science: Evolutionary Computation,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2425F/COSC/COSC-452-2425F,Algorithms & complexity
 Amherst College,2024-25,F,COSC-490,,Special Topics,Matteo Riondato,,https://www.amherst.edu/academiclife/departments/courses/2425F/COSC/COSC-490-2425F,Other
 Amherst College,2024-25,F,COSC-490,,Special Topics,Shira B. Wein,,https://www.amherst.edu/academiclife/departments/courses/2425F/COSC/COSC-490-2425F,Other
 Amherst College,2024-25,F,COSC-490,01,Special Topics,TBA,,https://www.amherst.edu/academiclife/departments/courses/2425F/COSC/COSC-490-2425F,Other
@@ -164,8 +164,8 @@ Amherst College,2025-26,F,COSC-311,01,Algorithms,John E. Rager,,https://www.amhe
 Amherst College,2025-26,F,COSC-355,01,Network Science,Matteo Riondato,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-355-2526F,Computational social science
 Amherst College,2025-26,F,COSC-371,01,Compiler Design,Scott F. Kaplan,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-371-2526F,Programming languages
 Amherst College,2025-26,F,COSC-383,01,Computer Security,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-383-2526F,Computer security & privacy
-Amherst College,2025-26,F,COSC-456,01,Research Seminar: Graph Visualization Algorithms,Myroslav Kryven,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-456-2526F,Misc
-Amherst College,2025-26,F,COSC-457,01,Research Seminar: Embodied AI,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-457-2526F,Misc
+Amherst College,2025-26,F,COSC-456,01,Research Seminar: Graph Visualization Algorithms,Myroslav Kryven,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-456-2526F,Visualization
+Amherst College,2025-26,F,COSC-457,01,Research Seminar: Embodied AI,Scott P. Alfeld,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-457-2526F,Robotics
 Amherst College,2025-26,F,COSC-490,,Special Topics,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-490-2526F,Other
 Amherst College,2025-26,F,COSC-490,01,Special Topics,TBA,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-490-2526F,Other
 Amherst College,2025-26,F,COSC-490,05,Special Topics,Scott F. Kaplan,,https://www.amherst.edu/academiclife/departments/courses/2526F/COSC/COSC-490-2526F,Other
@@ -194,9 +194,9 @@ Amherst College,2025-26,S,COSC-247,01,Machine Learning,Lee Spector,,https://www.
 Amherst College,2025-26,S,COSC-275,01,Systems II: Operating Systems,Scott F. Kaplan,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-275-2526S,Operating systems
 Amherst College,2025-26,S,COSC-311,01,Algorithms,Myroslav Kryven,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-311-2526S,Core
 Amherst College,2025-26,S,COSC-311,02,Algorithms,John E. Rager,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-311-2526S,Core
-Amherst College,2025-26,S,COSC-452,01,Seminar in Computer Science: Evolutionary Computation,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-452-2526S,Other
-Amherst College,2025-26,S,COSC-453,01,Research Seminar: Multilingual Natural Language Processing,Shira B. Wein,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-453-2526S,Misc
-Amherst College,2025-26,S,COSC-461,01,Seminar: Advanced and Alternative Memory Systems,Lillian C. Pentecost,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-461-2526S,Misc
+Amherst College,2025-26,S,COSC-452,01,Seminar in Computer Science: Evolutionary Computation,Lee Spector,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-452-2526S,Algorithms & complexity
+Amherst College,2025-26,S,COSC-453,01,Research Seminar: Multilingual Natural Language Processing,Shira B. Wein,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-453-2526S,Natural language processing
+Amherst College,2025-26,S,COSC-461,01,Seminar: Advanced and Alternative Memory Systems,Lillian C. Pentecost,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-461-2526S,Computer architecture
 Amherst College,2025-26,S,COSC-490,01,Special Topics,TBA,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-490-2526S,Other
 Amherst College,2025-26,S,COSC-490,02,Special Topics,Scott F. Kaplan,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-490-2526S,Other
 Amherst College,2025-26,S,COSC-490,03,Special Topics,Lillian C. Pentecost,,https://www.amherst.edu/academiclife/departments/courses/2526S/COSC/COSC-490-2526S,Other

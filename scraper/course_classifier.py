@@ -10,11 +10,21 @@ can gate course visibility) plus four meta categories:
                   data structures, discrete math, computer organization, and
                   the standard algorithms course).
   * ``Misc``    — not a real lecture course (independent study, research,
-                  thesis, capstone, internship, seminar, standalone lab).
+                  thesis, capstone, internship, generic seminar, standalone lab).
   * ``Other``   — a computing/CS elective that fits none of the 32 subfields.
   * ``Unknown`` — not a Computer Science course at all (e.g. Calculus, Linear
                   Algebra, Statistics, Physics — math/other-department courses
                   that get swept up by cross-listings).
+
+Two deterministic adjustments run alongside the LLM (see ``deterministic_category``
+and ``classify_text``): (1) titles matching a ``_FORCED_RULES`` regex are pinned
+to a fixed label — Numerical Analysis, which the model reads as pure math, is
+forced to ``Other`` so it counts as a CS elective; (2) a *topical* seminar
+("Seminar: Parallel Programming", "Artificial Intelligence Seminar") has its
+seminar scaffolding stripped and is classified by the remaining subject, so it's
+treated as a real course rather than reflexively bucketed as ``Misc``. Only a
+*bare* seminar with no specific subject ("Senior Seminar", "Computer Science
+Seminar") stays ``Misc``.
 
 Classification is done by the ``claude`` CLI using Claude Sonnet 4.6 at low
 effort. Titles are deduplicated across all colleges and terms by a normalized
@@ -209,6 +219,106 @@ def clean_name(s: str) -> str:
     return (s or "").strip().strip('"').strip()
 
 
+# ── deterministic overrides (applied ahead of / on top of the LLM) ────────
+# Forced labels for titles the model reliably mis-buckets. Numerical Analysis
+# is a numerical-methods course the model reads as pure math and files under
+# "Unknown"; we want it counted as a CS elective, so pin it to "Other".
+_FORCED_RULES: list[tuple[re.Pattern, str]] = [
+    (re.compile(r"\bnumerical\s+analysis\b", re.IGNORECASE), "Other"),
+]
+
+
+def forced_label(title: str):
+    for rx, label in _FORCED_RULES:
+        if rx.search(title or ""):
+            return label
+    return None
+
+
+# ── seminar topic extraction ─────────────────────────────────────────────
+# A seminar whose title names a specific subject ("Seminar: Parallel
+# Programming", "Artificial Intelligence Seminar") is a real topical course and
+# should be classified by that subject — not reflexively dumped into Misc like a
+# generic seminar. We strip the seminar scaffolding and hand the remaining topic
+# to the classifier. A seminar with no specific subject ("Seminar", "Senior
+# Seminar", "Computer Science Seminar") strips to nothing meaningful and is
+# labeled Misc outright.
+_SEM_QUALIFIER = (
+    r"(?:senior|junior|sophomore|freshman|first[\s-]?year|sr|jr|research|"
+    r"advanced|graduate|honou?rs|capstone|weekly|fall|spring|winter|summer)"
+)
+_SEMINAR_LEAD_RE = re.compile(
+    rf"^\s*(?:{_SEM_QUALIFIER}\s+)*seminars?\b", re.IGNORECASE)
+_SEMINAR_TRAIL_RE = re.compile(
+    rf"\s*(?:{_SEM_QUALIFIER}\s+)*seminars?\s*$", re.IGNORECASE)
+_LEAD_CONNECTOR_RE = re.compile(
+    r"^\s*(?::|-|–|—|\bin\b|\bon\b|\bof\b|\babout\b)\s*", re.IGNORECASE)
+_TOPICS_FILLER_RE = re.compile(
+    r"^\s*(?:special\s+|advanced\s+)?topics?\s+in\b\s*", re.IGNORECASE)
+_CS_FILLER_RE = re.compile(r"^\s*computer\s+science\b\s*", re.IGNORECASE)
+_TRAIL_NUMERAL_RE = re.compile(r"[\s:,–—-]*\b(?:[ivx]+|\d+)\b\s*$", re.IGNORECASE)
+# Remainders (normalized) that carry no specific subject → still Misc.
+_GENERIC_SEMINAR_REMAINDER = {
+    "", "computer science", "comp sci", "cs", "computer", "computing", "comp",
+    "computer sci",
+}
+
+
+def strip_seminar(title: str) -> tuple[str, bool]:
+    """Return (topic, is_seminar). For a topical seminar, topic is the subject
+    to classify; for a bare/generic seminar, topic is "" (→ Misc). Non-seminars
+    return (title, False)."""
+    t = (title or "").strip()
+    lead = _SEMINAR_LEAD_RE.match(t)
+    trail = None if lead else _SEMINAR_TRAIL_RE.search(t)
+    if not lead and not trail:
+        return t, False
+    rest = t[lead.end():] if lead else t[: trail.start()]
+    prev = None
+    while rest != prev:  # peel connectors / "Topics in" / "Computer Science" filler
+        prev = rest
+        rest = _LEAD_CONNECTOR_RE.sub("", rest)
+        rest = _TOPICS_FILLER_RE.sub("", rest)
+        rest = _CS_FILLER_RE.sub("", rest)
+    rest = _TRAIL_NUMERAL_RE.sub("", rest)
+    rest = rest.strip(" :,–—-").strip()
+    if norm_name(rest) in _GENERIC_SEMINAR_REMAINDER:
+        return "", True
+    return rest, True
+
+
+def deterministic_category(title: str):
+    """A category fixed without the LLM (forced rule or bare seminar), else None."""
+    fl = forced_label(title)
+    if fl:
+        return fl
+    topic, is_sem = strip_seminar(title)
+    if is_sem and not topic:
+        return "Misc"
+    return None
+
+
+def classify_text(title: str) -> str:
+    """The text actually handed to the classifier: a topical seminar's subject,
+    otherwise the cleaned title."""
+    topic, is_sem = strip_seminar(title)
+    return topic if (is_sem and topic) else clean_name(title)
+
+
+def cache_key(title: str) -> str:
+    """Dedup/cache key — normalized over the classify_text, so seminars sharing
+    a topic collapse and a stale full-title cache entry isn't reused."""
+    return norm_name(classify_text(title))
+
+
+def label_for(title: str, cache: dict) -> str:
+    """Final category for a row: deterministic override, else the cached LLM label."""
+    d = deterministic_category(title)
+    if d:
+        return d
+    return cache.get(cache_key(title), "")
+
+
 def load_cache() -> dict:
     if CACHE_PATH.is_file():
         try:
@@ -344,7 +454,10 @@ def collect_titles():
             name = clean_name(r.get("course_name", ""))
             if not name:
                 continue
-            titles.setdefault(norm_name(name), name)
+            # Deterministic titles (forced rules, bare seminars) need no LLM call.
+            if deterministic_category(name) is not None:
+                continue
+            titles.setdefault(cache_key(name), classify_text(name))
     return titles, csv_meta
 
 
@@ -365,7 +478,7 @@ def write_csvs(csv_meta, cache):
             fieldnames.append("category")
         for r in rows:
             name = clean_name(r.get("course_name", ""))
-            r["category"] = cache.get(norm_name(name), "") if name else ""
+            r["category"] = label_for(name, cache) if name else ""
         tmp = csv_path.with_suffix(".csv.tmp")
         with open(tmp, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)

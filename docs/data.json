@@ -5974,7 +5974,7 @@
       {
         "code": "COSC-452",
         "name": "Seminar in Computer Science: Evolutionary Computation",
-        "category": "Other",
+        "category": "Algorithms & complexity",
         "offered": [
           0,
           "https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-452-2122S",
@@ -6027,7 +6027,7 @@
       {
         "code": "COSC-461",
         "name": "Seminar: Advanced and Alternative Memory Systems",
-        "category": "Misc",
+        "category": "Computer architecture",
         "offered": [
           0,
           0,
@@ -15330,7 +15330,7 @@
       {
         "code": "CSC 433",
         "name": "Numerical Analysis (MAT)",
-        "category": "Unknown",
+        "category": "Other",
         "offered": [
           0,
           0,
@@ -59335,7 +59335,7 @@
       {
         "code": "CSC 315",
         "name": "Numerical Analysis",
-        "category": "Unknown",
+        "category": "Other",
         "offered": [
           0,
           1,
@@ -65068,7 +65068,7 @@
       {
         "code": "CS 119",
         "name": "Seminar: Programming Problems",
-        "category": "Misc",
+        "category": "Core",
         "offered": [
           1,
           0,
@@ -127771,7 +127771,7 @@
       {
         "code": "CSC 415",
         "name": "Numerical Analysis",
-        "category": "Unknown",
+        "category": "Other",
         "offered": [
           0,
           0,
@@ -127798,7 +127798,7 @@
       {
         "code": "CSC 450",
         "name": "Programming Seminar",
-        "category": "Misc",
+        "category": "Core",
         "offered": [
           0,
           1,
@@ -167956,7 +167956,7 @@
       {
         "code": "CSC 327",
         "name": "Seminar: Internet Censorship",
-        "category": "Misc",
+        "category": "Computer security & privacy",
         "offered": [
           0,
           "https://www.smith.edu/apps/course_search/#csc-327-01-202203",
@@ -168003,7 +168003,7 @@
       {
         "code": "CSC 328",
         "name": "Seminar: Digital Circuits and Sensors",
-        "category": "Misc",
+        "category": "Embedded & real-time systems",
         "offered": [
           0,
           0,
@@ -168020,7 +168020,7 @@
       {
         "code": "CSC 334bd",
         "name": "Seminar: Topics in Computational Biology-Biomedical Big Data",
-        "category": "Misc",
+        "category": "Computational bio & bioinformatics",
         "offered": [
           0,
           0,
@@ -168061,7 +168061,7 @@
       {
         "code": "CSC 352",
         "name": "Seminar: Parallel Programming",
-        "category": "Misc",
+        "category": "High-performance computing",
         "offered": [
           0,
           0,
@@ -168102,7 +168102,7 @@
       {
         "code": "CSC 353pm",
         "name": "Seminar: Topics in Robotics-Robotics Perception and Mapping",
-        "category": "Misc",
+        "category": "Robotics",
         "offered": [
           0,
           0,
@@ -168137,7 +168137,7 @@
       {
         "code": "CSC 356ac",
         "name": "Seminar: Topics in Human-Computer Interaction: Accessible Computer",
-        "category": "Misc",
+        "category": "Human-computer interaction",
         "offered": [
           0,
           0,
@@ -168178,7 +168178,7 @@
       {
         "code": "CSC 356pa",
         "name": "Seminar: Topics in Human-Computer Interaction-Platform Activism",
-        "category": "Misc",
+        "category": "Human-computer interaction",
         "offered": [
           "https://www.smith.edu/apps/course_search/#csc-356pa-01-202201",
           0,
@@ -168278,7 +168278,7 @@
       {
         "code": "CSC 372",
         "name": "Seminar: Applied Algorithms",
-        "category": "Misc",
+        "category": "Algorithms & complexity",
         "offered": [
           0,
           0,
@@ -168313,7 +168313,7 @@
       {
         "code": "CSC 390lu",
         "name": "Seminar: Topics in Artificial Intelligence-Natural Language Understanding",
-        "category": "Misc",
+        "category": "Natural language processing",
         "offered": [
           0,
           0,
@@ -173035,7 +173035,7 @@
       {
         "code": "CSC54-524",
         "name": "Intro to Numerical Analysis",
-        "category": "Unknown",
+        "category": "Other",
         "offered": [
           1,
           0,
@@ -179748,7 +179748,7 @@
       {
         "code": "CSCI-352",
         "name": "Numerical Analysis",
-        "category": "Unknown",
+        "category": "Other",
         "offered": [
           0,
           0,
@@ -202451,7 +202451,7 @@
       {
         "code": "CSCI 441",
         "name": "Numerical Analysis",
-        "category": "Unknown",
+        "category": "Other",
         "offered": [
           0,
           0,
@@ -205098,7 +205098,7 @@
       {
         "code": "CMSC 328",
         "name": "NUMERICAL ANALYSIS",
-        "category": "Unknown",
+        "category": "Other",
         "offered": [
           0,
           1,
@@ -214723,7 +214723,7 @@
       {
         "code": "CSC-337",
         "name": "Numerical Analysis",
-        "category": "Unknown",
+        "category": "Other",
         "offered": [
           0,
           0,
