@@ -17,8 +17,8 @@ separate JSONs:
     we expose `openalex_url` and fill `citedby`/`hindex`/`i10index` from
     OpenAlex (5-year columns stay null — OpenAlex doesn't carry them).
 
-  - college metadata + links — from data/colleges.csv (state and the four
-    department/catalog/schedule URLs).
+  - college metadata + links — from data/colleges.csv (state and the
+    department/faculty/schedule URLs).
 
   - course schedule — from data/course_schedule/<College>.csv; per-college
     sorted terms (year, F→W→S→Su) and dedup'd course rows restricted to
@@ -241,7 +241,6 @@ def build_links(colleges_csv: Path, known: set[str]) -> dict[str, dict]:
                 "state":        row["State"].strip() or None,
                 "program_url":  row["Program Link"].strip() or None,
                 "faculty_url":  row.get("Faculty Link", "").strip() or None,
-                "catalog_url":  row["Catalog Link"].strip() or None,
                 "schedule_url": schedule_url,
             }
     return result

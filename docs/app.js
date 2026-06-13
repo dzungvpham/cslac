@@ -48,7 +48,7 @@ function venueRankTooltip(rank, source) {
 
 // ── column definitions ─────────────────────────────────────────────────────
 const COLLEGE_COLS = [
-  { key: 'name',             label: 'Institution',   numeric: false },
+  { key: 'name',             label: 'Institution',   numeric: false, tooltip: 'Default sorting order: Faculty size -> # of electives -> # of papers -> # of graduates.' },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
   { key: 'grads',            label: '4YR-GRAD',      numeric: true, tooltip: 'The total number of graduated CS majors from 2021 to 2024 (according to IPEDS)' },
   { key: 'grad_fac',         label: 'GRAD:FAC',      numeric: true, tooltip: 'Ratio of the total number of graduated CS majors from 2021 to 2024 (according to IPEDS) to the current number of tenured/tenure-track faculty' },
@@ -206,7 +206,10 @@ let collegesByName = {};
 let collegeLinks = {};
 let courseSchedules = {};
 let collegePublications = {};
-let collegeSort = { key: 'total', dir: -1 };
+// null = the default multi-column ordering (see defaultCollegeCompare). A
+// non-null { key, dir, clicks } means the user clicked a header to sort by a
+// single column; `clicks` drives the 3-click cycle back to the default.
+let collegeSort = null;
 let activeCategories = new Set(['tenured', 'tenure_track']);
 let activeSubfields = new Set();
 let excludedSubfields = new Set();
@@ -246,7 +249,6 @@ const URL_DEFAULTS = {
     journal: new Set(['Q1']),
     other: new Set(),
   },
-  sort: { key: 'total', dir: -1 },
 };
 const PUB_GROUP_SHORT = { conference: 'c', journal: 'j', other: 'o' };
 const PUB_GROUP_LONG = { c: 'conference', j: 'journal', o: 'other' };
@@ -322,7 +324,11 @@ function buildUrlParams({ includeDefaults = false } = {}) {
     p.set('yto', pubYearTo == null ? '' : String(pubYearTo));
   }
 
-  if (includeDefaults || collegeSort.key !== URL_DEFAULTS.sort.key || collegeSort.dir !== URL_DEFAULTS.sort.dir) {
+  if (includeDefaults) {
+    p.set('sort', collegeSort
+      ? (collegeSort.dir === -1 ? collegeSort.key + '_desc' : collegeSort.key)
+      : 'default');
+  } else if (collegeSort) {
     p.set('sort', collegeSort.dir === -1 ? collegeSort.key + '_desc' : collegeSort.key);
   }
   if (expandAllOn) p.set('expand', '1');
@@ -401,9 +407,20 @@ function applyUrlState() {
   }
   if (p.has('sort')) {
     const s = p.get('sort');
-    const dir = s.endsWith('_desc') ? -1 : 1;
-    const key = s.replace(/_desc$/, '');
-    if (VALID_SORT_KEYS.has(key)) collegeSort = { key, dir };
+    if (s === 'default') {
+      collegeSort = null;
+    } else {
+      const dir = s.endsWith('_desc') ? -1 : 1;
+      const key = s.replace(/_desc$/, '');
+      if (VALID_SORT_KEYS.has(key)) {
+        // Reconstruct the click count from the direction so the 3-click
+        // cycle stays consistent across a shared-URL reload: a column's
+        // first click goes to its default direction (asc for name, desc for
+        // numeric), the second flips it, the third clears back to default.
+        const firstDir = key === 'name' ? 1 : -1;
+        collegeSort = { key, dir, clicks: dir === firstDir ? 1 : 2 };
+      }
+    }
   }
   if (p.get('expand') === '1') expandAllOn = true;
 
@@ -492,6 +509,106 @@ document.getElementById('share-btn').addEventListener('click', async () => {
   track('share', 'share', ok ? 'copy' : 'copy_fail');
 });
 
+// ── export to JSON ───────────────────────────────────────────────────────────
+function flashExportSaved(label) {
+  const btn = document.getElementById('export-btn');
+  if (!btn) return;
+  const fb = btn.querySelector('.action-feedback');
+  if (fb && label) fb.textContent = label;
+  btn.classList.add('copied');
+  clearTimeout(btn._copiedTimer);
+  btn._copiedTimer = setTimeout(() => btn.classList.remove('copied'), 1500);
+}
+
+// Serialize the current filtered + ordered dashboard. Mirrors what's on screen:
+// the same college ordering (sortedColleges) and ranks as renderColleges, each
+// college's filtered faculty, and its publications/courses passing the active
+// pub/subfield/search filters. Internal `_`-prefixed working fields (search
+// strings, match-link back-references, Sets) are dropped via the replacer.
+function buildExportData() {
+  const ordered = sortedColleges(currentAggregatedColleges());
+  const ranks = computeCollegeRanks(ordered);
+  const colleges = ordered.map((c, idx) => {
+    const links = collegeLinks[c.name] || {};
+    const pubs = (collegePublications[c.name] || []).filter(pubVisible);
+    const sched = courseSchedules[c.name];
+    const courses = sched?.courses ? sched.courses.filter(courseVisible) : [];
+    // `course.offered`/`instructors` are positional arrays parallel to this
+    // `terms` axis (sorted year asc, then F→W→S→Su), so the export is only
+    // decodable when the term axis travels alongside the courses.
+    const terms = sched?.terms ?? null;
+    return {
+      rank: ranks[idx],
+      name: c.name,
+      state: links.state ?? null,
+      faculty_count: c.total,
+      electives: c.electives ?? null,
+      filtered_courses: c.filtered_courses ?? null,
+      papers: c.papers ?? null,
+      majors_4yr: c.grads ?? null,
+      grad_per_faculty: c.grad_fac ?? null,
+      program_url: links.program_url ?? null,
+      faculty_url: links.faculty_url ?? null,
+      schedule_url: links.schedule_url ?? null,
+      faculty: c.faculty,
+      publications: pubs,
+      terms,
+      courses,
+    };
+  });
+  return {
+    generated_at: new Date().toISOString(),
+    source: location.origin + location.pathname,
+    share_url: shareUrl(),
+    filters: {
+      search: searchQuery || null,
+      state: activeState || null,
+      job_titles: [...activeCategories],
+      subfield_scope: subfieldScope,
+      subfields_included: [...activeSubfields],
+      subfields_excluded: [...excludedSubfields],
+      venue_includes: {
+        conference: [...pubIncludes.conference],
+        journal: [...pubIncludes.journal],
+        other: [...pubIncludes.other],
+      },
+      pub_year_from: pubYearFrom,
+      pub_year_to: pubYearTo,
+    },
+    college_count: colleges.length,
+    faculty_count: colleges.reduce((s, c) => s + c.faculty_count, 0),
+    colleges,
+  };
+}
+
+document.getElementById('export-btn').addEventListener('click', () => {
+  // Commit a mid-typing search draft so the export captures the current query.
+  if (searchDraft !== searchQuery) {
+    searchQuery = searchDraft;
+    if (searchTimer) { clearTimeout(searchTimer); searchTimer = null; }
+    renderAll();
+  }
+  let ok = false;
+  try {
+    const json = JSON.stringify(
+      buildExportData(),
+      (k, v) => (k.startsWith('_') ? undefined : v),
+      2,
+    );
+    const blob = new Blob([json], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'cslac.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    ok = true;
+  } catch (_) {}
+  flashExportSaved(ok ? 'Saved!' : 'Export failed');
+  track('export', 'export', ok ? 'json' : 'json_fail');
+});
+
 // ── data ───────────────────────────────────────────────────────────────────
 function loadSpriteImage() {
   return new Promise(resolve => {
@@ -525,7 +642,6 @@ async function loadData() {
       state: d.state ?? null,
       program_url: d.program_url ?? null,
       faculty_url: d.faculty_url ?? null,
-      catalog_url: d.catalog_url ?? null,
       schedule_url: d.schedule_url ?? null,
     };
     if (d.terms) {
@@ -1626,15 +1742,16 @@ function updatePapersStat() {
   document.getElementById('stat-papers-label').textContent = `Papers${suffix}`;
 }
 
-function renderAll() {
-  // Refresh the categorical search match sets before any filtered lookups.
-  _searchResult = computeSearchResult();
+// The colleges currently surviving the active filters (state, school-scope,
+// job-title, subfield, search), each with its filtered faculty + counts. Used
+// by renderAll and by the JSON export so both reflect the same filtered view.
+function currentAggregatedColleges() {
   const searching = !!searchQuery.trim();
   // An active subfield include gates pubs and courses by subfield too (see
   // pubVisibleBase / courseSubfieldVisible), so — like a search — it can match a
   // college through its papers or courses even when no faculty's interests do.
   const subfieldIncluding = activeSubfields.size > 0;
-  const aggregated = allColleges
+  return allColleges
     .filter(c => !activeState || collegeLinks[c.name]?.state === activeState)
     .filter(passesSchoolFilter)
     .map(aggregateCollege)
@@ -1645,6 +1762,12 @@ function renderAll() {
     // faculty, so this can't re-add one there.)
     .filter(c => c.total > 0
       || ((searching || subfieldIncluding) && ((c.papers ?? 0) > 0 || (c.filtered_courses ?? 0) > 0)));
+}
+
+function renderAll() {
+  // Refresh the categorical search match sets before any filtered lookups.
+  _searchResult = computeSearchResult();
+  const aggregated = currentAggregatedColleges();
   const totalFaculty = aggregated.reduce((s, c) => s + c.total, 0);
   animateStat(document.getElementById('stat-colleges'), aggregated.length);
   animateStat(document.getElementById('stat-faculty'), totalFaculty);
@@ -1659,7 +1782,7 @@ function renderAll() {
 function buildCollegeHeaders() {
   const row = document.getElementById('col-headers');
   row.innerHTML = COLLEGE_COLS.map((col, i) => {
-    const active = col.key === collegeSort.key;
+    const active = collegeSort && col.key === collegeSort.key;
     const arrow = active ? (collegeSort.dir === 1 ? '↑' : '↓') : '↕';
     const tip = col.tooltip ? ` title="${esc(col.tooltip)}"` : '';
     return `<div class="th ${active ? 'sorted' : ''}" data-col="${col.key}"${tip}>
@@ -1670,12 +1793,17 @@ function buildCollegeHeaders() {
   row.querySelectorAll('.th-label').forEach(label => {
     label.addEventListener('click', () => {
       const key = label.closest('.th').dataset.col;
-      if (collegeSort.key === key) {
-        collegeSort.dir *= -1;
+      if (collegeSort && collegeSort.key === key) {
+        // 3-click cycle on the same column: 1st click sorts (set above),
+        // 2nd flips direction, 3rd clears back to the default ordering.
+        collegeSort.clicks += 1;
+        if (collegeSort.clicks >= 3) collegeSort = null;
+        else collegeSort.dir *= -1;
       } else {
-        collegeSort = { key, dir: key === 'name' ? 1 : -1 };
+        collegeSort = { key, dir: key === 'name' ? 1 : -1, clicks: 1 };
       }
-      track('sort', 'college', collegeSort.dir === 1 ? 'asc' : 'desc', key);
+      track('sort', 'college',
+        collegeSort ? (collegeSort.dir === 1 ? 'asc' : 'desc') : 'default', key);
       buildCollegeHeaders();
       renderAll();
     });
@@ -1701,7 +1829,33 @@ function collegeSortValueFn() {
   }[collegeSort.key] || (c => c.name);
 }
 
+// Default ordering when no single column is actively sorted: Faculty desc,
+// then total Electives desc (always the unfiltered count — independent of any
+// active course filter), then Papers desc, then 4YR-GRAD desc, with name as
+// the final tie-breaker. Missing numeric values sink via the -1 fallback.
+const DEFAULT_SORT_VALUE_FNS = [
+  c => c.total ?? -1,
+  c => c.electives ?? -1,
+  c => c.papers ?? -1,
+  c => c.grads ?? -1,
+];
+function defaultCollegeCompare(a, b) {
+  for (const fn of DEFAULT_SORT_VALUE_FNS) {
+    const av = fn(a), bv = fn(b);
+    if (av !== bv) return bv - av; // all descending
+  }
+  return a.name.localeCompare(b.name);
+}
+
+// Value function used for the rank ("#") column. In default mode rows are
+// ranked by Faculty (the primary default-sort column); otherwise by the
+// actively-sorted column.
+function collegeRankValueFn() {
+  return collegeSort ? collegeSortValueFn() : (c => c.total ?? -1);
+}
+
 function sortedColleges(colleges) {
+  if (!collegeSort) return [...colleges].sort(defaultCollegeCompare);
   const fn = collegeSortValueFn();
   return [...colleges].sort((a, b) => {
     const av = fn(a), bv = fn(b);
@@ -1718,9 +1872,12 @@ function sortedColleges(colleges) {
 
 // Competition ranking ("1224"): rows with the same sort-column value share
 // a rank; the next distinct value jumps ahead by the size of the tie group.
-// e.g. faculty counts 18, 13, 13, 13, 10 → ranks 1, 2, 2, 2, 5.
+// e.g. faculty counts 18, 13, 13, 13, 10 → ranks 1, 2, 2, 2, 5. This only
+// applies when a single column is actively sorted — in the default
+// multi-column ordering each row gets a plain sequential 1, 2, 3, … number.
 function computeCollegeRanks(sorted) {
-  const fn = collegeSortValueFn();
+  if (!collegeSort) return sorted.map((_, i) => i + 1);
+  const fn = collegeRankValueFn();
   const ranks = new Array(sorted.length);
   let lastVal, lastRank = 0;
   for (let i = 0; i < sorted.length; i++) {

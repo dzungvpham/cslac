@@ -235,7 +235,8 @@ header {
   color: var(--text);
   background: var(--hover-bg);
 }
-.icon-share {
+.icon-share,
+.icon-download {
   width: 16px;
   height: 16px;
   display: block;

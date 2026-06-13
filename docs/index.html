@@ -110,7 +110,7 @@
     <p>This dashboard requires JavaScript to render. The underlying data is
     available as JSON:</p>
     <ul>
-      <li><a href="data.json">data.json</a> — per-college map of faculty records, department/catalog/schedule links, and course offerings</li>
+      <li><a href="data.json">data.json</a> — per-college map of faculty records, department/schedule links, and course offerings</li>
     </ul>
     <p>Source code and methodology:
       <a href="https://github.com/dzungvpham/cslac">github.com/dzungvpham/cslac</a>.</p>
@@ -140,6 +140,14 @@
             <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
           </svg>
           <span class="action-feedback" aria-live="polite">Copied!</span>
+        </button>
+        <button class="action-btn" id="export-btn" type="button" title="Export current view to JSON" aria-label="Export current view to JSON">
+          <svg class="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span class="action-feedback" aria-live="polite">Saved!</span>
         </button>
         <button class="theme-toggle" id="theme-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
           <span class="icon-sun" aria-hidden="true"></span>
