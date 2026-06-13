@@ -4,6 +4,7 @@
     "program_url": "https://www.albion.edu/academics/programs/computer-science-major-minor/",
     "faculty_url": "https://www.albion.edu/departments/mathematics-and-computer-science/faculty-and-staff/",
     "schedule_url": "https://adminpagesprod02.albion.edu:7443/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05nnk3913,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Mauricio Marengoni",
@@ -1060,6 +1061,7 @@
     "program_url": "https://www.albright.edu/academics/undergraduate-programs/computer-science",
     "faculty_url": "https://www.albright.edu/academics/undergraduate-programs/computer-science#fs-panel-10027",
     "schedule_url": "https://selfservice.albright.edu/SELFSERV/Search/Section?&eventId=CSC",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/029eaeb35,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Don Baldridge",
@@ -1330,6 +1332,7 @@
     "program_url": "https://allegheny.edu/academics/programs/computer-science/",
     "faculty_url": "https://allegheny.edu/about/campus-department-resources/faculty-and-staff-directory/associated-program/computer-science/",
     "schedule_url": "https://selfservice.allegheny.edu/Student/Courses/Search?subjects=CMPSC",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02jgzjj54,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Oliver Bonham-Carter",
@@ -4451,6 +4454,7 @@
     "program_url": "https://www.amherst.edu/academiclife/departments/computer_science",
     "faculty_url": "https://www.amherst.edu/academiclife/departments/computer_science/faculty",
     "schedule_url": "https://www.amherst.edu/academiclife/departments/computer_science/courses/2526S",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/028vqfs63,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Scott P. Alfeld",
@@ -9479,6 +9483,7 @@
     "program_url": "https://www.augustana.edu/academics/areas-of-study/computer-science",
     "faculty_url": "https://www.augustana.edu/academics/faculty-directory?search=&field_specializations_target_id=All&field_areas_of_study_target_id=231",
     "schedule_url": "https://selfservice.augustana.edu/Student/Courses/Search?subjects=CSC",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04bqrfs31,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Robert Dickerson",
@@ -10096,6 +10101,7 @@
     "program_url": "https://www.austincollege.edu/academics/majors-and-minors/computer-science/",
     "faculty_url": "https://www.austincollege.edu/academics/majors-and-minors/computer-science/",
     "schedule_url": "https://hopper.austincollege.edu/hlive/webhopper?CONSTITUENCY=WBAP&type=P&pid=ST-XWEBS006",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/052k56z27,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Seema Aarella",
@@ -11104,6 +11110,7 @@
     "program_url": "https://cs.bard.edu/",
     "faculty_url": "https://cs.bard.edu/faculty/",
     "schedule_url": "https://inside.bard.edu/academic/courses/current/computer.html",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04yrgt058,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Kerri-Ann Norton",
@@ -11872,6 +11879,7 @@
     "program_url": "https://cs.barnard.edu/",
     "faculty_url": "https://cs.barnard.edu/faculty-and-staff-3",
     "schedule_url": "https://cs.barnard.edu/course-catalogue",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04rt94r53,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Rebecca Wright",
@@ -13172,6 +13180,7 @@
     "program_url": "https://www.beloit.edu/academics/computer-science/",
     "faculty_url": "https://www.beloit.edu/academics/computer-science/faculty-staff/",
     "schedule_url": "https://my.beloit.edu/ICS/Course_Search/Default_Page.jnz?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/009yr1d55,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Eyad Haj Said",
@@ -14126,6 +14135,7 @@
     "program_url": "https://www.berea.edu/academics/departments-programs/computer-science",
     "faculty_url": "https://www.berea.edu/academics/departments-programs/computer-science/faculty-staff",
     "schedule_url": "https://b9student-prod.berea.edu:8444/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05kmcre68,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jan Pearce",
@@ -17347,6 +17357,7 @@
     "program_url": "https://www.bethanywv.edu/academics/areas-of-study/computer-science/",
     "faculty_url": "https://www.bethanywv.edu/academics/areas-of-study/computer-science/",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04a6tv155,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Alex Mathew",
@@ -17420,6 +17431,7 @@
     "program_url": "https://blc.edu/academics/programs/computer-science-major/",
     "faculty_url": "https://blc.edu/academics/programs/computer-science-major/#faculty",
     "schedule_url": "https://my.blc.edu/ICS/Portal_Homepage.jnz?portlet=Course_Info_and_Syllabi",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03z2kds18,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Perry Lund",
@@ -17448,6 +17460,7 @@
     "program_url": "https://www.bowdoin.edu/computer-science/",
     "faculty_url": "https://www.bowdoin.edu/computer-science/faculty-and-staff/index.html",
     "schedule_url": "https://www.bowdoin.edu/registrar/course-information/index.html",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03gh96r95,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Sean K. Barker",
@@ -20149,6 +20162,7 @@
     "program_url": "https://www.bridgewater.edu/academics/divisions/mathematics-computer-science/computer-science-major/",
     "faculty_url": "https://www.bridgewater.edu/academics/faculty/#filter=.math-computer-science",
     "schedule_url": "https://www.bridgewater.edu/life-at-bridgewater/services-for-students/registrar/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/016119s16,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Verne E. Leininger",
@@ -20333,6 +20347,7 @@
     "program_url": "https://brynathyn.edu/academics/undergraduate/department/computer-science-id.html",
     "faculty_url": "https://brynathyn.edu/faculty/index.html",
     "schedule_url": "https://brynathyn.jenzabarcloud.com/GENSRsC.cfm",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01befse58,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Thomas Frazier",
@@ -20486,6 +20501,7 @@
     "program_url": "https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science",
     "faculty_url": "https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science/faculty-staff",
     "schedule_url": "https://www.brynmawr.edu/inside/academic-information/registrar/tri-co-course-search/results?semester%5B0%5D=spring_2026&department%5B0%5D=Computer+Science&college%5B0%5D=bryn_mawr&page=1&per_page=50",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05sjwtp51,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Elizabeth Dinella",
@@ -22522,6 +22538,7 @@
     "program_url": "https://www.bucknell.edu/academics/college-engineering/majors-departments/computer-science",
     "faculty_url": "https://www.bucknell.edu/academics/college-engineering/majors-departments/computer-science/faculty-staff",
     "schedule_url": "https://pubapps.bucknell.edu/CourseInformation/#/lookup",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00fc1qt65,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Alan Marchiori",
@@ -28105,6 +28122,7 @@
     "program_url": "https://www.carleton.edu/computer-science/",
     "faculty_url": "https://www.carleton.edu/computer-science/faculty/",
     "schedule_url": "https://www.carleton.edu/catalog/current/search/?subject=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03jep7677,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Amy Csizmar Dalal",
@@ -34765,6 +34783,7 @@
     "program_url": "https://departments.central.edu/cs/",
     "faculty_url": "https://departments.central.edu/cs/department-directory/",
     "schedule_url": "https://web.central.edu/registrar/searchcourse/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/059y9v737,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Robert Franks",
@@ -34895,6 +34914,7 @@
     "program_url": "https://www.centre.edu/academics/majors-minors-programs/computer-science",
     "faculty_url": "https://www.centre.edu/about/faculty-staff?type=96&offices=All&programs=1011",
     "schedule_url": "https://centrenet.centre.edu/ICS/icsfs/mm/fa23.pdf?target=32825768-f507-4b50-b04f-ff27355c0a96",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00yvyvt82,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Thomas E. Allen",
@@ -35653,6 +35673,7 @@
     "program_url": "https://www.claflin.edu/academics-research/schools-departments/school-of-natural-sciences-and-mathematics/department-of-mathematics-computer-science/computer-science",
     "faculty_url": "https://www.claflin.edu/academics-research/schools-departments/school-of-natural-sciences-and-mathematics/meet-our-faculty",
     "schedule_url": "https://my.claflin.edu/ics/Portal_Homepage.jnz?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/052rx6v10,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Abdelrahman Desoky",
@@ -36536,6 +36557,7 @@
     "program_url": "https://www.coe.edu/academics/majors-areas-study/mathematics-computer-science",
     "faculty_url": "https://www.coe.edu/academics/majors-areas-study/mathematics-computer-science/faculty",
     "schedule_url": "https://www.coe.edu/application/files/4616/7769/1498/Fall_23_course_schedule_accessible.3.1.23.pdf",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03chkg278,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Stephen Hughes",
@@ -37152,6 +37174,7 @@
     "program_url": "https://cs.colby.edu/",
     "faculty_url": "https://cs.colby.edu/faculty.php",
     "schedule_url": "https://cs.colby.edu/courses.php",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00fvyjk73,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Stephanie Taylor",
@@ -41352,6 +41375,7 @@
     "program_url": "https://www.colgate.edu/academics/departments-programs/department-computer-science",
     "faculty_url": "https://www.colgate.edu/academics/departments-programs/department-computer-science/faculty-and-staff-computer-science",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05d23ve83,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Noah Apthorpe",
@@ -45253,6 +45277,7 @@
     "program_url": "https://www.csbsju.edu/computer-science",
     "faculty_url": "https://www.csbsju.edu/computer-science/faculty",
     "schedule_url": "https://registration.csbsju.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00watgv28,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Heather Amthauer",
@@ -47717,6 +47742,7 @@
     "program_url": "https://www.holycross.edu/academics/programs/mathematics-and-computer-science/about#CS",
     "faculty_url": "https://www.holycross.edu/academics/faculty/directory?keyword=&department=Mathematics+%26+Computer+Science&program=Computer+Science&type=Faculty",
     "schedule_url": "https://www.holycross.edu/about-holy-cross/offices-services/registrar/schedule-of-classes/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05dwp6855,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Zack Fitzsimmons",
@@ -49682,6 +49708,7 @@
     "program_url": "https://wooster.edu/area/computer-science/",
     "faculty_url": "https://wooster.edu/area/computer-science/",
     "schedule_url": "https://inside.wooster.edu/registrar/courses/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/029zqs055,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Heather Guarnera",
@@ -50341,6 +50368,7 @@
     "program_url": "https://www.coloradocollege.edu/academics/dept/mathcs/",
     "faculty_url": "https://www.coloradocollege.edu/academics/dept/mathcs/people/faculty.html",
     "schedule_url": "https://www.coloradocollege.edu/academics/curriculum/catalog/schedule.html",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03tg3h819,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Janet Burge",
@@ -52484,6 +52512,7 @@
     "program_url": "https://www.concordiacollege.edu/academics/programs-of-study/offutt-school-of-business/computer-science/",
     "faculty_url": "https://www.concordiacollege.edu/academics/programs-of-study/offutt-school-of-business/computer-science/computer-science-faculty/",
     "schedule_url": "https://banner.cord.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00ppb2x90,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Ahmed Kamel",
@@ -53395,6 +53424,7 @@
     "program_url": "https://www.conncoll.edu/academics/majors-departments-programs/departments/computer-science/",
     "faculty_url": "https://www.conncoll.edu/academics/majors-departments-programs/departments/computer-science/faculty--staff/",
     "schedule_url": "https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01hpqfm28,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Christine Chung",
@@ -58177,6 +58207,7 @@
     "program_url": "https://www.cornellcollege.edu/computer-science/",
     "faculty_url": "https://www.cornellcollege.edu/computer-science/faculty.shtml",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01wvxpc32,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Leon Tabak",
@@ -58237,6 +58268,7 @@
     "program_url": "https://covenant.edu/academics/cs/index.html",
     "faculty_url": "https://covenant.edu/academics/cs/faculty/",
     "schedule_url": "https://covenant.edu/academics/records/class-schedules.html",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03xg8pv73,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jeff Humphries",
@@ -58555,6 +58587,7 @@
     "program_url": "https://www.davidson.edu/academic-departments/mathematics-and-computer-science/computer-science-major-and-minor",
     "faculty_url": "https://www.davidson.edu/academic-departments/mathematics-and-computer-science/faculty-staff",
     "schedule_url": "https://course-schedule.davidson.edu/#/schedule?departments=CSC&limit=100&offset=0&term_code=202502",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02f7k4z58,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Raghu Ramanujan",
@@ -64588,6 +64621,7 @@
     "program_url": "https://denison.edu/academics/computer-science",
     "faculty_url": "https://denison.edu/academics/computer-science/contacts",
     "schedule_url": "https://banner.denison.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05pqx1c24,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Michael Chavrimootoo",
@@ -67986,6 +68020,7 @@
     "program_url": "https://www.depauw.edu/academics/departments-programs/computer-science/",
     "faculty_url": "https://www.depauw.edu/academics/departments-programs/computer-science/faculty-staff/",
     "schedule_url": "https://my.depauw.edu/e/reg/soc-view/index.asp",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02mks6v46,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Paul Bible",
@@ -69642,6 +69677,7 @@
     "program_url": "https://www.dickinson.edu/homepage/57/computer_science",
     "faculty_url": "https://www.dickinson.edu/homepage/529/computer_science_department_faculty",
     "schedule_url": "https://bannercprod.dickinson.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02ydh7m84,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Grant Braught",
@@ -72716,6 +72752,7 @@
     "program_url": "https://drew.edu/math-computer-science-department/",
     "faculty_url": "https://drew.edu/academics/mathematics/mathematics-computer-science-faculty/",
     "schedule_url": "https://selfservice.drew.edu/prod/bwckctlg.p_disp_dyn_ctlg",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04gds4h28,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Barry Burd",
@@ -74384,6 +74421,7 @@
     "program_url": "https://earlham.edu/academics/majors-minors-programs/computer-science/",
     "faculty_url": "https://earlham.edu/faculty-staff/?department=computer-science&full_name=",
     "schedule_url": "https://ssb.earlham.edu/frog/bwckschd.p_disp_dyn_sched",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/0566sj483,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Debanjali Banerjee",
@@ -76574,6 +76612,7 @@
     "program_url": "https://www.eastwest.edu/academic-programs/computer-information-science",
     "faculty_url": "https://www.eastwest.edu/computer-information-science/faculty/",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01597w461,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Injoo Kim",
@@ -76650,6 +76689,7 @@
     "program_url": "https://www.eckerd.edu/computer-science/why-computer-science-at-eckerd/",
     "faculty_url": "https://www.eckerd.edu/computer-science/faculty/",
     "schedule_url": "https://regssb-prod.ban.eckerd.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04d4qrf43,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Kelly R. Debure",
@@ -77549,6 +77589,7 @@
     "program_url": "https://franklincollege.edu/academics/majors/computing/",
     "faculty_url": "https://franklincollege.edu/academics/what-to-study/computing/#section9",
     "schedule_url": "https://selfservice.franklin.edu/Student/Courses/Search?subjects=COMP",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05w35s747,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Robert Beasley",
@@ -78388,6 +78429,7 @@
     "program_url": "https://www.fandm.edu/fields-of-study/computer-science/index.html",
     "faculty_url": "https://www.fandm.edu/directory/index.html?search_phrase=computer+science",
     "schedule_url": "https://www.fandm.edu/registrar/index.html",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04fp4ps48,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Justin D Brody",
@@ -79462,6 +79504,7 @@
     "program_url": "https://www.furman.edu/academics/computer-science/",
     "faculty_url": "https://www.furman.edu/academics/computer-science/faculty/",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04ytb9n23,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Andrea Tartaro",
@@ -81463,6 +81506,7 @@
     "program_url": "https://www.gettysburg.edu/academic-programs/computer-science/",
     "faculty_url": "https://www.gettysburg.edu/academic-programs/computer-science/faculty/",
     "schedule_url": "https://psinfo1.gettysburg.edu/psc/SA8PROD/EMPLOYEE/HRMS/c/GBC_STUDENT_RECORDS.GBC_GUEST_CLS_SRCH.GBL",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/045e26x92,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Sunghee Sunny Kim",
@@ -85178,6 +85222,7 @@
     "program_url": "https://www.gordon.edu/academics/computerscience",
     "faculty_url": "https://www.math-cs.gordon.edu/faculty.html",
     "schedule_url": "https://www.gordon.edu/course_schedules",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/0364wpq06,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Russell C. Bjork",
@@ -85440,6 +85485,7 @@
     "program_url": "https://www.goucher.edu/learn/undergraduate-programs/computer-science/",
     "faculty_url": "https://www.goucher.edu/learn/undergraduate-programs/computer-science/",
     "schedule_url": "https://hercules.goucher.edu/SelfService/Search/Section?&department=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/055ag3e81,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jill Zimmerman",
@@ -86322,6 +86368,7 @@
     "program_url": "https://www.grinnell.edu/academics/majors-concentrations/computer-science",
     "faculty_url": "https://www.grinnell.edu/profiles/computer-science/faculty",
     "schedule_url": "https://colss-prod.ec.grinnell.edu/Student/Courses/Search?subjects=CSC",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04tmmky42,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Peter-Michael Osera",
@@ -90236,6 +90283,7 @@
     "program_url": "https://gustavus.edu/academics/undergraduate/computer-science/",
     "faculty_url": "https://gustavus.edu/academics/departments/mathematics-computer-science-and-statistics/faculty/",
     "schedule_url": "https://colselfsrvprod.gac.edu/Student/Courses/Search?subjects=MCS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/007q4yk54,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Flint Million",
@@ -90645,6 +90693,7 @@
     "program_url": "https://www.hamilton.edu/academics/departments/Computer-Science",
     "faculty_url": "https://www.hamilton.edu/academics/departments/Faculty?dept=Computer%20Science",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05709zb94,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Darren Strash",
@@ -93119,6 +93168,7 @@
     "program_url": "https://www.hsc.edu/academics/mathematics-and-computer-science",
     "faculty_url": "https://www.hsc.edu/academics/mathematics-and-computer-science/math-and-cs-professors",
     "schedule_url": "https://tigerweb.hsc.edu/ICS/Course_Search.jnz?portlet=AddDrop_Courses_2014-08-05T12-46-04-281&screen=Advanced+Course+Search&screenType=next",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02mb9s657,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Joseph Rennie",
@@ -94534,6 +94584,7 @@
     "program_url": "https://www.hanover.edu/academics/programs/cs/",
     "faculty_url": "https://www.hanover.edu/academics/programs/cs/#faculty",
     "schedule_url": "https://my.hanover.edu/ICS/Resources/Class__Faculty_Schedules/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00vc14296,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jeffrey LaMarche",
@@ -94607,6 +94658,7 @@
     "program_url": "https://www.hartwick.edu/academics/academic-departments/computer-and-information-sciences-department/",
     "faculty_url": "https://www.hartwick.edu/academics/computer-science",
     "schedule_url": "https://selfservice.hartwick.edu/Student/Courses/Search?subjects=CISC",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/0288qta63,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Howard Lichtman",
@@ -94770,6 +94822,7 @@
     "program_url": "https://www.hmc.edu/cs/",
     "faculty_url": "https://www.hmc.edu/cs/faculty-staff/",
     "schedule_url": "https://hyperschedule.io/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/025ecfn45,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jim Boerkoel",
@@ -103727,6 +103780,7 @@
     "program_url": "https://www.haverford.edu/academics/computer-science-major-minor-and-concentration",
     "faculty_url": "https://www.haverford.edu/computer-science/faculty-staff",
     "schedule_url": "https://www.haverford.edu/academics/results?semester%5B0%5D=spring_2026&department%5B0%5D=Computer%20Science&college%5B0%5D=haverford&page=1&per_page=200",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04fnrxr62,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "John Dougherty",
@@ -107835,6 +107889,7 @@
     "program_url": "https://www.hendrix.edu/mathcs/computerscience/",
     "faculty_url": "https://www.hendrix.edu/mathcs/faculty/",
     "schedule_url": "https://campusweb.hendrix.edu/ICS/Academics/Course_Search.jnz?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00yghrj63,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Gabriel Ferrer",
@@ -109377,6 +109432,7 @@
     "program_url": "https://www.hws.edu/academics/computer-science/default.aspx",
     "faculty_url": "https://www.hws.edu/academics/computer-science/faculty-directory.aspx",
     "schedule_url": "https://www.hws.edu/images/offices/registrar/docs/FallSchedule.pdf",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/004majf41,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Stina S Bridgeman",
@@ -110255,6 +110311,7 @@
     "program_url": "https://hope.edu/academics/computer-science/",
     "faculty_url": "https://hope.edu/academics/computer-science/faculty-staff.html",
     "schedule_url": "https://schedule.hope.edu/?term=202601&subj=CSCI",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03chnr738,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Michael Jipping",
@@ -112582,6 +112639,7 @@
     "program_url": "https://www.houghton.edu/math-science/computer-science-major/",
     "faculty_url": "https://www.houghton.edu/math-science/",
     "schedule_url": "https://www.houghton.edu/current-students/registrar/houghton-ny-undergraduate-students/course-offerings/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04vjs1b18,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Katrina Koehler",
@@ -112897,6 +112955,7 @@
     "program_url": "https://www.ic.edu/computer-science",
     "faculty_url": "https://www.ic.edu/computer-science/directory",
     "schedule_url": "https://connect2.ic.edu/ICS/default.aspx?portlet=Course_Schedules&screen=Advanced+Course+Search&screenType=next",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02ys5x139,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Takako Soma",
@@ -113347,6 +113406,7 @@
     "program_url": "https://www.juniata.edu/academics/computer-science/",
     "faculty_url": "https://www.juniata.edu/academics/computer-science/computer-science-faculty.php",
     "schedule_url": "https://selfservice.juniata.edu/Student/Courses/Search?subjects=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01ayg2409,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Gerald W. Kruse",
@@ -114008,6 +114068,7 @@
     "program_url": "https://computerscience.kzoo.edu/",
     "faculty_url": "https://computerscience.kzoo.edu/facultystaff/",
     "schedule_url": "https://hornethq.kzoo.edu/Student/Courses/Search?subjects=COMP",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/001qst305,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Alyce Brady",
@@ -115425,6 +115486,7 @@
     "program_url": "https://www.knox.edu/academics/majors-and-minors/computer-science",
     "faculty_url": "https://www.knox.edu/academics/majors-and-minors/computer-science/faculty",
     "schedule_url": "https://www.knox.edu/documents/Registrar/CourseSchedules/coursescheduleSP25.pdf",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04hfkdb50,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "David Bunde",
@@ -120588,6 +120650,7 @@
     "program_url": "https://compsci.lafayette.edu/",
     "faculty_url": "https://compsci.lafayette.edu/faculty/",
     "schedule_url": "https://selfservice.lafayette.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/036n0x007,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Ge Xia",
@@ -124550,6 +124613,7 @@
     "program_url": "https://www.lakeforest.edu/academics/majors-and-minors/mathematics-and-computer-science",
     "faculty_url": "https://www.lakeforest.edu/academics/majors-and-minors/mathematics-and-computer-science/faculty",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04rmtzr09,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Sugata Banerji",
@@ -124856,6 +124920,7 @@
     "program_url": "https://www.lanecollege.edu/academics/departments/natural-and-physical-science/computer-science",
     "faculty_url": "https://www.lanecollege.edu/directory",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00e7vgg86,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Kitai Jeong",
@@ -125077,6 +125142,7 @@
     "program_url": "https://www.lawrence.edu/academics/college/computer-science",
     "faculty_url": "https://www.lawrence.edu/academics/college/computer-science/faculty",
     "schedule_url": "https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/005w9jb47,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Acacia Ackles",
@@ -125915,6 +125981,7 @@
     "program_url": "https://www.linfield.edu/programs/computer-science/index.html",
     "faculty_url": "https://www.linfield.edu/math/faculty.html",
     "schedule_url": "https://selfservice.linfield.edu/Student/Courses/Search?subjects=COMP",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/0228k1a18,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Nurideen Abubakari",
@@ -126591,6 +126658,7 @@
     "program_url": "https://www.luther.edu/academics/computer-science",
     "faculty_url": "https://www.luther.edu/academics/computer-science/faculty-staff",
     "schedule_url": "https://norsehub.luther.edu/Student/Courses/Search?subjects=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03dqcb840,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Roman Yasinovskyy",
@@ -127131,6 +127199,7 @@
     "program_url": "https://www.lycoming.edu/computer-science/",
     "faculty_url": "https://www.lycoming.edu/computer-science/faculty.aspx",
     "schedule_url": "https://collslfsrv-live.lycoming.edu/Student/Courses/Search?subjects=CPTR",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01rsgws32,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Krish Pillai",
@@ -127390,6 +127459,7 @@
     "program_url": "https://www.lyon.edu/computer-science",
     "faculty_url": "https://www.lyon.edu/math-science-faculty",
     "schedule_url": "https://my.lyon.edu/ICS/default.aspx?portlet=AddDrop_Courses&screen=Advanced+Course+Search&screenType=next",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03c4kec23,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Marcus Birkenkrahe",
@@ -127846,6 +127916,7 @@
     "program_url": "https://www.macalester.edu/mscs/",
     "faculty_url": "https://www.macalester.edu/mscs/facultystaff/",
     "schedule_url": "https://www.macalester.edu/mscs/schedules/computer_science/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04fceqm38,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Shilad Sen",
@@ -133852,6 +133923,7 @@
     "program_url": "https://www.maryvillecollege.edu/academics/programs-of-study/computer-science/",
     "faculty_url": "https://www.maryvillecollege.edu/academics/programs-of-study/computer-science/",
     "schedule_url": "https://www.maryvillecollege.edu/academics/registrar/course-schedules/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04e602778,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Barbara Johnson",
@@ -134093,6 +134165,7 @@
     "program_url": "https://www.meredith.edu/computer-science/",
     "faculty_url": "https://www.meredith.edu/computer-science/computer-science-faculty-staff/",
     "schedule_url": "https://mcis.meredith.edu/Student/Courses/Search?subjects=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02g0yj703,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Kristin Watkins",
@@ -134451,6 +134524,7 @@
     "program_url": "https://www.middlebury.edu/college/academics/computer-science",
     "faculty_url": "https://www.middlebury.edu/college/academics/computer-science/faculty-and-staff",
     "schedule_url": "https://catalog.middlebury.edu/offerings/search/catalog-MCUG",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/0217hb928,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Christopher Andrews",
@@ -139964,6 +140038,7 @@
     "program_url": "https://www.monmouthcollege.edu/academics/computer-science/",
     "faculty_url": "https://www.monmouthcollege.edu/academics/computer-science/faculty/",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03rbn9086,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Robert Utterback",
@@ -140118,6 +140193,7 @@
     "program_url": "https://www.mtholyoke.edu/academics/find-your-program/computer-science",
     "faculty_url": "https://www.mtholyoke.edu/directory/faculty-staff?type=5&department=199",
     "schedule_url": "https://wadv1.mtholyoke.edu/wadvg/mhc?TYPE=P&PID=ST-XWSTS12A",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/031z8pr38,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Lisa A. Ballesteros",
@@ -143842,6 +143918,7 @@
     "program_url": "https://www.muhlenberg.edu/academics/mathcs/computerscience/",
     "faculty_url": "https://www.muhlenberg.edu/academics/mathcs/computerscience/",
     "schedule_url": "https://www.muhlenberg.edu/courseofferings/index.php",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03cqsth74,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Youngsun Jang",
@@ -144228,6 +144305,7 @@
     "program_url": "https://www.ncf.edu/programs/computer-science/",
     "faculty_url": "https://catalog.ncf.edu/undergraduate/natural-sciences/computer-science/#facultytext",
     "schedule_url": "https://newcleis.ncf.edu/pls/ncpo/bwckschd.p_disp_dyn_sched",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01cbya385,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Fahmida Hamid",
@@ -145540,6 +145618,7 @@
     "program_url": "https://www.oberlin.edu/arts-and-sciences/departments/computer-science",
     "faculty_url": "https://www.oberlin.edu/arts-and-sciences/departments/computer-science/faculty-list",
     "schedule_url": "https://banner.cc.oberlin.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05ac26z88,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Cynthia Taylor",
@@ -149228,6 +149307,7 @@
     "program_url": "https://www.oxy.edu/academics/areas-study/computer-science",
     "faculty_url": "https://www.oxy.edu/academics/areas-study/computer-science/faculty",
     "schedule_url": "https://counts.oxy.edu/public/default.aspx",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01mxmpy39,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Justin Li",
@@ -151169,6 +151249,7 @@
     "program_url": "https://www.owu.edu/academics/departments-programs/department-of-mathematics-and-computer-science/computer-science-general-major/",
     "faculty_url": "https://www.owu.edu/academics/departments-programs/department-of-mathematics-and-computer-science/faculty-staff/",
     "schedule_url": "https://campus.owu.edu/selfserv/Search/Section?&eventId=CS&department=MATH",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02qj9qr34,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Mehwish Abbasi",
@@ -151336,6 +151417,7 @@
     "program_url": "https://www.pomona.edu/academics/departments/computer-science",
     "faculty_url": "https://www.pomona.edu/academics/departments/computer-science/faculty-staff",
     "schedule_url": "https://hyperschedule.io/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/0074grg94,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Tzu-Yi Chen",
@@ -157994,6 +158076,7 @@
     "program_url": "https://www.presby.edu/programs/computer-science/",
     "faculty_url": "https://www.presby.edu/programs/computer-science/",
     "schedule_url": "https://banners.presby.edu/prod/hzskschd.P_SelectSubject",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01s9sxm36,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Gregory Goeckel",
@@ -158308,6 +158391,7 @@
     "program_url": "https://www.randolphcollege.edu/computer-science/",
     "faculty_url": "https://www.randolphcollege.edu/computer-science/",
     "schedule_url": "https://inside.randolphcollege.edu/Course_Offerings.aspx",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02fag2f73,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Brad Spendlove",
@@ -158540,6 +158624,7 @@
     "program_url": "https://www.rmc.edu/academics/areas-of-study/computer-science/",
     "faculty_url": "https://www.rmc.edu/about-rmc/college-leadership/offices-departments/computer-science-department/",
     "schedule_url": "https://mymaconweb.rmc.edu/m/d/m/5c62616e-9463-484d-8fd8-180250661411/CourseSearch/SearchResults?termcode=2025;42&title=&code=&department=CSCI&faculty=&campus=&additional=&openseats=OpenFull&add=T",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03zstcc67,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Rance Necaise",
@@ -160064,6 +160149,7 @@
     "program_url": "https://www.reed.edu/computer-science/",
     "faculty_url": "https://www.reed.edu/computer-science/faculty.html",
     "schedule_url": "https://solar.reed.edu/class_schedule/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00a6ram87,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Greg Anderson",
@@ -161295,6 +161381,7 @@
     "program_url": "https://www.rhodes.edu/academics/majors-minors/computer-science",
     "faculty_url": "https://www.cs.rhodes.edu/people/faculty.html",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/049xfwy04,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Mark Cooper",
@@ -161852,6 +161939,7 @@
     "program_url": "https://www.roanoke.edu/majors/computerscience",
     "faculty_url": "https://www.roanoke.edu/inside/math_cs_and_physics/computer_science/computer_science_faculty",
     "schedule_url": "https://selfservice.roanoke.edu/Student/Courses/Search?subjects=CPSC",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00jtk7j90,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Durell Bouchard",
@@ -163041,6 +163129,7 @@
     "program_url": "https://www.anselm.edu/academics/departments-programs/computer-science",
     "faculty_url": "https://www.anselm.edu/academics/departments-programs/computer-science/faculty-staff",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04eybkn52,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Rajesh Prasad",
@@ -163377,6 +163466,7 @@
     "program_url": "https://www.smcvt.edu/academics/majors-minors-and-curriculum/computer-science/",
     "faculty_url": "https://www.smcvt.edu/academics/majors-minors-and-curriculum/computer-science/",
     "schedule_url": "https://selfservice.smcvt.edu/Student/Courses/Search?subjects=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03b353k89,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Bradford Demarest",
@@ -163701,6 +163791,7 @@
     "program_url": "https://www.skidmore.edu/computer_science/index.php",
     "faculty_url": "https://www.skidmore.edu/computer-science/faculty/index.php",
     "schedule_url": "https://bannerxe.skidmore.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04nzrzs08,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Nelson Dellis",
@@ -166120,6 +166211,7 @@
     "program_url": "https://www.smith.edu/academics/computer-science",
     "faculty_url": "https://www.smith.edu/academics/computer-science",
     "schedule_url": "https://www.smith.edu/academics/programs-courses/course-search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/0497crr92,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Johanna Brewer",
@@ -172626,6 +172718,7 @@
     "program_url": "https://svu.edu/academics/majors-minors/computer-science/",
     "faculty_url": "https://svu.edu/academics/majors-minors/computer-science/",
     "schedule_url": "https://my.svu.edu/ics/Student_Stuff/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03a7v0208,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Ammon Hepworth",
@@ -172654,6 +172747,7 @@
     "program_url": "https://www.southwestern.edu/computer-science/",
     "faculty_url": "https://www.southwestern.edu/computer-science/our-faculty/",
     "schedule_url": "https://selfservice.southwestern.edu/Student/Courses/Search?subjects=CSC54",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05gj63w50,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Barbara M. Anthony",
@@ -174365,6 +174459,7 @@
     "program_url": "https://www.stlawu.edu/academics/programs/computer-science",
     "faculty_url": "https://www.stlawu.edu/offices/math-computer-science-and-statistics/staff",
     "schedule_url": "https://www.stlawu.edu/offices/math-computer-science-and-statistics/current-courses-spring-2023",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05pvqha70,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Kevin A. Angstadt",
@@ -175898,6 +175993,7 @@
     "program_url": "https://www.smcm.edu/mathcs/",
     "faculty_url": "https://inside.smcm.edu/directory/mathcs",
     "schedule_url": "https://portal.smcm.edu/CMCPortal/Common/CourseSchedule.aspx",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01y2d1w05,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Emily Barranca",
@@ -177029,6 +177125,7 @@
     "program_url": "https://wp.stolaf.edu/cs/",
     "faculty_url": "https://wp.stolaf.edu/cs/faculty-staff/",
     "schedule_url": "https://sis.stolaf.edu/sis/public-aclasslab.cfm",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01q7w1f47,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jaime Davila",
@@ -178497,6 +178594,7 @@
     "program_url": "https://www.stonehill.edu/programs/computer-science/",
     "faculty_url": "https://www.stonehill.edu/programs/computer-science/faculty/",
     "schedule_url": "https://xessb.stonehill.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/023288525,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Sharmishtha Dutta",
@@ -179300,6 +179398,7 @@
     "program_url": "https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science/",
     "faculty_url": "https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science/",
     "schedule_url": "https://su-ss-live.susqu.edu/Student/Courses/Search?subjects=CSCI",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02nmnpn85,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Steven Scheirer",
@@ -181209,6 +181308,7 @@
     "program_url": "https://www.swarthmore.edu/computer-science",
     "faculty_url": "https://www.swarthmore.edu/computer-science/faculty-staff",
     "schedule_url": "https://studentregistration.swarthmore.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/012dg8a96,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Kevin Webb",
@@ -186896,6 +186996,7 @@
     "program_url": "https://www.tougaloo.edu/academics/divisions/natural-science/mathematics-computer-science-department",
     "faculty_url": "https://www.tougaloo.edu/academics/divisions/natural-science/mathematics-computer-science-department/",
     "schedule_url": "https://theloo.tougaloo.edu/ICS/Academics/Academics_Homepage.jnz?portlet=AddDrop_Courses&screen=Advanced+Course+Search&screenType=next",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03feyt230,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Marcus Brumfield",
@@ -187037,6 +187138,7 @@
     "program_url": "https://www.transy.edu/academics/program/computer-science/",
     "faculty_url": "https://www.transy.edu/academics/program/computer-science/computer-science-faculty/",
     "schedule_url": "https://selfserv.transy.edu/Student/Courses/Search?subjects=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01h4hqc60,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Bobby England",
@@ -187346,6 +187448,7 @@
     "program_url": "https://www.trincoll.edu/cs/",
     "faculty_url": "https://www.trincoll.edu/cs/faculty-and-staff/",
     "schedule_url": "https://www.trincoll.edu/cs/course-schedule/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/019dhar59,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Ewa Syta",
@@ -188546,6 +188649,7 @@
     "program_url": "https://www.trinity.edu/academics/departments/computer-science",
     "faculty_url": "https://www.trinity.edu/academics/departments/computer-science/computer-science-bs#faculty",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00t8gz605,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Paul Myers",
@@ -191161,6 +191265,7 @@
     "program_url": "https://www.union.edu/computer-science",
     "faculty_url": "https://www.union.edu/faculty-staff/computer-science",
     "schedule_url": "https://selfservice.union.edu/Student/Courses/Search?subjects=CSC",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/058w5nk68,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Matt Anderson",
@@ -193461,6 +193566,7 @@
     "program_url": "https://cas.umw.edu/computerscience/",
     "faculty_url": "https://cas.umw.edu/computerscience/computer-science-faculty/",
     "schedule_url": "https://reg-prod.ec.umw.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03b48gv34,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jennifer Polack",
@@ -198305,6 +198411,7 @@
     "program_url": "https://morris.umn.edu/academics/computer-science",
     "faculty_url": "https://morris.umn.edu/academics/computer-science",
     "schedule_url": "http://z.umn.edu/publicclasssearch",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05vzqzh92,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Wenkai Guan",
@@ -200581,6 +200688,7 @@
     "program_url": "https://www.unca.edu/programs/computer-science/",
     "faculty_url": "https://go.unca.edu/cs/",
     "schedule_url": "https://www.unca.edu/schedules/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/017c6at71,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Kevin Sanft",
@@ -202964,6 +203072,7 @@
     "program_url": "https://www.pugetsound.edu/academics/computer-science",
     "faculty_url": "https://www.pugetsound.edu/academics/computer-science/faculty",
     "schedule_url": "https://campus.pugetsound.edu/psc/PUBLIC/EMPLOYEE/CAMPPUB/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/042drmv40,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Baha Alsaify",
@@ -204530,6 +204639,7 @@
     "program_url": "https://cs.richmond.edu/",
     "faculty_url": "https://cs.richmond.edu/faculty/index.html",
     "schedule_url": "https://richmond.app.box.com/s/76rltos9mgu9pjnte2u669ex0ff24ejq",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03y71xh61,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Douglas Szajda",
@@ -206845,6 +206955,7 @@
     "program_url": "https://new.sewanee.edu/programs-of-study/math-cs/",
     "faculty_url": "https://new.sewanee.edu/programs-of-study/math-cs/faculty-staff/",
     "schedule_url": "https://registrar.sewanee.edu/schedule/?term=easter&school=college-of-arts-sciences-2&subject=computer-science&track=",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05r5k8873,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Stephen Carl",
@@ -207825,6 +207936,7 @@
     "program_url": "https://www.uvawise.edu/academics/majors-minors/computer-science",
     "faculty_url": "https://www.uvawise.edu/academics/departments/mathematics-computer-science/mathematics-computer-science-faculty-staff",
     "schedule_url": null,
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04hx5st34,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "C Karen",
@@ -207933,6 +208045,7 @@
     "program_url": "https://www.ursinus.edu/academics/mathematics-computer-science-and-statistics/",
     "faculty_url": "https://www.ursinus.edu/academics/mathematics-computer-science-and-statistics/faculty-and-staff/",
     "schedule_url": "https://selfservice.ursinus.edu/Student/Courses/Search?subjects=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02jqn4a25,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "David Henry",
@@ -208954,6 +209067,7 @@
     "program_url": "https://www.vassar.edu/computerscience",
     "faculty_url": "https://www.vassar.edu/computerscience/faculty",
     "schedule_url": "https://aisapps.vassar.edu/cgi-bin/geninfo.cgi",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/022x6qg61,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jason Waterman",
@@ -212957,6 +213071,7 @@
     "program_url": "https://www.vwu.edu/academics/majors/computer-science/",
     "faculty_url": "https://www.vwu.edu/academics/majors/computer-science/meet-the-faculty.php",
     "schedule_url": "https://webadvisor.vwu.edu/WebAdvisor/WebAdvisor",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03ken7w58,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Abdullah Al-Alaj",
@@ -213913,6 +214028,7 @@
     "program_url": "https://www.wabash.edu/academics/computer_science",
     "faculty_url": "https://www.wabash.edu/academics/computer_science/facstaff",
     "schedule_url": "https://www.wabash.edu/apps/registrar/course-sections?pages_id=1&dept=CSC&term=26/SP",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/00p11pk44,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Qixin Deng",
@@ -215353,6 +215469,7 @@
     "program_url": "https://www.wartburg.edu/computer-science/",
     "faculty_url": "https://www.wartburg.edu/academics/mcsp-faculty/",
     "schedule_url": "https://my.wartburg.edu/ics/Academics/Academics_Homepage.jnz?portlet=Course_Search&screen=Advanced+Course+Search&screenType=next",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02exxw634,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jim Jacobs",
@@ -216088,6 +216205,7 @@
     "program_url": "https://www.wlu.edu/computer-science-department",
     "faculty_url": "https://www.wlu.edu/computer-science-department/faculty-and-staff",
     "schedule_url": "https://managementtools4.wlu.edu/CourseOfferings/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05r9xgf14,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Sara Sprenkle",
@@ -217749,6 +217867,7 @@
     "program_url": "https://www.washcoll.edu/academic_departments/math-and-computer-science/index.php",
     "faculty_url": "https://www.washcoll.edu/academics/departments/math-comp-sci/faculty.php",
     "schedule_url": "https://www.washcoll.edu/people_departments/offices/registrar/course-schedule.php",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/02vk0qj37,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Austin Lobo",
@@ -218376,6 +218495,7 @@
     "program_url": "https://www.washjeff.edu/programs/computing-and-information-studies-cis/",
     "faculty_url": "https://www.washjeff.edu/programs/computing-and-information-studies-cis/",
     "schedule_url": "https://jaysource.washjeff.edu/Student/Courses/Search?subjects=CIS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05k3dc376,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Charles Hannon",
@@ -219555,6 +219675,7 @@
     "program_url": "https://www.wellesley.edu/cs",
     "faculty_url": "https://www.wellesley.edu/cs/faculty",
     "schedule_url": "https://www.wellesley.edu/cs/curriculum/current",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01srpnj69,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Carolyn Anderson",
@@ -230768,6 +230889,7 @@
     "program_url": "https://www.wesleyan.edu/mathcs/cs/index.html",
     "faculty_url": "https://www.wesleyan.edu/mathcs/cs/faculty.html",
     "schedule_url": "https://owaprod-pub.wesleyan.edu/reg/!wesmaps_page.html?stuid=&facid=NONE&crse_list=COMP&term=1259&offered=Y",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05h7xva58,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Norman Danner",
@@ -234756,6 +234878,7 @@
     "program_url": "https://www.westminster.edu/academics/schools/physical-mathematical/math-cs/index.cfm",
     "faculty_url": "https://www.westminster.edu/academics/schools/physical-mathematical/math-cs/faculty.cfm",
     "schedule_url": "https://www.westminster.edu/academics/course-schedule.cfm?subject=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01j1cwt71,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "John P. Bonomo",
@@ -234958,6 +235081,7 @@
     "program_url": "https://www.wheaton.edu/academics/programs/computer-science/",
     "faculty_url": "https://www.wheaton.edu/academics/departments/mathematics-and-computer-science/computerscience/faculty/",
     "schedule_url": "https://www.wheaton.edu/media/registrar/schedule/2023-Fall-Registration-Packet_August042023.pdf",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/0581k0452,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Hyunju Kim",
@@ -235543,6 +235667,7 @@
     "program_url": "https://wheatoncollege.edu/academics/programs/computer-science/",
     "faculty_url": "https://departments.wheatoncollege.edu/faculty/",
     "schedule_url": "https://banprodselfservice.wheatonma.edu:7341/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/055ja0v85,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Nicholas Almeder",
@@ -237235,6 +237360,7 @@
     "program_url": "https://www.whitman.edu/academics/majors-and-minors/computer-science",
     "faculty_url": "https://www.whitman.edu/academics/majors-and-minors/computer-science/faculty-and-staff",
     "schedule_url": "https://selfservice.whitman.edu/Student/Courses/Search?subjects=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/05axv8155,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "William Bares",
@@ -238460,6 +238586,7 @@
     "program_url": "https://willamette.edu/academics/college/computer-science/",
     "faculty_url": "https://willamette.edu/academics/computing/faculty",
     "schedule_url": "https://collslfsrv.willamette.edu/Student/Courses/Search?subjects=CS",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04g9e0f44,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Fred Agbo",
@@ -240349,6 +240476,7 @@
     "program_url": "https://csci.williams.edu/",
     "faculty_url": "https://csci.williams.edu/people/faculty/",
     "schedule_url": "https://catalog.williams.edu/csci/list/?strm=9999&sbattr=&req_year=26&offered=A",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04avkmd49,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Jeannie Albrecht",
@@ -246564,6 +246692,7 @@
     "program_url": "https://www.wittenberg.edu/academics/computerscience/courses-requirements",
     "faculty_url": "https://www.wittenberg.edu/academics/computer-science/faculty-staff",
     "schedule_url": "https://selfservice.wittenberg.edu/Student/Courses/Search?subjects=COMP",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04a23br85,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Sunday Ngwobia",
@@ -246721,6 +246850,7 @@
     "program_url": "https://www.wofford.edu/academics/majors-and-programs/computer-science",
     "faculty_url": "https://www.wofford.edu/academics/majors-and-programs/computer-science/faculty-and-staff",
     "schedule_url": "https://connect.wofford.edu/myWofford/registrar/courseSchedule.aspx",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04dzs7b08,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Beau M. Christ",

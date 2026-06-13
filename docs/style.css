@@ -361,7 +361,7 @@ header {
 .th-label { cursor: pointer; transition: color 0.12s; }
 .th-label:hover { color: var(--text); }
 .th.sorted { color: var(--accent); }
-.th:not(:first-child) { justify-content: flex-end; }
+.th:not(:first-child) { justify-content: center; }
 
 .sort-icon {
   font-size: 10px;
@@ -469,10 +469,22 @@ a.college-name:hover { color: var(--accent); text-decoration: underline; }
 .td-num {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 13px;
+  /* Right-aligned so digits line up across rows, but with extra right padding
+     so the value sits toward the middle of the column rather than hugging the
+     right edge (headers are centered to match). The right pad is per-column
+     (--num-pr) because narrower values (Faculty/Electives/Papers) need a wider
+     pad to read centered than the wide GRAD:FAC "NN:1" cell does. Mobile
+     overrides the whole padding below, so it ignores --num-pr. */
   text-align: right;
-  padding: 11px 12px;
+  padding: 11px var(--num-pr, 28px) 11px 12px;
   color: var(--text);
 }
+/* Per-column right pad (col 1 is the name; nums are cols 2–6). GRAD:FAC (col 4)
+   keeps the 28px default. */
+.td-num:nth-child(2) { --num-pr: 36px; }  /* Faculty  */
+.td-num:nth-child(3) { --num-pr: 32px; }  /* 4YR-GRAD */
+.td-num:nth-child(5) { --num-pr: 36px; }  /* Electives */
+.td-num:nth-child(6) { --num-pr: 34px; }  /* Papers   */
 .td-num.dim { color: var(--sub); }
 .td-num .num-short { display: none; }
 
@@ -1368,7 +1380,7 @@ a.pub-author:hover {
   flex-shrink: 0;
   display: inline-block;
   min-width: 3ch;
-  text-align: right;
+  text-align: center;
 }
 
 /* ── responsive ── */
@@ -1383,6 +1395,9 @@ a.pub-author:hover {
   .header-left h1 .h1-full  { display: none; }
   .header-left h1 .h1-short { display: inline; }
   .header-stats { gap: 18px; }
+  /* Drop the active-filter values from the Papers counter on small screens —
+     keep just the "Papers" label. */
+  .stat-filter-suffix { display: none; }
   .about-text { max-width: 160px; font-size: 10.5px; }
 
   .filter-bar { padding: 12px 0; gap: 6px; }

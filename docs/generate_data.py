@@ -58,6 +58,25 @@ SITEMAP_XML      = DOCS / "sitemap.xml"
 TRUSTED_STATUSES = {"matched", "manual_approved"}
 INCLUDED_FIELDS = {"Computer Science", "Invalid"}
 
+# OpenAlex "works" source link for a college's CS publications. Mirrors the
+# exact filter faculty_publication_scraper.py used to build the dataset:
+# institution by ROR + any topic in the CS field (id 17). Note this is
+# topics.field.id (any topic), not primary_topic.field.id, so the link shows
+# the same superset we scraped from.
+OPENALEX_CS_FIELD_ID = "17"
+
+
+def openalex_works_url(ror: str) -> str | None:
+    ror = (ror or "").strip()
+    if not ror:
+        return None
+    return (
+        "https://openalex.org/works?page=1&filter="
+        f"authorships.institutions.ror:https://ror.org/{ror},"
+        f"topics.field.id:{OPENALEX_CS_FIELD_ID}"
+        "&sort=publication_year:desc"
+    )
+
 
 # ── faculty ────────────────────────────────────────────────────────────────
 
@@ -238,10 +257,11 @@ def build_links(colleges_csv: Path, known: set[str]) -> dict[str, dict]:
                 or None
             )
             result[name] = {
-                "state":        row["State"].strip() or None,
-                "program_url":  row["Program Link"].strip() or None,
-                "faculty_url":  row.get("Faculty Link", "").strip() or None,
-                "schedule_url": schedule_url,
+                "state":            row["State"].strip() or None,
+                "program_url":      row["Program Link"].strip() or None,
+                "faculty_url":      row.get("Faculty Link", "").strip() or None,
+                "schedule_url":     schedule_url,
+                "publications_url": openalex_works_url(row.get("ROR", "")),
             }
     return result
 

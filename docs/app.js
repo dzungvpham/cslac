@@ -551,6 +551,7 @@ function buildExportData() {
       program_url: links.program_url ?? null,
       faculty_url: links.faculty_url ?? null,
       schedule_url: links.schedule_url ?? null,
+      publications_url: links.publications_url ?? null,
       faculty: c.faculty,
       publications: pubs,
       terms,
@@ -644,6 +645,7 @@ async function loadData() {
       program_url: d.program_url ?? null,
       faculty_url: d.faculty_url ?? null,
       schedule_url: d.schedule_url ?? null,
+      publications_url: d.publications_url ?? null,
     };
     if (d.terms) {
       courseSchedules[name] = {
@@ -1740,7 +1742,10 @@ function updatePapersStat() {
     }
   }
   const suffix = parts.length ? ` (${parts.join(', ')})` : '';
-  document.getElementById('stat-papers-label').textContent = `Papers${suffix}`;
+  // Suffix lives in its own span so the mobile breakpoint can hide just the
+  // active-filter values while keeping the "Papers" label.
+  document.getElementById('stat-papers-label').innerHTML =
+    `Papers<span class="stat-filter-suffix">${esc(suffix)}</span>`;
 }
 
 // The colleges currently surviving the active filters (state, school-scope,
@@ -2160,6 +2165,7 @@ function buildPanel(panel, college) {
   const hasPublications = !!publications;
   const facultyUrl = (collegeLinks[college.name] || {}).faculty_url;
   const scheduleUrl = (collegeLinks[college.name] || {}).schedule_url;
+  const pubsUrl = (collegeLinks[college.name] || {}).publications_url;
   if (panel._view === undefined) panel._view = currentView;
   // termOffset is undefined initially; renderCourseTable defaults to the
   // latest TERMS_PER_PAGE window when no offset has been set yet.
@@ -2193,6 +2199,10 @@ function buildPanel(panel, college) {
     const scheduleSourceLink = (scheduleUrl && hasCourses)
       ? `<a class="faculty-source-link" href="${esc(scheduleUrl)}" target="_blank" rel="noopener" onclick="track('click_link','link','college_schedule','${collegeNameEsc}')">source</a>`
       : '';
+    // Publications source — OpenAlex "works" listing of the college's CS papers.
+    const pubsSourceLink = (pubsUrl && hasPublications)
+      ? `<a class="faculty-source-link" href="${esc(pubsUrl)}" target="_blank" rel="noopener" onclick="track('click_link','link','college_publications','${collegeNameEsc}')">source</a>`
+      : '';
     const toggleHtml = `
       <div class="panel-toggle" role="tablist">
         <div class="panel-toggle-views">
@@ -2201,6 +2211,7 @@ function buildPanel(panel, college) {
           ${pubsBtn}
           ${view === 'faculty' ? sourceLink : ''}
           ${view === 'courses' ? scheduleSourceLink : ''}
+          ${view === 'publications' ? pubsSourceLink : ''}
         </div>
         <div class="term-paginator-slot"></div>
       </div>
