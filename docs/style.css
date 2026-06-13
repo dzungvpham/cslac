@@ -871,6 +871,29 @@ a.course-title-link {
 a.course-title-link:hover .course-code,
 a.course-title-link:hover .course-name { color: var(--accent); }
 .course-dash { color: var(--muted); }
+
+/* ── hidden debug badge (only rendered when ?debug=1) ──────────────────
+   A small "i" chip on each course row whose tooltip explains whether the
+   course counts toward the Electives total. Green = counted, red = excluded. */
+.course-debug {
+  flex-shrink: 0;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1;
+  cursor: help;
+  color: #fff;
+}
+.course-debug.is-counted { background: #1a8754; }
+.course-debug.is-excluded { background: #c0392b; }
 .course-empty {
   padding: 20px 4px;
   color: var(--muted);

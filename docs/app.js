@@ -52,7 +52,7 @@ const COLLEGE_COLS = [
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
   { key: 'grads',            label: '4YR-GRAD',      numeric: true, tooltip: 'The total number of graduated CS majors from 2021 to 2024 (according to IPEDS)' },
   { key: 'grad_fac',         label: 'GRAD:FAC',      numeric: true, tooltip: 'Ratio of the total number of graduated CS majors from 2021 to 2024 (according to IPEDS) to the current number of tenured/tenure-track faculty' },
-  { key: 'electives',        label: 'Electives',  numeric: true, tooltip: 'Number of unique CS electives offered in the last two academic years. Excludes most cores, independent study/thesis/seminar, and non-CS cross-listings.' },
+  { key: 'electives',        label: 'Electives',  numeric: true, tooltip: 'Number of advanced CS electives offered in the last two academic years. Excludes (pre-)cores, independent study/thesis/seminar, and non-CS cross-listings.' },
   { key: 'papers',          label: 'Papers',   numeric: true, tooltip: 'Number of papers affiliated with the institution and matching the current filters' },
 ];
 
@@ -192,6 +192,15 @@ function collegeSlug(name) {
 }
 
 // ── state ──────────────────────────────────────────────────────────────────
+// Hidden debug mode, enabled only via a `debug` URL param (e.g. ?debug=1).
+// Surfaces internal diagnostics — currently an info icon on every course row
+// explaining whether it counts toward the Electives total. Off for any
+// falsy/absent value so a stray ?debug=0 stays hidden.
+const DEBUG = (() => {
+  const v = new URLSearchParams(location.search).get('debug');
+  return v !== null && v !== '' && v !== '0' && v !== 'false';
+})();
+
 let allColleges = [];
 let collegesByName = {};
 let collegeLinks = {};
@@ -520,7 +529,10 @@ async function loadData() {
       schedule_url: d.schedule_url ?? null,
     };
     if (d.terms) {
-      courseSchedules[name] = { college: name, terms: d.terms, courses: d.courses };
+      courseSchedules[name] = {
+        college: name, terms: d.terms, courses: d.courses,
+        minCoreLevel: minCoreLevel(d.courses),
+      };
     }
     if (d.publications) {
       collegePublications[name] = d.publications;
@@ -1395,6 +1407,28 @@ const RECENT_YEARS = 2;
 // they just don't contribute to the count.
 const UNCOUNTED_TERMS = { 'Williams College': new Set(['W']) };
 
+// The numeric level of a course code (the first run of digits): "COMSC-151" →
+// 151, "CS 314" → 314, "COMSC-133DV" → 133. Null when the code has no digits.
+function codeLevel(code) {
+  const m = String(code || '').match(/\d+/);
+  return m ? parseInt(m[0], 10) : null;
+}
+
+// The lowest level among a college's `Core` courses (intro/data-structures/
+// algorithms — the shared foundation). Courses numbered below this are
+// pre-major / non-major service courses (e.g. "Computing & the Digital World")
+// that sit beneath the major's entry point and shouldn't count as electives,
+// even when classified into a subfield. Null when the college has no Core data.
+function minCoreLevel(courses) {
+  let min = null;
+  for (const c of courses || []) {
+    if (c.category !== 'Core') continue;
+    const lvl = codeLevel(c.code);
+    if (lvl != null && (min == null || lvl < min)) min = lvl;
+  }
+  return min;
+}
+
 // Count unique courses actually offered (a non-zero `offered` cell) in the
 // college's most recent RECENT_YEARS academic years, optionally restricted to
 // courses matching `predicate` (e.g. the active search + subfield filter).
@@ -1407,12 +1441,46 @@ function recentCourseCount(schedule, predicate) {
   const idxs = schedule.terms
     .map((t, i) => (recent.has(t.year) && !(uncounted && uncounted.has(t.term))) ? i : -1)
     .filter(i => i >= 0);
+  const minCore = schedule.minCoreLevel;
   let count = 0;
   for (const c of schedule.courses) {
     if (predicate && !predicate(c)) continue;
+    // Below the major's lowest Core course → not an elective (see minCoreLevel).
+    if (minCore != null) {
+      const lvl = codeLevel(c.code);
+      if (lvl != null && lvl < minCore) continue;
+    }
     if (idxs.some(i => c.offered[i])) count++;
   }
   return count;
+}
+
+// Debug helper: explain whether a single course contributes to a college's
+// Electives total, mirroring the per-course decision inside recentCourseCount
+// (isElective category gate + below-lowest-Core gate + offered-in-recent-window
+// gate, minus the Williams Winter exclusion). Returns the boolean plus the list
+// of reasons it's excluded (empty when counted).
+function electiveCountStatus(course, schedule) {
+  const recent = new Set(
+    [...new Set(schedule.terms.map(t => t.year))].sort().slice(-RECENT_YEARS)
+  );
+  const uncounted = UNCOUNTED_TERMS[schedule.college];
+  const idxs = schedule.terms
+    .map((t, i) => (recent.has(t.year) && !(uncounted && uncounted.has(t.term))) ? i : -1)
+    .filter(i => i >= 0);
+  const reasons = [];
+  if (!isElective(course)) {
+    reasons.push(`category "${course.category || '—'}" is non-elective`);
+  }
+  const minCore = schedule.minCoreLevel;
+  const lvl = codeLevel(course.code);
+  if (minCore != null && lvl != null && lvl < minCore) {
+    reasons.push(`code level ${lvl} is below the lowest Core course (${minCore})`);
+  }
+  if (!idxs.some(i => course.offered[i])) {
+    reasons.push(`not offered in the last ${RECENT_YEARS} academic years`);
+  }
+  return { counted: reasons.length === 0, reasons };
 }
 
 function filteredPubCount(collegeName) {
@@ -2427,7 +2495,16 @@ function renderCourseTable(panel, schedule, collegeName, opts) {
       }
       return `<td><span class="course-check">✓</span></td>`;
     }).join('');
+    let debugBadge = '';
+    if (DEBUG) {
+      const { counted, reasons } = electiveCountStatus(c, schedule);
+      const tip = counted
+        ? 'Counted toward Electives'
+        : 'NOT counted toward Electives — ' + reasons.join('; ');
+      debugBadge = `<span class="course-debug ${counted ? 'is-counted' : 'is-excluded'}" title="${esc(tip)}">i</span>`;
+    }
     const titleInner = `
+      ${debugBadge}
       <span class="course-code">${esc(c.code)}</span>
       <span class="course-name">${esc(c.name)}</span>
     `;
