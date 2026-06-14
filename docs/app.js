@@ -1846,7 +1846,7 @@ function collegeSortValueFn() {
     grads:             c => c.grads || null,
     grad_fac:          c => c.grad_fac,
     electives:         c => (courseFiltering ? c.filtered_courses : c.electives) ?? -1,
-    papers:            c => c.papers ?? -1,
+    papers:            c => c.papers ?? 0,
   }[collegeSort.key] || (c => c.name);
 }
 
@@ -1857,7 +1857,7 @@ function collegeSortValueFn() {
 const DEFAULT_SORT_VALUE_FNS = [
   c => c.total ?? -1,
   c => c.electives ?? -1,
-  c => c.papers ?? -1,
+  c => c.papers ?? 0,
   c => c.grads ?? -1,
 ];
 function defaultCollegeCompare(a, b) {

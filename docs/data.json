@@ -187448,7 +187448,7 @@
     "program_url": "https://www.trincoll.edu/cs/",
     "faculty_url": "https://www.trincoll.edu/cs/faculty-and-staff/",
     "schedule_url": "https://www.trincoll.edu/cs/course-schedule/",
-    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/019dhar59,topics.field.id:17&sort=publication_year:desc",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/03j3dbz94,topics.field.id:17&sort=publication_year:desc",
     "faculty": [
       {
         "name": "Ewa Syta",
@@ -188573,11 +188573,216 @@
     ],
     "publications": [
       {
-        "title": "Experimental evaluation of on-line techniques for removing monitoring intrusion",
-        "url": "https://doi.org/10.1145/281035.281039",
-        "year": 1998,
-        "cites": 4,
-        "venue": "Proceedings of the SIGMETRICS symposium on Parallel and distributed tools",
+        "title": "OmniLedger: A Secure, Scale-Out, Decentralized Ledger via Sharding",
+        "url": "https://doi.org/10.1109/sp.2018.000-5",
+        "year": 2018,
+        "cites": 1207,
+        "venue": "2018 IEEE Symposium on Security and Privacy (SP)",
+        "venue_url": null,
+        "venue_acronym": "Oakland",
+        "venue_ranking": "A*",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/750/",
+        "authors": [
+          {
+            "name": "Eleftherios Kokoris-Kogias",
+            "url": "https://openalex.org/authors/A5052016167",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Philipp Jovanovic",
+            "url": "https://openalex.org/authors/A5036662107",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Linus Gasser",
+            "url": "https://openalex.org/authors/A5047856206",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Nicolas Gailly",
+            "url": "https://openalex.org/authors/A5040957995",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Ewa Syta",
+            "url": "https://openalex.org/authors/A5087152867",
+            "affiliation": "Trinity College"
+          },
+          {
+            "name": "Bryan Ford",
+            "url": "https://openalex.org/authors/A5045962151",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          }
+        ],
+        "matched_faculty": [
+          "Ewa Syta"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Distributed systems",
+          "Computer security & privacy",
+          "Computer networks"
+        ]
+      },
+      {
+        "title": "Scalable Bias-Resistant Distributed Randomness",
+        "url": "https://doi.org/10.1109/sp.2017.45",
+        "year": 2017,
+        "cites": 273,
+        "venue": "2017 IEEE Symposium on Security and Privacy (SP)",
+        "venue_url": null,
+        "venue_acronym": "Oakland",
+        "venue_ranking": "A*",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/750/",
+        "authors": [
+          {
+            "name": "Ewa Syta",
+            "url": "https://openalex.org/authors/A5087152867",
+            "affiliation": "Trinity College"
+          },
+          {
+            "name": "Philipp Jovanovic",
+            "url": "https://openalex.org/authors/A5036662107",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Eleftherios Kokoris Kogias",
+            "url": "https://openalex.org/authors/A5072418888",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Nicolas Gailly",
+            "url": "https://openalex.org/authors/A5040957995",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Linus Gasser",
+            "url": "https://openalex.org/authors/A5047856206",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Ismail Khoffi",
+            "url": "https://openalex.org/authors/A5078713134",
+            "affiliation": "University of Bonn"
+          },
+          {
+            "name": "Michael J. Fischer",
+            "url": "https://openalex.org/authors/A5103508736",
+            "affiliation": "Yale University"
+          },
+          {
+            "name": "Bryan Ford",
+            "url": "https://openalex.org/authors/A5045962151",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          }
+        ],
+        "matched_faculty": [
+          "Ewa Syta"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Cryptography",
+          "Computer security & privacy",
+          "Distributed systems"
+        ]
+      },
+      {
+        "title": "Content-based image retrieval using joint correlograms",
+        "url": "https://doi.org/10.1007/s11042-006-0087-2",
+        "year": 2007,
+        "cites": 39,
+        "venue": "Multimedia Tools and Applications",
+        "venue_url": "https://openalex.org/S110206669",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25627&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Adam Williams",
+            "url": "https://openalex.org/authors/A5011367213",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Peter A. Yoon",
+            "url": "https://openalex.org/authors/A5049931253",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Peter A. Yoon"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computer vision",
+          "Information retrieval"
+        ]
+      },
+      {
+        "title": "QuePaxa: Escaping the tyranny of timeouts in consensus",
+        "url": "https://doi.org/10.1145/3600006.3613150",
+        "year": 2023,
+        "cites": 7,
+        "venue": "Proceedings of the 29th Symposium on Operating Systems Principles",
+        "venue_url": null,
+        "venue_acronym": "SOSP",
+        "venue_ranking": "A*",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/48/",
+        "authors": [
+          {
+            "name": "Pasindu Tennage",
+            "url": "https://openalex.org/authors/A5017303339",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Cristina B\u0103sescu",
+            "url": "https://openalex.org/authors/A5008945902",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Lefteris Kokoris-Kogias",
+            "url": "https://openalex.org/authors/A5070324418",
+            "affiliation": "Institute of Science and Technology Austria"
+          },
+          {
+            "name": "Ewa Syta",
+            "url": "https://openalex.org/authors/A5087152867",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Philipp Jovanovic",
+            "url": "https://openalex.org/authors/A5036662107",
+            "affiliation": "University College London"
+          },
+          {
+            "name": "Vero Estrada-Gali\u00f1anes",
+            "url": "https://openalex.org/authors/A5071561844",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          },
+          {
+            "name": "Bryan Ford",
+            "url": "https://openalex.org/authors/A5045962151",
+            "affiliation": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+          }
+        ],
+        "matched_faculty": [
+          "Ewa Syta"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Distributed systems",
+          "Computer networks"
+        ]
+      },
+      {
+        "title": "Enabling Multi-tenancy on SSDs with Accurate IO Interference Modeling",
+        "url": "https://doi.org/10.1145/3620678.3624657",
+        "year": 2023,
+        "cites": 6,
+        "venue": "Proceedings of the 2023 ACM Symposium on Cloud Computing",
         "venue_url": null,
         "venue_acronym": null,
         "venue_ranking": null,
@@ -188585,13 +188790,330 @@
         "venue_ranking_url": null,
         "authors": [
           {
-            "name": "Wanging Wu",
-            "url": "https://openalex.org/authors/A5083500244"
+            "name": "Lokesh N. Jaliminche",
+            "url": "https://openalex.org/authors/A5080427454",
+            "affiliation": "University of California, Santa Cruz"
           },
           {
-            "name": "Rajiv Gupta",
-            "url": "https://openalex.org/authors/A5100699251"
+            "name": "Chandranil Chakraborttii",
+            "url": "https://openalex.org/authors/A5025349580",
+            "affiliation": "Hartford Financial Services (United States)"
           },
+          {
+            "name": "Changho Choi",
+            "url": "https://openalex.org/authors/A5101832335",
+            "affiliation": "Samsung (United States)"
+          },
+          {
+            "name": "Heiner Litz",
+            "url": "https://openalex.org/authors/A5002126571",
+            "affiliation": "University of California, Santa Cruz"
+          }
+        ],
+        "matched_faculty": [
+          "Chandranil Chakraborttii"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Databases",
+          "Computer networks",
+          "Distributed systems"
+        ]
+      },
+      {
+        "title": "Leveraging Temporality of Data to Improve Failure Predictions for Solid State Drives in Data Centers",
+        "url": "https://doi.org/10.1109/compsac57700.2023.00193",
+        "year": 2023,
+        "cites": 5,
+        "venue": "2023 IEEE 47th Annual Computers, Software, and Applications Conference (COMPSAC)",
+        "venue_url": null,
+        "venue_acronym": "COMPSAC",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/871/",
+        "authors": [
+          {
+            "name": "Chandranil Chakraborttii",
+            "url": "https://openalex.org/authors/A5025349580",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Jonas Boettner",
+            "url": "https://openalex.org/authors/A5072937996",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Chandranil Chakraborttii"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Databases",
+          "Data science",
+          "Machine learning"
+        ]
+      },
+      {
+        "title": "Provable Security for PKI Schemes",
+        "url": "https://doi.org/10.1145/3658644.3670374",
+        "year": 2024,
+        "cites": 4,
+        "venue": "Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security",
+        "venue_url": null,
+        "venue_acronym": "CCS",
+        "venue_ranking": "A*",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/12/",
+        "authors": [
+          {
+            "name": "Sara Wr\u00f3tniak",
+            "url": "https://openalex.org/authors/A5040724567",
+            "affiliation": "University of Connecticut"
+          },
+          {
+            "name": "Hemi Leibowitz",
+            "url": "https://openalex.org/authors/A5053368196",
+            "affiliation": "College of Management Academic Studies"
+          },
+          {
+            "name": "Ewa Syta",
+            "url": "https://openalex.org/authors/A5087152867",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Amir Herzberg",
+            "url": "https://openalex.org/authors/A5004964902",
+            "affiliation": "University of Connecticut"
+          }
+        ],
+        "matched_faculty": [
+          "Ewa Syta"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Cryptography",
+          "Computer security & privacy"
+        ]
+      },
+      {
+        "title": "TAP: Transformers Driven Adaptive Prefetching for Hybrid Memory Systems",
+        "url": "https://doi.org/10.1109/iscmi63661.2024.10851689",
+        "year": 2024,
+        "cites": 3,
+        "venue": "2024 11th International Conference on Soft Computing &amp; Machine Intelligence (ISCMI)",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Chandranil Chakraborttii",
+            "url": "https://openalex.org/authors/A5025349580",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Mohammad Maminur Islam",
+            "url": "https://openalex.org/authors/A5106752599",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Chandranil Chakraborttii",
+          "Maminur Islam"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Databases",
+          "High-performance computing",
+          "Distributed systems"
+        ]
+      },
+      {
+        "title": "Enhancing Graph Representation Learning with WalkLM for Effective Community Detection",
+        "url": "https://doi.org/10.1145/3704522.3704537",
+        "year": 2024,
+        "cites": 2,
+        "venue": "Proceedings of the 11th International Conference on Networking, Systems, and Security",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Hyun Lee",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Muhayminul Islam",
+            "url": "https://openalex.org/authors/A5112577708",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Chris Yi",
+            "url": "https://openalex.org/authors/A5046828208",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Chandranil Chakraborttii",
+            "url": "https://openalex.org/authors/A5025349580",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Chandranil Chakraborttii",
+          "Maminur Islam"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Machine learning",
+          "Computer security & privacy",
+          "Computational social science",
+          "Data science"
+        ]
+      },
+      {
+        "title": "Polynomial-time normalizers for permutation groups with restricted composition factors",
+        "url": "https://doi.org/10.1145/780506.780529",
+        "year": 2002,
+        "cites": 8,
+        "venue": "Proceedings of the 2002 international symposium on Symbolic and algebraic computation",
+        "venue_url": null,
+        "venue_acronym": "ISSAC",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/1420/",
+        "authors": [
+          {
+            "name": "Eugene M. Luks",
+            "url": "https://openalex.org/authors/A5016227949",
+            "affiliation": "University of Oregon"
+          },
+          {
+            "name": "Takunari Miyazaki",
+            "url": "https://openalex.org/authors/A5086482332",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Takunari Miyazaki"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Cryptography",
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Towards data generation to alleviate privacy concerns for cybersecurity applications",
+        "url": "https://doi.org/10.1109/compsac57700.2023.00222",
+        "year": 2023,
+        "cites": 4,
+        "venue": "2023 IEEE 47th Annual Computers, Software, and Applications Conference (COMPSAC)",
+        "venue_url": null,
+        "venue_acronym": "COMPSAC",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/871/",
+        "authors": [
+          {
+            "name": "Dhiraj Ganji",
+            "url": "https://openalex.org/authors/A5092581752",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Chandranil Chakraborttii",
+            "url": "https://openalex.org/authors/A5025349580",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Chandranil Chakraborttii"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer security & privacy"
+        ]
+      },
+      {
+        "title": "Putting People in the Picture",
+        "url": "https://doi.org/10.1145/3408877.3432553",
+        "year": 2021,
+        "cites": 7,
+        "venue": "Proceedings of the 52nd ACM Technical Symposium on Computer Science Education",
+        "venue_url": null,
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Software engineering",
+          "Computer science education"
+        ]
+      },
+      {
+        "title": "GPU-ACCELERATED VLSI ROUTING USING GROUP STEINER TREES",
+        "url": "https://doi.org/10.22369/issn.2153-4136/8/1/4",
+        "year": 2017,
+        "cites": 3,
+        "venue": "The Journal of Computational Science Education",
+        "venue_url": "https://openalex.org/S4210172693",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=19700174607&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Venkata Suhas Maringanti",
+            "url": "https://openalex.org/authors/A5084254928",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Basileal Imana",
+            "url": "https://openalex.org/authors/A5059200754",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Peter A. Yoon",
+            "url": "https://openalex.org/authors/A5049931253",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Peter A. Yoon"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computer networks",
+          "Computer architecture",
+          "Design automation",
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Innovative Thinking: Encouraging Creative Diversity with Video Scenarios",
+        "url": "https://doi.org/10.1109/fie.2018.8658577",
+        "year": 2018,
+        "cites": 3,
+        "venue": "2018 IEEE Frontiers in Education Conference (FIE)",
+        "venue_url": null,
+        "venue_acronym": "FIE",
+        "venue_ranking": "C",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/2027/",
+        "authors": [
           {
             "name": "Madalene Spezialetti",
             "url": "https://openalex.org/authors/A5008051842",
@@ -188601,24 +189123,185 @@
         "matched_faculty": [
           "Madalene Spezialetti"
         ],
-        "pub_type": "other",
+        "pub_type": "conference",
         "subfields": [
-          "Databases",
-          "Computer security & privacy",
-          "Distributed systems"
+          "Computer science education",
+          "Games & interactive art"
         ]
       },
       {
-        "title": "Failure Prediction in Cloud-based Storage Systems: A Survey",
-        "url": "https://doi.org/10.1145/3794843",
-        "year": 2026,
-        "cites": 0,
-        "venue": "ACM Transactions on Storage",
-        "venue_url": "https://openalex.org/S158124317",
+        "title": "Improving Insurance Fraud Detection With Generated Data",
+        "url": "https://doi.org/10.1109/compsac61105.2024.00321",
+        "year": 2024,
+        "cites": 1,
+        "venue": "2024 IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC)",
+        "venue_url": null,
+        "venue_acronym": "COMPSAC",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/871/",
+        "authors": [
+          {
+            "name": "Kiet Ha",
+            "url": "https://openalex.org/authors/A5106769656",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Lucas Stowe",
+            "url": "https://openalex.org/authors/A5106737445",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Chandranil Chakraborttii",
+            "url": "https://openalex.org/authors/A5025349580",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Chandranil Chakraborttii"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Machine learning",
+          "Data science"
+        ]
+      },
+      {
+        "title": "A compact task graph representation for real-time scheduling",
+        "url": "https://doi.org/10.1007/bf00365521",
+        "year": 1996,
+        "cites": 8,
+        "venue": "Real-Time Systems",
+        "venue_url": "https://openalex.org/S183885566",
         "venue_acronym": null,
         "venue_ranking": "Q2",
         "venue_ranking_source": "SCImago 2025 Journal Ranking",
-        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=4700152858&tip=sid&clean=0",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=12443&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Rajiv Gupta",
+            "url": "https://openalex.org/authors/A5100699251",
+            "affiliation": "University of Pittsburgh"
+          },
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Embedded & real-time systems",
+          "Operating systems",
+          "Distributed systems",
+          "High-performance computing"
+        ]
+      },
+      {
+        "title": "Designing a non-intrusive monitoring tool for developing complex distributed applications",
+        "url": "https://doi.org/10.1109/iceccs.1996.558498",
+        "year": 2002,
+        "cites": 5,
+        "venue": "Proceedings of ICECCS '96: 2nd IEEE International Conference on Engineering of Complex Computer Systems (held jointly with 6th CSESAW and 4th IEEE RTAW)",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Wanqing Wu",
+            "url": "https://openalex.org/authors/A5061675305",
+            "affiliation": "University of Pittsburgh"
+          },
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Rajiv Gupta",
+            "url": "https://openalex.org/authors/A5100699251",
+            "affiliation": "University of Pittsburgh"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Distributed systems",
+          "High-performance computing"
+        ]
+      },
+      {
+        "title": "Thinking about asking: Encouraging a questioning approach to requirements gathering and problem solving",
+        "url": "https://doi.org/10.1109/fie.2016.7757595",
+        "year": 2016,
+        "cites": 3,
+        "venue": "2016 IEEE Frontiers in Education Conference (FIE)",
+        "venue_url": null,
+        "venue_acronym": "FIE",
+        "venue_ranking": "C",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/2027/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "Games & interactive art"
+        ]
+      },
+      {
+        "title": "Computing in context",
+        "url": "https://doi.org/10.1145/2157136.2157383",
+        "year": 2012,
+        "cites": 1,
+        "venue": "Proceedings of the 43rd ACM technical symposium on Computer Science Education",
+        "venue_url": null,
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Trinity College"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "Games & interactive art"
+        ]
+      },
+      {
+        "title": "Towards Generating Surprising Content in 2D Platform Games",
+        "url": "https://doi.org/10.1145/3649921.3659848",
+        "year": 2024,
+        "cites": 1,
+        "venue": "Proceedings of the 19th International Conference on the Foundations of Digital Games",
+        "venue_url": null,
+        "venue_acronym": "FDG",
+        "venue_ranking": "C",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/1238/",
         "authors": [
           {
             "name": "Chandranil Chakraborttii",
@@ -188626,19 +189309,724 @@
             "affiliation": "Trinity College"
           },
           {
-            "name": "Devesh Tiwari",
-            "url": "https://openalex.org/authors/A5074406596",
-            "affiliation": "Northeastern University"
+            "name": "Lucas Ferreirra",
+            "url": "https://openalex.org/authors/A5113279903",
+            "affiliation": "Universidade Federal de Vi\u00e7osa"
           }
         ],
         "matched_faculty": [
           "Chandranil Chakraborttii"
         ],
+        "pub_type": "conference",
+        "subfields": [
+          "Games & interactive art",
+          "Artificial intelligence",
+          "Computer vision"
+        ]
+      },
+      {
+        "title": "On-line avoidance of the intrusive effects of monitoring on runtime scheduling decisions",
+        "url": "https://doi.org/10.1109/icdcs.1996.507919",
+        "year": 2002,
+        "cites": 8,
+        "venue": "Proceedings of 16th International Conference on Distributed Computing Systems",
+        "venue_url": null,
+        "venue_acronym": "ICDCS",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/1002/",
+        "authors": [
+          {
+            "name": "Wanqing Wu",
+            "url": "https://openalex.org/authors/A5061675305",
+            "affiliation": "University of Pittsburgh"
+          },
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Rajiv Gupta",
+            "url": "https://openalex.org/authors/A5100699251",
+            "affiliation": "University of Pittsburgh"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "High-performance computing",
+          "Embedded & real-time systems",
+          "Operating systems",
+          "Distributed systems"
+        ]
+      },
+      {
+        "title": "Guaranteed intrusion removal from monitored distributed applications",
+        "url": "https://doi.org/10.1109/spdp.1996.570364",
+        "year": 2002,
+        "cites": 3,
+        "venue": "Proceedings of SPDP '96: 8th IEEE Symposium on Parallel and Distributed Processing",
+        "venue_url": null,
+        "venue_acronym": "IPDPS",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/688/",
+        "authors": [
+          {
+            "name": "Wanqing Wu",
+            "url": "https://openalex.org/authors/A5061675305",
+            "affiliation": "University of Pittsburgh"
+          },
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Rajiv Gupta",
+            "url": "https://openalex.org/authors/A5100699251",
+            "affiliation": "University of Pittsburgh"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Distributed systems",
+          "Embedded & real-time systems",
+          "Operating systems",
+          "Logic & verification"
+        ]
+      },
+      {
+        "title": "Algebraic DOA estimation and tracking using ULV decomposition",
+        "url": "https://doi.org/10.1109/icnnsp.2003.1281112",
+        "year": 2003,
+        "cites": 2,
+        "venue": "International Conference on Neural Networks and Signal Processing, 2003. Proceedings of the 2003",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Christian Coviello",
+            "url": "https://openalex.org/authors/A5088883917",
+            "affiliation": "Pennsylvania State University"
+          },
+          {
+            "name": "Leon H. Sibul",
+            "url": "https://openalex.org/authors/A5005545668",
+            "affiliation": "Pennsylvania State University"
+          },
+          {
+            "name": "Peter A. Yoon",
+            "url": "https://openalex.org/authors/A5049931253",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Peter A. Yoon"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Natural language processing"
+        ]
+      },
+      {
+        "title": "VidNet: Distributed Processing Environment for Computer Generated Animation",
+        "url": "https://doi.org/10.1002/(sici)1097-024x(199602)26:2<237::aid-spe13>3.0.co;2-g",
+        "year": 1996,
+        "cites": 2,
+        "venue": "Software Practice and Experience",
+        "venue_url": "https://openalex.org/S122199241",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=20007&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Douglas J. Weber",
+            "url": "https://openalex.org/authors/A5024911410"
+          },
+          {
+            "name": "M. Spezialetti",
+            "url": "https://openalex.org/authors/A5028943605",
+            "affiliation": "Trinity College"
+          },
+          {
+            "name": "Hassan Barada",
+            "url": "https://openalex.org/authors/A5068466790",
+            "affiliation": "King Fahd University of Petroleum and Minerals"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
         "pub_type": "journal",
         "subfields": [
+          "Computer graphics",
+          "Visualization",
+          "Computer vision"
+        ]
+      },
+      {
+        "title": "A protocol for removing communication intrusion in monitored distributed systems",
+        "url": "https://doi.org/10.1109/icdcs.1998.679494",
+        "year": 2002,
+        "cites": 1,
+        "venue": "Proceedings. 18th International Conference on Distributed Computing Systems (Cat. No.98CB36183)",
+        "venue_url": null,
+        "venue_acronym": "ICDCS",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/1002/",
+        "authors": [
+          {
+            "name": "Wanqing Wu",
+            "url": "https://openalex.org/authors/A5061675305",
+            "affiliation": "University of Pittsburgh"
+          },
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Rajiv Gupta",
+            "url": "https://openalex.org/authors/A5100699251",
+            "affiliation": "University of Pittsburgh"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Distributed systems",
+          "Software engineering",
+          "Measurement & performance analysis",
+          "Embedded & real-time systems",
+          "Operating systems"
+        ]
+      },
+      {
+        "title": "An efficient preprocessor for nonlinear adaptive algorithms",
+        "url": "https://doi.org/10.1109/icosp.2002.1180108",
+        "year": 2003,
+        "cites": 1,
+        "venue": "6th International Conference on Signal Processing, 2002.",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Leon H. Sibul",
+            "url": "https://openalex.org/authors/A5005545668",
+            "affiliation": "Pennsylvania State University"
+          },
+          {
+            "name": "Peter A. Yoon",
+            "url": "https://openalex.org/authors/A5049931253",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Peter A. Yoon"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Machine learning"
+        ]
+      },
+      {
+        "title": "Video scenarios: listening, discussing, exploring, solving -- a participatory approach for the computing classroom and beyond: pre-conference workshop",
+        "url": "http://dl.acm.org/citation.cfm?id=1791133",
+        "year": 2010,
+        "cites": 0,
+        "venue": "Journal of computing sciences in colleges",
+        "venue_url": "https://openalex.org/S56112914",
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computer science education"
+        ]
+      },
+      {
+        "title": "ULVD preprocessor for linear and nonlinear adaptive signal processing",
+        "url": "https://doi.org/10.1109/oceans.2002.1191971",
+        "year": 2005,
+        "cites": 0,
+        "venue": "Oceans '02 MTS/IEEE",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Leon H. Sibul",
+            "url": "https://openalex.org/authors/A5005545668",
+            "affiliation": "Pennsylvania State University"
+          },
+          {
+            "name": "Peter A. Yoon",
+            "url": "https://openalex.org/authors/A5049931253",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Peter A. Yoon"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Machine learning"
+        ]
+      },
+      {
+        "title": "An accelerated procedure for hypergraph coarsening on the GPU",
+        "url": "https://doi.org/10.1109/hpec.2015.7322449",
+        "year": 2015,
+        "cites": 0,
+        "venue": "2015 IEEE High Performance Extreme Computing Conference (HPEC)",
+        "venue_url": null,
+        "venue_acronym": "HiPC",
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Lin Cheng",
+            "url": "https://openalex.org/authors/A5101558751",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Hyunsu Cho",
+            "url": "https://openalex.org/authors/A5030047934",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Peter A. Yoon",
+            "url": "https://openalex.org/authors/A5049931253",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Peter A. Yoon"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "High-performance computing",
+          "Computer networks",
+          "Computer architecture",
+          "Design automation"
+        ]
+      },
+      {
+        "title": "On the asymmetric complexity of the group-intersection problem",
+        "url": "https://doi.org/10.1016/j.ipl.2008.02.015",
+        "year": 2008,
+        "cites": 0,
+        "venue": "Information Processing Letters",
+        "venue_url": "https://openalex.org/S147953040",
+        "venue_acronym": null,
+        "venue_ranking": "Q3",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=14388&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Takunari Miyazaki",
+            "url": "https://openalex.org/authors/A5086482332",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Takunari Miyazaki"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Workshop: It's more than coding- using video scenarios to engage students in computing",
+        "url": "https://doi.org/10.1109/fie.2012.6462520",
+        "year": 2012,
+        "cites": 0,
+        "venue": "2012 Frontiers in Education Conference Proceedings",
+        "venue_url": null,
+        "venue_acronym": "FIE",
+        "venue_ranking": "C",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/2027/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Trinity College"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "Games & interactive art"
+        ]
+      },
+      {
+        "title": "Participating in patterns: an introduction to recursion",
+        "url": "https://dl.acm.org/citation.cfm?id=364132.364205",
+        "year": 2000,
+        "cites": 0,
+        "venue": "Journal of computing sciences in colleges",
+        "venue_url": "https://openalex.org/S56112914",
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Software engineering",
+          "Artificial intelligence"
+        ]
+      },
+      {
+        "title": "Bringing Creative Thinking Exercises into the Computing Classroom with Ready-to-Use Video Scenarios",
+        "url": "https://doi.org/10.1145/3328778.3372546",
+        "year": 2020,
+        "cites": 0,
+        "venue": "Proceedings of the 51st ACM Technical Symposium on Computer Science Education",
+        "venue_url": null,
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Trinity College"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "Games & interactive art"
+        ]
+      },
+      {
+        "title": "Beyond the Coder and the Code: An Exercise Structure for Fostering a People-Centered Problem-Solving Perspective with Video Scenarios",
+        "url": "https://doi.org/10.1145/3456565.3460055",
+        "year": 2021,
+        "cites": 0,
+        "venue": "Proceedings of the 26th ACM Conference on Innovation and Technology in Computer Science Education V. 2",
+        "venue_url": null,
+        "venue_acronym": "ITiCSE",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/126/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "Games & interactive art",
+          "Software engineering"
+        ]
+      },
+      {
+        "title": "Add Some Action to the Output",
+        "url": "https://doi.org/10.1145/3478432.3499131",
+        "year": 2022,
+        "cites": 0,
+        "venue": "Proceedings of the 53rd ACM Technical Symposium on Computer Science Education V. 2",
+        "venue_url": "https://openalex.org/S4363608669",
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Brian Garten",
+            "url": "https://openalex.org/authors/A5056222449",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Software engineering"
+        ]
+      },
+      {
+        "title": "Adding Diversity, Humanity, and Motivation to Programming Assignments with Easy-to-Create Cameo Appearance Videos",
+        "url": "https://doi.org/10.1145/3545947.3576236",
+        "year": 2022,
+        "cites": 0,
+        "venue": "Proceedings of the 54th ACM Technical Symposium on Computer Science Education V. 2",
+        "venue_url": null,
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education"
+        ]
+      },
+      {
+        "title": "See Logic In Life: An Individualized Exercise Structure for Making and Sharing Computing Concept Connections",
+        "url": "https://doi.org/10.1145/3626253.3635616",
+        "year": 2024,
+        "cites": 0,
+        "venue": "Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 2",
+        "venue_url": null,
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "Computational bio & bioinformatics"
+        ]
+      },
+      {
+        "title": "MemFlex: A Hybrid Memory System to Boost Cost of Ownership in Data Centers",
+        "url": "https://doi.org/10.1109/compsac61105.2024.00267",
+        "year": 2024,
+        "cites": 0,
+        "venue": "2024 IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC)",
+        "venue_url": null,
+        "venue_acronym": "COMPSAC",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/871/",
+        "authors": [
+          {
+            "name": "Chandranil Chakraborttii",
+            "url": "https://openalex.org/authors/A5025349580",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Mohammad Maminur Islam",
+            "url": "https://openalex.org/authors/A5106752599",
+            "affiliation": "Hartford Financial Services (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Chandranil Chakraborttii",
+          "Maminur Islam"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Distributed systems",
           "Databases",
+          "High-performance computing"
+        ]
+      },
+      {
+        "title": "Unveiling Privacy Risks in Quantum Optimization Services",
+        "url": "https://doi.org/10.1145/3708821.3736213",
+        "year": 2025,
+        "cites": 0,
+        "venue": "Proceedings of the 20th ACM Asia Conference on Computer and Communications Security",
+        "venue_url": null,
+        "venue_acronym": "CCS",
+        "venue_ranking": "A*",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/12/",
+        "authors": [
+          {
+            "name": "Mateusz Le\u015bniak",
+            "url": "https://openalex.org/authors/A5099687814",
+            "affiliation": "NASK National Research Institute"
+          },
+          {
+            "name": "Micha\u0142 Wro\u0144ski",
+            "url": "https://openalex.org/authors/A5056193572",
+            "affiliation": "NASK National Research Institute"
+          },
+          {
+            "name": "Ewa Syta",
+            "url": "https://openalex.org/authors/A5087152867",
+            "affiliation": "Trinity College"
+          },
+          {
+            "name": "Miros\u0142aw Kuty\u0142owski",
+            "url": "https://openalex.org/authors/A5020329764",
+            "affiliation": "NASK National Research Institute"
+          }
+        ],
+        "matched_faculty": [
+          "Ewa Syta"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Quantum computing",
+          "Cryptography",
           "Distributed systems",
           "Computer security & privacy"
+        ]
+      },
+      {
+        "title": "Scalability Matters: Overcoming Challenges in InstructGLM with Similarity-Degree-Based Sampling",
+        "url": "https://doi.org/10.1109/ijcnn64981.2025.11228376",
+        "year": 2025,
+        "cites": 0,
+        "venue": "2025 International Joint Conference on Neural Networks (IJCNN)",
+        "venue_url": null,
+        "venue_acronym": "IJCNN",
+        "venue_ranking": "B",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/685/",
+        "authors": [
+          {
+            "name": "Hyun-Woo Lee",
+            "url": "https://openalex.org/authors/A5100334309",
+            "affiliation": "Trinity College"
+          },
+          {
+            "name": "Choong-Sung Yi",
+            "url": "https://openalex.org/authors/A5078594942",
+            "affiliation": "Trinity College"
+          },
+          {
+            "name": "B. D. S. Aritra",
+            "url": "https://openalex.org/authors/A5120299333",
+            "affiliation": "Trinity College"
+          },
+          {
+            "name": "Muhayminul Islam",
+            "url": "https://openalex.org/authors/A5112577708",
+            "affiliation": "Trinity College"
+          }
+        ],
+        "matched_faculty": [
+          "Maminur Islam"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Machine learning",
+          "Algorithms & complexity",
+          "Natural language processing"
+        ]
+      },
+      {
+        "title": "OCCTIVE: Animated Core Computing Concept Videos for Non-Computer Science Courses",
+        "url": "https://doi.org/10.1145/3770761.3777292",
+        "year": 2026,
+        "cites": 0,
+        "venue": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+        "venue_url": null,
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Kristina Striegnitz",
+            "url": "https://openalex.org/authors/A5028051388",
+            "affiliation": "Union College"
+          },
+          {
+            "name": "Valerie Barr",
+            "url": "https://openalex.org/authors/A5032043719",
+            "affiliation": "Bard College"
+          },
+          {
+            "name": "Mia Minnes",
+            "url": "https://openalex.org/authors/A5026955369",
+            "affiliation": "University of California San Diego"
+          },
+          {
+            "name": "Madalene Spezialetti",
+            "url": "https://openalex.org/authors/A5008051842",
+            "affiliation": "Hartford Financial Services (United States)"
+          },
+          {
+            "name": "Andrea Tartaro",
+            "url": "https://openalex.org/authors/A5086250772",
+            "affiliation": "Furman University"
+          }
+        ],
+        "matched_faculty": [
+          "Madalene Spezialetti"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "High-performance computing"
         ]
       }
     ],
