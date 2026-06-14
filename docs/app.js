@@ -675,7 +675,7 @@ async function loadData() {
   for (const c of allColleges) {
     const stateCode = collegeLinks[c.name]?.state;
     const stateName = stateCode && US_STATES[stateCode];
-    const collegeBits = [c.name, stateCode, stateName].filter(Boolean).join(' ');
+    const collegeBits = [c.name, displayCollegeName(c.name), stateCode, stateName].filter(Boolean).join(' ');
     for (const f of c.faculty) {
       f._interestsSet = new Set(
         (f.interests || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
@@ -689,7 +689,7 @@ async function loadData() {
         .split(',')
         .map(s => CS_SUBFIELD_SHORT_LABELS[s.trim()])
         .filter(Boolean);
-      f._search = [f.name, f.title, f.interests, ...interestShorts, c.name]
+      f._search = [f.name, f.title, f.interests, ...interestShorts, c.name, displayCollegeName(c.name)]
         .filter(Boolean).join(' ').toLowerCase();
     }
     c._search = collegeBits.toLowerCase();
@@ -1951,11 +1951,40 @@ function renderColleges(colleges) {
 
 function fmt(n) { return n ? n.toLocaleString() : '—'; }
 
-// Mobile-only short form for college names: abbreviates "University" → "Univ."
-// and drops a trailing "College" (e.g. "Carleton College" → "Carleton") to
-// save horizontal space on narrow viewports.
+// Friendlier names for colleges whose official name is unwieldy or eclipses
+// a more common short name — applied for ALL viewports (used wherever a
+// college's full name is displayed; shortCollegeName below then operates on
+// this name for the mobile-only form).
+const COLLEGE_DISPLAY_NAMES = {
+  'The University of the South':           'Sewanee',
+  'University of North Carolina Asheville': 'UNC Asheville',
+  'University of Virginia--Wise':           'UVA Wise',
+  'University of Minnesota Morris':         'UMN Morris',
+};
+function displayCollegeName(name) {
+  return COLLEGE_DISPLAY_NAMES[name] || name;
+}
+
+// Mobile-only short form for college names: drops a leading "University of"
+// / "The University of the" (e.g. "University of Richmond" → "Richmond"),
+// drops a trailing "University" or "College" (e.g. "Bucknell University" →
+// "Bucknell", "Carleton College" → "Carleton"), and for "X College (XX)"
+// names with a trailing state acronym drops just "College" while keeping
+// the acronym (e.g. "Wheaton College (MA)" → "Wheaton (MA)") to save
+// horizontal space on narrow viewports.
+//
+// Special case: "Trinity College" (Hartford, CT) and "Trinity University"
+// (San Antonio, TX) would both shorten to the ambiguous "Trinity" — append
+// each one's state to disambiguate.
 function shortCollegeName(name) {
-  return name.replace(/\bUniversity\b/g, 'Univ.').replace(/\s+College$/, '');
+  if (name === 'Trinity College') return 'Trinity (CT)';
+  if (name === 'Trinity University') return 'Trinity (TX)';
+  return name
+    .replace(/^(The )?University of (the )?/, '')
+    .replace(/\s+University$/, '')
+    .replace(/\bUniversity\b/g, 'Univ.')
+    .replace(/\s+College(\s+\([A-Z]{2}\))$/, '$1')
+    .replace(/\s+College$/, '');
 }
 
 // Compact form for narrow mobile columns: 1,640 → "1.6k", 11,245 → "11.2k".
@@ -2073,7 +2102,8 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
   const cnEsc = esc(college.name).replace(/'/g, "\\'");
   // The college name itself links to the department website (when we have one);
   // falls back to a plain span otherwise. Same markup/style either way.
-  const nameInner = `<span class="cn-full">${esc(college.name)}</span><span class="cn-short">${esc(shortCollegeName(college.name))}</span>`;
+  const displayName = displayCollegeName(college.name);
+  const nameInner = `<span class="cn-full">${esc(displayName)}</span><span class="cn-short">${esc(shortCollegeName(displayName))}</span>`;
   const nameEl = links.program_url
     ? `<a class="college-name" href="${esc(links.program_url)}" target="_blank" rel="noopener" title="Department website" onclick="track('click_link','link','college_program','${cnEsc}')">${nameInner}</a>`
     : `<span class="college-name">${nameInner}</span>`;
