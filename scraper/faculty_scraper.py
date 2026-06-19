@@ -141,10 +141,12 @@ def clean_title(text, include_subject=False):
 
     position_of_regex = r"(prof\.|professor|lecturer|instructor|chair|director) (of|in) "
     # Subject regex matches a CS-related subject, optionally preceded by a list of
-    # other subject words joined by `,`/`&`/`/`/`and` (e.g. "Mathematics, Statistics,
-    # & Computer Science" or "Math, Stat, and Computer Science"). The prefix
-    # repeats; an extra `,`/`&`/`/`/`and` separator may appear before the subject.
-    subject_regex = r"([a-z]{3,11}\s*(,|and|&|/)\s*)*(\s*(,|&|/|and)\s*)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering)|(cyber))( and)?"
+    # other subjects joined by `,`/`&`/`/`/`and` (e.g. "Mathematics, Statistics,
+    # & Computer Science" or "Math, Stat, and Computer Science"). Each listed
+    # subject may itself be multi-word (e.g. "Applied Math and Computer Science").
+    # The prefix repeats; an extra `,`/`&`/`/`/`and` separator may appear before
+    # the subject.
+    subject_regex = r"([a-z]{3,11}(\s+[a-z]{3,11})*\s*(,|and|&|/)\s*)*(\s*(,|&|/|and)\s*)?(((practice of )?computer)|(data (science|analytics))|(information (science|technology|system))|(bioinformatics)|(computing)|(software engineering)|(cyber))( and)?"
 
     if (
         (
@@ -411,6 +413,30 @@ def scrape_bennington(soup):
         section_text = section.get_text(strip=True).lower() if section else ""
         title = "Visiting Faculty" if "visiting" in section_text else "Faculty"
         res.append(create_faculty(faculty_name, title, url=link.get("href") if link else None))
+    return res
+
+
+def scrape_mcla(soup):
+    # The CS department page renders faculty inside a carousel that also holds
+    # non-person "skill" cards (Full-Stack Development, etc.); the faculty cards
+    # are the ones whose link points at /about-mcla/faculty/. Name is the card's
+    # h3 title, role is the following <p>.
+    res = []
+    for card in soup.find_all(lambda s: soup_has_class(s, "mcla-edge__carousel-slides-item")):
+        link = card.find("a", href=True)
+        if link is None or "/faculty/" not in link["href"]:
+            continue
+        title_el = card.find(
+            lambda s: soup_has_class(s, "mcla-edge__carousel-slides-item-content-title")
+        )
+        role_el = card.find("p")
+        if title_el is None or role_el is None:
+            continue
+        faculty_name = clean_name(title_el.get_text(" ", strip=True))
+        faculty_title = clean_title(role_el.get_text(" ", strip=True))
+        if faculty_name is None or faculty_title is None:
+            continue
+        res.append(create_faculty(faculty_name, faculty_title, url=link["href"]))
     return res
 
 
@@ -952,6 +978,7 @@ faculty_scraper_map = {
         lambda s: s.name == "td" and s.attrs is not None and "width" in s.attrs
     ),
     College.CLAFLIN: scrape_class_f("profile"),
+    College.CLAREMONT_MCKENNA: scrape_class_f("views-col", name_line=1),
     College.ST_BENEDICT: scrape_class_f("person-card"),
     College.HOLY_CROSS: scrape_class_f("people_list_card"),
     College.WOOSTER: scrape_class_f("person-entry"),
@@ -1014,6 +1041,7 @@ faculty_scraper_map = {
     ),
     College.MACALESTER: scrape_macalester,
     College.MARYVILLE: scrape_class_f("col-md-8"),
+    College.MASSACHUSETTS_LAC: scrape_mcla,
     College.MEREDITH: scrape_class_f("people"),
     College.MIDDLEBURY: scrape_class_f("media-object__body"),
     College.MONMOUTH: scrape_class_f("profile-item-text"),

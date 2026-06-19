@@ -1,10 +1,10 @@
-"""Harvey Mudd and Pomona course schedule scraper.
+"""Harvey Mudd, Pomona, and Claremont McKenna course schedule scraper.
 
-Both schools belong to the Claremont Colleges consortium and publish their
+All three schools belong to the Claremont Colleges consortium and publish their
 schedules through Hyperschedule (https://hyperschedule.io/). The backing
 API at `https://banana.hyperschedule.io/v4/sections/<TERM><YEAR>` returns
 every section across all 5Cs for one term; we filter by `course.code.affiliation`
-("HM" / "PO") and `course.code.department == "CSCI"`.
+("HM" / "PO" / "CM") and `course.code.department == "CSCI"`.
 
 Terms are "FA" (Fall) and "SP" (Spring); we map the project's standard
 "F"/"S" term codes onto these for the API request, but record "F"/"S" in
@@ -130,3 +130,8 @@ class HarveyMuddScraper(HyperscheduleScraper):
 class PomonaScraper(HyperscheduleScraper):
     college = College.POMONA
     affiliation = "PO"
+
+
+class ClaremontMcKennaScraper(HyperscheduleScraper):
+    college = College.CLAREMONT_MCKENNA
+    affiliation = "CM"

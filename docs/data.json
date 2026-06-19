@@ -249567,5 +249567,2906 @@
       }
     ],
     "majors": 27
+  },
+  "Claremont McKenna College": {
+    "state": "CA",
+    "program_url": "https://www.cmc.edu/math/cs",
+    "faculty_url": "https://www.cmc.edu/academic/faculty?field_department_target_id=746&combine=",
+    "schedule_url": "https://hyperschedule.io/",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/04n1me355,topics.field.id:17&sort=publication_year:desc",
+    "faculty": [
+      {
+        "name": "Benyamin Ahmadnia",
+        "title": "Visiting Assistant Professor",
+        "category": "visiting",
+        "url": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia",
+        "scholar_url": "https://scholar.google.com/citations?user=-Okl3b4AAAAJ&hl=en",
+        "openalex_url": null,
+        "status": "manual_approved",
+        "citedby": 265,
+        "citedby5y": 208,
+        "hindex": 9,
+        "hindex5y": 8,
+        "i10index": 9,
+        "i10index5y": 7,
+        "interests": "Natural language processing"
+      },
+      {
+        "name": "Sarah Cannon",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon",
+        "scholar_url": null,
+        "openalex_url": "https://openalex.org/authors/A5032733831",
+        "status": "no_match",
+        "citedby": 223,
+        "citedby5y": null,
+        "hindex": 6,
+        "hindex5y": null,
+        "i10index": 6,
+        "i10index5y": null,
+        "interests": "Algorithms & complexity"
+      },
+      {
+        "name": "Michael Izbicki",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki",
+        "scholar_url": "https://scholar.google.com/citations?user=5sJEA2MAAAAJ&hl=en",
+        "openalex_url": null,
+        "status": "manual_approved",
+        "citedby": 264,
+        "citedby5y": 186,
+        "hindex": 8,
+        "hindex5y": 8,
+        "i10index": 6,
+        "i10index5y": 5,
+        "interests": "Machine learning, Natural language processing, Computational social science"
+      },
+      {
+        "name": "Raylen Witter",
+        "title": "Assistant Professor",
+        "category": "tenure_track",
+        "url": "https://www.cmc.edu/academic/faculty/profile/raylen-witter",
+        "scholar_url": null,
+        "openalex_url": null,
+        "status": "no_url",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Algorithms & complexity, Machine learning"
+      }
+    ],
+    "total": 4,
+    "matched": 2,
+    "total_citations": 752,
+    "terms": [
+      {
+        "year": "2021-22",
+        "term": "F",
+        "label": "F21"
+      },
+      {
+        "year": "2021-22",
+        "term": "S",
+        "label": "S22"
+      },
+      {
+        "year": "2022-23",
+        "term": "F",
+        "label": "F22"
+      },
+      {
+        "year": "2022-23",
+        "term": "S",
+        "label": "S23"
+      },
+      {
+        "year": "2023-24",
+        "term": "F",
+        "label": "F23"
+      },
+      {
+        "year": "2023-24",
+        "term": "S",
+        "label": "S24"
+      },
+      {
+        "year": "2024-25",
+        "term": "F",
+        "label": "F24"
+      },
+      {
+        "year": "2024-25",
+        "term": "S",
+        "label": "S25"
+      },
+      {
+        "year": "2025-26",
+        "term": "F",
+        "label": "F25"
+      },
+      {
+        "year": "2025-26",
+        "term": "S",
+        "label": "S26"
+      }
+    ],
+    "courses": [
+      {
+        "code": "CSCI-036",
+        "name": "Foundations of Data Science",
+        "category": "Data science",
+        "offered": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "instructors": [
+          [
+            {
+              "l": "SC",
+              "n": "Sarah Cannon",
+              "u": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon"
+            }
+          ],
+          [
+            {
+              "l": "SC",
+              "n": "Sarah Cannon",
+              "u": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "SC",
+              "n": "Sarah Cannon",
+              "u": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "SC",
+              "n": "Sarah Cannon",
+              "u": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon"
+            }
+          ],
+          [
+            {
+              "l": "SC",
+              "n": "Sarah Cannon",
+              "u": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon"
+            }
+          ],
+          [
+            {
+              "l": "SC",
+              "n": "Sarah Cannon",
+              "u": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon"
+            }
+          ],
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI-040",
+        "name": "Computing for the Web",
+        "category": "Software engineering",
+        "offered": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "instructors": [
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ],
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ],
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI-046",
+        "name": "Data Structures and Algorithms",
+        "category": "Core",
+        "offered": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "instructors": [
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ],
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ],
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ],
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ],
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI-143",
+        "name": "Big Data",
+        "category": "Data science",
+        "offered": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI-145",
+        "name": "Data Mining",
+        "category": "Data science",
+        "offered": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "BA",
+              "n": "Benyamin Ahmadnia",
+              "u": "https://www.cmc.edu/academic/faculty/profile/benyamin-ahmadnia"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "RW",
+              "n": "Raylen Witter",
+              "u": "https://www.cmc.edu/academic/faculty/profile/raylen-witter"
+            }
+          ],
+          [
+            {
+              "l": "RW",
+              "n": "Raylen Witter",
+              "u": "https://www.cmc.edu/academic/faculty/profile/raylen-witter"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI-148",
+        "name": "Graph Algorithms",
+        "category": "Algorithms & complexity",
+        "offered": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "instructors": [
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "SC",
+              "n": "Sarah Cannon",
+              "u": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon"
+            }
+          ],
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "SC",
+              "n": "Sarah Cannon",
+              "u": "https://www.cmc.edu/academic/faculty/profile/sarah-cannon"
+            }
+          ],
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI-181",
+        "name": "Special Topics in Computer Sci",
+        "category": "Other",
+        "offered": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "instructors": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "MI",
+              "n": "Michael Izbicki",
+              "u": "https://www.cmc.edu/academic/faculty/profile/michael-izbicki"
+            }
+          ],
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "publications": [
+      {
+        "title": "Principal Eigenvalue Minimization for an Elliptic Problem with Indefinite Weight and Robin Boundary Conditions",
+        "url": "https://doi.org/10.1007/s00245-011-9153-x",
+        "year": 2011,
+        "cites": 33,
+        "venue": "Applied Mathematics & Optimization",
+        "venue_url": "https://openalex.org/S104354797",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25179&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Michael Hinterm\u00fcller",
+            "url": "https://openalex.org/authors/A5062202097",
+            "affiliation": "University of Graz"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Antoine Laurain",
+            "url": "https://openalex.org/authors/A5082364655"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Minimizing Eigenvalues for Inhomogeneous Rods and Plates",
+        "url": "https://doi.org/10.1007/s10915-016-0222-9",
+        "year": 2016,
+        "cites": 22,
+        "venue": "Journal of Scientific Computing",
+        "venue_url": "https://openalex.org/S151550017",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=23490&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Weitao Chen",
+            "url": "https://openalex.org/authors/A5100650398",
+            "affiliation": "University of California, Irvine"
+          },
+          {
+            "name": "Ching\u2010Shan Chou",
+            "url": "https://openalex.org/authors/A5056610892",
+            "affiliation": "The Ohio State University"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Computational Methods for Extremal Steklov Problems",
+        "url": "https://doi.org/10.1137/16m1067263",
+        "year": 2017,
+        "cites": 31,
+        "venue": "SIAM Journal on Control and Optimization",
+        "venue_url": "https://openalex.org/S897311980",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=26405&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Eldar Akhmetgaliyev",
+            "url": "https://openalex.org/authors/A5007205591",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Braxton Osting",
+            "url": "https://openalex.org/authors/A5002446254",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Minimal Convex Combinations of Three Sequential Laplace-Dirichlet Eigenvalues",
+        "url": "https://doi.org/10.1007/s00245-013-9219-z",
+        "year": 2013,
+        "cites": 25,
+        "venue": "Applied Mathematics & Optimization",
+        "venue_url": "https://openalex.org/S104354797",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25179&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Braxton Osting",
+            "url": "https://openalex.org/authors/A5002446254",
+            "affiliation": "University of California, Los Angeles"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Geolocating Tweets in any Language at any Location",
+        "url": "https://doi.org/10.1145/3357384.3357926",
+        "year": 2019,
+        "cites": 17,
+        "venue": "Proceedings of the 28th ACM International Conference on Information and Knowledge Management",
+        "venue_url": null,
+        "venue_acronym": "CIKM",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/25/",
+        "authors": [
+          {
+            "name": "Mike Izbicki",
+            "url": "https://openalex.org/authors/A5021467697",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Vagelis Papalexakis",
+            "url": "https://openalex.org/authors/A5051212851",
+            "affiliation": "University of California, Riverside"
+          },
+          {
+            "name": "Vassilis J. Tsotras",
+            "url": "https://openalex.org/authors/A5000947547",
+            "affiliation": "University of California, Riverside"
+          }
+        ],
+        "matched_faculty": [
+          "Michael Izbicki"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Mobile computing",
+          "Data science",
+          "Databases",
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Minimization of inhomogeneous biharmonic eigenvalue problems",
+        "url": "https://doi.org/10.1016/j.apm.2017.07.015",
+        "year": 2017,
+        "cites": 16,
+        "venue": "Applied Mathematical Modelling",
+        "venue_url": "https://openalex.org/S153281200",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=28065&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Di Kang",
+            "url": "https://openalex.org/authors/A5047384236",
+            "affiliation": "Claremont Graduate University"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Computation of free boundary minimal surfaces <i>via</i> extremal Steklov eigenvalue problems",
+        "url": "https://doi.org/10.1051/cocv/2021033",
+        "year": 2021,
+        "cites": 14,
+        "venue": "ESAIM Control Optimisation and Calculus of Variations",
+        "venue_url": "https://openalex.org/S142457147",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25955&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "\u00c9douard Oudet",
+            "url": "https://openalex.org/authors/A5033921759",
+            "affiliation": "Laboratoire Jean Kuntzmann"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Braxton Osting",
+            "url": "https://openalex.org/authors/A5002446254",
+            "affiliation": "University of California, Los Angeles"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "On the effects of hierarchical self-assembly for reducing program-size complexity",
+        "url": "https://doi.org/10.1016/j.tcs.2021.09.011",
+        "year": 2021,
+        "cites": 5,
+        "venue": "Theoretical Computer Science",
+        "venue_url": "https://openalex.org/S90727058",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=20571&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Sarah Cannon",
+            "url": "https://openalex.org/authors/A5032733831",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Erik D. Demaine",
+            "url": "https://openalex.org/authors/A5083684609",
+            "affiliation": "Vassar College"
+          },
+          {
+            "name": "Martin L. Demaine",
+            "url": "https://openalex.org/authors/A5088731324",
+            "affiliation": "Vassar College"
+          },
+          {
+            "name": "Sarah Eisenstat",
+            "url": "https://openalex.org/authors/A5073300790",
+            "affiliation": "Vassar College"
+          },
+          {
+            "name": "David Furcy",
+            "url": "https://openalex.org/authors/A5042155512",
+            "affiliation": "University of Wisconsin\u2013Oshkosh"
+          },
+          {
+            "name": "Matthew J. Patitz",
+            "url": "https://openalex.org/authors/A5078778273",
+            "affiliation": "University of Arkansas at Fayetteville"
+          },
+          {
+            "name": "Robert Schweller",
+            "url": "https://openalex.org/authors/A5112867493",
+            "affiliation": "The University of Texas Rio Grande Valley"
+          },
+          {
+            "name": "Scott M. Summers",
+            "url": "https://openalex.org/authors/A5045334173",
+            "affiliation": "University of Wisconsin\u2013Oshkosh"
+          },
+          {
+            "name": "Andrew Winslow",
+            "url": "https://openalex.org/authors/A5087928095",
+            "affiliation": "Google (United States)"
+          }
+        ],
+        "matched_faculty": [
+          "Sarah Cannon"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Robotics",
+          "Computational bio & bioinformatics",
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Sampling Balanced Forests of Grids in Polynomial Time",
+        "url": "https://doi.org/10.1145/3618260.3649699",
+        "year": 2024,
+        "cites": 4,
+        "venue": "Proceedings of the 56th Annual ACM Symposium on Theory of Computing",
+        "venue_url": null,
+        "venue_acronym": "STOC",
+        "venue_ranking": "A*",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/65/",
+        "authors": [
+          {
+            "name": "Sarah Cannon",
+            "url": "https://openalex.org/authors/A5032733831",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Wesley Pegden",
+            "url": "https://openalex.org/authors/A5054318475",
+            "affiliation": "Carnegie Mellon University"
+          },
+          {
+            "name": "Jamie Tucker-Foltz",
+            "url": "https://openalex.org/authors/A5035370064",
+            "affiliation": "Harvard University Press"
+          }
+        ],
+        "matched_faculty": [
+          "Sarah Cannon"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Irreducibility of recombination Markov chains in the triangular lattice",
+        "url": "https://doi.org/10.1016/j.dam.2023.12.019",
+        "year": 2024,
+        "cites": 1,
+        "venue": "Discrete Applied Mathematics",
+        "venue_url": "https://openalex.org/S171741597",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25890&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Sarah Cannon",
+            "url": "https://openalex.org/authors/A5032733831",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Sarah Cannon"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Numerical studies of the Steklov eigenvalue problem via conformal mappings",
+        "url": "https://doi.org/10.1016/j.amc.2018.11.048",
+        "year": 2018,
+        "cites": 9,
+        "venue": "Applied Mathematics and Computation",
+        "venue_url": "https://openalex.org/S50372074",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25170&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Weaam Alhejaili",
+            "url": "https://openalex.org/authors/A5031191933",
+            "affiliation": "Princess Nourah bint Abdulrahman University"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Extremal Rearrangement Problems Involving Poisson\u2019s Equation with Robin Boundary Conditions",
+        "url": "https://doi.org/10.1007/s10915-021-01413-2",
+        "year": 2021,
+        "cites": 6,
+        "venue": "Journal of Scientific Computing",
+        "venue_url": "https://openalex.org/S151550017",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=23490&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Seyyed Abbas Mohammadi",
+            "url": "https://openalex.org/authors/A5061788852",
+            "affiliation": "Yasouj University"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Fast and Perfect Sampling of Subgraphs and Polymer Systems",
+        "url": "https://doi.org/10.1145/3632294",
+        "year": 2023,
+        "cites": 4,
+        "venue": "ACM Transactions on Algorithms",
+        "venue_url": "https://openalex.org/S137348503",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=4700153006&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Antonio Blanca",
+            "url": "https://openalex.org/authors/A5008395399",
+            "affiliation": "Pennsylvania State University"
+          },
+          {
+            "name": "Sarah Cannon",
+            "url": "https://openalex.org/authors/A5032733831",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Will Perkins",
+            "url": "https://openalex.org/authors/A5010848870",
+            "affiliation": "Georgia Institute of Technology"
+          }
+        ],
+        "matched_faculty": [
+          "Sarah Cannon"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computational social science",
+          "Data science",
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Nifty Assignments",
+        "url": "https://doi.org/10.1145/3478432.3499268",
+        "year": 2022,
+        "cites": 2,
+        "venue": "Proceedings of the 53rd ACM Technical Symposium on Computer Science Education V. 2",
+        "venue_url": "https://openalex.org/S4363608669",
+        "venue_acronym": "SIGCSE",
+        "venue_ranking": "A",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/55/",
+        "authors": [
+          {
+            "name": "Nick Parlante",
+            "url": "https://openalex.org/authors/A5000684063",
+            "affiliation": "Stanford University"
+          },
+          {
+            "name": "Julie Zelenski",
+            "url": "https://openalex.org/authors/A5033578970",
+            "affiliation": "Stanford University"
+          },
+          {
+            "name": "Eric Roberts",
+            "url": "https://openalex.org/authors/A5085826862",
+            "affiliation": "Willamette University"
+          },
+          {
+            "name": "J. Jedediah Rembold",
+            "url": "https://openalex.org/authors/A5086476102",
+            "affiliation": "Willamette University"
+          },
+          {
+            "name": "Ben Stephenson",
+            "url": "https://openalex.org/authors/A5029570266",
+            "affiliation": "University of Calgary"
+          },
+          {
+            "name": "Jonathan Hudson",
+            "url": "https://openalex.org/authors/A5035811248",
+            "affiliation": "University of Calgary"
+          },
+          {
+            "name": "Stephanie Valentine",
+            "url": "https://openalex.org/authors/A5111375410",
+            "affiliation": "University of Nebraska\u2013Lincoln"
+          },
+          {
+            "name": "Juliette Woodrow",
+            "url": "https://openalex.org/authors/A5061308206",
+            "affiliation": "Stanford University"
+          },
+          {
+            "name": "Kathleen Creel",
+            "url": "https://openalex.org/authors/A5050985956",
+            "affiliation": "Stanford University"
+          },
+          {
+            "name": "Nick Bowman",
+            "affiliation": "Stanford University"
+          },
+          {
+            "name": "Larry Crotts",
+            "url": "https://openalex.org/authors/A5083281651",
+            "affiliation": "University of North Carolina at Greensboro"
+          },
+          {
+            "name": "Andrew Matzureff",
+            "url": "https://openalex.org/authors/A5032563068",
+            "affiliation": "Greensboro College"
+          },
+          {
+            "name": "Mike Izbicki",
+            "url": "https://openalex.org/authors/A5021467697",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Michael Izbicki"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Computer science education",
+          "Robotics"
+        ]
+      },
+      {
+        "title": "Intra Cell Co-Channel Interference Mitigation in LTE Heterogeneous Network",
+        "url": "https://doi.org/10.1145/3608251.3608261",
+        "year": 2023,
+        "cites": 2,
+        "venue": "2023 The 15th International Conference on Computer Modeling and Simulation",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Il Hyok Pak",
+            "url": "https://openalex.org/authors/A5092655100",
+            "affiliation": "Pyongyang University of Science and Technology"
+          },
+          {
+            "name": "Jin Hyok Ri",
+            "url": "https://openalex.org/authors/A5101460450",
+            "affiliation": "Pyongyang University of Science and Technology"
+          },
+          {
+            "name": "Chol Ho Ri",
+            "url": "https://openalex.org/authors/A5090687286",
+            "affiliation": "Pyongyang University of Science and Technology"
+          },
+          {
+            "name": "Mike Izbicki",
+            "url": "https://openalex.org/authors/A5021467697",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Michael Izbicki"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Computer networks"
+        ]
+      },
+      {
+        "title": "Evaluating Word Embeddings on Low-Resource Languages",
+        "url": "https://doi.org/10.18653/v1/2020.eval4nlp-1.17",
+        "year": 2020,
+        "cites": 5,
+        "venue": "Proceedings of the First Workshop on Evaluation and Comparison of NLP Systems",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Nathan Stringham",
+            "url": "https://openalex.org/authors/A5081857577",
+            "affiliation": "Pomona College"
+          },
+          {
+            "name": "Mike Izbicki",
+            "url": "https://openalex.org/authors/A5021467697",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Michael Izbicki"
+        ],
+        "pub_type": "workshop",
+        "subfields": [
+          "Natural language processing"
+        ]
+      },
+      {
+        "title": "Extremal spectral gaps for periodic Schr\u00f6dinger operators",
+        "url": "https://doi.org/10.1051/cocv/2018029",
+        "year": 2018,
+        "cites": 3,
+        "venue": "ESAIM Control Optimisation and Calculus of Variations",
+        "venue_url": "https://openalex.org/S142457147",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25955&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Braxton Osting",
+            "url": "https://openalex.org/authors/A5002446254",
+            "affiliation": "University of Utah"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Linear Convergence of a Rearrangement Method for the One-dimensional Poisson Equation",
+        "url": "https://doi.org/10.1007/s10915-020-01389-5",
+        "year": 2021,
+        "cites": 2,
+        "venue": "Journal of Scientific Computing",
+        "venue_url": "https://openalex.org/S151550017",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=23490&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Seyyed Abbas Mohammadi",
+            "url": "https://openalex.org/authors/A5061788852",
+            "affiliation": "Yasouj University"
+          },
+          {
+            "name": "Braxton Osting",
+            "url": "https://openalex.org/authors/A5002446254",
+            "affiliation": "University of Utah"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "A rearrangement minimization problem corresponding to<i>p</i>-Laplacian equation",
+        "url": "https://doi.org/10.1051/cocv/2022004",
+        "year": 2022,
+        "cites": 2,
+        "venue": "ESAIM Control Optimisation and Calculus of Variations",
+        "venue_url": "https://openalex.org/S142457147",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=25955&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Chiu-Yen Kao",
+            "url": "https://openalex.org/authors/A5113602240",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Seyyed Abbas Mohammadi",
+            "url": "https://openalex.org/authors/A5061788852",
+            "affiliation": "Yasouj University"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Absolute stability and synchronization in neural field models with transmission delays",
+        "url": "https://doi.org/10.1016/j.physd.2016.04.014",
+        "year": 2016,
+        "cites": 3,
+        "venue": "Physica D Nonlinear Phenomena",
+        "venue_url": "https://openalex.org/S4210235043",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=29120&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Chiu-Yen Kao",
+            "url": "https://openalex.org/authors/A5113602240",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Chih-Wen Shih",
+            "url": "https://openalex.org/authors/A5085085426",
+            "affiliation": "National Yang Ming Chiao Tung University"
+          },
+          {
+            "name": "Chang-Hong Wu",
+            "url": "https://openalex.org/authors/A5006630139",
+            "affiliation": "National University of Tainan"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems",
+        "url": "https://doi.org/10.4230/lipics.approx-random.2019.54",
+        "year": 2018,
+        "cites": 3,
+        "venue": "DROPS",
+        "venue_url": "https://openalex.org/S4377196569",
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Sarah Cannon",
+            "url": "https://openalex.org/authors/A5032733831",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Joshua J. Daymude",
+            "url": "https://openalex.org/authors/A5070425572",
+            "affiliation": "Arizona State University"
+          },
+          {
+            "name": "Cem G\u00f6kmen",
+            "url": "https://openalex.org/authors/A5052210411",
+            "affiliation": "Georgia Institute of Technology"
+          },
+          {
+            "name": "Dana Randall",
+            "url": "https://openalex.org/authors/A5001088440",
+            "affiliation": "Georgia Institute of Technology"
+          },
+          {
+            "name": "Andr\u00e9a W. Richa",
+            "url": "https://openalex.org/authors/A5031875286",
+            "affiliation": "Georgia Institute of Technology"
+          }
+        ],
+        "matched_faculty": [
+          "Sarah Cannon"
+        ],
+        "pub_type": "preprint",
+        "subfields": [
+          "Algorithms & complexity"
+        ]
+      },
+      {
+        "title": "Maximal Convex Combinations of Sequential Steklov Eigenvalues",
+        "url": "https://doi.org/10.1007/s10915-019-00925-2",
+        "year": 2019,
+        "cites": 2,
+        "venue": "Journal of Scientific Computing",
+        "venue_url": "https://openalex.org/S151550017",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=23490&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Weaam Alhejaili",
+            "url": "https://openalex.org/authors/A5031191933",
+            "affiliation": "Princess Nourah bint Abdulrahman University"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "Harmonic Functions on Finitely Connected Tori",
+        "url": "https://doi.org/10.1137/23m1569897",
+        "year": 2023,
+        "cites": 1,
+        "venue": "SIAM Journal on Numerical Analysis",
+        "venue_url": "https://openalex.org/S203348814",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=26421&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Braxton Osting",
+            "url": "https://openalex.org/authors/A5002446254",
+            "affiliation": "University of Utah"
+          },
+          {
+            "name": "\u00c9douard Oudet",
+            "url": "https://openalex.org/authors/A5033921759",
+            "affiliation": "Laboratoire Jean Kuntzmann"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": []
+      },
+      {
+        "title": "DocSplit: Simple Contrastive Pretraining for Large Document Embeddings",
+        "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.945",
+        "year": 2023,
+        "cites": 0,
+        "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+        "venue_url": null,
+        "venue_acronym": "EMNLP (Findings)",
+        "venue_ranking": "A*",
+        "venue_ranking_source": "ICORE 2026 Conference Ranking",
+        "venue_ranking_url": "https://portal.core.edu.au/conf-ranks/448/",
+        "authors": [
+          {
+            "name": "Yujie Wang",
+            "url": "https://openalex.org/authors/A5100373830",
+            "affiliation": "Claremont Graduate University"
+          },
+          {
+            "name": "Mike Izbicki",
+            "url": "https://openalex.org/authors/A5021467697",
+            "affiliation": "Claremont McKenna College"
+          }
+        ],
+        "matched_faculty": [
+          "Michael Izbicki"
+        ],
+        "pub_type": "conference",
+        "subfields": [
+          "Natural language processing"
+        ]
+      },
+      {
+        "title": "Preface",
+        "url": "https://doi.org/10.1007/s42967-024-00387-w",
+        "year": 2024,
+        "cites": 0,
+        "venue": "Communications on Applied Mathematics and Computation",
+        "venue_url": "https://openalex.org/S4210175860",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=21101092701&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Andrea L. Bertozzi",
+            "url": "https://openalex.org/authors/A5090707978",
+            "affiliation": "University of California, Los Angeles"
+          },
+          {
+            "name": "Ron Fedkiw",
+            "url": "https://openalex.org/authors/A5046653951",
+            "affiliation": "Stanford University"
+          },
+          {
+            "name": "Fr\u00e9d\u00e9ric Gibou",
+            "url": "https://openalex.org/authors/A5081112761",
+            "affiliation": "University of California, Santa Barbara"
+          },
+          {
+            "name": "Chiu\u2010Yen Kao",
+            "url": "https://openalex.org/authors/A5045327320",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Chi\u2010Wang Shu",
+            "url": "https://openalex.org/authors/A5047035333",
+            "affiliation": "Brown University"
+          },
+          {
+            "name": "Richard Tzong\u2010Han Tsai",
+            "url": "https://openalex.org/authors/A5030771512",
+            "affiliation": "The University of Texas at Austin"
+          },
+          {
+            "name": "Wotao Yin",
+            "url": "https://openalex.org/authors/A5085908411",
+            "affiliation": "University of California, Los Angeles"
+          },
+          {
+            "name": "Hongkai Zhao",
+            "url": "https://openalex.org/authors/A5107748638",
+            "affiliation": "Duke University"
+          }
+        ],
+        "matched_faculty": [
+          "Chiu-Yen Kao"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computer vision"
+        ]
+      },
+      {
+        "title": "Spanning Trees and Redistricting: New Methods for Sampling and Validation",
+        "url": "https://doi.org/10.1137/24m166944x",
+        "year": 2026,
+        "cites": 0,
+        "venue": "SIAM Review",
+        "venue_url": "https://openalex.org/S160107561",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=26430&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Sarah Cannon",
+            "url": "https://openalex.org/authors/A5119244247",
+            "affiliation": "Claremont McKenna College"
+          },
+          {
+            "name": "Moon Duchin",
+            "url": "https://openalex.org/authors/A5055847047",
+            "affiliation": "Shirley Ryan AbilityLab"
+          },
+          {
+            "name": "Dana Randall",
+            "url": "https://openalex.org/authors/A5001088440",
+            "affiliation": "Georgia Institute of Technology"
+          },
+          {
+            "name": "Parker Rule",
+            "url": "https://openalex.org/authors/A5072097586",
+            "affiliation": "Tufts University"
+          }
+        ],
+        "matched_faculty": [
+          "Sarah Cannon"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computational social science",
+          "Data science",
+          "Algorithms & complexity"
+        ]
+      }
+    ],
+    "majors": 44
+  },
+  "Massachusetts College of Liberal Arts": {
+    "state": "MA",
+    "program_url": "https://mcla.edu/academics/academic-departments/computer-science/",
+    "faculty_url": "https://mcla.edu/academics/academic-departments/computer-science/",
+    "schedule_url": "https://banweb.mcla.edu:8443/PRD8/bwzkcsch.P_DispSchedule?term=202620&levl=UD&display_opt=ALL",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01ka28180,topics.field.id:17&sort=publication_year:desc",
+    "faculty": [
+      {
+        "name": "David Eve",
+        "title": "Professor",
+        "category": "tenured",
+        "url": "https://mcla.edu/about-mcla/faculty/david-eve.php",
+        "scholar_url": null,
+        "openalex_url": null,
+        "status": "no_url",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Databases"
+      },
+      {
+        "name": "Guodong Wang",
+        "title": "Associate Professor",
+        "category": "tenured",
+        "url": "https://mcla.edu/about-mcla/faculty/guodong-wang.php",
+        "scholar_url": "https://scholar.google.com/citations?user=oNxrGYEAAAAJ&hl=en",
+        "openalex_url": null,
+        "status": "matched",
+        "citedby": 1804,
+        "citedby5y": 910,
+        "hindex": 19,
+        "hindex5y": 13,
+        "i10index": 29,
+        "i10index5y": 15,
+        "interests": "Computer networks, Computer security & privacy"
+      }
+    ],
+    "total": 2,
+    "matched": 1,
+    "total_citations": 1804,
+    "terms": [
+      {
+        "year": "2021-22",
+        "term": "F",
+        "label": "F21"
+      },
+      {
+        "year": "2021-22",
+        "term": "S",
+        "label": "S22"
+      },
+      {
+        "year": "2022-23",
+        "term": "F",
+        "label": "F22"
+      },
+      {
+        "year": "2022-23",
+        "term": "S",
+        "label": "S23"
+      },
+      {
+        "year": "2023-24",
+        "term": "F",
+        "label": "F23"
+      },
+      {
+        "year": "2023-24",
+        "term": "S",
+        "label": "S24"
+      },
+      {
+        "year": "2024-25",
+        "term": "F",
+        "label": "F24"
+      },
+      {
+        "year": "2024-25",
+        "term": "S",
+        "label": "S25"
+      },
+      {
+        "year": "2025-26",
+        "term": "F",
+        "label": "F25"
+      },
+      {
+        "year": "2025-26",
+        "term": "S",
+        "label": "S26"
+      }
+    ],
+    "courses": [
+      {
+        "code": "CSCI 101",
+        "name": "First Year Comp. Sci. Seminar",
+        "category": "Core",
+        "offered": [
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202160&subj_in=&crse_in=&crn_in=60544",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60301",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60116",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202460&subj_in=&crse_in=&crn_in=60033",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60177",
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CSCI 110",
+        "name": "Electrical Engineering Princip",
+        "category": "Unknown",
+        "offered": [
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60302",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60113",
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60178",
+          0
+        ]
+      },
+      {
+        "code": "CSCI 120",
+        "name": "Programming in Python",
+        "category": "Core",
+        "offered": [
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60500",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60119",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202460&subj_in=&crse_in=&crn_in=60035",
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20145",
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60179",
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20116"
+        ],
+        "instructors": [
+          null,
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI 121",
+        "name": "Programming in Java I",
+        "category": "Core",
+        "offered": [
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202220&subj_in=&crse_in=&crn_in=20093",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202320&subj_in=&crse_in=&crn_in=20443",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20355",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20146",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20117"
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 122",
+        "name": "Programming in Java II",
+        "category": "Core",
+        "offered": [
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202160&subj_in=&crse_in=&crn_in=60552",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60306",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60118",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202460&subj_in=&crse_in=&crn_in=60036",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60180",
+          0
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 210",
+        "name": "Networking Theory and Admin I",
+        "category": "Computer networks",
+        "offered": [
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202160&subj_in=&crse_in=&crn_in=60556",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60297",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60110",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202460&subj_in=&crse_in=&crn_in=60037",
+          0,
+          0,
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 211",
+        "name": "Networking Theory and Admin II",
+        "category": "Computer networks",
+        "offered": [
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202220&subj_in=&crse_in=&crn_in=20092",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202320&subj_in=&crse_in=&crn_in=20439",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20360",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20147",
+          0,
+          0
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 235",
+        "name": "Digital Circuit Design",
+        "category": "Design automation",
+        "offered": [
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202220&subj_in=&crse_in=&crn_in=20096",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202320&subj_in=&crse_in=&crn_in=20441",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20361",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20148",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20119"
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI 236",
+        "name": "Web Development",
+        "category": "Software engineering",
+        "offered": [
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202320&subj_in=&crse_in=&crn_in=20442",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20362",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20149",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20120"
+        ],
+        "instructors": [
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 240",
+        "name": "Introduction to Robotics",
+        "category": "Robotics",
+        "offered": [
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60296",
+          0,
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60181",
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20428"
+        ]
+      },
+      {
+        "code": "CSCI 243",
+        "name": "Database Development",
+        "category": "Databases",
+        "offered": [
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202160&subj_in=&crse_in=&crn_in=60542",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60305",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60117",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202460&subj_in=&crse_in=&crn_in=60039",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60182",
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CSCI 271",
+        "name": "Electric Circuit Design I",
+        "category": "Unknown",
+        "offered": [
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60497",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60115",
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": "CSCI 272",
+        "name": "Electric Circuit Design II",
+        "category": "Unknown",
+        "offered": [
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202160&subj_in=&crse_in=&crn_in=60546",
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20367",
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": "CSCI 302",
+        "name": "Computer Triage",
+        "category": "Other",
+        "offered": [
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202220&subj_in=&crse_in=&crn_in=20101",
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20356",
+          0,
+          0,
+          0,
+          0
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 318",
+        "name": "Computer Organization&Assembly",
+        "category": "Core",
+        "offered": [
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202220&subj_in=&crse_in=&crn_in=20492",
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60111",
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20150",
+          0,
+          0
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 328",
+        "name": "Object Oriented Design",
+        "category": "Software engineering",
+        "offered": [
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202220&subj_in=&crse_in=&crn_in=20102",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60184",
+          0
+        ]
+      },
+      {
+        "code": "CSCI 330",
+        "name": "Programming in C++",
+        "category": "Core",
+        "offered": [
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202160&subj_in=&crse_in=&crn_in=60536",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60449",
+          0
+        ],
+        "instructors": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CSCI 332",
+        "name": "Systems Analysis and Design",
+        "category": "Software engineering",
+        "offered": [
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60307",
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202460&subj_in=&crse_in=&crn_in=60041",
+          0,
+          0,
+          0
+        ],
+        "instructors": [
+          null,
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 336",
+        "name": "Advanced Web Development",
+        "category": "Software engineering",
+        "offered": [
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202360&subj_in=&crse_in=&crn_in=60123",
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202560&subj_in=&crse_in=&crn_in=60185",
+          0
+        ]
+      },
+      {
+        "code": "CSCI 340",
+        "name": "Robotics Development",
+        "category": "Robotics",
+        "offered": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20366",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20152",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20122"
+        ]
+      },
+      {
+        "code": "CSCI 343",
+        "name": "Full Stack Development",
+        "category": "Software engineering",
+        "offered": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20364",
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20123"
+        ]
+      },
+      {
+        "code": "CSCI 346",
+        "name": "Programming in Visual Studio",
+        "category": "Core",
+        "offered": [
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202320&subj_in=&crse_in=&crn_in=20453",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20363",
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20124"
+        ],
+        "instructors": [
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI 352",
+        "name": "Business Information Systems",
+        "category": "Other",
+        "offered": [
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202220&subj_in=&crse_in=&crn_in=20100",
+          0,
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20151",
+          0,
+          0
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 360",
+        "name": "Network Security I",
+        "category": "Computer security & privacy",
+        "offered": [
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202160&subj_in=&crse_in=&crn_in=60558",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202260&subj_in=&crse_in=&crn_in=60300",
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202460&subj_in=&crse_in=&crn_in=60427",
+          0,
+          0,
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "code": "CSCI 361",
+        "name": "Data Structures and Algorithms",
+        "category": "Core",
+        "offered": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20365",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20154",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20126"
+        ]
+      },
+      {
+        "code": "CSCI 363",
+        "name": "Network Security II",
+        "category": "Computer security & privacy",
+        "offered": [
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202220&subj_in=&crse_in=&crn_in=20094",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202320&subj_in=&crse_in=&crn_in=20440",
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20155",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20127"
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "GW",
+              "n": "Guodong Wang",
+              "u": "https://mcla.edu/about-mcla/faculty/guodong-wang.php"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CSCI 390",
+        "name": "Junior Seminar",
+        "category": "Misc",
+        "offered": [
+          0,
+          0,
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202320&subj_in=&crse_in=&crn_in=20445",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202420&subj_in=&crse_in=&crn_in=20358",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202520&subj_in=&crse_in=&crn_in=20156",
+          0,
+          "https://banweb.mcla.edu:8443/PRD8//bwckschd.p_disp_listcrse?term_in=202620&subj_in=&crse_in=&crn_in=20129"
+        ],
+        "instructors": [
+          null,
+          null,
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ],
+          null,
+          [
+            {
+              "l": "DE",
+              "n": "David Eve",
+              "u": "https://mcla.edu/about-mcla/faculty/david-eve.php"
+            }
+          ]
+        ]
+      }
+    ],
+    "publications": [
+      {
+        "title": "Human Action Recognition Based on Skeleton Information and Multi-Feature Fusion",
+        "url": "https://doi.org/10.3390/electronics12173702",
+        "year": 2023,
+        "cites": 12,
+        "venue": "Electronics",
+        "venue_url": "https://openalex.org/S4210202905",
+        "venue_acronym": null,
+        "venue_ranking": "Q2",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=21100829272&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Li Wang",
+            "url": "https://openalex.org/authors/A5103156648",
+            "affiliation": "Henan Polytechnic University"
+          },
+          {
+            "name": "Bo Su",
+            "url": "https://openalex.org/authors/A5101870104",
+            "affiliation": "Henan Polytechnic University"
+          },
+          {
+            "name": "Qunpo Liu",
+            "url": "https://openalex.org/authors/A5054891311",
+            "affiliation": "Henan Polytechnic University"
+          },
+          {
+            "name": "Ruxin Gao",
+            "url": "https://openalex.org/authors/A5048204017",
+            "affiliation": "Henan Polytechnic University"
+          },
+          {
+            "name": "Jianjun Zhang",
+            "url": "https://openalex.org/authors/A5100358200",
+            "affiliation": "Henan Polytechnic University"
+          },
+          {
+            "name": "Guodong Wang",
+            "url": "https://openalex.org/authors/A5100449045",
+            "affiliation": "Massachusetts College of Liberal Arts"
+          }
+        ],
+        "matched_faculty": [
+          "Guodong Wang"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computer vision",
+          "Machine learning",
+          "Mobile computing"
+        ]
+      },
+      {
+        "title": "Wireless Signal Denoising Using Conditional Generative Adversarial Networks",
+        "url": "https://doi.org/10.1109/infocomwkshps57453.2023.10225927",
+        "year": 2023,
+        "cites": 9,
+        "venue": "IEEE INFOCOM 2023 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Haolin Tang",
+            "url": "https://openalex.org/authors/A5080599800",
+            "affiliation": "Virginia Commonwealth University"
+          },
+          {
+            "name": "Yanxiao Zhao",
+            "url": "https://openalex.org/authors/A5057642791",
+            "affiliation": "Virginia Commonwealth University"
+          },
+          {
+            "name": "Guodong Wang",
+            "url": "https://openalex.org/authors/A5100449045",
+            "affiliation": "Massachusetts College of Liberal Arts"
+          },
+          {
+            "name": "Changqing Luo",
+            "url": "https://openalex.org/authors/A5108048105",
+            "affiliation": "Virginia Commonwealth University"
+          },
+          {
+            "name": "Wei Wang",
+            "url": "https://openalex.org/authors/A5100391971",
+            "affiliation": "San Diego State University"
+          }
+        ],
+        "matched_faculty": [
+          "Guodong Wang"
+        ],
+        "pub_type": "workshop",
+        "subfields": [
+          "Natural language processing",
+          "Computer vision"
+        ]
+      },
+      {
+        "title": "A Fine-Grained Video Traffic Control Mechanism in Software-Defined Networks",
+        "url": "https://doi.org/10.1109/tnsm.2022.3164335",
+        "year": 2022,
+        "cites": 4,
+        "venue": "IEEE Transactions on Network and Service Management",
+        "venue_url": "https://openalex.org/S173527311",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=7200153156&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Jun Huang",
+            "url": "https://openalex.org/authors/A5020146420",
+            "affiliation": "Baylor University"
+          },
+          {
+            "name": "Qiang Duan",
+            "url": "https://openalex.org/authors/A5001056903",
+            "affiliation": "Pennsylvania State University"
+          },
+          {
+            "name": "Cong-Cong Xing",
+            "url": "https://openalex.org/authors/A5090224468",
+            "affiliation": "Nicholls State University"
+          },
+          {
+            "name": "Bo Gu",
+            "url": "https://openalex.org/authors/A5013964496",
+            "affiliation": "Sun Yat-sen University"
+          },
+          {
+            "name": "Guodong Wang",
+            "url": "https://openalex.org/authors/A5100449045",
+            "affiliation": "Massachusetts College of Liberal Arts"
+          },
+          {
+            "name": "Sherali Zeadally",
+            "url": "https://openalex.org/authors/A5002810652",
+            "affiliation": "University of Kentucky"
+          },
+          {
+            "name": "Erich J. Baker",
+            "url": "https://openalex.org/authors/A5052536656",
+            "affiliation": "Baylor University"
+          }
+        ],
+        "matched_faculty": [
+          "Guodong Wang"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Computer networks",
+          "Computer security & privacy"
+        ]
+      },
+      {
+        "title": "State Estimation in Mobile Edge Computing With Unreliable Communications",
+        "url": "https://doi.org/10.1109/lcomm.2020.3047882",
+        "year": 2020,
+        "cites": 2,
+        "venue": "IEEE Communications Letters",
+        "venue_url": "https://openalex.org/S147316732",
+        "venue_acronym": null,
+        "venue_ranking": "Q1",
+        "venue_ranking_source": "SCImago 2025 Journal Ranking",
+        "venue_ranking_url": "https://www.scimagojr.com/journalsearch.php?q=18896&tip=sid&clean=0",
+        "authors": [
+          {
+            "name": "Weisong Tian",
+            "url": "https://openalex.org/authors/A5110629165",
+            "affiliation": "Widener University"
+          },
+          {
+            "name": "Guodong Wang",
+            "url": "https://openalex.org/authors/A5100449045",
+            "affiliation": "Massachusetts College of Liberal Arts"
+          }
+        ],
+        "matched_faculty": [
+          "Guodong Wang"
+        ],
+        "pub_type": "journal",
+        "subfields": [
+          "Embedded & real-time systems"
+        ]
+      },
+      {
+        "title": "Dynamic Machine Learning Algorithm for AODV Routing Attacks Detection",
+        "url": "https://doi.org/10.4108/eai.27-8-2020.2297866",
+        "year": 2020,
+        "cites": 1,
+        "venue": "Proceedings of the 13th EAI International Conference on Mobile Multimedia Communications, Mobimedia 2020, 27-28 August 2020, Cyberspace",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Md Hasan",
+            "url": "https://openalex.org/authors/A5012718792",
+            "affiliation": "Waters (United States)"
+          },
+          {
+            "name": "Yanxiao Zhao",
+            "url": "https://openalex.org/authors/A5057642791",
+            "affiliation": "Virginia Commonwealth University"
+          },
+          {
+            "name": "Guodong Wang",
+            "url": "https://openalex.org/authors/A5100449045",
+            "affiliation": "Massachusetts College of Liberal Arts"
+          },
+          {
+            "name": "Yu Luo",
+            "url": "https://openalex.org/authors/A5101770756",
+            "affiliation": "Mississippi State University"
+          },
+          {
+            "name": "Lina Pu",
+            "url": "https://openalex.org/authors/A5077083196",
+            "affiliation": "University of Southern Mississippi"
+          }
+        ],
+        "matched_faculty": [
+          "Guodong Wang"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Computer security & privacy"
+        ]
+      },
+      {
+        "title": "Enhancing Teaching Effectiveness and Learning Experience of Digital Circuit Design using Multiple Tools",
+        "url": "https://doi.org/10.18260/1-2--43371",
+        "year": 2024,
+        "cites": 0,
+        "venue": "2023 ASEE Annual Conference & Exposition Proceedings",
+        "venue_url": null,
+        "venue_acronym": null,
+        "venue_ranking": null,
+        "venue_ranking_source": null,
+        "venue_ranking_url": null,
+        "authors": [
+          {
+            "name": "Guodong Wang",
+            "url": "https://openalex.org/authors/A5103464469",
+            "affiliation": "Massachusetts College of Liberal Arts"
+          },
+          {
+            "name": "Yanxiao Zhao",
+            "url": "https://openalex.org/authors/A5100514873",
+            "affiliation": "Virginia Commonwealth University"
+          }
+        ],
+        "matched_faculty": [
+          "Guodong Wang"
+        ],
+        "pub_type": "other",
+        "subfields": [
+          "Computer science education",
+          "Computer architecture",
+          "Design automation"
+        ]
+      }
+    ],
+    "majors": 53
   }
 }

@@ -1975,10 +1975,14 @@ function displayCollegeName(name) {
 //
 // Special case: "Trinity College" (Hartford, CT) and "Trinity University"
 // (San Antonio, TX) would both shorten to the ambiguous "Trinity" — append
-// each one's state to disambiguate.
+// each one's state to disambiguate. "Massachusetts College of Liberal Arts"
+// has no shortenable suffix, so it maps to its acronym "MCLA".
 function shortCollegeName(name) {
   if (name === 'Trinity College') return 'Trinity (CT)';
   if (name === 'Trinity University') return 'Trinity (TX)';
+  // No "University"/trailing-"College" rule below shortens this long name,
+  // so use its well-known acronym on narrow viewports.
+  if (name === 'Massachusetts College of Liberal Arts') return 'MCLA';
   return name
     .replace(/^(The )?University of (the )?/, '')
     .replace(/\s+University$/, '')

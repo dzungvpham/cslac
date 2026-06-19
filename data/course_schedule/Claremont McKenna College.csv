@@ -1,0 +1,65 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url,category
+Claremont McKenna College,2021-22,F,CSCI-036,01,Foundations of Data Science,Sarah Cannon,TR 9:35-10:50,,Data science
+Claremont McKenna College,2021-22,F,CSCI-036,02,Foundations of Data Science,Sarah Cannon,TR 11:10-12:25,,Data science
+Claremont McKenna College,2021-22,F,CSCI-040,01,Computing for the Web,Michael Izbicki,MW 11:10-12:25; F 11:10-12:25,,Software engineering
+Claremont McKenna College,2021-22,F,CSCI-040,02,Computing for the Web,Michael Izbicki,MW 16:30-17:45; F 9:45-11:00,,Software engineering
+Claremont McKenna College,2021-22,S,CSCI-036,01,Foundations of Data Science,Sarah Cannon,TR 11:00-12:15,,Data science
+Claremont McKenna College,2021-22,S,CSCI-036,02,Foundations of Data Science,Sarah Cannon,TR 13:15-14:30,,Data science
+Claremont McKenna College,2021-22,S,CSCI-046,01,Data Structures and Algorithms,Mark Huber,MW 11:00-12:15; F 14:00-15:05,,Core
+Claremont McKenna College,2021-22,S,CSCI-143,01,Big Data,Michael Izbicki,MW 8:10-9:25; F 11:00-12:05,,Data science
+Claremont McKenna College,2021-22,S,CSCI-145,01,Data Mining,David Bachman,MW 9:35-10:50,,Data science
+Claremont McKenna College,2022-23,F,CSCI-036,01,Foundations of Data Science,Mark Huber,MWF 9:00-9:50,,Data science
+Claremont McKenna College,2022-23,F,CSCI-036,02,Foundations of Data Science,Mark Huber,MWF 10:00-10:50,,Data science
+Claremont McKenna College,2022-23,F,CSCI-040,01,Computing for the Web,Michael Izbicki,MW 9:35-10:50; F 9:35-10:50,,Software engineering
+Claremont McKenna College,2022-23,F,CSCI-040,02,Computing for the Web,David Bachman,MW 14:45-16:00,,Software engineering
+Claremont McKenna College,2022-23,F,CSCI-145,01,Data Mining,Michael Izbicki,MW 13:15-14:30,,Data science
+Claremont McKenna College,2022-23,S,CSCI-036,01,Foundations of Data Science,Mark Huber,MWF 10:00-10:50,,Data science
+Claremont McKenna College,2022-23,S,CSCI-036,02,Foundations of Data Science,Sarah Cannon,TR 14:45-16:00,,Data science
+Claremont McKenna College,2022-23,S,CSCI-046,01,Data Structures and Algorithms,Michael Izbicki,MW 9:35-10:50,,Core
+Claremont McKenna College,2022-23,S,CSCI-046L,01,Data Structures & Algorithms Lab,Michael Izbicki,F 9:35-10:50,,Misc
+Claremont McKenna College,2022-23,S,CSCI-046L,02,Data Structures & Algorithms Lab,Michael Izbicki,F 11:00-12:15,,Misc
+Claremont McKenna College,2022-23,S,CSCI-143,01,Big Data,Michael Izbicki,MW 13:15-14:30; F 13:15-14:30,,Data science
+Claremont McKenna College,2022-23,S,CSCI-148,01,Graph Algorithms,Sarah Cannon,TR 13:15-14:30,,Algorithms & complexity
+Claremont McKenna College,2023-24,F,CSCI-036,01,Foundations of Data Science,Mark Huber,MWF 9:00-9:50,,Data science
+Claremont McKenna College,2023-24,F,CSCI-040,01,Computing for the Web,Benyamin Ahmadnia,TR 16:15-17:30,,Software engineering
+Claremont McKenna College,2023-24,F,CSCI-040,02,Computing for the Web,David Bachman,TR 11:00-12:15,,Software engineering
+Claremont McKenna College,2023-24,F,CSCI-145,01,Data Mining,Benyamin Ahmadnia,TR 13:15-14:30,,Data science
+Claremont McKenna College,2023-24,F,CSCI-145,02,Data Mining,"Mark Huber, Benyamin Ahmadnia",TR 14:45-16:00,,Data science
+Claremont McKenna College,2023-24,S,CSCI-036,01,Foundations of Data Science,Mark Huber,MWF 9:00-9:50,,Data science
+Claremont McKenna College,2023-24,S,CSCI-036,02,Foundations of Data Science,Sarah Cannon,TR 14:45-16:00,,Data science
+Claremont McKenna College,2023-24,S,CSCI-036,03,Foundations of Data Science,Sarah Cannon,TR 13:15-14:30,,Data science
+Claremont McKenna College,2023-24,S,CSCI-046,01,Data Structures and Algorithms,Benyamin Ahmadnia,MW 13:15-14:30,,Core
+Claremont McKenna College,2023-24,S,CSCI-046,02,Data Structures and Algorithms,Benyamin Ahmadnia,MW 13:15-14:30,,Core
+Claremont McKenna College,2023-24,S,CSCI-046L,01,Data Structures & Algorithms Lab,Benyamin Ahmadnia,F 13:15-14:30,,Misc
+Claremont McKenna College,2023-24,S,CSCI-046L,02,Data Structures & Algorithms Lab,Benyamin Ahmadnia,F 14:45-16:00,,Misc
+Claremont McKenna College,2023-24,S,CSCI-143,01,Big Data,Michael Izbicki,TR 9:35-10:50; F 9:35-10:50,,Data science
+Claremont McKenna College,2023-24,S,CSCI-143,02,Big Data,Michael Izbicki,TR 9:35-10:50; F 11:00-12:15,,Data science
+Claremont McKenna College,2024-25,F,CSCI-036,01,Foundations of Data Science,Sarah Cannon,MW 16:15-17:30,,Data science
+Claremont McKenna College,2024-25,F,CSCI-036,02,Foundations of Data Science,Mark Huber,MWF 9:00-9:50,,Data science
+Claremont McKenna College,2024-25,F,CSCI-040,01,Computing for the Web,Benyamin Ahmadnia,MW 14:45-16:00,,Software engineering
+Claremont McKenna College,2024-25,F,CSCI-040,02,Computing for the Web,Benyamin Ahmadnia,MW 16:15-17:30,,Software engineering
+Claremont McKenna College,2024-25,F,CSCI-046,01,Data Structures and Algorithms,Benyamin Ahmadnia,MW 13:15-14:30,,Core
+Claremont McKenna College,2024-25,F,CSCI-145,01,Data Mining,Michael Izbicki,MW 13:15-14:30,,Data science
+Claremont McKenna College,2024-25,F,CSCI-181,01,Special Topics in Computer Sci,Michael Izbicki,MW 9:35-10:50,,Other
+Claremont McKenna College,2024-25,S,CSCI-036,01,Foundations of Data Science,Mark Huber,MWF 9:00-9:50,,Data science
+Claremont McKenna College,2024-25,S,CSCI-036,02,Foundations of Data Science,Sarah Cannon,MW 14:45-16:00,,Data science
+Claremont McKenna College,2024-25,S,CSCI-040,01,Computing for the Web,Michael Izbicki,TR 13:15-14:30; F 13:15-14:30,,Software engineering
+Claremont McKenna College,2024-25,S,CSCI-046,01,Data Structures and Algorithms,Benyamin Ahmadnia,MW 13:15-14:30,,Core
+Claremont McKenna College,2024-25,S,CSCI-046L,01,Data Structures & Algorithms Lab,Benyamin Ahmadnia,F 9:35-10:50,,Misc
+Claremont McKenna College,2024-25,S,CSCI-143,01,Big Data,Michael Izbicki,TR 9:35-10:50; F 9:35-10:50,,Data science
+Claremont McKenna College,2024-25,S,CSCI-148,01,Graph Algorithms,Sarah Cannon,MW 16:15-17:30,,Algorithms & complexity
+Claremont McKenna College,2025-26,F,CSCI-036,01,Foundations of Data Science,Mark Huber,MWF 9:00-9:50,,Data science
+Claremont McKenna College,2025-26,F,CSCI-040,01,Computing for the Web,Benyamin Ahmadnia,TR 11:00-12:15,,Software engineering
+Claremont McKenna College,2025-26,F,CSCI-040,02,Computing for the Web,Benyamin Ahmadnia,TR 13:15-14:30,,Software engineering
+Claremont McKenna College,2025-26,F,CSCI-046,01,Data Structures and Algorithms,Benyamin Ahmadnia,TR 9:35-10:50,,Core
+Claremont McKenna College,2025-26,F,CSCI-046L,01,Data Structures & Algorithms Lab,Benyamin Ahmadnia,F 9:35-10:50,,Misc
+Claremont McKenna College,2025-26,F,CSCI-145,01,Data Mining,Raylen Witter,TR 14:45-16:00,,Data science
+Claremont McKenna College,2025-26,F,CSCI-145,02,Data Mining,Raylen Witter,TR 16:15-17:30,,Data science
+Claremont McKenna College,2025-26,S,CSCI-036,01,Foundations of Data Science,Mark Huber,MWF 9:00-9:50,,Data science
+Claremont McKenna College,2025-26,S,CSCI-040,01,Computing for the Web,Michael Izbicki,MW 11:00-12:15; F 11:00-12:15,,Software engineering
+Claremont McKenna College,2025-26,S,CSCI-046,01,Data Structures and Algorithms,Benyamin Ahmadnia,TR 13:15-14:30,,Core
+Claremont McKenna College,2025-26,S,CSCI-046,02,Data Structures and Algorithms,Benyamin Ahmadnia,TR 8:10-9:25,,Core
+Claremont McKenna College,2025-26,S,CSCI-046L,01,Data Structures & Algorithms Lab,Benyamin Ahmadnia,F 13:15-14:30,,Misc
+Claremont McKenna College,2025-26,S,CSCI-046L,02,Data Structures & Algorithms Lab,Benyamin Ahmadnia,F 14:45-16:00,,Misc
+Claremont McKenna College,2025-26,S,CSCI-143,01,Big Data,Michael Izbicki,MW 13:15-14:30; F 13:15-14:30,,Data science
+Claremont McKenna College,2025-26,S,CSCI-145,01,Data Mining,Raylen Witter,TR 16:15-17:30,,Data science
