@@ -10,6 +10,7 @@ class College(StrEnum):
     BARD = "Bard College"
     BARNARD = "Barnard College"
     BELOIT = "Beloit College"
+    BENNINGTON = "Bennington College"
     BEREA = "Berea College"
     BETHANY = "Bethany College (WV)"
     BETHANY_LUTHERAN = "Bethany Lutheran College"

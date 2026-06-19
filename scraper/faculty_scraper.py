@@ -387,6 +387,33 @@ def scrape_macalester(soup):
     return res
 
 
+def scrape_bennington(soup):
+    # Bennington grants no academic ranks (the college has no tenure), so there
+    # is no Professor/Lecturer title to parse. Faculty appear as ``div.views-row``
+    # cards under section headings ("Faculty", "Visiting Faculty & Technicians");
+    # the name is the card's title link (the first <a> is the photo) and the role
+    # comes from the section heading.
+    res = []
+    for row in soup.find_all(lambda s: s.name == "div" and soup_has_class(s, "views-row")):
+        title_div = row.find("div", class_="views-field-title")
+        if title_div is None:
+            continue
+        link = title_div.find("a", href=True)
+        faculty_name = clean_name(
+            link.get_text(strip=True) if link else title_div.get_text(" ", strip=True)
+        )
+        if faculty_name is None:
+            continue
+        section = row.find_previous(
+            lambda s: s.name in ("h2", "h3")
+            and s.find_parent("div", class_="views-row") is None
+        )
+        section_text = section.get_text(strip=True).lower() if section else ""
+        title = "Visiting Faculty" if "visiting" in section_text else "Faculty"
+        res.append(create_faculty(faculty_name, title, url=link.get("href") if link else None))
+    return res
+
+
 NAME_LINE_OPTIONS = [0, 1, [0, 1], 2, [1, 2], [0, 1, 2]]
 TITLE_RE = re.compile(r"\b(professor|lecturer|instructor)\b", re.I)
 NON_NAME_RE = re.compile(
@@ -903,6 +930,7 @@ faculty_scraper_map = {
     College.BARD: scrape_class_f("multitext"),
     College.BARNARD: scrape_class_f("c--featured-person", name_line=1),
     College.BELOIT: scrape_class_f("profile-card-text"),
+    College.BENNINGTON: scrape_bennington,
     College.BEREA: scrape_class_f("not-prose"),
     College.BETHANY: scrape_class_f("sp-team-pro-item"),
     College.BETHANY_LUTHERAN: scrape_class_f("deptContacts", name_line=1),
@@ -1347,10 +1375,79 @@ def fix_urls(target, output):
             ] = url
 
 
+FACULTY_LIST_COLUMNS = ["name", "title", "college", "url"]
+
+
+def merge_colleges_into_faculty_list(existing, results):
+    """Splice freshly-scraped rows for one or more colleges into an existing
+    ``faculty_list`` frame (used by the ``--college`` path).
+
+    A college new to the file is appended at the end; a college already present
+    has its rows replaced in place at its first existing position. Every other
+    college keeps its row position, so the row-aligned sibling CSVs stay aligned
+    for the untouched colleges. (Re-scraping a college whose row count changed
+    still requires re-running the downstream stages for that college.)
+    """
+    cols = FACULTY_LIST_COLUMNS
+    targets = list(dict.fromkeys(results["college"].tolist()))
+    by_college = {c: results[results["college"] == c][cols].to_dict("records")
+                  for c in targets}
+    out, inserted = [], set()
+    for _, row in existing.iterrows():
+        c = row["college"]
+        if c in by_college:
+            if c not in inserted:
+                out.extend(by_college[c])
+                inserted.add(c)
+            continue  # drop stale rows for a re-scraped college
+        out.append({k: row[k] for k in cols})
+    for c in targets:  # brand-new colleges, absent from the existing file
+        if c not in inserted:
+            out.extend(by_college[c])
+    return pd.DataFrame(out, columns=cols)
+
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--college",
+        help="Scrape only colleges whose name contains this string (case-"
+             "insensitive) and MERGE the result into faculty_list.csv instead "
+             "of rewriting the whole file. New colleges are appended; an "
+             "existing college's rows are replaced in place.",
+    )
+    args = parser.parse_args()
+
+    OUTPUT = "../data/faculty_list.csv"
     df = get_valid_colleges("../data/colleges.csv")
     df = df[df["Name"].isin(faculty_scraper_map.keys())]
+
+    if args.college:
+        df = df[df["Name"].str.contains(args.college, case=False, na=False)]
+        if df.empty:
+            raise SystemExit(
+                f"No college in faculty_scraper_map matching {args.college!r}"
+            )
+
     results = get_faculty_list(df)
     print(results.to_string())
     print(results.groupby(["college"]).size().to_string())
-    results.to_csv("../data/faculty_list.csv", index=False)
+
+    if args.college:
+        if results.empty:
+            raise SystemExit(f"No faculty scraped for {args.college!r}")
+        results = results[FACULTY_LIST_COLUMNS]
+        try:
+            existing = pd.read_csv(OUTPUT)
+        except FileNotFoundError:
+            existing = pd.DataFrame(columns=FACULTY_LIST_COLUMNS)
+        replaced = sorted(set(results["college"]) & set(existing["college"]))
+        merged = merge_colleges_into_faculty_list(existing, results)
+        merged.to_csv(OUTPUT, index=False)
+        print(f"\nMerged {sorted(set(results['college']))} into {OUTPUT} "
+              f"({len(existing)} -> {len(merged)} rows).")
+        if replaced:
+            print(f"  NOTE: replaced existing rows for {replaced}. Re-run stages "
+                  f"2/3/6/9 (or regenerate) so the row-aligned sibling CSVs match.")
+    else:
+        results.to_csv(OUTPUT, index=False)

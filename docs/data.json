@@ -45285,13 +45285,13 @@
         "category": "tenured",
         "url": "https://www.csbsju.edu/computer-science/person/heather-amthauer/",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5116304994",
+        "openalex_url": null,
         "status": "matched_college",
-        "citedby": 0,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 0,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 0,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Data science"
       },
@@ -52536,20 +52536,20 @@
         "category": "tenure_track",
         "url": "https://www.concordiacollege.edu/directories/faculty-staff/details/dr-damian-lampl",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5026759750",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 20,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 2,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 1,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Artificial intelligence, Machine learning, Information retrieval, Computer networks"
       }
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 20,
+    "total_citations": 0,
     "terms": [
       {
         "year": "2021-22",
@@ -53496,13 +53496,13 @@
         "category": "tenured",
         "url": "https://www.conncoll.edu/directories/faculty-profiles/ozgur-izmirli",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5010724279",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 272,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 10,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 11,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Information retrieval, Computer vision, Human-computer interaction, Robotics"
       },
@@ -53605,7 +53605,7 @@
     ],
     "total": 11,
     "matched": 5,
-    "total_citations": 34667,
+    "total_citations": 34395,
     "terms": [
       {
         "year": "2021-22",
@@ -58215,13 +58215,13 @@
         "category": "tenured",
         "url": "http://www.cornellcollege.edu/academics/our-faculty/faculty-profile/index.php/show/ltabak",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5034371095",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 0,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 0,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 0,
+        "i10index": null,
         "i10index5y": null,
         "interests": null
       },
@@ -110367,20 +110367,20 @@
         "category": "tenure_track",
         "url": "https://hope.edu/directory/people/olagbemi-fola/index.html",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5009412617",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 52,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 5,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 1,
+        "i10index": null,
         "i10index5y": null,
         "interests": "High-performance computing, Machine learning"
       }
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 590,
+    "total_citations": 538,
     "terms": [
       {
         "year": "2021-22",
@@ -126666,13 +126666,13 @@
         "category": "tenured",
         "url": "https://www.luther.edu/faculty/roman-yasinovskyy",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5016954721",
+        "openalex_url": null,
         "status": "matched_college",
-        "citedby": 47,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 3,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 1,
+        "i10index": null,
         "i10index5y": null,
         "interests": null
       },
@@ -126727,7 +126727,7 @@
     ],
     "total": 4,
     "matched": 1,
-    "total_citations": 5346,
+    "total_citations": 5299,
     "terms": [
       {
         "year": "2025-26",
@@ -127223,20 +127223,20 @@
         "category": "tenure_track",
         "url": "https://www.lycoming.edu/faculty/rublein-adrian.aspx",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5118706780",
+        "openalex_url": null,
         "status": "matched_college",
-        "citedby": 7,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 1,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 0,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Computer networks, Artificial intelligence"
       }
     ],
     "total": 2,
     "matched": 0,
-    "total_citations": 7,
+    "total_citations": 0,
     "terms": [
       {
         "year": "2025-26",
@@ -149411,13 +149411,13 @@
         "category": "tenured",
         "url": "https://www.oxy.edu/academics/faculty/hsing-hau-chen",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5015913202",
+        "openalex_url": null,
         "status": "matched_college",
-        "citedby": 8,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 1,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 0,
+        "i10index": null,
         "i10index5y": null,
         "interests": null
       },
@@ -149440,7 +149440,7 @@
     ],
     "total": 8,
     "matched": 6,
-    "total_citations": 1306,
+    "total_citations": 1298,
     "terms": [
       {
         "year": "2021-22",
@@ -158632,13 +158632,13 @@
         "category": "tenured",
         "url": "https://www.rmc.edu/profile/rance-necaise/",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5002106358",
+        "openalex_url": null,
         "status": "matched_college",
-        "citedby": 31,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 4,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 0,
+        "i10index": null,
         "i10index5y": null,
         "interests": null
       },
@@ -158664,13 +158664,13 @@
         "category": "tenured",
         "url": "https://www.rmc.edu/profile/robin-m-givens/",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5091727708",
+        "openalex_url": null,
         "status": "matched_college",
-        "citedby": 14,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 2,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 0,
+        "i10index": null,
         "i10index5y": null,
         "interests": null
       },
@@ -158725,7 +158725,7 @@
     ],
     "total": 6,
     "matched": 2,
-    "total_citations": 1483,
+    "total_citations": 1438,
     "terms": [
       {
         "year": "2021-22",
@@ -176001,13 +176001,13 @@
         "category": "tenure_track",
         "url": "https://inside.smcm.edu/directory/emily-barranca",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5114483794",
+        "openalex_url": null,
         "status": "matched_college",
-        "citedby": 0,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 0,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 0,
+        "i10index": null,
         "i10index5y": null,
         "interests": null
       },
@@ -187552,20 +187552,20 @@
         "category": "tenured",
         "url": "https://internet3.trincoll.edu/facProfiles/Default.aspx?fid=1015999",
         "scholar_url": null,
-        "openalex_url": null,
+        "openalex_url": "https://openalex.org/authors/A5049931253",
         "status": "no_match",
-        "citedby": null,
+        "citedby": 145,
         "citedby5y": null,
-        "hindex": null,
+        "hindex": 6,
         "hindex5y": null,
-        "i10index": null,
+        "i10index": 5,
         "i10index5y": null,
         "interests": "High-performance computing"
       }
     ],
     "total": 7,
     "matched": 3,
-    "total_citations": 4508,
+    "total_citations": 4653,
     "terms": [
       {
         "year": "2022-23",
@@ -192805,20 +192805,20 @@
         "category": "tenured",
         "url": "https://www.union.edu/computer-science/faculty-staff/nick-webb",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5020647299",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 753,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 18,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 28,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Natural language processing, Robotics, Computer science education"
       }
     ],
     "total": 10,
     "matched": 4,
-    "total_citations": 3358,
+    "total_citations": 2605,
     "terms": [
       {
         "year": "2025-26",
@@ -202100,13 +202100,13 @@
         "category": "tenured",
         "url": "https://go.unca.edu/faculty/marietta-cameron-ph-d/",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5014762206",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 48,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 1,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 1,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Computer vision, Computer graphics, Artificial intelligence"
       },
@@ -202193,7 +202193,7 @@
     ],
     "total": 7,
     "matched": 3,
-    "total_citations": 1320,
+    "total_citations": 1272,
     "terms": [
       {
         "year": "2021-22",
@@ -209457,13 +209457,13 @@
         "category": "tenured",
         "url": "https://www.ursinus.edu/live/profiles/2451-olena-kozhushkina",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5085406018",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 59,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 2,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 2,
+        "i10index": null,
         "i10index5y": null,
         "interests": null
       },
@@ -209486,7 +209486,7 @@
     ],
     "total": 3,
     "matched": 1,
-    "total_citations": 712,
+    "total_citations": 653,
     "terms": [
       {
         "year": "2026-27",
@@ -219907,13 +219907,13 @@
         "category": "tenured",
         "url": "https://www.washjeff.edu/person/amanda-holland-minkley-ph-d/",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5005093323",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 180,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 7,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 3,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Artificial intelligence, Computer security & privacy"
       },
@@ -219952,7 +219952,7 @@
     ],
     "total": 4,
     "matched": 0,
-    "total_citations": 180,
+    "total_citations": 0,
     "publications": [
       {
         "title": "Teaching computer science through problems, not solutions",
@@ -236509,20 +236509,20 @@
         "category": "tenured",
         "url": "https://www.wheaton.edu/academics/faculty/thomas-vandrunen/",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5028386928",
+        "openalex_url": null,
         "status": "no_url",
-        "citedby": 2030,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 7,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 4,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Natural language processing, Programming languages, Machine learning"
       }
     ],
     "total": 3,
     "matched": 0,
-    "total_citations": 2030,
+    "total_citations": 0,
     "terms": [
       {
         "year": "2025-26",
@@ -240078,20 +240078,20 @@
         "category": "tenure_track",
         "url": "https://my.willamette.edu/people/horem",
         "scholar_url": null,
-        "openalex_url": "https://openalex.org/authors/A5025081040",
+        "openalex_url": null,
         "status": "no_match",
-        "citedby": 22,
+        "citedby": null,
         "citedby5y": null,
-        "hindex": 2,
+        "hindex": null,
         "hindex5y": null,
-        "i10index": 1,
+        "i10index": null,
         "i10index5y": null,
         "interests": "Data science"
       }
     ],
     "total": 7,
     "matched": 3,
-    "total_citations": 2287,
+    "total_citations": 2265,
     "terms": [
       {
         "year": "2025-26",
@@ -249331,5 +249331,241 @@
       }
     ],
     "majors": 54
+  },
+  "Bennington College": {
+    "state": "VT",
+    "program_url": "https://www.bennington.edu/academics/areas-of-study-curriculum/science-mathematics/computer-science",
+    "faculty_url": "https://www.bennington.edu/academics/areas-of-study-curriculum/science-mathematics/computer-science",
+    "schedule_url": "https://www.bennington.edu/curriculum/courses/term/spring-2026?aos%5B26%5D=26",
+    "publications_url": "https://openalex.org/works?page=1&filter=authorships.institutions.ror:https://ror.org/01pq38j30,topics.field.id:17&sort=publication_year:desc",
+    "faculty": [
+      {
+        "name": "Darcy Otto",
+        "title": "Faculty",
+        "category": "tenure_track",
+        "url": "https://www.bennington.edu/academics/faculty/darcy-otto",
+        "scholar_url": null,
+        "openalex_url": null,
+        "status": "no_url",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Artificial intelligence, Logic & verification, Algorithms & complexity, Quantum computing"
+      },
+      {
+        "name": "Michael Corey",
+        "title": "Visiting Faculty",
+        "category": "visiting",
+        "url": "https://www.bennington.edu/academics/faculty/michael-corey",
+        "scholar_url": null,
+        "openalex_url": null,
+        "status": "no_url",
+        "citedby": null,
+        "citedby5y": null,
+        "hindex": null,
+        "hindex5y": null,
+        "i10index": null,
+        "i10index5y": null,
+        "interests": "Data science, Artificial intelligence, Distributed systems"
+      }
+    ],
+    "total": 2,
+    "matched": 0,
+    "total_citations": 0,
+    "terms": [
+      {
+        "year": "2025-26",
+        "term": "F",
+        "label": "F25"
+      },
+      {
+        "year": "2025-26",
+        "term": "S",
+        "label": "S26"
+      }
+    ],
+    "courses": [
+      {
+        "code": "CS2114",
+        "name": "Systems 1: Hardware Architecture and Design\u2014From circuits to machine code",
+        "category": "Computer architecture",
+        "offered": [
+          "https://www.bennington.edu/curriculum/course/fall-2025/systems-1-hardware-architecture-and-design%E2%80%94-circuits-machine-code",
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "DO",
+              "n": "Darcy Otto",
+              "u": "https://www.bennington.edu/academics/faculty/darcy-otto"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CS2138",
+        "name": "Blockchain/Web3 as an evolution of the consumer web",
+        "category": "Other",
+        "offered": [
+          "https://www.bennington.edu/curriculum/course/fall-2025/blockchainweb3-evolution-of-consumer-web",
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "MC",
+              "n": "Michael Corey",
+              "u": "https://www.bennington.edu/academics/faculty/michael-corey"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CS2139",
+        "name": "Introduction to Computer Science 1: Programming and Computer Science",
+        "category": "Core",
+        "offered": [
+          "https://www.bennington.edu/curriculum/course/fall-2025/introduction-computer-science-1-programming-and-computer-science",
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "DO",
+              "n": "Darcy Otto",
+              "u": "https://www.bennington.edu/academics/faculty/darcy-otto"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CS2142",
+        "name": "Modern Logic (Summer Course)",
+        "category": "Unknown",
+        "offered": [
+          "https://www.bennington.edu/curriculum/course/fall-2025/modern-logic-summer-course",
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "DO",
+              "n": "Darcy Otto",
+              "u": "https://www.bennington.edu/academics/faculty/darcy-otto"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CS4105",
+        "name": "Artificial Intelligence",
+        "category": "Artificial intelligence",
+        "offered": [
+          0,
+          "https://www.bennington.edu/curriculum/course/spring-2026/artificial-intelligence"
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "DO",
+              "n": "Darcy Otto",
+              "u": "https://www.bennington.edu/academics/faculty/darcy-otto"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CS4384",
+        "name": "Introduction to Computer Science 2: Algorithms and Application",
+        "category": "Core",
+        "offered": [
+          0,
+          "https://www.bennington.edu/curriculum/course/spring-2026/introduction-computer-science-2-algorithms-and-application"
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "DO",
+              "n": "Darcy Otto",
+              "u": "https://www.bennington.edu/academics/faculty/darcy-otto"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CS4388",
+        "name": "Data Structures and Algorithms",
+        "category": "Core",
+        "offered": [
+          "https://www.bennington.edu/curriculum/course/fall-2025/data-structures-and-algorithms",
+          0
+        ],
+        "instructors": [
+          [
+            {
+              "l": "DO",
+              "n": "Darcy Otto",
+              "u": "https://www.bennington.edu/academics/faculty/darcy-otto"
+            }
+          ],
+          null
+        ]
+      },
+      {
+        "code": "CS4391",
+        "name": "Analyzing Blockchain/Web3 as an open distributed database",
+        "category": "Distributed systems",
+        "offered": [
+          0,
+          "https://www.bennington.edu/curriculum/course/spring-2026/analyzing-blockchainweb3-open-distributed-database"
+        ],
+        "instructors": [
+          null,
+          [
+            {
+              "l": "MC",
+              "n": "Michael Corey",
+              "u": "https://www.bennington.edu/academics/faculty/michael-corey"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "CS4392",
+        "name": "Computing and Data in Practice",
+        "category": "Data science",
+        "offered": [
+          "https://www.bennington.edu/curriculum/course/fall-2025/computing-and-data-practice",
+          "https://www.bennington.edu/curriculum/course/spring-2026/computing-and-data-practice"
+        ],
+        "instructors": [
+          [
+            {
+              "l": "MC",
+              "n": "Michael Corey",
+              "u": "https://www.bennington.edu/academics/faculty/michael-corey"
+            }
+          ],
+          [
+            {
+              "l": "MC",
+              "n": "Michael Corey",
+              "u": "https://www.bennington.edu/academics/faculty/michael-corey"
+            }
+          ]
+        ]
+      }
+    ],
+    "majors": 27
   }
 }

@@ -164,7 +164,7 @@ Vijay Ramachandran,Associate Professor,Colgate University,A5103332469,437,10,11
 Joel Sommers,Professor,Colgate University,A5077852213,3071,30,42
 Katelyn Valete,Lab Instructor,Colgate University,,,,
 Puck Wen,Assistant Professor,Colgate University,,,,
-Heather Amthauer,Associate Professor,College of St Benedict,A5116304994,0,0,0
+Heather Amthauer,Associate Professor,College of St Benedict,,,,
 Robert Hesse,Associate Professor,College of St Benedict,,,,
 Peter Ohmann,Associate Professor,College of St Benedict,,,,
 Imad Rahal,Professor,College of St Benedict,,,,
@@ -174,8 +174,8 @@ Zack Fitzsimmons,Associate Professor,College of the Holy Cross,A5046438962,79,4,
 Ting Gu,Assistant Professor,College of the Holy Cross,A5029771940,4,2,0
 Laurie Smith King,Professor,College of the Holy Cross,A5027561302,123,7,4
 Adam Lammert,Assistant Professor,College of the Holy Cross,A5046812723,1090,16,23
-Farhad Mohsin,Assistant Professor,College of the Holy Cross,A5108057303,29,4,0
-Kevin Walsh,Associate Professor,College of the Holy Cross,,,,
+Farhad Mohsin,Assistant Professor,College of the Holy Cross,,,,
+Kevin Walsh,Associate Professor,College of the Holy Cross,A5102968738,2047,14,20
 Heather Guarnera,Assistant Professor,College of Wooster,A5081402304,188,8,6
 Drew Guarnera,Assistant Professor,College of Wooster,,,,
 John Musgrave,Visiting Assistant Professor,College of Wooster,A5007218294,394,9,7
@@ -201,20 +201,20 @@ Flavia Sancier-Barbosa,Associate Professor,Colorado College,,,,
 Cory B Scott,Assistant Professor,Colorado College,A5075829832,144,5,2
 Mike Siddoway,Professor,Colorado College,A5024949509,11,2,0
 Ahmed Kamel,Professor,Concordia College,,,,
-Damian Lampl,Assistant Professor,Concordia College,A5026759750,20,2,1
+Damian Lampl,Assistant Professor,Concordia College,,,,
 Gregory Tanner,Associate Professor,Concordia College,,,,
 Christine Chung,Professor,Connecticut College,A5005257501,202,7,6
 S. James Lee,Associate Professor,Connecticut College,A5100416603,31522,61,230
 Timothy Becker,Assistant Professor,Connecticut College,,,,
 Stephen Douglass,Associate Professor,Connecticut College,,,,
-Ozgur Izmirli,Professor,Connecticut College,A5010724279,272,10,11
+Ozgur Izmirli,Professor,Connecticut College,,,,
 Gary Parker,Professor,Connecticut College,A5014072754,663,12,23
 William Tarimo,Assistant Professor,Connecticut College,A5072551791,79,6,2
 William Barnes,Adjunct Instructor,Connecticut College,,,,
 Thomas Daggett,Adjunct Professor,Connecticut College,,,,
 Robert Peitzsch,Adjunct Professor,Connecticut College,,,,
 John Schaeffer,Adjunct Instructor,Connecticut College,,,,
-Leon Tabak,Professor,Cornell College,A5034371095,0,0,0
+Leon Tabak,Professor,Cornell College,,,,
 Ajit Chavan,Associate Professor,Cornell College,,,,
 Lauren Jepsen,Assistant Professor,Cornell College,,,,
 Jeff Humphries,Professor,Covenant College,,,,
@@ -386,7 +386,7 @@ Erika L.C. King,Associate Professor,Hobart and William Smith College,,,,
 Michael Jipping,Professor,Hope College,A5066193809,122,5,4
 Charles Cusack,Professor,Hope College,A5016956491,111,7,5
 Ryan McFall,Professor,Hope College,A5070840199,213,7,5
-Fola Olagbemi,Assistant Professor,Hope College,A5009412617,52,5,1
+Fola Olagbemi,Assistant Professor,Hope College,,,,
 Katrina Koehler,Associate Professor,Houghton University,,,,
 Babafemi Sorinolu,Assistant Professor,Houghton University,A5128366693,0,0,0
 Takako Soma,Associate Professor,Illinois College,A5113832994,188,3,2
@@ -438,12 +438,12 @@ Kate Lorenzen,Assistant Professor,Linfield University,,,,
 Chuck Lundon,Professor,Linfield University,,,,
 Jennifer Nordstrom,Professor,Linfield University,,,,
 Yujie Wang,Assistant Professor,Linfield University,,,,
-Roman Yasinovskyy,Associate Professor,Luther College,A5016954721,47,3,1
+Roman Yasinovskyy,Associate Professor,Luther College,,,,
 Thuy Do,Assistant Professor,Luther College,A5062466077,4880,33,71
 Kar Ee Ho,Assistant Professor,Luther College,,,,
 Sanad Aburass,Assistant Professor,Luther College,A5016244805,280,9,9
 Krish Pillai,Assistant Professor,Lycoming College,,,,
-Adrian Rublein,Assistant Professor,Lycoming College,A5118706780,7,1,0
+Adrian Rublein,Assistant Professor,Lycoming College,,,,
 Marcus Birkenkrahe,Associate Professor,Lyon College,A5043398304,9,1,0
 Pietro Dall'Olio,Assistant Professor,Lyon College,,,,
 Shilad Sen,Professor,Macalester College,A5069561077,4424,23,32
@@ -523,7 +523,7 @@ Kathryn Leonard,Professor,Occidental College,A5004783856,222,9,6
 Teddy Pozo,Assistant Professor,Occidental College,,,,
 Joel Walsh,Assistant Professor,Occidental College,,,,
 Meiqing Zhang,Assistant Professor,Occidental College,,,,
-Hsing-Hau Chen,Associate Professor,Occidental College,A5015913202,8,1,0
+Hsing-Hau Chen,Associate Professor,Occidental College,,,,
 Chris Cianci,Assistant Professor,Occidental College,,,,
 Treena Basu,Associate Professor,Occidental College,A5077197515,582,5,5
 Mehwish Abbasi,Assistant Professor,Ohio Wesleyan University,,,,
@@ -543,9 +543,9 @@ Olivia Nche,Assistant Professor,Presbyterian College,,,,
 Marc Ordower,Visiting Associate Professor,Randolph College,,,,
 Brad Spendlove,Associate Professor,Randolph College,,,,
 Jia Wan,Associate Professor,Randolph College,,,,
-Rance Necaise,Associate Professor,Randolph-Macon College,A5002106358,31,4,0
+Rance Necaise,Associate Professor,Randolph-Macon College,,,,
 Maha Elouni,Assistant Professor,Randolph-Macon College,,,,
-Robin M. Givens,Associate Professor,Randolph-Macon College,A5091727708,14,2,0
+Robin M. Givens,Associate Professor,Randolph-Macon College,,,,
 Samuel Henry,Assistant Professor,Randolph-Macon College,,,,
 John W. McManus,Associate Professor,Randolph-Macon College,,,,
 La Toria H. Tookes,Senior Lecturer,Randolph-Macon College,,,,
@@ -609,7 +609,7 @@ Robin Lock,Professor,St. Lawrence University,A5088230521,1400,17,31
 Lisa Torrey,Associate Professor,St. Lawrence University,A5091343155,2152,12,14
 Maegan K. Bos,Associate Professor,St. Lawrence University,,,,
 Michael Schuckers,Professor,St. Lawrence University,A5083930742,467,12,12
-Emily Barranca,Assistant Professor,St. Mary's College of Maryland,A5114483794,0,0,0
+Emily Barranca,Assistant Professor,St. Mary's College of Maryland,,,,
 Sayan Goswami,Assistant Professor,St. Mary's College of Maryland,,,,
 Simon Read,Associate Professor,St. Mary's College of Maryland,A5063542194,5149,31,40
 Waqar Saleem,Associate Professor,St. Mary's College of Maryland,,,,
@@ -655,13 +655,13 @@ Charlie Kazer,Lab Instructor,Swarthmore College,A5011928628,63,2,2
 Marcus Brumfield,Assistant Professor,Tougaloo College,,,,
 Bobby England,Professor,Transylvania University,,,,
 Kenny Moorman,Professor,Transylvania University,A5057422963,254,8,8
-Ewa Syta,Associate Professor,Trinity College,,,,
+Ewa Syta,Associate Professor,Trinity College,A5087152867,1990,10,11
 Chandranil Chakraborttii,Assistant Professor,Trinity College,A5025349580,123,5,4
-Maminur Islam,Assistant Professor,Trinity College,,,,
+Maminur Islam,Assistant Professor,Trinity College,A5106752599,3,1,0
 Jonathan Johnson,Visiting Lecturer,Trinity College,,,,
 Takunari Miyazaki,Associate Professor,Trinity College,A5086482332,118,5,2
 Madalene Spezialetti,Associate Professor,Trinity College,A5008051842,311,8,6
-Peter A. Yoon,Professor,Trinity College,,,,
+Peter A. Yoon,Professor,Trinity College,A5049931253,145,6,5
 Paul Myers,Professor,Trinity University,A5086442941,398,9,9
 Zeyu Chen,Visiting Assistant Professor,Trinity University,,,,
 Eduardo Davalos Anaya,Assistant Professor,Trinity University,,,,
@@ -681,7 +681,7 @@ John Rieffel,Professor,Union College (NY),,,,
 TJ Schlueter,Visiting Assistant Professor,Union College (NY),,,,
 Kristina Striegnitz,Associate Professor,Union College (NY),,,,
 Arjun Viswanathan,Visiting Assistant Professor,Union College (NY),,,,
-Nick Webb,Associate Professor,Union College (NY),A5020647299,753,18,28
+Nick Webb,Associate Professor,Union College (NY),,,,
 Jennifer Polack,Professor,University of Mary Washington,A5059958079,24,3,0
 Karen Anewalt,Professor,University of Mary Washington,A5089167579,267,8,7
 Stephen Davies,Professor,University of Mary Washington,A5052656640,1218,17,23
@@ -699,7 +699,7 @@ Kristin Lamberty,Associate Professor,University of Minnesota Morris,A5002280711,
 Elena Machkasova,Associate Professor,University of Minnesota Morris,A5017738425,83,5,2
 Nic McPhee,Professor,University of Minnesota Morris,A5007077416,3568,25,40
 Kevin Sanft,Professor,University of North Carolina Asheville,,,,
-Marietta Cameron,Professor,University of North Carolina Asheville,A5014762206,48,1,1
+Marietta Cameron,Professor,University of North Carolina Asheville,,,,
 Kenneth Bogert,Associate Professor,University of North Carolina Asheville,,,,
 Farzana Rashid,Assistant Professor,University of North Carolina Asheville,,,,
 Michael Sarris,Lecturer,University of North Carolina Asheville,,,,
@@ -739,7 +739,7 @@ S Jacob,Professor,University of Virginia--Wise,,,,
 Nicholas Scoville,Professor,Ursinus College,A5088461515,110,6,2
 Susan Adam,Instructor,Ursinus College,,,,
 David Henry,Instructor,Ursinus College,,,,
-Olena Kozhushkina,Associate Professor,Ursinus College,A5085406018,59,2,2
+Olena Kozhushkina,Associate Professor,Ursinus College,,,,
 William Mongan,Associate Professor,Ursinus College,A5045056426,433,11,12
 Leslie New,Associate Professor,Ursinus College,,,,
 Christopher Sadowski,Associate Professor,Ursinus College,,,,
@@ -772,7 +772,7 @@ Austin Lobo,Associate Professor,Washington College,A5041686906,203,7,7
 Shaun Ramsey,Professor,Washington College,A5110261034,40,1,1
 Heather Switzer,Assistant Professor,Washington College,,,,
 Charles Hannon,Professor,Washington & Jefferson College,,,,
-Amanda Holland-Minkley,Professor,Washington & Jefferson College,A5005093323,180,7,3
+Amanda Holland-Minkley,Professor,Washington & Jefferson College,,,,
 John Ladd,Assistant Professor,Washington & Jefferson College,,,,
 Rebecca Rapp,Assistant Professor,Washington & Jefferson College,,,,
 Carolyn Anderson,Assistant Professor,Wellesley College,A5075492610,1123,12,14
@@ -808,7 +808,7 @@ Natacha Fontes Merz,Associate Professor,Westminster College (PA),,,,
 Heather Muchowski,Assistant Professor,Westminster College (PA),,,,
 Hyunju Kim,Associate Professor,Wheaton College (IL),,,,
 Devin Pohly,Senior Lecturer,Wheaton College (IL),,,,
-Thomas VanDrunen,Professor,Wheaton College (IL),A5028386928,2030,7,4
+Thomas VanDrunen,Professor,Wheaton College (IL),,,,
 Nicholas Almeder,Visiting Instructor,Wheaton College (MA),,,,
 Michael B. Gousie,Professor,Wheaton College (MA),,,,
 Mark D. LeBlanc,Professor,Wheaton College (MA),,,,
@@ -828,7 +828,7 @@ Hank Ibser,Associate Professor,Willamette University,,,,
 Heather Kitada Smalley,Associate Professor,Willamette University,,,,
 Zechariah D Meunier,Assistant Professor,Willamette University,,,,
 Jed Rembold,Associate Professor,Willamette University,A5086476102,15,2,1
-Hendrik Orem,Assistant Professor,Willamette University,A5025081040,22,2,1
+Hendrik Orem,Assistant Professor,Willamette University,,,,
 Jeannie Albrecht,Professor,Williams College,A5056332821,3438,19,25
 Daniel Barowy,Associate Professor,Williams College,A5032195792,433,9,8
 James Bern,Assistant Professor,Williams College,A5085755421,575,12,12
@@ -848,3 +848,5 @@ Theresa Wilson,Professor of Practice,Wittenberg University,,,,
 Beau M. Christ,Associate Professor,Wofford College,,,,
 Aaron L. Garrett,Associate Professor,Wofford College,,,,
 Nicole Tobias,Assistant Professor,Wofford College,,,,
+Darcy Otto,Faculty,Bennington College,,,,
+Michael Corey,Visiting Faculty,Bennington College,,,,

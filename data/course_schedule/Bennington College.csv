@@ -1,0 +1,17 @@
+college,academic_year,term,course_code,section,course_name,instructor,time,url,category
+Bennington College,2025-26,F,CS2114,01,Systems 1: Hardware Architecture and Design—From circuits to machine code,Darcy Otto,"TU,FR 10:30am-12:20pm",https://www.bennington.edu/curriculum/course/fall-2025/systems-1-hardware-architecture-and-design%E2%80%94-circuits-machine-code,Computer architecture
+Bennington College,2025-26,F,CS2138,01,Blockchain/Web3 as an evolution of the consumer web,Michael Corey,TH 3:40pm-5:30pm,https://www.bennington.edu/curriculum/course/fall-2025/blockchainweb3-evolution-of-consumer-web,Other
+Bennington College,2025-26,F,CS2139,01,Introduction to Computer Science 1: Programming and Computer Science,Darcy Otto,"MO,TH 10:00am-11:50am",https://www.bennington.edu/curriculum/course/fall-2025/introduction-computer-science-1-programming-and-computer-science,Core
+Bennington College,2025-26,F,CS2142,01,Modern Logic (Summer Course),Darcy Otto,"MO,TH 7:00pm-8:50pm",https://www.bennington.edu/curriculum/course/fall-2025/modern-logic-summer-course,Unknown
+Bennington College,2025-26,F,CS4388,01,Data Structures and Algorithms,Darcy Otto,"TU,FR 2:10pm-4:00pm",https://www.bennington.edu/curriculum/course/fall-2025/data-structures-and-algorithms,Core
+Bennington College,2025-26,F,CS4389,01,Computing and Data in Practice,Michael Corey,Tu 8:30AM-10:20AM,https://www.bennington.edu/curriculum/course/fall-2025/computing-and-data-practice,Data science
+Bennington College,2025-26,F,MAT2121,01,Sets and Structures,Andrew McIntyre,"MO,TH 1:40pm-3:30pm",https://www.bennington.edu/curriculum/course/fall-2025/sets-and-structures,Unknown
+Bennington College,2025-26,F,MAT2482,01,Linear Algebra: An Introduction,Joe Mundt,T/Th 6:30PM-8:30PM,https://www.bennington.edu/curriculum/course/fall-2025/linear-algebra-introduction,Unknown
+Bennington College,2025-26,F,PHY2213,02,Electronics Lab,Hugh Crowl,MO 1:40pm-5:20pm,https://www.bennington.edu/curriculum/course/fall-2025/electronics-lab,Unknown
+Bennington College,2025-26,S,CS4105,01,Artificial Intelligence,Darcy Otto,"TU,FR 2:10pm-4:00pm",https://www.bennington.edu/curriculum/course/spring-2026/artificial-intelligence,Artificial intelligence
+Bennington College,2025-26,S,CS4384,01,Introduction to Computer Science 2: Algorithms and Application,Darcy Otto,"TU,FR 10:30am-12:20pm",https://www.bennington.edu/curriculum/course/spring-2026/introduction-computer-science-2-algorithms-and-application,Core
+Bennington College,2025-26,S,CS4391,01,Analyzing Blockchain/Web3 as an open distributed database,Michael Corey,TH 3:40pm-5:30pm,https://www.bennington.edu/curriculum/course/spring-2026/analyzing-blockchainweb3-open-distributed-database,Distributed systems
+Bennington College,2025-26,S,CS4392,01,Computing and Data in Practice,Michael Corey,Tu 8:30AM-10:20AM,https://www.bennington.edu/curriculum/course/spring-2026/computing-and-data-practice,Data science
+Bennington College,2025-26,S,EDU2107,01,Robotics and STEM Education: A Workshop,Hugh Crowl,FR 10:30am-12:20pm,https://www.bennington.edu/curriculum/course/spring-2026/robotics-and-stem-education-workshop,Misc
+Bennington College,2025-26,S,MAT4107,01,Discrete Mathematics,Katie Montovan,"MO,TH 10:00am-11:50am",https://www.bennington.edu/curriculum/course/spring-2026/discrete-mathematics,Core
+Bennington College,2025-26,S,MAT4162,01,Metric Spaces and Geometry,Andrew McIntyre,"TU,FR 8:30am-10:20am",https://www.bennington.edu/curriculum/course/spring-2026/metric-spaces-and-geometry,Unknown

@@ -21,6 +21,7 @@ from course_schedule.amherst import AmherstScraper
 from course_schedule.austin import AustinScraper
 from course_schedule.banner9 import banner9_scrapers
 from course_schedule.barnard import BarnardScraper
+from course_schedule.bennington import BenningtonScraper
 from course_schedule.bowdoin import BowdoinScraper
 from course_schedule.bridgewater import BridgewaterScraper
 from course_schedule.bryn_athyn import BrynAthynScraper
@@ -84,6 +85,7 @@ SCRAPERS = [
     AmherstScraper,
     AustinScraper,
     BarnardScraper,
+    BenningtonScraper,
     BowdoinScraper,
     BridgewaterScraper,
     BrynAthynScraper,

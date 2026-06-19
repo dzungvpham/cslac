@@ -36,6 +36,7 @@ COLLEGE_LOGOS = {
     "Bard College": "bard.png",
     "Barnard College": "barnard.png",
     "Beloit College": "beloit.png",
+    "Bennington College": "bennington.jpeg",
     "Berea College": "berea.webp",
     "Bethany College (WV)": "bethany.png",
     "Bethany Lutheran College": "bethany_lutheran.webp",
