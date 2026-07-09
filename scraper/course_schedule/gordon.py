@@ -60,7 +60,7 @@ class GordonScraper(CourseScheduleScraper):
             self._session = s
         return self._session
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         rows = []
         s = self._ensure_session()
         for term_code, str_term in TERM_CODES.items():

@@ -162,11 +162,9 @@ cython_debug/
 .claude/
 .playwright-mcp/
 
-data_old/
-taxonomy/
-paper/
-
 # IPEDS source dumps: re-downloadable cache for degrees_awarded_scraper.py
 data/degrees_awarded/raw/
+data/faculty_websites/
+data/faculty_websites_cleaned/
 
 *.DS_Store

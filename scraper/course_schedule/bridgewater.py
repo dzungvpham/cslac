@@ -79,7 +79,7 @@ class BridgewaterScraper(CourseScheduleScraper):
     terms = []
     fresh_driver_per_load = False
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         try:
             workbooks = self._discover_workbooks()
         except requests.RequestException as e:

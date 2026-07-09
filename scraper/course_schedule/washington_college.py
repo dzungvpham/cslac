@@ -144,7 +144,7 @@ class WashingtonCollegeScraper(CourseScheduleScraper):
             pass
         super().close()
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         # Override the year/term loop: we don't know which terms are available
         # until we read the index, and there's a single PDF per term.
         try:

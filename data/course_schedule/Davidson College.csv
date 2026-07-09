@@ -239,3 +239,32 @@ Davidson College,2025-26,S,CSC 395,G,Reverse Engineering JIT Code,T Lim,TBA ,,Pr
 Davidson College,2025-26,S,CSC 395,H,Computer Architecture & FPGAs,H Mendes,TBA ,,Computer architecture
 Davidson College,2025-26,S,CSC 395,I,Deep Learning for Nuclear Phy,M Kuchera,TBA ,,Machine learning
 Davidson College,2025-26,S,CSC 496,A,Multiparty Computation - SPDZ,H Mendes,TBA ,,Cryptography
+Davidson College,2026-27,F,CSC 108,A,Exploring Computer Science,R Ramanujan,"MWF 0930 - 1020am, Watson Life Sciences Building 119",,Computer science education
+Davidson College,2026-27,F,CSC 110,A,Data Science & Society,K Wang,"TR 0940 - 1055am, Watson Life Sciences Building 247",,Computational social science
+Davidson College,2026-27,F,CSC 121,A,Programming & Problem Solving,K Williams,"MWF 0930 - 1020am, Watson Life Sciences Building 132",,Core
+Davidson College,2026-27,F,CSC 121,B,Programming & Problem Solving,C Nemitz,"TR 0815 - 0930am, Watson Life Sciences Building 132",,Core
+Davidson College,2026-27,F,CSC 121,C,Programming & Problem Solving,C Nemitz,"TR 0940 - 1055am, Watson Life Sciences Building 132",,Core
+Davidson College,2026-27,F,CSC 221,A,Data Structures,T Lim,"MWF 1030 - 1120am, Watson Life Sciences Building 132",,Core
+Davidson College,2026-27,F,CSC 221,B,Data Structures,T Lim,"MWF 1130 - 1220pm, Watson Life Sciences Building 132",,Core
+Davidson College,2026-27,F,CSC 250,A,Computer Organization,C Nemitz,"TR 1215 - 0130pm, Watson Life Sciences Building 243",,Core
+Davidson College,2026-27,F,CSC 321,A,Analysis of Algorithms,C Yerger,"TR 1215 - 0130pm, Chambers Building 1006",,Core
+Davidson College,2026-27,F,CSC 351,A,Operating Systems,H Mendes,"MWF 1030 - 1120am, Watson Life Sciences Building 243",,Operating systems
+Davidson College,2026-27,F,CSC 354,A,Applied Cryptography,H Mendes,"MWF 0130 - 0220pm, Watson Life Sciences Building 243",,Cryptography
+Davidson College,2026-27,F,CSC 355,A,Compiler Design,T Lim,"TR 0140 - 0255pm, Watson Life Sciences Building 243",,Programming languages
+Davidson College,2026-27,F,CSC 363,A,Human Computer Interaction,K Williams,"MW 0805 - 0920am, Watson Life Sciences Building 247",,Human-computer interaction
+Davidson College,2026-27,F,CSC 370,A,Machine Reasoning,R Ramanujan,"MW 0230 - 0345pm, Watson Life Sciences Building 147",,Artificial intelligence
+Davidson College,2026-27,F,CSC 383,A,Linear & Discrete Optimization,J Pulaj,"TR 0940 - 1055am, Watson Life Sciences Building 119",,Algorithms & complexity
+Davidson College,2026-27,S,CSC 110,A,Data Science & Society,K McElrath,"MW 0230 - 0345pm, Watson Life Sciences Building 247",,Computational social science
+Davidson College,2026-27,S,CSC 121,A,Programming & Problem Solving,H Mendes,"MWF 0130 - 0220pm, Watson Life Sciences Building 243",,Core
+Davidson College,2026-27,S,CSC 121,B,Programming & Problem Solving,H Mendes,"MWF 0230 - 0320pm, Watson Life Sciences Building 243",,Core
+Davidson College,2026-27,S,CSC 221,A,Data Structures,K Williams,"MWF 1030 - 1120am, Watson Life Sciences Building 247",,Core
+Davidson College,2026-27,S,CSC 221,B,Data Structures,K Williams,"MWF 1130 - 1220pm, Watson Life Sciences Building 247",,Core
+Davidson College,2026-27,S,CSC 250,A,Computer Organization,C Nemitz,"TR 0815 - 0930am, Watson Life Sciences Building 243",,Core
+Davidson College,2026-27,S,CSC 312,A,Software Design,T Lim,"TR 0815 - 0930am, Watson Life Sciences Building 147",,Software engineering
+Davidson College,2026-27,S,CSC 321,A,Analysis of Algorithms,C Nemitz,"TR 1215 - 0130pm, Watson Life Sciences Building 140",,Core
+Davidson College,2026-27,S,CSC 322,A,Programming Languages,J Pulaj,"TR 0140 - 0255pm, Watson Life Sciences Building 109",,Programming languages
+Davidson College,2026-27,S,CSC 324,A,Theory of Computation,R Ramanujan,"MW 0230 - 0345pm, Watson Life Sciences Building 147",,Algorithms & complexity
+Davidson College,2026-27,S,CSC 356,A,Computer Security,T Lim,"TR 0940 - 1055am, Watson Life Sciences Building 243",,Computer security & privacy
+Davidson College,2026-27,S,CSC 359,A,Networks & Distributed Systems,H Mendes,"MWF 0930 - 1020am, Watson Life Sciences Building 243",,Computer networks
+Davidson College,2026-27,S,CSC 362,A,Data Visualization,K Williams,"MW 0805 - 0920am, Watson Life Sciences Building 247",,Visualization
+Davidson College,2026-27,S,CSC 374,A,Deep Learning,M Kuchera,"TR 0305 - 0420pm, Watson Life Sciences Building 132",,Machine learning

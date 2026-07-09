@@ -172,7 +172,7 @@ class HobartWilliamSmithScraper(CourseScheduleScraper):
     terms = []  # discovery comes from the PDFs themselves
     fresh_driver_per_load = False
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         rows = []
         for season, url in (("F", FALL_URL), ("S", SPRING_URL)):
             try:

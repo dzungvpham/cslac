@@ -11,7 +11,6 @@ Susquehanna University,2021-22,F,CSCI-502,01,Windows Programming,"Chang, Hojin",
 Susquehanna University,2021-22,F,CSCI-502,02,Computer Organization,"Chang, Hojin",TBD,,Core
 Susquehanna University,2021-22,S,CSCI-181,01,Principles of Computer Science,"Upton-Azzam, Joy",M/W/F 1:45 PM - 2:50 PM,,Core
 Susquehanna University,2021-22,S,CSCI-281,01,Data Structures,"Upton-Azzam, Joy",T/Th 2:25 PM - 4:05 PM,,Core
-Susquehanna University,2021-22,S,CSCI-301,01,Data Mining,"Lo, Edisanter",M/W/F 8:45 AM - 9:50 AM,,Data science
 Susquehanna University,2021-22,S,CSCI-381,01,Algorithms,"Chang, Hojin",M/W/F 12:30 PM - 1:35 PM,,Core
 Susquehanna University,2021-22,S,CSCI-391,R1,Data Commun/Networks I,"Brakke, Kenneth A.",M/W/F 3:00 PM - 4:05 PM,,Computer networks
 Susquehanna University,2021-22,S,CSCI-392,S1,Data Commun/Networks II,"Brakke, Kenneth A.",M/W/F 3:00 PM - 4:05 PM,,Computer networks
@@ -27,7 +26,6 @@ Susquehanna University,2022-23,F,CSCI-181,01,Principles of Computer Science,"Cha
 Susquehanna University,2022-23,F,CSCI-181,02,Principles of Computer Science,"Graham, Jeffrey A.",M/W/F 10:00 AM - 11:05 AM,,Core
 Susquehanna University,2022-23,F,CSCI-281,01,Data Structures,"Upton-Azzam, Joy",M/W/F 12:30 PM - 1:35 PM,,Core
 Susquehanna University,2022-23,F,CSCI-282,01,Computer Organization,"Upton-Azzam, Joy",T/Th 10:00 AM - 11:35 AM,,Core
-Susquehanna University,2022-23,F,CSCI-301,01,Data Mining,"Chang, Hojin",T/Th 8:15 AM - 9:50 AM,,Data science
 Susquehanna University,2022-23,F,CSCI-370,01,Cryptology & Number Theory,"Kaufmann, Noah J.",TBD,,Cryptography
 Susquehanna University,2022-23,F,CSCI-481,R1,Programming Languages,"Chang, Hojin",M/W/F 1:45 PM - 2:50 PM,,Programming languages
 Susquehanna University,2022-23,F,CSCI-484,S1,Computer Graphics,"Chang, Hojin",M/W/F 1:45 PM - 2:50 PM,,Computer graphics
@@ -62,7 +60,6 @@ Susquehanna University,2023-24,F,CSCI-181,01,Principles of Computer Science,"Jen
 Susquehanna University,2023-24,F,CSCI-181,02,Principles of Computer Science,"Upton-Azzam, Joy",M/W/F 3:00 PM - 4:05 PM,,Core
 Susquehanna University,2023-24,F,CSCI-281,01,Data Structures,"Upton-Azzam, Joy",M/W/F 12:30 PM - 1:35 PM,,Core
 Susquehanna University,2023-24,F,CSCI-282,01,Computer Organization,"Upton-Azzam, Joy",T/Th 10:00 AM - 11:35 AM,,Core
-Susquehanna University,2023-24,F,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",M/W/F 11:15 AM - 12:20 PM,,Data science
 Susquehanna University,2023-24,F,CSCI-382,R1,Theory of Computation,"Kaufmann, Noah J.",M/W/F 12:30 PM - 1:35 PM,,Algorithms & complexity
 Susquehanna University,2023-24,F,CSCI-460,01,Applications Programming,"Veluswamy, Anusha S.",T/Th 2:25 PM - 4:05 PM,,Software engineering
 Susquehanna University,2023-24,F,CSCI-485,R1,Artificial Intelligence,"Veluswamy, Anusha S.",M/W/F 1:45 PM - 2:50 PM,,Artificial intelligence
@@ -75,7 +72,6 @@ Susquehanna University,2023-24,F,CSCI-599,01,Internship: Blough-Weis Lib.,"Jense
 Susquehanna University,2023-24,F,CSCI-599,02,Internship: IT,"Jensen, Alathea I.",TBD,,Misc
 Susquehanna University,2023-24,S,CSCI-181,01,Principles of Computer Science,"Jensen, Alathea I.",T/Th 12:35 PM - 2:15 PM,,Core
 Susquehanna University,2023-24,S,CSCI-182,01,Object Oriented Prog & Design,"Upton-Azzam, Joy",M/W/F 12:30 PM - 1:35 PM,,Software engineering
-Susquehanna University,2023-24,S,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",T/Th 10:00 AM - 11:35 AM,,Data science
 Susquehanna University,2023-24,S,CSCI-381,01,Algorithms,"Upton-Azzam, Joy",M/W/F 3:00 PM - 4:05 PM,,Core
 Susquehanna University,2023-24,S,CSCI-391,R1,Data Commun/Networks I,"Veluswamy, Anusha S.",T/Th 12:35 PM - 2:15 PM,,Computer networks
 Susquehanna University,2023-24,S,CSCI-392,S1,Data Commun/Networks II,"Veluswamy, Anusha S.",T/Th 12:35 PM - 2:15 PM,,Computer networks
@@ -95,7 +91,6 @@ Susquehanna University,2024-25,F,CSCI-181,01,Principles of Computer Science,"Vel
 Susquehanna University,2024-25,F,CSCI-181,02,Principles of Computer Science,"Scheirer, Steven",T/Th 8:15 AM - 9:50 AM,,Core
 Susquehanna University,2024-25,F,CSCI-281,01,Data Structures,"Upton-Azzam, Joy",T/Th 10:00 AM - 11:35 AM,,Core
 Susquehanna University,2024-25,F,CSCI-282,01,Computer Organization,"Upton-Azzam, Joy",M/W/F 10:00 AM - 11:05 AM,,Core
-Susquehanna University,2024-25,F,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",T/Th 12:35 PM - 2:15 PM,,Data science
 Susquehanna University,2024-25,F,CSCI-370,01,Cryptology & Number Theory,"Upton-Azzam, Joy",M/W/F 3:00 PM - 4:05 PM,,Cryptography
 Susquehanna University,2024-25,F,CSCI-486,R1,Intro to Operating Systems,"Veluswamy, Anusha S.",T/Th 2:25 PM - 4:05 PM,,Operating systems
 Susquehanna University,2024-25,F,CSCI-487,S1,Operating Systems,"Veluswamy, Anusha S.",T/Th 2:25 PM - 4:05 PM,,Operating systems
@@ -104,7 +99,6 @@ Susquehanna University,2024-25,F,CSCI-502,01,Indpt St: Software Eng: Method,"Vel
 Susquehanna University,2024-25,F,CSCI-502,02,INDT INV: App Programming,,Meeting Times TBD,,Misc
 Susquehanna University,2024-25,S,CSCI-181,01,Principles of Computer Science,"Veluswamy, Anusha S.",T/Th 8:15 AM - 9:50 AM,,Core
 Susquehanna University,2024-25,S,CSCI-182,01,Object Oriented Prog & Design,"Upton-Azzam, Joy",T/Th 10:00 AM - 11:35 AM,,Software engineering
-Susquehanna University,2024-25,S,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",T/Th 10:00 AM - 11:35 AM,,Data science
 Susquehanna University,2024-25,S,CSCI-351,R1,Numerical Computing,"Jensen, Alathea I.",M/W/F 3:00 PM - 4:05 PM,,High-performance computing
 Susquehanna University,2024-25,S,CSCI-352,S1,Numerical Analysis,"Jensen, Alathea I.",M/W/F 3:00 PM - 4:05 PM,,Other
 Susquehanna University,2024-25,S,CSCI-381,01,Algorithms,"Upton-Azzam, Joy",M/W/F 11:15 AM - 12:20 PM,,Core
@@ -122,7 +116,6 @@ Susquehanna University,2025-26,F,CSCI-181,01,Principles of Computer Science,"Emi
 Susquehanna University,2025-26,F,CSCI-181,02,Principles of Computer Science,"Veluswamy, Anusha S.",T/Th 10:00 AM - 11:35 AM,,Core
 Susquehanna University,2025-26,F,CSCI-281,01,Data Structures,"Veluswamy, Anusha S.",T/Th 8:15 AM - 9:50 AM,,Core
 Susquehanna University,2025-26,F,CSCI-282,01,Computer Organization,"Emirahmetoglu, Ibrahim",M/W/F 1:45 PM - 2:50 PM,,Core
-Susquehanna University,2025-26,F,CSCI-301,01,Data Mining,"Lo, Edisanter",M/W/F 10:00 AM - 11:05 AM,,Data science
 Susquehanna University,2025-26,F,CSCI-382,S1,Theory of Computation,"Wilce, Alexander G.",M/W/F 3:00 PM - 4:05 PM,,Algorithms & complexity
 Susquehanna University,2025-26,F,CSCI-471,01,Software Engineer:Methodology,"Veluswamy, Anusha S.",T/Th 2:25 PM - 4:05 PM,,Software engineering
 Susquehanna University,2025-26,F,CSCI-485,R1,Artificial Intelligence,"Emirahmetoglu, Ibrahim",Th 12:35 PM - 2:15 PM,,Artificial intelligence
@@ -131,7 +124,6 @@ Susquehanna University,2025-26,F,CSCI-500,01,Senior Colloquium,"Scheirer, Steven
 Susquehanna University,2025-26,F,CSCI-599,01,Internship: SU Makerspace,"Jensen, Alathea I.",TBD,,Misc
 Susquehanna University,2025-26,S,CSCI-181,01,Principles of Computer Science,"Jensen, Alathea I.",T/Th 2:25 PM - 4:05 PM,,Core
 Susquehanna University,2025-26,S,CSCI-182,01,Object Oriented Prog & Design,"Emirahmetoglu, Ibrahim",M/W/F 10:00 AM - 11:05 AM,,Software engineering
-Susquehanna University,2025-26,S,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",T/Th 10:00 AM - 11:35 AM,,Data science
 Susquehanna University,2025-26,S,CSCI-381,01,Algorithms,"Emirahmetoglu, Ibrahim",T/Th 12:35 PM - 2:15 PM,,Core
 Susquehanna University,2025-26,S,CSCI-391,R1,Data Commun/Networks I,"Veluswamy, Anusha S.",T/Th 8:15 AM - 9:50 AM,,Computer networks
 Susquehanna University,2025-26,S,CSCI-392,S1,Data Commun/Networks II,"Veluswamy, Anusha S.",T/Th 8:15 AM - 9:50 AM,,Computer networks
@@ -147,7 +139,6 @@ Susquehanna University,2026-27,F,CSCI-181,01,Principles of Computer Science,,T/T
 Susquehanna University,2026-27,F,CSCI-181,02,Principles of Computer Science,,M/W/F 12:30 PM - 1:35 PM,,Core
 Susquehanna University,2026-27,F,CSCI-281,01,Data Structures,"Veluswamy, Anusha S.",T/Th 8:15 AM - 9:50 AM,,Core
 Susquehanna University,2026-27,F,CSCI-282,01,Computer Organization,,T/Th 10:00 AM - 11:35 AM,,Core
-Susquehanna University,2026-27,F,CSCI-301,01,Data Mining,"Veluswamy, Anusha S.",T/Th 2:25 PM - 4:05 PM,,Data science
 Susquehanna University,2026-27,F,CSCI-370,01,Cryptology & Number Theory,"Scheirer, Steven",M/W/F 11:15 AM - 12:20 PM,,Cryptography
 Susquehanna University,2026-27,F,CSCI-460,01,Application Programming,"Veluswamy, Anusha S.",T/Th 10:00 AM - 11:35 AM,,Software engineering
 Susquehanna University,2026-27,F,CSCI-500,01,Senior Colloquium,"Jensen, Alathea I.",M/W/F 3:00 PM - 4:05 PM,,Misc

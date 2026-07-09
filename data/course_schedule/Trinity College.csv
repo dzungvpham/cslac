@@ -152,3 +152,38 @@ Trinity College,2025-26,S,CPSC-404,02,Computer Science Seminar,"Kousen, Kenneth"
 Trinity College,2025-26,S,CPSC-466,01,Teaching Assistant,TBA,TBA,,Misc
 Trinity College,2025-26,S,CPSC-490,01,Research Assistantship,TBA,TBA,,Misc
 Trinity College,2025-26,S,CPSC-499,01,Senior Project Part 2,TBA,TBA,,Misc
+Trinity College,2026-27,F,CPSC-110,01,Essentials of Computing-Python,"Johnson, Jonathan",TR: 9:25AM-10:40AM,,Core
+Trinity College,2026-27,F,CPSC-115,01,Intro to Computer Science,"Miyazaki, Takunari",MWF: 10:00AM-10:50AM,,Core
+Trinity College,2026-27,F,CPSC-115,20,Intro to Computer Science,"Miyazaki, Takunari",W: 1:30PM-4:10PM,,Core
+Trinity College,2026-27,F,CPSC-115,21,Intro to Computer Science,"Syta, Ewa",R: 1:30PM-4:10PM,,Core
+Trinity College,2026-27,F,CPSC-215,01,Data Structures & Algorithms,Cancelled,,,Core
+Trinity College,2026-27,F,CPSC-215,20,Data Structures & Algorithms,Cancelled,,,Core
+Trinity College,2026-27,F,CPSC-275,01,Intro to Computer Systems,"Chakraborttii, Chandranil",MWF: 11:00AM-11:50AM,,Core
+Trinity College,2026-27,F,CPSC-275,20,Intro to Computer Systems,"Chakraborttii, Chandranil",W: 1:30PM-4:10PM,,Core
+Trinity College,2026-27,F,CPSC-275,21,Intro to Computer Systems,"Johnson, Jonathan",R: 1:30PM-4:10PM,,Core
+Trinity College,2026-27,F,CPSC-352,01,Artificial Intelligence,"Chakraborttii, Chandranil",MW: 8:30AM-9:45AM,,Artificial intelligence
+Trinity College,2026-27,F,CPSC-372,01,Database Fundamentals,"Johnson, Jonathan",TR: 10:50AM-12:05PM,,Databases
+Trinity College,2026-27,F,CPSC-385,01,Computer Security,"Syta, Ewa",TR: 9:25AM-10:40AM,,Computer security & privacy
+Trinity College,2026-27,F,CPSC-399,01,Independent Study,TBA,TBA,,Misc
+Trinity College,2026-27,F,CPSC-403,01,Computer Science Seminar,"Kousen, Kenneth",T: 1:30PM-2:45PM,,Misc
+Trinity College,2026-27,F,CPSC-403,02,Computer Science Seminar,"Kousen, Kenneth",T: 2:55PM-4:10PM,,Misc
+Trinity College,2026-27,F,CPSC-415,01,Special Topics: AI Integration,"Kousen, Kenneth",M: 1:30PM-4:10PM,,Artificial intelligence
+Trinity College,2026-27,F,CPSC-466,01,Teaching Assistant,TBA,TBA,,Misc
+Trinity College,2026-27,F,CPSC-490,01,Research Assistantship,TBA,TBA,,Misc
+Trinity College,2026-27,F,CPSC-498,01,Senior Project Part 1,TBA,TBA,,Misc
+Trinity College,2026-27,S,CPSC-110,01,Essentials of Computing-Python,"Johnson, Jonathan",MW: 11:30AM-12:45PM,,Core
+Trinity College,2026-27,S,CPSC-115,01,Intro to Computer Science,"Spezialetti, Madalene",TR: 10:50AM-12:05PM,,Core
+Trinity College,2026-27,S,CPSC-115,20,Intro to Computer Science,"Spezialetti, Madalene",T: 1:30PM-4:10PM,,Core
+Trinity College,2026-27,S,CPSC-115,21,Intro to Computer Science,"Johnson, Jonathan",W: 1:30PM-4:10PM,,Core
+Trinity College,2026-27,S,CPSC-203,01,Math Foundatns of Comput,"Miyazaki, Takunari",MWF: 10:00AM-10:50AM,,Core
+Trinity College,2026-27,S,CPSC-215,01,Data Structures & Algorithms,"Yoon, Peter",MWF: 12:00PM-12:50PM,,Core
+Trinity College,2026-27,S,CPSC-215,20,Data Structures & Algorithms,"Yoon, Peter",W: 1:30PM-4:10PM,,Core
+Trinity College,2026-27,S,CPSC-219,01,Theory of Computation,"Miyazaki, Takunari",MW: 8:30AM-9:45AM,,Algorithms & complexity
+Trinity College,2026-27,S,CPSC-315,01,Systems Software,"Spezialetti, Madalene",TR: 9:25AM-10:40AM,,Operating systems
+Trinity College,2026-27,S,CPSC-360,01,Deep Learning,"Chakraborttii, Chandranil",TR: 10:50AM-12:05PM,,Machine learning
+Trinity College,2026-27,S,CPSC-399,01,Independent Study,TBA,TBA,,Misc
+Trinity College,2026-27,S,CPSC-404,01,Computer Science Seminar,"Kousen, Kenneth",R: 1:30PM-2:45PM,,Misc
+Trinity College,2026-27,S,CPSC-404,02,Computer Science Seminar,"Kousen, Kenneth",R: 2:55PM-4:10PM,,Misc
+Trinity College,2026-27,S,CPSC-415,01,Special Topics: GPU Computing,"Yoon, Peter",MWF: 10:00AM-10:50AM,,High-performance computing
+Trinity College,2026-27,S,CPSC-466,01,Teaching Assistant,TBA,TBA,,Misc
+Trinity College,2026-27,S,CPSC-499,01,Senior Project Part 2,TBA,TBA,,Misc

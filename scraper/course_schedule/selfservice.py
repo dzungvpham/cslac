@@ -155,7 +155,7 @@ class EllucianSelfServiceScraper(CourseScheduleScraper):
     def url_for(self, academic_year, term):
         return f"{self.base_url}/Student/Courses/Search?subjects={self.subject}"
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         url = self.url_for(None, None)
         rows = self._load_and_parse(url)
         if rows is None:

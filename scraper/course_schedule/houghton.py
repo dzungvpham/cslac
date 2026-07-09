@@ -173,7 +173,7 @@ class HoughtonScraper(CourseScheduleScraper):
 
     request_timeout = 60
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         session = requests.Session()
         session.headers.update(
             {"User-Agent": "Mozilla/5.0 (cs-lac course-schedule scraper)"}

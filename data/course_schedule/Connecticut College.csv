@@ -224,3 +224,35 @@ Connecticut College,2025-26,S,COM 499,3,COMPUTER SCIENCE COLLOQUIUM,"Chung, Chri
 Connecticut College,2025-26,S,COM 499,4,COMPUTER SCIENCE COLLOQUIUM,"Lee, S. James",,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Connecticut College,2025-26,S,COM 499,5,COMPUTER SCIENCE COLLOQUIUM,"Tarimo, William",,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Connecticut College,2025-26,S,COM 499,6,COMPUTER SCIENCE COLLOQUIUM,"Becker, Tim",,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Connecticut College,2026-27,F,COM 110,1,CC:INTRO COMP SCI & PROB SOLV,"Lee, S. James",MW 10:25-11:40 (HALE BROWN),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Connecticut College,2026-27,F,COM 110L,1,INTRO COMP SCI/PROB SOLV LAB,"Lee, S. James",F 09:30-11:30 (LIB PC CLASS),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Connecticut College,2026-27,F,COM 110L,2,INTRO COMP SCI/PROB SOLV LAB,"Lee, S. James",F 12:00-14:00 (LIB PC CLASS),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Connecticut College,2026-27,F,COM 203,1,BIOINFORMATICS,"Douglass, Stephen",MF 11:50-13:05 (NLH 204),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Computational bio & bioinformatics
+Connecticut College,2026-27,F,COM 211,1,INTRODUCTION TO DATA SCIENCE,"Peitzsch, Robert",TTh 11:50-13:05 (FAN 101),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Data science
+Connecticut College,2026-27,F,COM 212,1,DATA STRUCTURES,"Parker, Gary",TTh 10:25-11:40 (NLH 214),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Connecticut College,2026-27,F,COM 219,1,COMPUTER ORGANIZATION,"Izmirli, Ozgur",MW 10:25-11:40 (NLH 214),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Connecticut College,2026-27,F,COM 304,1,ALGORITHMS,"Chung, Christine",TTh 10:25-11:40 (NLH 204),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Connecticut College,2026-27,F,COM 307,1,MACHINE LEARN/DATA MINING,"Douglass, Stephen",MF 13:15-14:30 (NLH 214),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Connecticut College,2026-27,F,COM 313,1,ALGORITHMIC GAME THEORY,"Chung, Christine",TTh 13:15-14:30 (NLH 204),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Economics & computation
+Connecticut College,2026-27,F,COM 316,1,ARTIFICIAL INTELLIGENCE,"Parker, Gary",TTh 14:45-16:00 (NLH 214),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Artificial intelligence
+Connecticut College,2026-27,F,COM 325,1,INTRO TO CYBERSECURITY,"Schaeffer, John",W 19:00-21:45 (FAN 101),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Computer security & privacy
+Connecticut College,2026-27,F,COM 326,1,OPERATING SYSTEMS,"Daggett, Thomas",MF 11:50-13:05 (NLH 214),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Operating systems
+Connecticut College,2026-27,F,COM 440,1,FRONTIERS IN COMPUTING,"Izmirli, Ozgur",MW 14:45-16:00 (OLIN 214),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Other
+Connecticut College,2026-27,F,COM 495,1,RESEARCH SEMINAR,"Izmirli, Ozgur",M 19:00-21:45 (NLH 200),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Connecticut College,2026-27,F,COM 495,2,RESEARCH SEMINAR,"Lee, S. James",T 19:00-21:45 (NLH 200),https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Connecticut College,2026-27,S,COM 110,1,CC:INTRO COMP SCI & PROB SOLV,"Becker, Tim",TTh 10:25-11:40,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Connecticut College,2026-27,S,COM 110L,1,INTRO COMP SCI/PROB SOLV LAB,"Becker, Tim",F 09:30-11:30,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Connecticut College,2026-27,S,COM 110L,2,INTRO COMP SCI/PROB SOLV LAB,"Becker, Tim",F 13:15-15:15,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Connecticut College,2026-27,S,COM 205,1,TOPICS IN SOFTWARE DEVELOPMENT,"Daggett, Thomas",M 19:00-21:45,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Connecticut College,2026-27,S,COM 212,1,DATA STRUCTURES,"Douglass, Stephen",MW 10:25-11:40,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Connecticut College,2026-27,S,COM 219,1,COMPUTER ORGANIZATION,"Lee, S. James",TTh 10:25-11:40,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Connecticut College,2026-27,S,COM 302,1,OBJECT-ORIENTED SOFTWARE DESGN,"Daggett, Thomas",MF 11:50-13:05,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Connecticut College,2026-27,S,COM 303,1,DATABASE SYSTEMS,"Peitzsch, Robert",TTh 11:50-13:05,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Databases
+Connecticut College,2026-27,S,COM 304,1,ALGORITHMS,"Chung, Christine",MW 14:45-16:00,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Connecticut College,2026-27,S,COM 305,1,TOPICS IN SOFTWARE DEVELOPMENT,"Daggett, Thomas",M 19:00-21:45,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Connecticut College,2026-27,S,COM 306,1,SOFTWARE ENGINEERING,"Peitzsch, Robert",TTh 14:45-16:00,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Connecticut College,2026-27,S,COM 315,1,COMPUTER NETWORKS,"To Be Assigned, .",MF 13:15-14:30,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Computer networks
+Connecticut College,2026-27,S,COM 320,1,PROGRAMMING LANGUAGES,"To Be Assigned, .",W 19:00-21:45,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Programming languages
+Connecticut College,2026-27,S,COM 428,1,GENERATIVE DATA MODELING,"Becker, Tim",TTh 13:15-14:30,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Connecticut College,2026-27,S,COM 496,1,RESEARCH SEMINAR,"Lee, S. James",T 19:00-21:45,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Connecticut College,2026-27,S,COM 496,2,RESEARCH SEMINAR,"Chung, Christine",F 09:00-11:45,https://reg-prod.ec.conncoll.edu/StudentRegistrationSsb/ssb/classSearch/classSearch,Misc

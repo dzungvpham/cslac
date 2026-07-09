@@ -99,7 +99,7 @@ class PresbyterianScraper(CourseScheduleScraper):
             mapping[((year, year + 1), TERM_SUFFIX_MAP[term_suffix])] = code
         return mapping
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         s = self._ensure_session()
         mapping = self._discover_terms()
         if not mapping:

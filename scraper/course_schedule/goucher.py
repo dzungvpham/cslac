@@ -75,7 +75,7 @@ class GoucherScraper(CourseScheduleScraper):
     def url_for(self, academic_year, term):
         return LIST_URL
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         try:
             self.load(self.url_for(None, None))
         except TimeoutException:

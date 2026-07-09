@@ -26,7 +26,7 @@ Kalamazoo College,2026-27,F,COMP-102,01,Prog. Basics: JavaScript/WebD,Sandino Va
 Kalamazoo College,2026-27,F,COMP-104,01,Prog Basics:Python/Scien Comp,Pamela A Cutter,T/Th 9:30 AM - 11:00 AM,,Core
 Kalamazoo College,2026-27,F,COMP-210,01,Data Structures,Tasnim H Gharaibeh,M/W/F 9:40 AM - 10:55 AM,,Core
 Kalamazoo College,2026-27,F,COMP-480,01,ST: Game Des & Dev,Sandino Vargas-Perez,M/W/F 2:45 PM - 4:00 PM,,Games & interactive art
-Kalamazoo College,2026-27,F,COMP-489,01,Mobile Computing,Pamela A Cutter,M/W/F 1:20 PM - 2:35 PM,,Mobile computing
+Kalamazoo College,2026-27,F,COMP-489,01,ST: Mobile Computing,Pamela A Cutter,M/W/F 1:20 PM - 2:35 PM,,Mobile computing
 Kalamazoo College,2026-27,F,COMP-490,01,SRSM: Game Des & Dev,Sandino Vargas-Perez,M/W/F 2:45 PM - 4:00 PM,,Games & interactive art
 Kalamazoo College,2026-27,F,COMP-490,02,SRSM: Mobile Computing,Pamela A Cutter,M/W/F 1:20 PM - 2:35 PM,,Mobile computing
 Kalamazoo College,2026-27,F,COMP-500,01,SIP Peer Review,Sandino Vargas-Perez,T 11:30 AM - 12:00 PM,,Misc
@@ -37,8 +37,8 @@ Kalamazoo College,2026-27,W,COMP-150L,01,Object Oriented Program Lab,Tasnim H Gh
 Kalamazoo College,2026-27,W,COMP-150L,02,Object Oriented Program Lab,Sandino Vargas-Perez,T 9:00 AM - 11:30 AM,,Core
 Kalamazoo College,2026-27,W,COMP-315,01,Computer Organization,Sandino Vargas-Perez,T/Th 2:10 PM - 4:00 PM,,Core
 Kalamazoo College,2026-27,W,COMP-320,01,Princ of Programming Languages,Pamela A Cutter,M/W/F 9:40 AM - 10:55 AM,,Programming languages
-Kalamazoo College,2026-27,W,COMP-482,01,Cybersecurity,Nicholas Polanco,M/W/F 2:45 PM - 4:00 PM,,Computer security & privacy
-Kalamazoo College,2026-27,W,COMP-486,01,Machine Learning,Tasnim H Gharaibeh,M/W/F 11:55 AM - 1:10 PM,,Machine learning
+Kalamazoo College,2026-27,W,COMP-482,01,ST: Cybersecurity,Nicholas Polanco,M/W/F 2:45 PM - 4:00 PM,,Computer security & privacy
+Kalamazoo College,2026-27,W,COMP-486,01,ST: Machine Learning,Tasnim H Gharaibeh,M/W/F 11:55 AM - 1:10 PM,,Machine learning
 Kalamazoo College,2026-27,S,COMP-101,01,Intro to Computers & Computing,Nicholas Polanco,M/F 8:15 AM - 9:30 AM,,Core
 Kalamazoo College,2026-27,S,COMP-103,01,Prog Basics: Python/Multimedia,Pamela A Cutter,T/Th 9:30 AM - 11:00 AM,,Core
 Kalamazoo College,2026-27,S,COMP-150,01,Object Oriented Programming,Nicholas Polanco,M/W/F 11:55 AM - 1:10 PM,,Core
@@ -48,4 +48,4 @@ Kalamazoo College,2026-27,S,COMP-215,01,Design & Anal. of Algorithms,Tasnim H Gh
 Kalamazoo College,2026-27,S,COMP-265,01,Cognitive Science,Peter Erdi,M/W/F 11:55 AM - 1:10 PM,,Unknown
 Kalamazoo College,2026-27,S,COMP-305,01,Software Development,Sandino Vargas-Perez,M/W/F 11:55 AM - 1:10 PM,,Software engineering
 Kalamazoo College,2026-27,S,COMP-400,01,"Automata, Langs, Computability",Pamela A Cutter,M/W/F 9:40 AM - 10:55 AM,,Algorithms & complexity
-Kalamazoo College,2026-27,S,COMP-481,01,Parallel Computing,Sandino Vargas-Perez,M/W/F 2:45 PM - 4:00 PM,,High-performance computing
+Kalamazoo College,2026-27,S,COMP-481,01,ST: Parallel Computing,Sandino Vargas-Perez,M/W/F 2:45 PM - 4:00 PM,,High-performance computing

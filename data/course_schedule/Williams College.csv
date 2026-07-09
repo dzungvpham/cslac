@@ -479,3 +479,98 @@ Williams College,2025-26,,CSCI 378,,LEC Human-AI Interaction,,Not offered,https:
 Williams College,2025-26,,CSCI 379,,LEC Causal Inference,,Not offered,https://catalog.williams.edu/2526/csci/detail/?strm=9999&cn=379&crsid=021861&req_year=26,Computational social science
 Williams College,2025-26,,CSCI 381,,LEC Deep Learning,,Not offered,https://catalog.williams.edu/2526/csci/detail/?strm=9999&cn=381&crsid=022329&req_year=26,Machine learning
 Williams College,2025-26,,CSCI 398,,IND Ind Reading: Computer Science,,Not offered,https://catalog.williams.edu/2526/csci/detail/?strm=9999&cn=398&crsid=010820&req_year=26,Misc
+Williams College,2026-27,F,CSCI 104,01,LEC Data Science and Computing,Stephen N. Freund,MWF 11:00 am - 11:50 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,F,CSCI 104,02,LAB Data Science and Computing,Stephen N. Freund,M 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,F,CSCI 104,03,LAB Data Science and Computing,Stephen N. Freund,M 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,F,CSCI 104,04,LEC Data Science and Computing,,Cancelled,https://catalog.williams.edu/csci/detail/?strm=1271&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,F,CSCI 104,05,LAB Data Science and Computing,,Cancelled,https://catalog.williams.edu/csci/detail/?strm=1271&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,F,CSCI 104,06,LAB Data Science and Computing,,Cancelled,https://catalog.williams.edu/csci/detail/?strm=1271&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,F,CSCI 134,01,LEC Intro to Computer Science,Rohit Bhattacharya,MWF 9:00 am - 9:50 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,F,CSCI 134,02,LEC Intro to Computer Science,Rohit Bhattacharya,MWF 10:00 am - 10:50 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,F,CSCI 134,03,LAB Intro to Computer Science,Rohit Bhattacharya,M 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,F,CSCI 134,04,LAB Intro to Computer Science,Lida P. Doret,M 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,F,CSCI 134,05,LAB Intro to Computer Science,Rohit Bhattacharya,T 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,F,CSCI 134,06,LAB Intro to Computer Science,Lida P. Doret,T 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,F,CSCI 136,01,LEC Data Strctures & Advanced Prog,James M. Bern,MWF 9:00 am - 9:50 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,F,CSCI 136,02,LEC Data Strctures & Advanced Prog,James M. Bern,MWF 10:00 am - 10:50 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,F,CSCI 136,03,LAB Data Strctures & Advanced Prog,James M. Bern,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,F,CSCI 136,04,LAB Data Strctures & Advanced Prog,Lida P. Doret,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,F,CSCI 136,05,LAB Data Strctures & Advanced Prog,James M. Bern,W 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,F,CSCI 136,06,LAB Data Strctures & Advanced Prog,Lida P. Doret,W 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,F,CSCI 237,01,LEC Computer Organization,Kelly A. Shaw,MWF 11:00 am - 11:50 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=237&crsid=010805&req_year=27,Core
+Williams College,2026-27,F,CSCI 237,02,LEC Computer Organization,Kelly A. Shaw,MWF 12:00 pm - 12:50 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=237&crsid=010805&req_year=27,Core
+Williams College,2026-27,F,CSCI 237,03,LAB Computer Organization,Kelly A. Shaw,R 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=237&crsid=010805&req_year=27,Core
+Williams College,2026-27,F,CSCI 237,04,LAB Computer Organization,Kelly A. Shaw,R 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=237&crsid=010805&req_year=27,Core
+Williams College,2026-27,F,CSCI 256,01,LEC Algorithm Design & Analysis,Shikha Singh,MWF 11:00 am - 11:50 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=256&crsid=010806&req_year=27,Core
+Williams College,2026-27,F,CSCI 256,02,LEC Algorithm Design & Analysis,Shikha Singh,MWF 12:00 pm - 12:50 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=256&crsid=010806&req_year=27,Core
+Williams College,2026-27,F,CSCI 270,01,LEC Foundations of AI,Mark Hopkins,TR 9:55 am - 11:10 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=270&crsid=023017&req_year=27,Artificial intelligence
+Williams College,2026-27,F,CSCI 270,02,LAB Foundations of AI,Mark Hopkins,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=270&crsid=023017&req_year=27,Artificial intelligence
+Williams College,2026-27,F,CSCI 333,01,LEC Storage Systems,Bill K. Jannen,MR 2:35 pm - 3:50 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=333&crsid=020968&req_year=27,Computer architecture
+Williams College,2026-27,F,CSCI 333,02,LAB Storage Systems,Bill K. Jannen,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=333&crsid=020968&req_year=27,Misc
+Williams College,2026-27,F,CSCI 333,03,LAB Storage Systems,Bill K. Jannen,W 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=333&crsid=020968&req_year=27,Misc
+Williams College,2026-27,F,CSCI 334,01,LEC Principles of Programming Lang,Daniel W. Barowy,TR 9:55 am - 11:10 am,https://catalog.williams.edu/csci/detail/?strm=1271&cn=334&crsid=010808&req_year=27,Programming languages
+Williams College,2026-27,F,CSCI 334,02,LAB Principles of Programming Lang,Daniel W. Barowy,T 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=334&crsid=010808&req_year=27,Programming languages
+Williams College,2026-27,F,CSCI 334,03,LAB Principles of Programming Lang,Daniel W. Barowy,T 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=334&crsid=010808&req_year=27,Programming languages
+Williams College,2026-27,F,CSCI 339,01,LEC Distributed Systems,Jeannie R Albrecht,MR 1:10 pm - 2:25 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=339&crsid=018184&req_year=27,Distributed systems
+Williams College,2026-27,F,CSCI 375,01,LEC Natural Language Processing,Nate  Chambers,TF 1:10 pm - 2:25 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=375&crsid=020558&req_year=27,Natural language processing
+Williams College,2026-27,F,CSCI 375,02,LAB Natural Language Processing,Nate  Chambers,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=375&crsid=020558&req_year=27,Misc
+Williams College,2026-27,F,CSCI 382,01,LEC Responsible AI,Lucas Anton Rosenblatt,MR 1:10 pm - 2:25 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=382&crsid=023336&req_year=27,Other
+Williams College,2026-27,F,CSCI 382,02,LAB Responsible AI,Lucas Anton Rosenblatt,M 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=382&crsid=023336&req_year=27,Misc
+Williams College,2026-27,F,CSCI 397,01,IND Ind Reading: Computer Science,Jeannie R Albrecht,TBA,https://catalog.williams.edu/csci/detail/?strm=1271&cn=397&crsid=010819&req_year=27,Misc
+Williams College,2026-27,F,CSCI 434,T1,TUT Compiler Design,Stephen N. Freund,TBA,https://catalog.williams.edu/csci/detail/?strm=1271&cn=434&crsid=010822&req_year=27,Programming languages
+Williams College,2026-27,F,CSCI 434,T2,LAB Compiler Design,Stephen N. Freund,F 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1271&cn=434&crsid=010822&req_year=27,Misc
+Williams College,2026-27,F,CSCI 493,01,HON Research in Computer Science,Jeannie R Albrecht,TBA,https://catalog.williams.edu/csci/detail/?strm=1271&cn=493&crsid=010824&req_year=27,Misc
+Williams College,2026-27,F,CSCI 497,01,IND Ind Reading: Computer Science,Jeannie R Albrecht,TBA,https://catalog.williams.edu/csci/detail/?strm=1271&cn=497&crsid=010826&req_year=27,Misc
+Williams College,2026-27,S,CSCI 102,T1,TUT The Socio-Techno Web,Bill K. Jannen,TBA,https://catalog.williams.edu/csci/detail/?strm=1273&cn=102&crsid=019459&req_year=27,Computational social science
+Williams College,2026-27,S,CSCI 104,01,LEC Data Science and Computing,Stephen N. Freund,MWF 11:00 am - 11:50 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,S,CSCI 104,02,LAB Data Science and Computing,Stephen N. Freund,M 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,S,CSCI 104,03,LAB Data Science and Computing,Stephen N. Freund,M 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=104&crsid=022117&req_year=27,Data science
+Williams College,2026-27,S,CSCI 134,01,LEC Intro to Computer Science,Jeannie R Albrecht,MWF 10:00 am - 10:50 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,S,CSCI 134,02,LEC Intro to Computer Science,Lucas Anton Rosenblatt,MWF 11:00 am - 11:50 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,S,CSCI 134,03,LAB Intro to Computer Science,Jeannie R Albrecht,M 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,S,CSCI 134,04,LAB Intro to Computer Science,Lida P. Doret,M 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,S,CSCI 134,05,LAB Intro to Computer Science,Lucas Anton Rosenblatt,T 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,S,CSCI 134,06,LAB Intro to Computer Science,Lida P. Doret,T 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=134&crsid=010801&req_year=27,Core
+Williams College,2026-27,S,CSCI 136,01,LEC Data Strctures & Advanced Prog,Daniel W. Barowy,MWF 9:00 am - 9:50 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,S,CSCI 136,02,LEC Data Strctures & Advanced Prog,Daniel W. Barowy,MWF 10:00 am - 10:50 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,S,CSCI 136,03,LAB Data Strctures & Advanced Prog,Daniel W. Barowy,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,S,CSCI 136,04,LAB Data Strctures & Advanced Prog,Lida P. Doret,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,S,CSCI 136,05,LAB Data Strctures & Advanced Prog,Daniel W. Barowy,W 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,S,CSCI 136,06,LAB Data Strctures & Advanced Prog,Lida P. Doret,W 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=136&crsid=010803&req_year=27,Core
+Williams College,2026-27,S,CSCI 237,01,LEC Computer Organization,Bill K. Jannen,MWF 9:00 am - 9:50 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=237&crsid=010805&req_year=27,Core
+Williams College,2026-27,S,CSCI 237,02,LAB Computer Organization,Bill K. Jannen,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=237&crsid=010805&req_year=27,Core
+Williams College,2026-27,S,CSCI 256,01,LEC Algorithm Design & Analysis,Aaron M. Williams,MWF 11:00 am - 12:15 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=256&crsid=010806&req_year=27,Core
+Williams College,2026-27,S,CSCI 270,01,LEC Foundations of AI,Nate  Chambers,MR 1:10 pm - 2:25 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=270&crsid=023017&req_year=27,Artificial intelligence
+Williams College,2026-27,S,CSCI 270,02,LEC Foundations of AI,Nate  Chambers,MR 2:35 pm - 3:50 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=270&crsid=023017&req_year=27,Artificial intelligence
+Williams College,2026-27,S,CSCI 270,03,LAB Foundations of AI,Nate  Chambers,W 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=270&crsid=023017&req_year=27,Artificial intelligence
+Williams College,2026-27,S,CSCI 270,04,LAB Foundations of AI,Nate  Chambers,W 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=270&crsid=023017&req_year=27,Artificial intelligence
+Williams College,2026-27,S,CSCI 315,01,LEC Computational Biology,Daniel P. Aalberts,MR 1:10 pm - 2:25 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=315&crsid=016952&req_year=27,Computational bio & bioinformatics
+Williams College,2026-27,S,CSCI 317,01,LEC Computational Neuroscience,,Cancelled,https://catalog.williams.edu/csci/detail/?strm=1273&cn=317&crsid=023092&req_year=27,Computational bio & bioinformatics
+Williams College,2026-27,S,CSCI 337,T1,TUT Advanced Architecture,Kelly A. Shaw,TBA,https://catalog.williams.edu/csci/detail/?strm=1273&cn=337&crsid=010810&req_year=27,Misc
+Williams College,2026-27,S,CSCI 337,T2,LAB Advanced Architecture,Kelly A. Shaw,R 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=337&crsid=010810&req_year=27,Misc
+Williams College,2026-27,S,CSCI 341,01,LEC Computer Graphics,James M. Bern,W 7:00 pm - 9:40 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=341&crsid=010816&req_year=27,Computer graphics
+Williams College,2026-27,S,CSCI 341,02,LAB Computer Graphics,James M. Bern,T 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=341&crsid=010816&req_year=27,Computer graphics
+Williams College,2026-27,S,CSCI 341,03,LAB Computer Graphics,James M. Bern,T 2:30 pm - 4:00 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=341&crsid=010816&req_year=27,Computer graphics
+Williams College,2026-27,S,CSCI 357,01,LEC Algorithmic Game Theory,Shikha Singh,TF 1:10 pm - 2:25 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=357&crsid=021606&req_year=27,Economics & computation
+Williams College,2026-27,S,CSCI 361,01,LEC Theory of Computation,Samuel McCauley,TR 9:55 am - 11:10 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=361&crsid=010814&req_year=27,Algorithms & complexity
+Williams College,2026-27,S,CSCI 375,01,LEC Natural Language Processing,Katie A. Keith,TR 8:30 am - 9:45 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=375&crsid=020558&req_year=27,Natural language processing
+Williams College,2026-27,S,CSCI 379,01,LEC Causal Inference,Rohit Bhattacharya,MR 2:35 pm - 3:50 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=379&crsid=021861&req_year=27,Computational social science
+Williams College,2026-27,S,CSCI 381,01,LEC Deep Learning,Mark Hopkins,MR 1:10 pm - 2:25 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=381&crsid=022329&req_year=27,Machine learning
+Williams College,2026-27,S,CSCI 382,01,LEC Responsible AI,Lucas Anton Rosenblatt,TR 9:55 am - 11:10 am,https://catalog.williams.edu/csci/detail/?strm=1273&cn=382&crsid=023336&req_year=27,Other
+Williams College,2026-27,S,CSCI 382,02,LAB Responsible AI,Lucas Anton Rosenblatt,R 1:00 pm - 2:30 pm,https://catalog.williams.edu/csci/detail/?strm=1273&cn=382&crsid=023336&req_year=27,Misc
+Williams College,2026-27,S,CSCI 398,01,IND Ind Reading: Computer Science,Jeannie R Albrecht,TBA,https://catalog.williams.edu/csci/detail/?strm=1273&cn=398&crsid=010820&req_year=27,Misc
+Williams College,2026-27,S,CSCI 494,01,HON Senior Thesis:Computer Science,Jeannie R Albrecht,TBA,https://catalog.williams.edu/csci/detail/?strm=1273&cn=494&crsid=010825&req_year=27,Misc
+Williams College,2026-27,S,CSCI 498,01,IND Ind Reading: Computer Science,Jeannie R Albrecht,TBA,https://catalog.williams.edu/csci/detail/?strm=1273&cn=498&crsid=010827&req_year=27,Misc
+Williams College,2026-27,,CSCI 10,,LEC Unix and Software Tools,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=10&crsid=013427&req_year=27,Software engineering
+Williams College,2026-27,,CSCI 23,,RSC Research in Computing,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=23&crsid=019063&req_year=27,Misc
+Williams College,2026-27,,CSCI 31,,HON Senior Thesis:Computer Science,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=31&crsid=013432&req_year=27,Misc
+Williams College,2026-27,,CSCI 319,,"LEC Bioinfrmtcs,Genomics,Proteomcs",,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=319&crsid=017478&req_year=27,Computational bio & bioinformatics
+Williams College,2026-27,,CSCI 331,,LEC Intro to Computer Security,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=331&crsid=020794&req_year=27,Computer security & privacy
+Williams College,2026-27,,CSCI 335,,LEC Databases,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=335&crsid=023061&req_year=27,Databases
+Williams College,2026-27,,CSCI 338,,LEC Parallel Processing,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=338&crsid=010811&req_year=27,High-performance computing
+Williams College,2026-27,,CSCI 345,,LEC Robotics & Digital Fabrication,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=345&crsid=022328&req_year=27,Robotics
+Williams College,2026-27,,CSCI 358,,LEC Applied Algorithms,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=358&crsid=021450&req_year=27,Algorithms & complexity
+Williams College,2026-27,,CSCI 359,,LEC Gray Codes,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=359&crsid=023018&req_year=27,Algorithms & complexity
+Williams College,2026-27,,CSCI 374,,LEC Machine Learning,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=374&crsid=017427&req_year=27,Machine learning
+Williams College,2026-27,,CSCI 432,,LEC Operating Systems,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=432&crsid=010821&req_year=27,Operating systems
+Williams College,2026-27,,CSCI 99,,IND Indep Study:Computer Science,,Not offered,https://catalog.williams.edu/csci/detail/?strm=9999&cn=99&crsid=013433&req_year=27,Misc

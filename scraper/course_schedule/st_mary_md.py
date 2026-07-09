@@ -61,7 +61,7 @@ class StMaryMdScraper(CourseScheduleScraper):
     def url_for(self, academic_year, term):
         return FORM_URL
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         rows = []
         try:
             self._load_form()

@@ -86,7 +86,7 @@ class WoffordScraper(CourseScheduleScraper):
     terms = []  # discovery is per-year probing
     fresh_driver_per_load = False
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         rows = []
         for ay in self.past_academic_years(self.years_back):
             for term, mm in TERM_PROBES:

@@ -1,5 +1,5 @@
 import argparse
-from collections import Counter
+from collections import Counter, defaultdict
 import difflib
 import pandas as pd
 import json
@@ -1132,13 +1132,19 @@ faculty_url_override_map = {
 # path can't apply the department-specific filtering we need.
 skip_auto_detect = {
     College.MACALESTER,
+    # Auto-detect ignores the `#filter=.math-computer-science` fragment and
+    # scrapes the whole faculty directory (~14 incl. adjuncts/non-CS); the
+    # hardcoded scraper selects only the `math-computer-science` cards.
+    College.BRIDGEWATER,
 }
 
 # Some colleges actively block requests
 use_selenium_map = {
     College.BEREA: True,      # JS-rendered
+    College.BETHANY_LUTHERAN: True,  # blocks requests (403); Selenium works
     College.CORNELL: True,
     College.DREW: True,
+    College.WHEATON_IL: True,  # blocks requests (403); Selenium works
     College.HANOVER: True,    # faculty urls are dynamically generated
     College.HARTWICK: True,   # slick carousel, JS-rendered
     College.HAVERFORD: True,  # blocks requests
@@ -1171,6 +1177,7 @@ def create_selenium_driver():
 
 
 def retry_with_selenium(driver, url):
+    driver.set_page_load_timeout(60)
     driver.get(url)
     time.sleep(10)
     return driver.page_source
@@ -1287,7 +1294,21 @@ def get_faculty_list(df):
 
         if name in use_selenium_map:
             print(f"Retrying {name} with Selenium...")
-            text = retry_with_selenium(driver, url)
+            # A single Selenium timeout must not kill the whole run. Catch it,
+            # recreate the (possibly wedged) driver so later colleges still work,
+            # and skip this one — it'll show up as a drop in validation and can
+            # be re-scraped in isolation via --college.
+            try:
+                text = retry_with_selenium(driver, url)
+            except Exception as e:
+                print(f"  Selenium fetch failed for {name}: {e!r}; "
+                      f"recreating driver and skipping this college.")
+                try:
+                    driver.quit()
+                except Exception:
+                    pass
+                driver = create_selenium_driver()
+                text = None
 
         print(f"Parsing {name}...")
         if text is None:
@@ -1406,6 +1427,57 @@ def fix_urls(target, output):
 FACULTY_LIST_COLUMNS = ["name", "title", "college", "url"]
 
 
+def sort_faculty_list(df):
+    """Stable sort by (college, name, title), case-insensitive — the canonical
+    order for ``faculty_list.csv`` and its row-aligned sibling CSVs. The
+    downstream stages rebuild in ``faculty_list.csv`` order, so sorting here
+    propagates the order to every sibling on the next run."""
+    return df.sort_values(
+        by=["college", "name", "title"],
+        key=lambda col: col.str.lower(),
+        kind="stable",
+        ignore_index=True,
+    )
+
+
+def carry_forward_urls(results, existing):
+    """Preserve curated URLs across a re-scrape: for any faculty member whose
+    ``(name, college)`` already appears in ``existing`` with a non-empty URL,
+    keep that URL instead of the freshly-scraped one (preferring an exact
+    ``(name, title, college)`` match when a member has several rows). Only
+    brand-new faculty — or those whose prior URL was blank — take the scraped
+    URL. This stops a re-scrape from dropping a member's URL or swapping a
+    curated personal site for a generic directory page (or the Google-search
+    fallback's occasional garbage)."""
+    if existing is None or len(existing) == 0:
+        return results
+    exact, by_name_college = {}, defaultdict(set)
+    for r in existing.itertuples(index=False):
+        u = "" if pd.isna(r.url) else str(r.url).strip()
+        if u:
+            exact[(r.name, r.title, r.college)] = u
+            by_name_college[(r.name, r.college)].add(u)
+    results = results.copy()
+    new_urls, kept = [], 0
+    for r in results.itertuples(index=False):
+        scraped = "" if pd.isna(r.url) else str(r.url).strip()
+        old = exact.get((r.name, r.title, r.college))
+        if old is None:
+            cands = by_name_college.get((r.name, r.college))
+            if cands and len(cands) == 1:
+                old = next(iter(cands))
+        if old is not None:
+            kept += old != scraped
+            new_urls.append(old)
+        else:
+            new_urls.append(r.url)
+    results["url"] = new_urls
+    if kept:
+        print(f"Carried forward {kept} existing URL(s) the scrape would have "
+              f"changed or dropped.")
+    return results
+
+
 def merge_colleges_into_faculty_list(existing, results):
     """Splice freshly-scraped rows for one or more colleges into an existing
     ``faculty_list`` frame (used by the ``--college`` path).
@@ -1415,11 +1487,21 @@ def merge_colleges_into_faculty_list(existing, results):
     college keeps its row position, so the row-aligned sibling CSVs stay aligned
     for the untouched colleges. (Re-scraping a college whose row count changed
     still requires re-running the downstream stages for that college.)
+
+    Replaced rows are sorted by (name, title) within the college's block, so a
+    re-scrape of an existing college keeps the file globally sorted. (A
+    brand-new college is still appended out of order; a full re-scrape — which
+    calls ``sort_faculty_list`` — is what restores global order for additions.)
     """
     cols = FACULTY_LIST_COLUMNS
     targets = list(dict.fromkeys(results["college"].tolist()))
-    by_college = {c: results[results["college"] == c][cols].to_dict("records")
-                  for c in targets}
+    by_college = {
+        c: sorted(
+            results[results["college"] == c][cols].to_dict("records"),
+            key=lambda r: (r["name"].lower(), r["title"].lower()),
+        )
+        for c in targets
+    }
     out, inserted = [], set()
     for _, row in existing.iterrows():
         c = row["college"]
@@ -1470,6 +1552,7 @@ if __name__ == "__main__":
         except FileNotFoundError:
             existing = pd.DataFrame(columns=FACULTY_LIST_COLUMNS)
         replaced = sorted(set(results["college"]) & set(existing["college"]))
+        results = carry_forward_urls(results, existing)
         merged = merge_colleges_into_faculty_list(existing, results)
         merged.to_csv(OUTPUT, index=False)
         print(f"\nMerged {sorted(set(results['college']))} into {OUTPUT} "
@@ -1478,4 +1561,11 @@ if __name__ == "__main__":
             print(f"  NOTE: replaced existing rows for {replaced}. Re-run stages "
                   f"2/3/6/9 (or regenerate) so the row-aligned sibling CSVs match.")
     else:
+        results = results[FACULTY_LIST_COLUMNS]
+        try:
+            existing = pd.read_csv(OUTPUT)
+        except FileNotFoundError:
+            existing = None
+        results = carry_forward_urls(results, existing)
+        results = sort_faculty_list(results)
         results.to_csv(OUTPUT, index=False)

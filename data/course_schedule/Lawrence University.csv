@@ -1,4 +1,187 @@
 college,academic_year,term,course_code,section,course_name,instructor,time,url,category
+Lawrence University,2022-23,F,CMSC 140,0,Introduction to Programming with Python,Acacia Ackles,Th 10:25-12:10 (000055 419); MW 09:50-11:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,F,CMSC 150,0,Introduction to Computer Science,Kurt Krebsbach,T 10:25-12:10 (000055 419); MWF 13:50-15:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,F,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 445,0,Mobile Application Development,Professor Joseph N. Gregg,MWF 11:10-12:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Mobile computing
+Lawrence University,2022-23,F,CMSC 510,0,Data Structures and Algorithm Analysis,"Professor Joseph N. Gregg, Acacia Ackles",MWF 15:10-16:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,F,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,F,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 140,0,Introduction to Programming with Python,Acacia Ackles,Th 08:30-10:15 (000055 419); MW 13:50-15:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,W,CMSC 150,0,Introduction to Computer Science,Acacia Ackles,T 08:30-10:15 (000055 419); MWF 09:50-11:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,W,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 205,0,Data-Scientific Programming,Mr. Andrew J. Sage,TTh 14:35-16:20 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Data science
+Lawrence University,2022-23,W,CMSC 208,0,Machine Learning,Abhishek Chakraborty,TTh 12:40-14:25 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Lawrence University,2022-23,W,CMSC 250,0,Intermediate Programming Concepts,Professor Joseph N. Gregg,MWF 09:50-11:00 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,W,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 435,0,Computer Organization & Architecture,Kurt Krebsbach,TTh 10:25-12:10 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Computer architecture
+Lawrence University,2022-23,W,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 600,0,Computer Science Senior Seminar,Kurt Krebsbach,TTh 12:40-14:25 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,W,CMSC 699,0,Independent Study in Computer Science,Professor Joseph N. Gregg,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 150,0,Introduction to Computer Science,Kurt Krebsbach,T 10:25-12:10 (000055 419); MWF 11:10-12:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,S,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 205,0,Data-Scientific Programming,Abhishek Chakraborty,TTh 08:30-10:15 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Data science
+Lawrence University,2022-23,S,CMSC 208,0,Machine Learning,Abhishek Chakraborty,TTh 10:25-12:10 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Lawrence University,2022-23,S,CMSC 270,0,Introduction to Data Structures,Acacia Ackles,MWF 13:50-15:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,S,CMSC 270,0,Introduction to Data Structures,Kurt Krebsbach,MWF 09:50-11:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2022-23,S,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 406,0,Web Development,Professor Joseph N. Gregg,TTh 14:35-16:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Lawrence University,2022-23,S,CMSC 420,0,Computer Graphics,Professor Joseph N. Gregg,MWF 15:10-16:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Computer graphics
+Lawrence University,2022-23,S,CMSC 500,0,TOP: ARTIFICIAL LIFE,Acacia Ackles,TTh 12:40-14:25 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Artificial intelligence
+Lawrence University,2022-23,S,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2022-23,S,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 150,0,Introduction to Computer Science,"Scott Corry, Acacia Ackles",MWF 09:50-11:00 (000055 419); Th 10:25-12:10 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2023-24,F,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 480,0,Systems Programming,Professor Joseph N. Gregg,MWF 11:10-12:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Operating systems
+Lawrence University,2023-24,F,CMSC 490,0,Neural Networks,Professor Joseph N. Gregg,MWF 15:10-16:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Lawrence University,2023-24,F,CMSC 510,0,Data Structures and Algorithm Analysis,"Scott Corry, Acacia Ackles",MWF 13:50-15:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2023-24,F,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,F,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 140,0,Introduction to Programming with Python,Acacia Ackles,MWF 08:30-09:40 (000060 041),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2023-24,W,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 205,0,Data-Scientific Programming,Abhishek Chakraborty,TTh 14:35-16:20 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Data science
+Lawrence University,2023-24,W,CMSC 250,0,Intermediate Programming Concepts,Professor Joseph N. Gregg,MWF 09:50-11:00 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2023-24,W,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 470,0,Artificial Intelligence,Kurt Krebsbach,TTh 10:25-12:10 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Artificial intelligence
+Lawrence University,2023-24,W,CMSC 510,0,Data Structures and Algorithm Analysis,Professor Joseph N. Gregg,MWF 13:50-15:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2023-24,W,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 600,0,Computer Science Senior Seminar,Kurt Krebsbach,TTh 12:40-14:25 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,W,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 106,0,Web Client Programming,Professor Joseph N. Gregg,MWF 15:10-16:20 (000055 420),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Lawrence University,2023-24,S,CMSC 150,0,Introduction to Computer Science,Kurt Krebsbach,T 10:25-12:10 (000055 419); MWF 11:10-12:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2023-24,S,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 205,0,Data-Scientific Programming,Mr. Andrew J. Sage,TTh 10:25-12:10 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Data science
+Lawrence University,2023-24,S,CMSC 208,0,Machine Learning,Abhishek Chakraborty,TTh 12:40-14:25 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Lawrence University,2023-24,S,CMSC 250,0,Intermediate Programming Concepts,Acacia Ackles,MWF 08:30-09:40 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2023-24,S,CMSC 270,0,Introduction to Data Structures,Kurt Krebsbach,MWF 13:50-15:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2023-24,S,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 455,0,Back End Programming,Professor Joseph N. Gregg,MWF 09:50-11:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Lawrence University,2023-24,S,CMSC 515,0,Theory of Computation,Acacia Ackles,MWF 11:10-12:20 (000055 422),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Lawrence University,2023-24,S,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2023-24,S,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 150,0,Introduction to Computer Science,Kurt Krebsbach,T 10:25-12:10 (000055 419); MWF 11:10-12:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,F,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 205,0,Data-Scientific Programming,Abhishek Chakraborty,TTh 12:40-14:25 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Data science
+Lawrence University,2024-25,F,CMSC 270,0,Introduction to Data Structures,Kurt Krebsbach,MWF 09:50-11:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,F,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 445,0,Mobile Application Development,Professor Joseph N. Gregg,MWF 15:10-16:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Mobile computing
+Lawrence University,2024-25,F,CMSC 510,0,Data Structures and Algorithm Analysis,Acacia Ackles,TTh 10:25-12:10 (000055 224),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,F,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 698,0,Computer Science Senior Projects,Professor Joseph N. Gregg,TTh 12:40-14:25 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,F,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 140,0,Introduction to Programming with Python,Acacia Ackles,MWF 08:30-09:40 (000055 225),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,W,CMSC 150,0,Introduction to Computer Science,Kurt Krebsbach,T 10:25-12:10 (000055 419); MWF 11:10-12:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,W,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 208,0,Statistical Machine Learning,Abhishek Chakraborty,TTh 10:25-12:10 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Lawrence University,2024-25,W,CMSC 250,0,Intermediate Programming Concepts,Professor Joseph N. Gregg,MWF 09:50-11:00 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,W,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 435,0,Computer Organization & Architecture,Kurt Krebsbach,MWF 13:50-15:00 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Computer architecture
+Lawrence University,2024-25,W,CMSC 510,0,Data Structures and Algorithm Analysis,Professor Joseph N. Gregg,MWF 15:10-16:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,W,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 600,0,Computer Science Senior Seminar,Acacia Ackles,TTh 12:40-14:25 (000080 202),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,W,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 191,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 195,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 205,0,Data-Scientific Programming,Abhishek Chakraborty,TTh 10:25-12:10 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Data science
+Lawrence University,2024-25,S,CMSC 208,0,Statistical Machine Learning,Abhishek Chakraborty,MWF 09:50-11:00 (000055 421),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Lawrence University,2024-25,S,CMSC 250,0,Intermediate Programming Concepts,Ahilan Sivasamy,MWF 08:30-09:40 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,S,CMSC 270,0,Introduction to Data Structures,Ahilan Sivasamy,TTh 10:25-12:10 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2024-25,S,CMSC 390,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 391,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 395,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 399,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 406,0,Web Development,Professor Joseph N. Gregg,MW 15:10-16:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Lawrence University,2024-25,S,CMSC 420,0,Computer Graphics,Professor Joseph N. Gregg,MWF 11:10-12:20 (000055 419),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Computer graphics
+Lawrence University,2024-25,S,CMSC 590,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 591,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 595,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 599,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 690,0,Tutorial Studies in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 691,0,Directed Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 695,0,INTERNSHIP IN COMPUTER SCIENCE,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2024-25,S,CMSC 699,0,Independent Study in Computer Science,,,https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
 Lawrence University,2025-26,F,CMSC 150,0,Introduction to Computer Science,"Krebsbach, Kurt",T 10:25-12:10 (000116 238); MWF 13:50-15:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Lawrence University,2025-26,F,CMSC 270,0,Introduction to Data Structures,"Diederich, Kyle",MWF 11:10-12:20 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
 Lawrence University,2025-26,F,CMSC 490,0,Neural Networks,"Gregg, Joseph, Diederich, Kyle",MWF 15:10-16:20 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
@@ -23,3 +206,24 @@ Lawrence University,2025-26,S,CMSC 405,0,Advanced Data Computing,"Chakraborty, A
 Lawrence University,2025-26,S,CMSC 455,0,Back End Programming,"Gregg, Joseph",MWF 09:50-11:00 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
 Lawrence University,2025-26,S,CMSC 470,0,Artificial Intelligence,"Krebsbach, Kurt",MWF 11:10-12:20 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Artificial intelligence
 Lawrence University,2025-26,S,CMSC 515,0,Theory of Computation,"Ackles, Acacia",TTh 12:40-14:25 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Algorithms & complexity
+Lawrence University,2026-27,F,CMSC 106,A,Web Client Programming,Professor Joseph N. Gregg,MWF 09:50-11:00 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Lawrence University,2026-27,F,CMSC 150,A,Introduction to Computer Science,Kurt Krebsbach,MWF 09:50-11:00 (000116 238); T 10:25-12:10 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,F,CMSC 208,A,Statistical Machine Learning,Abhishek Chakraborty,MWF 13:50-15:00 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Lawrence University,2026-27,F,CMSC 225,A,Database Techniques and Modeling,Kyle Diederich,MWF 11:10-12:20 (000116),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Databases
+Lawrence University,2026-27,F,CMSC 445,A,Mobile Application Development,Professor Joseph N. Gregg,MWF 15:10-16:20 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Mobile computing
+Lawrence University,2026-27,F,CMSC 510,A,Data Structures and Algorithm Analysis,Kyle Diederich,MWF 13:50-15:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,F,CMSC 698,A,Computer Science Senior Projects,Acacia Ackles,TTh 10:25-12:10 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2026-27,W,CMSC 140,A,Introduction to Programming with Python,Kurt Krebsbach,MWF 09:50-11:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,W,CMSC 150,A,Introduction to Computer Science,Kyle Diederich,MWF 09:50-11:00 (000116 220); T 10:25-12:10 (000116 220),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,W,CMSC 205,A,Data-Scientific Programming,Mr. Andrew J. Sage,TTh 10:25-12:10 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Data science
+Lawrence University,2026-27,W,CMSC 208,A,Statistical Machine Learning,Abhishek Chakraborty,MWF 11:10-12:20 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Machine learning
+Lawrence University,2026-27,W,CMSC 250,A,Intermediate Programming Concepts,Kyle Diederich,MWF 15:10-16:20 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,W,CMSC 435,A,Computer Organization & Architecture,Kurt Krebsbach,MWF 11:10-12:20 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Computer architecture
+Lawrence University,2026-27,W,CMSC 510,A,Data Structures and Algorithm Analysis,Acacia Ackles,MWF 13:50-15:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,W,CMSC 600,A,Computer Science Senior Seminar,Acacia Ackles,TTh 12:40-14:25 (000116 226),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Misc
+Lawrence University,2026-27,S,CMSC 140,A,Introduction to Programming with Python,Acacia Ackles,MWF 09:50-11:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,S,CMSC 225,A,Database Techniques and Modeling,Kyle Diederich,MWF 13:50-15:00 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Databases
+Lawrence University,2026-27,S,CMSC 250,A,Intermediate Programming Concepts,Acacia Ackles,MWF 11:10-12:20 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,S,CMSC 270,A,Introduction to Data Structures,Kyle Diederich,MWF 11:10-12:20 (000116 230),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Core
+Lawrence University,2026-27,S,CMSC 406,A,Web Development,Professor Joseph N. Gregg,MWF 11:10-12:20 (000116 234),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Software engineering
+Lawrence University,2026-27,S,CMSC 420,A,Computer Graphics,Professor Joseph N. Gregg,MWF 15:10-16:20 (000116 238),https://bannerweb.lawrence.edu/prod-StudentRegistrationSsb/ssb/classSearch/classSearch,Computer graphics

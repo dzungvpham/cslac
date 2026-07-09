@@ -246,3 +246,54 @@ Hope College,2025-26,S,CSCI 490R,03,Research in Computer Science,"Jipping, Micha
 Hope College,2025-26,S,CSCI 490R,04,Research in Computer Science,"McFall, Ryan L.",TBA,,Misc
 Hope College,2025-26,S,CSCI 490R,05,Research in Computer Science,"Olagbemi, Omofolakunmi E.",TBA,,Misc
 Hope College,2025-26,S,CSCI 491,01,Internship in Computer Science,"Jipping, Michael J.",TBA,,Misc
+Hope College,2026-27,F,CSCI 112,01,Exploring Computer Science,"McFall, Ryan L.",MW 8:00am-9:20am,,Computer science education
+Hope College,2026-27,F,CSCI 115,01,Intro to Programming w/ Python,"Olagbemi, Omofolakunmi E.",MWF 3:00pm-3:50pm,,Core
+Hope College,2026-27,F,CSCI 115,02,Intro to Programming w/ Python,"Kiesel, Charlotte",MWF 11:00am-11:50am,,Core
+Hope College,2026-27,F,CSCI 125,01,Software Design&Implementation,"Welsh, Catherine",MWF 2:00pm-3:20pm,,Software engineering
+Hope College,2026-27,F,CSCI 140,01,Spreadsheet Fundamentals,"Hilldore, Amanda J.",TR 9:30am-10:50am,,Other
+Hope College,2026-27,F,CSCI 140,02,Spreadsheet Fundamentals,"Hilldore, Amanda J.",TR 1:30pm-2:50pm,,Other
+Hope College,2026-27,F,CSCI 140,03,Spreadsheet Fundamentals,"Olagbemi, Omofolakunmi E.",TR 1:30pm-2:50pm,,Other
+Hope College,2026-27,F,CSCI 195,01,Studies in Computer Science,"Kiesel, Charlotte",TR 1:30pm-2:50pm,,Other
+Hope College,2026-27,F,CSCI 235,01,Data Structures& Software Dsgn,"Cusack, Charles A.",F 9:30am-10:20am / TR 9:30am-10:50am,,Core
+Hope College,2026-27,F,CSCI 245,01,Programming Lang & Paradigms,"Welsh, Catherine",MWF 12:00pm-12:50pm,,Programming languages
+Hope College,2026-27,F,CSCI 255,01,Introduction to Algorithms,"Cusack, Charles A.",MWF 2:00pm-2:50pm,,Core
+Hope College,2026-27,F,CSCI 321,01,Applications Programming,"Anderson, Shawn M.",MWF 8:30am-9:20am,,Software engineering
+Hope College,2026-27,F,CSCI 470,01,Languages and Machines,"Olagbemi, Omofolakunmi E.",MWF 1:00pm-1:50pm,,Algorithms & complexity
+Hope College,2026-27,F,CSCI 481,01,Senior Capstone Project I,"McFall, Ryan L.",T 8:00am-9:50am,,Misc
+Hope College,2026-27,F,CSCI 481L,11,Senior Capstone Project I Lab,"McFall, Ryan L.",R 8:00am-9:50am,,Misc
+Hope College,2026-27,F,CSCI 490,01,Research in Computer Science,"Cusack, Charles A.",TBA,,Misc
+Hope College,2026-27,F,CSCI 490,02,Research in Computer Science,"Welsh, Catherine",TBA,,Misc
+Hope College,2026-27,F,CSCI 490,03,Research in Computer Science,"Jipping, Michael J.",TBA,,Misc
+Hope College,2026-27,F,CSCI 490,04,Research in Computer Science,"McFall, Ryan L.",TBA,,Misc
+Hope College,2026-27,F,CSCI 490,05,Research in Computer Science,"Olagbemi, Omofolakunmi E.",TBA,,Misc
+Hope College,2026-27,F,CSCI 490R,01,Research in Computer Science,"Cusack, Charles A.",TBA,,Misc
+Hope College,2026-27,F,CSCI 490R,02,Research in Computer Science,"Welsh, Catherine",TBA,,Misc
+Hope College,2026-27,F,CSCI 490R,03,Research in Computer Science,"Jipping, Michael J.",TBA,,Misc
+Hope College,2026-27,F,CSCI 490R,04,Research in Computer Science,"McFall, Ryan L.",TBA,,Misc
+Hope College,2026-27,F,CSCI 490R,05,Research in Computer Science,"Olagbemi, Omofolakunmi E.",TBA,,Misc
+Hope College,2026-27,F,CSCI 491,01,Internship in Computer Science,"Olagbemi, Omofolakunmi E.",TBA,,Misc
+Hope College,2026-27,S,CSCI 112,01,Exploring Computer Science,"Staff, TBA",MWF 8:30am-9:20am,,Computer science education
+Hope College,2026-27,S,CSCI 115,01,Intro to Programming w/ Python,"Staff, TBA",MWF 1:00pm-1:50pm,,Core
+Hope College,2026-27,S,CSCI 125,01,Software Design&Implementation,"Welsh, Catherine",MWF 2:00pm-3:20pm,,Software engineering
+Hope College,2026-27,S,CSCI 140,01,Spreadsheet Fundamentals,"Hilldore, Amanda J.",TR 9:30am-10:50am,,Other
+Hope College,2026-27,S,CSCI 140,02,Spreadsheet Fundamentals,"Hilldore, Amanda J.",TR 12:00pm-1:20pm,,Other
+Hope College,2026-27,S,CSCI 150,01,Web Design & Implementation,"McFall, Ryan L.",MWF 9:30am-10:20am,,Software engineering
+Hope College,2026-27,S,CSCI 150L,11,Web Design & Implementn Lab,"Staff, TBA",TR 1:30pm-2:50pm,,Misc
+Hope College,2026-27,S,CSCI 235,01,Data Structures& Software Dsgn,"Cusack, Charles A.",TR 9:30am-10:50am / F 9:30am-10:20am,,Core
+Hope College,2026-27,S,CSCI 265,01,Intro Comp Org & Architecture,"Bassett, Bruce R.",MWF 11:00am-11:50am,,Computer architecture
+Hope College,2026-27,S,CSCI 270,01,Mastering Git,"McFall, Ryan L.",MW 2:00pm-2:50pm,,Other
+Hope College,2026-27,S,CSCI 376,01,Computer Networking,"Cusack, Charles A.",MWF 8:30am-9:20am,,Computer networks
+Hope College,2026-27,S,CSCI 385,01,Adv Data Structures&Algorithms,"Welsh, Catherine",TR 1:30pm-2:50pm,,Algorithms & complexity
+Hope College,2026-27,S,CSCI 482,01,Senior Capstone Project II,"McFall, Ryan L.",T 10:00am-10:50am,,Misc
+Hope College,2026-27,S,CSCI 482L,11,Senior Capstone Project II Lab,"McFall, Ryan L.",R 9:00am-10:50am,,Misc
+Hope College,2026-27,S,CSCI 490,01,Research in Computer Science,"Welsh, Catherine",TBA,,Misc
+Hope College,2026-27,S,CSCI 490,02,Research in Computer Science,"Cusack, Charles A.",TBA,,Misc
+Hope College,2026-27,S,CSCI 490,03,Research in Computer Science,"Jipping, Michael J.",TBA,,Misc
+Hope College,2026-27,S,CSCI 490,04,Research in Computer Science,"McFall, Ryan L.",TBA,,Misc
+Hope College,2026-27,S,CSCI 490,05,Research in Computer Science,"Olagbemi, Omofolakunmi E.",TBA,,Misc
+Hope College,2026-27,S,CSCI 490R,01,Research in Computer Science,"Welsh, Catherine",TBA,,Misc
+Hope College,2026-27,S,CSCI 490R,02,Research in Computer Science,"Cusack, Charles A.",TBA,,Misc
+Hope College,2026-27,S,CSCI 490R,03,Research in Computer Science,"Jipping, Michael J.",TBA,,Misc
+Hope College,2026-27,S,CSCI 490R,04,Research in Computer Science,"McFall, Ryan L.",TBA,,Misc
+Hope College,2026-27,S,CSCI 490R,05,Research in Computer Science,"Olagbemi, Omofolakunmi E.",TBA,,Misc
+Hope College,2026-27,S,CSCI 491,01,Internship in Computer Science,"Jipping, Michael J.",TBA,,Misc

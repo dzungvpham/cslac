@@ -125,7 +125,7 @@ class WheatonILScraper(CourseScheduleScraper):
         self._index = out
         return out
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         rows = []
         for ay, term, url in self._discover():
             label = f"{ay[0]}-{ay[1] % 100:02d}/{term}"

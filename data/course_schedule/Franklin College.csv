@@ -72,7 +72,7 @@ Franklin College,2025-26,Su,COMP*620,Q1WW,Analysis of Algorithms,Sean McCulloch,
 Franklin College,2025-26,Su,COMP*630,Q1WW,Issues/Database Management,Jisheng Pang,M,,Databases
 Franklin College,2025-26,Su,COMP*645,Q1WW,Objct-Oriented Design & Prac,Roger Engle,M,,Software engineering
 Franklin College,2025-26,Su,COMP*655,Q1WW,Distributed Systems,Chunbo Chu,M,,Distributed systems
-Franklin College,2025-26,Su,COMP*691,Q1FF,Capstone,John Fulton,TBD,,Misc
+Franklin College,2025-26,Su,COMP*691,Q1FF,Capstone,John Fulton,Th 10:00 AM - 12:00 PM,,Misc
 Franklin College,2025-26,Su,COMP*691,Q1WW,Capstone,Roger Engle,M,,Misc
 Franklin College,2026-27,F,COMP*101,Q1WW,Problem Solving With Computing,,M,,Core
 Franklin College,2026-27,F,COMP*101,Q2WW,Problem Solving With Computing,,M,,Core
@@ -80,10 +80,10 @@ Franklin College,2026-27,F,COMP*101,Q3WW,Problem Solving With Computing,,M,,Core
 Franklin College,2026-27,F,COMP*101,Q4WW,Problem Solving With Computing,,M,,Core
 Franklin College,2026-27,F,COMP*101,Q5WW,Problem Solving With Computing,,M,,Core
 Franklin College,2026-27,F,COMP*101,U1WW,Problem Solving With Computing,,M,,Core
-Franklin College,2026-27,F,COMP*111,Q1WW,Intro Comp Sci/Obj-Ortd Prog,,M,,Core
-Franklin College,2026-27,F,COMP*111,Q2WW,Intro Comp Sci/Obj-Ortd Prog,,M,,Core
-Franklin College,2026-27,F,COMP*121,R1WW,Objt Orntd Data Struc/Alg I,,M,,Core
-Franklin College,2026-27,F,COMP*121,R2WW,Objt Orntd Data Struc/Alg I,,M,,Core
+Franklin College,2026-27,F,COMP*111,Q1WW,Intro Comp Sci/Obj-Ortd Prog,Edgar Wu,M,,Core
+Franklin College,2026-27,F,COMP*111,Q2WW,Intro Comp Sci/Obj-Ortd Prog,Edgar Wu,M,,Core
+Franklin College,2026-27,F,COMP*121,R1WW,Objt Orntd Data Struc/Alg I,Hasan Abu-Rayyan,M,,Core
+Franklin College,2026-27,F,COMP*121,R2WW,Objt Orntd Data Struc/Alg I,Hasan Abu-Rayyan,M,,Core
 Franklin College,2026-27,F,COMP*201,E1WW,Principles of Computer Org.,,M,,Core
 Franklin College,2026-27,F,COMP*201,H1WW,Principles of Computer Org.,,M,,Core
 Franklin College,2026-27,F,COMP*204,Q1WW,Principles of Computer Network,,M,,Computer networks
@@ -103,20 +103,20 @@ Franklin College,2026-27,F,COMP*331,Q1WW,AI-Assisted Software Engineer,,M,,Softw
 Franklin College,2026-27,F,COMP*374,Q1WW,Intro to Deep Learning,,M,,Machine learning
 Franklin College,2026-27,F,COMP*394,R1WW,Comp Scie Practicum II,,M,,Misc
 Franklin College,2026-27,F,COMP*495,R1WW,Comp Scie Practicum III/Cpstn,,M,,Misc
-Franklin College,2026-27,F,COMP*501,Q1WW,Foundations of Programming,,M,,Core
-Franklin College,2026-27,F,COMP*511,U1FF,Foundation Data Struc & Obj Or,,TBD,,Core
-Franklin College,2026-27,F,COMP*511,U1WW,Data Struc & Obj Orntd Design,,M,,Core
-Franklin College,2026-27,F,COMP*611,U1FF,Adv Data Structure and Program,,TBD,,Core
-Franklin College,2026-27,F,COMP*611,U1WW,Adv Data Structure and Program,,,,Core
-Franklin College,2026-27,F,COMP*620,R1FF,Analysis of Algorithms,,TBD,,Core
-Franklin College,2026-27,F,COMP*620,R1WW,Analysis of Algorithms,,,,Core
-Franklin College,2026-27,F,COMP*630,U1FF,Issues/Database Management,,TBD,,Databases
-Franklin College,2026-27,F,COMP*630,U1WW,Issues/Database Management,,M,,Databases
+Franklin College,2026-27,F,COMP*501,Q1WW,Foundations of Programming,Hei Wah Chan,M,,Core
+Franklin College,2026-27,F,COMP*511,Q1FF,Foundation Data Struc & Obj Or,,Th 3:00 PM - 5:00 PM,,Core
+Franklin College,2026-27,F,COMP*511,Q1WW,Data Struc & Obj Orntd Design,,M,,Core
+Franklin College,2026-27,F,COMP*611,Q1FF,Adv Data Structure and Program,,W 6:00 PM - 9:40 PM,,Core
+Franklin College,2026-27,F,COMP*611,Q1WW,Adv Data Structure and Program,,W,,Core
+Franklin College,2026-27,F,COMP*620,R1FF,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Core
+Franklin College,2026-27,F,COMP*620,R1WW,Analysis of Algorithms,,M,,Core
+Franklin College,2026-27,F,COMP*630,Q1FF,Issues/Database Management,,W 3:00 PM - 5:00 PM,,Databases
+Franklin College,2026-27,F,COMP*630,Q1WW,Issues/Database Management,,M,,Databases
 Franklin College,2026-27,F,COMP*650,Q1WW,Syst Architecture/Engineering,,M,,Software engineering
 Franklin College,2026-27,F,COMP*670,Q1WW,App of Artificial Intelligence,,M,,Artificial intelligence
 Franklin College,2026-27,F,COMP*671,U1WW,Verification & Testing,,M,,Logic & verification
-Franklin College,2026-27,F,COMP*691,Q1FF,Capstone,,TBD,,Misc
-Franklin College,2026-27,F,COMP*691,Q1WW,Capstone,,,,Misc
+Franklin College,2026-27,F,COMP*691,Q1FF,Capstone,,W 3:00 PM - 5:00 PM,,Misc
+Franklin College,2026-27,F,COMP*691,Q1WW,Capstone,,M,,Misc
 Franklin College,2026-27,S,COMP*101,Q1WW,Problem Solving With Computing,,M,,Core
 Franklin College,2026-27,S,COMP*101,Q2WW,Problem Solving With Computing,,M,,Core
 Franklin College,2026-27,S,COMP*101,Q3WW,Problem Solving With Computing,,M,,Core
@@ -145,7 +145,6 @@ Franklin College,2026-27,S,COMP*325,Q1WW,Human-Computer Interaction,Michael Powe
 Franklin College,2026-27,S,COMP*372,Q1WW,Introduction to AI,,M,,Artificial intelligence
 Franklin College,2026-27,S,COMP*394,R1WW,Comp Scie Practicum II,,M,,Misc
 Franklin College,2026-27,S,COMP*471,R1WW,Software Testing,,M,,Software engineering
-Franklin College,2026-27,S,COMP*486,Q1WW,Objct-Orientd Analysis/Design,,M,,Software engineering
 Franklin College,2026-27,S,COMP*495,R1WW,Comp Sci Practicum Iii/Cpstn,,M,,Misc
 Franklin College,2026-27,S,COMP*501,Q1WW,Foundations of Programming,,M,,Core
 Franklin College,2026-27,S,COMP*501,Q2WW,Foundations of Programming,,M,,Core
@@ -157,7 +156,6 @@ Franklin College,2026-27,S,COMP*620,R1FF,Analysis of Algorithms,,M 6:00 PM - 9:4
 Franklin College,2026-27,S,COMP*620,R1WW,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Core
 Franklin College,2026-27,S,COMP*630,U1FF,Issues/Database Management,,TBD,,Databases
 Franklin College,2026-27,S,COMP*630,U1WW,Issues/Database Management,,M,,Databases
-Franklin College,2026-27,S,COMP*645,Q1WW,Objct-Oriented Design & Prac,,M,,Software engineering
 Franklin College,2026-27,S,COMP*655,Q1WW,Distributed Systems,,M,,Distributed systems
 Franklin College,2026-27,S,COMP*691,Q1FF,Capstone,,TBD,,Misc
 Franklin College,2026-27,S,COMP*691,Q1WW,Capstone,,T 6:00 PM - 9:40 PM,,Misc
@@ -172,25 +170,106 @@ Franklin College,2026-27,Su,COMP*121,Q2WW,Objt Orntd Data Struc/Alg I,,M,,Core
 Franklin College,2026-27,Su,COMP*201,E1WW,Principles of Computer Org,,M,,Core
 Franklin College,2026-27,Su,COMP*204,Q1WW,Principles of Computer Network,,M,,Computer networks
 Franklin College,2026-27,Su,COMP*204,Q2WW,Principles of Computer Network,,M,,Computer networks
-Franklin College,2026-27,Su,COMP*215,Q1WW,Prgrmg Lang: Prncpl/Practice,,M,,Programming languages
-Franklin College,2026-27,Su,COMP*281,Q1WW,Database Management Systems,,M,,Databases
-Franklin College,2026-27,Su,COMP*281,Q2WW,Database Management Systems,,M,,Databases
+Franklin College,2026-27,Su,COMP*215,Q1WW,Prgrmg Lang: Prncpl/Practice,Jason McGoff,M,,Programming languages
+Franklin College,2026-27,Su,COMP*281,Q1WW,Database Management Systems,Jeff Lam,M,,Databases
+Franklin College,2026-27,Su,COMP*281,Q2WW,Database Management Systems,Jeff Lam,M,,Databases
 Franklin College,2026-27,Su,COMP*294,Q1WW,Comp Scie Practicum I,,M,,Misc
 Franklin College,2026-27,Su,COMP*311,Q1WW,Objt Orntd Data Struc/Alg II,,M,,Core
 Franklin College,2026-27,Su,COMP*321,Q1WW,Application Srvr Prgmng,,M,,Software engineering
 Franklin College,2026-27,Su,COMP*323,Q1WW,Fundamentals of Operating Sys,,M,,Operating systems
-Franklin College,2026-27,Su,COMP*325,Q1WW,Human Cmptr Interaction,,M,,Human-computer interaction
+Franklin College,2026-27,Su,COMP*325,Q1WW,Human Cmptr Interaction,Michael Powers,M,,Human-computer interaction
 Franklin College,2026-27,Su,COMP*394,Q1WW,Comp Scie Practicum II,,M,,Misc
-Franklin College,2026-27,Su,COMP*461,Q1WW,Enterprise Sftwr Archtctr,,M,,Software engineering
-Franklin College,2026-27,Su,COMP*486,Q1WW,Objct-Orientd Analysis/Design,,M,,Software engineering
 Franklin College,2026-27,Su,COMP*495,Q1WW,Comp Sci Practicum III/Cpstn,,M,,Misc
 Franklin College,2026-27,Su,COMP*501,Q1WW,Foundations of Programming,,M,,Core
 Franklin College,2026-27,Su,COMP*511,Q1WW,Data Struc & Obj Orntd Design,,M,,Core
 Franklin College,2026-27,Su,COMP*611,Q1WW,Adv Data Structure and Program,,M,,Core
 Franklin College,2026-27,Su,COMP*620,Q1WW,Analysis of Algorithms,,M,,Core
 Franklin College,2026-27,Su,COMP*630,Q1WW,Issues/Database Management,,M,,Databases
-Franklin College,2026-27,Su,COMP*650,Q1WW,Syst Architecture/Engineering,,M,,Software engineering
 Franklin College,2026-27,Su,COMP*670,Q1WW,App of Artificial Intelligence,,M,,Artificial intelligence
 Franklin College,2026-27,Su,COMP*671,Q1WW,Verification & Testing,,M,,Logic & verification
 Franklin College,2026-27,Su,COMP*691,Q1FF,Capstone,,TBD,,Misc
 Franklin College,2026-27,Su,COMP*691,Q1WW,Capstone,,M,,Misc
+Franklin College,2027-28,F,COMP*101,Q1WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,F,COMP*101,Q2WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,F,COMP*101,Q3WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,F,COMP*101,Q4WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,F,COMP*101,Q5WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,F,COMP*101,U1WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,F,COMP*111,Q1WW,Intro Comp Sci/Obj-Ortd Prog,,M,,Core
+Franklin College,2027-28,F,COMP*111,Q2WW,Intro Comp Sci/Obj-Ortd Prog,,M,,Core
+Franklin College,2027-28,F,COMP*121,R1WW,Objt Orntd Data Struc/Alg I,,M,,Core
+Franklin College,2027-28,F,COMP*121,R2WW,Objt Orntd Data Struc/Alg I,,M,,Core
+Franklin College,2027-28,F,COMP*201,E1WW,Principles of Computer Org.,,M,,Core
+Franklin College,2027-28,F,COMP*201,H1WW,Principles of Computer Org.,,M,,Core
+Franklin College,2027-28,F,COMP*204,Q1WW,Principles of Computer Network,,M,,Computer networks
+Franklin College,2027-28,F,COMP*204,U1WW,Principles of Computer Network,,M,,Computer networks
+Franklin College,2027-28,F,COMP*204,U2WW,Principles of Computer Network,,M,,Computer networks
+Franklin College,2027-28,F,COMP*215,Q1WW,Prgrmg Lang: Prncpl/Practice,,M,,Programming languages
+Franklin College,2027-28,F,COMP*281,R1WW,Database Management Systems,,M,,Databases
+Franklin College,2027-28,F,COMP*281,R2WW,Database Management Systems,,M,,Databases
+Franklin College,2027-28,F,COMP*281,R3WW,Database Management Systems,,M,,Databases
+Franklin College,2027-28,F,COMP*294,R1WW,Comp Scie Practicum I,,M,,Misc
+Franklin College,2027-28,F,COMP*311,R1FF,Objt Orntd Data Struc/Alg II,,TBD,,Core
+Franklin College,2027-28,F,COMP*311,R1WW,Objt Orntd Data Struc/Alg II,,T 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,F,COMP*321,Q1WW,Application Server Programming,,M,,Software engineering
+Franklin College,2027-28,F,COMP*323,Q1WW,Fundamentals of Operating Sys,,M,,Operating systems
+Franklin College,2027-28,F,COMP*325,Q1WW,Human-Computer Interaction,,M,,Human-computer interaction
+Franklin College,2027-28,F,COMP*394,R1WW,Comp Scie Practicum II,,M,,Misc
+Franklin College,2027-28,F,COMP*471,Q1WW,Software Testing,,M,,Software engineering
+Franklin College,2027-28,F,COMP*495,R1WW,Comp Scie Practicum III/Cpstn,,M,,Misc
+Franklin College,2027-28,F,COMP*501,Q1WW,Foundations of Programming,,M,,Core
+Franklin College,2027-28,F,COMP*501,Q2WW,Foundations of Programming,,M,,Core
+Franklin College,2027-28,F,COMP*511,U1FF,Foundation Data Struc & Obj Or,,TBD,,Core
+Franklin College,2027-28,F,COMP*511,U1WW,Data Struc & Obj Orntd Design,,M,,Core
+Franklin College,2027-28,F,COMP*611,U1FF,Adv Data Structure and Program,,Th 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,F,COMP*611,U1WW,Adv Data Structure and Program,,Th 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,F,COMP*620,R1FF,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,F,COMP*620,R1WW,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,F,COMP*630,U1FF,Issues/Database Management,,TBD,,Databases
+Franklin College,2027-28,F,COMP*630,U1WW,Issues/Database Management,,M,,Databases
+Franklin College,2027-28,F,COMP*655,Q1WW,Distributed Systems,,M,,Distributed systems
+Franklin College,2027-28,F,COMP*691,Q1FF,Capstone,,TBD,,Misc
+Franklin College,2027-28,F,COMP*691,Q1WW,Capstone,,T 6:00 PM - 9:40 PM,,Misc
+Franklin College,2027-28,S,COMP*101,Q1WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,S,COMP*101,Q2WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,S,COMP*101,Q3WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,S,COMP*101,Q4WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,S,COMP*101,Q5WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,S,COMP*101,U1WW,Problem Solving With Computing,,M,,Core
+Franklin College,2027-28,S,COMP*111,Q1WW,Intro Comp Sci/Obj-Ortd Prog,,M,,Core
+Franklin College,2027-28,S,COMP*111,Q2WW,Intro Comp Sci/Obj-Ortd Prog,,M,,Core
+Franklin College,2027-28,S,COMP*121,R1WW,Objt Orntd Data Struc/Alg I,,M,,Core
+Franklin College,2027-28,S,COMP*121,R2WW,Objt Orntd Data Struc/Alg I,,M,,Core
+Franklin College,2027-28,S,COMP*201,E1WW,Principles of Computer Org,,M,,Core
+Franklin College,2027-28,S,COMP*201,H1WW,Principles of Computer Org,,M,,Core
+Franklin College,2027-28,S,COMP*204,Q1WW,Principles of Computer Network,,M,,Computer networks
+Franklin College,2027-28,S,COMP*204,U1WW,Principles of Computer Network,,M,,Computer networks
+Franklin College,2027-28,S,COMP*204,U2WW,Principles of Computer Network,,M,,Computer networks
+Franklin College,2027-28,S,COMP*215,Q1WW,Prgrmg Lang: Prncpl/Practice,,M,,Programming languages
+Franklin College,2027-28,S,COMP*281,R1WW,Database Management Systems,,M,,Databases
+Franklin College,2027-28,S,COMP*281,R2WW,Database Management Systems,,M,,Databases
+Franklin College,2027-28,S,COMP*281,R3WW,Database Management Systems,,M,,Databases
+Franklin College,2027-28,S,COMP*294,R1WW,Comp Scie Practicum I,,M,,Misc
+Franklin College,2027-28,S,COMP*311,R1FF,Objt Orntd Data Struc/Alg II,,T 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,S,COMP*311,R1WW,Objt Orntd Data Struc/Alg II,,T 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,S,COMP*321,Q1WW,Application Server Programming,,M,,Software engineering
+Franklin College,2027-28,S,COMP*323,Q1WW,Fundamentals of Operating Sys,,M,,Operating systems
+Franklin College,2027-28,S,COMP*325,Q1WW,Human-Computer Interaction,,M,,Human-computer interaction
+Franklin College,2027-28,S,COMP*372,Q1WW,Introduction to AI,,M,,Artificial intelligence
+Franklin College,2027-28,S,COMP*394,R1WW,Comp Scie Practicum II,,M,,Misc
+Franklin College,2027-28,S,COMP*471,R1WW,Software Testing,,M,,Software engineering
+Franklin College,2027-28,S,COMP*495,R1WW,Comp Sci Practicum Iii/Cpstn,,M,,Misc
+Franklin College,2027-28,S,COMP*501,Q1WW,Foundations of Programming,,M,,Core
+Franklin College,2027-28,S,COMP*501,Q2WW,Foundations of Programming,,M,,Core
+Franklin College,2027-28,S,COMP*511,U1FF,Foundation Data Struc & Obj Or,,TBD,,Core
+Franklin College,2027-28,S,COMP*511,U1WW,Foundation Data Struc & Obj Or,,M,,Core
+Franklin College,2027-28,S,COMP*611,U1FF,Adv Data Structure and Program,,W 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,S,COMP*611,U1WW,Adv Data Structure and Program,,W 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,S,COMP*620,R1FF,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,S,COMP*620,R1WW,Analysis of Algorithms,,M 6:00 PM - 9:40 PM,,Core
+Franklin College,2027-28,S,COMP*630,U1FF,Issues/Database Management,,TBD,,Databases
+Franklin College,2027-28,S,COMP*630,U1WW,Issues/Database Management,,M,,Databases
+Franklin College,2027-28,S,COMP*670,Q1WW,App of Artificial Intelligence,,M,,Artificial intelligence
+Franklin College,2027-28,S,COMP*671,U1WW,Verification & Testing,,M,,Logic & verification
+Franklin College,2027-28,S,COMP*691,Q1FF,Capstone,,TBD,,Misc
+Franklin College,2027-28,S,COMP*691,Q1WW,Capstone,,T 6:00 PM - 9:40 PM,,Misc

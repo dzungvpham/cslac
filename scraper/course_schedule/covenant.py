@@ -68,7 +68,7 @@ class CovenantScraper(CourseScheduleScraper):
     terms = []
     fresh_driver_per_load = False
 
-    def scrape(self):
+    def scrape(self, skip_pairs=None):
         try:
             sheets = self._discover_sheets()
         except requests.RequestException as e:
