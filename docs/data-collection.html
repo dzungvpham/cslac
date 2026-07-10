@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Apply the saved theme before first paint to avoid a light/dark flash. -->
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7NWHL6CSQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q7NWHL6CSQ');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Collection &mdash; CSLAC</title>
+  <meta name="description" content="How the CSLAC dataset of Computer Science faculty, courses, and publications at U.S. liberal arts colleges is collected — its sources, methods, and limitations." />
+  <meta name="author" content="Dzung Pham" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cslac.org/data-collection.html" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <header>
+    <div class="header-left">
+      <h1><a href="index.html" class="home-link">&lt;CSLAC/&gt;</a> Data Collection</h1>
+      <p>How this dataset is assembled &mdash; and what it does and doesn&rsquo;t capture.</p>
+    </div>
+    <div class="header-right">
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
+          <span class="icon-sun" aria-hidden="true"></span>
+          <span class="icon-moon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="content">
+    <p class="content-eyebrow">Methodology</p>
+
+    <p class="lead">
+      CSLAC brings together public information about Computer Science at U.S. national
+      liberal arts colleges &mdash; who teaches it, what they research, what they publish,
+      and what courses are offered &mdash; into a single dataset. Everything here is
+      assembled automatically from public sources; this page explains how, and where the
+      numbers should be read with caution.
+    </p>
+
+    <h2>Which colleges are included</h2>
+    <p>
+      The starting point is the set of institutions ranked by <em>U.S. News &amp; World
+      Report</em> as
+      <a href="https://www.usnews.com/best-colleges/rankings/national-liberal-arts-colleges" target="_blank" rel="noopener">National Liberal Arts Colleges</a>.
+      A college is included once we can identify a Computer Science department &mdash; or a
+      combined department, such as Mathematics &amp; Computer Science &mdash; with a public
+      faculty listing and information about Computer Science as a major.
+    </p>
+
+    <h2>Faculty</h2>
+    <p>
+      For each college we read the department&rsquo;s public faculty page and extract every
+      listed member&rsquo;s name, title, and &mdash; where available &mdash; a link to their
+      personal or institutional web page. Titles are grouped into broad categories
+      (tenured, tenure-track, teaching, visiting, and adjunct) so that roles are comparable
+      across schools that describe them differently.
+    </p>
+    <p>
+      Only faculty whose work is identifiably in Computer Science are kept. In combined
+      departments this classification is made automatically by reading each person&rsquo;s
+      public profile, so the boundary between &ldquo;CS&rdquo; and &ldquo;not CS&rdquo; is a
+      best-effort judgment rather than an official designation.
+    </p>
+
+    <h2>Research fields</h2>
+    <p>
+      To describe what each person works on, we collect the text of their public website
+      and Google Scholar interests and use a language model to infer a primary field and up
+      to five research subfields, drawn from a fixed taxonomy of Computer Science areas.
+      These labels are inferred, not self-reported.
+    </p>
+
+    <h2>Publications and citations</h2>
+    <p>
+      Publication records come from
+      <a href="https://openalex.org/" target="_blank" rel="noopener">OpenAlex</a>, an open
+      catalog of scholarly works. We collect Computer Science papers affiliated with each
+      college and match their authors back to our faculty list by name and institution.
+      Each paper&rsquo;s venue is tagged with its research area and, where we can match it, a
+      conference ranking from
+      <a href="https://csrankings.org/" target="_blank" rel="noopener">CSRankings</a> and
+      <a href="https://portal.core.edu.au/conf-ranks/" target="_blank" rel="noopener">CORE</a>
+      (A*/A/B/C), or a journal quartile from
+      <a href="https://www.scimagojr.com/" target="_blank" rel="noopener">Scimago</a>
+      (Q1&ndash;Q4).
+    </p>
+    <p>
+      Citation counts and h-index come from
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+      for faculty whose profile we can confidently match and verify; for everyone else, we
+      fall back to author metrics from OpenAlex. Because the two sources index different
+      bodies of work, their numbers are not directly comparable.
+    </p>
+
+    <h2>Courses</h2>
+    <p>
+      Where a college publishes its course schedule or registration catalog, we collect the
+      Computer Science offerings term by term. Each course title is automatically sorted
+      into a subfield (or a general bucket such as core, seminar, or other) so that
+      offerings can be filtered the same way as faculty and publications.
+    </p>
+
+    <h2>Degrees awarded</h2>
+    <p>
+      The count of CS degrees conferred by each college comes from
+      <a href="https://nces.ed.gov/ipeds/" target="_blank" rel="noopener">IPEDS</a>, the
+      U.S. Department of Education&rsquo;s higher-education data system.
+    </p>
+
+    <h2>Updates</h2>
+    <p>
+      The dataset is refreshed periodically &mdash; roughly quarterly. The date of the most
+      recent refresh is shown in the header of the
+      <a href="index.html">main dashboard</a>, and the full dataset can be downloaded as
+      <a href="data.json">JSON</a>.
+    </p>
+
+    <h2>Limitations</h2>
+    <p>
+      This is an automated, best-effort snapshot built entirely from public data. It is not
+      affiliated with or endorsed by any college, and it will contain errors. The most
+      important caveats:
+    </p>
+    <ul>
+      <li><strong>Coverage and freshness.</strong> Faculty are read from department pages as
+        they appeared on the day they were scraped. Recent hires and departures may lag,
+        people listed only on other pages may be missed, and pages that change format may be
+        captured incompletely.</li>
+      <li><strong>Who counts as CS.</strong> In combined departments, deciding who is a
+        Computer Science faculty member is an automated judgment that will sometimes include
+        or exclude people incorrectly. Emeritus, affiliated, and courtesy appointments are
+        handled heuristically.</li>
+      <li><strong>Inferred research areas.</strong> Fields and subfields are inferred by a
+        language model from public text. They can be wrong or incomplete, especially when
+        someone has little public material.</li>
+      <li><strong>Profile matching.</strong> Google Scholar and OpenAlex profiles are matched
+        by name and affiliation. Common names, name changes, and shared profiles can produce
+        false matches or misses, and not everyone maintains a profile &mdash; so citation
+        metrics are absent or understated for some.</li>
+      <li><strong>Point-in-time metrics.</strong> Citation counts and h-index are snapshots
+        that change over time and differ between sources; treat them as approximate, not
+        authoritative.</li>
+      <li><strong>Publication matching.</strong> OpenAlex&rsquo;s subject filter and author
+        disambiguation both miss some papers and include others; interdisciplinary work in
+        particular is undercounted. Venue rankings are matched heuristically and are
+        themselves imperfect proxies for quality.</li>
+      <li><strong>Course data.</strong> We can only see what each college&rsquo;s catalog
+        exposes publicly. Some systems show only currently registerable terms, some require a
+        login, and formats vary &mdash; so course coverage is uneven, and the automatic
+        subfield labeling is approximate.</li>
+    </ul>
+    <p>
+      Found something wrong? Corrections and suggestions are welcome on
+      <a href="https://github.com/dzungvpham/cslac" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </article>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="index.html">Home</a><span class="footer-sep">·</span><a href="data-collection.html">Data Collection</a><span class="footer-sep">·</span><a href="about.html">About</a>
+    </nav>
+    &copy; 2026 <a href="https://dzungvpham.github.io/" target="_blank" rel="noopener">Dzung Pham</a> | All rights reserved.
+  </footer>
+
+</div>
+
+<script>
+  // Standalone theme toggle — mirrors the dashboard's behavior (app.js) so the
+  // saved preference is shared across every page via localStorage.
+  document.getElementById('theme-btn').addEventListener('click', function () {
+    var el = document.documentElement;
+    var next = el.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    el.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
+</body>
+</html>

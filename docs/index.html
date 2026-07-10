@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
+  <!-- Progressive enhancement flag: marks JS-capable clients before first paint
+       so CSS can hide the static SEO ranking (#static-ranking) and show the
+       interactive table instead. No-JS clients / crawlers keep the static list. -->
+  <script>document.documentElement.classList.add('js');</script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7NWHL6CSQ"></script>
   <script>
@@ -13,8 +17,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSLAC: Computer Science &amp; Liberal Arts Colleges</title>
-  <meta name="description" content="An open dataset and dashboard of Computer Science faculty at U.S. liberal arts colleges: names, titles, personal and Google Scholar URLs, citation metrics, research subfields, and per-college course schedules." />
-  <meta name="keywords" content="liberal arts colleges, computer science faculty, CS faculty, Google Scholar, h-index, CS course schedule, LAC, academic dataset" />
+  <meta name="description" content="An open dataset, dashboard, and ranking of Computer Science faculty at U.S. liberal arts colleges." />
+  <meta name="keywords" content="liberal arts colleges, computer science, computer science education, computer science faculty, CS faculty, Google Scholar, h-index, CS course schedule, LAC, academic dataset" />
   <meta name="author" content="Dzung Pham" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://cslac.org/" />
@@ -23,14 +27,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CSLAC" />
   <meta property="og:title" content="CSLAC: Computer Science &amp; Liberal Arts Colleges" />
-  <meta property="og:description" content="Open dataset of CS faculty at U.S. liberal arts colleges: names, titles, Google Scholar profiles, citation metrics, research subfields, and per-college course schedules." />
+  <meta property="og:description" content="An open dataset, dashboard, and ranking of Computer Science faculty at U.S. liberal arts colleges." />
   <meta property="og:url" content="https://cslac.org/" />
   <meta property="og:locale" content="en_US" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="CSLAC: Computer Science &amp; Liberal Arts Colleges" />
-  <meta name="twitter:description" content="Open dataset of CS faculty at U.S. liberal arts colleges: profiles, citations, research subfields, and course schedules." />
+  <meta name="twitter:description" content="An open dataset, dashboard, and ranking of Computer Science faculty at U.S. liberal arts colleges." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -107,8 +111,9 @@
     name, title, personal website, Google Scholar profile, citation and h-index
     metrics, and inferred research subfields. A companion dataset tracks course
     offerings by academic term for participating colleges.</p>
-    <p>This dashboard requires JavaScript to render. The underlying data is
-    available as JSON:</p>
+    <p>A static ranking of colleges is shown below. The fully interactive
+    dashboard requires JavaScript; the underlying data is also available as
+    JSON:</p>
     <ul>
       <li><a href="data.json">data.json</a> — per-college map of faculty records, department/schedule links, and course offerings</li>
     </ul>
@@ -121,7 +126,7 @@
 
   <header>
     <div class="header-left">
-      <h1>&lt;CSLAC/&gt; <span class="h1-full">Computer Science</span><span class="h1-short">CompSci</span> at Liberal Arts Colleges</h1>
+      <h1><a href="index.html" class="home-link">&lt;CSLAC/&gt;</a> <span class="h1-full">Computer Science</span><span class="h1-short">CompSci</span> at Liberal Arts Colleges</h1>
       <p>Open-source data on Computer Science faculty and courses at <a href="https://www.usnews.com/best-colleges/rankings/national-liberal-arts-colleges"  target="_blank" rel="noopener">national LACs</a> in the US.</p>
       <div class="header-stats">
         <div class="stat"><strong id="stat-colleges">—</strong>Colleges</div>
@@ -167,6 +172,153 @@
     <div class="spinner"></div>
   </div>
 
+  <!-- Pre-rendered SEO ranking (progressive-enhancement fallback). Regenerated
+       by docs/generate_data.py; hidden for JS clients, who get the interactive
+       table below instead. Do not edit the content between the markers by hand. -->
+  <!-- STATIC_RANKING_START -->
+<section id="static-ranking" aria-label="Ranking of computer science programs at U.S. liberal arts colleges">
+  <h2>Computer Science Programs at Liberal Arts Colleges, Ranked</h2>
+  <p>130+ U.S. liberal arts colleges ranked by the size of their Computer Science faculty, then by advanced electives offered in the last two academic years, recent research papers, and CS degrees awarded (IPEDS). Paper counts cover 2016–2026. This is a static snapshot &mdash; use the interactive dashboard above to sort, filter by research subfield, and explore individual faculty, courses, and publications.</p>
+  <table class="static-ranking-table">
+    <thead><tr><th>#</th><th>Institution</th><th>State</th><th>Faculty</th><th>Electives</th><th>Papers</th><th>CS Degrees</th></tr></thead>
+    <tbody>
+      <tr><td class="sr-rank">1</td><th scope="row" class="sr-name"><a href="https://www.hmc.edu/cs/" target="_blank" rel="noopener">Harvey Mudd College</a></th><td>CA</td><td>18</td><td>20</td><td>81</td><td>376</td></tr>
+      <tr><td class="sr-rank">2</td><th scope="row" class="sr-name"><a href="https://www.wellesley.edu/cs" target="_blank" rel="noopener">Wellesley College</a></th><td>MA</td><td>17</td><td>21</td><td>138</td><td>378</td></tr>
+      <tr><td class="sr-rank">3</td><th scope="row" class="sr-name"><a href="https://www.swarthmore.edu/computer-science" target="_blank" rel="noopener">Swarthmore College</a></th><td>PA</td><td>17</td><td>17</td><td>49</td><td>273</td></tr>
+      <tr><td class="sr-rank">4</td><th scope="row" class="sr-name"><a href="https://www.bucknell.edu/academics/college-engineering/majors-departments/computer-science" target="_blank" rel="noopener">Bucknell University</a></th><td>PA</td><td>15</td><td>16</td><td>67</td><td>101</td></tr>
+      <tr><td class="sr-rank">5</td><th scope="row" class="sr-name"><a href="https://csci.williams.edu/" target="_blank" rel="noopener">Williams College</a></th><td>MA</td><td>14</td><td>20</td><td>52</td><td>214</td></tr>
+      <tr><td class="sr-rank">6</td><th scope="row" class="sr-name"><a href="https://www.macalester.edu/mscs/" target="_blank" rel="noopener">Macalester College</a></th><td>MN</td><td>14</td><td>20</td><td>48</td><td>228</td></tr>
+      <tr><td class="sr-rank">7</td><th scope="row" class="sr-name"><a href="https://www.colgate.edu/academics/departments-programs/department-computer-science" target="_blank" rel="noopener">Colgate University</a></th><td>NY</td><td>14</td><td>&mdash;</td><td>50</td><td>207</td></tr>
+      <tr><td class="sr-rank">8</td><th scope="row" class="sr-name"><a href="https://www.carleton.edu/computer-science/" target="_blank" rel="noopener">Carleton College</a></th><td>MN</td><td>13</td><td>23</td><td>53</td><td>271</td></tr>
+      <tr><td class="sr-rank">9</td><th scope="row" class="sr-name"><a href="https://www.middlebury.edu/college/academics/computer-science" target="_blank" rel="noopener">Middlebury College</a></th><td>VT</td><td>13</td><td>22</td><td>24</td><td>230</td></tr>
+      <tr><td class="sr-rank">10</td><th scope="row" class="sr-name"><a href="https://cs.richmond.edu/" target="_blank" rel="noopener">University of Richmond</a></th><td>VA</td><td>13</td><td>12</td><td>28</td><td>128</td></tr>
+      <tr><td class="sr-rank">11</td><th scope="row" class="sr-name"><a href="https://www.smith.edu/academics/computer-science" target="_blank" rel="noopener">Smith College</a></th><td>MA</td><td>12</td><td>25</td><td>53</td><td>157</td></tr>
+      <tr><td class="sr-rank">12</td><th scope="row" class="sr-name"><a href="https://www.conncoll.edu/academics/majors-departments-programs/departments/computer-science/" target="_blank" rel="noopener">Connecticut College</a></th><td>CT</td><td>11</td><td>24</td><td>18</td><td>112</td></tr>
+      <tr><td class="sr-rank">13</td><th scope="row" class="sr-name"><a href="https://cas.umw.edu/computerscience/" target="_blank" rel="noopener">University of Mary Washington</a></th><td>VA</td><td>11</td><td>20</td><td>31</td><td>238</td></tr>
+      <tr><td class="sr-rank">14</td><th scope="row" class="sr-name"><a href="https://cs.colby.edu/" target="_blank" rel="noopener">Colby College</a></th><td>ME</td><td>11</td><td>16</td><td>73</td><td>172</td></tr>
+      <tr><td class="sr-rank">15</td><th scope="row" class="sr-name"><a href="https://www.oberlin.edu/arts-and-sciences/departments/computer-science" target="_blank" rel="noopener">Oberlin College</a></th><td>OH</td><td>11</td><td>15</td><td>40</td><td>145</td></tr>
+      <tr><td class="sr-rank">16</td><th scope="row" class="sr-name"><a href="https://www.pomona.edu/academics/departments/computer-science" target="_blank" rel="noopener">Pomona College</a></th><td>CA</td><td>11</td><td>14</td><td>89</td><td>198</td></tr>
+      <tr><td class="sr-rank">17</td><th scope="row" class="sr-name"><a href="https://www.amherst.edu/academiclife/departments/computer_science" target="_blank" rel="noopener">Amherst College</a></th><td>MA</td><td>11</td><td>14</td><td>71</td><td>196</td></tr>
+      <tr><td class="sr-rank">18</td><th scope="row" class="sr-name"><a href="https://www.union.edu/computer-science" target="_blank" rel="noopener">Union College (NY)</a></th><td>NY</td><td>10</td><td>20</td><td>12</td><td>84</td></tr>
+      <tr><td class="sr-rank">19</td><th scope="row" class="sr-name"><a href="https://www.vassar.edu/computerscience" target="_blank" rel="noopener">Vassar College</a></th><td>NY</td><td>10</td><td>15</td><td>41</td><td>139</td></tr>
+      <tr><td class="sr-rank">20</td><th scope="row" class="sr-name"><a href="https://www.trinity.edu/academics/departments/computer-science" target="_blank" rel="noopener">Trinity University</a></th><td>TX</td><td>10</td><td>&mdash;</td><td>38</td><td>140</td></tr>
+      <tr><td class="sr-rank">21</td><th scope="row" class="sr-name"><a href="https://www.mtholyoke.edu/academics/find-your-program/computer-science" target="_blank" rel="noopener">Mount Holyoke College</a></th><td>MA</td><td>9</td><td>19</td><td>27</td><td>145</td></tr>
+      <tr><td class="sr-rank">22</td><th scope="row" class="sr-name"><a href="https://www.bowdoin.edu/computer-science/" target="_blank" rel="noopener">Bowdoin College</a></th><td>ME</td><td>9</td><td>17</td><td>19</td><td>186</td></tr>
+      <tr><td class="sr-rank">23</td><th scope="row" class="sr-name"><a href="https://drew.edu/math-computer-science-department/" target="_blank" rel="noopener">Drew University</a></th><td>NJ</td><td>9</td><td>13</td><td>7</td><td>81</td></tr>
+      <tr><td class="sr-rank">24</td><th scope="row" class="sr-name"><a href="https://compsci.lafayette.edu/" target="_blank" rel="noopener">Lafayette College</a></th><td>PA</td><td>9</td><td>11</td><td>49</td><td>102</td></tr>
+      <tr><td class="sr-rank">25</td><th scope="row" class="sr-name"><a href="https://www.grinnell.edu/academics/majors-concentrations/computer-science" target="_blank" rel="noopener">Grinnell College</a></th><td>IA</td><td>9</td><td>7</td><td>46</td><td>237</td></tr>
+      <tr><td class="sr-rank">26</td><th scope="row" class="sr-name"><a href="https://cs.barnard.edu/" target="_blank" rel="noopener">Barnard College</a></th><td>NY</td><td>8</td><td>32</td><td>17</td><td>196</td></tr>
+      <tr><td class="sr-rank">27</td><th scope="row" class="sr-name"><a href="https://www.davidson.edu/academic-departments/mathematics-and-computer-science/computer-science-major-and-minor" target="_blank" rel="noopener">Davidson College</a></th><td>NC</td><td>8</td><td>23</td><td>75</td><td>162</td></tr>
+      <tr><td class="sr-rank">28</td><th scope="row" class="sr-name"><a href="https://www.wesleyan.edu/mathcs/cs/index.html" target="_blank" rel="noopener">Wesleyan University</a></th><td>CT</td><td>8</td><td>19</td><td>37</td><td>196</td></tr>
+      <tr><td class="sr-rank">29</td><th scope="row" class="sr-name"><a href="https://www.skidmore.edu/computer_science/index.php" target="_blank" rel="noopener">Skidmore College</a></th><td>NY</td><td>8</td><td>13</td><td>12</td><td>85</td></tr>
+      <tr><td class="sr-rank">30</td><th scope="row" class="sr-name"><a href="https://www.oxy.edu/academics/areas-study/computer-science" target="_blank" rel="noopener">Occidental College</a></th><td>CA</td><td>8</td><td>9</td><td>13</td><td>112</td></tr>
+      <tr><td class="sr-rank">31</td><th scope="row" class="sr-name"><a href="https://willamette.edu/academics/college/computer-science/" target="_blank" rel="noopener">Willamette University</a></th><td>OR</td><td>8</td><td>6</td><td>40</td><td>46</td></tr>
+      <tr><td class="sr-rank">32</td><th scope="row" class="sr-name"><a href="https://www.depauw.edu/academics/departments-programs/computer-science/" target="_blank" rel="noopener">DePauw University</a></th><td>IN</td><td>8</td><td>&mdash;</td><td>20</td><td>166</td></tr>
+      <tr><td class="sr-rank">33</td><th scope="row" class="sr-name"><a href="https://cs.bard.edu/" target="_blank" rel="noopener">Bard College</a></th><td>NY</td><td>8</td><td>&mdash;</td><td>15</td><td>0</td></tr>
+      <tr><td class="sr-rank">34</td><th scope="row" class="sr-name"><a href="https://www.rhodes.edu/academics/majors-minors/computer-science" target="_blank" rel="noopener">Rhodes College</a></th><td>TN</td><td>8</td><td>&mdash;</td><td>8</td><td>123</td></tr>
+      <tr><td class="sr-rank">35</td><th scope="row" class="sr-name"><a href="https://www.smcm.edu/mathcs/" target="_blank" rel="noopener">St. Mary&#x27;s College of Maryland</a></th><td>MD</td><td>7</td><td>16</td><td>0</td><td>75</td></tr>
+      <tr><td class="sr-rank">36</td><th scope="row" class="sr-name"><a href="https://www.trincoll.edu/cs/" target="_blank" rel="noopener">Trinity College</a></th><td>CT</td><td>7</td><td>12</td><td>25</td><td>81</td></tr>
+      <tr><td class="sr-rank">37</td><th scope="row" class="sr-name"><a href="https://www.unca.edu/programs/computer-science/" target="_blank" rel="noopener">UNC Asheville</a></th><td>NC</td><td>7</td><td>12</td><td>8</td><td>115</td></tr>
+      <tr><td class="sr-rank">38</td><th scope="row" class="sr-name"><a href="https://www.haverford.edu/academics/computer-science-major-minor-and-concentration" target="_blank" rel="noopener">Haverford College</a></th><td>PA</td><td>7</td><td>10</td><td>39</td><td>123</td></tr>
+      <tr><td class="sr-rank">39</td><th scope="row" class="sr-name"><a href="https://denison.edu/academics/computer-science" target="_blank" rel="noopener">Denison University</a></th><td>OH</td><td>7</td><td>9</td><td>32</td><td>83</td></tr>
+      <tr><td class="sr-rank">40</td><th scope="row" class="sr-name"><a href="https://www.hamilton.edu/academics/departments/Computer-Science" target="_blank" rel="noopener">Hamilton College</a></th><td>NY</td><td>7</td><td>&mdash;</td><td>45</td><td>98</td></tr>
+      <tr><td class="sr-rank">41</td><th scope="row" class="sr-name"><a href="https://www.fandm.edu/fields-of-study/computer-science/index.html" target="_blank" rel="noopener">Franklin &amp; Marshall College</a></th><td>PA</td><td>7</td><td>&mdash;</td><td>24</td><td>58</td></tr>
+      <tr><td class="sr-rank">42</td><th scope="row" class="sr-name"><a href="https://www.berea.edu/academics/departments-programs/computer-science" target="_blank" rel="noopener">Berea College</a></th><td>KY</td><td>6</td><td>15</td><td>20</td><td>113</td></tr>
+      <tr><td class="sr-rank">43</td><th scope="row" class="sr-name"><a href="https://wp.stolaf.edu/cs/" target="_blank" rel="noopener">St. Olaf College</a></th><td>MN</td><td>6</td><td>11</td><td>5</td><td>124</td></tr>
+      <tr><td class="sr-rank">44</td><th scope="row" class="sr-name"><a href="https://www.holycross.edu/academics/programs/mathematics-and-computer-science/about#CS" target="_blank" rel="noopener">College of the Holy Cross</a></th><td>MA</td><td>6</td><td>10</td><td>24</td><td>77</td></tr>
+      <tr><td class="sr-rank">45</td><th scope="row" class="sr-name"><a href="https://www.rmc.edu/academics/areas-of-study/computer-science/" target="_blank" rel="noopener">Randolph-Macon College</a></th><td>VA</td><td>6</td><td>10</td><td>8</td><td>113</td></tr>
+      <tr><td class="sr-rank">46</td><th scope="row" class="sr-name"><a href="https://www.wlu.edu/computer-science-department" target="_blank" rel="noopener">Washington and Lee University</a></th><td>VA</td><td>6</td><td>9</td><td>0</td><td>68</td></tr>
+      <tr><td class="sr-rank">47</td><th scope="row" class="sr-name"><a href="https://www.wabash.edu/academics/computer_science" target="_blank" rel="noopener">Wabash College</a></th><td>IN</td><td>6</td><td>8</td><td>9</td><td>30</td></tr>
+      <tr><td class="sr-rank">48</td><th scope="row" class="sr-name"><a href="https://www.brynmawr.edu/inside/academic-information/departments-programs/computer-science" target="_blank" rel="noopener">Bryn Mawr College</a></th><td>PA</td><td>6</td><td>7</td><td>23</td><td>69</td></tr>
+      <tr><td class="sr-rank">49</td><th scope="row" class="sr-name"><a href="https://www.whitman.edu/academics/majors-and-minors/computer-science" target="_blank" rel="noopener">Whitman College</a></th><td>WA</td><td>6</td><td>7</td><td>20</td><td>81</td></tr>
+      <tr><td class="sr-rank">50</td><th scope="row" class="sr-name"><a href="https://www.coloradocollege.edu/academics/dept/mathcs/" target="_blank" rel="noopener">Colorado College</a></th><td>CO</td><td>6</td><td>6</td><td>38</td><td>102</td></tr>
+      <tr><td class="sr-rank">51</td><th scope="row" class="sr-name"><a href="https://www.juniata.edu/academics/computer-science/" target="_blank" rel="noopener">Juniata College</a></th><td>PA</td><td>6</td><td>6</td><td>3</td><td>47</td></tr>
+      <tr><td class="sr-rank">52</td><th scope="row" class="sr-name"><a href="https://wooster.edu/area/computer-science/" target="_blank" rel="noopener">College of Wooster</a></th><td>OH</td><td>6</td><td>&mdash;</td><td>11</td><td>86</td></tr>
+      <tr><td class="sr-rank">53</td><th scope="row" class="sr-name"><a href="https://www.uvawise.edu/academics/majors-minors/computer-science" target="_blank" rel="noopener">UVA Wise</a></th><td>VA</td><td>6</td><td>&mdash;</td><td>&mdash;</td><td>33</td></tr>
+      <tr><td class="sr-rank">54</td><th scope="row" class="sr-name"><a href="https://www.csbsju.edu/computer-science" target="_blank" rel="noopener">College of St Benedict</a></th><td>MN</td><td>5</td><td>19</td><td>15</td><td>24</td></tr>
+      <tr><td class="sr-rank">55</td><th scope="row" class="sr-name"><a href="https://www.gettysburg.edu/academic-programs/computer-science/" target="_blank" rel="noopener">Gettysburg College</a></th><td>PA</td><td>5</td><td>15</td><td>30</td><td>68</td></tr>
+      <tr><td class="sr-rank">56</td><th scope="row" class="sr-name"><a href="https://www.dickinson.edu/homepage/57/computer_science" target="_blank" rel="noopener">Dickinson College</a></th><td>PA</td><td>5</td><td>13</td><td>28</td><td>69</td></tr>
+      <tr><td class="sr-rank">57</td><th scope="row" class="sr-name"><a href="https://www.knox.edu/academics/majors-and-minors/computer-science" target="_blank" rel="noopener">Knox College</a></th><td>IL</td><td>5</td><td>11</td><td>40</td><td>86</td></tr>
+      <tr><td class="sr-rank">58</td><th scope="row" class="sr-name"><a href="https://computerscience.kzoo.edu/" target="_blank" rel="noopener">Kalamazoo College</a></th><td>MI</td><td>5</td><td>11</td><td>6</td><td>93</td></tr>
+      <tr><td class="sr-rank">59</td><th scope="row" class="sr-name"><a href="https://www.coe.edu/academics/majors-areas-study/mathematics-computer-science" target="_blank" rel="noopener">Coe College</a></th><td>IA</td><td>5</td><td>8</td><td>1</td><td>41</td></tr>
+      <tr><td class="sr-rank">60</td><th scope="row" class="sr-name"><a href="https://www.furman.edu/academics/computer-science/" target="_blank" rel="noopener">Furman University</a></th><td>SC</td><td>5</td><td>&mdash;</td><td>30</td><td>62</td></tr>
+      <tr><td class="sr-rank">61</td><th scope="row" class="sr-name"><a href="https://www.reed.edu/computer-science/" target="_blank" rel="noopener">Reed College</a></th><td>OR</td><td>5</td><td>&mdash;</td><td>15</td><td>89</td></tr>
+      <tr><td class="sr-rank">62</td><th scope="row" class="sr-name"><a href="https://www.ncf.edu/programs/computer-science/" target="_blank" rel="noopener">New College of Florida</a></th><td>FL</td><td>4</td><td>18</td><td>3</td><td>0</td></tr>
+      <tr><td class="sr-rank">63</td><th scope="row" class="sr-name"><a href="https://hope.edu/academics/computer-science/" target="_blank" rel="noopener">Hope College</a></th><td>MI</td><td>4</td><td>16</td><td>5</td><td>55</td></tr>
+      <tr><td class="sr-rank">64</td><th scope="row" class="sr-name"><a href="https://www.hendrix.edu/mathcs/computerscience/" target="_blank" rel="noopener">Hendrix College</a></th><td>AR</td><td>4</td><td>14</td><td>15</td><td>51</td></tr>
+      <tr><td class="sr-rank">65</td><th scope="row" class="sr-name"><a href="https://www.lawrence.edu/academics/college/computer-science" target="_blank" rel="noopener">Lawrence University</a></th><td>WI</td><td>4</td><td>14</td><td>1</td><td>42</td></tr>
+      <tr><td class="sr-rank">66</td><th scope="row" class="sr-name"><a href="https://morris.umn.edu/academics/computer-science" target="_blank" rel="noopener">UMN Morris</a></th><td>MN</td><td>4</td><td>12</td><td>16</td><td>68</td></tr>
+      <tr><td class="sr-rank">67</td><th scope="row" class="sr-name"><a href="https://earlham.edu/academics/majors-minors-programs/computer-science/" target="_blank" rel="noopener">Earlham College</a></th><td>IN</td><td>4</td><td>12</td><td>8</td><td>36</td></tr>
+      <tr><td class="sr-rank">68</td><th scope="row" class="sr-name"><a href="https://wheatoncollege.edu/academics/programs/computer-science/" target="_blank" rel="noopener">Wheaton College (MA)</a></th><td>MA</td><td>4</td><td>10</td><td>3</td><td>49</td></tr>
+      <tr><td class="sr-rank">69</td><th scope="row" class="sr-name"><a href="https://www.hws.edu/academics/computer-science/default.aspx" target="_blank" rel="noopener">Hobart and William Smith College</a></th><td>NY</td><td>4</td><td>8</td><td>12</td><td>47</td></tr>
+      <tr><td class="sr-rank">70</td><th scope="row" class="sr-name"><a href="https://www.augustana.edu/academics/areas-of-study/computer-science" target="_blank" rel="noopener">Augustana College</a></th><td>IL</td><td>4</td><td>8</td><td>2</td><td>86</td></tr>
+      <tr><td class="sr-rank">71</td><th scope="row" class="sr-name"><a href="https://www.goucher.edu/learn/undergraduate-programs/computer-science/" target="_blank" rel="noopener">Goucher College</a></th><td>MD</td><td>4</td><td>7</td><td>0</td><td>28</td></tr>
+      <tr><td class="sr-rank">72</td><th scope="row" class="sr-name"><a href="https://www.pugetsound.edu/academics/computer-science" target="_blank" rel="noopener">University of Puget Sound</a></th><td>WA</td><td>4</td><td>6</td><td>22</td><td>78</td></tr>
+      <tr><td class="sr-rank">73</td><th scope="row" class="sr-name"><a href="https://www.centre.edu/academics/majors-minors-programs/computer-science" target="_blank" rel="noopener">Centre College</a></th><td>KY</td><td>4</td><td>6</td><td>2</td><td>56</td></tr>
+      <tr><td class="sr-rank">74</td><th scope="row" class="sr-name"><a href="https://www.luther.edu/academics/computer-science" target="_blank" rel="noopener">Luther College</a></th><td>IA</td><td>4</td><td>5</td><td>6</td><td>55</td></tr>
+      <tr><td class="sr-rank">75</td><th scope="row" class="sr-name"><a href="https://allegheny.edu/academics/programs/computer-science/" target="_blank" rel="noopener">Allegheny College</a></th><td>PA</td><td>4</td><td>&mdash;</td><td>32</td><td>82</td></tr>
+      <tr><td class="sr-rank">76</td><th scope="row" class="sr-name"><a href="https://www.washjeff.edu/programs/computing-and-information-studies-cis/" target="_blank" rel="noopener">Washington &amp; Jefferson College</a></th><td>PA</td><td>4</td><td>&mdash;</td><td>16</td><td>0</td></tr>
+      <tr><td class="sr-rank">77</td><th scope="row" class="sr-name"><a href="https://www.stlawu.edu/academics/programs/computer-science" target="_blank" rel="noopener">St. Lawrence University</a></th><td>NY</td><td>4</td><td>&mdash;</td><td>15</td><td>63</td></tr>
+      <tr><td class="sr-rank">78</td><th scope="row" class="sr-name"><a href="https://www.anselm.edu/academics/departments-programs/computer-science" target="_blank" rel="noopener">Saint Anselm College</a></th><td>NH</td><td>4</td><td>&mdash;</td><td>8</td><td>60</td></tr>
+      <tr><td class="sr-rank">79</td><th scope="row" class="sr-name"><a href="https://www.lakeforest.edu/academics/majors-and-minors/mathematics-and-computer-science" target="_blank" rel="noopener">Lake Forest College</a></th><td>IL</td><td>4</td><td>&mdash;</td><td>7</td><td>67</td></tr>
+      <tr><td class="sr-rank">80</td><th scope="row" class="sr-name"><a href="https://www.claflin.edu/academics-research/schools-departments/school-of-natural-sciences-and-mathematics/department-of-mathematics-computer-science/computer-science" target="_blank" rel="noopener">Claflin University</a></th><td>SC</td><td>3</td><td>19</td><td>3</td><td>37</td></tr>
+      <tr><td class="sr-rank">81</td><th scope="row" class="sr-name"><a href="https://www.austincollege.edu/academics/majors-and-minors/computer-science/" target="_blank" rel="noopener">Austin College</a></th><td>TX</td><td>3</td><td>11</td><td>4</td><td>44</td></tr>
+      <tr><td class="sr-rank">82</td><th scope="row" class="sr-name"><a href="https://www.wofford.edu/academics/majors-and-programs/computer-science" target="_blank" rel="noopener">Wofford College</a></th><td>SC</td><td>3</td><td>11</td><td>&mdash;</td><td>54</td></tr>
+      <tr><td class="sr-rank">83</td><th scope="row" class="sr-name"><a href="https://www.stonehill.edu/programs/computer-science/" target="_blank" rel="noopener">Stonehill College</a></th><td>MA</td><td>3</td><td>10</td><td>2</td><td>54</td></tr>
+      <tr><td class="sr-rank">84</td><th scope="row" class="sr-name"><a href="https://www.southwestern.edu/computer-science/" target="_blank" rel="noopener">Southwestern University</a></th><td>TX</td><td>3</td><td>7</td><td>23</td><td>52</td></tr>
+      <tr><td class="sr-rank">85</td><th scope="row" class="sr-name"><a href="https://www.linfield.edu/programs/computer-science/index.html" target="_blank" rel="noopener">Linfield University</a></th><td>OR</td><td>3</td><td>7</td><td>4</td><td>19</td></tr>
+      <tr><td class="sr-rank">86</td><th scope="row" class="sr-name"><a href="https://www.washcoll.edu/academic_departments/math-and-computer-science/index.php" target="_blank" rel="noopener">Washington College</a></th><td>MD</td><td>3</td><td>7</td><td>0</td><td>39</td></tr>
+      <tr><td class="sr-rank">87</td><th scope="row" class="sr-name"><a href="https://www.wheaton.edu/academics/programs/computer-science/" target="_blank" rel="noopener">Wheaton College (IL)</a></th><td>IL</td><td>3</td><td>6</td><td>1</td><td>55</td></tr>
+      <tr><td class="sr-rank">88</td><th scope="row" class="sr-name"><a href="https://www.roanoke.edu/majors/computerscience" target="_blank" rel="noopener">Roanoke College</a></th><td>VA</td><td>3</td><td>5</td><td>8</td><td>28</td></tr>
+      <tr><td class="sr-rank">89</td><th scope="row" class="sr-name"><a href="https://www.beloit.edu/academics/computer-science/" target="_blank" rel="noopener">Beloit College</a></th><td>WI</td><td>3</td><td>5</td><td>4</td><td>38</td></tr>
+      <tr><td class="sr-rank">90</td><th scope="row" class="sr-name"><a href="https://www.eckerd.edu/computer-science/why-computer-science-at-eckerd/" target="_blank" rel="noopener">Eckerd College</a></th><td>FL</td><td>3</td><td>5</td><td>1</td><td>16</td></tr>
+      <tr><td class="sr-rank">91</td><th scope="row" class="sr-name"><a href="https://www.albright.edu/academics/undergraduate-programs/computer-science" target="_blank" rel="noopener">Albright College</a></th><td>PA</td><td>3</td><td>4</td><td>&mdash;</td><td>35</td></tr>
+      <tr><td class="sr-rank">92</td><th scope="row" class="sr-name"><a href="https://www.ursinus.edu/academics/mathematics-computer-science-and-statistics/" target="_blank" rel="noopener">Ursinus College</a></th><td>PA</td><td>3</td><td>3</td><td>25</td><td>64</td></tr>
+      <tr><td class="sr-rank">93</td><th scope="row" class="sr-name"><a href="https://www.cmc.edu/math/cs" target="_blank" rel="noopener">Claremont McKenna College</a></th><td>CA</td><td>3</td><td>2</td><td>25</td><td>44</td></tr>
+      <tr><td class="sr-rank">94</td><th scope="row" class="sr-name"><a href="https://www.muhlenberg.edu/academics/mathcs/computerscience/" target="_blank" rel="noopener">Muhlenberg College</a></th><td>PA</td><td>3</td><td>&mdash;</td><td>6</td><td>57</td></tr>
+      <tr><td class="sr-rank">95</td><th scope="row" class="sr-name"><a href="https://www.lanecollege.edu/academics/departments/natural-and-physical-science/computer-science" target="_blank" rel="noopener">Lane College</a></th><td>TN</td><td>3</td><td>&mdash;</td><td>4</td><td>23</td></tr>
+      <tr><td class="sr-rank">96</td><th scope="row" class="sr-name"><a href="https://www.eastwest.edu/academic-programs/computer-information-science" target="_blank" rel="noopener">East-West University</a></th><td>IL</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>41</td></tr>
+      <tr><td class="sr-rank">97</td><th scope="row" class="sr-name"><a href="https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science/" target="_blank" rel="noopener">Susquehanna University</a></th><td>PA</td><td>2</td><td>16</td><td>11</td><td>45</td></tr>
+      <tr><td class="sr-rank">98</td><th scope="row" class="sr-name"><a href="https://franklincollege.edu/academics/majors/computing/" target="_blank" rel="noopener">Franklin College</a></th><td>IN</td><td>2</td><td>15</td><td>1</td><td>15</td></tr>
+      <tr><td class="sr-rank">99</td><th scope="row" class="sr-name"><a href="https://www.lyon.edu/computer-science" target="_blank" rel="noopener">Lyon College</a></th><td>AR</td><td>2</td><td>14</td><td>1</td><td>46</td></tr>
+      <tr><td class="sr-rank">100</td><th scope="row" class="sr-name"><a href="https://mcla.edu/academics/academic-departments/computer-science/" target="_blank" rel="noopener">Massachusetts College of Liberal Arts</a></th><td>MA</td><td>2</td><td>13</td><td>6</td><td>53</td></tr>
+      <tr><td class="sr-rank">101</td><th scope="row" class="sr-name"><a href="https://www.wartburg.edu/computer-science/" target="_blank" rel="noopener">Wartburg College</a></th><td>IA</td><td>2</td><td>11</td><td>&mdash;</td><td>44</td></tr>
+      <tr><td class="sr-rank">102</td><th scope="row" class="sr-name"><a href="https://covenant.edu/academics/cs/index.html" target="_blank" rel="noopener">Covenant College</a></th><td>GA</td><td>2</td><td>10</td><td>&mdash;</td><td>36</td></tr>
+      <tr><td class="sr-rank">103</td><th scope="row" class="sr-name"><a href="https://www.concordiacollege.edu/academics/programs-of-study/offutt-school-of-business/computer-science/" target="_blank" rel="noopener">Concordia College</a></th><td>MN</td><td>2</td><td>9</td><td>0</td><td>46</td></tr>
+      <tr><td class="sr-rank">104</td><th scope="row" class="sr-name"><a href="https://www.albion.edu/academics/programs/computer-science-major-minor/" target="_blank" rel="noopener">Albion College</a></th><td>MI</td><td>2</td><td>8</td><td>4</td><td>10</td></tr>
+      <tr><td class="sr-rank">105</td><th scope="row" class="sr-name"><a href="https://www.gordon.edu/academics/computerscience" target="_blank" rel="noopener">Gordon College</a></th><td>MA</td><td>2</td><td>8</td><td>0</td><td>51</td></tr>
+      <tr><td class="sr-rank">106</td><th scope="row" class="sr-name"><a href="https://new.sewanee.edu/programs-of-study/math-cs/" target="_blank" rel="noopener">Sewanee</a></th><td>TN</td><td>2</td><td>7</td><td>2</td><td>17</td></tr>
+      <tr><td class="sr-rank">107</td><th scope="row" class="sr-name"><a href="https://www.presby.edu/programs/computer-science/" target="_blank" rel="noopener">Presbyterian College</a></th><td>SC</td><td>2</td><td>7</td><td>1</td><td>18</td></tr>
+      <tr><td class="sr-rank">108</td><th scope="row" class="sr-name"><a href="https://www.bridgewater.edu/academics/divisions/mathematics-computer-science/computer-science-major/" target="_blank" rel="noopener">Bridgewater College</a></th><td>VA</td><td>2</td><td>7</td><td>0</td><td>39</td></tr>
+      <tr><td class="sr-rank">109</td><th scope="row" class="sr-name"><a href="https://departments.central.edu/cs/" target="_blank" rel="noopener">Central College</a></th><td>IA</td><td>2</td><td>7</td><td>0</td><td>32</td></tr>
+      <tr><td class="sr-rank">110</td><th scope="row" class="sr-name"><a href="https://www.transy.edu/academics/program/computer-science/" target="_blank" rel="noopener">Transylvania University</a></th><td>KY</td><td>2</td><td>7</td><td>0</td><td>19</td></tr>
+      <tr><td class="sr-rank">111</td><th scope="row" class="sr-name"><a href="https://www.wittenberg.edu/academics/computerscience/courses-requirements" target="_blank" rel="noopener">Wittenberg University</a></th><td>OH</td><td>2</td><td>6</td><td>&mdash;</td><td>32</td></tr>
+      <tr><td class="sr-rank">112</td><th scope="row" class="sr-name"><a href="https://www.houghton.edu/math-science/computer-science-major/" target="_blank" rel="noopener">Houghton University</a></th><td>NY</td><td>2</td><td>5</td><td>1</td><td>18</td></tr>
+      <tr><td class="sr-rank">113</td><th scope="row" class="sr-name"><a href="https://www.lycoming.edu/computer-science/" target="_blank" rel="noopener">Lycoming College</a></th><td>PA</td><td>2</td><td>5</td><td>&mdash;</td><td>3</td></tr>
+      <tr><td class="sr-rank">114</td><th scope="row" class="sr-name"><a href="https://www.hsc.edu/academics/mathematics-and-computer-science" target="_blank" rel="noopener">Hampden-Sydney College</a></th><td>VA</td><td>2</td><td>4</td><td>18</td><td>16</td></tr>
+      <tr><td class="sr-rank">115</td><th scope="row" class="sr-name"><a href="https://www.meredith.edu/computer-science/" target="_blank" rel="noopener">Meredith College</a></th><td>NC</td><td>2</td><td>3</td><td>&mdash;</td><td>26</td></tr>
+      <tr><td class="sr-rank">116</td><th scope="row" class="sr-name"><a href="https://www.randolphcollege.edu/computer-science/" target="_blank" rel="noopener">Randolph College</a></th><td>VA</td><td>2</td><td>3</td><td>&mdash;</td><td>7</td></tr>
+      <tr><td class="sr-rank">117</td><th scope="row" class="sr-name"><a href="https://brynathyn.edu/academics/undergraduate/department/computer-science-id.html" target="_blank" rel="noopener">Bryn Athyn College</a></th><td>PA</td><td>2</td><td>3</td><td>0</td><td>0</td></tr>
+      <tr><td class="sr-rank">118</td><th scope="row" class="sr-name"><a href="https://gustavus.edu/academics/undergraduate/computer-science/" target="_blank" rel="noopener">Gustavus Adolphus College</a></th><td>MN</td><td>2</td><td>&mdash;</td><td>6</td><td>54</td></tr>
+      <tr><td class="sr-rank">119</td><th scope="row" class="sr-name"><a href="https://www.monmouthcollege.edu/academics/computer-science/" target="_blank" rel="noopener">Monmouth College</a></th><td>IL</td><td>2</td><td>&mdash;</td><td>2</td><td>14</td></tr>
+      <tr><td class="sr-rank">120</td><th scope="row" class="sr-name"><a href="https://www.bethanywv.edu/academics/areas-of-study/computer-science/" target="_blank" rel="noopener">Bethany College (WV)</a></th><td>WV</td><td>2</td><td>&mdash;</td><td>2</td><td>13</td></tr>
+      <tr><td class="sr-rank">121</td><th scope="row" class="sr-name"><a href="https://www.cornellcollege.edu/computer-science/" target="_blank" rel="noopener">Cornell College</a></th><td>IA</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>61</td></tr>
+      <tr><td class="sr-rank">122</td><th scope="row" class="sr-name"><a href="https://www.hanover.edu/academics/programs/cs/" target="_blank" rel="noopener">Hanover College</a></th><td>IN</td><td>2</td><td>&mdash;</td><td>0</td><td>28</td></tr>
+      <tr><td class="sr-rank">123</td><th scope="row" class="sr-name"><a href="https://www.tougaloo.edu/academics/divisions/natural-science/mathematics-computer-science-department" target="_blank" rel="noopener">Tougaloo College</a></th><td>MS</td><td>1</td><td>12</td><td>&mdash;</td><td>12</td></tr>
+      <tr><td class="sr-rank">124</td><th scope="row" class="sr-name"><a href="https://www.hartwick.edu/academics/academic-departments/computer-and-information-sciences-department/" target="_blank" rel="noopener">Hartwick College</a></th><td>NY</td><td>1</td><td>9</td><td>&mdash;</td><td>35</td></tr>
+      <tr><td class="sr-rank">125</td><th scope="row" class="sr-name"><a href="https://www.westminster.edu/academics/schools/physical-mathematical/math-cs/index.cfm" target="_blank" rel="noopener">Westminster College (PA)</a></th><td>MO</td><td>1</td><td>9</td><td>0</td><td>15</td></tr>
+      <tr><td class="sr-rank">126</td><th scope="row" class="sr-name"><a href="https://www.owu.edu/academics/departments-programs/department-of-mathematics-and-computer-science/computer-science-general-major/" target="_blank" rel="noopener">Ohio Wesleyan University</a></th><td>OH</td><td>1</td><td>7</td><td>&mdash;</td><td>28</td></tr>
+      <tr><td class="sr-rank">127</td><th scope="row" class="sr-name"><a href="https://www.ic.edu/computer-science" target="_blank" rel="noopener">Illinois College</a></th><td>IL</td><td>1</td><td>6</td><td>0</td><td>32</td></tr>
+      <tr><td class="sr-rank">128</td><th scope="row" class="sr-name"><a href="https://www.bennington.edu/academics/areas-of-study-curriculum/science-mathematics/computer-science" target="_blank" rel="noopener">Bennington College</a></th><td>VT</td><td>1</td><td>5</td><td>&mdash;</td><td>27</td></tr>
+      <tr><td class="sr-rank">129</td><th scope="row" class="sr-name"><a href="https://www.maryvillecollege.edu/academics/programs-of-study/computer-science/" target="_blank" rel="noopener">Maryville College</a></th><td>TN</td><td>1</td><td>5</td><td>&mdash;</td><td>10</td></tr>
+      <tr><td class="sr-rank">130</td><th scope="row" class="sr-name"><a href="https://www.vwu.edu/academics/majors/computer-science/" target="_blank" rel="noopener">Virginia Wesleyan University</a></th><td>VA</td><td>1</td><td>&mdash;</td><td>15</td><td>34</td></tr>
+      <tr><td class="sr-rank">131</td><th scope="row" class="sr-name"><a href="https://svu.edu/academics/majors-minors/computer-science/" target="_blank" rel="noopener">Southern Virginia University</a></th><td>VA</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>24</td></tr>
+      <tr><td class="sr-rank">132</td><th scope="row" class="sr-name"><a href="https://blc.edu/academics/programs/computer-science-major/" target="_blank" rel="noopener">Bethany Lutheran College</a></th><td>MN</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>14</td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- STATIC_RANKING_END -->
+
   <div class="table-wrap" id="table-wrap" hidden>
     <div class="col-head-row">
       <div class="col-grid" id="col-headers"></div>
@@ -175,7 +327,9 @@
   </div>
 
   <footer class="site-footer">
-    <span class="footer-sep">·</span>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a><span class="footer-sep">·</span><a href="data-collection.html">Data Collection</a><span class="footer-sep">·</span><a href="about.html">About</a>
+    </nav>
     © 2026 <a href="https://dzungvpham.github.io/" target="_blank" rel="noopener">Dzung Pham</a> | All rights reserved.
   </footer>
 

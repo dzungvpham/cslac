@@ -1724,3 +1724,133 @@ a.pub-author:hover {
   .col-head-row,
   .college-row { min-width: 280px; }
 }
+
+/* ── static SEO ranking (progressive-enhancement fallback) ──
+   #static-ranking is a pre-rendered ordered list of colleges injected into
+   index.html by generate_data.py. It exists for crawlers and no-JS clients.
+   JS clients (documentElement.js, set by an inline head script) get the
+   interactive table instead, so the static block is hidden and the loading
+   spinner shown; no-JS clients get the reverse. */
+.js #static-ranking { display: none; }
+html:not(.js) #loading-spinner { display: none; }
+
+#static-ranking {
+  max-width: 900px;
+  margin: 8px auto 24px;
+  padding: 0 16px;
+  color: var(--text);
+}
+#static-ranking h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+#static-ranking > p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--sub);
+  margin: 0 0 16px;
+}
+.static-ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.static-ranking-table th,
+.static-ranking-table td {
+  padding: 6px 10px;
+  text-align: right;
+  border-bottom: 1px solid var(--border-sub);
+  white-space: nowrap;
+}
+.static-ranking-table thead th {
+  background: var(--th-bg);
+  color: var(--sub);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+.static-ranking-table .sr-rank { color: var(--muted); width: 2.5em; }
+.static-ranking-table th.sr-name,
+.static-ranking-table thead th:nth-child(2),
+.static-ranking-table td:nth-child(3),
+.static-ranking-table thead th:nth-child(3) {
+  text-align: left;
+}
+.static-ranking-table th.sr-name { font-weight: 500; }
+.static-ranking-table a { color: var(--accent); text-decoration: none; }
+.static-ranking-table a:hover { text-decoration: underline; }
+
+/* ── static content pages (Data Collection, About) ──
+   Prose layout for the standalone pages linked from the footer. These pages
+   reuse the shared theme tokens, header, and footer from above so they match
+   the dashboard exactly; only the article typography here is page-specific. */
+
+/* Brand mark in the header doubles as a link home on sub-pages. */
+.home-link { color: inherit; text-decoration: none; transition: color 0.12s; }
+.home-link:hover { color: var(--accent); text-decoration: none; }
+
+.content {
+  max-width: 720px;
+  padding: 36px 0 8px;
+}
+.content-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.content .lead {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 26px;
+}
+.content h2 {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  color: var(--text);
+  margin: 34px 0 10px;
+}
+.content h2:first-child { margin-top: 0; }
+.content h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 20px 0 6px;
+}
+.content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+.content ul { margin: 2px 0 16px; padding-left: 22px; }
+.content li {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text);
+  margin-bottom: 9px;
+}
+.content li::marker { color: var(--muted); }
+.content strong { color: var(--text); font-weight: 600; }
+.content a { color: var(--accent); }
+.content-note {
+  margin-top: 26px;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* Footer cross-page navigation (Home · Data Collection · About). */
+.footer-nav { margin-bottom: 8px; }
+
+@media (max-width: 720px) {
+  .content { padding: 26px 0 4px; }
+  .content h2 { font-size: 16px; }
+  .content .lead { font-size: 14.5px; }
+}

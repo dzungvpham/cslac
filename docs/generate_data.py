@@ -30,6 +30,7 @@ Only colleges with at least one CS/Invalid-field faculty row are emitted.
 
 import argparse
 import csv
+import html
 import json
 import re
 import sys
@@ -992,26 +993,30 @@ def _human_date(d: date) -> str:
 def sync_dates(today: date) -> None:
     """Keep the published date in three SEO-relevant locations in sync:
     JSON-LD `dateModified`, sitemap.xml `<lastmod>`, and the human-readable
-    "Data was last updated on …" line in the page footer."""
+    "Data last updated on …" line in the page footer."""
     iso = today.isoformat()
     human = _human_date(today)
 
     if INDEX_HTML.exists():
-        html = INDEX_HTML.read_text(encoding="utf-8")
-        new_html = re.sub(
+        doc = INDEX_HTML.read_text(encoding="utf-8")
+        new_doc = re.sub(
             r'("dateModified":\s*")\d{4}-\d{2}-\d{2}(")',
             rf'\g<1>{iso}\g<2>',
-            html,
+            doc,
             count=1,
         )
-        new_html = re.sub(
-            r'(Data was last updated on )[A-Za-z]+ \d{1,2}(?:st|nd|rd|th) \d{4}',
-            rf'\g<1>{human}',
-            new_html,
+        # The footer date sits inside a <span> wrapper, e.g.
+        #   Data last updated on <span class="nowrap accent">July 8th 2026</span>
+        # so the pattern spans the opening tag and replaces only the date text.
+        new_doc = re.sub(
+            r'(Data last updated on <span[^>]*>)'
+            r'[A-Za-z]+ \d{1,2}(?:st|nd|rd|th) \d{4}(</span>)',
+            rf'\g<1>{human}\g<2>',
+            new_doc,
             count=1,
         )
-        if new_html != html:
-            INDEX_HTML.write_text(new_html, encoding="utf-8")
+        if new_doc != doc:
+            INDEX_HTML.write_text(new_doc, encoding="utf-8")
 
     if SITEMAP_XML.exists():
         xml = SITEMAP_XML.read_text(encoding="utf-8")
@@ -1023,6 +1028,209 @@ def sync_dates(today: date) -> None:
         )
         if new_xml != xml:
             SITEMAP_XML.write_text(new_xml, encoding="utf-8")
+
+
+# ── static ranking (SEO pre-render) ─────────────────────────────────────────
+#
+# The dashboard is a client-side SPA: crawlers and no-JS clients that don't run
+# app.js see an empty shell. To give them the primary content — the ranked list
+# of institutions and their headline stats — we pre-render the default college
+# ordering as a static HTML <table> and inject it into index.html between marker
+# comments. app.js hides this block for JS clients (via the `js` class on <html>)
+# and renders the interactive table in its place, so it's a pure progressive-
+# enhancement fallback with no duplication for real users.
+#
+# The ordering and the derived Electives / Papers counts mirror app.js exactly;
+# keep the two in sync:
+#   - default order   → DEFAULT_SORT_VALUE_FNS / defaultCollegeCompare
+#   - Electives count  → recentCourseCount(schedule, isElective) + minCoreLevel
+#   - Papers count     → pubVisibleBase default 10-year window
+#   - display names    → COLLEGE_DISPLAY_NAMES
+
+RANK_RECENT_YEARS = 2                 # Electives count window (academic years)
+RANK_PUB_WINDOW = 10                  # Papers count window: [maxYear - N, maxYear]
+NON_ELECTIVE_CATEGORIES = {"Core", "Misc", "Unknown"}
+RANK_UNCOUNTED_TERMS = {"Williams College": {"W"}}
+COLLEGE_DISPLAY_NAMES = {
+    "The University of the South":            "Sewanee",
+    "University of North Carolina Asheville": "UNC Asheville",
+    "University of Virginia--Wise":           "UVA Wise",
+    "University of Minnesota Morris":         "UMN Morris",
+}
+RANK_MARKER_RE = re.compile(
+    r"(<!-- STATIC_RANKING_START -->).*?(<!-- STATIC_RANKING_END -->)", re.DOTALL
+)
+
+
+def _code_level(code: str) -> int | None:
+    """First run of digits in a course code ("COMSC-151" → 151), else None."""
+    m = re.search(r"\d+", str(code or ""))
+    return int(m.group()) if m else None
+
+
+def _min_core_level(courses: list[dict]) -> int | None:
+    """Lowest level among a college's `Core` courses (the major's entry point).
+    Mirrors minCoreLevel() in app.js."""
+    lo = None
+    for c in courses or []:
+        if c.get("category") != "Core":
+            continue
+        lvl = _code_level(c.get("code"))
+        if lvl is not None and (lo is None or lvl < lo):
+            lo = lvl
+    return lo
+
+
+def _elective_count(name: str, entry: dict) -> int | None:
+    """Unique CS electives offered in the college's most recent
+    RANK_RECENT_YEARS academic years. Mirrors recentCourseCount(_, isElective)."""
+    terms = entry.get("terms") or []
+    courses = entry.get("courses") or []
+    if not terms or not courses:
+        return None
+    recent = set(sorted({t["year"] for t in terms})[-RANK_RECENT_YEARS:])
+    uncounted = RANK_UNCOUNTED_TERMS.get(name, set())
+    idxs = [i for i, t in enumerate(terms)
+            if t["year"] in recent and t["term"] not in uncounted]
+    min_core = _min_core_level(courses)
+    count = 0
+    for c in courses:
+        if c.get("category") in NON_ELECTIVE_CATEGORIES:
+            continue
+        if min_core is not None:
+            lvl = _code_level(c.get("code"))
+            if lvl is not None and lvl < min_core:
+                continue
+        offered = c.get("offered") or []
+        if any(i < len(offered) and offered[i] for i in idxs):
+            count += 1
+    return count
+
+
+def _pub_window(merged: dict) -> tuple[int | None, int | None]:
+    """Default publication year window: [maxYear - RANK_PUB_WINDOW, maxYear],
+    where maxYear is the latest year (≥ 1990) across all colleges. Mirrors the
+    default pubYearFrom/pubYearTo set in app.js loadData()."""
+    years = {p["year"] for e in merged.values() for p in e.get("publications") or []
+             if isinstance(p.get("year"), int) and p["year"] >= 1990}
+    if not years:
+        return None, None
+    hi = max(years)
+    return hi - RANK_PUB_WINDOW, hi
+
+
+def _papers_count(entry: dict, year_from: int | None, year_to: int | None) -> int | None:
+    """Papers with a venue whose year is inside the default window. None when the
+    college has no publications at all. Mirrors pubVisibleBase() with no filters."""
+    pubs = entry.get("publications")
+    if not pubs:
+        return None
+    count = 0
+    for p in pubs:
+        if not p.get("venue"):
+            continue
+        y = p.get("year")
+        if year_from is not None and (y is None or y < year_from):
+            continue
+        if year_to is not None and (y is None or y > year_to):
+            continue
+        count += 1
+    return count
+
+
+def _rank_sort_key(r: dict):
+    """Default college ordering: Faculty, Electives, Papers, CS majors (all
+    descending), name ascending as the tie-breaker. Missing numerics sink via
+    the same −1 / 0 fallbacks app.js uses (papers → 0, the rest → −1)."""
+    return (
+        -(r["total"] if r["total"] is not None else -1),
+        -(r["electives"] if r["electives"] is not None else -1),
+        -(r["papers"] if r["papers"] is not None else 0),
+        -(r["grads"] if r["grads"] is not None else -1),
+        r["name"].casefold(),
+    )
+
+
+def build_static_ranking(merged: dict) -> str:
+    """Render the default-ordered college ranking as a static HTML section."""
+    year_from, year_to = _pub_window(merged)
+    records = []
+    for name, entry in merged.items():
+        total = entry.get("total") or 0
+        if total <= 0:                       # matches the dashboard's default view
+            continue
+        records.append({
+            "name": name,
+            "state": entry.get("state"),
+            "url": entry.get("program_url") or entry.get("faculty_url"),
+            "total": total,
+            "electives": _elective_count(name, entry),
+            "papers": _papers_count(entry, year_from, year_to),
+            "grads": entry.get("majors"),
+        })
+    records.sort(key=_rank_sort_key)
+
+    def num(v: int | None, comma: bool = False) -> str:
+        if v is None:
+            return "&mdash;"
+        return f"{v:,}" if comma else str(v)
+
+    rows = []
+    for i, r in enumerate(records, 1):
+        disp = html.escape(COLLEGE_DISPLAY_NAMES.get(r["name"], r["name"]))
+        cell = (f'<a href="{html.escape(r["url"], quote=True)}" '
+                f'target="_blank" rel="noopener">{disp}</a>') if r["url"] else disp
+        rows.append(
+            "<tr>"
+            f'<td class="sr-rank">{i}</td>'
+            f'<th scope="row" class="sr-name">{cell}</th>'
+            f'<td>{html.escape(r["state"] or "")}</td>'
+            f'<td>{r["total"]}</td>'
+            f'<td>{num(r["electives"])}</td>'
+            f'<td>{num(r["papers"])}</td>'
+            f'<td>{num(r["grads"], comma=True)}</td>'
+            "</tr>"
+        )
+
+    window = (f" Paper counts cover {year_from}–{year_to}."
+              if year_from is not None else "")
+    return (
+        '<!-- STATIC_RANKING_START -->\n'
+        '<section id="static-ranking" aria-label="Ranking of computer science '
+        'programs at U.S. liberal arts colleges">\n'
+        '  <h2>Computer Science Programs at Liberal Arts Colleges, Ranked</h2>\n'
+        f'  <p>{len(records)} U.S. liberal arts colleges ranked by the size of their '
+        'Computer Science faculty, then by advanced electives offered in the last two '
+        'academic years, recent research papers, and CS degrees awarded (IPEDS).'
+        f'{window} This is a static snapshot &mdash; use the interactive dashboard '
+        'above to sort, filter by research subfield, and explore individual faculty, '
+        'courses, and publications.</p>\n'
+        '  <table class="static-ranking-table">\n'
+        '    <thead><tr><th>#</th><th>Institution</th><th>State</th>'
+        '<th>Faculty</th><th>Electives</th><th>Papers</th><th>CS Degrees</th>'
+        '</tr></thead>\n'
+        '    <tbody>\n      ' + "\n      ".join(rows) + '\n    </tbody>\n'
+        '  </table>\n'
+        '</section>\n'
+        '<!-- STATIC_RANKING_END -->'
+    )
+
+
+def sync_static_ranking(merged: dict) -> None:
+    """Inject the pre-rendered ranking into index.html between the marker
+    comments. No-op (with a warning) if the markers are missing."""
+    if not INDEX_HTML.exists():
+        return
+    doc = INDEX_HTML.read_text(encoding="utf-8")
+    if not RANK_MARKER_RE.search(doc):
+        print("WARNING: STATIC_RANKING markers not found in index.html; "
+              "skipping static-ranking injection.", file=sys.stderr)
+        return
+    snippet = build_static_ranking(merged)
+    # Function replacement → snippet is used verbatim (no backreference parsing).
+    new_doc = RANK_MARKER_RE.sub(lambda _: snippet, doc, count=1)
+    if new_doc != doc:
+        INDEX_HTML.write_text(new_doc, encoding="utf-8")
 
 
 def main():
@@ -1039,6 +1247,8 @@ def main():
     p.add_argument("--output",   type=Path, default=DEFAULT_OUTPUT)
     p.add_argument("--no-sync-dates", action="store_true",
                    help="Skip updating JSON-LD/sitemap/footer dates.")
+    p.add_argument("--no-static-ranking", action="store_true",
+                   help="Skip injecting the pre-rendered SEO ranking into index.html.")
     args = p.parse_args()
 
     faculty = build_faculty(args.list, args.scholar, args.verified, args.field, args.openalex)
@@ -1054,6 +1264,8 @@ def main():
 
     if not args.no_sync_dates:
         sync_dates(date.today())
+    if not args.no_static_ranking:
+        sync_static_ranking(merged)
 
     total_faculty = sum(c["total"] for c in merged.values())
     total_courses = sum(len(c.get("courses", [])) for c in merged.values())

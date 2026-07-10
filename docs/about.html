@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Apply the saved theme before first paint to avoid a light/dark flash. -->
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7NWHL6CSQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q7NWHL6CSQ');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About &mdash; CSLAC</title>
+  <meta name="description" content="About CSLAC — an open, independent dataset and dashboard mapping Computer Science at U.S. liberal arts colleges." />
+  <meta name="author" content="Dzung Pham" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cslac.org/about.html" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <header>
+    <div class="header-left">
+      <h1>About <a href="index.html" class="home-link">&lt;CSLAC/&gt;</a></h1>
+      <p>The origin story of the project.</p>
+    </div>
+    <div class="header-right">
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
+          <span class="icon-sun" aria-hidden="true"></span>
+          <span class="icon-moon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="content">
+    <p class="content-eyebrow">Why CSLAC?</p>
+
+    <h2>How did it start?</h2>
+    <p>
+      I studied Computer Science at a small LAC for my undergrad, and I was impressed with the instructional quality.
+      When I started my PhD in 2022, I could see myself doing teaching and research at similar institutions, where both aspects are valued.
+      However, unlike research-focused institutions, there was no conveniently centralized collection of data like <a href="https://csrankings.org" target="_blank" rel="noopener">CSRankings.org</a>.
+      Liberal arts colleges educate a large and often overlooked share of undergraduate
+      computer scientists, but information about their CS programs is scattered across
+      hundreds of department pages, course catalogs, and scholarly databases. There is no
+      single place to see how these programs compare &mdash; how large each faculty is, what
+      they research, what they publish, and what they teach.
+    </p>
+    <p>
+      So, during the winter break of my first PhD year in Jan 2023, I decided to start CSLAC.
+      There was no coding agents back then, so I wrote a lot of the data collection code manually, which was very time-consuming.
+      The project was put on hiatus for a long while as I had to focus on research and couldn't spare time to write scrapers and check the data quality.
+      It was not until May 2026 that I gave in and decided to learn how to use coding agents (i.e., Claude Code).
+      I thought that CSLAC would be a great way to start, and so here we are.
+    </p>
+
+    <h2>What can it be used for?</h2>
+    <p>
+      Ultimately, I hope CSLAC is useful to anyone trying to make sense of Computer Science
+      at liberal arts colleges, including:
+    </p>
+    <ul>
+      <li><strong>Prospective students</strong> applying to college who want to compare CS
+        programs across LACs &mdash; how large the faculty is, what they specialize in, and
+        how broad the course offerings are &mdash; before deciding where to apply or enroll.</li>
+      <li><strong>Faculty and departments</strong> looking to benchmark themselves against
+        peer institutions, spot trends in hiring and research, or find potential
+        collaborators.</li>
+      <li><strong>PhD students and postdocs</strong> on the academic job market who are drawn
+        to teaching-focused careers and want to find the LACs that fit their interests and
+        gauge what these departments look for. (This is my favorite use case.)</li>
+      <li><strong>CS education researchers and curriculum planners</strong> studying how
+        computing is taught outside of large research universities, or designing and
+        reforming their own programs.</li>
+      <li><strong>Anyone else</strong> &mdash; advisors, journalists, prospective donors, or
+        the simply curious &mdash; who wants a clearer picture of Computer Science at LACs.</li>
+    </ul>
+
+    <h2>How is it progressing?</h2>
+    <p>
+      I aim to refresh the data quarterly for as long as I can. This project is completely self-sponsored, and there will never be any ads.
+      New features may be added in the future.
+    </p>
+
+  </article>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="index.html">Home</a><span class="footer-sep">·</span><a href="data-collection.html">Data Collection</a><span class="footer-sep">·</span><a href="about.html">About</a>
+    </nav>
+    &copy; 2026 <a href="https://dzungvpham.github.io/" target="_blank" rel="noopener">Dzung Pham</a> | All rights reserved.
+  </footer>
+
+</div>
+
+<script>
+  // Standalone theme toggle — mirrors the dashboard's behavior (app.js) so the
+  // saved preference is shared across every page via localStorage.
+  document.getElementById('theme-btn').addEventListener('click', function () {
+    var el = document.documentElement;
+    var next = el.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    el.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
+</body>
+</html>
