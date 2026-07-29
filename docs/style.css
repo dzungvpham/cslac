@@ -1144,6 +1144,39 @@ a.pub-author:hover {
   font-size: 11px;
   color: var(--sub);
 }
+/* Numeric text box in the Papers filter row (Min. cite). Sized to the pill
+   chips beside it so the row keeps one visual rhythm. */
+.pub-num-input {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  width: 62px;
+  padding: 5px 4px 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+  transition: border-color 0.12s;
+}
+.pub-num-input:hover { border-color: var(--text); }
+.pub-num-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+/* Firefox keeps the spinners hidden until hover/focus; Chrome/Safari need the
+   explicit rule or they reserve the arrow gutter permanently. */
+.pub-num-input::-webkit-outer-spin-button,
+.pub-num-input::-webkit-inner-spin-button {
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+.pub-num-input:hover::-webkit-outer-spin-button,
+.pub-num-input:hover::-webkit-inner-spin-button,
+.pub-num-input:focus::-webkit-outer-spin-button,
+.pub-num-input:focus::-webkit-inner-spin-button {
+  opacity: 1;
+}
 
 /* ── term pagination buttons ──────────────────────────────────────────── */
 /* Rendered into the panel-toggle row (alongside the Faculty/Courses
@@ -1330,6 +1363,19 @@ a.pub-author:hover {
   gap: 6px;
 }
 .adv-row-subfields .subfield-group { padding-left: 18px; }
+/* The Papers row carries enough groups (Conferences / Journals / Other / Year /
+   Min. cite) to wrap on most widths. Nesting them in their own flex container
+   makes the wrapped line align under the first group rather than under the
+   PAPERS label, where it would read as a row label of its own. */
+.adv-row-pubs .pub-filter-groups {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 6px;
+}
 /* Job Title row lives in the advanced bar but only appears on small
    viewports; on wider screens the same chips render inline in the
    main filter bar (.category-chips). */

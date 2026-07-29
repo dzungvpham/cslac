@@ -232,6 +232,10 @@ let pubExcludes = {
 let pubYearFrom = null;
 let pubYearTo = null;
 let pubYearsAvailable = [];
+// Minimum citation count a paper must have to pass the pub filters. 0 disables
+// the gate; the default of 1 drops never-cited papers.
+let pubMinCites = 1;
+let pubMinCitesTimer = null;
 
 // ── URL state ─────────────────────────────────────────────────────────────
 // Filter, sort, view, and expand-all state is round-tripped through the URL
@@ -247,6 +251,7 @@ const URL_DEFAULTS = {
     journal: new Set(['Q1']),
     other: new Set(),
   },
+  minCites: 1,
 };
 const PUB_GROUP_SHORT = { conference: 'c', journal: 'j', other: 'o' };
 const PUB_GROUP_LONG = { c: 'conference', j: 'journal', o: 'other' };
@@ -320,6 +325,9 @@ function buildUrlParams({ includeDefaults = false } = {}) {
   }
   if (includeDefaults || pubYearTo !== defTo) {
     p.set('yto', pubYearTo == null ? '' : String(pubYearTo));
+  }
+  if (includeDefaults || pubMinCites !== URL_DEFAULTS.minCites) {
+    p.set('mincite', String(pubMinCites));
   }
 
   if (includeDefaults) {
@@ -403,6 +411,10 @@ function applyUrlState() {
       if (Number.isFinite(y)) pubYearTo = y;
     }
   }
+  if (p.has('mincite')) {
+    const n = parseInt(p.get('mincite'), 10);
+    pubMinCites = Number.isFinite(n) && n > 0 ? n : 0;
+  }
   if (p.has('sort')) {
     const s = p.get('sort');
     if (s === 'default') {
@@ -437,7 +449,8 @@ function applyUrlState() {
   }
   const advActive = activeSubfields.size || excludedSubfields.size ||
     subfieldScope !== URL_DEFAULTS.scope || activeState ||
-    pubYearFrom !== defFrom || pubYearTo !== defTo || pubFiltersCustom;
+    pubYearFrom !== defFrom || pubYearTo !== defTo || pubFiltersCustom ||
+    pubMinCites !== URL_DEFAULTS.minCites;
   if (advActive) {
     advancedExpanded = true;
     const bar = document.getElementById('advanced-bar');
@@ -576,6 +589,7 @@ function buildExportData() {
       },
       pub_year_from: pubYearFrom,
       pub_year_to: pubYearTo,
+      pub_min_cites: pubMinCites,
     },
     college_count: colleges.length,
     faculty_count: colleges.reduce((s, c) => s + c.faculty_count, 0),
@@ -1083,7 +1097,8 @@ function buildAdvancedBar() {
        subfieldGroupsHtml +
     `</div>` +
     `<div class="adv-row adv-row-pubs">
-       <span class="filter-label">Papers</span>` +
+       <span class="filter-label">Papers</span>
+       <div class="pub-filter-groups">` +
        PUB_FILTER_GROUPS.map(g => {
          const chips = g.values.map(v => {
            const isObj = typeof v === 'object';
@@ -1116,7 +1131,13 @@ function buildAdvancedBar() {
             </div>
           </div>
         </div>` +
-    `</div>` +
+       `<div class="pub-filter-group">
+          <span class="pub-filter-label" title="Only show papers with at least this many citations. 0 shows all papers.">Min. cite</span>
+          <input type="number" class="pub-num-input" id="pub-min-cites" min="0" step="1"
+                 inputmode="numeric" aria-label="Minimum citations per paper"
+                 value="${pubMinCites}" />
+        </div>` +
+    `</div></div>` +
     `<div class="adv-row"><span class="adv-hint-inline">${interactHint}</span></div>`
   ;
 
@@ -1192,6 +1213,36 @@ function buildAdvancedBar() {
       buildFilterBar();
       renderAll();
     });
+  });
+
+  // Min-cites box. Debounced like the search input, and deliberately does NOT
+  // call buildAdvancedBar() on commit — rebuilding the bar mid-typing would
+  // blow away focus and the caret.
+  const minCitesEl = document.getElementById('pub-min-cites');
+  const commitMinCites = (normalize = false) => {
+    clearTimeout(pubMinCitesTimer);
+    pubMinCitesTimer = null;
+    const n = parseInt(minCitesEl.value, 10);
+    const next = Number.isFinite(n) && n > 0 ? n : 0;
+    // Snap a blank/garbage/negative entry back to the value we actually applied.
+    if (normalize && minCitesEl.value !== String(next)) minCitesEl.value = String(next);
+    if (next === pubMinCites) return;
+    pubMinCites = next;
+    track('filter', 'publication_min_cites', next ? 'set' : 'clear', String(next));
+    buildFilterBar();
+    renderAll();
+  };
+  minCitesEl.addEventListener('input', () => {
+    clearTimeout(pubMinCitesTimer);
+    pubMinCitesTimer = setTimeout(commitMinCites, 500);
+  });
+  minCitesEl.addEventListener('change', () => commitMinCites());
+  minCitesEl.addEventListener('blur', () => commitMinCites(true));
+  minCitesEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      commitMinCites(true);
+    }
   });
 
   bar.querySelectorAll('.cs-dropdown').forEach(dd => {
@@ -1306,6 +1357,7 @@ function pubVisibleBase(p) {
   if (!p.venue) return false;
   if (pubYearFrom != null && (p.year == null || p.year < pubYearFrom)) return false;
   if (pubYearTo != null && (p.year == null || p.year > pubYearTo)) return false;
+  if (pubMinCites > 0 && (p.cites ?? 0) < pubMinCites) return false;
   const t = p.pub_type;
   let group, value;
   if ((t === 'conference' || t === 'journal') && p.venue_ranking) {
@@ -1740,6 +1792,9 @@ function updatePapersStat() {
         ? `${from}-${String(to).slice(-2)}`
         : `${from}-${to}`);
     }
+  }
+  if (pubMinCites > 0) {
+    parts.push(`≥${pubMinCites} cite${pubMinCites === 1 ? '' : 's'}`);
   }
   const suffix = parts.length ? ` (${parts.join(', ')})` : '';
   // Suffix lives in its own span so the mobile breakpoint can hide just the
