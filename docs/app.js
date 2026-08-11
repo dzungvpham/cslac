@@ -46,7 +46,7 @@ function venueRankTooltip(rank, source) {
 
 // ── column definitions ─────────────────────────────────────────────────────
 const COLLEGE_COLS = [
-  { key: 'rank',             label: 'Institution',   numeric: false, tooltip: 'Default sorting order: Faculty size -> # of electives -> # of papers -> # of graduates.' },
+  { key: 'rank',             label: 'Institution',   numeric: false, tooltip: 'Ranking method: Faculty size → No. of electives → No. of papers → No. of graduated students' },
   { key: 'total',            label: 'Faculty',       numeric: true, tooltip: 'Number of faculty' },
   { key: 'grads',            label: '4YR-GRAD',      numeric: true, tooltip: 'The total number of graduated CS majors from 2021 to 2024 (according to IPEDS)' },
   { key: 'grad_fac',         label: 'GRAD:FAC',      numeric: true, tooltip: 'Ratio of the total number of graduated CS majors from 2021 to 2024 (according to IPEDS) to the current number of tenured/tenure-track faculty' },
