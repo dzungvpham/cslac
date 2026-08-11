@@ -37,6 +37,7 @@ import sys
 import unicodedata
 from collections import defaultdict
 from datetime import date
+from difflib import SequenceMatcher
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -758,6 +759,19 @@ def build_courses(input_dir: Path, faculty_by_college: dict[str, list[dict]]) ->
 
 EXCLUDED_VENUE_TYPES = {"book series", "ebook platform"}
 
+# Proceedings front matter that OpenAlex ingests as standalone "works": the
+# program chairs' opening message, the committee roster, the table of
+# contents. These carry a real author list (the chairs), so they get matched
+# to faculty and would otherwise show up as publications. Anchored to the end
+# of the title so a paper *about* program committees isn't caught.
+_FRONT_MATTER_RE = re.compile(
+    r"(?:message|welcome|greetings)\s+from\s+the\s+.*\bchairs?\b"
+    r"|\bchairs?[’'`?]?\s*(?:message|welcome)$"
+    r"|\bprogram\s+committee(?:\s+members.*)?$"
+    r"|^(?:preface|foreword|index|table\s+of\s+contents|editorial\s+acknowledgment)$",
+    re.I,
+)
+
 
 def _split_pipe(s: str) -> list[str]:
     if not s:
@@ -787,6 +801,106 @@ def _clean_venue(v: str) -> str | None:
     return v.replace("&amp;", "&") or None
 
 
+_pub_stats: dict[str, int] = defaultdict(int)
+
+# A conference paper and its journal version are one work published twice, but
+# OpenAlex keeps them as separate records and the scraper's exact-title dedup
+# never collapses them — the titles always drift by a word or two ("On the
+# number of…" → "The Number of…", an added subtitle). Match them fuzzily here,
+# after pub_type is known (the CORE/SJR ranks that drive that classification
+# aren't filled in until Stage 8, so the scraper can't do this itself).
+#
+# Tuned for precision, not recall: BOTH a token-Jaccard and a sequence-ratio
+# floor must clear, plus two shared author surnames, and matching runs only
+# within a college. Looser settings start pulling in same-topic-different-paper
+# pairs from prolific groups (down-sampled lexicase selection, temporal
+# networks with uncertainty) that share most of their title vocabulary.
+_DEDUP_MIN_JACCARD = 0.70
+_DEDUP_MIN_RATIO = 0.75
+_DEDUP_MIN_SHARED_AUTHORS = 2
+
+_DEDUP_STOP = frozenset(
+    "a an the of on in for and or to with using via by from at as is are its "
+    "toward towards new novel approach based".split()
+)
+
+# When the conference row is one of these listing stubs, it's a two-paragraph
+# abstract in the proceedings and the journal row is the full paper — so the
+# journal wins that pair instead.
+_STUB_RE = re.compile(r"\((?:abstract only|extended abstract|abstract|poster)\)\s*$", re.I)
+
+
+def _dedup_norm(title: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
+
+
+def _surnames(pub: dict) -> set[str]:
+    out = set()
+    for a in pub.get("authors") or []:
+        parts = _dedup_norm(a.get("name") or "").split()
+        if parts:
+            out.add(parts[-1])
+    return out
+
+
+def _dedup_fingerprint(pub: dict) -> tuple[str, set[str], set[str]]:
+    """(normalized title, content tokens, author surnames) for match scoring."""
+    norm = _dedup_norm(pub["title"])
+    return norm, set(norm.split()) - _DEDUP_STOP, _surnames(pub)
+
+
+def _dedup_conference_journal(pubs: list[dict]) -> list[dict]:
+    """Collapse conference/journal versions of the same work into one entry.
+
+    The conference row wins by default — in CS it's the archival venue of
+    record, and its CORE rank is a better-calibrated signal than an SJR
+    quartile. The loser's citation count is folded in with max() (OpenAlex
+    splits citations across the two records, and the journal version usually
+    holds most of them) and its matched faculty are unioned in.
+    """
+    conf = [p for p in pubs if p["pub_type"] == "conference"]
+    jour = [p for p in pubs if p["pub_type"] == "journal"]
+    if not conf or not jour:
+        return pubs
+
+    conf_fp = [(c, *_dedup_fingerprint(c)) for c in conf]
+
+    cand = []
+    for j in jour:
+        jn, jt, ja = _dedup_fingerprint(j)
+        for c, cn, ct, ca in conf_fp:
+            if not jt or not ct:
+                continue
+            if len(ja & ca) < _DEDUP_MIN_SHARED_AUTHORS:
+                continue
+            jaccard = len(jt & ct) / len(jt | ct)
+            if jaccard < _DEDUP_MIN_JACCARD:
+                continue
+            ratio = SequenceMatcher(None, jn, cn).ratio()
+            if ratio < _DEDUP_MIN_RATIO:
+                continue
+            cand.append((min(jaccard, ratio), j, c))
+
+    # Best-scoring pairs first, and each row is consumed at most once, so a
+    # paper matching two candidates collapses only into its closest partner.
+    cand.sort(key=lambda x: -x[0])
+    dropped: set[int] = set()
+    for _, j, c in cand:
+        if id(j) in dropped or id(c) in dropped:
+            continue
+        stub_conf = bool(_STUB_RE.search(c["title"]))
+        winner, loser = (j, c) if stub_conf and not _STUB_RE.search(j["title"]) else (c, j)
+        winner["cites"] = max(winner["cites"], loser["cites"])
+        merged = list(winner["matched_faculty"])
+        merged += [n for n in loser["matched_faculty"] if n not in merged]
+        winner["matched_faculty"] = merged
+        dropped.add(id(loser))
+        _pub_stats["deduped"] += 1
+        _pub_stats["deduped_stub" if winner is j else "deduped_conference"] += 1
+
+    return [p for p in pubs if id(p) not in dropped]
+
+
 def build_publications(pubs_csv: Path) -> dict[str, dict]:
     """Return {college_name: {publications: [...]}}."""
     if not pubs_csv.exists():
@@ -794,6 +908,7 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
 
     rows = read_csv(pubs_csv)
     colleges: dict[str, list[dict]] = defaultdict(list)
+    _pub_stats.clear()
 
     for r in rows:
         venue_type = (r.get("venue_type") or "").strip()
@@ -807,6 +922,9 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
         # research.
         title = (r.get("title") or "").strip()
         if title.lower().startswith(("session details", "math counts", "conversations:")):
+            continue
+        if _FRONT_MATTER_RE.search(title):
+            _pub_stats["front_matter"] += 1
             continue
 
         college = (r.get("college") or "").strip()
@@ -918,7 +1036,16 @@ def build_publications(pubs_csv: Path) -> dict[str, dict]:
 
     result: dict[str, dict] = {}
     for name, pubs in colleges.items():
-        result[name] = {"publications": pubs}
+        result[name] = {"publications": _dedup_conference_journal(pubs)}
+
+    if _pub_stats["front_matter"]:
+        print(f"Publications: dropped {_pub_stats['front_matter']} proceedings front-matter rows.")
+    if _pub_stats["deduped"]:
+        print(
+            f"Publications: collapsed {_pub_stats['deduped']} conference/journal duplicate pairs "
+            f"({_pub_stats['deduped_conference']} kept the conference version, "
+            f"{_pub_stats['deduped_stub']} kept the journal over an abstract-only stub)."
+        )
     return result
 
 
