@@ -1509,6 +1509,12 @@ a.pub-author:hover {
   .college-name .cn-full  { display: none; }
   .college-name .cn-short { display: inline; }
 
+  /* Tapping the name expands the row here rather than opening the department
+     site (see the a.college-name handler in app.js), so drop the link
+     affordance — a sticky :hover on touch would advertise a nav that
+     doesn't happen. */
+  a.college-name:hover { color: inherit; text-decoration: none; }
+
   /* The expand/collapse chevron is hidden on mobile; the row number sits in
      its own fixed-width column, vertically centered against the full row
      height (which the name + stacked icons drive). Decoupling it from the

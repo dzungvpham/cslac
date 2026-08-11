@@ -2158,13 +2158,14 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
   const fpText   = fmt(college.papers);
   const links   = collegeLinks[college.name] || {};
 
-  const cnEsc = esc(college.name).replace(/'/g, "\\'");
   // The college name itself links to the department website (when we have one);
   // falls back to a plain span otherwise. Same markup/style either way.
+  // (The click handler below suppresses the navigation on small viewports —
+  // hence tracking there rather than in an inline onclick.)
   const displayName = displayCollegeName(college.name);
   const nameInner = `<span class="cn-full">${esc(displayName)}</span><span class="cn-short">${esc(shortCollegeName(displayName))}</span>`;
   const nameEl = links.program_url
-    ? `<a class="college-name" href="${esc(links.program_url)}" target="_blank" rel="noopener" title="Department website" onclick="track('click_link','link','college_program','${cnEsc}')">${nameInner}</a>`
+    ? `<a class="college-name" href="${esc(links.program_url)}" target="_blank" rel="noopener" title="Department website">${nameInner}</a>`
     : `<span class="college-name">${nameInner}</span>`;
   const logoImg = `<span class="college-logo cl-${collegeSlug(college.name)}" aria-hidden="true"></span>`;
 
@@ -2200,8 +2201,18 @@ function buildCollegeRow(college, idx, priorOpenState, rank) {
     </div>
   `;
 
+  // On small viewports the name is the row's biggest tap target and the chevron
+  // is hidden, so tapping it expands the panel instead of leaving for the
+  // department site; on larger viewports the link opens as usual.
   div.querySelectorAll('a.college-name').forEach(a => {
-    a.addEventListener('click', e => e.stopPropagation());
+    a.addEventListener('click', e => {
+      if (SMALL_VIEWPORT_MQ.matches) {
+        e.preventDefault(); // let the click bubble to .college-summary
+        return;
+      }
+      e.stopPropagation();
+      track('click_link', 'link', 'college_program', college.name);
+    });
   });
 
   const panel = div.querySelector(`#fac-panel-${idx}`);
