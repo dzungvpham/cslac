@@ -2966,16 +2966,17 @@ loadData();
 (function initTooltip() {
   const tip = document.getElementById('tip');
   const noHover = matchMedia('(hover: none)');
+  const FINGER_CLEARANCE = 16;  // px between the tooltip and the touch point
   let cur = null;
   let savedTitle = '';
 
-  function show(el, text, clientX, clientY) {
+  function show(el, text, clientX, clientY, placeAbove) {
     cur = el;
     savedTitle = text;
     el.removeAttribute('title');
     tip.textContent = text;
     tip.classList.add('visible');
-    positionAt(clientX, clientY);
+    positionAt(clientX, clientY, placeAbove);
   }
 
   function hide() {
@@ -2985,13 +2986,21 @@ loadData();
     tip.classList.remove('visible');
   }
 
-  function positionAt(clientX, clientY) {
+  // placeAbove lifts the tooltip clear of the pointer instead of tucking it
+  // below-right — for a long press the finger sits on top of the default spot.
+  function positionAt(clientX, clientY, placeAbove) {
     const pad = 8;
-    let x = clientX + pad;
-    let y = clientY + pad;
     const r = tip.getBoundingClientRect();
+    let x = clientX + pad;
+    let y = placeAbove ? clientY - r.height - FINGER_CLEARANCE : clientY + pad;
     if (x + r.width > window.innerWidth) x = clientX - r.width - pad;
-    if (y + r.height > window.innerHeight) y = clientY - r.height - pad;
+    if (x < pad) x = pad;
+    if (placeAbove) {
+      // No room above the finger — drop below it, still clear of the touch.
+      if (y < pad) y = Math.min(clientY + FINGER_CLEARANCE, window.innerHeight - r.height - pad);
+    } else if (y + r.height > window.innerHeight) {
+      y = clientY - r.height - pad;
+    }
     tip.style.left = x + 'px';
     tip.style.top = y + 'px';
   }
@@ -3019,4 +3028,67 @@ loadData();
     if (noHover.matches) return;
     if (cur) positionAt(e.clientX, e.clientY);
   });
+
+  // ── touch: press-and-hold a column header to read its tooltip ────────────
+  // Column headers carry the only explanation of what each metric means
+  // ("GRAD:FAC", "Electives"), and a touch user has no hover to reveal it —
+  // tapping sorts instead. So hold a header for LONG_PRESS_MS and the tooltip
+  // appears, stays while the finger is down, and disappears on lift; the
+  // sort click that the browser synthesizes afterwards is swallowed.
+  const LONG_PRESS_MS = 500;
+  const MOVE_TOLERANCE = 10;  // px of drift before we read it as a scroll
+  const CLICK_SUPPRESS_MS = 600;
+  let pressTimer = null, pressStart = null, longPressed = false, suppressClickUntil = 0;
+
+  function cancelPress() {
+    clearTimeout(pressTimer);
+    pressTimer = null;
+    pressStart = null;
+  }
+
+  document.addEventListener('touchstart', function (e) {
+    cancelPress();
+    suppressClickUntil = 0;
+    if (e.touches.length !== 1) return;
+    const el = e.target.closest && e.target.closest('.th, .fth');
+    const text = el && el.getAttribute('title');
+    if (!text) return;
+    const { clientX, clientY } = e.touches[0];
+    pressStart = { x: clientX, y: clientY };
+    pressTimer = setTimeout(function () {
+      pressTimer = null;
+      longPressed = true;
+      show(el, text, clientX, clientY, true);
+    }, LONG_PRESS_MS);
+  }, { passive: true });
+
+  document.addEventListener('touchmove', function (e) {
+    const t = e.touches[0];
+    if (!t) return;
+    if (longPressed) { positionAt(t.clientX, t.clientY, true); return; }
+    if (!pressStart) return;
+    if (Math.abs(t.clientX - pressStart.x) > MOVE_TOLERANCE ||
+        Math.abs(t.clientY - pressStart.y) > MOVE_TOLERANCE) cancelPress();
+  }, { passive: true });
+
+  function endPress() {
+    cancelPress();
+    if (longPressed) {
+      longPressed = false;
+      // The synthetic click lands a few ms after touchend; give it a window to
+      // arrive rather than a sticky flag that could eat an unrelated click.
+      suppressClickUntil = Date.now() + CLICK_SUPPRESS_MS;
+      hide();
+    }
+  }
+
+  document.addEventListener('touchend', endPress, { passive: true });
+  document.addEventListener('touchcancel', endPress, { passive: true });
+
+  document.addEventListener('click', function (e) {
+    if (Date.now() >= suppressClickUntil) return;
+    suppressClickUntil = 0;
+    e.preventDefault();
+    e.stopPropagation();
+  }, true);
 })();
